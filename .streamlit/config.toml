@@ -1,0 +1,12 @@
+[theme]
+# Dark theme matching Raga Focus's cinematic / wellness aesthetic
+base = "dark"
+primaryColor = "#E8C88A"              # warm amber (matches thumbnails)
+backgroundColor = "#0E1117"           # near-black
+secondaryBackgroundColor = "#1A1F2E"  # slightly lighter panels
+textColor = "#FAF3E0"                 # cream (matches thumbnail text)
+font = "sans serif"
+
+[server]
+headless = false
+port = 8501

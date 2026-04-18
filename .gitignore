@@ -1,0 +1,24 @@
+# Secrets — NEVER commit these
+.streamlit/secrets.toml
+token.json
+credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.venv/
+venv/
+env/
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# Build artifacts
+dist/
+build/
+*.log
