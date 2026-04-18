@@ -27,8 +27,10 @@ st.set_page_config(
 def _check_password() -> bool:
     """Display a password prompt and return True once the correct password is entered."""
     # If no password configured in secrets, skip the gate (local dev)
+    expected = None
     try:
-        expected = st.secrets.get("app", {}).get("password", None)
+        if "app" in st.secrets and "password" in st.secrets["app"]:
+            expected = st.secrets["app"]["password"]
     except Exception:
         expected = None
 
@@ -573,7 +575,7 @@ with tab_overview:
             markers=True,
         )
         fig.update_layout(height=300, margin=dict(l=0, r=0, t=40, b=0), template="plotly_dark", paper_bgcolor="#0E1117", plot_bgcolor="#0E1117")
-        st.plotly_chart(fig, width="stretch")
+        st.plotly_chart(fig, use_container_width=True)
 
         # Convert watch minutes to hours for the chart
         df_chart = df.copy()
@@ -584,7 +586,7 @@ with tab_overview:
             labels={"watch_hours": "Hours watched", "day": ""},
         )
         fig2.update_layout(height=300, margin=dict(l=0, r=0, t=40, b=0))
-        st.plotly_chart(fig2, width="stretch")
+        st.plotly_chart(fig2, use_container_width=True)
 
 # -----------------------------------------------------------------------------
 # Tab: Videos
@@ -639,7 +641,7 @@ with tab_videos:
 
     st.dataframe(
         df_display,
-        width="stretch",
+        use_container_width=True,
         height=600,
         hide_index=True,
     )
@@ -654,13 +656,13 @@ with tab_videos:
         if "Retention %" in df_display.columns:
             top_retention = df_display.nlargest(5, "Retention %")[["Title", "Retention %", "Lifetime Views"]]
             st.markdown("**Highest retention (28d)**")
-            st.dataframe(top_retention, width="stretch", hide_index=True)
+            st.dataframe(top_retention, use_container_width=True, hide_index=True)
 
     with col2:
         if "Subs Gained (28d)" in df_display.columns:
             top_subs = df_display.nlargest(5, "Subs Gained (28d)")[["Title", "Subs Gained (28d)", "Lifetime Views"]]
             st.markdown("**Most subs gained (28d)**")
-            st.dataframe(top_subs, width="stretch", hide_index=True)
+            st.dataframe(top_subs, use_container_width=True, hide_index=True)
 
 # -----------------------------------------------------------------------------
 # Tab: Video Detail
@@ -756,7 +758,7 @@ with tab_detail:
                         "insightTrafficSourceType": "Source",
                         "views": "Views",
                     }),
-                    width="stretch",
+                    use_container_width=True,
                     hide_index=True,
                 )
             else:
@@ -785,7 +787,7 @@ with tab_detail:
                         "volume": "Volume",
                         "notes": "Notes",
                     }).fillna(""),
-                    width="stretch",
+                    use_container_width=True,
                     hide_index=True,
                 )
 
@@ -846,7 +848,7 @@ with tab_competitors:
     combined["Subs / day"] = (combined["Subscribers"] / combined["Days Alive"]).round(1)
     combined["Views / day"] = (combined["Total Views"] / combined["Days Alive"]).round(0).astype(int)
 
-    st.dataframe(combined, width="stretch", hide_index=True)
+    st.dataframe(combined, use_container_width=True, hide_index=True)
 
     st.divider()
     st.subheader("What they've been shipping (latest 5 uploads)")
@@ -855,7 +857,7 @@ with tab_competitors:
         st.markdown(f"### {name}")
         with st.spinner(f"Loading latest from {name}..."):
             latest = load_competitor_latest_videos(cid, limit=5)
-        st.dataframe(latest, width="stretch", hide_index=True)
+        st.dataframe(latest, use_container_width=True, hide_index=True)
 
 # -----------------------------------------------------------------------------
 # Tab: Reach Data
@@ -872,7 +874,7 @@ with tab_reach:
         titles = videos[["video_id", "title"]].rename(columns={"title": "Title"})
         reach_display = reach.merge(titles, on="video_id", how="left")
         reach_display = reach_display[["Title", "Impressions", "CTR", "Views (Reach)", "Unique Viewers"]]
-        st.dataframe(reach_display, width="stretch", hide_index=True)
+        st.dataframe(reach_display, use_container_width=True, hide_index=True)
 
         st.divider()
 
@@ -897,7 +899,7 @@ with tab_reach:
             fig.add_vline(x=3, line_dash="dash", line_color="orange", annotation_text="3% floor")
             fig.add_vline(x=6, line_dash="dash", line_color="green", annotation_text="6% excellent")
             fig.update_layout(height=600, margin=dict(l=0, r=0, t=40, b=0))
-            st.plotly_chart(fig, width="stretch")
+            st.plotly_chart(fig, use_container_width=True)
 
 # -----------------------------------------------------------------------------
 # Tab: Production Queue
@@ -925,7 +927,7 @@ with tab_queue:
             "Length": v["length"],
             "Instrument": v["instrument"].split(" + ")[0],
         })
-    st.dataframe(pd.DataFrame(summary_rows), width="stretch", hide_index=True)
+    st.dataframe(pd.DataFrame(summary_rows), use_container_width=True, hide_index=True)
 
     st.divider()
 

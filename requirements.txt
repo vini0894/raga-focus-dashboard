@@ -1,6 +1,6 @@
-streamlit>=1.38
-plotly>=5.0
-pandas>=2.0
+streamlit>=1.38,<2.0
+plotly>=5.0,<7.0
+pandas>=2.0,<3.0
 google-api-python-client>=2.100
 google-auth-oauthlib>=1.2
 google-auth-httplib2>=0.2
