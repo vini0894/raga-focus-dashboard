@@ -8,5 +8,8 @@ textColor = "#FAF3E0"                 # cream (matches thumbnail text)
 font = "sans serif"
 
 [server]
-headless = false
+headless = true
 port = 8501
+
+[browser]
+gatherUsageStats = false
