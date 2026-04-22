@@ -659,6 +659,141 @@ with tab_overview:
         fig2.update_layout(height=300, margin=dict(l=0, r=0, t=40, b=0))
         st.plotly_chart(fig2, use_container_width=True)
 
+    # -------------------------------------------------------------------------
+    # CTR Health Panel (reads REACH_HISTORY.csv — latest capture per video)
+    # -------------------------------------------------------------------------
+    st.divider()
+    st.subheader("🎯 CTR Health — thumbnail performance")
+
+    reach_latest = get_latest_reach_per_video()
+    if reach_latest.empty:
+        st.info(
+            "No reach data yet. Drop a Studio CSV export into `data/reach_exports/` and run "
+            "`python3 import_reach_csv.py` to populate this panel."
+        )
+    else:
+        # Attach titles
+        vids_meta = load_all_my_videos()[["video_id", "title"]]
+        health = reach_latest.merge(vids_meta, on="video_id", how="left")
+        health["title"] = health["title"].fillna(health["video_id"])
+
+        # Filter to videos with meaningful impression volume (noise-reduction)
+        MIN_IMPR = 300
+        reliable = health[health["impressions"] >= MIN_IMPR].copy()
+        noisy = health[health["impressions"] < MIN_IMPR].copy()
+
+        # Classify
+        def classify(ctr):
+            if ctr < CTR_FLOOR:
+                return "🔴 Below floor"
+            elif ctr < CTR_HEALTHY:
+                return "🟡 Okay"
+            elif ctr < CTR_EXCELLENT:
+                return "🟢 Healthy"
+            else:
+                return "🔥 Excellent"
+
+        reliable["status"] = reliable["ctr_pct"].apply(classify)
+
+        # Summary cards
+        counts = reliable["status"].value_counts().to_dict()
+        capture_dates = reach_latest["capture_date"].dropna()
+        latest_capture = capture_dates.max().date() if not capture_dates.empty else "—"
+
+        st.caption(
+            f"Based on latest capture per video ({latest_capture}). "
+            f"Classifying only videos with ≥{MIN_IMPR} impressions ({len(reliable)} of {len(health)} videos) "
+            f"to avoid noise from low-surface videos."
+        )
+
+        c1, c2, c3, c4 = st.columns(4)
+        c1.metric("🔥 Excellent (≥6%)", counts.get("🔥 Excellent", 0))
+        c2.metric("🟢 Healthy (3-6%)", counts.get("🟢 Healthy", 0))
+        c3.metric("🟡 Okay (2-3%)", counts.get("🟡 Okay", 0))
+        c4.metric("🔴 Below floor (<2%)", counts.get("🔴 Below floor", 0))
+
+        # Channel weighted CTR (total clicks / total impressions)
+        total_impr = int(reliable["impressions"].sum())
+        # Approx clicks = impressions * ctr_pct/100
+        reliable["est_clicks"] = reliable["impressions"] * reliable["ctr_pct"] / 100
+        channel_ctr = (reliable["est_clicks"].sum() / total_impr * 100) if total_impr else 0
+
+        st.markdown(
+            f"**Channel-weighted CTR:** {channel_ctr:.2f}%  ·  "
+            f"**Total impressions tracked:** {total_impr:,}  ·  "
+            f"**Niche benchmark:** 3–6%"
+        )
+
+        # Two tables side by side: top performers + bottom performers
+        col_top, col_bot = st.columns(2)
+
+        with col_top:
+            st.markdown("**🟢 Top 5 CTR (high-confidence)**")
+            top5 = reliable.nlargest(5, "ctr_pct")[["title", "ctr_pct", "impressions", "views"]].copy()
+            top5["title"] = top5["title"].apply(lambda t: (t[:55] + "…") if len(t) > 55 else t)
+            top5 = top5.rename(columns={
+                "title": "Title", "ctr_pct": "CTR %",
+                "impressions": "Impressions", "views": "Views",
+            })
+            top5["CTR %"] = top5["CTR %"].apply(lambda x: f"{x:.2f}%")
+            top5["Impressions"] = top5["Impressions"].apply(lambda x: f"{int(x):,}")
+            st.dataframe(top5, use_container_width=True, hide_index=True)
+
+        with col_bot:
+            st.markdown("**🔴 Bottom 5 CTR — thumbnail/title rewrite candidates**")
+            bot5 = reliable.nsmallest(5, "ctr_pct")[["title", "ctr_pct", "impressions", "views"]].copy()
+            bot5["title"] = bot5["title"].apply(lambda t: (t[:55] + "…") if len(t) > 55 else t)
+            bot5 = bot5.rename(columns={
+                "title": "Title", "ctr_pct": "CTR %",
+                "impressions": "Impressions", "views": "Views",
+            })
+            bot5["CTR %"] = bot5["CTR %"].apply(lambda x: f"{x:.2f}%")
+            bot5["Impressions"] = bot5["Impressions"].apply(lambda x: f"{int(x):,}")
+            st.dataframe(bot5, use_container_width=True, hide_index=True)
+
+        # CTR bar chart — all reliable videos, colored by status
+        st.markdown("**CTR per video (impressions ≥300)**")
+        chart_df = reliable.sort_values("ctr_pct", ascending=True).copy()
+        chart_df["short_title"] = chart_df["title"].apply(lambda t: (t[:50] + "…") if len(t) > 50 else t)
+        fig_ctr = px.bar(
+            chart_df, x="ctr_pct", y="short_title", orientation="h",
+            color="status",
+            color_discrete_map={
+                "🔴 Below floor": "#EF553B",
+                "🟡 Okay": "#FFA15A",
+                "🟢 Healthy": "#00CC96",
+                "🔥 Excellent": "#19D3F3",
+            },
+            title="CTR % per video",
+            labels={"ctr_pct": "CTR %", "short_title": ""},
+            hover_data={"impressions": True, "views": True},
+        )
+        fig_ctr.add_vline(x=CTR_FLOOR, line_dash="dash", line_color="#EF553B", annotation_text=f"{CTR_FLOOR}% floor")
+        fig_ctr.add_vline(x=CTR_HEALTHY, line_dash="dash", line_color="#00CC96", annotation_text=f"{CTR_HEALTHY}% healthy")
+        fig_ctr.add_vline(x=CTR_EXCELLENT, line_dash="dash", line_color="#19D3F3", annotation_text=f"{CTR_EXCELLENT}% excellent")
+        fig_ctr.update_layout(
+            height=max(350, 30 * len(chart_df)),
+            margin=dict(l=0, r=0, t=40, b=0),
+            template="plotly_dark",
+            paper_bgcolor="#0E1117",
+            plot_bgcolor="#0E1117",
+            legend=dict(orientation="h", yanchor="top", y=-0.1, xanchor="left", x=0),
+        )
+        st.plotly_chart(fig_ctr, use_container_width=True)
+
+        # Noisy videos — too few impressions to judge
+        if not noisy.empty:
+            with st.expander(f"⚪ {len(noisy)} videos with <{MIN_IMPR} impressions (insufficient data to judge)"):
+                noisy_show = noisy[["title", "ctr_pct", "impressions", "views"]].copy()
+                noisy_show["title"] = noisy_show["title"].apply(lambda t: (t[:70] + "…") if len(t) > 70 else t)
+                noisy_show = noisy_show.rename(columns={
+                    "title": "Title", "ctr_pct": "CTR %",
+                    "impressions": "Impressions", "views": "Views",
+                })
+                noisy_show["CTR %"] = noisy_show["CTR %"].apply(lambda x: f"{x:.2f}%")
+                noisy_show = noisy_show.sort_values("Impressions", ascending=False)
+                st.dataframe(noisy_show, use_container_width=True, hide_index=True)
+
 # -----------------------------------------------------------------------------
 # Tab: Daily Views (historical per-video + channel totals)
 # -----------------------------------------------------------------------------
