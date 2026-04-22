@@ -64,6 +64,7 @@ COMPETITORS = {
 }
 
 REACH_DATA_FILE = Path(__file__).parent / "data" / "REACH_DATA.md"
+REACH_HISTORY_FILE = Path(__file__).parent / "data" / "REACH_HISTORY.csv"
 KEYWORD_DATA_FILE = Path(__file__).parent / "data" / "KEYWORD_DATA.md"
 
 # CTR / retention benchmarks for the Indian-classical focus/meditation niche
@@ -143,6 +144,56 @@ def load_channel_overview(days: int = 28):
     )
     cols = [h["name"] for h in r.get("columnHeaders", [])]
     df = pd.DataFrame(r.get("rows", []), columns=cols)
+    if not df.empty:
+        df["day"] = pd.to_datetime(df["day"])
+    return df
+
+
+@st.cache_data(ttl=600)
+def load_daily_views_all_videos(days: int = 180):
+    """Daily views per video across the last N days (one row per day × video).
+
+    YouTube Analytics API doesn't support `day,video` as combined dimensions in
+    one query, so we loop over each uploaded video and concatenate the results.
+    """
+    end = date.today() - timedelta(days=1)
+    start = end - timedelta(days=days - 1)
+    ya = _yt_analytics()
+    yd = _yt_data()
+
+    # Get all uploaded video IDs
+    ch = yd.channels().list(part="contentDetails", mine=True).execute()
+    uploads = ch["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+    video_ids = []
+    page = None
+    while True:
+        pl = yd.playlistItems().list(
+            part="contentDetails", playlistId=uploads, maxResults=50, pageToken=page
+        ).execute()
+        video_ids += [i["contentDetails"]["videoId"] for i in pl["items"]]
+        page = pl.get("nextPageToken")
+        if not page:
+            break
+
+    rows = []
+    for vid in video_ids:
+        try:
+            r = ya.reports().query(
+                ids="channel==MINE",
+                startDate=_iso(start),
+                endDate=_iso(end),
+                metrics="views",
+                dimensions="day",
+                filters=f"video=={vid}",
+                sort="day",
+            ).execute()
+            for day_val, views in r.get("rows", []):
+                rows.append({"video": vid, "day": day_val, "views": views})
+        except Exception:
+            # Video may have no analytics yet (too new); skip.
+            continue
+
+    df = pd.DataFrame(rows)
     if not df.empty:
         df["day"] = pd.to_datetime(df["day"])
     return df
@@ -497,6 +548,26 @@ def generate_recommendations(detail: dict, reach_row: pd.Series | None, kw_match
     return recs
 
 
+@st.cache_data(ttl=600)
+def load_reach_history():
+    """Load REACH_HISTORY.csv — time-series of impressions/CTR per video."""
+    if not REACH_HISTORY_FILE.exists():
+        return pd.DataFrame()
+    df = pd.read_csv(REACH_HISTORY_FILE)
+    if not df.empty:
+        df["capture_date"] = pd.to_datetime(df["capture_date"])
+    return df
+
+
+def get_latest_reach_per_video() -> pd.DataFrame:
+    """Return latest CTR/impressions snapshot per video from REACH_HISTORY.csv."""
+    hist = load_reach_history()
+    if hist.empty:
+        return pd.DataFrame()
+    latest = hist.sort_values("capture_date").groupby("video_id").tail(1)
+    return latest[["video_id", "capture_date", "views", "impressions", "ctr_pct"]].copy()
+
+
 def parse_reach_data():
     """Parse REACH_DATA.md to extract impressions / CTR for our videos."""
     if not REACH_DATA_FILE.exists():
@@ -536,8 +607,8 @@ with st.sidebar:
     st.caption("Dashboard reads from YouTube API via the authenticated MCP server + REACH_DATA.md for manual reach captures.")
 
 # Tabs
-tab_overview, tab_videos, tab_detail, tab_competitors, tab_reach, tab_queue = st.tabs(
-    ["📊 Overview", "📺 Videos", "🔍 Video Detail", "⚔️ Competitors", "🎯 Reach Data", "🚀 Production Queue"]
+tab_overview, tab_daily, tab_videos, tab_detail, tab_competitors, tab_reach, tab_queue = st.tabs(
+    ["📊 Overview", "📈 Daily Views", "📺 Videos", "🔍 Video Detail", "⚔️ Competitors", "🎯 Reach Data", "🚀 Production Queue"]
 )
 
 # -----------------------------------------------------------------------------
@@ -589,13 +660,121 @@ with tab_overview:
         st.plotly_chart(fig2, use_container_width=True)
 
 # -----------------------------------------------------------------------------
+# Tab: Daily Views (historical per-video + channel totals)
+# -----------------------------------------------------------------------------
+with tab_daily:
+    st.subheader("📈 Daily views — historical")
+    st.caption("Day-by-day view counts. Per-video chart shows every video on the channel; channel chart shows total daily views. Analytics API has a 24-48h reporting lag, so the last 2 days may read low.")
+
+    lookback = st.selectbox(
+        "Lookback window",
+        [30, 90, 180, 365],
+        index=2,
+        format_func=lambda x: f"Last {x} days",
+        key="daily_lookback",
+    )
+
+    with st.spinner(f"Loading {lookback} days of daily data..."):
+        per_vid = load_daily_views_all_videos(lookback)
+        channel_df = load_channel_overview(lookback)
+        all_vids = load_all_my_videos()
+
+    # --- Chart 1: per-video daily views
+    st.markdown("#### Per-video daily views")
+    if per_vid.empty:
+        st.info("No per-video daily data available for this window.")
+    else:
+        titles = all_vids[["video_id", "title"]].rename(columns={"video_id": "video"})
+        per_vid = per_vid.merge(titles, on="video", how="left")
+        per_vid["title"] = per_vid["title"].fillna(per_vid["video"])
+        per_vid["label"] = per_vid["title"].apply(lambda t: (t[:55] + "…") if len(t) > 55 else t)
+
+        # Filter by cumulative views so the chart doesn't drown in zero-line videos
+        totals = per_vid.groupby("label")["views"].sum().sort_values(ascending=False)
+        default_selection = totals.head(10).index.tolist()
+        all_labels = totals.index.tolist()
+
+        selected = st.multiselect(
+            f"Videos on chart (default: top 10 by total views in window, {len(all_labels)} total)",
+            options=all_labels,
+            default=default_selection,
+            key="daily_video_pick",
+        )
+
+        if selected:
+            plot_df = per_vid[per_vid["label"].isin(selected)]
+            fig = px.line(
+                plot_df.sort_values("day"),
+                x="day",
+                y="views",
+                color="label",
+                title=f"Daily views per video — last {lookback} days",
+                labels={"views": "Views", "day": "", "label": "Video"},
+            )
+            fig.update_layout(
+                height=550,
+                margin=dict(l=0, r=0, t=40, b=0),
+                legend=dict(orientation="h", yanchor="top", y=-0.15, xanchor="left", x=0),
+                template="plotly_dark",
+                paper_bgcolor="#0E1117",
+                plot_bgcolor="#0E1117",
+            )
+            st.plotly_chart(fig, use_container_width=True)
+        else:
+            st.info("Pick at least one video to plot.")
+
+    st.divider()
+
+    # --- Chart 2: channel-total daily views
+    st.markdown("#### Channel total daily views")
+    if channel_df.empty:
+        st.info("No channel data available for this window.")
+    else:
+        fig2 = px.line(
+            channel_df.sort_values("day"),
+            x="day",
+            y="views",
+            markers=True,
+            title=f"Channel total daily views — last {lookback} days",
+            labels={"views": "Views", "day": ""},
+        )
+        fig2.update_layout(
+            height=400,
+            margin=dict(l=0, r=0, t=40, b=0),
+            template="plotly_dark",
+            paper_bgcolor="#0E1117",
+            plot_bgcolor="#0E1117",
+        )
+        st.plotly_chart(fig2, use_container_width=True)
+
+        # Quick totals
+        total_views = int(channel_df["views"].sum())
+        peak_row = channel_df.loc[channel_df["views"].idxmax()]
+        c1, c2, c3 = st.columns(3)
+        c1.metric(f"Total views ({lookback}d)", f"{total_views:,}")
+        c2.metric("Peak day", peak_row["day"].strftime("%Y-%m-%d"))
+        c3.metric("Peak-day views", f"{int(peak_row['views']):,}")
+
+
+# -----------------------------------------------------------------------------
 # Tab: Videos
 # -----------------------------------------------------------------------------
 with tab_videos:
     with st.spinner("Loading video catalog + retention..."):
         videos = load_all_my_videos()
         retention = load_video_retention_28d()
-        reach = parse_reach_data()
+        # Prefer REACH_HISTORY.csv (Studio CSV imports) over legacy REACH_DATA.md
+        reach_latest = get_latest_reach_per_video()
+        if not reach_latest.empty:
+            reach = reach_latest.rename(columns={
+                "impressions": "Impressions",
+                "ctr_pct": "CTR",
+                "views": "Views (Reach)",
+            })
+            reach["CTR"] = reach["CTR"].apply(lambda x: f"{x:.2f}%" if pd.notna(x) else "—")
+            reach["Impressions"] = reach["Impressions"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "—")
+        else:
+            reach = parse_reach_data()
 
     if not retention.empty:
         # Normalize retention column names
@@ -729,6 +908,43 @@ with tab_detail:
             acol3.metric("Avg view duration", f"{avg_dur_sec_detail / 60:.1f} min")
             if reach_row is not None:
                 acol4.metric("Impressions", str(reach_row.get("Impressions", "—")))
+
+            # CTR / Impressions trend (from REACH_HISTORY.csv)
+            hist = load_reach_history()
+            if not hist.empty:
+                vid_hist = hist[hist["video_id"] == selected_id].sort_values("capture_date")
+                if len(vid_hist) >= 1:
+                    st.divider()
+                    st.markdown("**📈 CTR & Impressions over time**")
+                    st.caption("From weekly YouTube Studio CSV imports. Shows cumulative-to-date values at each capture.")
+
+                    if len(vid_hist) == 1:
+                        r = vid_hist.iloc[0]
+                        st.info(
+                            f"Only 1 data point so far ({r['capture_date'].date()}): "
+                            f"**{int(r['impressions']):,} impressions · {r['ctr_pct']:.2f}% CTR**. "
+                            f"Import more weekly exports to see the trend."
+                        )
+                    else:
+                        c1, c2 = st.columns(2)
+                        with c1:
+                            fig_ctr = px.line(
+                                vid_hist, x="capture_date", y="ctr_pct", markers=True,
+                                title="CTR % over time", labels={"ctr_pct": "CTR %", "capture_date": ""},
+                            )
+                            fig_ctr.add_hline(y=3, line_dash="dash", line_color="orange", annotation_text="3% floor")
+                            fig_ctr.add_hline(y=6, line_dash="dash", line_color="green", annotation_text="6% excellent")
+                            fig_ctr.update_layout(height=300, margin=dict(l=0, r=0, t=40, b=0),
+                                                  template="plotly_dark", paper_bgcolor="#0E1117", plot_bgcolor="#0E1117")
+                            st.plotly_chart(fig_ctr, use_container_width=True)
+                        with c2:
+                            fig_impr = px.line(
+                                vid_hist, x="capture_date", y="impressions", markers=True,
+                                title="Impressions over time", labels={"impressions": "Impressions", "capture_date": ""},
+                            )
+                            fig_impr.update_layout(height=300, margin=dict(l=0, r=0, t=40, b=0),
+                                                   template="plotly_dark", paper_bgcolor="#0E1117", plot_bgcolor="#0E1117")
+                            st.plotly_chart(fig_impr, use_container_width=True)
 
             # Traffic sources
             st.divider()
