@@ -8,7 +8,43 @@ Each video has the full production brief:
 - Thumbnail image prompt (Midjourney/DALL-E ready)
 - Thumbnail text overlay
 - Strategic bet + success criteria
+
+Status persistence:
+- Defaults live in the VIDEOS list below (the source of truth for new entries).
+- Runtime overrides are stored in data/queue_status.json so the dashboard can
+  mutate status without editing this file. Overrides win on read.
 """
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+STATUS_VALUES = ["not_started", "in_progress", "published"]
+_OVERRIDES_FILE = Path(__file__).parent / "data" / "queue_status.json"
+
+
+def _load_overrides() -> dict:
+    if not _OVERRIDES_FILE.exists():
+        return {}
+    try:
+        return json.loads(_OVERRIDES_FILE.read_text())
+    except Exception:
+        return {}
+
+
+def _save_overrides(overrides: dict) -> None:
+    _OVERRIDES_FILE.parent.mkdir(parents=True, exist_ok=True)
+    _OVERRIDES_FILE.write_text(json.dumps(overrides, indent=2, sort_keys=True))
+
+
+def set_video_status(video_id: str, status: str) -> None:
+    """Persist a status change for a single video. Idempotent."""
+    if status not in STATUS_VALUES:
+        raise ValueError(f"status must be one of {STATUS_VALUES}, got {status!r}")
+    overrides = _load_overrides()
+    overrides[video_id] = status
+    _save_overrides(overrides)
+
 
 VIDEOS = [
     {
@@ -320,8 +356,16 @@ Close your eyes and rest in the stillness — or simply let this play as you beg
 
 
 def get_all_videos():
-    """Return the production queue as a list."""
-    return VIDEOS
+    """Return the production queue with persisted status overrides applied."""
+    overrides = _load_overrides()
+    if not overrides:
+        return VIDEOS
+    merged = []
+    for v in VIDEOS:
+        if v["id"] in overrides:
+            v = {**v, "status": overrides[v["id"]]}
+        merged.append(v)
+    return merged
 
 
 def get_video_by_id(video_id: str):

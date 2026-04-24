@@ -10,7 +10,11 @@ import plotly.express as px
 import streamlit as st
 
 from auth import yt_data as _yt_data, yt_analytics as _yt_analytics, iso_date as _iso
-from production_queue import get_all_videos as get_production_queue
+from production_queue import (
+    get_all_videos as get_production_queue,
+    set_video_status,
+    STATUS_VALUES,
+)
 
 # -----------------------------------------------------------------------------
 # Config
@@ -1261,24 +1265,45 @@ with tab_queue:
 
     queue = get_production_queue()
 
-    # Summary table at top
+    # Summary table at top — Status column is an inline dropdown.
     st.markdown("### Overview")
+    st.caption("Edit the **Status** dropdown directly to mark videos as in progress or published. Changes save instantly to `data/queue_status.json`.")
+
     summary_rows = []
     for v in queue:
-        status_emoji = {
-            "not_started": "⚪",
-            "in_progress": "🟡",
-            "published": "🟢",
-        }.get(v["status"], "⚪")
         summary_rows.append({
             "ID": v["id"],
-            "Status": f"{status_emoji} {v['status'].replace('_', ' ').title()}",
+            "Status": v["status"],
             "Publish Date": v["publish_date"],
             "Title": v["title"][:60] + ("…" if len(v["title"]) > 60 else ""),
             "Length": v["length"],
             "Instrument": v["instrument"].split(" + ")[0],
         })
-    st.dataframe(pd.DataFrame(summary_rows), use_container_width=True, hide_index=True)
+    summary_df = pd.DataFrame(summary_rows)
+
+    edited_df = st.data_editor(
+        summary_df,
+        use_container_width=True,
+        hide_index=True,
+        disabled=["ID", "Publish Date", "Title", "Length", "Instrument"],
+        column_config={
+            "Status": st.column_config.SelectboxColumn(
+                "Status",
+                options=STATUS_VALUES,
+                required=True,
+            ),
+        },
+        key="queue_status_editor",
+    )
+
+    # Persist any status changes the user made in the editor.
+    changes = edited_df.merge(summary_df, on="ID", suffixes=("_new", "_old"))
+    changed = changes[changes["Status_new"] != changes["Status_old"]]
+    if not changed.empty:
+        for _, row in changed.iterrows():
+            set_video_status(row["ID"], row["Status_new"])
+        st.success(f"Updated status for {len(changed)} video(s).")
+        st.rerun()
 
     st.divider()
 
@@ -1360,4 +1385,4 @@ with tab_queue:
         st.caption(video["success_breakthrough"])
 
     st.divider()
-    st.caption("💡 Tip: Once you publish, update the status in `production_queue.py` from `not_started` → `in_progress` → `published`.")
+    st.caption("💡 Tip: Update status from the **Overview** dropdown above. To add a new video to the pipeline, append a dict to `VIDEOS` in `production_queue.py`.")
