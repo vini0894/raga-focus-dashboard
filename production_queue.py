@@ -14,33 +14,38 @@ Status persistence:
 - Runtime overrides are stored in data/queue_status.json so the dashboard can
   mutate status without editing this file. Overrides win on read.
 """
-from __future__ import annotations
-
 import json
-from pathlib import Path
+import os
 
 STATUS_VALUES = ["not_started", "in_progress", "published"]
-_OVERRIDES_FILE = Path(__file__).parent / "data" / "queue_status.json"
 
 
-def _load_overrides() -> dict:
-    if not _OVERRIDES_FILE.exists():
+def _overrides_path():
+    return os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "queue_status.json")
+
+
+def _load_overrides():
+    path = _overrides_path()
+    if not os.path.exists(path):
         return {}
     try:
-        return json.loads(_OVERRIDES_FILE.read_text())
+        with open(path, "r") as f:
+            return json.load(f)
     except Exception:
         return {}
 
 
-def _save_overrides(overrides: dict) -> None:
-    _OVERRIDES_FILE.parent.mkdir(parents=True, exist_ok=True)
-    _OVERRIDES_FILE.write_text(json.dumps(overrides, indent=2, sort_keys=True))
+def _save_overrides(overrides):
+    path = _overrides_path()
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w") as f:
+        json.dump(overrides, f, indent=2, sort_keys=True)
 
 
-def set_video_status(video_id: str, status: str) -> None:
+def set_video_status(video_id, status):
     """Persist a status change for a single video. Idempotent."""
     if status not in STATUS_VALUES:
-        raise ValueError(f"status must be one of {STATUS_VALUES}, got {status!r}")
+        raise ValueError("status must be one of %s, got %r" % (STATUS_VALUES, status))
     overrides = _load_overrides()
     overrides[video_id] = status
     _save_overrides(overrides)

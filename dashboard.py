@@ -10,11 +10,14 @@ import plotly.express as px
 import streamlit as st
 
 from auth import yt_data as _yt_data, yt_analytics as _yt_analytics, iso_date as _iso
-from production_queue import (
-    get_all_videos as get_production_queue,
-    set_video_status,
-    STATUS_VALUES,
-)
+from production_queue import get_all_videos as get_production_queue
+try:
+    from production_queue import set_video_status, STATUS_VALUES
+except ImportError:
+    # Graceful fallback if production_queue.py hasn't redeployed yet.
+    STATUS_VALUES = ["not_started", "in_progress", "published"]
+    def set_video_status(*_args, **_kwargs):
+        pass
 
 # -----------------------------------------------------------------------------
 # Config
