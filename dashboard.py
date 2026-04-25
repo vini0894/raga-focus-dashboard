@@ -336,6 +336,7 @@ def load_video_detail(video_id: str):
     # 28d analytics
     end = date.today() - timedelta(days=2)
     start = end - timedelta(days=28)
+    detail["analytics_error"] = None
     try:
         r = ya.reports().query(
             ids="channel==MINE",
@@ -344,10 +345,17 @@ def load_video_detail(video_id: str):
             filters=f"video=={video_id}",
         ).execute()
         cols = [h["name"] for h in r.get("columnHeaders", [])]
-        rows = r.get("rows") or [[0] * len(cols)]
-        detail["analytics_28d"] = dict(zip(cols, rows[0]))
-    except Exception:
+        rows = r.get("rows") or []
+        if rows:
+            detail["analytics_28d"] = dict(zip(cols, rows[0]))
+        else:
+            # API succeeded but returned no rows — common for very new
+            # videos or videos with zero activity in the window.
+            detail["analytics_28d"] = {}
+            detail["analytics_error"] = "no_rows"
+    except Exception as e:
         detail["analytics_28d"] = {}
+        detail["analytics_error"] = f"api_error: {type(e).__name__}: {e}"
 
     # Traffic sources
     try:
@@ -1104,6 +1112,18 @@ with tab_detail:
             # More metrics
             st.divider()
             st.markdown("**28-day analytics**")
+
+            # Surface analytics-fetch problems so zeros aren't ambiguous.
+            analytics_error = detail.get("analytics_error")
+            if analytics_error == "no_rows":
+                st.warning(
+                    "YouTube Analytics API returned no rows for this video in the last 28 days. "
+                    "Common causes: video is too new (under ~48h), or the OAuth token's active "
+                    "channel doesn't match this video's channel."
+                )
+            elif analytics_error and analytics_error.startswith("api_error"):
+                st.error(f"Analytics fetch failed: `{analytics_error}`")
+
             acol1, acol2, acol3, acol4 = st.columns(4)
             acol1.metric("Views (28d)", int(analytics.get("views", 0) or 0))
             watch_min_detail = int(analytics.get("estimatedMinutesWatched", 0) or 0)
