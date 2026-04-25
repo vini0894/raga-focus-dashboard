@@ -1268,6 +1268,15 @@ with tab_queue:
 
     queue = get_production_queue()
 
+    # Map between canonical status values and emoji-prefixed display labels
+    # used by the dropdown in the data_editor.
+    _STATUS_LABEL = {
+        "not_started": "⚪ Not started",
+        "in_progress": "🟡 In progress",
+        "published": "🟢 Published",
+    }
+    _LABEL_STATUS = {v: k for k, v in _STATUS_LABEL.items()}
+
     # Summary table at top — Status column is an inline dropdown.
     st.markdown("### Overview")
     st.caption("Edit the **Status** dropdown directly to mark videos as in progress or published. Changes save instantly to `data/queue_status.json`.")
@@ -1276,7 +1285,7 @@ with tab_queue:
     for v in queue:
         summary_rows.append({
             "ID": v["id"],
-            "Status": v["status"],
+            "Status": _STATUS_LABEL.get(v["status"], v["status"]),
             "Publish Date": v["publish_date"],
             "Title": v["title"][:60] + ("…" if len(v["title"]) > 60 else ""),
             "Length": v["length"],
@@ -1292,7 +1301,7 @@ with tab_queue:
         column_config={
             "Status": st.column_config.SelectboxColumn(
                 "Status",
-                options=STATUS_VALUES,
+                options=list(_STATUS_LABEL.values()),
                 required=True,
             ),
         },
@@ -1304,7 +1313,8 @@ with tab_queue:
     changed = changes[changes["Status_new"] != changes["Status_old"]]
     if not changed.empty:
         for _, row in changed.iterrows():
-            set_video_status(row["ID"], row["Status_new"])
+            new_status = _LABEL_STATUS.get(row["Status_new"], row["Status_new"])
+            set_video_status(row["ID"], new_status)
         st.success(f"Updated status for {len(changed)} video(s).")
         st.rerun()
 
