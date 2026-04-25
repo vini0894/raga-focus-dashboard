@@ -834,8 +834,9 @@ with tab_daily:
         cur_start = today - pd.Timedelta(days=lookback)
         prev_start = today - pd.Timedelta(days=lookback * 2)
         spark_start = today - pd.Timedelta(days=14)
-        # "Yesterday" = the most recent day with (mostly) complete API data.
-        yesterday_start = today - pd.Timedelta(days=1)
+        # "Latest day" = the most recent date with any reported data (works
+        # around the 24-48h API lag — naive "yesterday" often returns 0s).
+        latest_day = per_vid["day"].max() if not per_vid.empty else None
 
         # Aggregate per video: current-period views, prior-period views, sparkline, days since publish
         rows = []
@@ -843,7 +844,7 @@ with tab_daily:
             grp = grp.sort_values("day")
             cur = int(grp[grp["day"] >= cur_start]["views"].sum())
             prev = int(grp[(grp["day"] >= prev_start) & (grp["day"] < cur_start)]["views"].sum())
-            yday = int(grp[grp["day"] >= yesterday_start]["views"].sum())
+            yday = int(grp[grp["day"] == latest_day]["views"].sum()) if latest_day is not None else 0
             # Build a 14-day sparkline (zero-fill missing days so the line doesn't lie)
             spark = (
                 grp[grp["day"] >= spark_start]
@@ -882,14 +883,18 @@ with tab_daily:
         if table_df.empty:
             st.info(f"No videos earned views in the last {lookback} days.")
         else:
+            latest_label = (
+                f"Latest day ({latest_day.strftime('%b %d')})"
+                if latest_day is not None else "Latest day"
+            )
             st.dataframe(
                 table_df[display_cols],
                 width="stretch",
                 hide_index=True,
                 column_config={
                     "Yesterday": st.column_config.NumberColumn(
-                        "Yesterday", format="%d",
-                        help="Views earned in the last 1 day (most recent complete day per the YouTube API's 24-48h reporting lag).",
+                        latest_label, format="%d",
+                        help="Views on the most recent date with reported data. The YouTube Analytics API has a 24-48h lag, so this is usually 1-2 days behind today.",
                     ),
                     "Views": st.column_config.NumberColumn(f"Views (last {lookback}d)", format="%d"),
                     "Δ vs. prior": st.column_config.NumberColumn(
