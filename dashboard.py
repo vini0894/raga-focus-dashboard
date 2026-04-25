@@ -810,9 +810,9 @@ with tab_daily:
 
     lookback = st.selectbox(
         "Lookback window",
-        [7, 14, 28, 60],
-        index=0,
-        format_func=lambda x: f"Last {x} days",
+        [1, 3, 7, 14, 28, 60],
+        index=2,
+        format_func=lambda x: "Yesterday" if x == 1 else f"Last {x} days",
         key="daily_lookback",
     )
 
