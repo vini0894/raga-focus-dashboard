@@ -666,8 +666,8 @@ with st.sidebar:
     st.caption("Dashboard reads from YouTube API via the authenticated MCP server + REACH_DATA.md for manual reach captures.")
 
 # Tabs
-tab_overview, tab_daily, tab_videos, tab_detail, tab_competitors, tab_reach, tab_queue = st.tabs(
-    ["📊 Overview", "📈 Daily Views", "📺 Videos", "🔍 Video Detail", "⚔️ Competitors", "🎯 Reach Data", "🚀 Production Queue"]
+tab_overview, tab_daily, tab_videos, tab_detail, tab_competitors, tab_queue = st.tabs(
+    ["📊 Overview", "📈 Daily Views", "📺 Videos", "🔍 Video Detail", "⚔️ Competitors", "🚀 Production Queue"]
 )
 
 # -----------------------------------------------------------------------------
@@ -1400,48 +1400,6 @@ with tab_competitors:
         with st.spinner(f"Loading latest from {name}..."):
             latest = load_competitor_latest_videos(cid, limit=5)
         st.dataframe(latest, width="stretch", hide_index=True)
-
-# -----------------------------------------------------------------------------
-# Tab: Reach Data
-# -----------------------------------------------------------------------------
-with tab_reach:
-    st.subheader("Reach metrics (impressions + CTR)")
-    st.caption("Manually captured from YouTube Studio → Analytics → Reach tab. Updates when you edit REACH_DATA.md and refresh.")
-    reach = parse_reach_data()
-    if reach.empty:
-        st.warning("No reach data parsed from REACH_DATA.md. Check file format.")
-    else:
-        # Join with titles for readability
-        videos = load_all_my_videos()
-        titles = videos[["video_id", "title"]].rename(columns={"title": "Title"})
-        reach_display = reach.merge(titles, on="video_id", how="left")
-        reach_display = reach_display[["Title", "Impressions", "CTR", "Views (Reach)", "Unique Viewers"]]
-        st.dataframe(reach_display, width="stretch", hide_index=True)
-
-        st.divider()
-
-        # CTR parse for chart
-        def _ctr_to_float(v):
-            try:
-                return float(str(v).replace("%", "").replace("—", "nan").strip())
-            except Exception:
-                return float("nan")
-
-        reach_display["CTR_num"] = reach_display["CTR"].apply(_ctr_to_float)
-        chart_df = reach_display.dropna(subset=["CTR_num"]).sort_values("CTR_num", ascending=True)
-        if not chart_df.empty:
-            fig = px.bar(
-                chart_df,
-                x="CTR_num",
-                y="Title",
-                orientation="h",
-                title="CTR per video (%)  —  niche benchmark: 3–6%",
-                labels={"CTR_num": "CTR %", "Title": ""},
-            )
-            fig.add_vline(x=3, line_dash="dash", line_color="orange", annotation_text="3% floor")
-            fig.add_vline(x=6, line_dash="dash", line_color="green", annotation_text="6% excellent")
-            fig.update_layout(height=600, margin=dict(l=0, r=0, t=40, b=0))
-            st.plotly_chart(fig, width="stretch")
 
 # -----------------------------------------------------------------------------
 # Tab: Production Queue
