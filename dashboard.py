@@ -624,11 +624,18 @@ tab_overview, tab_daily, tab_videos, tab_detail, tab_competitors, tab_reach, tab
 with tab_overview:
     with st.spinner("Loading channel info..."):
         info = load_my_channel_info()
+        # The catalog (uploads playlist) refreshes faster than the
+        # channel-level statistics fields, which can lag by hours.
+        # Compute counts from the catalog so all tabs agree.
+        catalog = load_all_my_videos()
+
+    fresh_video_count = len(catalog) if not catalog.empty else info["video_count"]
+    fresh_total_views = int(catalog["views"].sum()) if not catalog.empty else info["total_views"]
 
     col1, col2, col3, col4 = st.columns(4)
     col1.metric("Subscribers", f"{info['subs']:,}")
-    col2.metric("Total Views", f"{info['total_views']:,}")
-    col3.metric("Videos Published", info["video_count"])
+    col2.metric("Total Views", f"{fresh_total_views:,}")
+    col3.metric("Videos Published", fresh_video_count)
     col4.metric("Channel Age", f"{(date.today() - pd.to_datetime(info['published']).date()).days} days")
 
     st.divider()
