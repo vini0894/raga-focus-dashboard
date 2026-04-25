@@ -805,97 +805,134 @@ with tab_overview:
 # Tab: Daily Views (historical per-video + channel totals)
 # -----------------------------------------------------------------------------
 with tab_daily:
-    st.subheader("📈 Daily views — historical")
-    st.caption("Day-by-day view counts. Per-video chart shows every video on the channel; channel chart shows total daily views. Analytics API has a 24-48h reporting lag, so the last 2 days may read low.")
+    st.subheader("📈 What's earning views right now")
+    st.caption("Per-video momentum view. Δ = absolute view count change vs. the prior equal-length period. Sparkline = last 14 days. Analytics API has a 24-48h lag, so today and yesterday may read low.")
 
     lookback = st.selectbox(
         "Lookback window",
-        [30, 90, 180, 365],
-        index=2,
+        [7, 14, 28, 60],
+        index=0,
         format_func=lambda x: f"Last {x} days",
         key="daily_lookback",
     )
 
-    with st.spinner(f"Loading {lookback} days of daily data..."):
-        per_vid = load_daily_views_all_videos(lookback)
-        channel_df = load_channel_overview(lookback)
+    # Load 2x lookback (for prior-period Δ) and at least 28 days (for 14d sparkline + comparison).
+    load_window = max(28, lookback * 2)
+    with st.spinner(f"Loading {load_window} days of daily data..."):
+        per_vid = load_daily_views_all_videos(load_window)
         all_vids = load_all_my_videos()
 
-    # --- Chart 1: per-video daily views
-    st.markdown("#### Per-video daily views")
     if per_vid.empty:
-        st.info("No per-video daily data available for this window.")
+        st.info("No per-video daily data available yet.")
     else:
-        titles = all_vids[["video_id", "title"]].rename(columns={"video_id": "video"})
-        per_vid = per_vid.merge(titles, on="video", how="left")
+        # Attach titles + publish dates
+        meta = all_vids[["video_id", "title", "published"]].rename(columns={"video_id": "video"})
+        per_vid = per_vid.merge(meta, on="video", how="left")
         per_vid["title"] = per_vid["title"].fillna(per_vid["video"])
-        per_vid["label"] = per_vid["title"].apply(lambda t: (t[:55] + "…") if len(t) > 55 else t)
 
-        # Filter by cumulative views so the chart doesn't drown in zero-line videos
-        totals = per_vid.groupby("label")["views"].sum().sort_values(ascending=False)
-        default_selection = totals.head(10).index.tolist()
-        all_labels = totals.index.tolist()
+        today = pd.Timestamp(date.today())
+        cur_start = today - pd.Timedelta(days=lookback)
+        prev_start = today - pd.Timedelta(days=lookback * 2)
+        spark_start = today - pd.Timedelta(days=14)
 
-        selected = st.multiselect(
-            f"Videos on chart (default: top 10 by total views in window, {len(all_labels)} total)",
-            options=all_labels,
-            default=default_selection,
-            key="daily_video_pick",
-        )
-
-        if selected:
-            plot_df = per_vid[per_vid["label"].isin(selected)]
-            fig = px.line(
-                plot_df.sort_values("day"),
-                x="day",
-                y="views",
-                color="label",
-                title=f"Daily views per video — last {lookback} days",
-                labels={"views": "Views", "day": "", "label": "Video"},
+        # Aggregate per video: current-period views, prior-period views, sparkline, days since publish
+        rows = []
+        for vid, grp in per_vid.groupby("video"):
+            grp = grp.sort_values("day")
+            cur = int(grp[grp["day"] >= cur_start]["views"].sum())
+            prev = int(grp[(grp["day"] >= prev_start) & (grp["day"] < cur_start)]["views"].sum())
+            # Build a 14-day sparkline (zero-fill missing days so the line doesn't lie)
+            spark = (
+                grp[grp["day"] >= spark_start]
+                .set_index("day")["views"]
+                .reindex(pd.date_range(spark_start, today - pd.Timedelta(days=1)), fill_value=0)
+                .tolist()
             )
-            fig.update_layout(
-                height=550,
-                margin=dict(l=0, r=0, t=40, b=0),
-                legend=dict(orientation="h", yanchor="top", y=-0.15, xanchor="left", x=0),
-                template="plotly_dark",
-                paper_bgcolor="#0E1117",
-                plot_bgcolor="#0E1117",
+            title = grp["title"].iloc[0]
+            published = grp["published"].iloc[0]
+            days_since_publish = (
+                (today.date() - pd.to_datetime(published).date()).days
+                if pd.notna(published) else None
             )
-            st.plotly_chart(fig, width="stretch")
+            rows.append({
+                "Title": (title[:55] + "…") if len(title) > 55 else title,
+                "video": vid,
+                "Views": cur,
+                "Δ vs. prior": cur - prev,
+                "Days since publish": days_since_publish,
+                "Trend (14d)": spark,
+            })
+
+        table_df = pd.DataFrame(rows)
+        # Drop dead videos (no views in window AND no prior views) — reduces noise
+        table_df = table_df[(table_df["Views"] > 0) | (table_df["Δ vs. prior"] != 0)]
+        table_df = table_df.sort_values("Views", ascending=False).reset_index(drop=True)
+
+        # --- Headline table
+        st.markdown("#### 🔥 Earning right now")
+        if table_df.empty:
+            st.info(f"No videos earned views in the last {lookback} days.")
         else:
-            st.info("Pick at least one video to plot.")
+            st.dataframe(
+                table_df[["Title", "Views", "Δ vs. prior", "Days since publish", "Trend (14d)"]],
+                width="stretch",
+                hide_index=True,
+                column_config={
+                    "Views": st.column_config.NumberColumn(f"Views (last {lookback}d)", format="%d"),
+                    "Δ vs. prior": st.column_config.NumberColumn(
+                        f"Δ vs. prior {lookback}d", format="%+d",
+                        help="Absolute change in views compared to the equivalent period before this one.",
+                    ),
+                    "Days since publish": st.column_config.NumberColumn("Days live", format="%d"),
+                    "Trend (14d)": st.column_config.LineChartColumn(
+                        "Trend (14d)", y_min=0,
+                        help="Daily views over the last 14 days.",
+                    ),
+                },
+            )
 
-    st.divider()
+        st.divider()
 
-    # --- Chart 2: channel-total daily views
-    st.markdown("#### Channel total daily views")
-    if channel_df.empty:
-        st.info("No channel data available for this window.")
-    else:
-        fig2 = px.line(
-            channel_df.sort_values("day"),
-            x="day",
-            y="views",
-            markers=True,
-            title=f"Channel total daily views — last {lookback} days",
-            labels={"views": "Views", "day": ""},
+        # --- Chart: per-video timeline, default to top 5 by current-window views
+        st.markdown("#### Daily timeline")
+        st.caption("Top 5 videos by current-window views are plotted by default. Add or remove videos as needed.")
+
+        plot_window = per_vid[per_vid["day"] >= cur_start].copy()
+        plot_window["label"] = plot_window["title"].apply(
+            lambda t: (t[:55] + "…") if len(t) > 55 else t
         )
-        fig2.update_layout(
-            height=400,
-            margin=dict(l=0, r=0, t=40, b=0),
-            template="plotly_dark",
-            paper_bgcolor="#0E1117",
-            plot_bgcolor="#0E1117",
-        )
-        st.plotly_chart(fig2, width="stretch")
+        totals = plot_window.groupby("label")["views"].sum().sort_values(ascending=False)
+        if totals.empty:
+            st.info("Nothing to plot for this window.")
+        else:
+            default_selection = totals.head(5).index.tolist()
+            all_labels = totals.index.tolist()
 
-        # Quick totals
-        total_views = int(channel_df["views"].sum())
-        peak_row = channel_df.loc[channel_df["views"].idxmax()]
-        c1, c2, c3 = st.columns(3)
-        c1.metric(f"Total views ({lookback}d)", f"{total_views:,}")
-        c2.metric("Peak day", peak_row["day"].strftime("%Y-%m-%d"))
-        c3.metric("Peak-day views", f"{int(peak_row['views']):,}")
+            selected = st.multiselect(
+                f"Videos on chart ({len(all_labels)} earned views in window)",
+                options=all_labels,
+                default=default_selection,
+                key="daily_video_pick",
+            )
+
+            if selected:
+                fig = px.line(
+                    plot_window[plot_window["label"].isin(selected)].sort_values("day"),
+                    x="day", y="views", color="label",
+                    title=f"Daily views — last {lookback} days",
+                    labels={"views": "Views", "day": "", "label": "Video"},
+                )
+                fig.update_layout(
+                    height=450,
+                    margin=dict(l=0, r=0, t=40, b=0),
+                    legend=dict(orientation="h", yanchor="top", y=-0.15, xanchor="left", x=0),
+                    template="plotly_dark",
+                    paper_bgcolor="#0E1117",
+                    plot_bgcolor="#0E1117",
+                )
+                st.plotly_chart(fig, width="stretch")
+            else:
+                st.info("Pick at least one video to plot.")
 
 
 # -----------------------------------------------------------------------------
