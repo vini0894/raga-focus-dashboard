@@ -133,6 +133,50 @@ def load_my_channel_info():
 
 
 @st.cache_data(ttl=600)
+def load_channel_period_summary(days: int = 28):
+    """One-row period totals (no day dimension) — for proper period-level
+    retention which can't be derived by averaging daily averageViewPercentage."""
+    end = date.today() - timedelta(days=1)
+    start = end - timedelta(days=days - 1)
+    r = (
+        _yt_analytics()
+        .reports()
+        .query(
+            ids="channel==MINE",
+            startDate=_iso(start),
+            endDate=_iso(end),
+            metrics="views,averageViewPercentage,subscribersGained,subscribersLost",
+        )
+        .execute()
+    )
+    cols = [h["name"] for h in r.get("columnHeaders", [])]
+    rows = r.get("rows") or [[0] * len(cols)]
+    return dict(zip(cols, rows[0]))
+
+
+@st.cache_data(ttl=600)
+def load_channel_traffic_sources(days: int = 28):
+    """Channel-wide traffic source breakdown for the period."""
+    end = date.today() - timedelta(days=1)
+    start = end - timedelta(days=days - 1)
+    r = (
+        _yt_analytics()
+        .reports()
+        .query(
+            ids="channel==MINE",
+            startDate=_iso(start),
+            endDate=_iso(end),
+            metrics="views",
+            dimensions="insightTrafficSourceType",
+            sort="-views",
+        )
+        .execute()
+    )
+    cols = [h["name"] for h in r.get("columnHeaders", [])]
+    return pd.DataFrame(r.get("rows", []), columns=cols)
+
+
+@st.cache_data(ttl=600)
 def load_channel_overview(days: int = 28):
     end = date.today() - timedelta(days=1)
     start = end - timedelta(days=days - 1)
@@ -650,6 +694,8 @@ with tab_overview:
 
     with st.spinner(f"Loading last {period} days..."):
         df = load_channel_overview(period)
+        period_summary = load_channel_period_summary(period)
+        traffic_sources = load_channel_traffic_sources(period)
 
     if df.empty:
         st.info("No analytics data yet for this period.")
@@ -661,6 +707,56 @@ with tab_overview:
         sub_col2.metric(f"Watch time ({period}d)", format_minutes_to_hours(total_watch_min))
         sub_col3.metric(f"Subs gained ({period}d)", int(df["subscribersGained"].sum()))
         sub_col4.metric(f"Avg view duration", f"{avg_dur_sec / 60:.1f} min")
+
+        # Second row — channel-health metrics from API.
+        retention_pct = float(period_summary.get("averageViewPercentage", 0) or 0)
+
+        TRAFFIC_LABELS = {
+            "YT_SEARCH": "🔍 YouTube Search",
+            "BROWSE": "🏠 Browse feed",
+            "RELATED_VIDEO": "▶️ Suggested",
+            "SUBSCRIBER": "🔔 Subscriber feed",
+            "NO_LINK_OTHER": "↪️ Direct / other",
+            "EXT_URL": "🌐 External",
+            "YT_CHANNEL": "📺 Channel page",
+            "YT_OTHER_PAGE": "📄 Other YT page",
+            "PLAYLIST": "📋 Playlist",
+            "END_SCREEN": "🎬 End screen",
+            "NOTIFICATION": "🔔 Notification",
+            "SHORTS": "📱 Shorts feed",
+        }
+
+        if not traffic_sources.empty:
+            top_row = traffic_sources.iloc[0]
+            top_source_raw = top_row["insightTrafficSourceType"]
+            top_source = TRAFFIC_LABELS.get(top_source_raw, top_source_raw)
+            top_source_views = int(top_row["views"])
+            total_source_views = int(traffic_sources["views"].sum())
+            top_pct = (top_source_views / total_source_views * 100) if total_source_views else 0
+            top_source_display = f"{top_source}"
+            top_source_help = f"{top_pct:.0f}% of views ({top_source_views:,} of {total_source_views:,}) came from this source over the last {period} days."
+        else:
+            top_source_display = "—"
+            top_source_help = "No traffic source data yet."
+            top_pct = 0
+
+        h_col1, h_col2 = st.columns(2)
+        h_col1.metric(
+            f"Retention ({period}d)",
+            f"{retention_pct:.1f}%",
+            help=(
+                "Channel-wide average view percentage — how much of each video the average viewer watches. "
+                "Niche benchmark for long-form meditation/focus music: 15-25% healthy, 30%+ excellent. "
+                "Below 10% = title/thumbnail attracting wrong audience."
+            ),
+        )
+        h_col2.metric(
+            f"Top traffic source ({period}d)",
+            top_source_display,
+            delta=f"{top_pct:.0f}% of views" if top_pct else None,
+            delta_color="off",
+            help=top_source_help,
+        )
 
         fig = px.line(
             df, x="day", y="views",
