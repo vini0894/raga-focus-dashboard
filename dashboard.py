@@ -834,6 +834,8 @@ with tab_daily:
         cur_start = today - pd.Timedelta(days=lookback)
         prev_start = today - pd.Timedelta(days=lookback * 2)
         spark_start = today - pd.Timedelta(days=14)
+        # "Yesterday" = the most recent day with (mostly) complete API data.
+        yesterday_start = today - pd.Timedelta(days=1)
 
         # Aggregate per video: current-period views, prior-period views, sparkline, days since publish
         rows = []
@@ -841,6 +843,7 @@ with tab_daily:
             grp = grp.sort_values("day")
             cur = int(grp[grp["day"] >= cur_start]["views"].sum())
             prev = int(grp[(grp["day"] >= prev_start) & (grp["day"] < cur_start)]["views"].sum())
+            yday = int(grp[grp["day"] >= yesterday_start]["views"].sum())
             # Build a 14-day sparkline (zero-fill missing days so the line doesn't lie)
             spark = (
                 grp[grp["day"] >= spark_start]
@@ -857,6 +860,7 @@ with tab_daily:
             rows.append({
                 "Title": (title[:55] + "…") if len(title) > 55 else title,
                 "video": vid,
+                "Yesterday": yday,
                 "Views": cur,
                 "Δ vs. prior": cur - prev,
                 "Days since publish": days_since_publish,
@@ -868,16 +872,25 @@ with tab_daily:
         table_df = table_df[(table_df["Views"] > 0) | (table_df["Δ vs. prior"] != 0)]
         table_df = table_df.sort_values("Views", ascending=False).reset_index(drop=True)
 
+        # Hide the redundant "Yesterday" column when the lookback already IS 1 day.
+        display_cols = ["Title", "Yesterday", "Views", "Δ vs. prior", "Days since publish", "Trend (14d)"]
+        if lookback == 1:
+            display_cols.remove("Yesterday")
+
         # --- Headline table
         st.markdown("#### 🔥 Earning right now")
         if table_df.empty:
             st.info(f"No videos earned views in the last {lookback} days.")
         else:
             st.dataframe(
-                table_df[["Title", "Views", "Δ vs. prior", "Days since publish", "Trend (14d)"]],
+                table_df[display_cols],
                 width="stretch",
                 hide_index=True,
                 column_config={
+                    "Yesterday": st.column_config.NumberColumn(
+                        "Yesterday", format="%d",
+                        help="Views earned in the last 1 day (most recent complete day per the YouTube API's 24-48h reporting lag).",
+                    ),
                     "Views": st.column_config.NumberColumn(f"Views (last {lookback}d)", format="%d"),
                     "Δ vs. prior": st.column_config.NumberColumn(
                         f"Δ vs. prior {lookback}d", format="%+d",
