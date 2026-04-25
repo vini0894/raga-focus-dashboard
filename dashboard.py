@@ -653,7 +653,7 @@ with tab_overview:
             markers=True,
         )
         fig.update_layout(height=300, margin=dict(l=0, r=0, t=40, b=0), template="plotly_dark", paper_bgcolor="#0E1117", plot_bgcolor="#0E1117")
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
 
         # Convert watch minutes to hours for the chart
         df_chart = df.copy()
@@ -664,7 +664,7 @@ with tab_overview:
             labels={"watch_hours": "Hours watched", "day": ""},
         )
         fig2.update_layout(height=300, margin=dict(l=0, r=0, t=40, b=0))
-        st.plotly_chart(fig2, use_container_width=True)
+        st.plotly_chart(fig2, width="stretch")
 
     # -------------------------------------------------------------------------
     # CTR Health Panel (reads REACH_HISTORY.csv — latest capture per video)
@@ -744,7 +744,7 @@ with tab_overview:
             })
             top5["CTR %"] = top5["CTR %"].apply(lambda x: f"{x:.2f}%")
             top5["Impressions"] = top5["Impressions"].apply(lambda x: f"{int(x):,}")
-            st.dataframe(top5, use_container_width=True, hide_index=True)
+            st.dataframe(top5, width="stretch", hide_index=True)
 
         with col_bot:
             st.markdown("**🔴 Bottom 5 CTR — thumbnail/title rewrite candidates**")
@@ -756,7 +756,7 @@ with tab_overview:
             })
             bot5["CTR %"] = bot5["CTR %"].apply(lambda x: f"{x:.2f}%")
             bot5["Impressions"] = bot5["Impressions"].apply(lambda x: f"{int(x):,}")
-            st.dataframe(bot5, use_container_width=True, hide_index=True)
+            st.dataframe(bot5, width="stretch", hide_index=True)
 
         # CTR bar chart — all reliable videos, colored by status
         st.markdown("**CTR per video (impressions ≥300)**")
@@ -786,7 +786,7 @@ with tab_overview:
             plot_bgcolor="#0E1117",
             legend=dict(orientation="h", yanchor="top", y=-0.1, xanchor="left", x=0),
         )
-        st.plotly_chart(fig_ctr, use_container_width=True)
+        st.plotly_chart(fig_ctr, width="stretch")
 
         # Noisy videos — too few impressions to judge
         if not noisy.empty:
@@ -799,7 +799,7 @@ with tab_overview:
                 })
                 noisy_show["CTR %"] = noisy_show["CTR %"].apply(lambda x: f"{x:.2f}%")
                 noisy_show = noisy_show.sort_values("Impressions", ascending=False)
-                st.dataframe(noisy_show, use_container_width=True, hide_index=True)
+                st.dataframe(noisy_show, width="stretch", hide_index=True)
 
 # -----------------------------------------------------------------------------
 # Tab: Daily Views (historical per-video + channel totals)
@@ -861,7 +861,7 @@ with tab_daily:
                 paper_bgcolor="#0E1117",
                 plot_bgcolor="#0E1117",
             )
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width="stretch")
         else:
             st.info("Pick at least one video to plot.")
 
@@ -887,7 +887,7 @@ with tab_daily:
             paper_bgcolor="#0E1117",
             plot_bgcolor="#0E1117",
         )
-        st.plotly_chart(fig2, use_container_width=True)
+        st.plotly_chart(fig2, width="stretch")
 
         # Quick totals
         total_views = int(channel_df["views"].sum())
@@ -962,7 +962,7 @@ with tab_videos:
 
     st.dataframe(
         df_display,
-        use_container_width=True,
+        width="stretch",
         height=600,
         hide_index=True,
     )
@@ -977,13 +977,13 @@ with tab_videos:
         if "Retention %" in df_display.columns:
             top_retention = df_display.nlargest(5, "Retention %")[["Title", "Retention %", "Lifetime Views"]]
             st.markdown("**Highest retention (28d)**")
-            st.dataframe(top_retention, use_container_width=True, hide_index=True)
+            st.dataframe(top_retention, width="stretch", hide_index=True)
 
     with col2:
         if "Subs Gained (28d)" in df_display.columns:
             top_subs = df_display.nlargest(5, "Subs Gained (28d)")[["Title", "Subs Gained (28d)", "Lifetime Views"]]
             st.markdown("**Most subs gained (28d)**")
-            st.dataframe(top_subs, use_container_width=True, hide_index=True)
+            st.dataframe(top_subs, width="stretch", hide_index=True)
 
 # -----------------------------------------------------------------------------
 # Tab: Video Detail
@@ -1078,7 +1078,7 @@ with tab_detail:
                             fig_ctr.add_hline(y=6, line_dash="dash", line_color="green", annotation_text="6% excellent")
                             fig_ctr.update_layout(height=300, margin=dict(l=0, r=0, t=40, b=0),
                                                   template="plotly_dark", paper_bgcolor="#0E1117", plot_bgcolor="#0E1117")
-                            st.plotly_chart(fig_ctr, use_container_width=True)
+                            st.plotly_chart(fig_ctr, width="stretch")
                         with c2:
                             fig_impr = px.line(
                                 vid_hist, x="capture_date", y="impressions", markers=True,
@@ -1086,7 +1086,7 @@ with tab_detail:
                             )
                             fig_impr.update_layout(height=300, margin=dict(l=0, r=0, t=40, b=0),
                                                    template="plotly_dark", paper_bgcolor="#0E1117", plot_bgcolor="#0E1117")
-                            st.plotly_chart(fig_impr, use_container_width=True)
+                            st.plotly_chart(fig_impr, width="stretch")
 
             # Traffic sources
             st.divider()
@@ -1116,7 +1116,7 @@ with tab_detail:
                         "insightTrafficSourceType": "Source",
                         "views": "Views",
                     }),
-                    use_container_width=True,
+                    width="stretch",
                     hide_index=True,
                 )
             else:
@@ -1137,15 +1137,21 @@ with tab_detail:
                     display_cols.append("volume")
                 if "notes" in kw_df.columns:
                     display_cols.append("notes")
+                kw_display = kw_df[display_cols].rename(columns={
+                    "keyword": "Keyword",
+                    "verdict": "Verdict",
+                    "score": "VidIQ Score",
+                    "volume": "Volume",
+                    "notes": "Notes",
+                })
+                # Keep numeric columns numeric (NaN-safe) so PyArrow can serialize.
+                if "Volume" in kw_display.columns:
+                    kw_display["Volume"] = pd.to_numeric(kw_display["Volume"], errors="coerce").astype("Int64")
+                if "Notes" in kw_display.columns:
+                    kw_display["Notes"] = kw_display["Notes"].fillna("")
                 st.dataframe(
-                    kw_df[display_cols].rename(columns={
-                        "keyword": "Keyword",
-                        "verdict": "Verdict",
-                        "score": "VidIQ Score",
-                        "volume": "Volume",
-                        "notes": "Notes",
-                    }).fillna(""),
-                    use_container_width=True,
+                    kw_display,
+                    width="stretch",
                     hide_index=True,
                 )
 
@@ -1206,7 +1212,7 @@ with tab_competitors:
     combined["Subs / day"] = (combined["Subscribers"] / combined["Days Alive"]).round(1)
     combined["Views / day"] = (combined["Total Views"] / combined["Days Alive"]).round(0).astype(int)
 
-    st.dataframe(combined, use_container_width=True, hide_index=True)
+    st.dataframe(combined, width="stretch", hide_index=True)
 
     st.divider()
     st.subheader("What they've been shipping (latest 5 uploads)")
@@ -1215,7 +1221,7 @@ with tab_competitors:
         st.markdown(f"### {name}")
         with st.spinner(f"Loading latest from {name}..."):
             latest = load_competitor_latest_videos(cid, limit=5)
-        st.dataframe(latest, use_container_width=True, hide_index=True)
+        st.dataframe(latest, width="stretch", hide_index=True)
 
 # -----------------------------------------------------------------------------
 # Tab: Reach Data
@@ -1232,7 +1238,7 @@ with tab_reach:
         titles = videos[["video_id", "title"]].rename(columns={"title": "Title"})
         reach_display = reach.merge(titles, on="video_id", how="left")
         reach_display = reach_display[["Title", "Impressions", "CTR", "Views (Reach)", "Unique Viewers"]]
-        st.dataframe(reach_display, use_container_width=True, hide_index=True)
+        st.dataframe(reach_display, width="stretch", hide_index=True)
 
         st.divider()
 
@@ -1257,7 +1263,7 @@ with tab_reach:
             fig.add_vline(x=3, line_dash="dash", line_color="orange", annotation_text="3% floor")
             fig.add_vline(x=6, line_dash="dash", line_color="green", annotation_text="6% excellent")
             fig.update_layout(height=600, margin=dict(l=0, r=0, t=40, b=0))
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width="stretch")
 
 # -----------------------------------------------------------------------------
 # Tab: Production Queue
@@ -1295,7 +1301,7 @@ with tab_queue:
 
     edited_df = st.data_editor(
         summary_df,
-        use_container_width=True,
+        width="stretch",
         hide_index=True,
         disabled=["ID", "Publish Date", "Title", "Length", "Instrument"],
         column_config={
