@@ -1,0 +1,134 @@
+phrase,slot,vidiq_score,vidiq_comp,source,first_added,last_score_check
+stress relief music,problem,77,Low,KEYWORD_DATA.md migration (Meditation Relax Music (2.78M,2026-04-25,2026-04-25
+sleep music,problem,75,Medium,KEYWORD_DATA.md migration (Soothing Relaxation,2026-04-25,2026-04-25
+acoustic guitar instrumental,problem,71,Low,KEYWORD_DATA.md migration (Ryini Beats,2026-04-25,2026-04-25
+adhd focus music,problem,70,Medium,KEYWORD_DATA.md migration (ADHD Focus Club,2026-04-25,2026-04-25
+anxiety relief music,problem,70,Low,KEYWORD_DATA.md migration (Meditation Relax Music,2026-04-25,2026-04-25
+brain fog,problem,70,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
+clearly,problem,70,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
+instrumental music relaxing,problem,70,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
+relaxing instrumental music,problem,70,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
+think clearly,problem,70,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
+deep relaxation music,problem,68,Low,KEYWORD_DATA.md migration (Soothing Relaxation (12M,2026-04-25,2026-04-25
+morning focus,problem,67,Low,KEYWORD_DATA.md migration (SleepTube,2026-04-25,2026-04-25
+nervous system reset,problem,66,Medium,KEYWORD_DATA.md migration (Malte Marten,2026-04-25,2026-04-25
+deep calm,problem,65,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
+deep calm music,problem,65,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
+meditation for anxiety,problem,65,Medium,KEYWORD_DATA.md migration (Priory (35.6K,2026-04-25,2026-04-25
+digital detox,problem,64,Medium,KEYWORD_DATA.md migration (Bupa Health (115K,2026-04-25,2026-04-25
+morning acoustic guitar,problem,64,Low,KEYWORD_DATA.md migration (dwaler,2026-04-25,2026-04-25
+calming,problem,63,Medium,KEYWORD_DATA.md migration (Relaxing Calming Music (429K,2026-04-25,2026-04-25
+deep rest music,problem,63,Low,KEYWORD_DATA.md migration (SleepTube (1.06M,2026-04-25,2026-04-25
+overthinking music,problem,63,Low,KEYWORD_DATA.md migration (Deep Breath - Relaxing Music,2026-04-25,2026-04-25
+unwind music,problem,63,Low,KEYWORD_DATA.md migration (Strumm Sound (2.01M,2026-04-25,2026-04-25
+restless mind,problem,62,Low,KEYWORD_DATA.md migration (various,2026-04-25,2026-04-25
+acoustic guitar sleep music,problem,61,Low,KEYWORD_DATA.md migration (Mindful Melodies,2026-04-25,2026-04-25
+warm acoustic guitar,problem,61,Low,KEYWORD_DATA.md migration (Thomann's Guitars,2026-04-25,2026-04-25
+adhd brain fog,problem,60,Low,KEYWORD_DATA.md migration (Psych2Go,2026-04-25,2026-04-25
+deep meditation,problem,60,Medium,KEYWORD_DATA.md migration (The Honest Guys (1.28M,2026-04-25,2026-04-25
+dopamine reset,problem,,,config.py,2026-04-25,
+emotional overwhelm,problem,,,config.py,2026-04-25,
+heavy heart music,problem,,,config.py,2026-04-25,
+racing thoughts music,problem,,,config.py,2026-04-25,
+sunday anxiety,problem,,,config.py,2026-04-25,
+vagus nerve music,problem,,,config.py,2026-04-25,
+yaman,raga,63,Low,KEYWORD_DATA.md migration (darbarfestival,2026-04-25,2026-04-25
+bhupali,raga,57,Med,"chat-2026-04-25 vidiq paste (57 MED, usable for descriptor slot)",2026-04-25,2026-04-25
+bhairavi,raga,,,config.py,2026-04-25,
+bhimpalasi,raga,,,config.py,2026-04-25,
+bilawal,raga,,,config.py,2026-04-25,
+chandra,raga,,,config.py,2026-04-25,
+darbari,raga,,,config.py,2026-04-25,
+hamir,raga,,,config.py,2026-04-25,
+kafi,raga,,,config.py,2026-04-25,
+malkauns,raga,,,config.py,2026-04-25,
+puriya,raga,,,config.py,2026-04-25,
+todi,raga,,,config.py,2026-04-25,
+432hz,hz,74,Low,config.py,2026-04-25,2026-04-25
+40hz,hz,70,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+174hz,hz,62,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
+528hz,hz,55,Med,config.py,2026-04-25,2026-04-25
+639hz,hz,,,config.py,2026-04-25,
+741hz,hz,,,config.py,2026-04-25,
+963hz,hz,,,config.py,2026-04-25,
+tanpura,instrument,74,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+sitar,instrument,72,Low,config.py,2026-04-25,2026-04-25
+sarangi,instrument,67,Very Low,config.py,2026-04-25,2026-04-25
+bansuri,instrument,66,Very Low,config.py,2026-04-25,2026-04-25
+tabla,instrument,65,Low,KEYWORD_DATA.md migration (Meditative Mind,2026-04-25,2026-04-25
+dilruba,instrument,63,Low,config.py,2026-04-25,2026-04-25
+esraj,instrument,,,config.py,2026-04-25,
+santoor,instrument,,,config.py,2026-04-25,
+sarod,instrument,,,config.py,2026-04-25,
+veena,instrument,,,config.py,2026-04-25,
+binaural,wave,71,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+delta,wave,64,Medium,KEYWORD_DATA.md migration (MeditationRelaxClub,2026-04-25,2026-04-25
+theta,wave,61,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
+alpha,wave,,,config.py,2026-04-25,
+coding music,tag,83,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+lofi music,tag,83,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+focus music,tag,82,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+study music,tag,82,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+ambient music,tag,81,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+background music,tag,80,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+cozy music,tag,77,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+pomodoro music,tag,77,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+concentration music,tag,76,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+cottagecore music,tag,76,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+background music for work,tag,75,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+deep work music,tag,75,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+productivity music,tag,75,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+calm music,tag,74,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+acoustic guitar,tag,73,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+deep focus,tag,73,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+journaling music,tag,73,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+motivation music,tag,72,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+reading music,tag,72,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+relaxing music,tag,72,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+morning music,tag,71,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+night music,tag,71,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+1 hour focus music,tag,70,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+adhd focus music,tag,70,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+morning energy music,tag,70,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+chill acoustic,tag,69,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+coffee shop music,tag,69,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+focus music no lyrics,tag,69,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+rainy day music,tag,69,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+cabin music,tag,68,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+deep work,tag,68,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+energizing work music,tag,68,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+mellow music,tag,68,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+evening music,tag,67,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+fingerstyle guitar,tag,67,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+instrumental focus music,tag,67,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+music for writing,tag,67,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+work music no lyrics,tag,67,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+soft acoustic guitar,tag,66,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+soft instrumental music,tag,66,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+indian percussion,tag,65,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+mellow acoustic guitar,tag,65,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+snowy night music,tag,65,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+background music for reading,tag,64,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+chill instrumental,tag,64,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+flow state,tag,64,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+focus music instrumental,tag,64,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+gamma binaural beats,tag,64,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+slow living music,tag,64,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+cozy guitar,tag,63,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+fingerstyle instrumental,tag,63,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+gamma waves music,tag,63,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+cozy acoustic guitar,tag,62,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+acoustic guitar meditation,tag,61,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+indian rhythm,tag,61,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+instrumental music for reading,tag,61,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+morning focus music,tag,61,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+morning motivation music,tag,61,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+high energy study music,tag,60,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+morning productivity music,tag,60,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+7.83hz,hz,58,Medium,manual-VidIQ-paste,2026-04-26,2026-04-26
+calm your mind,problem,68,Medium,manual-VidIQ-paste,2026-04-26,2026-04-26
+healing music,tag,75,,manual-VidIQ-paste,2026-04-26,2026-04-26
+feeling lost in life,problem,64,Medium,manual-VidIQ-paste,2026-04-26,2026-04-26
+lost in life,problem,61,Medium,manual-VidIQ-paste,2026-04-26,2026-04-26
+calming music,tag,72,Medium,manual-VidIQ-paste,2026-04-26,2026-04-26
+schumann resonance,hz,61,Medium,manual-VidIQ-paste,2026-04-26,2026-04-26

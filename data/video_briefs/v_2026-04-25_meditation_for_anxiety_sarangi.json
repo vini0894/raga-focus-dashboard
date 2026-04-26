@@ -1,0 +1,133 @@
+{
+  "id": "v_2026-04-25_meditation_for_anxiety_sarangi",
+  "status": "DRAFT",
+  "created_at": "2026-04-25T12:49:00.216915",
+  "title": "Meditation for Anxiety | 174Hz Sarangi Raga Bhairavi | Alpha Wave Calm Session | 1 Hour",
+  "title_variants": {
+    "A_seo": "Meditation for Anxiety | 174Hz Sarangi Raga Bhairavi | Alpha Wave Calm Session | 1 Hour",
+    "B_question": "Morning Anxiety? | 174Hz Sarangi Raga Bhairavi | Alpha Wave Calm Session | 1 Hour",
+    "C_outcome": "Release Anxiety | 174Hz Sarangi Raga Bhairavi | Alpha Wave Calm Session | 1 Hour"
+  },
+  "title_history": [
+    {
+      "v": 1,
+      "title": "Meditation for Anxiety | 174Hz Sarangi Raga Bhairavi | Alpha Wave Calm Session | 1 Hour",
+      "by": "pipeline.generate_ideas"
+    },
+    {
+      "v": 2,
+      "title": "Meditation for Anxiety | 174Hz Sarangi Raga Bhairavi | Alpha Wave Calm Session | 1 Hour",
+      "by": "regenerate (status=locked-no-scores)",
+      "swaps": []
+    }
+  ],
+  "components": {
+    "problem": "meditation for anxiety",
+    "instrument": "Sarangi",
+    "raga": "Bhairavi",
+    "hz": "174Hz",
+    "wave": "Alpha"
+  },
+  "instrument": "Sarangi + tanpura drone",
+  "hz": "174Hz + 10.0Hz Alpha binaural",
+  "length": "1 hour",
+  "publish_date": "2026-04-25",
+  "publish_time": "8:30 PM IST",
+  "validated_keywords": [],
+  "description": "When anxiety rises, your nervous system needs grounding more than reasoning. This is grounding.\n\nOne unbroken hour of bowed sarangi (vocal-like Indian string instrument) playing Raga Bhairavi, tuned to 174Hz healing frequency, with a subliminal Alpha wave layer for nervous system grounding.\n\nNo mid-roll ads. No interruptions. Just music.\n\n\u23f1 Best for:\n\u2022 Anxiety relief\n\u2022 Nervous system grounding\n\u2022 Pre-sleep calm\n\u2022 Panic prevention",
+  "tags": "meditation for anxiety, sarangi, sarangi music, sarangi meditation, bowed indian instrument, 174Hz music, 174Hz, Alpha waves, Alpha wave music, raga bhairavi, bhairavi raga, calm music, relaxing music, ambient music, background music, meditation music, indian classical music, instrumental music, anxiety relief music, stress relief music, anxiety music, panic relief music, music for anxiety, 1 hour sarangi music, sarangi for anxiety, indian classical sarangi, alpha wave meditation, raga focus",
+  "suno_prompt": "Raga Bhairavi sarangi, anxiety relief, ambient Indian classical, tanpura drone, vocal-like phrases with long bow sustains, expressive meend slides, gamak vibrato, 65 BPM, alpha wave undercurrent, no percussion, no rhythm, calm and grounding, warm low-frequency hum, seamless loop, instrumental only, solo sarangi with tanpura, early morning mood, deeply calming, no abrupt changes",
+  "thumbnail_prompt": "[TODO: thumbnail image prompt \u2014 calibration pending] problem=meditation for anxiety, instrument=Sarangi, raga=Bhairavi, wave=Alpha",
+  "thumbnail_text_main": "ANXIOUS?",
+  "thumbnail_text_secondary": "Sarangi \u00b7 174Hz",
+  "thumbnail_text_variants": [
+    "ANXIOUS?",
+    "CALM ANXIETY",
+    "ANXIOUS MIND"
+  ],
+  "production_spec": {
+    "suno_prompt": "Raga Bhairavi sarangi, anxiety relief, ambient Indian classical, tanpura drone, vocal-like phrases with long bow sustains, expressive meend slides, gamak vibrato, 65 BPM, alpha wave undercurrent, no percussion, no rhythm, calm and grounding, warm low-frequency hum, seamless loop, instrumental only, solo sarangi with tanpura, early morning mood, deeply calming, no abrupt changes",
+    "suno_strategy": "Custom mode \u2192 paste prompt \u2192 style: Ambient \u2192 generate 2 songs \u2192 pick better \u2192 click Extend 3-4\u00d7 to reach ~10-12 min. Generate a second seed with same prompt \u2192 extend \u2192 ~10 min. Total: ~20 min source. Loop in post to fill 60 min.",
+    "suno_critical_tips": [
+      "Use Custom mode (not simple) so the full prompt is honored",
+      "Style: Ambient (best for raga + drone combos)",
+      "Generate 6-8 versions, use only the best 2-3",
+      "Use 'Extend' for continuity across the source",
+      "If Suno adds vocals despite prompt: regenerate (don't add 'no vocals' \u2014 it sometimes triggers them)"
+    ],
+    "duration_target_sec": 3600,
+    "binaural": {
+      "base_hz": 174,
+      "wave_hz": 10.0,
+      "left_hz": 174,
+      "right_hz": 184.0,
+      "level_db": -18,
+      "command": "python3 tools/binaural_generator.py --base 174 --beat 10.0 --duration 3600 --output binaural.wav"
+    },
+    "drone": {
+      "instrument": "Tanpura tuned to root of Raga Bhairavi",
+      "level_db": -24
+    },
+    "mix_levels_db": {
+      "suno_layer": -3,
+      "binaural_layer": -18,
+      "drone_layer": -24
+    },
+    "fades": {
+      "in_sec": 10,
+      "out_sec": 30
+    },
+    "master_lufs": -14,
+    "output": "MP4 1920\u00d71080, AAC 320kbps, 48kHz, single thumbnail image, +faststart",
+    "merge_pattern": "ffmpeg -y -loop 1 -i thumbnail.png -i final_audio.wav -c:v libx264 -tune stillimage -preset medium -c:a aac -b:a 320k -ar 48000 -pix_fmt yuv420p -t 3600 -movflags +faststart output.mp4"
+  },
+  "regen_result": {
+    "status": "locked-no-scores",
+    "title": "Meditation for Anxiety | 174Hz Sarangi Raga Bhairavi | Alpha Wave Calm Session | 1 Hour",
+    "components": {
+      "problem": {
+        "seo_phrase": "Meditation for Anxiety",
+        "question": "Morning Anxiety?",
+        "outcome": "Release Anxiety",
+        "kw": "meditation for anxiety",
+        "vidiq_score": 65,
+        "vidiq_comp": "Med"
+      },
+      "instrument": {
+        "name": "Sarangi",
+        "vidiq_score": 67,
+        "vidiq_comp": "Very Low",
+        "aliases": [
+          "sarangi"
+        ]
+      },
+      "hz": {
+        "hz": "174Hz",
+        "category": "ancient healing"
+      },
+      "raga": {
+        "name": "Bhairavi",
+        "time": "morning",
+        "mood": "devotional"
+      },
+      "wave": {
+        "wave": "Alpha",
+        "outcome": "Calm Session",
+        "matches": [
+          "overthinking",
+          "anxiety",
+          "stress",
+          "racing"
+        ]
+      }
+    },
+    "swaps": [],
+    "needs_revalidation": [],
+    "fatal_failures": [],
+    "original_title": "Meditation for Anxiety | 174Hz Sarangi Raga Bhairavi | Alpha Wave Calm Session | 1 Hour"
+  },
+  "success_good": "500+ views, 3%+ CTR, 15%+ retention, 3+ subs (14 days)",
+  "success_breakthrough": "2,000+ views, 5%+ CTR, 20%+ retention, 5+ subs",
+  "strategic_bet": "\u2705 'meditation for anxiety' VidIQ 65 HIGH (+10); \u2705 Tonal: Sarangi = primary fit for anxiety (+20); \u2139\ufe0f Sarangi last used 18d ago \u2014 clear",
+  "candidate_score": 154
+}

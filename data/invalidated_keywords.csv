@@ -1,0 +1,53 @@
+phrase,slot,vidiq_score,tested_on,notes
+528hz music,hz,55,2026-04-25,"⚠️ Only MEDIUM — weaker than 432Hz (74 HIGH), still usable"
+morning anxiety relief,problem,59,2026-04-25,"⚠️ Only MEDIUM — avg views only 38K, not a big market"
+cortisol release music,problem,29,2026-04-25,🚫 INVALIDATED exact phrase — topic works (3M top views) but phrase doesn't
+hindustani classical,problem,59,2026-04-25,⚠️ MEDIUM — usable but not flagship
+ADHD Brain Fog Music,problem,59,2026-04-25,⭐⭐⭐ 0/16 in title — GREEN FIELD. Used in v15 title.
+ADHD Focus Music Sitar,instrument,34,2026-04-25,Volume 0 — don't lead with this phrasing
+Sitar For ADHD Brains,instrument,35,2026-04-25,Zero volume — educational terms + music don't combine
+Sitar For Brain Fog,instrument,34,2026-04-25,"Shanti already owns this (466K, 3M hits)"
+focus music guitar,tag,58,2026-04-25,⚠️ Specific focus+guitar combo
+cozy acoustic,tag,58,2026-04-25,Aesthetic match
+winter music,tag,55,2026-04-25,Seasonal (Dec-Feb only)
+Gentle Acoustic Guitar,problem,59,2026-04-25,⭐⭐ Supplementary — use in tags
+Acoustic Guitar for Sleep,problem,31,2026-04-25,Volume 0 — specific phrasing not searched
+Acoustic Guitar Focus Music,problem,24,2026-04-25,❌ Cannibalizes existing focus cluster
+Acoustic Guitar for Coffee,problem,35,2026-04-25,"Niche, very low vol"
+Acoustic Guitar for Reading,problem,25,2026-04-25,Volume 0 — avoid
+Guitar Music for Insomnia,problem,34,2026-04-25,Top videos enormous but query is dead
+Quiet Your Mind,problem,55,2026-04-25,"Format mismatch: guided-meditation teachers, not music. 2/15 in title but music angle fights grain. OK as hook in middle; never lead."
+Too Much Screen Time,problem,56,2026-04-25,"Format mismatch: parenting, eye-strain educators, health. 12/18 in title but all non-music. OK as thumbnail/hook only."
+Calming Dilruba Raga to Quiet Your Mind,instrument,31,2026-04-25,"Long emotional phrases don't register as search queries. Use as descriptors, not SEO leads."
+Digital Detox with Dilruba Instrumental Music,instrument,24,2026-04-25,Exact combined phrase dead. Channel's own `Digital Detox Music \
+40Hz gamma,hz,59,2026-04-25,Science keyword
+workout focus music,tag,57,2026-04-25,Gym audience
+rhythmic focus music,tag,54,2026-04-25,Specific to percussive
+mental momentum music,tag,0,2026-04-25,Invented phrase
+40Hz tabla,hz,0,2026-04-25,No search volume
+WFH focus music,tag,23,2026-04-25,Lower than assumed
+indian classical focus,tag,25,2026-04-25,Too generic
+gym music indian,tag,25,2026-04-25,Too niche
+active focus music,tag,26,2026-04-25,Low volume
+energizing focus music,tag,28,2026-04-25,Invented framing
+morning deep work,tag,29,2026-04-25,No exact-phrase demand
+tabla for focus,instrument,15,2026-04-25,"Redundant with ""tabla music"""
+evening raga,problem,59,2026-04-25,"**11/18 saturated** — competitors dominate, hard to rank."
+wind down music,problem,58,2026-04-25,"0/20 in title. Companion to ""unwind music""."
+stress relief meditation music,problem,58,2026-04-25,Compound 4-word phrase = lower score. Component words (stress relief + meditation) score higher individually.
+evening meditation,problem,56,2026-04-25,6/20 in title.
+classical meditation music,problem,55,2026-04-25,1/19 in title. Heritage framing keyword.
+veena meditation,instrument,36,2026-04-25,Brand/categorization tag only — no real search volume but no competition either.
+ancient veena,instrument,35,2026-04-25,"Heritage tag, not a search driver. Top creator is tiny — videos win via suggested."
+indian classical meditation,problem,32,2026-04-25,"Despite LOW score, top creator at 44.9K subs pulls 2.2M avg views — suggested-video algorithm carries this space."
+432hz music for deep rest,hz,32,2026-04-25,Compound exact phrase — nobody types it. Use components separately.
+can't switch off,problem,31,2026-04-25,Top result is a music video unrelated to meditation. Wrong-category bleed. Skip.
+evening veena meditation to unwind,instrument,31,2026-04-25,5-word compound — nobody searches exact string.
+meditation music for restless mind,problem,25,2026-04-25,"Lowest score of round. Despite serving real intent, exact phrase isn't searched."
+heavy heart music,problem,24,2026-04-25,
+raga darbari,raga,24,2026-04-25,
+174Hz Sarangi Raga Darbari,raga,37,2026-04-25,
+Theta Wave Calm Session,wave,31,2026-04-25,
+tired mind,problem,35,2026-04-25,
+tired mind?,problem,35,2026-04-25,
+release stress with veena,tag,37,2026-04-26,"37 LOW · Vol Very Low · dead phrase, do not use"

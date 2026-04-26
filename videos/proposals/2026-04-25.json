@@ -1,0 +1,272 @@
+{
+  "date": "2026-04-25",
+  "candidates": [
+    {
+      "title": "Sleep Music | 174Hz Sarangi Raga Bhupali | Delta Wave Deep Rest Session | 1 Hour",
+      "score": 144,
+      "reasons": [
+        "\u2705 'sleep music' VidIQ 75 HIGH (+30)",
+        "\u26a0\ufe0f Competitor topic-overlap: Shanti Instrumentals \u2014 'Gentle Healing With Sitar | Restorative Indian Classical Music | Sleep, Relax, Unwind' (4d ago)",
+        "\u274c Theme-overlap 'sleep' with our own video 3d ago: 'Can't Fall Asleep? | Raga Yaman Bansuri | Delta Wave Sl\u2026' (-15)",
+        "\u2139\ufe0f Audience cluster 'night_deep' covered 2\u00d7 in last 5d (label only \u2014 different SEO keyword still rankable)",
+        "\u2705 Tonal: Sarangi = primary fit for sleep (+20)",
+        "\u2139\ufe0f Sarangi last used 18d ago \u2014 clear",
+        "\u26a0\ufe0f Delta wave used 3d ago",
+        "\u2705 Delta matches 'sleep music'"
+      ],
+      "components": {
+        "problem": {
+          "kw": "sleep music",
+          "seo_phrase": "Sleep Music",
+          "question": "Sleep Music",
+          "outcome": "Sleep Music",
+          "vidiq_score": 75,
+          "vidiq_comp": "Medium"
+        },
+        "instrument": {
+          "name": "Sarangi",
+          "vidiq_score": 67,
+          "vidiq_comp": "Very Low",
+          "aliases": [
+            "sarangi"
+          ]
+        },
+        "hz": {
+          "hz": "174Hz",
+          "category": "ancient healing",
+          "meaning": "pain relief / grounding",
+          "vidiq_score": 62,
+          "vidiq_comp": ""
+        },
+        "raga": {
+          "name": "Bhupali",
+          "time": "evening",
+          "mood": "serenity",
+          "vidiq_score": 57,
+          "vidiq_comp": "Med"
+        },
+        "wave": {
+          "wave": "Delta",
+          "outcome": "Deep Rest Session",
+          "matches": [
+            "sleep",
+            "rest",
+            "unwind"
+          ],
+          "vidiq_score": 64,
+          "vidiq_comp": "Medium"
+        }
+      }
+    },
+    {
+      "title": "Clearly | 174Hz Sarangi Raga Bhupali | Binaural Wave Nervous System Reset | 1 Hour",
+      "score": 140,
+      "reasons": [
+        "\u2705 'clearly' VidIQ 70 HIGH (+20)",
+        "\u2139\ufe0f Sarangi last used 18d ago \u2014 clear"
+      ],
+      "components": {
+        "problem": {
+          "kw": "clearly",
+          "seo_phrase": "Clearly",
+          "question": "Clearly",
+          "outcome": "Clearly",
+          "vidiq_score": 70,
+          "vidiq_comp": ""
+        },
+        "instrument": {
+          "name": "Sarangi",
+          "vidiq_score": 67,
+          "vidiq_comp": "Very Low",
+          "aliases": [
+            "sarangi"
+          ]
+        },
+        "hz": {
+          "hz": "174Hz",
+          "category": "ancient healing",
+          "meaning": "pain relief / grounding",
+          "vidiq_score": 62,
+          "vidiq_comp": ""
+        },
+        "raga": {
+          "name": "Bhupali",
+          "time": "evening",
+          "mood": "serenity",
+          "vidiq_score": 57,
+          "vidiq_comp": "Med"
+        },
+        "wave": {
+          "wave": "Binaural",
+          "outcome": "Nervous System Reset",
+          "matches": [
+            "nervous system",
+            "vagus",
+            "reset"
+          ],
+          "vidiq_score": 71,
+          "vidiq_comp": ""
+        }
+      }
+    },
+    {
+      "title": "Think Clearly | 174Hz Sarangi Raga Bhupali | Binaural Wave Nervous System Reset | 1 Hour",
+      "score": 140,
+      "reasons": [
+        "\u2705 'think clearly' VidIQ 70 HIGH (+20)",
+        "\u2139\ufe0f Sarangi last used 18d ago \u2014 clear"
+      ],
+      "components": {
+        "problem": {
+          "kw": "think clearly",
+          "seo_phrase": "Think Clearly",
+          "question": "Think Clearly",
+          "outcome": "Think Clearly",
+          "vidiq_score": 70,
+          "vidiq_comp": ""
+        },
+        "instrument": {
+          "name": "Sarangi",
+          "vidiq_score": 67,
+          "vidiq_comp": "Very Low",
+          "aliases": [
+            "sarangi"
+          ]
+        },
+        "hz": {
+          "hz": "174Hz",
+          "category": "ancient healing",
+          "meaning": "pain relief / grounding",
+          "vidiq_score": 62,
+          "vidiq_comp": ""
+        },
+        "raga": {
+          "name": "Bhupali",
+          "time": "evening",
+          "mood": "serenity",
+          "vidiq_score": 57,
+          "vidiq_comp": "Med"
+        },
+        "wave": {
+          "wave": "Binaural",
+          "outcome": "Nervous System Reset",
+          "matches": [
+            "nervous system",
+            "vagus",
+            "reset"
+          ],
+          "vidiq_score": 71,
+          "vidiq_comp": ""
+        }
+      }
+    },
+    {
+      "title": "Clearly | 174Hz Tanpura Raga Bhupali | Binaural Wave Nervous System Reset | 1 Hour",
+      "score": 135,
+      "reasons": [
+        "\u2705 'clearly' VidIQ 70 HIGH (+20)",
+        "\u2139\ufe0f Tanpura last used 6d ago \u2014 clear",
+        "\u2b50 Tanpura: 0 competitor uses in 30d \u2014 unique to us"
+      ],
+      "components": {
+        "problem": {
+          "kw": "clearly",
+          "seo_phrase": "Clearly",
+          "question": "Clearly",
+          "outcome": "Clearly",
+          "vidiq_score": 70,
+          "vidiq_comp": ""
+        },
+        "instrument": {
+          "name": "Tanpura",
+          "vidiq_score": 74,
+          "vidiq_comp": "Unknown",
+          "aliases": [
+            "tanpura"
+          ]
+        },
+        "hz": {
+          "hz": "174Hz",
+          "category": "ancient healing",
+          "meaning": "pain relief / grounding",
+          "vidiq_score": 62,
+          "vidiq_comp": ""
+        },
+        "raga": {
+          "name": "Bhupali",
+          "time": "evening",
+          "mood": "serenity",
+          "vidiq_score": 57,
+          "vidiq_comp": "Med"
+        },
+        "wave": {
+          "wave": "Binaural",
+          "outcome": "Nervous System Reset",
+          "matches": [
+            "nervous system",
+            "vagus",
+            "reset"
+          ],
+          "vidiq_score": 71,
+          "vidiq_comp": ""
+        }
+      }
+    },
+    {
+      "title": "Think Clearly | 174Hz Tanpura Raga Bhupali | Binaural Wave Nervous System Reset | 1 Hour",
+      "score": 135,
+      "reasons": [
+        "\u2705 'think clearly' VidIQ 70 HIGH (+20)",
+        "\u2139\ufe0f Tanpura last used 6d ago \u2014 clear",
+        "\u2b50 Tanpura: 0 competitor uses in 30d \u2014 unique to us"
+      ],
+      "components": {
+        "problem": {
+          "kw": "think clearly",
+          "seo_phrase": "Think Clearly",
+          "question": "Think Clearly",
+          "outcome": "Think Clearly",
+          "vidiq_score": 70,
+          "vidiq_comp": ""
+        },
+        "instrument": {
+          "name": "Tanpura",
+          "vidiq_score": 74,
+          "vidiq_comp": "Unknown",
+          "aliases": [
+            "tanpura"
+          ]
+        },
+        "hz": {
+          "hz": "174Hz",
+          "category": "ancient healing",
+          "meaning": "pain relief / grounding",
+          "vidiq_score": 62,
+          "vidiq_comp": ""
+        },
+        "raga": {
+          "name": "Bhupali",
+          "time": "evening",
+          "mood": "serenity",
+          "vidiq_score": 57,
+          "vidiq_comp": "Med"
+        },
+        "wave": {
+          "wave": "Binaural",
+          "outcome": "Nervous System Reset",
+          "matches": [
+            "nervous system",
+            "vagus",
+            "reset"
+          ],
+          "vidiq_score": 71,
+          "vidiq_comp": ""
+        }
+      }
+    }
+  ],
+  "lead_recommendation": [
+    "A_seo",
+    "\u2b50 Concluded A/B: SEO won 1/1 tests (latest 2026-04-25, +75% margin)."
+  ]
+}

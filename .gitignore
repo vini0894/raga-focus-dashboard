@@ -22,3 +22,9 @@ env/
 dist/
 build/
 *.log
+
+# CSV backups
+*.csv.bak
+
+# Heavy raw exports (kept locally, not in repo)
+data/reach_exports/
