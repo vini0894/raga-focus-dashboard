@@ -266,9 +266,15 @@ def _enrich_with_stats(uploads_by_competitor):
         from google.auth.transport.requests import Request as _Req
         from googleapiclient.discovery import build as _build
 
+        # Try every reasonable token location for both bundled and standalone layouts
+        here = _P(__file__).resolve().parent       # pipeline/
+        parent = here.parent                       # raga-focus-dashboard/ (bundled) or project root (standalone)
         token_paths = [
-            _P(__file__).resolve().parent.parent / "youtube-mcp" / "token.json",
-            _P(__file__).resolve().parent.parent / "raga-focus-dashboard" / "token.json",
+            parent / "token.json",                                       # bundled: dashboard/token.json
+            parent / "raga-focus-dashboard" / "token.json",              # standalone with pipeline at root
+            parent / "youtube-mcp" / "token.json",                       # standalone, MCP token
+            parent.parent / "raga-focus-dashboard" / "token.json",       # extra safety
+            parent.parent / "youtube-mcp" / "token.json",                # extra safety
         ]
         SCOPES = ["https://www.googleapis.com/auth/youtube.readonly"]
         creds = None

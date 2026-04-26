@@ -1270,11 +1270,20 @@ with tab_detail:
 
                     if len(vid_hist) == 1:
                         r = vid_hist.iloc[0]
-                        st.info(
-                            f"Only 1 data point so far ({r['capture_date'].date()}): "
-                            f"**{int(r['impressions']):,} impressions · {r['ctr_pct']:.2f}% CTR**. "
-                            f"Import more weekly exports to see the trend."
-                        )
+                        # Guard against empty/NaN impressions or CTR (from live-API captures
+                        # that don't have analytics filled in yet)
+                        try:
+                            imp_val = r["impressions"]
+                            ctr_val = r["ctr_pct"]
+                            imp_str = f"{int(float(imp_val)):,}" if pd.notna(imp_val) and str(imp_val).strip() not in ("", "nan") else "—"
+                            ctr_str = f"{float(ctr_val):.2f}%" if pd.notna(ctr_val) and str(ctr_val).strip() not in ("", "nan") else "—"
+                            st.info(
+                                f"Only 1 data point so far ({r['capture_date'].date() if hasattr(r['capture_date'], 'date') else r['capture_date']}): "
+                                f"**{imp_str} impressions · {ctr_str} CTR**. "
+                                f"Import more weekly exports to see the trend."
+                            )
+                        except Exception:
+                            st.info(f"1 data point captured ({r.get('capture_date', '?')}). Awaiting more captures for trend.")
                     else:
                         c1, c2 = st.columns(2)
                         with c1:
@@ -1729,10 +1738,31 @@ PROPOSALS_DIR = (DASHBOARD_DIR / "videos" / "proposals") if (DASHBOARD_DIR / "vi
 PROJECT_ROOT  = PIPELINE_DIR.parent
 
 
+def _materialize_token_for_subprocess():
+    """On Streamlit Cloud, st.secrets has OAuth but the subprocess can't read st.secrets.
+    Materialize a token.json on disk so signals.py can find it in _enrich_with_stats."""
+    try:
+        if hasattr(st, "secrets") and "oauth" in st.secrets:
+            import json as _json_t
+            oauth = st.secrets["oauth"]
+            token_payload = {
+                "client_id":     oauth["client_id"],
+                "client_secret": oauth["client_secret"],
+                "refresh_token": oauth["refresh_token"],
+                "token":         None,
+                "token_uri":     "https://oauth2.googleapis.com/token",
+                "scopes":        ["https://www.googleapis.com/auth/youtube.readonly"],
+            }
+            (DASHBOARD_DIR / "token.json").write_text(_json_t.dumps(token_payload))
+    except Exception:
+        pass  # silently fall through — pipeline will skip enrichment if no token
+
+
 def _run_pipeline_subprocess():
     """Invoke pipeline/generate_ideas.py as a subprocess, return (returncode, stdout, stderr)."""
     if not PIPELINE_DIR.exists():
         return 127, "", f"Pipeline directory not found at {PIPELINE_DIR}"
+    _materialize_token_for_subprocess()
     try:
         proc = subprocess.run(
             ["python3", "generate_ideas.py"],
@@ -2126,13 +2156,82 @@ with tab_idea_gen:
                         },
                     )
 
-                # ── Decomposed component check + score input + bulk save ──
-                # For each pipe-separated title, break out the components and let user paste
-                # VidIQ scores inline. This is the validate-before-ship affordance for any
-                # custom title (not just pipeline-proposed ones).
                 title_lines = [r["Phrase"] for r in rows if "|" in r["Phrase"]]
                 phrase_only_lines = [r["Phrase"] for r in rows if "|" not in r["Phrase"]]
-                all_components = []  # list of (parent_idx, component_phrase)
+
+                # ── Plain-phrase score inputs + save (when no pipes — user is testing simple keywords) ──
+                if phrase_only_lines:
+                    st.markdown("---")
+                    st.markdown("**🔬 Save scores for these phrases:**")
+                    st.caption(
+                        "Type a VidIQ score for any phrase below → click Save → "
+                        "≥60 banks to `keyword_bank.csv`, <60 invalidates."
+                    )
+                    if "scratch_phrase_inputs" not in st.session_state:
+                        st.session_state["scratch_phrase_inputs"] = {}
+
+                    for pi, phrase in enumerate(phrase_only_lines, 1):
+                        p_lower = phrase.lower()
+                        existing = bank_index.get(p_lower)
+                        cur = ""
+                        badge = "⚠️ UNTESTED"
+                        if p_lower in invalidated_set:
+                            badge = "❌ INVALIDATED previously"
+                        elif existing:
+                            s = existing.get("vidiq_score", "").strip()
+                            if s.isdigit():
+                                cur = int(s)
+                                badge = f"✅ bank: {s}" if int(s) >= 60 else f"⚠️ bank: {s}"
+
+                        c1, c2, c3, c4 = st.columns([3, 2, 2, 2])
+                        with c1:
+                            st.markdown(f"`{phrase}`")
+                            st.caption(badge)
+                        with c2:
+                            st.markdown(
+                                f"[🔗 VidIQ](https://app.vidiq.com/keywords/{_qp2(phrase)})  ·  "
+                                f"[▶ YT](https://www.youtube.com/results?search_query={_qp2(phrase)})"
+                            )
+                        with c3:
+                            key = f"scratch_phrase_score_{pi}"
+                            new_val = st.number_input(
+                                "score", min_value=0, max_value=100,
+                                value=int(cur) if isinstance(cur, int) else 0,
+                                step=1, key=key, label_visibility="collapsed",
+                            )
+                            if new_val and new_val != (cur if isinstance(cur, int) else 0):
+                                st.session_state["scratch_phrase_inputs"][p_lower] = new_val
+                        with c4:
+                            if new_val >= 60:
+                                st.markdown("✅ pass")
+                            elif new_val > 0:
+                                st.markdown("❌ fail (auto-invalidate)")
+                            else:
+                                st.caption("type score →")
+
+                    save_phrases_clicked = st.button("💾 Save phrase scores", key="scratch_phrases_save_btn")
+                    if save_phrases_clicked:
+                        import sys as _sys4
+                        _sys4.path.insert(0, str(PIPELINE_DIR))
+                        try:
+                            from persistence import auto_promote_vidiq_scores
+                            scores = dict(st.session_state.get("scratch_phrase_inputs", {}))
+                            scores = {k: v for k, v in scores.items() if v > 0}
+                            if scores:
+                                result = auto_promote_vidiq_scores(
+                                    scores,
+                                    source=f"dashboard-scratchpad-phrase-{_idea_date.today().isoformat()}",
+                                )
+                                promoted = result.get("promoted", [])
+                                invalidated = result.get("invalidated", [])
+                                msg = []
+                                if promoted: msg.append(f"✓ {len(promoted)} promoted to bank")
+                                if invalidated: msg.append(f"✗ {len(invalidated)} added to invalidated")
+                                st.success(" · ".join(msg) if msg else "Nothing changed.")
+                            else:
+                                st.warning("No scores entered yet — type a value > 0 in any field, then save.")
+                        except Exception as _e:
+                            st.error(f"Save failed: {_e}")
 
                 if title_lines:
                     st.markdown("---")
@@ -2306,14 +2405,21 @@ with tab_idea_gen:
                     if comp.get("raga"):
                         keywords_to_check.append(("raga", comp["raga"]["name"].lower(), "Raga"))
 
-                    # Promote to Brief button — top-right of expander
-                    promote_col1, promote_col2 = st.columns([4, 1])
+                    # Promote to Brief / Dismiss buttons
+                    promote_col1, promote_col2, promote_col3 = st.columns([3, 1, 1])
                     with promote_col2:
                         promote_clicked = st.button(
-                            "🚀 Promote to Brief",
+                            "🚀 Promote",
                             key=f"promote_btn_{idx}",
                             use_container_width=True,
-                            help="Runs proposal_to_video.py --candidate N → creates a brief in Brief Queue tab",
+                            help="Creates a brief in Brief Queue tab",
+                        )
+                    with promote_col3:
+                        dismiss_clicked = st.button(
+                            "🚫 Dismiss",
+                            key=f"dismiss_btn_{idx}",
+                            use_container_width=True,
+                            help="Don't suggest this combo again",
                         )
                     if promote_clicked:
                         try:
@@ -2331,6 +2437,38 @@ with tab_idea_gen:
                                 st.code(proc.stderr or proc.stdout)
                         except Exception as e:
                             st.error(f"Subprocess error: {e}")
+                    if dismiss_clicked:
+                        try:
+                            import csv as _csvd
+                            from datetime import date as _d2
+                            comp = cand.get("components", {})
+                            sig = "|".join([
+                                comp.get("problem", {}).get("kw", ""),
+                                comp.get("instrument", {}).get("name", ""),
+                                comp.get("hz", {}).get("hz", ""),
+                                comp.get("raga", {}).get("name", ""),
+                                comp.get("wave", {}).get("wave", ""),
+                            ]).lower()
+                            dpath = DASHBOARD_DIR / "data" / "dismissed_candidates.csv"
+                            existing = []
+                            if dpath.exists():
+                                with open(dpath) as f:
+                                    existing = list(_csvd.DictReader(f))
+                            if not any(r.get("signature") == sig for r in existing):
+                                existing.append({
+                                    "signature": sig,
+                                    "title": cand.get("title", ""),
+                                    "dismissed_on": _d2.today().isoformat(),
+                                })
+                                with open(dpath, "w", newline="") as f:
+                                    w = _csvd.DictWriter(f, fieldnames=["signature", "title", "dismissed_on"])
+                                    w.writeheader()
+                                    for r in existing: w.writerow(r)
+                                st.success(f"🚫 Dismissed. Click Re-rank to see fresh candidates.")
+                            else:
+                                st.info("Already dismissed.")
+                        except Exception as e:
+                            st.error(f"Dismiss failed: {e}")
 
                     st.markdown("**Keywords for this candidate:**")
                     from urllib.parse import quote_plus as _qp

@@ -277,6 +277,52 @@ def generate_candidates(catalog, competitor_data, top_n=5):
                             },
                         })
 
+    # Build exclusion set from:
+    #   1. data/dismissed_candidates.csv (manual 🚫 Dismiss clicks)
+    #   2. data/video_briefs/*.json (any candidate already promoted to a brief —
+    #      regardless of brief status. Once you brief it, it shouldn't re-suggest.)
+    # User asked: "if we move it to brief, it won't be generated again."
+    try:
+        import csv as _csv, json as _json
+        from paths import DATA_DIR as _DD
+        excluded = set()
+
+        def _sig_from_components(comp):
+            return "|".join([
+                comp.get('problem', {}).get('kw', ''),
+                comp.get('instrument', {}).get('name', ''),
+                comp.get('hz', {}).get('hz', ''),
+                comp.get('raga', {}).get('name', ''),
+                comp.get('wave', {}).get('wave', ''),
+            ]).lower()
+
+        # 1. Manual dismissals
+        dismissed_path = _DD / "dismissed_candidates.csv"
+        if dismissed_path.exists():
+            with open(dismissed_path) as f:
+                for row in _csv.DictReader(f):
+                    sig = row.get("signature", "").strip()
+                    if sig:
+                        excluded.add(sig)
+
+        # 2. Briefs (any state = already chosen)
+        briefs_dir = _DD / "video_briefs"
+        if briefs_dir.exists():
+            for brief_file in briefs_dir.glob("*.json"):
+                try:
+                    b = _json.loads(brief_file.read_text())
+                    sig = _sig_from_components(b.get("components", {}))
+                    if sig and sig != "||||":
+                        excluded.add(sig)
+                except Exception:
+                    continue
+
+        if excluded:
+            def _sig(c): return _sig_from_components(c["components"])
+            candidates = [c for c in candidates if _sig(c) not in excluded]
+    except Exception:
+        pass
+
     candidates.sort(key=lambda c: -c["score"])
     # Dedupe + diversify across the top N:
     #   - 1 candidate per (problem, instrument) pair
