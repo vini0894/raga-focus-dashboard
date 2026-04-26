@@ -19,24 +19,29 @@ from typing import Dict, List
 
 # Hook sentences by problem keyword bucket
 PROBLEM_HOOKS = {
-    "overthinking": "When your mind won't stop, trying harder makes it worse. This does the opposite.",
-    "anxiety":      "When anxiety rises, your nervous system needs grounding more than reasoning. This is grounding.",
-    "stress":       "When stress builds up faster than you can release it, this is the reset.",
-    "sleep":        "When sleep won't come, your nervous system needs the right signal — not silence.",
-    "rest":         "When you're tired but can't actually rest, this is what 'deep rest' actually feels like.",
-    "meditation":   "When you sit down to meditate but the mind won't settle, this lets the music do the work.",
-    "racing":       "When thoughts race faster than you can follow, this slows them down without forcing.",
-    "nervous system":"When your nervous system is stuck in alert, this gives it the signal to come back to baseline.",
-    "vagus":        "When your vagus nerve is stuck in fight-or-flight, this is the opposite of trying to push through.",
-    "emotional":    "When emotion sits heavy in your chest, this helps it move without pushing it away.",
-    "heavy heart":  "When the heart feels heavy and there's nowhere to put it, this gives it room.",
-    "morning":      "When morning brings tension instead of energy, this is how you ease into the day.",
-    "unwind":       "When the work day ends but your mind hasn't, this is the bridge.",
-    "dopamine":     "When you're overstimulated and numb at the same time, this is the slow restart.",
-    "burnout":      "When you've gone past tired into something else, this isn't a fix — it's a place to rest.",
-    "exhausted":    "When you're past tired and still can't stop, this is the slowdown signal your body is asking for.",
-    "screen time":  "When screens have left your nervous system buzzing, this is the off-switch.",
-    "digital":      "When digital noise has filled the inside of your head, this clears the static.",
+    # More visceral — reads like a friend speaking, not wellness copy.
+    # Goal: someone scanning YouTube's 155-char preview feels "this is for me."
+    "overthinking":   "Some days the noise inside your head is louder than anything outside. This is for those days.",
+    "anxiety":        "If your chest feels tight and your shoulders are at your ears — start here. One hour to come back to yourself.",
+    "stress":         "If today felt like too much before it even began — press play. Let an hour move through you.",
+    "sleep":          "When sleep won't come and the mind won't quiet — try this. The body remembers how to rest.",
+    "rest":           "Tired in your bones but can't actually rest? This is what real rest feels like.",
+    "meditation":     "Some days you can't meditate — you can only listen. Let the music sit with you instead.",
+    "racing":         "Not every thought needs an answer. Some just need this.",
+    "nervous system": "If your body has been stuck in 'on' for too long — this is the off-switch.",
+    "vagus":          "When fight-or-flight won't switch off, you don't need a workout. You need this.",
+    "emotional":      "Some feelings don't need fixing — they need company. This is company.",
+    "heavy heart":    "If your heart has been carrying something heavy — set it down for an hour. The Veena holds it.",
+    "feeling lost":   "When you can't see the next step and everything feels uncertain — sit here for an hour. The fog lifts.",
+    "lost":           "If you've lost the thread of your own life — this isn't a map. It's a quiet place to find one.",
+    "morning":        "If mornings start with a knot in your stomach — try this before anything else.",
+    "calm":           "If your mind has been racing for hours, this is what coming back feels like.",
+    "unwind":         "Work brain won't switch off? You don't need willpower — you need a different signal. This is it.",
+    "dopamine":       "If you're overstimulated and numb at the same time — this is the slow restart your nervous system is asking for.",
+    "burnout":        "When 'tired' isn't the right word anymore — this isn't a fix. It's a place to land.",
+    "exhausted":      "Past tired and still can't stop? Your body is asking for this signal.",
+    "screen time":    "If screens have left a hum inside your head — this is what silence sounds like.",
+    "digital":        "When digital noise has filled the inside of your skull, this clears the static.",
 }
 
 
@@ -177,6 +182,7 @@ def build_full_description(
     wave_name: str = "",
     duration_minutes: int = 60,
     top_tags: list = None,
+    title: str = "",
 ) -> str:
     """Paste-ready YouTube description.
 
@@ -222,6 +228,13 @@ def build_full_description(
     hashtags_line = " ".join(hashtags)
 
     L = []
+    # Line 1: TITLE (helps SEO — YouTube indexes the description's opening; also
+    # reinforces the click intent for viewers landing from search).
+    if title:
+        L.append(title)
+        L.append("")
+    # Line 2-3: visceral hook — what a viewer sees in the 155-char preview.
+    # This is the click trigger.
     L.append(hook); L.append("")
     L.append(body); L.append("")
     L.append("🎵 What you'll hear:")

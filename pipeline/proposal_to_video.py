@@ -224,6 +224,7 @@ def write_dashboard_brief(brief_path, candidate, regen_result, thumbnail_variant
         wave_name=comp["wave"]["wave"],
         duration_minutes=60,
         top_tags=hashtag_pool,
+        title=regen_result.get("title", candidate.get("title", "")),
     )
 
     brief = {
