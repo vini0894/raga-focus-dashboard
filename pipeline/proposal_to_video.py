@@ -212,17 +212,18 @@ def write_dashboard_brief(brief_path, candidate, regen_result, thumbnail_variant
     variants = build_variants(comp["problem"], comp["hz"], comp["instrument"], comp["raga"], comp["wave"])
     tags = build_tags(comp["problem"], comp["instrument"], comp["hz"], comp["raga"], comp["wave"])
 
-    description_hook = build_description_hook(comp["problem"]["kw"])
-    body_intro = build_description_body_intro(
-        comp["problem"]["kw"], comp["instrument"]["name"], comp["raga"]["name"],
-        comp["hz"]["hz"], comp["wave"]["wave"]
-    )
-    best_for = build_best_for(comp["problem"]["kw"])
-
-    description_text = (
-        f"{description_hook}\n\n{body_intro}\n\n"
-        f"No mid-roll ads. No interruptions. Just music.\n\n"
-        f"⏱ Best for:\n" + "\n".join(f"• {b}" for b in best_for)
+    # FULL paste-ready description (hook + body + chapters + how-to + best-for + CTA + hashtags)
+    from description_hook import build_full_description
+    # Use top-7 tags for hashtags (high-volume validated)
+    hashtag_pool = [t for t in tags[:10]]
+    description_text = build_full_description(
+        problem_kw=comp["problem"]["kw"],
+        instrument_name=comp["instrument"]["name"],
+        raga_name=comp["raga"]["name"],
+        hz=comp["hz"]["hz"],
+        wave_name=comp["wave"]["wave"],
+        duration_minutes=60,
+        top_tags=hashtag_pool,
     )
 
     brief = {

@@ -1650,69 +1650,95 @@ with tab_briefs:
                 st.markdown(f"## 📋 {brief.get('title', '(untitled)')}")
                 st.caption(f"Slug: `{brief['id']}`  ·  Status: **{brief.get('status', 'DRAFT')}**")
 
-                # Title variants if available
+                # ═══════════════════════════════════════════════════════
+                # 🚀 READY TO PASTE INTO YOUTUBE STUDIO
+                # Everything the colleague needs in one ordered block
+                # ═══════════════════════════════════════════════════════
+                st.success("📋 **READY-TO-PASTE BLOCKS** — copy each into YouTube Studio in order")
+
+                # 1. TITLE
+                st.markdown("##### 1️⃣ Title (paste into Title field)")
+                title_str = brief.get("title", "")
+                st.code(title_str, language="text")
+                st.caption(f"{len(title_str)} chars")
                 if brief.get("title_variants"):
-                    with st.expander("📝 A/B/C title variants", expanded=False):
+                    with st.expander("Other A/B/C variants (for Test & Compare)", expanded=False):
                         for k, v in brief["title_variants"].items():
-                            st.markdown(f"- **{k}** ({len(v)} chars): `{v}`")
+                            st.code(v, language="text")
+                            st.caption(f"{k} · {len(v)} chars")
 
-                # Structural bet + score reasoning
-                if brief.get("strategic_bet"):
-                    st.markdown(f"**Strategic bet:** {brief['strategic_bet']}")
+                # 2. DESCRIPTION
+                st.markdown("##### 2️⃣ Description (paste into Description field)")
+                desc = brief.get("description", "")
+                st.code(desc, language="text")
+                st.caption(f"{len(desc)} chars · sections: hook · body · what you'll hear · chapters · how to use · best for · subscribe CTA · hashtags")
 
-                # Components
-                comps = brief.get("components", {})
-                if comps:
-                    cols = st.columns(5)
-                    for col, (k, v) in zip(cols, comps.items()):
-                        col.metric(k.title(), str(v))
+                # 3. TAGS
+                st.markdown("##### 3️⃣ Tags (paste into Tags field, comma-separated)")
+                tags_val = brief.get("tags", "")
+                tags_str = tags_val if isinstance(tags_val, str) else ", ".join(tags_val)
+                st.code(tags_str, language="text")
+                st.caption(f"{len(tags_str)}/500 chars · {len(tags_str.split(',')) if tags_str else 0} tags")
 
-                # Suno prompt
-                st.markdown("### 🎵 Suno prompt")
+                # 4. THUMBNAIL
+                st.markdown("##### 4️⃣ Thumbnail overlay text (use ONE; or A/B-test up to 3)")
+                tcol1, tcol2 = st.columns([2, 1])
+                with tcol1:
+                    if brief.get("thumbnail_text_variants"):
+                        for v in brief["thumbnail_text_variants"][:3]:
+                            st.code(v, language="text")
+                    else:
+                        st.code(brief.get("thumbnail_text_main", "—"), language="text")
+                    if brief.get("thumbnail_text_secondary"):
+                        st.caption(f"Subtitle: `{brief['thumbnail_text_secondary']}`")
+                with tcol2:
+                    st.markdown("**Image prompt:**")
+                    with st.expander("(for Ideogram / Midjourney)", expanded=False):
+                        st.code(brief.get("thumbnail_prompt", ""), language="text")
+
+                # 5. SUNO
+                st.markdown("##### 5️⃣ Suno prompt (if music not yet generated)")
                 st.code(brief.get("suno_prompt", ""), language="text")
 
-                # Thumbnail
-                st.markdown("### 🎨 Thumbnail")
-                tcol1, tcol2 = st.columns([1, 2])
-                with tcol1:
-                    st.markdown(f"**Main text:** `{brief.get('thumbnail_text_main', '—')}`")
-                    st.markdown(f"**Subtitle:** `{brief.get('thumbnail_text_secondary', '—')}`")
-                    if brief.get("thumbnail_text_variants"):
-                        st.caption("Other variants: " + ", ".join(brief["thumbnail_text_variants"]))
-                with tcol2:
-                    st.markdown("**Image prompt** (paste into Ideogram/Midjourney):")
-                    st.code(brief.get("thumbnail_prompt", ""), language="text")
+                # ═══════════════════════════════════════════════════════
+                # Production checklist
+                # ═══════════════════════════════════════════════════════
+                st.markdown("---")
+                st.markdown("##### ✅ Production checklist")
+                c1, c2 = st.columns(2)
+                with c1:
+                    st.checkbox("Music generated (Suno)", key=f"chk_suno_{brief['id']}")
+                    st.checkbox("Thumbnail rendered", key=f"chk_thumb_{brief['id']}")
+                    st.checkbox("Audio mastered (-14 LUFS)", key=f"chk_master_{brief['id']}")
+                with c2:
+                    st.checkbox("Video file exported (MP4)", key=f"chk_export_{brief['id']}")
+                    st.checkbox("Uploaded to YouTube Studio", key=f"chk_upload_{brief['id']}")
+                    st.checkbox("Test & Compare A/B set up", key=f"chk_ab_{brief['id']}")
 
-                # Description + Tags
-                st.markdown("### 📄 Description")
-                st.text_area("Description body",
-                             value=brief.get("description", ""),
-                             height=300, label_visibility="collapsed",
-                             key=f"desc_{brief['id']}")
+                # ═══════════════════════════════════════════════════════
+                # Strategy details (collapsed)
+                # ═══════════════════════════════════════════════════════
+                with st.expander("📊 Strategy details (components, validated keywords, success criteria)", expanded=False):
+                    if brief.get("strategic_bet"):
+                        st.markdown(f"**Strategic bet:** {brief['strategic_bet']}")
 
-                st.markdown("### 🏷️ Tags")
-                tags = brief.get("tags", "")
-                st.code(tags if isinstance(tags, str) else ", ".join(tags), language="text")
-                if isinstance(tags, str):
-                    st.caption(f"{len(tags)}/500 chars")
+                    comps = brief.get("components", {})
+                    if comps:
+                        st.markdown("**Components:**")
+                        cols = st.columns(5)
+                        for col, (k, v) in zip(cols, comps.items()):
+                            col.metric(k.title(), str(v))
 
-                # Production spec
+                    if brief.get("validated_keywords"):
+                        st.markdown("**Validated keywords:** " + ", ".join(brief["validated_keywords"]))
+
+                    if brief.get("success_good") or brief.get("success_breakthrough"):
+                        st.markdown(f"**Good outcome:** {brief.get('success_good', '—')}")
+                        st.markdown(f"**Breakthrough:** {brief.get('success_breakthrough', '—')}")
+
                 if brief.get("production_spec"):
                     with st.expander("🛠️ Production spec (binaural, mix, master, ffmpeg)", expanded=False):
                         st.json(brief["production_spec"])
-
-                # Validated keywords
-                if brief.get("validated_keywords"):
-                    st.markdown("### ✅ Validated keywords")
-                    for kw in brief["validated_keywords"]:
-                        st.markdown(f"- {kw}")
-
-                # Success criteria
-                if brief.get("success_good") or brief.get("success_breakthrough"):
-                    st.markdown("### 🎯 Success criteria")
-                    cs1, cs2 = st.columns(2)
-                    cs1.markdown(f"**Good:** {brief.get('success_good', '—')}")
-                    cs2.markdown(f"**Breakthrough:** {brief.get('success_breakthrough', '—')}")
 
                 if st.button("Close brief detail"):
                     del st.session_state["selected_brief_id"]
