@@ -2840,12 +2840,23 @@ with tab_idea_gen:
                 if _to_remove:
                     st.rerun()
 
-            # Save & re-rank buttons
-            col_save, col_rerank, _ = st.columns([2, 2, 4])
+            # Save / Rebuild Title / Re-rank buttons
+            col_save, col_rebuild, col_rerank = st.columns(3)
             with col_save:
-                save_clicked = st.button("💾 Save scores", use_container_width=True, key="save_scores_btn")
+                save_clicked = st.button(
+                    "💾 Save scores", use_container_width=True, key="save_scores_btn",
+                    help="Bank all entered scores to keyword_bank.csv",
+                )
+            with col_rebuild:
+                rebuild_clicked = st.button(
+                    "✏️ Rebuild title only", use_container_width=True, key="rebuild_btn",
+                    help="In-place keyword swap: keep the candidate, just swap higher-scoring keywords into the title slots. No pipeline re-run.",
+                )
             with col_rerank:
-                rerank_clicked = st.button("🔁 Re-rank with new scores", type="primary", use_container_width=True, key="rerank_btn")
+                rerank_clicked = st.button(
+                    "🔁 Re-rank everything", type="primary", use_container_width=True, key="rerank_btn",
+                    help="Full pipeline re-run with the updated keyword bank — may surface different candidates entirely.",
+                )
 
             if save_clicked:
                 # Auto-promote scores via persistence.py
@@ -2876,6 +2887,112 @@ with tab_idea_gen:
                         st.warning("No scores entered — type a value > 0 in any field, then Save.")
                 except Exception as e:
                     st.error(f"Save failed: {e}")
+
+            if rebuild_clicked:
+                # In-place title swap — uses the bank + extra_keywords to find
+                # higher-scoring slot replacements for each candidate, then
+                # rebuilds A/B/C title variants via build_variants().
+                # Does NOT re-run the pipeline; candidate structure stays intact.
+                import sys as _sys3
+                _sys3.path.insert(0, str(PIPELINE_DIR))
+                try:
+                    from scoring import build_variants as _build_variants
+                    from raga_validator import lookup_raga_fit as _lookup_fit, mood_from_problem_kw as _mood_fn2
+                    from copy import deepcopy as _deepcopy
+
+                    # Combine bank scores + just-entered alternate keyword scores
+                    _all_scores = {}
+                    for _ph, _row in bank_index.items():
+                        _s = _row.get("vidiq_score", "").strip()
+                        if _s.isdigit():
+                            _all_scores[(_ph, _row.get("slot", "").strip().lower())] = int(_s)
+                    # Overlay any unsaved typed scores from the score-input dict
+                    for (_ci, _slt, _kw), (_sc, _) in st.session_state.get("vidiq_score_inputs", {}).items():
+                        if _sc and _sc > 0:
+                            _all_scores[(_kw.lower(), _slt)] = max(_all_scores.get((_kw.lower(), _slt), 0), _sc)
+
+                    def _slot_keys(slot):
+                        return [(ph, sc) for (ph, sl), sc in _all_scores.items() if sl == slot]
+
+                    st.markdown("---")
+                    st.markdown("### ✏️ Rebuilt titles (in-place keyword swap)")
+                    st.caption("Same candidates, same instrument/raga structure — just swapped higher-scoring keywords into each slot. No pipeline re-run.")
+
+                    for _idx, _cand in enumerate(candidates, start=1):
+                        _comp = _deepcopy(_cand.get("components", {}))
+                        _orig_title = _cand.get("title") or _cand.get("variants", {}).get("A_seo", "")
+                        _swaps = []  # list of (slot, old_kw, new_kw, old_score, new_score)
+
+                        for _slot_name, _kw_field in (("problem", "kw"), ("raga", "name"), ("hz", "hz"),
+                                                      ("instrument", "name"), ("wave", "wave")):
+                            _slot_obj = _comp.get(_slot_name)
+                            if not _slot_obj:
+                                continue
+                            _cur_kw = (_slot_obj.get(_kw_field) or "").strip().lower()
+                            _cur_score = _all_scores.get((_cur_kw, _slot_name), 0)
+                            _candidates_slot = _slot_keys(_slot_name)
+                            if not _candidates_slot:
+                                continue
+                            _best_kw, _best_score = max(_candidates_slot, key=lambda x: x[1])
+                            if _best_kw != _cur_kw and _best_score > _cur_score:
+                                _swaps.append((_slot_name, _cur_kw, _best_kw, _cur_score, _best_score))
+                                _slot_obj[_kw_field] = _best_kw
+
+                        # Raga fit safety check on any raga swap
+                        _raga_warn = None
+                        if any(s[0] == "raga" for s in _swaps):
+                            _new_raga = _comp["raga"].get("name", "")
+                            _mood = _mood_fn2(_comp.get("problem", {}).get("kw", ""))
+                            _fit = _lookup_fit(_new_raga.removeprefix("raga ").strip(), _mood) or _lookup_fit(_new_raga, _mood)
+                            if _fit and _fit["fit"] in ("avoid", "caution"):
+                                _raga_warn = f"⚠️ Raga fit: **{_fit['fit']}** for {_mood} — {_fit['reason']}"
+
+                        with st.expander(f"#{_idx} — {_orig_title}", expanded=True):
+                            if not _swaps:
+                                st.info("No higher-scoring keywords found in any slot — title unchanged.")
+                                continue
+                            st.markdown("**Swaps applied:**")
+                            for _slot_n, _old, _new, _os, _ns in _swaps:
+                                st.markdown(f"- `{_slot_n}`: ~~{_old}~~ ({_os}) → **{_new}** ({_ns})")
+                            if _raga_warn:
+                                st.warning(_raga_warn)
+                            try:
+                                # Length-recipe variants — three structurally distinct titles per candidate.
+                                # Hook is SEO-led for all (validated 2/2 A/B tests). Variation is on
+                                # SLOT COUNT, which is the validated lever (lean beats stuffed 67.7%/32.3%).
+                                _problem    = _comp.get("problem", {}) or {}
+                                _hz_obj     = _comp.get("hz", {}) or {}
+                                _instr_obj  = _comp.get("instrument", {}) or {}
+                                _raga_obj   = _comp.get("raga", {}) or {}
+                                _wave_obj   = _comp.get("wave", {}) or {}
+
+                                _hook = _problem.get("seo_phrase") or _problem.get("phrase") or (_problem.get("kw", "") or "").title()
+                                _hz_s   = _hz_obj.get("hz", "")
+                                _ins_s  = _instr_obj.get("name", "")
+                                _rag_s  = _raga_obj.get("name", "")
+                                _wav_s  = _wave_obj.get("wave", "")
+                                _wav_out = _wave_obj.get("outcome", "")
+
+                                # Recipe A — Full SEO (5 slots): control / stuffed
+                                _va = f"{_hook} | {_hz_s} {_ins_s} Raga {_rag_s} | {_wav_s} Wave {_wav_out} | 1 Hour"
+                                # Recipe B — Lean (drop wave segment, 4 slots)
+                                _vb = f"{_hook} | {_hz_s} {_ins_s} Raga {_rag_s} | 1 Hour"
+                                # Recipe C — Minimal (drop hz + wave, 3 slots) — matches the validated winner pattern
+                                _vc = f"{_hook} | {_ins_s} Raga {_rag_s} | 1 Hour"
+
+                                _variants = [
+                                    ("A — Full SEO (5 slots, stuffed control)",    _va),
+                                    ("B — Lean (drop wave, 4 slots)",              _vb),
+                                    ("C — Minimal (drop hz+wave, 3 slots, validated winner pattern)", _vc),
+                                ]
+                                st.markdown("**Rebuilt variants — three different lengths to A/B test:**")
+                                for _label, _vt in _variants:
+                                    st.caption(f"{_label} · {len(_vt)} chars")
+                                    st.code(_vt, language=None)
+                            except Exception as _be:
+                                st.error(f"variant build failed: {_be}")
+                except Exception as _re:
+                    st.error(f"Rebuild failed: {_re}")
 
             if rerank_clicked:
                 with st.status("Re-running pipeline…", expanded=True) as status:
