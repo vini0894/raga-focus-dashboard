@@ -15,6 +15,7 @@ Why a new module instead of editing production_queue.py:
 """
 import json
 import os
+from datetime import datetime
 from pathlib import Path
 
 DATA_DIR = Path(__file__).resolve().parent / "data"
@@ -66,12 +67,55 @@ def load_all_briefs():
 
 
 def set_brief_status(brief_id: str, status: str):
-    """Persist a status change. Idempotent."""
+    """Persist a status change. Idempotent.
+
+    Side effect: when a brief transitions to PUBLISHED, log its title structure
+    to data/shipped_titles.csv so the pipeline learns from real-ship outcomes.
+    """
     if status not in STATUS_VALUES:
         raise ValueError(f"status must be one of {STATUS_VALUES}, got {status!r}")
     overrides = _load_overrides()
+    prev_status = overrides.get(brief_id, "DRAFT")
     overrides[brief_id] = status
     _save_overrides(overrides)
+
+    # Log on PUBLISHED transition (idempotent — only logs once per brief)
+    if status == "PUBLISHED" and prev_status != "PUBLISHED":
+        try:
+            _log_shipped_title(brief_id)
+        except Exception:
+            pass
+
+
+def _log_shipped_title(brief_id: str):
+    """Append a row to shipped_titles.csv capturing the structure of a shipped title."""
+    import csv
+    brief = get_brief_by_id(brief_id)
+    if not brief:
+        return
+    title = brief.get("title", "")
+    parts = [p.strip() for p in title.split("|") if p.strip()]
+    comp = brief.get("components", {})
+    row = {
+        "shipped_on":   datetime.utcnow().isoformat()[:10],
+        "brief_id":     brief_id,
+        "title":        title,
+        "title_length": len(title),
+        "slot_count":   len(parts),
+        "lead_hook":    parts[0] if parts else "",
+        "instrument":   comp.get("instrument", "") if isinstance(comp.get("instrument"), str) else comp.get("instrument", {}).get("name", ""),
+        "hz":           comp.get("hz", "") if isinstance(comp.get("hz"), str) else comp.get("hz", {}).get("hz", ""),
+        "raga":         comp.get("raga", "") if isinstance(comp.get("raga"), str) else comp.get("raga", {}).get("name", ""),
+        "wave":         comp.get("wave", "") if isinstance(comp.get("wave"), str) else comp.get("wave", {}).get("wave", ""),
+    }
+    HEADER = list(row.keys())
+    SHIPPED_CSV = DATA_DIR / "shipped_titles.csv"
+    new_file = not SHIPPED_CSV.exists()
+    with open(SHIPPED_CSV, "a", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=HEADER)
+        if new_file:
+            w.writeheader()
+        w.writerow(row)
 
 
 def get_brief_by_id(brief_id: str):

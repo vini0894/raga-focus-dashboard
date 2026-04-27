@@ -2039,6 +2039,39 @@ with tab_idea_gen:
                     invalidated_set.add(row["phrase"].strip().lower())
 
         # ─────────────────────────────────────────
+        # Section 0 — Winner-pattern insights (from ab_results.csv)
+        # Surfaces what's been winning so the user iterates with data, not
+        # hardcoded templates. Pattern emerges from outcomes.
+        # ─────────────────────────────────────────
+        ab_path = DASHBOARD_DIR / "data" / "ab_results.csv"
+        if ab_path.exists():
+            try:
+                import csv as _csv_ab
+                ab_rows = []
+                with open(ab_path) as f:
+                    ab_rows = list(_csv_ab.DictReader(f))
+                if ab_rows:
+                    seo_wins = sum(1 for r in ab_rows if r.get("winner") == "A_seo")
+                    q_wins   = sum(1 for r in ab_rows if r.get("winner") == "B_question")
+                    o_wins   = sum(1 for r in ab_rows if r.get("winner") == "C_outcome")
+                    total = len(ab_rows)
+                    winner_titles = [r.get("winner_title", "") for r in ab_rows if r.get("winner_title")]
+                    avg_winner_len = round(sum(len(t) for t in winner_titles) / len(winner_titles)) if winner_titles else 0
+                    last = ab_rows[-1]
+                    bits = []
+                    if seo_wins: bits.append(f"SEO-led {seo_wins}/{total}")
+                    if q_wins:   bits.append(f"Question-led {q_wins}/{total}")
+                    if o_wins:   bits.append(f"Outcome-led {o_wins}/{total}")
+                    st.info(
+                        f"🏆 **What's been winning** ({total} concluded A/B test{'s' if total != 1 else ''}): "
+                        f"{' · '.join(bits)} · avg winning title length **{avg_winner_len} chars** · "
+                        f"latest winner: `{last.get('winner_title', '?')[:75]}` "
+                        f"(margin {last.get('win_margin','?')})"
+                    )
+            except Exception:
+                pass
+
+        # ─────────────────────────────────────────
         # Section 1 — Competitor Pulse (last 7d)
         # If the proposal JSON has empty data (RSS failed in Cloud subprocess),
         # fall back to a live YouTube Data API fetch using the dashboard's auth.
@@ -2515,16 +2548,44 @@ with tab_idea_gen:
                     # them 20-40 LOW regardless of component quality. Only
                     # component scores actually matter for ranking.
                     keywords_to_check = []
-                    if comp.get("problem"):
-                        keywords_to_check.append(("problem", comp["problem"]["kw"], "Problem keyword"))
-                    if comp.get("instrument"):
-                        keywords_to_check.append(("instrument", comp["instrument"]["name"].lower(), "Instrument"))
-                    if comp.get("hz"):
-                        keywords_to_check.append(("hz", comp["hz"]["hz"].lower(), "Hz"))
-                    if comp.get("raga"):
-                        keywords_to_check.append(("raga", comp["raga"]["name"].lower(), "Raga"))
-                    if comp.get("wave"):
-                        keywords_to_check.append(("wave", comp["wave"]["wave"].lower(), "Wave"))
+                    seen_kw = set()
+                    def _add_kw(slot, kw, label):
+                        kl = (kw or "").strip().lower()
+                        if kl and kl not in seen_kw:
+                            keywords_to_check.append((slot, kl, label))
+                            seen_kw.add(kl)
+                    # 1. Structured components
+                    if comp.get("problem"):    _add_kw("problem",    comp["problem"]["kw"],         "Problem keyword")
+                    if comp.get("instrument"): _add_kw("instrument", comp["instrument"]["name"],    "Instrument")
+                    if comp.get("hz"):         _add_kw("hz",         comp["hz"]["hz"],              "Hz")
+                    if comp.get("raga"):       _add_kw("raga",       comp["raga"]["name"],          "Raga")
+                    if comp.get("wave"):       _add_kw("wave",       comp["wave"]["wave"],          "Wave")
+
+                    # 2. Compound + sub-phrases mined FROM THE TITLE (so we can
+                    # discover new keywords through the Score Check panel — not
+                    # just validate the 4 structured slots).
+                    # Tokenise the title, build 1-3 word phrases, filter stopwords.
+                    SW = {"the","a","an","of","for","with","to","and","&","|","1",
+                          "hour","raga","wave","session","min","minutes","hr"}
+                    raw_tokens = title.lower().replace("|", " ").split()
+                    tokens = [t.strip("?!,.:;") for t in raw_tokens]
+                    tokens = [t for t in tokens if t]
+                    extras = []
+                    # 1-grams: standalone meaningful words
+                    for t in tokens:
+                        if t not in SW and len(t) > 2 and not t.replace("hz","").isdigit():
+                            extras.append(t)
+                    # 2-grams + 3-grams (likely-search patterns)
+                    for n in (2, 3):
+                        for i in range(len(tokens) - n + 1):
+                            window = tokens[i:i+n]
+                            # skip if mostly stopwords
+                            if sum(1 for t in window if t in SW) > n // 2:
+                                continue
+                            extras.append(" ".join(window))
+                    # Add extras (deduped against structured ones)
+                    for e in extras:
+                        _add_kw("tag", e, "Title sub-phrase")
 
                     # Promote to Brief / Dismiss buttons
                     promote_col1, promote_col2, promote_col3 = st.columns([3, 1, 1])
