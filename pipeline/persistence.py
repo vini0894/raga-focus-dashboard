@@ -55,44 +55,61 @@ def auto_promote_vidiq_scores(scores: Dict[str, int],
     Append failing keywords to invalidated_keywords.csv (so we stop suggesting them).
     `slot_hint` (optional): {keyword: "problem"|"wave"|"raga"|"hz"} — if known.
     """
-    promoted = []
-    invalidated = []
+    import csv
+    promoted = []     # all phrases that landed in keyword_bank.csv
+    low_scores = []   # subset that scored <60 (informational, still in bank)
     today = date.today().isoformat()
     slot_hint = slot_hint or {}
+
+    HEADER = ["phrase", "slot", "vidiq_score", "vidiq_comp",
+              "source", "first_added", "last_score_check"]
+
+    # Read existing bank for UPSERT (update existing row instead of duplicating)
+    existing_rows = []
+    if KEYWORD_BANK_CSV.exists():
+        with open(KEYWORD_BANK_CSV) as f:
+            existing_rows = list(csv.DictReader(f))
+
+    def _upsert(phrase, slot, score):
+        for r in existing_rows:
+            if r.get("phrase", "").strip().lower() == phrase.strip().lower() and r.get("slot") == slot:
+                r["vidiq_score"] = str(int(score))
+                r["source"] = source
+                r["last_score_check"] = today
+                return
+        existing_rows.append({
+            "phrase":           phrase.strip().lower(),
+            "slot":             slot,
+            "vidiq_score":      str(int(score)),
+            "vidiq_comp":       "",
+            "source":           source,
+            "first_added":      today,
+            "last_score_check": today,
+        })
 
     for kw, score in scores.items():
         if not isinstance(score, (int, float)):
             continue
         slot = slot_hint.get(kw, _infer_slot(kw))
-        if int(score) >= MIN_BANK_SCORE:
-            if not _kw_already_in_bank(kw):
-                _append_csv(KEYWORD_BANK_CSV,
-                    ["phrase", "slot", "vidiq_score", "vidiq_comp",
-                     "source", "first_added", "last_score_check"],
-                    {
-                        "phrase":           kw.strip().lower(),
-                        "slot":             slot,
-                        "vidiq_score":      int(score),
-                        "source":           source,
-                        "first_added":      today,
-                        "last_score_check": today,
-                    },
-                )
-                promoted.append(kw)
-        else:
-            # Track invalidations so we don't keep suggesting the same dead phrase
-            _append_csv(INVALIDATED_CSV,
-                ["phrase", "slot", "vidiq_score", "tested_on"],
-                {
-                    "phrase":      kw,
-                    "slot":        slot,
-                    "vidiq_score": int(score),
-                    "tested_on":   today,
-                },
-            )
-            invalidated.append(kw)
+        score = int(score)
+        # Bank EVERY score the user explicitly typed. The pipeline's scoring
+        # logic gives a +pt boost only when score ≥60, so low scores are
+        # naturally deprioritised without being kicked out of the bank.
+        # Matches user mental model: "Save means save."
+        _upsert(kw, slot, score)
+        promoted.append(kw)
+        if score < MIN_BANK_SCORE:
+            low_scores.append(f"{kw}={score}")
 
-    return {"promoted": promoted, "invalidated": invalidated}
+    # Write the upserted bank back
+    if existing_rows:
+        with open(KEYWORD_BANK_CSV, "w", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=HEADER)
+            w.writeheader()
+            for r in existing_rows:
+                w.writerow({k: r.get(k, "") for k in HEADER})
+
+    return {"promoted": promoted, "invalidated": [], "low_scores": low_scores}
 
 
 def _kw_already_in_bank(kw: str) -> bool:

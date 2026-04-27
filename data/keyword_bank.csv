@@ -60,7 +60,7 @@ dilruba,instrument,63,Low,config.py,2026-04-25,2026-04-25
 esraj,instrument,,,config.py,2026-04-25,
 santoor,instrument,,,config.py,2026-04-25,
 sarod,instrument,,,config.py,2026-04-25,
-veena,instrument,,,config.py,2026-04-25,
+veena,instrument,62,,manual-VidIQ-tag-paste,2026-04-25,2026-04-26
 binaural,wave,71,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 delta,wave,64,Medium,KEYWORD_DATA.md migration (MeditationRelaxClub,2026-04-25,2026-04-25
 theta,wave,61,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
@@ -69,7 +69,7 @@ coding music,tag,83,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 lofi music,tag,83,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 focus music,tag,82,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 study music,tag,82,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
-ambient music,tag,81,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+ambient music,tag,80,,manual-VidIQ-tag-paste,2026-04-25,2026-04-26
 background music,tag,80,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 cozy music,tag,77,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 pomodoro music,tag,77,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
@@ -78,13 +78,13 @@ cottagecore music,tag,76,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 background music for work,tag,75,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 deep work music,tag,75,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 productivity music,tag,75,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
-calm music,tag,74,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+calm music,tag,74,,manual-VidIQ-tag-paste,2026-04-25,2026-04-26
 acoustic guitar,tag,73,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 deep focus,tag,73,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 journaling music,tag,73,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 motivation music,tag,72,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 reading music,tag,72,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
-relaxing music,tag,72,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+relaxing music,tag,75,,manual-VidIQ-tag-paste,2026-04-25,2026-04-26
 morning music,tag,71,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 night music,tag,71,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 1 hour focus music,tag,70,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
@@ -126,9 +126,34 @@ morning motivation music,tag,61,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 high energy study music,tag,60,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 morning productivity music,tag,60,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 7.83hz,hz,58,Medium,manual-VidIQ-paste,2026-04-26,2026-04-26
-calm your mind,problem,68,Medium,manual-VidIQ-paste,2026-04-26,2026-04-26
-healing music,tag,75,,manual-VidIQ-paste,2026-04-26,2026-04-26
-feeling lost in life,problem,64,Medium,manual-VidIQ-paste,2026-04-26,2026-04-26
+calm your mind,problem,68,Medium,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+healing music,tag,75,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+feeling lost in life,problem,64,Medium,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
 lost in life,problem,61,Medium,manual-VidIQ-paste,2026-04-26,2026-04-26
-calming music,tag,72,Medium,manual-VidIQ-paste,2026-04-26,2026-04-26
-schumann resonance,hz,61,Medium,manual-VidIQ-paste,2026-04-26,2026-04-26
+calming music,tag,72,Medium,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+schumann resonance,hz,61,Medium,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+schumann resonance 7.83hz,tag,54,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+7.83hz frequency,tag,58,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+calming music for anxiety,tag,72,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+soothing,tag,67,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+relax music,tag,77,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+7.83hz schumann resonance,tag,54,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+7.83hz music,hz,58,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+veena music,instrument,67,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+veena healing music,tag,67,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+veena instrumental,tag,62,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+indian classical music,tag,66,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+indian instrumental music,tag,67,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+instrumental music,tag,72,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+meditation music,tag,80,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+soothing music,tag,69,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+healing frequency music,tag,70,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+sound healing,tag,68,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+spiritual music,tag,69,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+deep relaxation,tag,61,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+peaceful music,tag,72,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+1 hour healing music,tag,58,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+raga focus,tag,66,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+grounding music,tag,57,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+trauma release,problem,57,,session,2026-04-27,2026-04-27
+test phrase,problem,72,,session,2026-04-27,2026-04-27

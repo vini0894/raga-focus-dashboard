@@ -2335,10 +2335,12 @@ with tab_idea_gen:
                                     source=f"dashboard-scratchpad-phrase-{_idea_date.today().isoformat()}",
                                 )
                                 promoted = result.get("promoted", [])
-                                invalidated = result.get("invalidated", [])
+                                low_scores = result.get("low_scores", [])
                                 msg = []
-                                if promoted: msg.append(f"✓ {len(promoted)} promoted to bank")
-                                if invalidated: msg.append(f"✗ {len(invalidated)} added to invalidated")
+                                if promoted:
+                                    msg.append(f"✓ {len(promoted)} saved to keyword_bank.csv")
+                                if low_scores:
+                                    msg.append(f"⚠️ low scores (<60): {', '.join(low_scores)}")
                                 st.success(" · ".join(msg) if msg else "Nothing changed.")
                             else:
                                 st.warning("No scores entered yet — type a value > 0 in any field, then save.")
@@ -2416,10 +2418,12 @@ with tab_idea_gen:
                                     source=f"dashboard-scratchpad-{_idea_date.today().isoformat()}",
                                 )
                                 promoted = result.get("promoted", [])
-                                invalidated = result.get("invalidated", [])
+                                low_scores = result.get("low_scores", [])
                                 msg = []
-                                if promoted: msg.append(f"✓ {len(promoted)} promoted to bank")
-                                if invalidated: msg.append(f"✗ {len(invalidated)} added to invalidated")
+                                if promoted:
+                                    msg.append(f"✓ {len(promoted)} saved to keyword_bank.csv")
+                                if low_scores:
+                                    msg.append(f"⚠️ low scores (<60): {', '.join(low_scores)}")
                                 st.success(" · ".join(msg))
                             else:
                                 st.warning("No scores entered — type a value > 0 in any field, then save.")
@@ -2644,12 +2648,12 @@ with tab_idea_gen:
                     if scores_to_save:
                         result = auto_promote_vidiq_scores(scores_to_save, slot_hint=slot_hints, source=f"dashboard-{_idea_date.today().isoformat()}")
                         promoted = result.get("promoted", [])
-                        invalidated = result.get("invalidated", [])
+                        low_scores = result.get("low_scores", [])
                         msg = []
                         if promoted:
-                            msg.append(f"✓ {len(promoted)} promoted to keyword_bank.csv")
-                        if invalidated:
-                            msg.append(f"✗ {len(invalidated)} added to invalidated_keywords.csv")
+                            msg.append(f"✓ {len(promoted)} saved to keyword_bank.csv")
+                        if low_scores:
+                            msg.append(f"⚠️ low scores (<60): {', '.join(low_scores)}")
                         if msg:
                             st.success(" · ".join(msg))
                         else:
