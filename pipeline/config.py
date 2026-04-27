@@ -296,6 +296,15 @@ KNOWN_AB_RESULTS = [
         "win_margin":    0.75,   # SEO won by 75% (3:1)
         "notes":         "Decisive SEO win on identical music + same audience. Validates SEO-led title + question-on-thumbnail pattern.",
     },
+    {
+        "video_id":      "",  # native YouTube Test & Compare; backfill if needed
+        "concluded_on":  "2026-04-27",
+        "winner":        "A_seo",
+        "winner_title":  "Calm Your Mind | Veena Healing Music | 1 hour",
+        "loser_title":   "Feeling Lost? | Veena & 7.83Hz Schumann Resonance | 1 Hour Calming Music",
+        "win_margin":    0.677,  # winner had 67.7% watch-time share vs 32.3%
+        "notes":         "2nd consistent SEO-led win. SHORTER title (41 chars) beat the longer 80-char version. Key insight: dropping middle-slot Hz/Schumann stuffing INCREASED clicks. Validates user hypothesis — lean validated-keyword titles outperform stuffed titles in calm/healing niche.",
+    },
 ]
 
 # ═════════════════════════════════════════════════════════

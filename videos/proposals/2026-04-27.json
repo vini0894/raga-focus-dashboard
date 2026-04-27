@@ -7,7 +7,7 @@
       "reasons": [
         "\u2705 'overthinking music' VidIQ 63 HIGH (+6)",
         "\u26a0\ufe0f Competitor topic-overlap: Shanti Instrumentals \u2014 'Morning Anxiety? Sitar To Reduce Stress And Stop Overthinking' (3d ago)",
-        "\u2139\ufe0f Audience cluster 'evening_serene' covered 4\u00d7 in last 5d (label only \u2014 different SEO keyword still rankable)",
+        "\u2139\ufe0f Audience cluster 'evening_serene' covered 5\u00d7 in last 5d (label only \u2014 different SEO keyword still rankable)",
         "\u2705 Tonal: Sarangi = primary fit for overthinking (+20)",
         "\u2139\ufe0f Sarangi last used 20d ago \u2014 clear",
         "\u26a0\ufe0f Sarangi used by competitor 0d ago",
@@ -119,30 +119,28 @@
       "strategy_note": "Doubling down on 'night_deep' cluster \u2014 your proven audience"
     },
     {
-      "title": "Instrumental Music Relaxing | 174Hz Tabla Raga Hamir | Alpha Wave Calm Session | 1 Hour",
-      "score": 212,
+      "title": "Lost In Life | 174Hz Veena Music Raga Kafi | Binaural Wave Nervous System Reset | 1 Hour",
+      "score": 237,
       "reasons": [
-        "\u2705 'instrumental music relaxing' VidIQ 70 HIGH (+20)",
-        "\u2139\ufe0f Tabla last used 14d ago \u2014 clear",
-        "\u2b50 Tabla: 0 competitor uses in 30d \u2014 unique to us",
-        "\u26a0\ufe0f Alpha wave used 6d ago",
-        "\ud83c\udf19 Moonshot novelty bonus +75"
+        "\u2705 'lost in life' VidIQ 61 HIGH (+2)",
+        "\u2b50 Veena Music: 0 competitor uses in 30d \u2014 unique to us",
+        "\ud83c\udf19 Moonshot novelty bonus +120"
       ],
       "components": {
         "problem": {
-          "kw": "instrumental music relaxing",
-          "seo_phrase": "Instrumental Music Relaxing",
-          "question": "Instrumental Music Relaxing",
-          "outcome": "Instrumental Music Relaxing",
-          "vidiq_score": 70,
-          "vidiq_comp": ""
+          "kw": "lost in life",
+          "seo_phrase": "Lost In Life",
+          "question": "Lost In Life",
+          "outcome": "Lost In Life",
+          "vidiq_score": 61,
+          "vidiq_comp": "Medium"
         },
         "instrument": {
-          "name": "Tabla",
-          "vidiq_score": 65,
-          "vidiq_comp": "Low",
+          "name": "Veena Music",
+          "vidiq_score": 67,
+          "vidiq_comp": "Unknown",
           "aliases": [
-            "tabla"
+            "veena music"
           ]
         },
         "hz": {
@@ -153,22 +151,21 @@
           "vidiq_comp": ""
         },
         "raga": {
-          "name": "Hamir",
+          "name": "Kafi",
           "time": "late evening",
-          "mood": "majestic",
+          "mood": "romance",
           "vidiq_score": null,
           "vidiq_comp": ""
         },
         "wave": {
-          "wave": "Alpha",
-          "outcome": "Calm Session",
+          "wave": "Binaural",
+          "outcome": "Nervous System Reset",
           "matches": [
-            "overthinking",
-            "anxiety",
-            "stress",
-            "racing"
+            "nervous system",
+            "vagus",
+            "reset"
           ],
-          "vidiq_score": null,
+          "vidiq_score": 71,
           "vidiq_comp": ""
         }
       },
@@ -178,16 +175,16 @@
   ],
   "lead_recommendation": [
     "A_seo",
-    "\u2b50 Concluded A/B: SEO won 1/1 tests (latest 2026-04-25, +75% margin)."
+    "\u2b50 Concluded A/B: SEO won 3/3 tests (latest 2026-04-27, +67% margin)."
   ],
   "keyword_opportunities": [
     {
       "phrase": "indian classical meditation music",
-      "uses": 2,
+      "uses": 3,
       "sources": [
         "Shanti Instrumentals"
       ],
-      "latest_days": 2
+      "latest_days": 0
     },
     {
       "phrase": "screen time sickness music",
@@ -214,6 +211,38 @@
       "latest_days": 0
     },
     {
+      "phrase": "for mental health music",
+      "uses": 1,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 0
+    },
+    {
+      "phrase": "for mental health",
+      "uses": 1,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 0
+    },
+    {
+      "phrase": "shanti instrumentals music",
+      "uses": 1,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 0
+    },
+    {
+      "phrase": "shanti instrumentals",
+      "uses": 1,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 0
+    },
+    {
       "phrase": "for deep sleep music",
       "uses": 1,
       "sources": [
@@ -228,38 +257,6 @@
         "Shanti Instrumentals"
       ],
       "latest_days": 0
-    },
-    {
-      "phrase": "silence nighttime thoughts music",
-      "uses": 1,
-      "sources": [
-        "Shanti Instrumentals"
-      ],
-      "latest_days": 0
-    },
-    {
-      "phrase": "silence nighttime thoughts",
-      "uses": 1,
-      "sources": [
-        "Shanti Instrumentals"
-      ],
-      "latest_days": 0
-    },
-    {
-      "phrase": "nervous system cooldown music",
-      "uses": 1,
-      "sources": [
-        "Shanti Instrumentals"
-      ],
-      "latest_days": 0
-    },
-    {
-      "phrase": "nervous system cooldown",
-      "uses": 1,
-      "sources": [
-        "Shanti Instrumentals"
-      ],
-      "latest_days": 0
     }
   ],
   "competitor_pulse": {
@@ -268,8 +265,8 @@
         "title": "Screen Time Sickness? | 432Hz Raga Bhairavi Nervous System Reset",
         "days_ago": 0,
         "video_id": "lgT5cx1c5T4",
-        "views": 532,
-        "likes": 21,
+        "views": 631,
+        "likes": 23,
         "duration": "PT1H9M22S"
       },
       {
@@ -284,63 +281,71 @@
         "title": "Ancient Raga Todi for Nervous System Reset \ud83c\udf3f | Sitar Healing for Chronic Burnout",
         "days_ago": 3,
         "video_id": "rUPtg5bVZMo",
-        "views": 4297,
-        "likes": 124,
+        "views": 4416,
+        "likes": 126,
         "duration": "PT1H1M50S"
       },
       {
         "title": "Dopamine Reset | 639Hz Bansuri for Deep Digital Detox & Inner Balance",
         "days_ago": 7,
         "video_id": "8jnAg1D9x4s",
-        "views": 31951,
-        "likes": 696,
+        "views": 32315,
+        "likes": 706,
         "duration": "PT1H14M25S"
       }
     ],
     "Shanti Instrumentals": [
       {
+        "title": "Sitar For Mental Health | Indian Classical Meditation Music | Shanti Instrumentals",
+        "days_ago": 0,
+        "video_id": "ZUQn6L38rMs",
+        "views": 45,
+        "likes": 4,
+        "duration": "PT1H1M2S"
+      },
+      {
         "title": "Sarangi for Deep Sleep | Indian Classical Music | Silence Nighttime Thoughts",
         "days_ago": 0,
         "video_id": "RST2oYB2-4s",
-        "views": 225,
-        "likes": 13,
+        "views": 297,
+        "likes": 15,
         "duration": "PT46M3S"
       },
       {
         "title": "Nervous System Cooldown | Temple Melodies For Deep Relaxation",
         "days_ago": 0,
         "video_id": "5_Xz4f6dMAs",
-        "views": 248,
-        "likes": 13,
+        "views": 275,
+        "likes": 15,
         "duration": "PT1H6M8S"
       },
       {
         "title": "Gentle Healing Temple Melodies | Soft Indian Traditional Music For Meditation",
-        "days_ago": 0,
+        "days_ago": 1,
         "video_id": "C1fl4U5jBfM",
-        "views": 605,
-        "likes": 20,
+        "views": 663,
+        "likes": 21,
         "duration": "PT1H5M48S"
       },
       {
         "title": "Mystical Indian Instrumental | Healing Sitar For Yoga & Meditation",
         "days_ago": 1,
         "video_id": "leevTyVaKXI",
-        "views": 540,
-        "likes": 24,
+        "views": 576,
+        "likes": 26,
         "duration": "PT1H9M39S"
       },
       {
         "title": "Forgotten Ragas For Peace | Ancient Indian Classical Music",
         "days_ago": 1,
         "video_id": "_fL7hiS-juw",
-        "views": 553,
+        "views": 572,
         "likes": 15,
         "duration": "PT1H22M21S"
       },
       {
         "title": "Ancient Temple Melodies | Relax With Indian Classical Music",
-        "days_ago": 1,
+        "days_ago": 2,
         "video_id": "z1GxYet0D5w",
         "views": 2769,
         "likes": 59,
@@ -350,7 +355,7 @@
         "title": "Sitar To Start Your Day | Indian Classical Meditation Music",
         "days_ago": 2,
         "video_id": "3Olwnet2x3k",
-        "views": 810,
+        "views": 811,
         "likes": 22,
         "duration": "PT1H6M46S"
       },
@@ -358,7 +363,7 @@
         "title": "Feeling Foggy? Try This: Sitar For a Razor Sharp Mind",
         "days_ago": 2,
         "video_id": "ZyENEGlmVkI",
-        "views": 579,
+        "views": 629,
         "likes": 18,
         "duration": "PT1H3M50S"
       },
@@ -366,7 +371,7 @@
         "title": "Morning Anxiety? Sitar To Reduce Stress And Stop Overthinking",
         "days_ago": 3,
         "video_id": "oeyNBPdUUjU",
-        "views": 714,
+        "views": 723,
         "likes": 20,
         "duration": "PT1H5M3S"
       },
@@ -374,15 +379,15 @@
         "title": "Somatic Healing With Sitar | Trauma Release | Melt Away Emotional Pain",
         "days_ago": 3,
         "video_id": "prj8TLQbLBw",
-        "views": 441,
-        "likes": 23,
+        "views": 444,
+        "likes": 24,
         "duration": "PT1H7M11S"
       },
       {
         "title": "Calm Your Anxiety With Sitar | Indian Classical Background Music | Heal, Breathe, & Let Go",
         "days_ago": 5,
         "video_id": "ljOOxVWQ_C4",
-        "views": 2133,
+        "views": 2184,
         "likes": 47,
         "duration": "PT1H3M52S"
       },
@@ -390,7 +395,7 @@
         "title": "Dopamine Reset With Sitar | Indian Classical Meditation Music | Rewire & Restore",
         "days_ago": 5,
         "video_id": "6zUj0_bxjwI",
-        "views": 1965,
+        "views": 1983,
         "likes": 38,
         "duration": "PT1H5M1S"
       },
@@ -398,7 +403,7 @@
         "title": "Gentle Healing With Sitar | Restorative Indian Classical Music | Sleep, Relax, Unwind",
         "days_ago": 6,
         "video_id": "kwOLK4M9YPQ",
-        "views": 1659,
+        "views": 1673,
         "likes": 31,
         "duration": "PT1H4M50S"
       },
@@ -406,17 +411,9 @@
         "title": "Boost Your Mood With Sitar | Indian Classical Meditation Music for Joy & Mental Clarity",
         "days_ago": 6,
         "video_id": "tC9gTqF08UE",
-        "views": 2597,
-        "likes": 58,
+        "views": 2624,
+        "likes": 60,
         "duration": "PT1H21M53S"
-      },
-      {
-        "title": "Rest Your Mind With Sitar | Relaxing Indian Classical Music | Release Stress, Heal, Sleep",
-        "days_ago": 6,
-        "video_id": "AbMzhks4-6Q",
-        "views": 720,
-        "likes": 24,
-        "duration": "PT1H3M17S"
       }
     ]
   }
