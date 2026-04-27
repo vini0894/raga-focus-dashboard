@@ -1,0 +1,163 @@
+raga,mood,fit,reason,alternatives,cached_on
+yaman,sleep,strong,Evening peace raga — expansive and serene; ideal for sleep onset,,2026-04-27
+yaman,anxiety,strong,Evening peace raga — soothing and grounding for anxious minds,,2026-04-27
+yaman,stress,strong,Calming evening raga — quintessential stress relief,,2026-04-27
+yaman,overthinking,strong,Spacious meditative quality quiets racing thoughts,,2026-04-27
+yaman,focus,ok,Calm but better suited to relaxation than active focus,,2026-04-27
+yaman,meditation,strong,Classical meditation raga — expansive and serene,,2026-04-27
+yaman,emotional,ok,Peaceful but not deeply emotional; works for gentle release,bhairavi|bageshri|kafi,2026-04-27
+yaman,morning,avoid,Evening raga — wrong time-of-day character for morning content,bhairav|bhairavi|bilawal,2026-04-27
+yaman,unwind,strong,Quintessential evening unwind raga,,2026-04-27
+bhupali,sleep,strong,Simple pentatonic evening raga with open serene character,,2026-04-27
+bhupali,anxiety,strong,Calm and accessible — soothes anxiety without complexity,,2026-04-27
+bhupali,stress,strong,Open serenity perfect for stress relief,,2026-04-27
+bhupali,overthinking,ok,Simple structure quiets the mind but less depth than Yaman,yaman|darbari,2026-04-27
+bhupali,focus,ok,Calm and clean; works for low-intensity focus,bilawal|hamsadhwani,2026-04-27
+bhupali,meditation,strong,Pentatonic simplicity ideal for meditation,,2026-04-27
+bhupali,emotional,ok,Gentle but not deeply emotional,bageshri|kafi|bhimpalasi,2026-04-27
+bhupali,morning,avoid,Evening raga — wrong time character,bhairav|bhairavi|bilawal,2026-04-27
+bhupali,unwind,strong,Classic evening unwind raga,,2026-04-27
+darbari,sleep,strong,Deep-night raga — profound and introspective; ideal for insomnia,,2026-04-27
+darbari,anxiety,ok,Calming but heavy; grounding for some, intense for others,yaman|bhupali|bageshri,2026-04-27
+darbari,stress,ok,Deep and serious; works for heavy stress,yaman|bhupali,2026-04-27
+darbari,overthinking,strong,Deep slow gravity quiets racing thoughts effectively,,2026-04-27
+darbari,focus,caution,Too slow and meditative for active focus,bilawal|hamsadhwani|todi,2026-04-27
+darbari,meditation,strong,Profound meditation raga with deep introspective character,,2026-04-27
+darbari,emotional,strong,Carries grandeur and depth — excellent for emotional weight,,2026-04-27
+darbari,morning,avoid,Deep night raga — entirely wrong for morning content,bhairav|bhairavi|bilawal,2026-04-27
+darbari,unwind,ok,More heavy than light; better for deep evening than casual unwind,yaman|kafi|kirwani,2026-04-27
+malkauns,sleep,strong,Midnight raga of profound depth — ideal for deep sleep and insomnia,,2026-04-27
+malkauns,anxiety,caution,Powerful and austere; can feel intense rather than soothing,yaman|bhupali|bageshri,2026-04-27
+malkauns,stress,caution,Heavy character may amplify rather than relieve stress,yaman|bhupali|charukesi,2026-04-27
+malkauns,overthinking,ok,Slow and deep quiets the mind but austere,darbari|yaman,2026-04-27
+malkauns,focus,avoid,Too meditative and slow for focused work,bilawal|hamsadhwani|todi,2026-04-27
+malkauns,meditation,strong,One of the most profound meditation ragas,,2026-04-27
+malkauns,emotional,ok,Carries depth; works for serious emotional content,bhairavi|bageshri|puriya,2026-04-27
+malkauns,morning,avoid,Midnight raga — entirely wrong for morning,bhairav|bhairavi|bilawal,2026-04-27
+malkauns,unwind,caution,Too profound for casual unwind,yaman|kafi|kirwani,2026-04-27
+bageshri,sleep,strong,Tender late-night raga with gentle longing — soothing for sleep,,2026-04-27
+bageshri,anxiety,strong,Soft intimate character calms anxious feelings,,2026-04-27
+bageshri,stress,ok,Gentle and reflective — good for emotional stress relief,,2026-04-27
+bageshri,overthinking,ok,Tender quality slows mental chatter,yaman|darbari,2026-04-27
+bageshri,focus,caution,Too emotional for focus content,bilawal|hamsadhwani,2026-04-27
+bageshri,meditation,ok,Works for emotional meditation not silent meditation,yaman|malkauns,2026-04-27
+bageshri,emotional,strong,Quintessential raga for tender emotional release,,2026-04-27
+bageshri,morning,avoid,Late-night raga — wrong time character,bhairav|bhairavi|bilawal,2026-04-27
+bageshri,unwind,strong,Beautiful late-evening unwind raga,,2026-04-27
+kafi,sleep,ok,Late-evening raga, slightly bittersweet but soothing enough for sleep,yaman|bhupali|darbari,2026-04-27
+kafi,anxiety,ok,Gentle character; mild romantic wistfulness, calming,yaman|bhupali|bageshri,2026-04-27
+kafi,stress,ok,Soft and reflective — works for stress relief,yaman|bhupali,2026-04-27
+kafi,overthinking,caution,Romantic character may engage rather than quiet thoughts,darbari|yaman|bhupali,2026-04-27
+kafi,focus,caution,Too sentimental for focus,bilawal|hamsadhwani|todi,2026-04-27
+kafi,meditation,caution,Romantic mood not ideal for meditation,yaman|malkauns|bhairav,2026-04-27
+kafi,emotional,strong,Romantic and reflective — excellent for emotional content,,2026-04-27
+kafi,morning,avoid,Late-evening raga — wrong time character,bhairav|bhairavi|bilawal,2026-04-27
+kafi,unwind,strong,Late-evening unwind raga, slightly romantic,,2026-04-27
+puriya,sleep,caution,Pathos-heavy raga — can feel melancholic for sleep,yaman|bhupali|darbari,2026-04-27
+puriya,anxiety,ok,Reflective but slightly heavy; ok for processing anxiety,yaman|bhupali,2026-04-27
+puriya,stress,ok,Reflective character — works for emotional stress,yaman|charukesi,2026-04-27
+puriya,overthinking,ok,Slow and yearning can ground racing thoughts,darbari|yaman,2026-04-27
+puriya,focus,avoid,Too emotional for focus,bilawal|hamsadhwani|todi,2026-04-27
+puriya,meditation,ok,Works for contemplative meditation not silent stillness,yaman|malkauns,2026-04-27
+puriya,emotional,strong,Deep pathos — ideal for grief and emotional release,,2026-04-27
+puriya,morning,avoid,Evening raga,bhairav|bhairavi|bilawal,2026-04-27
+puriya,unwind,caution,Slightly melancholic for casual unwind,yaman|kafi|kirwani,2026-04-27
+bhimpalasi,sleep,avoid,Afternoon raga — wrong time-of-day character for sleep,darbari|malkauns|yaman|bhupali,2026-04-27
+bhimpalasi,anxiety,ok,Gentle longing character — works for anxiety in afternoon content,yaman|bhupali|bageshri,2026-04-27
+bhimpalasi,stress,ok,Reflective afternoon mood — good for stress relief,yaman|bhupali,2026-04-27
+bhimpalasi,overthinking,ok,Soft and gentle can soothe overthinking,darbari|yaman,2026-04-27
+bhimpalasi,focus,caution,Too emotional for active focus,bilawal|hamsadhwani,2026-04-27
+bhimpalasi,meditation,ok,Works for afternoon meditation,yaman|bhairavi,2026-04-27
+bhimpalasi,emotional,strong,Beautiful longing — ideal for emotional content,,2026-04-27
+bhimpalasi,morning,avoid,Afternoon raga — wrong for morning,bhairav|bhairavi|bilawal,2026-04-27
+bhimpalasi,unwind,ok,Works for afternoon unwind not evening,yaman|kafi|kirwani,2026-04-27
+bhairavi,sleep,avoid,Morning dawn raga — wrong time character for late-night sleep,darbari|malkauns|yaman|bageshri,2026-04-27
+bhairavi,anxiety,ok,Gentle and devotional — can soothe morning anxiety,yaman|bhupali|bageshri,2026-04-27
+bhairavi,stress,ok,Tender and accessible — works for daytime stress relief,yaman|charukesi,2026-04-27
+bhairavi,overthinking,ok,Soft and contemplative but morning character,darbari|yaman,2026-04-27
+bhairavi,focus,caution,Devotional character better suited to meditation than focus,bilawal|hamsadhwani|todi,2026-04-27
+bhairavi,meditation,strong,Classical morning meditation raga,,2026-04-27
+bhairavi,emotional,strong,Deeply tender — excellent for emotional and devotional content,,2026-04-27
+bhairavi,morning,strong,The quintessential morning raga,,2026-04-27
+bhairavi,unwind,avoid,Morning raga — wrong for evening unwind,yaman|bhupali|kafi,2026-04-27
+bilawal,sleep,avoid,Bright morning raga — entirely wrong character for sleep,darbari|malkauns|yaman|bhupali,2026-04-27
+bilawal,anxiety,caution,Bright and uplifting — may feel too active for anxiety relief,yaman|bhupali|bageshri,2026-04-27
+bilawal,stress,caution,Cheerful character — works only for mild stress,yaman|bhupali|charukesi,2026-04-27
+bilawal,overthinking,avoid,Too uplifting — engages rather than quiets the mind,darbari|yaman|bhupali,2026-04-27
+bilawal,focus,ok,Bright and clean — works for daytime focus,,2026-04-27
+bilawal,meditation,caution,Too cheerful for deep meditation,yaman|malkauns|bhairav|bhairavi,2026-04-27
+bilawal,emotional,caution,Bright character — not suited for heavy emotional content,bhairavi|bageshri|kafi|puriya,2026-04-27
+bilawal,morning,strong,Classic morning raga — bright and cheerful,,2026-04-27
+bilawal,unwind,avoid,Wrong character for unwind,yaman|kafi|bhupali,2026-04-27
+todi,sleep,avoid,Intense morning raga — wrong character for sleep,darbari|malkauns|yaman|bhupali,2026-04-27
+todi,anxiety,caution,Yearning character can feel intense rather than soothing,yaman|bhupali|bageshri,2026-04-27
+todi,stress,caution,Powerful and searching — not gentle,yaman|bhupali|charukesi,2026-04-27
+todi,overthinking,avoid,Intensity engages rather than calms the mind,darbari|yaman|bhupali,2026-04-27
+todi,focus,ok,Intense and focused — works for deep concentration,,2026-04-27
+todi,meditation,ok,Works for intense focused meditation not relaxation,yaman|malkauns|bhairav,2026-04-27
+todi,emotional,strong,Deep yearning — excellent for intense emotional content,,2026-04-27
+todi,morning,strong,Major morning raga — intense and searching,,2026-04-27
+todi,unwind,avoid,Wrong character for unwind,yaman|kafi|bhupali,2026-04-27
+hamir,sleep,caution,Majestic and rich — may feel too grand for sleep,darbari|yaman|bhupali|bageshri,2026-04-27
+hamir,anxiety,ok,Stable and grounding but slightly grand,yaman|bhupali|bageshri,2026-04-27
+hamir,stress,ok,Rich character — works for grand stress relief,yaman|bhupali,2026-04-27
+hamir,overthinking,ok,Stable and grounding,darbari|yaman,2026-04-27
+hamir,focus,ok,Strong character — works for confident focus,,2026-04-27
+hamir,meditation,ok,Works but less common for meditation,yaman|malkauns|bhairavi,2026-04-27
+hamir,emotional,ok,Majestic emotional content,bhairavi|kafi|puriya,2026-04-27
+hamir,morning,avoid,Late-evening raga,bhairav|bhairavi|bilawal,2026-04-27
+hamir,unwind,ok,Works for grand evening unwind,yaman|kafi|kirwani,2026-04-27
+chandra,sleep,strong,Night lunar raga — gentle and meditative for sleep,,2026-04-27
+chandra,anxiety,strong,Soothing lunar character — calms anxiety,,2026-04-27
+chandra,stress,ok,Gentle and meditative,yaman|bhupali,2026-04-27
+chandra,overthinking,ok,Quiet and meditative,darbari|yaman,2026-04-27
+chandra,focus,caution,Too meditative for active focus,bilawal|hamsadhwani|todi,2026-04-27
+chandra,meditation,strong,Lunar meditation raga,,2026-04-27
+chandra,emotional,ok,Gentle emotional content,bhairavi|bageshri|kafi,2026-04-27
+chandra,morning,avoid,Night raga,bhairav|bhairavi|bilawal,2026-04-27
+chandra,unwind,strong,Beautiful night unwind raga,,2026-04-27
+marwa,sleep,ok,Twilight raga with profound stillness — can work for sleep onset,yaman|darbari|malkauns,2026-04-27
+marwa,anxiety,ok,Profound and still — grounding for some, intense for others,yaman|bhupali|bageshri,2026-04-27
+marwa,stress,caution,Heavy and serious — may feel intense,yaman|bhupali|charukesi,2026-04-27
+marwa,overthinking,ok,Deep stillness quiets the mind,darbari|yaman,2026-04-27
+marwa,focus,caution,Too meditative for focus,bilawal|hamsadhwani|todi,2026-04-27
+marwa,meditation,strong,Profound twilight meditation raga,,2026-04-27
+marwa,emotional,strong,Carries profound emotional weight,,2026-04-27
+marwa,morning,avoid,Twilight raga not morning,bhairav|bhairavi|bilawal,2026-04-27
+marwa,unwind,caution,Too profound for casual unwind,yaman|kafi|kirwani,2026-04-27
+bhairav,sleep,avoid,Dawn raga — wrong time and character for sleep,darbari|malkauns|yaman|bhupali,2026-04-27
+bhairav,anxiety,caution,Austere and serious — not soothing,yaman|bhupali|bageshri,2026-04-27
+bhairav,stress,caution,Heavy and serious,yaman|bhupali|charukesi,2026-04-27
+bhairav,overthinking,caution,Austere character may not soothe,darbari|yaman|bhupali,2026-04-27
+bhairav,focus,ok,Strong and disciplined — works for serious focus,,2026-04-27
+bhairav,meditation,strong,Classic dawn meditation raga,,2026-04-27
+bhairav,emotional,strong,Devotional and serious — excellent for spiritual emotional content,,2026-04-27
+bhairav,morning,strong,Quintessential early morning raga,,2026-04-27
+bhairav,unwind,avoid,Wrong character for unwind,yaman|kafi|bhupali,2026-04-27
+kirwani,sleep,ok,Romantic evening raga — soothing enough for sleep,yaman|bhupali|darbari,2026-04-27
+kirwani,anxiety,ok,Gentle romantic character,yaman|bhupali|bageshri,2026-04-27
+kirwani,stress,ok,Sweet and accessible,yaman|bhupali|charukesi,2026-04-27
+kirwani,overthinking,ok,Romantic but gentle,darbari|yaman,2026-04-27
+kirwani,focus,caution,Too sentimental for focus,bilawal|hamsadhwani|todi,2026-04-27
+kirwani,meditation,caution,Romantic mood not ideal for meditation,yaman|malkauns|bhairav,2026-04-27
+kirwani,emotional,strong,Sweet and romantic — great for emotional content,,2026-04-27
+kirwani,morning,caution,Better as evening raga,bhairav|bhairavi|bilawal,2026-04-27
+kirwani,unwind,strong,Popular evening unwind raga,,2026-04-27
+hamsadhwani,sleep,caution,Joyful character — not ideal for sleep,darbari|malkauns|yaman|bhupali,2026-04-27
+hamsadhwani,anxiety,caution,Bright and uplifting,yaman|bhupali|bageshri,2026-04-27
+hamsadhwani,stress,ok,Bright and accessible — works for mild stress,yaman|bhupali,2026-04-27
+hamsadhwani,overthinking,caution,Too active for quieting thoughts,darbari|yaman|bhupali,2026-04-27
+hamsadhwani,focus,ok,Bright and clean for focus,,2026-04-27
+hamsadhwani,meditation,ok,Works for joyful devotional meditation,yaman|bhairav|bhairavi,2026-04-27
+hamsadhwani,emotional,ok,Joyful but accessible,bhairavi|bageshri|kafi,2026-04-27
+hamsadhwani,morning,ok,Works for morning,bhairav|bhairavi|bilawal,2026-04-27
+hamsadhwani,unwind,ok,Works for light unwind,yaman|kafi|kirwani,2026-04-27
+charukesi,sleep,ok,Wistful character — gentle enough for sleep,darbari|yaman|bhupali|bageshri,2026-04-27
+charukesi,anxiety,strong,Soft and pensive — soothing for anxiety,,2026-04-27
+charukesi,stress,strong,Reflective and gentle,,2026-04-27
+charukesi,overthinking,ok,Soft and reflective,darbari|yaman,2026-04-27
+charukesi,focus,caution,Too emotional for focus,bilawal|hamsadhwani|todi,2026-04-27
+charukesi,meditation,ok,Reflective meditation,yaman|malkauns|bhairavi,2026-04-27
+charukesi,emotional,strong,Beautifully wistful for emotional content,,2026-04-27
+charukesi,morning,ok,Works for late morning,bhairav|bhairavi|bilawal,2026-04-27
+charukesi,unwind,strong,Lovely unwind raga,,2026-04-27

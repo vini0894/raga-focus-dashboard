@@ -2692,8 +2692,9 @@ with tab_idea_gen:
             st.markdown("#### 💡 Add alternate keywords to explore")
             st.caption(
                 "Spotted a better keyword on VidIQ while scoring? Add it here. "
-                "For ragas, click **🎵 Check fit** — Claude validates whether it suits this content's mood. "
-                "**Save** banks it, **Re-rank** rebuilds title variants using your highest-scored keywords."
+                "For ragas, fit against this content's mood is checked automatically against `raga_fit_cache.csv` — "
+                "if a (raga, mood) pair isn't cached yet, you get a copy-paste prompt to ask Claude in chat. "
+                "**Save** banks the score, **Re-rank** rebuilds title variants using your highest-scored keywords."
             )
 
             _SLOT_OPTIONS = ["problem", "raga", "hz", "instrument", "wave", "tag"]
@@ -2804,28 +2805,35 @@ with tab_idea_gen:
                         if st.button("🗑️", key=f"rm_extra_{_ei}", help="Remove"):
                             _to_remove.append(_ei)
 
-                    # Raga fit check — shown below the row, only for raga-slot entries
+                    # Raga fit check — auto-display from CSV cache; for misses, show ask-Claude prompt
                     if _eslot == "raga":
-                        _fit_key = f"{_ekw}::{_primary_mood}"
-                        _fit_result = st.session_state["raga_fit_results"].get(_fit_key)
-                        _fc1, _fc2 = st.columns([1, 6])
-                        with _fc1:
-                            if st.button("🎵 Check fit", key=f"fit_btn_{_ei}", help=f"Ask Claude: does {_ekw} suit {_primary_mood} music?"):
-                                with st.spinner(f"Checking raga fit for {_primary_mood}…"):
-                                    try:
-                                        from raga_validator import validate_raga_for_mood as _vrm
-                                        _fit_result = _vrm(_ekw, _primary_mood)
-                                        st.session_state["raga_fit_results"][_fit_key] = _fit_result
-                                    except Exception as _e:
-                                        st.error(f"Validator error: {_e}")
-                        with _fc2:
-                            if _fit_result:
-                                _fit_icons = {"strong": "✅ Strong fit", "ok": "✅ Ok", "caution": "⚠️ Caution", "avoid": "❌ Avoid", "unknown": "❓ Unknown"}
-                                _icon = _fit_icons.get(_fit_result["fit"], _fit_result["fit"])
-                                _cached_tag = " _(cached)_" if _fit_result.get("cached") else ""
-                                st.caption(f"{_icon} for **{_primary_mood}**{_cached_tag} — {_fit_result['reason']}")
-                                if _fit_result.get("alternatives"):
-                                    st.caption(f"Better alternatives: {', '.join(_fit_result['alternatives'])}")
+                        try:
+                            from raga_validator import lookup_raga_fit, build_ask_prompt
+                            # Try the raw keyword first, then strip "raga " prefix as fallback
+                            _ekw_clean = _ekw.removeprefix("raga ").strip()
+                            _fit_result = lookup_raga_fit(_ekw_clean, _primary_mood) or lookup_raga_fit(_ekw, _primary_mood)
+                        except Exception as _e:
+                            _fit_result = None
+
+                        _fit_icons = {
+                            "strong":  "✅ Strong fit",
+                            "ok":      "✅ Ok",
+                            "caution": "⚠️ Caution",
+                            "avoid":   "❌ Avoid",
+                        }
+                        if _fit_result:
+                            _icon = _fit_icons.get(_fit_result["fit"], _fit_result["fit"])
+                            st.caption(f"{_icon} for **{_primary_mood}** — {_fit_result['reason']}")
+                            if _fit_result.get("alternatives"):
+                                st.caption(f"   ↳ Better: {', '.join(_fit_result['alternatives'])}")
+                        else:
+                            with st.expander(f"❓ Not yet validated — ask Claude in chat"):
+                                st.caption(
+                                    f"This (raga, mood) pair isn't in `data/raga_fit_cache.csv` yet. "
+                                    f"Copy the prompt below into your Claude conversation, get the verdict, "
+                                    f"then append the row to the CSV."
+                                )
+                                st.code(build_ask_prompt(_ekw, _primary_mood), language="text")
 
                 for _i in reversed(_to_remove):
                     st.session_state["extra_keywords"].pop(_i)
