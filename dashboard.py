@@ -2533,10 +2533,10 @@ with tab_idea_gen:
                         )
                     with promote_col3:
                         dismiss_clicked = st.button(
-                            "🚫 Dismiss",
+                            "💤 Park for today",
                             key=f"dismiss_btn_{idx}",
                             use_container_width=True,
-                            help="Don't suggest this combo again",
+                            help="Snooze this problem — it won't surface in today's runs but comes back tomorrow",
                         )
                     if promote_clicked:
                         try:
@@ -2559,33 +2559,38 @@ with tab_idea_gen:
                             import csv as _csvd
                             from datetime import date as _d2
                             comp = cand.get("components", {})
-                            sig = "|".join([
-                                comp.get("problem", {}).get("kw", ""),
-                                comp.get("instrument", {}).get("name", ""),
-                                comp.get("hz", {}).get("hz", ""),
-                                comp.get("raga", {}).get("name", ""),
-                                comp.get("wave", {}).get("wave", ""),
-                            ]).lower()
+                            problem_kw = comp.get("problem", {}).get("kw", "").lower().strip()
+                            today = _d2.today().isoformat()
                             dpath = DASHBOARD_DIR / "data" / "dismissed_candidates.csv"
+                            HEADER = ["signature", "problem_keyword", "title", "dismissed_on"]
                             existing = []
                             if dpath.exists():
                                 with open(dpath) as f:
                                     existing = list(_csvd.DictReader(f))
-                            if not any(r.get("signature") == sig for r in existing):
+                            # Park the PROBLEM KEYWORD for today (not the full signature).
+                            # Old rows with a different schema are preserved untouched.
+                            already_today = any(
+                                r.get("problem_keyword", "").strip().lower() == problem_kw
+                                and r.get("dismissed_on") == today
+                                for r in existing
+                            )
+                            if not already_today:
                                 existing.append({
-                                    "signature": sig,
-                                    "title": cand.get("title", ""),
-                                    "dismissed_on": _d2.today().isoformat(),
+                                    "signature":       "",  # legacy column
+                                    "problem_keyword": problem_kw,
+                                    "title":           cand.get("title", ""),
+                                    "dismissed_on":    today,
                                 })
                                 with open(dpath, "w", newline="") as f:
-                                    w = _csvd.DictWriter(f, fieldnames=["signature", "title", "dismissed_on"])
+                                    w = _csvd.DictWriter(f, fieldnames=HEADER)
                                     w.writeheader()
-                                    for r in existing: w.writerow(r)
-                                st.success(f"🚫 Dismissed. Click Re-rank to see fresh candidates.")
+                                    for r in existing:
+                                        w.writerow({k: r.get(k, "") for k in HEADER})
+                                st.success(f"💤 Parked **'{problem_kw}'** for today. Click Re-rank to see different ideas. Comes back tomorrow.")
                             else:
-                                st.info("Already dismissed.")
+                                st.info("Already parked for today.")
                         except Exception as e:
-                            st.error(f"Dismiss failed: {e}")
+                            st.error(f"Park failed: {e}")
 
                     st.markdown("**Keywords for this candidate:**")
                     from urllib.parse import quote_plus as _qp

@@ -2,123 +2,15 @@
   "date": "2026-04-27",
   "candidates": [
     {
-      "title": "Adhd Focus Music | 174Hz Sitar Raga Bhupali | Theta Wave Meditation Session | 1 Hour",
-      "score": 165,
-      "reasons": [
-        "\u2705 'adhd focus music' VidIQ 70 HIGH (+20)",
-        "\u2705 Tonal: Sitar = primary fit for focus (+20)",
-        "\u2139\ufe0f Sitar last used 6d ago \u2014 clear",
-        "\u2b50 Sitar: 0 competitor uses in 30d \u2014 unique to us"
-      ],
-      "components": {
-        "problem": {
-          "kw": "adhd focus music",
-          "seo_phrase": "Adhd Focus Music",
-          "question": "Adhd Focus Music",
-          "outcome": "Adhd Focus Music",
-          "vidiq_score": 70,
-          "vidiq_comp": "Medium"
-        },
-        "instrument": {
-          "name": "Sitar",
-          "vidiq_score": 72,
-          "vidiq_comp": "Low",
-          "aliases": [
-            "sitar"
-          ]
-        },
-        "hz": {
-          "hz": "174Hz",
-          "category": "ancient healing",
-          "meaning": "pain relief / grounding",
-          "vidiq_score": 62,
-          "vidiq_comp": ""
-        },
-        "raga": {
-          "name": "Bhupali",
-          "time": "evening",
-          "mood": "serenity",
-          "vidiq_score": 57,
-          "vidiq_comp": "Med"
-        },
-        "wave": {
-          "wave": "Theta",
-          "outcome": "Meditation Session",
-          "matches": [
-            "meditation",
-            "creativity",
-            "intuition"
-          ],
-          "vidiq_score": 61,
-          "vidiq_comp": ""
-        }
-      }
-    },
-    {
-      "title": "Deep Rest Music | 174Hz Bansuri Raga Bhupali | Delta Wave Deep Rest Session | 1 Hour",
-      "score": 165,
-      "reasons": [
-        "\u2705 'deep rest music' VidIQ 63 HIGH (+6)",
-        "\u2705 Tonal: Bansuri = primary fit for rest (+20)",
-        "\u2139\ufe0f Bansuri last used 5d ago \u2014 clear",
-        "\u2b50 Bansuri: 0 competitor uses in 30d \u2014 unique to us",
-        "\u26a0\ufe0f Delta wave used 5d ago",
-        "\u2705 Delta matches 'deep rest music'"
-      ],
-      "components": {
-        "problem": {
-          "kw": "deep rest music",
-          "seo_phrase": "Deep Rest Music",
-          "question": "Can't Find Deep Rest?",
-          "outcome": "Reach Deep Rest",
-          "vidiq_score": 63,
-          "vidiq_comp": "Low"
-        },
-        "instrument": {
-          "name": "Bansuri",
-          "vidiq_score": 66,
-          "vidiq_comp": "Very Low",
-          "aliases": [
-            "bansuri",
-            "bamboo flute"
-          ]
-        },
-        "hz": {
-          "hz": "174Hz",
-          "category": "ancient healing",
-          "meaning": "pain relief / grounding",
-          "vidiq_score": 62,
-          "vidiq_comp": ""
-        },
-        "raga": {
-          "name": "Bhupali",
-          "time": "evening",
-          "mood": "serenity",
-          "vidiq_score": 57,
-          "vidiq_comp": "Med"
-        },
-        "wave": {
-          "wave": "Delta",
-          "outcome": "Deep Rest Session",
-          "matches": [
-            "sleep",
-            "rest",
-            "unwind"
-          ],
-          "vidiq_score": 64,
-          "vidiq_comp": "Medium"
-        }
-      }
-    },
-    {
-      "title": "Overthinking Music | 174Hz Sarangi Raga Bhairavi | Alpha Wave Calm Session | 1 Hour",
-      "score": 165,
+      "title": "Overthinking Music | 174Hz Sarangi Raga Bhupali | Alpha Wave Calm Session | 1 Hour",
+      "score": 120,
       "reasons": [
         "\u2705 'overthinking music' VidIQ 63 HIGH (+6)",
-        "\u2139\ufe0f Audience cluster 'evening_serene' covered 2\u00d7 in last 5d (label only \u2014 different SEO keyword still rankable)",
+        "\u26a0\ufe0f Competitor topic-overlap: Shanti Instrumentals \u2014 'Morning Anxiety? Sitar To Reduce Stress And Stop Overthinking' (3d ago)",
+        "\u2139\ufe0f Audience cluster 'evening_serene' covered 4\u00d7 in last 5d (label only \u2014 different SEO keyword still rankable)",
         "\u2705 Tonal: Sarangi = primary fit for overthinking (+20)",
         "\u2139\ufe0f Sarangi last used 20d ago \u2014 clear",
-        "\u2b50 Sarangi: 0 competitor uses in 30d \u2014 unique to us",
+        "\u26a0\ufe0f Sarangi used by competitor 0d ago",
         "\u26a0\ufe0f Alpha wave used 6d ago",
         "\u2705 Alpha matches 'overthinking music'"
       ],
@@ -147,9 +39,123 @@
           "vidiq_comp": ""
         },
         "raga": {
-          "name": "Bhairavi",
-          "time": "morning",
-          "mood": "devotional",
+          "name": "Bhupali",
+          "time": "evening",
+          "mood": "serenity",
+          "vidiq_score": 57,
+          "vidiq_comp": "Med"
+        },
+        "wave": {
+          "wave": "Alpha",
+          "outcome": "Calm Session",
+          "matches": [
+            "overthinking",
+            "anxiety",
+            "stress",
+            "racing"
+          ],
+          "vidiq_score": null,
+          "vidiq_comp": ""
+        }
+      },
+      "strategy": "competitor",
+      "strategy_note": "Counter-strategy: Shanti Instrumentals used this problem 3d ago"
+    },
+    {
+      "title": "Deep Rest Music | 174Hz Tanpura Raga Bhupali | Delta Wave Deep Rest Session | 1 Hour",
+      "score": 145,
+      "reasons": [
+        "\u2705 'deep rest music' VidIQ 63 HIGH (+6)",
+        "\u2705 Tonal: Tanpura = primary fit for rest (+20)",
+        "\u2139\ufe0f Tanpura last used 8d ago \u2014 clear",
+        "\u2b50 Tanpura: 0 competitor uses in 30d \u2014 unique to us",
+        "\u26a0\ufe0f Delta wave used 5d ago",
+        "\u2705 Delta matches 'deep rest music'"
+      ],
+      "components": {
+        "problem": {
+          "kw": "deep rest music",
+          "seo_phrase": "Deep Rest Music",
+          "question": "Can't Find Deep Rest?",
+          "outcome": "Reach Deep Rest",
+          "vidiq_score": 63,
+          "vidiq_comp": "Low"
+        },
+        "instrument": {
+          "name": "Tanpura",
+          "vidiq_score": 74,
+          "vidiq_comp": "Unknown",
+          "aliases": [
+            "tanpura"
+          ]
+        },
+        "hz": {
+          "hz": "174Hz",
+          "category": "ancient healing",
+          "meaning": "pain relief / grounding",
+          "vidiq_score": 62,
+          "vidiq_comp": ""
+        },
+        "raga": {
+          "name": "Bhupali",
+          "time": "evening",
+          "mood": "serenity",
+          "vidiq_score": 57,
+          "vidiq_comp": "Med"
+        },
+        "wave": {
+          "wave": "Delta",
+          "outcome": "Deep Rest Session",
+          "matches": [
+            "sleep",
+            "rest",
+            "unwind"
+          ],
+          "vidiq_score": 64,
+          "vidiq_comp": "Medium"
+        }
+      },
+      "strategy": "niche",
+      "strategy_note": "Doubling down on 'night_deep' cluster \u2014 your proven audience"
+    },
+    {
+      "title": "Instrumental Music Relaxing | 174Hz Tabla Raga Hamir | Alpha Wave Calm Session | 1 Hour",
+      "score": 212,
+      "reasons": [
+        "\u2705 'instrumental music relaxing' VidIQ 70 HIGH (+20)",
+        "\u2139\ufe0f Tabla last used 14d ago \u2014 clear",
+        "\u2b50 Tabla: 0 competitor uses in 30d \u2014 unique to us",
+        "\u26a0\ufe0f Alpha wave used 6d ago",
+        "\ud83c\udf19 Moonshot novelty bonus +75"
+      ],
+      "components": {
+        "problem": {
+          "kw": "instrumental music relaxing",
+          "seo_phrase": "Instrumental Music Relaxing",
+          "question": "Instrumental Music Relaxing",
+          "outcome": "Instrumental Music Relaxing",
+          "vidiq_score": 70,
+          "vidiq_comp": ""
+        },
+        "instrument": {
+          "name": "Tabla",
+          "vidiq_score": 65,
+          "vidiq_comp": "Low",
+          "aliases": [
+            "tabla"
+          ]
+        },
+        "hz": {
+          "hz": "174Hz",
+          "category": "ancient healing",
+          "meaning": "pain relief / grounding",
+          "vidiq_score": 62,
+          "vidiq_comp": ""
+        },
+        "raga": {
+          "name": "Hamir",
+          "time": "late evening",
+          "mood": "majestic",
           "vidiq_score": null,
           "vidiq_comp": ""
         },
@@ -165,16 +171,253 @@
           "vidiq_score": null,
           "vidiq_comp": ""
         }
-      }
+      },
+      "strategy": "moonshot",
+      "strategy_note": "Fresh angle outside your proven lane \u2014 high-variance bet"
     }
   ],
   "lead_recommendation": [
     "A_seo",
     "\u2b50 Concluded A/B: SEO won 1/1 tests (latest 2026-04-25, +75% margin)."
   ],
-  "keyword_opportunities": [],
+  "keyword_opportunities": [
+    {
+      "phrase": "indian classical meditation music",
+      "uses": 2,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 2
+    },
+    {
+      "phrase": "screen time sickness music",
+      "uses": 1,
+      "sources": [
+        "Raga Heal"
+      ],
+      "latest_days": 0
+    },
+    {
+      "phrase": "screen time sickness",
+      "uses": 1,
+      "sources": [
+        "Raga Heal"
+      ],
+      "latest_days": 0
+    },
+    {
+      "phrase": "raga bhairavi nervous system reset",
+      "uses": 1,
+      "sources": [
+        "Raga Heal"
+      ],
+      "latest_days": 0
+    },
+    {
+      "phrase": "for deep sleep music",
+      "uses": 1,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 0
+    },
+    {
+      "phrase": "for deep sleep",
+      "uses": 1,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 0
+    },
+    {
+      "phrase": "silence nighttime thoughts music",
+      "uses": 1,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 0
+    },
+    {
+      "phrase": "silence nighttime thoughts",
+      "uses": 1,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 0
+    },
+    {
+      "phrase": "nervous system cooldown music",
+      "uses": 1,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 0
+    },
+    {
+      "phrase": "nervous system cooldown",
+      "uses": 1,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 0
+    }
+  ],
   "competitor_pulse": {
-    "Raga Heal": [],
-    "Shanti Instrumentals": []
+    "Raga Heal": [
+      {
+        "title": "Screen Time Sickness? | 432Hz Raga Bhairavi Nervous System Reset",
+        "days_ago": 0,
+        "video_id": "lgT5cx1c5T4",
+        "views": 518,
+        "likes": 21,
+        "duration": "PT1H9M22S"
+      },
+      {
+        "title": "Just 2 Minutes \u2013 Reset Your Mind Instantly \ud83c\udf3f #meditationmusic #stressrelief #indianclassicalmusic",
+        "days_ago": 1,
+        "video_id": "NujtZT1p2uE",
+        "views": 1235,
+        "likes": 26,
+        "duration": "PT2M23S"
+      },
+      {
+        "title": "Ancient Raga Todi for Nervous System Reset \ud83c\udf3f | Sitar Healing for Chronic Burnout",
+        "days_ago": 3,
+        "video_id": "rUPtg5bVZMo",
+        "views": 4280,
+        "likes": 124,
+        "duration": "PT1H1M50S"
+      },
+      {
+        "title": "Dopamine Reset | 639Hz Bansuri for Deep Digital Detox & Inner Balance",
+        "days_ago": 7,
+        "video_id": "8jnAg1D9x4s",
+        "views": 31892,
+        "likes": 695,
+        "duration": "PT1H14M25S"
+      }
+    ],
+    "Shanti Instrumentals": [
+      {
+        "title": "Sarangi for Deep Sleep | Indian Classical Music | Silence Nighttime Thoughts",
+        "days_ago": 0,
+        "video_id": "RST2oYB2-4s",
+        "views": 214,
+        "likes": 13,
+        "duration": "PT46M3S"
+      },
+      {
+        "title": "Nervous System Cooldown | Temple Melodies For Deep Relaxation",
+        "days_ago": 0,
+        "video_id": "5_Xz4f6dMAs",
+        "views": 248,
+        "likes": 13,
+        "duration": "PT1H6M8S"
+      },
+      {
+        "title": "Gentle Healing Temple Melodies | Soft Indian Traditional Music For Meditation",
+        "days_ago": 0,
+        "video_id": "C1fl4U5jBfM",
+        "views": 581,
+        "likes": 19,
+        "duration": "PT1H5M48S"
+      },
+      {
+        "title": "Mystical Indian Instrumental | Healing Sitar For Yoga & Meditation",
+        "days_ago": 1,
+        "video_id": "leevTyVaKXI",
+        "views": 540,
+        "likes": 24,
+        "duration": "PT1H9M39S"
+      },
+      {
+        "title": "Forgotten Ragas For Peace | Ancient Indian Classical Music",
+        "days_ago": 1,
+        "video_id": "_fL7hiS-juw",
+        "views": 553,
+        "likes": 15,
+        "duration": "PT1H22M21S"
+      },
+      {
+        "title": "Ancient Temple Melodies | Relax With Indian Classical Music",
+        "days_ago": 1,
+        "video_id": "z1GxYet0D5w",
+        "views": 2769,
+        "likes": 59,
+        "duration": "PT1H1M14S"
+      },
+      {
+        "title": "Sitar To Start Your Day | Indian Classical Meditation Music",
+        "days_ago": 2,
+        "video_id": "3Olwnet2x3k",
+        "views": 803,
+        "likes": 22,
+        "duration": "PT1H6M46S"
+      },
+      {
+        "title": "Feeling Foggy? Try This: Sitar For a Razor Sharp Mind",
+        "days_ago": 2,
+        "video_id": "ZyENEGlmVkI",
+        "views": 579,
+        "likes": 18,
+        "duration": "PT1H3M50S"
+      },
+      {
+        "title": "Morning Anxiety? Sitar To Reduce Stress And Stop Overthinking",
+        "days_ago": 3,
+        "video_id": "oeyNBPdUUjU",
+        "views": 714,
+        "likes": 20,
+        "duration": "PT1H5M3S"
+      },
+      {
+        "title": "Somatic Healing With Sitar | Trauma Release | Melt Away Emotional Pain",
+        "days_ago": 3,
+        "video_id": "prj8TLQbLBw",
+        "views": 438,
+        "likes": 23,
+        "duration": "PT1H7M11S"
+      },
+      {
+        "title": "Calm Your Anxiety With Sitar | Indian Classical Background Music | Heal, Breathe, & Let Go",
+        "days_ago": 5,
+        "video_id": "ljOOxVWQ_C4",
+        "views": 2133,
+        "likes": 47,
+        "duration": "PT1H3M52S"
+      },
+      {
+        "title": "Dopamine Reset With Sitar | Indian Classical Meditation Music | Rewire & Restore",
+        "days_ago": 5,
+        "video_id": "6zUj0_bxjwI",
+        "views": 1965,
+        "likes": 38,
+        "duration": "PT1H5M1S"
+      },
+      {
+        "title": "Gentle Healing With Sitar | Restorative Indian Classical Music | Sleep, Relax, Unwind",
+        "days_ago": 6,
+        "video_id": "kwOLK4M9YPQ",
+        "views": 1659,
+        "likes": 31,
+        "duration": "PT1H4M50S"
+      },
+      {
+        "title": "Boost Your Mood With Sitar | Indian Classical Meditation Music for Joy & Mental Clarity",
+        "days_ago": 6,
+        "video_id": "tC9gTqF08UE",
+        "views": 2566,
+        "likes": 57,
+        "duration": "PT1H21M53S"
+      },
+      {
+        "title": "Rest Your Mind With Sitar | Relaxing Indian Classical Music | Release Stress, Heal, Sleep",
+        "days_ago": 6,
+        "video_id": "AbMzhks4-6Q",
+        "views": 720,
+        "likes": 24,
+        "duration": "PT1H3M17S"
+      }
+    ]
   }
 }

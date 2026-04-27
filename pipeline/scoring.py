@@ -249,11 +249,91 @@ def score_candidate(problem, instrument, hz, raga, wave, catalog, competitor_dat
 
 
 # ═══════════════════════════════════════════════════════════
+# 3-day title-token recency: every candidate's title must NOT share any
+# meaningful token with our last-3-days own catalog titles.
+# ═══════════════════════════════════════════════════════════
+def _recent_title_tokens(catalog, within_days=3):
+    """Return set of meaningful tokens used in own catalog titles in last N days."""
+    from datetime import date
+    from signals import _meaningful_tokens
+    today = date.today()
+    tokens = set()
+    for v in catalog:
+        days_ago = (today - v["publish_date"]).days
+        if days_ago <= within_days:
+            for tok in _meaningful_tokens(v["title"]):
+                tokens.add(tok)
+    return tokens
+
+
+def _title_tokens(title):
+    from signals import _meaningful_tokens
+    return set(_meaningful_tokens(title))
+
+
+# ═══════════════════════════════════════════════════════════
+# Strategy tagging: each candidate gets one of three strategy labels
+# based on portfolio-thinking:
+#   🎯 competitor — counter what Raga Heal / Shanti just shipped
+#   💎 niche — double down on the audience cluster that's working for us
+#   🌙 moonshot — fresh / creative bet outside the proven lane
+# ═══════════════════════════════════════════════════════════
+def _own_top_clusters(catalog, top_k=4):
+    """Identify audience clusters of top-K best-performing own videos."""
+    from config import PROBLEM_TO_RAGA_MOOD
+    # Use views as proxy if available; else publish recency
+    sorted_vids = sorted(catalog, key=lambda v: -(v.get("views", 0) or 0))[:top_k]
+    clusters = []
+    for v in sorted_vids:
+        title_l = v["title"].lower()
+        for key, cluster in PROBLEM_TO_RAGA_MOOD.items():
+            if key in title_l:
+                clusters.append(cluster)
+                break
+    return set(clusters)
+
+
+def _tag_strategy(candidate, competitor_data, own_top_clusters):
+    """Tag candidate with one of: 'competitor', 'niche', 'moonshot'."""
+    from config import PROBLEM_TO_RAGA_MOOD
+    from signals import competitor_problem_uses
+    comp = candidate["components"]
+    prob_kw = comp["problem"]["kw"].lower()
+
+    # 1. Competitor-driven — competitor used this problem in last 7d
+    comp_recent = competitor_problem_uses(competitor_data, prob_kw, within_days=7)
+    if comp_recent:
+        candidate["strategy"] = "competitor"
+        candidate["strategy_note"] = f"Counter-strategy: {comp_recent[0]['competitor']} used this problem {comp_recent[0]['days_ago']}d ago"
+        return candidate
+
+    # 2. Niche doubling-down — problem's cluster matches our top performers
+    cand_cluster = None
+    for key, cluster in PROBLEM_TO_RAGA_MOOD.items():
+        if key in prob_kw:
+            cand_cluster = cluster
+            break
+    if cand_cluster and cand_cluster in own_top_clusters:
+        candidate["strategy"] = "niche"
+        candidate["strategy_note"] = f"Doubling down on '{cand_cluster}' cluster — your proven audience"
+        return candidate
+
+    # 3. Moonshot — anything else
+    candidate["strategy"] = "moonshot"
+    candidate["strategy_note"] = "Fresh angle outside your proven lane — high-variance bet"
+    return candidate
+
+
+# ═══════════════════════════════════════════════════════════
 # CANDIDATE GENERATION
 # ═══════════════════════════════════════════════════════════
-def generate_candidates(catalog, competitor_data, top_n=5):
-    """Generate, score, dedupe, return top N."""
+def generate_candidates(catalog, competitor_data, top_n=3):
+    """Generate, score, tag with strategy, return 1 per strategy bucket."""
     candidates = []
+    # 3-day title-token block — no candidate's title may share a meaningful
+    # token with our own catalog from the last 3 days.
+    recent_tokens = _recent_title_tokens(catalog, within_days=3)
+
     for problem in PROBLEM_HOOKS:
         for instrument in INSTRUMENTS:
             for hz in FREQUENCIES:
@@ -262,6 +342,9 @@ def generate_candidates(catalog, competitor_data, top_n=5):
                         title = build_title(problem, hz, instrument, raga, wave)
                         passes, reason = title_passes_basic_filters(title)
                         if not passes:
+                            continue
+                        # 3-day title-token gate
+                        if recent_tokens and (_title_tokens(title) & recent_tokens):
                             continue
                         score, reasons = score_candidate(problem, instrument, hz, raga, wave, catalog, competitor_data)
                         candidates.append({
@@ -277,15 +360,18 @@ def generate_candidates(catalog, competitor_data, top_n=5):
                             },
                         })
 
-    # Build exclusion set from:
-    #   1. data/dismissed_candidates.csv (manual 🚫 Dismiss clicks)
-    #   2. data/video_briefs/*.json (any candidate already promoted to a brief —
-    #      regardless of brief status. Once you brief it, it shouldn't re-suggest.)
-    # User asked: "if we move it to brief, it won't be generated again."
+    # Build exclusion sets from:
+    #   1. data/dismissed_candidates.csv → PARKED PROBLEM KEYWORDS (today only)
+    #      Park-for-today behaviour: snoozed problems come back tomorrow.
+    #   2. data/video_briefs/*.json → permanently excluded (briefs already chosen)
     try:
         import csv as _csv, json as _json
+        from datetime import date as _date
         from paths import DATA_DIR as _DD
-        excluded = set()
+        today_str = _date.today().isoformat()
+
+        parked_problems = set()  # problem keywords parked TODAY
+        permanent_signatures = set()  # exact signatures from briefs
 
         def _sig_from_components(comp):
             return "|".join([
@@ -296,16 +382,21 @@ def generate_candidates(catalog, competitor_data, top_n=5):
                 comp.get('wave', {}).get('wave', ''),
             ]).lower()
 
-        # 1. Manual dismissals
+        # 1. Today's parked problems (dismissed_candidates.csv with dismissed_on == today)
         dismissed_path = _DD / "dismissed_candidates.csv"
         if dismissed_path.exists():
             with open(dismissed_path) as f:
                 for row in _csv.DictReader(f):
-                    sig = row.get("signature", "").strip()
-                    if sig:
-                        excluded.add(sig)
+                    if (row.get("dismissed_on", "").strip() == today_str):
+                        # Newer rows: problem_keyword column. Older rows: parse from signature.
+                        prob = row.get("problem_keyword", "").strip().lower()
+                        if not prob and row.get("signature"):
+                            # legacy row — extract problem from signature (first segment)
+                            prob = row["signature"].split("|")[0].strip().lower()
+                        if prob:
+                            parked_problems.add(prob)
 
-        # 2. Briefs (any state = already chosen)
+        # 2. Briefs (any state = already chosen, permanent exclusion)
         briefs_dir = _DD / "video_briefs"
         if briefs_dir.exists():
             for brief_file in briefs_dir.glob("*.json"):
@@ -313,13 +404,19 @@ def generate_candidates(catalog, competitor_data, top_n=5):
                     b = _json.loads(brief_file.read_text())
                     sig = _sig_from_components(b.get("components", {}))
                     if sig and sig != "||||":
-                        excluded.add(sig)
+                        permanent_signatures.add(sig)
                 except Exception:
                     continue
 
-        if excluded:
-            def _sig(c): return _sig_from_components(c["components"])
-            candidates = [c for c in candidates if _sig(c) not in excluded]
+        if parked_problems or permanent_signatures:
+            def _filter(c):
+                comp = c["components"]
+                if comp["problem"]["kw"].lower() in parked_problems:
+                    return False
+                if _sig_from_components(comp) in permanent_signatures:
+                    return False
+                return True
+            candidates = [c for c in candidates if _filter(c)]
     except Exception:
         pass
 
@@ -331,34 +428,77 @@ def generate_candidates(catalog, competitor_data, top_n=5):
     #   - max 3 of any single Hz in the top N
     # Keeps the candidate list visually + structurally varied so we're not
     # proposing the same Sarangi×Bhairavi×174Hz combo for 5 different problems.
-    MAX_PER_INSTRUMENT = 2
-    MAX_PER_RAGA       = 2
-    MAX_PER_HZ         = 3
-    seen_pair = set()
-    counts_inst, counts_raga, counts_hz = {}, {}, {}
-    deduped = []
+    # ═════════════════════════════════════════════
+    # Strategic 3-bucket selection (user-requested portfolio thinking):
+    #   🎯 competitor — counter Raga Heal / Shanti recent uploads
+    #   💎 niche — double down on our top-performing audience cluster
+    #   🌙 moonshot — fresh / unused / untested direction (high variance)
+    # Each bucket gets exactly 1 candidate. Returns up to 3 total.
+    # ═════════════════════════════════════════════
+    own_top_clusters = _own_top_clusters(catalog, top_k=4)
     for c in candidates:
+        _tag_strategy(c, competitor_data, own_top_clusters)
+
+    # Apply moonshot novelty bonus — within the moonshot bucket, prefer
+    # candidates with components we haven't used in 14+ days AND that have
+    # untested or no competitor history.
+    from signals import instrument_last_used, hz_last_used, raga_last_used, wave_last_used
+    for c in candidates:
+        if c.get("strategy") != "moonshot":
+            continue
+        novelty = 0
         comp = c["components"]
-        pair_key = (comp["problem"]["kw"], comp["instrument"]["name"])
-        inst = comp["instrument"]["name"]
-        raga = comp["raga"]["name"]
-        hz   = comp["hz"]["hz"]
-        if pair_key in seen_pair:
-            continue
-        if counts_inst.get(inst, 0) >= MAX_PER_INSTRUMENT:
-            continue
-        if counts_raga.get(raga, 0) >= MAX_PER_RAGA:
-            continue
-        if counts_hz.get(hz, 0) >= MAX_PER_HZ:
-            continue
-        seen_pair.add(pair_key)
-        counts_inst[inst] = counts_inst.get(inst, 0) + 1
-        counts_raga[raga] = counts_raga.get(raga, 0) + 1
-        counts_hz[hz]     = counts_hz.get(hz, 0) + 1
-        deduped.append(c)
-        if len(deduped) >= top_n:
-            break
-    return deduped
+        days_inst = instrument_last_used(catalog, comp["instrument"]["name"])
+        days_hz   = hz_last_used(catalog, comp["hz"]["hz"])
+        days_raga = raga_last_used(catalog, comp["raga"]["name"])
+        days_wave = wave_last_used(catalog, comp["wave"]["wave"])
+        for d in (days_inst, days_hz, days_raga, days_wave):
+            if d is None:        # never used
+                novelty += 30
+            elif d >= 14:        # cold — fresh again
+                novelty += 15
+            elif d >= 7:
+                novelty += 5
+        if comp["problem"].get("vidiq_score") is None:
+            novelty += 25      # untested problem = real moonshot
+        c["score"] += novelty
+        c.setdefault("reasons", []).append(f"🌙 Moonshot novelty bonus +{novelty}")
+
+    # Re-sort by updated scores
+    candidates.sort(key=lambda c: -c["score"])
+
+    # Group by strategy and pick top 1 per bucket
+    buckets = {"competitor": [], "niche": [], "moonshot": []}
+    for c in candidates:
+        s = c.get("strategy", "moonshot")
+        if s in buckets:
+            buckets[s].append(c)
+
+    # Cross-bucket constraint: top 3 must have 3 different problem keywords
+    picked_problems = set()
+    deduped = []
+    for bucket_name in ["competitor", "niche", "moonshot"]:  # ordered by user priority
+        for c in buckets[bucket_name]:
+            prob = c["components"]["problem"]["kw"]
+            if prob in picked_problems:
+                continue
+            picked_problems.add(prob)
+            deduped.append(c)
+            break  # 1 per bucket
+
+    # If a bucket was empty (no candidates qualified), backfill with next best
+    if len(deduped) < top_n:
+        remaining_problems = picked_problems
+        for c in candidates:
+            prob = c["components"]["problem"]["kw"]
+            if prob in remaining_problems:
+                continue
+            remaining_problems.add(prob)
+            deduped.append(c)
+            if len(deduped) >= top_n:
+                break
+
+    return deduped[:top_n]
 
 
 # ═══════════════════════════════════════════════════════════

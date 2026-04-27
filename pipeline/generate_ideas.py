@@ -116,7 +116,14 @@ def render_proposal(date, candidates, competitor_data, rescues, own_hook_summary
     out.append("")
     for i, c in enumerate(candidates, 1):
         comp = c["components"]
-        out.append(f"### #{i} — Score {c['score']}")
+        # Strategy badge — competitor / niche / moonshot
+        STRAT_ICONS = {"competitor": "🎯", "niche": "💎", "moonshot": "🌙"}
+        STRAT_LABELS = {"competitor": "COMPETITOR-COUNTER", "niche": "NICHE DOUBLING-DOWN", "moonshot": "MOONSHOT"}
+        s = c.get("strategy", "")
+        s_badge = f"{STRAT_ICONS.get(s, '•')} {STRAT_LABELS.get(s, s.upper())}" if s else ""
+        out.append(f"### #{i} — {s_badge} — Score {c['score']}")
+        if c.get("strategy_note"):
+            out.append(f"_{c['strategy_note']}_")
         out.append(f"**Title:** `{c['title']}`")
         out.append(f"**Length:** {len(c['title'])} chars")
         out.append("")
