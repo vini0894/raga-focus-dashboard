@@ -161,3 +161,33 @@ charukesi,meditation,ok,Reflective meditation,yaman|malkauns|bhairavi,2026-04-27
 charukesi,emotional,strong,Beautifully wistful for emotional content,,2026-04-27
 charukesi,morning,ok,Works for late morning,bhairav|bhairavi|bilawal,2026-04-27
 charukesi,unwind,strong,Lovely unwind raga,,2026-04-27
+bilawal,morning_anxiety,strong,Morning raga aligns with morning-specific anxiety — Raga Heal validated 24K views (Morning Anxiety + Bilaval Bansuri),,2026-04-27
+bhairavi,morning_anxiety,strong,Morning devotional raga ideal for early-day anxiety and dawn calm,,2026-04-27
+bhairav,morning_anxiety,ok,Dawn raga; austere but works for spiritually-framed morning anxiety,bhairavi|bilawal,2026-04-27
+todi,morning_anxiety,ok,Morning raga but intense; works for morning anxiety with serious framing — Raga Heal Todi+Burnout 4.5K views,bhairavi|bilawal,2026-04-27
+hamsadhwani,morning_anxiety,ok,Bright morning raga; works for uplifting morning calm,bhairavi|bilawal,2026-04-27
+yaman,morning_anxiety,avoid,Evening raga — wrong time for morning-specific framing,bhairavi|bilawal|bhairav,2026-04-27
+darbari,morning_anxiety,avoid,Deep night raga — wrong time for morning,bhairavi|bilawal|bhairav,2026-04-27
+bilawal,morning_overthinking,strong,Bright morning raga; Raga Heal 24K views with explicit Stress + Overthinking framing,,2026-04-27
+bhairavi,morning_overthinking,ok,Morning raga; gentle enough to soothe morning racing thoughts,bilawal,2026-04-27
+todi,morning_overthinking,ok,Morning raga; intense but focused — works for morning mental noise,bilawal|bhairavi,2026-04-27
+bilawal,morning_stress,strong,Morning raga ideal for morning-specific stress — bright and grounding,,2026-04-27
+bhairavi,morning_stress,strong,Devotional morning raga soothes morning stress patterns,,2026-04-27
+hamsadhwani,morning_stress,ok,Bright morning raga; works for uplifting morning stress relief,bilawal|bhairavi,2026-04-27
+chandra,night_anxiety,strong,Night lunar raga — Raga Heal validated 176K views with Overactive Mind + Chandra,,2026-04-27
+yaman,night_anxiety,strong,Evening peace raga ideal for night-onset anxiety,,2026-04-27
+darbari,night_anxiety,strong,Deep night raga; profound calm for late-night anxiety,,2026-04-27
+malkauns,night_anxiety,ok,Midnight raga; deep but austere — better for severe insomnia anxiety,darbari|chandra|yaman,2026-04-27
+bageshri,night_anxiety,strong,Tender late-night raga; soothing for night-specific anxious feelings,,2026-04-27
+bhupali,night_anxiety,strong,Evening serenity raga; clean and calming for night anxiety,,2026-04-27
+bhairavi,night_anxiety,avoid,Morning raga — wrong time for night-specific anxiety,chandra|yaman|darbari,2026-04-27
+bilawal,night_anxiety,avoid,Bright morning raga — entirely wrong for night anxiety,chandra|yaman|darbari,2026-04-27
+chandra,night_overthinking,strong,Night lunar raga; quiets racing thoughts at night — Raga Heal 176K views,,2026-04-27
+darbari,night_overthinking,strong,Deep night raga; ideal for late-night mental noise,,2026-04-27
+yaman,night_overthinking,strong,Evening peace raga slows night-time mental chatter,,2026-04-27
+malkauns,night_overthinking,ok,Profound night raga; deep but austere,darbari|yaman|chandra,2026-04-27
+bageshri,night_overthinking,ok,Late-night tender raga; gentle for night overthinking,darbari|yaman,2026-04-27
+chandra,nervous_system,strong,Night lunar raga; ideal for parasympathetic activation and nervous system reset — Raga Heal validated 176K views,,2026-04-27
+todi,nervous_system,caution,Intense morning yearning raga; tension-creating rather than soothing for nervous system,chandra|yaman|bageshri|bhupali,2026-04-27
+bhairavi,nervous_system,ok,Gentle devotional morning character; works for calm reverent nervous system content,chandra|yaman|bhupali,2026-04-27
+bhairavi,detox,ok,Devotional cleansing character fits digital/mental detox framing,bansuri-instrument|yaman|bhupali,2026-04-27

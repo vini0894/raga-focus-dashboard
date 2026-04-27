@@ -20,6 +20,7 @@ Usage:
 
 import csv
 from pathlib import Path
+from typing import Optional
 
 HERE = Path(__file__).parent
 DATA_DIR = HERE.parent / "data"
@@ -27,7 +28,7 @@ CACHE_CSV = DATA_DIR / "raga_fit_cache.csv"
 CACHE_HEADERS = ["raga", "mood", "fit", "reason", "alternatives", "cached_on"]
 
 
-def lookup_raga_fit(raga: str, mood: str) -> dict | None:
+def lookup_raga_fit(raga: str, mood: str) -> Optional[dict]:
     """Read fit verdict from CSV cache. Returns None if not cached."""
     if not CACHE_CSV.exists():
         return None
@@ -47,23 +48,37 @@ def lookup_raga_fit(raga: str, mood: str) -> dict | None:
 
 
 def mood_from_problem_kw(problem_kw: str) -> str:
-    """Extract canonical mood bucket from a problem keyword string."""
+    """
+    Extract canonical mood bucket from a problem keyword string.
+
+    Compound moods (time + mood) take precedence — they map to different
+    raga sets than the generic mood. Example: "morning anxiety" requires
+    morning ragas (Bilawal, Bhairavi) which are 'avoid' for generic anxiety.
+    """
     p = (problem_kw or "").lower()
+    is_morning = any(x in p for x in ("morning", "wake", "dawn", "sunrise", "early"))
+    is_night   = any(x in p for x in ("night", "midnight", "late-night", "late night", "insomnia"))
+
+    if any(x in p for x in ("anxiety", "anxious", "worry", "worried", "panic", "nervous")):
+        if is_morning: return "morning_anxiety"
+        if is_night:   return "night_anxiety"
+        return "anxiety"
+    if any(x in p for x in ("overthink", "racing thoughts", "overactive", "racing mind")):
+        if is_morning: return "morning_overthinking"
+        if is_night:   return "night_overthinking"
+        return "overthinking"
+    if any(x in p for x in ("stress", "stressed", "tension")):
+        if is_morning: return "morning_stress"
+        return "stress"
     if any(x in p for x in ("sleep", "insomnia", "asleep", "deep rest", "rest music")):
         return "sleep"
-    if any(x in p for x in ("anxiety", "anxious", "worry", "worried", "panic")):
-        return "anxiety"
-    if any(x in p for x in ("stress", "stressed")):
-        return "stress"
-    if any(x in p for x in ("overthink", "racing thoughts")):
-        return "overthinking"
     if any(x in p for x in ("focus", "adhd", "concentration", "brain fog")):
         return "focus"
     if "meditat" in p:
         return "meditation"
     if any(x in p for x in ("emotional", "emotion", "grief", "sad", "lonely")):
         return "emotional"
-    if any(x in p for x in ("morning", "wake", "energi")):
+    if any(x in p for x in ("morning", "wake", "energi", "dawn", "sunrise")):
         return "morning"
     if any(x in p for x in ("unwind", "evening", "wind down")):
         return "unwind"
