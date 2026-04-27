@@ -180,13 +180,26 @@ def render_proposal(date, candidates, competitor_data, rescues, own_hook_summary
                 out.append(f"- ⚠️ **untested ({len(untested)})**: {line}{' …' if len(untested) > 8 else ''}")
         out.append("")
 
-        # Chapter timestamps — paste-ready block for the YouTube description
-        from description_hook import build_chapter_timestamps
-        chapters_block = build_chapter_timestamps(duration_minutes=60, problem_kw=comp["problem"]["kw"])
-        out.append("**📺 Chapters block** (paste into YouTube description — auto-detected by YouTube):")
+        # FULL paste-ready description (replaces the lone Chapters block).
+        # Title leads, then visceral hook, body, what-you'll-hear, chapters,
+        # how-to-use, best-for, subscribe CTA, no-ads, hashtags.
+        from description_hook import build_full_description
+        # Top-7 highest-scoring tags become hashtags (already prioritized in build_tags)
+        full_desc = build_full_description(
+            problem_kw=comp["problem"]["kw"],
+            instrument_name=comp["instrument"]["name"],
+            raga_name=comp["raga"]["name"],
+            hz=comp["hz"]["hz"],
+            wave_name=comp["wave"]["wave"],
+            duration_minutes=60,
+            top_tags=tags[:10],
+            title=variants.get("A_seo") or build_title(comp["problem"], comp["hz"], comp["instrument"], comp["raga"], comp["wave"]),
+        )
+        out.append("**📄 Full description** (paste into YouTube description box):")
         out.append("```")
-        out.append(chapters_block)
+        out.append(full_desc)
         out.append("```")
+        out.append(f"_Length: {len(full_desc)} chars_")
         out.append("")
 
         # Suno prompt + production spec (only for the #1 candidate to keep proposal focused)

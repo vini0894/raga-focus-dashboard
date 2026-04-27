@@ -1811,6 +1811,81 @@ def _latest_proposal_md():
     return p, today_str, p.exists()
 
 
+# Hardcoded competitor channel IDs — same as pipeline/config.py
+COMPETITOR_CHANNELS = {
+    "Raga Heal":            "UCnCW6fiX-6Jykcl2NBQBIbQ",
+    "Shanti Instrumentals": "UCGVIda_EdGStdRAFMBh6LAA",
+}
+
+
+@st.cache_data(ttl=900)  # 15 min cache
+def fetch_competitor_pulse_live(days: int = 7):
+    """Live YouTube Data API fetch — bypasses pipeline RSS (which can fail on Cloud).
+
+    Returns: {competitor_name: [{title, days_ago, video_id, views, likes, duration}]}
+    Uses dashboard's existing OAuth (works on both local and Cloud via st.secrets).
+    """
+    import datetime as _dt
+    yd = _yt_data()
+    out = {}
+    today = _dt.datetime.now(_dt.timezone.utc).date()
+
+    for name, channel_id in COMPETITOR_CHANNELS.items():
+        try:
+            # Get the uploads playlist for this channel
+            ch = yd.channels().list(part="contentDetails", id=channel_id).execute()
+            if not ch.get("items"):
+                out[name] = []
+                continue
+            uploads_pl = ch["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+
+            # Get latest videos from that playlist (50 most recent)
+            pl = yd.playlistItems().list(
+                part="contentDetails,snippet", playlistId=uploads_pl, maxResults=50
+            ).execute()
+
+            video_ids = []
+            meta = {}
+            for item in pl.get("items", []):
+                vid = item["contentDetails"]["videoId"]
+                pub_str = item["contentDetails"].get("videoPublishedAt") or item["snippet"].get("publishedAt", "")
+                title = item["snippet"]["title"]
+                try:
+                    pub_dt = _dt.datetime.fromisoformat(pub_str.replace("Z", "+00:00")).date()
+                    days_ago = (today - pub_dt).days
+                except Exception:
+                    days_ago = 999
+                if days_ago <= days:
+                    video_ids.append(vid)
+                    meta[vid] = {"title": title, "days_ago": days_ago, "video_id": vid}
+
+            # Enrich with stats (views/likes/duration)
+            stats = {}
+            for i in range(0, len(video_ids), 50):
+                batch = video_ids[i:i + 50]
+                if not batch:
+                    continue
+                resp = yd.videos().list(part="statistics,contentDetails", id=",".join(batch)).execute()
+                for item in resp.get("items", []):
+                    s = item.get("statistics", {})
+                    stats[item["id"]] = {
+                        "views":    int(s.get("viewCount", 0)),
+                        "likes":    int(s.get("likeCount", 0)),
+                        "duration": item.get("contentDetails", {}).get("duration", ""),
+                    }
+
+            uploads = []
+            for vid in video_ids:
+                m = meta[vid]
+                m.update(stats.get(vid, {}))
+                uploads.append(m)
+            uploads.sort(key=lambda u: u.get("days_ago", 999))
+            out[name] = uploads
+        except Exception as e:
+            out[name] = [{"error": str(e)}]
+    return out
+
+
 def _refresh_reach_history():
     """Pull fresh per-video stats via the YouTube Analytics MCP function and
     append a new capture row to REACH_HISTORY.csv. Returns (n_rows, error_or_none).
@@ -1965,8 +2040,19 @@ with tab_idea_gen:
 
         # ─────────────────────────────────────────
         # Section 1 — Competitor Pulse (last 7d)
+        # If the proposal JSON has empty data (RSS failed in Cloud subprocess),
+        # fall back to a live YouTube Data API fetch using the dashboard's auth.
         # ─────────────────────────────────────────
         comp_pulse = proposal_data.get("competitor_pulse", {})
+        # Detect "empty pulse" — keys exist but all upload lists are empty
+        pulse_is_empty = comp_pulse and all(len(v) == 0 for v in comp_pulse.values())
+        if pulse_is_empty or not comp_pulse:
+            with st.spinner("📡 Fetching competitor pulse live (RSS fallback)…"):
+                try:
+                    comp_pulse = fetch_competitor_pulse_live(days=7)
+                except Exception as _e:
+                    st.warning(f"Live competitor fetch failed: {_e}")
+                    comp_pulse = {}
         if comp_pulse:
             st.markdown("### 📡 Competitor Pulse — last 7 days")
             # Header strip — count per competitor
@@ -2419,9 +2505,12 @@ with tab_idea_gen:
                 comp = cand.get("components", {})
                 title = cand.get("title") or cand.get("variants", {}).get("A_seo", "(untitled)")
                 with st.expander(f"#{idx} — {title}", expanded=(idx == 1)):
-                    # Keywords to validate for this candidate
+                    # Keywords to validate for this candidate.
+                    # NOTE: we deliberately don't ask for the full-title score —
+                    # full titles are never search queries, so VidIQ always scores
+                    # them 20-40 LOW regardless of component quality. Only
+                    # component scores actually matter for ranking.
                     keywords_to_check = []
-                    keywords_to_check.append(("full_title", title, "Full title string"))
                     if comp.get("problem"):
                         keywords_to_check.append(("problem", comp["problem"]["kw"], "Problem keyword"))
                     if comp.get("instrument"):
@@ -2430,6 +2519,8 @@ with tab_idea_gen:
                         keywords_to_check.append(("hz", comp["hz"]["hz"].lower(), "Hz"))
                     if comp.get("raga"):
                         keywords_to_check.append(("raga", comp["raga"]["name"].lower(), "Raga"))
+                    if comp.get("wave"):
+                        keywords_to_check.append(("wave", comp["wave"]["wave"].lower(), "Wave"))
 
                     # Promote to Brief / Dismiss buttons
                     promote_col1, promote_col2, promote_col3 = st.columns([3, 1, 1])

@@ -1,0 +1,180 @@
+{
+  "date": "2026-04-27",
+  "candidates": [
+    {
+      "title": "Adhd Focus Music | 174Hz Sitar Raga Bhupali | Theta Wave Meditation Session | 1 Hour",
+      "score": 165,
+      "reasons": [
+        "\u2705 'adhd focus music' VidIQ 70 HIGH (+20)",
+        "\u2705 Tonal: Sitar = primary fit for focus (+20)",
+        "\u2139\ufe0f Sitar last used 6d ago \u2014 clear",
+        "\u2b50 Sitar: 0 competitor uses in 30d \u2014 unique to us"
+      ],
+      "components": {
+        "problem": {
+          "kw": "adhd focus music",
+          "seo_phrase": "Adhd Focus Music",
+          "question": "Adhd Focus Music",
+          "outcome": "Adhd Focus Music",
+          "vidiq_score": 70,
+          "vidiq_comp": "Medium"
+        },
+        "instrument": {
+          "name": "Sitar",
+          "vidiq_score": 72,
+          "vidiq_comp": "Low",
+          "aliases": [
+            "sitar"
+          ]
+        },
+        "hz": {
+          "hz": "174Hz",
+          "category": "ancient healing",
+          "meaning": "pain relief / grounding",
+          "vidiq_score": 62,
+          "vidiq_comp": ""
+        },
+        "raga": {
+          "name": "Bhupali",
+          "time": "evening",
+          "mood": "serenity",
+          "vidiq_score": 57,
+          "vidiq_comp": "Med"
+        },
+        "wave": {
+          "wave": "Theta",
+          "outcome": "Meditation Session",
+          "matches": [
+            "meditation",
+            "creativity",
+            "intuition"
+          ],
+          "vidiq_score": 61,
+          "vidiq_comp": ""
+        }
+      }
+    },
+    {
+      "title": "Deep Rest Music | 174Hz Bansuri Raga Bhupali | Delta Wave Deep Rest Session | 1 Hour",
+      "score": 165,
+      "reasons": [
+        "\u2705 'deep rest music' VidIQ 63 HIGH (+6)",
+        "\u2705 Tonal: Bansuri = primary fit for rest (+20)",
+        "\u2139\ufe0f Bansuri last used 5d ago \u2014 clear",
+        "\u2b50 Bansuri: 0 competitor uses in 30d \u2014 unique to us",
+        "\u26a0\ufe0f Delta wave used 5d ago",
+        "\u2705 Delta matches 'deep rest music'"
+      ],
+      "components": {
+        "problem": {
+          "kw": "deep rest music",
+          "seo_phrase": "Deep Rest Music",
+          "question": "Can't Find Deep Rest?",
+          "outcome": "Reach Deep Rest",
+          "vidiq_score": 63,
+          "vidiq_comp": "Low"
+        },
+        "instrument": {
+          "name": "Bansuri",
+          "vidiq_score": 66,
+          "vidiq_comp": "Very Low",
+          "aliases": [
+            "bansuri",
+            "bamboo flute"
+          ]
+        },
+        "hz": {
+          "hz": "174Hz",
+          "category": "ancient healing",
+          "meaning": "pain relief / grounding",
+          "vidiq_score": 62,
+          "vidiq_comp": ""
+        },
+        "raga": {
+          "name": "Bhupali",
+          "time": "evening",
+          "mood": "serenity",
+          "vidiq_score": 57,
+          "vidiq_comp": "Med"
+        },
+        "wave": {
+          "wave": "Delta",
+          "outcome": "Deep Rest Session",
+          "matches": [
+            "sleep",
+            "rest",
+            "unwind"
+          ],
+          "vidiq_score": 64,
+          "vidiq_comp": "Medium"
+        }
+      }
+    },
+    {
+      "title": "Overthinking Music | 174Hz Sarangi Raga Bhairavi | Alpha Wave Calm Session | 1 Hour",
+      "score": 165,
+      "reasons": [
+        "\u2705 'overthinking music' VidIQ 63 HIGH (+6)",
+        "\u2139\ufe0f Audience cluster 'evening_serene' covered 2\u00d7 in last 5d (label only \u2014 different SEO keyword still rankable)",
+        "\u2705 Tonal: Sarangi = primary fit for overthinking (+20)",
+        "\u2139\ufe0f Sarangi last used 20d ago \u2014 clear",
+        "\u2b50 Sarangi: 0 competitor uses in 30d \u2014 unique to us",
+        "\u26a0\ufe0f Alpha wave used 6d ago",
+        "\u2705 Alpha matches 'overthinking music'"
+      ],
+      "components": {
+        "problem": {
+          "kw": "overthinking music",
+          "seo_phrase": "Overthinking Music",
+          "question": "Can't Stop Overthinking?",
+          "outcome": "Calm an Overthinking Mind",
+          "vidiq_score": 63,
+          "vidiq_comp": "Low"
+        },
+        "instrument": {
+          "name": "Sarangi",
+          "vidiq_score": 67,
+          "vidiq_comp": "Very Low",
+          "aliases": [
+            "sarangi"
+          ]
+        },
+        "hz": {
+          "hz": "174Hz",
+          "category": "ancient healing",
+          "meaning": "pain relief / grounding",
+          "vidiq_score": 62,
+          "vidiq_comp": ""
+        },
+        "raga": {
+          "name": "Bhairavi",
+          "time": "morning",
+          "mood": "devotional",
+          "vidiq_score": null,
+          "vidiq_comp": ""
+        },
+        "wave": {
+          "wave": "Alpha",
+          "outcome": "Calm Session",
+          "matches": [
+            "overthinking",
+            "anxiety",
+            "stress",
+            "racing"
+          ],
+          "vidiq_score": null,
+          "vidiq_comp": ""
+        }
+      }
+    }
+  ],
+  "lead_recommendation": [
+    "A_seo",
+    "\u2b50 Concluded A/B: SEO won 1/1 tests (latest 2026-04-25, +75% margin)."
+  ],
+  "keyword_opportunities": [],
+  "competitor_pulse": {
+    "Raga Heal": [],
+    "Shanti Instrumentals": []
+  }
+}

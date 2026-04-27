@@ -6,7 +6,7 @@
       "score": 136,
       "reasons": [
         "\u2705 'calm your mind' VidIQ 68 HIGH (+16)",
-        "\u2139\ufe0f Audience cluster 'evening_serene' covered 4\u00d7 in last 5d (label only \u2014 different SEO keyword still rankable)",
+        "\u2139\ufe0f Audience cluster 'evening_serene' covered 5\u00d7 in last 5d (label only \u2014 different SEO keyword still rankable)",
         "\u2139\ufe0f Sarangi last used 19d ago \u2014 clear"
       ],
       "components": {
@@ -106,32 +106,27 @@
       }
     },
     {
-      "title": "Overthinking Music | 174Hz Sarangi Raga Bhairavi | Alpha Wave Calm Session | 1 Hour",
+      "title": "Adhd Focus Music | 174Hz Veena Music Raga Hamir | Theta Wave Meditation Session | 1 Hour",
       "score": 135,
       "reasons": [
-        "\u2705 'overthinking music' VidIQ 63 HIGH (+6)",
-        "\u26a0\ufe0f Competitor topic-overlap: Shanti Instrumentals \u2014 'Morning Anxiety? Sitar To Reduce Stress And Stop Overthinking' (2d ago)",
-        "\u2139\ufe0f Audience cluster 'evening_serene' covered 4\u00d7 in last 5d (label only \u2014 different SEO keyword still rankable)",
-        "\u2705 Tonal: Sarangi = primary fit for overthinking (+20)",
-        "\u2139\ufe0f Sarangi last used 19d ago \u2014 clear",
-        "\u26a0\ufe0f Alpha wave used 5d ago",
-        "\u2705 Alpha matches 'overthinking music'"
+        "\u2705 'adhd focus music' VidIQ 70 HIGH (+20)",
+        "\u2b50 Veena Music: 0 competitor uses in 30d \u2014 unique to us"
       ],
       "components": {
         "problem": {
-          "kw": "overthinking music",
-          "seo_phrase": "Overthinking Music",
-          "question": "Can't Stop Overthinking?",
-          "outcome": "Calm an Overthinking Mind",
-          "vidiq_score": 63,
-          "vidiq_comp": "Low"
+          "kw": "adhd focus music",
+          "seo_phrase": "Adhd Focus Music",
+          "question": "Adhd Focus Music",
+          "outcome": "Adhd Focus Music",
+          "vidiq_score": 70,
+          "vidiq_comp": "Medium"
         },
         "instrument": {
-          "name": "Sarangi",
+          "name": "Veena Music",
           "vidiq_score": 67,
-          "vidiq_comp": "Very Low",
+          "vidiq_comp": "Unknown",
           "aliases": [
-            "sarangi"
+            "veena music"
           ]
         },
         "hz": {
@@ -142,22 +137,21 @@
           "vidiq_comp": ""
         },
         "raga": {
-          "name": "Bhairavi",
-          "time": "morning",
-          "mood": "devotional",
+          "name": "Hamir",
+          "time": "late evening",
+          "mood": "majestic",
           "vidiq_score": null,
           "vidiq_comp": ""
         },
         "wave": {
-          "wave": "Alpha",
-          "outcome": "Calm Session",
+          "wave": "Theta",
+          "outcome": "Meditation Session",
           "matches": [
-            "overthinking",
-            "anxiety",
-            "stress",
-            "racing"
+            "meditation",
+            "creativity",
+            "intuition"
           ],
-          "vidiq_score": null,
+          "vidiq_score": 61,
           "vidiq_comp": ""
         }
       }
@@ -181,6 +175,30 @@
       "uses": 1,
       "sources": [
         "Raga Heal"
+      ],
+      "latest_days": 0
+    },
+    {
+      "phrase": "gentle healing temple melodies music",
+      "uses": 1,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 0
+    },
+    {
+      "phrase": "gentle healing temple melodies",
+      "uses": 1,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 0
+    },
+    {
+      "phrase": "soft indian traditional music for meditation",
+      "uses": 1,
+      "sources": [
+        "Shanti Instrumentals"
       ],
       "latest_days": 0
     },
@@ -223,30 +241,6 @@
         "Shanti Instrumentals"
       ],
       "latest_days": 0
-    },
-    {
-      "phrase": "ancient indian classical music",
-      "uses": 1,
-      "sources": [
-        "Shanti Instrumentals"
-      ],
-      "latest_days": 0
-    },
-    {
-      "phrase": "ancient temple melodies music",
-      "uses": 1,
-      "sources": [
-        "Shanti Instrumentals"
-      ],
-      "latest_days": 0
-    },
-    {
-      "phrase": "ancient temple melodies",
-      "uses": 1,
-      "sources": [
-        "Shanti Instrumentals"
-      ],
-      "latest_days": 0
     }
   ],
   "competitor_pulse": {
@@ -255,139 +249,147 @@
         "title": "Just 2 Minutes \u2013 Reset Your Mind Instantly \ud83c\udf3f #meditationmusic #stressrelief #indianclassicalmusic",
         "days_ago": 0,
         "video_id": "NujtZT1p2uE",
-        "views": null,
-        "likes": null,
-        "duration": null
+        "views": 517,
+        "likes": 12,
+        "duration": "PT2M23S"
       },
       {
         "title": "Ancient Raga Todi for Nervous System Reset \ud83c\udf3f | Sitar Healing for Chronic Burnout",
         "days_ago": 2,
         "video_id": "rUPtg5bVZMo",
-        "views": null,
-        "likes": null,
-        "duration": null
+        "views": 3435,
+        "likes": 107,
+        "duration": "PT1H1M50S"
       },
       {
         "title": "Dopamine Reset | 639Hz Bansuri for Deep Digital Detox & Inner Balance",
         "days_ago": 6,
         "video_id": "8jnAg1D9x4s",
-        "views": null,
-        "likes": null,
-        "duration": null
+        "views": 29758,
+        "likes": 655,
+        "duration": "PT1H14M25S"
       }
     ],
     "Shanti Instrumentals": [
       {
+        "title": "Gentle Healing Temple Melodies | Soft Indian Traditional Music For Meditation",
+        "days_ago": 0,
+        "video_id": "C1fl4U5jBfM",
+        "views": 48,
+        "likes": 3,
+        "duration": "PT1H5M48S"
+      },
+      {
         "title": "Mystical Indian Instrumental | Healing Sitar For Yoga & Meditation",
         "days_ago": 0,
         "video_id": "leevTyVaKXI",
-        "views": null,
-        "likes": null,
-        "duration": null
+        "views": 361,
+        "likes": 21,
+        "duration": "PT1H9M39S"
       },
       {
         "title": "Forgotten Ragas For Peace | Ancient Indian Classical Music",
         "days_ago": 0,
         "video_id": "_fL7hiS-juw",
-        "views": null,
-        "likes": null,
-        "duration": null
+        "views": 424,
+        "likes": 14,
+        "duration": "PT1H22M21S"
       },
       {
         "title": "Ancient Temple Melodies | Relax With Indian Classical Music",
-        "days_ago": 0,
+        "days_ago": 1,
         "video_id": "z1GxYet0D5w",
-        "views": null,
-        "likes": null,
-        "duration": null
+        "views": 2392,
+        "likes": 57,
+        "duration": "PT1H1M14S"
       },
       {
         "title": "Sitar To Start Your Day | Indian Classical Meditation Music",
         "days_ago": 1,
         "video_id": "3Olwnet2x3k",
-        "views": null,
-        "likes": null,
-        "duration": null
+        "views": 457,
+        "likes": 17,
+        "duration": "PT1H6M46S"
       },
       {
         "title": "Feeling Foggy? Try This: Sitar For a Razor Sharp Mind",
-        "days_ago": 1,
+        "days_ago": 2,
         "video_id": "ZyENEGlmVkI",
-        "views": null,
-        "likes": null,
-        "duration": null
+        "views": 289,
+        "likes": 15,
+        "duration": "PT1H3M50S"
       },
       {
         "title": "Morning Anxiety? Sitar To Reduce Stress And Stop Overthinking",
         "days_ago": 2,
         "video_id": "oeyNBPdUUjU",
-        "views": null,
-        "likes": null,
-        "duration": null
+        "views": 661,
+        "likes": 19,
+        "duration": "PT1H5M3S"
       },
       {
         "title": "Somatic Healing With Sitar | Trauma Release | Melt Away Emotional Pain",
         "days_ago": 2,
         "video_id": "prj8TLQbLBw",
-        "views": null,
-        "likes": null,
-        "duration": null
+        "views": 411,
+        "likes": 23,
+        "duration": "PT1H7M11S"
       },
       {
         "title": "Calm Your Anxiety With Sitar | Indian Classical Background Music | Heal, Breathe, & Let Go",
         "days_ago": 4,
         "video_id": "ljOOxVWQ_C4",
-        "views": null,
-        "likes": null,
-        "duration": null
+        "views": 1946,
+        "likes": 45,
+        "duration": "PT1H3M52S"
       },
       {
         "title": "Dopamine Reset With Sitar | Indian Classical Meditation Music | Rewire & Restore",
-        "days_ago": 4,
+        "days_ago": 5,
         "video_id": "6zUj0_bxjwI",
-        "views": null,
-        "likes": null,
-        "duration": null
+        "views": 1831,
+        "likes": 38,
+        "duration": "PT1H5M1S"
       },
       {
         "title": "Gentle Healing With Sitar | Restorative Indian Classical Music | Sleep, Relax, Unwind",
         "days_ago": 5,
         "video_id": "kwOLK4M9YPQ",
-        "views": null,
-        "likes": null,
-        "duration": null
+        "views": 1605,
+        "likes": 31,
+        "duration": "PT1H4M50S"
       },
       {
         "title": "Boost Your Mood With Sitar | Indian Classical Meditation Music for Joy & Mental Clarity",
         "days_ago": 5,
         "video_id": "tC9gTqF08UE",
-        "views": null,
-        "likes": null,
-        "duration": null
+        "views": 2389,
+        "likes": 57,
+        "duration": "PT1H21M53S"
       },
       {
         "title": "Rest Your Mind With Sitar | Relaxing Indian Classical Music | Release Stress, Heal, Sleep",
         "days_ago": 5,
         "video_id": "AbMzhks4-6Q",
-        "views": null,
-        "likes": null,
-        "duration": null
+        "views": 697,
+        "likes": 24,
+        "duration": "PT1H3M17S"
       },
       {
         "title": "Midnight Ragas For Deep Sleep | Indian Classical Music For Mental Stillness | Unwind & Restore",
         "days_ago": 7,
         "video_id": "qX3uc_DZWrM",
-        "views": null,
-        "likes": null,
-        "duration": null
+        "views": 3211,
+        "likes": 117,
+        "duration": "PT1H5M43S"
       },
       {
         "title": "Wake Up Without Brain Fog | Traditional Indian Morning Ragas | Sitar, Bansuri & Tabla",
         "days_ago": 7,
         "video_id": "atMZMXEmLWo",
-        "views": null,
-        "likes": null,
-        "duration": null
+        "views": 1398,
+        "likes": 46,
+        "duration": "PT1H9M18S"
       }
     ]
   }
