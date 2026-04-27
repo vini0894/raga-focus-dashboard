@@ -2687,6 +2687,151 @@ with tab_idea_gen:
                             # Track for batch save
                             st.session_state["vidiq_score_inputs"][(idx, slot, kw)] = (new_score, slot if slot != "full_title" else "tag")
 
+            # ── Alternate keyword explorer ──────────────────────────────────
+            st.divider()
+            st.markdown("#### 💡 Add alternate keywords to explore")
+            st.caption(
+                "Spotted a better keyword on VidIQ while scoring? Add it here. "
+                "For ragas, click **🎵 Check fit** — Claude validates whether it suits this content's mood. "
+                "**Save** banks it, **Re-rank** rebuilds title variants using your highest-scored keywords."
+            )
+
+            _SLOT_OPTIONS = ["problem", "raga", "hz", "instrument", "wave", "tag"]
+            _KNOWN_RAGAS = {
+                "bhairavi", "yaman", "bhupali", "darbari", "bhimpalasi", "todi",
+                "marwa", "puriya", "kafi", "bilawal", "kalyan", "bageshri",
+                "malkauns", "kirwani", "charukesi", "hamsadhwani",
+            }
+            _INSTRUMENTS = {
+                "tanpura", "bansuri", "veena", "sitar", "sarangi", "dilruba",
+                "sarod", "shehnai", "flute", "violin", "tabla",
+            }
+            _PROBLEM_WORDS = {
+                "insomnia", "anxiety", "stress", "depression", "focus", "sleep",
+                "calm", "anger", "overthink", "grief", "pain", "fear", "worry",
+                "rest", "relax", "heal", "trauma", "fatigue", "burnout", "lonely",
+                "sad", "nervous", "mind", "mood", "tension", "unwind",
+            }
+
+            def _auto_slot(phrase: str) -> str:
+                p = phrase.strip().lower()
+                if p.startswith(("raga ", "raag ")) or p in _KNOWN_RAGAS:
+                    return "raga"
+                if "hz" in p or "hertz" in p:
+                    return "hz"
+                if any(x in p for x in ("delta", "theta", "alpha", "gamma", "binaural", " wave")):
+                    return "wave"
+                if any(x in p for x in _INSTRUMENTS):
+                    return "instrument"
+                if any(x in p for x in _PROBLEM_WORDS):
+                    return "problem"
+                return "tag"
+
+            if "extra_keywords" not in st.session_state:
+                st.session_state["extra_keywords"] = []
+
+            _add_c1, _add_c2, _add_c3 = st.columns([4, 2, 1])
+            with _add_c1:
+                _new_kw = st.text_input(
+                    "Keyword phrase",
+                    key="new_kw_input",
+                    placeholder="e.g. insomnia music, raga yaman, sleep music …",
+                    label_visibility="collapsed",
+                )
+            with _add_c2:
+                _auto = _auto_slot(_new_kw) if _new_kw else "tag"
+                _slot_pick = st.selectbox(
+                    "Slot", _SLOT_OPTIONS,
+                    index=_SLOT_OPTIONS.index(_auto),
+                    key="new_kw_slot",
+                    label_visibility="collapsed",
+                    help="Auto-detected from the phrase — override if needed",
+                )
+            with _add_c3:
+                _add_btn = st.button("➕ Add", use_container_width=True, key="add_kw_btn")
+
+            if _add_btn and _new_kw.strip():
+                _kw_clean = _new_kw.strip().lower()
+                if not any(e["kw"] == _kw_clean for e in st.session_state["extra_keywords"]):
+                    st.session_state["extra_keywords"].append({"kw": _kw_clean, "slot": _slot_pick})
+                st.rerun()
+
+            if st.session_state["extra_keywords"]:
+                st.markdown("**Alternate keywords to score:**")
+                if "raga_fit_results" not in st.session_state:
+                    st.session_state["raga_fit_results"] = {}
+
+                # Derive the dominant problem mood from candidate #1 for fit checks
+                _primary_mood = "sleep"  # fallback
+                if candidates:
+                    _prob_kw = candidates[0].get("components", {}).get("problem", {}).get("kw", "")
+                    if _prob_kw:
+                        import sys as _sys2
+                        _sys2.path.insert(0, str(PIPELINE_DIR))
+                        try:
+                            from raga_validator import mood_from_problem_kw as _mood_fn
+                            _primary_mood = _mood_fn(_prob_kw)
+                        except Exception:
+                            _primary_mood = _prob_kw.lower()
+
+                _to_remove = []
+                for _ei, _entry in enumerate(st.session_state["extra_keywords"]):
+                    _ekw, _eslot = _entry["kw"], _entry["slot"]
+                    _badge, _cur, _, _inv = score_badge(_ekw)
+
+                    _ec1, _ec2, _ec3, _ec4, _ec5 = st.columns([3, 2, 2, 2, 1])
+                    with _ec1:
+                        st.markdown(f"`{_ekw}`")
+                        st.caption(f"{_eslot} · {_badge}")
+                    with _ec2:
+                        _vidiq_url = f"https://app.vidiq.com/keywords/{_qp(_ekw)}"
+                        _yt_url    = f"https://www.youtube.com/results?search_query={_qp(_ekw)}"
+                        st.markdown(f"[🔗 VidIQ]({_vidiq_url})  ·  [▶ YT]({_yt_url})")
+                    with _ec3:
+                        _escore = st.number_input(
+                            "Score", min_value=0, max_value=100,
+                            value=int(_cur) if _cur else 0,
+                            step=1, key=f"extra_score_{_ei}_{_ekw}",
+                            label_visibility="collapsed",
+                        )
+                    with _ec4:
+                        if _escore and _escore != (_cur or 0):
+                            st.caption("✏️ changed")
+                        else:
+                            st.caption("— no change —")
+                        st.session_state["vidiq_score_inputs"][(-1, _eslot, _ekw)] = (_escore, _eslot)
+                    with _ec5:
+                        if st.button("🗑️", key=f"rm_extra_{_ei}", help="Remove"):
+                            _to_remove.append(_ei)
+
+                    # Raga fit check — shown below the row, only for raga-slot entries
+                    if _eslot == "raga":
+                        _fit_key = f"{_ekw}::{_primary_mood}"
+                        _fit_result = st.session_state["raga_fit_results"].get(_fit_key)
+                        _fc1, _fc2 = st.columns([1, 6])
+                        with _fc1:
+                            if st.button("🎵 Check fit", key=f"fit_btn_{_ei}", help=f"Ask Claude: does {_ekw} suit {_primary_mood} music?"):
+                                with st.spinner(f"Checking raga fit for {_primary_mood}…"):
+                                    try:
+                                        from raga_validator import validate_raga_for_mood as _vrm
+                                        _fit_result = _vrm(_ekw, _primary_mood)
+                                        st.session_state["raga_fit_results"][_fit_key] = _fit_result
+                                    except Exception as _e:
+                                        st.error(f"Validator error: {_e}")
+                        with _fc2:
+                            if _fit_result:
+                                _fit_icons = {"strong": "✅ Strong fit", "ok": "✅ Ok", "caution": "⚠️ Caution", "avoid": "❌ Avoid", "unknown": "❓ Unknown"}
+                                _icon = _fit_icons.get(_fit_result["fit"], _fit_result["fit"])
+                                _cached_tag = " _(cached)_" if _fit_result.get("cached") else ""
+                                st.caption(f"{_icon} for **{_primary_mood}**{_cached_tag} — {_fit_result['reason']}")
+                                if _fit_result.get("alternatives"):
+                                    st.caption(f"Better alternatives: {', '.join(_fit_result['alternatives'])}")
+
+                for _i in reversed(_to_remove):
+                    st.session_state["extra_keywords"].pop(_i)
+                if _to_remove:
+                    st.rerun()
+
             # Save & re-rank buttons
             col_save, col_rerank, _ = st.columns([2, 2, 4])
             with col_save:
