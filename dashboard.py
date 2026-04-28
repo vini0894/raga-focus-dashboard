@@ -3269,10 +3269,46 @@ with tab_idea_queue:
     _items = _list_q()
     _counts = _qcounts()
 
+    # ── Load bank + helpers (used by per-item workshop) ──
+    import csv as _csvw
+    _bank_path_w = DASHBOARD_DIR / "data" / "keyword_bank.csv"
+    _inv_path_w  = DASHBOARD_DIR / "data" / "invalidated_keywords.csv"
+    _bank_w = {}
+    if _bank_path_w.exists():
+        with open(_bank_path_w) as _f:
+            for _r in _csvw.DictReader(_f):
+                _bank_w[_r["phrase"].strip().lower()] = _r
+    _inv_w = set()
+    if _inv_path_w.exists():
+        with open(_inv_path_w) as _f:
+            for _r in _csvw.DictReader(_f):
+                _inv_w.add(_r["phrase"].strip().lower())
+
+    def _badge_w(phrase: str):
+        from datetime import date as _dW
+        p = (phrase or "").strip().lower()
+        if p in _inv_w:
+            return "❌ INVALIDATED", None
+        row = _bank_w.get(p)
+        if not row:
+            return "⚠️ UNTESTED", None
+        s = row.get("vidiq_score", "").strip()
+        if not s.isdigit():
+            return "⚠️ UNTESTED", None
+        sc = int(s)
+        last = row.get("last_score_check", "")
+        try:
+            stale = (_dW.today() - _dW.fromisoformat(last)).days > 30 if last else False
+        except Exception:
+            stale = False
+        if stale:    return f"🟡 STALE ({sc})", sc
+        if sc >= 60: return f"✅ PASS ({sc})", sc
+        return f"❌ FAIL ({sc})", sc
+
     if not _items:
         st.info(
             "No ideas in the queue yet.  \n"
-            "Open **💡 Idea Generation**, find a candidate worth working on, and click **➕ Queue**."
+            "Open **💡 Idea Generation**, find a candidate worth working on, and click **🛠 Work on this**."
         )
     else:
         # Portfolio summary at the top
@@ -3349,6 +3385,200 @@ with tab_idea_queue:
                             st.markdown(f"**Thumbnail style:** {_lf['thumbnail_style']}")
                         if _lf.get("vibe"):
                             st.markdown(f"**Vibe:** {_lf['vibe']}")
+
+                # ════════════════════════════════════════════════════════════
+                # WORKSHOP — per-queue-item tools (Score Check + Alternates + Rebuild)
+                # ════════════════════════════════════════════════════════════
+                from urllib.parse import quote_plus as _qpW
+                _qid = _q["id"]
+                if "qprep_scores" not in st.session_state:
+                    st.session_state["qprep_scores"] = {}  # {(qid, slot, kw): (score, write_slot)}
+
+                # ── 🔍 Score Check: validate each slot keyword on VidIQ ──
+                with st.expander("🔍 Score Check — validate keywords on VidIQ", expanded=False):
+                    st.caption("Click VidIQ → paste back the score. ✅≥60 · ❌<60 · ⚠️ untested · 🟡 stale (>30d).")
+                    _slot_kws = [
+                        ("problem",    _comp.get("problem",    {}).get("kw", ""),    "Problem"),
+                        ("instrument", _comp.get("instrument", {}).get("name", ""),  "Instrument"),
+                        ("hz",         _comp.get("hz",         {}).get("hz", ""),    "Hz"),
+                        ("raga",       _comp.get("raga",       {}).get("name", ""),  "Raga"),
+                        ("wave",       _comp.get("wave",       {}).get("wave", ""),  "Wave"),
+                    ]
+                    for _slot, _kw, _label in _slot_kws:
+                        if not _kw:
+                            continue
+                        _kw_l = _kw.strip().lower()
+                        _b, _cur = _badge_w(_kw_l)
+                        _r1, _r2, _r3 = st.columns([3, 2, 2])
+                        with _r1:
+                            st.markdown(f"`{_kw_l}`")
+                            st.caption(f"{_label} · {_b}")
+                        with _r2:
+                            st.markdown(
+                                f"[🔗 VidIQ](https://app.vidiq.com/keywords/{_qpW(_kw_l)}) · "
+                                f"[▶ YT](https://www.youtube.com/results?search_query={_qpW(_kw_l)})"
+                            )
+                        with _r3:
+                            _new_s = st.number_input(
+                                "score", 0, 100, value=int(_cur) if _cur else 0, step=1,
+                                key=f"qprep_score_{_qid}_{_slot}_{_kw_l}",
+                                label_visibility="collapsed",
+                            )
+                            if _new_s and _new_s != (_cur or 0):
+                                st.session_state["qprep_scores"][(_qid, _slot, _kw_l)] = (_new_s, _slot)
+
+                # ── ➕ Add alternate keyword (with raga fit check) ──
+                with st.expander("➕ Add alternate keyword to explore", expanded=False):
+                    st.caption("Spotted a better keyword on VidIQ? Add it here. Score, save, then rebuild title.")
+                    if f"qprep_alts_{_qid}" not in st.session_state:
+                        st.session_state[f"qprep_alts_{_qid}"] = []  # list of {kw, slot}
+
+                    _SLOT_OPTS = ["problem", "raga", "hz", "instrument", "wave", "tag"]
+
+                    def _auto_slot_local(p):
+                        p = (p or "").lower()
+                        if p.startswith(("raga ", "raag ")) or p in {"yaman","bhupali","darbari","malkauns","bageshri","kafi","puriya","bhimpalasi","bhairavi","bilawal","todi","hamir","chandra","marwa","bhairav","kirwani","hamsadhwani","charukesi"}: return "raga"
+                        if "hz" in p or "hertz" in p: return "hz"
+                        if any(x in p for x in ("delta","theta","alpha","gamma","binaural"," wave")): return "wave"
+                        if any(x in p for x in ("tanpura","bansuri","veena","sitar","sarangi","dilruba","sarod","shehnai","flute","violin","tabla")): return "instrument"
+                        if any(x in p for x in ("insomnia","anxiety","stress","depression","focus","sleep","calm","overthink","grief","relax","heal","fatigue","burnout","unwind","mood","tension")): return "problem"
+                        return "tag"
+
+                    _ac1, _ac2, _ac3 = st.columns([4, 2, 1])
+                    with _ac1:
+                        _new_alt = st.text_input("Keyword", key=f"qprep_alt_input_{_qid}",
+                                                 placeholder="e.g. insomnia music, raga darbari, 432hz",
+                                                 label_visibility="collapsed")
+                    with _ac2:
+                        _auto = _auto_slot_local(_new_alt) if _new_alt else "tag"
+                        _slot_pick_w = st.selectbox("Slot", _SLOT_OPTS, index=_SLOT_OPTS.index(_auto),
+                                                    key=f"qprep_alt_slot_{_qid}", label_visibility="collapsed")
+                    with _ac3:
+                        if st.button("➕ Add", key=f"qprep_alt_add_{_qid}", use_container_width=True) and _new_alt.strip():
+                            _kc = _new_alt.strip().lower()
+                            if not any(e["kw"] == _kc for e in st.session_state[f"qprep_alts_{_qid}"]):
+                                st.session_state[f"qprep_alts_{_qid}"].append({"kw": _kc, "slot": _slot_pick_w})
+                                st.rerun()
+
+                    # Render added alternates with VidIQ score input + raga fit
+                    if st.session_state[f"qprep_alts_{_qid}"]:
+                        try:
+                            from raga_validator import lookup_raga_fit as _rfit, mood_from_problem_kw as _mfk
+                            _mood_q = _mfk(_comp.get("problem", {}).get("kw", ""))
+                        except Exception:
+                            _rfit = lambda *a, **k: None
+                            _mood_q = ""
+
+                        _to_drop = []
+                        for _ai, _alt in enumerate(st.session_state[f"qprep_alts_{_qid}"]):
+                            _akw, _aslot = _alt["kw"], _alt["slot"]
+                            _ab, _acur = _badge_w(_akw)
+                            _x1, _x2, _x3, _x4 = st.columns([3, 2, 2, 1])
+                            with _x1:
+                                st.markdown(f"`{_akw}`")
+                                st.caption(f"{_aslot} · {_ab}")
+                            with _x2:
+                                st.markdown(
+                                    f"[🔗 VidIQ](https://app.vidiq.com/keywords/{_qpW(_akw)}) · "
+                                    f"[▶ YT](https://www.youtube.com/results?search_query={_qpW(_akw)})"
+                                )
+                            with _x3:
+                                _as = st.number_input(
+                                    "score", 0, 100, value=int(_acur) if _acur else 0, step=1,
+                                    key=f"qprep_alt_score_{_qid}_{_ai}",
+                                    label_visibility="collapsed",
+                                )
+                                if _as and _as != (_acur or 0):
+                                    st.session_state["qprep_scores"][(_qid, _aslot, _akw)] = (_as, _aslot)
+                            with _x4:
+                                if st.button("🗑", key=f"qprep_alt_rm_{_qid}_{_ai}"):
+                                    _to_drop.append(_ai)
+
+                            # Auto raga-fit signal for raga slot
+                            if _aslot == "raga" and _mood_q:
+                                _aclean = _akw.replace("raga ", "").strip()
+                                _fit = _rfit(_aclean, _mood_q) or _rfit(_akw, _mood_q)
+                                if _fit:
+                                    _icons = {"strong": "✅ Strong", "ok": "✅ Ok", "caution": "⚠️ Caution", "avoid": "❌ Avoid"}
+                                    st.caption(f"🎵 {_icons.get(_fit['fit'], _fit['fit'])} for **{_mood_q}** — {_fit['reason']}")
+                                    if _fit.get("alternatives"):
+                                        st.caption(f"   ↳ better: {', '.join(_fit['alternatives'])}")
+                        for _i in reversed(_to_drop):
+                            st.session_state[f"qprep_alts_{_qid}"].pop(_i)
+                        if _to_drop:
+                            st.rerun()
+
+                # ── 💾 Save scores + ✏️ Rebuild title ──
+                _bw1, _bw2, _bw3 = st.columns(3)
+                with _bw1:
+                    if st.button("💾 Save scores", key=f"qprep_save_{_qid}", use_container_width=True):
+                        try:
+                            from persistence import auto_promote_vidiq_scores as _apvs
+                            _to_save = {kw: sc for (qid, slot, kw), (sc, _) in st.session_state["qprep_scores"].items()
+                                        if qid == _qid and sc > 0}
+                            _slot_hints = {kw: slot for (qid, slot, kw), (sc, _) in st.session_state["qprep_scores"].items()
+                                           if qid == _qid and sc > 0}
+                            if _to_save:
+                                from datetime import date as _dS
+                                _apvs(_to_save, slot_hint=_slot_hints, source=f"prep-{_dS.today().isoformat()}")
+                                _upd_q(_qid, {}, log_event=f"Banked {len(_to_save)} VidIQ score(s)")
+                                st.success(f"✓ {len(_to_save)} saved to keyword_bank.csv")
+                                st.rerun()
+                            else:
+                                st.warning("No scores entered — type values > 0 first.")
+                        except Exception as _se:
+                            st.error(f"Save failed: {_se}")
+                with _bw2:
+                    _rb = st.button("✏️ Rebuild title", key=f"qprep_rebuild_{_qid}", use_container_width=True)
+                with _bw3:
+                    pass
+
+                if _rb:
+                    try:
+                        from scoring import build_variants as _bvW
+                        from competitor_patterns import apply_pattern_to_candidate as _appW
+                        from raga_validator import mood_from_problem_kw as _mfkW
+
+                        _problem  = _comp.get("problem", {}) or {}
+                        _hz_obj   = _comp.get("hz", {}) or {}
+                        _ins_obj  = _comp.get("instrument", {}) or {}
+                        _raga_obj = _comp.get("raga", {}) or {}
+                        _wave_obj = _comp.get("wave", {}) or {}
+
+                        _hook = _problem.get("seo_phrase") or _problem.get("phrase") or (_problem.get("kw","") or "").title()
+                        _hz_s, _ins_s, _rag_s = _hz_obj.get("hz",""), _ins_obj.get("name",""), _raga_obj.get("name","")
+                        _wav_s, _wav_o = _wave_obj.get("wave",""), _wave_obj.get("outcome","")
+
+                        _va = f"{_hook} | {_hz_s} {_ins_s} Raga {_rag_s} | {_wav_s} Wave {_wav_o} | 1 Hour"
+                        _vb = f"{_hook} | {_ins_s} Raga {_rag_s} | 1 Hour"
+                        _vc = None
+                        _vc_cap = None
+                        try:
+                            _cp = _appW(_comp, _mfkW(_problem.get("kw","")))
+                            if _cp:
+                                _vc = _cp["title"]
+                                _vc_cap = f"_(adapted from {_cp['source_channel']}'s {_cp['source_views']:,}v title for `{_cp['mood_matched']}`)_"
+                        except Exception:
+                            pass
+                        if not _vc:
+                            _vc = f"{_hook} | {_ins_s} Raga {_rag_s}"
+                            _vc_cap = "_(no competitor data — ultra-minimal fallback)_"
+
+                        st.markdown("**Three rebuilt variants — pick one to set as working title:**")
+                        for _vk, _vt, _vcap in [
+                            ("A · Full SEO (5 slots)",     _va, None),
+                            ("B · Lean SEO (3 slots, validated winner)", _vb, None),
+                            ("C · Competitor-pattern",     _vc, _vc_cap),
+                        ]:
+                            st.caption(f"{_vk} · {len(_vt)} chars")
+                            st.code(_vt, language=None)
+                            if _vcap: st.caption(_vcap)
+                            if st.button(f"📌 Use this as working title", key=f"qprep_setwt_{_qid}_{_vk[:1]}"):
+                                _upd_q(_qid, {"working_title": _vt}, log_event=f"Working title updated to variant {_vk[:1]}")
+                                st.success("Working title updated")
+                                st.rerun()
+                    except Exception as _re:
+                        st.error(f"Rebuild failed: {_re}")
 
                 # Notes (editable)
                 _new_notes = st.text_area(
