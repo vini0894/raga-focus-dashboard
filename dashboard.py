@@ -2957,9 +2957,10 @@ with tab_idea_gen:
                             if _raga_warn:
                                 st.warning(_raga_warn)
                             try:
-                                # Length-recipe variants — three structurally distinct titles per candidate.
-                                # Hook is SEO-led for all (validated 2/2 A/B tests). Variation is on
-                                # SLOT COUNT, which is the validated lever (lean beats stuffed 67.7%/32.3%).
+                                # Three structurally distinct variants:
+                                #  A — Full SEO (our pipeline default, stuffed control)
+                                #  B — Lean SEO (validated winner pattern, our own A/B test)
+                                #  C — Competitor-pattern adaptation (highest-view template for this mood)
                                 _problem    = _comp.get("problem", {}) or {}
                                 _hz_obj     = _comp.get("hz", {}) or {}
                                 _instr_obj  = _comp.get("instrument", {}) or {}
@@ -2973,22 +2974,41 @@ with tab_idea_gen:
                                 _wav_s  = _wave_obj.get("wave", "")
                                 _wav_out = _wave_obj.get("outcome", "")
 
-                                # Recipe A — Full SEO (5 slots): control / stuffed
+                                # A — Full SEO (5 slots)
                                 _va = f"{_hook} | {_hz_s} {_ins_s} Raga {_rag_s} | {_wav_s} Wave {_wav_out} | 1 Hour"
-                                # Recipe B — Lean (drop wave segment, 4 slots)
-                                _vb = f"{_hook} | {_hz_s} {_ins_s} Raga {_rag_s} | 1 Hour"
-                                # Recipe C — Minimal (drop hz + wave, 3 slots) — matches the validated winner pattern
-                                _vc = f"{_hook} | {_ins_s} Raga {_rag_s} | 1 Hour"
+                                # B — Lean SEO (3 slots, our validated winner)
+                                _vb = f"{_hook} | {_ins_s} Raga {_rag_s} | 1 Hour"
+                                # C — Competitor-pattern adaptation (with fallback)
+                                _vc = None
+                                _vc_caption = None
+                                try:
+                                    from competitor_patterns import apply_pattern_to_candidate as _apply_cp
+                                    _cp_mood = _mood_fn2(_problem.get("kw", ""))
+                                    _cp_result = _apply_cp(_comp, _cp_mood)
+                                    if _cp_result:
+                                        _vc = _cp_result["title"]
+                                        _vc_caption = (
+                                            f"Adapted from {_cp_result['source_channel']}'s "
+                                            f"**{_cp_result['source_views']:,}v** title for `{_cp_result['mood_matched']}`: "
+                                            f"_{_cp_result['source_title']}_"
+                                        )
+                                except Exception:
+                                    pass
+                                if not _vc:
+                                    _vc = f"{_hook} | {_ins_s} Raga {_rag_s}"  # ultra-minimal fallback
+                                    _vc_caption = "_(no competitor data for this mood — using ultra-minimal fallback)_"
 
                                 _variants = [
-                                    ("A — Full SEO (5 slots, stuffed control)",    _va),
-                                    ("B — Lean (drop wave, 4 slots)",              _vb),
-                                    ("C — Minimal (drop hz+wave, 3 slots, validated winner pattern)", _vc),
+                                    ("A — Full SEO (5 slots, stuffed control)",      _va, None),
+                                    ("B — Lean SEO (3 slots, our A/B-validated winner)", _vb, None),
+                                    ("C — Competitor-pattern adaptation",             _vc, _vc_caption),
                                 ]
-                                st.markdown("**Rebuilt variants — three different lengths to A/B test:**")
-                                for _label, _vt in _variants:
+                                st.markdown("**Rebuilt variants — three structurally distinct titles:**")
+                                for _label, _vt, _cap in _variants:
                                     st.caption(f"{_label} · {len(_vt)} chars")
                                     st.code(_vt, language=None)
+                                    if _cap:
+                                        st.caption(_cap)
                             except Exception as _be:
                                 st.error(f"variant build failed: {_be}")
                 except Exception as _re:
