@@ -1,0 +1,92 @@
+{
+  "id": "v_2026-04-28_concentration_sitar",
+  "status": "DRAFT",
+  "created_at": "2026-04-28T00:00:00",
+  "title": "Concentration Music | Deep Focus with Sitar",
+  "title_variants": {
+    "A_seo": "Concentration Music | Deep Focus with Sitar",
+    "B_phrase": "Boost Productivity with Morning Music | Sitar | Focus Session"
+  },
+  "thumbnail_text_main": "FIND YOUR FOCUS",
+  "thumbnail_text_secondary": "Sitar · Indian Classical",
+  "thumbnail_text_variants": [
+    "FIND YOUR FOCUS",
+    "OWN YOUR MORNING"
+  ],
+  "ab_pairing": {
+    "A": {
+      "title": "Concentration Music | Deep Focus with Sitar",
+      "thumbnail": "FIND YOUR FOCUS",
+      "strategy": "SEO-led, cognitive/focus lane, concentration music (80) leads"
+    },
+    "B": {
+      "title": "Boost Productivity with Morning Music | Sitar | Focus Session",
+      "thumbnail": "OWN YOUR MORNING",
+      "strategy": "Phrase-led, morning/productivity lane, morning music (77) leads"
+    }
+  },
+  "components": {
+    "problem": "concentration music",
+    "instrument": "Sitar",
+    "raga": "unknown",
+    "hz": "none",
+    "wave": "none"
+  },
+  "instrument": "Sitar (Indian classical, no binaural, no drone)",
+  "hz": "none — pure Suno audio, no binaural layer",
+  "length": "20 minutes",
+  "publish_date": "2026-04-28",
+  "publish_time": "morning IST",
+  "source_audio": "videos/v15b_adhd3_loop/adhd3_20min_loop.wav",
+  "audio_notes": "Existing Suno file. 20 min, 48kHz/16-bit stereo, -13.3 LUFS (slightly hot, target -14). Active/rhythmic sitar, coffee-shop energy. No looping — publish as-is at 20 min.",
+  "validated_keywords": [
+    "concentration music",
+    "deep focus",
+    "sitar",
+    "morning music",
+    "focus music",
+    "study music",
+    "productivity music",
+    "indian classical sitar",
+    "deep concentration"
+  ],
+  "keyword_scores": {
+    "concentration music": 80,
+    "focus music": 84,
+    "morning music": 77,
+    "study music": 79,
+    "productivity music": 75,
+    "deep focus music": 70,
+    "sitar": 72,
+    "deep concentration": 66,
+    "indian classical sitar": 61,
+    "morning focus music": 68,
+    "morning focus": 65,
+    "brain power music": 63,
+    "ambient music": 80,
+    "background music": 80,
+    "meditation music": 80,
+    "instrumental music": 72,
+    "indian classical music": 66
+  },
+  "tags": "concentration music, focus music, sitar, morning music, study music, productivity music, deep focus, indian classical sitar, deep concentration, indian classical music, ambient music, background music, instrumental music, sitar music, music for studying, focus session, morning focus music, brain power music",
+  "description": "Concentration Music | Deep Focus with Sitar\n\nYou sat down to work twenty minutes ago. You've checked your phone four times. Refreshed Slack. Opened a tab, closed it, opened another. Your coffee's cold.\n\nThis is for that.\n\nTwenty minutes of sitar. No layered tones, no frequency tricks. Just one instrument played slowly, made to stay out of your way while you actually do the thing.\n\nPress play. Pick one task. Don't switch.\n\n⏱ Chapters\n0:00  Settling\n7:00  Deeper\n15:00  Flow\n20:00  End\n\n🎵 Pure acoustic sitar.\n🚫 No ads.\n\nIf twenty minutes isn't enough — loop it.\n\n#ConcentrationMusic #SitarMusic #DeepFocus #MorningMusic #StudyMusic",
+  "suno_prompt": "n/a — existing audio file: videos/v15b_adhd3_loop/adhd3_20min_loop.wav",
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting style — ornate floral border, aged parchment background, Indian classical musician playing sitar seated cross-legged, dawn light, lotus flowers, peacocks, warm golden tones. Teal serif overlay text. 16:9 aspect ratio.",
+  "production_spec": {
+    "source_file": "videos/v15b_adhd3_loop/adhd3_20min_loop.wav",
+    "duration_target_sec": 1200,
+    "master_lufs": -14,
+    "current_lufs": -13.3,
+    "note": "Attenuate ~0.7dB to hit -14 LUFS target before export",
+    "binaural": "none",
+    "drone": "none",
+    "fades": "10s in / 30s out",
+    "output": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart"
+  },
+  "ab_test_goal": "Learn which audience pool converts better — cognitive focus seekers (concentration music) vs morning productivity seekers (morning music). Track impressions + CTR + AVD% separately for A and B.",
+  "success_good": "200+ views, 3%+ CTR, 30%+ retention (14 days)",
+  "success_breakthrough": "500+ views, 5%+ CTR, 40%+ retention",
+  "strategic_bet": "Coffee-shop energy sitar fills the concentration music pool with Indian classical — differentiates from western ambient/electronic competitors",
+  "candidate_score": null
+}
