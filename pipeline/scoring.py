@@ -360,26 +360,29 @@ def generate_candidates(catalog, competitor_data, top_n=3):
                             },
                         })
 
-    # Build exclusion sets from:
+    # Build exclusion sets:
     #   1. data/dismissed_candidates.csv → PARKED PROBLEM KEYWORDS (today only)
-    #      Park-for-today behaviour: snoozed problems come back tomorrow.
-    #   2. data/video_briefs/*.json → permanently excluded by EXACT 5-slot signature
-    #      AND by problem keyword alone (so a different raga/instrument with the
-    #      same problem won't sneak through — fixes the "Sleep Music" duplicate
-    #      where our top-performer "Can't Fall Asleep?" was outside the 5-day
-    #      theme-overlap window).
+    #   2. data/video_briefs/*.json → permanent EXACT 5-slot signature exclusion
+    #      (briefs are explicit "we're building this" — never re-suggest the same
+    #      5-tuple). Problem-keyword-only is NOT permanent — see cooldown logic.
+    #   3. cooldown_blocks (NEW) → problem keywords blocked because we shipped
+    #      a similar video recently or it's still pulling meaningful views.
+    #      Auto-expires when (age >= 14d AND views_last_14d < threshold).
+    #
+    # Stashed on the candidates list as `_cooldown_blocks_meta` so the
+    # generate_ideas writer can surface it transparently in the proposal JSON.
+    cooldown_blocks_meta = {}  # {problem_kw: {reason, video_title, days_since, views_14d}}
     try:
         import csv as _csv, json as _json
         from datetime import date as _date
         from paths import DATA_DIR as _DD
-        today_str = _date.today().isoformat()
+        today = _date.today()
+        today_str = today.isoformat()
 
-        parked_problems = set()       # problem keywords parked TODAY
-        permanent_signatures = set()  # exact 5-tuples from briefs
-        shipped_problems = set()      # problem keywords from ALL briefs (any age)
+        parked_problems = set()
+        permanent_signatures = set()
 
         def _sig_from_components(comp):
-            # Brief.components has scalar fields (problem: str), candidate.components has dicts.
             def _get(key, sub):
                 v = comp.get(key)
                 if isinstance(v, dict):
@@ -393,12 +396,6 @@ def generate_candidates(catalog, competitor_data, top_n=3):
                 _get("wave",       "wave"),
             ])
 
-        def _problem_from_components(comp):
-            v = comp.get("problem")
-            if isinstance(v, dict):
-                return (v.get("kw") or "").strip().lower()
-            return (v or "").strip().lower()
-
         # 1. Today's parked problems
         dismissed_path = _DD / "dismissed_candidates.csv"
         if dismissed_path.exists():
@@ -411,62 +408,98 @@ def generate_candidates(catalog, competitor_data, top_n=3):
                         if prob:
                             parked_problems.add(prob)
 
-        # 2. Briefs — collect both signatures AND problem keywords (any age)
+        # 2. Brief signature exclusion (5-tuple — permanent)
         briefs_dir = _DD / "video_briefs"
         if briefs_dir.exists():
             for brief_file in briefs_dir.glob("*.json"):
                 try:
                     b = _json.loads(brief_file.read_text())
-                    bc = b.get("components", {})
-                    sig = _sig_from_components(bc)
+                    sig = _sig_from_components(b.get("components", {}))
                     if sig and sig != "||||":
                         permanent_signatures.add(sig)
-                    prob = _problem_from_components(bc)
-                    if prob:
-                        shipped_problems.add(prob)
                 except Exception:
                     continue
 
-        # 3. Own catalog — match catalog titles against PROBLEM_HOOKS via fuzzy
-        #    token-substring overlap. Catches historical hits (e.g. "Can't Fall
-        #    Asleep?" — shipped before brief workflow existed, not in briefs/).
-        #
-        #    Match rule: every meaningful token of the problem keyword must
-        #    appear as a substring of (or have as substring) some title token.
-        #    "sleep" matches "asleep" ✅; "rest" matches "rests" ✅;
-        #    "deep meditation" needs both "deep"-ish and "meditat"-ish tokens.
+        # 3. Cooldown rule applied per catalog video.
+        #    Block IF (shipped < 14d ago) OR (≥30 views accrued in last 14d).
+        SHIP_FLOOR_DAYS    = 14
+        ACTIVE_WINDOW_DAYS = 14
+        ACTIVE_THRESHOLD   = 30  # views in the active-window = "still pulling traffic"
+
         try:
             from signals import load_own_catalog as _load_own_cat
             _own_cat = _load_own_cat() or []
         except Exception:
             _own_cat = []
 
+        # Build a per-video-id "views accrued in last 14d" map from REACH_HISTORY.
+        # Diff = (latest snapshot views) - (oldest snapshot views in last 21d window).
+        #        21d gives us a buffer for irregular daily captures.
+        views_in_window = {}  # video_id → int
+        reach_path = _DD / "REACH_HISTORY.csv"
+        if reach_path.exists():
+            from collections import defaultdict as _dd
+            from datetime import timedelta as _td
+            window_start = today - _td(days=ACTIVE_WINDOW_DAYS + 7)
+            per_vid = _dd(list)  # video_id → [(capture_date, views), ...]
+            with open(reach_path) as f:
+                for row in _csv.DictReader(f):
+                    try:
+                        cd = _date.fromisoformat(row["capture_date"])
+                        if cd >= window_start:
+                            per_vid[row["video_id"]].append((cd, int(row["views"] or 0)))
+                    except Exception:
+                        continue
+            for vid_id, snaps in per_vid.items():
+                snaps.sort()
+                if len(snaps) >= 2:
+                    views_in_window[vid_id] = max(0, snaps[-1][1] - snaps[0][1])
+                else:
+                    views_in_window[vid_id] = snaps[0][1]  # only one capture — treat as accrued
+
         _STOPS = {"music", "for", "the", "with", "to", "of", "and", "your",
                   "you", "this", "that", "in", "on", "at", "an", "a"}
         for _vid in _own_cat:
             _title = (_vid.get("title") or "").lower()
+            _vid_id = _vid.get("video_id", "")
+            _pub = _vid.get("publish_date")
+            _days_since = (today - _pub).days if hasattr(_pub, "year") else 999
+            _v14 = views_in_window.get(_vid_id, _vid.get("views") or 0)
+
+            in_floor = _days_since < SHIP_FLOOR_DAYS
+            still_active = _v14 >= ACTIVE_THRESHOLD
+            if not (in_floor or still_active):
+                continue  # cooled-off video → theme refresh-eligible
+
             _title_tokens = {w.strip("?!,.:;") for w in _title.replace("|", " ").split() if len(w) >= 3}
             for _problem in PROBLEM_HOOKS:
                 _pkw = _problem["kw"].lower()
-                if _pkw in shipped_problems:
-                    continue  # already added
+                if _pkw in cooldown_blocks_meta:
+                    continue
                 _ptokens = [t for t in _pkw.split() if len(t) >= 3 and t not in _STOPS]
                 if not _ptokens:
                     continue
-                _all_match = all(
-                    any(pt in tt or tt in pt for tt in _title_tokens)
-                    for pt in _ptokens
-                )
-                if _all_match:
-                    shipped_problems.add(_pkw)
+                if all(any(pt in tt or tt in pt for tt in _title_tokens) for pt in _ptokens):
+                    if in_floor:
+                        _reason = f"shipped {_days_since}d ago (cooldown floor {SHIP_FLOOR_DAYS}d)"
+                    else:
+                        _reason = f"still active ({_v14} views last {ACTIVE_WINDOW_DAYS}d)"
+                    cooldown_blocks_meta[_pkw] = {
+                        "reason":      _reason,
+                        "video_title": _vid.get("title", ""),
+                        "video_id":    _vid_id,
+                        "days_since":  _days_since,
+                        "views_14d":   _v14,
+                    }
 
-        if parked_problems or permanent_signatures or shipped_problems:
+        if parked_problems or permanent_signatures or cooldown_blocks_meta:
+            cooldown_keys = set(cooldown_blocks_meta.keys())
             def _filter(c):
                 comp = c["components"]
                 pkw = comp["problem"]["kw"].lower()
                 if pkw in parked_problems:
                     return False
-                if pkw in shipped_problems:
+                if pkw in cooldown_keys:
                     return False
                 if _sig_from_components(comp) in permanent_signatures:
                     return False
@@ -565,10 +598,11 @@ def generate_candidates(catalog, competitor_data, top_n=3):
             if len(deduped) >= top_n:
                 break
 
-    # Stash bucket counts on the first candidate so the proposal-builder can
-    # surface it at top level in the JSON output (no schema change needed).
+    # Stash bucket counts + cooldown blocks on the first candidate so the
+    # proposal-builder can surface both at top level in the JSON output.
     if deduped:
         deduped[0]["_bucket_counts"] = bucket_counts
+        deduped[0]["_cooldown_blocks"] = cooldown_blocks_meta
 
     return deduped[:top_n]
 

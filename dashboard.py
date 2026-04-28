@@ -2479,6 +2479,23 @@ with tab_idea_gen:
             _pdata = _json_top.loads(_proposal_json_path_top.read_text())
             _cands_top = _pdata.get("candidates", [])[:3]
 
+            # Cooldown blocks panel (transparency: which problem keywords are
+            # currently blocked because we shipped a similar video recently or
+            # it's still pulling traffic). Auto-clears as videos cool off.
+            _cooldowns = _pdata.get("cooldown_blocks") or {}
+            if _cooldowns:
+                with st.expander(f"⏸ Cooldown blocks ({len(_cooldowns)} problem keyword{'s' if len(_cooldowns)!=1 else ''} on cooldown)", expanded=False):
+                    st.caption(
+                        "Problem keywords blocked because a similar video is in cooldown. "
+                        "Rule: shipped < 14 days ago **OR** ≥30 views accrued in the last 14 days. "
+                        "Auto-unblocks when both conditions clear."
+                    )
+                    for _pkw, _meta in sorted(_cooldowns.items(), key=lambda x: x[1].get("days_since", 999)):
+                        st.markdown(
+                            f"- **`{_pkw}`** — {_meta.get('reason', '')}  \n"
+                            f"  ↳ blocking video: _{_meta.get('video_title', '')}_"
+                        )
+
             # Bucket-count summary (transparency: are candidates genuine or backfilled?)
             _bcounts = _pdata.get("bucket_counts")
             if _bcounts:
