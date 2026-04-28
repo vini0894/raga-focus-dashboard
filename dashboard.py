@@ -666,8 +666,8 @@ with st.sidebar:
     st.caption("Dashboard reads from YouTube API via the authenticated MCP server + REACH_DATA.md for manual reach captures.")
 
 # Tabs
-tab_overview, tab_daily, tab_videos, tab_detail, tab_competitors, tab_queue, tab_briefs, tab_idea_gen = st.tabs(
-    ["📊 Overview", "📈 Daily Views", "📺 Videos", "🔍 Video Detail", "⚔️ Competitors", "🚀 Production Queue", "🧠 Brief Queue (new)", "💡 Idea Generation"]
+tab_overview, tab_daily, tab_videos, tab_detail, tab_competitors, tab_queue, tab_briefs, tab_idea_gen, tab_idea_queue = st.tabs(
+    ["📊 Overview", "📈 Daily Views", "📺 Videos", "🔍 Video Detail", "⚔️ Competitors", "🚀 Production Queue", "🧠 Brief Queue", "💡 Idea Generation", "🛠 Idea Queue"]
 )
 
 # -----------------------------------------------------------------------------
@@ -2500,9 +2500,9 @@ with tab_idea_gen:
             _bcounts = _pdata.get("bucket_counts")
             if _bcounts:
                 _bc1, _bc2, _bc3 = st.columns(3)
-                _bc1.metric("🎯 Competitor", _bcounts.get("competitor", 0))
-                _bc2.metric("📈 Niche",      _bcounts.get("niche", 0))
-                _bc3.metric("🚀 Moonshot",   _bcounts.get("moonshot", 0))
+                _bc1.metric("🎯 Competitor",         _bcounts.get("competitor", 0))
+                _bc2.metric("📈 Own theme compounding", _bcounts.get("niche", 0))
+                _bc3.metric("🚀 Moonshot",           _bcounts.get("moonshot", 0))
                 _empty = [k for k, v in _bcounts.items() if v == 0]
                 if _empty:
                     st.warning(
@@ -2521,9 +2521,9 @@ with tab_idea_gen:
                 _bv_top = _bt_top = _btv_top = None
 
             _STRAT_BADGE = {
-                "competitor": ("🎯", "Competitor-counter", "#3b82f6"),
-                "niche":      ("📈", "Niche doubling-down", "#10b981"),
-                "moonshot":   ("🚀", "Moonshot",            "#a855f7"),
+                "competitor": ("🎯", "Competitor",              "#3b82f6"),
+                "niche":      ("📈", "Own theme compounding",   "#10b981"),
+                "moonshot":   ("🚀", "Moonshot",                "#a855f7"),
             }
 
             for _i, _cand in enumerate(_cands_top, start=1):
@@ -2758,22 +2758,39 @@ with tab_idea_gen:
                     for e in extras:
                         _add_kw("tag", e, "Title sub-phrase")
 
-                    # Promote to Brief / Dismiss buttons
-                    promote_col1, promote_col2, promote_col3 = st.columns([3, 1, 1])
+                    # Add to Queue / Promote / Park buttons
+                    promote_col1, promote_col_q, promote_col2, promote_col3 = st.columns([2, 1, 1, 1])
+                    with promote_col_q:
+                        queue_clicked = st.button(
+                            "➕ Queue",
+                            key=f"queue_btn_{idx}",
+                            use_container_width=True,
+                            help="Add to Idea Queue — workshop the title across sessions before promoting to Brief",
+                        )
                     with promote_col2:
                         promote_clicked = st.button(
                             "🚀 Promote",
                             key=f"promote_btn_{idx}",
                             use_container_width=True,
-                            help="Creates a brief in Brief Queue tab",
+                            help="Skip workshop, go directly to Brief Queue",
                         )
                     with promote_col3:
                         dismiss_clicked = st.button(
-                            "💤 Park for today",
+                            "💤 Park",
                             key=f"dismiss_btn_{idx}",
                             use_container_width=True,
-                            help="Snooze this problem — it won't surface in today's runs but comes back tomorrow",
+                            help="Snooze this problem for today — comes back tomorrow",
                         )
+
+                    if queue_clicked:
+                        try:
+                            import sys as _sysq
+                            _sysq.path.insert(0, str(PIPELINE_DIR))
+                            from idea_queue import add_from_candidate as _add_q
+                            _qitem = _add_q(cand)
+                            st.success(f"✓ Added to **🛠 Idea Queue** as `{_qitem['id']}`")
+                        except Exception as _qe:
+                            st.error(f"Queue add failed: {_qe}")
                     if promote_clicked:
                         try:
                             proc = subprocess.run(
@@ -3225,3 +3242,145 @@ with tab_idea_gen:
             - YouTube top-5 search dominance check
             """
         )
+
+
+# -----------------------------------------------------------------------------
+# Tab: Idea Queue — workshop space between Idea Gen and Brief Queue
+# -----------------------------------------------------------------------------
+with tab_idea_queue:
+    st.markdown("## 🛠 Idea Queue")
+    st.caption(
+        "Workshop space for ideas you've added from **💡 Idea Generation**. Refine the title here "
+        "across sessions — each item persists until you generate a brief or discard it. "
+        "Three buckets: 🎯 Competitor · 📈 Own theme compounding · 🚀 Moonshot."
+    )
+
+    import sys as _sysq
+    _sysq.path.insert(0, str(PIPELINE_DIR))
+    try:
+        from idea_queue import list_items as _list_q, delete_item as _del_q, update_item as _upd_q, bucket_counts as _qcounts
+    except Exception as _qe:
+        st.error(f"Idea queue module not loadable: {_qe}")
+        _list_q = lambda: []
+        _del_q = lambda x: False
+        _upd_q = lambda *a, **k: None
+        _qcounts = lambda: {}
+
+    _items = _list_q()
+    _counts = _qcounts()
+
+    if not _items:
+        st.info(
+            "No ideas in the queue yet.  \n"
+            "Open **💡 Idea Generation**, find a candidate worth working on, and click **➕ Queue**."
+        )
+    else:
+        # Portfolio summary at the top
+        _qs1, _qs2, _qs3, _qs4 = st.columns(4)
+        _qs1.metric("Total in queue", len(_items))
+        _qs2.metric("🎯 Competitor",          _counts.get("competitor", 0))
+        _qs3.metric("📈 Own theme compounding", _counts.get("niche", 0))
+        _qs4.metric("🚀 Moonshot",            _counts.get("moonshot", 0))
+
+        # Balance hint
+        _empty = [b for b, n in _counts.items() if n == 0]
+        if len(_items) >= 3 and _empty:
+            _label_map = {"competitor": "🎯 Competitor", "niche": "📈 Own theme compounding", "moonshot": "🚀 Moonshot"}
+            _missing = ", ".join(_label_map.get(b, b) for b in _empty)
+            st.caption(f"⚠️ Queue missing: **{_missing}** — consider generating ideas to fill that bucket.")
+
+        st.divider()
+
+        _STRAT_BADGE_Q = {
+            "competitor": ("🎯", "Competitor"),
+            "niche":      ("📈", "Own theme compounding"),
+            "moonshot":   ("🚀", "Moonshot"),
+        }
+
+        for _q in _items:
+            _b = _q.get("bucket", "moonshot")
+            _emo, _blab = _STRAT_BADGE_Q.get(_b, ("·", _b.title()))
+            _status = _q.get("status", "drafting").upper().replace("_", " ")
+            with st.container(border=True):
+                # Header row
+                _ch1, _ch2, _ch3 = st.columns([6, 2, 2])
+                with _ch1:
+                    st.markdown(f"### {_emo} {_blab} · {_q.get('concept', '(no concept)')}")
+                    st.caption(f"`{_q.get('id')}` · queued {_q.get('queued_at', '')} · score **{_q.get('score', '—')}**")
+                with _ch2:
+                    st.markdown(f"**Status:** 🛠 {_status}")
+                with _ch3:
+                    if st.button("🗑 Discard", key=f"qdel_{_q['id']}", use_container_width=True):
+                        if _del_q(_q["id"]):
+                            st.success(f"Discarded `{_q['id']}`")
+                            st.rerun()
+
+                # Strategy note
+                if _q.get("strategy_note"):
+                    st.caption(f"💡 _{_q['strategy_note']}_")
+
+                # Components row
+                _comp = _q.get("components", {}) or {}
+                _cc1, _cc2, _cc3, _cc4, _cc5 = st.columns(5)
+                _slots = [
+                    ("Problem",    _comp.get("problem",    {}).get("kw",   "—")),
+                    ("Instrument", _comp.get("instrument", {}).get("name", "—")),
+                    ("Hz",         _comp.get("hz",         {}).get("hz",   "—")),
+                    ("Raga",       _comp.get("raga",       {}).get("name", "—")),
+                    ("Wave",       _comp.get("wave",       {}).get("wave", "—")),
+                ]
+                for _col, (_lbl, _val) in zip([_cc1, _cc2, _cc3, _cc4, _cc5], _slots):
+                    with _col:
+                        st.markdown(
+                            f"<div style='font-size:0.78rem;color:#9ca3af'>{_lbl}</div>"
+                            f"<div style='font-weight:600'>{_val or '—'}</div>",
+                            unsafe_allow_html=True,
+                        )
+
+                # Working title
+                st.markdown("**📝 Working title**")
+                st.code(_q.get("working_title", ""), language=None)
+
+                # Look & feel
+                _lf = _q.get("look_and_feel", {}) or {}
+                if _lf.get("thumbnail_style") or _lf.get("vibe"):
+                    with st.expander("🎨 Look & feel", expanded=False):
+                        if _lf.get("thumbnail_style"):
+                            st.markdown(f"**Thumbnail style:** {_lf['thumbnail_style']}")
+                        if _lf.get("vibe"):
+                            st.markdown(f"**Vibe:** {_lf['vibe']}")
+
+                # Notes (editable)
+                _new_notes = st.text_area(
+                    "📓 Notes",
+                    value=_q.get("notes", ""),
+                    key=f"qnotes_{_q['id']}",
+                    height=80,
+                    placeholder="Decisions, ideas, things to test next session…",
+                )
+                _ncol1, _ncol2, _ncol3 = st.columns([2, 2, 4])
+                with _ncol1:
+                    if st.button("💾 Save notes", key=f"qsavenotes_{_q['id']}"):
+                        _upd_q(_q["id"], {"notes": _new_notes}, log_event="Notes updated")
+                        st.success("Saved")
+                        st.rerun()
+                with _ncol2:
+                    if st.button("🔒 Mark title locked", key=f"qlock_{_q['id']}"):
+                        _upd_q(_q["id"], {"status": "title_locked"}, log_event="Title locked")
+                        st.rerun()
+
+                # Decision log
+                _log = _q.get("decision_log", []) or []
+                if _log:
+                    with st.expander(f"📜 Decision log ({len(_log)})", expanded=False):
+                        for _ev in reversed(_log):
+                            st.markdown(f"- `{_ev.get('ts', '')}` — {_ev.get('event', '')}"
+                                        + (f" · _{_ev.get('detail', '')}_" if _ev.get('detail') else ""))
+
+                # Generate Brief — handoff to existing brief workflow
+                if st.button("📤 Generate Production Brief", key=f"qbrief_{_q['id']}", type="primary"):
+                    st.info(
+                        "Brief generation from queue items is wired up in the next iteration. "
+                        "For now, copy the working title into **💡 Idea Generation** → Promote, "
+                        "or use **🧠 Brief Queue** directly."
+                    )
