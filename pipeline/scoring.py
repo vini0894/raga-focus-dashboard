@@ -471,7 +471,7 @@ def generate_candidates(catalog, competitor_data, top_n=3):
             if not (in_floor or still_active):
                 continue  # cooled-off video → theme refresh-eligible
 
-            _title_tokens = {w.strip("?!,.:;") for w in _title.replace("|", " ").split() if len(w) >= 3}
+            _vid_title_tokens = {w.strip("?!,.:;") for w in _title.replace("|", " ").split() if len(w) >= 3}
             for _problem in PROBLEM_HOOKS:
                 _pkw = _problem["kw"].lower()
                 if _pkw in cooldown_blocks_meta:
@@ -479,7 +479,7 @@ def generate_candidates(catalog, competitor_data, top_n=3):
                 _ptokens = [t for t in _pkw.split() if len(t) >= 3 and t not in _STOPS]
                 if not _ptokens:
                     continue
-                if all(any(pt in tt or tt in pt for tt in _title_tokens) for pt in _ptokens):
+                if all(any(pt in tt or tt in pt for tt in _vid_title_tokens) for pt in _ptokens):
                     if in_floor:
                         _reason = f"shipped {_days_since}d ago (cooldown floor {SHIP_FLOOR_DAYS}d)"
                     else:
