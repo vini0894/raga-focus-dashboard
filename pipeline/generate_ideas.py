@@ -367,9 +367,13 @@ def main():
         if hasattr(obj, "__dict__"):
             return _serialize(obj.__dict__)
         return obj
+    # Lift _bucket_counts (stashed on first candidate by generate_candidates)
+    # to the top level for transparent UI display.
+    _bucket_counts = candidates[0].pop("_bucket_counts", None) if candidates else None
     json_path.write_text(_json.dumps({
         "date": today,
         "candidates": _serialize(candidates),
+        "bucket_counts": _bucket_counts,
         "lead_recommendation": list(lead_rec),
         "keyword_opportunities": _serialize(keyword_opportunities),
         "competitor_pulse": _serialize(competitor_pulse),

@@ -2479,6 +2479,21 @@ with tab_idea_gen:
             _pdata = _json_top.loads(_proposal_json_path_top.read_text())
             _cands_top = _pdata.get("candidates", [])[:3]
 
+            # Bucket-count summary (transparency: are candidates genuine or backfilled?)
+            _bcounts = _pdata.get("bucket_counts")
+            if _bcounts:
+                _bc1, _bc2, _bc3 = st.columns(3)
+                _bc1.metric("🎯 Competitor", _bcounts.get("competitor", 0))
+                _bc2.metric("📈 Niche",      _bcounts.get("niche", 0))
+                _bc3.metric("🚀 Moonshot",   _bcounts.get("moonshot", 0))
+                _empty = [k for k, v in _bcounts.items() if v == 0]
+                if _empty:
+                    st.warning(
+                        f"⚠️ Empty bucket{'s' if len(_empty) > 1 else ''}: "
+                        f"**{', '.join(_empty)}** — candidates from those slots are backfilled.",
+                        icon="ℹ️",
+                    )
+
             # Builders are imported lazily so dashboard works even if pipeline not on path
             import sys as _sys_top
             _sys_top.path.insert(0, str(PIPELINE_DIR))
@@ -2504,6 +2519,10 @@ with tab_idea_gen:
                         st.markdown(f"### #{_i}")
                     with _h2:
                         st.markdown(f"### {_emoji} {_strat_label}")
+                        if _cand.get("backfilled"):
+                            _for = _cand.get("backfilled_for")
+                            _msg = f"backfilled — {_for} bucket was empty" if _for else "backfilled (bucket empty)"
+                            st.caption(f"⚠️ _{_msg}_")
                     with _h3:
                         st.metric("Score", _cand.get("score", "—"), label_visibility="collapsed")
                         st.caption(f"Score **{_cand.get('score', '—')}**")

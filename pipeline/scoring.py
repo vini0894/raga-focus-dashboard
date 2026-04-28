@@ -363,55 +363,110 @@ def generate_candidates(catalog, competitor_data, top_n=3):
     # Build exclusion sets from:
     #   1. data/dismissed_candidates.csv → PARKED PROBLEM KEYWORDS (today only)
     #      Park-for-today behaviour: snoozed problems come back tomorrow.
-    #   2. data/video_briefs/*.json → permanently excluded (briefs already chosen)
+    #   2. data/video_briefs/*.json → permanently excluded by EXACT 5-slot signature
+    #      AND by problem keyword alone (so a different raga/instrument with the
+    #      same problem won't sneak through — fixes the "Sleep Music" duplicate
+    #      where our top-performer "Can't Fall Asleep?" was outside the 5-day
+    #      theme-overlap window).
     try:
         import csv as _csv, json as _json
         from datetime import date as _date
         from paths import DATA_DIR as _DD
         today_str = _date.today().isoformat()
 
-        parked_problems = set()  # problem keywords parked TODAY
-        permanent_signatures = set()  # exact signatures from briefs
+        parked_problems = set()       # problem keywords parked TODAY
+        permanent_signatures = set()  # exact 5-tuples from briefs
+        shipped_problems = set()      # problem keywords from ALL briefs (any age)
 
         def _sig_from_components(comp):
+            # Brief.components has scalar fields (problem: str), candidate.components has dicts.
+            def _get(key, sub):
+                v = comp.get(key)
+                if isinstance(v, dict):
+                    return (v.get(sub) or "").strip().lower()
+                return (v or "").strip().lower()
             return "|".join([
-                comp.get('problem', {}).get('kw', ''),
-                comp.get('instrument', {}).get('name', ''),
-                comp.get('hz', {}).get('hz', ''),
-                comp.get('raga', {}).get('name', ''),
-                comp.get('wave', {}).get('wave', ''),
-            ]).lower()
+                _get("problem",    "kw"),
+                _get("instrument", "name"),
+                _get("hz",         "hz"),
+                _get("raga",       "name"),
+                _get("wave",       "wave"),
+            ])
 
-        # 1. Today's parked problems (dismissed_candidates.csv with dismissed_on == today)
+        def _problem_from_components(comp):
+            v = comp.get("problem")
+            if isinstance(v, dict):
+                return (v.get("kw") or "").strip().lower()
+            return (v or "").strip().lower()
+
+        # 1. Today's parked problems
         dismissed_path = _DD / "dismissed_candidates.csv"
         if dismissed_path.exists():
             with open(dismissed_path) as f:
                 for row in _csv.DictReader(f):
-                    if (row.get("dismissed_on", "").strip() == today_str):
-                        # Newer rows: problem_keyword column. Older rows: parse from signature.
+                    if row.get("dismissed_on", "").strip() == today_str:
                         prob = row.get("problem_keyword", "").strip().lower()
                         if not prob and row.get("signature"):
-                            # legacy row — extract problem from signature (first segment)
                             prob = row["signature"].split("|")[0].strip().lower()
                         if prob:
                             parked_problems.add(prob)
 
-        # 2. Briefs (any state = already chosen, permanent exclusion)
+        # 2. Briefs — collect both signatures AND problem keywords (any age)
         briefs_dir = _DD / "video_briefs"
         if briefs_dir.exists():
             for brief_file in briefs_dir.glob("*.json"):
                 try:
                     b = _json.loads(brief_file.read_text())
-                    sig = _sig_from_components(b.get("components", {}))
+                    bc = b.get("components", {})
+                    sig = _sig_from_components(bc)
                     if sig and sig != "||||":
                         permanent_signatures.add(sig)
+                    prob = _problem_from_components(bc)
+                    if prob:
+                        shipped_problems.add(prob)
                 except Exception:
                     continue
 
-        if parked_problems or permanent_signatures:
+        # 3. Own catalog — match catalog titles against PROBLEM_HOOKS via fuzzy
+        #    token-substring overlap. Catches historical hits (e.g. "Can't Fall
+        #    Asleep?" — shipped before brief workflow existed, not in briefs/).
+        #
+        #    Match rule: every meaningful token of the problem keyword must
+        #    appear as a substring of (or have as substring) some title token.
+        #    "sleep" matches "asleep" ✅; "rest" matches "rests" ✅;
+        #    "deep meditation" needs both "deep"-ish and "meditat"-ish tokens.
+        try:
+            from signals import load_own_catalog as _load_own_cat
+            _own_cat = _load_own_cat() or []
+        except Exception:
+            _own_cat = []
+
+        _STOPS = {"music", "for", "the", "with", "to", "of", "and", "your",
+                  "you", "this", "that", "in", "on", "at", "an", "a"}
+        for _vid in _own_cat:
+            _title = (_vid.get("title") or "").lower()
+            _title_tokens = {w.strip("?!,.:;") for w in _title.replace("|", " ").split() if len(w) >= 3}
+            for _problem in PROBLEM_HOOKS:
+                _pkw = _problem["kw"].lower()
+                if _pkw in shipped_problems:
+                    continue  # already added
+                _ptokens = [t for t in _pkw.split() if len(t) >= 3 and t not in _STOPS]
+                if not _ptokens:
+                    continue
+                _all_match = all(
+                    any(pt in tt or tt in pt for tt in _title_tokens)
+                    for pt in _ptokens
+                )
+                if _all_match:
+                    shipped_problems.add(_pkw)
+
+        if parked_problems or permanent_signatures or shipped_problems:
             def _filter(c):
                 comp = c["components"]
-                if comp["problem"]["kw"].lower() in parked_problems:
+                pkw = comp["problem"]["kw"].lower()
+                if pkw in parked_problems:
+                    return False
+                if pkw in shipped_problems:
                     return False
                 if _sig_from_components(comp) in permanent_signatures:
                     return False
@@ -473,20 +528,27 @@ def generate_candidates(catalog, competitor_data, top_n=3):
         s = c.get("strategy", "moonshot")
         if s in buckets:
             buckets[s].append(c)
+    # Capture pre-backfill counts for transparency in the UI
+    bucket_counts = {k: len(v) for k, v in buckets.items()}
 
     # Cross-bucket constraint: top 3 must have 3 different problem keywords
     picked_problems = set()
     deduped = []
-    for bucket_name in ["competitor", "niche", "moonshot"]:  # ordered by user priority
+    filled_buckets = set()
+    for bucket_name in ["competitor", "niche", "moonshot"]:
         for c in buckets[bucket_name]:
             prob = c["components"]["problem"]["kw"]
             if prob in picked_problems:
                 continue
             picked_problems.add(prob)
+            c["bucket_filled"] = bucket_name      # original bucket (not backfilled)
+            c["backfilled"]    = False
             deduped.append(c)
-            break  # 1 per bucket
+            filled_buckets.add(bucket_name)
+            break
 
-    # If a bucket was empty (no candidates qualified), backfill with next best
+    # If a bucket was empty, backfill with next best from any bucket and tag it
+    empty_buckets = [b for b in ("competitor", "niche", "moonshot") if b not in filled_buckets]
     if len(deduped) < top_n:
         remaining_problems = picked_problems
         for c in candidates:
@@ -494,9 +556,19 @@ def generate_candidates(catalog, competitor_data, top_n=3):
             if prob in remaining_problems:
                 continue
             remaining_problems.add(prob)
+            c["bucket_filled"] = c.get("strategy", "moonshot")
+            c["backfilled"]    = True
+            c["backfilled_for"] = empty_buckets[0] if empty_buckets else None
+            if empty_buckets:
+                empty_buckets.pop(0)
             deduped.append(c)
             if len(deduped) >= top_n:
                 break
+
+    # Stash bucket counts on the first candidate so the proposal-builder can
+    # surface it at top level in the JSON output (no schema change needed).
+    if deduped:
+        deduped[0]["_bucket_counts"] = bucket_counts
 
     return deduped[:top_n]
 
