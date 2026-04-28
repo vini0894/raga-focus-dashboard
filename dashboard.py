@@ -2464,13 +2464,148 @@ with tab_idea_gen:
                             st.error(f"Save failed: {_e}")
 
         # ─────────────────────────────────────────
-        # Section 3 — Today's candidates (existing markdown render)
+        # Section 3 — Today's candidates (structured card render from JSON)
         # ─────────────────────────────────────────
         st.markdown(f"### 🏆 Today's candidates — {today_str}")
         st.caption(f"Source: `{proposal_path.relative_to(PROJECT_ROOT)}`")
-        proposal_md = proposal_path.read_text()
-        with st.container(border=True):
-            st.markdown(proposal_md)
+
+        # Load JSON for structured render — fall back to MD dump if JSON missing
+        _proposal_json_path_top = proposal_path.with_suffix(".json")
+        if not _proposal_json_path_top.exists():
+            with st.container(border=True):
+                st.markdown(proposal_path.read_text())
+        else:
+            import json as _json_top
+            _pdata = _json_top.loads(_proposal_json_path_top.read_text())
+            _cands_top = _pdata.get("candidates", [])[:3]
+
+            # Builders are imported lazily so dashboard works even if pipeline not on path
+            import sys as _sys_top
+            _sys_top.path.insert(0, str(PIPELINE_DIR))
+            try:
+                from scoring import build_variants as _bv_top, build_tags as _bt_top
+                from thumbnail_text import build_thumbnail_text_variants as _btv_top
+            except Exception:
+                _bv_top = _bt_top = _btv_top = None
+
+            _STRAT_BADGE = {
+                "competitor": ("🎯", "Competitor-counter", "#3b82f6"),
+                "niche":      ("📈", "Niche doubling-down", "#10b981"),
+                "moonshot":   ("🚀", "Moonshot",            "#a855f7"),
+            }
+
+            for _i, _cand in enumerate(_cands_top, start=1):
+                with st.container(border=True):
+                    # ── Header row: rank · strategy · score ──
+                    _strat = (_cand.get("strategy") or "").lower()
+                    _emoji, _strat_label, _color = _STRAT_BADGE.get(_strat, ("·", _strat.title() or "—", "#9ca3af"))
+                    _h1, _h2, _h3 = st.columns([1, 5, 2])
+                    with _h1:
+                        st.markdown(f"### #{_i}")
+                    with _h2:
+                        st.markdown(f"### {_emoji} {_strat_label}")
+                    with _h3:
+                        st.metric("Score", _cand.get("score", "—"), label_visibility="collapsed")
+                        st.caption(f"Score **{_cand.get('score', '—')}**")
+
+                    # ── Strategy note as a soft inline banner ──
+                    if _cand.get("strategy_note"):
+                        st.caption(f"💡 _{_cand['strategy_note']}_")
+
+                    # ── Title ──
+                    _title = _cand.get("title", "")
+                    st.markdown(f"**Title** · {len(_title)} chars")
+                    st.code(_title, language=None)
+
+                    # ── Components row ──
+                    _comp = _cand.get("components", {}) or {}
+                    if _comp:
+                        st.markdown("**Components**")
+                        _cc = st.columns(5)
+                        for _col, (_slot, _label, _key) in zip(_cc, [
+                            ("problem",    "Problem",    "kw"),
+                            ("instrument", "Instrument", "name"),
+                            ("hz",         "Hz",         "hz"),
+                            ("raga",       "Raga",       "name"),
+                            ("wave",       "Wave",       "wave"),
+                        ]):
+                            _o = _comp.get(_slot) or {}
+                            _val = _o.get(_key, "—") or "—"
+                            _vs = _o.get("vidiq_score")
+                            _vs_txt = f"VidIQ {_vs}" if _vs else "untested"
+                            with _col:
+                                st.markdown(f"<div style='font-size:0.78rem;color:#9ca3af'>{_label}</div>"
+                                            f"<div style='font-weight:600'>{_val}</div>"
+                                            f"<div style='font-size:0.72rem;color:#6b7280'>{_vs_txt}</div>",
+                                            unsafe_allow_html=True)
+
+                    # ── Reasons grouped by sentiment ──
+                    _reasons = _cand.get("reasons", []) or []
+                    if _reasons:
+                        with st.expander(f"📋 Reasons ({len(_reasons)})", expanded=False):
+                            _ok, _warn, _info = [], [], []
+                            for _r in _reasons:
+                                if _r.startswith("✅"):    _ok.append(_r[1:].strip())
+                                elif _r.startswith("⚠️"):  _warn.append(_r[1:].strip())
+                                else:                       _info.append(_r.lstrip("ℹ️ ").strip())
+                            _r1, _r2, _r3 = st.columns(3)
+                            with _r1:
+                                st.markdown(f"**✅ Positives ({len(_ok)})**")
+                                for _x in _ok: st.markdown(f"- {_x}")
+                            with _r2:
+                                st.markdown(f"**⚠️ Cautions ({len(_warn)})**")
+                                for _x in _warn: st.markdown(f"- {_x}")
+                            with _r3:
+                                st.markdown(f"**ℹ️ Notes ({len(_info)})**")
+                                for _x in _info: st.markdown(f"- {_x}")
+
+                    # ── A/B/C title variants ──
+                    if _bv_top and _comp.get("problem"):
+                        try:
+                            _variants = _bv_top(_comp.get("problem", {}), _comp.get("hz", {}),
+                                                _comp.get("instrument", {}), _comp.get("raga", {}),
+                                                _comp.get("wave", {}))
+                            st.markdown("**A/B/C title variants**")
+                            for _vk, _vt in _variants.items():
+                                _v_label = {"A_seo": "A · SEO-led", "B_question": "B · Question-led", "C_outcome": "C · Outcome-led"}.get(_vk, _vk)
+                                st.caption(f"{_v_label} · {len(_vt)} chars")
+                                st.code(_vt, language=None)
+                        except Exception:
+                            pass
+
+                    # ── Thumbnail overlay variants ──
+                    if _btv_top and _comp.get("problem", {}).get("kw"):
+                        try:
+                            _thumbs = _btv_top(_comp["problem"]["kw"])
+                            if _thumbs:
+                                st.markdown("**🖼️ Thumbnail overlay text** (validate each in VidIQ)")
+                                _tc = st.columns(3)
+                                for _col, _t in zip(_tc, _thumbs[:3]):
+                                    with _col:
+                                        st.markdown(f"<div style='font-size:0.72rem;color:#9ca3af'>{_t.get('strategy', '').upper()}</div>"
+                                                    f"<div style='font-weight:600;font-size:0.95rem'>{_t.get('text', '')}</div>",
+                                                    unsafe_allow_html=True)
+                                        if _t.get("alts"):
+                                            st.caption(f"alts: {' · '.join(_t['alts'])}")
+                        except Exception:
+                            pass
+
+                    # ── Tags ──
+                    if _bt_top and _comp:
+                        try:
+                            _tags = _bt_top(_comp.get("problem", {}), _comp.get("instrument", {}),
+                                            _comp.get("hz", {}), _comp.get("raga", {}), _comp.get("wave", {}))
+                            if isinstance(_tags, dict):
+                                _tag_list = _tags.get("tags") or _tags.get("stack") or []
+                                _tag_str = ", ".join(_tag_list) if isinstance(_tag_list, list) else str(_tag_list)
+                            elif isinstance(_tags, list):
+                                _tag_str = ", ".join(_tags)
+                            else:
+                                _tag_str = str(_tags)
+                            st.markdown(f"**🏷️ Tags** · {len(_tag_str)}/500 chars")
+                            st.code(_tag_str, language=None)
+                        except Exception:
+                            pass
 
         # ────────────────────────────────────────────────────
         # Score Check panel — validate + auto-bank + re-rank
