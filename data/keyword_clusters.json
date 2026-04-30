@@ -1,0 +1,181 @@
+{
+  "clusters": [
+    {
+      "id": "calm",
+      "name": "Calm / Settle",
+      "emoji": "🧘",
+      "slot": "problem",
+      "keywords": [
+        "calm your mind",
+        "peaceful music",
+        "quiet your mind",
+        "settle your mind",
+        "ease your mind",
+        "still your mind",
+        "tranquil music",
+        "serene music",
+        "gentle music",
+        "mellow music",
+        "soft music",
+        "restful music",
+        "soothe your mind",
+        "slow down music",
+        "wind down music"
+      ]
+    },
+    {
+      "id": "stress",
+      "name": "Stress / Burnout",
+      "emoji": "😮‍💨",
+      "slot": "problem",
+      "keywords": [
+        "stress relief music",
+        "release stress",
+        "burnout music",
+        "melt stress away",
+        "let go of stress",
+        "tension relief music",
+        "stress release music",
+        "decompress music",
+        "exhale music",
+        "unwind after work",
+        "unwind music",
+        "after work music",
+        "work stress music",
+        "relief music"
+      ]
+    },
+    {
+      "id": "sleep",
+      "name": "Sleep / Rest",
+      "emoji": "🌙",
+      "slot": "problem",
+      "keywords": [
+        "insomnia relief",
+        "deep rest music",
+        "sleep music",
+        "can't fall asleep",
+        "deep sleep music",
+        "sleep aid music",
+        "restful sleep music",
+        "drift to sleep",
+        "fall asleep fast",
+        "sleep instantly",
+        "bedtime music",
+        "night music",
+        "late night music",
+        "sleep deeply"
+      ]
+    },
+    {
+      "id": "anxiety",
+      "name": "Anxiety / Overthinking",
+      "emoji": "💭",
+      "slot": "problem",
+      "keywords": [
+        "anxiety relief music",
+        "calming music for anxiety",
+        "nervous system reset",
+        "meditation for anxiety",
+        "overthinking music",
+        "racing thoughts music",
+        "calm anxiety music",
+        "stop overthinking",
+        "anxious mind music",
+        "worry less music",
+        "ease anxiety",
+        "social anxiety music",
+        "morning anxiety music",
+        "sunday anxiety"
+      ]
+    },
+    {
+      "id": "healing",
+      "name": "Healing / Emotional",
+      "emoji": "💚",
+      "slot": "problem",
+      "keywords": [
+        "healing music",
+        "emotional healing music",
+        "emotional release",
+        "sound healing",
+        "healing frequency music",
+        "comfort music",
+        "inner peace music",
+        "heart healing music",
+        "emotional pain music",
+        "deep healing music",
+        "soul healing music",
+        "restore your energy",
+        "recovery music",
+        "feel better music"
+      ]
+    },
+    {
+      "id": "nostalgia",
+      "name": "Nostalgia / Longing",
+      "emoji": "🌅",
+      "slot": "problem",
+      "keywords": [
+        "nostalgia music",
+        "homesick music",
+        "feeling lost in life",
+        "comfort music",
+        "melancholy music",
+        "longing music",
+        "missing home music",
+        "bittersweet music",
+        "memory music",
+        "lost in life",
+        "reflective music",
+        "emotional music",
+        "reminisce music",
+        "sentimental music"
+      ]
+    },
+    {
+      "id": "focus",
+      "name": "Focus / Clarity",
+      "emoji": "🎯",
+      "slot": "problem",
+      "keywords": [
+        "deep focus music",
+        "adhd focus music",
+        "brain fog",
+        "think clearly",
+        "deep concentration",
+        "concentration music",
+        "focus and concentration",
+        "brain power music",
+        "mental clarity music",
+        "clear your mind",
+        "sharpen focus",
+        "study music",
+        "work music",
+        "productivity music"
+      ]
+    },
+    {
+      "id": "grounding",
+      "name": "Grounding / Reset",
+      "emoji": "🌿",
+      "slot": "problem",
+      "keywords": [
+        "grounding music",
+        "dopamine reset",
+        "digital detox",
+        "vagus nerve music",
+        "nervous system reset",
+        "schumann resonance",
+        "earth frequency music",
+        "recharge music",
+        "reset your mind",
+        "detox music",
+        "mindfulness music",
+        "present moment music",
+        "reconnect music",
+        "balance music"
+      ]
+    }
+  ]
+}
