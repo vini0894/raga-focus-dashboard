@@ -3724,7 +3724,6 @@ with tab_title_builder:
     # ────────────────────────────────────────────────────────────
     with _tb_col1:
         st.markdown("#### 📡 Competitors this week")
-        st.caption("Recent uploads. High views = keyword signal.")
         try:
             with st.spinner("Fetching…"):
                 _tb_comp_data = fetch_competitor_pulse_live(days=7)
@@ -3735,16 +3734,24 @@ with tab_title_builder:
                         _tb_all_uploads.append((_cname, _u))
             _tb_all_uploads.sort(key=lambda x: -x[1].get("views", 0))
             if _tb_all_uploads:
-                for _cname, _u in _tb_all_uploads[:8]:
-                    _views = _u.get("views", 0)
-                    _title = _u.get("title", "")
-                    _days = _u.get("days_ago", "?")
-                    st.markdown(
-                        f"**{_views:,}** · {_days}d ago  \n"
-                        f"<span style='font-size:0.85em;color:#ccc'>{_title}</span>",
-                        unsafe_allow_html=True,
-                    )
-                    st.divider()
+                _tb_comp_rows = [
+                    {
+                        "Channel": _cname,
+                        "Title": _u.get("title", ""),
+                        "Views": _u.get("views", 0),
+                    }
+                    for _cname, _u in _tb_all_uploads[:12]
+                ]
+                st.dataframe(
+                    _tb_comp_rows,
+                    use_container_width=True,
+                    hide_index=True,
+                    column_config={
+                        "Channel": st.column_config.TextColumn("Channel", width="small"),
+                        "Title":   st.column_config.TextColumn("Title",   width="large"),
+                        "Views":   st.column_config.NumberColumn("Views",  format="%d", width="small"),
+                    },
+                )
             else:
                 st.info("No recent uploads found.")
         except Exception as _tb_ce:
@@ -3755,7 +3762,69 @@ with tab_title_builder:
     # ────────────────────────────────────────────────────────────
     with _tb_col2:
         st.markdown("#### 🗂 Keyword clusters")
-        st.caption("Select keywords to use · Check VidIQ for unscored · Scores auto-bank on save.")
+
+        # Cooldown freshness indicator
+        _tb_latest_pub = max(
+            (v.get("publish_date") for v in _tb_catalog if v.get("publish_date")),
+            default=None
+        )
+        if _tb_latest_pub:
+            _tb_latest_days = (_tb_date.today() - _tb_latest_pub).days
+            st.caption(
+                f"Cooldown checks against your last {len(_tb_catalog)} uploads · "
+                f"latest upload: **{_tb_latest_days}d ago** ({_tb_latest_pub})"
+            )
+        else:
+            st.caption("Cooldown: could not load own catalog — RSS may be unavailable.")
+
+        st.divider()
+
+        # ── Free text entry ──
+        st.markdown("**➕ Add any keyword**")
+        _tb_ft_col1, _tb_ft_col2, _tb_ft_col3 = st.columns([3, 1, 1])
+        with _tb_ft_col1:
+            _tb_free_kw = st.text_input(
+                "Keyword",
+                placeholder="e.g. sitar for anxiety",
+                key="tb_free_kw",
+                label_visibility="collapsed",
+            )
+        with _tb_ft_col2:
+            _tb_free_score = st.number_input(
+                "Score", min_value=0, max_value=100, value=0, step=1,
+                key="tb_free_score", label_visibility="collapsed",
+            )
+        with _tb_ft_col3:
+            if st.button("Add", key="tb_free_add", use_container_width=True):
+                if _tb_free_kw.strip():
+                    _kw_clean = _tb_free_kw.strip().lower()
+                    if _kw_clean not in st.session_state["tb_selected"]:
+                        st.session_state["tb_selected"].append(_kw_clean)
+                    if _tb_free_score > 0:
+                        st.session_state["tb_inline_scores"][_kw_clean] = _tb_free_score
+                        # Bank immediately
+                        try:
+                            import sys as _tb_ft_sys
+                            _tb_ft_sys.path.insert(0, str(PIPELINE_DIR))
+                            from keyword_bank import append_keyword as _tb_ft_upsert
+                            _tb_ft_upsert(_kw_clean, slot="problem", vidiq_score=_tb_free_score, source="title-builder-freetext")
+                        except Exception:
+                            pass
+                    st.rerun()
+
+        if _tb_free_kw.strip() and not st.session_state.get("tb_free_added"):
+            _fkw_l = _tb_free_kw.strip().lower()
+            _fstatus, _fdays = _tb_cooldown(_fkw_l)
+            _fscore = _tb_score(_fkw_l) or (st.session_state["tb_inline_scores"].get(_fkw_l))
+            _fscore_disp = f"· score {_fscore}" if _fscore else "· unscored — search on YouTube to check"
+            st.caption(f"`{_fkw_l}` {_tb_status_badge(_fkw_l)} {_fscore_disp}")
+            if _fscore is None:
+                st.markdown(
+                    f"[▶ Search YouTube](https://www.youtube.com/results?search_query={_tb_qp(_fkw_l)})",
+                )
+
+        st.divider()
+        st.caption("Select from clusters · ▶ Search = open YouTube (VidIQ shows score in sidebar)")
 
         if not _tb_clusters:
             st.warning("No clusters found. Check `data/keyword_clusters.json`.")
@@ -3810,7 +3879,7 @@ with tab_title_builder:
                         with _r4:
                             if _score is None:
                                 st.markdown(
-                                    f"[VidIQ](https://app.vidiq.com/keywords/{_tb_qp(_kw_l)})",
+                                    f"[▶ Search](https://www.youtube.com/results?search_query={_tb_qp(_kw_l)})",
                                     unsafe_allow_html=False,
                                 )
 
