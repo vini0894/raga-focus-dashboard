@@ -4071,7 +4071,7 @@ with tab_title_builder:
 
         # Build keyword list — dedupe by phrase to avoid dup-key errors when "All" selected
         _seen = set()
-        _kw_list = []
+        _kw_raw = []
         if _cluster_choice == "All":
             for _cl in _tb_clusters:
                 for _kw in _cl["keywords"]:
@@ -4079,10 +4079,10 @@ with tab_title_builder:
                     if _kl in _seen or _kl in st.session_state["tb_hidden"]:
                         continue
                     _seen.add(_kl)
-                    _kw_list.append((_kw, _cl["name"]))
+                    _kw_raw.append((_kw, _cl["name"]))
         elif _cluster_choice == "🗑 Hidden":
             for _kw in sorted(st.session_state["tb_hidden"]):
-                _kw_list.append((_kw, "Hidden"))
+                _kw_raw.append((_kw, "Hidden"))
         else:
             for _cl in _tb_clusters:
                 if _cl["name"].split("/")[0].strip() == _cluster_choice:
@@ -4091,18 +4091,50 @@ with tab_title_builder:
                         if _kl in _seen or _kl in st.session_state["tb_hidden"]:
                             continue
                         _seen.add(_kl)
-                        _kw_list.append((_kw, _cl["name"]))
+                        _kw_raw.append((_kw, _cl["name"]))
                     break
 
-        # Split into scored vs unscored for separate display
+        # Sort: ready (scored, available) first → unscored → cooldown → invalidated
+        # Within ready, highest score first
+        def _sort_priority(item):
+            kw, _ = item
+            kl = kw.strip().lower()
+            stat, _dl = _tb_cooldown(kl)
+            sc = _tb_effective_score(kl)
+            if stat == "available" and sc is not None:
+                return (0, -sc)  # ready - highest score first
+            if stat == "unscored":
+                return (1, kw)
+            if stat == "cooldown":
+                return (2, kw)
+            return (3, kw)  # invalidated last
+
+        _kw_list = sorted(_kw_raw, key=_sort_priority)
+
         _unscored = [(kw, cn) for kw, cn in _kw_list if _tb_effective_score(kw.strip().lower()) is None
                      and _tb_cooldown(kw.strip().lower())[0] != "invalidated"]
-        _scored = [(kw, cn) for kw, cn in _kw_list if _tb_effective_score(kw.strip().lower()) is not None
-                   or _tb_cooldown(kw.strip().lower())[0] == "invalidated"]
+        _scored_avail = [(kw, cn) for kw, cn in _kw_list
+                         if _tb_effective_score(kw.strip().lower()) is not None
+                         and _tb_cooldown(kw.strip().lower())[0] == "available"]
+
+        # Instruction banner — make selection mechanic obvious
+        _active = st.session_state["tb_active_variant"]
+        _active_color = "#93c5fd" if _active == "A" else "#d4a574"
+        _active_label = "🛡 A · safe" if _active == "A" else "🧪 B · experiment"
+        st.markdown(
+            f'<div style="background:rgba({"30,58,95" if _active=="A" else "212,165,116"},0.12);'
+            f'border:1px solid {_active_color}40;border-radius:6px;padding:8px 12px;margin:8px 0;'
+            f'font-size:12px;color:#ededee">'
+            f'👆 <b>Click any keyword below</b> to add it to <span style="color:{_active_color};font-weight:600">{_active_label}</span>. '
+            f'Switch variant in the right panel.'
+            f'</div>',
+            unsafe_allow_html=True
+        )
 
         st.markdown(
             f"<div style='font-size:0.7rem;color:#8a8a92;margin:4px 0'>"
-            f"{len(_kw_list)} total · {len(_scored)} scored · {len(_unscored)} unscored</div>",
+            f"{len(_kw_list)} total · <span style='color:#4ade80'>{len(_scored_avail)} ready</span> · "
+            f"<span style='color:#facc15'>{len(_unscored)} unscored</span></div>",
             unsafe_allow_html=True
         )
 
