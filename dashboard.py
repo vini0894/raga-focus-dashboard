@@ -3708,11 +3708,13 @@ with tab_title_builder:
             return f"🔴 {score}"
         return "⚠️ unscored"
 
-    # ── Session state for selected keywords + inline scores ──
+    # ── Session state for selected keywords + inline scores + hidden ──
     if "tb_selected" not in st.session_state:
         st.session_state["tb_selected"] = []  # list of phrase strings
     if "tb_inline_scores" not in st.session_state:
         st.session_state["tb_inline_scores"] = {}  # phrase → score int
+    if "tb_hidden" not in st.session_state:
+        st.session_state["tb_hidden"] = set()  # hidden for this session
 
     # ═══════════════════════════════════════════════════════════
     # THREE-COLUMN LAYOUT
@@ -3837,7 +3839,17 @@ with tab_title_builder:
                 _cemoji = _cluster.get("emoji", "")
 
                 with st.expander(f"{_cemoji} {_cname}", expanded=(_cid in ["calm", "stress", "sleep", "anxiety"])):
-                    for _kw in _cluster["keywords"]:
+                    _tb_hidden_set = st.session_state["tb_hidden"]
+                    _tb_visible = [kw for kw in _cluster["keywords"] if kw.strip().lower() not in _tb_hidden_set]
+                    _tb_hidden_count = len(_cluster["keywords"]) - len(_tb_visible)
+
+                    if _tb_hidden_count:
+                        _show_hidden = st.checkbox(f"Show {_tb_hidden_count} hidden", key=f"tb_showhidden_{_cid}")
+                        _tb_visible_final = _cluster["keywords"] if _show_hidden else _tb_visible
+                    else:
+                        _tb_visible_final = _tb_visible
+
+                    for _kw in _tb_visible_final:
                         _kw_l = _kw.strip().lower()
                         _badge = _tb_status_badge(_kw_l)
                         _score = _tb_score(_kw_l)
@@ -3847,7 +3859,7 @@ with tab_title_builder:
                         if _inline is not None:
                             _score = _inline
 
-                        _r1, _r2, _r3, _r4 = st.columns([3, 2, 1, 1])
+                        _r1, _r2, _r3, _r4, _r5 = st.columns([3, 2, 1, 1, 0.5])
                         with _r1:
                             _checked = st.checkbox(
                                 _kw_l,
@@ -3882,6 +3894,13 @@ with tab_title_builder:
                                     f"[▶ Search](https://www.youtube.com/results?search_query={_tb_qp(_kw_l)})",
                                     unsafe_allow_html=False,
                                 )
+
+                        with _r5:
+                            if st.button("✕", key=f"tb_hide_{_cid}_{_kw_l.replace(' ', '_')}", help="Hide this keyword"):
+                                st.session_state["tb_hidden"].add(_kw_l)
+                                if _kw_l in st.session_state["tb_selected"]:
+                                    st.session_state["tb_selected"].remove(_kw_l)
+                                st.rerun()
 
                     # Save all inline scores for this cluster to bank
                     _unsaved = [
