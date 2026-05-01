@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Title Builder · v4 mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0a0b;
+  --surface: #131316;
+  --surface-2: #1a1a1f;
+  --border: #26262d;
+  --border-strong: #3a3a44;
+  --text: #ededee;
+  --text-dim: #8a8a92;
+  --text-faint: #5a5a62;
+  --accent: #d4a574;       /* warm sand */
+  --accent-soft: #2a2018;
+  --green: #4ade80;
+  --yellow: #facc15;
+  --red: #f87171;
+  --blue: #93c5fd;
+  --blue-bg: #1e3a5f;
+  --teal: #5eead4;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Geist', system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.h1 { font-family: 'Fraunces', serif; font-weight: 500; font-size: 28px; letter-spacing: -0.02em; margin-bottom: 4px; }
+.h1 .accent { color: var(--accent); }
+.subtle { color: var(--text-dim); font-size: 13px; }
+
+/* ─────────────────────────────────────────────
+   LIVE PREVIEW BAR (sticky top)
+   ───────────────────────────────────────────── */
+.preview {
+  margin-top: 16px;
+  background: linear-gradient(135deg, var(--surface) 0%, var(--surface-2) 100%);
+  border: 1px solid var(--border-strong);
+  border-radius: 12px;
+  padding: 18px 22px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.variant-label {
+  font-family: 'Geist Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+.variant-title {
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  border: none;
+  border-bottom: 1px dashed transparent;
+  background: transparent;
+  width: 100%;
+  outline: none;
+  padding-bottom: 4px;
+  transition: border-color 0.15s;
+}
+.variant-title:hover { border-bottom-color: var(--border-strong); }
+.variant-title:focus {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+.variant-edit-hint {
+  font-size: 10px;
+  color: var(--text-faint);
+  font-family: 'Geist Mono', monospace;
+  margin-top: 4px;
+}
+.char-count {
+  font-family: 'Geist Mono', monospace;
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-top: 4px;
+}
+.char-count.ok { color: var(--green); }
+.char-count.warn { color: var(--yellow); }
+
+/* ─────────────────────────────────────────────
+   COLUMNS
+   ───────────────────────────────────────────── */
+.layout {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 240px 1fr 280px;
+  gap: 24px;
+  align-items: start;
+}
+
+/* ─────────────────────────────────────────────
+   COMPETITOR SIDEBAR (left)
+   ───────────────────────────────────────────── */
+.section-label {
+  font-family: 'Geist Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.comp-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+.comp-card .meta {
+  font-size: 11px;
+  color: var(--text-dim);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.comp-card .channel { color: var(--accent); font-weight: 500; }
+.comp-card .views { font-family: 'Geist Mono', monospace; }
+.word-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.word-chip {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 12px;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.12s;
+}
+.word-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+.word-chip.banked { color: var(--green); border-color: rgba(74, 222, 128, 0.3); }
+.word-chip.banked:hover { background: rgba(74, 222, 128, 0.08); }
+
+/* WORD CLOUD — sized by views */
+.word-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: baseline;
+  line-height: 1.4;
+}
+.cloud-word {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 4px 9px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.14s;
+  font-family: 'Geist', sans-serif;
+}
+.cloud-word:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+.cloud-word.banked {
+  color: var(--green);
+  border-color: rgba(74, 222, 128, 0.25);
+}
+.cloud-word.banked:hover {
+  background: rgba(74, 222, 128, 0.06);
+  border-color: var(--green);
+  color: var(--green);
+}
+.cloud-meta {
+  font-family: 'Geist Mono', monospace;
+  font-size: 9px;
+  color: var(--text-faint);
+  font-weight: 400;
+}
+.cloud-word.size-xl { font-size: 17px; font-weight: 600; padding: 6px 12px; }
+.cloud-word.size-l  { font-size: 15px; font-weight: 500; padding: 5px 11px; }
+.cloud-word.size-m  { font-size: 13px; font-weight: 500; }
+.cloud-word.size-s  { font-size: 12px; font-weight: 400; padding: 3px 8px; }
+.cloud-word.size-xs { font-size: 11px; font-weight: 400; padding: 2px 7px; opacity: 0.85; }
+
+/* AB SELECTION TOGGLE — above keyword grid */
+.ab-toggle {
+  display: flex;
+  gap: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 4px;
+  margin-bottom: 16px;
+  width: fit-content;
+}
+.ab-toggle .ab-tab {
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-dim);
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.14s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Geist', sans-serif;
+}
+.ab-toggle .ab-tab:hover { color: var(--text); }
+.ab-toggle .ab-tab.active.tab-a {
+  background: linear-gradient(135deg, #1e3a5f 0%, #1a3252 100%);
+  color: var(--blue);
+  box-shadow: 0 0 0 1px rgba(147, 197, 253, 0.3);
+}
+.ab-toggle .ab-tab.active.tab-b {
+  background: linear-gradient(135deg, #3a2a18 0%, #2e2014 100%);
+  color: var(--accent);
+  box-shadow: 0 0 0 1px rgba(212, 165, 116, 0.3);
+}
+.ab-toggle .ab-tab .count {
+  font-family: 'Geist Mono', monospace;
+  font-size: 11px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+.ab-toggle .ab-tab .role {
+  font-size: 10px;
+  font-family: 'Geist Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.65;
+}
+
+/* Chip variant badges (shown when chip is selected in either variant) */
+.kw .ab-badge {
+  font-family: 'Geist Mono', monospace;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 1px 4px;
+  border-radius: 2px;
+  margin-left: 2px;
+  letter-spacing: 0.04em;
+}
+.kw .ab-badge.a { background: var(--blue-bg); color: var(--blue); }
+.kw .ab-badge.b { background: var(--accent-soft); color: var(--accent); }
+
+/* Active mode = A → A-selected chips show full selection style */
+.kw.sel-a {
+  background: rgba(30, 58, 95, 0.4);
+  border-color: var(--blue);
+  color: var(--blue);
+}
+.kw.sel-a .score { background: rgba(147, 197, 253, 0.12); color: var(--blue); }
+.kw.sel-a::before { content: '✓'; color: var(--blue); font-weight: 700; }
+
+.kw.sel-b {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.kw.sel-b .score { background: rgba(212, 165, 116, 0.15); color: var(--accent); }
+.kw.sel-b::before { content: '✓'; color: var(--accent); font-weight: 700; }
+
+/* Selected pills sections */
+.selected-section { margin-bottom: 14px; }
+.selected-section .heading {
+  font-family: 'Geist Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.selected-section.a .heading { color: var(--blue); }
+.selected-section.b .heading { color: var(--accent); }
+.selected-pills .pill.a {
+  background: var(--blue-bg);
+  color: var(--blue);
+  border-color: rgba(147, 197, 253, 0.3);
+}
+.selected-pills .pill.a .x { color: var(--blue); }
+
+/* B-MODE PILLS in preview */
+.b-modes {
+  display: flex;
+  gap: 4px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+.b-mode {
+  font-family: 'Geist Mono', monospace;
+  font-size: 10px;
+  padding: 3px 8px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.12s;
+}
+.b-mode:hover { border-color: var(--border-strong); color: var(--text); }
+.b-mode.active {
+  background: var(--surface-2);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ─────────────────────────────────────────────
+   KEYWORDS (center, hero)
+   ───────────────────────────────────────────── */
+.keywords-area { min-height: 600px; }
+.cluster-pills {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.cluster-pill {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: 12px;
+  color: var(--text-dim);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.12s;
+}
+.cluster-pill:hover { border-color: var(--border-strong); color: var(--text); }
+.cluster-pill.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #000;
+  font-weight: 500;
+}
+.cluster-pill .count {
+  font-family: 'Geist Mono', monospace;
+  font-size: 10px;
+  opacity: 0.7;
+}
+.cluster-pill.hidden-pill {
+  margin-left: auto;
+  border-style: dashed;
+  color: var(--text-faint);
+}
+.cluster-pill.hidden-pill:hover { color: var(--text); border-color: var(--border-strong); }
+
+/* Restore button on hidden chips */
+.kw.hidden-state {
+  border-style: dashed;
+  border-color: var(--border-strong);
+  color: var(--text-dim);
+  opacity: 0.7;
+}
+.kw.hidden-state:hover {
+  opacity: 1;
+  border-color: var(--green);
+  color: var(--green);
+}
+.kw.hidden-state .restore {
+  margin-left: 4px;
+  color: var(--text-faint);
+  font-size: 13px;
+}
+.kw.hidden-state:hover .restore { color: var(--green); }
+.kw.hidden-state .cluster-tag {
+  font-family: 'Geist Mono', monospace;
+  font-size: 10px;
+  color: var(--text-faint);
+  background: var(--surface-2);
+  padding: 1px 5px;
+  border-radius: 3px;
+  margin-left: 4px;
+}
+
+.cluster-section { margin-bottom: 28px; }
+.cluster-title {
+  font-family: 'Fraunces', serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.cluster-title .emoji { font-size: 14px; }
+.cluster-title .ready {
+  margin-left: auto;
+  font-family: 'Geist Mono', monospace;
+  font-size: 11px;
+  color: var(--text-dim);
+  font-weight: 400;
+}
+
+.kw-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* Keyword chip — the core element */
+.kw {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.14s;
+  user-select: none;
+}
+.kw:hover {
+  border-color: var(--border-strong);
+  background: var(--surface-2);
+}
+.kw .score {
+  font-family: 'Geist Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: var(--surface-2);
+}
+.kw.high .score { color: var(--green); background: rgba(74, 222, 128, 0.1); }
+.kw.med .score  { color: var(--yellow); background: rgba(250, 204, 21, 0.1); }
+.kw.low .score  { color: var(--red); background: rgba(248, 113, 113, 0.1); }
+
+.kw.unscored {
+  border-style: dashed;
+  color: var(--text-dim);
+}
+.kw.unscored .score { color: var(--text-faint); }
+
+/* Hover: reveal ✕ hide button */
+.kw .hide-x {
+  display: none;
+  margin-left: 4px;
+  color: var(--text-faint);
+  font-size: 14px;
+  line-height: 1;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+.kw:hover .hide-x { display: inline-block; }
+.kw .hide-x:hover { color: var(--red); background: rgba(248, 113, 113, 0.1); }
+
+/* Scoring state — chip expands to show inline score input + search link */
+.kw.scoring {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--text);
+  border-style: solid;
+  padding: 6px 10px 6px 10px;
+}
+.kw.scoring .score-input {
+  width: 38px;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: 3px;
+  color: var(--accent);
+  font-family: 'Geist Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 1px 4px;
+  outline: none;
+  text-align: center;
+}
+.kw.scoring .score-input:focus { border-color: var(--accent); }
+.kw.scoring .yt-link {
+  font-size: 11px;
+  color: var(--blue);
+  text-decoration: none;
+  padding: 1px 5px;
+  border: 1px solid rgba(147, 197, 253, 0.3);
+  border-radius: 3px;
+}
+.kw.scoring .yt-link:hover { background: rgba(147, 197, 253, 0.1); }
+.kw.scoring .save-btn {
+  background: var(--green);
+  color: #000;
+  border: none;
+  border-radius: 3px;
+  padding: 1px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Hidden cluster footer link */
+.cluster-footer {
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--text-faint);
+  font-family: 'Geist Mono', monospace;
+}
+.cluster-footer a {
+  color: var(--text-dim);
+  text-decoration: underline dotted;
+  cursor: pointer;
+}
+.cluster-footer a:hover { color: var(--text); }
+
+.kw.cooldown {
+  opacity: 0.45;
+  cursor: not-allowed;
+  border-color: var(--border);
+  text-decoration: line-through;
+}
+.kw.cooldown .score {
+  background: rgba(250, 204, 21, 0.08);
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+.kw.invalid {
+  opacity: 0.3;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  color: var(--red);
+}
+
+.kw.selected {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.kw.selected .score { background: rgba(212, 165, 116, 0.15); color: var(--accent); }
+.kw.selected::before {
+  content: '✓';
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* ─────────────────────────────────────────────
+   BUILD PANEL (right)
+   ───────────────────────────────────────────── */
+.build {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  position: sticky;
+  top: 180px;
+}
+.build-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+.build-row:last-child { border-bottom: none; }
+.build-row .label {
+  font-family: 'Geist Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-faint);
+}
+.build-row .value {
+  color: var(--text);
+  font-weight: 500;
+  cursor: pointer;
+}
+.build-row .value:hover { color: var(--accent); }
+.build-row .value.empty { color: var(--text-faint); font-weight: 400; font-style: italic; }
+
+.selected-area {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.selected-area .heading {
+  font-family: 'Geist Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-faint);
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.selected-area .clear-btn {
+  font-size: 10px;
+  color: var(--text-dim);
+  cursor: pointer;
+}
+.selected-area .clear-btn:hover { color: var(--red); }
+
+.selected-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.selected-pills .pill {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: 1px solid rgba(212, 165, 116, 0.3);
+  border-radius: 4px;
+  padding: 3px 7px 3px 9px;
+  font-size: 11px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.selected-pills .pill .x {
+  cursor: pointer;
+  opacity: 0.6;
+  font-size: 13px;
+  line-height: 1;
+}
+.selected-pills .pill .x:hover { opacity: 1; }
+
+.help-text {
+  font-size: 11px;
+  color: var(--text-faint);
+  margin-top: 16px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* ─────────────────────────────────────────────
+   SEARCH BAR
+   ───────────────────────────────────────────── */
+.search-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+.search-input {
+  flex: 1;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 13px;
+  outline: none;
+}
+.search-input::placeholder { color: var(--text-faint); }
+.search-input:focus { border-color: var(--accent); }
+.add-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 14px;
+  color: var(--text);
+  font-size: 12px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.add-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+/* legend */
+.legend {
+  display: flex;
+  gap: 14px;
+  font-size: 11px;
+  color: var(--text-faint);
+  margin-bottom: 16px;
+  font-family: 'Geist Mono', monospace;
+}
+.legend span::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.legend .high::before { background: var(--green); }
+.legend .med::before  { background: var(--yellow); }
+.legend .low::before  { background: var(--red); }
+.legend .un::before   { background: transparent; border: 1px dashed var(--text-faint); }
+.legend .cd::before   { background: var(--yellow); opacity: 0.4; }
+</style>
+</head>
+<body>
+
+<div class="h1">🔤 Title <span class="accent">Builder</span></div>
+<div class="subtle">Click keywords to compose · scores update live · 31 uploads in cooldown reference</div>
+
+<!-- LIVE PREVIEW (sticky) -->
+<div class="preview">
+  <div>
+    <div class="variant-label">
+      <span>Variant A · 🛡 The safe bet</span>
+      <span style="color:var(--green)">77 ▲</span>
+    </div>
+    <input class="variant-title" value="Stress Relief Music | Veena | 1 Hour" />
+    <div class="char-count ok">38 chars · SEO-led, instrument anchor · ✎ click to edit any part</div>
+  </div>
+  <div>
+    <div class="variant-label">
+      <span>Variant B · 🧪 The experiment</span>
+      <span style="color:var(--yellow)">62 ▲</span>
+    </div>
+    <input class="variant-title" value="Can't Let Go of Stress? | Veena Healing | 1 Hour" />
+    <div class="char-count ok">50 chars · question hook · ✎ click to edit any part</div>
+    <div class="b-modes">
+      <span class="b-mode active">🎯 Question</span>
+      <span class="b-mode">💚 Outcome</span>
+      <span class="b-mode">🌀 Different theme</span>
+      <span class="b-mode">🎨 Competitor pattern</span>
+    </div>
+  </div>
+</div>
+
+<!-- LAYOUT: 3 columns -->
+<div class="layout">
+
+  <!-- LEFT: Competitor inspiration (word cloud + collapsible titles) -->
+  <div>
+    <div class="section-label">📡 Trending in competitor titles</div>
+    <div style="font-size:11px;color:var(--text-faint);margin-bottom:12px">Last 14d · ranked by total views</div>
+
+    <div class="word-cloud">
+      <span class="cloud-word size-xl banked">Sleep Music<span class="cloud-meta">6 · 28K</span></span>
+      <span class="cloud-word size-xl">Raga Todi<span class="cloud-meta">4 · 34K</span></span>
+      <span class="cloud-word size-l">Sitar<span class="cloud-meta">8 · 19K</span></span>
+      <span class="cloud-word size-l banked">Healing<span class="cloud-meta">5 · 22K</span></span>
+      <span class="cloud-word size-m">Mental Health<span class="cloud-meta">3 · 15K</span></span>
+      <span class="cloud-word size-m">Night Anxiety<span class="cloud-meta">2 · 12K</span></span>
+      <span class="cloud-word size-m">Ancient<span class="cloud-meta">3 · 11K</span></span>
+      <span class="cloud-word size-m banked">Detox<span class="cloud-meta">2 · 8K</span></span>
+      <span class="cloud-word size-s">Sarangi<span class="cloud-meta">2 · 7K</span></span>
+      <span class="cloud-word size-s">Bhairavi<span class="cloud-meta">2 · 6K</span></span>
+      <span class="cloud-word size-s">Deep Sleep<span class="cloud-meta">1 · 5K</span></span>
+      <span class="cloud-word size-s">Lullaby<span class="cloud-meta">1 · 5K</span></span>
+      <span class="cloud-word size-s">Screen Time<span class="cloud-meta">1 · 5K</span></span>
+      <span class="cloud-word size-s">Stillness<span class="cloud-meta">1 · 4K</span></span>
+      <span class="cloud-word size-s banked">Comfort<span class="cloud-meta">1 · 4K</span></span>
+      <span class="cloud-word size-s">Sickness<span class="cloud-meta">1 · 4K</span></span>
+      <span class="cloud-word size-xs">Therapy<span class="cloud-meta">1 · 3K</span></span>
+      <span class="cloud-word size-xs">Inner Peace<span class="cloud-meta">1 · 3K</span></span>
+      <span class="cloud-word size-xs">Bansuri<span class="cloud-meta">1 · 2K</span></span>
+      <span class="cloud-word size-xs">Mantra<span class="cloud-meta">1 · 2K</span></span>
+      <span class="cloud-word size-xs">Vagus Nerve<span class="cloud-meta">1 · 2K</span></span>
+      <span class="cloud-word size-xs">Subconscious<span class="cloud-meta">1 · 1K</span></span>
+    </div>
+
+    <div style="font-size:10px;color:var(--text-faint);margin-top:14px;line-height:1.5;font-style:italic">
+      Bigger = more total views. Green = in your bank. Click → adds to selection.
+    </div>
+
+    <details style="margin-top:18px">
+      <summary style="cursor:pointer;font-size:11px;color:var(--text-dim);font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.06em">
+        📺 Source titles (15)
+      </summary>
+      <div style="margin-top:10px">
+        <div class="comp-card">
+          <div class="meta"><span class="channel">Raga Heal</span><span class="views">12,400 · 2d</span></div>
+          <div style="font-size:11px;color:var(--text);line-height:1.5">Ancient Raga Todi for Night Anxiety — 1 Hour Sleep Music</div>
+        </div>
+        <div class="comp-card">
+          <div class="meta"><span class="channel">Shanti</span><span class="views">8,900 · 3d</span></div>
+          <div style="font-size:11px;color:var(--text);line-height:1.5">Sitar for Mental Health — Healing Music 1 Hour</div>
+        </div>
+        <div class="comp-card">
+          <div class="meta"><span class="channel">Raga Heal</span><span class="views">5,200 · 4d</span></div>
+          <div style="font-size:11px;color:var(--text);line-height:1.5">Screen Time Sickness — Detox Your Mind</div>
+        </div>
+      </div>
+    </details>
+  </div>
+
+  <!-- CENTER: Keywords (hero) -->
+  <div class="keywords-area">
+
+    <div class="search-bar">
+      <input class="search-input" placeholder="Search keywords or add new (e.g. 'sitar for anxiety')" />
+      <input class="search-input" style="flex:0 0 70px" placeholder="score" />
+      <button class="add-btn">＋ Add</button>
+    </div>
+
+    <div class="cluster-pills">
+      <div class="cluster-pill active">All <span class="count">240</span></div>
+      <div class="cluster-pill">🧘 Calm <span class="count">28</span></div>
+      <div class="cluster-pill">😮‍💨 Stress <span class="count">24</span></div>
+      <div class="cluster-pill">🌙 Sleep <span class="count">22</span></div>
+      <div class="cluster-pill">💭 Anxiety <span class="count">29</span></div>
+      <div class="cluster-pill">💚 Healing <span class="count">26</span></div>
+      <div class="cluster-pill">🌅 Nostalgia <span class="count">25</span></div>
+      <div class="cluster-pill">🎯 Focus <span class="count">28</span></div>
+      <div class="cluster-pill">🌿 Grounding <span class="count">28</span></div>
+      <div class="cluster-pill hidden-pill">🗑 Hidden <span class="count">12</span></div>
+    </div>
+
+    <div class="legend">
+      <span class="high">≥70 strong</span>
+      <span class="med">60–69 ok</span>
+      <span class="low">&lt;60 weak</span>
+      <span class="un">unscored</span>
+      <span class="cd">cooldown</span>
+    </div>
+
+    <!-- Cluster: Stress -->
+    <div class="cluster-section">
+      <div class="cluster-title">
+        <span class="emoji">😮‍💨</span>Stress / Burnout
+        <span class="ready">8 ready · 12 unscored · 4 cooldown</span>
+      </div>
+      <div class="kw-grid">
+        <span class="kw sel-a high"><span>stress relief music</span><span class="score">77</span><span class="ab-badge a">A</span><span class="hide-x">×</span></span>
+        <span class="kw med"><span>release stress</span><span class="score">66</span><span class="hide-x">×</span></span>
+        <span class="kw sel-b med"><span>burnout music</span><span class="score">65</span><span class="ab-badge b">B</span><span class="hide-x">×</span></span>
+        <span class="kw cooldown med"><span>unwind music</span><span class="score">63 · 🕐 4d</span><span class="hide-x">×</span></span>
+        <span class="kw sel-a med"><span>unwind after work</span><span class="score">64</span><span class="ab-badge a">A</span><span class="hide-x">×</span></span>
+        <!-- One chip shown in active SCORING state to demonstrate the flow -->
+        <span class="kw scoring" title="Click YouTube → check VidIQ score in sidebar → type score → save">
+          <span>melt stress away</span>
+          <a class="yt-link" href="#" title="Open YouTube search (VidIQ shows score in sidebar)">▶ YT</a>
+          <input class="score-input" type="number" min="0" max="100" placeholder="?" value="68" />
+          <button class="save-btn">Save</button>
+          <span class="hide-x">×</span>
+        </span>
+        <span class="kw unscored"><span>let go of stress</span><span class="score">+</span><span class="hide-x">×</span></span>
+        <span class="kw unscored"><span>tension relief music</span><span class="score">+</span><span class="hide-x">×</span></span>
+        <span class="kw unscored"><span>decompress music</span><span class="score">+</span><span class="hide-x">×</span></span>
+        <span class="kw unscored"><span>exhale music</span><span class="score">+</span><span class="hide-x">×</span></span>
+        <span class="kw unscored"><span>after work music</span><span class="score">+</span><span class="hide-x">×</span></span>
+        <span class="kw invalid"><span>overwhelmed music</span><span class="score">24</span></span>
+      </div>
+      <div class="cluster-footer">
+        3 hidden in this cluster · <a>show hidden</a>
+      </div>
+    </div>
+
+    <!-- Cluster: Calm -->
+    <div class="cluster-section">
+      <div class="cluster-title">
+        <span class="emoji">🧘</span>Calm / Settle
+        <span class="ready">3 ready · 22 unscored · 3 cooldown</span>
+      </div>
+      <div class="kw-grid">
+        <span class="kw cooldown med"><span>calm your mind</span><span class="score">68 · 🕐 2d</span></span>
+        <span class="kw cooldown high"><span>peaceful music</span><span class="score">72 · 🕐 5d</span></span>
+        <span class="kw invalid"><span>quiet your mind</span><span class="score">—</span></span>
+        <span class="kw med"><span>mellow music</span><span class="score">68</span></span>
+        <span class="kw unscored"><span>serene music</span><span class="score">+</span></span>
+        <span class="kw unscored"><span>tranquil music</span><span class="score">+</span></span>
+        <span class="kw unscored"><span>gentle music</span><span class="score">+</span></span>
+        <span class="kw unscored"><span>still your mind</span><span class="score">+</span></span>
+        <span class="kw unscored"><span>settle your mind</span><span class="score">+</span></span>
+        <span class="kw unscored"><span>ease your mind</span><span class="score">+</span></span>
+        <span class="kw unscored"><span>soft music</span><span class="score">+</span></span>
+        <span class="kw unscored"><span>restful music</span><span class="score">+</span></span>
+        <span class="kw unscored"><span>soothe your mind</span><span class="score">+</span></span>
+      </div>
+    </div>
+
+    <!-- Cluster: Sleep -->
+    <div class="cluster-section">
+      <div class="cluster-title">
+        <span class="emoji">🌙</span>Sleep / Rest
+        <span class="ready">2 ready · 20 unscored</span>
+      </div>
+      <div class="kw-grid">
+        <span class="kw high"><span>sleep music</span><span class="score">75</span></span>
+        <span class="kw med"><span>insomnia relief</span><span class="score">63</span></span>
+        <span class="kw med"><span>deep rest music</span><span class="score">67</span></span>
+        <span class="kw unscored"><span>can't fall asleep</span><span class="score">+</span></span>
+        <span class="kw unscored"><span>drift to sleep</span><span class="score">+</span></span>
+        <span class="kw unscored"><span>sleep deeply</span><span class="score">+</span></span>
+        <span class="kw unscored"><span>bedtime music</span><span class="score">+</span></span>
+        <span class="kw unscored"><span>night music</span><span class="score">+</span></span>
+        <span class="kw unscored"><span>sleepless nights</span><span class="score">+</span></span>
+        <span class="kw unscored"><span>music for insomnia</span><span class="score">+</span></span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RIGHT: Build panel -->
+  <div class="build">
+    <!-- AB toggle — controls which variant new keyword clicks go to -->
+    <div class="ab-toggle" style="width:100%;margin-bottom:14px">
+      <div class="ab-tab tab-a active" style="flex:1;justify-content:center">
+        <span>🛡 A</span>
+        <span class="role">safe</span>
+        <span class="count">2</span>
+      </div>
+      <div class="ab-tab tab-b" style="flex:1;justify-content:center">
+        <span>🧪 B</span>
+        <span class="role">experiment</span>
+        <span class="count">1</span>
+      </div>
+    </div>
+    <div style="font-size:10px;color:var(--text-faint);font-family:'Geist Mono',monospace;margin-bottom:14px;text-align:center">
+      keyword clicks add to active variant
+    </div>
+
+    <div class="section-label">⚙️ Configuration</div>
+    <div class="build-row">
+      <span class="label">Instrument</span>
+      <span class="value">Veena ›</span>
+    </div>
+    <div class="build-row">
+      <span class="label">Raga</span>
+      <span class="value">Yaman ›</span>
+    </div>
+    <div class="build-row">
+      <span class="label">Duration</span>
+      <span class="value">1 Hour ›</span>
+    </div>
+
+    <div class="selected-area">
+      <div class="selected-section a">
+        <div class="heading">
+          <span>🛡 Variant A · safe · 2</span>
+          <span class="clear-btn">clear</span>
+        </div>
+        <div class="selected-pills">
+          <span class="pill a">stress relief music · 77 <span class="x">×</span></span>
+          <span class="pill a">unwind after work · 64 <span class="x">×</span></span>
+        </div>
+      </div>
+
+      <div class="selected-section b">
+        <div class="heading">
+          <span>🧪 Variant B · experiment · 1</span>
+          <span class="clear-btn">clear</span>
+        </div>
+        <div class="selected-pills">
+          <span class="pill">burnout music · 65 <span class="x">×</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="help-text">
+      Toggle "Picking for A / B" above the keyword grid. Selected keywords get
+      an A or B badge so you can always see what's where.
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
