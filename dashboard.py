@@ -4138,47 +4138,7 @@ with tab_title_builder:
             unsafe_allow_html=True
         )
 
-        # ─── SCORE UNSCORED (collapsed expander) ───
-        if _unscored:
-            with st.expander(f"📝 Score {len(_unscored)} unscored keywords", expanded=False):
-                st.caption("Click ▶ YT to check VidIQ score in YouTube sidebar, then type score and hit Enter or 💾 to bank.")
-                for _idx, (_kw, _cn) in enumerate(_unscored):
-                    _kl = _kw.strip().lower()
-                    _key_safe = f"{_idx}_{_kl.replace(' ','_').replace(chr(39),'').replace('/','')}"
-                    _u1, _u2, _u3, _u4 = st.columns([4, 1.2, 1, 1])
-                    with _u1:
-                        st.markdown(f"<span style='font-size:13px;color:#ededee'>{_kw}</span>",
-                                    unsafe_allow_html=True)
-                    with _u2:
-                        _new_sc = st.number_input(
-                            "s", 0, 100, 0,
-                            key=f"tb_uscore_{_cluster_choice}_{_key_safe}",
-                            label_visibility="collapsed",
-                        )
-                    with _u3:
-                        st.markdown(
-                            f'<a href="https://www.youtube.com/results?search_query={_tb_qp(_kl)}" '
-                            f'target="_blank" style="font-size:11px;color:#93c5fd;text-decoration:none">▶ YT</a>',
-                            unsafe_allow_html=True
-                        )
-                    with _u4:
-                        if _new_sc > 0:
-                            if st.button("💾", key=f"tb_usave_{_cluster_choice}_{_key_safe}", help="Save"):
-                                try:
-                                    from keyword_bank import append_keyword as _bks
-                                    _slot = "problem"
-                                    for _c in _tb_clusters:
-                                        if _c["name"] == _cn:
-                                            _slot = _c.get("slot","problem"); break
-                                    _bks(_kl, slot=_slot, vidiq_score=_new_sc, source="title-builder")
-                                    st.session_state["tb_inline_scores"][_kl] = _new_sc
-                                    st.rerun()
-                                except Exception as _e:
-                                    st.error(f"Save: {_e}")
-
-        # ─── KEYWORD ROWS — single line per keyword ───
-        # Layout: [select btn 4] [hide ✕ 0.5]
-        # Selected state shown via primary/secondary button + suffix in label
+        # ─── KEYWORD ROWS — inline score for unscored, single line for scored ───
         for _idx, (_kw, _cn) in enumerate(_kw_list):
             _kl = _kw.strip().lower()
             _stat, _dl = _tb_cooldown(_kl)
@@ -4187,6 +4147,7 @@ with tab_title_builder:
             _in_b = _tb_in_b(_kl)
             _disabled = _stat in ("invalidated", "cooldown")
             _key_safe = f"{_idx}_{_kl.replace(' ','_').replace(chr(39),'').replace('/','')}"
+            _is_unscored = (_sc is None and _stat == "unscored")
 
             if _stat == "invalidated":   _badge = "❌"
             elif _stat == "cooldown":    _badge = f"🕐{_dl}d"
@@ -4203,26 +4164,51 @@ with tab_title_builder:
             _label = f"{_kw}  {_badge}{_ab}"
             _btn_type = "primary" if (_in_a or _in_b) else "secondary"
 
-            _r1, _r2 = st.columns([7, 1])
-            with _r1:
-                if st.button(_label, key=f"tb_kw_{_cluster_choice}_{_key_safe}",
-                             type=_btn_type, use_container_width=True, disabled=_disabled):
-                    active = st.session_state["tb_active_variant"]
-                    if active == "A":
-                        if _in_a: _tb_unselect_keyword(_kl, "A")
-                        else:     _tb_select_keyword(_kl)
-                    else:
-                        if _in_b: _tb_unselect_keyword(_kl, "B")
-                        else:     _tb_select_keyword(_kl)
-                    st.rerun()
-            with _r2:
-                if _cluster_choice == "🗑 Hidden":
-                    if st.button("↺", key=f"tb_unh_{_key_safe}", help="Restore",
-                                 use_container_width=True):
-                        st.session_state["tb_hidden"].discard(_kl)
-                        _save_hidden()
+            if _is_unscored:
+                # Inline score row: [name btn 4] [score 1] [▶ YT 0.7] [💾 0.6] [✕ 0.6]
+                _c1, _c2, _c3, _c4, _c5 = st.columns([4, 1.1, 0.7, 0.6, 0.6])
+                with _c1:
+                    if st.button(_label, key=f"tb_kw_{_cluster_choice}_{_key_safe}",
+                                 type=_btn_type, use_container_width=True):
+                        active = st.session_state["tb_active_variant"]
+                        if active == "A":
+                            if _in_a: _tb_unselect_keyword(_kl, "A")
+                            else:     _tb_select_keyword(_kl)
+                        else:
+                            if _in_b: _tb_unselect_keyword(_kl, "B")
+                            else:     _tb_select_keyword(_kl)
                         st.rerun()
-                else:
+                with _c2:
+                    _new_sc = st.number_input(
+                        "s", 0, 100, 0,
+                        key=f"tb_inscore_{_cluster_choice}_{_key_safe}",
+                        label_visibility="collapsed",
+                    )
+                with _c3:
+                    st.markdown(
+                        f'<a href="https://www.youtube.com/results?search_query={_tb_qp(_kl)}" '
+                        f'target="_blank" style="font-size:12px;color:#93c5fd;text-decoration:none;'
+                        f'display:inline-block;padding:6px 4px">▶ YT</a>',
+                        unsafe_allow_html=True
+                    )
+                with _c4:
+                    if _new_sc > 0:
+                        if st.button("💾", key=f"tb_save_{_cluster_choice}_{_key_safe}",
+                                     help="Save score", use_container_width=True):
+                            try:
+                                from keyword_bank import append_keyword as _bks
+                                _slot = "problem"
+                                for _c in _tb_clusters:
+                                    if _c["name"] == _cn:
+                                        _slot = _c.get("slot","problem"); break
+                                _bks(_kl, slot=_slot, vidiq_score=_new_sc, source="title-builder")
+                                st.session_state["tb_inline_scores"][_kl] = _new_sc
+                                st.rerun()
+                            except Exception as _e:
+                                st.error(f"Save: {_e}")
+                    else:
+                        st.markdown("<div style='height:28px'></div>", unsafe_allow_html=True)
+                with _c5:
                     if st.button("✕", key=f"tb_hd_{_key_safe}", help="Hide",
                                  use_container_width=True):
                         st.session_state["tb_hidden"].add(_kl)
@@ -4230,6 +4216,35 @@ with tab_title_builder:
                         _tb_unselect_keyword(_kl, "A")
                         _tb_unselect_keyword(_kl, "B")
                         st.rerun()
+            else:
+                # Scored / cooldown / invalidated — simple row [name 7] [✕ 1]
+                _r1, _r2 = st.columns([7, 1])
+                with _r1:
+                    if st.button(_label, key=f"tb_kw_{_cluster_choice}_{_key_safe}",
+                                 type=_btn_type, use_container_width=True, disabled=_disabled):
+                        active = st.session_state["tb_active_variant"]
+                        if active == "A":
+                            if _in_a: _tb_unselect_keyword(_kl, "A")
+                            else:     _tb_select_keyword(_kl)
+                        else:
+                            if _in_b: _tb_unselect_keyword(_kl, "B")
+                            else:     _tb_select_keyword(_kl)
+                        st.rerun()
+                with _r2:
+                    if _cluster_choice == "🗑 Hidden":
+                        if st.button("↺", key=f"tb_unh_{_key_safe}", help="Restore",
+                                     use_container_width=True):
+                            st.session_state["tb_hidden"].discard(_kl)
+                            _save_hidden()
+                            st.rerun()
+                    else:
+                        if st.button("✕", key=f"tb_hd_{_key_safe}", help="Hide",
+                                     use_container_width=True):
+                            st.session_state["tb_hidden"].add(_kl)
+                            _save_hidden()
+                            _tb_unselect_keyword(_kl, "A")
+                            _tb_unselect_keyword(_kl, "B")
+                            st.rerun()
 
     # ──────────────────────────────────────────────
     # RIGHT: Build panel — A/B toggle, config, selected
