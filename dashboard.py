@@ -3833,12 +3833,44 @@ with tab_title_builder:
         else:
             _tb_selected_set = set(st.session_state["tb_selected"])
 
+            # ── Cluster health check ──
+            _LOW_THRESHOLD = 3
+            _tb_thin = []
+            for _cl in _tb_clusters:
+                _ready = [
+                    kw for kw in _cl["keywords"]
+                    if kw.strip().lower() not in st.session_state["tb_hidden"]
+                    and _tb_cooldown(kw.strip().lower())[0] == "available"
+                    and _tb_score(kw.strip().lower()) is not None
+                ]
+                if len(_ready) < _LOW_THRESHOLD:
+                    _tb_thin.append((_cl["emoji"], _cl["name"], len(_ready)))
+
+            if _tb_thin:
+                _thin_lines = " · ".join(f"**{e} {n}** ({c} ready)" for e, n, c in _tb_thin)
+                st.warning(
+                    f"⚠️ Thin clusters (< {_LOW_THRESHOLD} scored + available): {_thin_lines}  \n"
+                    f"→ Ask Claude in chat: *\"expand the {_tb_thin[0][1]} cluster\"*",
+                    icon="💬",
+                )
+
             for _cluster in _tb_clusters:
                 _cid   = _cluster["id"]
                 _cname = _cluster["name"]
                 _cemoji = _cluster.get("emoji", "")
 
-                with st.expander(f"{_cemoji} {_cname}", expanded=(_cid in ["calm", "stress", "sleep", "anxiety"])):
+                # Per-cluster ready count for header badge
+                _cl_ready = sum(
+                    1 for kw in _cluster["keywords"]
+                    if kw.strip().lower() not in st.session_state["tb_hidden"]
+                    and _tb_cooldown(kw.strip().lower())[0] == "available"
+                    and _tb_score(kw.strip().lower()) is not None
+                )
+                _cl_total = len([kw for kw in _cluster["keywords"] if kw.strip().lower() not in st.session_state["tb_hidden"]])
+                _cl_badge = f"✅ {_cl_ready}" if _cl_ready >= _LOW_THRESHOLD else f"⚠️ {_cl_ready}"
+                _expander_label = f"{_cemoji} {_cname}  ·  {_cl_badge}/{_cl_total}"
+
+                with st.expander(_expander_label, expanded=(_cid in ["calm", "stress", "sleep", "anxiety"])):
                     _tb_hidden_set = st.session_state["tb_hidden"]
                     _tb_visible = [kw for kw in _cluster["keywords"] if kw.strip().lower() not in _tb_hidden_set]
                     _tb_hidden_count = len(_cluster["keywords"]) - len(_tb_visible)
