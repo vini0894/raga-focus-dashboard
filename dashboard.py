@@ -3628,11 +3628,54 @@ with tab_title_builder:
     from urllib.parse import quote_plus as _tb_qp
     from datetime import date as _tb_date, datetime as _tb_dt
 
+    # ── CSS: compact keyword rows ──
+    st.markdown("""
+    <style>
+    /* Tighten rows inside title builder expanders */
+    div[data-testid="stExpander"] div[data-testid="stVerticalBlock"] > div {
+        gap: 0rem !important;
+    }
+    div[data-testid="stExpander"] .stCheckbox {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+        min-height: 1.6rem !important;
+    }
+    div[data-testid="stExpander"] div[data-testid="stHorizontalBlock"] {
+        gap: 0.25rem !important;
+        align-items: center !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    div[data-testid="stExpander"] div[data-testid="column"] {
+        padding: 0 2px !important;
+    }
+    div[data-testid="stExpander"] p {
+        margin: 0 !important;
+        padding: 0 !important;
+        line-height: 1.4 !important;
+        font-size: 0.82rem !important;
+    }
+    div[data-testid="stExpander"] .stNumberInput {
+        margin: 0 !important;
+    }
+    div[data-testid="stExpander"] .stNumberInput > div {
+        min-height: 1.8rem !important;
+    }
+    div[data-testid="stExpander"] .stNumberInput input {
+        padding: 2px 6px !important;
+        font-size: 0.8rem !important;
+    }
+    div[data-testid="stExpander"] .stButton button {
+        padding: 1px 6px !important;
+        font-size: 0.75rem !important;
+        min-height: 1.6rem !important;
+        height: 1.6rem !important;
+        line-height: 1 !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
     st.markdown("## 🔤 Title Builder")
-    st.caption(
-        "Pick keywords, check VidIQ scores inline, then generate your A/B title pair. "
-        "Competitor signals on the left — keyword clusters in the middle — build on the right."
-    )
 
     # ── Load keyword bank ──
     _tb_bank: dict = {}
@@ -3668,12 +3711,10 @@ with tab_title_builder:
         _tb_catalog = []
 
     def _tb_cooldown(phrase: str) -> tuple[str, int]:
-        """Return (status, days_left). Status: 'available' | 'cooldown' | 'unscored' | 'invalidated'."""
         p = phrase.strip().lower()
         if p in _tb_inv:
             return "invalidated", 0
         today = _tb_date.today()
-        # Check if phrase appears in any title published in the last 7 days
         for v in _tb_catalog:
             pub = v.get("publish_date")
             if not pub:
@@ -3693,39 +3734,38 @@ with tab_title_builder:
         s = row.get("vidiq_score", "").strip()
         return int(s) if s.isdigit() else None
 
+    def _tb_badge_html(phrase: str) -> str:
+        status, days_left = _tb_cooldown(phrase)
+        score = _tb_score(phrase)
+        inline = st.session_state.get("tb_inline_scores", {}).get(phrase.strip().lower())
+        if inline: score = inline
+        if status == "invalidated": return '<span style="color:#ef4444;font-size:0.75rem">❌ invalid</span>'
+        if status == "cooldown":    return f'<span style="color:#f59e0b;font-size:0.75rem">🕐 {days_left}d</span>'
+        if score is None:           return '<span style="color:#9ca3af;font-size:0.75rem">⚠️ ?</span>'
+        color = "#22c55e" if score >= 70 else "#eab308" if score >= 60 else "#ef4444"
+        return f'<span style="color:{color};font-size:0.75rem;font-weight:600">{score}</span>'
+
     def _tb_status_badge(phrase: str) -> str:
         status, days_left = _tb_cooldown(phrase)
         score = _tb_score(phrase)
-        if status == "invalidated":
-            return f"❌ invalidated"
-        if status == "cooldown":
-            return f"🕐 cooldown · {days_left}d left"
-        if status == "unscored":
-            return f"⚠️ unscored"
+        if status == "invalidated": return "❌ invalidated"
+        if status == "cooldown":    return f"🕐 cooldown · {days_left}d left"
+        if status == "unscored":    return "⚠️ unscored"
         if score is not None:
             if score >= 70: return f"🟢 {score}"
             if score >= 60: return f"🟡 {score}"
             return f"🔴 {score}"
         return "⚠️ unscored"
 
-    # ── Session state for selected keywords + inline scores + hidden ──
-    if "tb_selected" not in st.session_state:
-        st.session_state["tb_selected"] = []  # list of phrase strings
-    if "tb_inline_scores" not in st.session_state:
-        st.session_state["tb_inline_scores"] = {}  # phrase → score int
-    if "tb_hidden" not in st.session_state:
-        st.session_state["tb_hidden"] = set()  # hidden for this session
+    # ── Session state ──
+    if "tb_selected"     not in st.session_state: st.session_state["tb_selected"]     = []
+    if "tb_inline_scores" not in st.session_state: st.session_state["tb_inline_scores"] = {}
+    if "tb_hidden"       not in st.session_state: st.session_state["tb_hidden"]       = set()
 
-    # ═══════════════════════════════════════════════════════════
-    # THREE-COLUMN LAYOUT
-    # ═══════════════════════════════════════════════════════════
-    _tb_col1, _tb_col2, _tb_col3 = st.columns([1, 2, 1], gap="large")
-
-    # ────────────────────────────────────────────────────────────
-    # COL 1 — Competitor signals (last 7 days)
-    # ────────────────────────────────────────────────────────────
-    with _tb_col1:
-        st.markdown("#### 📡 Competitors this week")
+    # ═══════════════════════════════════════════════════════
+    # SECTION 1 — Competitors this week (full width)
+    # ═══════════════════════════════════════════════════════
+    with st.expander("📡 Competitors this week", expanded=True):
         try:
             with st.spinner("Fetching…"):
                 _tb_comp_data = fetch_competitor_pulse_live(days=7)
@@ -3736,22 +3776,16 @@ with tab_title_builder:
                         _tb_all_uploads.append((_cname, _u))
             _tb_all_uploads.sort(key=lambda x: -x[1].get("views", 0))
             if _tb_all_uploads:
-                _tb_comp_rows = [
-                    {
-                        "Channel": _cname,
-                        "Title": _u.get("title", ""),
-                        "Views": _u.get("views", 0),
-                    }
-                    for _cname, _u in _tb_all_uploads[:12]
-                ]
                 st.dataframe(
-                    _tb_comp_rows,
+                    [{"Channel": c, "Title": u.get("title",""), "Views": u.get("views",0)}
+                     for c, u in _tb_all_uploads[:15]],
                     use_container_width=True,
                     hide_index=True,
+                    height=300,
                     column_config={
-                        "Channel": st.column_config.TextColumn("Channel", width="small"),
-                        "Title":   st.column_config.TextColumn("Title",   width="large"),
-                        "Views":   st.column_config.NumberColumn("Views",  format="%d", width="small"),
+                        "Channel": st.column_config.TextColumn("Channel", width=120),
+                        "Title":   st.column_config.TextColumn("Title"),
+                        "Views":   st.column_config.NumberColumn("Views", format="%d", width=80),
                     },
                 )
             else:
@@ -3759,144 +3793,119 @@ with tab_title_builder:
         except Exception as _tb_ce:
             st.warning(f"Could not fetch competitor data: {_tb_ce}")
 
-    # ────────────────────────────────────────────────────────────
-    # COL 2 — Keyword clusters
-    # ────────────────────────────────────────────────────────────
-    with _tb_col2:
-        st.markdown("#### 🗂 Keyword clusters")
+    st.markdown("<div style='height:0.5rem'></div>", unsafe_allow_html=True)
 
-        # Cooldown freshness indicator
+    # ═══════════════════════════════════════════════════════
+    # SECTION 2 — Clusters (left) + Build panel (right)
+    # ═══════════════════════════════════════════════════════
+    _tb_left, _tb_right = st.columns([3, 2], gap="large")
+
+    # ────────────────────────────────────────────────────────
+    # LEFT — Keyword clusters
+    # ────────────────────────────────────────────────────────
+    with _tb_left:
+        st.markdown("#### 🗂 Keywords")
+
+        # Cooldown freshness
         _tb_latest_pub = max(
-            (v.get("publish_date") for v in _tb_catalog if v.get("publish_date")),
-            default=None
+            (v.get("publish_date") for v in _tb_catalog if v.get("publish_date")), default=None
         )
         if _tb_latest_pub:
             _tb_latest_days = (_tb_date.today() - _tb_latest_pub).days
             st.caption(
-                f"Cooldown checks against your last {len(_tb_catalog)} uploads · "
-                f"latest upload: **{_tb_latest_days}d ago** ({_tb_latest_pub})"
+                f"Cooldown: last {len(_tb_catalog)} uploads · latest **{_tb_latest_days}d ago** ({_tb_latest_pub})  ·  "
+                f"▶ Search = YouTube search (VidIQ score in sidebar)"
             )
-        else:
-            st.caption("Cooldown: could not load own catalog — RSS may be unavailable.")
-
-        st.divider()
 
         # ── Free text entry ──
-        st.markdown("**➕ Add any keyword**")
-        _tb_ft_col1, _tb_ft_col2, _tb_ft_col3 = st.columns([3, 1, 1])
-        with _tb_ft_col1:
-            _tb_free_kw = st.text_input(
-                "Keyword",
-                placeholder="e.g. sitar for anxiety",
-                key="tb_free_kw",
-                label_visibility="collapsed",
-            )
-        with _tb_ft_col2:
-            _tb_free_score = st.number_input(
-                "Score", min_value=0, max_value=100, value=0, step=1,
-                key="tb_free_score", label_visibility="collapsed",
-            )
-        with _tb_ft_col3:
-            if st.button("Add", key="tb_free_add", use_container_width=True):
+        _tb_ft_c1, _tb_ft_c2, _tb_ft_c3 = st.columns([4, 1, 1])
+        with _tb_ft_c1:
+            _tb_free_kw = st.text_input("kw", placeholder="Add any keyword…", key="tb_free_kw", label_visibility="collapsed")
+        with _tb_ft_c2:
+            _tb_free_score = st.number_input("sc", min_value=0, max_value=100, value=0, step=1, key="tb_free_score", label_visibility="collapsed")
+        with _tb_ft_c3:
+            if st.button("Add ＋", key="tb_free_add", use_container_width=True):
                 if _tb_free_kw.strip():
                     _kw_clean = _tb_free_kw.strip().lower()
                     if _kw_clean not in st.session_state["tb_selected"]:
                         st.session_state["tb_selected"].append(_kw_clean)
                     if _tb_free_score > 0:
                         st.session_state["tb_inline_scores"][_kw_clean] = _tb_free_score
-                        # Bank immediately
                         try:
-                            import sys as _tb_ft_sys
-                            _tb_ft_sys.path.insert(0, str(PIPELINE_DIR))
-                            from keyword_bank import append_keyword as _tb_ft_upsert
-                            _tb_ft_upsert(_kw_clean, slot="problem", vidiq_score=_tb_free_score, source="title-builder-freetext")
-                        except Exception:
-                            pass
+                            import sys as _tb_ft_sys; _tb_ft_sys.path.insert(0, str(PIPELINE_DIR))
+                            from keyword_bank import append_keyword as _tb_ft_up
+                            _tb_ft_up(_kw_clean, slot="problem", vidiq_score=_tb_free_score, source="title-builder-freetext")
+                        except Exception: pass
                     st.rerun()
 
-        if _tb_free_kw.strip() and not st.session_state.get("tb_free_added"):
+        if _tb_free_kw.strip():
             _fkw_l = _tb_free_kw.strip().lower()
-            _fstatus, _fdays = _tb_cooldown(_fkw_l)
-            _fscore = _tb_score(_fkw_l) or (st.session_state["tb_inline_scores"].get(_fkw_l))
-            _fscore_disp = f"· score {_fscore}" if _fscore else "· unscored — search on YouTube to check"
-            st.caption(f"`{_fkw_l}` {_tb_status_badge(_fkw_l)} {_fscore_disp}")
-            if _fscore is None:
-                st.markdown(
-                    f"[▶ Search YouTube](https://www.youtube.com/results?search_query={_tb_qp(_fkw_l)})",
-                )
-
-        st.divider()
-        st.caption("Select from clusters · ▶ Search = open YouTube (VidIQ shows score in sidebar)")
+            _fscore = _tb_score(_fkw_l) or st.session_state["tb_inline_scores"].get(_fkw_l)
+            st.caption(f"`{_fkw_l}` · {_tb_status_badge(_fkw_l)}" + (f"" if _fscore else f" · [▶ Search](https://www.youtube.com/results?search_query={_tb_qp(_fkw_l)})"))
 
         if not _tb_clusters:
-            st.warning("No clusters found. Check `data/keyword_clusters.json`.")
+            st.warning("No clusters found.")
         else:
             _tb_selected_set = set(st.session_state["tb_selected"])
 
-            # ── Cluster health check ──
+            # Thin cluster warning
             _LOW_THRESHOLD = 3
             _tb_thin = []
             for _cl in _tb_clusters:
-                _ready = [
-                    kw for kw in _cl["keywords"]
-                    if kw.strip().lower() not in st.session_state["tb_hidden"]
-                    and _tb_cooldown(kw.strip().lower())[0] == "available"
-                    and _tb_score(kw.strip().lower()) is not None
-                ]
+                _ready = [kw for kw in _cl["keywords"]
+                          if kw.strip().lower() not in st.session_state["tb_hidden"]
+                          and _tb_cooldown(kw.strip().lower())[0] == "available"
+                          and _tb_score(kw.strip().lower()) is not None]
                 if len(_ready) < _LOW_THRESHOLD:
                     _tb_thin.append((_cl["emoji"], _cl["name"], len(_ready)))
-
             if _tb_thin:
-                _thin_lines = " · ".join(f"**{e} {n}** ({c} ready)" for e, n, c in _tb_thin)
-                st.warning(
-                    f"⚠️ Thin clusters (< {_LOW_THRESHOLD} scored + available): {_thin_lines}  \n"
-                    f"→ Ask Claude in chat: *\"expand the {_tb_thin[0][1]} cluster\"*",
-                    icon="💬",
-                )
+                _thin_msg = " · ".join(f"**{e} {n}** ({c})" for e, n, c in _tb_thin)
+                st.warning(f"⚠️ Thin: {_thin_msg} → ask Claude to expand", icon="💬")
 
             for _cluster in _tb_clusters:
-                _cid   = _cluster["id"]
-                _cname = _cluster["name"]
+                _cid    = _cluster["id"]
+                _cname  = _cluster["name"]
                 _cemoji = _cluster.get("emoji", "")
 
-                # Per-cluster ready count for header badge
-                _cl_ready = sum(
-                    1 for kw in _cluster["keywords"]
-                    if kw.strip().lower() not in st.session_state["tb_hidden"]
-                    and _tb_cooldown(kw.strip().lower())[0] == "available"
-                    and _tb_score(kw.strip().lower()) is not None
-                )
+                _cl_ready = sum(1 for kw in _cluster["keywords"]
+                                if kw.strip().lower() not in st.session_state["tb_hidden"]
+                                and _tb_cooldown(kw.strip().lower())[0] == "available"
+                                and _tb_score(kw.strip().lower()) is not None)
                 _cl_total = len([kw for kw in _cluster["keywords"] if kw.strip().lower() not in st.session_state["tb_hidden"]])
                 _cl_badge = f"✅ {_cl_ready}" if _cl_ready >= _LOW_THRESHOLD else f"⚠️ {_cl_ready}"
-                _expander_label = f"{_cemoji} {_cname}  ·  {_cl_badge}/{_cl_total}"
 
-                with st.expander(_expander_label, expanded=(_cid in ["calm", "stress", "sleep", "anxiety"])):
+                with st.expander(f"{_cemoji} {_cname} · {_cl_badge}/{_cl_total}", expanded=(_cid in ["calm", "stress", "sleep", "anxiety"])):
                     _tb_hidden_set = st.session_state["tb_hidden"]
                     _tb_visible = [kw for kw in _cluster["keywords"] if kw.strip().lower() not in _tb_hidden_set]
                     _tb_hidden_count = len(_cluster["keywords"]) - len(_tb_visible)
-
                     if _tb_hidden_count:
                         _show_hidden = st.checkbox(f"Show {_tb_hidden_count} hidden", key=f"tb_showhidden_{_cid}")
                         _tb_visible_final = _cluster["keywords"] if _show_hidden else _tb_visible
                     else:
                         _tb_visible_final = _tb_visible
 
+                    _unsaved_kws = []
                     for _kw in _tb_visible_final:
-                        _kw_l = _kw.strip().lower()
-                        _badge = _tb_status_badge(_kw_l)
-                        _score = _tb_score(_kw_l)
-
-                        # Inline score from this session (before banking)
+                        _kw_l   = _kw.strip().lower()
+                        _score  = _tb_score(_kw_l)
                         _inline = st.session_state["tb_inline_scores"].get(_kw_l)
-                        if _inline is not None:
-                            _score = _inline
+                        if _inline is not None: _score = _inline
+                        _status, _days_left = _tb_cooldown(_kw_l)
+                        _is_unscored = (_score is None)
 
-                        _r1, _r2, _r3, _r4, _r5 = st.columns([3, 2, 1, 1, 0.5])
+                        if _is_unscored:
+                            # Unscored: checkbox | name | score-input | search | hide
+                            _r1, _r2, _r3, _r4 = st.columns([4, 1.2, 0.9, 0.5])
+                        else:
+                            # Scored: checkbox | name+badge | hide
+                            _r1, _r2, _r4 = st.columns([4, 1.5, 0.5])
+                            _r3 = None
+
                         with _r1:
                             _checked = st.checkbox(
-                                _kw_l,
-                                value=_kw_l in _tb_selected_set,
+                                _kw_l, value=_kw_l in _tb_selected_set,
                                 key=f"tb_kw_{_cid}_{_kw_l.replace(' ', '_')}",
+                                disabled=(_status in ("invalidated", "cooldown")),
                             )
                             if _checked and _kw_l not in st.session_state["tb_selected"]:
                                 st.session_state["tb_selected"].append(_kw_l)
@@ -3904,104 +3913,87 @@ with tab_title_builder:
                                 st.session_state["tb_selected"].remove(_kw_l)
 
                         with _r2:
-                            st.caption(_badge)
-
-                        with _r3:
-                            if _score is None:
-                                # Inline score input
+                            if _is_unscored:
                                 _new_score = st.number_input(
-                                    "score",
-                                    min_value=0, max_value=100,
-                                    value=0,
-                                    step=1,
+                                    "s", min_value=0, max_value=100, value=0, step=1,
                                     key=f"tb_score_input_{_cid}_{_kw_l.replace(' ', '_')}",
                                     label_visibility="collapsed",
                                 )
                                 if _new_score > 0:
                                     st.session_state["tb_inline_scores"][_kw_l] = _new_score
+                                    _unsaved_kws.append(_kw_l)
+                            else:
+                                st.markdown(_tb_badge_html(_kw_l), unsafe_allow_html=True)
 
-                        with _r4:
-                            if _score is None:
+                        if _r3 is not None:
+                            with _r3:
                                 st.markdown(
-                                    f"[▶ Search](https://www.youtube.com/results?search_query={_tb_qp(_kw_l)})",
+                                    f"[▶](https://www.youtube.com/results?search_query={_tb_qp(_kw_l)})",
                                     unsafe_allow_html=False,
                                 )
 
-                        with _r5:
-                            if st.button("✕", key=f"tb_hide_{_cid}_{_kw_l.replace(' ', '_')}", help="Hide this keyword"):
+                        with _r4:
+                            if st.button("✕", key=f"tb_hide_{_cid}_{_kw_l.replace(' ', '_')}", help="Hide"):
                                 st.session_state["tb_hidden"].add(_kw_l)
                                 if _kw_l in st.session_state["tb_selected"]:
                                     st.session_state["tb_selected"].remove(_kw_l)
                                 st.rerun()
 
-                    # Save all inline scores for this cluster to bank
-                    _unsaved = [
-                        kw for kw in _cluster["keywords"]
-                        if kw.strip().lower() in st.session_state["tb_inline_scores"]
-                        and _tb_score(kw.strip().lower()) is None
-                    ]
+                    # Bank button for unsaved inline scores
+                    _unsaved = [kw for kw in _cluster["keywords"]
+                                if kw.strip().lower() in st.session_state["tb_inline_scores"]
+                                and _tb_score(kw.strip().lower()) is None]
                     if _unsaved:
                         if st.button(f"💾 Bank {len(_unsaved)} score(s)", key=f"tb_bank_{_cid}"):
-                            import sys as _tb_save_sys
-                            _tb_save_sys.path.insert(0, str(PIPELINE_DIR))
                             try:
+                                import sys as _tb_save_sys; _tb_save_sys.path.insert(0, str(PIPELINE_DIR))
                                 from keyword_bank import append_keyword as _tb_upsert
                                 _banked = 0
                                 for _kw in _unsaved:
                                     _kw_l = _kw.strip().lower()
                                     _sc = st.session_state["tb_inline_scores"].get(_kw_l)
                                     if _sc:
-                                        _tb_upsert(_kw_l, slot=_cluster.get("slot", "problem"), vidiq_score=_sc, source="title-builder-inline")
+                                        _tb_upsert(_kw_l, slot=_cluster.get("slot","problem"), vidiq_score=_sc, source="title-builder-inline")
                                         _banked += 1
-                                st.success(f"✓ Banked {_banked} score(s) to keyword_bank.csv")
+                                st.success(f"✓ Banked {_banked} score(s)")
                                 st.rerun()
                             except Exception as _be:
                                 st.error(f"Bank error: {_be}")
 
-    # ────────────────────────────────────────────────────────────
-    # COL 3 — Build title
-    # ────────────────────────────────────────────────────────────
-    with _tb_col3:
+    # ────────────────────────────────────────────────────────
+    # RIGHT — Build panel
+    # ────────────────────────────────────────────────────────
+    with _tb_right:
         st.markdown("#### ✏️ Build your title")
 
         _tb_picked = st.session_state.get("tb_selected", [])
 
-        # Instrument selector (from bank)
-        _tb_instruments = sorted([
-            p for p, r in _tb_bank.items()
-            if r.get("slot") == "instrument" and r.get("vidiq_score", "").strip().isdigit()
-        ], key=lambda p: -int(_tb_bank[p]["vidiq_score"]))
-        _tb_inst_choice = st.selectbox(
-            "Instrument",
-            options=["(none)"] + _tb_instruments,
-            key="tb_instrument",
+        _tb_instruments = sorted(
+            [p for p, r in _tb_bank.items()
+             if r.get("slot") == "instrument" and r.get("vidiq_score","").strip().isdigit()],
+            key=lambda p: -int(_tb_bank[p]["vidiq_score"])
         )
+        _tb_inst_choice = st.selectbox("Instrument", options=["(none)"] + _tb_instruments, key="tb_instrument")
+        _tb_duration    = st.selectbox("Duration", options=["1 Hour","1:15","1:30","45 Min","30 Min","(none)"], key="tb_duration")
 
-        # Duration
-        _tb_duration = st.selectbox(
-            "Duration",
-            options=["1 Hour", "1:15", "1:30", "45 Min", "30 Min", "(none)"],
-            key="tb_duration",
-        )
-
-        st.divider()
-        st.markdown("**Selected keywords:**")
+        st.markdown("**Selected:**")
         if not _tb_picked:
-            st.caption("Check keywords in clusters →")
+            st.caption("Pick keywords from clusters ←")
         else:
-            for _p in _tb_picked:
-                _s = _tb_score(_p)
-                _inline_s = st.session_state["tb_inline_scores"].get(_p)
-                _disp_s = _inline_s or _s
-                st.markdown(f"- `{_p}` {'· ' + str(_disp_s) if _disp_s else '· ⚠️ unscored'}")
+            _pill_html = " ".join(
+                f'<span style="background:#1e3a5f;color:#93c5fd;padding:2px 8px;border-radius:12px;font-size:0.78rem;margin:2px;display:inline-block">'
+                f'{p} {"·"+str(st.session_state["tb_inline_scores"].get(p) or _tb_score(p)) if (st.session_state["tb_inline_scores"].get(p) or _tb_score(p)) else ""}'
+                f'</span>'
+                for p in _tb_picked
+            )
+            st.markdown(_pill_html, unsafe_allow_html=True)
 
         st.divider()
 
         if st.button("🎯 Generate A/B Titles", type="primary", use_container_width=True, key="tb_generate"):
             if not _tb_picked:
-                st.warning("Select at least one keyword from the clusters.")
+                st.warning("Select at least one keyword.")
             else:
-                # Sort picked by score descending
                 def _sort_score(p):
                     s = st.session_state["tb_inline_scores"].get(p) or _tb_score(p)
                     return s if s is not None else 0
@@ -4009,41 +4001,30 @@ with tab_title_builder:
                 _sorted_picked = sorted(_tb_picked, key=_sort_score, reverse=True)
                 _lead = _sorted_picked[0]
                 _inst = _tb_inst_choice if _tb_inst_choice != "(none)" else ""
-                _dur  = _tb_duration if _tb_duration != "(none)" else ""
+                _dur  = _tb_duration    if _tb_duration    != "(none)" else ""
 
-                # Variant A — SEO lead (highest scored keyword first)
                 _a_parts = [_lead.title()]
                 if _inst: _a_parts.append(_inst.title())
                 if _dur:  _a_parts.append(_dur)
                 _variant_a = " | ".join(_a_parts)
 
-                # Variant B — problem + instrument format (e.g. "Sitar for Anxiety")
-                if _inst and len(_sorted_picked) >= 1:
-                    _problem_word = _lead.replace(" music", "").replace(" relief", "").strip().title()
+                if _inst:
+                    _problem_word = _lead.replace(" music","").replace(" relief","").strip().title()
                     _b_parts = [f"{_inst.title()} for {_problem_word}"]
-                    if len(_sorted_picked) > 1:
-                        _b_parts.append(_sorted_picked[1].title())
+                    if len(_sorted_picked) > 1: _b_parts.append(_sorted_picked[1].title())
                     if _dur: _b_parts.append(_dur)
                     _variant_b = " | ".join(_b_parts)
                 else:
-                    # Fallback — use second keyword if available
                     _b_parts = [_sorted_picked[1].title() if len(_sorted_picked) > 1 else _lead.title()]
-                    if _inst: _b_parts.append(_inst.title())
-                    if _dur:  _b_parts.append(_dur)
+                    if _dur: _b_parts.append(_dur)
                     _variant_b = " | ".join(_b_parts)
 
                 st.session_state["tb_variant_a"] = _variant_a
                 st.session_state["tb_variant_b"] = _variant_b
 
-        # Show + edit generated titles
         if "tb_variant_a" in st.session_state:
             st.markdown("**Variant A** · SEO lead")
-            _edited_a = st.text_input(
-                "Variant A",
-                value=st.session_state["tb_variant_a"],
-                key="tb_edit_a",
-                label_visibility="collapsed",
-            )
+            _edited_a = st.text_input("Variant A", value=st.session_state["tb_variant_a"], key="tb_edit_a", label_visibility="collapsed")
             _len_a = len(_edited_a)
             st.caption(f"{_len_a} chars {'✅' if _len_a <= 70 else '⚠️ long'}")
 
