@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Keyword row density · before / after</title>
+<style>
+:root {
+  --bg: #0e1014;
+  --surface: #1a1d24;
+  --surface-2: #232730;
+  --border: #2a2e36;
+  --text: #e5e7eb;
+  --text-dim: #9ca3af;
+  --text-faint: #6b7280;
+  --blue: #93c5fd;
+  --yellow: #facc15;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+h1 { grid-column: 1 / -1; font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+h2 { font-size: 13px; font-weight: 600; color: var(--text-dim); margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+.note { grid-column: 1 / -1; font-size: 12px; color: var(--text-faint); margin-bottom: 16px; line-height: 1.5; }
+
+/* ─── BEFORE: loose layout (current Streamlit behaviour) ─── */
+.row-loose {
+  display: grid;
+  grid-template-columns: 4fr 1.1fr 0.7fr 0.6fr 0.6fr;
+  gap: 24px;
+  align-items: center;
+  padding: 12px 0;
+}
+.row-loose .kw-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+.row-loose .score-in {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--text);
+}
+.row-loose .yt-link {
+  font-size: 14px;
+  color: var(--blue);
+  text-align: left;
+  padding: 10px 0;
+}
+.row-loose .x-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* ─── AFTER: tight layout ─── */
+.row-tight {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 0;
+}
+.row-tight .kw-btn {
+  flex: 1;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  min-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row-tight .kw-btn.selected {
+  background: rgba(212, 165, 116, 0.15);
+  border-color: rgba(212, 165, 116, 0.5);
+  color: #d4a574;
+}
+.row-tight .score-in {
+  width: 50px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3px 6px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--text);
+  height: 28px;
+}
+.row-tight .yt-link {
+  font-size: 11px;
+  color: var(--blue);
+  padding: 0 6px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.row-tight .save-btn {
+  background: rgba(74, 222, 128, 0.1);
+  border: 1px solid rgba(74, 222, 128, 0.3);
+  color: #4ade80;
+  border-radius: 4px;
+  padding: 0 8px;
+  font-size: 12px;
+  height: 28px;
+  cursor: pointer;
+}
+.row-tight .x-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0 8px;
+  font-size: 12px;
+  height: 28px;
+  cursor: pointer;
+  color: var(--text-dim);
+}
+
+/* Same warning icon */
+.warn { color: var(--yellow); margin-left: 4px; font-size: 11px; }
+
+.summary-stats {
+  grid-column: 1 / -1;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  font-size: 13px;
+}
+.summary-stats h3 { font-size: 13px; color: var(--text-dim); margin-bottom: 8px; }
+.summary-stats ul { list-style: none; padding: 0; line-height: 1.7; color: var(--text); }
+.summary-stats .pos { color: #4ade80; }
+.summary-stats .neg { color: #f87171; }
+</style>
+</head>
+<body>
+
+<h1>Keyword row density · before / after</h1>
+<div class="note">Same controls (button · score input · YT link · save · hide). Tighter visual.</div>
+
+<div>
+  <h2>Before · current (loose)</h2>
+  <div class="row-loose">
+    <div class="kw-btn">bittersweet music <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <div class="yt-link">▶ YT</div>
+    <div></div>
+    <div class="x-btn">✕</div>
+  </div>
+  <div class="row-loose">
+    <div class="kw-btn">body tension music <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <div class="yt-link">▶ YT</div>
+    <div></div>
+    <div class="x-btn">✕</div>
+  </div>
+  <div class="row-loose">
+    <div class="kw-btn">brain boost music <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <div class="yt-link">▶ YT</div>
+    <div></div>
+    <div class="x-btn">✕</div>
+  </div>
+  <div class="row-loose">
+    <div class="kw-btn">bright acoustic music <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <div class="yt-link">▶ YT</div>
+    <div></div>
+    <div class="x-btn">✕</div>
+  </div>
+  <div class="row-loose">
+    <div class="kw-btn">bright morning music <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <div class="yt-link">▶ YT</div>
+    <div></div>
+    <div class="x-btn">✕</div>
+  </div>
+  <div class="row-loose">
+    <div class="kw-btn">burnt out music <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <div class="yt-link">▶ YT</div>
+    <div></div>
+    <div class="x-btn">✕</div>
+  </div>
+  <div class="row-loose">
+    <div class="kw-btn">calm overthinking <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <div class="yt-link">▶ YT</div>
+    <div></div>
+    <div class="x-btn">✕</div>
+  </div>
+  <div class="row-loose">
+    <div class="kw-btn">calming sleep music <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <div class="yt-link">▶ YT</div>
+    <div></div>
+    <div class="x-btn">✕</div>
+  </div>
+</div>
+
+<div>
+  <h2>After · proposed (tight)</h2>
+  <div class="row-tight">
+    <div class="kw-btn">bittersweet music <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <a class="yt-link" href="#">▶ YT</a>
+    <button class="x-btn">✕</button>
+  </div>
+  <div class="row-tight">
+    <div class="kw-btn">body tension music <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <a class="yt-link" href="#">▶ YT</a>
+    <button class="x-btn">✕</button>
+  </div>
+  <div class="row-tight">
+    <div class="kw-btn selected">brain boost music <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="65" />
+    <a class="yt-link" href="#">▶ YT</a>
+    <button class="save-btn">💾</button>
+    <button class="x-btn">✕</button>
+  </div>
+  <div class="row-tight">
+    <div class="kw-btn">bright acoustic music <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <a class="yt-link" href="#">▶ YT</a>
+    <button class="x-btn">✕</button>
+  </div>
+  <div class="row-tight">
+    <div class="kw-btn">bright morning music <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <a class="yt-link" href="#">▶ YT</a>
+    <button class="x-btn">✕</button>
+  </div>
+  <div class="row-tight">
+    <div class="kw-btn">burnt out music <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <a class="yt-link" href="#">▶ YT</a>
+    <button class="x-btn">✕</button>
+  </div>
+  <div class="row-tight">
+    <div class="kw-btn">calm overthinking <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <a class="yt-link" href="#">▶ YT</a>
+    <button class="x-btn">✕</button>
+  </div>
+  <div class="row-tight">
+    <div class="kw-btn">calming sleep music <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <a class="yt-link" href="#">▶ YT</a>
+    <button class="x-btn">✕</button>
+  </div>
+  <div class="row-tight">
+    <div class="kw-btn">can't fall asleep <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <a class="yt-link" href="#">▶ YT</a>
+    <button class="x-btn">✕</button>
+  </div>
+  <div class="row-tight">
+    <div class="kw-btn">can't stop thinking <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <a class="yt-link" href="#">▶ YT</a>
+    <button class="x-btn">✕</button>
+  </div>
+  <div class="row-tight">
+    <div class="kw-btn">center yourself music <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <a class="yt-link" href="#">▶ YT</a>
+    <button class="x-btn">✕</button>
+  </div>
+  <div class="row-tight">
+    <div class="kw-btn">clear your head music <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <a class="yt-link" href="#">▶ YT</a>
+    <button class="x-btn">✕</button>
+  </div>
+  <div class="row-tight">
+    <div class="kw-btn">comfort music <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <a class="yt-link" href="#">▶ YT</a>
+    <button class="x-btn">✕</button>
+  </div>
+  <div class="row-tight">
+    <div class="kw-btn">decompress music <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <a class="yt-link" href="#">▶ YT</a>
+    <button class="x-btn">✕</button>
+  </div>
+  <div class="row-tight">
+    <div class="kw-btn">deep healing music <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <a class="yt-link" href="#">▶ YT</a>
+    <button class="x-btn">✕</button>
+  </div>
+  <div class="row-tight">
+    <div class="kw-btn">drift to sleep <span class="warn">⚠</span></div>
+    <input type="number" class="score-in" value="0" />
+    <a class="yt-link" href="#">▶ YT</a>
+    <button class="x-btn">✕</button>
+  </div>
+</div>
+
+<div class="summary-stats">
+  <div>
+    <h3>Before · loose</h3>
+    <ul>
+      <li>Per-row height: <span class="neg">~70px</span></li>
+      <li>Visible rows in same vertical space: <span class="neg">~8</span></li>
+      <li>Inter-column gap: <span class="neg">24px</span></li>
+      <li>Vertical padding: <span class="neg">12px</span></li>
+    </ul>
+  </div>
+  <div>
+    <h3>After · tight</h3>
+    <ul>
+      <li>Per-row height: <span class="pos">~32px</span> (-54%)</li>
+      <li>Visible rows in same vertical space: <span class="pos">~16</span> (2× density)</li>
+      <li>Inter-column gap: <span class="pos">4px</span></li>
+      <li>Vertical padding: <span class="pos">2px</span></li>
+      <li>💾 button only appears when score &gt; 0 (see "brain boost")</li>
+      <li>Selected state shown subtly (sand tint, see "brain boost")</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>

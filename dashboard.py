@@ -3319,19 +3319,33 @@ with tab_title_builder:
     st.markdown("""<style>
     .tb-scope .stButton > button {
         font-size: 13px !important;
-        padding: 4px 10px !important;
-        min-height: 30px !important;
-        height: auto !important;
-        line-height: 1.3 !important;
+        padding: 2px 8px !important;
+        min-height: 28px !important;
+        height: 28px !important;
+        line-height: 1.2 !important;
         white-space: nowrap !important;
         font-weight: 400 !important;
     }
     .tb-scope div[data-testid="stHorizontalBlock"] {
-        gap: 0.4rem !important;
+        gap: 0.15rem !important;
         align-items: center !important;
+        margin-bottom: 0 !important;
     }
-    .tb-scope div[data-testid="column"] { padding: 0 3px !important; }
-    .tb-scope p { margin: 0 !important; line-height: 1.4 !important; }
+    .tb-scope div[data-testid="stVerticalBlock"] > div {
+        gap: 0.15rem !important;
+    }
+    .tb-scope div[data-testid="column"] { padding: 0 2px !important; }
+    .tb-scope p { margin: 0 !important; line-height: 1.3 !important; }
+    /* Compact number input */
+    .tb-scope .stNumberInput { margin: 0 !important; }
+    .tb-scope .stNumberInput > div { min-height: 28px !important; }
+    .tb-scope .stNumberInput input {
+        padding: 2px 4px !important;
+        font-size: 12px !important;
+        height: 28px !important;
+        text-align: center !important;
+    }
+    .tb-scope .stNumberInput button { display: none !important; }  /* hide +/- spinners to save space */
     </style>""", unsafe_allow_html=True)
 
     st.markdown('<div class="tb-scope">', unsafe_allow_html=True)
@@ -4037,8 +4051,8 @@ with tab_title_builder:
             )
 
             if _is_unscored:
-                # Inline score row: [name btn 4] [score 1] [▶ YT 0.7] [💾 0.6] [✕ 0.6]
-                _c1, _c2, _c3, _c4, _c5 = st.columns([4, 1.1, 0.7, 0.6, 0.6])
+                # Tightened: keyword btn dominates, narrow inputs, no wasted gap
+                _c1, _c2, _c3, _c4, _c5 = st.columns([7, 0.9, 0.55, 0.55, 0.45])
                 with _c1:
                     if st.button(_label, key=f"tb_kw_{_cluster_choice}_{_key_safe}",
                                  type=_btn_type, use_container_width=True, help=_help_text):
@@ -4059,8 +4073,8 @@ with tab_title_builder:
                 with _c3:
                     st.markdown(
                         f'<a href="https://www.youtube.com/results?search_query={_tb_qp(_kl)}" '
-                        f'target="_blank" style="font-size:12px;color:#93c5fd;text-decoration:none;'
-                        f'display:inline-block;padding:6px 4px">▶ YT</a>',
+                        f'target="_blank" style="font-size:11px;color:#93c5fd;text-decoration:none;'
+                        f'display:inline-block;padding:6px 0;line-height:1">▶ YT</a>',
                         unsafe_allow_html=True
                     )
                 with _c4:
@@ -4080,8 +4094,6 @@ with tab_title_builder:
                                 st.rerun()
                             except Exception as _e:
                                 st.error(f"Save: {_e}")
-                    else:
-                        st.markdown("<div style='height:28px'></div>", unsafe_allow_html=True)
                 with _c5:
                     if st.button("✕", key=f"tb_hd_{_key_safe}", help="Hide",
                                  use_container_width=True):
