@@ -4425,4 +4425,63 @@ with tab_title_builder:
                     use_container_width=True,
                 )
 
+    # ═════════════════════════════════════════════════════════
+    # SECTION 3 — Thumbnail text suggestions (bottom)
+    # ═════════════════════════════════════════════════════════
+    st.markdown("<div style='height:14px'></div>", unsafe_allow_html=True)
+    st.markdown("---")
+    st.markdown("### Thumbnail text")
+    st.caption(
+        "CTR-driven hooks for your thumbnail overlay. These don't need to match the title's "
+        "keywords — they're emotional triggers. Question form for cold feed, outcome for warm "
+        "cohort, identity label for low-friction scan."
+    )
+
+    try:
+        from thumbnail_text import build_thumbnail_text_variants as _bt_variants
+
+        def _render_variant_thumb(variant_label, picked_list, color):
+            if not picked_list:
+                st.caption(f"_Pick keywords for {variant_label} to see thumbnail suggestions_")
+                return
+            # Use the highest-scored picked keyword as the lead theme
+            sorted_kws = sorted(picked_list, key=lambda p: -(_tb_effective_score(p) or 0))
+            lead = sorted_kws[0]
+            try:
+                variants = _bt_variants(lead)
+            except Exception as _be:
+                st.caption(f"_Could not build thumbnail suggestions: {_be}_")
+                return
+
+            st.markdown(
+                f'<div style="font-size:13px;color:{color};margin-bottom:6px">'
+                f'<b>{variant_label}</b> · theme detected from <code>{lead}</code></div>',
+                unsafe_allow_html=True
+            )
+
+            for v in variants:
+                _strategy = v.get("strategy", v.get("label", ""))
+                _text = v.get("text", "")
+                _alts = v.get("alts", [])
+                _alts_str = " · ".join(f"`{a}`" for a in _alts) if _alts else ""
+                st.markdown(
+                    f'<div style="background:#1a1d24;border:1px solid #2a2e36;border-radius:4px;'
+                    f'padding:8px 12px;margin-bottom:6px">'
+                    f'<div style="font-size:10px;color:#9ca3af;margin-bottom:4px">{_strategy}</div>'
+                    f'<div style="font-size:18px;color:#e5e7eb;font-weight:600;letter-spacing:0.02em">'
+                    f'{_text}</div>'
+                    + (f'<div style="font-size:10px;color:#6b7280;margin-top:6px">alt: {_alts_str}</div>' if _alts_str else '')
+                    + '</div>',
+                    unsafe_allow_html=True
+                )
+
+        _tc1, _tc2 = st.columns(2, gap="medium")
+        with _tc1:
+            _render_variant_thumb("Variant A", st.session_state.get("tb_picked_a", []), "#93c5fd")
+        with _tc2:
+            _render_variant_thumb("Variant B", st.session_state.get("tb_picked_b", []), "#d4a574")
+
+    except Exception as _te:
+        st.warning(f"Thumbnail text module not loadable: {_te}")
+
     st.markdown("</div>", unsafe_allow_html=True)

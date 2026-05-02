@@ -525,6 +525,76 @@ PROBLEM_THUMBNAIL_TEXT = {
         "outcome":  ["RESET DOPAMINE", "DETOX YOUR MIND", "RESTORE BALANCE"],
         "identity": ["DOPAMINE CRASH", "OVERSTIMULATED", "BURNT-OUT BRAIN"],
     },
+    "breathe": {
+        "question": ["WIRED?", "TOO FAST?", "CAN'T SLOW DOWN?"],
+        "outcome":  ["PAUSE.", "SLOW DOWN.", "BREATHE."],
+        "identity": ["RACING MIND", "TIGHT CHEST", "SHALLOW BREATH"],
+    },
+    "slow down": {
+        "question": ["MOVING TOO FAST?", "ALWAYS RUSHING?", "CAN'T STOP?"],
+        "outcome":  ["SLOW DOWN.", "EASE UP.", "BREATHE."],
+        "identity": ["FAST PACED", "ALWAYS ON", "RUSHING MIND"],
+    },
+    "calm": {
+        "question": ["WIRED?", "TENSE?", "ON EDGE?"],
+        "outcome":  ["FIND CALM", "BE STILL", "SETTLE IN"],
+        "identity": ["TENSE BODY", "WIRED MIND", "SEEKING CALM"],
+    },
+    "nostalgia": {
+        "question": ["MISSING SOMEONE?", "FEELING WISTFUL?", "HOMESICK?"],
+        "outcome":  ["FEEL IT FULLY", "HOLD THE MEMORY", "REMEMBER"],
+        "identity": ["WISTFUL HEART", "MISSING HOME", "OLD MEMORIES"],
+    },
+    "homesick": {
+        "question": ["MISSING HOME?", "FAR FROM FAMILY?", "FEELING ALONE?"],
+        "outcome":  ["FIND COMFORT", "FEEL HELD", "GO HOME"],
+        "identity": ["FAR FROM HOME", "MISSING HOME", "ACHING HEART"],
+    },
+    "comfort": {
+        "question": ["NEED COMFORT?", "ROUGH DAY?", "NEED A HUG?"],
+        "outcome":  ["FEEL HELD", "FIND COMFORT", "BE SOOTHED"],
+        "identity": ["NEEDING COMFORT", "TENDER PLACE", "HEAVY HEART"],
+    },
+    "focus": {
+        "question": ["BRAIN FOG?", "DISTRACTED?", "CAN'T FOCUS?"],
+        "outcome":  ["LOCK IN", "DEEP WORK", "FOCUS UP"],
+        "identity": ["FOGGY MIND", "SCATTERED", "BRAIN FOG"],
+    },
+    "concentration": {
+        "question": ["CAN'T CONCENTRATE?", "BRAIN FOG?", "DISTRACTED?"],
+        "outcome":  ["LOCK IN", "GO DEEP", "SHARPEN FOCUS"],
+        "identity": ["SCATTERED MIND", "BRAIN FOG", "FOGGY DAY"],
+    },
+    "brain fog": {
+        "question": ["BRAIN FOG?", "FOGGY HEAD?", "CAN'T THINK?"],
+        "outcome":  ["CLEAR THE FOG", "THINK CLEARLY", "SHARPEN UP"],
+        "identity": ["BRAIN FOG", "MENTAL HAZE", "FOGGY MIND"],
+    },
+    "healing": {
+        "question": ["HURTING?", "READY TO HEAL?", "OPEN HEART?"],
+        "outcome":  ["BEGIN HEALING", "RESTORE", "MEND"],
+        "identity": ["HEALING JOURNEY", "TENDER HEART", "RAW PLACE"],
+    },
+    "burnout": {
+        "question": ["BURNED OUT?", "DEPLETED?", "FRIED?"],
+        "outcome":  ["RECOVER", "REPLENISH", "REBUILD"],
+        "identity": ["BURNED OUT", "RUNNING ON EMPTY", "DEPLETED"],
+    },
+    "insomnia": {
+        "question": ["3AM AGAIN?", "STILL AWAKE?", "INSOMNIA?"],
+        "outcome":  ["DRIFT OFF", "DEEP SLEEP", "FALL ASLEEP"],
+        "identity": ["INSOMNIA", "SLEEPLESS", "TIRED & WIRED"],
+    },
+    "grounding": {
+        "question": ["UNGROUNDED?", "FLOATING?", "SCATTERED?"],
+        "outcome":  ["GROUND DOWN", "ROOT IN", "ANCHOR"],
+        "identity": ["UNGROUNDED", "FLOATING MIND", "DISCONNECTED"],
+    },
+    "detox": {
+        "question": ["OVERSTIMULATED?", "PHONE FRIED?", "TOO MUCH SCREEN?"],
+        "outcome":  ["DETOX NOW", "RESET", "DISCONNECT"],
+        "identity": ["DIGITAL OVERLOAD", "PHONE BRAIN", "OVERSTIMULATED"],
+    },
 }
 
 # Problem keyword → Hz intent bucket
