@@ -3705,11 +3705,23 @@ with tab_title_builder:
 
     import sys as _tb_sys
     _tb_sys.path.insert(0, str(PIPELINE_DIR))
-    try:
-        from signals import load_own_catalog as _tb_load_catalog
-        _tb_catalog = _tb_load_catalog()
-    except Exception:
-        _tb_catalog = []
+
+    @st.cache_data(ttl=300, show_spinner=False)
+    def _tb_cached_catalog():
+        try:
+            from signals import load_own_catalog as _tb_load_catalog
+            return _tb_load_catalog()
+        except Exception:
+            return []
+
+    @st.cache_data(ttl=600, show_spinner=False)
+    def _tb_cached_competitors(days=7):
+        try:
+            return fetch_competitor_pulse_live(days=days)
+        except Exception:
+            return {}
+
+    _tb_catalog = _tb_cached_catalog()
 
     # Hidden bucket — persist to disk
     _tb_hidden_path = DASHBOARD_DIR / "data" / "title_builder_hidden.txt"
@@ -4007,7 +4019,7 @@ with tab_title_builder:
         )
 
         try:
-            _comp_data = fetch_competitor_pulse_live(days=7)
+            _comp_data = _tb_cached_competitors(days=7)
             _all_uploads = []
             for _cn, _ups in _comp_data.items():
                 for _u in _ups:
@@ -4149,30 +4161,21 @@ with tab_title_builder:
                     _seen.add(_kl)
                     _kw_raw.append((_kw, _match_cluster["name"]))
 
-        # Within a single cluster — keep cluster's natural keyword order so
-        # a freshly-scored keyword doesn't jump position and disappear off screen.
-        # In the "All" view, sort by status (ready first) since there's no natural order.
-        if _cluster_id == "__all__":
-            def _sort_priority(item):
-                kw, _ = item
-                kl = kw.strip().lower()
-                stat, _dl = _tb_cooldown(kl)
-                sc = _tb_effective_score(kl)
-                if stat == "available" and sc is not None:
-                    return (0, -sc)
-                if stat == "unscored":
-                    return (1, kw)
-                if stat == "cooldown":
-                    return (2, kw)
-                return (3, kw)
-            _kw_list = sorted(_kw_raw, key=_sort_priority)
-        else:
-            # Single cluster — preserve order from clusters JSON, only push invalidated to bottom
-            def _stable_priority(item):
-                kw, _ = item
-                stat, _ = _tb_cooldown(kw.strip().lower())
-                return 1 if stat == "invalidated" else 0
-            _kw_list = sorted(_kw_raw, key=_stable_priority)
+        # Sort: ready (scored, available) first → unscored → cooldown → invalidated
+        # Within ready, highest score first
+        def _sort_priority(item):
+            kw, _ = item
+            kl = kw.strip().lower()
+            stat, _dl = _tb_cooldown(kl)
+            sc = _tb_effective_score(kl)
+            if stat == "available" and sc is not None:
+                return (0, -sc)
+            if stat == "unscored":
+                return (1, kw)
+            if stat == "cooldown":
+                return (2, kw)
+            return (3, kw)
+        _kw_list = sorted(_kw_raw, key=_sort_priority)
 
         _unscored = [(kw, cn) for kw, cn in _kw_list if _tb_effective_score(kw.strip().lower()) is None
                      and _tb_cooldown(kw.strip().lower())[0] != "invalidated"]
