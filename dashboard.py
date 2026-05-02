@@ -3902,31 +3902,75 @@ with tab_title_builder:
         dur = dur if dur != "(none)" else ""
         mode = st.session_state.get("tb_b_mode", "🎯 Question")
 
-        clean = lead.replace(" music","").replace(" relief","").replace(" instrumental","").strip().title()
+        ll = lead.lower().strip()
 
+        # ── Grammatical classification of the lead keyword ──
+        ACTION_VERBS = ("calm", "release", "drift", "fall", "ease", "settle",
+                        "soothe", "find", "stop", "let go", "wind down",
+                        "soothe", "still", "quiet")
+        PROBLEM_NOUNS = ("stress", "anxiety", "insomnia", "burnout", "overthinking",
+                         "exhaustion", "tension", "fatigue", "depression", "loneliness",
+                         "homesick", "nostalgia", "grief", "panic", "overwhelm")
+
+        # Strip suffixes for "clean" form (used in templates that need it)
+        clean = lead.replace(" music","").replace(" relief","").replace(" instrumental","").replace(" therapy","").strip()
+
+        is_question_phrase = ll.startswith("can't") or ll.startswith("cant") or ll.startswith("how to") or ll.endswith("?")
+        is_action = any(ll.startswith(v + " ") or ll == v for v in ACTION_VERBS)
+        contains_problem = next((p for p in PROBLEM_NOUNS if p in ll), None)
+
+        # ── Build head per mode using grammar-aware templates ──
         if "Question" in mode:
-            head = f"Can't {clean}?"
-        elif "Outcome" in mode:
-            verbs = {"stress":"Release", "anxiety":"Soothe", "sleep":"Drift Into",
-                     "calm":"Find", "burnout":"Heal", "rest":"Find", "focus":"Sharpen",
-                     "healing":"Restore", "nostalgia":"Embrace", "comfort":"Embrace"}
-            verb = next((v for k,v in verbs.items() if k in lead.lower()), "Find")
-            head = f"{verb} {clean}"
-        elif "theme" in mode.lower():
-            head = clean
-        elif "Competitor" in mode:
-            head = f"Ancient {inst.title() if inst else ''} for {clean}".strip()
-        elif "phrase" in mode.lower():
-            # Natural phrase mode — weave instrument into the lead
-            connectors = {"stress":"with","anxiety":"with","sleep":"with","calm":"with",
-                          "healing":"through","nostalgia":"through","focus":"with","rest":"with"}
-            conn = next((v for k,v in connectors.items() if k in lead.lower()), "with")
-            if inst:
-                head = f"{clean} {conn} {inst.title()}"
+            if is_question_phrase:
+                head = lead.title().rstrip("?") + "?"
+            elif is_action:
+                head = f"Can't {lead.title()}?"
+            elif contains_problem:
+                head = f"Struggling with {contains_problem.title()}?"
             else:
-                head = clean
+                # Last resort — phrase as a "Need X?" question if it's a noun-music phrase
+                if " music" in ll or " relief" in ll:
+                    head = f"Need {clean.title()}?"
+                else:
+                    head = f"{lead.title()}?"
+        elif "Outcome" in mode:
+            # Map by problem hit, default to keyword as-is (no awkward "Find Night Music")
+            outcome_map = {
+                "stress": "Release Stress", "anxiety": "Soothe Anxiety",
+                "insomnia": "Beat Insomnia", "burnout": "Heal Burnout",
+                "overthinking": "Quiet Overthinking", "tension": "Release Tension",
+                "exhaustion": "Restore Energy", "nostalgia": "Embrace Nostalgia",
+                "homesick": "Comfort Homesickness", "panic": "Calm Panic",
+                "overwhelm": "Settle Overwhelm",
+            }
+            outcome_phrase = next((v for k, v in outcome_map.items() if k in ll), None)
+            if outcome_phrase:
+                head = outcome_phrase
+            elif is_action:
+                head = lead.title()
+            else:
+                # Generic fallback — won't pretend to be an outcome
+                head = lead.title()
+        elif "theme" in mode.lower():
+            # Just the keyword cleanly
+            head = lead.title()
+        elif "Competitor" in mode:
+            # "Ancient X for Y" only works when Y is a problem; otherwise softer
+            if inst and contains_problem:
+                head = f"Ancient {inst.title()} for {contains_problem.title()}"
+            elif inst:
+                head = f"Ancient {inst.title()} · {lead.title()}"
+            else:
+                head = lead.title()
+        elif "phrase" in mode.lower():
+            # "[Lead] with [Instrument]" — natural for noun phrases
+            if inst:
+                connector = "through" if any(k in ll for k in ("healing", "grief", "nostalgia")) else "with"
+                head = f"{lead.title()} {connector} {inst.title()}"
+            else:
+                head = lead.title()
         else:
-            head = clean
+            head = lead.title()
 
         parts = [head]
         # Append remaining picked keywords (any beyond the lead)
