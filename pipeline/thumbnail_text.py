@@ -24,11 +24,12 @@ from config import PROBLEM_THUMBNAIL_TEXT
 
 
 def _bucket_for(problem_kw: str) -> str:
-    """Find which thumbnail-text bucket matches the problem."""
+    """Find which thumbnail-text bucket matches the problem.
+    Prefers longest match so 'good morning' beats 'morning'."""
     p = problem_kw.lower()
-    for key in PROBLEM_THUMBNAIL_TEXT:
-        if key in p:
-            return key
+    matches = [key for key in PROBLEM_THUMBNAIL_TEXT if key in p]
+    if matches:
+        return max(matches, key=len)
     return "anxiety"  # safe default
 
 

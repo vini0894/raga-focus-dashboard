@@ -595,6 +595,36 @@ PROBLEM_THUMBNAIL_TEXT = {
         "outcome":  ["DETOX NOW", "RESET", "DISCONNECT"],
         "identity": ["DIGITAL OVERLOAD", "PHONE BRAIN", "OVERSTIMULATED"],
     },
+    "feel good": {
+        "question": ["DRAINED?", "NEED A LIFT?", "ROUGH WEEK?"],
+        "outcome":  ["FEEL GOOD.", "GET YOUR ENERGY BACK", "BOOST YOUR MOOD"],
+        "identity": ["BRIGHT MORNING", "FEEL-GOOD HOUR", "GOOD VIBES"],
+    },
+    "positive vibes": {
+        "question": ["LOW ENERGY?", "NEED A LIFT?", "MOOD DOWN?"],
+        "outcome":  ["FEEL GOOD.", "LIFT YOUR MOOD", "BRIGHT START"],
+        "identity": ["GOOD VIBES", "BRIGHT MORNING", "POSITIVE HOUR"],
+    },
+    "uplifting": {
+        "question": ["NEED A LIFT?", "DRAINED?", "MOOD LOW?"],
+        "outcome":  ["LIFT UP", "FEEL GOOD.", "BRIGHTEN UP"],
+        "identity": ["BRIGHT MORNING", "FEEL-GOOD HOUR", "GOOD VIBES"],
+    },
+    "happy": {
+        "question": ["NEED JOY?", "MOOD DOWN?", "ROUGH DAY?"],
+        "outcome":  ["FEEL GOOD.", "FIND JOY", "LIFT YOUR MOOD"],
+        "identity": ["HAPPY HOUR", "GOOD VIBES", "JOY HOUR"],
+    },
+    "good morning": {
+        "question": ["TIRED MORNING?", "NEED ENERGY?", "ROUGH WAKE-UP?"],
+        "outcome":  ["BRIGHT START", "WAKE UP HAPPY", "MORNING LIFT"],
+        "identity": ["BRIGHT MORNING", "MORNING HOUR", "FRESH START"],
+    },
+    "energy": {
+        "question": ["DRAINED?", "LOW ENERGY?", "NEED A BOOST?"],
+        "outcome":  ["GET YOUR ENERGY BACK", "ENERGY BOOST", "FEEL GOOD."],
+        "identity": ["LOW BATTERY", "DRAINED", "RECHARGE"],
+    },
 }
 
 # Problem keyword → Hz intent bucket

@@ -303,6 +303,44 @@
         "parasympathetic music",
         "restore balance music"
       ]
+    },
+    {
+      "id": "uplifting",
+      "name": "Uplifting / Feel-good",
+      "emoji": "☀️",
+      "slot": "problem",
+      "keywords": [
+        "feel good music",
+        "positive vibes music",
+        "uplifting music",
+        "happy music",
+        "good morning music",
+        "morning energy music",
+        "morning music",
+        "bright morning music",
+        "sunrise music",
+        "energy boost music",
+        "mood boost music",
+        "mood lift music",
+        "get your energy back",
+        "wake up music",
+        "morning motivation music",
+        "joyful music",
+        "cheerful music",
+        "optimistic music",
+        "warm acoustic guitar",
+        "bright acoustic music",
+        "feel good acoustic",
+        "positive morning vibes",
+        "morning routine music",
+        "weekend morning music",
+        "slow sunday music",
+        "lazy morning music",
+        "fresh start music",
+        "good vibes music",
+        "summer vibes music",
+        "feel-good hour"
+      ]
     }
   ]
 }
