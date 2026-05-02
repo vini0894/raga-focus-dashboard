@@ -3725,12 +3725,38 @@ with tab_title_builder:
         except Exception:
             pass
 
+    # Inline scores — persist to JSON to survive reruns/redeploys
+    _tb_scores_path = DASHBOARD_DIR / "data" / "title_builder_scores.json"
+    if "tb_inline_scores" not in st.session_state:
+        if _tb_scores_path.exists():
+            try:
+                st.session_state["tb_inline_scores"] = _tb_json.loads(_tb_scores_path.read_text())
+            except Exception:
+                st.session_state["tb_inline_scores"] = {}
+        else:
+            st.session_state["tb_inline_scores"] = {}
+    else:
+        # On every render, merge any disk-persisted scores in case file was updated by another session
+        if _tb_scores_path.exists():
+            try:
+                _disk = _tb_json.loads(_tb_scores_path.read_text())
+                for _k, _v in _disk.items():
+                    if _k not in st.session_state["tb_inline_scores"]:
+                        st.session_state["tb_inline_scores"][_k] = _v
+            except Exception:
+                pass
+
+    def _save_scores():
+        try:
+            _tb_scores_path.write_text(_tb_json.dumps(st.session_state["tb_inline_scores"], indent=2))
+        except Exception:
+            pass
+
     # Session state init
     for _k, _v in [
         ("tb_picked_a", []),
         ("tb_picked_b", []),
         ("tb_active_variant", "A"),
-        ("tb_inline_scores", {}),
         ("tb_b_mode", "🎯 Question"),
         ("tb_active_cluster", "All"),
     ]:
@@ -4070,6 +4096,7 @@ with tab_title_builder:
                 if _kc:
                     if _free_sc > 0:
                         st.session_state["tb_inline_scores"][_kc] = _free_sc
+                        _save_scores()
                         try:
                             from keyword_bank import append_keyword as _bk
                             _bk(_kc, slot="problem", vidiq_score=_free_sc, source="title-builder-freetext")
@@ -4231,6 +4258,8 @@ with tab_title_builder:
                                         _slot = _c.get("slot","problem"); break
                                 _bks(_kl, slot=_slot, vidiq_score=_new_sc, source="title-builder")
                                 st.session_state["tb_inline_scores"][_kl] = _new_sc
+                                _save_scores()
+                                st.success(f"✓ Saved {_kl} = {_new_sc}")
                                 st.rerun()
                             except Exception as _e:
                                 st.error(f"Save: {_e}")
