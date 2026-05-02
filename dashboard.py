@@ -666,8 +666,8 @@ with st.sidebar:
     st.caption("Dashboard reads from YouTube API via the authenticated MCP server + REACH_DATA.md for manual reach captures.")
 
 # Tabs
-tab_overview, tab_daily, tab_videos, tab_detail, tab_competitors, tab_queue, tab_briefs, tab_idea_gen, tab_idea_queue, tab_title_builder = st.tabs(
-    ["📊 Overview", "📈 Daily Views", "📺 Videos", "🔍 Video Detail", "⚔️ Competitors", "🚀 Production Queue", "🧠 Brief Queue", "💡 Idea Generation", "🛠 Idea Queue", "🔤 Title Builder"]
+tab_overview, tab_daily, tab_videos, tab_detail, tab_competitors, tab_queue, tab_briefs, tab_idea_gen, tab_title_builder = st.tabs(
+    ["📊 Overview", "📈 Daily Views", "📺 Videos", "🔍 Video Detail", "⚔️ Competitors", "🚀 Production Queue", "🧠 Brief Queue", "💡 Idea Generation", "🔤 Title Builder"]
 )
 
 # -----------------------------------------------------------------------------
@@ -1947,6 +1947,80 @@ def _refresh_reach_history():
     return len(new_rows), None
 
 
+    # ── Mark as Shipped ────────────────────────────────────────────────────────
+    st.divider()
+    st.markdown("### ✅ Mark a video as shipped")
+    st.caption("Use this for videos you uploaded directly without going through the pipeline. Blocks the theme + instrument combo from re-appearing in Idea Gen for 30 days.")
+
+    _ms_title = st.text_input(
+        "Paste the video title you uploaded",
+        key="mark_shipped_title",
+        placeholder="e.g. Overthinking Music | Sarangi Raga | 1 Hour",
+    )
+
+    if _ms_title.strip():
+        import sys as _mssys
+        _mssys.path.insert(0, str(PIPELINE_DIR))
+        try:
+            from build_performance_weights import _detect_instrument as _ms_inst, _detect_problem_kw as _ms_kw
+        except Exception:
+            _detect_instrument_fn = lambda t: ""
+            _detect_problem_kw_fn = lambda t: ""
+        else:
+            _detect_instrument_fn = _ms_inst
+            _detect_problem_kw_fn = _ms_kw
+
+        _ms_title_lower = _ms_title.strip().lower()
+        _ms_detected_inst = _detect_instrument_fn(_ms_title_lower)
+        _ms_detected_kw   = _detect_problem_kw_fn(_ms_title_lower)
+
+        _msc1, _msc2 = st.columns(2)
+        with _msc1:
+            _ms_inst_val = st.text_input(
+                "Instrument detected",
+                value=_ms_detected_inst,
+                key="mark_shipped_inst",
+                help="Edit if wrong",
+            )
+        with _msc2:
+            _ms_kw_val = st.text_input(
+                "Problem keyword detected",
+                value=_ms_detected_kw,
+                key="mark_shipped_kw",
+                help="Edit if wrong — use exact phrase from keyword bank",
+            )
+
+        if st.button("✅ Mark as Shipped", key="mark_shipped_btn", type="primary"):
+            try:
+                import csv as _mscsv
+                from datetime import date as _msdate
+                from pathlib import Path as _msPath
+                _shipped_path = DASHBOARD_DIR / "data" / "shipped_titles.csv"
+                _HEADER = ["shipped_on", "brief_id", "title", "title_length",
+                           "slot_count", "lead_hook", "instrument", "hz", "raga", "wave", "problem_kw"]
+                _parts = [p.strip() for p in _ms_title.split("|") if p.strip()]
+                _new_row = {
+                    "shipped_on":    _msdate.today().isoformat(),
+                    "brief_id":      "",
+                    "title":         _ms_title.strip(),
+                    "title_length":  len(_ms_title.strip()),
+                    "slot_count":    len(_parts),
+                    "lead_hook":     _parts[0] if _parts else "",
+                    "instrument":    _ms_inst_val.strip(),
+                    "hz":            "",
+                    "raga":          "",
+                    "wave":          "",
+                    "problem_kw":    _ms_kw_val.strip().lower(),
+                }
+                import storage as _msstorage
+                _msstorage.append_shipped_title(_new_row)
+                _msstorage.invalidate_cache()
+                st.success(f"✅ Marked as shipped — **{_ms_inst_val or '(no instrument)'}** + **{_ms_kw_val or '(no keyword)'}** blocked for 30 days")
+                st.session_state["mark_shipped_title"] = ""
+            except Exception as _mse:
+                st.error(f"Failed: {_mse}")
+
+
 with tab_idea_gen:
     st.subheader("💡 Idea Generation — daily video proposal")
     st.caption(
@@ -2762,21 +2836,14 @@ with tab_idea_gen:
                     for e in extras:
                         _add_kw("tag", e, "Title sub-phrase")
 
-                    # Add to Queue / Promote / Park buttons
-                    promote_col1, promote_col_q, promote_col2, promote_col3 = st.columns([2, 1, 1, 1])
-                    with promote_col_q:
-                        queue_clicked = st.button(
-                            "➕ Queue",
-                            key=f"queue_btn_{idx}",
-                            use_container_width=True,
-                            help="Add to Idea Queue — workshop the title across sessions before promoting to Brief",
-                        )
+                    # Promote / Park buttons
+                    promote_col1, promote_col2, promote_col3 = st.columns([2, 1, 1])
                     with promote_col2:
                         promote_clicked = st.button(
-                            "🚀 Promote",
+                            "🚀 Promote to Brief",
                             key=f"promote_btn_{idx}",
                             use_container_width=True,
-                            help="Skip workshop, go directly to Brief Queue",
+                            help="Create a ready-to-paste brief in the Brief Queue tab",
                         )
                     with promote_col3:
                         dismiss_clicked = st.button(
@@ -2785,16 +2852,6 @@ with tab_idea_gen:
                             use_container_width=True,
                             help="Snooze this problem for today — comes back tomorrow",
                         )
-
-                    if queue_clicked:
-                        try:
-                            import sys as _sysq
-                            _sysq.path.insert(0, str(PIPELINE_DIR))
-                            from idea_queue import add_from_candidate as _add_q
-                            _qitem = _add_q(cand)
-                            st.success(f"✓ Added to **🛠 Idea Queue** as `{_qitem['id']}`")
-                        except Exception as _qe:
-                            st.error(f"Queue add failed: {_qe}")
                     if promote_clicked:
                         try:
                             proc = subprocess.run(
@@ -2820,29 +2877,22 @@ with tab_idea_gen:
                             today = _d2.today().isoformat()
                             dpath = DASHBOARD_DIR / "data" / "dismissed_candidates.csv"
                             HEADER = ["signature", "problem_keyword", "title", "dismissed_on"]
-                            existing = []
-                            if dpath.exists():
-                                with open(dpath) as f:
-                                    existing = list(_csvd.DictReader(f))
+                            import storage as _stord
+                            _existing_dismissed = _stord.read_dismissed_candidates()
                             # Park the PROBLEM KEYWORD for today (not the full signature).
-                            # Old rows with a different schema are preserved untouched.
                             already_today = any(
                                 r.get("problem_keyword", "").strip().lower() == problem_kw
                                 and r.get("dismissed_on") == today
-                                for r in existing
+                                for r in _existing_dismissed
                             )
                             if not already_today:
-                                existing.append({
-                                    "signature":       "",  # legacy column
+                                _stord.append_dismissed_candidate({
+                                    "signature":       "",
                                     "problem_keyword": problem_kw,
                                     "title":           cand.get("title", ""),
                                     "dismissed_on":    today,
                                 })
-                                with open(dpath, "w", newline="") as f:
-                                    w = _csvd.DictWriter(f, fieldnames=HEADER)
-                                    w.writeheader()
-                                    for r in existing:
-                                        w.writerow({k: r.get(k, "") for k in HEADER})
+                                _stord.invalidate_cache()
                                 st.success(f"💤 Parked **'{problem_kw}'** for today. Click Re-rank to see different ideas. Comes back tomorrow.")
                             else:
                                 st.info("Already parked for today.")
@@ -3251,374 +3301,6 @@ with tab_idea_gen:
 # -----------------------------------------------------------------------------
 # Tab: Idea Queue — workshop space between Idea Gen and Brief Queue
 # -----------------------------------------------------------------------------
-with tab_idea_queue:
-    st.markdown("## 🛠 Idea Queue")
-    st.caption(
-        "Workshop space for ideas you've added from **💡 Idea Generation**. Refine the title here "
-        "across sessions — each item persists until you generate a brief or discard it. "
-        "Three buckets: 🎯 Competitor · 📈 Own theme compounding · 🚀 Moonshot."
-    )
-
-    import sys as _sysq
-    _sysq.path.insert(0, str(PIPELINE_DIR))
-    try:
-        from idea_queue import list_items as _list_q, delete_item as _del_q, update_item as _upd_q, bucket_counts as _qcounts
-    except Exception as _qe:
-        st.error(f"Idea queue module not loadable: {_qe}")
-        _list_q = lambda: []
-        _del_q = lambda x: False
-        _upd_q = lambda *a, **k: None
-        _qcounts = lambda: {}
-
-    _items = _list_q()
-    _counts = _qcounts()
-
-    # ── Load bank + helpers (used by per-item workshop) ──
-    import csv as _csvw
-    _bank_path_w = DASHBOARD_DIR / "data" / "keyword_bank.csv"
-    _inv_path_w  = DASHBOARD_DIR / "data" / "invalidated_keywords.csv"
-    _bank_w = {}
-    if _bank_path_w.exists():
-        with open(_bank_path_w) as _f:
-            for _r in _csvw.DictReader(_f):
-                _bank_w[_r["phrase"].strip().lower()] = _r
-    _inv_w = set()
-    if _inv_path_w.exists():
-        with open(_inv_path_w) as _f:
-            for _r in _csvw.DictReader(_f):
-                _inv_w.add(_r["phrase"].strip().lower())
-
-    def _badge_w(phrase: str):
-        from datetime import date as _dW
-        p = (phrase or "").strip().lower()
-        if p in _inv_w:
-            return "❌ INVALIDATED", None
-        row = _bank_w.get(p)
-        if not row:
-            return "⚠️ UNTESTED", None
-        s = row.get("vidiq_score", "").strip()
-        if not s.isdigit():
-            return "⚠️ UNTESTED", None
-        sc = int(s)
-        last = row.get("last_score_check", "")
-        try:
-            stale = (_dW.today() - _dW.fromisoformat(last)).days > 30 if last else False
-        except Exception:
-            stale = False
-        if stale:    return f"🟡 STALE ({sc})", sc
-        if sc >= 60: return f"✅ PASS ({sc})", sc
-        return f"❌ FAIL ({sc})", sc
-
-    if not _items:
-        st.info(
-            "No ideas in the queue yet.  \n"
-            "Open **💡 Idea Generation**, find a candidate worth working on, and click **🛠 Work on this**."
-        )
-    else:
-        # Portfolio summary at the top
-        _qs1, _qs2, _qs3, _qs4 = st.columns(4)
-        _qs1.metric("Total in queue", len(_items))
-        _qs2.metric("🎯 Competitor",          _counts.get("competitor", 0))
-        _qs3.metric("📈 Own theme compounding", _counts.get("niche", 0))
-        _qs4.metric("🚀 Moonshot",            _counts.get("moonshot", 0))
-
-        # Balance hint
-        _empty = [b for b, n in _counts.items() if n == 0]
-        if len(_items) >= 3 and _empty:
-            _label_map = {"competitor": "🎯 Competitor", "niche": "📈 Own theme compounding", "moonshot": "🚀 Moonshot"}
-            _missing = ", ".join(_label_map.get(b, b) for b in _empty)
-            st.caption(f"⚠️ Queue missing: **{_missing}** — consider generating ideas to fill that bucket.")
-
-        st.divider()
-
-        _STRAT_BADGE_Q = {
-            "competitor": ("🎯", "Competitor"),
-            "niche":      ("📈", "Own theme compounding"),
-            "moonshot":   ("🚀", "Moonshot"),
-        }
-
-        for _q in _items:
-            _b = _q.get("bucket", "moonshot")
-            _emo, _blab = _STRAT_BADGE_Q.get(_b, ("·", _b.title()))
-            _status = _q.get("status", "drafting").upper().replace("_", " ")
-            with st.container(border=True):
-                # Header row
-                _ch1, _ch2, _ch3 = st.columns([6, 2, 2])
-                with _ch1:
-                    st.markdown(f"### {_emo} {_blab} · {_q.get('concept', '(no concept)')}")
-                    st.caption(f"`{_q.get('id')}` · queued {_q.get('queued_at', '')} · score **{_q.get('score', '—')}**")
-                with _ch2:
-                    st.markdown(f"**Status:** 🛠 {_status}")
-                with _ch3:
-                    if st.button("🗑 Discard", key=f"qdel_{_q['id']}", use_container_width=True):
-                        if _del_q(_q["id"]):
-                            st.success(f"Discarded `{_q['id']}`")
-                            st.rerun()
-
-                # Strategy note
-                if _q.get("strategy_note"):
-                    st.caption(f"💡 _{_q['strategy_note']}_")
-
-                # Components row
-                _comp = _q.get("components", {}) or {}
-                _cc1, _cc2, _cc3, _cc4, _cc5 = st.columns(5)
-                _slots = [
-                    ("Problem",    _comp.get("problem",    {}).get("kw",   "—")),
-                    ("Instrument", _comp.get("instrument", {}).get("name", "—")),
-                    ("Hz",         _comp.get("hz",         {}).get("hz",   "—")),
-                    ("Raga",       _comp.get("raga",       {}).get("name", "—")),
-                    ("Wave",       _comp.get("wave",       {}).get("wave", "—")),
-                ]
-                for _col, (_lbl, _val) in zip([_cc1, _cc2, _cc3, _cc4, _cc5], _slots):
-                    with _col:
-                        st.markdown(
-                            f"<div style='font-size:0.78rem;color:#9ca3af'>{_lbl}</div>"
-                            f"<div style='font-weight:600'>{_val or '—'}</div>",
-                            unsafe_allow_html=True,
-                        )
-
-                # Working title
-                st.markdown("**📝 Working title**")
-                st.code(_q.get("working_title", ""), language=None)
-
-                # Look & feel
-                _lf = _q.get("look_and_feel", {}) or {}
-                if _lf.get("thumbnail_style") or _lf.get("vibe"):
-                    with st.expander("🎨 Look & feel", expanded=False):
-                        if _lf.get("thumbnail_style"):
-                            st.markdown(f"**Thumbnail style:** {_lf['thumbnail_style']}")
-                        if _lf.get("vibe"):
-                            st.markdown(f"**Vibe:** {_lf['vibe']}")
-
-                # ════════════════════════════════════════════════════════════
-                # WORKSHOP — per-queue-item tools (Score Check + Alternates + Rebuild)
-                # ════════════════════════════════════════════════════════════
-                from urllib.parse import quote_plus as _qpW
-                _qid = _q["id"]
-                if "qprep_scores" not in st.session_state:
-                    st.session_state["qprep_scores"] = {}  # {(qid, slot, kw): (score, write_slot)}
-
-                # ── 🔍 Score Check: validate each slot keyword on VidIQ ──
-                with st.expander("🔍 Score Check — validate keywords on VidIQ", expanded=False):
-                    st.caption("Click VidIQ → paste back the score. ✅≥60 · ❌<60 · ⚠️ untested · 🟡 stale (>30d).")
-                    _slot_kws = [
-                        ("problem",    _comp.get("problem",    {}).get("kw", ""),    "Problem"),
-                        ("instrument", _comp.get("instrument", {}).get("name", ""),  "Instrument"),
-                        ("hz",         _comp.get("hz",         {}).get("hz", ""),    "Hz"),
-                        ("raga",       _comp.get("raga",       {}).get("name", ""),  "Raga"),
-                        ("wave",       _comp.get("wave",       {}).get("wave", ""),  "Wave"),
-                    ]
-                    for _slot, _kw, _label in _slot_kws:
-                        if not _kw:
-                            continue
-                        _kw_l = _kw.strip().lower()
-                        _b, _cur = _badge_w(_kw_l)
-                        _r1, _r2, _r3 = st.columns([3, 2, 2])
-                        with _r1:
-                            st.markdown(f"`{_kw_l}`")
-                            st.caption(f"{_label} · {_b}")
-                        with _r2:
-                            st.markdown(
-                                f"[🔗 VidIQ](https://app.vidiq.com/keywords/{_qpW(_kw_l)}) · "
-                                f"[▶ YT](https://www.youtube.com/results?search_query={_qpW(_kw_l)})"
-                            )
-                        with _r3:
-                            _new_s = st.number_input(
-                                "score", 0, 100, value=int(_cur) if _cur else 0, step=1,
-                                key=f"qprep_score_{_qid}_{_slot}_{_kw_l}",
-                                label_visibility="collapsed",
-                            )
-                            if _new_s and _new_s != (_cur or 0):
-                                st.session_state["qprep_scores"][(_qid, _slot, _kw_l)] = (_new_s, _slot)
-
-                # ── ➕ Add alternate keyword (with raga fit check) ──
-                with st.expander("➕ Add alternate keyword to explore", expanded=False):
-                    st.caption("Spotted a better keyword on VidIQ? Add it here. Score, save, then rebuild title.")
-                    if f"qprep_alts_{_qid}" not in st.session_state:
-                        st.session_state[f"qprep_alts_{_qid}"] = []  # list of {kw, slot}
-
-                    _SLOT_OPTS = ["problem", "raga", "hz", "instrument", "wave", "tag"]
-
-                    def _auto_slot_local(p):
-                        p = (p or "").lower()
-                        if p.startswith(("raga ", "raag ")) or p in {"yaman","bhupali","darbari","malkauns","bageshri","kafi","puriya","bhimpalasi","bhairavi","bilawal","todi","hamir","chandra","marwa","bhairav","kirwani","hamsadhwani","charukesi"}: return "raga"
-                        if "hz" in p or "hertz" in p: return "hz"
-                        if any(x in p for x in ("delta","theta","alpha","gamma","binaural"," wave")): return "wave"
-                        if any(x in p for x in ("tanpura","bansuri","veena","sitar","sarangi","dilruba","sarod","shehnai","flute","violin","tabla")): return "instrument"
-                        if any(x in p for x in ("insomnia","anxiety","stress","depression","focus","sleep","calm","overthink","grief","relax","heal","fatigue","burnout","unwind","mood","tension")): return "problem"
-                        return "tag"
-
-                    _ac1, _ac2, _ac3 = st.columns([4, 2, 1])
-                    with _ac1:
-                        _new_alt = st.text_input("Keyword", key=f"qprep_alt_input_{_qid}",
-                                                 placeholder="e.g. insomnia music, raga darbari, 432hz",
-                                                 label_visibility="collapsed")
-                    with _ac2:
-                        _auto = _auto_slot_local(_new_alt) if _new_alt else "tag"
-                        _slot_pick_w = st.selectbox("Slot", _SLOT_OPTS, index=_SLOT_OPTS.index(_auto),
-                                                    key=f"qprep_alt_slot_{_qid}", label_visibility="collapsed")
-                    with _ac3:
-                        if st.button("➕ Add", key=f"qprep_alt_add_{_qid}", use_container_width=True) and _new_alt.strip():
-                            _kc = _new_alt.strip().lower()
-                            if not any(e["kw"] == _kc for e in st.session_state[f"qprep_alts_{_qid}"]):
-                                st.session_state[f"qprep_alts_{_qid}"].append({"kw": _kc, "slot": _slot_pick_w})
-                                st.rerun()
-
-                    # Render added alternates with VidIQ score input + raga fit
-                    if st.session_state[f"qprep_alts_{_qid}"]:
-                        try:
-                            from raga_validator import lookup_raga_fit as _rfit, mood_from_problem_kw as _mfk
-                            _mood_q = _mfk(_comp.get("problem", {}).get("kw", ""))
-                        except Exception:
-                            _rfit = lambda *a, **k: None
-                            _mood_q = ""
-
-                        _to_drop = []
-                        for _ai, _alt in enumerate(st.session_state[f"qprep_alts_{_qid}"]):
-                            _akw, _aslot = _alt["kw"], _alt["slot"]
-                            _ab, _acur = _badge_w(_akw)
-                            _x1, _x2, _x3, _x4 = st.columns([3, 2, 2, 1])
-                            with _x1:
-                                st.markdown(f"`{_akw}`")
-                                st.caption(f"{_aslot} · {_ab}")
-                            with _x2:
-                                st.markdown(
-                                    f"[🔗 VidIQ](https://app.vidiq.com/keywords/{_qpW(_akw)}) · "
-                                    f"[▶ YT](https://www.youtube.com/results?search_query={_qpW(_akw)})"
-                                )
-                            with _x3:
-                                _as = st.number_input(
-                                    "score", 0, 100, value=int(_acur) if _acur else 0, step=1,
-                                    key=f"qprep_alt_score_{_qid}_{_ai}",
-                                    label_visibility="collapsed",
-                                )
-                                if _as and _as != (_acur or 0):
-                                    st.session_state["qprep_scores"][(_qid, _aslot, _akw)] = (_as, _aslot)
-                            with _x4:
-                                if st.button("🗑", key=f"qprep_alt_rm_{_qid}_{_ai}"):
-                                    _to_drop.append(_ai)
-
-                            # Auto raga-fit signal for raga slot
-                            if _aslot == "raga" and _mood_q:
-                                _aclean = _akw.replace("raga ", "").strip()
-                                _fit = _rfit(_aclean, _mood_q) or _rfit(_akw, _mood_q)
-                                if _fit:
-                                    _icons = {"strong": "✅ Strong", "ok": "✅ Ok", "caution": "⚠️ Caution", "avoid": "❌ Avoid"}
-                                    st.caption(f"🎵 {_icons.get(_fit['fit'], _fit['fit'])} for **{_mood_q}** — {_fit['reason']}")
-                                    if _fit.get("alternatives"):
-                                        st.caption(f"   ↳ better: {', '.join(_fit['alternatives'])}")
-                        for _i in reversed(_to_drop):
-                            st.session_state[f"qprep_alts_{_qid}"].pop(_i)
-                        if _to_drop:
-                            st.rerun()
-
-                # ── 💾 Save scores + ✏️ Rebuild title ──
-                _bw1, _bw2, _bw3 = st.columns(3)
-                with _bw1:
-                    if st.button("💾 Save scores", key=f"qprep_save_{_qid}", use_container_width=True):
-                        try:
-                            from persistence import auto_promote_vidiq_scores as _apvs
-                            _to_save = {kw: sc for (qid, slot, kw), (sc, _) in st.session_state["qprep_scores"].items()
-                                        if qid == _qid and sc > 0}
-                            _slot_hints = {kw: slot for (qid, slot, kw), (sc, _) in st.session_state["qprep_scores"].items()
-                                           if qid == _qid and sc > 0}
-                            if _to_save:
-                                from datetime import date as _dS
-                                _apvs(_to_save, slot_hint=_slot_hints, source=f"prep-{_dS.today().isoformat()}")
-                                _upd_q(_qid, {}, log_event=f"Banked {len(_to_save)} VidIQ score(s)")
-                                st.success(f"✓ {len(_to_save)} saved to keyword_bank.csv")
-                                st.rerun()
-                            else:
-                                st.warning("No scores entered — type values > 0 first.")
-                        except Exception as _se:
-                            st.error(f"Save failed: {_se}")
-                with _bw2:
-                    _rb = st.button("✏️ Rebuild title", key=f"qprep_rebuild_{_qid}", use_container_width=True)
-                with _bw3:
-                    pass
-
-                if _rb:
-                    try:
-                        from scoring import build_variants as _bvW
-                        from competitor_patterns import apply_pattern_to_candidate as _appW
-                        from raga_validator import mood_from_problem_kw as _mfkW
-
-                        _problem  = _comp.get("problem", {}) or {}
-                        _hz_obj   = _comp.get("hz", {}) or {}
-                        _ins_obj  = _comp.get("instrument", {}) or {}
-                        _raga_obj = _comp.get("raga", {}) or {}
-                        _wave_obj = _comp.get("wave", {}) or {}
-
-                        _hook = _problem.get("seo_phrase") or _problem.get("phrase") or (_problem.get("kw","") or "").title()
-                        _hz_s, _ins_s, _rag_s = _hz_obj.get("hz",""), _ins_obj.get("name",""), _raga_obj.get("name","")
-                        _wav_s, _wav_o = _wave_obj.get("wave",""), _wave_obj.get("outcome","")
-
-                        _va = f"{_hook} | {_hz_s} {_ins_s} Raga {_rag_s} | {_wav_s} Wave {_wav_o} | 1 Hour"
-                        _vb = f"{_hook} | {_ins_s} Raga {_rag_s} | 1 Hour"
-                        _vc = None
-                        _vc_cap = None
-                        try:
-                            _cp = _appW(_comp, _mfkW(_problem.get("kw","")))
-                            if _cp:
-                                _vc = _cp["title"]
-                                _vc_cap = f"_(adapted from {_cp['source_channel']}'s {_cp['source_views']:,}v title for `{_cp['mood_matched']}`)_"
-                        except Exception:
-                            pass
-                        if not _vc:
-                            _vc = f"{_hook} | {_ins_s} Raga {_rag_s}"
-                            _vc_cap = "_(no competitor data — ultra-minimal fallback)_"
-
-                        st.markdown("**Three rebuilt variants — pick one to set as working title:**")
-                        for _vk, _vt, _vcap in [
-                            ("A · Full SEO (5 slots)",     _va, None),
-                            ("B · Lean SEO (3 slots, validated winner)", _vb, None),
-                            ("C · Competitor-pattern",     _vc, _vc_cap),
-                        ]:
-                            st.caption(f"{_vk} · {len(_vt)} chars")
-                            st.code(_vt, language=None)
-                            if _vcap: st.caption(_vcap)
-                            if st.button(f"📌 Use this as working title", key=f"qprep_setwt_{_qid}_{_vk[:1]}"):
-                                _upd_q(_qid, {"working_title": _vt}, log_event=f"Working title updated to variant {_vk[:1]}")
-                                st.success("Working title updated")
-                                st.rerun()
-                    except Exception as _re:
-                        st.error(f"Rebuild failed: {_re}")
-
-                # Notes (editable)
-                _new_notes = st.text_area(
-                    "📓 Notes",
-                    value=_q.get("notes", ""),
-                    key=f"qnotes_{_q['id']}",
-                    height=80,
-                    placeholder="Decisions, ideas, things to test next session…",
-                )
-                _ncol1, _ncol2, _ncol3 = st.columns([2, 2, 4])
-                with _ncol1:
-                    if st.button("💾 Save notes", key=f"qsavenotes_{_q['id']}"):
-                        _upd_q(_q["id"], {"notes": _new_notes}, log_event="Notes updated")
-                        st.success("Saved")
-                        st.rerun()
-                with _ncol2:
-                    if st.button("🔒 Mark title locked", key=f"qlock_{_q['id']}"):
-                        _upd_q(_q["id"], {"status": "title_locked"}, log_event="Title locked")
-                        st.rerun()
-
-                # Decision log
-                _log = _q.get("decision_log", []) or []
-                if _log:
-                    with st.expander(f"📜 Decision log ({len(_log)})", expanded=False):
-                        for _ev in reversed(_log):
-                            st.markdown(f"- `{_ev.get('ts', '')}` — {_ev.get('event', '')}"
-                                        + (f" · _{_ev.get('detail', '')}_" if _ev.get('detail') else ""))
-
-                # Generate Brief — handoff to existing brief workflow
-                if st.button("📤 Generate Production Brief", key=f"qbrief_{_q['id']}", type="primary"):
-                    st.info(
-                        "Brief generation from queue items is wired up in the next iteration. "
-                        "For now, copy the working title into **💡 Idea Generation** → Promote, "
-                        "or use **🧠 Brief Queue** directly."
-                    )
-
 
 # =============================================================================
 # TAB: Title Builder (v4)
@@ -3755,22 +3437,60 @@ with tab_title_builder:
     # ─────────────────────────────────────────────────────────
     # HELPERS
     # ─────────────────────────────────────────────────────────
+    # Pull pipeline's smart token logic — same stopwords, same theme detection
+    try:
+        from signals import _meaningful_tokens as _pipe_tokens
+    except Exception:
+        _pipe_tokens = None
+
+    _COOLDOWN_DAYS = 5  # match pipeline default
+
     def _tb_cooldown(phrase):
+        """Return (status, days_left, why_title).
+        Status: 'invalidated' | 'cooldown' | 'unscored' | 'available'.
+        why_title: the past video that triggered cooldown, or None.
+        """
         p = phrase.strip().lower()
         if p in _tb_inv:
-            return "invalidated", 0
+            return "invalidated", 0, None
         today = _tb_date.today()
+
+        # Get meaningful tokens from candidate (filters stopwords, instruments, ragas, Hz)
+        cand_tokens = set(_pipe_tokens(p)) if _pipe_tokens else set()
+
         for v in _tb_catalog:
             pub = v.get("publish_date")
             if not pub:
                 continue
             days_ago = (today - pub).days
-            if days_ago <= 7 and p in v.get("title","").lower():
-                return "cooldown", 7 - days_ago
+            if days_ago > _COOLDOWN_DAYS:
+                continue
+            title_l = v.get("title","").lower()
+            video_title = v.get("title","")
+
+            # Strategy 1: exact phrase match (only if meaningful — skip tiny/stopword phrases)
+            # Avoids "music" / "1 hour" / "for" matching every title
+            if len(p) >= 5 and " " in p and p in title_l:
+                # Multi-word substring is strong signal
+                return "cooldown", _COOLDOWN_DAYS - days_ago, video_title
+
+            # Strategy 2: theme-token overlap (catches "settle your mind" when "calm your mind" was used)
+            if cand_tokens and _pipe_tokens:
+                title_tokens = set(_pipe_tokens(title_l))
+                if cand_tokens & title_tokens:
+                    return "cooldown", _COOLDOWN_DAYS - days_ago, video_title
+
+            # Strategy 3: exact short-keyword match (instruments, ragas, Hz) — only when phrase is exact word in title
+            # Use word boundary check: phrase appears as whole word
+            if " " not in p and len(p) >= 4:
+                import re as _re_cd
+                if _re_cd.search(rf"\b{_re_cd.escape(p)}\b", title_l):
+                    return "cooldown", _COOLDOWN_DAYS - days_ago, video_title
+
         row = _tb_bank.get(p)
         if not row or not row.get("vidiq_score","").strip().isdigit():
-            return "unscored", 0
-        return "available", 0
+            return "unscored", 0, None
+        return "available", 0, None
 
     def _tb_score(phrase):
         row = _tb_bank.get(phrase.strip().lower())
@@ -3803,7 +3523,7 @@ with tab_title_builder:
 
     def _tb_chip_html(phrase):
         """Render a keyword chip status badge as HTML for inline display."""
-        status, days_left = _tb_cooldown(phrase)
+        status, days_left, _ = _tb_cooldown(phrase)
         score = _tb_effective_score(phrase)
         if status == "invalidated":
             return '<span style="color:#f87171;font-size:0.7rem">❌</span>'
@@ -3854,22 +3574,63 @@ with tab_title_builder:
         sel = st.session_state.get("tb_instrument", "(none)")
         return sel if sel != "(none)" else ""
 
+    def _dedupe_overlapping(kws):
+        """Drop keywords that share theme tokens with a higher-scored keyword.
+        Keeps the first (highest-scored) occurrence per theme cluster.
+        """
+        if not _pipe_tokens:
+            return kws
+        kept = []
+        seen_tokens = set()
+        for kw in kws:
+            tokens = set(_pipe_tokens(kw.lower()))
+            if not tokens:
+                # Keyword has no meaningful tokens (all stopwords) — keep it
+                kept.append(kw)
+                continue
+            if tokens & seen_tokens:
+                # Overlap with already-kept keyword — drop this one
+                continue
+            kept.append(kw)
+            seen_tokens |= tokens
+        return kept
+
     def _build_variant_a():
         picked = st.session_state["tb_picked_a"]
         if not picked: return ""
         sorted_kws = sorted(picked, key=lambda p: -(_tb_effective_score(p) or 0))
+        # Dedupe overlapping themes (e.g., "stress relief music" + "release stress" → keep one)
+        sorted_kws = _dedupe_overlapping(sorted_kws)
         inst = _resolve_instrument()
         dur = st.session_state.get("tb_duration", "(none)")
         dur = dur if dur != "(none)" else ""
-        parts = [k.title() for k in sorted_kws]  # ALL picked keywords, score-sorted
+        # Drop redundant instrument if it's already in the lead keyword (e.g., "veena music" + "Veena")
+        if inst and sorted_kws and inst.lower() in sorted_kws[0].lower():
+            inst = ""
+        parts = [k.title() for k in sorted_kws]
         if inst: parts.append(inst.title())
         if dur:  parts.append(dur)
-        return " | ".join(parts)
+        out = " | ".join(parts)
+        # Char cap: 70 chars. If over, drop lowest-priority keyword (last picked)
+        while len(out) > 70 and len(parts) > 2:
+            # Drop the last keyword (least important since they're score-sorted)
+            kw_count = len(sorted_kws)
+            if kw_count > 1:
+                sorted_kws = sorted_kws[:-1]
+                parts = [k.title() for k in sorted_kws]
+                if inst: parts.append(inst.title())
+                if dur:  parts.append(dur)
+                out = " | ".join(parts)
+            else:
+                break
+        return out
 
     def _build_variant_b():
         picked = st.session_state["tb_picked_b"]
         if not picked: return ""
         sorted_kws = sorted(picked, key=lambda p: -(_tb_effective_score(p) or 0))
+        # Apply same dedupe as Variant A
+        sorted_kws = _dedupe_overlapping(sorted_kws)
         lead = sorted_kws[0]
         rest = sorted_kws[1:]
         inst = _resolve_instrument()
@@ -3884,19 +3645,22 @@ with tab_title_builder:
         # ── Grammatical classification of the lead keyword ──
         ACTION_VERBS = ("calm", "release", "drift", "fall", "ease", "settle",
                         "soothe", "find", "stop", "let go", "wind down",
-                        "soothe", "still", "quiet")
+                        "still", "quiet", "boost", "lift", "feel", "get")
         PROBLEM_NOUNS = ("stress", "anxiety", "insomnia", "burnout", "overthinking",
                          "exhaustion", "tension", "fatigue", "depression", "loneliness",
                          "homesick", "nostalgia", "grief", "panic", "overwhelm")
+        POSITIVE_THEMES = ("feel good", "positive", "uplifting", "happy", "joyful",
+                           "bright", "cheerful", "energy", "mood")
 
-        # Strip suffixes for "clean" form (used in templates that need it)
+        # Strip common suffixes for cleaner template insertion
         clean = lead.replace(" music","").replace(" relief","").replace(" instrumental","").replace(" therapy","").strip()
 
         is_question_phrase = ll.startswith("can't") or ll.startswith("cant") or ll.startswith("how to") or ll.endswith("?")
         is_action = any(ll.startswith(v + " ") or ll == v for v in ACTION_VERBS)
         contains_problem = next((p for p in PROBLEM_NOUNS if p in ll), None)
+        contains_positive = next((p for p in POSITIVE_THEMES if p in ll), None)
 
-        # ── Build head per mode using grammar-aware templates ──
+        # ── Question mode ──
         if "Question" in mode:
             if is_question_phrase:
                 head = lead.title().rstrip("?") + "?"
@@ -3904,21 +3668,41 @@ with tab_title_builder:
                 head = f"Can't {lead.title()}?"
             elif contains_problem:
                 head = f"Struggling with {contains_problem.title()}?"
+            elif contains_positive:
+                # For feel-good/positive content, frame as energy/mood deficit
+                if "energy" in ll or "boost" in ll: head = "Drained?"
+                elif "mood" in ll: head = "Mood Down?"
+                elif "happy" in ll or "joyful" in ll: head = "Need Joy?"
+                elif "morning" in ll: head = "Tired Morning?"
+                else: head = "Need a Lift?"
             else:
-                # Last resort — phrase as a "Need X?" question if it's a noun-music phrase
                 if " music" in ll or " relief" in ll:
                     head = f"Need {clean.title()}?"
                 else:
                     head = f"{lead.title()}?"
+
+        # ── Outcome mode ── (map theme → action verb + theme noun)
         elif "Outcome" in mode:
-            # Map by problem hit, default to keyword as-is (no awkward "Find Night Music")
             outcome_map = {
                 "stress": "Release Stress", "anxiety": "Soothe Anxiety",
                 "insomnia": "Beat Insomnia", "burnout": "Heal Burnout",
                 "overthinking": "Quiet Overthinking", "tension": "Release Tension",
                 "exhaustion": "Restore Energy", "nostalgia": "Embrace Nostalgia",
-                "homesick": "Comfort Homesickness", "panic": "Calm Panic",
-                "overwhelm": "Settle Overwhelm",
+                "homesick": "Find Comfort", "panic": "Calm Panic",
+                "overwhelm": "Settle Overwhelm", "grief": "Heal Grief",
+                "loneliness": "Hold Yourself", "fatigue": "Restore Energy",
+                # Positive themes
+                "feel good": "Feel Good Now", "positive": "Lift Your Mood",
+                "uplifting": "Lift Your Mood", "happy": "Find Joy",
+                "joyful": "Find Joy", "energy": "Get Your Energy Back",
+                "mood": "Boost Your Mood", "bright": "Brighten Your Day",
+                "cheerful": "Find Joy",
+                # Calm / sleep / focus
+                "sleep": "Drift Into Sleep", "rest": "Find Rest",
+                "calm": "Find Calm", "focus": "Sharpen Focus",
+                "concentration": "Lock In", "brain fog": "Clear the Fog",
+                "healing": "Begin Healing", "comfort": "Find Comfort",
+                "morning": "Start Bright", "wake": "Wake Up Bright",
             }
             outcome_phrase = next((v for k, v in outcome_map.items() if k in ll), None)
             if outcome_phrase:
@@ -3926,25 +3710,39 @@ with tab_title_builder:
             elif is_action:
                 head = lead.title()
             else:
-                # Generic fallback — won't pretend to be an outcome
-                head = lead.title()
+                head = lead.title()  # safe fallback
+
+        # ── Theme mode ── just the keyword cleanly
         elif "theme" in mode.lower():
-            # Just the keyword cleanly
             head = lead.title()
+
+        # ── Competitor mode ── borrow winning patterns
         elif "Competitor" in mode:
-            # "Ancient X for Y" only works when Y is a problem; otherwise softer
             if inst and contains_problem:
                 head = f"Ancient {inst.title()} for {contains_problem.title()}"
+            elif inst and contains_positive:
+                head = f"Bright {inst.title()} for {clean.title()}"
             elif inst:
                 head = f"Ancient {inst.title()} · {lead.title()}"
+            elif contains_positive:
+                head = f"Bright {clean.title()}"
+            elif contains_problem:
+                head = f"Ancient Music for {contains_problem.title()}"
             else:
                 head = lead.title()
+
+        # ── Phrase mode ── natural prose ("X with Veena", "X through Sarangi")
         elif "phrase" in mode.lower():
-            # "[Lead] with [Instrument]" — natural for noun phrases
             if inst:
-                connector = "through" if any(k in ll for k in ("healing", "grief", "nostalgia")) else "with"
+                if contains_positive:
+                    connector = "with"  # bright/positive content
+                elif any(k in ll for k in ("healing", "grief", "nostalgia", "comfort")):
+                    connector = "through"
+                else:
+                    connector = "with"
                 head = f"{lead.title()} {connector} {inst.title()}"
             else:
+                # No instrument — fall back to clean keyword
                 head = lead.title()
         else:
             head = lead.title()
@@ -3955,10 +3753,23 @@ with tab_title_builder:
             parts.append(r.title())
         # Don't double-add instrument if mode already wove it into head
         if inst and "Question" not in mode and "Competitor" not in mode and "phrase" not in mode.lower():
-            parts.append(inst.title())
+            # Also skip if instrument is already in lead
+            if inst.lower() not in lead.lower():
+                parts.append(inst.title())
         if raga: parts.append(raga.title())
         if dur:  parts.append(dur)
-        return " | ".join(parts)
+        out = " | ".join(parts)
+        # Char cap: 70 chars (your A/B test rule). Drop secondary keywords if over.
+        while len(out) > 70 and len(rest) > 0:
+            rest = rest[:-1]
+            parts = [head] + [r.title() for r in rest]
+            if inst and "Question" not in mode and "Competitor" not in mode and "phrase" not in mode.lower():
+                if inst.lower() not in lead.lower():
+                    parts.append(inst.title())
+            if raga: parts.append(raga.title())
+            if dur:  parts.append(dur)
+            out = " | ".join(parts)
+        return out
 
     _va_default = _build_variant_a()
     _vb_default = _build_variant_b()
@@ -4170,7 +3981,7 @@ with tab_title_builder:
         def _sort_priority(item):
             kw, _ = item
             kl = kw.strip().lower()
-            stat, _dl = _tb_cooldown(kl)
+            stat, _dl, _ = _tb_cooldown(kl)
             sc = _tb_effective_score(kl)
             if stat == "available" and sc is not None:
                 return (0, -sc)
@@ -4199,7 +4010,7 @@ with tab_title_builder:
         # ─── KEYWORD ROWS — inline score for unscored, single line for scored ───
         for _idx, (_kw, _cn) in enumerate(_kw_list):
             _kl = _kw.strip().lower()
-            _stat, _dl = _tb_cooldown(_kl)
+            _stat, _dl, _why = _tb_cooldown(_kl)
             _sc = _tb_effective_score(_kl)
             _in_a = _tb_in_a(_kl)
             _in_b = _tb_in_b(_kl)
@@ -4221,13 +4032,19 @@ with tab_title_builder:
 
             _label = f"{_kw}  {_badge}{_ab}"
             _btn_type = "primary" if (_in_a or _in_b) else "secondary"
+            # Tooltip: show why on cooldown (which past video triggered it)
+            _help_text = (
+                f"⏸ On cooldown because of: {_why}" if _stat == "cooldown" and _why else
+                "❌ Invalidated keyword (audience-fit failure or low score)" if _stat == "invalidated" else
+                None
+            )
 
             if _is_unscored:
                 # Inline score row: [name btn 4] [score 1] [▶ YT 0.7] [💾 0.6] [✕ 0.6]
                 _c1, _c2, _c3, _c4, _c5 = st.columns([4, 1.1, 0.7, 0.6, 0.6])
                 with _c1:
                     if st.button(_label, key=f"tb_kw_{_cluster_choice}_{_key_safe}",
-                                 type=_btn_type, use_container_width=True):
+                                 type=_btn_type, use_container_width=True, help=_help_text):
                         active = st.session_state["tb_active_variant"]
                         if active == "A":
                             if _in_a: _tb_unselect_keyword(_kl, "A")
@@ -4281,7 +4098,7 @@ with tab_title_builder:
                 _r1, _r2 = st.columns([7, 1])
                 with _r1:
                     if st.button(_label, key=f"tb_kw_{_cluster_choice}_{_key_safe}",
-                                 type=_btn_type, use_container_width=True, disabled=_disabled):
+                                 type=_btn_type, use_container_width=True, disabled=_disabled, help=_help_text):
                         active = st.session_state["tb_active_variant"]
                         if active == "A":
                             if _in_a: _tb_unselect_keyword(_kl, "A")
@@ -4403,27 +4220,59 @@ with tab_title_builder:
 
         # ── Export scores so they can be merged back to the canonical bank ──
         st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
+
+        # Track previously-exported phrases so they don't keep showing up
+        _tb_exported_path = DASHBOARD_DIR / "data" / "title_builder_exported.txt"
+        _exported_set = set()
+        if _tb_exported_path.exists():
+            try:
+                _exported_set = set(_tb_exported_path.read_text().splitlines())
+            except Exception:
+                _exported_set = set()
+
         _all_scores = dict(st.session_state.get("tb_inline_scores", {}))
         # Also include scores already in keyword_bank.csv that came from title-builder source
         for _kw, _row in _tb_bank.items():
             if "title-builder" in _row.get("source","") and _row.get("vidiq_score","").strip().isdigit():
                 _all_scores.setdefault(_kw, int(_row["vidiq_score"]))
 
+        # Filter out already-exported
+        _all_scores = {k: v for k, v in _all_scores.items() if k not in _exported_set}
+
         if _all_scores:
             with st.expander(f"📤 Export {len(_all_scores)} scored keywords"):
-                st.caption("Copy this and paste in chat — I'll merge into keyword_bank.csv and commit to git.")
+                st.caption("Copy this and paste in chat — I'll merge into keyword_bank.csv and commit to git. Then click 'Clear' to remove from this list.")
                 _export_text = "\n".join(f"{k}: {v}" for k, v in sorted(_all_scores.items(), key=lambda x: -x[1]))
                 st.code(_export_text, language="text")
                 _csv_text = "phrase,vidiq_score,source\n" + "\n".join(
                     f'"{k}",{v},title-builder' for k, v in sorted(_all_scores.items())
                 )
-                st.download_button(
-                    "📥 Download as CSV",
-                    data=_csv_text,
-                    file_name=f"title_builder_scores_{_tb_date.today().isoformat()}.csv",
-                    mime="text/csv",
-                    use_container_width=True,
-                )
+                _ex1, _ex2 = st.columns(2)
+                with _ex1:
+                    st.download_button(
+                        "📥 Download as CSV",
+                        data=_csv_text,
+                        file_name=f"title_builder_scores_{_tb_date.today().isoformat()}.csv",
+                        mime="text/csv",
+                        use_container_width=True,
+                    )
+                with _ex2:
+                    if st.button(f"✓ Clear {len(_all_scores)} (mark as exported)",
+                                 key="tb_clear_exported", use_container_width=True,
+                                 help="Removes these from the export list. Bank entries are preserved."):
+                        # Append all currently-shown phrases to exclusion file
+                        new_exclusions = sorted(_exported_set | set(_all_scores.keys()))
+                        try:
+                            _tb_exported_path.write_text("\n".join(new_exclusions))
+                            # Also clear matching entries from session inline_scores + scores JSON
+                            for _k in list(_all_scores.keys()):
+                                if _k in st.session_state["tb_inline_scores"]:
+                                    del st.session_state["tb_inline_scores"][_k]
+                            _save_scores()
+                            st.success(f"✓ Cleared {len(_all_scores)} from export list")
+                            st.rerun()
+                        except Exception as _ce:
+                            st.error(f"Clear failed: {_ce}")
 
     # ═════════════════════════════════════════════════════════
     # SECTION 3 — Thumbnail text suggestions (bottom)
