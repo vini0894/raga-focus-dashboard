@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Title Builder · v5 simplified</title>
+<style>
+:root {
+  --bg: #0e1014;
+  --surface: #1a1d24;
+  --border: #2a2e36;
+  --text: #e5e7eb;
+  --text-dim: #9ca3af;
+  --text-faint: #6b7280;
+  --accent: #d4a574;
+  --green: #4ade80;
+  --yellow: #facc15;
+  --red: #f87171;
+  --blue: #93c5fd;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 24px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+h1 { font-size: 22px; font-weight: 600; margin-bottom: 16px; }
+h3 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+
+/* ─── Live preview ─── */
+.preview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 24px;
+}
+.var-label { font-size: 12px; color: var(--text-dim); margin-bottom: 6px; font-weight: 500; }
+.var-input {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text);
+  font-size: 16px;
+  padding: 10px 12px;
+  font-family: inherit;
+  outline: none;
+}
+.var-input:focus { border-color: var(--accent); }
+.char-count { font-size: 11px; color: var(--text-faint); margin-top: 4px; }
+
+.b-modes { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+.mode-btn {
+  font-size: 12px;
+  padding: 4px 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-dim);
+  cursor: pointer;
+}
+.mode-btn:hover { color: var(--text); }
+.mode-btn.active { background: var(--accent); color: #000; border-color: var(--accent); font-weight: 500; }
+
+/* ─── Layout ─── */
+.layout {
+  display: grid;
+  grid-template-columns: 240px 1fr 280px;
+  gap: 24px;
+  align-items: start;
+}
+
+/* ─── Competitor word cloud ─── */
+.cloud { display: flex; flex-wrap: wrap; gap: 5px; line-height: 1.6; }
+.cloud-word {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 3px 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-size: 12px;
+  color: var(--text);
+  cursor: pointer;
+}
+.cloud-word:hover { border-color: var(--accent); color: var(--accent); }
+.cloud-word.banked { color: var(--green); border-color: rgba(74,222,128,0.25); }
+.cloud-meta { font-size: 9px; color: var(--text-faint); }
+
+/* ─── Keywords ─── */
+.search-row { display: flex; gap: 6px; margin-bottom: 12px; }
+.search-row input {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 6px 10px;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 13px;
+  outline: none;
+}
+.search-row input.kw-input { flex: 1; }
+.search-row input.score-input { width: 60px; }
+.add-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 6px 12px;
+  color: var(--text);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.cluster-pills { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 12px; }
+.cluster-pill {
+  font-size: 12px;
+  padding: 3px 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-dim);
+  cursor: pointer;
+}
+.cluster-pill:hover { color: var(--text); }
+.cluster-pill.active { background: var(--accent); color: #000; border-color: var(--accent); font-weight: 500; }
+.cluster-pill .count { font-size: 10px; opacity: 0.7; margin-left: 3px; }
+
+.banner {
+  font-size: 12px;
+  color: var(--text-dim);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 6px 10px;
+  margin-bottom: 8px;
+}
+.counter { font-size: 11px; color: var(--text-faint); margin-bottom: 8px; }
+.counter .ready { color: var(--green); }
+.counter .unscored { color: var(--yellow); }
+
+/* Keyword rows */
+.kw-list { display: flex; flex-direction: column; gap: 3px; }
+.kw-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.kw-row:hover { border-color: var(--text-faint); }
+.kw-row.selected-a { border-color: var(--blue); background: rgba(147,197,253,0.08); }
+.kw-row.selected-b { border-color: var(--accent); background: rgba(212,165,116,0.08); }
+.kw-row.cooldown { opacity: 0.5; cursor: not-allowed; text-decoration: line-through; }
+.kw-row.invalid { opacity: 0.4; cursor: not-allowed; text-decoration: line-through; }
+
+.kw-name { flex: 1; }
+.kw-badge { font-size: 11px; font-weight: 500; padding: 1px 6px; border-radius: 3px; min-width: 32px; text-align: center; }
+.kw-badge.high { color: var(--green); background: rgba(74,222,128,0.1); }
+.kw-badge.med { color: var(--yellow); background: rgba(250,204,21,0.1); }
+.kw-badge.low { color: var(--red); background: rgba(248,113,113,0.1); }
+.kw-badge.unscored { color: var(--text-faint); background: transparent; border: 1px dashed var(--border); }
+.kw-tag { font-size: 10px; color: var(--text-faint); margin-left: 4px; font-weight: 600; }
+.kw-tag.a { color: var(--blue); }
+.kw-tag.b { color: var(--accent); }
+
+.kw-actions { display: flex; gap: 4px; align-items: center; }
+.kw-actions input {
+  width: 40px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 11px;
+  padding: 2px 4px;
+  border-radius: 3px;
+  outline: none;
+  font-family: inherit;
+}
+.kw-actions a { font-size: 11px; color: var(--blue); text-decoration: none; padding: 0 4px; }
+.kw-actions button {
+  font-size: 11px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 2px 6px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.kw-actions button:hover { color: var(--text); border-color: var(--text-faint); }
+.kw-actions button.save-btn { color: var(--green); border-color: rgba(74,222,128,0.3); }
+
+/* ─── Build panel ─── */
+.build {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.ab-toggle { display: flex; gap: 4px; }
+.ab-tab {
+  flex: 1;
+  padding: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-dim);
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+.ab-tab .role { font-size: 10px; color: var(--text-faint); margin-left: 4px; }
+.ab-tab .count { font-size: 11px; opacity: 0.7; margin-left: 6px; }
+.ab-tab.active.tab-a { background: rgba(147,197,253,0.15); border-color: var(--blue); color: var(--blue); }
+.ab-tab.active.tab-b { background: rgba(212,165,116,0.15); border-color: var(--accent); color: var(--accent); }
+
+.config-block { display: flex; flex-direction: column; gap: 8px; }
+.config-block label { font-size: 12px; color: var(--text-dim); }
+.config-block select, .config-block input {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 6px 10px;
+  color: var(--text);
+  font-size: 13px;
+  font-family: inherit;
+  outline: none;
+}
+
+.selected-section { border-top: 1px solid var(--border); padding-top: 12px; }
+.selected-section h4 {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+}
+.selected-section.a h4 { color: var(--blue); }
+.selected-section.b h4 { color: var(--accent); }
+.selected-pills { display: flex; flex-wrap: wrap; gap: 4px; }
+.pill {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.pill.a { background: rgba(147,197,253,0.1); color: var(--blue); border-color: rgba(147,197,253,0.3); }
+.pill.b { background: rgba(212,165,116,0.1); color: var(--accent); border-color: rgba(212,165,116,0.3); }
+.pill .x { cursor: pointer; opacity: 0.6; }
+
+.help { font-size: 11px; color: var(--text-faint); line-height: 1.5; }
+
+.btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 6px 12px;
+  color: var(--text);
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+}
+.btn:hover { border-color: var(--text-faint); }
+</style>
+</head>
+<body>
+
+<h1>Title Builder</h1>
+
+<!-- Live preview -->
+<div class="preview">
+  <div>
+    <div class="var-label">Variant A · safe</div>
+    <input class="var-input" value="Stress Relief Music | Veena | 1 Hour" />
+    <div class="char-count">38 chars · auto-built from selected keywords</div>
+  </div>
+  <div>
+    <div class="var-label">Variant B · experiment</div>
+    <input class="var-input" value="Beat Insomnia | Night Music | Veena" />
+    <div class="char-count">35 chars · Outcome mode</div>
+    <div class="b-modes">
+      <span class="mode-btn">Question</span>
+      <span class="mode-btn active">Outcome</span>
+      <span class="mode-btn">Theme</span>
+      <span class="mode-btn">Competitor</span>
+      <span class="mode-btn">Phrase</span>
+    </div>
+  </div>
+</div>
+
+<!-- Layout -->
+<div class="layout">
+
+  <!-- Left: competitor cloud + titles -->
+  <div>
+    <h3>Competitors · last 7d</h3>
+    <div class="cloud">
+      <span class="cloud-word banked" style="font-size:14px">Sleep Music<span class="cloud-meta">6·28K</span></span>
+      <span class="cloud-word" style="font-size:14px">Raga Todi<span class="cloud-meta">4·34K</span></span>
+      <span class="cloud-word">Sitar<span class="cloud-meta">8·19K</span></span>
+      <span class="cloud-word banked">Healing<span class="cloud-meta">5·22K</span></span>
+      <span class="cloud-word">Mental Health<span class="cloud-meta">3·15K</span></span>
+      <span class="cloud-word">Night Anxiety<span class="cloud-meta">2·12K</span></span>
+      <span class="cloud-word">Ancient<span class="cloud-meta">3·11K</span></span>
+      <span class="cloud-word banked">Detox<span class="cloud-meta">2·8K</span></span>
+      <span class="cloud-word">Sarangi<span class="cloud-meta">2·7K</span></span>
+      <span class="cloud-word">Bhairavi<span class="cloud-meta">2·6K</span></span>
+      <span class="cloud-word">Deep Sleep<span class="cloud-meta">1·5K</span></span>
+      <span class="cloud-word">Lullaby<span class="cloud-meta">1·5K</span></span>
+      <span class="cloud-word">Stillness<span class="cloud-meta">1·4K</span></span>
+      <span class="cloud-word banked">Comfort<span class="cloud-meta">1·4K</span></span>
+    </div>
+
+    <h3 style="margin-top:20px;font-size:13px;color:var(--text-dim);font-weight:500">Recent titles</h3>
+    <div style="display:flex;flex-direction:column;gap:6px;font-size:12px;line-height:1.4">
+      <div style="padding:8px;background:var(--surface);border:1px solid var(--border);border-radius:4px">
+        <div style="font-size:10px;color:var(--text-faint);margin-bottom:3px">Raga Heal · 12,400 views · 2d</div>
+        <div>Ancient Raga Todi for Night Anxiety — 1 Hour Sleep Music</div>
+      </div>
+      <div style="padding:8px;background:var(--surface);border:1px solid var(--border);border-radius:4px">
+        <div style="font-size:10px;color:var(--text-faint);margin-bottom:3px">Shanti · 8,900 views · 3d</div>
+        <div>Sitar for Mental Health — Healing Music 1 Hour</div>
+      </div>
+      <div style="padding:8px;background:var(--surface);border:1px solid var(--border);border-radius:4px">
+        <div style="font-size:10px;color:var(--text-faint);margin-bottom:3px">Raga Heal · 5,200 views · 4d</div>
+        <div>Screen Time Sickness — Detox Your Mind with Ancient Sound</div>
+      </div>
+      <div style="padding:8px;background:var(--surface);border:1px solid var(--border);border-radius:4px">
+        <div style="font-size:10px;color:var(--text-faint);margin-bottom:3px">Shanti · 3,100 views · 5d</div>
+        <div>Sarangi for Deep Sleep · Lullaby for Insomnia</div>
+      </div>
+      <div style="padding:8px;background:var(--surface);border:1px solid var(--border);border-radius:4px">
+        <div style="font-size:10px;color:var(--text-faint);margin-bottom:3px">Raga Heal · 2,400 views · 6d</div>
+        <div>Stillness Through Bhairavi — Morning Meditation</div>
+      </div>
+      <div style="font-size:11px;color:var(--text-faint);text-align:center;padding:4px">
+        + 10 more
+      </div>
+    </div>
+  </div>
+
+  <!-- Middle: keywords -->
+  <div>
+    <h3>Keywords</h3>
+
+    <div class="search-row">
+      <input class="kw-input" placeholder="Add any keyword + score…" />
+      <input class="score-input" placeholder="0" />
+      <button class="add-btn">Add</button>
+    </div>
+
+    <div class="cluster-pills">
+      <span class="cluster-pill active">All<span class="count">240</span></span>
+      <span class="cluster-pill">Calm<span class="count">28</span></span>
+      <span class="cluster-pill">Stress<span class="count">24</span></span>
+      <span class="cluster-pill">Sleep<span class="count">22</span></span>
+      <span class="cluster-pill">Anxiety<span class="count">29</span></span>
+      <span class="cluster-pill">Healing<span class="count">26</span></span>
+      <span class="cluster-pill">Nostalgia<span class="count">25</span></span>
+      <span class="cluster-pill">Focus<span class="count">28</span></span>
+      <span class="cluster-pill">Grounding<span class="count">28</span></span>
+      <span class="cluster-pill">Hidden<span class="count">12</span></span>
+    </div>
+
+    <div class="banner">Click any keyword below to add to <b style="color:var(--blue)">Variant A</b></div>
+    <div class="counter">238 total · <span class="ready">28 ready</span> · <span class="unscored">205 unscored</span></div>
+
+    <div class="kw-list">
+      <div class="kw-row selected-a">
+        <span class="kw-name">stress relief music</span>
+        <span class="kw-badge high">77</span>
+        <span class="kw-tag a">A</span>
+        <div class="kw-actions"><button>×</button></div>
+      </div>
+      <div class="kw-row">
+        <span class="kw-name">study music</span>
+        <span class="kw-badge high">82</span>
+        <div class="kw-actions"><button>×</button></div>
+      </div>
+      <div class="kw-row">
+        <span class="kw-name">concentration music</span>
+        <span class="kw-badge high">76</span>
+        <div class="kw-actions"><button>×</button></div>
+      </div>
+      <div class="kw-row selected-b">
+        <span class="kw-name">night music</span>
+        <span class="kw-badge high">71</span>
+        <span class="kw-tag b">B</span>
+        <div class="kw-actions"><button>×</button></div>
+      </div>
+      <div class="kw-row">
+        <span class="kw-name">peaceful music</span>
+        <span class="kw-badge high">72</span>
+        <div class="kw-actions"><button>×</button></div>
+      </div>
+      <!-- Unscored row with inline score -->
+      <div class="kw-row">
+        <span class="kw-name">tranquil music</span>
+        <span class="kw-badge unscored">?</span>
+        <div class="kw-actions">
+          <input type="number" placeholder="0" />
+          <a href="#">YT</a>
+          <button class="save-btn">save</button>
+          <button>×</button>
+        </div>
+      </div>
+      <div class="kw-row">
+        <span class="kw-name">serene music</span>
+        <span class="kw-badge unscored">?</span>
+        <div class="kw-actions">
+          <input type="number" placeholder="0" />
+          <a href="#">YT</a>
+          <button>×</button>
+        </div>
+      </div>
+      <div class="kw-row cooldown">
+        <span class="kw-name">calm your mind</span>
+        <span class="kw-badge med">68</span>
+        <div class="kw-actions"><button>×</button></div>
+      </div>
+      <div class="kw-row invalid">
+        <span class="kw-name">quiet your mind</span>
+        <span class="kw-badge low">—</span>
+        <div class="kw-actions"><button>×</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right: build -->
+  <div class="build">
+    <div class="ab-toggle">
+      <div class="ab-tab tab-a active">A<span class="role">safe</span><span class="count">2</span></div>
+      <div class="ab-tab tab-b">B<span class="role">experiment</span><span class="count">1</span></div>
+    </div>
+
+    <div class="help" style="text-align:center">keyword clicks → Variant A</div>
+
+    <div class="config-block">
+      <h3>Configuration</h3>
+      <label>Instrument</label>
+      <select><option>Veena</option></select>
+      <label>Or custom</label>
+      <input placeholder="overrides dropdown" />
+      <label>Raga</label>
+      <select><option>Yaman</option></select>
+      <label>Duration</label>
+      <select><option>(none)</option></select>
+    </div>
+
+    <div class="selected-section a">
+      <h4>Variant A · 2 keywords</h4>
+      <div class="selected-pills">
+        <span class="pill a">stress relief music · 77 <span class="x">×</span></span>
+        <span class="pill a">unwind after work · 64 <span class="x">×</span></span>
+      </div>
+    </div>
+
+    <div class="selected-section b">
+      <h4>Variant B · 1 keyword</h4>
+      <div class="selected-pills">
+        <span class="pill b">night music · 71 <span class="x">×</span></span>
+      </div>
+    </div>
+
+    <button class="btn">Clear all selections</button>
+    <button class="btn">Export scored keywords</button>
+  </div>
+</div>
+
+</body>
+</html>

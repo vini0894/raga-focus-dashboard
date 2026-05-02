@@ -3632,51 +3632,28 @@ with tab_title_builder:
     from datetime import date as _tb_date
 
     # ─────────────────────────────────────────────────────────
-    # CSS: chips, cloud, toggle, dense rows
+    # CSS — minimal density tweaks only
     # ─────────────────────────────────────────────────────────
     st.markdown("""<style>
-    /* Reset Streamlit button defaults inside title builder */
     .tb-scope .stButton > button {
-        font-family: 'Geist', system-ui, sans-serif !important;
-        border-radius: 6px !important;
+        font-size: 13px !important;
         padding: 4px 10px !important;
-        font-size: 12px !important;
-        font-weight: 400 !important;
-        min-height: 28px !important;
+        min-height: 30px !important;
         height: auto !important;
         line-height: 1.3 !important;
         white-space: nowrap !important;
-        transition: all 0.12s !important;
+        font-weight: 400 !important;
     }
-    .tb-scope .stButton > button:hover { transform: translateY(-1px); }
-
-    /* Variant title input — big, serif feel */
-    .tb-scope .variant-input input {
-        font-size: 17px !important;
-        font-weight: 500 !important;
-        letter-spacing: -0.01em !important;
-        background: transparent !important;
-        border: none !important;
-        border-bottom: 1px dashed rgba(255,255,255,0.1) !important;
-        border-radius: 0 !important;
+    .tb-scope div[data-testid="stHorizontalBlock"] {
+        gap: 0.4rem !important;
+        align-items: center !important;
     }
-    .tb-scope .variant-input input:focus {
-        border-bottom-color: rgba(212, 165, 116, 0.6) !important;
-        color: #d4a574 !important;
-    }
-    .tb-scope div[data-testid="stHorizontalBlock"] { gap: 0.3rem !important; align-items: center !important; }
     .tb-scope div[data-testid="column"] { padding: 0 3px !important; }
     .tb-scope p { margin: 0 !important; line-height: 1.4 !important; }
-
-    /* Compact tabs */
-    [data-testid="stTabs"] button[role="tab"] {
-        font-size: 0.78rem !important;
-        padding: 0.3rem 0.7rem !important;
-    }
     </style>""", unsafe_allow_html=True)
 
     st.markdown('<div class="tb-scope">', unsafe_allow_html=True)
-    st.markdown("## 🔤 Title Builder")
+    st.markdown("## Title Builder")
 
     # ─────────────────────────────────────────────────────────
     # DATA LOADING
@@ -3769,7 +3746,7 @@ with tab_title_builder:
         ("tb_picked_a", []),
         ("tb_picked_b", []),
         ("tb_active_variant", "A"),
-        ("tb_b_mode", "🎯 Question"),
+        ("tb_b_mode", "Question"),
         ("tb_active_cluster", "All"),
     ]:
         if _k not in st.session_state:
@@ -3835,7 +3812,7 @@ with tab_title_builder:
         if score is None:
             return '<span style="color:#8a8a92;font-size:0.7rem">⚠️</span>'
         color = "#4ade80" if score >= 70 else "#facc15" if score >= 60 else "#f87171"
-        return f'<span style="color:{color};font-size:0.72rem;font-weight:600;font-family:Geist Mono,monospace">{score}</span>'
+        return f'<span style="color:{color};font-size:0.78rem;font-weight:600">{score}</span>'
 
     # Competitor word extraction
     _STOP = {"music","1","hour","min","mins","minutes","hr","hrs","for","and","the","a","an","with",
@@ -3900,7 +3877,7 @@ with tab_title_builder:
         raga = raga if raga != "(none)" else ""
         dur = st.session_state.get("tb_duration", "(none)")
         dur = dur if dur != "(none)" else ""
-        mode = st.session_state.get("tb_b_mode", "🎯 Question")
+        mode = st.session_state.get("tb_b_mode", "Question")
 
         ll = lead.lower().strip()
 
@@ -3989,51 +3966,40 @@ with tab_title_builder:
     with st.container(border=True):
         _pa, _pb = st.columns(2, gap="medium")
         with _pa:
-            st.markdown(
-                f'<div style="font-family:Geist Mono,monospace;font-size:0.7rem;letter-spacing:0.06em;'
-                f'color:#93c5fd;text-transform:uppercase;margin-bottom:4px">🛡 Variant A · safe</div>',
-                unsafe_allow_html=True
-            )
+            st.markdown('**Variant A** · safe')
             _ea_key = "tb_va_input"
             if _ea_key not in st.session_state or st.session_state.get("_tb_last_a") != _va_default:
                 st.session_state[_ea_key] = _va_default
                 st.session_state["_tb_last_a"] = _va_default
-            st.markdown('<div class="variant-input">', unsafe_allow_html=True)
             _ea = st.text_input("A", key=_ea_key, label_visibility="collapsed",
                                 placeholder="Pick keywords for A →")
-            st.markdown('</div>', unsafe_allow_html=True)
             _la = len(_ea)
             _color = "#4ade80" if _la <= 70 else "#facc15"
             st.markdown(
-                f'<div style="font-size:0.7rem;color:#8a8a92;margin-top:4px">'
-                f'<span style="color:{_color}">{_la} chars</span> · SEO-led · ✎ click to edit any part</div>',
+                f'<div style="font-size:11px;color:#9ca3af;margin-top:2px">'
+                f'<span style="color:{_color}">{_la} chars</span> · auto-built from selected keywords</div>',
                 unsafe_allow_html=True
             )
 
         with _pb:
-            st.markdown(
-                f'<div style="font-family:Geist Mono,monospace;font-size:0.7rem;letter-spacing:0.06em;'
-                f'color:#d4a574;text-transform:uppercase;margin-bottom:4px">🧪 Variant B · experiment</div>',
-                unsafe_allow_html=True
-            )
+            st.markdown('**Variant B** · experiment')
             _eb_key = "tb_vb_input"
             if _eb_key not in st.session_state or st.session_state.get("_tb_last_b") != _vb_default:
                 st.session_state[_eb_key] = _vb_default
                 st.session_state["_tb_last_b"] = _vb_default
-            st.markdown('<div class="variant-input">', unsafe_allow_html=True)
             _eb = st.text_input("B", key=_eb_key, label_visibility="collapsed",
                                 placeholder="Pick keywords for B →")
-            st.markdown('</div>', unsafe_allow_html=True)
             _lb = len(_eb)
             _color = "#4ade80" if _lb <= 70 else "#facc15"
+            _mode_label = st.session_state["tb_b_mode"].split()[-1] if " " in st.session_state["tb_b_mode"] else st.session_state["tb_b_mode"]
             st.markdown(
-                f'<div style="font-size:0.7rem;color:#8a8a92;margin-top:4px">'
-                f'<span style="color:{_color}">{_lb} chars</span> · {st.session_state["tb_b_mode"]} · ✎ click to edit</div>',
+                f'<div style="font-size:11px;color:#9ca3af;margin-top:2px">'
+                f'<span style="color:{_color}">{_lb} chars</span> · {_mode_label} mode</div>',
                 unsafe_allow_html=True
             )
 
-            # B mode pills — 2 rows, shorter labels for fit
-            _modes = ["🎯 Question", "💚 Outcome", "🌀 Theme", "🎨 Competitor", "🎵 Phrase"]
+            # B mode pills — plain labels, no emoji
+            _modes = ["Question", "Outcome", "Theme", "Competitor", "Phrase"]
             _row1 = st.columns(3)
             _row2 = st.columns(3)
             for _mc, _mode in zip(_row1 + _row2[:2], _modes):
@@ -4056,12 +4022,8 @@ with tab_title_builder:
     # LEFT: Competitor word cloud
     # ──────────────────────────────────────────────
     with _col_left:
-        st.markdown(
-            '<div style="font-family:Geist Mono,monospace;font-size:0.7rem;letter-spacing:0.06em;'
-            'color:#5a5a62;text-transform:uppercase;margin-bottom:4px">📡 Trending in competitors</div>'
-            '<div style="font-size:0.7rem;color:#8a8a92;margin-bottom:10px">Last 7d · ranked by views</div>',
-            unsafe_allow_html=True
-        )
+        st.markdown("**Competitors** · last 7d")
+        st.caption("Trending phrases ranked by total views.")
 
         try:
             _comp_data = _tb_cached_competitors(days=7)
@@ -4080,24 +4042,21 @@ with tab_title_builder:
 
                 _cloud_html = '<div style="line-height:1.9">'
                 for _phrase, _views, _count in _trends:
-                    # Size based on view share
                     _ratio = (_views - _min_v) / max(_max_v - _min_v, 1)
-                    _size = 11 + _ratio * 6  # 11px to 17px
-                    _weight = 400 + int(_ratio * 200)
+                    _size = 11 + _ratio * 4  # 11px to 15px
                     _is_banked = _phrase in _bank_set
-                    _color = "#4ade80" if _is_banked else "#ededee"
-                    _border = "rgba(74,222,128,0.25)" if _is_banked else "#26262d"
+                    _color = "#4ade80" if _is_banked else "#e5e7eb"
+                    _border = "rgba(74,222,128,0.25)" if _is_banked else "#2a2e36"
                     _cloud_html += (
-                        f'<span style="display:inline-block;background:#131316;border:1px solid {_border};'
-                        f'border-radius:6px;padding:3px 8px;margin:2px;font-size:{_size}px;'
-                        f'font-weight:{_weight};color:{_color}">'
-                        f'{_phrase}<span style="font-family:Geist Mono,monospace;font-size:9px;'
-                        f'color:#5a5a62;margin-left:4px">{_count}·{_views//1000}K</span></span>'
+                        f'<span style="display:inline-block;background:#1a1d24;border:1px solid {_border};'
+                        f'border-radius:3px;padding:2px 7px;margin:2px;font-size:{_size}px;color:{_color}">'
+                        f'{_phrase}<span style="font-size:9px;color:#6b7280;margin-left:4px">'
+                        f'{_count}·{_views//1000}K</span></span>'
                     )
                 _cloud_html += '</div>'
                 st.markdown(_cloud_html, unsafe_allow_html=True)
 
-                # Selectable copy box
+                # Add a trending word to active variant
                 st.markdown("<div style='height:6px'></div>", unsafe_allow_html=True)
                 _trend_names = [t[0] for t in _trends]
                 _picked_trend = st.selectbox(
@@ -4107,24 +4066,28 @@ with tab_title_builder:
                     label_visibility="collapsed",
                 )
                 if _picked_trend and _picked_trend != "(pick to add to selected variant)":
-                    if st.button(f"➕ Add `{_picked_trend}` to {st.session_state['tb_active_variant']}",
+                    if st.button(f"Add '{_picked_trend}' to {st.session_state['tb_active_variant']}",
                                  key="tb_add_trend", use_container_width=True):
                         _tb_select_keyword(_picked_trend)
                         st.session_state["tb_trend_pick"] = "(pick to add to selected variant)"
                         st.rerun()
 
-                # Source titles collapsible
-                with st.expander(f"📺 Source titles ({len(_all_uploads)})"):
-                    for _u in sorted(_all_uploads, key=lambda x: -x.get("views",0))[:10]:
-                        st.markdown(
-                            f'<div style="background:#131316;border:1px solid #26262d;border-radius:6px;'
-                            f'padding:8px;margin-bottom:6px">'
-                            f'<div style="font-size:10px;color:#d4a574">{_u["channel"]} · '
-                            f'{_u.get("views",0):,} · {_u.get("days_ago","?")}d</div>'
-                            f'<div style="font-size:11px;color:#ededee;margin-top:3px">{_u.get("title","")}</div>'
-                            f'</div>',
-                            unsafe_allow_html=True
-                        )
+                # Recent titles — always visible, compact cards
+                st.markdown("<div style='height:14px'></div>", unsafe_allow_html=True)
+                st.markdown("**Recent titles**")
+                _sorted_uploads = sorted(_all_uploads, key=lambda x: -x.get("views",0))
+                for _u in _sorted_uploads[:5]:
+                    st.markdown(
+                        f'<div style="background:#1a1d24;border:1px solid #2a2e36;border-radius:4px;'
+                        f'padding:6px 8px;margin-bottom:4px">'
+                        f'<div style="font-size:10px;color:#9ca3af;margin-bottom:2px">'
+                        f'{_u["channel"]} · {_u.get("views",0):,} · {_u.get("days_ago","?")}d</div>'
+                        f'<div style="font-size:12px;color:#e5e7eb;line-height:1.35">{_u.get("title","")}</div>'
+                        f'</div>',
+                        unsafe_allow_html=True
+                    )
+                if len(_sorted_uploads) > 5:
+                    st.caption(f"+ {len(_sorted_uploads) - 5} more")
             else:
                 st.info("No competitor data available.")
         except Exception as _ce:
@@ -4134,11 +4097,7 @@ with tab_title_builder:
     # MIDDLE: Keywords — dense single-line rows
     # ──────────────────────────────────────────────
     with _col_mid:
-        st.markdown(
-            '<div style="font-family:Geist Mono,monospace;font-size:0.7rem;letter-spacing:0.06em;'
-            'color:#5a5a62;text-transform:uppercase;margin-bottom:8px">🗂 Keywords</div>',
-            unsafe_allow_html=True
-        )
+        st.markdown("**Keywords**")
 
         # Free-text add
         _ft1, _ft2, _ft3 = st.columns([4, 1, 1])
@@ -4228,25 +4187,13 @@ with tab_title_builder:
                          if _tb_effective_score(kw.strip().lower()) is not None
                          and _tb_cooldown(kw.strip().lower())[0] == "available"]
 
-        # Instruction banner — make selection mechanic obvious
+        # Selection hint
         _active = st.session_state["tb_active_variant"]
-        _active_color = "#93c5fd" if _active == "A" else "#d4a574"
-        _active_label = "🛡 A · safe" if _active == "A" else "🧪 B · experiment"
-        st.markdown(
-            f'<div style="background:rgba({"30,58,95" if _active=="A" else "212,165,116"},0.12);'
-            f'border:1px solid {_active_color}40;border-radius:6px;padding:8px 12px;margin:8px 0;'
-            f'font-size:12px;color:#ededee">'
-            f'👆 <b>Click any keyword below</b> to add it to <span style="color:{_active_color};font-weight:600">{_active_label}</span>. '
-            f'Switch variant in the right panel.'
-            f'</div>',
-            unsafe_allow_html=True
-        )
+        _active_label = "Variant A" if _active == "A" else "Variant B"
+        st.caption(f"Click any keyword to add it to **{_active_label}**. Switch variants in the right panel.")
 
-        st.markdown(
-            f"<div style='font-size:0.7rem;color:#8a8a92;margin:4px 0'>"
-            f"{len(_kw_list)} total · <span style='color:#4ade80'>{len(_scored_avail)} ready</span> · "
-            f"<span style='color:#facc15'>{len(_unscored)} unscored</span></div>",
-            unsafe_allow_html=True
+        st.caption(
+            f"{len(_kw_list)} total · :green[{len(_scored_avail)} ready] · :orange[{len(_unscored)} unscored]"
         )
 
         # ─── KEYWORD ROWS — inline score for unscored, single line for scored ───
@@ -4369,33 +4316,22 @@ with tab_title_builder:
         _a_count = len(st.session_state["tb_picked_a"])
         _b_count = len(st.session_state["tb_picked_b"])
         with _ta:
-            if st.button(f"🛡 A · safe ({_a_count})",
+            if st.button(f"A · safe ({_a_count})",
                          key="tb_pick_a",
                          type="primary" if _active == "A" else "secondary",
                          use_container_width=True):
                 st.session_state["tb_active_variant"] = "A"
                 st.rerun()
         with _tb:
-            if st.button(f"🧪 B · experiment ({_b_count})",
+            if st.button(f"B · experiment ({_b_count})",
                          key="tb_pick_b",
                          type="primary" if _active == "B" else "secondary",
                          use_container_width=True):
                 st.session_state["tb_active_variant"] = "B"
                 st.rerun()
 
-        st.markdown(
-            f'<div style="font-size:10px;color:#5a5a62;text-align:center;margin:6px 0;'
-            f'font-family:Geist Mono,monospace">'
-            f'keyword clicks → variant {_active}</div>',
-            unsafe_allow_html=True
-        )
-
-        # Configuration
-        st.markdown(
-            '<div style="font-family:Geist Mono,monospace;font-size:0.7rem;letter-spacing:0.06em;'
-            'color:#5a5a62;text-transform:uppercase;margin:8px 0 4px">⚙️ Configuration</div>',
-            unsafe_allow_html=True
-        )
+        st.caption(f"Keyword clicks add to Variant {_active}")
+        st.markdown("**Configuration**")
         _instruments = sorted(
             [p for p,r in _tb_bank.items()
              if r.get("slot") == "instrument" and r.get("vidiq_score","").strip().isdigit()],
@@ -4416,20 +4352,16 @@ with tab_title_builder:
                      key="tb_duration")
 
         # Selected lists
-        st.markdown(
-            '<div style="font-family:Geist Mono,monospace;font-size:0.7rem;letter-spacing:0.06em;'
-            'color:#93c5fd;text-transform:uppercase;margin:14px 0 4px">'
-            f'🛡 Variant A · {_a_count}</div>',
-            unsafe_allow_html=True
-        )
+        st.markdown(f"**Variant A** · {_a_count} keywords")
         if st.session_state["tb_picked_a"]:
             for _p in st.session_state["tb_picked_a"]:
                 _sc = _tb_effective_score(_p)
                 _cs1, _cs2 = st.columns([5, 1])
                 with _cs1:
                     st.markdown(
-                        f'<div style="background:#1e3a5f;color:#93c5fd;padding:3px 8px;'
-                        f'border-radius:6px;font-size:11px;display:inline-block;border:1px solid rgba(147,197,253,0.3)">'
+                        f'<div style="background:rgba(147,197,253,0.1);color:#93c5fd;padding:3px 8px;'
+                        f'border-radius:3px;font-size:12px;display:inline-block;'
+                        f'border:1px solid rgba(147,197,253,0.3)">'
                         f'{_p}{" · "+str(_sc) if _sc else ""}</div>',
                         unsafe_allow_html=True
                     )
@@ -4440,20 +4372,16 @@ with tab_title_builder:
         else:
             st.caption("Pick keywords for A →")
 
-        st.markdown(
-            '<div style="font-family:Geist Mono,monospace;font-size:0.7rem;letter-spacing:0.06em;'
-            'color:#d4a574;text-transform:uppercase;margin:14px 0 4px">'
-            f'🧪 Variant B · {_b_count}</div>',
-            unsafe_allow_html=True
-        )
+        st.markdown(f"**Variant B** · {_b_count} keywords")
         if st.session_state["tb_picked_b"]:
             for _p in st.session_state["tb_picked_b"]:
                 _sc = _tb_effective_score(_p)
                 _cs1, _cs2 = st.columns([5, 1])
                 with _cs1:
                     st.markdown(
-                        f'<div style="background:#2a2018;color:#d4a574;padding:3px 8px;'
-                        f'border-radius:6px;font-size:11px;display:inline-block;border:1px solid rgba(212,165,116,0.3)">'
+                        f'<div style="background:rgba(212,165,116,0.1);color:#d4a574;padding:3px 8px;'
+                        f'border-radius:3px;font-size:12px;display:inline-block;'
+                        f'border:1px solid rgba(212,165,116,0.3)">'
                         f'{_p}{" · "+str(_sc) if _sc else ""}</div>',
                         unsafe_allow_html=True
                     )
@@ -4466,7 +4394,7 @@ with tab_title_builder:
 
         # Clear all
         st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
-        if st.button("🗑 Clear all selections", key="tb_clear_all", use_container_width=True):
+        if st.button("Clear all selections", key="tb_clear_all", use_container_width=True):
             st.session_state["tb_picked_a"] = []
             st.session_state["tb_picked_b"] = []
             for k in ["tb_va_input","tb_vb_input","_tb_last_a","_tb_last_b"]:
