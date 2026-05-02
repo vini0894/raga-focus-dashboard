@@ -3831,16 +3831,22 @@ with tab_title_builder:
     # ═════════════════════════════════════════════════════════
     # SECTION 1 — Live A/B preview at top
     # ═════════════════════════════════════════════════════════
+    def _resolve_instrument():
+        """Return chosen instrument: custom text overrides dropdown."""
+        custom = (st.session_state.get("tb_instrument_custom","") or "").strip()
+        if custom:
+            return custom
+        sel = st.session_state.get("tb_instrument", "(none)")
+        return sel if sel != "(none)" else ""
+
     def _build_variant_a():
         picked = st.session_state["tb_picked_a"]
         if not picked: return ""
         sorted_kws = sorted(picked, key=lambda p: -(_tb_effective_score(p) or 0))
-        lead = sorted_kws[0]
-        inst = st.session_state.get("tb_instrument", "(none)")
-        inst = inst if inst != "(none)" else ""
-        dur = st.session_state.get("tb_duration", "1 Hour")
+        inst = _resolve_instrument()
+        dur = st.session_state.get("tb_duration", "(none)")
         dur = dur if dur != "(none)" else ""
-        parts = [lead.title()]
+        parts = [k.title() for k in sorted_kws]  # ALL picked keywords, score-sorted
         if inst: parts.append(inst.title())
         if dur:  parts.append(dur)
         return " | ".join(parts)
@@ -3850,11 +3856,11 @@ with tab_title_builder:
         if not picked: return ""
         sorted_kws = sorted(picked, key=lambda p: -(_tb_effective_score(p) or 0))
         lead = sorted_kws[0]
-        inst = st.session_state.get("tb_instrument", "(none)")
-        inst = inst if inst != "(none)" else ""
+        rest = sorted_kws[1:]
+        inst = _resolve_instrument()
         raga = st.session_state.get("tb_raga", "(none)")
         raga = raga if raga != "(none)" else ""
-        dur = st.session_state.get("tb_duration", "1 Hour")
+        dur = st.session_state.get("tb_duration", "(none)")
         dur = dur if dur != "(none)" else ""
         mode = st.session_state.get("tb_b_mode", "🎯 Question")
 
@@ -3872,11 +3878,24 @@ with tab_title_builder:
             head = clean
         elif "Competitor" in mode:
             head = f"Ancient {inst.title() if inst else ''} for {clean}".strip()
+        elif "phrase" in mode.lower():
+            # Natural phrase mode — weave instrument into the lead
+            connectors = {"stress":"with","anxiety":"with","sleep":"with","calm":"with",
+                          "healing":"through","nostalgia":"through","focus":"with","rest":"with"}
+            conn = next((v for k,v in connectors.items() if k in lead.lower()), "with")
+            if inst:
+                head = f"{clean} {conn} {inst.title()}"
+            else:
+                head = clean
         else:
             head = clean
 
         parts = [head]
-        if inst and "Question" not in mode and "Competitor" not in mode:
+        # Append remaining picked keywords (any beyond the lead)
+        for r in rest:
+            parts.append(r.title())
+        # Don't double-add instrument if mode already wove it into head
+        if inst and "Question" not in mode and "Competitor" not in mode and "phrase" not in mode.lower():
             parts.append(inst.title())
         if raga: parts.append(raga.title())
         if dur:  parts.append(dur)
@@ -3932,9 +3951,9 @@ with tab_title_builder:
             )
 
             # B mode pills
-            _mc1, _mc2, _mc3, _mc4 = st.columns(4)
-            _modes = ["🎯 Question", "💚 Outcome", "🌀 Diff theme", "🎨 Competitor"]
-            for _mc, _mode in zip([_mc1, _mc2, _mc3, _mc4], _modes):
+            _mc1, _mc2, _mc3, _mc4, _mc5 = st.columns(5)
+            _modes = ["🎯 Question", "💚 Outcome", "🌀 Diff theme", "🎨 Competitor", "🎵 With phrase"]
+            for _mc, _mode in zip([_mc1, _mc2, _mc3, _mc4, _mc5], _modes):
                 with _mc:
                     _is_active = _mode in st.session_state["tb_b_mode"]
                     if st.button(_mode, key=f"tb_bm_{_mode}",
@@ -4059,20 +4078,30 @@ with tab_title_builder:
                     _tb_select_keyword(_kc)
                     st.rerun()
 
-        # Cluster filter
-        _cluster_names = ["All"] + [c["name"].split("/")[0].strip() for c in _tb_clusters] + ["🗑 Hidden"]
-        _cluster_choice = st.radio(
+        # Cluster filter — use cluster IDs as ground truth, labels for display
+        _cluster_options = [("__all__", "All")]
+        for _cl in _tb_clusters:
+            _short = _cl["name"].split("/")[0].strip()
+            _cluster_options.append((_cl["id"], f"{_cl.get('emoji','')} {_short}".strip()))
+        _cluster_options.append(("__hidden__", "🗑 Hidden"))
+
+        _labels = [lbl for _, lbl in _cluster_options]
+        _id_by_label = {lbl: cid for cid, lbl in _cluster_options}
+
+        _chosen_label = st.radio(
             "cluster",
-            options=_cluster_names,
-            key="tb_active_cluster",
+            options=_labels,
+            key="tb_active_cluster_lbl",
             horizontal=True,
             label_visibility="collapsed",
         )
+        _cluster_id = _id_by_label.get(_chosen_label, "__all__")
+        _cluster_choice = _cluster_id  # used downstream for unique keys
 
-        # Build keyword list — dedupe by phrase to avoid dup-key errors when "All" selected
+        # Build keyword list — dedupe; filter by cluster id
         _seen = set()
         _kw_raw = []
-        if _cluster_choice == "All":
+        if _cluster_id == "__all__":
             for _cl in _tb_clusters:
                 for _kw in _cl["keywords"]:
                     _kl = _kw.strip().lower()
@@ -4080,19 +4109,18 @@ with tab_title_builder:
                         continue
                     _seen.add(_kl)
                     _kw_raw.append((_kw, _cl["name"]))
-        elif _cluster_choice == "🗑 Hidden":
+        elif _cluster_id == "__hidden__":
             for _kw in sorted(st.session_state["tb_hidden"]):
                 _kw_raw.append((_kw, "Hidden"))
         else:
-            for _cl in _tb_clusters:
-                if _cl["name"].split("/")[0].strip() == _cluster_choice:
-                    for _kw in _cl["keywords"]:
-                        _kl = _kw.strip().lower()
-                        if _kl in _seen or _kl in st.session_state["tb_hidden"]:
-                            continue
-                        _seen.add(_kl)
-                        _kw_raw.append((_kw, _cl["name"]))
-                    break
+            _match_cluster = next((c for c in _tb_clusters if c["id"] == _cluster_id), None)
+            if _match_cluster:
+                for _kw in _match_cluster["keywords"]:
+                    _kl = _kw.strip().lower()
+                    if _kl in _seen or _kl in st.session_state["tb_hidden"]:
+                        continue
+                    _seen.add(_kl)
+                    _kw_raw.append((_kw, _match_cluster["name"]))
 
         # Sort: ready (scored, available) first → unscored → cooldown → invalidated
         # Within ready, highest score first
@@ -4294,8 +4322,13 @@ with tab_title_builder:
             key=lambda p: -int(_tb_bank[p]["vidiq_score"])
         )
         st.selectbox("Instrument", ["(none)"] + _instruments, key="tb_instrument")
+        st.text_input("Or custom instrument",
+                      key="tb_instrument_custom",
+                      placeholder="overrides dropdown if filled")
         st.selectbox("Raga", ["(none)"] + _ragas, key="tb_raga")
-        st.selectbox("Duration", ["1 Hour","1:15","1:30","45 Min","30 Min","(none)"], key="tb_duration")
+        st.selectbox("Duration",
+                     ["(none)", "1 Hour", "1:15", "1:30", "45 Min", "30 Min"],
+                     key="tb_duration")
 
         # Selected lists
         st.markdown(
