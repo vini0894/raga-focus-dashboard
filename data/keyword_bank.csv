@@ -10,7 +10,7 @@ instrumental music relaxing,problem,70,,chat-2026-04-25 vidiq paste,2026-04-25,2
 relaxing instrumental music,problem,70,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
 think clearly,problem,70,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
 deep relaxation music,problem,68,Low,KEYWORD_DATA.md migration (Soothing Relaxation (12M,2026-04-25,2026-04-25
-morning focus,problem,67,Low,KEYWORD_DATA.md migration (SleepTube,2026-04-25,2026-04-25
+morning focus,problem,65,Low,KEYWORD_DATA.md migration (SleepTube,2026-04-25,2026-04-28
 nervous system reset,problem,66,Medium,KEYWORD_DATA.md migration (Malte Marten,2026-04-25,2026-04-25
 deep calm,problem,65,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
 deep calm music,problem,65,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
@@ -18,7 +18,7 @@ meditation for anxiety,problem,65,Medium,KEYWORD_DATA.md migration (Priory (35.6
 digital detox,problem,64,Medium,KEYWORD_DATA.md migration (Bupa Health (115K,2026-04-25,2026-04-25
 morning acoustic guitar,problem,64,Low,KEYWORD_DATA.md migration (dwaler,2026-04-25,2026-04-25
 calming,problem,63,Medium,KEYWORD_DATA.md migration (Relaxing Calming Music (429K,2026-04-25,2026-04-25
-deep rest music,problem,63,Low,KEYWORD_DATA.md migration (SleepTube (1.06M,2026-04-25,2026-04-25
+deep rest music,problem,67,Low,KEYWORD_DATA.md migration (SleepTube (1.06M,2026-04-25,2026-04-28
 overthinking music,problem,63,Low,KEYWORD_DATA.md migration (Deep Breath - Relaxing Music,2026-04-25,2026-04-25
 unwind music,problem,63,Low,KEYWORD_DATA.md migration (Strumm Sound (2.01M,2026-04-25,2026-04-25
 restless mind,problem,62,Low,KEYWORD_DATA.md migration (various,2026-04-25,2026-04-25
@@ -26,7 +26,7 @@ acoustic guitar sleep music,problem,61,Low,KEYWORD_DATA.md migration (Mindful Me
 warm acoustic guitar,problem,61,Low,KEYWORD_DATA.md migration (Thomann's Guitars,2026-04-25,2026-04-25
 adhd brain fog,problem,60,Low,KEYWORD_DATA.md migration (Psych2Go,2026-04-25,2026-04-25
 deep meditation,problem,60,Medium,KEYWORD_DATA.md migration (The Honest Guys (1.28M,2026-04-25,2026-04-25
-dopamine reset,problem,,,config.py,2026-04-25,
+dopamine reset,problem,68,,config.py,2026-04-25,2026-04-28
 emotional overwhelm,problem,,,config.py,2026-04-25,
 heavy heart music,problem,,,config.py,2026-04-25,
 racing thoughts music,problem,,,config.py,2026-04-25,
@@ -67,17 +67,17 @@ theta,wave,61,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
 alpha,wave,,,config.py,2026-04-25,
 coding music,tag,83,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 lofi music,tag,83,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
-focus music,tag,82,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
-study music,tag,82,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+focus music,tag,84,,KEYWORD_DATA.md migration,2026-04-25,2026-04-28
+study music,tag,79,,KEYWORD_DATA.md migration,2026-04-25,2026-04-28
 ambient music,tag,80,,manual-VidIQ-tag-paste,2026-04-25,2026-04-26
 background music,tag,80,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 cozy music,tag,77,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 pomodoro music,tag,77,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
-concentration music,tag,76,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+concentration music,tag,80,,KEYWORD_DATA.md migration,2026-04-25,2026-04-28
 cottagecore music,tag,76,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 background music for work,tag,75,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 deep work music,tag,75,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
-productivity music,tag,75,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+productivity music,tag,75,,KEYWORD_DATA.md migration,2026-04-25,2026-04-28
 calm music,tag,74,,manual-VidIQ-tag-paste,2026-04-25,2026-04-26
 acoustic guitar,tag,73,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 deep focus,tag,73,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
@@ -85,10 +85,9 @@ journaling music,tag,73,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 motivation music,tag,72,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 reading music,tag,72,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 relaxing music,tag,75,,manual-VidIQ-tag-paste,2026-04-25,2026-04-26
-morning music,tag,71,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+morning music,tag,77,,KEYWORD_DATA.md migration,2026-04-25,2026-04-28
 night music,tag,71,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 1 hour focus music,tag,70,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
-adhd focus music,tag,70,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 morning energy music,tag,70,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 chill acoustic,tag,69,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 coffee shop music,tag,69,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
@@ -121,14 +120,14 @@ cozy acoustic guitar,tag,62,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 acoustic guitar meditation,tag,61,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 indian rhythm,tag,61,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 instrumental music for reading,tag,61,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
-morning focus music,tag,61,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
+morning focus music,tag,68,,KEYWORD_DATA.md migration,2026-04-25,2026-04-28
 morning motivation music,tag,61,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 high energy study music,tag,60,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 morning productivity music,tag,60,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 7.83hz,hz,58,Medium,manual-VidIQ-paste,2026-04-26,2026-04-26
 calm your mind,problem,68,Medium,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
 healing music,tag,75,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
-feeling lost in life,problem,64,Medium,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+feeling lost in life,problem,65,Medium,manual-VidIQ-tag-paste,2026-04-26,2026-04-28
 lost in life,problem,61,Medium,manual-VidIQ-paste,2026-04-26,2026-04-26
 calming music,tag,72,Medium,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
 schumann resonance,hz,61,Medium,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
@@ -155,3 +154,31 @@ peaceful music,tag,72,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
 1 hour healing music,tag,58,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
 raga focus,tag,66,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
 grounding music,tag,57,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+emotional healing music,problem,60,,chat-2026-04-28 vidiq paste,2026-04-28,2026-04-28
+burnout music,problem,65,,chat-2026-04-28 vidiq paste,2026-04-28,2026-04-28
+release stress,problem,66,,chat-2026-04-28 vidiq paste,2026-04-28,2026-04-28
+stress release music,problem,59,,chat-2026-04-28 vidiq paste,2026-04-28,2026-04-28
+nostalgia music,problem,76,,chat-2026-04-28 vidiq paste,2026-04-28,2026-04-28
+santoor & 528hz,tag,37,,chat-2026-04-28 vidiq paste,2026-04-28,2026-04-28
+raga desh,raga,68,,chat-2026-04-28 vidiq paste,2026-04-28,2026-04-28
+comfort music,problem,63,,chat-2026-04-28 vidiq paste,2026-04-28,2026-04-28
+homesick music,problem,64,,chat-2026-04-28 vidiq paste,2026-04-28,2026-04-28
+surbahar,instrument,64,,chat-2026-04-28 vidiq paste,2026-04-28,2026-04-28
+unwind after work,problem,64,,chat-2026-04-28 vidiq paste,2026-04-28,2026-04-28
+relax mind and body,problem,57,,chat-2026-04-28 vidiq paste,2026-04-28,2026-04-28
+1hr detox,tag,25,,chat-2026-04-28 vidiq paste,2026-04-28,2026-04-28
+tension relief music,problem,58,,chat-2026-04-28 vidiq paste,2026-04-28,2026-04-28
+insomnia relief,problem,63,Medium,chat-2026-04-28 vidiq paste,2026-04-28,2026-04-28
+indian classical sitar,instrument,61,,chat-pasted,2026-04-28,2026-04-28
+1 hour deep concentration,descriptor,29,,chat-pasted,2026-04-28,2026-04-28
+deep concentration,focus,66,,chat-pasted,2026-04-28,2026-04-28
+can't focus,focus,50,,chat-pasted,2026-04-28,2026-04-28
+deep focus music,focus,70,,chat-pasted,2026-04-28,2026-04-28
+sitar music to help you focus,descriptor,28,,chat-pasted,2026-04-28,2026-04-28
+brain power music,focus,63,,chat-pasted,2026-04-28,2026-04-28
+focus and concentration,focus,53,,chat-pasted,2026-04-28,2026-04-28
+morning meditation,morning,66,,chat-pasted,2026-04-28,2026-04-28
+wake up music,morning,63,,chat-pasted,2026-04-28,2026-04-28
+morning routine music,morning,66,,chat-pasted,2026-04-28,2026-04-28
+drift to sleep,problem,59,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
+recovery music,problem,57,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
