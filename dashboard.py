@@ -3747,28 +3747,25 @@ with tab_title_builder:
         else:
             head = lead.title()
 
-        parts = [head]
-        # Append remaining picked keywords (any beyond the lead)
-        for r in rest:
-            parts.append(r.title())
-        # Don't double-add instrument if mode already wove it into head
-        if inst and "Question" not in mode and "Competitor" not in mode and "phrase" not in mode.lower():
-            # Also skip if instrument is already in lead
-            if inst.lower() not in lead.lower():
-                parts.append(inst.title())
-        if raga: parts.append(raga.title())
-        if dur:  parts.append(dur)
-        out = " | ".join(parts)
+        # Track whether the head already contains the instrument (Competitor/Phrase modes weave it in)
+        head_has_inst = bool(inst) and inst.lower() in head.lower()
+
+        def _assemble(_head, _rest_kws):
+            _parts = [_head]
+            for _r in _rest_kws:
+                _parts.append(_r.title())
+            # Append instrument unless already in head OR in lead keyword
+            if inst and not head_has_inst and inst.lower() not in lead.lower():
+                _parts.append(inst.title())
+            if raga: _parts.append(raga.title())
+            if dur:  _parts.append(dur)
+            return " | ".join(_parts)
+
+        out = _assemble(head, rest)
         # Char cap: 70 chars (your A/B test rule). Drop secondary keywords if over.
         while len(out) > 70 and len(rest) > 0:
             rest = rest[:-1]
-            parts = [head] + [r.title() for r in rest]
-            if inst and "Question" not in mode and "Competitor" not in mode and "phrase" not in mode.lower():
-                if inst.lower() not in lead.lower():
-                    parts.append(inst.title())
-            if raga: parts.append(raga.title())
-            if dur:  parts.append(dur)
-            out = " | ".join(parts)
+            out = _assemble(head, rest)
         return out
 
     _va_default = _build_variant_a()
@@ -4168,6 +4165,47 @@ with tab_title_builder:
                      ["(none)", "1 Hour", "1:15", "1:30", "45 Min", "30 Min"],
                      key="tb_duration")
 
+        # ── Thumbnail text suggestions (moved from bottom 2026-05-03) ──
+        st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
+        st.markdown("**Thumbnail text**")
+        st.caption("CTR hooks per variant (theme detected from highest-scored picked keyword).")
+        try:
+            from thumbnail_text import build_thumbnail_text_variants as _bt_variants
+
+            def _render_thumb_compact(variant_label, picked_list, color):
+                if not picked_list:
+                    st.caption(f"_Pick keywords for {variant_label} →_")
+                    return
+                sorted_kws = sorted(picked_list, key=lambda p: -(_tb_effective_score(p) or 0))
+                lead = sorted_kws[0]
+                try:
+                    variants = _bt_variants(lead)
+                except Exception:
+                    return
+                st.markdown(
+                    f'<div style="font-size:11px;color:{color};margin:4px 0 2px;font-weight:600">{variant_label}</div>',
+                    unsafe_allow_html=True
+                )
+                for v in variants:
+                    _strategy = v.get("strategy", v.get("label", "")).split("—")[0].strip()
+                    _text = v.get("text", "")
+                    _alts = v.get("alts", [])
+                    _alts_str = " · ".join(_alts) if _alts else ""
+                    st.markdown(
+                        f'<div style="background:#1a1d24;border:1px solid #2a2e36;border-radius:3px;'
+                        f'padding:4px 8px;margin-bottom:3px">'
+                        f'<div style="font-size:9px;color:#9ca3af">{_strategy}</div>'
+                        f'<div style="font-size:14px;color:#e5e7eb;font-weight:600">{_text}</div>'
+                        + (f'<div style="font-size:9px;color:#6b7280">alt: {_alts_str}</div>' if _alts_str else '')
+                        + '</div>',
+                        unsafe_allow_html=True
+                    )
+
+            _render_thumb_compact("A · safe", st.session_state.get("tb_picked_a", []), "#93c5fd")
+            _render_thumb_compact("B · experiment", st.session_state.get("tb_picked_b", []), "#d4a574")
+        except Exception as _te:
+            st.caption(f"_Thumbnail module not loadable: {_te}_")
+
         # Selected lists
         st.markdown(f"**Variant A** · {_a_count} keywords")
         if st.session_state["tb_picked_a"]:
@@ -4273,64 +4311,5 @@ with tab_title_builder:
                             st.rerun()
                         except Exception as _ce:
                             st.error(f"Clear failed: {_ce}")
-
-    # ═════════════════════════════════════════════════════════
-    # SECTION 3 — Thumbnail text suggestions (bottom)
-    # ═════════════════════════════════════════════════════════
-    st.markdown("<div style='height:14px'></div>", unsafe_allow_html=True)
-    st.markdown("---")
-    st.markdown("### Thumbnail text")
-    st.caption(
-        "CTR-driven hooks for your thumbnail overlay. These don't need to match the title's "
-        "keywords — they're emotional triggers. Question form for cold feed, outcome for warm "
-        "cohort, identity label for low-friction scan."
-    )
-
-    try:
-        from thumbnail_text import build_thumbnail_text_variants as _bt_variants
-
-        def _render_variant_thumb(variant_label, picked_list, color):
-            if not picked_list:
-                st.caption(f"_Pick keywords for {variant_label} to see thumbnail suggestions_")
-                return
-            # Use the highest-scored picked keyword as the lead theme
-            sorted_kws = sorted(picked_list, key=lambda p: -(_tb_effective_score(p) or 0))
-            lead = sorted_kws[0]
-            try:
-                variants = _bt_variants(lead)
-            except Exception as _be:
-                st.caption(f"_Could not build thumbnail suggestions: {_be}_")
-                return
-
-            st.markdown(
-                f'<div style="font-size:13px;color:{color};margin-bottom:6px">'
-                f'<b>{variant_label}</b> · theme detected from <code>{lead}</code></div>',
-                unsafe_allow_html=True
-            )
-
-            for v in variants:
-                _strategy = v.get("strategy", v.get("label", ""))
-                _text = v.get("text", "")
-                _alts = v.get("alts", [])
-                _alts_str = " · ".join(f"`{a}`" for a in _alts) if _alts else ""
-                st.markdown(
-                    f'<div style="background:#1a1d24;border:1px solid #2a2e36;border-radius:4px;'
-                    f'padding:8px 12px;margin-bottom:6px">'
-                    f'<div style="font-size:10px;color:#9ca3af;margin-bottom:4px">{_strategy}</div>'
-                    f'<div style="font-size:18px;color:#e5e7eb;font-weight:600;letter-spacing:0.02em">'
-                    f'{_text}</div>'
-                    + (f'<div style="font-size:10px;color:#6b7280;margin-top:6px">alt: {_alts_str}</div>' if _alts_str else '')
-                    + '</div>',
-                    unsafe_allow_html=True
-                )
-
-        _tc1, _tc2 = st.columns(2, gap="medium")
-        with _tc1:
-            _render_variant_thumb("Variant A", st.session_state.get("tb_picked_a", []), "#93c5fd")
-        with _tc2:
-            _render_variant_thumb("Variant B", st.session_state.get("tb_picked_b", []), "#d4a574")
-
-    except Exception as _te:
-        st.warning(f"Thumbnail text module not loadable: {_te}")
 
     st.markdown("</div>", unsafe_allow_html=True)
