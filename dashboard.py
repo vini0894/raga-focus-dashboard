@@ -4417,4 +4417,28 @@ with tab_title_builder:
                 if k in st.session_state: del st.session_state[k]
             st.rerun()
 
+        # ── Export scores so they can be merged back to the canonical bank ──
+        st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
+        _all_scores = dict(st.session_state.get("tb_inline_scores", {}))
+        # Also include scores already in keyword_bank.csv that came from title-builder source
+        for _kw, _row in _tb_bank.items():
+            if "title-builder" in _row.get("source","") and _row.get("vidiq_score","").strip().isdigit():
+                _all_scores.setdefault(_kw, int(_row["vidiq_score"]))
+
+        if _all_scores:
+            with st.expander(f"📤 Export {len(_all_scores)} scored keywords"):
+                st.caption("Copy this and paste in chat — I'll merge into keyword_bank.csv and commit to git.")
+                _export_text = "\n".join(f"{k}: {v}" for k, v in sorted(_all_scores.items(), key=lambda x: -x[1]))
+                st.code(_export_text, language="text")
+                _csv_text = "phrase,vidiq_score,source\n" + "\n".join(
+                    f'"{k}",{v},title-builder' for k, v in sorted(_all_scores.items())
+                )
+                st.download_button(
+                    "📥 Download as CSV",
+                    data=_csv_text,
+                    file_name=f"title_builder_scores_{_tb_date.today().isoformat()}.csv",
+                    mime="text/csv",
+                    use_container_width=True,
+                )
+
     st.markdown("</div>", unsafe_allow_html=True)
