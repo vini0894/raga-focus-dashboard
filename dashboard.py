@@ -4149,22 +4149,30 @@ with tab_title_builder:
                     _seen.add(_kl)
                     _kw_raw.append((_kw, _match_cluster["name"]))
 
-        # Sort: ready (scored, available) first → unscored → cooldown → invalidated
-        # Within ready, highest score first
-        def _sort_priority(item):
-            kw, _ = item
-            kl = kw.strip().lower()
-            stat, _dl = _tb_cooldown(kl)
-            sc = _tb_effective_score(kl)
-            if stat == "available" and sc is not None:
-                return (0, -sc)  # ready - highest score first
-            if stat == "unscored":
-                return (1, kw)
-            if stat == "cooldown":
-                return (2, kw)
-            return (3, kw)  # invalidated last
-
-        _kw_list = sorted(_kw_raw, key=_sort_priority)
+        # Within a single cluster — keep cluster's natural keyword order so
+        # a freshly-scored keyword doesn't jump position and disappear off screen.
+        # In the "All" view, sort by status (ready first) since there's no natural order.
+        if _cluster_id == "__all__":
+            def _sort_priority(item):
+                kw, _ = item
+                kl = kw.strip().lower()
+                stat, _dl = _tb_cooldown(kl)
+                sc = _tb_effective_score(kl)
+                if stat == "available" and sc is not None:
+                    return (0, -sc)
+                if stat == "unscored":
+                    return (1, kw)
+                if stat == "cooldown":
+                    return (2, kw)
+                return (3, kw)
+            _kw_list = sorted(_kw_raw, key=_sort_priority)
+        else:
+            # Single cluster — preserve order from clusters JSON, only push invalidated to bottom
+            def _stable_priority(item):
+                kw, _ = item
+                stat, _ = _tb_cooldown(kw.strip().lower())
+                return 1 if stat == "invalidated" else 0
+            _kw_list = sorted(_kw_raw, key=_stable_priority)
 
         _unscored = [(kw, cn) for kw, cn in _kw_list if _tb_effective_score(kw.strip().lower()) is None
                      and _tb_cooldown(kw.strip().lower())[0] != "invalidated"]
