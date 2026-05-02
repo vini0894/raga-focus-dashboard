@@ -31,20 +31,23 @@ from keyword_bank import load_by_slot
 # `question`   = thumbnail overlay + B-variant title hook
 # `outcome`    = C-variant imperative hook
 PROBLEM_HOOK_META = {
-    "stress relief music":    {"seo_phrase": "Stress Relief Music",       "question": "Stressed Out?",            "outcome": "Calm Stress Now"},
-    "deep relaxation music":  {"seo_phrase": "Deep Relaxation Music",     "question": "Feeling Overwhelmed?",     "outcome": "Reach Deep Relaxation"},
-    "overthinking music":     {"seo_phrase": "Overthinking Music",        "question": "Can't Stop Overthinking?", "outcome": "Calm an Overthinking Mind"},
-    "meditation for anxiety": {"seo_phrase": "Meditation for Anxiety",    "question": "Morning Anxiety?",         "outcome": "Release Anxiety"},
-    "unwind music":           {"seo_phrase": "Unwind Music",              "question": "Can't Unwind After Work?", "outcome": "Unwind After Work"},
-    "deep rest music":        {"seo_phrase": "Deep Rest Music",           "question": "Can't Find Deep Rest?",    "outcome": "Reach Deep Rest"},
-    "deep meditation":        {"seo_phrase": "Deep Meditation Music",     "question": "Need Deep Meditation?",    "outcome": "Enter Deep Meditation"},
-    "nervous system reset":   {"seo_phrase": "Nervous System Reset",      "question": "Nervous System Overload?", "outcome": "Reset Your Nervous System"},
-    "racing thoughts music":  {"seo_phrase": "Racing Thoughts Music",     "question": "Mind Racing at Night?",    "outcome": "Stop Racing Thoughts"},
-    "emotional overwhelm":    {"seo_phrase": "Emotional Overwhelm Music", "question": "Emotionally Overwhelmed?", "outcome": "Release Emotional Overwhelm"},
-    "heavy heart music":      {"seo_phrase": "Heavy Heart Music",         "question": "Heavy Heart?",             "outcome": "Heal a Heavy Heart"},
-    "vagus nerve music":      {"seo_phrase": "Vagus Nerve Music",         "question": "Vagus Nerve Stuck?",       "outcome": "Reset Your Vagus Nerve"},
-    "sunday anxiety":         {"seo_phrase": "Sunday Anxiety Music",      "question": "Sunday Night Dread?",      "outcome": "Calm Sunday Anxiety"},
-    "dopamine reset":         {"seo_phrase": "Dopamine Reset Music",      "question": "Dopamine Burnt Out?",      "outcome": "Reset Your Dopamine", "competitor_proven": "Raga Heal 23K (Apr 20)"},
+    # action_phrase = slot-2 verb phrase for Variant A: "{seo_phrase} | {action_phrase} with {Instrument} | 1 Hour"
+    # question      = slot-1 hook for Variant B:       "{question} | {outcome_short} with Raga {Raga} | 1 Hour"
+    # outcome_short = slot-2 for Variant B (≤ 4 words, imperative)
+    "stress relief music":    {"seo_phrase": "Stress Relief Music",       "action_phrase": "Release Stress",        "question": "Stressed Out?",            "outcome": "Calm Stress Now",            "outcome_short": "Release Stress"},
+    "deep relaxation music":  {"seo_phrase": "Deep Relaxation Music",     "action_phrase": "Find Deep Calm",        "question": "Feeling Overwhelmed?",     "outcome": "Reach Deep Relaxation",      "outcome_short": "Find Deep Calm"},
+    "overthinking music":     {"seo_phrase": "Overthinking Music",        "action_phrase": "Calm Down",             "question": "Can't Keep Calm?",         "outcome": "Calm an Overthinking Mind",  "outcome_short": "Stop Overthinking"},
+    "meditation for anxiety": {"seo_phrase": "Meditation for Anxiety",    "action_phrase": "Find Peace",            "question": "Morning Anxiety?",         "outcome": "Release Anxiety",            "outcome_short": "Release Anxiety"},
+    "unwind music":           {"seo_phrase": "Unwind Music",              "action_phrase": "Unwind Slowly",         "question": "Can't Switch Off?",        "outcome": "Unwind After Work",          "outcome_short": "Let It Go"},
+    "deep rest music":        {"seo_phrase": "Deep Rest Music",           "action_phrase": "Find Stillness",        "question": "Need Deep Rest?",          "outcome": "Reach Deep Rest",            "outcome_short": "Find Stillness"},
+    "deep meditation":        {"seo_phrase": "Deep Meditation Music",     "action_phrase": "Go Deeper",             "question": "Can't Meditate?",          "outcome": "Enter Deep Meditation",      "outcome_short": "Enter Deep Calm"},
+    "nervous system reset":   {"seo_phrase": "Nervous System Reset",      "action_phrase": "Reset and Restore",     "question": "Nervous System Overload?", "outcome": "Reset Your Nervous System",  "outcome_short": "Reset Your System"},
+    "racing thoughts music":  {"seo_phrase": "Racing Thoughts Music",     "action_phrase": "Still Your Mind",       "question": "Mind Racing at Night?",    "outcome": "Stop Racing Thoughts",       "outcome_short": "Still Your Mind"},
+    "emotional overwhelm":    {"seo_phrase": "Emotional Overwhelm Music", "action_phrase": "Find Relief",           "question": "Emotionally Overwhelmed?", "outcome": "Release Emotional Overwhelm","outcome_short": "Find Relief"},
+    "heavy heart music":      {"seo_phrase": "Heavy Heart Music",         "action_phrase": "Find Comfort",          "question": "Heavy Heart?",             "outcome": "Heal a Heavy Heart",         "outcome_short": "Find Comfort"},
+    "vagus nerve music":      {"seo_phrase": "Vagus Nerve Music",         "action_phrase": "Reset and Restore",     "question": "Vagus Nerve Stuck?",       "outcome": "Reset Your Vagus Nerve",     "outcome_short": "Reset Your Nerve"},
+    "sunday anxiety":         {"seo_phrase": "Sunday Anxiety Music",      "action_phrase": "Find Sunday Calm",      "question": "Sunday Night Dread?",      "outcome": "Calm Sunday Anxiety",        "outcome_short": "Calm Sunday Dread"},
+    "dopamine reset":         {"seo_phrase": "Dopamine Reset Music",      "action_phrase": "Reset Your Mind",       "question": "Dopamine Burnt Out?",      "outcome": "Reset Your Dopamine",        "outcome_short": "Reset Your Mind", "competitor_proven": "Raga Heal 23K (Apr 20)"},
 }
 
 # Instrument display name + aliases for n-gram detection in titles
@@ -110,13 +113,17 @@ def _build_problem_hooks():
         kw = r["phrase"]
         meta = PROBLEM_HOOK_META.get(kw, {})
         seo = meta.get("seo_phrase") or kw.title()
+        # action_phrase fallback: strip trailing "music" from seo_phrase
+        default_action = " ".join(w for w in seo.split() if w.lower() != "music") or seo
         out.append({
-            "kw":          kw,
-            "seo_phrase":  seo,
-            "question":    meta.get("question",  seo),
-            "outcome":     meta.get("outcome",   seo),
-            "vidiq_score": r["vidiq_score"],
-            "vidiq_comp":  r["vidiq_comp"],
+            "kw":            kw,
+            "seo_phrase":    seo,
+            "action_phrase": meta.get("action_phrase", default_action),
+            "question":      meta.get("question",      seo),
+            "outcome":       meta.get("outcome",       seo),
+            "outcome_short": meta.get("outcome_short", default_action),
+            "vidiq_score":   r["vidiq_score"],
+            "vidiq_comp":    r["vidiq_comp"],
             **({"competitor_proven": meta["competitor_proven"]} if "competitor_proven" in meta else {}),
         })
     return out
@@ -318,7 +325,7 @@ KNOWN_AB_RESULTS = [
 # RULES (from playbook §9)
 # ═════════════════════════════════════════════════════════
 RULES = {
-    "title_min_chars":          60,
+    "title_min_chars":          35,
     "title_max_chars":          88,
     "own_recency_block_days":   5,    # hard-block instrument if used in last 5d
     "competitor_recency_days":  5,    # penalty if competitor used in last 5d
