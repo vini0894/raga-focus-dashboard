@@ -56,19 +56,21 @@ INSTRUMENT_META = {
     "sarod":    {"name": "Sarod",    "aliases": ["sarod"]},
     "santoor":  {"name": "Santoor",  "aliases": ["santoor", "santur"]},
     "esraj":    {"name": "Esraj",    "aliases": ["esraj"]},
-    "tanpura":  {"name": "Tanpura",  "aliases": ["tanpura"]},
-    "sitar":    {"name": "Sitar",    "aliases": ["sitar"]},  # ⚠️ saturated
+    "tanpura":    {"name": "Tanpura",    "aliases": ["tanpura"]},
+    "sitar":      {"name": "Sitar",      "aliases": ["sitar"]},  # ⚠️ saturated
+    "swarmandal": {"name": "Swarmandal", "aliases": ["swarmandal", "swara mandal"]},
 }
 
 # Hz semantic meaning + category
 HZ_META = {
     "7.83hz":{"display": "7.83Hz", "category": "schumann resonance","meaning": "Earth's natural electromagnetic frequency / grounding"},
-    "174hz": {"display": "174Hz", "category": "ancient healing", "meaning": "pain relief / grounding"},
-    "432hz": {"display": "432Hz", "category": "classic healing",  "meaning": "universal harmony"},
-    "528hz": {"display": "528Hz", "category": "love/DNA repair",  "meaning": "DNA repair / love"},
-    "639hz": {"display": "639Hz", "category": "relationships",    "meaning": "connection / harmonious relationships"},
-    "741hz": {"display": "741Hz", "category": "awakening",        "meaning": "detox / problem solving"},
-    "963hz": {"display": "963Hz", "category": "pineal gland",     "meaning": "spiritual awakening / oneness"},
+    "40hz":  {"display": "40Hz",   "category": "gamma",             "meaning": "focus / cognitive performance / gamma entrainment"},
+    "174hz": {"display": "174Hz",  "category": "ancient healing",   "meaning": "pain relief / grounding"},
+    "432hz": {"display": "432Hz",  "category": "classic healing",   "meaning": "universal harmony"},
+    "528hz": {"display": "528Hz",  "category": "love/DNA repair",   "meaning": "DNA repair / love"},
+    "639hz": {"display": "639Hz",  "category": "relationships",     "meaning": "connection / harmonious relationships"},
+    "741hz": {"display": "741Hz",  "category": "awakening",         "meaning": "detox / problem solving"},
+    "963hz": {"display": "963Hz",  "category": "pineal gland",      "meaning": "spiritual awakening / oneness"},
 }
 
 # Raga time-of-day + mood (Hindustani classical convention)
@@ -85,6 +87,7 @@ RAGA_META = {
     "hamir":      {"name": "Hamir",      "time": "late evening", "mood": "majestic"},
     "todi":       {"name": "Todi",       "time": "morning",      "mood": "yearning"},  # claimed by Raga Heal Apr 24
     "chandra":    {"name": "Chandra",    "time": "night",        "mood": "lunar"},     # claimed by Raga Heal Mar 20
+    "bhairav":    {"name": "Bhairav",    "time": "morning",      "mood": "austere"},   # competitor using — add to bank
 }
 
 # Wave outcome-text + which problems each wave fits
@@ -120,60 +123,64 @@ def _build_problem_hooks():
 
 
 def _build_instruments():
+    """Build from INSTRUMENT_META (canonical). keyword_bank.csv supplies scores only."""
+    bank = {r["phrase"]: r for r in load_by_slot("instrument")}
     out = []
-    for r in load_by_slot("instrument"):
-        kw = r["phrase"]
-        meta = INSTRUMENT_META.get(kw, {"name": kw.title(), "aliases": [kw]})
+    for kw, meta in INSTRUMENT_META.items():
+        r = bank.get(kw, {})
         out.append({
             "name":        meta["name"],
-            "vidiq_score": r["vidiq_score"],
-            "vidiq_comp":  r["vidiq_comp"] or "Unknown",
+            "vidiq_score": r.get("vidiq_score"),
+            "vidiq_comp":  r.get("vidiq_comp") or "Unknown",
             "aliases":     meta["aliases"],
         })
     return out
 
 
 def _build_frequencies():
+    """Build from HZ_META (canonical). keyword_bank.csv supplies scores only."""
+    bank = {r["phrase"]: r for r in load_by_slot("hz")}
     out = []
-    for r in load_by_slot("hz"):
-        kw = r["phrase"]
-        meta = HZ_META.get(kw, {"display": kw.upper(), "category": "", "meaning": ""})
+    for kw, meta in HZ_META.items():
+        r = bank.get(kw, {})
         out.append({
             "hz":          meta["display"],
             "category":    meta["category"],
             "meaning":     meta["meaning"],
-            "vidiq_score": r["vidiq_score"],
-            "vidiq_comp":  r["vidiq_comp"],
+            "vidiq_score": r.get("vidiq_score"),
+            "vidiq_comp":  r.get("vidiq_comp"),
         })
     return out
 
 
 def _build_ragas():
+    """Build from RAGA_META (canonical). keyword_bank.csv supplies scores only."""
+    bank = {r["phrase"]: r for r in load_by_slot("raga")}
     out = []
-    for r in load_by_slot("raga"):
-        kw = r["phrase"]
-        meta = RAGA_META.get(kw, {"name": kw.title(), "time": "", "mood": ""})
+    for kw, meta in RAGA_META.items():
+        r = bank.get(kw, {})
         out.append({
             "name":        meta["name"],
             "time":        meta["time"],
             "mood":        meta["mood"],
-            "vidiq_score": r["vidiq_score"],
-            "vidiq_comp":  r["vidiq_comp"],
+            "vidiq_score": r.get("vidiq_score"),
+            "vidiq_comp":  r.get("vidiq_comp"),
         })
     return out
 
 
 def _build_wave_frames():
+    """Build from WAVE_META (canonical). keyword_bank.csv supplies scores only."""
+    bank = {r["phrase"]: r for r in load_by_slot("wave")}
     out = []
-    for r in load_by_slot("wave"):
-        kw = r["phrase"]
-        meta = WAVE_META.get(kw, {"display": kw.title(), "outcome": "Session", "matches": []})
+    for kw, meta in WAVE_META.items():
+        r = bank.get(kw, {})
         out.append({
             "wave":        meta["display"],
             "outcome":     meta["outcome"],
             "matches":     meta["matches"],
-            "vidiq_score": r["vidiq_score"],
-            "vidiq_comp":  r["vidiq_comp"],
+            "vidiq_score": r.get("vidiq_score"),
+            "vidiq_comp":  r.get("vidiq_comp"),
         })
     return out
 
@@ -196,27 +203,27 @@ TONAL_FIT = {
     },
     "anxiety": {
         "primary":   ["Sarangi", "Bansuri", "Dilruba"],
-        "secondary": ["Veena", "Esraj"],
+        "secondary": ["Veena", "Esraj", "Swarmandal"],
         "avoid":     ["Sitar", "Shehnai", "Tabla"],
     },
     "sleep": {
         "primary":   ["Bansuri", "Dilruba", "Sarangi"],
-        "secondary": ["Tanpura", "Veena"],
+        "secondary": ["Tanpura", "Veena", "Swarmandal"],
         "avoid":     ["Sitar", "Shehnai", "Tabla"],
     },
     "stress": {
         "primary":   ["Bansuri", "Veena"],
-        "secondary": ["Sarangi", "Sarod"],
+        "secondary": ["Sarangi", "Sarod", "Swarmandal"],
         "avoid":     ["Tabla", "Shehnai"],
     },
     "meditation": {
         "primary":   ["Veena", "Bansuri", "Tanpura"],
-        "secondary": ["Sarangi"],
+        "secondary": ["Sarangi", "Swarmandal"],
         "avoid":     ["Tabla", "Shehnai"],
     },
     "nervous system": {
         "primary":   ["Bansuri", "Sarangi"],
-        "secondary": ["Veena", "Tanpura"],
+        "secondary": ["Veena", "Tanpura", "Swarmandal"],
         "avoid":     ["Shehnai", "Tabla"],
     },
     "emotional": {
@@ -515,7 +522,7 @@ PROBLEM_THUMBNAIL_TEXT = {
         "outcome":  ["CALM THE RACE", "QUIET THE NOISE", "STILL THE MIND"],
         "identity": ["RACING MIND", "THOUGHT LOOPS", "STORM IN HEAD"],
     },
-    "morning": {
+    "morning anxiety": {
         "question": ["MORNING ANXIETY?", "WAKING UP TENSE?", "ROUGH MORNING?"],
         "outcome":  ["EASE INTO DAY", "GROUND YOUR MORNING", "CALM WAKE-UP"],
         "identity": ["MORNING DREAD", "TENSE DAYBREAK", "WAKING ANXIOUS"],
@@ -624,6 +631,26 @@ PROBLEM_THUMBNAIL_TEXT = {
         "question": ["DRAINED?", "LOW ENERGY?", "NEED A BOOST?"],
         "outcome":  ["GET YOUR ENERGY BACK", "ENERGY BOOST", "FEEL GOOD."],
         "identity": ["LOW BATTERY", "DRAINED", "RECHARGE"],
+    },
+    "end of day": {
+        "question": ["LONG DAY?", "BURNED OUT?", "HARD DAY?"],
+        "outcome":  ["RESET YOUR EVENING", "RECHARGE", "WIND DOWN"],
+        "identity": ["END OF DAY", "EVENING RESET", "AFTER WORK"],
+    },
+    "evening": {
+        "question": ["LONG DAY?", "WORK MIND ON?", "STILL WIRED?"],
+        "outcome":  ["WIND DOWN", "DROP THE DAY", "EASE INTO EVENING"],
+        "identity": ["EVENING RESET", "END OF DAY", "WIND-DOWN HOUR"],
+    },
+    "after work": {
+        "question": ["DRAINED FROM WORK?", "HARD DAY?", "STILL WIRED?"],
+        "outcome":  ["UNWIND NOW", "DROP THE DAY", "RESET"],
+        "identity": ["AFTER WORK", "POST-WORK", "WIND-DOWN"],
+    },
+    "wind down": {
+        "question": ["CAN'T SWITCH OFF?", "STILL WIRED?", "WORK MIND ON?"],
+        "outcome":  ["WIND DOWN.", "DROP THE DAY", "EASE INTO REST"],
+        "identity": ["WIND-DOWN HOUR", "EVENING RESET", "END OF DAY"],
     },
 }
 

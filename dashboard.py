@@ -3833,6 +3833,99 @@ with tab_title_builder:
                         st.session_state["tb_b_mode"] = _mode
                         st.rerun()
 
+    # ═════════════════════════════════════════════════════════
+    # Thumbnail text suggestions — directly below A/B preview
+    # Theme-aware: looks up keyword's cluster first, then substring fallback
+    # ═════════════════════════════════════════════════════════
+    # Map cluster id → PROBLEM_THUMBNAIL_TEXT bucket key
+    _CLUSTER_TO_BUCKET = {
+        "calm": "calm",
+        "stress": "stress",
+        "sleep": "sleep",
+        "anxiety": "anxiety",
+        "healing": "healing",
+        "nostalgia": "nostalgia",
+        "focus": "focus",
+        "grounding": "grounding",
+        "uplifting": "feel good",  # uplifting cluster maps to feel-good bucket
+    }
+
+    def _find_keyword_cluster(keyword, clusters):
+        """Return cluster_id if keyword exists in a cluster, else None."""
+        kw_l = keyword.strip().lower()
+        for cl in clusters:
+            for k in cl.get("keywords", []):
+                if k.strip().lower() == kw_l:
+                    return cl.get("id")
+        return None
+
+    try:
+        from thumbnail_text import build_thumbnail_text_variants as _bt_variants_top, _bucket_for as _bt_bucket_for
+        from config import PROBLEM_THUMBNAIL_TEXT as _PTT
+
+        _has_a = bool(st.session_state.get("tb_picked_a"))
+        _has_b = bool(st.session_state.get("tb_picked_b"))
+        if _has_a or _has_b:
+            with st.container(border=True):
+                st.markdown("**Thumbnail text** · CTR hooks per variant")
+
+                def _build_variants_theme_aware(lead):
+                    """Try cluster-based bucket first, fall back to substring match."""
+                    cluster_id = _find_keyword_cluster(lead, _tb_clusters)
+                    if cluster_id and _CLUSTER_TO_BUCKET.get(cluster_id) in _PTT:
+                        bucket_key = _CLUSTER_TO_BUCKET[cluster_id]
+                        bank = _PTT[bucket_key]
+                        return [
+                            {"label": "A_question", "strategy": "Question form — cold-feed CTR",
+                             "text": bank["question"][0], "alts": bank["question"][1:]},
+                            {"label": "B_outcome",  "strategy": "Outcome / imperative — warm cohort",
+                             "text": bank["outcome"][0],  "alts": bank["outcome"][1:]},
+                            {"label": "C_identity", "strategy": "Identity / state label — low-friction scan",
+                             "text": bank["identity"][0], "alts": bank["identity"][1:]},
+                        ], f"cluster: {cluster_id}"
+                    # Fallback: existing substring match
+                    return _bt_variants_top(lead), f"substring: {_bt_bucket_for(lead)}"
+
+                def _render_thumb_below(variant_label, picked_list, color):
+                    if not picked_list:
+                        st.caption(f"_Pick keywords for {variant_label} →_")
+                        return
+                    sorted_kws = sorted(picked_list, key=lambda p: -(_tb_effective_score(p) or 0))
+                    lead = sorted_kws[0]
+                    try:
+                        variants_top, source = _build_variants_theme_aware(lead)
+                    except Exception as _be_top:
+                        st.caption(f"_Could not build thumbnail suggestions: {_be_top}_")
+                        return
+                    st.markdown(
+                        f'<div style="font-size:11px;color:{color};margin:2px 0 4px;font-weight:600">'
+                        f'{variant_label} · theme: <code style="background:#1a1d24;padding:1px 5px;border-radius:3px">{lead}</code> '
+                        f'<span style="color:#6b7280;font-weight:400">({source})</span></div>',
+                        unsafe_allow_html=True
+                    )
+                    for v in variants_top:
+                        _strategy = v.get("strategy", v.get("label", "")).split("—")[0].strip()
+                        _text = v.get("text", "")
+                        _alts = v.get("alts", [])
+                        _alts_str = " · ".join(_alts) if _alts else ""
+                        st.markdown(
+                            f'<div style="background:#1a1d24;border:1px solid #2a2e36;border-radius:3px;'
+                            f'padding:5px 9px;margin-bottom:3px">'
+                            f'<div style="font-size:9px;color:#9ca3af">{_strategy}</div>'
+                            f'<div style="font-size:15px;color:#e5e7eb;font-weight:600">{_text}</div>'
+                            + (f'<div style="font-size:9px;color:#6b7280">alt: {_alts_str}</div>' if _alts_str else '')
+                            + '</div>',
+                            unsafe_allow_html=True
+                        )
+
+                _t1, _t2 = st.columns(2, gap="medium")
+                with _t1:
+                    _render_thumb_below("Variant A · safe", st.session_state.get("tb_picked_a", []), "#93c5fd")
+                with _t2:
+                    _render_thumb_below("Variant B · experiment", st.session_state.get("tb_picked_b", []), "#d4a574")
+    except Exception as _te_top:
+        pass
+
     st.markdown("<div style='height:0.6rem'></div>", unsafe_allow_html=True)
 
     # ═════════════════════════════════════════════════════════
@@ -4176,47 +4269,6 @@ with tab_title_builder:
         st.selectbox("Duration",
                      ["(none)", "1 Hour", "1:15", "1:30", "45 Min", "30 Min"],
                      key="tb_duration")
-
-        # ── Thumbnail text suggestions (moved from bottom 2026-05-03) ──
-        st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
-        st.markdown("**Thumbnail text**")
-        st.caption("CTR hooks per variant (theme detected from highest-scored picked keyword).")
-        try:
-            from thumbnail_text import build_thumbnail_text_variants as _bt_variants
-
-            def _render_thumb_compact(variant_label, picked_list, color):
-                if not picked_list:
-                    st.caption(f"_Pick keywords for {variant_label} →_")
-                    return
-                sorted_kws = sorted(picked_list, key=lambda p: -(_tb_effective_score(p) or 0))
-                lead = sorted_kws[0]
-                try:
-                    variants = _bt_variants(lead)
-                except Exception:
-                    return
-                st.markdown(
-                    f'<div style="font-size:11px;color:{color};margin:4px 0 2px;font-weight:600">{variant_label}</div>',
-                    unsafe_allow_html=True
-                )
-                for v in variants:
-                    _strategy = v.get("strategy", v.get("label", "")).split("—")[0].strip()
-                    _text = v.get("text", "")
-                    _alts = v.get("alts", [])
-                    _alts_str = " · ".join(_alts) if _alts else ""
-                    st.markdown(
-                        f'<div style="background:#1a1d24;border:1px solid #2a2e36;border-radius:3px;'
-                        f'padding:4px 8px;margin-bottom:3px">'
-                        f'<div style="font-size:9px;color:#9ca3af">{_strategy}</div>'
-                        f'<div style="font-size:14px;color:#e5e7eb;font-weight:600">{_text}</div>'
-                        + (f'<div style="font-size:9px;color:#6b7280">alt: {_alts_str}</div>' if _alts_str else '')
-                        + '</div>',
-                        unsafe_allow_html=True
-                    )
-
-            _render_thumb_compact("A · safe", st.session_state.get("tb_picked_a", []), "#93c5fd")
-            _render_thumb_compact("B · experiment", st.session_state.get("tb_picked_b", []), "#d4a574")
-        except Exception as _te:
-            st.caption(f"_Thumbnail module not loadable: {_te}_")
 
         # Selected lists
         st.markdown(f"**Variant A** · {_a_count} keywords")
