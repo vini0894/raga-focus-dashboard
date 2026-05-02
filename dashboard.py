@@ -3988,12 +3988,13 @@ with tab_title_builder:
                 unsafe_allow_html=True
             )
 
-            # B mode pills
-            _mc1, _mc2, _mc3, _mc4, _mc5 = st.columns(5)
-            _modes = ["🎯 Question", "💚 Outcome", "🌀 Diff theme", "🎨 Competitor", "🎵 With phrase"]
-            for _mc, _mode in zip([_mc1, _mc2, _mc3, _mc4, _mc5], _modes):
+            # B mode pills — 2 rows, shorter labels for fit
+            _modes = ["🎯 Question", "💚 Outcome", "🌀 Theme", "🎨 Competitor", "🎵 Phrase"]
+            _row1 = st.columns(3)
+            _row2 = st.columns(3)
+            for _mc, _mode in zip(_row1 + _row2[:2], _modes):
                 with _mc:
-                    _is_active = _mode in st.session_state["tb_b_mode"]
+                    _is_active = _mode == st.session_state["tb_b_mode"]
                     if st.button(_mode, key=f"tb_bm_{_mode}",
                                  type="primary" if _is_active else "secondary",
                                  use_container_width=True):
