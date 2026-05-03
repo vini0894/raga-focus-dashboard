@@ -3666,9 +3666,25 @@ with tab_title_builder:
                         "still", "quiet", "boost", "lift", "feel", "get")
         PROBLEM_NOUNS = ("stress", "anxiety", "insomnia", "burnout", "overthinking",
                          "exhaustion", "tension", "fatigue", "depression", "loneliness",
-                         "homesick", "nostalgia", "grief", "panic", "overwhelm")
+                         "homesick", "nostalgia", "grief", "panic", "overwhelm",
+                         "sleep", "bed", "night", "fog", "rest")
         POSITIVE_THEMES = ("feel good", "positive", "uplifting", "happy", "joyful",
                            "bright", "cheerful", "energy", "mood")
+
+        # ── Cluster-based theme detection (more reliable than substring) ──
+        _b_cluster_id = None
+        try:
+            _b_cluster_id = _find_keyword_cluster(lead, _tb_clusters)
+        except Exception:
+            pass
+        # Cluster-based theme overrides for templates
+        # Each cluster maps to a "canonical theme word" used in templates
+        _CLUSTER_THEME = {
+            "calm": "calm", "stress": "stress", "sleep": "sleep",
+            "anxiety": "anxiety", "healing": "healing", "nostalgia": "nostalgia",
+            "focus": "focus", "grounding": "grounding", "uplifting": "energy",
+        }
+        _theme = _CLUSTER_THEME.get(_b_cluster_id) if _b_cluster_id else None
 
         # Strip common suffixes for cleaner template insertion
         clean = lead.replace(" music","").replace(" relief","").replace(" instrumental","").replace(" therapy","").strip()
@@ -3679,28 +3695,65 @@ with tab_title_builder:
         contains_positive = next((p for p in POSITIVE_THEMES if p in ll), None)
 
         # ── Question mode ──
+        # Theme-based question hooks (fired first when keyword's cluster is known)
+        _theme_question = {
+            "sleep":     "Can't Sleep?",
+            "stress":    "Stressed Out?",
+            "anxiety":   "Anxious?",
+            "calm":      "Need to Calm Down?",
+            "focus":     "Can't Focus?",
+            "healing":   "Hurting?",
+            "nostalgia": "Missing Someone?",
+            "grounding": "Ungrounded?",
+            "energy":    "Drained?",
+        }
         if "Question" in mode:
             if is_question_phrase:
                 head = lead.title().rstrip("?") + "?"
+            elif _theme and _theme in _theme_question:
+                head = _theme_question[_theme]
             elif is_action:
                 head = f"Can't {lead.title()}?"
             elif contains_problem:
-                head = f"Struggling with {contains_problem.title()}?"
+                # Map problem noun → natural question
+                _problem_q = {
+                    "sleep": "Can't Sleep?", "bed": "Can't Sleep?", "night": "Up at Night?",
+                    "stress": "Stressed Out?", "anxiety": "Anxious?",
+                    "insomnia": "Insomnia?", "burnout": "Burned Out?",
+                    "overthinking": "Overthinking?", "exhaustion": "Drained?",
+                    "fog": "Brain Fog?", "rest": "Can't Rest?",
+                    "tension": "Tense?", "fatigue": "Drained?",
+                    "homesick": "Missing Home?", "nostalgia": "Missing Someone?",
+                    "grief": "Heavy Heart?", "panic": "Panic Rising?",
+                    "overwhelm": "Overwhelmed?",
+                }
+                head = _problem_q.get(contains_problem, f"Struggling with {contains_problem.title()}?")
             elif contains_positive:
-                # For feel-good/positive content, frame as energy/mood deficit
                 if "energy" in ll or "boost" in ll: head = "Drained?"
                 elif "mood" in ll: head = "Mood Down?"
                 elif "happy" in ll or "joyful" in ll: head = "Need Joy?"
                 elif "morning" in ll: head = "Tired Morning?"
                 else: head = "Need a Lift?"
             else:
-                if " music" in ll or " relief" in ll:
-                    head = f"Need {clean.title()}?"
+                if "music" in ll or "relief" in ll or "instrumental" in ll:
+                    head = f"Looking for {clean.title()}?"
                 else:
                     head = f"{lead.title()}?"
 
         # ── Outcome mode ── (map theme → action verb + theme noun)
         elif "Outcome" in mode:
+            # Cluster-theme outcomes (fired first when keyword's cluster known)
+            _theme_outcome = {
+                "sleep":     "Drift Into Sleep",
+                "stress":    "Release Stress",
+                "anxiety":   "Soothe Anxiety",
+                "calm":      "Find Calm",
+                "focus":     "Sharpen Focus",
+                "healing":   "Begin Healing",
+                "nostalgia": "Embrace Nostalgia",
+                "grounding": "Ground Yourself",
+                "energy":    "Get Your Energy Back",
+            }
             outcome_map = {
                 "stress": "Release Stress", "anxiety": "Soothe Anxiety",
                 "insomnia": "Beat Insomnia", "burnout": "Heal Burnout",
@@ -3709,59 +3762,72 @@ with tab_title_builder:
                 "homesick": "Find Comfort", "panic": "Calm Panic",
                 "overwhelm": "Settle Overwhelm", "grief": "Heal Grief",
                 "loneliness": "Hold Yourself", "fatigue": "Restore Energy",
-                # Positive themes
                 "feel good": "Feel Good Now", "positive": "Lift Your Mood",
                 "uplifting": "Lift Your Mood", "happy": "Find Joy",
                 "joyful": "Find Joy", "energy": "Get Your Energy Back",
                 "mood": "Boost Your Mood", "bright": "Brighten Your Day",
                 "cheerful": "Find Joy",
-                # Calm / sleep / focus
-                "sleep": "Drift Into Sleep", "rest": "Find Rest",
+                "sleep": "Drift Into Sleep", "bed": "Drift Off", "bedtime": "Drift Off",
+                "night": "Settle Into Night", "rest": "Find Rest",
                 "calm": "Find Calm", "focus": "Sharpen Focus",
                 "concentration": "Lock In", "brain fog": "Clear the Fog",
                 "healing": "Begin Healing", "comfort": "Find Comfort",
                 "morning": "Start Bright", "wake": "Wake Up Bright",
             }
-            outcome_phrase = next((v for k, v in outcome_map.items() if k in ll), None)
-            if outcome_phrase:
-                head = outcome_phrase
-            elif is_action:
-                head = lead.title()
+            if _theme and _theme in _theme_outcome:
+                head = _theme_outcome[_theme]
             else:
-                head = lead.title()  # safe fallback
+                outcome_phrase = next((v for k, v in outcome_map.items() if k in ll), None)
+                if outcome_phrase:
+                    head = outcome_phrase
+                elif is_action:
+                    head = lead.title()
+                else:
+                    # Generic "Find X" / "Discover X" fallback so it at least differs from Theme mode
+                    head = f"Find {clean.title()}" if clean else lead.title()
 
-        # ── Theme mode ── just the keyword cleanly
+        # ── Theme mode ── just the keyword cleanly (no decoration)
         elif "theme" in mode.lower():
             head = lead.title()
 
         # ── Competitor mode ── borrow winning patterns
         elif "Competitor" in mode:
-            if inst and contains_problem:
-                head = f"Ancient {inst.title()} for {contains_problem.title()}"
-            elif inst and contains_positive:
-                head = f"Bright {inst.title()} for {clean.title()}"
+            # Pick "Ancient" vs "Bright" vs neutral prefix based on theme
+            _is_calm_theme = _theme in ("calm","sleep","healing","nostalgia","grounding") or contains_problem
+            _is_bright_theme = _theme == "energy" or contains_positive
+            _prefix = "Ancient" if _is_calm_theme else ("Bright" if _is_bright_theme else "Timeless")
+            _theme_word = (contains_problem or _theme or clean.lower())
+
+            if inst and (contains_problem or _theme):
+                head = f"{_prefix} {inst.title()} for {_theme_word.title()}"
             elif inst:
-                head = f"Ancient {inst.title()} · {lead.title()}"
-            elif contains_positive:
-                head = f"Bright {clean.title()}"
-            elif contains_problem:
-                head = f"Ancient Music for {contains_problem.title()}"
+                head = f"{_prefix} {inst.title()} · {lead.title()}"
+            elif contains_problem or _theme:
+                head = f"{_prefix} Music for {_theme_word.title()}"
             else:
-                head = lead.title()
+                # Truly unknown — at least add prefix so it differs from Theme mode
+                head = f"{_prefix} {lead.title()}"
 
         # ── Phrase mode ── natural prose ("X with Veena", "X through Sarangi")
         elif "phrase" in mode.lower():
             if inst:
-                if contains_positive:
-                    connector = "with"  # bright/positive content
-                elif any(k in ll for k in ("healing", "grief", "nostalgia", "comfort")):
+                if _is_bright_theme := (_theme == "energy" or contains_positive):
+                    connector = "with"
+                elif _theme in ("healing","nostalgia","grounding") or any(k in ll for k in ("healing","grief","nostalgia","comfort")):
                     connector = "through"
                 else:
                     connector = "with"
                 head = f"{lead.title()} {connector} {inst.title()}"
             else:
-                # No instrument — fall back to clean keyword
-                head = lead.title()
+                # No instrument — make it differ from Theme mode by adding a connector phrase
+                if _theme in ("healing","nostalgia"):
+                    head = f"{lead.title()} for the Heart"
+                elif _theme in ("sleep","calm","grounding"):
+                    head = f"{lead.title()} for Quiet Mind"
+                elif _theme == "energy":
+                    head = f"{lead.title()} for a Bright Day"
+                else:
+                    head = f"{lead.title()} for Deep Listening"
         else:
             head = lead.title()
 
