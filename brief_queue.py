@@ -66,8 +66,18 @@ def set_brief_status(brief_id: str, status: str):
     if status == "PUBLISHED" and prev_status != "PUBLISHED":
         try:
             _log_shipped_title(brief_id)
+            _stamp_date_shipped(brief_id)
         except Exception:
             pass
+
+
+def _stamp_date_shipped(brief_id: str):
+    """Write date_shipped into the brief JSON so the queue can display it."""
+    brief = get_brief_by_id(brief_id)
+    if not brief:
+        return
+    brief["date_shipped"] = datetime.utcnow().isoformat()[:10]
+    storage.write_brief(brief)
 
 
 def _log_shipped_title(brief_id: str):

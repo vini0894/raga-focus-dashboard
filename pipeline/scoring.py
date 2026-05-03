@@ -563,6 +563,13 @@ def generate_candidates(catalog, competitor_data, top_n=3):
             s = _sig(b.get("components", {}))
             if s and s != "||||":
                 permanent_sigs.add(s)
+            # Block the entire problem keyword — not just the specific combo
+            comp = b.get("components", {})
+            pkw = comp.get("problem", "")
+            if isinstance(pkw, dict):
+                pkw = pkw.get("kw", "")
+            if pkw:
+                parked_problems.add(pkw.strip().lower())
     except Exception:
         pass
 

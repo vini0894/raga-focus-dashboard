@@ -1,0 +1,36 @@
+{
+  "id": "v_2026-05-08_sleep_bansuri",
+  "status": "DRAFT",
+  "date_shipped": null,
+  "created_at": "2026-05-03",
+  "planned_date": "2026-05-05",
+  "title": "Sleep Music | Relaxing Music with Bansuri | 1 Hour",
+  "title_variants": {
+    "A_seo": "Sleep Music | Relaxing Music with Bansuri | 1 Hour",
+    "B_question": "Drift to Sleep with Bansuri | Raga Darbari | 1 Hour"
+  },
+  "thumbnail_text_variants": [
+    {
+      "label": "A",
+      "text": "DRIFT TO SLEEP",
+      "strategy": "Affirming \u2014 simple outcome"
+    },
+    {
+      "label": "B",
+      "text": "STILL AWAKE?",
+      "strategy": "2-word question \u2014 present state"
+    }
+  ],
+  "components": {
+    "problem": "sleep music",
+    "instrument": "Bansuri",
+    "raga": "Darbari",
+    "hz": "432hz",
+    "wave": "Delta",
+    "slot2": "Relaxing Music"
+  },
+  "tags": "sleep music, bansuri, bansuri music, bansuri instrumental music, indian bamboo flute, bamboo flute meditation, 432hz music, 432hz, Delta waves, Delta wave music, raga darbari, darbari raga, calm music, relaxing music, ambient music, background music, meditation music, indian classical music, instrumental music, sleep music, deep sleep music, delta wave sleep, music for insomnia, fall asleep fast, 1 hour bansuri music, bansuri for sleep, indian classical bansuri, delta wave meditation, raga focus",
+  "description": "Sleep Music | Relaxing Music with Bansuri | 1 Hour\n\nWhen sleep won't come and the mind won't quiet \u2014 try this. The body remembers how to rest.\n\nOne unbroken hour of ancient Indian bamboo flute playing Raga Darbari, tuned to 432Hz healing frequency, with a subliminal Delta wave layer that signals the body it's safe to fall.\n\n\ud83c\udfb5 What you'll hear:\n- the Bansuri (a bamboo flute with a breathy, meditative tone)\n- 432Hz \u2014 classic healing frequency tuned to natural harmony\n- A subliminal Delta wave entrainment layer\n- Seamless loops with smooth crossfades throughout\n\n\u23f1 Chapters\n0:00   Settling\n7:00   Drift begins\n30:00   Deep delta\n49:00   Gentle return\n\n\ud83e\udde0 How to use:\nPlay at low volume from a phone or speaker by your bed. Don't watch the screen. Within 20\u201330 minutes, the music loops you into sleep.\n\n\u23f1 Best for:\n\u2022 Falling asleep\n\u2022 Insomnia relief\n\u2022 Night-time wind-down\n\u2022 Pre-sleep meditation\n\n\ud83d\udcfa If this helped, please subscribe to Raga Focus for daily uploads:\n- Veena, Sarangi, Bansuri, Dilruba and other Indian instruments\n- 1-hour sessions tuned to specific healing frequencies\n- Music for anxiety, overthinking, sleep, stress, and emotional release\n\n\n\u2014 Raga Focus\n\n#calmingmusic #healingmusic #ambientmusic #meditationmusic #indianclassicalmusic #schumannresonance #bansuri",
+  "suno_prompt": null,
+  "thumbnail_text_main": "DRIFT TO SLEEP"
+}

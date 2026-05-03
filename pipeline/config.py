@@ -314,6 +314,21 @@ TONAL_FIT = {
         "secondary": ["Tanpura", "Sarangi"],
         "avoid":     ["Shehnai", "Tabla"],
     },
+    "nostalgia": {
+        "primary":   ["Sarangi", "Esraj"],       # bowed, vocal-like — carries longing
+        "secondary": ["Dilruba", "Sarod"],
+        "avoid":     ["Sitar", "Shehnai", "Tabla"],
+    },
+    "insomnia": {
+        "primary":   ["Bansuri", "Surbahar"],
+        "secondary": ["Tanpura", "Veena", "Dilruba"],
+        "avoid":     ["Sitar", "Shehnai", "Tabla"],
+    },
+    "homesick": {
+        "primary":   ["Sarangi", "Esraj"],
+        "secondary": ["Dilruba", "Sarod"],
+        "avoid":     ["Sitar", "Shehnai", "Tabla"],
+    },
 }
 
 # ═════════════════════════════════════════════════════════

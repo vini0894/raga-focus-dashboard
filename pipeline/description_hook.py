@@ -259,8 +259,6 @@ def build_full_description(
     L.append("- 1-hour sessions tuned to specific healing frequencies")
     L.append("- Music for anxiety, overthinking, sleep, stress, and emotional release")
     L.append("")
-    L.append("🌿 No mid-roll ads. No interruptions. Just music.")
-    L.append("")
     L.append("— Raga Focus")
     if hashtags_line:
         L.append("")
