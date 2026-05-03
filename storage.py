@@ -351,6 +351,47 @@ def read_brief_by_id(brief_id: str) -> Optional[dict]:
     return None
 
 
+def delete_brief(brief_id: str) -> bool:
+    """Remove a brief from gspread (if reachable) AND local JSON.
+
+    Returns True if anything was deleted. Also clears its status row.
+    """
+    deleted = False
+
+    ws, _ = _get_worksheet("video_briefs", _VIDEO_BRIEFS_HEADER)
+    if ws is not None:
+        try:
+            cell = ws.find(brief_id, in_column=1)
+            if cell:
+                ws.delete_rows(cell.row)
+                deleted = True
+        except Exception:
+            pass
+
+    sws, _ = _get_worksheet("brief_status", _BRIEF_STATUS_HEADER)
+    if sws is not None:
+        try:
+            scell = sws.find(brief_id, in_column=1)
+            if scell:
+                sws.delete_rows(scell.row)
+        except Exception:
+            pass
+
+    slug = brief_id.replace("/", "_").replace("\\", "_") or "unnamed"
+    fpath = BRIEFS_DIR / f"{slug}.json"
+    if fpath.exists():
+        fpath.unlink()
+        deleted = True
+
+    overrides = _read_brief_status_json()
+    if brief_id in overrides:
+        del overrides[brief_id]
+        _write_brief_status_json(overrides)
+
+    invalidate_cache()
+    return deleted
+
+
 # ---------------------------------------------------------------------------
 # Internal helpers — CSV read/write
 # ---------------------------------------------------------------------------

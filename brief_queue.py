@@ -48,7 +48,13 @@ def _save_overrides(overrides):
 
 def load_all_briefs():
     """Load every JSON brief, apply status overrides, sort newest-first."""
-    return storage.read_all_briefs()
+    briefs = storage.read_all_briefs()
+    overrides = storage.read_brief_statuses()
+    for b in briefs:
+        bid = b.get("id")
+        if bid in overrides:
+            b["status"] = overrides[bid]
+    return briefs
 
 
 def set_brief_status(brief_id: str, status: str):

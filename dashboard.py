@@ -1672,9 +1672,24 @@ with tab_briefs:
                     _meta += f"  ·  Shipped: {brief['date_shipped']}"
                 st.caption(_meta)
 
-                if st.button("← Close brief detail", key="close_brief_top"):
-                    del st.session_state["selected_brief_id"]
-                    st.rerun()
+                _bcol1, _bcol2, _bcol3 = st.columns([1, 1, 6])
+                with _bcol1:
+                    if st.button("← Close", key="close_brief_top"):
+                        del st.session_state["selected_brief_id"]
+                        st.rerun()
+                with _bcol2:
+                    _confirm_key = f"confirm_delete_{brief['id']}"
+                    if st.session_state.get(_confirm_key):
+                        if st.button("🗑️ Confirm delete", key=f"do_delete_{brief['id']}", type="primary"):
+                            import storage as _stor
+                            _stor.delete_brief(brief["id"])
+                            del st.session_state["selected_brief_id"]
+                            st.session_state.pop(_confirm_key, None)
+                            st.rerun()
+                    else:
+                        if st.button("🗑️ Delete brief", key=f"ask_delete_{brief['id']}"):
+                            st.session_state[_confirm_key] = True
+                            st.rerun()
 
                 st.success("📋 **READY-TO-PASTE BLOCKS** — copy each into YouTube Studio in order")
 
