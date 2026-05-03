@@ -1610,13 +1610,17 @@ with tab_briefs:
             "Briefs land in `raga-focus-dashboard/data/video_briefs/{slug}.json` and show here."
         )
     else:
-        # Status counter strip
+        # Compact status strip (single line, only non-zero counts shown bold)
         counts = count_by_status()
-        cols = st.columns(len(BRIEF_STATUS_VALUES))
-        for col, status in zip(cols, BRIEF_STATUS_VALUES):
-            with col:
-                st.metric(status.replace("_", " ").title(), counts.get(status, 0))
-
+        _bits = []
+        for status in BRIEF_STATUS_VALUES:
+            n = counts.get(status, 0)
+            label = status.replace("_", " ").title()
+            if n > 0:
+                _bits.append(f"**{label}: {n}**")
+            else:
+                _bits.append(f"<span style='color:#888'>{label}: 0</span>")
+        st.markdown("📊 " + "  ·  ".join(_bits), unsafe_allow_html=True)
         st.divider()
 
         # Split into active vs shipped
@@ -1635,17 +1639,29 @@ with tab_briefs:
         active_briefs.sort(key=_sort_key_active)
         shipped_briefs.sort(key=_sort_key_shipped, reverse=True)
 
-        def _render_brief_row(b, show_shipped_date=False):
+        def _render_brief_row(b, show_shipped_date=False, is_next=False):
             with st.container():
                 c1, c2, c3 = st.columns([4, 2, 2])
                 with c1:
                     planned = b.get("planned_date", "")
+                    next_chip = "▶ NEXT  " if is_next else ""
                     label = f"📅 {planned}  " if planned else ""
-                    st.markdown(f"{label}**{b.get('title', '(untitled)')}**")
-                    if show_shipped_date and b.get("date_shipped"):
-                        st.caption(f"Shipped: {b['date_shipped']}  ·  `{b.get('id')}`")
+                    title_text = b.get('title', '(untitled)')
+                    if is_next:
+                        st.markdown(
+                            f"<div style='border-left:3px solid #ff6b35;padding-left:10px;'>"
+                            f"<span style='background:#ff6b35;color:#fff;padding:1px 6px;border-radius:3px;font-size:11px;font-weight:600;'>NEXT</span> "
+                            f"<span style='color:#888;font-size:13px;'>{label}</span>"
+                            f"<strong style='font-size:15px;'>{title_text}</strong>"
+                            f"</div>",
+                            unsafe_allow_html=True,
+                        )
                     else:
-                        st.caption(f"`{b.get('id')}`  ·  created {b.get('created_at', '')[:10]}")
+                        st.markdown(f"<span style='color:#888;font-size:13px;'>{label}</span><strong>{title_text}</strong>", unsafe_allow_html=True)
+                    if show_shipped_date and b.get("date_shipped"):
+                        st.caption(f"Shipped: {b['date_shipped']}  ·  {b.get('id')}")
+                    else:
+                        st.caption(f"{b.get('id')}")
                 with c2:
                     new_status = st.selectbox(
                         "Status",
@@ -1753,12 +1769,11 @@ with tab_briefs:
                             label    = v.get("label", "")
                             text     = v.get("text", "")
                             strategy = v.get("strategy", "")
-                            head = f"**{label}**" if label else ""
-                            if strategy:
-                                head = f"{head}  ·  _{strategy}_" if head else f"_{strategy}_"
-                            if head:
-                                st.markdown(head)
+                            if label:
+                                st.markdown(f"<span style='color:#888;font-size:12px;'>VARIANT {label}</span>", unsafe_allow_html=True)
                             st.code(text, language="text")
+                            if strategy:
+                                st.caption(strategy)
                         else:
                             st.code(str(v), language="text")
                 else:
@@ -1792,8 +1807,8 @@ with tab_briefs:
         # Active briefs
         st.markdown(f"### 🟢 Active Briefs ({len(active_briefs)})")
         if active_briefs:
-            for b in active_briefs:
-                _render_brief_row(b)
+            for i, b in enumerate(active_briefs):
+                _render_brief_row(b, is_next=(i == 0))
         else:
             st.info("No active briefs — generate ideas to fill the queue.")
 
