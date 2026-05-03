@@ -1624,6 +1624,17 @@ with tab_briefs:
         active_briefs  = [b for b in briefs if b.get("status", "DRAFT") not in shipped_statuses]
         shipped_briefs = [b for b in briefs if b.get("status", "DRAFT") in shipped_statuses]
 
+        # Sort active by planned_date ascending (next-up at top), missing dates last.
+        # Sort shipped by date_shipped descending (most recent first), then planned_date.
+        def _sort_key_active(b):
+            d = b.get("planned_date") or "9999-12-31"
+            return d
+        def _sort_key_shipped(b):
+            d = b.get("date_shipped") or b.get("planned_date") or "0000-01-01"
+            return d
+        active_briefs.sort(key=_sort_key_active)
+        shipped_briefs.sort(key=_sort_key_shipped, reverse=True)
+
         def _render_brief_row(b, show_shipped_date=False):
             with st.container():
                 c1, c2, c3 = st.columns([4, 2, 2])
