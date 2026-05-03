@@ -1650,7 +1650,86 @@ with tab_briefs:
                 with c3:
                     if st.button("View brief", key=f"view_{b['id']}"):
                         st.session_state["selected_brief_id"] = b["id"]
+                        st.rerun()
                 st.divider()
+
+        # Detail view for selected brief — rendered at TOP so "View brief"
+        # click produces a visible response without scrolling.
+        selected_id = st.session_state.get("selected_brief_id")
+        if selected_id:
+            brief = get_brief_by_id(selected_id)
+            if brief is None:
+                st.warning(f"Brief `{selected_id}` not found in store. It may have been deleted, or the gspread cache is stale.")
+                if st.button("Clear selection", key="clear_missing_brief"):
+                    del st.session_state["selected_brief_id"]
+                    st.rerun()
+            else:
+                st.markdown(f"## 📋 {brief.get('title', '(untitled)')}")
+                _meta = f"Slug: `{brief['id']}`  ·  Status: **{brief.get('status', 'DRAFT')}**"
+                if brief.get("planned_date"):
+                    _meta += f"  ·  Planned: {brief['planned_date']}"
+                if brief.get("date_shipped"):
+                    _meta += f"  ·  Shipped: {brief['date_shipped']}"
+                st.caption(_meta)
+
+                if st.button("← Close brief detail", key="close_brief_top"):
+                    del st.session_state["selected_brief_id"]
+                    st.rerun()
+
+                st.success("📋 **READY-TO-PASTE BLOCKS** — copy each into YouTube Studio in order")
+
+                st.markdown("##### 1️⃣ Title (paste into Title field)")
+                title_str = brief.get("title", "")
+                st.code(title_str, language="text")
+                st.caption(f"{len(title_str)} chars")
+                if brief.get("title_variants"):
+                    with st.expander("Other A/B/C variants (for Test & Compare)", expanded=False):
+                        for k, v in brief["title_variants"].items():
+                            st.code(v, language="text")
+                            st.caption(f"{k} · {len(v)} chars")
+
+                st.markdown("##### 2️⃣ Description (paste into Description field)")
+                desc = brief.get("description", "")
+                st.code(desc, language="text")
+                st.caption(f"{len(desc)} chars")
+
+                st.markdown("##### 3️⃣ Tags (paste into Tags field, comma-separated)")
+                tags_val = brief.get("tags", "")
+                tags_str = tags_val if isinstance(tags_val, str) else ", ".join(tags_val)
+                st.code(tags_str, language="text")
+                st.caption(f"{len(tags_str)}/500 chars · {len(tags_str.split(',')) if tags_str else 0} tags")
+
+                st.markdown("##### 4️⃣ Thumbnail overlay text")
+                if brief.get("thumbnail_text_variants"):
+                    for v in brief["thumbnail_text_variants"][:3]:
+                        st.code(v, language="text")
+                else:
+                    st.code(brief.get("thumbnail_text_main", "—"), language="text")
+                if brief.get("thumbnail_prompt"):
+                    with st.expander("Image prompt (Ideogram / Midjourney)", expanded=False):
+                        st.code(brief["thumbnail_prompt"], language="text")
+
+                if brief.get("suno_prompt"):
+                    st.markdown("##### 5️⃣ Suno prompt")
+                    st.code(brief["suno_prompt"], language="text")
+
+                with st.expander("📊 Strategy details", expanded=False):
+                    if brief.get("strategic_bet"):
+                        st.markdown(f"**Strategic bet:** {brief['strategic_bet']}")
+                    comps = brief.get("components", {})
+                    if comps:
+                        st.markdown("**Components:** " + " · ".join(
+                            f"{k}: {v if not isinstance(v, dict) else v.get('name') or v.get('kw') or v.get('hz') or v.get('wave')}"
+                            for k, v in comps.items()
+                        ))
+                    if brief.get("validated_keywords"):
+                        st.markdown("**Validated keywords:** " + ", ".join(brief["validated_keywords"]))
+
+                if brief.get("production_spec"):
+                    with st.expander("🛠️ Production spec", expanded=False):
+                        st.json(brief["production_spec"])
+
+                st.markdown("---")
 
         # Active briefs
         st.markdown(f"### 🟢 Active Briefs ({len(active_briefs)})")
@@ -1665,114 +1744,6 @@ with tab_briefs:
             with st.expander(f"✅ Shipped ({len(shipped_briefs)})", expanded=False):
                 for b in shipped_briefs:
                     _render_brief_row(b, show_shipped_date=True)
-
-        # Detail view for selected brief
-        selected_id = st.session_state.get("selected_brief_id")
-        if selected_id:
-            brief = get_brief_by_id(selected_id)
-            if brief:
-                st.markdown("---")
-                st.markdown(f"## 📋 {brief.get('title', '(untitled)')}")
-                _meta = f"Slug: `{brief['id']}`  ·  Status: **{brief.get('status', 'DRAFT')}**"
-                if brief.get("planned_date"):
-                    _meta += f"  ·  Planned: {brief['planned_date']}"
-                if brief.get("date_shipped"):
-                    _meta += f"  ·  Shipped: {brief['date_shipped']}"
-                st.caption(_meta)
-
-                # ═══════════════════════════════════════════════════════
-                # 🚀 READY TO PASTE INTO YOUTUBE STUDIO
-                # Everything the colleague needs in one ordered block
-                # ═══════════════════════════════════════════════════════
-                st.success("📋 **READY-TO-PASTE BLOCKS** — copy each into YouTube Studio in order")
-
-                # 1. TITLE
-                st.markdown("##### 1️⃣ Title (paste into Title field)")
-                title_str = brief.get("title", "")
-                st.code(title_str, language="text")
-                st.caption(f"{len(title_str)} chars")
-                if brief.get("title_variants"):
-                    with st.expander("Other A/B/C variants (for Test & Compare)", expanded=False):
-                        for k, v in brief["title_variants"].items():
-                            st.code(v, language="text")
-                            st.caption(f"{k} · {len(v)} chars")
-
-                # 2. DESCRIPTION
-                st.markdown("##### 2️⃣ Description (paste into Description field)")
-                desc = brief.get("description", "")
-                st.code(desc, language="text")
-                st.caption(f"{len(desc)} chars · sections: hook · body · what you'll hear · chapters · how to use · best for · subscribe CTA · hashtags")
-
-                # 3. TAGS
-                st.markdown("##### 3️⃣ Tags (paste into Tags field, comma-separated)")
-                tags_val = brief.get("tags", "")
-                tags_str = tags_val if isinstance(tags_val, str) else ", ".join(tags_val)
-                st.code(tags_str, language="text")
-                st.caption(f"{len(tags_str)}/500 chars · {len(tags_str.split(',')) if tags_str else 0} tags")
-
-                # 4. THUMBNAIL
-                st.markdown("##### 4️⃣ Thumbnail overlay text (use ONE; or A/B-test up to 3)")
-                tcol1, tcol2 = st.columns([2, 1])
-                with tcol1:
-                    if brief.get("thumbnail_text_variants"):
-                        for v in brief["thumbnail_text_variants"][:3]:
-                            st.code(v, language="text")
-                    else:
-                        st.code(brief.get("thumbnail_text_main", "—"), language="text")
-                    if brief.get("thumbnail_text_secondary"):
-                        st.caption(f"Subtitle: `{brief['thumbnail_text_secondary']}`")
-                with tcol2:
-                    st.markdown("**Image prompt:**")
-                    with st.expander("(for Ideogram / Midjourney)", expanded=False):
-                        st.code(brief.get("thumbnail_prompt", ""), language="text")
-
-                # 5. SUNO
-                st.markdown("##### 5️⃣ Suno prompt (if music not yet generated)")
-                st.code(brief.get("suno_prompt", ""), language="text")
-
-                # ═══════════════════════════════════════════════════════
-                # Production checklist
-                # ═══════════════════════════════════════════════════════
-                st.markdown("---")
-                st.markdown("##### ✅ Production checklist")
-                c1, c2 = st.columns(2)
-                with c1:
-                    st.checkbox("Music generated (Suno)", key=f"chk_suno_{brief['id']}")
-                    st.checkbox("Thumbnail rendered", key=f"chk_thumb_{brief['id']}")
-                    st.checkbox("Audio mastered (-14 LUFS)", key=f"chk_master_{brief['id']}")
-                with c2:
-                    st.checkbox("Video file exported (MP4)", key=f"chk_export_{brief['id']}")
-                    st.checkbox("Uploaded to YouTube Studio", key=f"chk_upload_{brief['id']}")
-                    st.checkbox("Test & Compare A/B set up", key=f"chk_ab_{brief['id']}")
-
-                # ═══════════════════════════════════════════════════════
-                # Strategy details (collapsed)
-                # ═══════════════════════════════════════════════════════
-                with st.expander("📊 Strategy details (components, validated keywords, success criteria)", expanded=False):
-                    if brief.get("strategic_bet"):
-                        st.markdown(f"**Strategic bet:** {brief['strategic_bet']}")
-
-                    comps = brief.get("components", {})
-                    if comps:
-                        st.markdown("**Components:**")
-                        cols = st.columns(5)
-                        for col, (k, v) in zip(cols, comps.items()):
-                            col.metric(k.title(), str(v))
-
-                    if brief.get("validated_keywords"):
-                        st.markdown("**Validated keywords:** " + ", ".join(brief["validated_keywords"]))
-
-                    if brief.get("success_good") or brief.get("success_breakthrough"):
-                        st.markdown(f"**Good outcome:** {brief.get('success_good', '—')}")
-                        st.markdown(f"**Breakthrough:** {brief.get('success_breakthrough', '—')}")
-
-                if brief.get("production_spec"):
-                    with st.expander("🛠️ Production spec (binaural, mix, master, ffmpeg)", expanded=False):
-                        st.json(brief["production_spec"])
-
-                if st.button("Close brief detail"):
-                    del st.session_state["selected_brief_id"]
-                    st.rerun()
 
     st.divider()
     st.caption(
