@@ -1,0 +1,49 @@
+{
+  "id": "v_2026-05-07_peaceful_veena",
+  "status": "DRAFT",
+  "date_shipped": null,
+  "created_at": "2026-05-03",
+  "planned_date": "2026-05-07",
+  "title": "Peaceful Music | Soothing Music with Veena | 1 Hour",
+  "title_variants": {
+    "A": "Peaceful Music | Soothing Music with Veena | 1 Hour",
+    "B": "Need Calm? | Peaceful Music with Veena | 1 Hour"
+  },
+  "components": {
+    "problem": "peaceful music",
+    "instrument": "Veena",
+    "raga": "Yaman",
+    "hz": "432Hz",
+    "wave": "Theta"
+  },
+  "validated_keywords": [
+    "peaceful music (72)",
+    "soothing music (69)",
+    "calming music (72)",
+    "veena healing music (67)",
+    "432hz meditation (61)"
+  ],
+  "strategic_bet": "Doubling down on the proven hero. Channel data (May 2026): Veena is in 3 of top 7 videos, all 22%+ AVD, combined ~1,889 views. Stress Relief Music | Veena (#2 channel: 1,260 views, 22.6% AVD) and Calm Your Mind | Veena Healing (#6: 324 views, 22.6% AVD) prove the Veena+healing formula. Peaceful + Soothing fills a clean keyword gap (neither shipped) while reinforcing the working lane. Competitor-validated: 5 Raga Heal + Shanti hits on calm/peaceful theme (most repeated formula in their playbook).",
+  "success_good": "≥800 views in 30 days · ≥3% CTR · ≥22% AVD (matching Veena hero baseline)",
+  "success_breakthrough": "≥3K views in 60 days · validates Peaceful as a third Veena format alongside Stress Relief and Calm Your Mind",
+  "tags": "peaceful music, soothing music, calming music, calm music, veena music, veena healing music, raga yaman, 432hz music, theta wave, indian classical music, healing music, meditation music, stress relief music, deep relaxation music, ambient music, instrumental music, gentle music, relaxing music, indian instrumental, evening music, mind calming, tension relief music",
+  "description": "Peaceful Music | Soothing Music with Veena | 1 Hour\n\nThe Veena is the oldest stringed instrument India ever made — and the slowest. It does not hurry. It cannot. The strings are too long, the resonance too deep, the silences between notes too necessary. Tonight, that is exactly the point.\n\nThis is a slow, soothing hour built around the Veena and Raga Yaman — the great evening raga of Indian classical music, traditionally sung at the meeting hour between day and night, when the mind is finally allowed to settle. Layered with 432Hz tuning and a gentle 6Hz Theta carrier, it's designed for one thing: a deep, undefended peace.\n\n🌿 What you'll hear:\n• Veena solo in Raga Yaman (the great evening healing raga)\n• Tanpura drone background (steady tonal anchor)\n• 432Hz tuning · 6Hz Theta wave entrainment\n\n🌿 Chapters:\n00:00 — Settle in (alap)\n15:00 — Open the slow space\n30:00 — Sustained holding\n45:00 — Soft return\n\n🌿 How to use:\nEvenings · before sleep · after a long day · when the mind keeps replaying things · while reading · during a quiet meal\n\n🌿 Best for:\nCalming an active mind · pre-sleep wind-down · reading and journaling · post-work decompression · meditation practice\n\nIf the room got a little quieter — subscribe. Slow music for the long evenings.\n\n#peacefulmusic #soothingmusic #calmingmusic #veenamusic #ragayaman #432hz #thetawave #healingmusic #indianclassical #eveningmusic",
+  "thumbnail_text_main": "FIND PEACE",
+  "thumbnail_text_variants": [
+    {"label": "A", "text": "FIND PEACE", "strategy": "Affirming — outcome promise, simple"},
+    {"label": "B", "text": "NEED CALM?", "strategy": "Question — gentle pain-state, conversational"}
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate cream parchment border, female figure seated in evening light, hands resting on lap, eyes closed in deep peace, twilight landscape behind with soft purple-blue sky and warm golden horizon, traditional Indian temple silhouette in background, deep teal serif typography overlay, mobile-readable bold 2-word hook, aged parchment texture, gold leaf accents on border, contemplative evening mood",
+  "suno_prompt": "Slow contemplative Indian classical veena solo in raga Yaman, deep evening healing mood, long sustained low resonant string notes with delicate ornamentation, subtle tanpura drone in the background, no percussion, peaceful and meditative, 432Hz tuning, very slow tempo around 55 BPM, seamless ambient texture suitable for a 1-hour loop, deep emotional resonance, traditional Indian classical sound, no vocals, contemplative and restorative throughout, like quiet evening hours",
+  "production_spec": {
+    "duration_minutes": 60,
+    "bpm_range": "55-60",
+    "key_frequency_hz": 432,
+    "binaural_carrier_hz": 6,
+    "binaural_wave": "Theta",
+    "lufs_target": -14,
+    "loop_seam": "crossfade 4-bar tail into head, verify no transient on loop seam",
+    "render": "mp4 1080p · static thumbnail · audio 48kHz 320kbps stereo",
+    "notes": "Veena tradition has been your channel's strongest signal — 3 videos in top 7 all at 22%+ AVD. Lean into long sustained notes, characteristic Veena ornamentation (gamak, meend). Yaman is the safest evening raga choice for the calm/peaceful brand."
+  }
+}

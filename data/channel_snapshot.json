@@ -1,0 +1,132 @@
+{
+  "fetched_on": "2026-05-03",
+  "window_start": "2026-04-05",
+  "window_end": "2026-05-02",
+  "totals": {
+    "views": 7967,
+    "watch_hours": 2076.97,
+    "subscribers_gained": 101,
+    "impressions": 165821,
+    "ctr_pct": 3.47,
+    "avd_pct": 21.05,
+    "avd_seconds_avg": 943
+  },
+  "top_videos": [
+    {
+      "rank": 1,
+      "video_id": "m6aFcw2f58o",
+      "title": "Deep Rest Music | Find Stillness with Surbahar | 1 Hour",
+      "published": "2026-04-28",
+      "views": 2171,
+      "avd_pct": 24.53,
+      "ctr_pct": 4.27,
+      "impressions": 39108,
+      "watch_hours": 799.12,
+      "subs": 25
+    },
+    {
+      "rank": 2,
+      "video_id": "5UGTuyNHHHE",
+      "title": "Stress Relief Music | Deep Meditation with Veena Raga & 432Hz | 1 Hour",
+      "published": "2026-04-24",
+      "views": 1260,
+      "avd_pct": 22.61,
+      "ctr_pct": 3.56,
+      "impressions": 26257,
+      "watch_hours": 332.96,
+      "subs": 8
+    },
+    {
+      "rank": 3,
+      "video_id": "SEw8IsSXRSU",
+      "title": "Sitar for Dopamine Reset | Indian Classical Music for Mindfulness",
+      "published": "2026-04-29",
+      "views": 976,
+      "avd_pct": 23.92,
+      "ctr_pct": 2.32,
+      "impressions": 29888,
+      "watch_hours": 350.18,
+      "subs": 14
+    },
+    {
+      "rank": 4,
+      "video_id": "7PDDveKXLbs",
+      "title": "Can't Fall Asleep | Raga Yaman Bansuri | Delta Wave Sleep Session | 1 Hour",
+      "published": "2026-04-22",
+      "views": 771,
+      "avd_pct": 13.63,
+      "ctr_pct": 5.15,
+      "impressions": 11269,
+      "watch_hours": 122.6,
+      "subs": 16
+    },
+    {
+      "rank": 5,
+      "video_id": "g3v4KTVRNEQ",
+      "title": "Relaxation Music | Bansuri Raga & 432Hz Evening Session | 1 Hour",
+      "published": "2026-04-25",
+      "views": 459,
+      "avd_pct": 22.88,
+      "ctr_pct": 3.25,
+      "impressions": 10364,
+      "watch_hours": 131.56,
+      "subs": 2
+    },
+    {
+      "rank": 6,
+      "video_id": "h7jE3BbxdN4",
+      "title": "Calm Your Mind | Veena Healing Music | 1 hour",
+      "published": "2026-04-26",
+      "views": 324,
+      "avd_pct": 22.61,
+      "ctr_pct": 3.41,
+      "impressions": 7028,
+      "watch_hours": 90.82,
+      "subs": 1
+    },
+    {
+      "rank": 7,
+      "video_id": "Z6dZjnUzNXQ",
+      "title": "Release Stress | Burnout Music | Santoor & 528Hz",
+      "published": "2026-04-27",
+      "views": 263,
+      "avd_pct": 21.39,
+      "ctr_pct": 3.95,
+      "impressions": 4985,
+      "watch_hours": 70.32,
+      "subs": 2
+    },
+    {
+      "rank": 8,
+      "video_id": "FsYTGhdm2uM",
+      "title": "Breathe And Relax | Slow Down Music | Veena Instrumental",
+      "published": "2026-05-02",
+      "views": 205,
+      "avd_pct": 10.64,
+      "ctr_pct": 5.01,
+      "impressions": 3113,
+      "watch_hours": 32.73,
+      "subs": 2
+    },
+    {
+      "rank": 9,
+      "video_id": "pMDVh0dzUdI",
+      "title": "Anxiety Relief Music | Clear Your Mind | 1 Hour Dilruba Session",
+      "published": "2026-05-01",
+      "views": 81,
+      "avd_pct": 17.14,
+      "ctr_pct": 6.03,
+      "impressions": 1029,
+      "watch_hours": 20.83,
+      "subs": 1
+    }
+  ],
+  "insights": [
+    "Surbahar is the channel's new #1 hero (Deep Rest Music: 2,171 views, 24.5% AVD, 39,108 impressions)",
+    "Veena healing cluster strong: 3 videos in top 7, all 22%+ AVD, combined 1,889 views",
+    "Highest CTRs (5%+) on question-hook + simple titles: Can't Fall Asleep (5.15%), Breathe And Relax (5.01%), Anxiety Relief (6.03%)",
+    "Channel-wide AVD trending up: 13\u201318% early April \u2192 21\u201324% last 7 days. Algorithm finding the audience.",
+    "Sleep framing pulls clicks but bounces (Can't Fall Asleep: 5.15% CTR but 13.6% AVD). 'Deep Rest / Wind Down' framing holds attention better.",
+    "Emotional lane (Violin Emotional Release: 89 views, 13.7% AVD) confirmed weakest. Healing/calm/stress/rest cluster dominates."
+  ]
+}

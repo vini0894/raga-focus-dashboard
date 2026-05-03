@@ -2073,6 +2073,49 @@ with tab_idea_gen:
         "and writes today's proposal. Result renders below."
     )
 
+    # Channel Pulse — fresh top performers, sourced from data/channel_snapshot.json
+    _snap_path = DASHBOARD_DIR / "data" / "channel_snapshot.json"
+    if _snap_path.exists():
+        try:
+            import json as _json_pulse
+            _snap = _json_pulse.loads(_snap_path.read_text())
+            with st.expander(
+                f"📊 Channel Pulse — top performers {_snap.get('window_start','')} → {_snap.get('window_end','')}  "
+                f"(updated {_snap.get('fetched_on','')})",
+                expanded=True,
+            ):
+                _t = _snap.get("totals", {})
+                _mc1, _mc2, _mc3, _mc4 = st.columns(4)
+                _mc1.metric("Views (28d)",       f"{_t.get('views',0):,}")
+                _mc2.metric("Watch hours",       f"{_t.get('watch_hours',0):,.0f}")
+                _mc3.metric("CTR",               f"{_t.get('ctr_pct',0):.2f}%")
+                _mc4.metric("AVD",               f"{_t.get('avd_pct',0):.1f}%")
+
+                _vids = _snap.get("top_videos", [])
+                if _vids:
+                    import pandas as _pd_pulse
+                    _df_pulse = _pd_pulse.DataFrame([
+                        {
+                            "#":          v["rank"],
+                            "Title":      v["title"][:60] + ("…" if len(v["title"]) > 60 else ""),
+                            "Views":      v["views"],
+                            "AVD%":       v["avd_pct"],
+                            "CTR%":       v["ctr_pct"],
+                            "Impr.":      v["impressions"],
+                            "WT (h)":     round(v["watch_hours"], 0),
+                        }
+                        for v in _vids
+                    ])
+                    st.dataframe(_df_pulse, hide_index=True, use_container_width=True)
+
+                _ins = _snap.get("insights", [])
+                if _ins:
+                    st.markdown("**Insights:**")
+                    for line in _ins:
+                        st.markdown(f"- {line}")
+        except Exception as _e_pulse:
+            st.caption(f"_Channel Pulse failed to render: {_e_pulse}_")
+
     col_a, col_b, col_c, col_d = st.columns([2, 2, 2, 3])
 
     with col_a:
