@@ -1700,9 +1700,21 @@ with tab_briefs:
                 st.caption(f"{len(tags_str)}/500 chars · {len(tags_str.split(',')) if tags_str else 0} tags")
 
                 st.markdown("##### 4️⃣ Thumbnail overlay text")
-                if brief.get("thumbnail_text_variants"):
-                    for v in brief["thumbnail_text_variants"][:3]:
-                        st.code(v, language="text")
+                tvars = brief.get("thumbnail_text_variants") or []
+                if tvars:
+                    for v in tvars[:3]:
+                        if isinstance(v, dict):
+                            label    = v.get("label", "")
+                            text     = v.get("text", "")
+                            strategy = v.get("strategy", "")
+                            head = f"**{label}**" if label else ""
+                            if strategy:
+                                head = f"{head}  ·  _{strategy}_" if head else f"_{strategy}_"
+                            if head:
+                                st.markdown(head)
+                            st.code(text, language="text")
+                        else:
+                            st.code(str(v), language="text")
                 else:
                     st.code(brief.get("thumbnail_text_main", "—"), language="text")
                 if brief.get("thumbnail_prompt"):
