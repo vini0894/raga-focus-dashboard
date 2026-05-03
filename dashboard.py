@@ -1619,15 +1619,22 @@ with tab_briefs:
 
         st.divider()
 
-        # Briefs table with status editor
-        st.markdown("### All Briefs (newest first)")
-        for b in briefs:
+        # Split into active vs shipped
+        shipped_statuses = {"PUBLISHED", "COMPLETE"}
+        active_briefs  = [b for b in briefs if b.get("status", "DRAFT") not in shipped_statuses]
+        shipped_briefs = [b for b in briefs if b.get("status", "DRAFT") in shipped_statuses]
+
+        def _render_brief_row(b, show_shipped_date=False):
             with st.container():
                 c1, c2, c3 = st.columns([4, 2, 2])
                 with c1:
-                    st.markdown(f"**{b.get('title', '(untitled)')}**")
-                    st.caption(f"`{b.get('id')}`  ·  Score {b.get('candidate_score', '—')}  ·  "
-                               f"created {b.get('created_at', '')[:10]}")
+                    planned = b.get("planned_date", "")
+                    label = f"📅 {planned}  " if planned else ""
+                    st.markdown(f"{label}**{b.get('title', '(untitled)')}**")
+                    if show_shipped_date and b.get("date_shipped"):
+                        st.caption(f"Shipped: {b['date_shipped']}  ·  `{b.get('id')}`")
+                    else:
+                        st.caption(f"`{b.get('id')}`  ·  created {b.get('created_at', '')[:10]}")
                 with c2:
                     new_status = st.selectbox(
                         "Status",
@@ -1645,6 +1652,20 @@ with tab_briefs:
                         st.session_state["selected_brief_id"] = b["id"]
                 st.divider()
 
+        # Active briefs
+        st.markdown(f"### 🟢 Active Briefs ({len(active_briefs)})")
+        if active_briefs:
+            for b in active_briefs:
+                _render_brief_row(b)
+        else:
+            st.info("No active briefs — generate ideas to fill the queue.")
+
+        # Shipped briefs (collapsed)
+        if shipped_briefs:
+            with st.expander(f"✅ Shipped ({len(shipped_briefs)})", expanded=False):
+                for b in shipped_briefs:
+                    _render_brief_row(b, show_shipped_date=True)
+
         # Detail view for selected brief
         selected_id = st.session_state.get("selected_brief_id")
         if selected_id:
@@ -1652,7 +1673,12 @@ with tab_briefs:
             if brief:
                 st.markdown("---")
                 st.markdown(f"## 📋 {brief.get('title', '(untitled)')}")
-                st.caption(f"Slug: `{brief['id']}`  ·  Status: **{brief.get('status', 'DRAFT')}**")
+                _meta = f"Slug: `{brief['id']}`  ·  Status: **{brief.get('status', 'DRAFT')}**"
+                if brief.get("planned_date"):
+                    _meta += f"  ·  Planned: {brief['planned_date']}"
+                if brief.get("date_shipped"):
+                    _meta += f"  ·  Shipped: {brief['date_shipped']}"
+                st.caption(_meta)
 
                 # ═══════════════════════════════════════════════════════
                 # 🚀 READY TO PASTE INTO YOUTUBE STUDIO
