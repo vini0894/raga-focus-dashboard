@@ -1,0 +1,56 @@
+{
+  "id": "v_2026-05-04_comfort_sarangi",
+  "status": "DRAFT",
+  "date_shipped": null,
+  "created_at": "2026-05-03",
+  "planned_date": "2026-05-04",
+  "title": "Comfort Music | Healing Music with Sarangi | 1 Hour",
+  "title_variants": {
+    "A": "Comfort Music | Healing Music with Sarangi | 1 Hour",
+    "B": "Feeling Heavy? | Comfort Music with Sarangi | 1 Hour"
+  },
+  "components": {
+    "problem": "comfort music",
+    "instrument": "Sarangi",
+    "raga": "Bhairavi",
+    "hz": "432Hz",
+    "wave": "Theta"
+  },
+  "validated_keywords": [
+    "comfort music (63)",
+    "healing music (74)",
+    "calming music (72)",
+    "432hz meditation (61)"
+  ],
+  "strategic_bet": "Fresh-instrument play. Sarangi is 26d clear (most-rested healing instrument). Raga Heal's 'Lunar Serenity | Ethereal Sarangi to Release Deep Tension' validates Sarangi for tension-release territory. Channel's only prior Sarangi was 'Brain Fog | Think Clearly with Sarangi 40Hz' (Apr 7) \u2014 wrong-lane (focus, not healing) \u2014 so Sarangi has never been tested in its true emotional strength on this channel. Distinct from May 7 Peaceful+Veena (different slot 1+2 keywords, different tokens, no theme overlap by 2-token rule). Sarangi is the most voice-like Indian instrument \u2014 naturally fits the emotional/calming territory.",
+  "success_good": "\u2265500 views in 30 days \u00b7 \u22653% CTR \u00b7 \u226518% AVD",
+  "success_breakthrough": "\u22652K views in 60 days \u2014 would validate Sarangi as a third hero instrument alongside Surbahar and Veena, opening tonal range for the channel",
+  "tags": "comfort music, calming music, healing music, sarangi music, raga bhairavi, 432hz music, theta wave, indian classical music, soothing music, peaceful music, meditation music, deep relaxation music, anxiety relief music, stress relief music, emotional healing music, gentle music, instrumental music, indian instrumental, evening music, mind calming, sound healing, ancient indian healing",
+  "description": "Comfort Music | Healing Music with Sarangi | 1 Hour\n\nThe Sarangi is the closest an instrument has ever come to the human voice. Its strings are bowed, not plucked \u2014 so they breathe. They sigh. They hold a note the way a singer would, with the same small trembles, the same pauses. For centuries it has been the instrument Hindustani classical tradition turns to when nothing else can reach the place that hurts.\n\nThis hour is built around the Sarangi in Raga Bhairavi \u2014 the deep, undefended raga traditionally played at the very end of the night, when the music has nothing left to prove. Layered with 432Hz tuning and a 6Hz Theta carrier, it's designed to do what Sarangi has always done best: meet the busy mind quietly and let it settle.\n\n\ud83c\udf3f What you'll hear:\n\u2022 Sarangi solo in Raga Bhairavi (the closing healing raga of Hindustani tradition)\n\u2022 Tanpura drone background (steady tonal anchor)\n\u2022 432Hz tuning \u00b7 6Hz Theta wave entrainment\n\n\ud83c\udf3f Chapters:\n00:00 \u2014 Sarangi enters slowly\n15:00 \u2014 Open the bowed phrases\n30:00 \u2014 Sustained holding\n45:00 \u2014 Quiet close\n\n\ud83c\udf3f How to use:\nLate evenings \u00b7 before bed \u00b7 when the mind keeps replaying things \u00b7 while reading \u00b7 for emotional release that doesn't need words\n\n\ud83c\udf3f Best for:\nA mind that won't settle \u00b7 slow heartbreak healing \u00b7 post-difficult-day decompression \u00b7 meditation practice \u00b7 journaling sessions\n\nIf the room felt a little quieter \u2014 subscribe. Music for the long evenings.\n\n#comfortmusic #healingmusic #sarangimusic #ragabhairavi #432hz #thetawave #healingmusic #indianclassical #eveningmusic #emotionalhealing",
+  "thumbnail_text_main": "FEEL CALM",
+  "thumbnail_text_variants": [
+    {
+      "label": "A",
+      "text": "BUSY MIND?",
+      "strategy": "Question \u2014 most universal pain-state, calm is the cure"
+    },
+    {
+      "label": "B",
+      "text": "FEEL CALM",
+      "strategy": "Affirming \u2014 outcome promise, simple Indian-audience English"
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate cream parchment border, female figure seated at evening hour, head tilted slightly forward in contemplation, hands folded gently, eyes softly closed, twilight landscape behind with deep purple-blue horizon and a single warm lantern glow, traditional Indian temple silhouette in background, deep teal serif typography overlay, mobile-readable bold 2-word hook, aged parchment texture, gold leaf accents on border, contemplative late-evening mood",
+  "suno_prompt": "Slow contemplative Indian classical sarangi solo in raga Bhairavi, deep emotional bowed string instrument with vocal-like quality, sustained breathing notes with characteristic gamak ornamentation, subtle tanpura drone in the background, no percussion, late evening healing mood, 432Hz tuning, very slow tempo around 50-55 BPM, seamless ambient texture suitable for a 1-hour loop, deep emotional resonance, traditional Hindustani classical sound, no vocals, contemplative and restorative throughout, like the closing hour of night",
+  "production_spec": {
+    "duration_minutes": 60,
+    "bpm_range": "50-55",
+    "key_frequency_hz": 432,
+    "binaural_carrier_hz": 6,
+    "binaural_wave": "Theta",
+    "lufs_target": -14,
+    "loop_seam": "crossfade 4-bar tail into head, verify no transient on loop seam",
+    "render": "mp4 1080p \u00b7 static thumbnail \u00b7 audio 48kHz 320kbps stereo",
+    "notes": "Sarangi is bowed and breathing \u2014 lean into the breath-like qualities. Bhairavi is the great closing raga of night, deeply emotional. Channel's only prior Sarangi was wrong-lane (focus); this is the first true emotional Sarangi piece for Raga Focus."
+  }
+}

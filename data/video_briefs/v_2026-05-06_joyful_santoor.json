@@ -3,7 +3,7 @@
   "status": "DRAFT",
   "date_shipped": null,
   "created_at": "2026-05-03",
-  "planned_date": "2026-05-06",
+  "planned_date": "2026-05-07",
   "title": "Joyful Music | Positive Vibes Music with Santoor | 1 Hour",
   "title_variants": {
     "A": "Joyful Music | Positive Vibes Music with Santoor | 1 Hour",
@@ -23,15 +23,23 @@
     "uplifting music (66)",
     "528hz (55)"
   ],
-  "strategic_bet": "Tonal-variety play. Queue is anxiety/sleep/burnout heavy — joyful adds palette range and a positive-mood entry point. Competitor signal is thin (one Shanti hit on this theme), so this is a creative bet, not a validated formula. Acceptable because slot 2 is banked at 72 and Santoor is a tonally distinctive instrument the channel hasn't used in this mood. Tests: A = affirmation/SEO-led ('Joyful Music'); B = problem-state question ('Feeling Low?'). Mirrors the user's prior feel-good acoustic A/B pattern.",
-  "success_good": "≥3K views in 30 days · ≥3% CTR · ≥18% AVD",
-  "success_breakthrough": "≥10K views — would validate joyful as a lane worth doubling down on for the channel",
+  "strategic_bet": "Tonal-variety play. Queue is anxiety/sleep/burnout heavy \u2014 joyful adds palette range and a positive-mood entry point. Competitor signal is thin (one Shanti hit on this theme), so this is a creative bet, not a validated formula. Acceptable because slot 2 is banked at 72 and Santoor is a tonally distinctive instrument the channel hasn't used in this mood. Tests: A = affirmation/SEO-led ('Joyful Music'); B = problem-state question ('Feeling Low?'). Mirrors the user's prior feel-good acoustic A/B pattern.",
+  "success_good": "\u22653K views in 30 days \u00b7 \u22653% CTR \u00b7 \u226518% AVD",
+  "success_breakthrough": "\u226510K views \u2014 would validate joyful as a lane worth doubling down on for the channel",
   "tags": "joyful music, positive vibes music, feel good music, mood boost music, santoor music, raga khamaj, 528hz music, alpha wave, uplifting music, indian classical music, peaceful music, calming music, instrumental music, morning music, ambient music, healing music, meditation music, indian instrumental, hammered dulcimer, sunrise music, light music, gentle music",
-  "description": "Joyful Music | Positive Vibes Music with Santoor | 1 Hour\n\nSome days don't need fixing. They need a soundtrack. The Santoor — 100 strings struck softly with delicate hammers — has been the sound of Kashmiri sunrises and Indian celebrations for centuries. This hour is built around it, in Raga Khamaj, the playful semi-classical raga with a light, lifting character — paired with a soft tabla groove so the energy is alive without ever being loud.\n\n🌿 What you'll hear:\n• Santoor solo in Raga Khamaj (light, playful, semi-classical)\n• Subtle tabla in teentaal (gentle rhythmic lift)\n• Tanpura drone background (steady tonal anchor)\n• 528Hz tuning · 11Hz Alpha wave entrainment\n\n🌿 Chapters:\n00:00 — Soft awakening\n15:00 — Cascading flow\n30:00 — Bright sustain\n45:00 — Gentle close\n\n🌿 How to use:\nMorning coffee · slow Sundays · golden-hour wind-down · creative work · while you cook · while you write\n\n🌿 Best for:\nLifting a flat mood · easing into the day · low-pressure focus · post-meditation glow · gentle company while alone\n\nIf this made the room feel lighter, even a little — subscribe. Quiet, warm music for the long days.\n\n#joyfulmusic #positivevibes #santoormusic #ragakhamaj #528hz #alphawave #feelgoodmusic #moodboost #indianclassical #morningmusic",
+  "description": "Joyful Music | Positive Vibes Music with Santoor | 1 Hour\n\nSome days don't need fixing. They need a soundtrack. The Santoor \u2014 100 strings struck softly with delicate hammers \u2014 has been the sound of Kashmiri sunrises and Indian celebrations for centuries. This hour is built around it, in Raga Khamaj, the playful semi-classical raga with a light, lifting character \u2014 paired with a soft tabla groove so the energy is alive without ever being loud.\n\n\ud83c\udf3f What you'll hear:\n\u2022 Santoor solo in Raga Khamaj (light, playful, semi-classical)\n\u2022 Subtle tabla in teentaal (gentle rhythmic lift)\n\u2022 Tanpura drone background (steady tonal anchor)\n\u2022 528Hz tuning \u00b7 11Hz Alpha wave entrainment\n\n\ud83c\udf3f Chapters:\n00:00 \u2014 Soft awakening\n15:00 \u2014 Cascading flow\n30:00 \u2014 Bright sustain\n45:00 \u2014 Gentle close\n\n\ud83c\udf3f How to use:\nMorning coffee \u00b7 slow Sundays \u00b7 golden-hour wind-down \u00b7 creative work \u00b7 while you cook \u00b7 while you write\n\n\ud83c\udf3f Best for:\nLifting a flat mood \u00b7 easing into the day \u00b7 low-pressure focus \u00b7 post-meditation glow \u00b7 gentle company while alone\n\nIf this made the room feel lighter, even a little \u2014 subscribe. Quiet, warm music for the long days.\n\n#joyfulmusic #positivevibes #santoormusic #ragakhamaj #528hz #alphawave #feelgoodmusic #moodboost #indianclassical #morningmusic",
   "thumbnail_text_main": "UNLOCK JOY",
   "thumbnail_text_variants": [
-    {"label": "A", "text": "UNLOCK JOY", "strategy": "Invitation — outcome with curiosity gap"},
-    {"label": "B", "text": "ZERO ENERGY?", "strategy": "Identification — visceral physical pain-state"}
+    {
+      "label": "A",
+      "text": "UNLOCK JOY",
+      "strategy": "Invitation \u2014 outcome with curiosity gap"
+    },
+    {
+      "label": "B",
+      "text": "ZERO ENERGY?",
+      "strategy": "Identification \u2014 visceral physical pain-state"
+    }
   ],
   "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate cream parchment border, female figure seated in soft golden-hour sunlight, hands resting open on lap, eyes closed with peaceful smile, dawn or early-morning landscape behind with warm yellow/orange sky, traditional Indian temple silhouette in background, deep teal serif typography overlay, mobile-readable bold 2-word hook, aged parchment texture, gold leaf accents on border, light and airy mood",
   "suno_prompt": "Bright cascading Indian classical santoor in raga Khamaj, light playful semi-classical mood, 100-string hammered dulcimer with quick mallet runs, accompanied by subtle soft tabla in teentaal at light volume not dominant, gentle tanpura drone, 528Hz tuning, medium tempo around 80 BPM with rhythmic lift, seamless ambient texture suitable for a 1-hour loop, golden warm reverb, traditional Indian semi-classical sound, no vocals, joyful uplifting character throughout, like a sunny morning or post-rain afternoon",
@@ -43,7 +51,7 @@
     "binaural_wave": "Alpha",
     "lufs_target": -14,
     "loop_seam": "crossfade 4-bar tail into head, verify no transient on loop seam",
-    "render": "mp4 1080p · static thumbnail · audio 48kHz 320kbps stereo",
-    "notes": "Tabla should be subtle — accompaniment, not driving. Santoor leads. Energy lifts vs typical channel calm pieces but stays within healing-niche tempo bounds."
+    "render": "mp4 1080p \u00b7 static thumbnail \u00b7 audio 48kHz 320kbps stereo",
+    "notes": "Tabla should be subtle \u2014 accompaniment, not driving. Santoor leads. Energy lifts vs typical channel calm pieces but stays within healing-niche tempo bounds."
   }
 }
