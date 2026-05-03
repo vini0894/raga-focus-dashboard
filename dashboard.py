@@ -3345,7 +3345,11 @@ with tab_title_builder:
         height: 28px !important;
         text-align: center !important;
     }
-    .tb-scope .stNumberInput button { display: none !important; }  /* hide +/- spinners to save space */
+    /* Compact spinners but keep them visible for usability */
+    .tb-scope .stNumberInput button {
+        padding: 0 4px !important;
+        min-width: 18px !important;
+    }
     </style>""", unsafe_allow_html=True)
 
     st.markdown('<div class="tb-scope">', unsafe_allow_html=True)
@@ -3859,15 +3863,7 @@ with tab_title_builder:
                     return cl.get("id")
         return None
 
-    # ── DEBUG: bright marker to verify rendering reaches this point ──
-    st.markdown(
-        '<div style="background:#ff0000;color:#ffffff;padding:12px;'
-        'font-size:18px;font-weight:bold;text-align:center;margin:10px 0">'
-        '🔴 THUMBNAIL SECTION RENDERING — IF YOU SEE THIS, RENDER WORKS</div>',
-        unsafe_allow_html=True
-    )
     st.markdown("### 🎨 Thumbnail text suggestions")
-    st.caption("Below your A/B preview · scroll up if you don't see it")
 
     try:
         from thumbnail_text import build_thumbnail_text_variants as _bt_variants_top, _bucket_for as _bt_bucket_for
@@ -4160,8 +4156,8 @@ with tab_title_builder:
             )
 
             if _is_unscored:
-                # Tightened: keyword btn dominates, narrow inputs, no wasted gap
-                _c1, _c2, _c3, _c4, _c5 = st.columns([7, 0.9, 0.55, 0.55, 0.45])
+                # Balanced: keyword btn wide, score input readable, controls compact
+                _c1, _c2, _c3, _c4, _c5 = st.columns([6, 1.3, 0.7, 0.6, 0.5])
                 with _c1:
                     if st.button(_label, key=f"tb_kw_{_cluster_choice}_{_key_safe}",
                                  type=_btn_type, use_container_width=True, help=_help_text):
@@ -4357,8 +4353,18 @@ with tab_title_builder:
         # Filter out already-exported
         _all_scores = {k: v for k, v in _all_scores.items() if k not in _exported_set}
 
-        if _all_scores:
-            with st.expander(f"📤 Export {len(_all_scores)} scored keywords"):
+        # Always show the expander (even when empty) so user can find it
+        _exp_label = (f"📤 Export {len(_all_scores)} scored keywords"
+                      if _all_scores else
+                      "📤 Export scored keywords (none right now)")
+        with st.expander(_exp_label, expanded=bool(_all_scores)):
+            if not _all_scores:
+                st.caption(
+                    f"No new scores to export. Score any unscored keyword via the inline 💾 button "
+                    f"and it'll show here. ({len(_exported_set)} already marked exported in "
+                    f"data/title_builder_exported.txt)"
+                )
+            else:
                 st.caption("Copy this and paste in chat — I'll merge into keyword_bank.csv and commit to git. Then click 'Clear' to remove from this list.")
                 _export_text = "\n".join(f"{k}: {v}" for k, v in sorted(_all_scores.items(), key=lambda x: -x[1]))
                 st.code(_export_text, language="text")
