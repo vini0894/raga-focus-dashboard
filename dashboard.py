@@ -1672,7 +1672,7 @@ with tab_briefs:
                     _meta += f"  ·  Shipped: {brief['date_shipped']}"
                 st.caption(_meta)
 
-                _bcol1, _bcol2, _bcol3 = st.columns([1, 1, 6])
+                _bcol1, _bcol2, _bcol3, _bcol4 = st.columns([1, 1, 2, 4])
                 with _bcol1:
                     if st.button("← Close", key="close_brief_top"):
                         del st.session_state["selected_brief_id"]
@@ -1690,6 +1690,26 @@ with tab_briefs:
                         if st.button("🗑️ Delete brief", key=f"ask_delete_{brief['id']}"):
                             st.session_state[_confirm_key] = True
                             st.rerun()
+                with _bcol3:
+                    from datetime import date as _ddate, datetime as _ddt
+                    _cur_planned = brief.get("planned_date") or ""
+                    try:
+                        _cur_dt = _ddt.strptime(_cur_planned, "%Y-%m-%d").date() if _cur_planned else _ddate.today()
+                    except Exception:
+                        _cur_dt = _ddate.today()
+                    _new_dt = st.date_input(
+                        "Planned date",
+                        value=_cur_dt,
+                        key=f"planned_date_edit_{brief['id']}",
+                        label_visibility="collapsed",
+                    )
+                    _new_str = _new_dt.strftime("%Y-%m-%d")
+                    if _new_str != _cur_planned:
+                        import storage as _stor
+                        brief["planned_date"] = _new_str
+                        _stor.write_brief(brief)
+                        st.toast(f"Planned date → {_new_str}")
+                        st.rerun()
 
                 st.success("📋 **READY-TO-PASTE BLOCKS** — copy each into YouTube Studio in order")
 
