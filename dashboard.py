@@ -3859,11 +3859,16 @@ with tab_title_builder:
                     return cl.get("id")
         return None
 
+    # ── DEBUG marker so we can see where rendering reaches ──
+    st.markdown("<!-- thumbnail-section-marker -->", unsafe_allow_html=True)
+
     try:
         from thumbnail_text import build_thumbnail_text_variants as _bt_variants_top, _bucket_for as _bt_bucket_for
         from config import PROBLEM_THUMBNAIL_TEXT as _PTT
     except Exception as _imp_err:
-        st.warning(f"Thumbnail module import failed: {_imp_err}")
+        st.error(f"❌ Thumbnail module import failed: {_imp_err}")
+        import traceback as _tb_err
+        st.code(_tb_err.format_exc())
         _bt_variants_top = None
         _bt_bucket_for = None
         _PTT = {}
@@ -3918,13 +3923,18 @@ with tab_title_builder:
                     unsafe_allow_html=True
                 )
 
-        with st.container(border=True):
-            st.markdown("**Thumbnail text** · CTR hooks per variant")
-            _t1, _t2 = st.columns(2, gap="medium")
-            with _t1:
-                _render_thumb_below("Variant A · safe", st.session_state.get("tb_picked_a", []), "#93c5fd")
-            with _t2:
-                _render_thumb_below("Variant B · experiment", st.session_state.get("tb_picked_b", []), "#d4a574")
+        try:
+            with st.container(border=True):
+                st.markdown("**Thumbnail text** · CTR hooks per variant")
+                _t1, _t2 = st.columns(2, gap="medium")
+                with _t1:
+                    _render_thumb_below("Variant A · safe", st.session_state.get("tb_picked_a", []), "#93c5fd")
+                with _t2:
+                    _render_thumb_below("Variant B · experiment", st.session_state.get("tb_picked_b", []), "#d4a574")
+        except Exception as _render_err:
+            st.error(f"❌ Thumbnail render failed: {_render_err}")
+            import traceback as _tb_render
+            st.code(_tb_render.format_exc())
 
     st.markdown("<div style='height:0.6rem'></div>", unsafe_allow_html=True)
 
