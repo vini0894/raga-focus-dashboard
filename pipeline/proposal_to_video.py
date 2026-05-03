@@ -31,6 +31,8 @@ from datetime import date, datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
+sys.path.insert(0, str(Path(__file__).parent.parent))
+import storage
 
 from regenerate import regenerate_title, explain
 from thumbnail_text import build_thumbnail_text_variants, pick_thumbnail_winner
@@ -269,8 +271,7 @@ def write_dashboard_brief(brief_path, candidate, regen_result, thumbnail_variant
         "strategic_bet":         "; ".join((candidate.get("reasons") or [])[:3]),
         "candidate_score":       candidate.get("score"),
     }
-    brief_path.parent.mkdir(parents=True, exist_ok=True)
-    brief_path.write_text(json.dumps(brief, indent=2, default=str))
+    storage.write_brief(brief)
 
 
 def main():

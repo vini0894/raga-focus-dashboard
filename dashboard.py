@@ -3584,6 +3584,19 @@ with tab_title_builder:
     # ═════════════════════════════════════════════════════════
     # SECTION 1 — Live A/B preview at top
     # ═════════════════════════════════════════════════════════
+    def _smart_title(s):
+        """Title-case but DON'T capitalize after apostrophes ('can't' not 'Can'T')."""
+        if not s:
+            return s
+        words = s.split(" ")
+        out = []
+        for w in words:
+            if not w:
+                out.append(w); continue
+            # Capitalize first char only, preserve rest as-is (handles can't, won't, you'll, etc.)
+            out.append(w[0].upper() + w[1:].lower() if len(w) > 1 else w.upper())
+        return " ".join(out)
+
     def _resolve_instrument():
         """Return chosen instrument: custom text overrides dropdown."""
         custom = (st.session_state.get("tb_instrument_custom","") or "").strip()
@@ -3625,7 +3638,7 @@ with tab_title_builder:
         # Drop redundant instrument if it's already in the lead keyword (e.g., "veena music" + "Veena")
         if inst and sorted_kws and inst.lower() in sorted_kws[0].lower():
             inst = ""
-        parts = [k.title() for k in sorted_kws]
+        parts = [_smart_title(k) for k in sorted_kws]
         if inst: parts.append(inst.title())
         if dur:  parts.append(dur)
         out = " | ".join(parts)
@@ -3635,7 +3648,7 @@ with tab_title_builder:
             kw_count = len(sorted_kws)
             if kw_count > 1:
                 sorted_kws = sorted_kws[:-1]
-                parts = [k.title() for k in sorted_kws]
+                parts = [_smart_title(k) for k in sorted_kws]
                 if inst: parts.append(inst.title())
                 if dur:  parts.append(dur)
                 out = " | ".join(parts)
@@ -3709,11 +3722,11 @@ with tab_title_builder:
         }
         if "Question" in mode:
             if is_question_phrase:
-                head = lead.title().rstrip("?") + "?"
+                head = _smart_title(lead).rstrip("?") + "?"
             elif _theme and _theme in _theme_question:
                 head = _theme_question[_theme]
             elif is_action:
-                head = f"Can't {lead.title()}?"
+                head = f"Can't {_smart_title(lead)}?"
             elif contains_problem:
                 # Map problem noun → natural question
                 _problem_q = {
@@ -3736,9 +3749,9 @@ with tab_title_builder:
                 else: head = "Need a Lift?"
             else:
                 if "music" in ll or "relief" in ll or "instrumental" in ll:
-                    head = f"Looking for {clean.title()}?"
+                    head = f"Looking for {_smart_title(clean)}?"
                 else:
-                    head = f"{lead.title()}?"
+                    head = f"{_smart_title(lead)}?"
 
         # ── Outcome mode ── (map theme → action verb + theme noun)
         elif "Outcome" in mode:
@@ -3781,19 +3794,20 @@ with tab_title_builder:
                 if outcome_phrase:
                     head = outcome_phrase
                 elif is_action:
-                    head = lead.title()
+                    head = _smart_title(lead)
                 else:
                     # Generic "Find X" / "Discover X" fallback so it at least differs from Theme mode
-                    head = f"Find {clean.title()}" if clean else lead.title()
+                    head = f"Find {_smart_title(clean)}" if clean else _smart_title(lead)
 
         # ── Theme mode ── just the keyword cleanly (no decoration)
         elif "theme" in mode.lower():
-            head = lead.title()
+            head = _smart_title(lead)
 
         # ── Competitor mode ── borrow winning patterns
         elif "Competitor" in mode:
             # Pick "Ancient" vs "Bright" vs neutral prefix based on theme
-            _is_calm_theme = _theme in ("calm","sleep","healing","nostalgia","grounding") or contains_problem
+            # "Ancient" fits problem/calm themes — stress, anxiety, focus, sleep, healing, etc.
+            _is_calm_theme = _theme in ("calm","sleep","healing","nostalgia","grounding","stress","anxiety","focus") or contains_problem
             _is_bright_theme = _theme == "energy" or contains_positive
             _prefix = "Ancient" if _is_calm_theme else ("Bright" if _is_bright_theme else "Timeless")
             _theme_word = (contains_problem or _theme or clean.lower())
@@ -3801,12 +3815,12 @@ with tab_title_builder:
             if inst and (contains_problem or _theme):
                 head = f"{_prefix} {inst.title()} for {_theme_word.title()}"
             elif inst:
-                head = f"{_prefix} {inst.title()} · {lead.title()}"
+                head = f"{_prefix} {inst.title()} · {_smart_title(lead)}"
             elif contains_problem or _theme:
                 head = f"{_prefix} Music for {_theme_word.title()}"
             else:
                 # Truly unknown — at least add prefix so it differs from Theme mode
-                head = f"{_prefix} {lead.title()}"
+                head = f"{_prefix} {_smart_title(lead)}"
 
         # ── Phrase mode ── natural prose ("X with Veena", "X through Sarangi")
         elif "phrase" in mode.lower():
@@ -3817,19 +3831,19 @@ with tab_title_builder:
                     connector = "through"
                 else:
                     connector = "with"
-                head = f"{lead.title()} {connector} {inst.title()}"
+                head = f"{_smart_title(lead)} {connector} {inst.title()}"
             else:
                 # No instrument — make it differ from Theme mode by adding a connector phrase
                 if _theme in ("healing","nostalgia"):
-                    head = f"{lead.title()} for the Heart"
+                    head = f"{_smart_title(lead)} for the Heart"
                 elif _theme in ("sleep","calm","grounding"):
-                    head = f"{lead.title()} for Quiet Mind"
+                    head = f"{_smart_title(lead)} for Quiet Mind"
                 elif _theme == "energy":
-                    head = f"{lead.title()} for a Bright Day"
+                    head = f"{_smart_title(lead)} for a Bright Day"
                 else:
-                    head = f"{lead.title()} for Deep Listening"
+                    head = f"{_smart_title(lead)} for Deep Listening"
         else:
-            head = lead.title()
+            head = _smart_title(lead)
 
         # Track whether the head already contains the instrument (Competitor/Phrase modes weave it in)
         head_has_inst = bool(inst) and inst.lower() in head.lower()
@@ -3837,7 +3851,7 @@ with tab_title_builder:
         def _assemble(_head, _rest_kws):
             _parts = [_head]
             for _r in _rest_kws:
-                _parts.append(_r.title())
+                _parts.append(_smart_title(_r))
             # Append instrument unless already in head OR in lead keyword
             if inst and not head_has_inst and inst.lower() not in lead.lower():
                 _parts.append(inst.title())
@@ -4348,20 +4362,42 @@ with tab_title_builder:
                      ["(none)", "1 Hour", "1:15", "1:30", "45 Min", "30 Min"],
                      key="tb_duration")
 
+        def _tb_picked_chip(_p, _sc, _bg_rgb, _text_color):
+            """Render picked-variant chip — same look as picker, badge changes with status."""
+            _stat, _dl, _why = _tb_cooldown(_p)
+            if _stat == "cooldown":
+                _tip = (_why or "").replace('"', "'")
+                _badge = f' · 🕐{_dl}d'
+                _title_attr = f' title="On cooldown — recently used in: {_tip}"'
+            elif _stat == "invalidated":
+                _badge = ' · ❌'
+                _title_attr = ' title="Invalidated keyword"'
+            elif _sc:
+                _badge = f' · {_sc}'
+                _title_attr = ''
+            else:
+                _badge = ''
+                _title_attr = ''
+            return (
+                f'<div{_title_attr} style="background:rgba({_bg_rgb},0.1);color:{_text_color};padding:3px 8px;'
+                f'border-radius:3px;font-size:12px;display:inline-block;'
+                f'border:1px solid rgba({_bg_rgb},0.3)">'
+                f'{_p}{_badge}</div>'
+            )
+
         # Selected lists
         st.markdown(f"**Variant A** · {_a_count} keywords")
         if st.session_state["tb_picked_a"]:
+            _a_warn = [_p for _p in st.session_state["tb_picked_a"]
+                       if _tb_cooldown(_p)[0] in ("cooldown", "invalidated")]
+            if _a_warn:
+                st.warning(f"⚠️ {len(_a_warn)} keyword(s) in Variant A on cooldown/invalidated — see chips")
             for _p in st.session_state["tb_picked_a"]:
                 _sc = _tb_effective_score(_p)
                 _cs1, _cs2 = st.columns([5, 1])
                 with _cs1:
-                    st.markdown(
-                        f'<div style="background:rgba(147,197,253,0.1);color:#93c5fd;padding:3px 8px;'
-                        f'border-radius:3px;font-size:12px;display:inline-block;'
-                        f'border:1px solid rgba(147,197,253,0.3)">'
-                        f'{_p}{" · "+str(_sc) if _sc else ""}</div>',
-                        unsafe_allow_html=True
-                    )
+                    st.markdown(_tb_picked_chip(_p, _sc, "147,197,253", "#93c5fd"),
+                                unsafe_allow_html=True)
                 with _cs2:
                     if st.button("×", key=f"tb_rmA_{_p.replace(' ','_')}", help="Remove from A"):
                         st.session_state["tb_picked_a"].remove(_p)
@@ -4371,17 +4407,16 @@ with tab_title_builder:
 
         st.markdown(f"**Variant B** · {_b_count} keywords")
         if st.session_state["tb_picked_b"]:
+            _b_warn = [_p for _p in st.session_state["tb_picked_b"]
+                       if _tb_cooldown(_p)[0] in ("cooldown", "invalidated")]
+            if _b_warn:
+                st.warning(f"⚠️ {len(_b_warn)} keyword(s) in Variant B on cooldown/invalidated — see chips")
             for _p in st.session_state["tb_picked_b"]:
                 _sc = _tb_effective_score(_p)
                 _cs1, _cs2 = st.columns([5, 1])
                 with _cs1:
-                    st.markdown(
-                        f'<div style="background:rgba(212,165,116,0.1);color:#d4a574;padding:3px 8px;'
-                        f'border-radius:3px;font-size:12px;display:inline-block;'
-                        f'border:1px solid rgba(212,165,116,0.3)">'
-                        f'{_p}{" · "+str(_sc) if _sc else ""}</div>',
-                        unsafe_allow_html=True
-                    )
+                    st.markdown(_tb_picked_chip(_p, _sc, "212,165,116", "#d4a574"),
+                                unsafe_allow_html=True)
                 with _cs2:
                     if st.button("×", key=f"tb_rmB_{_p.replace(' ','_')}", help="Remove from B"):
                         st.session_state["tb_picked_b"].remove(_p)

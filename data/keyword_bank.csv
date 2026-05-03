@@ -1,13 +1,13 @@
 phrase,slot,vidiq_score,vidiq_comp,source,first_added,last_score_check
 stress relief music,problem,77,Low,KEYWORD_DATA.md migration (Meditation Relax Music (2.78M,2026-04-25,2026-04-25
 sleep music,problem,75,Medium,KEYWORD_DATA.md migration (Soothing Relaxation,2026-04-25,2026-04-25
-acoustic guitar instrumental,problem,71,Low,KEYWORD_DATA.md migration (Ryini Beats,2026-04-25,2026-04-25
+acoustic guitar instrumental,tag,71,Low,KEYWORD_DATA.md migration (Ryini Beats,2026-04-25,2026-04-25
 adhd focus music,problem,70,Medium,KEYWORD_DATA.md migration (ADHD Focus Club,2026-04-25,2026-04-25
 anxiety relief music,problem,70,Low,KEYWORD_DATA.md migration (Meditation Relax Music,2026-04-25,2026-04-25
 brain fog,problem,70,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
-clearly,problem,70,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
-instrumental music relaxing,problem,70,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
-relaxing instrumental music,problem,70,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
+clearly,tag,70,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
+instrumental music relaxing,tag,70,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
+relaxing instrumental music,tag,70,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
 think clearly,problem,70,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
 deep relaxation music,problem,68,Low,KEYWORD_DATA.md migration (Soothing Relaxation (12M,2026-04-25,2026-04-25
 morning focus,problem,65,Low,KEYWORD_DATA.md migration (SleepTube,2026-04-25,2026-04-28
@@ -15,15 +15,15 @@ nervous system reset,problem,66,Medium,KEYWORD_DATA.md migration (Malte Marten,2
 deep calm,problem,65,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
 deep calm music,problem,65,,chat-2026-04-25 vidiq paste,2026-04-25,2026-04-25
 meditation for anxiety,problem,65,Medium,KEYWORD_DATA.md migration (Priory (35.6K,2026-04-25,2026-04-25
-digital detox,problem,64,Medium,KEYWORD_DATA.md migration (Bupa Health (115K,2026-04-25,2026-04-25
-morning acoustic guitar,problem,64,Low,KEYWORD_DATA.md migration (dwaler,2026-04-25,2026-04-25
-calming,problem,63,Medium,KEYWORD_DATA.md migration (Relaxing Calming Music (429K,2026-04-25,2026-04-25
+digital detox,tag,64,Medium,KEYWORD_DATA.md migration (Bupa Health (115K,2026-04-25,2026-04-25
+morning acoustic guitar,tag,64,Low,KEYWORD_DATA.md migration (dwaler,2026-04-25,2026-04-25
+calming,tag,63,Medium,KEYWORD_DATA.md migration (Relaxing Calming Music (429K,2026-04-25,2026-04-25
 deep rest music,problem,67,Low,KEYWORD_DATA.md migration (SleepTube (1.06M,2026-04-25,2026-04-28
 overthinking music,problem,63,Low,KEYWORD_DATA.md migration (Deep Breath - Relaxing Music,2026-04-25,2026-04-25
 unwind music,problem,63,Low,KEYWORD_DATA.md migration (Strumm Sound (2.01M,2026-04-25,2026-04-25
-restless mind,problem,62,Low,KEYWORD_DATA.md migration (various,2026-04-25,2026-04-25
-acoustic guitar sleep music,problem,61,Low,KEYWORD_DATA.md migration (Mindful Melodies,2026-04-25,2026-04-25
-warm acoustic guitar,problem,61,Low,KEYWORD_DATA.md migration (Thomann's Guitars,2026-04-25,2026-04-25
+restless mind,tag,62,Low,KEYWORD_DATA.md migration (various,2026-04-25,2026-04-25
+acoustic guitar sleep music,tag,61,Low,KEYWORD_DATA.md migration (Mindful Melodies,2026-04-25,2026-04-25
+warm acoustic guitar,tag,61,Low,KEYWORD_DATA.md migration (Thomann's Guitars,2026-04-25,2026-04-25
 adhd brain fog,problem,60,Low,KEYWORD_DATA.md migration (Psych2Go,2026-04-25,2026-04-25
 deep meditation,problem,60,Medium,KEYWORD_DATA.md migration (The Honest Guys (1.28M,2026-04-25,2026-04-25
 dopamine reset,problem,68,,config.py,2026-04-25,2026-04-28
@@ -31,7 +31,7 @@ emotional overwhelm,problem,,,config.py,2026-04-25,
 heavy heart music,problem,,,config.py,2026-04-25,
 racing thoughts music,problem,,,config.py,2026-04-25,
 sunday anxiety,problem,,,config.py,2026-04-25,
-vagus nerve music,problem,,,config.py,2026-04-25,
+vagus nerve music,problem,57,,session,2026-04-25,2026-05-03
 yaman,raga,63,Low,KEYWORD_DATA.md migration (darbarfestival,2026-04-25,2026-04-25
 bhupali,raga,57,Med,"chat-2026-04-25 vidiq paste (57 MED, usable for descriptor slot)",2026-04-25,2026-04-25
 bhairavi,raga,,,config.py,2026-04-25,
@@ -55,7 +55,7 @@ tanpura,instrument,74,,KEYWORD_DATA.md migration,2026-04-25,2026-04-25
 sitar,instrument,72,Low,config.py,2026-04-25,2026-04-25
 sarangi,instrument,67,Very Low,config.py,2026-04-25,2026-04-25
 bansuri,instrument,66,Very Low,config.py,2026-04-25,2026-04-25
-tabla,instrument,65,Low,KEYWORD_DATA.md migration (Meditative Mind,2026-04-25,2026-04-25
+tabla,tag,65,Low,KEYWORD_DATA.md migration (Meditative Mind,2026-04-25,2026-04-25
 dilruba,instrument,63,Low,config.py,2026-04-25,2026-04-25
 esraj,instrument,,,config.py,2026-04-25,
 santoor,instrument,,,config.py,2026-04-25,
@@ -130,15 +130,15 @@ healing music,tag,75,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
 feeling lost in life,problem,65,Medium,manual-VidIQ-tag-paste,2026-04-26,2026-04-28
 lost in life,problem,61,Medium,manual-VidIQ-paste,2026-04-26,2026-04-26
 calming music,tag,72,Medium,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
-schumann resonance,hz,61,Medium,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+schumann resonance,tag,61,Medium,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
 schumann resonance 7.83hz,tag,54,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
 7.83hz frequency,tag,58,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
 calming music for anxiety,tag,72,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
 soothing,tag,67,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
 relax music,tag,77,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
 7.83hz schumann resonance,tag,54,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
-7.83hz music,hz,58,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
-veena music,instrument,67,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+7.83hz music,tag,58,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
+veena music,tag,67,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
 veena healing music,tag,67,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
 veena instrumental,tag,62,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
 indian classical music,tag,66,,manual-VidIQ-tag-paste,2026-04-26,2026-04-26
@@ -169,23 +169,20 @@ relax mind and body,problem,57,,chat-2026-04-28 vidiq paste,2026-04-28,2026-04-2
 1hr detox,tag,25,,chat-2026-04-28 vidiq paste,2026-04-28,2026-04-28
 tension relief music,problem,58,,chat-2026-04-28 vidiq paste,2026-04-28,2026-04-28
 insomnia relief,problem,63,Medium,chat-2026-04-28 vidiq paste,2026-04-28,2026-04-28
-indian classical sitar,instrument,61,,chat-pasted,2026-04-28,2026-04-28
-1 hour deep concentration,descriptor,29,,chat-pasted,2026-04-28,2026-04-28
-deep concentration,focus,66,,chat-pasted,2026-04-28,2026-04-28
-can't focus,focus,50,,chat-pasted,2026-04-28,2026-04-28
-deep focus music,focus,70,,chat-pasted,2026-04-28,2026-04-28
-sitar music to help you focus,descriptor,28,,chat-pasted,2026-04-28,2026-04-28
-brain power music,focus,63,,chat-pasted,2026-04-28,2026-04-28
-focus and concentration,focus,53,,chat-pasted,2026-04-28,2026-04-28
-morning meditation,morning,66,,chat-pasted,2026-04-28,2026-04-28
-wake up music,morning,63,,chat-pasted,2026-04-28,2026-04-28
-morning routine music,morning,66,,chat-pasted,2026-04-28,2026-04-28
+indian classical sitar,tag,61,,chat-pasted,2026-04-28,2026-04-28
+deep concentration,tag,66,,chat-pasted,2026-04-28,2026-04-28
+can't focus,problem,50,,chat-pasted,2026-04-28,2026-04-28
+deep focus music,tag,70,,chat-pasted,2026-04-28,2026-04-28
+brain power music,tag,63,,chat-pasted,2026-04-28,2026-04-28
+focus and concentration,tag,53,,chat-pasted,2026-04-28,2026-04-28
+morning meditation,problem,66,,chat-pasted,2026-04-28,2026-04-28
+wake up music,tag,63,,chat-pasted,2026-04-28,2026-04-28
+morning routine music,tag,66,,chat-pasted,2026-04-28,2026-04-28
 drift to sleep,problem,59,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
 recovery music,problem,57,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
 breathe and relax,problem,63,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
 slow down music,problem,62,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
 inner stillness,problem,59,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
-soulful music,problem,71,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
 serene music,problem,62,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
 gentle music,problem,61,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
 gentle healing music,problem,61,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
@@ -195,11 +192,37 @@ clear your head music,problem,58,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05
 music for calm,problem,58,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
 ambient calm music,problem,56,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
 too much stress,problem,53,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
-energy reset music,problem,29,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
-soothe your mind,problem,27,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
 uplifting music,problem,66,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
 positive vibes music,problem,72,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
 feel good music,problem,70,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
 reset your mind,problem,65,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
 emotional release,problem,64,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
 music to heal,problem,57,,chat-2026-05-02 vidiq paste,2026-05-02,2026-05-02
+swarmandal,instrument,,,manual-add,2026-05-03,
+bhairav,raga,,,competitor-scan-2026-05-03,,
+worry relief music,problem,,,user-suggestion-2026-05-03,2026-05-03,
+quiet thoughts music,problem,,,user-suggestion-2026-05-03,2026-05-03,
+mind reset music,problem,,,user-suggestion-2026-05-03,2026-05-03,
+mental peace,tag,,,user-suggestion-2026-05-03,2026-05-03,
+inner peace music,tag,,,user-suggestion-2026-05-03,2026-05-03,
+mind clarity music,tag,,,user-suggestion-2026-05-03,2026-05-03,
+clear mind music,tag,,,user-suggestion-2026-05-03,2026-05-03,
+silent mind music,tag,,,user-suggestion-2026-05-03,2026-05-03,
+shanti music,tag,,,user-suggestion-2026-05-03,2026-05-03,
+soul peace music,tag,,,user-suggestion-2026-05-03,2026-05-03,
+divine peace music,tag,,,user-suggestion-2026-05-03,2026-05-03,
+quiet your head music,problem,,,mind-alternative-cohort-2026-05-03,2026-05-03,
+head noise music,problem,,,mind-alternative-cohort-2026-05-03,2026-05-03,
+brain reset music,problem,,,mind-alternative-cohort-2026-05-03,2026-05-03,
+quiet brain music,problem,,,mind-alternative-cohort-2026-05-03,2026-05-03,
+calm your nerves music,problem,,,mind-alternative-cohort-2026-05-03,2026-05-03,
+settle your nerves music,problem,,,mind-alternative-cohort-2026-05-03,2026-05-03,
+quiet soul music,tag,,,mind-alternative-cohort-2026-05-03,2026-05-03,
+heart peace music,tag,,,mind-alternative-cohort-2026-05-03,2026-05-03,
+quiet heart music,tag,,,mind-alternative-cohort-2026-05-03,2026-05-03,
+restless spirit music,problem,,,mind-alternative-cohort-2026-05-03,2026-05-03,
+calm spirit music,tag,,,mind-alternative-cohort-2026-05-03,2026-05-03,
+inner chatter music,problem,,,mind-alternative-cohort-2026-05-03,2026-05-03,
+silence the chatter music,problem,,,mind-alternative-cohort-2026-05-03,2026-05-03,
+quiet inner voice music,problem,,,mind-alternative-cohort-2026-05-03,2026-05-03,
+quiet your world music,tag,,,mind-alternative-cohort-2026-05-03,2026-05-03,

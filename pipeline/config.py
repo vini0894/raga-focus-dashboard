@@ -62,6 +62,7 @@ INSTRUMENT_META = {
     "tanpura":    {"name": "Tanpura",    "aliases": ["tanpura"]},
     "sitar":      {"name": "Sitar",      "aliases": ["sitar"]},  # ⚠️ saturated
     "swarmandal": {"name": "Swarmandal", "aliases": ["swarmandal", "swara mandal"]},
+    "surbahar":   {"name": "Surbahar",   "aliases": ["surbahar"]},  # bass sitar — #1 performer (1,370 views)
 }
 
 # Hz semantic meaning + category
@@ -107,21 +108,66 @@ WAVE_META = {
 # Existing scoring.py / signals.py / etc. import these names. Same shape, new source.
 # ═════════════════════════════════════════════════════════
 
+# Cluster-based copy fallback for problem keywords not in PROBLEM_HOOK_META.
+# Matched by substring — first matching cluster wins.
+_CLUSTER_DEFAULTS = {
+    "sleep":      {"action_phrase": "Drift to Sleep",   "question": "Can't Fall Asleep?",    "outcome_short": "Drift to Sleep"},
+    "insomnia":   {"action_phrase": "Drift to Sleep",   "question": "Can't Fall Asleep?",    "outcome_short": "Find Sleep"},
+    "rest":       {"action_phrase": "Find Stillness",   "question": "Need Deep Rest?",        "outcome_short": "Find Stillness"},
+    "nostalgia":  {"action_phrase": "Feel the Feeling", "question": "Feeling Nostalgic?",     "outcome_short": "Feel the Feeling"},
+    "healing":    {"action_phrase": "Start Healing",    "question": "Need Healing?",          "outcome_short": "Find Healing"},
+    "anxiety":    {"action_phrase": "Find Peace",       "question": "Feeling Anxious?",       "outcome_short": "Find Peace"},
+    "stress":     {"action_phrase": "Release Stress",   "question": "Feeling Stressed?",      "outcome_short": "Release Stress"},
+    "overthink":  {"action_phrase": "Calm Down",        "question": "Can't Stop Overthinking?","outcome_short": "Stop Overthinking"},
+    "focus":      {"action_phrase": "Find Focus",       "question": "Can't Focus?",           "outcome_short": "Find Focus"},
+    "meditation": {"action_phrase": "Go Deeper",        "question": "Need Meditation?",       "outcome_short": "Go Deeper"},
+    "unwind":     {"action_phrase": "Unwind Slowly",    "question": "Can't Unwind?",          "outcome_short": "Let It Go"},
+    "emotional":  {"action_phrase": "Let It Out",       "question": "Feeling Emotional?",     "outcome_short": "Let It Out"},
+    "calm":       {"action_phrase": "Find Calm",        "question": "Need Calm?",             "outcome_short": "Find Calm"},
+    "relax":      {"action_phrase": "Relax Deeply",     "question": "Need to Relax?",         "outcome_short": "Relax Deeply"},
+    "comfort":    {"action_phrase": "Find Comfort",     "question": "Need Comfort?",          "outcome_short": "Find Comfort"},
+    "grounding":  {"action_phrase": "Find Ground",      "question": "Feeling Ungrounded?",    "outcome_short": "Find Ground"},
+    "detox":      {"action_phrase": "Clear Your Mind",  "question": "Need a Reset?",          "outcome_short": "Clear Your Mind"},
+    "morning":    {"action_phrase": "Start Fresh",      "question": "Sluggish Morning?",      "outcome_short": "Start Fresh"},
+    "dopamine":   {"action_phrase": "Reset Your Mind",  "question": "Dopamine Depleted?",     "outcome_short": "Reset Your Mind"},
+    "burnout":    {"action_phrase": "Recover Slowly",   "question": "Burnt Out?",             "outcome_short": "Start Recovery"},
+    "homesick":   {"action_phrase": "Feel at Home",     "question": "Feeling Homesick?",      "outcome_short": "Feel at Home"},
+    "missing":    {"action_phrase": "Feel the Warmth",  "question": "Missing Someone?",       "outcome_short": "Feel Close Again"},
+    "lost":       {"action_phrase": "Find Your Way",    "question": "Feeling Lost?",           "outcome_short": "Find Your Way"},
+    "heavy":      {"action_phrase": "Find Comfort",     "question": "Heart Feeling Heavy?",    "outcome_short": "Find Comfort"},
+    "grief":      {"action_phrase": "Find Peace",       "question": "Carrying Grief?",         "outcome_short": "Find Peace"},
+    "lonely":     {"action_phrase": "Feel Less Alone",  "question": "Feeling Lonely?",         "outcome_short": "Feel Less Alone"},
+    "nervous":    {"action_phrase": "Reset and Restore","question": "Nervous System Overload?","outcome_short": "Reset Your System"},
+    "vagus":      {"action_phrase": "Reset and Restore","question": "Vagus Nerve Stuck?",     "outcome_short": "Reset Your Nerve"},
+}
+
+
+def _cluster_defaults(kw_lower):
+    """Return cluster-based copy defaults for keywords not in PROBLEM_HOOK_META."""
+    for cluster_key, defaults in _CLUSTER_DEFAULTS.items():
+        if cluster_key in kw_lower:
+            return defaults
+    return {}
+
+
 def _build_problem_hooks():
     out = []
     for r in load_by_slot("problem"):
         kw = r["phrase"]
         meta = PROBLEM_HOOK_META.get(kw, {})
+        cluster = _cluster_defaults(kw)
         seo = meta.get("seo_phrase") or kw.title()
-        # action_phrase fallback: strip trailing "music" from seo_phrase
-        default_action = " ".join(w for w in seo.split() if w.lower() != "music") or seo
+        # Merge: PROBLEM_HOOK_META > cluster defaults > generic fallback
+        action_default = cluster.get("action_phrase") or " ".join(w for w in seo.split() if w.lower() != "music") or seo
+        q_default      = cluster.get("question",      seo + "?")
+        os_default     = cluster.get("outcome_short", action_default)
         out.append({
             "kw":            kw,
             "seo_phrase":    seo,
-            "action_phrase": meta.get("action_phrase", default_action),
-            "question":      meta.get("question",      seo),
+            "action_phrase": meta.get("action_phrase", action_default),
+            "question":      meta.get("question",      q_default),
             "outcome":       meta.get("outcome",       seo),
-            "outcome_short": meta.get("outcome_short", default_action),
+            "outcome_short": meta.get("outcome_short", os_default),
             "vidiq_score":   r["vidiq_score"],
             "vidiq_comp":    r["vidiq_comp"],
             **({"competitor_proven": meta["competitor_proven"]} if "competitor_proven" in meta else {}),
@@ -214,17 +260,17 @@ TONAL_FIT = {
         "avoid":     ["Sitar", "Shehnai", "Tabla"],
     },
     "sleep": {
-        "primary":   ["Bansuri", "Dilruba", "Sarangi"],
-        "secondary": ["Tanpura", "Veena", "Swarmandal"],
+        "primary":   ["Bansuri", "Dilruba", "Surbahar"],
+        "secondary": ["Tanpura", "Veena", "Swarmandal", "Sarangi"],
         "avoid":     ["Sitar", "Shehnai", "Tabla"],
     },
     "stress": {
         "primary":   ["Bansuri", "Veena"],
-        "secondary": ["Sarangi", "Sarod", "Swarmandal"],
+        "secondary": ["Sarangi", "Sarod", "Swarmandal", "Surbahar"],
         "avoid":     ["Tabla", "Shehnai"],
     },
     "meditation": {
-        "primary":   ["Veena", "Bansuri", "Tanpura"],
+        "primary":   ["Veena", "Bansuri", "Tanpura", "Surbahar"],
         "secondary": ["Sarangi", "Swarmandal"],
         "avoid":     ["Tabla", "Shehnai"],
     },

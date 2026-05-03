@@ -168,7 +168,9 @@ def theme_overlap_with_recent(catalog, problem_kw: str, within_days: int = 5, to
             continue
         title_tokens = set(_meaningful_tokens(v["title"]))
         common = candidate_tokens & title_tokens
-        if common:
+        # Require 2+ overlapping tokens to avoid false matches across unrelated clusters
+        # (e.g. "relief" in "anxiety relief" should not block "insomnia relief")
+        if len(common) >= 2:
             for token in common:
                 overlaps.append((token, d, v["title"]))
     return sorted(overlaps, key=lambda x: x[1])
@@ -228,8 +230,78 @@ def wave_last_used(catalog, wave, today=None):
 # ─────────────────────────────────────────────────────────
 # Competitor RSS — fresh each run
 # ─────────────────────────────────────────────────────────
+def _fetch_competitor_uploads_api(channel_id, days=30):
+    """Fetch competitor uploads via YouTube Data API (uploads playlist).
+    More reliable than RSS on Streamlit Cloud. Returns same shape as RSS path."""
+    try:
+        from pathlib import Path as _P
+        from google.oauth2.credentials import Credentials
+        from google.auth.transport.requests import Request as _Req
+        from googleapiclient.discovery import build as _build
+        import datetime as _dt
+
+        here = _P(__file__).resolve().parent
+        parent = here.parent
+        token_paths = [
+            parent / "token.json",
+            parent / "raga-focus-dashboard" / "token.json",
+            parent / "youtube-mcp" / "token.json",
+            parent.parent / "raga-focus-dashboard" / "token.json",
+            parent.parent / "youtube-mcp" / "token.json",
+        ]
+        SCOPES = ["https://www.googleapis.com/auth/youtube.readonly"]
+        creds = None
+        for tp in token_paths:
+            if tp.exists():
+                creds = Credentials.from_authorized_user_file(str(tp), SCOPES)
+                break
+        if not creds:
+            return None
+        if not creds.valid and creds.refresh_token:
+            creds.refresh(_Req())
+
+        yd = _build("youtube", "v3", credentials=creds, cache_discovery=False)
+        ch = yd.channels().list(part="contentDetails", id=channel_id).execute()
+        if not ch.get("items"):
+            return []
+        uploads_pl = ch["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+
+        cutoff = _dt.datetime.now(_dt.timezone.utc) - _dt.timedelta(days=days)
+        pl = yd.playlistItems().list(
+            part="contentDetails,snippet", playlistId=uploads_pl, maxResults=50
+        ).execute()
+
+        out = []
+        for item in pl.get("items", []):
+            vid = item["contentDetails"]["videoId"]
+            pub_str = item["contentDetails"].get("videoPublishedAt") or item["snippet"].get("publishedAt", "")
+            title = item["snippet"]["title"]
+            try:
+                pub = _dt.datetime.fromisoformat(pub_str.replace("Z", "+00:00"))
+                if pub < cutoff:
+                    continue
+                days_ago = (_dt.datetime.now(_dt.timezone.utc) - pub).days
+            except Exception:
+                continue
+            out.append({
+                "title":     title,
+                "days_ago":  days_ago,
+                "published": pub.date().isoformat(),
+                "video_id":  vid,
+            })
+        return sorted(out, key=lambda x: x.get("days_ago", 99))
+    except Exception:
+        return None  # signal caller to fall back to RSS
+
+
 def fetch_competitor_uploads(channel_id, days=30):
-    """Return [{title, published, days_ago, video_id}] for last N days from RSS."""
+    """Return [{title, published, days_ago, video_id}] for last N days.
+    Tries YouTube Data API first (reliable on Streamlit Cloud), falls back to RSS."""
+    api_result = _fetch_competitor_uploads_api(channel_id, days)
+    if api_result is not None:
+        return api_result
+
+    # RSS fallback
     try:
         url = f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})

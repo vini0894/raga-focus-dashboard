@@ -15,8 +15,12 @@ Why a new module instead of editing production_queue.py:
 """
 import json
 import os
+import sys
 from datetime import datetime
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+import storage
 
 DATA_DIR = Path(__file__).resolve().parent / "data"
 BRIEFS_DIR = DATA_DIR / "video_briefs"
@@ -35,35 +39,16 @@ STATUS_VALUES = [
 
 
 def _load_overrides():
-    if not STATUS_OVERRIDE.exists():
-        return {}
-    try:
-        return json.loads(STATUS_OVERRIDE.read_text())
-    except Exception:
-        return {}
+    return storage.read_brief_statuses()
 
 
 def _save_overrides(overrides):
-    STATUS_OVERRIDE.parent.mkdir(parents=True, exist_ok=True)
-    STATUS_OVERRIDE.write_text(json.dumps(overrides, indent=2, sort_keys=True))
+    pass
 
 
 def load_all_briefs():
     """Load every JSON brief, apply status overrides, sort newest-first."""
-    if not BRIEFS_DIR.exists():
-        return []
-    briefs = []
-    for f in sorted(BRIEFS_DIR.glob("*.json")):
-        try:
-            briefs.append(json.loads(f.read_text()))
-        except Exception:
-            continue
-    overrides = _load_overrides()
-    for b in briefs:
-        if b.get("id") in overrides:
-            b["status"] = overrides[b["id"]]
-    briefs.sort(key=lambda b: b.get("created_at", ""), reverse=True)
-    return briefs
+    return storage.read_all_briefs()
 
 
 def set_brief_status(brief_id: str, status: str):
@@ -74,10 +59,8 @@ def set_brief_status(brief_id: str, status: str):
     """
     if status not in STATUS_VALUES:
         raise ValueError(f"status must be one of {STATUS_VALUES}, got {status!r}")
-    overrides = _load_overrides()
-    prev_status = overrides.get(brief_id, "DRAFT")
-    overrides[brief_id] = status
-    _save_overrides(overrides)
+    prev_status = storage.read_brief_statuses().get(brief_id, "DRAFT")
+    storage.set_brief_status_gs(brief_id, status)
 
     # Log on PUBLISHED transition (idempotent — only logs once per brief)
     if status == "PUBLISHED" and prev_status != "PUBLISHED":
@@ -108,21 +91,15 @@ def _log_shipped_title(brief_id: str):
         "raga":         comp.get("raga", "") if isinstance(comp.get("raga"), str) else comp.get("raga", {}).get("name", ""),
         "wave":         comp.get("wave", "") if isinstance(comp.get("wave"), str) else comp.get("wave", {}).get("wave", ""),
     }
-    HEADER = list(row.keys())
-    SHIPPED_CSV = DATA_DIR / "shipped_titles.csv"
-    new_file = not SHIPPED_CSV.exists()
-    with open(SHIPPED_CSV, "a", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=HEADER)
-        if new_file:
-            w.writeheader()
-        w.writerow(row)
+    # Extract problem_kw from components (handles both flat string and nested dict)
+    prob = comp.get("problem", "")
+    row["problem_kw"] = (prob.get("kw", "") if isinstance(prob, dict) else prob).lower()
+
+    storage.append_shipped_title(row)
 
 
 def get_brief_by_id(brief_id: str):
-    for b in load_all_briefs():
-        if b.get("id") == brief_id:
-            return b
-    return None
+    return storage.read_brief_by_id(brief_id)
 
 
 def count_by_status():

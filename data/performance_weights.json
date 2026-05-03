@@ -1,0 +1,236 @@
+{
+  "generated_on": "2026-05-03",
+  "channel_averages": {
+    "avg_views": 190.31,
+    "avg_ctr_pct": 3.08,
+    "avg_view_pct": 14.6
+  },
+  "instruments": {
+    "Surbahar": {
+      "video_count": 1,
+      "avg_views": 1370.0,
+      "avg_ctr_pct": 4.27,
+      "avg_view_pct": 23.33,
+      "total_watch_hours": 479.59,
+      "performance_score": 3.775
+    },
+    "Veena": {
+      "video_count": 2,
+      "avg_views": 759.5,
+      "avg_ctr_pct": 3.46,
+      "avg_view_pct": 22.5,
+      "total_watch_hours": 405.26,
+      "performance_score": 2.397
+    },
+    "Bansuri": {
+      "video_count": 4,
+      "avg_views": 278.0,
+      "avg_ctr_pct": 2.84,
+      "avg_view_pct": 16.71,
+      "total_watch_hours": 226.64,
+      "performance_score": 1.205
+    },
+    "Tabla": {
+      "video_count": 1,
+      "avg_views": 50.0,
+      "avg_ctr_pct": 8.26,
+      "avg_view_pct": 11.14,
+      "total_watch_hours": 5.15,
+      "performance_score": 1.139
+    },
+    "Santoor": {
+      "video_count": 2,
+      "avg_views": 140.0,
+      "avg_ctr_pct": 2.96,
+      "avg_view_pct": 17.68,
+      "total_watch_hours": 56.58,
+      "performance_score": 0.946
+    },
+    "Sitar": {
+      "video_count": 7,
+      "avg_views": 127.4,
+      "avg_ctr_pct": 3.06,
+      "avg_view_pct": 14.21,
+      "total_watch_hours": 228.33,
+      "performance_score": 0.858
+    },
+    "Dilruba": {
+      "video_count": 3,
+      "avg_views": 70.0,
+      "avg_ctr_pct": 4.38,
+      "avg_view_pct": 13.8,
+      "total_watch_hours": 31.79,
+      "performance_score": 0.857
+    },
+    "Piano": {
+      "video_count": 1,
+      "avg_views": 28.0,
+      "avg_ctr_pct": 1.61,
+      "avg_view_pct": 30.58,
+      "total_watch_hours": 1.43,
+      "performance_score": 0.844
+    },
+    "Violin": {
+      "video_count": 1,
+      "avg_views": 84.0,
+      "avg_ctr_pct": 3.25,
+      "avg_view_pct": 13.26,
+      "total_watch_hours": 11.14,
+      "performance_score": 0.766
+    },
+    "Cello": {
+      "video_count": 1,
+      "avg_views": 58.0,
+      "avg_ctr_pct": 3.56,
+      "avg_view_pct": 8.83,
+      "total_watch_hours": 1.71,
+      "performance_score": 0.651
+    },
+    "Sarod": {
+      "video_count": 1,
+      "avg_views": 11.0,
+      "avg_ctr_pct": 5.07,
+      "avg_view_pct": 5.08,
+      "total_watch_hours": 0.52,
+      "performance_score": 0.622
+    },
+    "Tanpura": {
+      "video_count": 2,
+      "avg_views": 45.5,
+      "avg_ctr_pct": 1.71,
+      "avg_view_pct": 15.55,
+      "total_watch_hours": 13.78,
+      "performance_score": 0.582
+    },
+    "Sarangi": {
+      "video_count": 1,
+      "avg_views": 39.0,
+      "avg_ctr_pct": 1.54,
+      "avg_view_pct": 16.75,
+      "total_watch_hours": 6.53,
+      "performance_score": 0.576
+    },
+    "Esraj": {
+      "video_count": 1,
+      "avg_views": 27.0,
+      "avg_ctr_pct": 1.82,
+      "avg_view_pct": 3.27,
+      "total_watch_hours": 0.88,
+      "performance_score": 0.301
+    }
+  },
+  "problem_keywords": {
+    "deep rest music": {
+      "video_count": 1,
+      "avg_views": 1370.0,
+      "avg_ctr_pct": 4.27,
+      "avg_view_pct": 23.33,
+      "total_watch_hours": 479.59,
+      "performance_score": 3.775
+    },
+    "stress relief music": {
+      "video_count": 1,
+      "avg_views": 1206.0,
+      "avg_ctr_pct": 3.53,
+      "avg_view_pct": 22.57,
+      "total_watch_hours": 318.24,
+      "performance_score": 3.343
+    },
+    "dopamine reset": {
+      "video_count": 1,
+      "avg_views": 553.0,
+      "avg_ctr_pct": 2.65,
+      "avg_view_pct": 24.49,
+      "total_watch_hours": 203.22,
+      "performance_score": 1.924
+    },
+    "calm your mind": {
+      "video_count": 1,
+      "avg_views": 313.0,
+      "avg_ctr_pct": 3.4,
+      "avg_view_pct": 22.43,
+      "total_watch_hours": 87.03,
+      "performance_score": 1.45
+    },
+    "burnout music": {
+      "video_count": 1,
+      "avg_views": 226.0,
+      "avg_ctr_pct": 3.61,
+      "avg_view_pct": 17.78,
+      "total_watch_hours": 50.24,
+      "performance_score": 1.192
+    },
+    "relaxation music": {
+      "video_count": 2,
+      "avg_views": 254.5,
+      "avg_ctr_pct": 2.31,
+      "avg_view_pct": 16.88,
+      "total_watch_hours": 131.7,
+      "performance_score": 1.107
+    },
+    "concentration music": {
+      "video_count": 2,
+      "avg_views": 143.0,
+      "avg_ctr_pct": 2.91,
+      "avg_view_pct": 19.45,
+      "total_watch_hours": 16.72,
+      "performance_score": 0.983
+    },
+    "anxiety relief music": {
+      "video_count": 3,
+      "avg_views": 43.7,
+      "avg_ctr_pct": 5.34,
+      "avg_view_pct": 11.84,
+      "total_watch_hours": 17.85,
+      "performance_score": 0.856
+    },
+    "emotional healing music": {
+      "video_count": 1,
+      "avg_views": 84.0,
+      "avg_ctr_pct": 3.25,
+      "avg_view_pct": 13.26,
+      "total_watch_hours": 11.14,
+      "performance_score": 0.766
+    },
+    "focus music": {
+      "video_count": 5,
+      "avg_views": 34.0,
+      "avg_ctr_pct": 3.07,
+      "avg_view_pct": 16.42,
+      "total_watch_hours": 18.81,
+      "performance_score": 0.709
+    },
+    "nervous system reset": {
+      "video_count": 2,
+      "avg_views": 76.5,
+      "avg_ctr_pct": 2.08,
+      "avg_view_pct": 16.4,
+      "total_watch_hours": 24.21,
+      "performance_score": 0.7
+    },
+    "digital detox": {
+      "video_count": 1,
+      "avg_views": 70.0,
+      "avg_ctr_pct": 2.77,
+      "avg_view_pct": 9.85,
+      "total_watch_hours": 6.89,
+      "performance_score": 0.62
+    },
+    "adhd focus music": {
+      "video_count": 1,
+      "avg_views": 61.0,
+      "avg_ctr_pct": 2.58,
+      "avg_view_pct": 10.75,
+      "total_watch_hours": 6.56,
+      "performance_score": 0.601
+    },
+    "think clearly": {
+      "video_count": 1,
+      "avg_views": 39.0,
+      "avg_ctr_pct": 1.54,
+      "avg_view_pct": 16.75,
+      "total_watch_hours": 6.53,
+      "performance_score": 0.576
+    }
+  }
+}

@@ -132,16 +132,17 @@ def render_proposal(date, candidates, competitor_data, rescues, own_hook_summary
             out.append(f"- {r}")
         out.append("")
 
-        # A/B/C variants
-        variants = build_variants(comp["problem"], comp["hz"], comp["instrument"], comp["raga"], comp["wave"])
-        out.append("**A/B/C variants** (for YouTube title A/B test — pick A vs B based on hook recommendation above):")
+        # A/B variants — lean 3-slot format (backed by 2/2 A/B tests)
+        variants = c.get("variants") or build_variants(comp["problem"], comp["hz"], comp["instrument"], comp["raga"], comp["wave"])
+        out.append("**A/B title variants** (pick one for launch — run YouTube's Test & Compare):")
         labels = {
-            "A_seo":      "A — SEO-led (search ranking)",
-            "B_question": "B — Question-led (cold-feed CTR)",
-            "C_outcome":  "C — Outcome-led (warm cohort)",
+            "A_seo":      "A — SEO safe  (search + discovery, lean keyword-led)",
+            "B_question": "B — Experiment (question hook + Raga name, cold-feed CTR test)",
         }
-        for key, v in variants.items():
-            out.append(f"- **{labels[key]}** ({len(v)} chars): `{v}`")
+        for key, label in labels.items():
+            v = variants.get(key, "")
+            if v:
+                out.append(f"- **{label}** ({len(v)} chars): `{v}`")
         out.append("")
         # Thumbnail text — 3 variants from thumbnail_text.py (each has alts as backup)
         from thumbnail_text import build_thumbnail_text_variants
@@ -296,6 +297,21 @@ def render_proposal(date, candidates, competitor_data, rescues, own_hook_summary
 
 def main():
     today = datetime.now().date().isoformat()
+
+    # Keep shipped_titles.csv fresh so cooldown logic sees today's uploads
+    try:
+        from backfill_shipped_titles import backfill
+        backfill()
+    except Exception:
+        pass
+
+    # Rebuild performance_weights.json from latest REACH_HISTORY
+    try:
+        from build_performance_weights import build
+        build()
+    except Exception:
+        pass
+
     print(f"[{today}] Loading own catalog from REACH_HISTORY.csv …")
     catalog = load_own_catalog()
     print(f"  → {len(catalog)} videos in catalog")
