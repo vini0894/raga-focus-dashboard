@@ -3859,7 +3859,13 @@ with tab_title_builder:
                     return cl.get("id")
         return None
 
-    # ── Visible header so user can find this section ──
+    # ── DEBUG: bright marker to verify rendering reaches this point ──
+    st.markdown(
+        '<div style="background:#ff0000;color:#ffffff;padding:12px;'
+        'font-size:18px;font-weight:bold;text-align:center;margin:10px 0">'
+        '🔴 THUMBNAIL SECTION RENDERING — IF YOU SEE THIS, RENDER WORKS</div>',
+        unsafe_allow_html=True
+    )
     st.markdown("### 🎨 Thumbnail text suggestions")
     st.caption("Below your A/B preview · scroll up if you don't see it")
 
