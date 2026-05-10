@@ -52,10 +52,10 @@
     "47 TABS OPEN?"
   ],
   "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-cream patterned border with subtle peacock motifs, aged warm parchment background, late-evening palette (deep indigo with single warm lamp glow). Central figure: a graceful woman in moss-green-and-cream sari with copper accents seated playing veena (recognizable by the gourd-amplified body and frets) on a low cushion in a lamp-lit room. Suggestion of evening rest — folded hands at end of long day, books closed beside her. Bold dark-teal serif overlay text reading 'MENTAL OVERLOAD?' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Aged warm cream parchment palette, contemplative restful mood, single composed scene, no clutter.",
-  "suno_prompt": "TBD — pending Suno strategy lock (will be filled in a later commit)",
+  "suno_prompt": "Instrumental only, no vocals. Indian classical Saraswati veena solo in raga Bhupali, deep evening healing cognitive-rest mood, gentle plucked notes with characteristic sympathetic string resonance and harmonic decay, sustained drone-resolving phrases with natural breathing pauses, no percussion, no tabla, 432Hz tuning, 65-70 BPM, expressive melodic phrases with clear note movement and natural phrasing, cinematic meditation production, meditative but melodic, suitable for extended looping, begins immediately with first melodic phrase already in motion, no fade-in, no silent intro, full sonic presence from first note. deeply settled, like a body finally surrendering to rest",
   "production_spec": {
     "duration_minutes": 90,
-    "bpm_range": "50-55",
+    "bpm_range": "65-70",
     "key_frequency_hz": 432,
     "binaural_carrier_hz": 437,
     "binaural_wave": "Theta",
@@ -63,7 +63,7 @@
     "lufs_target": -14,
     "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
     "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
-    "notes": "Bhupali tonic D or G. Mix: Suno -3dB, Binaural -18dB, Tanpura -24dB. CRITICAL: Veena's sympathetic-string shimmer is the differentiator — if Suno produces flat plucked tone without harmonic resonance, regenerate emphasizing 'sympathetic strings', 'harmonic decay', 'overtone shimmer'. Suno may default to sitar — explicitly state 'Saraswati veena' multiple times. NO percussion."
+    "notes": "EMOTIONAL TAG ROTATION: clip 1: 'deeply settled, like a body finally surrendering to rest' · clip 2: 'deeply introspective, like breath held before release' · clip 3: 'gently hopeful, like tension quietly dissolving' · clips 4-7 cycle. Bhupali tonic D or G. Mix: Suno -3dB, Binaural -18dB, Tanpura -24dB. CRITICAL: Veena's sympathetic-string shimmer is the differentiator — emphasize 'sympathetic strings', 'harmonic decay', 'overtone shimmer'. Suno may default to sitar — explicitly state 'Saraswati veena' multiple times."
   },
   "experiment_notes": "Hypothesis 1: Q-hook lead (Raga Heal pattern) beats SEO-lead in healing/anxiety lane (extends A/B Test 4 directional finding). Hypothesis 2: Veena's harmonic decay matches 'tired mind' intent — instrument-content fit. Hypothesis 3: Bhupali pentatonic (simplest scale) = right musical choice for cognitive overload state. PRIMARY = Variant A; the bet IS the format test. Failure mode: A < 22% AVD = Q-hook doesn't transfer to our cohort, don't ship Esraj Fri PM (also experimental). Breakthrough: A beats B by 5pp+ = adopt Q-hook as standard Variant template."
 }
