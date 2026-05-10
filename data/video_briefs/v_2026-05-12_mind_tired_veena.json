@@ -1,0 +1,69 @@
+{
+  "id": "v_2026-05-12_mind_tired_veena",
+  "status": "DRAFT",
+  "date_shipped": null,
+  "created_at": "2026-05-10",
+  "planned_date": "2026-05-12",
+  "planned_slot": "PM (7pm IST)",
+  "title": "Mind Tired? | Veena Healing Music",
+  "title_variants": {
+    "A": "Mind Tired? | Veena Healing Music",
+    "B": "Healing Music | Veena & 432Hz Calm Session"
+  },
+  "components": {
+    "problem": "mind tired / mental fatigue",
+    "instrument": "Veena",
+    "raga": "Bhupali",
+    "hz": "432Hz",
+    "wave": "Theta"
+  },
+  "validated_keywords": [
+    "healing music (75)",
+    "veena (62)",
+    "veena healing music (67)",
+    "calming music (72)",
+    "calm music (74)",
+    "meditation music (80)",
+    "indian classical music (66)",
+    "raga focus (66)"
+  ],
+  "strategic_bet": "First explicit competitor-pattern ship of the week. Raga Heal's entire title strategy is question-hook (Your Mind Feels Tired?, Anxiety?, Overthinking at Night?) — they don't use SEO leads at all and their channel works. A/B Test 4 on this channel showed Q-hook variant (Meditation Music for Overthinking | Clear your mind instantly) led SEO variant by 6.6pp (53.3% vs 46.7%) in healing lane. This ship tests Raga Heal's pattern directly with Veena — channel's strongest under-utilized hero (26.5% AVD across 4 ships, less saturated by competitors). If Q-hook works on Veena, fresh keyword cluster opens (Mind Tired?, Eyes Burning?, Heart Heavy?) tapping Raga Heal's audience.",
+  "success_good": "1500+ views, 25%+ AVD in 48h",
+  "success_breakthrough": "5K+ views, 30%+ AVD — Q-hook pattern confirmed for our channel",
+  "ab_test": {
+    "variant_A": {
+      "title": "Mind Tired? | Veena Healing Music",
+      "thumbnail_text": "MENTAL OVERLOAD?",
+      "hypothesis": "Pure Raga Heal-style Q-hook lead (PRIMARY/EXPERIMENT). Specifies cognitive-fatigue state of knowledge workers. Lean — no third slot. Tests competitor format directly. Thumb 'MENTAL OVERLOAD?' doesn't repeat 'Mind Tired?' from title — names cause vs effect."
+    },
+    "variant_B": {
+      "title": "Healing Music | Veena & 432Hz Calm Session",
+      "thumbnail_text": "MIND RACING?",
+      "hypothesis": "SEO-led baseline (CONTROL). Tests our standard format for direct comparison with Q-hook variant."
+    },
+    "test_method": "matched-pair: 2 thumbnails x 2 titles, A/B Test on YouTube native. PRIMARY = Variant A (the bet IS the test of competitor format)."
+  },
+  "tags": "healing music, veena, veena music, saraswati veena, mind tired, mental fatigue, decision fatigue, calming music, calm music, raga bhupali, bhupali, 432Hz, 432Hz music, theta waves, theta wave music, indian classical music, indian classical veena, instrumental music, meditation music, peaceful music, evening healing, raga focus, ancient veena, gentle veena",
+  "description": "Mind Tired? | Veena Healing Music\n\nIf your brain feels like an open browser with 47 tabs — start here. Veena's gentle plucked harmonics literally close the tabs. Just listen.\n\nSolo Saraswati veena (ancient Indian fretted plucked instrument) playing Raga Bhupali, tuned to 432Hz, with a subliminal Theta wave layer for cognitive rest.\n\n🎵 What you'll hear:\n- Solo Saraswati veena — ancient Indian fretted plucked instrument with gourd-amplified resonant body and sympathetic strings underneath\n- Raga Bhupali — evening pentatonic raga, the simplest scale in classical Indian music. Gently peaceful and uncomplicated.\n- 432Hz — healing frequency tuned to natural harmony\n- Subliminal Theta wave (5Hz) entrainment layer\n- Seamless looping texture, no abrupt transitions\n\n⏱ Chapters\n0:00   Settling — softening into the chair\n12:00  Tabs closing — first quiet space\n35:00  Mental clarity returning\n60:00  Restful spaciousness\n80:00  Gentle return\n\n🧠 How to use:\nPress play. Stop trying to think your way out of the tiredness. Veena's harmonic decay slows neural firing rate naturally — your mind softens on its own. Tea optional. Phone away.\n\n⏱ Best for:\n• Mental exhaustion / decision fatigue\n• End-of-workday cognitive overload\n• Pre-sleep mental wind-down\n• Anxiety from over-thinking\n• Restful background work (no analysis required)\n\n📺 Subscribe to Raga Focus for daily uploads:\n- Sitar, Sarangi, Veena, Surbahar, Bansuri and other Indian instruments\n- Sessions tuned to specific healing frequencies\n- Music for anxiety, overthinking, sleep, stress, emotional release\n\n— Raga Focus\n\n#healingmusic #veena #mindtired #mentalfatigue #calmingmusic #432hzmusic #thetawaves #ragabhupali #saraswativeena #indianclassicalmusic #ragafocus",
+  "thumbnail_text_main": "MENTAL OVERLOAD?",
+  "thumbnail_text_variants": [
+    "MIND RACING?",
+    "BRAIN FRIED?",
+    "47 TABS OPEN?"
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-cream patterned border with subtle peacock motifs, aged warm parchment background, late-evening palette (deep indigo with single warm lamp glow). Central figure: a graceful woman in moss-green-and-cream sari with copper accents seated playing veena (recognizable by the gourd-amplified body and frets) on a low cushion in a lamp-lit room. Suggestion of evening rest — folded hands at end of long day, books closed beside her. Bold dark-teal serif overlay text reading 'MENTAL OVERLOAD?' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Aged warm cream parchment palette, contemplative restful mood, single composed scene, no clutter.",
+  "suno_prompt": "TBD — pending Suno strategy lock (will be filled in a later commit)",
+  "production_spec": {
+    "duration_minutes": 90,
+    "bpm_range": "50-55",
+    "key_frequency_hz": 432,
+    "binaural_carrier_hz": 437,
+    "binaural_wave": "Theta",
+    "binaural_beat_hz": 5.0,
+    "lufs_target": -14,
+    "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+    "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+    "notes": "Bhupali tonic D or G. Mix: Suno -3dB, Binaural -18dB, Tanpura -24dB. CRITICAL: Veena's sympathetic-string shimmer is the differentiator — if Suno produces flat plucked tone without harmonic resonance, regenerate emphasizing 'sympathetic strings', 'harmonic decay', 'overtone shimmer'. Suno may default to sitar — explicitly state 'Saraswati veena' multiple times. NO percussion."
+  },
+  "experiment_notes": "Hypothesis 1: Q-hook lead (Raga Heal pattern) beats SEO-lead in healing/anxiety lane (extends A/B Test 4 directional finding). Hypothesis 2: Veena's harmonic decay matches 'tired mind' intent — instrument-content fit. Hypothesis 3: Bhupali pentatonic (simplest scale) = right musical choice for cognitive overload state. PRIMARY = Variant A; the bet IS the format test. Failure mode: A < 22% AVD = Q-hook doesn't transfer to our cohort, don't ship Esraj Fri PM (also experimental). Breakthrough: A beats B by 5pp+ = adopt Q-hook as standard Variant template."
+}
