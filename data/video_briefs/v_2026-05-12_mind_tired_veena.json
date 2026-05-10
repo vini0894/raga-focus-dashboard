@@ -5,10 +5,10 @@
   "created_at": "2026-05-10",
   "planned_date": "2026-05-12",
   "planned_slot": "PM (7pm IST)",
-  "title": "Mind Tired? | Veena Healing Music",
+  "title": "Mind Tired? | Saraswati Veena Bhupali",
   "title_variants": {
-    "A": "Mind Tired? | Veena Healing Music",
-    "B": "Healing Music | Veena & 432Hz Calm Session"
+    "A": "Mind Tired? | Saraswati Veena Bhupali",
+    "B": "Calming Music for Anxiety | Veena & 432Hz Session"
   },
   "components": {
     "problem": "mind tired / mental fatigue",
@@ -32,21 +32,22 @@
   "success_breakthrough": "5K+ views, 30%+ AVD — Q-hook pattern confirmed for our channel",
   "ab_test": {
     "variant_A": {
-      "title": "Mind Tired? | Veena Healing Music",
+      "title": "Mind Tired? | Saraswati Veena Bhupali",
       "thumbnail_text": "MENTAL OVERLOAD?",
       "hypothesis": "Pure Raga Heal-style Q-hook lead (PRIMARY/EXPERIMENT). Specifies cognitive-fatigue state of knowledge workers. Lean — no third slot. Tests competitor format directly. Thumb 'MENTAL OVERLOAD?' doesn't repeat 'Mind Tired?' from title — names cause vs effect."
     },
     "variant_B": {
-      "title": "Healing Music | Veena & 432Hz Calm Session",
-      "thumbnail_text": "MIND RACING?",
-      "hypothesis": "SEO-led baseline (CONTROL). Tests our standard format for direct comparison with Q-hook variant."
+      "title": "Calming Music for Anxiety | Veena & 432Hz Session",
+      "thumbnail_text": "CLOSE THE TABS",
+      "hypothesis": "SEO-led baseline (Calming Music for Anxiety 72) + outcome-imperative thumb (Close the Tabs). Tests Q-vs-outcome thumbnail format. Lead changed from 'Healing Music' to 'Calming Music for Anxiety' to avoid back-to-back 'Healing Music' lead with Mon PM Sarangi."
     },
     "test_method": "matched-pair: 2 thumbnails x 2 titles, A/B Test on YouTube native. PRIMARY = Variant A (the bet IS the test of competitor format)."
   },
   "tags": "healing music, veena, veena music, saraswati veena, mind tired, mental fatigue, decision fatigue, calming music, calm music, raga bhupali, bhupali, 432Hz, 432Hz music, theta waves, theta wave music, indian classical music, indian classical veena, instrumental music, meditation music, peaceful music, evening healing, raga focus, ancient veena, gentle veena",
-  "description": "Mind Tired? | Veena Healing Music\n\nIf your brain feels like an open browser with 47 tabs — start here. Veena's gentle plucked harmonics literally close the tabs. Just listen.\n\nSolo Saraswati veena (ancient Indian fretted plucked instrument) playing Raga Bhupali, tuned to 432Hz, with a subliminal Theta wave layer for cognitive rest.\n\n🎵 What you'll hear:\n- Solo Saraswati veena — ancient Indian fretted plucked instrument with gourd-amplified resonant body and sympathetic strings underneath\n- Raga Bhupali — evening pentatonic raga, the simplest scale in classical Indian music. Gently peaceful and uncomplicated.\n- 432Hz — healing frequency tuned to natural harmony\n- Subliminal Theta wave (5Hz) entrainment layer\n- Seamless looping texture, no abrupt transitions\n\n⏱ Chapters\n0:00   Settling — softening into the chair\n12:00  Tabs closing — first quiet space\n35:00  Mental clarity returning\n60:00  Restful spaciousness\n80:00  Gentle return\n\n🧠 How to use:\nPress play. Stop trying to think your way out of the tiredness. Veena's harmonic decay slows neural firing rate naturally — your mind softens on its own. Tea optional. Phone away.\n\n⏱ Best for:\n• Mental exhaustion / decision fatigue\n• End-of-workday cognitive overload\n• Pre-sleep mental wind-down\n• Anxiety from over-thinking\n• Restful background work (no analysis required)\n\n📺 Subscribe to Raga Focus for daily uploads:\n- Sitar, Sarangi, Veena, Surbahar, Bansuri and other Indian instruments\n- Sessions tuned to specific healing frequencies\n- Music for anxiety, overthinking, sleep, stress, emotional release\n\n— Raga Focus\n\n#healingmusic #veena #mindtired #mentalfatigue #calmingmusic #432hzmusic #thetawaves #ragabhupali #saraswativeena #indianclassicalmusic #ragafocus",
+  "description": "Mind Tired? | Saraswati Veena Bhupali\n\nIf your brain feels like an open browser with 47 tabs — start here. Veena's gentle plucked harmonics literally close the tabs. Just listen.\n\nSolo Saraswati veena (ancient Indian fretted plucked instrument) playing Raga Bhupali, tuned to 432Hz, with a subliminal Theta wave layer for cognitive rest.\n\n🎵 What you'll hear:\n- Solo Saraswati veena — ancient Indian fretted plucked instrument with gourd-amplified resonant body and sympathetic strings underneath\n- Raga Bhupali — evening pentatonic raga, the simplest scale in classical Indian music. Gently peaceful and uncomplicated.\n- 432Hz — healing frequency tuned to natural harmony\n- Subliminal Theta wave (5Hz) entrainment layer\n- Seamless looping texture, no abrupt transitions\n\n⏱ Chapters\n0:00   Settling — softening into the chair\n12:00  Tabs closing — first quiet space\n35:00  Mental clarity returning\n60:00  Restful spaciousness\n80:00  Gentle return\n\n🧠 How to use:\nPress play. Stop trying to think your way out of the tiredness. Veena's harmonic decay slows neural firing rate naturally — your mind softens on its own. Tea optional. Phone away.\n\n⏱ Best for:\n• Mental exhaustion / decision fatigue\n• End-of-workday cognitive overload\n• Pre-sleep mental wind-down\n• Anxiety from over-thinking\n• Restful background work (no analysis required)\n\n📺 Subscribe to Raga Focus for daily uploads:\n- Sitar, Sarangi, Veena, Surbahar, Bansuri and other Indian instruments\n- Sessions tuned to specific healing frequencies\n- Music for anxiety, overthinking, sleep, stress, emotional release\n\n— Raga Focus\n\n#healingmusic #veena #mindtired #mentalfatigue #calmingmusic #432hzmusic #thetawaves #ragabhupali #saraswativeena #indianclassicalmusic #ragafocus",
   "thumbnail_text_main": "MENTAL OVERLOAD?",
   "thumbnail_text_variants": [
+    "CLOSE THE TABS",
     "MIND RACING?",
     "BRAIN FRIED?",
     "47 TABS OPEN?"

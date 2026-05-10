@@ -3,8 +3,8 @@
   "status": "DRAFT",
   "date_shipped": null,
   "created_at": "2026-05-10",
-  "planned_date": "2026-05-11",
-  "planned_slot": "PM (7pm IST)",
+  "planned_date": "2026-05-18",
+  "planned_slot": "PM (7pm IST) — parked from May 11 for cadence reduction",
   "title": "Healing Music | Sarangi for Emotional Release",
   "title_variants": {
     "A": "Healing Music | Sarangi for Emotional Release",
@@ -27,7 +27,7 @@
     "raga focus (66)",
     "meditation music (80)"
   ],
-  "strategic_bet": "Highest-information ship of the week — tests whether Instrument-for-Outcome format generalizes beyond Sitar. Sarangi is the right test instrument: strongest non-Sitar opener (Comfort Music | Sarangi 4K views in 5d, 25.7% AVD), most vocal-like and emotional instrument in the kit. Pairs with Mon AM Sitar Cortisol Reset for same-day controlled experiment of format generalization across two instruments. Emotional/grief lane has zero competitor saturation observed. Yaman raga (evening contemplative) avoids same-day Bhairavi reuse from Mon AM. If this hits 25%+ AVD: format works channel-wide, green-light remaining experimental ships. If <22%: format may be Sitar-specific, cancel Esraj Fri PM moonshot.",
+  "strategic_bet": "[PARKED to May 18 from May 11 — cadence reduction]\n\nHighest-information ship of the week — tests whether Instrument-for-Outcome format generalizes beyond Sitar. Sarangi is the right test instrument: strongest non-Sitar opener (Comfort Music | Sarangi 4K views in 5d, 25.7% AVD), most vocal-like and emotional instrument in the kit. Pairs with Mon AM Sitar Cortisol Reset for same-day controlled experiment of format generalization across two instruments. Emotional/grief lane has zero competitor saturation observed. Yaman raga (evening contemplative) avoids same-day Bhairavi reuse from Mon AM. If this hits 25%+ AVD: format works channel-wide, green-light remaining experimental ships. If <22%: format may be Sitar-specific, cancel Esraj Fri PM moonshot.",
   "success_good": "1500+ views, 25%+ AVD in 48h",
   "success_breakthrough": "5K+ views, 30%+ AVD — confirms Instrument-for-Outcome generalizes beyond Sitar AND emotional lane is real",
   "ab_test": {
@@ -38,8 +38,8 @@
     },
     "variant_B": {
       "title": "Holding It In? | Sarangi for Emotional Release",
-      "thumbnail_text": "TENDER PLACE?",
-      "hypothesis": "Question hook on suppression-state — tests Raga Heal pattern in emotional lane"
+      "thumbnail_text": "LET IT MOVE",
+      "hypothesis": "Question title (Holding It In?) + outcome-imperative thumb (Let It Move). Tests Q-vs-outcome thumbnail format in emotional/healing lane."
     },
     "test_method": "matched-pair: 2 thumbnails x 2 titles, A/B Test on YouTube native"
   },
@@ -47,6 +47,7 @@
   "description": "Healing Music | Sarangi for Emotional Release\n\nIf something inside is asking to be felt — not fixed — start here. Some feelings don't need solving. They need company. The sarangi is the most vocal-like instrument in Indian classical music. Let it speak for what you can't.\n\nSolo sarangi playing Raga Yaman (evening contemplative raga), tuned to 432Hz, with a subliminal Theta wave layer for emotional grounding and gentle release.\n\n🎵 What you'll hear:\n- Solo sarangi — bowed Indian string instrument with deep, breath-like vocal quality\n- Raga Yaman — classical evening contemplative raga\n- 432Hz — healing frequency tuned to natural harmony\n- Subliminal Theta wave (5Hz) entrainment layer\n- Seamless looping texture, no abrupt transitions\n\n⏱ Chapters\n0:00   Settling — softening into the body\n12:00  First wave rising\n35:00  Letting it move\n60:00  Tender ground\n80:00  Held & home\n\n🧠 How to use:\nPress play. Let whatever rises rise. The music holds you while the feeling moves. Don't analyze it — just breathe through it. Tears are welcome. So is silence.\n\n⏱ Best for:\n• Emotional release / grief processing\n• After a hard day or hard conversation\n• Heart-opening practice\n• Sound healing sessions\n• Tender wind-down\n\n📺 Subscribe to Raga Focus for daily uploads:\n- Sitar, Sarangi, Veena, Surbahar, Bansuri and other Indian instruments\n- Sessions tuned to specific healing frequencies\n- Music for anxiety, overthinking, sleep, stress, emotional release\n\n— Raga Focus\n\n#healingmusic #sarangi #sarangimusic #emotionalrelease #emotionalhealing #432hzmusic #432hz #thetawaves #ragayaman #grief #indianclassicalmusic #ragafocus",
   "thumbnail_text_main": "HEAVY HEART?",
   "thumbnail_text_variants": [
+    "LET IT MOVE",
     "TENDER PLACE?",
     "FEELING IT ALL?",
     "CAN'T SHAKE IT?"
