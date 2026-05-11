@@ -1,0 +1,74 @@
+{
+  "id": "v_2026-05-14_morning_energy_santoor",
+  "status": "DRAFT",
+  "date_shipped": null,
+  "created_at": "2026-05-11",
+  "planned_date": "2026-05-14",
+  "planned_slot": "AM (7am IST)",
+  "title": "Morning Energy Music | Santoor Instrumental | Positive Vibes",
+  "title_variants": {
+    "A": "Morning Energy Music | Santoor Instrumental | Positive Vibes",
+    "B": "Start Your Day | Santoor for Morning Energy | Healing Music"
+  },
+  "components": {
+    "problem": "morning energy / positive start to day",
+    "instrument": "Santoor",
+    "raga": "Bilawal",
+    "hz": "432Hz",
+    "wave": "Alpha"
+  },
+  "validated_keywords": [
+    "morning energy music (70)",
+    "positive vibes music (72)",
+    "healing music (75)",
+    "morning music (77)",
+    "feel good music (70)",
+    "santoor (unscored — instrument tag)",
+    "indian instrumental music (67)",
+    "indian classical music (66)",
+    "432hz (74)",
+    "alpha waves (implied binaural)",
+    "morning motivation music (61)",
+    "morning routine music (66)"
+  ],
+  "strategic_bet": "Santoor's only prior long-form outing was Focus Music Santoor (Apr 15, ~160 views) — flopped because it was wrong lane (focus/deep work) pre-pivot. This is a completely different bet: morning energy / positive emotional lane, which is the channel's proven high-AVD territory (Yoga Music 32.0%, Productive Day 32.8%). Santoor's bright hammered-dulcimer character is the most naturally upbeat instrument in the lineup — the right tool for morning energy that Sitar/Veena/Sarangi can't deliver. Not a focus-lane bet; a morning-emotional-energy bet. Channel page diversity: all this week's titles have been anxiety/calm/reset oriented — a positive upbeat morning title stands out visually and emotionally.",
+  "success_good": "1500+ views, 27%+ AVD in 48h",
+  "success_breakthrough": "4K+ views, 30%+ AVD — Santoor rescued into morning-energy lane, opens repeatable format",
+  "ab_test": {
+    "variant_A": {
+      "title": "Morning Energy Music | Santoor Instrumental | Positive Vibes",
+      "thumbnail_text": "MORNING ENERGY",
+      "hypothesis": "SEO-first lead with highest validated morning keyword (morning energy music 70) + instrument anchor + emotional promise (positive vibes 72). Outcome-imperative thumb matches focus-lane convention — 'MORNING ENERGY' is a state-affirmation, not a question. Tests whether a clean 3-slot SEO statement captures morning-intent algorithmic traffic."
+    },
+    "variant_B": {
+      "title": "Start Your Day | Santoor for Morning Energy | Healing Music",
+      "thumbnail_text": "START YOUR DAY",
+      "hypothesis": "Imperative lead — viewer's literal morning vocabulary. 'Start Your Day' is the plain-English phrase people use to describe morning intent. Instrument-for-Outcome unit in slot 2. Healing Music (75) as slot 3 — highest score of the set, adds emotional healing layer. Thumb 'START YOUR DAY' mirrors title imperative for reinforcement. Tests whether action-imperative lead outperforms SEO-keyword lead in morning-energy lane."
+    },
+    "test_method": "matched-pair: 2 thumbnails x 2 titles. Variable tested: SEO-keyword lead (A) vs imperative-action lead (B). Both 3-slot titles. Both outcome-imperative thumbnails."
+  },
+  "tags": "morning energy music, santoor, santoor music, positive vibes music, healing music, feel good music, morning music, morning motivation music, morning routine music, indian instrumental music, indian classical music, raga bilawal, bilawal, 432hz, alpha waves, binaural beats, start your day, morning focus, morning meditation, raga focus, indian classical santoor",
+  "description": "Morning Energy Music | Santoor Instrumental | Positive Vibes\n\nYour morning sets everything else in motion. Santoor's bright hammered strings in Raga Bilawal — the sound of a day beginning with clarity and ease.\n\nSolo santoor playing Raga Bilawal, tuned to 432Hz, with a 10Hz Alpha binaural layer — the brainwave frequency of relaxed alertness and calm energy.\n\n🎵 What you'll hear:\n- Solo santoor — hammered dulcimer with bright percussive strikes, warm resonant sustain, and natural melodic lift\n- Raga Bilawal — morning raga, bright and auspicious, associated with a clean clear start\n- 432Hz tuning — natural harmonic tuning\n- 10Hz Alpha binaural layer — relaxed alertness, flow state without anxiety (use headphones for the binaural effect)\n- Seamless looping texture, consistent energy throughout\n\n⏱ Chapters\n0:00   First light — gentle opening phrases\n15:00  Energy building\n40:00  Full morning momentum\n70:00  Sustained positive flow\n80:00  Gentle close\n\n☀️ How to use:\nPlay during your morning routine — while getting ready, having breakfast, journaling, or easing into work. Santoor's natural brightness lifts mood without caffeine-jitter energy. Headphones recommended for the binaural effect.\n\n⏱ Best for:\n• Morning routine\n• Positive start to the day\n• Gentle energy lift\n• Morning yoga or stretching\n• Pre-work mood reset\n\n📺 Subscribe to Raga Focus for daily uploads:\n- Sitar, Sarangi, Veena, Surbahar, Santoor, Bansuri and other Indian instruments\n- Sessions tuned to specific healing frequencies\n- Music for anxiety, sleep, emotional release, morning energy, and calm\n\n— Raga Focus\n\n#morningenergymusic #santoor #santoormusic #positivevibesmusic #healingmusic #morningmusic #indianinstrumentalmusic #ragabilawal #432hz #alphawaves #morningroutine #feelgoodmusic #ragafocus",
+  "thumbnail_text_main": "MORNING ENERGY",
+  "thumbnail_text_variants": [
+    "START YOUR DAY",
+    "FEEL GOOD",
+    "BRIGHT START",
+    "RISE & FLOW"
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-cream patterned border with sunrise motifs (subtle lotus and sun details), aged warm parchment background with a bright golden-morning palette — warm amber and gold light, not dark. Central figure: serene woman in bright saffron-yellow sari with gold accents seated playing santoor (flat trapezoidal instrument with small hammers/mallets, distinctly different from sitar — horizontal instrument resting on a stand or cushion). Sunlight streaming through an open window behind her, soft morning glow. Landscape outside suggests dawn — light hills, soft sky. Bold dark-teal serif overlay text reading 'MORNING ENERGY' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Warm gold-cream parchment palette, single composed scene, no clutter.",
+  "suno_prompt": "Instrumental only, no vocals. Indian classical santoor solo in raga Bilawal, bright morning energy mood, hammered dulcimer with characteristic bright percussive attack and warm resonant sustain, melodic phrases with natural lift and forward momentum, no percussion, no tabla, 432Hz tuning, 85-95 BPM, upbeat but calm — energetic without being frantic, expressive melodic development with clear ascending phrases, seamless ambient texture with consistent dynamics, suitable for extended looping in post-production, no abrupt entrances or fade-outs that would break a loop. Bright, positive, like the first hour of a perfect morning.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "bpm_range": "85-95",
+    "key_frequency_hz": 432,
+    "binaural_carrier_hz": 442,
+    "binaural_wave": "Alpha",
+    "binaural_beat_hz": 10.0,
+    "lufs_target": -14,
+    "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+    "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+    "notes": "EMOTIONAL TAG ROTATION: clip 1: 'bright and uplifting, like the first rays of morning sun' · clip 2: 'gently energetic, like a day beginning with ease' · clip 3: 'warmly optimistic, like tension releasing into possibility' · clips 4-7 cycle. Bilawal tonic C or D. CRITICAL: Santoor's hammered-dulcimer character must come through — bright percussive strikes with warm sustain, NOT sitar-like slides. If Suno outputs sitar-like meend or gamak heavy lines, regenerate emphasizing 'santoor', 'hammered dulcimer', 'percussive attack', 'bright struck notes'. Alpha binaural (10Hz) — relaxed alertness, NOT Theta (too sleepy for morning energy). Mix: Suno -3dB, Binaural -20dB, Tanpura -24dB."
+  },
+  "experiment_notes": "Hypothesis 1: Santoor works in morning-energy lane (failed in focus lane Apr 15 — different lane, different era). Hypothesis 2: Positive/upbeat content provides channel-page contrast against the week's anxiety/calm titles — higher CTR from browse diversity. Hypothesis 3: Imperative lead (B) vs SEO-keyword lead (A) — which converts better for morning-intent content. Failure mode: <22% AVD = morning-energy lane too shallow for this audience, shift future Santoor to healing/emotional lane. Breakthrough: 30%+ AVD = Santoor rescued into morning lane, repeatable format confirmed."
+}
