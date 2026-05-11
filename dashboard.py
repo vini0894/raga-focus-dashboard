@@ -1644,6 +1644,14 @@ with tab_briefs:
                 c1, c2, c3 = st.columns([4, 2, 2])
                 with c1:
                     planned = b.get("planned_date", "")
+                    # Slot badge: 🌅 AM (morning, 7am IST) / 🌙 PM (evening, 7pm IST)
+                    slot_raw = b.get("planned_slot", "")
+                    if slot_raw.startswith("AM"):
+                        slot_badge = "<span style='background:#ffa500;color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;margin-right:6px;'>🌅 AM</span>"
+                    elif slot_raw.startswith("PM"):
+                        slot_badge = "<span style='background:#4a90e2;color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;margin-right:6px;'>🌙 PM</span>"
+                    else:
+                        slot_badge = ""
                     next_chip = "▶ NEXT  " if is_next else ""
                     label = f"📅 {planned}  " if planned else ""
                     title_text = b.get('title', '(untitled)')
@@ -1651,13 +1659,14 @@ with tab_briefs:
                         st.markdown(
                             f"<div style='border-left:3px solid #ff6b35;padding-left:10px;'>"
                             f"<span style='background:#ff6b35;color:#fff;padding:1px 6px;border-radius:3px;font-size:11px;font-weight:600;'>NEXT</span> "
+                            f"{slot_badge}"
                             f"<span style='color:#888;font-size:13px;'>{label}</span>"
                             f"<strong style='font-size:15px;'>{title_text}</strong>"
                             f"</div>",
                             unsafe_allow_html=True,
                         )
                     else:
-                        st.markdown(f"<span style='color:#888;font-size:13px;'>{label}</span><strong>{title_text}</strong>", unsafe_allow_html=True)
+                        st.markdown(f"{slot_badge}<span style='color:#888;font-size:13px;'>{label}</span><strong>{title_text}</strong>", unsafe_allow_html=True)
                     if show_shipped_date and b.get("date_shipped"):
                         st.caption(f"Shipped: {b['date_shipped']}  ·  {b.get('id')}")
                     else:
@@ -1693,6 +1702,12 @@ with tab_briefs:
             else:
                 st.markdown(f"## 📋 {brief.get('title', '(untitled)')}")
                 _meta = f"Slug: `{brief['id']}`  ·  Status: **{brief.get('status', 'DRAFT')}**"
+                # Slot badge in detail view
+                _slot_raw = brief.get("planned_slot", "")
+                if _slot_raw.startswith("AM"):
+                    _meta += "  ·  🌅 **AM (Morning · 7am IST)**"
+                elif _slot_raw.startswith("PM"):
+                    _meta += "  ·  🌙 **PM (Evening · 7pm IST)**"
                 if brief.get("planned_date"):
                     _meta += f"  ·  Planned: {brief['planned_date']}"
                 if brief.get("date_shipped"):
