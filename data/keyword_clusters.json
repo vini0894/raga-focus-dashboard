@@ -3,7 +3,7 @@
     {
       "id": "calm",
       "name": "Calm / Settle",
-      "emoji": "🧘",
+      "emoji": "\ud83e\uddd8",
       "slot": "problem",
       "keywords": [
         "calm your mind",
@@ -35,13 +35,16 @@
         "soft instrumental music",
         "ambient calm music",
         "deep calm music",
-        "music for calm"
+        "music for calm",
+        "music to unwind",
+        "veena for tired mind",
+        "veena for quiet mind"
       ]
     },
     {
       "id": "stress",
       "name": "Stress / Burnout",
-      "emoji": "😮‍💨",
+      "emoji": "\ud83d\ude2e\u200d\ud83d\udca8",
       "slot": "problem",
       "keywords": [
         "stress relief music",
@@ -73,13 +76,16 @@
         "corporate stress music",
         "music after a hard day",
         "end of day music",
-        "long day music"
+        "long day music",
+        "too much stress",
+        "drained after work",
+        "cortisol reset"
       ]
     },
     {
       "id": "sleep",
       "name": "Sleep / Rest",
-      "emoji": "🌙",
+      "emoji": "\ud83c\udf19",
       "slot": "problem",
       "keywords": [
         "insomnia relief",
@@ -111,13 +117,14 @@
         "slow sleep music",
         "soft sleep music",
         "1 hour sleep music",
-        "sleep soundly music"
+        "sleep soundly music",
+        "relaxing sleep music"
       ]
     },
     {
       "id": "anxiety",
       "name": "Anxiety / Overthinking",
-      "emoji": "💭",
+      "emoji": "\ud83d\udcad",
       "slot": "problem",
       "keywords": [
         "anxiety relief music",
@@ -149,13 +156,14 @@
         "fear and anxiety music",
         "quiet anxiety music",
         "music for nervous energy",
-        "soothe anxiety"
+        "soothe anxiety",
+        "mind tired"
       ]
     },
     {
       "id": "healing",
       "name": "Healing / Emotional",
-      "emoji": "💚",
+      "emoji": "\ud83d\udc9a",
       "slot": "problem",
       "keywords": [
         "healing music",
@@ -187,13 +195,17 @@
         "music when you are hurt",
         "music for emotional pain",
         "soothe the soul",
-        "music for letting go"
+        "music for letting go",
+        "sound healing music",
+        "healing energy",
+        "emotional balance",
+        "slow veena healing"
       ]
     },
     {
       "id": "nostalgia",
       "name": "Nostalgia / Longing",
-      "emoji": "🌅",
+      "emoji": "\ud83c\udf05",
       "slot": "problem",
       "keywords": [
         "nostalgia music",
@@ -231,7 +243,7 @@
     {
       "id": "focus",
       "name": "Focus / Clarity",
-      "emoji": "🎯",
+      "emoji": "\ud83c\udfaf",
       "slot": "problem",
       "keywords": [
         "deep focus music",
@@ -263,13 +275,25 @@
         "music for homework",
         "music for thinking",
         "creative focus music",
-        "music for problem solving"
+        "music for problem solving",
+        "mental clarity",
+        "brain fog music",
+        "brain fog relief",
+        "brain fog reset",
+        "40hz gamma",
+        "unlock creativity",
+        "cognitive music",
+        "sarod music",
+        "indian ragas for deep focus",
+        "sharp focus music",
+        "mind fog music",
+        "sarod 40hz"
       ]
     },
     {
       "id": "grounding",
       "name": "Grounding / Reset",
-      "emoji": "🌿",
+      "emoji": "\ud83c\udf3f",
       "slot": "problem",
       "keywords": [
         "grounding music",
@@ -301,13 +325,22 @@
         "slow breathing music",
         "regulate nervous system",
         "parasympathetic music",
-        "restore balance music"
+        "restore balance music",
+        "mental reset",
+        "remove negative energy",
+        "after work music",
+        "mind recharge",
+        "brain recovery music",
+        "afterwork unwind",
+        "screen time reset",
+        "mental decompression",
+        "cognitive recovery music"
       ]
     },
     {
       "id": "uplifting",
       "name": "Uplifting / Feel-good",
-      "emoji": "☀️",
+      "emoji": "\u2600\ufe0f",
       "slot": "problem",
       "keywords": [
         "feel good music",
@@ -339,7 +372,10 @@
         "fresh start music",
         "good vibes music",
         "summer vibes music",
-        "feel-good hour"
+        "feel-good hour",
+        "boost your aura",
+        "attract positive energy",
+        "sun salutation music"
       ]
     }
   ]

@@ -4445,6 +4445,110 @@ with tab_title_builder:
                             _tb_unselect_keyword(_kl, "B")
                             st.rerun()
 
+        # ─────────────────────────────────────────────────────────
+        # ✨ SPARK PHRASES — curated Q-hooks / state words / outcomes
+        # Visual click-to-add chips for creative title brainstorming.
+        # Not VidIQ-scored — these are plain-English viewer vocabulary.
+        # Filtered by the active cluster (or All shows everything).
+        # ─────────────────────────────────────────────────────────
+        _spark_path = DASHBOARD_DIR / "data" / "spark_phrases.json"
+        _spark_data = {}
+        if _spark_path.exists():
+            try:
+                _spark_data = _tb_json.loads(_spark_path.read_text()).get("clusters", {})
+            except Exception:
+                _spark_data = {}
+
+        if _spark_data:
+            st.markdown("<div style='height:14px'></div>", unsafe_allow_html=True)
+            st.markdown(
+                "<div style='font-size:13px;font-weight:600;color:#e5e7eb'>"
+                "✨ Spark phrases <span style='font-size:10px;color:#9ca3af;font-weight:400'>"
+                "· click to add to active variant (no score needed)</span></div>",
+                unsafe_allow_html=True
+            )
+
+            # Pick which clusters to show
+            if _cluster_id == "__all__":
+                _spark_clusters = list(_spark_data.keys())
+            elif _cluster_id == "__hidden__":
+                _spark_clusters = []
+            else:
+                _spark_clusters = [_cluster_id] if _cluster_id in _spark_data else []
+
+            _SPARK_COLORS = {
+                "question": ("#facc15", "rgba(250,204,21,0.12)", "Q"),
+                "state":    ("#93c5fd", "rgba(147,197,253,0.10)", "state"),
+                "outcome":  ("#4ade80", "rgba(74,222,128,0.10)", "out"),
+            }
+
+            for _scid in _spark_clusters:
+                _sc_block = _spark_data.get(_scid, {})
+                if not _sc_block:
+                    continue
+                # Cluster header (only show if multiple clusters visible)
+                if len(_spark_clusters) > 1:
+                    _cl_meta = next((c for c in _tb_clusters if c["id"] == _scid), None)
+                    _cl_emoji = _cl_meta.get("emoji","") if _cl_meta else ""
+                    _cl_name = _cl_meta.get("name", _scid).split("/")[0].strip() if _cl_meta else _scid
+                    st.markdown(
+                        f"<div style='font-size:10px;color:#9ca3af;margin:6px 0 3px;"
+                        f"text-transform:uppercase;letter-spacing:0.5px'>"
+                        f"{_cl_emoji} {_cl_name}</div>",
+                        unsafe_allow_html=True
+                    )
+
+                # Render rows per kind (question / state / outcome)
+                for _kind in ("question", "state", "outcome"):
+                    _phrases = _sc_block.get(_kind, [])
+                    if not _phrases:
+                        continue
+                    _txt, _bg, _lbl = _SPARK_COLORS[_kind]
+                    # Render as clickable chips using a wide row of small buttons
+                    # Use 3 columns per row to keep them compact
+                    _cols_per_row = 3
+                    for _i in range(0, len(_phrases), _cols_per_row):
+                        _row_phrases = _phrases[_i:_i+_cols_per_row]
+                        _cols = st.columns(_cols_per_row)
+                        for _ci, _phr in enumerate(_row_phrases):
+                            with _cols[_ci]:
+                                _pl = _phr.strip().lower()
+                                _in_a_sp = _tb_in_a(_pl)
+                                _in_b_sp = _tb_in_b(_pl)
+                                _suffix = ""
+                                if _in_a_sp and _in_b_sp: _suffix = " ·AB"
+                                elif _in_a_sp: _suffix = " ·A"
+                                elif _in_b_sp: _suffix = " ·B"
+                                _label_sp = f"{_phr}{_suffix}"
+                                _btn_type_sp = "primary" if (_in_a_sp or _in_b_sp) else "secondary"
+                                _key_sp = f"tb_sp_{_scid}_{_kind}_{_i}_{_ci}"
+                                if st.button(
+                                    _label_sp,
+                                    key=_key_sp,
+                                    type=_btn_type_sp,
+                                    use_container_width=True,
+                                    help=f"{_lbl} · click to add to Variant {st.session_state['tb_active_variant']}"
+                                ):
+                                    active_sp = st.session_state["tb_active_variant"]
+                                    if active_sp == "A":
+                                        if _in_a_sp: _tb_unselect_keyword(_pl, "A")
+                                        else:        _tb_select_keyword(_pl)
+                                    else:
+                                        if _in_b_sp: _tb_unselect_keyword(_pl, "B")
+                                        else:        _tb_select_keyword(_pl)
+                                    # Stash a placeholder score so cooldown/score lookups don't choke
+                                    # (spark phrases aren't VidIQ-validated; we treat them as "creative" picks)
+                                    if _pl not in st.session_state["tb_inline_scores"]:
+                                        st.session_state["tb_inline_scores"][_pl] = 50  # neutral default
+                                        _save_scores()
+                                    st.rerun()
+                    # Legend strip
+                    st.markdown(
+                        f"<div style='font-size:9px;color:{_txt};margin:-2px 0 4px;"
+                        f"text-transform:uppercase;letter-spacing:0.5px'>↑ {_kind}</div>",
+                        unsafe_allow_html=True
+                    )
+
     # ──────────────────────────────────────────────
     # RIGHT: Build panel — A/B toggle, config, selected
     # ──────────────────────────────────────────────

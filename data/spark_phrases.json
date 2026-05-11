@@ -1,0 +1,50 @@
+{
+  "_about": "Curated Q-hooks, somatic-state phrases, and outcome phrases for visual title brainstorming. These are NOT VidIQ-scored keywords — they are creative click-magnet sparks (plain-English viewer vocabulary). Click any chip in Title Builder to add it to active variant as a freetext keyword (score not required).",
+  "clusters": {
+    "calm": {
+      "question":  ["Mind Won't Slow Down?", "Brain Feels Heavy?", "Too Many Tabs Open?", "Can't Switch Off?", "Can't Unwind?", "Mind Racing?"],
+      "state":     ["Tired Mind", "Quiet Mind", "Heavy Head", "Restless Mind", "Busy Brain"],
+      "outcome":   ["Settle In", "Slow Down", "Quiet the Noise", "Find Stillness", "Soft Landing", "Unwind"]
+    },
+    "stress": {
+      "question":  ["Stressed Out?", "Burning Out?", "Drained After Work?", "Wound Up?", "Shoulders Up?", "Jaw Tight?"],
+      "state":     ["Wound Up", "Bone Tired", "Tense Body", "End-of-Day", "After Work"],
+      "outcome":   ["Release Tension", "Let It Go", "Decompress", "Off the Clock", "Body Reset", "Cortisol Down"]
+    },
+    "sleep": {
+      "question":  ["Can't Sleep?", "Up at Night?", "Mind Racing at Bedtime?", "Tossing and Turning?", "Eyes Wide Open?"],
+      "state":     ["Sleepless Night", "Late Night", "3 AM Wake", "Bedtime Brain"],
+      "outcome":   ["Drift Off", "Fall Asleep Fast", "Bedtime Wind-Down", "Ready for Bed", "Into Deep Sleep"]
+    },
+    "anxiety": {
+      "question":  ["Overthinking?", "Mind Racing?", "Anxious?", "Spiraling?", "Chest Tight?", "Can't Stop Thinking?"],
+      "state":     ["Anxious Mind", "Racing Thoughts", "Tight Chest", "Worry Loop"],
+      "outcome":   ["Calm the Spiral", "Quiet the Loop", "Anxiety Reset", "Slow the Thoughts", "Breathe Through"]
+    },
+    "healing": {
+      "question":  ["Heart Heavy?", "Hurting?", "Grieving?", "Holding It In?", "Heart Full?"],
+      "state":     ["Heavy Heart", "Quiet Grief", "Tender Place", "Inner Work"],
+      "outcome":   ["Heal in Silence", "Let It Out", "Soft Healing", "Hold Yourself", "Begin Healing"]
+    },
+    "nostalgia": {
+      "question":  ["Missing Someone?", "Far From Home?", "Homesick?", "Lost in Memory?"],
+      "state":     ["Quiet Longing", "Old Memory", "Faraway Feeling"],
+      "outcome":   ["Hold the Memory", "Comfort in Longing", "Embrace the Ache"]
+    },
+    "focus": {
+      "question":  ["Can't Think Clearly?", "Brain Fog?", "Thinking Slow?", "Mind Foggy?", "47 Tabs Open?", "Can't Focus?"],
+      "state":     ["Foggy Brain", "Slow Mind", "Mental Sludge", "Stuck Mode"],
+      "outcome":   ["Clarity Mode", "Clear the Fog", "Lock In", "Sharp Focus", "Think Clearly", "Cognitive Reset"]
+    },
+    "grounding": {
+      "question":  ["Ungrounded?", "Spinning Out?", "Off-Center?", "Need a Reset?", "Scattered?"],
+      "state":     ["Scattered Mind", "Untethered", "End of Day", "Drained"],
+      "outcome":   ["Mental Reset", "Come Back to You", "Find Your Center", "Recharge", "Decompress", "Ground Yourself"]
+    },
+    "uplifting": {
+      "question":  ["Drained?", "Mood Down?", "Need a Lift?", "Heavy Day?", "Low Energy?"],
+      "state":     ["Low Mood", "Tired Soul", "Cloudy Day"],
+      "outcome":   ["Lift Your Mood", "Bright Reset", "Brighten Up", "Find Joy", "Mood Boost", "Get Your Energy Back"]
+    }
+  }
+}
