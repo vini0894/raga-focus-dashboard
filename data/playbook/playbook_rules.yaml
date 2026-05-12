@@ -1,0 +1,81 @@
+# Playbook rules — channel-wide structural rules and the 5 channel truths.
+# Source: research/channel_playbook_v1.md §3 + §7
+# Read by: pipeline/title_preflight.py
+
+version: 1
+generated_at: "2026-05-12"
+generated_from: "research/channel_playbook_v1.md"
+last_review: "2026-05-12"
+
+structural:
+  char_band:
+    target: [46, 55]          # Hard target — best CTR (4.33%) + AVD (23.3%)
+    acceptable: [46, 65]      # Acceptable range
+    hard_max: 65              # >65 = CTR collapse to 2.93%
+    soft_min: 45              # <45 = thin; only 1 ship in this band (high AVD though)
+  slot_count:
+    default: 3                # 20.1% AVD avg, 657 views med (n=29)
+    acceptable: [3, 4]        # 4-slot is slightly weaker (18.6%) but allowed
+    avoid: [1, 2, 5, 6]       # 2-slot is 15.5% AVD; 5+ stuffing decisively loses
+  vidiq_lead_floor: 60        # Lead keyword should be ≥60 VidIQ; <60 = experimental flag
+  phrase_lock_days: 20        # Distinctive 2+ word phrases blocked for 20 days
+
+channel_truths:
+  - id: q_hook_lose
+    rule: "Q-hook title leads have 0 wins in 13 A/B tests on this channel"
+    severity: experimental_only
+    evidence: "13 A/B tests, Q-hook 0/13. Includes decisive 68/32 loss in calm lane (Apr 27)"
+    exception: "Q-hook THUMBNAILS can win in healing/overthinking lanes — different dimension"
+
+  - id: lifestyle_beats_practice
+    rule: "Lifestyle/mood leads decisively beat practice/utility leads in morning slot"
+    severity: hard
+    evidence: "Test 14: Morning Energy Music beat Breathing Exercise Music 58.6/41.4 (17.2pp)"
+    lifestyle_words:
+      good: ["Morning Energy", "Morning Vibes", "Calm Morning", "Productive Day", "Joyful", "Yoga", "Calm Music", "Peaceful Music", "Soothing Music", "Healing Music", "Comfort Music", "Deep Sleep", "Deep Rest"]
+    practice_words:
+      avoid: ["Breathing Exercise", "Pranayama", "Meditation Practice", "Deep Work", "Concentration Music"]
+
+  - id: char_band_46_55
+    rule: "Target 46-55 chars. 56-65 acceptable. Avoid <45 or >65"
+    severity: hard
+    evidence: "46-55 band: 26.4% AVD avg; >75 chars drops to 13.7% AVD"
+
+  - id: three_way_instrument_split
+    rule: "Sitar=REACH hero, Veena=RETENTION hero, Bansuri=CTR hero — different roles"
+    severity: directional
+    evidence: "Sitar 19.2% AVD/3.50% CTR. Veena 27.5% AVD/4.64% CTR. Bansuri 22.2% AVD/4.87% CTR"
+
+  - id: anxiety_not_as_lead
+    rule: "Anxiety_stress family as title lead has worst CTR (3.12%) and worst AVD (14.4%) on channel"
+    severity: hard_with_exception
+    exception: "Only works when paired with Dilruba (27% AVD) or Veena (27% AVD). Sitar+anxiety FAILS (8-12% AVD)"
+    alternative: "Wrap anxiety intent in healing/calm vocabulary: 'Meditation Music for Anxiety' instead of 'Anxiety Music'"
+
+# Format rules — when to use which lead type
+lead_element_rules:
+  default: seo_descriptor                # Default for Variant A (safer side)
+  alternatives:
+    lifestyle_mood: "Morning slot, alt Variant A"
+    instrument_for_outcome: "Hero instruments + healing/sleep lane"
+    clinical_curiosity: "Stress/burnout lane ONLY"
+    imperative_action: "Calm/stress lane"
+    q_hook: "Experimental only (0/13 wins)"
+    modern_problem: "Stress/anxiety adjacent (Digital Detox, Screen Time Reset)"
+  avoid:
+    poetic: "Go Back In Time lost A/B test"
+    hashtag_heavy: "Hashtag-heavy titles weak"
+
+# Composite formula (best-performing)
+composite_formula:
+  template: "{SEO descriptor lead} | {Descriptor + Instrument anchor} | {Duration specifier}"
+  examples:
+    - "Soothing Music | Slow Veena | 1 Hour"
+    - "Calm Music | Sitar for Cortisol Reset | 1.5 hours"
+    - "Peaceful Music | Soothing Music with Veena | 1 Hour"
+  char_target: 50
+
+# A/B-tested title-thumb pairing convention (matched-pair)
+pairing_convention:
+  rule: "If title is SEO/statement → use Q-hook thumb. If title is Q-hook → use outcome-imperative thumb."
+  never: "Both Q OR both statement — kills test power"

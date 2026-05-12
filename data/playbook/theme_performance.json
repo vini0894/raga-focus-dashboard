@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "generated_at": "2026-05-12",
+  "generated_from": "research/channel_playbook_v1.md §4 + shipped_titles_v2_enriched.csv",
+  "channel_ctr_avg": 3.63,
+  "channel_avd_avg": 21.3,
+  "themes": {
+    "healing": {
+      "tier": "PROVEN",
+      "sample_n": 7,
+      "ctr_avg": 4.21,
+      "avd_avg": 26.8,
+      "signal_strength": 3,
+      "format_tolerance": "HIGH",
+      "winning_formula": "{Outcome Verb OR Healing Noun} | {Healing Music descriptor with Instrument} | {Specifier}",
+      "alternative_formula": "{Instrument} for {Healing Outcome} | {Indian Classical context} | {Duration}",
+      "magic_phrases": [
+        {"phrase": "Release Stress", "best_avd": 35.1, "best_ctr": 5.45, "best_instrument": "santoor"},
+        {"phrase": "Calm Your Mind", "best_avd": 32.9, "best_ctr": 5.48, "best_instrument": "veena"},
+        {"phrase": "Sitar for Nervous System Healing", "best_avd": 29.2, "best_ctr": 4.09, "best_instrument": "sitar"},
+        {"phrase": "Healing Music", "position": "middle_slot", "best_avd": "universal", "best_instrument": "any"},
+        {"phrase": "Comfort Music", "best_avd": 25.9, "best_ctr": 3.13, "best_instrument": "sarangi"},
+        {"phrase": "Nostalgia Music", "best_avd": 21.3, "best_ctr": 4.26, "best_instrument": "sarangi"},
+        {"phrase": "Overthinking Music", "best_avd": 25.8, "best_ctr": 4.17, "best_instrument": "bamboo_flute"}
+      ],
+      "thumb_format": "abstract_noun",
+      "thumb_winners": ["EMOTIONAL HEALING", "FEEL CALM", "FIND PEACE", "BUSY MIND?"],
+      "thumb_losers_or_tied": ["HEAL YOUR HEART (imperative — losing to abstract noun 48/52)"],
+      "top_performers": [
+        "Release Stress | Burnout Music | Santoor & 528Hz (5.45% CTR / 35.1% AVD)",
+        "Calm Your Mind | Veena Healing Music | 1 hour (5.48% / 32.9%)",
+        "Sitar for Nervous System Healing | Indian Classical (4.09% / 29.2%)"
+      ],
+      "anti_patterns": ["Poetic phrase leads (Go Back In Time lost)", "Long stuffed titles >70 chars", "Anxiety-only lead (use Healing Music wrapper)"]
+    },
+
+    "sleep": {
+      "tier": "WORKING",
+      "sample_n": 3,
+      "ctr_avg": 4.84,
+      "avd_avg": 19.1,
+      "signal_strength": 3,
+      "format_tolerance": "TOTAL",
+      "note": "Highest CTR theme on channel. Low AVD is niche norm (viewers fall asleep — measure completion not AVD).",
+      "winning_formula": "{Sleep Outcome Word} | {Instrument anchor} | {Duration}",
+      "alternative_formula": "{Instrument} for {Sleep Outcome} | {Sleep descriptor} | {Duration}",
+      "magic_phrases": [
+        {"phrase": "Deep Sleep", "best_avd": 20.7, "best_ctr": 7.34, "best_instrument": "bansuri", "note": "channel's highest CTR"},
+        {"phrase": "Sound Sleep", "best_avd": null, "best_ctr": null, "best_instrument": "bansuri"},
+        {"phrase": "Can't Fall Asleep", "best_avd": 20.8, "best_ctr": 5.12, "best_instrument": "bansuri"},
+        {"phrase": "Relaxing Music", "position": "middle_slot", "best_instrument": "bansuri"}
+      ],
+      "thumb_format": "tolerant",
+      "thumb_winners": ["SLEEP WITHOUT STRESS", "FALL ASLEEP FAST", "DRIFT TO SLEEP"],
+      "thumb_losers_or_tied": [],
+      "top_performers": [
+        "Deep Sleep | Relaxing Music with Bansuri | 1 Hour (7.34% CTR / 20.7% AVD)",
+        "Can't Fall Asleep | Raga Yaman Bansuri (5.12% / 20.8%)"
+      ],
+      "anti_patterns": ["Generic descriptors without sleep word", "Pre-pivot framing (Insomnia alone)"]
+    },
+
+    "focus": {
+      "tier": "MARGINAL",
+      "sample_n": 12,
+      "ctr_avg": 3.60,
+      "avd_avg": 18.1,
+      "signal_strength": 2,
+      "format_tolerance": "LOW",
+      "note": "Largest sample but many flops. Lifestyle leads win, practice/utility leads lose.",
+      "winning_formula": "{Lifestyle/Mood Lead} | {Lifestyle Vibe Anchor with Instrument} | {Duration}",
+      "magic_phrases": [
+        {"phrase": "Productive Day Music", "best_avd": 31.0, "best_ctr": 5.26, "best_instrument": "bansuri", "note": "modern winner"},
+        {"phrase": "Positive Morning Vibes", "position": "middle_slot", "best_instrument": "bansuri"},
+        {"phrase": "Mental Clarity Music", "best_avd": null, "note": "untested-modern, Sarod brief pending"},
+        {"phrase": "Concentration Music", "best_avd": 32.7, "best_ctr": 3.40, "best_instrument": "sitar"}
+      ],
+      "thumb_format": "outcome_imperative",
+      "thumb_winners": ["BOOST YOUR FOCUS", "LOCK IN", "CLARITY MODE", "SHARP MIND"],
+      "thumb_losers_or_tied": ["NEED ENERGY RESET? (Q-hook lost decisive 27/73 in Test 6)"],
+      "top_performers": [
+        "Productive Day Music | Positive Morning Vibes | Bansuri (5.26% / 31.0%)",
+        "Memory Recall | Sitar Music | Brainwave Entrainment (pre-pivot, 49.9% AVD)"
+      ],
+      "anti_patterns": ["Q-hook thumbs (decisive 27/73 loss)", "Practice/utility leads (Deep Work for Strategic Thinking 8.59% AVD)", "Clinical jargon (ADHD Brain Fog Music 10% AVD)", "Titles >75 chars"]
+    },
+
+    "calm": {
+      "tier": "WORKING",
+      "sample_n": 6,
+      "ctr_avg": 4.00,
+      "avd_avg": 23.1,
+      "signal_strength": 2,
+      "format_tolerance": "LOW",
+      "note": "Veena dominates here. SEO descriptor lead is hard requirement (Test 2 decisive 68/32 vs Q-hook).",
+      "winning_formula": "{Calm SEO Descriptor} | {Soothing Variant with Instrument} | {Duration}",
+      "magic_phrases": [
+        {"phrase": "Peaceful Music", "best_avd": 28.5, "best_ctr": 4.54, "best_instrument": "veena"},
+        {"phrase": "Soothing Music", "position": "middle_slot", "best_avd": 28.5, "best_instrument": "veena"},
+        {"phrase": "Calm Your Mind", "best_avd": 32.9, "best_ctr": 5.48, "best_instrument": "veena"},
+        {"phrase": "Relaxation Music", "best_avd": 29.2, "best_ctr": 3.88, "best_instrument": "bansuri"},
+        {"phrase": "Deep Rest Music", "best_avd": 26.0, "best_ctr": 3.94, "best_instrument": "surbahar"},
+        {"phrase": "Find Stillness", "position": "middle_slot", "best_instrument": "surbahar"}
+      ],
+      "thumb_format": "outcome_state",
+      "thumb_winners": ["FIND PEACE", "FEEL CALM", "QUIET MIND", "CALM YOUR MIND"],
+      "thumb_losers_or_tied": ["FEELING LOST? (Q-hook lost 32/68 decisive)"],
+      "top_performers": [
+        "Peaceful Music | Soothing Music with Veena | 1 Hour (4.54% / 28.5%)",
+        "Deep Rest Music | Find Stillness with Surbahar (3.94% / 26.0%)"
+      ],
+      "anti_patterns": ["Q-hook leads (decisive 32/68 loss)", "Long stuffed titles (80-char lost 2.1× to 41-char)", "Schumann Resonance / 7.83Hz jargon"]
+    },
+
+    "uplifting": {
+      "tier": "PROVEN_SMALL_N",
+      "sample_n": 3,
+      "ctr_avg": 4.19,
+      "avd_avg": 21.0,
+      "signal_strength": 2,
+      "format_tolerance": "MEDIUM",
+      "note": "Strong signal but small sample. Under-tested theme.",
+      "winning_formula": "{Mood/Energy SEO Lead} | {Energy Anchor with Instrument} | {Duration}",
+      "magic_phrases": [
+        {"phrase": "Yoga Music", "best_avd": 33.1, "best_ctr": 5.18, "best_instrument": "santoor"},
+        {"phrase": "Joyful Music", "best_avd": 21.8, "best_ctr": 4.95, "best_instrument": "santoor"},
+        {"phrase": "Positive Vibes Music", "position": "middle_slot", "best_instrument": "santoor"},
+        {"phrase": "Positive Energy Frequency", "position": "middle_slot", "best_avd": 33.1}
+      ],
+      "thumb_format": "vibes_state",
+      "thumb_winners": ["UNLOCK JOY", "MORNING ENERGY"],
+      "thumb_losers_or_tied": [],
+      "top_performers": [
+        "Yoga Music | Positive Energy Frequency | 1 Hour (5.18% / 33.1%)",
+        "Joyful Music | Positive Vibes Music with Santoor (4.95% / 21.8%)"
+      ],
+      "anti_patterns": ["Generic feel-good redundancy", "Mood without specifics"]
+    },
+
+    "reset": {
+      "tier": "HIGH_VARIANCE",
+      "sample_n": 5,
+      "ctr_avg": 2.80,
+      "avd_avg": 17.4,
+      "signal_strength": 1,
+      "format_tolerance": "LOW",
+      "note": "Dopamine Reset is view outlier (algorithm push), NOT format winner. Reset framing only works in stress/burnout sub-lane.",
+      "winning_formula": "{Clinical Recovery Word} | {Nervous-System/Vagus Anchor with Instrument} | {Specifier}",
+      "scope_restriction": "stress_burnout_sub_lane_only",
+      "magic_phrases": [
+        {"phrase": "Burnout Recovery", "best_avd": 23.8, "best_ctr": 4.03, "best_instrument": "surbahar", "status": "locked_till_2026-05-29"},
+        {"phrase": "Vagus Nerve Reset", "position": "middle_slot", "status": "locked_till_2026-05-29"},
+        {"phrase": "Cortisol Reset", "status": "locked_till_2026-05-31"},
+        {"phrase": "Dopamine Reset", "best_avd": 19.5, "best_ctr": 3.42, "status": "perma_reference_hero"},
+        {"phrase": "Nervous System Reset", "best_avd": 15.6, "best_instrument": "dilruba"}
+      ],
+      "thumb_format": "outcome_statement",
+      "thumb_winners": ["REST. RESET. RECOVER."],
+      "thumb_losers_or_tied": ["BURNOUT? (Q-hook losing marginally 49/51)"],
+      "top_performers": [
+        "Burnout Recovery | Vagus Nerve Reset with Surbahar (4.03% / 23.8%)",
+        "Sitar for Dopamine Reset (3.42% CTR — algorithm-pushed reach, NOT title-magic)"
+      ],
+      "anti_patterns": ["Reset framing outside stress/burnout (Jet Lag Recovery flopped 5% AVD)", "Stacking 2 Reset-family ships within 2 weeks", "Expecting Dopamine-Reset-magic from copying format"]
+    },
+
+    "anxiety_stress": {
+      "tier": "FAILED_AS_LEAD",
+      "sample_n": 6,
+      "ctr_avg": 3.12,
+      "avd_avg": 14.4,
+      "signal_strength": 0,
+      "format_tolerance": "STRICT_INSTRUMENT_FIT",
+      "note": "WEAKEST as lead vocabulary. Works only with Dilruba/Veena. Sitar+anxiety fails.",
+      "winning_formula": "{Anxiety/Stress SEO Lead} | {Calming Middle Phrase} | {Instrument session}",
+      "instrument_constraint": "Dilruba OR Veena only — Sitar fails (8-12% AVD)",
+      "magic_phrases": [
+        {"phrase": "Anxiety Relief Music", "works_with": ["dilruba", "veena"], "fails_with": ["sitar"], "best_avd_with_dilruba": 27.2, "best_avd_with_sitar": 8.6},
+        {"phrase": "Stress Relief Music", "works_with": ["veena"], "best_avd": 27.0},
+        {"phrase": "Overthinking Music", "works_with": ["bamboo_flute_tanpura"], "best_avd": 25.8},
+        {"phrase": "Clear Your Mind", "position": "middle_slot", "works_with": ["dilruba"]}
+      ],
+      "thumb_format": "specific_state_q_hook",
+      "thumb_winners": ["TOO MANY THOUGHTS?", "BUSY MIND?", "MENTAL OVERLOAD?", "STRESSED OUT?", "MIND RACING?"],
+      "thumb_losers_or_tied": ["THINK LESS (imperative — lost to TOO MANY THOUGHTS in Test 9)"],
+      "top_performers": [
+        "Anxiety Relief Music | Clear Your Mind | Dilruba (4.33% / 27.2%)",
+        "Stress Relief Music | Deep Meditation with Veena (3.93% / 27.0%)"
+      ],
+      "anti_patterns": [
+        "Sitar + anxiety theme (2 ships both flopped 8-12% AVD)",
+        "Anxiety as title lead WITHOUT Dilruba/Veena pairing",
+        "Q-hook TITLES (Test 9 — Q-hook title lost)",
+        "Poetic Q-hooks (Overthinking? Trust Your Gut — 2.4% AVD)",
+        "Emoji in title (🌿 caused 9% AVD)"
+      ],
+      "strategic_note": "Wrap anxiety intent in healing/calm vocabulary: 'Meditation Music for Anxiety' instead of 'Anxiety Music'"
+    },
+
+    "morning": {
+      "tier": "PROVEN_DECISIVE",
+      "sample_n": 3,
+      "ctr_avg": null,
+      "avd_avg": null,
+      "signal_strength": 3,
+      "format_tolerance": "STRICT",
+      "note": "DECISIVE A/B Test 14 — 17pp lifestyle vs practice gap. Strongest single A/B signal.",
+      "winning_formula": "{Lifestyle/Mood Lead — NOT practice-named} | {Vibe anchor with Instrument} | {Duration}",
+      "magic_phrases": [
+        {"phrase": "Morning Energy Music", "status": "Test 14 winner (58.6% share)"},
+        {"phrase": "Productive Day Music", "best_avd": 31.0, "best_ctr": 5.26, "best_instrument": "bansuri"},
+        {"phrase": "Positive Morning Vibes", "position": "middle_slot"},
+        {"phrase": "Yoga Music", "best_avd": 33.1, "best_ctr": 5.18, "best_instrument": "santoor"}
+      ],
+      "practice_words_to_avoid": ["Breathing Exercise Music", "Pranayama Music", "Meditation Practice", "Deep Work Music"],
+      "thumb_format": "vibes_state",
+      "thumb_winners": ["CALM MORNING VIBES", "MORNING ENERGY"],
+      "thumb_losers_or_tied": ["MORNING PEACE (affect — lost decisive 41/59 in Test 14)"],
+      "anti_patterns": ["Practice/utility leads (decisive 41/59 loss)", "Pranayama/Meditation as title lead", "Affect-only thumbs"]
+    },
+
+    "nostalgia": {
+      "tier": "UNDER_TESTED",
+      "sample_n": 1,
+      "ctr_avg": 4.26,
+      "avd_avg": 21.3,
+      "signal_strength": 1,
+      "format_tolerance": "UNKNOWN",
+      "note": "Single ship. Needs replication.",
+      "winning_formula": "{Nostalgia Music SEO} | {Healing Music with Instrument} | {Duration}",
+      "magic_phrases": [
+        {"phrase": "Nostalgia Music", "best_ctr": 4.26, "best_avd": 21.3, "best_instrument": "sarangi"},
+        {"phrase": "Healing Music", "position": "middle_slot"},
+        {"phrase": "Sweet Memories", "status": "untested — used in brief"}
+      ],
+      "thumb_format": "abstract_noun",
+      "thumb_winners": ["EMOTIONAL HEALING"],
+      "thumb_losers_or_tied": ["HEAL YOUR HEART (imperative — losing 48/52)"],
+      "anti_patterns": ["Poetic phrase lead (Go Back In Time losing)"]
+    }
+  },
+
+  "dual_winners": [
+    {"title": "Calm Your Mind | Veena Healing Music", "themes": ["calm", "healing"], "ctr": 5.48, "avd": 32.9},
+    {"title": "Release Stress | Burnout Music | Santoor & 528Hz", "themes": ["healing", "stress"], "ctr": 5.45, "avd": 35.1},
+    {"title": "Productive Day Music | Positive Morning Vibes | Bansuri", "themes": ["morning", "focus"], "ctr": 5.26, "avd": 31.0},
+    {"title": "Yoga Music | Positive Energy Frequency | 1 Hour", "themes": ["uplifting"], "ctr": 5.18, "avd": 33.1},
+    {"title": "Peaceful Music | Soothing Music with Veena | 1 Hour", "themes": ["calm"], "ctr": 4.54, "avd": 28.5},
+    {"title": "Anxiety Relief Music | Clear Your Mind | Dilruba Session", "themes": ["anxiety"], "ctr": 4.33, "avd": 27.2},
+    {"title": "Overthinking Music | Healing with Bamboo Flute & Tanpura", "themes": ["healing", "anxiety"], "ctr": 4.17, "avd": 25.8},
+    {"title": "Sitar for Nervous System Healing", "themes": ["healing"], "ctr": 4.09, "avd": 29.2},
+    {"title": "Deep Rest Music | Find Stillness with Surbahar", "themes": ["calm"], "ctr": 3.94, "avd": 26.0},
+    {"title": "Stress Relief Music | Deep Meditation with Veena", "themes": ["anxiety", "healing"], "ctr": 3.93, "avd": 27.0},
+    {"title": "Relaxation Music | Bansuri Raga & 432Hz Evening Session", "themes": ["calm"], "ctr": 3.88, "avd": 29.2},
+    {"title": "Memory Recall | Sitar Music | Brainwave Entrainment", "themes": ["focus"], "ctr": 3.64, "avd": 49.9}
+  ]
+}

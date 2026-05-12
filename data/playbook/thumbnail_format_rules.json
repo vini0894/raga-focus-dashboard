@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "generated_at": "2026-05-12",
+  "generated_from": "research/channel_playbook_v1.md §6 + 13 A/B tests",
+  "description": "Lane × winning thumbnail-text-format matrix. Use to pick the right thumb style for a given title.",
+  "pairing_convention": {
+    "rule": "Matched-pair A/B: If title is SEO/statement → use Q-hook thumb. If title is Q-hook → use outcome-imperative thumb.",
+    "rationale": "Preserves test power — never both Q, never both statement"
+  },
+  "lane_rules": {
+    "focus": {
+      "winning_format": "outcome_imperative",
+      "confidence": "DECISIVE",
+      "evidence": "A/B Test 6: BOOST YOUR FOCUS beat NEED ENERGY RESET? 73/27",
+      "winners": ["BOOST YOUR FOCUS", "LOCK IN", "CLARITY MODE", "SHARP MIND", "BOOST FOCUS NOW"],
+      "losers": ["NEED ENERGY RESET? (lost 27/73)", "BRAIN FOG? (Q-hook)", "DISTRACTED?"],
+      "avoid_format": "q_hook"
+    },
+    "calm": {
+      "winning_format": "outcome_state",
+      "confidence": "DECISIVE",
+      "evidence": "A/B Test 2: SEO Calm Your Mind beat Q-hook Feeling Lost? 68/32",
+      "winners": ["FIND PEACE", "FEEL CALM", "QUIET MIND", "CALM YOUR MIND", "STILLNESS"],
+      "losers": ["FEELING LOST? (lost 32/68)"],
+      "avoid_format": "q_hook"
+    },
+    "healing": {
+      "winning_format": "abstract_noun",
+      "confidence": "DIRECTIONAL",
+      "evidence": "A/B Test 12 running: EMOTIONAL HEALING leading HEAL YOUR HEART 52/48; Test 7 tied",
+      "winners": ["EMOTIONAL HEALING", "FEEL CALM", "FIND PEACE", "BUSY MIND?"],
+      "losers": ["HEAL YOUR HEART (imperative — losing 48/52)"],
+      "note": "Lane is THUMB-FORMAT TOLERANT — Q-hooks tied in Test 7. Abstract-noun edges imperative."
+    },
+    "stress_burnout": {
+      "winning_format": "outcome_statement",
+      "confidence": "DIRECTIONAL",
+      "evidence": "A/B Test 13 running: REST. RESET. RECOVER. leading BURNOUT? 51/49",
+      "winners": ["REST. RESET. RECOVER.", "CORTISOL DOWN", "STRESS LOOP?"],
+      "losers": ["BURNOUT? (Q — losing marginally 49/51)"]
+    },
+    "anxiety_overthinking": {
+      "winning_format": "specific_state_q_hook",
+      "confidence": "DIRECTIONAL",
+      "evidence": "A/B Test 9: TOO MANY THOUGHTS? beat THINK LESS",
+      "winners": ["TOO MANY THOUGHTS?", "BUSY MIND?", "MENTAL OVERLOAD?", "STRESSED OUT?", "MIND RACING?"],
+      "losers": ["THINK LESS (imperative — lost to TOO MANY THOUGHTS)"],
+      "note": "The ONLY lane where Q-hook thumbs decisively win"
+    },
+    "morning_practice": {
+      "winning_format": "vibes_state",
+      "confidence": "DECISIVE",
+      "evidence": "A/B Test 14: CALM MORNING VIBES beat MORNING PEACE 59/41",
+      "winners": ["CALM MORNING VIBES", "MORNING ENERGY", "START YOUR DAY"],
+      "losers": ["MORNING PEACE (affect — lost decisive 41/59)"],
+      "avoid_format": "affect_only"
+    },
+    "sleep": {
+      "winning_format": "tolerant",
+      "confidence": "DECISIVE_TIE",
+      "evidence": "A/B Test 10: TIE 49.8/50.2 between SLEEP WITHOUT STRESS and FALL ASLEEP FAST",
+      "winners": ["SLEEP WITHOUT STRESS", "FALL ASLEEP FAST", "DRIFT TO SLEEP", "DEEP SLEEP NOW"],
+      "losers": [],
+      "note": "Lane is TOTALLY tolerant — state OR imperative both work"
+    },
+    "nostalgia": {
+      "winning_format": "abstract_noun",
+      "confidence": "DIRECTIONAL",
+      "evidence": "Same as healing (Test 12)",
+      "winners": ["EMOTIONAL HEALING", "SWEET MEMORIES"],
+      "losers": ["HEAL YOUR HEART (imperative)"]
+    },
+    "uplifting": {
+      "winning_format": "vibes_state",
+      "confidence": "INFERRED",
+      "evidence": "Inferred from Test 14 cross-lane (vibes beat affect in morning)",
+      "winners": ["UNLOCK JOY", "MORNING ENERGY", "BRIGHT DAY"],
+      "losers": [],
+      "note": "Untested directly — under-explored theme"
+    }
+  },
+
+  "thumb_format_definitions": {
+    "outcome_imperative": "Action verb directing viewer to outcome state — 'BOOST FOCUS', 'LOCK IN'",
+    "outcome_state": "Noun phrase naming the desired state — 'FIND PEACE', 'QUIET MIND'",
+    "outcome_statement": "Declarative outcome promise — 'REST. RESET. RECOVER.'",
+    "abstract_noun": "Noun-based emotional concept — 'EMOTIONAL HEALING', 'SWEET MEMORIES'",
+    "specific_state_q_hook": "Specific viewer-state question — 'BUSY MIND?', 'MENTAL OVERLOAD?'",
+    "vibes_state": "Vibe/mood evocation — 'CALM MORNING VIBES', 'MORNING ENERGY'",
+    "tolerant": "Multiple formats work — lane is forgiving"
+  }
+}

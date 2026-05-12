@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "generated_at": "2026-05-12",
+  "generated_from": "research/channel_playbook_v1.md §9",
+  "description": "Patterns that have failed empirically. Title violations should warn (hard) or flag as experimental (soft). Severity dictates what happens at decision time.",
+  "patterns": [
+    {
+      "id": "q_hook_title_lead",
+      "name": "Q-hook as title lead",
+      "description": "Title starts with a question hook",
+      "severity": "experimental_only",
+      "evidence": "0/13 A/B wins on this channel",
+      "detector_regex": "^(can'?t|how|why|are you|need to|feeling|missing|up at|stuck|too much|brain fog|overthinking)\\b.*\\?",
+      "detector_kw": ["?"],
+      "examples_failed": [
+        "Feeling Lost? | Veena & Schumann (lost 32/68)",
+        "Brain Fog? | Think Clearly with Sarangi (10.4% AVD, 76 views)",
+        "Overthinking? Trust Your Gut (2.4% AVD, 29 views)",
+        "Can't Focus? | 10 Min Deep Work (1.95% CTR, 40 views)"
+      ],
+      "exception": "Q-hook THUMBNAILS work in anxiety/overthinking lane only"
+    },
+
+    {
+      "id": "practice_utility_lead_in_morning",
+      "name": "Practice/utility lead in morning slot",
+      "description": "Title leads with practice-named word in morning slot",
+      "severity": "hard",
+      "evidence": "Test 14: Morning Energy beat Breathing Exercise 59/41 (17.2pp)",
+      "detector_kw": ["breathing exercise", "pranayama", "meditation practice", "deep work", "concentration practice"],
+      "examples_failed": [
+        "Breathing Exercise Music | Dilruba Raga Yaman (lost 41/59)",
+        "Deep Work Music for Strategic Thinking (91 chars, 8.59% AVD)"
+      ]
+    },
+
+    {
+      "id": "anxiety_as_lead_with_sitar",
+      "name": "Anxiety/stress family as title lead paired with Sitar",
+      "description": "Anxiety_stress lead works only with Dilruba/Veena. Sitar+anxiety fails.",
+      "severity": "hard",
+      "evidence": "2 ships, both 8-12% AVD",
+      "examples_failed": [
+        "Anxiety Relief Music | Sitar & Alpha Waves (8.6% AVD, 41 views)",
+        "Mind at Rest | Sitar & Alpha Waves | Anxiety Relief Music (12.1% AVD)"
+      ]
+    },
+
+    {
+      "id": "anxiety_as_lead_general",
+      "name": "Anxiety_stress family as title lead",
+      "description": "Anxiety/stress vocabulary as lead has worst CTR (3.12%) and AVD (14.4%) on channel",
+      "severity": "soft_unless_dilruba_or_veena",
+      "evidence": "Family avg CTR 3.12% / AVD 14.4% — worst on channel",
+      "alternative": "Wrap anxiety intent in healing/calm vocabulary: 'Meditation Music for Anxiety'"
+    },
+
+    {
+      "id": "char_over_65",
+      "name": "Title length exceeds 65 chars",
+      "description": "Long titles drop CTR severely",
+      "severity": "hard",
+      "evidence": "CTR drops to 2.93%, AVD to 15.5% for >75 char titles. Optimal 46-55 = 4.33% CTR.",
+      "detector_length_gt": 65
+    },
+
+    {
+      "id": "char_under_45",
+      "name": "Title length under 45 chars",
+      "description": "Too short — only 1 ship in this band (high AVD but unproven at scale)",
+      "severity": "soft",
+      "evidence": "n=1 in this band; needs more data",
+      "detector_length_lt": 45
+    },
+
+    {
+      "id": "two_slot_title",
+      "name": "2-slot title structure",
+      "description": "Bare 2-slot titles underperform 3-slot",
+      "severity": "hard",
+      "evidence": "2-slot: 15.5% AVD avg. 3-slot: 20.1% AVD avg",
+      "detector_slot_count": 2
+    },
+
+    {
+      "id": "five_plus_slots",
+      "name": "5+ slot stuffed title",
+      "description": "Over-stuffing reduces both CTR and AVD",
+      "severity": "hard",
+      "evidence": "A/B Test 2 confirmed",
+      "detector_slot_count_gt": 4
+    },
+
+    {
+      "id": "raga_name_lead",
+      "name": "Sanskrit/raga name as title lead",
+      "description": "Raga names as lead keyword empirically lose to SEO descriptor",
+      "severity": "directional_pending_thu_santoor_test",
+      "evidence": "Pattern observed but not isolated test. Pending Thu Santoor jargon-test.",
+      "detector_kw_starts_with": ["raga ", "raga"]
+    },
+
+    {
+      "id": "clinical_outside_stress",
+      "name": "Clinical-curiosity lead outside stress/burnout lane",
+      "description": "Clinical leads (Dopamine/Cortisol/Brain Fog/Vagus Nerve Reset) only win in stress/burnout sub-lane",
+      "severity": "soft",
+      "evidence": "Brain Fog Sitar 110v/10.4% AVD; Jet Lag Recovery 26v/6% AVD",
+      "exception": "Stress/burnout lane (clinical wins marginally there)"
+    },
+
+    {
+      "id": "phrase_repetition_within_20d",
+      "name": "Distinctive phrase used within 20 days",
+      "description": "Channel-looks-templated risk. Use phrase_locks.json to check.",
+      "severity": "hard",
+      "evidence": "14 of 20 historical reuse incidents would have been blocked",
+      "lookup_file": "phrase_locks.json"
+    },
+
+    {
+      "id": "long_poetic_lead",
+      "name": "Long poetic phrase as lead",
+      "description": "Poetic/literary phrases lose to SEO descriptors",
+      "severity": "soft",
+      "evidence": "'Go Back In Time' lost to Nostalgia Music",
+      "detector_kw_lead": ["go back in time", "let go", "find your"]
+    },
+
+    {
+      "id": "hashtag_heavy",
+      "name": "Hashtag-heavy title",
+      "description": "Hashtag stacking in title weakens performance",
+      "severity": "hard",
+      "evidence": "Short-form ships with hashtag titles got low engagement",
+      "detector_regex": "#\\w+.*#\\w+"
+    },
+
+    {
+      "id": "emoji_in_title",
+      "name": "Emoji in title",
+      "description": "Emoji in title correlates with low AVD",
+      "severity": "soft",
+      "evidence": "Bansuri for Anxiety 🌿 got 9% AVD",
+      "detector_regex": "[\\U0001F300-\\U0001F9FF\\U0001FA00-\\U0001FAFF]"
+    },
+
+    {
+      "id": "schumann_hz_jargon_middle",
+      "name": "Schumann Resonance / specific Hz jargon as middle slot",
+      "description": "7.83Hz, Schumann, deep technical jargon as middle slot weakens calm/healing titles",
+      "severity": "soft",
+      "evidence": "Veena & 7.83Hz Schumann Resonance lost to Calm Your Mind 68/32"
+    }
+  ],
+
+  "severity_legend": {
+    "hard": "Reject candidate or require explicit override",
+    "soft": "Warn but allow",
+    "experimental_only": "Allowed only when explicitly marked as Variant B experimental",
+    "soft_unless_dilruba_or_veena": "Warn unless instrument is Dilruba or Veena",
+    "directional_pending_thu_santoor_test": "Currently warn, will harden after test concludes"
+  }
+}
