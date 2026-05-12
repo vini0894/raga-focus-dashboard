@@ -4,58 +4,64 @@
   "date_shipped": null,
   "created_at": "2026-05-11",
   "planned_date": "2026-05-15",
-  "planned_slot": "AM (7am IST)",
-  "title": "Mental Clarity Music | Indian Instrumental for Brain Fog Reset",
+  "planned_slot": "PM (7pm IST)",
+  "title": "Mental Clarity Music | Slow Sarod | Brain Fog Reset",
   "title_variants": {
-    "A": "Mental Clarity Music | Indian Instrumental for Brain Fog Reset",
-    "B": "Can't Think Clearly? | Sarod for Mental Reset"
+    "A": "Mental Clarity Music | Slow Sarod | Brain Fog Reset",
+    "B": "Brain Recovery Music | Slow Sarod | 1.5 Hours",
+    "C": "Can't Think Clearly? | Sarod for Mental Reset | 1.5 Hours"
   },
   "components": {
-    "problem": "brain fog / cognitive clarity",
+    "problem": "brain fog / mental fatigue / cognitive recovery",
     "instrument": "Sarod",
     "raga": "Bilawal",
     "hz": "432Hz",
     "wave": "Gamma"
   },
   "validated_keywords": [
-    "mental clarity music (65)",
+    "mental clarity music (62)",
+    "brain recovery music (59)",
     "indian instrumental music (70)",
     "brain fog reset (62)",
     "brain fog music (63)",
     "mental reset (63)",
     "sarod (62)",
-    "instrumental music (71)",
     "40hz gamma (66)",
     "think clearly (70)",
-    "focus music (84)",
-    "concentration music (80)"
+    "raga focus (66)"
   ],
-  "strategic_bet": "Fresh-instrument rescue bet. Sarod has weak prior data on the channel (Apr 18 Jet Lag Recovery \u2014 6.7% AVD) but that was pre-pivot wrong-theme wrong-format. The question: does the proven Instrument-for-Outcome format + correct cognitive lane positioning rescue an instrument that previously bombed? If Sarod works in cognitive/focus lane with the right outcome word, we've validated that fresh instruments can be rescued generally \u2014 green-lights Esraj Fri PM moonshot. If Sarod flops again, Instrument-for-Outcome may be Sitar/Sarangi/Surbahar-specific, not universal. Sarod's natural sonic character (clean staccato articulation, bright plucked notes, articulate phrase development) is the opposite of meditative-decay character of Sitar/Sarangi/Veena \u2014 right instrument for cognitive content where you want activation, not somnolence.",
-  "success_good": "1500+ views, 25%+ AVD in 48h",
-  "success_breakthrough": "5K+ views, 30%+ AVD \u2014 Sarod rescued + format generalization confirmed",
+  "strategic_bet": "Fri PM ship: shifted from morning to evening slot per theme-audience alignment (brain-fog/cognitive recovery is end-of-work-week problem, not morning energy). Sarod modern-era test in cognitive-clarity lane — only pre-pivot data exists (Apr 18 Jet Lag Recovery 26v/6% AVD wrong-positioned). Friday 7pm IST = fried-by-Friday knowledge worker audience. Three SEO-led variants test different keyword angles: specific clarity (A), clinical recovery (B fresh phrase), Q-hook experimental (C). Sarod's bright staccato character is the strategic match for 'clearing fog' intent — different from Veena/Bansuri's softer registers.",
+  "success_good": "1000+ views, 22%+ AVD in 48h",
+  "success_breakthrough": "3K+ views, 26%+ AVD + CTR ≥4.5% — Sarod confirmed viable for cognitive lane, opens fresh-instrument moonshot capacity",
   "ab_test": {
     "variant_A": {
-      "title": "Mental Clarity Music | Indian Instrumental for Brain Fog Reset",
-      "thumbnail_text": "CLARITY MODE",
-      "hypothesis": "SEO-stacked title with all VidIQ-validated phrases (Mental Clarity Music 65 + Indian Instrumental Music 70 + Brain Fog Reset 62). Mirrors viral Sitar Dopamine Reset format structure ([Genre] for [Outcome]). Thumb 'CLARITY MODE' is outcome-state affirmation per focus-lane convention (A/B Test 3 evidence: outcome wins 73% vs 27% in focus lane). State-affirmation style."
+      "title": "Mental Clarity Music | Slow Sarod | Brain Fog Reset",
+      "thumbnail_text": "RESET. CLARIFY.",
+      "hypothesis": "Mental Clarity Music lead (62 VidIQ, untested-modern). Direct brain-fog audience SEO targeting. Slot 3 'Brain Fog Reset' adds curiosity-hook outcome. Thumb 'RESET. CLARIFY.' is outcome-statement format (Test 13 lane pattern) — avoids literal repeat of title slot 3 while semantically amplifying the clarity intent."
     },
     "variant_B": {
-      "title": "Can't Think Clearly? | Sarod for Mental Reset",
-      "thumbnail_text": "THINKING SLOW?",
-      "hypothesis": "Plain-language Q-hook lead \u2014 'Can't Think Clearly?' is the exact phrase knowledge workers use to describe brain fog (Raga Heal pattern). Thumb 'THINKING SLOW?' is also a plain-language Q-hook with process-focused state-naming (different angle from title's clarity-focused Q). Tests whether double-Q (title Q + thumb Q) works better than mixed A's (statement title + affirmation thumb)."
+      "title": "Brain Recovery Music | Slow Sarod | 1.5 Hours",
+      "thumbnail_text": "BRAIN FOG RESET",
+      "hypothesis": "Brain Recovery Music lead (59 VidIQ — 1pt below floor, borderline accepted as fresh clinical-curiosity cluster banked May 11). Tests untapped 'recovery' framing vs Variant A's 'clarity' framing. Thumb 'BRAIN FOG RESET' adds the brain-fog signal that's missing from title B (provides curiosity hook the title doesn't have)."
     },
-    "test_method": "matched-pair: 2 thumbnails x 2 titles, A/B Test on YouTube native. Variable being tested: title format (SEO-statement vs Q-hook). Thumb format controlled (both outcome-imperative per focus lane convention from A/B Test 3)."
+    "variant_C_extra": {
+      "title": "Can't Think Clearly? | Sarod for Mental Reset | 1.5 Hours",
+      "thumbnail_text": "RESET. CLARIFY.",
+      "hypothesis": "Q-hook lead (experimental — 0/13 historical channel wins). Plain-language self-recognition hook. Slot 2 'Sarod for Mental Reset' = Instrument-for-Outcome format (lane-acceptable per Test 7). Thumb 'RESET. CLARIFY.' pairs with the Q-hook title (Q in title + outcome-statement thumb)."
+    },
+    "test_method": "3-variant A/B test with mixed thumb pair: A+C share 'RESET. CLARIFY.' thumb, B uses 'BRAIN FOG RESET' thumb. If A wins, specific-clarity-SEO format confirmed. If B wins, the brain-fog thumb signal carried the win (since title B is less specific). If C wins (low probability), Q-hook breaks 0/13 streak."
   },
-  "tags": "mental clarity music, brain fog music, brain fog reset, indian instrumental music, instrumental music, mental reset, sarod, sarod music, raga bilawal, bilawal, 432Hz, 40Hz gamma, gamma waves, focus music, concentration music, deep focus, study music, work music no lyrics, indian classical music, indian classical sarod, raga focus, think clearly",
-  "description": "Mental Clarity Music | Indian Instrumental for Brain Fog Reset\n\nIf your brain feels foggy and you can't think clearly \u2014 start here. Sarod's bright clean articulation paired with 40Hz Gamma binaural literally entrains your brain into focus state. Coffee in audio form.\n\nSolo sarod (fretless Indian plucked instrument) playing Raga Bilawal, tuned to 432Hz, with a 40Hz Gamma binaural layer \u2014 the brainwave frequency associated with focused attention and cognitive clarity.\n\n\ud83c\udfb5 What you'll hear:\n- Solo sarod \u2014 fretless Indian plucked instrument with bright, articulate staccato character (different from sitar's slides or bansuri's breath \u2014 sarod is precise and crystal-clear)\n- Raga Bilawal \u2014 auspicious raga, light and uplifting, classical clarity mood\n- 432Hz tuning \u2014 healing frequency tuned to natural harmony\n- 40Hz Gamma binaural layer \u2014 scientifically associated with focused cognition (use headphones for the binaural effect)\n- Seamless looping texture, no abrupt transitions\n\n\u23f1 Chapters\n0:00   Settling \u2014 first focused breath\n12:00  Mental fog clearing\n35:00  Focused attention zone\n60:00  Sustained clarity\n80:00  Gentle return\n\n\ud83e\udde0 How to use:\nUse during work or study. Sarod's articulation is naturally activating \u2014 this isn't sleep music, it's clarity music. Headphones recommended for the binaural effect. Phone in another room.\n\n\u23f1 Best for:\n\u2022 Brain fog / mental sluggishness\n\u2022 Pre-work cognitive prime\n\u2022 Study sessions\n\u2022 ADHD focus support\n\u2022 Post-lunch slump\n\n\ud83d\udcfa Subscribe to Raga Focus for daily uploads:\n- Sitar, Sarangi, Veena, Surbahar, Bansuri, Sarod and other Indian instruments\n- Sessions tuned to specific healing frequencies\n- Music for anxiety, overthinking, sleep, stress, emotional release, and focus\n\n\u2014 Raga Focus\n\n#brainfog #mentalclarity #sarod #sarodmusic #indianinstrumentalmusic #40hzgamma #focusmusic #concentrationmusic #ragabilawal #ragafocus",
-  "thumbnail_text_main": "CLARITY MODE",
+  "tags": "mental clarity music, brain recovery music, brain fog music, brain fog reset, mental reset, sarod, sarod music, indian instrumental music, indian classical music, raga bilawal, bilawal, 432Hz, 40Hz gamma, gamma waves, think clearly, focus music, concentration music, deep focus, study music, work music, indian classical sarod, raga focus, cognitive music",
+  "description": "Mental Clarity Music | Slow Sarod | Brain Fog Reset\n\nIf your brain feels like it's been running on 4% battery since Wednesday — start here. Sarod's bright, articulate strings are like coffee in audio form: clean, sharp, no jitter.\n\n90 minutes of slow sarod music, paired with a gentle brainwave layer that supports focused attention.\n\n🎵 What you'll hear:\n- Sarod — a bright, clear Indian string instrument (think clean staccato notes, not slides)\n- Long phrases with space between notes — calm but never drowsy\n- A gentle 40Hz layer associated with focused thinking (use headphones for the effect)\n- Unbroken sound — no abrupt fades, no startling moments\n\n⏱ Chapters\n0:00   Settling — first focused breath\n12:00  Mental fog clearing\n35:00  Focused attention zone\n60:00  Sustained clarity\n80:00  Gentle return\n\n🧠 How to use:\nPress play. Don't try to focus — let the strings pull your attention into shape. Headphones recommended. Phone in another room.\n\n⏱ Best for:\n• End-of-work-week brain fog\n• Post-lunch slump\n• Pre-deadline focus\n• Study and concentration sessions\n• Friday-afternoon mental reset\n\n📺 Subscribe to Raga Focus for daily uploads:\n- Sitar, Sarangi, Veena, Surbahar, Bansuri, Tanpura and other Indian instruments\n- Music for anxiety, overthinking, sleep, stress, emotional release\n\n— Raga Focus\n\n#mentalclaritymusic #brainfogreset #sarod #indianclassicalmusic #40hzgamma #focusmusic #ragafocus",
+  "thumbnail_text_main": "RESET. CLARIFY.",
   "thumbnail_text_variants": [
-    "THINKING SLOW?",
+    "RESET. CLARIFY.",
+    "BRAIN FOG RESET",
+    "CLEAR THE FOG",
     "STAY SHARP",
-    "CLEAR FOCUS",
-    "READY MIND"
+    "SHARP MIND"
   ],
-  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-cream patterned border with subtle scholarly motifs (book imagery, scroll patterns), aged warm parchment background, clear bright daylight palette (no dawn/dusk anchor \u2014 pure midday clarity). Central figure: serene woman in saffron-and-cream sari with copper accents seated cross-legged playing sarod (distinguishable from sitar by the fretless rounded fingerboard and metal soundboard) in a sunlit study setting. Books open beside her, ink and quill suggesting focused work. Single ray of light cutting through (visual cognitive-clarity cue). Bold dark-teal serif overlay text reading 'CLARITY MODE' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Aged warm cream parchment palette, single composed scene, no clutter.",
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-cream patterned border with subtle scholarly motifs (book imagery, scroll patterns), aged warm parchment background, late-afternoon palette (warm cream with soft amber light, end-of-day clarity feeling). Central figure: serene woman in saffron-and-cream sari with copper accents seated cross-legged playing sarod (distinguishable from sitar by its fretless rounded fingerboard and metal soundboard) in a sunlit study setting. Books open beside her, ink and quill suggesting focused work. Single shaft of warm light cutting through (visual cognitive-clarity cue). Bold dark-teal serif overlay text reading 'RESET. CLARIFY.' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Aged warm cream parchment palette, single composed scene, no clutter.",
   "suno_prompt": "Instrumental only, no vocals. Indian classical sarod solo in raga Bilawal, bright clear focus mood, fretless plucked instrument with characteristic clean staccato articulation and bright plucked notes with subtle slide ornamentation, sustained drone-resolving phrases with natural breathing pauses, no percussion, no tabla, 432Hz tuning, 70-80 BPM, expressive melodic phrases with clear note movement and natural phrasing, cinematic meditation production, meditative but melodic, suitable for extended looping, begins immediately with first melodic phrase already in motion, no fade-in, no silent intro, full sonic presence from first note. deeply introspective, like breath held before release",
   "production_spec": {
     "duration_minutes": 90,
@@ -65,9 +71,9 @@
     "binaural_wave": "Gamma",
     "binaural_beat_hz": 40.0,
     "lufs_target": -14,
-    "loop_seam": "10s in / 30s out, Suno extend 3-4x \u2192 loop in post to fill 90 min",
+    "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
     "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
-    "notes": "EMOTIONAL TAG ROTATION (per HOW_TO_CREATE_THE_MUSIC.md): clip 1: 'deeply introspective, like breath held before release' \u00b7 clip 2: 'gently hopeful, like tension quietly dissolving' \u00b7 clip 3: 'deeply settled, like a body finally surrendering to rest' \u00b7 clips 4-7 cycle. Bilawal tonic D. CRITICAL: Sarod's clean staccato articulation differentiates it from Sitar's slides \u2014 if Suno outputs Sitar-like meend-heavy lines, regenerate emphasizing 'sarod', 'staccato', 'clean attack', 'fretless plucked'. 40Hz Gamma binaural (not Theta) \u2014 this is the cognitive focus brainwave. Mix: Suno -3dB, Binaural -18dB, Tanpura -24dB. Light tabla acceptable at -12dB max if Suno includes (energy boost for focus). Headphone-required note in upload description for binaural effect."
+    "notes": "EMOTIONAL TAG ROTATION: clip 1 introspective · clip 2 hopeful · clip 3 settled · clips 4-7 cycle. Bilawal tonic D. CRITICAL: Sarod's clean staccato articulation differentiates it from Sitar's slides — if Suno outputs Sitar-like meend-heavy lines, regenerate emphasizing 'sarod', 'staccato', 'clean attack', 'fretless plucked'. 40Hz Gamma binaural (cognitive focus brainwave). Mix: Suno -3dB, Binaural -18dB, Tanpura -24dB. Light tabla acceptable at -12dB max if Suno includes."
   },
-  "experiment_notes": "Hypothesis 1: Instrument-for-Outcome format rescues a weak-prior instrument (Sarod 6.7% AVD pre-pivot Apr 18). Hypothesis 2: Cognitive lane works with 40Hz Gamma binaural + Bilawal morning raga + Sarod's clean articulation. Hypothesis 3: 'Brain Fog Reset' extends Cortisol/Dopamine Reset family into cognitive lane. Hypothesis 4: SEO-statement vs Q-hook title formats \u2014 which clicks better in focus lane? PRIMARY = Variant A (SEO-stacked); B is the alternative bet. Failure mode: <22% AVD = Sarod doesn't work for our audience, cancel Esraj Fri PM moonshot, replace with Bansuri/Veena evening ship. Breakthrough: 30%+ AVD = Sarod rescued, expand fresh-instrument bets; A wins B decisively confirms SEO-stacked format for focus lane."
+  "experiment_notes": "Hypothesis 1 (PRIMARY): Sarod works in modern era for cognitive-clarity/brain-fog lane (only pre-pivot data — Apr 18 Jet Lag Recovery 26v/6% wrong-positioned). Hypothesis 2: PM slot positioning for brain-fog theme outperforms morning positioning — end-of-work-week audience is the natural fit. Hypothesis 3 (variant test): Mental Clarity Music (62, specific brain-fog SEO) vs Brain Recovery Music (59, fresh clinical-curiosity) — which keyword cluster magnetizes more? Hypothesis 4 (Variant C): Q-hook lead in modern era — 0/13 wins on channel, could break the streak in cognitive/brain-fog lane specifically. Failure mode: <18% AVD or <2.5% CTR = Sarod still not fitting cognitive lane, retire from rotation. Breakthrough: 26%+ AVD + 4.5%+ CTR = Sarod confirmed viable, fresh instrument bet validated, opens Esraj/Tanpura moonshot capacity for future weeks."
 }
