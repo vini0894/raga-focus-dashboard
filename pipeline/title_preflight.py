@@ -151,6 +151,19 @@ def brainstorm(theme: str, instrument: str, slot: str = None, date_str: str = No
     return out
 
 
+def _extract_title_lead(title: str) -> str:
+    """Mirror of playbook_generators._extract_lead_phrase for validation use."""
+    if not title:
+        return ""
+    first_split = re.split(r"[|·]", title, maxsplit=1)
+    lead = first_split[0].strip().lower() if first_split else ""
+    lead = re.sub(r"^[\d\-\s]+(min|minute|hour)s?\s*", "", lead, flags=re.IGNORECASE)
+    lead = lead.strip(" .,:;-—")
+    if len(lead) < 4 or "#" in lead:
+        return ""
+    return lead
+
+
 def classify_fit(ctr: float, avd: float) -> str:
     if ctr >= 3.63 and avd >= 25:
         return "DUAL_WINNER"
@@ -233,17 +246,32 @@ def validate(title: str) -> dict:
                 "reason": f"{pattern['name']}: {pattern['description']}",
             })
 
-    # ─── Phrase locks ───
+    # ─── Phrase locks (distinctive bigrams) — position-aware ───
+    # Bigram in LEAD slot = HARD (channel-template risk).
+    # Bigram in non-lead slot = SOFT warn (concept reuse is normal).
     title_lower = title.lower()
-    locked_phrases_hit = []
-    for lock in pb["locks"]["locks"]:
-        if lock["phrase"] in title_lower:
-            locked_phrases_hit.append(lock)
-    if locked_phrases_hit:
-        for lock in locked_phrases_hit:
+    lead_slot = re.split(r"[|·]", title_lower, maxsplit=1)[0]
+    rest_of_title = title_lower[len(lead_slot):] if len(title_lower) > len(lead_slot) else ""
+    for lock in pb["locks"].get("locks", []):
+        phrase = lock["phrase"]
+        if phrase in lead_slot:
             out["checks"].append({
-                "rule": "phrase_lock", "status": "FAIL", "severity": "hard",
-                "reason": f"Phrase '{lock['phrase']}' locked till {lock['free_again']} (used in: {lock['from_title'][:60]})",
+                "rule": "phrase_lock_lead", "status": "FAIL", "severity": "hard",
+                "reason": f"Phrase '{phrase}' in LEAD slot, locked till {lock['free_again']} (used in: {lock['from_title'][:60]})",
+            })
+        elif phrase in rest_of_title:
+            out["checks"].append({
+                "rule": "phrase_lock_nonlead", "status": "WARN", "severity": "soft",
+                "reason": f"Phrase '{phrase}' appears in non-lead slot (used in: {lock['from_title'][:60]} — last {lock['last_used']}, free {lock['free_again']}). Allowed but concept-reuse — be intentional.",
+            })
+
+    # ─── Lead-slot phrase locks (whole first-slot phrase) ───
+    title_lead = _extract_title_lead(title)
+    for lead_lock in pb["locks"].get("lead_locks", []):
+        if title_lead == lead_lock["lead_phrase"]:
+            out["checks"].append({
+                "rule": "lead_phrase_lock", "status": "FAIL", "severity": "hard",
+                "reason": f"Lead phrase '{lead_lock['lead_phrase']}' locked till {lead_lock['free_again']} (used in: {lead_lock['from_title'][:60]})",
             })
 
     # Summary

@@ -66,19 +66,41 @@ def extract_distinctive_bigrams(text: str) -> list:
 # ─────────────────────────────────────────────────────────
 # Generator 1: phrase_locks.json
 # ─────────────────────────────────────────────────────────
+def _extract_lead_phrase(title: str) -> str:
+    """Extract the FIRST slot of a title (before | or ·), normalized.
+    Lead phrases get locked AS WHOLE PHRASES even if they contain stopwords,
+    because lead phrases are the channel's strongest brand signal."""
+    if not title:
+        return ""
+    first_split = re.split(r"[|·]", title, maxsplit=1)
+    lead = first_split[0].strip().lower() if first_split else ""
+    # Strip leading numeric prefixes like "1-min", "10 minute", "1 hour"
+    lead = re.sub(r"^[\d\-\s]+(min|minute|hour)s?\s*", "", lead, flags=re.IGNORECASE)
+    lead = lead.strip(" .,:;-—")
+    # Reject if too short, hashtag-heavy, or empty
+    if len(lead) < 4 or "#" in lead:
+        return ""
+    return lead
+
+
 def generate_phrase_locks(lock_window_days: int = 20) -> dict:
     """
-    Read shipped_titles.csv → emit per-distinctive-phrase lock entry with free-again date.
+    Read shipped_titles.csv → emit TWO lock types:
+      1. distinctive bigrams (e.g. "cortisol reset", "deep rest") — current rule
+      2. lead-slot phrases (entire first slot, e.g. "calm music", "healing music")
+         — locks as whole phrase regardless of stopwords because LEAD is the
+         strongest brand signal. Catches blind spot in bigram-only locking.
     """
     shipped_path = DATA_DIR / "shipped_titles.csv"
     if not shipped_path.exists():
-        return {"version": 1, "lock_window_days": lock_window_days, "locks": []}
+        return {"version": 2, "lock_window_days": lock_window_days, "locks": [], "lead_locks": []}
 
     today = date.today()
     cutoff = today - timedelta(days=lock_window_days)
 
-    # bigram → list of (shipped_on_date, title)
-    phrase_uses = defaultdict(list)
+    phrase_uses = defaultdict(list)   # bigram → uses
+    lead_uses = defaultdict(list)     # lead phrase → uses
+
     with open(shipped_path) as f:
         for r in csv.DictReader(f):
             try:
@@ -90,8 +112,11 @@ def generate_phrase_locks(lock_window_days: int = 20) -> dict:
             title = r.get("title", "")
             for bg in extract_distinctive_bigrams(title):
                 phrase_uses[bg].append((ship_date, title))
+            lead = _extract_lead_phrase(title)
+            if lead:
+                lead_uses[lead].append((ship_date, title))
 
-    # Build locks: for each bigram, use the MOST RECENT ship date
+    # Build distinctive-bigram locks
     locks = []
     for phrase, uses in sorted(phrase_uses.items()):
         last_date, last_title = max(uses, key=lambda x: x[0])
@@ -106,13 +131,31 @@ def generate_phrase_locks(lock_window_days: int = 20) -> dict:
             "free_again": free_again.isoformat(),
             "days_remaining": days_remaining,
         })
-
     locks.sort(key=lambda x: x["free_again"])
+
+    # Build lead-slot locks
+    lead_locks = []
+    for lead, uses in sorted(lead_uses.items()):
+        last_date, last_title = max(uses, key=lambda x: x[0])
+        free_again = last_date + timedelta(days=lock_window_days)
+        days_remaining = (free_again - today).days
+        if days_remaining < 0:
+            continue
+        lead_locks.append({
+            "lead_phrase": lead,
+            "last_used": last_date.isoformat(),
+            "from_title": last_title,
+            "free_again": free_again.isoformat(),
+            "days_remaining": days_remaining,
+        })
+    lead_locks.sort(key=lambda x: x["free_again"])
+
     return {
-        "version": 1,
+        "version": 2,
         "generated_at": datetime.now().isoformat(timespec="seconds"),
         "lock_window_days": lock_window_days,
         "locks": locks,
+        "lead_locks": lead_locks,
     }
 
 
