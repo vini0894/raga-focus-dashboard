@@ -1,0 +1,76 @@
+{
+  "id": "v_2026-05-19_brain_detox_sitar",
+  "status": "DRAFT",
+  "date_shipped": null,
+  "created_at": "2026-05-16",
+  "planned_date": "2026-05-19",
+  "planned_slot": "PM (7pm IST)",
+  "title": "2 Hour Sitar to Clear Your Mind Instantly | Indian Classical Music for Brain Detox",
+  "title_variants": {
+    "A": "2 Hour Sitar to Clear Your Mind Instantly | Indian Classical Music for Brain Detox",
+    "B": "TBD (Mon prep) — placeholder: Mental Clarity Music | Slow Sitar | 2 Hour Brain Detox",
+    "C": "TBD (Mon prep) — placeholder: Sitar for Brain Detox | Indian Classical Music | 2 Hours"
+  },
+  "components": {
+    "problem": "brain fog / mental clarity / cognitive detox / overstimulation",
+    "instrument": "Sitar",
+    "raga": "Bilawal",
+    "hz": "432Hz",
+    "wave": "Gamma"
+  },
+  "validated_keywords": [
+    "mental clarity music (62)",
+    "indian classical music (69)",
+    "indian instrumental music (70)",
+    "brain fog reset (62)",
+    "brain detox (untested)",
+    "clear your mind (untested)",
+    "sitar (62)",
+    "sitar music instrumental (69)",
+    "40hz gamma (66)",
+    "raga focus (66)"
+  ],
+  "strategic_bet": "COMPETITOR REPLICA EXPERIMENT — Sacred Mind Healing's 'Sitar for Clean Your Brain Instantly' got 102K views in 2 weeks on a 3.39K-sub channel (30× views-to-subs ratio, similar scale to Raga Focus pre-Dopamine viral). This Tue PM ship is a deliberate full replica testing 4 hypotheses simultaneously: (1) competitor's title structure (82ch, 2-slot, IFO format with 'Instantly') works on us — INTENTIONAL OVERRIDE of our usual rules; (2) Sitar+brain replicates the viral cross-channel formula; (3) Visual A/B test isolates whether channel-style thumb (female + Pichwai + text overlay) or competitor-style thumb (male sage + black-floral + no text) drives more CTR; (4) 2 Hour duration vs our usual 1.5 Hour standard. If even ONE hypothesis wins, valuable new pattern unlocked for crash recovery. Sitar cooldown 3-day-short override accepted (last May 16 Sat AM Morning Motivation — different theme, different audience).",
+  "success_good": "3K+ views in 48h — competitor formula partially transfers to our channel",
+  "success_breakthrough": "20K+ views, 22%+ AVD — competitor viral replicates, unlocks new pattern for crash recovery + Sacred Mind Healing-style strategy validated",
+  "ab_test": {
+    "variant_A": {
+      "title": "2 Hour Sitar to Clear Your Mind Instantly | Indian Classical Music for Brain Detox",
+      "thumbnail_text": "MENTAL DETOX",
+      "thumbnail_style": "Female + Pichwai/Kangra + text overlay (OUR convention)",
+      "hypothesis": "Direct replica of Sacred Mind Healing competitor formula (82ch, 2-slot, IFO with 'Instantly' claim) paired with OUR established Pichwai/Kangra female thumb style with MENTAL DETOX text overlay. Tests whether the title/topic was the magic variable (not their visual style). If A wins, our visual brand is correct + competitor's title structure works on us."
+    },
+    "variant_B": {
+      "title": "TBD Mon prep — placeholder uses channel-convention SEO format for control test",
+      "thumbnail_text": "(NONE — image-only)",
+      "thumbnail_style": "Male elderly sage + dramatic black-floral + NO text overlay (COMPETITOR style)",
+      "hypothesis": "Tests competitor's VISUAL strategy (no text, sage figure, dramatic colors) with potentially safer title structure. If B wins, sage-style thumb is the CTR driver unlocked for the channel. If A and B both perform comparably, neither visual style matters — title/topic carried the experiment."
+    },
+    "test_method": "Visual A/B test: title-content brain-detox theme fixed across both variants. PRIMARY variable being tested = thumbnail visual style (channel-convention vs competitor-inspired). Single ship for the day = maximum algorithm push budget. Cooldown override accepted for high-value replica experiment."
+  },
+  "tags": "mental clarity music, brain detox, brain fog reset, clear your mind, sitar, sitar music, sitar music instrumental, indian classical music, indian instrumental music, indian classical sitar, raga bilawal, bilawal, 432Hz, 40Hz gamma, gamma waves, brain focus, think clearly, focus music, concentration music, mental reset, cognitive music, healing music, raga focus, 2 hour sitar",
+  "description": "2 Hour Sitar to Clear Your Mind Instantly | Indian Classical Music for Brain Detox\n\nIf your brain feels stuck under layers of mental noise — start here. 2 hours of sitar designed to clear the mental fog and reset your focus.\n\nSlow sitar music with a gentle brainwave layer that supports focused attention. Designed for end-of-day mental detox or mid-day brain reset.\n\n🎵 What you'll hear:\n- Sitar — the iconic Indian string instrument with bright, clear notes and subtle slides\n- Long melodic phrases with space between notes — meditative but never drowsy\n- A gentle 40Hz layer associated with focused thinking (use headphones for the effect)\n- Unbroken 2 hours of music — no abrupt fades, no startling moments\n\n⏱ Chapters\n0:00   Settling — first focused breath\n15:00  Mental noise quieting\n40:00  Clarity zone\n90:00  Sustained focus\n110:00 Gentle return\n\n🧠 How to use:\nPress play. Let the strings pull your mental noise into shape. Headphones recommended for the brainwave effect. Phone in another room.\n\n⏱ Best for:\n• Brain fog / mental overload\n• Post-work mental detox\n• Long study and focus sessions\n• ADHD focus support\n• End-of-day cognitive reset\n\n📺 Subscribe to Raga Focus for daily uploads:\n- Sitar, Sarangi, Veena, Surbahar, Bansuri, Tanpura and other Indian instruments\n- Music for anxiety, overthinking, sleep, stress, emotional release\n\n— Raga Focus\n\n#mentalclaritymusic #braindetox #sitar #indianclassicalmusic #40hzgamma #focusmusic #brainfog #ragafocus",
+  "thumbnail_text_main": "MENTAL DETOX",
+  "thumbnail_text_variants": [
+    "MENTAL DETOX",
+    "(Variant B: NO TEXT — sage figure)",
+    "BRAIN RESET",
+    "RESET YOUR MIND",
+    "CLEAR FOCUS"
+  ],
+  "thumbnail_prompt": "VARIANT A (female + text overlay, OUR convention): Pichwai/Kangra miniature painting style, ornate gold-and-cream patterned border with subtle scholarly motifs (open books, scroll patterns, ink quill, lotus imagery), aged warm parchment background, clear bright midday palette (warm cream with single ray of golden light cutting through — visual cognitive-clarity cue, NO dawn/dusk specificity). Central figure: serene woman in saffron-and-cream sari with copper accents seated cross-legged playing sitar (recognizable by long fretted neck and round gourd resonator with multiple sympathetic strings) in a sunlit scholarly setting. Open Sanskrit/Devanagari books beside her, ink and quill suggesting focused thought-work. Soft warm focused light from above, single shaft of golden light highlighting the figure (mental clarity cue). Bold dark-teal serif overlay text reading 'MENTAL DETOX' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Aged warm cream parchment palette, single composed scene, no clutter.\n\n---\n\nVARIANT B (male sage, no text, COMPETITOR-INSPIRED): Indian classical miniature painting style with rich saturated colors, ornate gold-and-cream patterned border with scholarly and lotus motifs visible at edges, deep dramatic black background with vibrant orange-pink lotus flowers and trailing green vines surrounding the central figure (more vivid and saturated than Pichwai's soft parchment palette). Central figure: elderly Indian classical maestro with long white flowing beard and topknot, wearing rich saffron-and-gold-embroidered traditional silk robe (kurta), seated cross-legged in profile-three-quarter view playing sitar (recognizable by long fretted neck with metal tuning pegs and rounded gourd resonator with sympathetic strings). Master musician archetype — embodies ancient wisdom and authority. Detailed painterly rendering with intricate fabric patterns, gentle light catching the strings and beard. NO text overlay on this thumbnail. Image-only — sage figure carries all the visual storytelling. High contrast, dramatic, sacred-wisdom mood. Single composed scene, no clutter.",
+  "suno_prompt": "Instrumental only, no vocals. Indian classical sitar solo in raga Bilawal, bright clear focus mood, classical sitar with characteristic meend slides and gamak ornamentation, sustained drone-resolving phrases with natural breathing pauses, no percussion, no tabla, 432Hz tuning, 70-80 BPM, expressive melodic phrases with clear note movement and natural phrasing, cinematic meditation production, meditative but mentally activating (clarity-inducing, not drowsy), suitable for extended looping in post-production to fill 2 hours, begins immediately with first melodic phrase already in motion, no fade-in, no silent intro, full sonic presence from first note. deeply introspective, like breath held before release",
+  "production_spec": {
+    "duration_minutes": 120,
+    "bpm_range": "70-80",
+    "key_frequency_hz": 432,
+    "binaural_carrier_hz": 472,
+    "binaural_wave": "Gamma",
+    "binaural_beat_hz": 40.0,
+    "lufs_target": -14,
+    "loop_seam": "10s in / 30s out, Suno extend 4-5x → loop in post to fill 120 min (2 hours — longer than usual)",
+    "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+    "notes": "2 HOUR DURATION (replica convention from Sacred Mind Healing) — longer than our standard 1.5 hours. Suno extend more aggressively (4-5x vs usual 3-4x). EMOTIONAL TAG ROTATION: clip 1 introspective · clip 2 hopeful · clip 3 settled · clips 4-7 cycle. Bilawal tonic D. CRITICAL: Sitar in Bilawal — auspicious morning raga, but used PM for brain-detox context (mental clarity is mood-state, not time-anchored). Mix: Suno -3dB, Binaural -18dB, Tanpura -24dB. 40Hz Gamma binaural is cognitive focus brainwave (use headphones for effect)."
+  },
+  "experiment_notes": "TUESDAY MAY 19 COMPETITOR REPLICA EXPERIMENT. Source: Sacred Mind Healing channel `2 Hour Sitar for Clean Your Brain Instantly | Indian Classical Music for Brain Focus` got 102K views in 2 weeks on a 3.39K-sub channel. \n\nHypothesis 1 (PRIMARY): Competitor's title formula (2-slot, 82ch, IFO with 'Instantly') works on our channel even though it breaks 4 of our banked rules (char_band, slot_count, IFO format, claim language). \n\nHypothesis 2 (VISUAL A/B): Female + Pichwai + text overlay (our convention) vs Male sage + black-floral + no text (competitor style). Same title-theme, different visual. Tests whether their visual style was the CTR driver or just their channel signature. \n\nHypothesis 3: Sitar in cognitive-clarity / brain-detox lane works in modern era. Sitar Cortisol Reset Mon May 11 got 5.4K with 28% AVD — Sitar in clinical-curiosity lane is proven. This extends to brain-detox vocabulary. \n\nHypothesis 4: 2 Hour duration (vs our 1.5) for brain-focus audience. \n\nFAILURE MODE: <1K views = formula doesn't transfer + crash continuing. \n\nBREAKTHROUGH: 20K+ views = competitor viral replicates, full strategy validation, unlock new pattern for channel. \n\nMON PREP TODO:\n- VidIQ check: 'Clear Your Mind', 'Brain Detox', 'Mental Detox', 'Brain Reset' \n- Finalize Variant B and C titles\n- Verify Sitar audio matches brain-focus character (bright/activating, not meditative-drowsy)\n- Confirm thumb prompt directions with image generation tool"
+}
