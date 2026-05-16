@@ -1,660 +1,576 @@
 {
   "version": 2,
-  "generated_at": "2026-05-12T13:57:20",
+  "generated_at": "2026-05-15T22:32:45",
   "lock_window_days": 20,
   "locks": [
-    {
-      "phrase": "bansuri delta",
-      "last_used": "2026-04-22",
-      "from_title": "Can't Fall Asleep | Raga Yaman Bansuri | Delta Wave Sleep Session | 1 Hour",
-      "free_again": "2026-05-12",
-      "days_remaining": 0
-    },
-    {
-      "phrase": "can't fall",
-      "last_used": "2026-04-22",
-      "from_title": "Can't Fall Asleep | Raga Yaman Bansuri | Delta Wave Sleep Session | 1 Hour",
-      "free_again": "2026-05-12",
-      "days_remaining": 0
-    },
-    {
-      "phrase": "delta wave",
-      "last_used": "2026-04-22",
-      "from_title": "Can't Fall Asleep | Raga Yaman Bansuri | Delta Wave Sleep Session | 1 Hour",
-      "free_again": "2026-05-12",
-      "days_remaining": 0
-    },
-    {
-      "phrase": "fall asleep",
-      "last_used": "2026-04-22",
-      "from_title": "Can't Fall Asleep | Raga Yaman Bansuri | Delta Wave Sleep Session | 1 Hour",
-      "free_again": "2026-05-12",
-      "days_remaining": 0
-    },
-    {
-      "phrase": "wave sleep",
-      "last_used": "2026-04-22",
-      "from_title": "Can't Fall Asleep | Raga Yaman Bansuri | Delta Wave Sleep Session | 1 Hour",
-      "free_again": "2026-05-12",
-      "days_remaining": 0
-    },
-    {
-      "phrase": "yaman bansuri",
-      "last_used": "2026-04-22",
-      "from_title": "Can't Fall Asleep | Raga Yaman Bansuri | Delta Wave Sleep Session | 1 Hour",
-      "free_again": "2026-05-12",
-      "days_remaining": 0
-    },
-    {
-      "phrase": "reset quiet",
-      "last_used": "2026-04-23",
-      "from_title": "Nervous System Reset | Quiet Your Mind with Dilruba Instrumental Music | 1 Hour",
-      "free_again": "2026-05-13",
-      "days_remaining": 1
-    },
-    {
-      "phrase": "system reset",
-      "last_used": "2026-04-23",
-      "from_title": "Nervous System Reset | Quiet Your Mind with Dilruba Instrumental Music | 1 Hour",
-      "free_again": "2026-05-13",
-      "days_remaining": 1
-    },
-    {
-      "phrase": "stress relief",
-      "last_used": "2026-04-24",
-      "from_title": "Stress Relief Music | Deep Meditation with Veena Raga & 432Hz | 1 Hour",
-      "free_again": "2026-05-14",
-      "days_remaining": 2
-    },
     {
       "phrase": "mind veena",
       "last_used": "2026-04-26",
       "from_title": "Calm Your Mind |  Veena Healing Music | 1 hour",
       "free_again": "2026-05-16",
-      "days_remaining": 4
+      "days_remaining": 1
     },
     {
       "phrase": "veena healing",
       "last_used": "2026-04-26",
       "from_title": "Calm Your Mind |  Veena Healing Music | 1 hour",
       "free_again": "2026-05-16",
-      "days_remaining": 4
+      "days_remaining": 1
     },
     {
       "phrase": "release stress",
       "last_used": "2026-04-27",
       "from_title": "Release Stress | Burnout Music | Santoor & 528Hz",
       "free_again": "2026-05-17",
-      "days_remaining": 5
+      "days_remaining": 2
     },
     {
       "phrase": "stress burnout",
       "last_used": "2026-04-27",
       "from_title": "Release Stress | Burnout Music | Santoor & 528Hz",
       "free_again": "2026-05-17",
-      "days_remaining": 5
+      "days_remaining": 2
     },
     {
       "phrase": "deep rest",
       "last_used": "2026-04-28",
       "from_title": "Deep Rest Music | Find Stillness with Surbahar | 1 Hour",
       "free_again": "2026-05-18",
-      "days_remaining": 6
+      "days_remaining": 3
     },
     {
       "phrase": "find stillness",
       "last_used": "2026-04-28",
       "from_title": "Deep Rest Music | Find Stillness with Surbahar | 1 Hour",
       "free_again": "2026-05-18",
-      "days_remaining": 6
+      "days_remaining": 3
     },
     {
       "phrase": "dopamine reset",
       "last_used": "2026-04-29",
       "from_title": "Sitar for Dopamine Reset | Indian Classical Music for Mindfulness",
       "free_again": "2026-05-19",
-      "days_remaining": 7
+      "days_remaining": 4
     },
     {
       "phrase": "deep focus",
       "last_used": "2026-04-30",
       "from_title": "Concentration Music | Deep Focus with Sitar",
       "free_again": "2026-05-20",
-      "days_remaining": 8
+      "days_remaining": 5
     },
     {
       "phrase": "instant focus",
       "last_used": "2026-04-30",
       "from_title": "Instant focus music  | Sitar Instrumental | 1 hour",
       "free_again": "2026-05-20",
-      "days_remaining": 8
+      "days_remaining": 5
     },
     {
       "phrase": "anxiety relief",
       "last_used": "2026-05-01",
       "from_title": "Anxiety Relief Music | Clear Your Mind | 1 Hour Dilruba Session",
       "free_again": "2026-05-21",
-      "days_remaining": 9
+      "days_remaining": 6
     },
     {
       "phrase": "calm reset",
       "last_used": "2026-05-02",
       "from_title": "Pause Here \u00b7 1 Minute Tanpura Calm \u00b7 Reset Your Mind \ud83c\udf19",
       "free_again": "2026-05-22",
-      "days_remaining": 10
+      "days_remaining": 7
     },
     {
       "phrase": "electric oud",
       "last_used": "2026-05-02",
       "from_title": "Hear This \u00b7 Electric Oud Fusion \u00b7 1 Minute Mood Reset #meditationmusic  #1minutecalm #focusmusic",
       "free_again": "2026-05-22",
-      "days_remaining": 10
+      "days_remaining": 7
     },
     {
       "phrase": "meditationmusic minutecalm",
       "last_used": "2026-05-02",
       "from_title": "Hear This \u00b7 Electric Oud Fusion \u00b7 1 Minute Mood Reset #meditationmusic  #1minutecalm #focusmusic",
       "free_again": "2026-05-22",
-      "days_remaining": 10
+      "days_remaining": 7
     },
     {
       "phrase": "minutecalm focusmusic",
       "last_used": "2026-05-02",
       "from_title": "Hear This \u00b7 Electric Oud Fusion \u00b7 1 Minute Mood Reset #meditationmusic  #1minutecalm #focusmusic",
       "free_again": "2026-05-22",
-      "days_remaining": 10
+      "days_remaining": 7
     },
     {
       "phrase": "mood reset",
       "last_used": "2026-05-02",
       "from_title": "Hear This \u00b7 Electric Oud Fusion \u00b7 1 Minute Mood Reset #meditationmusic  #1minutecalm #focusmusic",
       "free_again": "2026-05-22",
-      "days_remaining": 10
+      "days_remaining": 7
     },
     {
       "phrase": "oud fusion",
       "last_used": "2026-05-02",
       "from_title": "Hear This \u00b7 Electric Oud Fusion \u00b7 1 Minute Mood Reset #meditationmusic  #1minutecalm #focusmusic",
       "free_again": "2026-05-22",
-      "days_remaining": 10
+      "days_remaining": 7
     },
     {
       "phrase": "pause here",
       "last_used": "2026-05-02",
       "from_title": "Pause Here \u00b7 1 Minute Tanpura Calm \u00b7 Reset Your Mind \ud83c\udf19",
       "free_again": "2026-05-22",
-      "days_remaining": 10
+      "days_remaining": 7
     },
     {
       "phrase": "relax slow",
       "last_used": "2026-05-02",
       "from_title": "Breathe And Relax | Slow Down Music | Veena Instrumental",
       "free_again": "2026-05-22",
-      "days_remaining": 10
+      "days_remaining": 7
     },
     {
       "phrase": "reset meditationmusic",
       "last_used": "2026-05-02",
       "from_title": "Hear This \u00b7 Electric Oud Fusion \u00b7 1 Minute Mood Reset #meditationmusic  #1minutecalm #focusmusic",
       "free_again": "2026-05-22",
-      "days_remaining": 10
+      "days_remaining": 7
     },
     {
       "phrase": "slow down",
       "last_used": "2026-05-02",
       "from_title": "Breathe And Relax | Slow Down Music | Veena Instrumental",
       "free_again": "2026-05-22",
-      "days_remaining": 10
+      "days_remaining": 7
     },
     {
       "phrase": "tanpura calm",
       "last_used": "2026-05-02",
       "from_title": "Pause Here \u00b7 1 Minute Tanpura Calm \u00b7 Reset Your Mind \ud83c\udf19",
       "free_again": "2026-05-22",
-      "days_remaining": 10
+      "days_remaining": 7
     },
     {
       "phrase": "acoustic guitar",
       "last_used": "2026-05-03",
       "from_title": "Feel Good \u00b7 Gentle Acoustic Guitar \u00b7 1-Minute Mood Lift  #focusmusic #deepwork #indianclassicalmusic",
       "free_again": "2026-05-23",
-      "days_remaining": 11
+      "days_remaining": 8
     },
     {
       "phrase": "bamboo flute",
       "last_used": "2026-05-03",
       "from_title": "Overthinking Music | Healing with Bamboo Flute & Tanpura | 1 Hour",
       "free_again": "2026-05-23",
-      "days_remaining": 11
+      "days_remaining": 8
     },
     {
       "phrase": "calm sitar",
       "last_used": "2026-05-03",
       "from_title": "1-Min Sitar Meditation \u00b7 Indian Classical Calm #sitar #sitarmusic #meditationmusic #relaxingmusic",
       "free_again": "2026-05-23",
-      "days_remaining": 11
+      "days_remaining": 8
     },
     {
       "phrase": "deepwork indianclassicalmusic",
       "last_used": "2026-05-03",
       "from_title": "Feel Good \u00b7 Gentle Acoustic Guitar \u00b7 1-Minute Mood Lift  #focusmusic #deepwork #indianclassicalmusic",
       "free_again": "2026-05-23",
-      "days_remaining": 11
+      "days_remaining": 8
     },
     {
       "phrase": "feel good",
       "last_used": "2026-05-03",
       "from_title": "Feel Good \u00b7 Gentle Acoustic Guitar \u00b7 1-Minute Mood Lift  #focusmusic #deepwork #indianclassicalmusic",
       "free_again": "2026-05-23",
-      "days_remaining": 11
+      "days_remaining": 8
     },
     {
       "phrase": "flute tanpura",
       "last_used": "2026-05-03",
       "from_title": "Overthinking Music | Healing with Bamboo Flute & Tanpura | 1 Hour",
       "free_again": "2026-05-23",
-      "days_remaining": 11
+      "days_remaining": 8
     },
     {
       "phrase": "focusmusic deepwork",
       "last_used": "2026-05-03",
       "from_title": "Feel Good \u00b7 Gentle Acoustic Guitar \u00b7 1-Minute Mood Lift  #focusmusic #deepwork #indianclassicalmusic",
       "free_again": "2026-05-23",
-      "days_remaining": 11
+      "days_remaining": 8
     },
     {
       "phrase": "gentle acoustic",
       "last_used": "2026-05-03",
       "from_title": "Feel Good \u00b7 Gentle Acoustic Guitar \u00b7 1-Minute Mood Lift  #focusmusic #deepwork #indianclassicalmusic",
       "free_again": "2026-05-23",
-      "days_remaining": 11
+      "days_remaining": 8
     },
     {
       "phrase": "good gentle",
       "last_used": "2026-05-03",
       "from_title": "Feel Good \u00b7 Gentle Acoustic Guitar \u00b7 1-Minute Mood Lift  #focusmusic #deepwork #indianclassicalmusic",
       "free_again": "2026-05-23",
-      "days_remaining": 11
+      "days_remaining": 8
     },
     {
       "phrase": "lift focusmusic",
       "last_used": "2026-05-03",
       "from_title": "Feel Good \u00b7 Gentle Acoustic Guitar \u00b7 1-Minute Mood Lift  #focusmusic #deepwork #indianclassicalmusic",
       "free_again": "2026-05-23",
-      "days_remaining": 11
+      "days_remaining": 8
     },
     {
       "phrase": "meditationmusic relaxingmusic",
       "last_used": "2026-05-03",
       "from_title": "1-Min Sitar Meditation \u00b7 Indian Classical Calm #sitar #sitarmusic #meditationmusic #relaxingmusic",
       "free_again": "2026-05-23",
-      "days_remaining": 11
+      "days_remaining": 8
     },
     {
       "phrase": "mood lift",
       "last_used": "2026-05-03",
       "from_title": "Feel Good \u00b7 Gentle Acoustic Guitar \u00b7 1-Minute Mood Lift  #focusmusic #deepwork #indianclassicalmusic",
       "free_again": "2026-05-23",
-      "days_remaining": 11
+      "days_remaining": 8
     },
     {
       "phrase": "sitar meditation",
       "last_used": "2026-05-03",
       "from_title": "1-Min Sitar Meditation \u00b7 Indian Classical Calm #sitar #sitarmusic #meditationmusic #relaxingmusic",
       "free_again": "2026-05-23",
-      "days_remaining": 11
+      "days_remaining": 8
     },
     {
       "phrase": "sitar sitarmusic",
       "last_used": "2026-05-03",
       "from_title": "1-Min Sitar Meditation \u00b7 Indian Classical Calm #sitar #sitarmusic #meditationmusic #relaxingmusic",
       "free_again": "2026-05-23",
-      "days_remaining": 11
+      "days_remaining": 8
     },
     {
       "phrase": "sitarmusic meditationmusic",
       "last_used": "2026-05-03",
       "from_title": "1-Min Sitar Meditation \u00b7 Indian Classical Calm #sitar #sitarmusic #meditationmusic #relaxingmusic",
       "free_again": "2026-05-23",
-      "days_remaining": 11
+      "days_remaining": 8
     },
     {
       "phrase": "morning vibes",
       "last_used": "2026-05-05",
       "from_title": "Productive Day Music | Positive Morning Vibes | 1 Hour Bansuri Session",
       "free_again": "2026-05-25",
-      "days_remaining": 13
+      "days_remaining": 10
     },
     {
       "phrase": "nervous system",
       "last_used": "2026-05-05",
       "from_title": "Sitar for Nervous System Healing | Indian Classical Music for Calmness | 1 Hour",
       "free_again": "2026-05-25",
-      "days_remaining": 13
+      "days_remaining": 10
     },
     {
       "phrase": "positive morning",
       "last_used": "2026-05-05",
       "from_title": "Productive Day Music | Positive Morning Vibes | 1 Hour Bansuri Session",
       "free_again": "2026-05-25",
-      "days_remaining": 13
+      "days_remaining": 10
     },
     {
       "phrase": "productive day",
       "last_used": "2026-05-05",
       "from_title": "Productive Day Music | Positive Morning Vibes | 1 Hour Bansuri Session",
       "free_again": "2026-05-25",
-      "days_remaining": 13
+      "days_remaining": 10
     },
     {
       "phrase": "system healing",
       "last_used": "2026-05-05",
       "from_title": "Sitar for Nervous System Healing | Indian Classical Music for Calmness | 1 Hour",
       "free_again": "2026-05-25",
-      "days_remaining": 13
+      "days_remaining": 10
     },
     {
       "phrase": "deep sleep",
       "last_used": "2026-05-07",
       "from_title": "Deep Sleep | Relaxing Music with Bansuri | 1 Hour",
       "free_again": "2026-05-27",
-      "days_remaining": 15
+      "days_remaining": 12
     },
     {
       "phrase": "energy frequency",
       "last_used": "2026-05-07",
       "from_title": "Yoga Music | Positive Energy Frequency | 1 Hour",
       "free_again": "2026-05-27",
-      "days_remaining": 15
+      "days_remaining": 12
     },
     {
       "phrase": "positive energy",
       "last_used": "2026-05-07",
       "from_title": "Yoga Music | Positive Energy Frequency | 1 Hour",
       "free_again": "2026-05-27",
-      "days_remaining": 15
+      "days_remaining": 12
     },
     {
       "phrase": "sleep relaxing",
       "last_used": "2026-05-07",
       "from_title": "Deep Sleep | Relaxing Music with Bansuri | 1 Hour",
       "free_again": "2026-05-27",
-      "days_remaining": 15
+      "days_remaining": 12
     },
     {
       "phrase": "alpha wave",
       "last_used": "2026-05-09",
       "from_title": "Breathing Exercise Music | Dilruba Raga Yaman | Alpha Wave Calm Session",
       "free_again": "2026-05-29",
-      "days_remaining": 17
+      "days_remaining": 14
     },
     {
       "phrase": "breathing exercise",
       "last_used": "2026-05-09",
       "from_title": "Breathing Exercise Music | Dilruba Raga Yaman | Alpha Wave Calm Session",
       "free_again": "2026-05-29",
-      "days_remaining": 17
+      "days_remaining": 14
     },
     {
       "phrase": "burnout recovery",
       "last_used": "2026-05-09",
       "from_title": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour",
       "free_again": "2026-05-29",
-      "days_remaining": 17
+      "days_remaining": 14
     },
     {
       "phrase": "nerve reset",
       "last_used": "2026-05-09",
       "from_title": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour",
       "free_again": "2026-05-29",
-      "days_remaining": 17
+      "days_remaining": 14
     },
     {
       "phrase": "positive vibes",
       "last_used": "2026-05-09",
       "from_title": "Joyful Music | Positive Vibes Music with Santoor | 1 Hour",
       "free_again": "2026-05-29",
-      "days_remaining": 17
+      "days_remaining": 14
     },
     {
       "phrase": "recovery vagus",
       "last_used": "2026-05-09",
       "from_title": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour",
       "free_again": "2026-05-29",
-      "days_remaining": 17
+      "days_remaining": 14
     },
     {
       "phrase": "vagus nerve",
       "last_used": "2026-05-09",
       "from_title": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour",
       "free_again": "2026-05-29",
-      "days_remaining": 17
+      "days_remaining": 14
     },
     {
       "phrase": "wave calm",
       "last_used": "2026-05-09",
       "from_title": "Breathing Exercise Music | Dilruba Raga Yaman | Alpha Wave Calm Session",
       "free_again": "2026-05-29",
-      "days_remaining": 17
+      "days_remaining": 14
     },
     {
       "phrase": "yaman alpha",
       "last_used": "2026-05-09",
       "from_title": "Breathing Exercise Music | Dilruba Raga Yaman | Alpha Wave Calm Session",
       "free_again": "2026-05-29",
-      "days_remaining": 17
+      "days_remaining": 14
     },
     {
       "phrase": "cortisol reset",
       "last_used": "2026-05-12",
       "from_title": "Calm Music | Sitar for Cortisol Reset",
       "free_again": "2026-06-01",
-      "days_remaining": 20
+      "days_remaining": 17
     }
   ],
   "lead_locks": [
-    {
-      "lead_phrase": "can't fall asleep",
-      "last_used": "2026-04-22",
-      "from_title": "Can't Fall Asleep | Raga Yaman Bansuri | Delta Wave Sleep Session | 1 Hour",
-      "free_again": "2026-05-12",
-      "days_remaining": 0
-    },
-    {
-      "lead_phrase": "nervous system reset",
-      "last_used": "2026-04-23",
-      "from_title": "Nervous System Reset | Quiet Your Mind with Dilruba Instrumental Music | 1 Hour",
-      "free_again": "2026-05-13",
-      "days_remaining": 1
-    },
-    {
-      "lead_phrase": "stress relief music",
-      "last_used": "2026-04-24",
-      "from_title": "Stress Relief Music | Deep Meditation with Veena Raga & 432Hz | 1 Hour",
-      "free_again": "2026-05-14",
-      "days_remaining": 2
-    },
     {
       "lead_phrase": "relaxation music",
       "last_used": "2026-04-25",
       "from_title": "Relaxation Music | Bansuri Raga & 432Hz Evening Session | 1 Hour",
       "free_again": "2026-05-15",
-      "days_remaining": 3
+      "days_remaining": 0
     },
     {
       "lead_phrase": "calm your mind",
       "last_used": "2026-04-26",
       "from_title": "Calm Your Mind |  Veena Healing Music | 1 hour",
       "free_again": "2026-05-16",
-      "days_remaining": 4
+      "days_remaining": 1
     },
     {
       "lead_phrase": "release stress",
       "last_used": "2026-04-27",
       "from_title": "Release Stress | Burnout Music | Santoor & 528Hz",
       "free_again": "2026-05-17",
-      "days_remaining": 5
+      "days_remaining": 2
     },
     {
       "lead_phrase": "deep rest music",
       "last_used": "2026-04-28",
       "from_title": "Deep Rest Music | Find Stillness with Surbahar | 1 Hour",
       "free_again": "2026-05-18",
-      "days_remaining": 6
+      "days_remaining": 3
     },
     {
       "lead_phrase": "sitar for dopamine reset",
       "last_used": "2026-04-29",
       "from_title": "Sitar for Dopamine Reset | Indian Classical Music for Mindfulness",
       "free_again": "2026-05-19",
-      "days_remaining": 7
+      "days_remaining": 4
     },
     {
       "lead_phrase": "concentration music",
       "last_used": "2026-04-30",
       "from_title": "Concentration Music | Deep Focus with Sitar",
       "free_again": "2026-05-20",
-      "days_remaining": 8
+      "days_remaining": 5
     },
     {
       "lead_phrase": "instant focus music",
       "last_used": "2026-04-30",
       "from_title": "Instant focus music  | Sitar Instrumental | 1 hour",
       "free_again": "2026-05-20",
-      "days_remaining": 8
+      "days_remaining": 5
     },
     {
       "lead_phrase": "anxiety relief music",
       "last_used": "2026-05-01",
       "from_title": "Anxiety Relief Music | Clear Your Mind | 1 Hour Dilruba Session",
       "free_again": "2026-05-21",
-      "days_remaining": 9
+      "days_remaining": 6
     },
     {
       "lead_phrase": "breathe and relax",
       "last_used": "2026-05-02",
       "from_title": "Breathe And Relax | Slow Down Music | Veena Instrumental",
       "free_again": "2026-05-22",
-      "days_remaining": 10
+      "days_remaining": 7
     },
     {
       "lead_phrase": "hear this",
       "last_used": "2026-05-02",
       "from_title": "Hear This \u00b7 Electric Oud Fusion \u00b7 1 Minute Mood Reset #meditationmusic  #1minutecalm #focusmusic",
       "free_again": "2026-05-22",
-      "days_remaining": 10
+      "days_remaining": 7
     },
     {
       "lead_phrase": "pause here",
       "last_used": "2026-05-02",
       "from_title": "Pause Here \u00b7 1 Minute Tanpura Calm \u00b7 Reset Your Mind \ud83c\udf19",
       "free_again": "2026-05-22",
-      "days_remaining": 10
+      "days_remaining": 7
     },
     {
       "lead_phrase": "feel good",
       "last_used": "2026-05-03",
       "from_title": "Feel Good \u00b7 Gentle Acoustic Guitar \u00b7 1-Minute Mood Lift  #focusmusic #deepwork #indianclassicalmusic",
       "free_again": "2026-05-23",
-      "days_remaining": 11
+      "days_remaining": 8
     },
     {
       "lead_phrase": "overthinking music",
       "last_used": "2026-05-03",
       "from_title": "Overthinking Music | Meditation Music with Surbahar | 1 Hour",
       "free_again": "2026-05-23",
-      "days_remaining": 11
+      "days_remaining": 8
     },
     {
       "lead_phrase": "sitar meditation",
       "last_used": "2026-05-03",
       "from_title": "1-Min Sitar Meditation \u00b7 Indian Classical Calm #sitar #sitarmusic #meditationmusic #relaxingmusic",
       "free_again": "2026-05-23",
-      "days_remaining": 11
+      "days_remaining": 8
     },
     {
       "lead_phrase": "productive day music",
       "last_used": "2026-05-05",
       "from_title": "Productive Day Music | Positive Morning Vibes | 1 Hour Bansuri Session",
       "free_again": "2026-05-25",
-      "days_remaining": 13
+      "days_remaining": 10
     },
     {
       "lead_phrase": "sitar for nervous system healing",
       "last_used": "2026-05-05",
       "from_title": "Sitar for Nervous System Healing | Indian Classical Music for Calmness | 1 Hour",
       "free_again": "2026-05-25",
-      "days_remaining": 13
+      "days_remaining": 10
     },
     {
       "lead_phrase": "deep sleep",
       "last_used": "2026-05-07",
       "from_title": "Deep Sleep | Relaxing Music with Bansuri | 1 Hour",
       "free_again": "2026-05-27",
-      "days_remaining": 15
+      "days_remaining": 12
     },
     {
       "lead_phrase": "yoga music",
       "last_used": "2026-05-07",
       "from_title": "Yoga Music | Positive Energy Frequency | 1 Hour",
       "free_again": "2026-05-27",
-      "days_remaining": 15
+      "days_remaining": 12
     },
     {
       "lead_phrase": "breathing exercise music",
       "last_used": "2026-05-09",
       "from_title": "Breathing Exercise Music | Dilruba Raga Yaman | Alpha Wave Calm Session",
       "free_again": "2026-05-29",
-      "days_remaining": 17
+      "days_remaining": 14
     },
     {
       "lead_phrase": "burnout recovery",
       "last_used": "2026-05-09",
       "from_title": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour",
       "free_again": "2026-05-29",
-      "days_remaining": 17
+      "days_remaining": 14
     },
     {
       "lead_phrase": "comfort music",
       "last_used": "2026-05-09",
       "from_title": "Comfort Music | Healing Music with Sarangi | 1 Hour",
       "free_again": "2026-05-29",
-      "days_remaining": 17
+      "days_remaining": 14
     },
     {
       "lead_phrase": "joyful music",
       "last_used": "2026-05-09",
       "from_title": "Joyful Music | Positive Vibes Music with Santoor | 1 Hour",
       "free_again": "2026-05-29",
-      "days_remaining": 17
+      "days_remaining": 14
     },
     {
       "lead_phrase": "peaceful music",
       "last_used": "2026-05-09",
       "from_title": "Peaceful Music | Soothing Music with Veena | 1 Hour",
       "free_again": "2026-05-29",
-      "days_remaining": 17
+      "days_remaining": 14
     },
     {
       "lead_phrase": "sleep music",
       "last_used": "2026-05-09",
       "from_title": "Sleep Music | Relaxing Music with Bansuri | 1 Hour",
       "free_again": "2026-05-29",
-      "days_remaining": 17
+      "days_remaining": 14
     },
     {
       "lead_phrase": "calm music",
       "last_used": "2026-05-12",
       "from_title": "Calm Music | Sitar for Cortisol Reset",
       "free_again": "2026-06-01",
-      "days_remaining": 20
+      "days_remaining": 17
     },
     {
       "lead_phrase": "nostalgia music",
       "last_used": "2026-05-12",
       "from_title": "Nostalgia Music | Healing Music with Sarangi | 1 Hour",
       "free_again": "2026-06-01",
-      "days_remaining": 20
+      "days_remaining": 17
     }
   ]
 }
