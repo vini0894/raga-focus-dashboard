@@ -7,9 +7,15 @@
   "planned_slot": "PM (7pm IST)",
   "title": "2 Hour Sitar to Clear Your Mind Instantly | Indian Classical Music for Brain Detox",
   "title_variants": {
-    "A": "2 Hour Sitar to Clear Your Mind Instantly | Indian Classical Music for Brain Detox",
-    "B": "TBD (Mon prep) — placeholder: Mental Clarity Music | Slow Sitar | 2 Hour Brain Detox",
-    "C": "TBD (Mon prep) — placeholder: Sitar for Brain Detox | Indian Classical Music | 2 Hours"
+    "active_title": "2 Hour Sitar to Clear Your Mind Instantly | Indian Classical Music for Brain Detox",
+    "design_note": "VISUAL-ONLY A/B test (banked 2026-05-17). The ACTIVE TITLE above is shared across both Variant A (our-thumb) and Variant B (sage-thumb). Thumbnail style is the live test variable.",
+    "fallback_options": {
+      "purpose": "If active title underperforms in first 24hr (<1K views OR CTR <2%), pivot to one of these safer alternatives. Do NOT ship as A/B with active title — these are sequential fallback only.",
+      "fallback_1_safer_seo": "Mental Clarity Music | Slow Sitar | 2 Hour Brain Detox",
+      "fallback_1_rationale": "Channel-convention 3-slot SEO-led format (52ch). Drops the rule-overrides — 'Instantly' claim, IFO format. Tests whether brain-detox theme alone works without the replica format. Use if competitor format fails AND we want to salvage the brain-detox topic.",
+      "fallback_2_clinical_pivot": "Sitar for Brain Detox | Indian Classical Music | 2 Hours",
+      "fallback_2_rationale": "Instrument-for-Outcome lead (matches our proven IFO pattern from Sitar Nervous System Healing 9.9K). 56ch, 3-slot. Use if both Variant A title format AND Variant B sage thumb both underperform — full pivot away from replica strategy back to channel signature."
+    }
   },
   "components": {
     "problem": "brain fog / mental clarity / cognitive detox / overstimulation",
@@ -34,19 +40,19 @@
   "success_good": "3K+ views in 48h — competitor formula partially transfers to our channel",
   "success_breakthrough": "20K+ views, 22%+ AVD — competitor viral replicates, unlocks new pattern for crash recovery + Sacred Mind Healing-style strategy validated",
   "ab_test": {
+    "test_type": "VISUAL-ONLY A/B (thumb-only test, same title across both variants)",
+    "shared_title": "2 Hour Sitar to Clear Your Mind Instantly | Indian Classical Music for Brain Detox",
     "variant_A": {
-      "title": "2 Hour Sitar to Clear Your Mind Instantly | Indian Classical Music for Brain Detox",
       "thumbnail_text": "MENTAL DETOX",
-      "thumbnail_style": "Female + Pichwai/Kangra + text overlay (OUR convention)",
-      "hypothesis": "Direct replica of Sacred Mind Healing competitor formula (82ch, 2-slot, IFO with 'Instantly' claim) paired with OUR established Pichwai/Kangra female thumb style with MENTAL DETOX text overlay. Tests whether the title/topic was the magic variable (not their visual style). If A wins, our visual brand is correct + competitor's title structure works on us."
+      "thumbnail_style": "Female + Pichwai/Kangra + text overlay (OUR channel convention)",
+      "hypothesis": "Channel-style thumb (female + Pichwai/Kangra + 'MENTAL DETOX' text overlay) preserves brand recognition while leveraging the Sacred Mind Healing replica title. Tests whether our visual brand identity is the right pairing for the competitor's title format — if A wins, our visual style is the CTR driver and the title structure travels independently."
     },
     "variant_B": {
-      "title": "TBD Mon prep — placeholder uses channel-convention SEO format for control test",
       "thumbnail_text": "(NONE — image-only)",
       "thumbnail_style": "Male elderly sage + dramatic black-floral + NO text overlay (COMPETITOR style)",
-      "hypothesis": "Tests competitor's VISUAL strategy (no text, sage figure, dramatic colors) with potentially safer title structure. If B wins, sage-style thumb is the CTR driver unlocked for the channel. If A and B both perform comparably, neither visual style matters — title/topic carried the experiment."
+      "hypothesis": "Tests competitor's full VISUAL strategy (no text, sage figure, saturated black-floral palette) paired with the same title. If B wins, sage-style/no-text thumb is the CTR driver unlocked for the channel. If A and B perform comparably, the title/topic is doing the work (neither visual style matters)."
     },
-    "test_method": "Visual A/B test: title-content brain-detox theme fixed across both variants. PRIMARY variable being tested = thumbnail visual style (channel-convention vs competitor-inspired). Single ship for the day = maximum algorithm push budget. Cooldown override accepted for high-value replica experiment."
+    "test_method": "PURE VISUAL A/B test: SAME title across both variants. ONLY thumbnail style varies. Isolates whether our visual convention or competitor's visual style drives more CTR when paired with the proven competitor title format. YouTube A/B engine attributes win cleanly to thumbnail variable. Cooldown override (Sitar 3 days from Sat May 16) accepted for high-value replica experiment."
   },
   "tags": "mental clarity music, brain detox, brain fog reset, clear your mind, sitar, sitar music, sitar music instrumental, indian classical music, indian instrumental music, indian classical sitar, raga bilawal, bilawal, 432Hz, 40Hz gamma, gamma waves, brain focus, think clearly, focus music, concentration music, mental reset, cognitive music, healing music, raga focus, 2 hour sitar",
   "description": "2 Hour Sitar to Clear Your Mind Instantly | Indian Classical Music for Brain Detox\n\nIf your brain feels stuck under layers of mental noise — start here. 2 hours of sitar designed to clear the mental fog and reset your focus.\n\nSlow sitar music with a gentle brainwave layer that supports focused attention. Designed for end-of-day mental detox or mid-day brain reset.\n\n🎵 What you'll hear:\n- Sitar — the iconic Indian string instrument with bright, clear notes and subtle slides\n- Long melodic phrases with space between notes — meditative but never drowsy\n- A gentle 40Hz layer associated with focused thinking (use headphones for the effect)\n- Unbroken 2 hours of music — no abrupt fades, no startling moments\n\n⏱ Chapters\n0:00   Settling — first focused breath\n15:00  Mental noise quieting\n40:00  Clarity zone\n90:00  Sustained focus\n110:00 Gentle return\n\n🧠 How to use:\nPress play. Let the strings pull your mental noise into shape. Headphones recommended for the brainwave effect. Phone in another room.\n\n⏱ Best for:\n• Brain fog / mental overload\n• Post-work mental detox\n• Long study and focus sessions\n• ADHD focus support\n• End-of-day cognitive reset\n\n📺 Subscribe to Raga Focus for daily uploads:\n- Sitar, Sarangi, Veena, Surbahar, Bansuri, Tanpura and other Indian instruments\n- Music for anxiety, overthinking, sleep, stress, emotional release\n\n— Raga Focus\n\n#mentalclaritymusic #braindetox #sitar #indianclassicalmusic #40hzgamma #focusmusic #brainfog #ragafocus",

@@ -37,24 +37,103 @@
       "vidiq": 32,
       "reserved_for": "Backup for emotional-release ships if other phrases fail",
       "note": "Passes refresh floor but lower than Emotional Detox 58"
+    },
+    {
+      "phrase": "Fresh Mind Music",
+      "vidiq": 61,
+      "reserved_for": "Future morning/cognitive AM ship — evergreen geo-neutral lead",
+      "note": "Almost used Tue May 19 AM Dilruba but Uplifting Music (65) won on VidIQ + first-mover cluster. Still strong as 2nd-choice morning lead."
+    },
+    {
+      "phrase": "Positive Energy Music",
+      "vidiq": 72,
+      "reserved_for": "Future morning/uplifting ship — HIGHEST evergreen morning score but minor cannibalization risk with live Yoga Music ship (May 7, slot-2 use)",
+      "note": "Use only if at least 30+ days from May 7 Yoga Music ship to clear cluster overlap. Or use with a DIFFERENT lane positioning (e.g. evening uplifting)."
+    },
+    {
+      "phrase": "Get Going",
+      "vidiq": 51,
+      "reserved_for": "Backup option only — barely passes refresh-floor (50)",
+      "note": "Below new-ship floor (60). Use only for refreshes or if better leads exhausted."
     }
   ],
   "already_locked_in_refreshes": [
-    {"phrase": "Brain Reset Music", "vidiq": 57, "used_in": "Memory Recall Sitar refresh (IwzyemqVh7c)"},
-    {"phrase": "Mental Break", "vidiq": 57, "used_in": "Concentration Music Sitar refresh (ZyV0OfIdDKs)"},
-    {"phrase": "Switch Off", "vidiq": 64, "used_in": "Digital Detox Dilruba refresh (3TayWGNOyrY)"},
-    {"phrase": "Emotional Detox", "vidiq": 58, "used_in": "Violin Emotional Release refresh (62FI6ji47L8)"}
+    {
+      "phrase": "Brain Reset Music",
+      "vidiq": 57,
+      "used_in": "Memory Recall Sitar refresh (IwzyemqVh7c)"
+    },
+    {
+      "phrase": "Mental Break",
+      "vidiq": 57,
+      "used_in": "Concentration Music Sitar refresh (ZyV0OfIdDKs)"
+    },
+    {
+      "phrase": "Switch Off",
+      "vidiq": 64,
+      "used_in": "Digital Detox Dilruba refresh (3TayWGNOyrY)"
+    },
+    {
+      "phrase": "Emotional Detox",
+      "vidiq": 58,
+      "used_in": "Violin Emotional Release refresh (62FI6ji47L8)"
+    },
+    {
+      "phrase": "Uplifting Music",
+      "vidiq": 65,
+      "used_in": "Tue May 19 AM Dilruba ship (v_2026-05-19_uplifting_dilruba) — first ship in channel Uplifting cluster #9"
+    }
   ],
   "dead_phrases_do_not_use": [
-    {"phrase": "Racing Mind Music", "vidiq": 25, "tested": "2026-05-17"},
-    {"phrase": "Pre-Sleep Reset", "vidiq": 26, "tested": "2026-05-17"},
-    {"phrase": "Drift Off Music", "vidiq": 24, "tested": "2026-05-17"},
-    {"phrase": "Cognitive Reset Music", "vidiq": 29, "tested": "2026-05-17"},
-    {"phrase": "Brain Refresh Music", "vidiq": 29, "tested": "2026-05-17"},
-    {"phrase": "Music to Release Trapped Emotions", "vidiq": 29, "tested": "2026-05-17", "note": "Long descriptive phrases score low even when intent is right"},
-    {"phrase": "Emotional Detox Music", "vidiq": 26, "tested": "2026-05-17", "note": "Dropping 'Music' suffix lifts to 58 — see rule"},
-    {"phrase": "Mental Break Music", "vidiq": 28, "tested": "2026-05-17", "note": "Dropping 'Music' suffix lifts to 57 — see rule"},
-    {"phrase": "Notification Fatigue", "vidiq": 34, "tested": "2026-05-17", "note": "Passes refresh floor (30+) but weak"}
+    {
+      "phrase": "Racing Mind Music",
+      "vidiq": 25,
+      "tested": "2026-05-17"
+    },
+    {
+      "phrase": "Pre-Sleep Reset",
+      "vidiq": 26,
+      "tested": "2026-05-17"
+    },
+    {
+      "phrase": "Drift Off Music",
+      "vidiq": 24,
+      "tested": "2026-05-17"
+    },
+    {
+      "phrase": "Cognitive Reset Music",
+      "vidiq": 29,
+      "tested": "2026-05-17"
+    },
+    {
+      "phrase": "Brain Refresh Music",
+      "vidiq": 29,
+      "tested": "2026-05-17"
+    },
+    {
+      "phrase": "Music to Release Trapped Emotions",
+      "vidiq": 29,
+      "tested": "2026-05-17",
+      "note": "Long descriptive phrases score low even when intent is right"
+    },
+    {
+      "phrase": "Emotional Detox Music",
+      "vidiq": 26,
+      "tested": "2026-05-17",
+      "note": "Dropping 'Music' suffix lifts to 58 — see rule"
+    },
+    {
+      "phrase": "Mental Break Music",
+      "vidiq": 28,
+      "tested": "2026-05-17",
+      "note": "Dropping 'Music' suffix lifts to 57 — see rule"
+    },
+    {
+      "phrase": "Notification Fatigue",
+      "vidiq": 34,
+      "tested": "2026-05-17",
+      "note": "Passes refresh floor (30+) but weak"
+    }
   ],
   "channel_rule_discovered_2026_05_17": "Dropping 'Music' suffix from state-based leads roughly DOUBLES VidIQ score. Mental Break Music 28 → Mental Break 57 (2.0×); Emotional Detox Music 26 → Emotional Detox 58 (2.2×). Apply: for state-of-mind leads, drop Music; let instrument slot 2 carry music signal. KEEP 'Music' suffix only for SEO-cluster leads where it's the dominant search form (Healing Music, Sleep Music, Brain Reset Music)."
 }
