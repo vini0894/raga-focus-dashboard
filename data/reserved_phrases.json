@@ -1,0 +1,60 @@
+{
+  "purpose": "VidIQ-scored phrases held for specific upcoming ships (reserved), plus phrases tested and confirmed dead. Companion to keyword_bank.csv — this file tracks ASSIGNMENT/STATUS, the CSV tracks SCORES.",
+  "last_updated": "2026-05-17",
+  "reserved_for_upcoming_ships": [
+    {
+      "phrase": "Mind Reset Music",
+      "vidiq": 67,
+      "reserved_for": "v_2026-05-22_deep_sleep_bansuri Variant A (one of 3 candidates — lock by Tue)",
+      "note": "Top candidate for Fri Bansuri Deep Sleep swing"
+    },
+    {
+      "phrase": "Sleep Anxiety Music",
+      "vidiq": 57,
+      "reserved_for": "v_2026-05-22_deep_sleep_bansuri Variant B (one of 3 candidates)",
+      "note": "Most direct clinical-state sleep fit"
+    },
+    {
+      "phrase": "Wind Down Music",
+      "vidiq": 58,
+      "reserved_for": "v_2026-05-22_deep_sleep_bansuri Variant C (one of 3 candidates)",
+      "note": "Fresh sleep-transition framing"
+    },
+    {
+      "phrase": "Tired Mind",
+      "vidiq": 67,
+      "reserved_for": "Future fresh ship — Sarangi or Sitar wired-mind audience",
+      "note": "DO NOT use for refresh of failed Veena ship (cluster collision)"
+    },
+    {
+      "phrase": "Burnt Out",
+      "vidiq": 59,
+      "reserved_for": "Future fresh burnout/stress ship — Sarangi/Sitar/Surbahar",
+      "note": "Peak emotional state phrase, high search at moment of need"
+    },
+    {
+      "phrase": "Emotional Catharsis Music",
+      "vidiq": 32,
+      "reserved_for": "Backup for emotional-release ships if other phrases fail",
+      "note": "Passes refresh floor but lower than Emotional Detox 58"
+    }
+  ],
+  "already_locked_in_refreshes": [
+    {"phrase": "Brain Reset Music", "vidiq": 57, "used_in": "Memory Recall Sitar refresh (IwzyemqVh7c)"},
+    {"phrase": "Mental Break", "vidiq": 57, "used_in": "Concentration Music Sitar refresh (ZyV0OfIdDKs)"},
+    {"phrase": "Switch Off", "vidiq": 64, "used_in": "Digital Detox Dilruba refresh (3TayWGNOyrY)"},
+    {"phrase": "Emotional Detox", "vidiq": 58, "used_in": "Violin Emotional Release refresh (62FI6ji47L8)"}
+  ],
+  "dead_phrases_do_not_use": [
+    {"phrase": "Racing Mind Music", "vidiq": 25, "tested": "2026-05-17"},
+    {"phrase": "Pre-Sleep Reset", "vidiq": 26, "tested": "2026-05-17"},
+    {"phrase": "Drift Off Music", "vidiq": 24, "tested": "2026-05-17"},
+    {"phrase": "Cognitive Reset Music", "vidiq": 29, "tested": "2026-05-17"},
+    {"phrase": "Brain Refresh Music", "vidiq": 29, "tested": "2026-05-17"},
+    {"phrase": "Music to Release Trapped Emotions", "vidiq": 29, "tested": "2026-05-17", "note": "Long descriptive phrases score low even when intent is right"},
+    {"phrase": "Emotional Detox Music", "vidiq": 26, "tested": "2026-05-17", "note": "Dropping 'Music' suffix lifts to 58 — see rule"},
+    {"phrase": "Mental Break Music", "vidiq": 28, "tested": "2026-05-17", "note": "Dropping 'Music' suffix lifts to 57 — see rule"},
+    {"phrase": "Notification Fatigue", "vidiq": 34, "tested": "2026-05-17", "note": "Passes refresh floor (30+) but weak"}
+  ],
+  "channel_rule_discovered_2026_05_17": "Dropping 'Music' suffix from state-based leads roughly DOUBLES VidIQ score. Mental Break Music 28 → Mental Break 57 (2.0×); Emotional Detox Music 26 → Emotional Detox 58 (2.2×). Apply: for state-of-mind leads, drop Music; let instrument slot 2 carry music signal. KEEP 'Music' suffix only for SEO-cluster leads where it's the dominant search form (Healing Music, Sleep Music, Brain Reset Music)."
+}

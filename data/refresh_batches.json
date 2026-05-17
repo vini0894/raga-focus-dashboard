@@ -1,0 +1,95 @@
+{
+  "experiment_started": "2026-05-17",
+  "purpose": "Refresh 25 hurting videos (<1.5K views OR <18% AVD, ≥14d old) to test whether packaging fixes (new title + thumb + tags + description) can recover algorithm push. 7-day monitor window post-refresh, then KEEP/REFRESH-AGAIN/DELETE decision per video.",
+  "source_list": "Hurting_Videos_2026-05-17.xlsx (project root, color-coded by theme + music-quality flag + recommended action)",
+  "music_review_in_progress": "Colleague reviewing first 5 min of each ship → KEEP/TRIM/DELETE verdict, will append to source XLSX",
+  "monitoring_criteria": {
+    "keep_threshold": ">200 new views in 7d + CTR >4% post-refresh",
+    "refresh_again": "50-200 new views, CTR <4% — try different angle",
+    "delete": "<50 new views in 7d — packaging wasn't the bottleneck"
+  },
+  "batches": {
+    "batch_1": {
+      "execution_date": "2026-05-18 morning",
+      "status": "TITLES LOCKED — needs thumb prompts + SEO packages before execution",
+      "videos": [
+        {
+          "video_id": "IwzyemqVh7c",
+          "original_title": "Memory Recall | Sitar Music | Brainwave Entrainment | 20 Min",
+          "original_metrics": {"views": 512, "avd_pct": 52.03, "ctr_pct": 3.56, "duration_min": 20},
+          "new_title": "Brain Reset Music | Sitar for Mental Clarity | 20 Minutes",
+          "lead_vidiq": 57,
+          "new_thumb_text": "BRAIN FOG?",
+          "thumb_format": "Q-hook",
+          "lane": "cognitive_clarity",
+          "rationale": "52% AVD = music is gold. Extends Test 17 winning pattern (Mental Clarity + Sarod 63/37) to Sitar with hybrid IFO slot 2. Q-hook thumb per Test 17 evidence."
+        },
+        {
+          "video_id": "ZyV0OfIdDKs",
+          "original_title": "Concentration Music | Deep Focus with Sitar",
+          "original_metrics": {"views": 409, "avd_pct": 33.15, "ctr_pct": 3.32, "duration_min": 20},
+          "new_title": "Mental Break | Sitar for Mind Reset | 20 Minutes",
+          "lead_vidiq": 57,
+          "new_thumb_text": "CLEAR YOUR HEAD",
+          "thumb_format": "outcome_imperative",
+          "lane": "cognitive_clarity_study_break",
+          "rationale": "33% AVD music holds. Drops dead 'focus' lane, reframes to clinical-reset. Drops 'Music' suffix per ~2× VidIQ rule. Outcome thumb per study-break audience fit."
+        },
+        {
+          "video_id": "3TayWGNOyrY",
+          "original_title": "Digital Detox Music | Dilruba Strings | Neural Rest | 1 Hour",
+          "original_metrics": {"views": 62, "avd_pct": 33.18, "ctr_pct": 2.38, "duration_min": 60},
+          "new_title": "Switch Off | Dilruba Music for Digital Detox | 1 Hour Reset",
+          "lead_vidiq": 64,
+          "new_thumb_text": "OVERSTIMULATED?",
+          "thumb_format": "Q-hook",
+          "lane": "stress_reset_digital_detox",
+          "rationale": "Preserves Digital Detox SEO equity (36 days indexed). IFO slot 2. Q-hook thumb per clinical-wellness lane match. Switch Off (64) clean lead, no conflicts."
+        },
+        {
+          "video_id": "62FI6ji47L8",
+          "original_title": "Emotional Release | Violin & 40Hz Gamma Waves | 1 Hour Emotional Healing Music",
+          "original_metrics": {"views": 67, "avd_pct": 8.05, "ctr_pct": 2.08, "duration_min": 60},
+          "new_title": "Emotional Detox | Healing Violin | 1 Hour Release",
+          "lead_vidiq": 58,
+          "new_thumb_text": "LET IT OUT",
+          "thumb_format": "outcome_imperative",
+          "lane": "emotional_catharsis",
+          "rationale": "8% AVD was audience-mismatch (calm-seekers got fast violin). New framing self-selects emotional-release audience. Outcome thumb matches cathartic intent (release IS the action)."
+        }
+      ],
+      "still_needed_before_execution": [
+        "Thumb prompts (Pichwai variants per lane, with palette adjustments)",
+        "15-20 structured tags per video (7 categories: primary kw, instrument, lane, adjacent clusters, mood/binaural, brand, long-tail)",
+        "SEO description openers (first 150 chars = search snippet, title-repeat + keyword-dense problem→solution)",
+        "Full description body rewrites",
+        "3-5 mobile hashtags per video",
+        "Pinned comment text (refresh engagement signal)",
+        "Playlist assignment recommendation"
+      ]
+    },
+    "batch_2": {
+      "execution_date": "2026-05-19",
+      "status": "Not yet drafted — generate Mon evening",
+      "scope": "8 of next 21 hurting videos"
+    },
+    "batch_3": {
+      "execution_date": "2026-05-20",
+      "status": "Not yet drafted — generate Tue evening",
+      "scope": "Final 13 hurting videos"
+    }
+  },
+  "conflict_check_rules_applied": {
+    "sources_checked": [
+      "data/playbook/phrase_locks.json",
+      "Last 20 days shipped/queued briefs (data/video_briefs/*.json)",
+      "Live channel titles (data/REACH_HISTORY.csv latest capture)",
+      "Internal-week proposals (same lead twice = collision)"
+    ],
+    "conflicts_caught_session": [
+      "'Mental Clarity Music' would have cannibalized active Sarod A/B winner (Test 17 63/37)",
+      "'Mind Reset Music' would have collided with Fri Bansuri Deep Sleep Variant A reservation",
+      "'Nervous System Reset' in slot 3 would have collided with existing live ship XSIsS9ZZgLg"
+    ]
+  }
+}

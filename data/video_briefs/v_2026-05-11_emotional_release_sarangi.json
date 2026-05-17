@@ -4,11 +4,11 @@
   "date_shipped": null,
   "created_at": "2026-05-10",
   "planned_date": "2026-05-18",
-  "planned_slot": "PM (7pm IST) — parked from May 11 for cadence reduction",
-  "title": "Healing Music | Sarangi for Emotional Release",
+  "planned_slot": "PM (7pm IST)",
+  "title": "Healing Music | Sarangi for Emotional Release | 1.5 Hours",
   "title_variants": {
-    "A": "Healing Music | Sarangi for Emotional Release",
-    "B": "Holding It In? | Sarangi for Emotional Release"
+    "A": "Healing Music | Sarangi for Emotional Release | 1.5 Hours",
+    "B": "Let Go Of Stress | Sarangi for Emotional Release | 1.5 Hours"
   },
   "components": {
     "problem": "emotional release",
@@ -18,41 +18,69 @@
     "wave": "Theta"
   },
   "validated_keywords": [
-    "healing music (75)",
-    "emotional release (64)",
-    "emotional healing music (60)",
+    "healing music (72)",
+    "sarangi for emotional release (68)",
+    "let go of stress (63)",
+    "emotional release (62)",
+    "heavy heart (64)",
+    "emotional release music (58)",
+    "comfort music (65 — LOCKED to May 29)",
     "sarangi (67)",
     "yaman (63)",
     "indian classical music (66)",
-    "raga focus (66)",
-    "meditation music (80)"
+    "raga focus (66)"
   ],
-  "strategic_bet": "[PARKED to May 18 from May 11 — cadence reduction]\n\nHighest-information ship of the week — tests whether Instrument-for-Outcome format generalizes beyond Sitar. Sarangi is the right test instrument: strongest non-Sitar opener (Comfort Music | Sarangi 4K views in 5d, 25.7% AVD), most vocal-like and emotional instrument in the kit. Pairs with Mon AM Sitar Cortisol Reset for same-day controlled experiment of format generalization across two instruments. Emotional/grief lane has zero competitor saturation observed. Yaman raga (evening contemplative) avoids same-day Bhairavi reuse from Mon AM. If this hits 25%+ AVD: format works channel-wide, green-light remaining experimental ships. If <22%: format may be Sitar-specific, cancel Esraj Fri PM moonshot.",
+  "strategic_bet": "[PARKED to May 18 from May 11 \u2014 cadence reduction]\n\nHighest-information ship of the week \u2014 tests whether Instrument-for-Outcome format generalizes beyond Sitar. Sarangi is the right test instrument: strongest non-Sitar opener (Comfort Music | Sarangi 4K views in 5d, 25.7% AVD), most vocal-like and emotional instrument in the kit. Pairs with Mon AM Sitar Cortisol Reset for same-day controlled experiment of format generalization across two instruments. Emotional/grief lane has zero competitor saturation observed. Yaman raga (evening contemplative) avoids same-day Bhairavi reuse from Mon AM. If this hits 25%+ AVD: format works channel-wide, green-light remaining experimental ships. If <22%: format may be Sitar-specific, cancel Esraj Fri PM moonshot.",
   "success_good": "1500+ views, 25%+ AVD in 48h",
-  "success_breakthrough": "5K+ views, 30%+ AVD — confirms Instrument-for-Outcome generalizes beyond Sitar AND emotional lane is real",
+  "success_breakthrough": "5K+ views, 30%+ AVD \u2014 confirms Instrument-for-Outcome generalizes beyond Sitar AND emotional lane is real",
   "ab_test": {
     "variant_A": {
-      "title": "Healing Music | Sarangi for Emotional Release",
+      "title": "Healing Music | Sarangi for Emotional Release | 1.5 Hours",
       "thumbnail_text": "HEAVY HEART?",
-      "hypothesis": "SEO-led (Healing Music 75) + Instrument-for-Outcome (proven format)"
+      "hypothesis": "SEO-led 'Healing Music' (72 VidIQ — highest in candidate pool) + Instrument-for-Outcome slot 2 (68 VidIQ — proven combo) + Q-hook thumb. Tests whether 'Healing Music' as a PURE LEAD works on the channel — historically used only in slot 2 (May 4 Comfort Sarangi 6.7K, May 10 Nostalgia Sarangi 2.8K). Only as-lead test was 'Sound Healing Music' May 14 = 941 views (weak). If Variant A wins, 'Healing Music' lead validated for future Sarangi/healing-lane ships."
     },
     "variant_B": {
-      "title": "Holding It In? | Sarangi for Emotional Release",
-      "thumbnail_text": "LET IT MOVE",
-      "hypothesis": "Question title (Holding It In?) + outcome-imperative thumb (Let It Move). Tests Q-vs-outcome thumbnail format in emotional/healing lane."
+      "title": "Let Go Of Stress | Sarangi for Emotional Release | 1.5 Hours",
+      "thumbnail_text": "FEEL LIGHTER",
+      "hypothesis": "Action-imperative SEO lead 'Let Go Of Stress' (63 VidIQ — fresh, untested) + same IFO slot 2 + outcome-imperative thumb 'FEEL LIGHTER' (positive post-release state). Tests whether action-verb leads beat SEO-noun leads in emotional comfort lane. If Variant B wins, action-imperative pattern validated as alternative to SEO-led in emotional lane."
     },
-    "test_method": "matched-pair: 2 thumbnails x 2 titles, A/B Test on YouTube native"
+    "test_method": "TITLE + THUMB pair A/B test (2 variants). Lead phrase + thumb format both vary. Healing lane is thumb-tolerant per Test 7 — multi-variable acceptable in this lane. Tests SEO-noun-lead+Q-hook-thumb vs action-imperative-lead+outcome-imperative-thumb. Each combination is internally coherent (SEO + Q-hook = recognition pattern; action + outcome = resolution pattern)."
   },
-  "tags": "healing music, sarangi, sarangi music, sarangi for emotional release, emotional release, emotional healing music, raga yaman, yaman, 432Hz, 432Hz music, theta waves, theta wave music, indian classical music, indian classical sarangi, bowed indian instrument, instrumental music, meditation music, vocal-like sarangi, grief music, heart healing music, raga focus, sarangi instrumental",
-  "description": "Healing Music | Sarangi for Emotional Release\n\nIf something inside is asking to be felt — not fixed — start here. Some feelings don't need solving. They need company. The sarangi is the most vocal-like instrument in Indian classical music. Let it speak for what you can't.\n\nSolo sarangi playing Raga Yaman (evening contemplative raga), tuned to 432Hz, with a subliminal Theta wave layer for emotional grounding and gentle release.\n\n🎵 What you'll hear:\n- Solo sarangi — bowed Indian string instrument with deep, breath-like vocal quality\n- Raga Yaman — classical evening contemplative raga\n- 432Hz — healing frequency tuned to natural harmony\n- Subliminal Theta wave (5Hz) entrainment layer\n- Seamless looping texture, no abrupt transitions\n\n⏱ Chapters\n0:00   Settling — softening into the body\n12:00  First wave rising\n35:00  Letting it move\n60:00  Tender ground\n80:00  Held & home\n\n🧠 How to use:\nPress play. Let whatever rises rise. The music holds you while the feeling moves. Don't analyze it — just breathe through it. Tears are welcome. So is silence.\n\n⏱ Best for:\n• Emotional release / grief processing\n• After a hard day or hard conversation\n• Heart-opening practice\n• Sound healing sessions\n• Tender wind-down\n\n📺 Subscribe to Raga Focus for daily uploads:\n- Sitar, Sarangi, Veena, Surbahar, Bansuri and other Indian instruments\n- Sessions tuned to specific healing frequencies\n- Music for anxiety, overthinking, sleep, stress, emotional release\n\n— Raga Focus\n\n#healingmusic #sarangi #sarangimusic #emotionalrelease #emotionalhealing #432hzmusic #432hz #thetawaves #ragayaman #grief #indianclassicalmusic #ragafocus",
+  "tags": "healing music, emotional release, sarangi, sarangi music, slow sarangi, sarangi for emotional release, indian classical sarangi, heavy heart, grief music, emotional healing music, let go of stress, evening healing, raga yaman, 432Hz, theta waves, music for emotional release, raga focus, indian classical music, indian instrumental music",
+  "tags_organized_by_category": {
+    "primary_keyword_variants": ["healing music", "emotional release", "emotional healing music"],
+    "instrument_variants": ["sarangi", "sarangi music", "slow sarangi", "indian classical sarangi"],
+    "lane_state": ["heavy heart", "grief music", "let go of stress"],
+    "adjacent_clusters": ["evening healing"],
+    "mood_binaural_raga": ["raga yaman", "432Hz", "theta waves"],
+    "brand": ["raga focus", "indian classical music", "indian instrumental music"],
+    "long_tail": ["sarangi for emotional release", "music for emotional release"]
+  },
+  "description": "Healing Music | Sarangi for Emotional Release | 1.5 Hours\n\nIf your chest feels heavy and you've been holding it in too long \u2014 start here. 1.5 hours of slow sarangi for emotional release.\n\nSome feelings don't need solving. They need company. The sarangi is the most vocal-like instrument in Indian classical music. Let it speak for what you can't.\n\n\ud83c\udfb5 What you'll hear:\n- Sarangi \u2014 bowed Indian string instrument with breath-like vocal quality\n- Long melodic phrases with natural breathing pauses\n- A gentle healing frequency layer for the nervous system\n- Unbroken sound \u2014 no abrupt fades, no startling moments\n\n\u23f1 Chapters\n0:00   Settling \u2014 softening into the body\n12:00  First wave rising\n35:00  Letting it move\n60:00  Tender ground\n80:00  Held & home\n\n\ud83e\udde0 How to use:\nPress play. Let whatever rises rise. The music holds you while the feeling moves. Don't analyze it \u2014 just breathe through it. Tears are welcome. So is silence.\n\n\u23f1 Best for:\n\u2022 Emotional release / grief processing\n\u2022 After a hard day or hard conversation\n\u2022 Heart-opening practice\n\u2022 Tender wind-down\n\u2022 Mid-week emotional reset\n\n\ud83d\udcfa Subscribe to Raga Focus for daily uploads:\n- Sitar, Sarangi, Veena, Surbahar, Bansuri, Tanpura and other Indian instruments\n- Music for anxiety, overthinking, sleep, stress, emotional release\n\n\u2014 Raga Focus\n\n#healingmusic #sarangi #emotionalrelease #heavyheart #ragayaman #432hz #ragafocus",
+  "description_seo_first_150_chars_note": "Line 1 (title repeat for search snippet match) + Line 2 (problem statement + content promise) = first 175 chars cover the SEO snippet window. Title-keyword repeated in line 1 boosts Google/YT search-snippet match per banked SEO 5-layer rule.",
+  "engagement_scaffolding": {
+    "pinned_comment": "Tears are welcome here. So is silence. Let me know how this landed for you. \ud83d\udc9a",
+    "playlist_recommendation": {
+      "primary": "CREATE NEW playlist: 'Emotional Healing & Release'",
+      "rationale": "No emotional-healing playlist currently exists on channel (only Morning Focus, Peaceful Music, Deep Focus Sessions). This Sarangi ship is the perfect kickoff to anchor a new playlist. Backfill with: Sarangi Comfort Music (May 4, 6.7K) + Sarangi Nostalgia Music (May 10, 2.8K) + Violin Emotional Release (post-refresh).",
+      "fallback_if_skipping_new_playlist": "Add to existing 'Peaceful Music' playlist (closest fit, 16 vids, 62 views \u2014 could use the boost)"
+    },
+    "end_screen": "Link to Sarangi Comfort Music (May 4 ship, 6.7K views) \u2014 natural session-time anchor in same lane and instrument",
+    "cards_mid_video": [
+      "Sarangi Comfort Music (May 4) \u2014 proven sibling, same lane",
+      "Sitar for Nervous System Healing (May 5, 9.9K) \u2014 clinical-adjacent winner",
+      "Calm Your Mind | Veena Healing Music (Apr 26, 4.9K, 33% AVD) \u2014 highest-AVD healing ship"
+    ],
+    "captions": "Optional \u2014 instrumental track, English captions not critical. Skip unless time permits."
+  },
   "thumbnail_text_main": "HEAVY HEART?",
   "thumbnail_text_variants": [
+    "HEAVY HEART?",
+    "FEEL LIGHTER",
     "LET IT MOVE",
-    "TENDER PLACE?",
-    "FEELING IT ALL?",
-    "CAN'T SHAKE IT?"
+    "TENDER PLACE?"
   ],
-  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-cream patterned border with subtle peacock motifs, aged warm parchment background, late-evening dusk palette transitioning from warm amber to deep indigo at edges, central figure: a graceful woman in cream-and-gold sari with deep teal accents, seated near a still pond at twilight, head slightly tilted in tender introspection, gentle moonlit lotus blooms, soft willow tree overhang, single tear-like dewdrop on lotus petal as quiet emotional cue. Bold dark-teal serif overlay text reading 'HEAVY HEART?' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Contemplative grief-honoring mood, single composed scene, no clutter.",
+  "thumbnail_prompt": "TWO VARIANTS for A/B test:\n\n--- VARIANT A: HEAVY HEART? (Q-hook recognition) ---\nPichwai/Kangra miniature painting style, ornate gold-and-cream patterned border with subtle peacock motifs, aged warm parchment background, late-evening dusk palette transitioning from warm amber to deep indigo at edges. Central figure: a graceful woman in cream-and-gold sari with deep teal accents, seated near a still pond at twilight, head slightly tilted DOWN in tender introspection, gentle moonlit lotus blooms, soft willow tree overhang, single tear-like dewdrop on lotus petal as quiet emotional cue. Bold dark-teal serif overlay text reading 'HEAVY HEART?' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Contemplative grief-honoring mood (BEFORE the release).\n\n--- VARIANT B: FEEL LIGHTER (outcome-imperative post-release state) ---\nSame Pichwai/Kangra border + parchment palette for channel consistency. Palette shifts to softer dawn-gold (post-tears, morning-after feel) instead of dusk-indigo. Central figure: same woman in cream-and-gold sari, but seated UPRIGHT with head slightly raised toward soft golden light through window, shoulders relaxed (visual relief cue), hands resting open on lap, single butterfly or rising lotus petal as gentle outcome cue, willow tree in soft light. Bold dark-teal serif overlay text reading 'FEEL LIGHTER' top-center, same typography. Tender resolved mood (AFTER the release). Same composition principles, no clutter.\n\nKey visual difference: Variant A = pre-release contemplative weight; Variant B = post-release lightness/relief. Same figure + setting = brand consistency; different posture + palette = emotional state difference. Tests whether viewer-state recognition (A) or post-state promise (B) drives more clicks.",
   "suno_prompt": "Instrumental only, no vocals. Bowed Indian sarangi solo in raga Yaman, deep emotional vocal-quality evening healing release mood, characteristic vocal-like meend slides with breath-pause phrasing and gamak ornamentation, sustained drone-resolving phrases with natural breathing pauses, no percussion, no tabla, 432Hz tuning, 65-70 BPM, expressive melodic phrases with clear note movement and natural phrasing, cinematic meditation production, meditative but melodic, suitable for extended looping, begins immediately with first melodic phrase already in motion, no fade-in, no silent intro, full sonic presence from first note. gently hopeful, like tension quietly dissolving",
   "production_spec": {
     "duration_minutes": 90,
@@ -62,9 +90,9 @@
     "binaural_wave": "Theta",
     "binaural_beat_hz": 5.0,
     "lufs_target": -14,
-    "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+    "loop_seam": "10s in / 30s out, Suno extend 3-4x \u2192 loop in post to fill 90 min",
     "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
-    "notes": "EMOTIONAL TAG ROTATION: clip 1: 'gently hopeful, like tension quietly dissolving' · clip 2: 'deeply settled, like a body finally surrendering to rest' · clip 3: 'deeply introspective, like breath held before release' · clips 4-7 cycle. Yaman tonic D. Mix: Suno -3dB, Binaural -18dB, Tanpura -24dB. CRITICAL: Sarangi vocal-quality is the differentiator — emphasize 'vocal-like', 'breath-like'. Subtle tabla acceptable; loud rhythmic tabla = regenerate."
+    "notes": "EMOTIONAL TAG ROTATION: clip 1: 'gently hopeful, like tension quietly dissolving' \u00b7 clip 2: 'deeply settled, like a body finally surrendering to rest' \u00b7 clip 3: 'deeply introspective, like breath held before release' \u00b7 clips 4-7 cycle. Yaman tonic D. Mix: Suno -3dB, Binaural -18dB, Tanpura -24dB. CRITICAL: Sarangi vocal-quality is the differentiator \u2014 emphasize 'vocal-like', 'breath-like'. Subtle tabla acceptable; loud rhythmic tabla = regenerate."
   },
-  "experiment_notes": "Hypothesis 1: Instrument-for-Outcome format generalizes beyond Sitar. Hypothesis 2: Emotional/grief lane has untapped demand (zero competitor saturation observed). Hypothesis 3: Sarangi vocal-quality + Yaman + slow tempo can outperform recent evening AVD slump (Joyful 17.9% / Breathing 13% / Deep Sleep 20.3%). Pairs with Mon AM Sitar Cortisol Reset — same-day dual-instrument test of format generalization. Failure mode: <22% AVD by Tue evening → cancel Esraj Fri PM moonshot, replace with safe Bansuri/Veena evening ship. Breakthrough: 30%+ AVD → emotional lane confirmed real, Sarangi becomes channel signature alongside Sitar."
+  "experiment_notes": "RELOCKED 2026-05-17 for Mon May 18 PM ship (previously parked from May 11). Single ship Mon (no AM). 2-variant title+thumb A/B.\n\nHYPOTHESIS 1 (PRIMARY): Does 'Healing Music' (72 VidIQ) work as PURE LEAD? Channel data shows it as winning combo in slot 2 (May 4 Comfort+Healing+Sarangi = 6.7K, May 10 Nostalgia+Healing+Sarangi = 2.8K) but the only as-lead test was 'Sound Healing Music' May 14 = 941 views (weak). Variant A tests it cleanly as pure lead.\n\nHYPOTHESIS 2: Does action-imperative lead 'Let Go Of Stress' beat SEO-noun lead 'Healing Music' in emotional lane? Variant B tests action-verb-lead pattern in emotional comfort context (no precedent on channel).\n\nHYPOTHESIS 3 (THUMB DIMENSION): Q-hook recognition thumb ('HEAVY HEART?') vs outcome-imperative resolution thumb ('FEEL LIGHTER') in emotional/healing lane. Healing lane is thumb-tolerant per Test 7 (TIE 50/50) \u2014 multi-variable A/B acceptable here.\n\nHYPOTHESIS 4 (LANE VALIDATION): Sarangi vocal-quality + Yaman + slow tempo can outperform recent W2 AVD slump. Sarangi has 2 modern hits (Comfort May 4 6.7K, Nostalgia May 10 2.8K) \u2014 confirms instrument viable. This ship tests emotional-release framing specifically.\n\nFAILURE MODE: <1.5K views OR <22% AVD = emotional lane risky during crash; deprioritize Sarangi for next 2 weeks.\nBREAKTHROUGH: 5K+ views + 28% AVD = emotional lane confirmed channel signature, schedule weekly Sarangi slot.\n\nPRE-SHIP CHECKLIST (per weekly_planning_rules.yaml \u00a710):\n- \u2705 Phrase locks cleared (Healing Music + Let Go Of Stress both fresh as leads)\n- \u2705 VidIQ floor met (72, 63)\n- \u2705 Suffix-drop rule N/A (SEO-cluster leads keep 'Music' \u2014 Healing Music is SEO-cluster)\n- \u2705 Instrument cooldown (Sarangi 8 days from May 10)\n- \u2705 Lane diversification (different from Sun-Bansuri-rest + Tue-Sitar-cognitive)\n- \u2705 Dead-lane check (Healing Music IS in tested-territory, not generic-soft-dead)\n- \u23f3 Audio quality gate (verify first Suno clip is sparse/vocal-prominent before extending)\n- \u2705 Thumb format (Q-hook + outcome \u2014 both fit healing lane per Test 7 tied)\n- \u2705 Title structure (3-slot, 56/57 chars in 46-65 acceptable band)\n- \u2705 Conflict-check 4 sources (no collisions across phrase_locks, queued briefs, live channel, internal week)"
 }

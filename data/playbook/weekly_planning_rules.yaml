@@ -1,0 +1,287 @@
+# Weekly planning rules — how to assemble next week's ship pipeline.
+# Source: distilled from running Raga Focus through Apr-May 2026 (viral, crash, recovery).
+# Read by: weekly planning chat sessions. Apply BEFORE drafting individual briefs.
+# Companion to: playbook_rules.yaml (per-title rules), phrase_locks.json (reuse), instrument_lane_fit.json (which instrument fits which lane).
+
+version: 1
+generated_at: "2026-05-17"
+last_review: "2026-05-17"
+
+# ============================================================
+# 1. CADENCE — ships per week
+# ============================================================
+cadence:
+  default_target: 9                   # 9 ships/week = healthy 3-doubles + 4-singles
+  crash_window_target: 7              # During AVD/impressions cliff, REDUCE to 7 (don't dilute swings)
+  growth_window_target: 11            # During trust window (post-viral 14-day push), can push to 11
+  hard_max: 12                        # Above 12 = subscriber-feed saturation + CTR fatigue
+
+# ============================================================
+# 2. SINGLES vs DOUBLES — daily slot allocation
+# ============================================================
+slot_allocation:
+  doubles_per_week: 3
+  singles_per_week: 4
+
+  double_day_rules:
+    use_for:
+      - Days with a swing ship (pair safe-AM filler with swing-PM)
+      - Weekend days (Sat/Sun — higher leisure browsing)
+      - Days after a swing (leverage push momentum)
+    avoid_for:
+      - Days BEFORE a major swing (single-only — protect swing's algorithm push budget)
+
+  single_day_rules:
+    use_for:
+      - Day before any PM swing (give swing 36hr undivided push)
+      - Mid-week filler days (Wed)
+      - End-of-week recovery (Sun)
+    slot_preference: AM > PM             # AM beats PM 70% on median views (banked 2026-05-17)
+    exception: PM if theme is evening-specific (sleep, emotional release, deep rest)
+
+# ============================================================
+# 3. INSTRUMENT COOLDOWNS
+# ============================================================
+instrument_cooldown:
+  same_instrument_min_gap_days: 4      # No instrument repeats within 4 days
+  override_conditions:
+    - Replica of proven viral (≥10K views original) — accept 3-day-short cooldown
+    - Different lane completely (e.g. Bansuri sleep vs Bansuri morning yoga — different audience)
+  hard_block:
+    - Same instrument 2 consecutive ships in same lane = NEVER (channel-page pattern blindness)
+
+# ============================================================
+# 4. INSTRUMENT TIERING — who gets swing slots vs filler slots
+# ============================================================
+instrument_tiers:
+  hero:                                # Use for SWINGS + replicas (high algorithm budget)
+    - Sitar                            # Reach hero (Dopamine Reset 414K viral asset)
+    - Bansuri                          # CTR hero (Deep Sleep 5.98% CTR ceiling)
+    - Surbahar                         # Retention hero (Deep Rest 26% AVD anchor)
+
+  supporting:                          # Use for safe FILLER ships (variety, not breakthroughs)
+    - Sarangi                          # Emotional comfort lane
+    - Santoor                          # Joyful / morning energy lane
+    - Sarod                            # Clinical-reset alternate (currently winning Test 17)
+
+  tactical:                            # Low-priority — use sparingly (variety only)
+    - Dilruba                          # Morning energy occasional
+    - Tanpura                          # Sleep solo niche only
+
+  recovering:                          # NEEDS clinical hook to work — avoid soft framings
+    - Veena                            # Failed in soft-soothing lanes; only clinical-curiosity hooks
+
+  experimental:                        # Moonshots only — don't pin breakthrough hopes
+    - Esraj
+    - Oud
+
+  retired:
+    - Acoustic Guitar                  # Cross-genre risk — abandoned
+
+# ============================================================
+# 5. LANE DISTRIBUTION per week
+# ============================================================
+lane_distribution_target:
+  clinical_reset: 3-4                  # Winning lane #1 — heaviest allocation
+  sleep: 1-2                           # Hero lane (Fri PM ideal)
+  emotional_comfort: 1                 # Sunday PM ideal (pre-week melancholy peak)
+  morning_vibes: 2                     # Tue/Sat AM
+  deep_rest: 1                         # Thu PM ideal
+  experimental: 0-1                    # Optional swing slot
+
+  do_not_use:                          # Confirmed dead lanes
+    - generic_soothing                 # "Soothing Music" lead dead (banked 2026-05-17)
+    - generic_meditation               # Abstract meditation framings underperform
+    - generic_anxiety_relief           # Generic anxiety dies; clinical-state hooks work
+    - focus_productivity_pre_pivot     # Channel pivoted away; "Focus" / "Concentration" lead dead
+
+# ============================================================
+# 6. SWING IDENTIFICATION — what qualifies as a "swing"
+# ============================================================
+swing_criteria:
+  required_signals:                    # All swings must meet at least 2 of these
+    - Replica of proven channel hero (>5K views original)
+    - Replica of competitor viral (>5× views-to-subs ratio, channel scale comparable)
+    - Deliberate experiment with documented hypothesis (4+ hypotheses tested)
+    - Targets ONE of the 3 winning lanes (Sleep / Clinical-Reset / Deep Rest)
+
+  protection_rules:
+    - Swing PM days should be SINGLE (don't ship AM same day — protects algorithm push)
+    - No same-channel ship within 24hr before swing PM (cannibalization)
+    - Audio quality verified BEFORE extending Suno (AVD wildcard)
+    - Variant A/B/C all drafted before ship day (avoid last-minute experiments)
+
+  max_swings_per_week: 3               # More than 3 dilutes budget; less than 2 = no breakthrough probability
+
+# ============================================================
+# 7. CRASH-WEEK PROTOCOL — when channel is in decline
+# ============================================================
+crash_protocol:
+  trigger: "Median views/ship down >50% vs prior week OR AVD% down >5pp vs prior week"
+  actions:
+    - REDUCE ship count to 7 (don't dilute remaining algorithm push)
+    - INCREASE swings to 3 (replicas of proven heroes — only thing that breaks crashes)
+    - DROP filler ships using dead lanes (generic soothing/meditation/anxiety)
+    - VERIFY music quality on first Suno clip BEFORE extending
+    - REFRESH dead-catalog videos in parallel (channel-wide hygiene)
+    - DO NOT introduce new instruments or new lanes during crash (high-risk experiments wait)
+
+# ============================================================
+# 8. ALGORITHM-PUSH PROTECTION — spacing rules
+# ============================================================
+push_protection:
+  fresh_ship_push_window_hours: 24-48  # YT gives 24-48hr of inflated impressions per new upload
+  same_channel_overlap_penalty: true   # Two fresh ships overlap = both get diluted push
+
+  swing_day_protocol:
+    day_before_swing: SINGLE_ONLY (or zero — protect swing)
+    swing_day: SINGLE PM (the swing) — NO AM
+    day_after_swing: Can ship AM filler (swing still pushing, but algorithm tolerates pairing)
+
+  lane_separation:
+    rule: "Adjacent ships (within 48hr) should target different audience clusters"
+    bad_pattern:
+      - Sun PM Bansuri sleep → Mon PM Bansuri sleep (same instrument + lane = direct competition)
+      - Tue PM cognitive-clarity → Wed PM cognitive-clarity (cluster cannibalization)
+    good_pattern:
+      - Sun PM sleep → Mon PM cognitive → Tue PM clinical-reset (3 different clusters in 48hr)
+
+# ============================================================
+# 9. SLOT TIMING — IST hours
+# ============================================================
+slot_timing:
+  AM_slot: "07:00 IST"                 # 09:30pm PST previous day · India morning + Western late-night
+  PM_slot: "19:00 IST"                 # 09:30am EST · India evening + Western morning
+  evidence:
+    AM_vs_PM_median_views: "AM beats PM by 70% on median (banked 2026-05-17)"
+  experimental_alternatives:
+    - "PM shift to 22:00 IST = India night sleep peak + EU 5:30pm wind-down"
+    - "PM shift to 17:00 IST = US 7:30am morning meditation search peak"
+
+# ============================================================
+# 10. PRE-SHIP CHECKLIST (run before every brief is locked)
+# ============================================================
+pre_ship_checklist:
+  - phrase_lock_check: "Lead phrase must clear data/playbook/phrase_locks.json"
+  - vidiq_floor: "Lead phrase ≥60 for new ships (≥30 for refreshes — see refresh_batches.json)"
+  - music_suffix_check: "If lead is state-of-mind phrase (Mental Break, Burnt Out, Tired Mind) → DROP 'Music' suffix (2× VidIQ lift). Keep Music suffix only for SEO-cluster leads (Healing Music, Sleep Music, Brain Reset Music)."
+  - instrument_cooldown: "≥4 days since same instrument last shipped"
+  - lane_diversification: "Different cluster from previous 48hr ships"
+  - dead_lane_check: "Lead does NOT fall into anti_patterns.json dead-lane list (soothing/sound-healing/meditation-music generic, anxiety-as-lead, focus-pre-pivot)"
+  - audio_quality_gate: "First Suno clip verified ≤AVD-recovering character before extending"
+  - thumb_format: "Per lane via thumbnail_format_rules.json — Q-hook for anxiety/cognitive/relaxation, outcome-imperative for focus/sleep/morning, statement for burnout"
+  - title_structure: "3 slots, 46-55 chars target, lead-then-instrument-then-specifier"
+  - conflict_check_4_sources: |
+      Run cross-check against ALL 4 sources before locking ANY proposed lead:
+      1. data/playbook/phrase_locks.json (locked phrases, 20-day window)
+      2. Last 20 days shipped/queued briefs (data/video_briefs/*.json)
+      3. Live channel titles (data/REACH_HISTORY.csv latest capture)
+      4. Internal-week proposals (same lead twice in same week = collision)
+
+# ============================================================
+# 10b. FULL SEO PER SHIP — 5 layers (not just title)
+# ============================================================
+ship_seo_layers:
+  description: "Every ship needs all 5 layers covered. Title alone = 1 of 5. Refresh especially needs all 5."
+  layers:
+    1_title:
+      what: "Lead phrase + instrument + specifier"
+      where_validated: "VidIQ + pre_ship_checklist above"
+    2_secondary_keywords:
+      what: "Slot 2 + slot 3 should each carry keyword weight (not filler)"
+      example: "Brain Reset Music | Sitar for Mental Clarity | 20 Min Brain Reset (3 discoverable phrases)"
+    3_tags:
+      what: "15-20 structured tags per video"
+      categories:
+        - "Primary keyword + 2-3 close variants"
+        - "Instrument + variants ('sitar', 'slow sitar', 'indian classical sitar')"
+        - "Lane/state ('mental clarity', 'brain fog')"
+        - "Adjacent clusters ('study music', 'concentration')"
+        - "Mood/binaural ('40Hz gamma', 'alpha waves')"
+        - "Brand ('raga focus', 'indian instrumental music')"
+        - "Long-tail ('music for mental clarity', '20 minute brain reset')"
+    4_description_first_150_chars:
+      what: "Google + YT search snippet — keyword-dense title-repeat + problem→solution"
+      structure: "Line 1 = title repeated. Line 2 = problem statement + content promise + format."
+      example: |
+        Brain Reset Music | Slow Sitar | 20 Min Mental Clarity Session
+
+        If your brain feels foggy after hours of screens — start here. 20 minutes of slow sitar designed to reset mental clarity and clear brain fog. Headphones recommended.
+    5_engagement_scaffolding:
+      what: "Signals that tell YT 'this video has activity, push more impressions'"
+      elements:
+        - "Pinned comment (author engagement signal)"
+        - "Playlist assignment (session-time multiplier — 36min AVD per Raga Focus data)"
+        - "End-screen link to a related winning video (session time)"
+        - "2-3 cards mid-video to related winners (click-through to known performers)"
+        - "Custom thumbnail uploaded (NOT auto-frame — YT prioritizes custom thumbs)"
+        - "Closed captions (search ranking + accessibility)"
+        - "Hashtags at description bottom (3-5 max — show above title on mobile)"
+
+# ============================================================
+# 11. WEEK-PLANNING SESSION PROCESS (chat workflow)
+# ============================================================
+planning_session_steps:
+  1: "Read SESSION_CONTEXT.md to see active swings + last week's results"
+  2: "Read data/refresh_batches.json to see parallel refresh experiment status"
+  3: "Identify 3 swings for the week (use swing_criteria above)"
+  4: "Assign swings to PM slots — protect each with single-day-before rule"
+  5: "Fill remaining slots: doubles on weekend + non-swing days, singles before swings"
+  6: "Match instruments to lanes using instrument_lane_fit.json"
+  7: |
+      ⭐ BEFORE proposing any instrument for any slot, RUN cooldown check (mechanical, not memory-based):
+        python3 pipeline/cooldown_check.py YYYY-MM-DD
+      Returns VIABLE vs BLOCKED list per instrument. NEVER propose a BLOCKED instrument.
+      Re-run for EACH new slot in the week.
+  8: "Check lane distribution against target ratios"
+  9: "VidIQ-check fresh lead phrases (≥60 for new, ≥30 for refresh)"
+  10: |
+      Run conflict-check on every proposed lead (4 sources):
+      1. data/playbook/phrase_locks.json
+      2. Last 20 days briefs (grep data/video_briefs/*.json)
+      3. Live channel REACH_HISTORY.csv
+      4. Internal-week proposals (collision detection)
+  11: "Lock titles + thumbs per ship"
+  12: "Write briefs to data/video_briefs/v_YYYY-MM-DD_*.json"
+  13: "Update SESSION_CONTEXT §12 pointer + commit"
+
+mechanical_check_scripts:
+  cooldown_check: "pipeline/cooldown_check.py YYYY-MM-DD — instrument cooldown viability per slot"
+  title_preflight: "pipeline/title_preflight.py --theme X --instrument Y --slot AM|PM — full preflight context"
+  playbook_regen: "pipeline/playbook_generators.py — regenerates phrase_locks.json + instrument_lane_fit.json after new ship lands"
+
+# ============================================================
+# 12. WHEN TO OVERRIDE THESE RULES (intentional rule-breaks)
+# ============================================================
+override_conditions:
+  competitor_replica_experiments:
+    rule_overrides_allowed:
+      - char_band (e.g. 82ch for Sacred Mind Healing replica)
+      - slot_count (2-slot replica titles)
+      - claim_language ("Instantly", "Immediate" — banned generally, allowed for replica)
+      - IFO format (lower CTR usually, but accepted in replica)
+    requirement: "Document EVERY override in the brief's experiment_notes field"
+
+  refresh_videos:
+    rule_overrides_allowed:
+      - vidiq_floor: lowered to 30 (vs 60 for new ships)
+      - phrase_lock_check: SAME video keeping a similar phrase OK
+    requirement: "Refresh logged in data/refresh_batches.json"
+
+# ============================================================
+# 13. WEEKLY REVIEW (run end-of-week)
+# ============================================================
+weekly_review:
+  metrics_to_capture:
+    - W/W views change (total + median per ship)
+    - W/W impressions change (total + median)
+    - W/W CTR change (median)
+    - W/W AVD change (channel-wide + median per ship)
+    - W/W subs change
+    - Ships that hit success_good / success_breakthrough criteria
+    - Ships that hit failure_mode criteria
+    - A/B tests concluded (append to data/ab_results.csv)
+  outputs:
+    - Update SESSION_CONTEXT §1 channel snapshot if state shifted
+    - Update research/channel_playbook_v1.md if patterns shifted
+    - Bank new rules into this file (weekly_planning_rules.yaml) if learnings emerged

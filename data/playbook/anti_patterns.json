@@ -151,6 +151,38 @@
       "description": "7.83Hz, Schumann, deep technical jargon as middle slot weakens calm/healing titles",
       "severity": "soft",
       "evidence": "Veena & 7.83Hz Schumann Resonance lost to Calm Your Mind 68/32"
+    },
+
+    {
+      "id": "soothing_music_lead_dead",
+      "name": "'Soothing Music' as title lead",
+      "description": "'Soothing Music' lead has failed 2 consecutive ships in W2 (May 9 Peaceful Veena + May 16 Tired Mind Veena, both <2.5K views and <18% AVD)",
+      "severity": "hard",
+      "evidence": "May 9 Peaceful Music | Soothing Music with Veena = 2,409 views; May 12/16 Soothing Music | Veena for Tired Mind = 583 views",
+      "banked": "2026-05-17",
+      "alternative": "Use clinical-curiosity (Cortisol Reset / Vagus / Brain Fog) or specific-state self-recognition (Tired Mind / Mental Overload / Burnt Out) instead"
+    },
+
+    {
+      "id": "generic_soft_framing_leads",
+      "name": "Generic soft framings as title lead (post-W2 crash)",
+      "description": "Generic non-specific calm/healing/meditation framings died in W2 crash. Audience needs SPECIFIC clinical-state hook OR specific-lifestyle hook to click + stay.",
+      "severity": "hard",
+      "evidence": "W2 crash analysis 2026-05-17: all generic-soft framings (Soothing/Sound Healing/Meditation Music/abstract Healing) underperformed at <1.5K views with <22% AVD. Cortisol Reset (clinical) was only W2 survivor at 7K.",
+      "detector_kw": ["soothing music", "meditation music", "sound healing music", "anxiety relief music", "peaceful music for"],
+      "banked": "2026-05-17",
+      "alternative": "Replace with clinical-curiosity (Cortisol/Vagus/Dopamine/Brain Fog/Mind Reset) or specific-state (Tired Mind/Burnt Out/Overstimulated/Stuck Emotions)"
+    },
+
+    {
+      "id": "music_suffix_on_state_leads",
+      "name": "'Music' suffix on state-based leads (suppresses VidIQ ~2x)",
+      "description": "State-of-mind phrases score WAY higher without 'Music' suffix because native search captures both music + non-music seekers. Adding 'Music' narrows to niche music-search slice.",
+      "severity": "soft",
+      "evidence": "Mental Break Music = 28 → Mental Break = 57 (2.0x lift). Emotional Detox Music = 26 → Emotional Detox = 58 (2.2x). Banked 2026-05-17.",
+      "banked": "2026-05-17",
+      "exception": "KEEP 'Music' suffix for SEO-cluster leads where it's the dominant search form: Healing Music, Sleep Music, Brain Reset Music, Stress Relief Music, Comfort Music. These are music-search clusters first.",
+      "rule": "For state-of-mind lead → drop 'Music'. Let instrument slot 2 carry the music signal."
     }
   ],
 

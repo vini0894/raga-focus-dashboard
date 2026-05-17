@@ -1,8 +1,9 @@
 {
-  "version": 1,
-  "generated_at": "2026-05-12",
-  "generated_from": "research/channel_playbook_v1.md §6 + 13 A/B tests",
-  "description": "Lane × winning thumbnail-text-format matrix. Use to pick the right thumb style for a given title.",
+  "version": 2,
+  "generated_at": "2026-05-17",
+  "generated_from": "research/channel_playbook_v1.md §10 + 18 A/B tests",
+  "description": "Lane × winning thumbnail-text-format matrix. Use to pick the right thumb style for a given title. UPDATED 2026-05-17 with Tests 15-18 — sleep no longer 'tolerant' (Test 16 overturned Test 10); cognitive_clarity lane added (Test 17 63/37 decisive).",
+  "rule_for_refresh_batches": "Mix formats across batch — don't ship 4 Q-hooks in a row (channel-page pattern blindness). 2 Q-hook + 2 outcome-imperative is healthy ratio for a 4-refresh batch.",
   "pairing_convention": {
     "rule": "Matched-pair A/B: If title is SEO/statement → use Q-hook thumb. If title is Q-hook → use outcome-imperative thumb.",
     "rationale": "Preserves test power — never both Q, never both statement"
@@ -56,12 +57,31 @@
       "avoid_format": "affect_only"
     },
     "sleep": {
-      "winning_format": "tolerant",
-      "confidence": "DECISIVE_TIE",
-      "evidence": "A/B Test 10: TIE 49.8/50.2 between SLEEP WITHOUT STRESS and FALL ASLEEP FAST",
-      "winners": ["SLEEP WITHOUT STRESS", "FALL ASLEEP FAST", "DRIFT TO SLEEP", "DEEP SLEEP NOW"],
-      "losers": [],
-      "note": "Lane is TOTALLY tolerant — state OR imperative both work"
+      "winning_format": "outcome_imperative",
+      "confidence": "DECISIVE",
+      "evidence": "A/B Test 16 (May 14): DRIFT TO SLEEP outcome-imperative beat DEEPLY DRAINED? Q-hook 55/45. Overturns earlier Test 10 'tie' interpretation. Test 16 paired with Insomnia Relief Music lead vs Sound Sleep — outcome+clinical-lead combo wins.",
+      "winners": ["DRIFT TO SLEEP", "FALL ASLEEP FAST", "DEEP SLEEP NOW", "SLEEP WITHOUT STRESS"],
+      "losers": ["DEEPLY DRAINED? (Q-hook lost 45/55)"],
+      "avoid_format": "q_hook",
+      "note": "Test 10 said 'tied' but Test 16 with proper clinical-state lead crystallized that sleep lane wants imperative thumbs. Q-hook recognizes the problem; imperative promises the resolution (which is what sleep audience clicks for)."
+    },
+    "cognitive_clarity": {
+      "winning_format": "specific_state_q_hook",
+      "confidence": "DECISIVE",
+      "evidence": "A/B Test 17 (May 15-): MENTALLY EXHAUSTED? Q-hook + SEO-led title beat RESET YOUR THOUGHTS statement + Q-lead title 63/37 (26.4pp gap — biggest ever).",
+      "winners": ["MENTALLY EXHAUSTED?", "BRAIN FOG?", "MIND CLOUDY?", "MENTAL FATIGUE?", "CAN'T THINK?", "BRAIN DRAINED?"],
+      "losers": ["RESET YOUR THOUGHTS (statement — lost 37/63)"],
+      "avoid_format": "outcome_statement",
+      "note": "Brain Fog / cognitive-reset / mental clarity audience wants viewer-state recognition (Q-hook), not promised outcome. Tightest clinical-curiosity lane."
+    },
+    "relaxation_evening": {
+      "winning_format": "specific_state_q_hook",
+      "confidence": "DECISIVE",
+      "evidence": "A/B Test 15 (May 5, thumb-only test with identical titles): STRESSED? Q-hook beat RELAX DEEPLY outcome-imperative 55/45 (10.4pp). Pure thumb-format isolation.",
+      "winners": ["STRESSED?", "OVERWHELMED?", "TENSE?", "MIND RACING?"],
+      "losers": ["RELAX DEEPLY (outcome — lost 45/55)"],
+      "avoid_format": "outcome_imperative",
+      "note": "Evening relaxation/wind-down audience responds to state-recognition Q-hooks, not action verbs."
     },
     "nostalgia": {
       "winning_format": "abstract_noun",
