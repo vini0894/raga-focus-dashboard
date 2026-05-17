@@ -7,15 +7,9 @@
   "planned_slot": "PM (7pm IST)",
   "title": "2 Hour Sitar to Clear Your Mind Instantly | Indian Classical Music for Brain Detox",
   "title_variants": {
-    "active_title": "2 Hour Sitar to Clear Your Mind Instantly | Indian Classical Music for Brain Detox",
-    "design_note": "VISUAL-ONLY A/B test (banked 2026-05-17). The ACTIVE TITLE above is shared across both Variant A (our-thumb) and Variant B (sage-thumb). Thumbnail style is the live test variable.",
-    "fallback_options": {
-      "purpose": "If active title underperforms in first 24hr (<1K views OR CTR <2%), pivot to one of these safer alternatives. Do NOT ship as A/B with active title — these are sequential fallback only.",
-      "fallback_1_safer_seo": "Mental Clarity Music | Slow Sitar | 2 Hour Brain Detox",
-      "fallback_1_rationale": "Channel-convention 3-slot SEO-led format (52ch). Drops the rule-overrides — 'Instantly' claim, IFO format. Tests whether brain-detox theme alone works without the replica format. Use if competitor format fails AND we want to salvage the brain-detox topic.",
-      "fallback_2_clinical_pivot": "Sitar for Brain Detox | Indian Classical Music | 2 Hours",
-      "fallback_2_rationale": "Instrument-for-Outcome lead (matches our proven IFO pattern from Sitar Nervous System Healing 9.9K). 56ch, 3-slot. Use if both Variant A title format AND Variant B sage thumb both underperform — full pivot away from replica strategy back to channel signature."
-    }
+    "A": "2 Hour Sitar to Clear Your Mind Instantly | Indian Classical Music for Brain Detox",
+    "B": "Mental Clarity Music | Slow Sitar | 2 Hour Brain Detox",
+    "C": "Sitar for Brain Detox | Indian Classical Music | 2 Hours"
   },
   "components": {
     "problem": "brain fog / mental clarity / cognitive detox / overstimulation",
@@ -78,5 +72,12 @@
     "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
     "notes": "2 HOUR DURATION (replica convention from Sacred Mind Healing) — longer than our standard 1.5 hours. Suno extend more aggressively (4-5x vs usual 3-4x). EMOTIONAL TAG ROTATION: clip 1 introspective · clip 2 hopeful · clip 3 settled · clips 4-7 cycle. Bilawal tonic D. CRITICAL: Sitar in Bilawal — auspicious morning raga, but used PM for brain-detox context (mental clarity is mood-state, not time-anchored). Mix: Suno -3dB, Binaural -18dB, Tanpura -24dB. 40Hz Gamma binaural is cognitive focus brainwave (use headphones for effect)."
   },
-  "experiment_notes": "TUESDAY MAY 19 COMPETITOR REPLICA EXPERIMENT. Source: Sacred Mind Healing channel `2 Hour Sitar for Clean Your Brain Instantly | Indian Classical Music for Brain Focus` got 102K views in 2 weeks on a 3.39K-sub channel. \n\nHypothesis 1 (PRIMARY): Competitor's title formula (2-slot, 82ch, IFO with 'Instantly') works on our channel even though it breaks 4 of our banked rules (char_band, slot_count, IFO format, claim language). \n\nHypothesis 2 (VISUAL A/B): Female + Pichwai + text overlay (our convention) vs Male sage + black-floral + no text (competitor style). Same title-theme, different visual. Tests whether their visual style was the CTR driver or just their channel signature. \n\nHypothesis 3: Sitar in cognitive-clarity / brain-detox lane works in modern era. Sitar Cortisol Reset Mon May 11 got 5.4K with 28% AVD — Sitar in clinical-curiosity lane is proven. This extends to brain-detox vocabulary. \n\nHypothesis 4: 2 Hour duration (vs our 1.5) for brain-focus audience. \n\nFAILURE MODE: <1K views = formula doesn't transfer + crash continuing. \n\nBREAKTHROUGH: 20K+ views = competitor viral replicates, full strategy validation, unlock new pattern for channel. \n\nMON PREP TODO:\n- VidIQ check: 'Clear Your Mind', 'Brain Detox', 'Mental Detox', 'Brain Reset' \n- Finalize Variant B and C titles\n- Verify Sitar audio matches brain-focus character (bright/activating, not meditative-drowsy)\n- Confirm thumb prompt directions with image generation tool"
+  "experiment_notes": "TUESDAY MAY 19 COMPETITOR REPLICA EXPERIMENT. Source: Sacred Mind Healing channel `2 Hour Sitar for Clean Your Brain Instantly | Indian Classical Music for Brain Focus` got 102K views in 2 weeks on a 3.39K-sub channel. \n\nHypothesis 1 (PRIMARY): Competitor's title formula (2-slot, 82ch, IFO with 'Instantly') works on our channel even though it breaks 4 of our banked rules (char_band, slot_count, IFO format, claim language). \n\nHypothesis 2 (VISUAL A/B): Female + Pichwai + text overlay (our convention) vs Male sage + black-floral + no text (competitor style). Same title-theme, different visual. Tests whether their visual style was the CTR driver or just their channel signature. \n\nHypothesis 3: Sitar in cognitive-clarity / brain-detox lane works in modern era. Sitar Cortisol Reset Mon May 11 got 5.4K with 28% AVD — Sitar in clinical-curiosity lane is proven. This extends to brain-detox vocabulary. \n\nHypothesis 4: 2 Hour duration (vs our 1.5) for brain-focus audience. \n\nFAILURE MODE: <1K views = formula doesn't transfer + crash continuing. \n\nBREAKTHROUGH: 20K+ views = competitor viral replicates, full strategy validation, unlock new pattern for channel. \n\nMON PREP TODO:\n- VidIQ check: 'Clear Your Mind', 'Brain Detox', 'Mental Detox', 'Brain Reset' \n- Finalize Variant B and C titles\n- Verify Sitar audio matches brain-focus character (bright/activating, not meditative-drowsy)\n- Confirm thumb prompt directions with image generation tool",
+  "variant_design": {
+    "test_type": "VISUAL-ONLY A/B (not multi-title A/B)",
+    "A_role": "ACTIVE — shipped Tue 7pm IST across BOTH visual A/B thumb variants",
+    "B_role": "FALLBACK 1 — safer SEO format. 24hr pivot if active <1K views or CTR <2%",
+    "C_role": "FALLBACK 2 — IFO channel signature. Pivot if Fallback 1 also underperforms",
+    "critical_note": "Variants B and C are SEQUENTIAL FALLBACKS for 24hr pivot strategy — NOT concurrent A/B alternatives. Only Variant A ships initially. Visual A/B (MENTAL DETOX thumb vs sage no-text thumb) runs on the active title."
+  }
 }
