@@ -1,0 +1,229 @@
+{
+  "purpose": "Consolidated parking lot for everything we've discussed parking-for-later: competitor URLs, scored keywords waiting for the right ship/timing, competitor viral patterns worth replicating, fresh title structures to test. Reviewed during weekly planning sessions to draw from when picking next week's ships.",
+  "last_updated": "2026-05-18",
+  "review_cadence": "Every Sunday during weekly planning — scan for ready-to-deploy candidates (cooldown windows passed, lane fit, etc.)",
+  "see_also": {
+    "reserved_phrases.json": "VidIQ-scored phrases reserved for specific upcoming ships",
+    "competitor_snapshots_v2.csv": "Full competitor video data with views/V-per-sub ratios"
+  },
+
+  "competitor_urls_flagged": [
+    {
+      "parked_on": "2026-05-17",
+      "url": "https://www.youtube.com/watch?v=IChON6RgY_s",
+      "video_id": "IChON6RgY_s",
+      "source": "User-flagged via chat (Wed Santoor planning session)",
+      "status": "PARKED — awaiting review",
+      "review_action": "Fetch title/views/competitor channel when revisiting. Mine for pattern/theme/structure that could inspire a future ship.",
+      "notes": "Add competitor channel to COMPETITORS dict in pipeline/config.py if from a new channel we should track"
+    }
+  ],
+
+  "competitor_replica_candidates": [
+    {
+      "competitor": "Raga Heal",
+      "subs": 52900,
+      "title": "Dopamine Reset | 639Hz Bansuri for Deep Digital Detox & Inner Balance",
+      "views": 203403,
+      "days_old": 27,
+      "views_per_sub": 3.85,
+      "priority": "HIGH — V/Sub 3.85x = TRUE viral on similar-lane channel",
+      "rationale": "Second Raga Heal viral after Chandra Raga 207K. Dopamine Reset + Digital Detox + Inner Balance is a strong fresh phrase combo for our channel.",
+      "replica_constraints": "We already own Dopamine Reset Sitar (414K viral). Variant should use BANSURI not Sitar (different instrument), keep 639Hz framing, add Digital Detox + Inner Balance cluster.",
+      "earliest_ship_target": "~30 days minimum from May 22 Bansuri swing to avoid instrument-cooldown collision",
+      "banked": "2026-05-17"
+    },
+    {
+      "competitor": "Raga Heal",
+      "title": "Calm an Overactive Mind | 210Hz Chandra Raga for Deep Nervous System Healing",
+      "views": 207808,
+      "days_old": 58,
+      "views_per_sub": 3.93,
+      "priority": "ALREADY ATTEMPTED — May 16 ship 'Calm an Overactive Mind | Chandra Raga' = 477 views in 24h",
+      "rationale": "Replica shipped May 16 but only 24h data — directional fail unless picks up over 7d. Re-evaluate before second attempt.",
+      "banked": "2026-05-17"
+    },
+    {
+      "competitor": "Raga Heal",
+      "title": "Morning Anxiety? | Raag Bilaval Bansuri to Dissolve Stress & Overthinking",
+      "views": 90800,
+      "days_old": 34,
+      "views_per_sub": 1.72,
+      "priority": "MEDIUM — Q-hook morning anxiety lane proven",
+      "rationale": "Q-hook 'Morning Anxiety?' + Bansuri + Raga Bilawal pattern. Tests morning anxiety lane with rule-breaks (emoji, Sanskrit raga name, Q-hook).",
+      "earliest_ship_target": "Future morning swing day, post-Tue Brain Detox observation",
+      "banked": "2026-05-18"
+    },
+    {
+      "competitor": "Raga Heal",
+      "title": "Circadian Sitar Alignment | Reset Your Internal Clock & Heal Mental Exhaustion",
+      "views": 55186,
+      "days_old": 44,
+      "views_per_sub": 1.04,
+      "priority": "MEDIUM — chronobiology angle entirely untapped on our channel",
+      "rationale": "Circadian + sleep cycle reset is a niche-clinical cluster we haven't explored. Fits Sitar (Raga Heal uses) or Bansuri.",
+      "earliest_ship_target": "Future Sitar/Bansuri ship — minimum 14 days from any active Sitar/Bansuri swing",
+      "banked": "2026-05-18"
+    },
+    {
+      "competitor": "Raga Heal",
+      "title": "Mentally Exhausted? | Sitar Flow to Calm Your Mind & Restore Focus",
+      "views": 32356,
+      "days_old": 41,
+      "views_per_sub": 0.61,
+      "priority": "LOW-MEDIUM — Q-hook + state-recognition",
+      "rationale": "Q-hook lead (against our banked rule but Raga Heal data shows it works). 'Mentally Exhausted?' as title lead (not just thumb). We use this phrase as thumb on Memory Recall refresh — testing as TITLE lead in future is interesting.",
+      "earliest_ship_target": "Future experimental Q-hook-lead test ship",
+      "banked": "2026-05-18"
+    },
+    {
+      "competitor": "Raga Heal",
+      "title": "Release Deep Body Tension | 174Hz Raga for Stress & Anxiety Relief",
+      "views": 17992,
+      "days_old": 51,
+      "views_per_sub": 0.34,
+      "priority": "MEDIUM — somatic/body-clinical lane entirely untapped",
+      "rationale": "Body-tension release lane is somatic-clinical territory we haven't explored. Could fit Surbahar (deep low instrument) or Sarangi (vocal-emotional body).",
+      "earliest_ship_target": "Future Surbahar or Sarangi ship in body-clinical framing",
+      "banked": "2026-05-18"
+    },
+    {
+      "competitor": "Raga Heal",
+      "title": "Neural Rewire 741Hz | Vedic Sitar Raga Engineered for Overstimulated Minds",
+      "views": 13742,
+      "days_old": 30,
+      "views_per_sub": 0.26,
+      "priority": "LOW-MEDIUM — clinical-neuroscience angle",
+      "rationale": "Neural Rewire pulls neuroscience/biohacker audience. Niche but enthusiastic. Sitar moonshot territory.",
+      "earliest_ship_target": "Future Sitar experimental ship — 14+ days from any Sitar swing",
+      "banked": "2026-05-18"
+    },
+    {
+      "competitor": "Raga Heal",
+      "title": "Screen Time Sickness? | 432Hz Raga Bhairavi Nervous System Reset",
+      "views": 7489,
+      "days_old": 20,
+      "views_per_sub": 0.14,
+      "priority": "MEDIUM — Q-hook + modern wellness term",
+      "rationale": "Modern wellness Q-hook combines screen-fatigue + nervous system. Audience overlap with our Digital Detox Dilruba refresh.",
+      "earliest_ship_target": "Future ship — combine with Dilruba or Sarod for similar audience",
+      "banked": "2026-05-18"
+    },
+    {
+      "competitor": "Shanti Instrumentals",
+      "subs": 37700,
+      "title": "90 Minute Sitar For Mind Detox | Indian Classical Meditation Music | Release Tension",
+      "views": 8833,
+      "days_old": 5,
+      "views_per_sub": 0.23,
+      "priority": "HIGH — FRESH MOMENTUM (5-day-old breakout)",
+      "rationale": "Mind Detox cluster is actively pulling traffic RIGHT NOW. Different keyword from our Brain Detox (Tue swing). Untapped on our channel.",
+      "earliest_ship_target": "~14 days minimum separation from Tue May 19 Brain Detox to avoid channel-page cluster duplication. Earliest = ~June 2.",
+      "banked": "2026-05-17",
+      "constraint_note": "DO NOT ship within 14 days of Tue May 19 Brain Detox — looks like visual/semantic duplicate on channel page"
+    }
+  ],
+
+  "fresh_clusters_untapped_on_our_channel": [
+    {
+      "cluster": "Somatic Healing / Trauma Release",
+      "source": "Shanti Instrumentals",
+      "competitor_example": "Somatic Healing With Sitar | Trauma Release | Melt Away Emotional Pain",
+      "rationale": "Modern wellness language (somatic, trauma) is high-recognition. Pulls therapy/wellness audience overlap with our anxiety/burnout lanes.",
+      "candidate_instruments": ["Sarangi (emotional)", "Surbahar (deep release)", "Violin refresh follow-up"],
+      "banked": "2026-05-18"
+    },
+    {
+      "cluster": "Chakra Healing",
+      "source": "Raga Heal — 'Anxiety? Ground Yourself - Root Chakra Healing Music' (3.8K)",
+      "rationale": "Chakra/spiritual lane is large untapped audience. Banked spiritual cluster (Remove Negative Energy 62, Boost Your Aura 62, Healing Energy 62) — could combine with chakra framing.",
+      "candidate_instruments": ["Sitar (root chakra)", "Bansuri (heart chakra)", "Sarangi (heart/sacral)"],
+      "banked": "2026-05-18"
+    },
+    {
+      "cluster": "Inner Balance / Mental Stillness / Inner Quiet",
+      "source": "Used by Raga Heal in 203K viral + Shanti 6K Midnight Ragas",
+      "rationale": "Outcome-state leads (vs clinical-action). Wed May 20 Santoor ships 'Mental Stillness' — testing this cluster now.",
+      "candidate_instruments": ["Santoor (Wed May 20 — ACTIVE TEST)", "Surbahar (Inner Balance)", "Veena (Inner Quiet)"],
+      "banked": "2026-05-18"
+    }
+  ],
+
+  "keywords_parked_for_later": [
+    {
+      "phrase": "Mind Detox",
+      "vidiq": "untested",
+      "source": "Shanti '90 Min Sitar Mind Detox' = 8.8K in 5d",
+      "reserved_for": "Future ship — minimum 14 days separation from Tue May 19 Brain Detox",
+      "earliest_ship_date": "~June 2",
+      "candidate_instruments": ["Sitar", "Sarod", "Bansuri"],
+      "banked": "2026-05-17"
+    },
+    {
+      "phrase": "Inner Balance",
+      "vidiq": "untested",
+      "source": "Raga Heal Dopamine Reset 203K viral uses in slot 2",
+      "reserved_for": "Future Surbahar/Veena evening ship — outcome-state lead format",
+      "banked": "2026-05-17"
+    },
+    {
+      "phrase": "Neural Rewire",
+      "vidiq": "untested",
+      "source": "Raga Heal 'Neural Rewire 741Hz' = 13K views",
+      "reserved_for": "Future Sitar moonshot — clinical-neuroscience audience",
+      "banked": "2026-05-17"
+    },
+    {
+      "phrase": "Body Tension Release",
+      "vidiq": "untested",
+      "source": "Raga Heal 'Release Deep Body Tension' = 18K views",
+      "reserved_for": "Future Surbahar/Sarangi somatic-clinical ship",
+      "banked": "2026-05-18"
+    },
+    {
+      "phrase": "Circadian Reset / Circadian Alignment",
+      "vidiq": "untested",
+      "source": "Raga Heal 'Circadian Sitar Alignment' = 55K views",
+      "reserved_for": "Future morning ship — chronobiology angle",
+      "banked": "2026-05-18"
+    },
+    {
+      "phrase": "Screen Time Sickness?",
+      "vidiq": "untested — Q-hook format",
+      "source": "Raga Heal 7.5K views",
+      "reserved_for": "Future experimental Q-hook-lead test — Dilruba or Sarod",
+      "banked": "2026-05-18"
+    },
+    {
+      "phrase": "Somatic Healing",
+      "vidiq": "untested",
+      "source": "Shanti 'Somatic Healing With Sitar | Trauma Release'",
+      "reserved_for": "Future Sarangi or Surbahar emotional-body ship",
+      "banked": "2026-05-18"
+    },
+    {
+      "phrase": "Mentally Exhausted?",
+      "vidiq": "untested as title lead",
+      "source": "Raga Heal Q-hook title lead = 32K views; also used as our Sarod thumb (May 15 winning A/B)",
+      "reserved_for": "Future experimental Q-hook-lead test — currently used as THUMB, untested as LEAD",
+      "banked": "2026-05-18"
+    }
+  ],
+
+  "title_patterns_to_test": [
+    {
+      "pattern": "Plain-English long-form question lead",
+      "example": "Raga Heal: 'The Silence Your Mind Has Been Searching For' (3.2K in 4 days)",
+      "rationale": "Conversational tone, longer-than-our-rules (60+ chars). Tests whether SEO-tight format is rule we can break for emotional resonance.",
+      "earliest_test": "Future experimental day — not crash-week",
+      "banked": "2026-05-18"
+    },
+    {
+      "pattern": "Q-hook as TITLE LEAD (not just thumb)",
+      "example": "Raga Heal: 'Morning Anxiety?' = 90K; 'Mentally Exhausted?' = 32K; 'Screen Time Sickness?' = 7.5K",
+      "rationale": "Our banked rule: Q-hook as lead = 0/18 wins. But Raga Heal hits 32-90K with this pattern. Worth a CONTROLLED experimental ship to test if rule is over-cautious.",
+      "earliest_test": "Future non-crash-week experimental swing slot",
+      "banked": "2026-05-18"
+    }
+  ]
+}
