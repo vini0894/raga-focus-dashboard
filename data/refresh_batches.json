@@ -16,7 +16,12 @@
         {
           "video_id": "IwzyemqVh7c",
           "original_title": "Memory Recall | Sitar Music | Brainwave Entrainment | 20 Min",
-          "original_metrics": {"views": 512, "avd_pct": 52.03, "ctr_pct": 3.56, "duration_min": 20},
+          "original_metrics": {
+            "views": 512,
+            "avd_pct": 52.03,
+            "ctr_pct": 3.56,
+            "duration_min": 20
+          },
           "new_title": "Brain Reset Music | Sitar for Mental Clarity | 20 Minutes",
           "lead_vidiq": 57,
           "new_thumb_text": "BRAIN FOG?",
@@ -27,7 +32,12 @@
         {
           "video_id": "ZyV0OfIdDKs",
           "original_title": "Concentration Music | Deep Focus with Sitar",
-          "original_metrics": {"views": 409, "avd_pct": 33.15, "ctr_pct": 3.32, "duration_min": 20},
+          "original_metrics": {
+            "views": 409,
+            "avd_pct": 33.15,
+            "ctr_pct": 3.32,
+            "duration_min": 20
+          },
           "new_title": "Mental Break | Sitar for Mind Reset | 20 Minutes",
           "lead_vidiq": 57,
           "new_thumb_text": "CLEAR YOUR HEAD",
@@ -38,7 +48,12 @@
         {
           "video_id": "3TayWGNOyrY",
           "original_title": "Digital Detox Music | Dilruba Strings | Neural Rest | 1 Hour",
-          "original_metrics": {"views": 62, "avd_pct": 33.18, "ctr_pct": 2.38, "duration_min": 60},
+          "original_metrics": {
+            "views": 62,
+            "avd_pct": 33.18,
+            "ctr_pct": 2.38,
+            "duration_min": 60
+          },
           "new_title": "Switch Off | Dilruba Music for Digital Detox | 1 Hour Reset",
           "lead_vidiq": 64,
           "new_thumb_text": "OVERSTIMULATED?",
@@ -49,7 +64,12 @@
         {
           "video_id": "62FI6ji47L8",
           "original_title": "Emotional Release | Violin & 40Hz Gamma Waves | 1 Hour Emotional Healing Music",
-          "original_metrics": {"views": 67, "avd_pct": 8.05, "ctr_pct": 2.08, "duration_min": 60},
+          "original_metrics": {
+            "views": 67,
+            "avd_pct": 8.05,
+            "ctr_pct": 2.08,
+            "duration_min": 60
+          },
           "new_title": "Emotional Detox | Healing Violin | 1 Hour Release",
           "lead_vidiq": 58,
           "new_thumb_text": "LET IT OUT",
@@ -69,9 +89,42 @@
       ]
     },
     "batch_2": {
-      "execution_date": "2026-05-19",
-      "status": "Not yet drafted — generate Mon evening",
-      "scope": "8 of next 21 hurting videos"
+      "execution_date": "2026-05-19 to 2026-05-20 (staggered with Tue/Wed ships)",
+      "status": "IN PROGRESS — Bansuri locked, Esraj + Dilruba pending",
+      "scope": "8 of next 21 hurting videos",
+      "videos": [
+        {
+          "video_id": "sGmvP8MMitg",
+          "original_title": "Focus Music | Bamboo Flute 40Hz | Deep Work 1 Hour",
+          "original_metrics": {
+            "views": 74,
+            "avd_pct": 6.32,
+            "ctr_pct": 3.23,
+            "duration_min": 74
+          },
+          "new_title": "Fresh Mind Music | Slow Bansuri | 1 Hour Morning Calm",
+          "lead_vidiq": 61,
+          "new_thumb_text": "FRESH MORNING",
+          "thumb_format": "state-noun (morning-calm bridge)",
+          "lane": "morning_calm_bansuri",
+          "lane_pivot_from": "focus/productivity (dead pre-pivot lane)",
+          "rationale": "Data-backed pivot: Bansuri loses in cognitive/focus lane (74v/6.3% AVD — same failure as Apr 16 Bansuri Anxiety 73v/7.4% AVD). Bansuri WINS in morning lane (Productive Day 23.5K, Yoga Music 9.5K). Fresh Mind Music (61 VidIQ, geo-neutral, untested) anchors morning-calm framing. FRESH MORNING thumb avoids click-promise mismatch with calm content (MORNING ENERGY would have mismatched).",
+          "execution_status": "THUMB UPDATED 2026-05-19 — pending title/description/tags update",
+          "execution_timing_recommendation": "Wed May 20 9-11am IST for cleanest signal (avoids Tue PM Sitar swing + Wed PM Santoor algorithm push windows)",
+          "channel_data_evidence": {
+            "bansuri_winners": [
+              "Bansuri Deep Sleep 34.7K views 5.98% CTR (channel #1 CTR)",
+              "Productive Day Music | Bansuri 23.5K views 31% AVD",
+              "Yoga Music | Bansuri 9.5K views 32.7% AVD",
+              "Cant Fall Asleep | Bansuri 6.4K views 5.25% CTR"
+            ],
+            "bansuri_failures_in_cognitive_lane": [
+              "Bansuri for Anxiety & Overthinking 73v 7.4% AVD",
+              "Focus Music | Bamboo Flute 40Hz 74v 6.3% AVD (this video pre-refresh)"
+            ]
+          }
+        }
+      ]
     },
     "batch_3": {
       "execution_date": "2026-05-20",
@@ -91,5 +144,6 @@
       "'Mind Reset Music' would have collided with Fri Bansuri Deep Sleep Variant A reservation",
       "'Nervous System Reset' in slot 3 would have collided with existing live ship XSIsS9ZZgLg"
     ]
-  }
+  },
+  "last_updated": "2026-05-19"
 }
