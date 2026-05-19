@@ -956,10 +956,15 @@ with tab_daily:
             cur = int(grp[grp["day"] >= cur_start]["views"].sum())
             prev = int(grp[(grp["day"] >= prev_start) & (grp["day"] < cur_start)]["views"].sum())
             yday = int(grp[grp["day"] == latest_day]["views"].sum()) if latest_day is not None else 0
-            # Build a 14-day sparkline (zero-fill missing days so the line doesn't lie)
+            # Build a 14-day sparkline (zero-fill missing days so the line doesn't lie).
+            # Defensive: collapse any same-day duplicates with .groupby(level=0).sum()
+            # before reindex — duplicates trip "cannot reindex on an axis with
+            # duplicate labels" (seen when the metadata merge introduces dupes
+            # or when the analytics API returns multiple rows for one video×day).
             spark = (
                 grp[grp["day"] >= spark_start]
                 .set_index("day")["views"]
+                .groupby(level=0).sum()
                 .reindex(pd.date_range(spark_start, today - pd.Timedelta(days=1)), fill_value=0)
                 .tolist()
             )
