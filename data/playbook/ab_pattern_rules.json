@@ -1,0 +1,202 @@
+{
+  "version": "2026-05-20",
+  "n_tests": 21,
+  "note": "Derived from ab_analysis.md. Update after each concluded test. Lane keys match map_theme_to_ab_lane() in title_preflight.py.",
+  "universal_rules": [
+    {
+      "rule": "Q-hook as TITLE LEAD loses across all lanes",
+      "record": "0-3-1",
+      "confidence": "HIGH",
+      "evidence": ["#5 (73/27)", "#16 (63/37)", "#19 (62/38)"],
+      "action": "Never open the title with a question. Q-hook energy belongs in the thumbnail."
+    },
+    {
+      "rule": "Q-hook as THUMBNAIL wins in anxiety/relaxation/cognitive lanes",
+      "record": "4-3 overall, lane-dependent",
+      "confidence": "HIGH",
+      "evidence": ["#14 (55/45)", "#8 (53/47)", "#16 (63/37)"],
+      "action": "Use Q-hook in thumb for anxiety, relaxation, overthinking, cognitive-clarity lanes."
+    },
+    {
+      "rule": "Short 3-slot title beats long/stuffed title",
+      "record": "2-0",
+      "confidence": "HIGH",
+      "evidence": ["#1 (68/32)", "#19 (62/38)"],
+      "action": "Default to 3 slots. Never stuff Hz, wave type, or jargon into title."
+    },
+    {
+      "rule": "Generic outcome thumbs = 0 wins",
+      "record": "0-4",
+      "confidence": "HIGH",
+      "evidence": ["#14", "#8", "#2"],
+      "examples_to_avoid": ["RELAX DEEPLY", "THINK LESS", "RESTORE YOUR ENERGY", "LET YOURSELF REST"],
+      "action": "Always use specific thumb text. Generic soft descriptors never win."
+    },
+    {
+      "rule": "Higher VidIQ score wins within same title category",
+      "record": "2-0",
+      "confidence": "MEDIUM",
+      "evidence": ["#17", "#8"],
+      "action": "When choosing between two SEO leads in the same lane, pick the higher VidIQ score."
+    },
+    {
+      "rule": "IFO format (Instrument-for-Outcome) is format-tolerant, not a winning formula",
+      "record": "0-0-2",
+      "confidence": "MEDIUM",
+      "evidence": ["#7", "#13"],
+      "action": "IFO ties but doesn't win. Use when no better option, not as default."
+    }
+  ],
+  "lanes": {
+    "focus": {
+      "winning_title_type": "SEO-led",
+      "winning_title_examples": ["Instant Focus Music | Sitar Instrumental | 1 Hour"],
+      "avoid_title_type": "Q-hook lead",
+      "avoid_title_examples": ["Need Energy Reset? | Clear Your Head with Sitar"],
+      "winning_thumb_type": "Outcome-imperative",
+      "winning_thumb_examples": ["BOOST YOUR FOCUS", "START YOUR DAY STRONG"],
+      "avoid_thumb_type": "Q-hook",
+      "avoid_thumb_examples": ["NEED ENERGY RESET?"],
+      "confidence": "HIGH",
+      "evidence": ["#5 (73/27)"]
+    },
+    "morning": {
+      "winning_title_type": "Lifestyle/mood SEO",
+      "winning_title_examples": ["Morning Energy Music | Dilruba Raga Yaman | 1 Hour", "Morning Motivation | Sitar Music Instrumental | 1.5 Hours"],
+      "avoid_title_type": "Practice/utility",
+      "avoid_title_examples": ["Breathing Exercise Music | Dilruba Raga Yaman | Alpha Wave Calm Session"],
+      "winning_thumb_type": "Outcome-imperative or lifestyle",
+      "winning_thumb_examples": ["CALM MORNING VIBES", "START YOUR DAY STRONG", "FRESH START"],
+      "avoid_thumb_type": "Q-hook",
+      "avoid_thumb_examples": ["FEELING LOW THIS MORNING?", "FEELING UNMOTIVATED?"],
+      "note": "Morning lane is the clearest anti-Q-hook thumb lane. Q-hook loses in all 3 morning tests.",
+      "confidence": "HIGH",
+      "evidence": ["#12 (58/42)", "#17 (59/41)", "#20 (58/42)"]
+    },
+    "cognitive_clarity": {
+      "winning_title_type": "SEO-led 3-slot",
+      "winning_title_examples": ["Mental Clarity Music | Slow Sarod | Brain Fog Reset", "Mental Clarity Music | Slow Sitar | 1.5 Hour Brain Detox"],
+      "avoid_title_type": "Q-hook lead or duration-led",
+      "avoid_title_examples": ["Can't Think Clearly? | Sarod for Mental Reset | 1.5 Hours", "1.5 Hour Sitar to Clear Your Mind Instantly | Indian Classical Music for Brain Detox"],
+      "winning_thumb_type": "Q-hook",
+      "winning_thumb_examples": ["MENTALLY EXHAUSTED?", "MENTAL DETOX"],
+      "avoid_thumb_type": "Statement",
+      "avoid_thumb_examples": ["RESET YOUR THOUGHTS"],
+      "note": "Biggest gap in any test: SEO title + Q-hook thumb crushed Q-hook title + statement thumb 63/37. Q-hook belongs in thumb, not title.",
+      "confidence": "HIGH",
+      "evidence": ["#16 (63/37)", "#19 (62/38)"]
+    },
+    "sleep": {
+      "winning_title_type": "Clinical SEO",
+      "winning_title_examples": ["Insomnia Relief Music | Tanpura Drone | 1.5 Hours", "3 Hour Bansuri Music for Relaxation | Indian Classical Music for Deep Sleep"],
+      "avoid_title_type": "Sleep-outcome word as lead",
+      "avoid_title_examples": ["Sound Sleep | Relaxing Music with Tanpura | 1.5 Hours"],
+      "winning_thumb_type": "Outcome-imperative (default safe)",
+      "winning_thumb_examples": ["DRIFT TO SLEEP", "FALL ASLEEP FAST"],
+      "avoid_thumb_type": "Generic Q-hook",
+      "avoid_thumb_examples": ["DEEPLY DRAINED?"],
+      "note": "Exhaustion-state Q-hook (TIRED OF EVERYTHING?) also performed in Test 18 but variables not isolated. Outcome-imperative is the safe default.",
+      "confidence": "MEDIUM",
+      "evidence": ["#13 (tie)", "#15 (55/45)", "#18 (56/44 — not isolated)"]
+    },
+    "relaxation_anxiety": {
+      "winning_title_type": "SEO-led",
+      "winning_title_examples": ["Relaxation Music | Bansuri Raga & 432Hz Evening Session | 1 Hour"],
+      "avoid_title_type": "No clear loser (title variable not isolated in key tests)",
+      "avoid_title_examples": [],
+      "winning_thumb_type": "Q-hook (specific state, not generic)",
+      "winning_thumb_examples": ["STRESSED?", "TOO MANY THOUGHTS?"],
+      "avoid_thumb_type": "Generic outcome-imperative",
+      "avoid_thumb_examples": ["RELAX DEEPLY", "THINK LESS"],
+      "note": "Specific Q-hook beats generic outcome. Specificity matters: 'STRESSED?' not 'RELAX DEEPLY'.",
+      "confidence": "MEDIUM-HIGH",
+      "evidence": ["#14 (55/45)", "#8 (53/47)"]
+    },
+    "overthinking": {
+      "winning_title_type": "Higher-VidIQ SEO",
+      "winning_title_examples": ["Meditation Music for Overthinking | Clear your mind instantly | 1 hour"],
+      "avoid_title_type": "Lower-VidIQ SEO (even if same lane)",
+      "avoid_title_examples": ["Overthinking Music | Healing with Bamboo Flute & Tanpura | 1 Hour"],
+      "winning_thumb_type": "Specific Q-hook",
+      "winning_thumb_examples": ["TOO MANY THOUGHTS?"],
+      "avoid_thumb_type": "Generic outcome-imperative",
+      "avoid_thumb_examples": ["THINK LESS"],
+      "confidence": "MEDIUM",
+      "evidence": ["#8 (53/47)"]
+    },
+    "calm_healing": {
+      "winning_title_type": "Short clean SEO",
+      "winning_title_examples": ["Calm Your Mind | Veena Healing Music | 1 hour"],
+      "avoid_title_type": "Long/stuffed title",
+      "avoid_title_examples": ["Feeling Lost? | Veena & 7.83Hz Schumann Resonance | 1 Hour Calming Music"],
+      "winning_thumb_type": "Q-hook (slight lean)",
+      "winning_thumb_examples": ["NEED REST?", "STRESSED?"],
+      "avoid_thumb_type": "Generic outcome",
+      "avoid_thumb_examples": ["RESTORE YOUR ENERGY", "LET YOURSELF REST"],
+      "confidence": "MEDIUM",
+      "evidence": ["#1 (68/32)", "#2 (51.5/48.5)", "#4 (tie)"]
+    },
+    "burnout": {
+      "winning_title_type": "Clinical SEO",
+      "winning_title_examples": ["Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour", "Release Stress | Burnout Music | Santoor & 528Hz"],
+      "avoid_title_type": "Generic comfort SEO",
+      "avoid_title_examples": ["Music for Burnout | Find Calmness with Surbahar | 1 Hour"],
+      "winning_thumb_type": "Outcome-statement (tentative)",
+      "winning_thumb_examples": ["REST. RESET. RECOVER."],
+      "avoid_thumb_type": "Q-hook (slight)",
+      "avoid_thumb_examples": ["BURNOUT?"],
+      "confidence": "LOW",
+      "evidence": ["#3 (50.6/49.4)", "#11 (51.4/48.6 — running)"]
+    },
+    "deep_rest": {
+      "winning_title_type": "SEO-led",
+      "winning_title_examples": ["Deep Rest Music | Find Stillness with Surbahar | 1 Hour"],
+      "avoid_title_type": "Lifestyle-phrase",
+      "avoid_title_examples": ["Unwind After Work | Soothing Music | Surbahar"],
+      "winning_thumb_type": "Q-hook (slight)",
+      "winning_thumb_examples": ["NEED REST?"],
+      "avoid_thumb_type": "Generic outcome",
+      "avoid_thumb_examples": ["RESTORE YOUR ENERGY"],
+      "confidence": "LOW",
+      "evidence": ["#2 (51.5/48.5)"]
+    },
+    "calm_stillness": {
+      "winning_title_type": "SEO-led (thumb-only tested, no title data)",
+      "winning_title_examples": [],
+      "avoid_title_type": null,
+      "avoid_title_examples": [],
+      "winning_thumb_type": "Outcome-statement (tentative — running)",
+      "winning_thumb_examples": ["STILL YOUR MIND"],
+      "avoid_thumb_type": "Q-hook",
+      "avoid_thumb_examples": ["MIND FEELING HEAVY?"],
+      "note": "Early signal only — Test 21 still running. Do not treat as settled rule.",
+      "confidence": "LOW",
+      "evidence": ["#21 (56.5/43.5 — running)"]
+    },
+    "nostalgia": {
+      "winning_title_type": "SEO descriptor",
+      "winning_title_examples": ["Nostalgia Music | Healing Music with Sarangi | 1.5 Hour"],
+      "avoid_title_type": "Instrument-led + poetic phrase",
+      "avoid_title_examples": ["Sarangi Instrumental Music | Go Back In Time | 1.5 Hour Session"],
+      "winning_thumb_type": "Abstract/emotional noun",
+      "winning_thumb_examples": ["EMOTIONAL HEALING"],
+      "avoid_thumb_type": "Outcome-imperative",
+      "avoid_thumb_examples": ["HEAL YOUR HEART"],
+      "confidence": "LOW",
+      "evidence": ["#10 (52/48 — running)"]
+    },
+    "comfort_emotional": {
+      "winning_title_type": "No signal — lane format-tolerant",
+      "winning_title_examples": [],
+      "avoid_title_type": null,
+      "avoid_title_examples": [],
+      "winning_thumb_type": "No signal",
+      "winning_thumb_examples": [],
+      "avoid_thumb_type": null,
+      "avoid_thumb_examples": [],
+      "note": "Test 6 was a pure tie. Content quality dominates over format in this lane.",
+      "confidence": "NONE",
+      "evidence": ["#6 (tie)"]
+    }
+  }
+}
