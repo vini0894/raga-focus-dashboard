@@ -18,10 +18,10 @@ MIN_GAP_DAYS = 4
 
 
 def last_live_ship_per_instrument(target_date_str):
-    """Most recent published ship per instrument from latest REACH_HISTORY capture."""
+    """Most recent published ship per instrument — merges REACH_HISTORY + shipped_titles.csv."""
+    # Source 1: REACH_HISTORY (live channel snapshot)
     history = DATA_DIR / "REACH_HISTORY.csv"
     rows = list(csv.DictReader(open(history)))
-    # Use latest capture only
     latest_capture = max(r['capture_date'] for r in rows)
     rows = [r for r in rows if r['capture_date'] == latest_capture]
     last = {}
@@ -34,11 +34,27 @@ def last_live_ship_per_instrument(target_date_str):
             if inst.lower() in title:
                 if inst not in last or pd > last[inst][0]:
                     last[inst] = (pd, r['title'])
+
+    # Source 2: shipped_titles.csv (keeps up to date as we log new ships)
+    shipped = DATA_DIR / "shipped_titles.csv"
+    if shipped.exists():
+        for r in csv.DictReader(open(shipped)):
+            pd = r.get('shipped_on', '')
+            title = r.get('title', '').lower()
+            if not pd or not title:
+                continue
+            for inst in INSTRUMENTS:
+                if inst.lower() in title:
+                    if inst not in last or pd > last[inst][0]:
+                        last[inst] = (pd, r['title'])
+
     return last, latest_capture
 
 
 def queued_ships_per_instrument(target_date_str):
-    """All DRAFT briefs with planned_date >= target. Returns dict[instrument] -> list of (date, title)."""
+    """All DRAFT briefs (before AND after target). Returns dict[instrument] -> list of (date, title).
+    Briefs before target act as backward constraints (ship hasn't landed in shipped_titles yet).
+    Briefs after target act as forward constraints."""
     queued = {inst: [] for inst in INSTRUMENTS}
     for f in glob.glob(str(DATA_DIR / "video_briefs" / "*.json")):
         try:
@@ -46,7 +62,7 @@ def queued_ships_per_instrument(target_date_str):
             if b.get('status') != 'DRAFT':
                 continue
             pd = b.get('planned_date', '')
-            if not pd or pd < target_date_str:
+            if not pd:
                 continue
             inst_field = (b.get('components', {}).get('instrument') or '').split()[0]
             if inst_field in INSTRUMENTS:
@@ -75,15 +91,21 @@ def main(target_date_str):
             d = datetime.strptime(ls[0], '%Y-%m-%d').date()
             gap_back = (target_date - d).days
             if gap_back < MIN_GAP_DAYS:
-                flags.append(f'❌ BACKWARD {gap_back}d')
+                flags.append(f'❌ BACKWARD {gap_back}d (shipped)')
 
         for qd_str, qt in qs:
             qd = datetime.strptime(qd_str, '%Y-%m-%d').date()
-            forward = (qd - target_date).days
-            if 0 < forward < MIN_GAP_DAYS:
-                flags.append(f'⚠️ FORWARD +{forward}d')
-            elif forward == 0:
-                flags.append(f'⚠️ SAME DAY')
+            delta = (qd - target_date).days
+            if delta < 0:
+                # Planned BEFORE target — treat as backward constraint
+                gap_back_queued = -delta
+                if gap_back_queued < MIN_GAP_DAYS:
+                    if gap_back is None or gap_back_queued < gap_back:
+                        flags.append(f'❌ BACKWARD {gap_back_queued}d (queued)')
+            elif delta == 0:
+                flags.append(f'⚠️ SAME DAY (queued)')
+            elif 0 < delta < MIN_GAP_DAYS:
+                flags.append(f'⚠️ FORWARD +{delta}d (queued)')
 
         last_str = f'last:{ls[0]}({gap_back}d)' if ls else 'last:none'
         queued_str = f' queued:{",".join(q[0] for q in qs)}' if qs else ''
