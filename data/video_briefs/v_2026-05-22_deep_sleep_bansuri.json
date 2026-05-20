@@ -5,11 +5,10 @@
   "created_at": "2026-05-16",
   "planned_date": "2026-05-22",
   "planned_slot": "PM (7pm IST)",
-  "title": "Deep Sleep Music | Slow Bansuri | 1.5 Hours of Rest",
+  "title": "1 Hour Bansuri to Unwind | Breathe and Let Go",
   "title_variants": {
-    "A": "Deep Sleep Music | Slow Bansuri | 1.5 Hours of Rest",
-    "B": "Insomnia Relief Music | Bansuri for Sleep | 1.5 Hours",
-    "C": "Sleep Music | Slow Bansuri Lullaby | 1.5 Hour Wind Down"
+    "A": "1 Hour Bansuri to Unwind | Breathe and Let Go",
+    "B": "1 Hour Bansuri to Unwind | Breathe and Let Go"
   },
   "components": {
     "problem": "deep sleep / falling asleep / 1am wakeup / insomnia",
@@ -33,31 +32,26 @@
   "success_good": "3000+ views, 24%+ AVD, 4%+ CTR in 48h",
   "success_breakthrough": "15K+ views, 28%+ AVD + CTR ≥5.5% — channel's #1 CTR pattern confirmed reproducible, Bansuri Deep Sleep = weekly AVD-anchor pillar, unlocks Friday-PM sleep as permanent slot",
   "ab_test": {
+    "test_id": "Test 19",
+    "test_type": "THUMB FORMAT A/B — same title both variants",
     "variant_A": {
-      "title": "Deep Sleep Music | Slow Bansuri | 1.5 Hours of Rest",
-      "thumbnail_text": "DRIFT TO SLEEP",
-      "hypothesis": "Direct replica of channel's #1 CTR formula. 'Deep Sleep Music' is the proven hero lead (5.98% CTR Apr ship). Slot 2 'Slow Bansuri' descriptor-instrument. Slot 3 'Hours of Rest' specifier (fresh, avoids exact duplicate of original). 'DRIFT TO SLEEP' thumb proven on May 13 Tanpura sleep ship — viewer-action declarative. Tests whether the hero is reproducible at all when re-shipped with minimal variation. This is the lowest-risk, highest-likelihood variant."
+      "title": "1 Hour Bansuri to Unwind | Breathe and Let Go",
+      "thumbnail_text": "SLEEP MUSIC",
+      "hypothesis": "Genre-label thumbnail — 'SLEEP MUSIC' as a direct category signal. Viewer scanning the feed immediately reads intent. Tests whether genre-label thumb outperforms state-transition thumb in sleep lane."
     },
     "variant_B": {
-      "title": "Insomnia Relief Music | Bansuri for Sleep | 1.5 Hours",
-      "thumbnail_text": "DRIFT TO SLEEP",
-      "hypothesis": "Insomnia Relief Music lead (63 VidIQ, fresh as lead — Tanpura May 13 was first test). Tests specific-state problem framing vs Variant A's sleep-outcome framing. Slot 2 'Bansuri for Sleep' is Instrument-for-Outcome (IFO). Same thumb = title-only A/B. If B wins, specific-state lead extends from Tanpura context to Bansuri, opens 'Insomnia Relief' as a steady cluster."
+      "title": "1 Hour Bansuri to Unwind | Breathe and Let Go",
+      "thumbnail_text": "SLOW DOWN",
+      "hypothesis": "State-transition thumbnail — 'SLOW DOWN' is an imperative directed at the viewer's current state (stressed, busy, wired). Tests whether a behaviour-prompt thumb outperforms genre-label thumb in sleep lane."
     },
-    "variant_C_extra": {
-      "title": "Sleep Music | Slow Bansuri Lullaby | 1.5 Hour Wind Down",
-      "thumbnail_text": "DRIFT TO SLEEP",
-      "hypothesis": "Sleep Music lead (75 VidIQ — highest in sleep cluster) with FRESH 'Bansuri Lullaby' descriptor (untested phrase). 'Lullaby' is plain-English curiosity hook — Western viewers know the word, signals 'this will put you to sleep' more directly than 'meditation' or 'rest.' Slot 3 'Wind Down' adds intent specifier. If C wins, lullaby framing is a fresh lane unlocked for the channel."
-    },
-    "test_method": "3-variant title-only A/B test: same 'DRIFT TO SLEEP' thumbnail on all variants. Reason: A/B Test 10 (May 11 Bansuri Sleep) showed thumb variants tied 49.8/50.2 in sleep lane — testing thumb here burns A/B power on a known-tied dimension. Title is the rigorous variable. Tests proven-hero vs fresh-state-lead vs lullaby-curiosity — three distinct strategic angles, one controlled lane."
+    "test_method": "Thumb-format A/B (Test 19): identical title on both variants — 'SLEEP MUSIC' (genre-label) vs 'SLOW DOWN' (state-transition imperative). Title held constant to isolate thumb variable. Sleep lane outcome-imperative thumb rule confirmed by Test 16 (DRIFT TO SLEEP won) — this test refines further within outcome-imperative: direct genre-label vs viewer-state-prompt."
   },
   "tags": "deep sleep music, sleep music, insomnia relief music, bansuri, slow bansuri, bansuri music, bamboo flute, bansuri lullaby, sleep meditation, indian flute music, raga yaman, yaman, 432Hz, delta waves, deep sleep, sleep tonight, can't sleep, mind too loud, indian classical music, indian classical bansuri, indian instrumental music, raga focus, wind down music, evening healing, lullaby",
-  "description": "Deep Sleep Music | Slow Bansuri | 1.5 Hours of Rest\n\nIf it's 11pm and your brain is rehearsing tomorrow's meeting — start here. Bansuri's breath-driven flute is the closest sound to your own slow breathing finally remembering itself. Let it breathe for you.\n\n90 minutes of slow bamboo flute, tuned to a gentle low frequency designed to help the body settle into deep sleep.\n\n🎵 What you'll hear:\n- Bansuri — the bamboo flute, one of the most breath-driven instruments in Indian classical music\n- Long flowing notes with natural breathing pauses\n- A gentle low-frequency layer that helps the body let go\n- Unbroken sound — no abrupt fades, no startling moments\n\n⏱ Chapters\n0:00   Settling in\n12:00  Body sinking\n30:00  Drifting off\n60:00  Deep sleep zone\n80:00  Gentle return\n\n🧠 How to use:\nPress play. Lights low. Don't try to sleep — let the flute set the pace. Phone face down, somewhere out of reach.\n\n⏱ Best for:\n• Trouble falling asleep\n• 1am to 4am wakeups\n• Mind-too-loud nights\n• Background for deep rest\n• Long sleep sessions\n\n📺 Subscribe to Raga Focus for daily uploads:\n- Sitar, Sarangi, Veena, Surbahar, Bansuri, Tanpura and other Indian instruments\n- Music for anxiety, overthinking, sleep, stress, emotional release\n\n— Raga Focus\n\n#deepsleepmusic #bansuri #sleepmusic #insomniarelief #indianclassicalmusic #432hz #ragafocus",
-  "thumbnail_text_main": "DRIFT TO SLEEP",
+  "description": "1 Hour Bansuri to Unwind | Breathe and Let Go\n\nIf it's 11pm and your brain is rehearsing tomorrow's meeting — start here. Bansuri's breath-driven flute is the closest sound to your own slow breathing finally remembering itself. Let it breathe for you.\n\n90 minutes of slow bamboo flute, tuned to a gentle low frequency designed to help the body unwind and settle into deep sleep.\n\n🎵 What you'll hear:\n- Bansuri — the bamboo flute, one of the most breath-driven instruments in Indian classical music\n- Long flowing notes with natural breathing pauses\n- A gentle low-frequency layer that helps the body let go\n- Unbroken sound — no abrupt fades, no startling moments\n\n⏱ Chapters\n0:00   Settling in\n12:00  Body sinking\n30:00  Drifting off\n60:00  Deep sleep zone\n80:00  Gentle return\n\n🧠 How to use:\nPress play. Lights low. Don't try to sleep — let the flute set the pace. Phone face down, somewhere out of reach.\n\n⏱ Best for:\n• Trouble falling asleep\n• 1am to 4am wakeups\n• Mind-too-loud nights\n• Background for deep rest\n• Evening wind-down\n\n📺 Subscribe to Raga Focus for daily uploads:\n- Sitar, Sarangi, Veena, Surbahar, Bansuri, Tanpura and other Indian instruments\n- Music for anxiety, overthinking, sleep, stress, emotional release\n\n— Raga Focus\n\n#deepsleepmusic #bansuri #sleepmusic #insomniarelief #indianclassicalmusic #432hz #ragafocus",
+  "thumbnail_text_main": "SLEEP MUSIC",
   "thumbnail_text_variants": [
-    "DRIFT TO SLEEP",
-    "MIND TOO LOUD?",
-    "INTO DEEP REST",
-    "WIDE AWAKE?"
+    "SLEEP MUSIC",
+    "SLOW DOWN"
   ],
   "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-cream patterned border with subtle lotus and moon motifs, aged warm parchment background, late-evening palette (deep indigo with single warm oil lamp glow and soft moonlight). Central figure: serene woman in deep-blue-and-cream sari with gold accents seated cross-legged playing bansuri (recognizable as a long bamboo flute held horizontally to the lips) in a quiet candle-lit room. Soft moonlight through a small window. A single sleeping figure curled in a low bed nearby or a still water bowl reflecting moonlight as visual sleep-cue. Bold dark-teal serif overlay text reading 'DRIFT TO SLEEP' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Aged warm cream parchment palette, contemplative restful sleep mood, single composed scene, no clutter.",
   "suno_prompt": "Instrumental only, no vocals. Warm bansuri flute solo in raga Yaman, deep evening sleep mood, smooth breath-driven melodic flow with very long sustained notes, no percussion, no tabla, 432Hz tuning, 55-65 BPM very slow tempo, sparse expressive phrases with long silences between them, mid-to-low register (warm not high-pitched), cinematic meditation production, hypnotic and grounding, suitable for extended looping in post-production, begins immediately with bansuri already playing, no fade-in, no silent intro, full sonic presence from first note. CRITICAL register notes: bansuri MID-register warm not high — high bansuri triggers alertness, opposite of sleep. Sparse phrasing, long silences. Recent ships AVD slipping suggests audio may be too dense — counteract by deliberately sparse, low-register phrasing. deeply settled, like a body finally surrendering to rest",
