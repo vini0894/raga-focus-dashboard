@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-05-20T23:04:51",
+  "generated_at": "2026-05-20T23:15:12",
   "lock_window_days": 20,
   "locks": [
     {
@@ -242,13 +242,6 @@
       "days_remaining": 5
     },
     {
-      "phrase": "deep sleep",
-      "last_used": "2026-05-07",
-      "from_title": "Deep Sleep | Relaxing Music with Bansuri | 1 Hour",
-      "free_again": "2026-05-27",
-      "days_remaining": 7
-    },
-    {
       "phrase": "energy frequency",
       "last_used": "2026-05-07",
       "from_title": "Yoga Music | Positive Energy Frequency | 1 Hour",
@@ -410,6 +403,20 @@
       "days_remaining": 16
     },
     {
+      "phrase": "bansuri tanpura",
+      "last_used": "2026-05-17",
+      "from_title": "Relaxing Music | Bansuri & Tanpura for Deep Sleep | 1.5 Hours",
+      "free_again": "2026-06-06",
+      "days_remaining": 17
+    },
+    {
+      "phrase": "deep sleep",
+      "last_used": "2026-05-17",
+      "from_title": "Relaxing Music | Bansuri & Tanpura for Deep Sleep | 1.5 Hours",
+      "free_again": "2026-06-06",
+      "days_remaining": 17
+    },
+    {
       "phrase": "emotional release",
       "last_used": "2026-05-18",
       "from_title": "Healing Music | Sarangi for Emotional Release | 1.5 Hours",
@@ -436,6 +443,27 @@
       "from_title": "Uplifting Music | Dilruba for Morning Energy | 1.5 Hours",
       "free_again": "2026-06-08",
       "days_remaining": 19
+    },
+    {
+      "phrase": "calm mind",
+      "last_used": "2026-05-20",
+      "from_title": "Mental Stillness | Santoor for Calm Mind | 1.5 Hours",
+      "free_again": "2026-06-09",
+      "days_remaining": 20
+    },
+    {
+      "phrase": "mental stillness",
+      "last_used": "2026-05-20",
+      "from_title": "Mental Stillness | Santoor for Calm Mind | 1.5 Hours",
+      "free_again": "2026-06-09",
+      "days_remaining": 20
+    },
+    {
+      "phrase": "stillness santoor",
+      "last_used": "2026-05-20",
+      "from_title": "Mental Stillness | Santoor for Calm Mind | 1.5 Hours",
+      "free_again": "2026-06-09",
+      "days_remaining": 20
     }
   ],
   "lead_locks": [
@@ -629,6 +657,13 @@
       "days_remaining": 16
     },
     {
+      "lead_phrase": "relaxing music",
+      "last_used": "2026-05-17",
+      "from_title": "Relaxing Music | Bansuri & Tanpura for Deep Sleep | 1.5 Hours",
+      "free_again": "2026-06-06",
+      "days_remaining": 17
+    },
+    {
       "lead_phrase": "healing music",
       "last_used": "2026-05-18",
       "from_title": "Healing Music | Sarangi for Emotional Release | 1.5 Hours",
@@ -648,6 +683,13 @@
       "from_title": "Uplifting Music | Dilruba for Morning Energy | 1.5 Hours",
       "free_again": "2026-06-08",
       "days_remaining": 19
+    },
+    {
+      "lead_phrase": "mental stillness",
+      "last_used": "2026-05-20",
+      "from_title": "Mental Stillness | Santoor for Calm Mind | 1.5 Hours",
+      "free_again": "2026-06-09",
+      "days_remaining": 20
     }
   ]
 }
