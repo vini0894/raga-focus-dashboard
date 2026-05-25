@@ -341,14 +341,17 @@ def load_competitor_latest_videos(channel_id: str, limit: int = 5):
     v = yd.videos().list(part="snippet,statistics,contentDetails", id=",".join(vids)).execute()
     rows = []
     for item in v.get("items", []):
-        sn = item["snippet"]
-        st_ = item["statistics"]
+        sn = item.get("snippet", {})
+        st_ = item.get("statistics", {})
+        cd = item.get("contentDetails", {})
+        if not sn or not cd:
+            continue
         rows.append({
-            "Published": sn["publishedAt"][:10],
-            "Title": sn["title"][:75],
+            "Published": sn.get("publishedAt", "")[:10],
+            "Title": sn.get("title", "")[:75],
             "Views": int(st_.get("viewCount", 0)),
             "Likes": int(st_.get("likeCount", 0)),
-            "Duration": parse_iso_duration(item["contentDetails"]["duration"]),
+            "Duration": parse_iso_duration(cd.get("duration", "")),
         })
     return pd.DataFrame(rows)
 
@@ -364,17 +367,17 @@ def load_video_detail(video_id: str):
     if not v.get("items"):
         return None
     item = v["items"][0]
-    sn = item["snippet"]
-    st_ = item["statistics"]
-    cd = item["contentDetails"]
+    sn = item.get("snippet", {})
+    st_ = item.get("statistics", {})
+    cd = item.get("contentDetails", {})
 
     detail = {
         "video_id": video_id,
-        "title": sn["title"],
+        "title": sn.get("title", ""),
         "description": sn.get("description", ""),
         "tags": sn.get("tags", []),
-        "published": sn["publishedAt"][:10],
-        "duration": cd["duration"],
+        "published": sn.get("publishedAt", "")[:10],
+        "duration": cd.get("duration", ""),
         "lifetime_views": int(st_.get("viewCount", 0)),
         "lifetime_likes": int(st_.get("likeCount", 0)),
         "lifetime_comments": int(st_.get("commentCount", 0)),
@@ -1944,9 +1947,13 @@ def fetch_competitor_pulse_live(days: int = 7):
             video_ids = []
             meta = {}
             for item in pl.get("items", []):
-                vid = item["contentDetails"]["videoId"]
-                pub_str = item["contentDetails"].get("videoPublishedAt") or item["snippet"].get("publishedAt", "")
-                title = item["snippet"]["title"]
+                cd_item = item.get("contentDetails", {})
+                sn_item = item.get("snippet", {})
+                vid = cd_item.get("videoId")
+                if not vid:
+                    continue
+                pub_str = cd_item.get("videoPublishedAt") or sn_item.get("publishedAt", "")
+                title = sn_item.get("title", "")
                 try:
                     pub_dt = _dt.datetime.fromisoformat(pub_str.replace("Z", "+00:00")).date()
                     days_ago = (today - pub_dt).days
