@@ -7,9 +7,8 @@
     "planned_slot": "PM (7pm IST)",
     "title": "Take It Slow Tonight | Slow Surbahar | 1.5 Hours",
     "title_variants": {
-        "A": "Wind Down Music | Surbahar for Deep Rest | 1.5 Hours",
-        "B": "Take It Slow Tonight | Slow Surbahar | 1.5 Hours",
-        "C": "Rest Your Mind | Surbahar for Calmness | 1.5 Hours"
+        "A": "Rest Your Mind | Surbahar for Calmness | 1.5 Hours",
+        "B": "Take It Slow Tonight | Slow Surbahar | 1.5 Hours"
     },
     "components": {
         "problem": "can't wind down after a long day / mind still running / body tense / need to slow down before sleep",
@@ -19,9 +18,8 @@
         "wave": "Theta"
     },
     "validated_keywords": [
-        "Wind Down Music (60 VidIQ — lead A)",
+        "Rest Your Mind (54 VidIQ — lead A, floor override)",
         "Take It Slow Tonight (62 VidIQ — lead B)",
-        "Rest Your Mind (54 VidIQ — lead C, floor override)",
         "Surbahar for Deep Rest (36 VidIQ — slot 2, Path 2 niche instrument rule)",
         "Surbahar for Calmness (unscored — slot 2 C)",
         "slow surbahar",
@@ -38,25 +36,20 @@
     ],
     "ab_test": {
         "test_id": "Test 25",
-        "test_type": "TITLE A/B — same thumbnail all variants",
+        "test_type": "TITLE A/B — same thumbnail both variants",
         "variant_A": {
-            "title": "Wind Down Music | Surbahar for Deep Rest | 1.5 Hours",
-            "thumbnail_text": "TAKE IT SLOW",
-            "hypothesis": "SEO-led clean format with proven 'Wind Down Music' lead (60 VidIQ). Tests whether a utility-SEO lead pulls stronger in the evening browse feed."
-        },
-        "variant_B": {
-            "title": "Take It Slow Tonight | Slow Surbahar | 1.5 Hours",
-            "thumbnail_text": "TAKE IT SLOW",
-            "hypothesis": "Lifestyle-led with time-specific hook 'Tonight' (62 VidIQ — highest lead). Evening specificity signals exact viewer moment. Tests whether time-anchored lifestyle lead outperforms pure SEO in PM browse slot."
-        },
-        "variant_C": {
             "title": "Rest Your Mind | Surbahar for Calmness | 1.5 Hours",
             "thumbnail_text": "TAKE IT SLOW",
             "hypothesis": "Command-outcome lead — direct invitation to the viewer. 54 VidIQ (floor override, intentional). Tests whether a softer permission-based lead pulls CTR even at lower search volume."
         },
-        "test_method": "Title-only A/B (Test 25). Same thumbnail all variants — 'TAKE IT SLOW' outcome-lifestyle thumb. Lane (calm/deep rest) is format-tolerant per Test 21 concluded May 24 (2.4pp tie). One variable: SEO-led (A) vs time-anchored lifestyle (B) vs command-outcome (C). Result will clarify which framing pulls in PM deep rest browse feed."
+        "variant_B": {
+            "title": "Take It Slow Tonight | Slow Surbahar | 1.5 Hours",
+            "thumbnail_text": "TAKE IT SLOW",
+            "hypothesis": "Lifestyle-led with time-specific hook 'Tonight' (62 VidIQ). Evening specificity signals exact viewer moment. Tests whether time-anchored lifestyle lead outperforms command-outcome in PM browse slot."
+        },
+        "test_method": "Title-only A/B (Test 25). Same thumbnail both variants — 'TAKE IT SLOW' outcome-lifestyle thumb. Lane (calm/deep rest) is format-tolerant per Test 21 concluded May 24 (2.4pp tie). One variable: command-outcome lead (A) vs time-anchored lifestyle lead (B). Result will clarify which framing pulls in PM deep rest browse feed."
     },
-    "strategic_bet": "FILLER — Wed May 27 PM. Fourth Surbahar ship. Declining views trend noted (37K → 4K → 1.1K → 895). Fresh raga (Bageshri, first use for Surbahar) and fresh title leads. Test 25 has genuine value: if B wins, time-anchored lifestyle leads are validated for PM filler slots — shifts approach for all evening ships.",
+    "strategic_bet": "FILLER — Wed May 27 PM. Fourth Surbahar ship. Declining views trend noted (37K → 4K → 1.1K → 895). Fresh raga (Bageshri, first use for Surbahar) and fresh title leads. Test 25 has genuine value: if B wins, time-anchored 'Tonight' lifestyle leads are validated for PM filler slots; if A wins, command-outcome phrasing holds even at lower VidIQ floor — shifts approach for all evening ships.",
     "success_good": "1500+ views, 20%+ AVD, 4%+ CTR in 48h",
     "success_breakthrough": "4000+ views, 25%+ AVD — Surbahar deep rest lane still viable despite declining trend",
     "failure_mode": "<800 views or <18% AVD — Surbahar deep rest lane exhausted, pause instrument for 2+ weeks",
@@ -93,5 +86,5 @@
         "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
         "notes": "Raga Bageshri — late evening raga, Sa Re ga Ma Pa Dha ni Sa. Intimate, calming, slightly yearning. First Surbahar use of Bageshri (previous ships used Darbari Kanada). Surbahar deep resonating plucked tone — lower and warmer than sitar. Theta 6Hz for deep relaxation transition. LUFS -15 (evening audience winding down). EMOTIONAL TAG ROTATION: clip 1: 'like finally sitting down after a long day' · clip 2: 'warm and patient, like the evening settling around you' · clip 3: 'slow and grounded, like nothing left to do tonight'."
     },
-    "experiment_notes": "Test 25 — SEO-LED vs TIME-ANCHORED LIFESTYLE vs COMMAND-OUTCOME in PM deep rest lane.\n\nFourth Surbahar ship with declining views trend. This test has two purposes: (1) probe whether the declining trend is title-driven or lane-exhaustion; (2) test whether 'Tonight' time-anchoring lifts CTR in PM browse by matching the exact viewer moment.\n\nIf B wins (Tonight): time-anchored lifestyle leads validated for PM slots — add to planning arsenal for all evening ships.\nIf A wins (SEO-led): standard formula still dominant, decline is lane not title.\nIf C wins (command-outcome at 54 VidIQ): lower-search-volume permission phrasing pulls CTR from browse — important signal that VidIQ score matters less in recommendation-dominant channel (88% Browse/Suggested).\n\nFAILURE MODE: <800 views regardless of winning variant — Surbahar deep rest lane exhausted. Pause instrument 2+ weeks if so."
+    "experiment_notes": "Test 25 — COMMAND-OUTCOME (A) vs TIME-ANCHORED LIFESTYLE (B) in PM deep rest lane.\n\nFourth Surbahar ship with declining views trend. This test has two purposes: (1) probe whether the declining trend is title-driven or lane-exhaustion; (2) test whether 'Tonight' time-anchoring lifts CTR in PM browse by matching the exact viewer moment.\n\nIf B wins (Tonight): time-anchored lifestyle leads validated for PM slots — add to planning arsenal for all evening ships.\nIf A wins (Rest Your Mind at 54 VidIQ): command-outcome permission phrasing pulls CTR from browse even below the VidIQ floor — important signal that VidIQ score matters less in recommendation-dominant channel (88% Browse/Suggested).\n\nFAILURE MODE: <800 views regardless of winning variant — Surbahar deep rest lane exhausted. Pause instrument 2+ weeks if so."
 }
