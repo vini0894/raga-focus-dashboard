@@ -273,13 +273,16 @@ def load_all_my_videos():
             part="snippet,statistics,contentDetails", id=",".join(batch)
         ).execute()
         for item in v.get("items", []):
-            sn = item["snippet"]
-            st_ = item["statistics"]
+            sn = item.get("snippet", {})
+            st_ = item.get("statistics", {})
+            cd = item.get("contentDetails", {})
+            if not sn or not cd:
+                continue  # skip deleted / private / region-blocked videos
             rows.append({
                 "video_id": item["id"],
-                "title": sn["title"],
-                "published": sn["publishedAt"][:10],
-                "duration": item["contentDetails"]["duration"],
+                "title": sn.get("title", ""),
+                "published": sn.get("publishedAt", "")[:10],
+                "duration": cd.get("duration", ""),
                 "views": int(st_.get("viewCount", 0)),
                 "likes": int(st_.get("likeCount", 0)),
                 "comments": int(st_.get("commentCount", 0)),
