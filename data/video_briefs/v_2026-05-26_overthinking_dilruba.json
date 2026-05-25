@@ -1,0 +1,78 @@
+{
+    "id": "v_2026-05-26_overthinking_dilruba",
+    "status": "DRAFT",
+    "date_shipped": null,
+    "created_at": "2026-05-22",
+    "planned_date": "2026-05-26",
+    "planned_slot": "PM (7pm IST)",
+    "title": "Overthinking Music | Dilruba Instrumental | 1.5 Hours",
+    "title_variants": {
+        "A": "Overthinking Music | Dilruba Instrumental | 1.5 Hours",
+        "B": "Music for Overthinkers | Dilruba Instrumental | 1.5 Hours"
+    },
+    "components": {
+        "problem": "overthinking / anxious mind / thoughts looping / can't slow down",
+        "instrument": "Dilruba",
+        "raga": "Yaman",
+        "hz": "432Hz",
+        "wave": "Theta"
+    },
+    "validated_keywords": [
+        "Overthinking Music (63 VidIQ \u2014 lead A)",
+        "Music for Overthinkers (61 VidIQ \u2014 lead B)",
+        "Dilruba Instrumental (67 VidIQ \u2014 slot 2)",
+        "Slow Dilruba (34 VidIQ \u2014 tags only)",
+        "dilruba music",
+        "indian classical dilruba",
+        "anxiety relief music",
+        "stress relief music",
+        "theta waves",
+        "432Hz",
+        "indian classical music",
+        "raga focus"
+    ],
+    "ab_test": {
+        "test_id": "Test 24",
+        "test_type": "TITLE A/B \u2014 same thumbnail both variants",
+        "variant_A": {
+            "title": "Overthinking Music | Dilruba Instrumental | 1.5 Hours",
+            "thumbnail_text": "SETTLE YOUR THOUGHTS",
+            "hypothesis": "Problem framing \u2014 'Overthinking Music' describes the emotional state. Viewer recognises what they are experiencing and clicks. Standard SEO-stacked format, lead 63."
+        },
+        "variant_B": {
+            "title": "Music for Overthinkers | Dilruba Instrumental | 1.5 Hours",
+            "thumbnail_text": "SETTLE YOUR THOUGHTS",
+            "hypothesis": "Identity framing \u2014 'Music for Overthinkers' speaks to who the viewer is, not just what they feel. Viewer self-identifies as an overthinker and feels directly addressed. Tests whether identity-based lead pulls stronger CTR than problem-based lead."
+        },
+        "test_method": "Title-only A/B (Test 24). Same thumbnail both variants \u2014 'QUIET YOUR MIND' anxiety lane thumb. One variable: problem framing (A) vs identity framing (B). First identity-framing test on the channel. Result will inform whether audience self-identification is a stronger hook than problem description."
+    },
+    "strategic_bet": "FILLER \u2014 Tue May 26 PM. Replicates Anxiety Relief Dilruba (May 1): 4.6K views, 4.23% CTR, 32.16% AVD \u2014 highest AVD of any Dilruba ship. Dilruba is proven in the anxiety lane. Test 24 has genuine strategic value: if B wins, identity framing opens a new title format for all anxiety/overthinking ships.",
+    "success_good": "2500+ views, 26%+ AVD, 3.8%+ CTR in 48h",
+    "success_breakthrough": "6000+ views, 30%+ AVD \u2014 Dilruba anxiety lane confirmed replicable, identity framing validated if B wins",
+    "reference_ship": {
+        "title": "Anxiety Relief Music | Clear Your Mind | 1 Hour Dilruba Session",
+        "pub": "2026-05-01",
+        "views": 4660,
+        "ctr_pct": 4.23,
+        "avd_pct": 32.16,
+        "impressions": 77881
+    },
+    "tags": "overthinking music, music for overthinkers, dilruba instrumental, dilruba music, dilruba, indian classical dilruba, anxiety relief music, stress relief music, overthinking, anxious mind, calm your mind, theta waves, 432Hz, indian classical music, indian instrumental music, raga yaman, yaman, raga focus, slow music, healing music",
+    "description": "Overthinking Music | Dilruba Instrumental | 1.5 Hours\n\nThe thoughts that won't stop. The same loop, again. The version of a conversation that already happened, still running.\n\nThis is for that.\n\n90 minutes of slow Dilruba in Raga Yaman. No vocals, no percussion. Just the instrument \u2014 long bow strokes, warm and unhurried, with enough space between the phrases for the mind to stop filling in the gaps.\n\nYou don't need to do anything with it. Put it on and let it run. The Dilruba doesn't compete with your thoughts \u2014 it just gives them somewhere quieter to settle.\n\nEach piece has been chosen with care, refined until the experience feels smooth and uninterrupted from start to finish.\n\nA quiet Theta wave layer sits underneath at low volume, gently guiding the mind from alert and anxious toward something calmer.\n\nGood for overthinking, anxious evenings, a mind that won't stop, or anyone who needs something steady to hold onto while the noise settles.\n\nPress play and give your mind somewhere to rest.\n\n0:00 First notes\n15:00 Settling\n35:00 Quieting\n60:00 Stillness\n80:00 At rest\n\nIf this helped quieten your mind, feel free to like, share, or subscribe for more daily music.\n\n\u2014 Raga Focus\n\n#overthinkingmusic #dilrubainstrumental #dilruba #indianclassicalmusic #anxietyrelief #thetawaves #432hz #ragafocus #calmyourmind #musicforoverthinkers",
+    "thumbnail_text_main": "SETTLE YOUR THOUGHTS",
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-cream patterned border with subtle lotus and dusk motifs, aged warm parchment background, late evening palette (deep amber fading to soft indigo, candlelight). Central figure: serene woman in deep teal-and-gold sari seated cross-legged playing dilruba (upright bowed instrument resting on the lap, long slender neck, small resonating body) in a quiet candlelit room, eyes closed, expression of deep inward stillness. Single oil lamp nearby, warm amber glow. Bold dark-teal serif overlay text reading 'SETTLE YOUR THOUGHTS' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Deep amber-teal-cream palette, quieting mood, single composed scene, no clutter.",
+    "suno_prompt": "Instrumental only, no vocals. Slow dilruba solo in raga Yaman, late evening anxiety-relief mood, warm bowed melodic flow with long sustained notes, no percussion, no tabla, 432Hz tuning, 55-65 BPM very slow tempo, sparse melodic phrases with long natural silences between them, mid register (warm and grounding, not sharp), cinematic healing production, settling and quieting, suitable for extended looping. Raga Yaman tonic C or D. Emotionally: like the moment anxious thoughts finally slow down \u2014 not resolved, just quieter. Warm, patient, steady. Theta wave layer at -20dB underneath, very subtle.",
+    "production_spec": {
+        "duration_minutes": 90,
+        "bpm_range": "55-65",
+        "key_frequency_hz": 432,
+        "binaural_carrier_hz": 438,
+        "binaural_wave": "Theta",
+        "binaural_beat_hz": 6.0,
+        "lufs_target": -15,
+        "loop_seam": "10s in / 30s out, Suno extend 3-4x \u2192 loop in post to fill 90 min",
+        "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+        "notes": "Raga Yaman \u2014 classical evening raga, Kalyan thaat. Dilruba bowed, warm mid-register. Theta 6Hz for transition from anxious to calm. LUFS -15. Reference: Anxiety Relief Dilruba (May 1) hit 32.16% AVD \u2014 match that warmth and pace. EMOTIONAL TAG ROTATION: clip 1: 'quieting, like anxious thoughts finally slowing down' \u00b7 clip 2: 'warm and patient, like breath steadying after a long exhale' \u00b7 clip 3: 'still and grounding, like finding solid ground again'."
+    },
+    "experiment_notes": "Test 24 \u2014 IDENTITY vs PROBLEM FRAMING.\n\nFirst identity-framing title test on the channel. 'Music for Overthinkers' treats the viewer as someone who self-identifies \u2014 'I am an overthinker.' 'Overthinking Music' treats the moment \u2014 'I am overthinking right now.'\n\nIf B wins: identity framing pulls stronger in browse feed \u2014 viewer self-recognition is a more powerful CTR hook than state description. Opens new format for all anxiety/wellness ships.\nIf A wins: problem/moment framing remains the stronger hook \u2014 stick with state-description leads.\n\nFAILURE MODE: <2K views or <24% AVD \u2014 Dilruba anxiety lane not replicating May 1 signal.\nSUCCESS: 4K+ views + 28%+ AVD \u2014 lane confirmed replicable."
+}
