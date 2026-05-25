@@ -1,0 +1,91 @@
+{
+    "id": "v_2026-05-28_anxiety_relief_sarod",
+    "status": "DRAFT",
+    "date_shipped": null,
+    "created_at": "2026-05-25",
+    "planned_date": "2026-05-28",
+    "planned_slot": "AM (8am IST)",
+    "title": "Anxiety Relief Music | Slow Sarod | 1.5 Hours",
+    "title_variants": {
+        "A": "Anxiety Relief Music | Slow Sarod | 1.5 Hours",
+        "B": "Nervous System Reset | Slow Sarod | 1.5 Hours"
+    },
+    "components": {
+        "problem": "waking up anxious / morning dread / body tense before the day starts / mind already racing / can't ease into the morning",
+        "instrument": "Sarod",
+        "raga": "Bhairavi",
+        "hz": "432Hz",
+        "wave": "Theta"
+    },
+    "validated_keywords": [
+        "Anxiety Relief Music (70 VidIQ — lead A)",
+        "Nervous System Reset (66 VidIQ — lead B)",
+        "Slow Sarod (slot 2 — both variants)",
+        "anxiety relief music",
+        "nervous system reset",
+        "sarod music",
+        "slow sarod",
+        "indian classical sarod",
+        "morning anxiety music",
+        "calm anxiety music",
+        "432Hz",
+        "theta waves",
+        "indian classical music",
+        "raga focus",
+        "raga bhairavi",
+        "bhairavi"
+    ],
+    "ab_test": {
+        "test_id": "Test 27",
+        "test_type": "TITLE A/B — same thumbnail both variants",
+        "variant_A": {
+            "title": "Anxiety Relief Music | Slow Sarod | 1.5 Hours",
+            "thumbnail_text": "QUIET THE ANXIETY",
+            "hypothesis": "Direct problem-state lead 'Anxiety Relief Music' (70 VidIQ). Highest score in lane, proven channel format. Tests whether the top-scored anxiety keyword pulls strongest in morning browse."
+        },
+        "variant_B": {
+            "title": "Nervous System Reset | Slow Sarod | 1.5 Hours",
+            "thumbnail_text": "QUIET THE ANXIETY",
+            "hypothesis": "Clinical-action lead 'Nervous System Reset' (66 VidIQ). Tests whether the body-system framing pulls CTR vs direct anxiety naming — different viewer identity (body-aware vs emotion-aware)."
+        },
+        "test_method": "Title-only A/B (Test 27). Same thumbnail both variants — 'QUIET THE ANXIETY' Q-hook thumb. One variable: direct problem lead (A=70 VidIQ) vs clinical-action lead (B=66 VidIQ). Will clarify whether emotion-naming or body-system framing pulls stronger in morning anxiety browse."
+    },
+    "strategic_bet": "FILLER — Thu May 28 AM. Sarod anxiety reset in morning slot. May 15 Sarod ship ('Mental Clarity Music | Slow Sarod | Brain Fog Reset') did 2,685 views / 23.42% AVD — solid proof Sarod works in AM clinical lane. Fresh raga (Bhairavi — morning raga, deeply emotive, first Sarod use of Bhairavi; May 15 ship used a different raga). Anxiety relief lane is the channel's highest-volume lane.",
+    "success_good": "2000+ views, 20%+ AVD, 4%+ CTR in 48h",
+    "success_breakthrough": "5000+ views, 25%+ AVD — Sarod anxiety AM lane has legs beyond one-off",
+    "failure_mode": "<800 views or <18% AVD — Sarod not pulling in anxiety lane; channel audience associates anxiety relief with Sitar/Bansuri specifically",
+    "reference_ships": [
+        {
+            "title": "Mental Clarity Music | Slow Sarod | Brain Fog Reset",
+            "pub": "2026-05-15",
+            "views": 2685,
+            "ctr_pct": 4.03,
+            "avd_pct": 23.42
+        },
+        {
+            "title": "Morning Reset Music | Clear Your Head with Sarod Instrumental | 1.5 hours",
+            "pub": "2026-05-23",
+            "views": 627,
+            "ctr_pct": 4.04,
+            "avd_pct": 17.15
+        }
+    ],
+    "tags": "anxiety relief music, nervous system reset, sarod music, slow sarod, indian classical sarod, sarod, morning anxiety music, calm anxiety music, anxiety music, healing music, 432hz, theta waves, indian classical music, indian instrumental music, raga bhairavi, bhairavi, raga focus, stress relief music, relaxation music, calm your mind, morning calm music",
+    "description": "Anxiety Relief Music | Slow Sarod | 1.5 Hours\n\nThe anxiety was already there when you woke up.\n\nBefore the first thought, before the first task — the low hum of it, already running. This is for that morning. The one that starts heavy before it's even started.\n\n90 minutes of slow Sarod in Raga Bhairavi — one of the most quietly powerful ragas in the Indian classical tradition. Bhairavi is a morning raga, but not a bright one. It's gentle and serious and deeply kind. It doesn't push you toward the day. It sits with you first.\n\nThe Sarod has a warm, slightly dark tone — close to the body, grounded in the low-mid range. Not sharp or bright. It doesn't demand attention. It just stays with you, phrase after phrase, patiently.\n\nThis isn't music to solve the anxiety. It's music to be present while it passes.\n\nA quiet theta layer sits underneath at very low volume, gently guiding the nervous system toward calm without pushing.\n\nGood for slow mornings, anxiety before a difficult day, sitting with your tea or coffee, or anyone who needs something steady to hold onto before the world asks anything of them.\n\nPress play. Let the morning be slow.\n\n0:00 Opening\n15:00 Settling\n35:00 Calming\n60:00 Ease\n80:00 At rest\n\nIf this helped your morning, feel free to like, share, or subscribe for more daily music.\n\n— Raga Focus\n\n#anxietyreliefmusic #nervoussystemreset #sarod #indianclassicalmusic #morningmusic #thetawaves #432hz #ragafocus #calmmusic #healingmusic",
+    "thumbnail_text_main": "QUIET THE ANXIETY",
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-sage patterned border with lotus and early morning motifs, aged warm parchment background, early morning palette (soft pale gold fading to cool dawn grey-blue, first light). Central figure: calm person in muted sage and ivory attire seated cross-legged playing sarod (large plucked instrument with a metal resonator body and deep curved neck, rested on the lap, similar in shape to a sitar but with a distinctive metallic belly) in a quiet room or open veranda, first soft light behind them. Expression of quiet steadiness — not happy, just present. Pale gold and soft grey-blue light, single lamp or dawn sky. Bold dark-sage or deep teal serif overlay text reading 'QUIET THE ANXIETY' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Pale gold-sage-cream palette, still and grounded mood, single composed scene, no clutter.",
+    "suno_prompt": "Instrumental only, no vocals. Slow sarod solo in raga Bhairavi, early morning anxiety relief mood, deep warm plucked tones with long natural resonance and slow meditative phrases, no percussion, no tabla, 432Hz tuning, 40-50 BPM very slow tempo, sparse phrases with long natural silences between them, low-mid register (warm, grounded, slightly dark), cinematic healing production, gentle and quietly steady feel, suitable for extended looping. Raga Bhairavi tonic C — morning raga, deeply emotive, compassionate, calm. Emotionally: like sitting with the anxiety rather than fighting it — present, grounded, unhurried. Theta wave layer at -20dB very subtle underneath.",
+    "production_spec": {
+        "duration_minutes": 90,
+        "bpm_range": "40-50",
+        "key_frequency_hz": 432,
+        "binaural_carrier_hz": 438,
+        "binaural_wave": "Theta",
+        "binaural_beat_hz": 6.0,
+        "lufs_target": -15,
+        "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+        "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+        "notes": "Raga Bhairavi — morning raga, Sa re ga Ma Pa dha ni Sa (all komal except Ma and Pa). Deeply emotive, compassionate, gentle. First Sarod use of Bhairavi (May 15 Sarod used different raga). Sarod has a warm metallic plucked tone — slightly darker than sitar, grounded. Theta 6Hz for anxiety relief and nervous system calming. LUFS -15. EMOTIONAL TAG ROTATION: clip 1: 'like sitting with the morning anxiety instead of fighting it' · clip 2: 'steady and kind, like something holding you while the tension passes' · clip 3: 'quiet and grounded, like the morning settling around you'."
+    },
+    "experiment_notes": "Test 27 — DIRECT PROBLEM LEAD (A, 'Anxiety Relief Music', 70 VidIQ) vs CLINICAL-ACTION LEAD (B, 'Nervous System Reset', 66 VidIQ).\n\nSame instrument, same lane, same thumbnail. One variable: emotion-naming (A) vs body-system framing (B). This is a meaningful test for the anxiety lane — 'Anxiety Relief' speaks to the feeling, 'Nervous System Reset' speaks to the mechanism. The viewer who searches one may not search the other.\n\nIf A wins: emotion-naming dominates in morning browse — lean into direct feeling language for all anxiety ships.\nIf B wins: body-system clinical framing pulls stronger — shift anxiety lane titles toward mechanism language."
+}
