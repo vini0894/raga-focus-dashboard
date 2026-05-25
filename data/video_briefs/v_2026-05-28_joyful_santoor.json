@@ -1,0 +1,91 @@
+{
+    "id": "v_2026-05-28_joyful_santoor",
+    "status": "DRAFT",
+    "date_shipped": null,
+    "created_at": "2026-05-25",
+    "planned_date": "2026-05-28",
+    "planned_slot": "PM (7pm IST)",
+    "title": "Good Energy Music | Santoor for Positive Vibes | 1.5 Hours",
+    "title_variants": {
+        "A": "Feel Good Music | Santoor Instrumental | 1.5 Hours",
+        "B": "Good Energy Music | Santoor for Positive Vibes | 1.5 Hours"
+    },
+    "components": {
+        "problem": "flat evening energy / drained after work / need a lift without overstimulation / want to end the day on a positive note",
+        "instrument": "Santoor",
+        "raga": "Khamaj",
+        "hz": "528Hz",
+        "wave": "Alpha"
+    },
+    "validated_keywords": [
+        "Feel Good Music (69 VidIQ — lead A)",
+        "Good Energy Music (71 VidIQ — lead B)",
+        "Santoor Instrumental (65 VidIQ — slot 2 A)",
+        "Santoor for Positive Vibes (32 VidIQ — slot 2 B, niche descriptor rule)",
+        "feel good music",
+        "good energy music",
+        "santoor music",
+        "santoor instrumental",
+        "indian classical santoor",
+        "positive vibes music",
+        "uplifting music",
+        "joyful music",
+        "528Hz",
+        "alpha waves",
+        "indian classical music",
+        "raga focus"
+    ],
+    "ab_test": {
+        "test_id": "Test 26",
+        "test_type": "TITLE A/B — same thumbnail both variants",
+        "variant_A": {
+            "title": "Feel Good Music | Santoor Instrumental | 1.5 Hours",
+            "thumbnail_text": "FEEL GOOD",
+            "hypothesis": "Pure SEO lead with broad 'Feel Good Music' (69 VidIQ) + strong instrument slot 'Santoor Instrumental' (65 VidIQ). Tests whether the higher slot-2 score compensates for a slightly lower lead score in browse discovery."
+        },
+        "variant_B": {
+            "title": "Good Energy Music | Santoor for Positive Vibes | 1.5 Hours",
+            "thumbnail_text": "FEEL GOOD",
+            "hypothesis": "Slightly higher lead 'Good Energy Music' (71 VidIQ) + niche slot 2. Tests whether 2-point lead VidIQ edge beats a stronger slot-2 pairing. Outcome-energy framing vs instrument-first framing."
+        },
+        "test_method": "Title-only A/B (Test 26). Same thumbnail both variants — 'FEEL GOOD' outcome-vibes thumb. One variable: lead VidIQ edge (B=71 vs A=69) vs slot-2 strength (A=65 vs B=32). Will clarify whether lead score or slot-2 score dominates CTR in uplifting evening browse."
+    },
+    "strategic_bet": "PATTERN-BREAK — Thu May 28 PM. Channel ships almost exclusively calm/healing in evening. Joyful Santoor is a deliberate tone variation on the browse feed. Proof point: May 8 Joyful Santoor shipped 7,886 views / 25.87% AVD / 4.91% CTR — strongest non-Sitar evening ship in the catalog. Fresh raga (Khamaj — first Santoor use; previous Santoor ships used Bageshri, Darbari, generic). If this performs, it validates rotating uplifting into the evening mix 1x/week.",
+    "success_good": "3000+ views, 22%+ AVD, 4.5%+ CTR in 48h",
+    "success_breakthrough": "7000+ views, 25%+ AVD — uplifting evening lane confirmed viable, add 1x/week rotation",
+    "failure_mode": "<1500 views or <18% AVD — evening audience is locked into wind-down intent; don't repeat uplifting in PM slot",
+    "reference_ships": [
+        {
+            "title": "Joyful Music | Positive Vibes Music with Santoor | 1 Hour",
+            "pub": "2026-05-08",
+            "views": 7886,
+            "ctr_pct": 4.91,
+            "avd_pct": 25.87
+        },
+        {
+            "title": "Mental Stillness Music | Slow Santoor | 1.5 Hours",
+            "pub": "2026-05-20",
+            "views": 664,
+            "ctr_pct": 3.70,
+            "avd_pct": 18.56
+        }
+    ],
+    "tags": "feel good music, good energy music, santoor music, santoor instrumental, indian classical santoor, positive vibes music, uplifting music, joyful music, indian classical music, indian instrumental music, raga khamaj, khamaj, alpha waves, 528hz, raga focus, evening music, positive energy music, mood lift music, happiness music, feel good instrumental",
+    "description": "Good Energy Music | Santoor for Positive Vibes | 1.5 Hours\n\nNot every evening has to wind down slowly.\n\nSome days you finish tired but not done — your mind is still restless, and what you need isn't to slow down, it's to shift. To move from the heaviness of the day into something lighter.\n\nThis is 90 minutes of Santoor in Raga Khamaj — an evening raga with a naturally bright, celebratory quality. The Santoor carries it well: quick, warm, resonant phrases that lift without pushing. It doesn't demand energy. It gives it back.\n\nKhamaj is used in the Indian classical tradition for moments of lightness — weddings, celebrations, the easy pleasure of a calm evening. There's nothing heavy in it. Put it on while you cook, eat, stretch, or simply sit. Let the brightness of the music do what you've been waiting to feel.\n\nA gentle alpha wave layer sits underneath at very low volume — supporting relaxed alertness rather than sleep, keeping you present and at ease.\n\nGood for: evenings when you need a lift, winding down with energy still in you, dinner or cooking, gentle movement, or anyone who wants to end the day feeling good rather than just tired.\n\nPress play. Let tonight feel good.\n\n0:00 Opening phrases\n15:00 Building warmth\n35:00 Full brightness\n60:00 Settled ease\n80:00 Peaceful close\n\nIf this shifted your energy, feel free to like, share, or subscribe for more daily music.\n\n— Raga Focus\n\n#feelgoodmusic #goodenergymusic #santoor #indianclassicalmusic #positivevibesmusi #alphawave #528hz #ragafocus #eveningmusic #upliftingmusic",
+    "thumbnail_text_main": "FEEL GOOD",
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-saffron patterned border with lotus and evening bloom motifs, aged warm parchment background, bright evening palette (warm saffron fading to soft gold, candlelit warmth). Central figure: joyful person in saffron and gold attire seated cross-legged playing santoor (flat trapezoidal string instrument resting on a low stand, played with two light curved mallets) in an open courtyard or veranda, warm evening light behind them. Expression of easy joy — not ecstatic, just good. Warm amber glow, flowers or lanterns nearby, light and open composition. Bold dark-saffron or deep-teal serif overlay text reading 'FEEL GOOD' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Saffron-gold-cream palette, bright and grounded mood, single composed scene, no clutter.",
+    "suno_prompt": "Instrumental only, no vocals. Uplifting santoor solo in raga Khamaj, evening positive energy mood, bright warm hammered string tones with light quick phrases and natural resonance, no percussion, no tabla, 528Hz tuning, 70-80 BPM moderate-bright tempo, clear melodic phrases with space between them, mid register (warm, bright, not heavy), cinematic uplifting production, feel-good and joyful feel, suitable for extended looping. Raga Khamaj tonic C or D — evening raga, celebratory, light, playful. Emotionally: like the feeling of the day finally shifting — tired but good, easy laughter, the weight lifting. Bright, warm, unhurried but alive. Alpha wave layer at -20dB very subtle underneath.",
+    "production_spec": {
+        "duration_minutes": 90,
+        "bpm_range": "70-80",
+        "key_frequency_hz": 528,
+        "binaural_carrier_hz": 518,
+        "binaural_wave": "Alpha",
+        "binaural_beat_hz": 10.0,
+        "lufs_target": -14,
+        "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+        "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+        "notes": "Raga Khamaj — evening raga, Sa Re Ga Ma Pa Dha ni Sa (both Ni and ni used). Bright, celebratory, playful. First Santoor use of Khamaj (previous Santoor ships: Bageshri, Bhimpalasi, generic calm). LUFS -14 (slightly hotter than wind-down ships — uplifting content, audience is alert not sleepy). Alpha 10Hz for relaxed alertness. EMOTIONAL TAG ROTATION: clip 1: 'like the day finally shifting — tired but good' · clip 2: 'bright and warm, like easy laughter in the evening' · clip 3: 'light and alive, like nothing is wrong tonight'."
+    },
+    "experiment_notes": "Test 26 — FEEL GOOD (A, 69 VidIQ lead + 65 slot-2) vs GOOD ENERGY (B, 71 VidIQ lead + 32 slot-2).\n\nFirst evening uplifting Santoor ship since May 8 (7,886 views — strong). Two things being tested simultaneously: (1) lead VidIQ edge vs slot-2 strength trade-off; (2) whether uplifting lane holds in PM browse slot across a second ship.\n\nIf B wins: higher lead VidIQ is the dominant factor even with weak slot-2 — confirms lead-first rule holds for uplifting lane.\nIf A wins: slot-2 strength matters and 65+69 beats 71+32 — nuances the 'always pick highest lead' rule.\n\nStrategic signal: if total views ≥3000 in 48h, uplifting evening is a validated rotation lane. Schedule 1x/week."
+}
