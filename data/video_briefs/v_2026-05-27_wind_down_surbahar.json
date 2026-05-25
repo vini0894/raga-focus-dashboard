@@ -1,0 +1,97 @@
+{
+    "id": "v_2026-05-27_wind_down_surbahar",
+    "status": "DRAFT",
+    "date_shipped": null,
+    "created_at": "2026-05-25",
+    "planned_date": "2026-05-27",
+    "planned_slot": "PM (7pm IST)",
+    "title": "Take It Slow Tonight | Slow Surbahar | 1.5 Hours",
+    "title_variants": {
+        "A": "Wind Down Music | Surbahar for Deep Rest | 1.5 Hours",
+        "B": "Take It Slow Tonight | Slow Surbahar | 1.5 Hours",
+        "C": "Rest Your Mind | Surbahar for Calmness | 1.5 Hours"
+    },
+    "components": {
+        "problem": "can't wind down after a long day / mind still running / body tense / need to slow down before sleep",
+        "instrument": "Surbahar",
+        "raga": "Bageshri",
+        "hz": "432Hz",
+        "wave": "Theta"
+    },
+    "validated_keywords": [
+        "Wind Down Music (60 VidIQ — lead A)",
+        "Take It Slow Tonight (62 VidIQ — lead B)",
+        "Rest Your Mind (54 VidIQ — lead C, floor override)",
+        "Surbahar for Deep Rest (36 VidIQ — slot 2, Path 2 niche instrument rule)",
+        "Surbahar for Calmness (unscored — slot 2 C)",
+        "slow surbahar",
+        "surbahar music",
+        "indian classical surbahar",
+        "wind down music",
+        "deep rest music",
+        "calm music",
+        "relaxation music",
+        "432Hz",
+        "theta waves",
+        "indian classical music",
+        "raga focus"
+    ],
+    "ab_test": {
+        "test_id": "Test 25",
+        "test_type": "TITLE A/B — same thumbnail all variants",
+        "variant_A": {
+            "title": "Wind Down Music | Surbahar for Deep Rest | 1.5 Hours",
+            "thumbnail_text": "TAKE IT SLOW",
+            "hypothesis": "SEO-led clean format with proven 'Wind Down Music' lead (60 VidIQ). Tests whether a utility-SEO lead pulls stronger in the evening browse feed."
+        },
+        "variant_B": {
+            "title": "Take It Slow Tonight | Slow Surbahar | 1.5 Hours",
+            "thumbnail_text": "TAKE IT SLOW",
+            "hypothesis": "Lifestyle-led with time-specific hook 'Tonight' (62 VidIQ — highest lead). Evening specificity signals exact viewer moment. Tests whether time-anchored lifestyle lead outperforms pure SEO in PM browse slot."
+        },
+        "variant_C": {
+            "title": "Rest Your Mind | Surbahar for Calmness | 1.5 Hours",
+            "thumbnail_text": "TAKE IT SLOW",
+            "hypothesis": "Command-outcome lead — direct invitation to the viewer. 54 VidIQ (floor override, intentional). Tests whether a softer permission-based lead pulls CTR even at lower search volume."
+        },
+        "test_method": "Title-only A/B (Test 25). Same thumbnail all variants — 'TAKE IT SLOW' outcome-lifestyle thumb. Lane (calm/deep rest) is format-tolerant per Test 21 concluded May 24 (2.4pp tie). One variable: SEO-led (A) vs time-anchored lifestyle (B) vs command-outcome (C). Result will clarify which framing pulls in PM deep rest browse feed."
+    },
+    "strategic_bet": "FILLER — Wed May 27 PM. Fourth Surbahar ship. Declining views trend noted (37K → 4K → 1.1K → 895). Fresh raga (Bageshri, first use for Surbahar) and fresh title leads. Test 25 has genuine value: if B wins, time-anchored lifestyle leads are validated for PM filler slots — shifts approach for all evening ships.",
+    "success_good": "1500+ views, 20%+ AVD, 4%+ CTR in 48h",
+    "success_breakthrough": "4000+ views, 25%+ AVD — Surbahar deep rest lane still viable despite declining trend",
+    "failure_mode": "<800 views or <18% AVD — Surbahar deep rest lane exhausted, pause instrument for 2+ weeks",
+    "reference_ships": [
+        {
+            "title": "Deep Rest Music | Find Stillness with Surbahar | 1 Hour",
+            "pub": "2026-04-28",
+            "views": 37688,
+            "ctr_pct": 3.69,
+            "avd_pct": 22.9
+        },
+        {
+            "title": "Deep Relaxation Music | Slow Surbahar | 1.5 Hours",
+            "pub": "2026-05-21",
+            "views": 895,
+            "ctr_pct": 4.40,
+            "avd_pct": 19.9
+        }
+    ],
+    "tags": "wind down music, take it slow tonight, rest your mind, surbahar music, slow surbahar, indian classical surbahar, surbahar, deep rest music, calm music, relaxation music, indian classical music, indian instrumental music, raga bageshri, bageshri, theta waves, 432Hz, raga focus, evening music, stress relief music, healing music, calm your mind, unwind music, sleep music",
+    "description": "Take It Slow Tonight | Slow Surbahar | 1.5 Hours\n\nThe day didn’t stop. It just finally ran out of things to demand from you.\n\nThis is for the hour between the last thing you did and the moment you actually rest. 90 minutes of slow Surbahar — long warm phrases, very low tempo, nothing sharp or urgent. Music that doesn’t ask anything of you.\n\nThe Surbahar has a deep, grounded tone — lower and heavier than a sitar. It doesn’t fill the room with brightness. It settles into it. Put it on and let the sound do what you can’t quite force yourself to do: slow down.\n\nThere’s space between the phrases. Silence that’s part of the music, not a gap in it. Your mind will keep moving for a while — that’s fine. The music is patient. It stays slow so you eventually catch up to it.\n\nA quiet layer sits underneath at very low volume, gently guiding the mind toward a calmer state as the evening settles.\n\nGood for the hour after work, winding down before bed, gentle stretches, or anyone who needs something steady to hold onto while the day finally lets go.\n\nPress play. Let tonight be slow.\n\n0:00 First phrases\n15:00 Settling\n35:00 Slowing down\n60:00 Deep calm\n80:00 At rest\n\nIf this helped you wind down, feel free to like, share, or subscribe for more daily music.\n\n— Raga Focus\n\n#winddownmusic #slowsurbahar #surbahar #indianclassicalmusic #calmmusic #thetawaves #432hz #ragafocus #eveningmusic #deeprestmusic",
+    "thumbnail_text_main": "TAKE IT SLOW",
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-cream patterned border with subtle lotus and evening motifs, aged warm parchment background, late evening palette (deep amber fading to soft indigo, warm candlelight). Central figure: calm person in deep teal and gold attire seated cross-legged playing surbahar (large long-necked plucked instrument with deep resonating body, resting on the lap at an angle, similar to a bass sitar) in a quiet candlelit room or open courtyard, last light of evening behind them. Expression of deep ease, the day clearly done. Warm amber glow, single oil lamp or fading sky. Bold dark-teal serif overlay text reading 'TAKE IT SLOW' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Deep amber-indigo-cream palette, grounded and unhurried mood, single composed scene, no clutter.",
+    "suno_prompt": "Instrumental only, no vocals. Slow surbahar solo in raga Bageshri, late evening wind-down mood, deep warm plucked tones with long natural resonance and slow melodic phrases, no percussion, no tabla, 432Hz tuning, 45-55 BPM very slow tempo, sparse phrases with long natural silences between them, low-mid register (deep, grounded, not bright or high), cinematic healing production, settling and unwinding feel, suitable for extended looping. Raga Bageshri tonic C or D — late evening raga, intimate and calming. Emotionally: like the feeling of finally sitting down after a long day and realising you don’t have to do anything else. Patient, warm, unhurried. Theta wave layer at -20dB very subtle underneath.",
+    "production_spec": {
+        "duration_minutes": 90,
+        "bpm_range": "45-55",
+        "key_frequency_hz": 432,
+        "binaural_carrier_hz": 438,
+        "binaural_wave": "Theta",
+        "binaural_beat_hz": 6.0,
+        "lufs_target": -15,
+        "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+        "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+        "notes": "Raga Bageshri — late evening raga, Sa Re ga Ma Pa Dha ni Sa. Intimate, calming, slightly yearning. First Surbahar use of Bageshri (previous ships used Darbari Kanada). Surbahar deep resonating plucked tone — lower and warmer than sitar. Theta 6Hz for deep relaxation transition. LUFS -15 (evening audience winding down). EMOTIONAL TAG ROTATION: clip 1: 'like finally sitting down after a long day' · clip 2: 'warm and patient, like the evening settling around you' · clip 3: 'slow and grounded, like nothing left to do tonight'."
+    },
+    "experiment_notes": "Test 25 — SEO-LED vs TIME-ANCHORED LIFESTYLE vs COMMAND-OUTCOME in PM deep rest lane.\n\nFourth Surbahar ship with declining views trend. This test has two purposes: (1) probe whether the declining trend is title-driven or lane-exhaustion; (2) test whether 'Tonight' time-anchoring lifts CTR in PM browse by matching the exact viewer moment.\n\nIf B wins (Tonight): time-anchored lifestyle leads validated for PM slots — add to planning arsenal for all evening ships.\nIf A wins (SEO-led): standard formula still dominant, decline is lane not title.\nIf C wins (command-outcome at 54 VidIQ): lower-search-volume permission phrasing pulls CTR from browse — important signal that VidIQ score matters less in recommendation-dominant channel (88% Browse/Suggested).\n\nFAILURE MODE: <800 views regardless of winning variant — Surbahar deep rest lane exhausted. Pause instrument 2+ weeks if so."
+}
