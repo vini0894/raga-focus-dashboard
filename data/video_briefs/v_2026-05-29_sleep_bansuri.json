@@ -1,0 +1,93 @@
+{
+    "id": "v_2026-05-29_sleep_bansuri",
+    "status": "DRAFT",
+    "date_shipped": null,
+    "created_at": "2026-05-27",
+    "planned_date": "2026-05-29",
+    "planned_slot": "PM (7pm IST)",
+    "title": "Sleep Music | Drift Off Effortlessly | 1.5 Hours Bansuri",
+    "title_variants": {
+        "A": "Sleep Music | Drift Off Effortlessly | 1.5 Hours Bansuri",
+        "B": "Relaxing Music | Gentle Deep Rest | Bansuri Music"
+    },
+    "components": {
+        "problem": "can't fall asleep / mind still running / restless at night / need something to carry you under",
+        "instrument": "Bansuri",
+        "raga": "Darbari Kanada",
+        "hz": "432Hz",
+        "wave": "Delta"
+    },
+    "validated_keywords": [
+        "Sleep Music (75 VidIQ — lead A)",
+        "Relaxing Music (lead B — unscored)",
+        "Drift Off Effortlessly (slot 2 A — unscored, browse hook)",
+        "Gentle Deep Rest (slot 2 B — unscored, browse hook)",
+        "Bansuri Music (slot 3 B — 66 VidIQ)",
+        "sleep music",
+        "relaxing music",
+        "bansuri for sleep",
+        "bansuri music",
+        "indian classical bansuri",
+        "432hz",
+        "delta waves",
+        "night music",
+        "deep rest music",
+        "indian classical music",
+        "raga focus"
+    ],
+    "ab_test": {
+        "test_id": "Test 27",
+        "test_type": "TITLE A/B — same thumbnail both variants",
+        "variant_A": {
+            "title": "Sleep Music | Drift Off Effortlessly | 1.5 Hours Bansuri",
+            "thumbnail_text": "FALL ASLEEP",
+            "hypothesis": "Keyword lead (Sleep Music, 75 VidIQ) + emotional hook in slot 2 ('Drift Off Effortlessly' — speaks to the relief of finally letting go) + duration + instrument in slot 3. Tests whether a validated lead keyword paired with an emotional slot 2 hook outperforms a purely descriptive title."
+        },
+        "variant_B": {
+            "title": "Relaxing Music | Gentle Deep Rest | Bansuri Music",
+            "thumbnail_text": "FALL ASLEEP",
+            "hypothesis": "Broader lead ('Relaxing Music') + descriptive slot 2 ('Gentle Deep Rest') + instrument genre in slot 3 ('Bansuri Music'). Tests whether a softer, more atmospheric title framing pulls browse CTR differently from a direct sleep-keyword lead."
+        },
+        "test_method": "Title-only A/B (Test 27). Same thumbnail both variants — 'FALL ASLEEP' outcome-imperative (backed by Test 16: outcome-imperative won in sleep lane). Multi-variable test: lead phrase, slot 2 hook, and slot 3 all differ. Not a clean single-variable test — result gives directional signal on which overall title philosophy works better in sleep browse: direct keyword-led vs atmospheric/descriptive."
+    },
+    "strategic_bet": "FILLER — Fri May 29 PM. Bansuri sleep lane, 1.5hr format. Keeps Bansuri cooldown active for next week (2 Bansuri ships available w/c June 2). Raga Darbari Kanada — deep midnight raga, first use for a standalone Bansuri sleep ship (May 17 used Bhimpalasi/generic). Fresh title philosophy: emotional hook in slot 2 vs purely descriptive. May 22 Bansuri ship ('1.5 Hour Bansuri to Unwind') and May 17 (8,967 views / 6.01% CTR) are the reference points — sleep lane is proven for Bansuri.",
+    "success_good": "2000+ views, 20%+ AVD, 4%+ CTR in 48h",
+    "success_breakthrough": "5000+ views, 25%+ AVD — emotional hook slot 2 format validated for sleep lane",
+    "failure_mode": "<1000 views or <3.5% CTR in 48h — Bansuri sleep lane showing fatigue; rotate to different instrument next sleep ship",
+    "reference_ships": [
+        {
+            "title": "3 Hour Bansuri Music for Relaxation | Indian Classical Music for Deep Sleep",
+            "pub": "2026-05-17",
+            "views": 8967,
+            "ctr_pct": 6.01,
+            "avd_pct": 20.18,
+            "watch_hours": 5428
+        },
+        {
+            "title": "1.5 Hour Bansuri to Unwind | Breathe and Let Go",
+            "pub": "2026-05-22",
+            "views": null,
+            "ctr_pct": null,
+            "avd_pct": null,
+            "watch_hours": null
+        }
+    ],
+    "tags": "sleep music, relaxing music, bansuri for sleep, bansuri music, bamboo flute music, indian classical bansuri, indian flute music, deep sleep music, deep rest music, 432hz, delta waves, night music, music to fall asleep, gentle sleep music, raga darbari, darbari kanada, indian classical music, indian instrumental music, raga focus, drift off to sleep, calming sleep music",
+    "description": "Sleep Music | Drift Off Effortlessly | 1.5 Hours Bansuri\n\nSome nights the tiredness is there but the sleep isn't.\n\nYou lie down. The room is quiet. But something is still running — the day replaying itself, the next one already loading. You don't need more effort. You just need something to carry you the rest of the way down.\n\nThis is 90 minutes of slow Bansuri in Raga Darbari Kanada. Darbari is a deep-midnight raga — its phrases are slow, heavy, serious in a way that doesn't feel heavy to listen to. The bamboo flute carries it with breath-driven warmth. Nothing sharp, nothing urgent. Just sound that deepens the way the night deepens when you finally stop resisting it.\n\nA gentle Delta wave layer sits underneath at very low volume — not there to do anything dramatic, just to keep the body moving in the direction of sleep.\n\n🎵 What you'll hear:\n- Bansuri — warm bamboo flute, breath-driven, unhurried\n- Sparse phrases with long natural silences between them\n- Very slow tempo — the music breathes slower than you will\n- A barely-there low-frequency Delta layer underneath\n- 90 unbroken minutes — no startling fade-outs\n\n⏱ Chapters\n0:00   Settling in\n20:00  First heaviness\n45:00  Mind letting go\n70:00  Deep sleep zone\n85:00  Peaceful close\n\n🧠 How to use:\nPress play before you're fully tired. Phone face-down, volume low but audible. Don't try — just let the Bansuri set the pace. You'll catch up to it.\n\n⏱ Best for:\n• Mind that won't stop at night\n• Trouble falling asleep\n• 1am to 4am wakeups\n• Gentle wind-down before bed\n• Background for deep rest\n\n📺 Subscribe to Raga Focus for daily Indian classical music for sleep, anxiety, and healing.\n\n— Raga Focus\n\n#sleepmusic #bansuri #relaxingmusic #indianclassicalmusic #432hz #deltawaves #ragafocus #deeprestmusic #bambooflute #nightmusic",
+    "thumbnail_text_main": "FALL ASLEEP",
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate deep-indigo-and-gold patterned border with subtle crescent moon and night-bloom motifs, aged warm parchment background, deep-night palette (midnight indigo fading to soft black, single oil lamp glow casting warm amber light). Central figure: serene musician in deep-blue-and-cream attire seated on a low woven mat playing bansuri (long bamboo flute held horizontally to lips) in a quiet open-air night courtyard. Moonlight above, a single lotus pool catching the light. Scene is very still — no wind, no movement, just deep quiet. Bold dark-teal serif overlay text reading 'FALL ASLEEP' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Midnight-indigo and warm amber palette, deep still night mood, single composed scene, no clutter.",
+    "suno_prompt": "Instrumental only, no vocals. Slow bansuri solo in raga Darbari Kanada, deep midnight sleep mood, very sparse breath-driven melodic flow with extremely long sustained notes and long silences between phrases, no percussion, no tabla, 432Hz tuning, 40-50 BPM very slow dreamy tempo, deep low-mid register (warm and heavy, not bright or high-pitched), cinematic deeply meditative production, hypnotic and grounding, suitable for extended looping in post-production, begins immediately with bansuri already playing at low volume, full sonic presence from first note. CRITICAL: Darbari Kanada uses komal Ga, komal Dha, komal Ni — the flat intervals give it natural weight and gravity. Emotionally: like consciousness sinking through layers — not dramatic, just inevitable. Very long meends (glides between notes). 10-15 seconds of near-silence between phrases is correct. Delta wave layer at -22dB barely audible underneath. Bansuri mid-LOW register only — high bansuri is alerting not sleep-inducing.",
+    "production_spec": {
+        "duration_minutes": 90,
+        "bpm_range": "40-50",
+        "key_frequency_hz": 432,
+        "binaural_carrier_hz": 430,
+        "binaural_wave": "Delta",
+        "binaural_beat_hz": 2.0,
+        "lufs_target": -16,
+        "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+        "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+        "notes": "Raga Darbari Kanada — deep midnight raga. Sa Re Ga(komal) Ma Pa Dha(komal) Ni(komal) Sa. The komal (flat) intervals create its characteristic heaviness. CRITICAL: First Suno clip must feel genuinely drowsy in low-mid register before extending — if clip sounds bright or fast, regenerate. EMOTIONAL TAG ROTATION: clip 1: 'like consciousness sinking — heavy and inevitable' · clip 2: 'still and deep, like the middle of a silent night' · clip 3: 'like the last thought before sleep, fading'. Mix: Bansuri -3dB, Binaural -22dB (barely audible), LUFS -16dB (sleep audience). 90min = 3-4 Suno clips + loop extension in post."
+    },
+    "experiment_notes": "Test 27 — KEYWORD-EMOTIONAL HOOK TITLE (A) vs ATMOSPHERIC DESCRIPTIVE TITLE (B).\n\nA: 'Sleep Music | Drift Off Effortlessly | 1.5 Hours Bansuri' — direct sleep keyword lead + emotional hook slot 2\nB: 'Relaxing Music | Gentle Deep Rest | Bansuri Music' — broader lead + atmospheric descriptive slot 2\n\nMulti-variable test — slot 1, 2, and 3 all differ. Result gives directional signal on title philosophy, not a clean single-variable conclusion. Still valuable: if A wins, direct sleep keyword + emotional hook is the format; if B wins, atmospheric softer framing pulls better in sleep browse.\n\nThumbnail: 'FALL ASLEEP' outcome-imperative — backed by Test 16 (outcome-imperative won in sleep lane)."
+}
