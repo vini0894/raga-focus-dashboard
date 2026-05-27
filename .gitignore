@@ -28,3 +28,4 @@ build/
 
 # Heavy raw exports (kept locally, not in repo)
 data/reach_exports/
+data/private/
