@@ -672,8 +672,8 @@ with st.sidebar:
     st.caption("Dashboard reads from YouTube API via the authenticated MCP server + REACH_DATA.md for manual reach captures.")
 
 # Tabs
-tab_overview, tab_daily, tab_videos, tab_detail, tab_competitors, tab_queue, tab_briefs, tab_idea_gen, tab_title_builder, tab_playlists = st.tabs(
-    ["📊 Overview", "📈 Daily Views", "📺 Videos", "🔍 Video Detail", "⚔️ Competitors", "🚀 Production Queue", "🧠 Brief Queue", "🧪 A/B Insights", "🔤 Title Builder", "🎵 Playlists"]
+tab_overview, tab_daily, tab_videos, tab_detail, tab_competitors, tab_briefs, tab_idea_gen, tab_title_builder, tab_playlists = st.tabs(
+    ["📊 Overview", "📈 Daily Views", "📺 Videos", "🔍 Video Detail", "⚔️ Competitors", "🧠 Brief Queue", "🧪 A/B Insights", "🔤 Title Builder", "🎵 Playlists"]
 )
 
 # -----------------------------------------------------------------------------
@@ -1450,148 +1450,6 @@ with tab_competitors:
         with st.spinner(f"Loading latest from {name}..."):
             latest = load_competitor_latest_videos(cid, limit=5)
         st.dataframe(latest, width="stretch", hide_index=True)
-
-# -----------------------------------------------------------------------------
-# Tab: Production Queue
-# -----------------------------------------------------------------------------
-with tab_queue:
-    st.subheader("🚀 Next 7 Videos — Production Briefs")
-    st.caption("Full production briefs for each upcoming video — title, description, tags, Suno music prompt, thumbnail image prompt, and success criteria. Pick one to view everything.")
-
-    queue = get_production_queue()
-
-    # Map between canonical status values and emoji-prefixed display labels
-    # used by the dropdown in the data_editor.
-    _STATUS_LABEL = {
-        "not_started": "⚪ Not started",
-        "in_progress": "🟡 In progress",
-        "published": "🟢 Published",
-    }
-    _LABEL_STATUS = {v: k for k, v in _STATUS_LABEL.items()}
-
-    # Summary table at top — Status column is an inline dropdown.
-    st.markdown("### Overview")
-    st.caption("Edit the **Status** dropdown directly to mark videos as in progress or published. Changes save instantly to `data/queue_status.json`.")
-
-    summary_rows = []
-    for v in queue:
-        summary_rows.append({
-            "ID": v["id"],
-            "Status": _STATUS_LABEL.get(v["status"], v["status"]),
-            "Publish Date": v["publish_date"],
-            "Title": v["title"][:60] + ("…" if len(v["title"]) > 60 else ""),
-            "Length": v["length"],
-            "Instrument": v["instrument"].split(" + ")[0],
-        })
-    summary_df = pd.DataFrame(summary_rows)
-
-    edited_df = st.data_editor(
-        summary_df,
-        width="stretch",
-        hide_index=True,
-        disabled=["ID", "Publish Date", "Title", "Length", "Instrument"],
-        column_config={
-            "Status": st.column_config.SelectboxColumn(
-                "Status",
-                options=list(_STATUS_LABEL.values()),
-                required=True,
-            ),
-        },
-        key="queue_status_editor",
-    )
-
-    # Persist any status changes the user made in the editor.
-    changes = edited_df.merge(summary_df, on="ID", suffixes=("_new", "_old"))
-    changed = changes[changes["Status_new"] != changes["Status_old"]]
-    if not changed.empty:
-        for _, row in changed.iterrows():
-            new_status = _LABEL_STATUS.get(row["Status_new"], row["Status_new"])
-            set_video_status(row["ID"], new_status)
-        st.success(f"Updated status for {len(changed)} video(s).")
-        st.rerun()
-
-    st.divider()
-
-    # Picker
-    st.markdown("### Drill into a video")
-    options = {f"{v['id']} · {v['title'][:80]}": v["id"] for v in queue}
-    selected_label = st.selectbox("Choose a video from the queue", list(options.keys()))
-    selected_id = options[selected_label]
-    video = next(v for v in queue if v["id"] == selected_id)
-
-    # Header metrics
-    c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Length", video["length"])
-    c2.metric("Instrument", video["instrument"].split(" + ")[0])
-    c3.metric("Publish Date", video["publish_date"])
-    status_emoji = {"not_started": "⚪ Not started", "in_progress": "🟡 In progress", "published": "🟢 Published"}.get(video["status"], video["status"])
-    c4.metric("Status", status_emoji)
-
-    # Strategic bet
-    st.markdown("#### 🎯 Strategic bet")
-    st.info(video["strategic_bet"])
-
-    # Validated keywords
-    st.markdown("#### 🔑 Validated keywords in this video")
-    for kw in video["validated_keywords"]:
-        st.markdown(f"- {kw}")
-
-    # Title (copy block)
-    st.markdown("#### 📝 Title")
-    st.code(video["title"], language=None)
-
-    # Description
-    st.markdown("#### 📄 Description")
-    with st.expander("View full description", expanded=False):
-        st.code(video["description"], language=None)
-
-    # Tags
-    st.markdown("#### 🏷️ Tags")
-    if video["tags"]:
-        tag_count = len(video["tags"].split(","))
-        char_count = len(video["tags"])
-        st.caption(f"{tag_count} tags · {char_count} chars (limit: 500)")
-        st.code(video["tags"], language=None)
-    else:
-        st.info("🚫 Tags intentionally empty (mirrors Raga Heal's zero-tag approach on their 997K-view flagship)")
-
-    # Suno prompt
-    st.markdown("#### 🎵 Suno AI prompt")
-    st.caption("Paste into Suno Pro 'Custom Mode' → Style field. Toggle 'Instrumental' ON in the UI.")
-    st.code(video["suno_prompt"], language=None)
-
-    # Hz/binaural note
-    if video.get("hz") and video["hz"] != "None (keep acoustic/pure)":
-        st.caption(f"**Post-production binaural overlay:** {video['hz']} — layer underneath Suno track at -15dB via Audacity. Use [MyNoise.net](https://mynoise.net) or similar to generate the tone.")
-
-    # Thumbnail
-    st.markdown("#### 🎨 Thumbnail image prompt")
-    st.caption("Paste into Midjourney, DALL-E, or Flux. Generate 4-6 variations, pick best.")
-    st.code(video["thumbnail_prompt"], language=None)
-
-    st.markdown("#### 🖼️ Thumbnail text overlay")
-    st.caption("Add these after image generation in Canva/Photoshop. Typography: bold serif or sans-serif in warm cream `#FAF3E0`, drop shadow for readability.")
-    tt1, tt2 = st.columns([1, 1])
-    with tt1:
-        st.markdown("**Main text (large, bottom-left)**")
-        st.code(video["thumbnail_text_main"], language=None)
-    with tt2:
-        st.markdown("**Secondary text (small, below main)**")
-        st.code(video["thumbnail_text_secondary"], language=None)
-
-    # Success criteria
-    st.markdown("#### 📊 Success criteria (14 days post-publish)")
-    sc1, sc2 = st.columns(2)
-    with sc1:
-        st.markdown("**🟢 Good**")
-        st.caption(video["success_good"])
-    with sc2:
-        st.markdown("**🔥 Breakthrough**")
-        st.caption(video["success_breakthrough"])
-
-    st.divider()
-    st.caption("💡 Tip: Update status from the **Overview** dropdown above. To add a new video to the pipeline, append a dict to `VIDEOS` in `production_queue.py`.")
-
 
 # -----------------------------------------------------------------------------
 # Tab: Brief Queue (new — dynamic, reads from data/video_briefs/*.json)
