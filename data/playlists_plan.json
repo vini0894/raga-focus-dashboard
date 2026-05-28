@@ -1,126 +1,139 @@
 {
-  "created_at": "2026-05-17",
-  "purpose": "Playlist strategy + structure. Playlists drive 36-min AVD on Raga Focus vs 19-min channel avg (1.9× retention multiplier) but currently only 2.5% of traffic — massively under-tapped. Building 6 themed playlists with proper ordering + SEO descriptions is highest-leverage 1-hour task on the channel.",
+  "created_at": "2026-05-27",
+  "purpose": "Playlist strategy + structure based on full channel performance data (850K total views, 64 videos). 5 playlists — data-backed from CTR, AVD, and view clustering. Playlists drive sequential watch time; each playlist anchored by highest-view video pinned first.",
   "current_state": {
     "existing_playlists": [
-      {"name": "Morning Focus Music", "videos": 8, "lifetime_views": 28, "status": "EXPAND + restructure"},
-      {"name": "Peaceful Music", "videos": 16, "lifetime_views": 62, "status": "RENAME + restructure"},
-      {"name": "Deep Focus Sessions", "videos": 18, "lifetime_views": 31, "status": "RETIRE or rename"}
+      {"name": "Sleep Music", "videos": 6, "lifetime_views": 0, "status": "EXPAND — missing 8 videos including Bansuri Sound Sleep (63K)"},
+      {"name": "Healing Music", "videos": 16, "lifetime_views": 0, "status": "RENAME to Healing & Anxiety Relief + fix title mismatches"},
+      {"name": "Meditation", "videos": 9, "lifetime_views": 0, "status": "KEEP — pin Dopamine Reset first"},
+      {"name": "Morning Energy", "videos": 9, "lifetime_views": 0, "status": "KEEP — add Yoga Music"},
+      {"name": "Focus Music", "videos": 12, "lifetime_views": 0, "status": "LOW PRIORITY — data shows this lane underperforms (<3K views across 10 focus videos)"},
+      {"name": "Evening Calm", "videos": 7, "lifetime_views": 0, "status": "FOLD INTO Sleep Music + Peaceful Music"},
+      {"name": "Peaceful Music", "videos": 16, "lifetime_views": 0, "status": "KEEP — curate to 7 softer ambient videos"}
     ],
-    "missing_playlists": ["Sleep", "Emotional Healing", "Clinical Reset", "Deep Rest"],
+    "missing_playlists": [],
     "total_playlist_views": 121,
-    "playlist_avd_advantage": "36 min vs 19 min channel — 1.9× retention"
+    "playlist_avd_advantage": "Playlists drive sequential autoplay — each playlist watch session extends total channel watch time"
   },
-  "ordering_principle": "Within each playlist, order videos HIGHEST-CTR-FIRST. Top video = entry point that pulls viewers in. Sequential autoplay does the rest. Treat playlists like SEO-optimized 'channels' — they get their own search ranking.",
+  "ordering_principle": "Within each playlist, anchor video (highest views) pinned first — acts as the entry point that pulls viewers in via autoplay. Subsequent videos ordered by views descending. Treat each playlist as a curated session journey, not just a folder.",
   "playlists_to_build": [
     {
       "playlist_number": 1,
-      "name": "Sleep & Insomnia Relief — Indian Instrumental",
-      "status": "CREATE NEW",
-      "priority": "HIGHEST — channel's #1 CTR lane (Bansuri Deep Sleep 5.98%)",
-      "seo_description": "Indian classical instrumental music for deep sleep and insomnia relief. Bansuri, Tanpura, and slow sarangi sessions tuned to healing frequencies. Press play and drift off.",
+      "name": "Sleep Music",
+      "status": "EXPAND existing",
+      "priority": "HIGHEST — 63K Bansuri Sleep is currently not in any playlist. 133K+ combined views in this lane.",
+      "seo_description": "Gentle Indian classical music to help you fall asleep and stay asleep. Featuring Bansuri flute, Surbahar, Tanpura drone, and Veena — instruments tuned to calm your nervous system and quiet a restless mind. Perfect for insomnia, light sleepers, or anyone who struggles to switch off at night. Let the music do the work while you rest.",
       "videos_in_order": [
-        {"rank": 1, "title": "Deep Sleep | Relaxing Music with Bansuri | 1 Hour", "id": "QNmoY_K5MxI", "views": 34962, "ctr": 5.22, "note": "ANCHOR — channel's #1 CTR ever"},
-        {"rank": 2, "title": "Can't Fall Asleep | Raga Yaman Bansuri | Delta Wave Sleep Session", "id": "7PDDveKXLbs", "views": 6444, "ctr": 5.25},
-        {"rank": 3, "title": "Insomnia Relief Music | Tanpura Drone | 1.5 Hours", "id": "O8z-M9lOIzM", "views": 1304, "ctr": 4.52},
-        {"rank": 4, "title": "Deep Rest Music | Relax Your Mind Body and Soul | Bansuri Instrumental (3hr)", "id": "pivzhMAQFuQ", "views": null, "ctr": null, "note": "Sun May 17 ship — add after 48h data"},
-        {"rank": 5, "title": "Soothing Music | Veena for Tired Mind | 1.5 Hours", "id": "Ueean0nyIoI", "views": 583, "ctr": 3.35, "note": "Borderline fit — evening wind-down"}
+        {"rank": 1, "title": "Bansuri for Sound Sleep | Deep Sleep Music | 1 Hour", "id": "QNmoY_K5MxI", "views": 63222, "ctr": 4.99, "note": "ANCHOR — pin first. Currently missing from playlist (critical fix)"},
+        {"rank": 2, "title": "Deep Rest Music | Find Stillness with Surbahar | 1 Hour", "id": "m6aFcw2f58o", "views": 41606, "ctr": 3.69, "note": "Strong performer"},
+        {"rank": 3, "title": "Can't Fall Asleep | Raga Yaman Bansuri | Delta Wave Sleep Session | 1 Hour", "id": "7PDDveKXLbs", "views": 16992, "ctr": 5.35},
+        {"rank": 4, "title": "3 Hour Bansuri Music for Relaxation | Indian Classical Music for Deep Sleep", "id": "pivzhMAQFuQ", "views": 12138, "ctr": 5.44, "note": "3hr format — great for overnight listening"},
+        {"rank": 5, "title": "Deep Relaxation Music | Slow Surbahar | 1.5 Hours", "id": "ol5ryBrju2c", "views": 2410, "ctr": 4.40},
+        {"rank": 6, "title": "1.5 Hour Bansuri to Unwind | Breathe and Let Go", "id": "qZZuJV79mDc", "views": 1837, "ctr": null},
+        {"rank": 7, "title": "Insomnia Relief Music | Tanpura Drone | 1.5 Hours", "id": "O8z-M9lOIzM", "views": 1655, "ctr": 4.67},
+        {"rank": 8, "title": "Relaxation Music | Bansuri Raga & 432Hz Evening Session | 1 Hour", "id": "g3v4KTVRNEQ", "views": 1497, "ctr": 3.86},
+        {"rank": 9, "title": "Breathe And Relax | Slow Down Music | Veena Instrumental", "id": "FsYTGhdm2uM", "views": 1184, "ctr": 4.27},
+        {"rank": 10, "title": "Sound Healing Music | Slow Surbahar | 1.5 Hours of Rest", "id": "eaxs5hLcD4U", "views": 1178, "ctr": 3.80},
+        {"rank": 11, "title": "Restless Mind | Slow Veena | 1.5 Hours of Rest", "id": "ZwJiMj0Vjak", "views": 1772, "ctr": null},
+        {"rank": 12, "title": "Soothing Music | Veena for Tired Mind | 1.5 Hours", "id": "Ueean0nyIoI", "views": 674, "ctr": 3.26},
+        {"rank": 13, "title": "Let Go Before Sleep | 40 Min Tanpura Drone for Insomnia & Calm", "id": "4jtrdy4lfQU", "views": 163, "ctr": 2.19},
+        {"rank": 14, "title": "Rest Your Mind | Surbahar for Calmness | 1.5 Hours", "id": "giuRQmp9E1c", "views": 0, "ctr": null, "note": "Newest video (May 27) — add last"}
       ],
-      "future_additions": ["Fri May 22 Bansuri Deep Sleep swing", "Bansuri Deep Sleep refresh ships"]
+      "future_additions": ["Any new Bansuri/Surbahar/Tanpura sleep ships"]
     },
     {
       "playlist_number": 2,
-      "name": "Emotional Healing & Release — Sarangi & Strings",
-      "status": "CREATE NEW",
-      "priority": "HIGH — emotional lane is under-served + Mon Sarangi ship perfect kickoff anchor",
-      "seo_description": "Indian classical instrumental music for emotional release, grief processing, and heart healing. Solo sarangi and bowed strings tuned to healing frequencies. For when you need to feel — not fix.",
+      "name": "Meditation",
+      "status": "KEEP + fix ordering",
+      "priority": "HIGHEST — Sitar Dopamine Reset (826K views) is 70% of total channel views. This playlist is the #1 discovery surface.",
+      "seo_description": "Indian classical music for mindfulness, stillness, and dopamine reset. Rooted in ancient ragas played on Sitar, Veena, Sarangi, and Santoor — this music helps you drop into presence, reduce mental noise, and reconnect with a quieter version of yourself. Use it for seated meditation, breathwork, or simply as a background for stillness.",
       "videos_in_order": [
-        {"rank": 1, "title": "Healing Music | Sarangi for Emotional Release | 1.5 Hours", "id": "Mon-May-18-ship", "note": "ANCHOR — Mon May 18 ship (set as first video, kicks off playlist)"},
-        {"rank": 2, "title": "Comfort Music | Healing Music with Sarangi | 1 Hour", "id": "P-DIkbxipB8", "views": 6727, "ctr": 3.22, "note": "Proven sibling 6.7K"},
-        {"rank": 3, "title": "Nostalgia Music | Healing Music with Sarangi | 1.5 Hour", "id": "BXdEaCum01I", "views": 2840, "ctr": 4.19},
-        {"rank": 4, "title": "Emotional Detox | Healing Violin | 1 Hour Release", "id": "62FI6ji47L8", "note": "Add AFTER Mon refresh — currently 67v but refreshing"}
+        {"rank": 1, "title": "Sitar for Dopamine Reset | Indian Classical Music for Mindfulness", "id": "SEw8IsSXRSU", "views": 826253, "ctr": 3.22, "note": "ANCHOR — channel #1 video (826K views). MUST be pinned first."},
+        {"rank": 2, "title": "Calm Your Mind | Veena Healing Music | 1 hour", "id": "h7jE3BbxdN4", "views": 5640, "ctr": 5.62, "note": "Highest CTR after anchor — good #2 position"},
+        {"rank": 3, "title": "Calm an Overactive Mind | Chandra Raga | Deep Nervous System Healing", "id": "NDoTueJoTRA", "views": 3231, "ctr": 3.90},
+        {"rank": 4, "title": "Peaceful Music | Soothing Music with Veena | 1 Hour", "id": "1jrBZH4K_S8", "views": 2711, "ctr": 4.27},
+        {"rank": 5, "title": "Inner Peace Music | Sarangi Healing | 1.5 Hours", "id": "5hYSZG2qPXc", "views": 924, "ctr": null},
+        {"rank": 6, "title": "Morning Meditation Music | Tanpura Instrumental | 1.5 Hours of Peaceful Focus", "id": "YZ3xQsejPEs", "views": 1189, "ctr": 4.94},
+        {"rank": 7, "title": "Mental Stillness Music | Slow Santoor | 1.5 Hours", "id": "0Vv0INZ2sVI", "views": 785, "ctr": 3.69},
+        {"rank": 8, "title": "Mindful Music | Relaxation | 40Hz Gamma Binaural Beats", "id": "o71DBMDTHyc", "views": 160, "ctr": 2.95}
       ],
-      "future_additions": ["Any future Sarangi emotional ships", "Any future Esraj emotional moonshot ships"]
+      "future_additions": ["Any future mindfulness/stillness ships", "Sitar or Veena meditation ships"]
     },
     {
       "playlist_number": 3,
-      "name": "Clinical Reset & Stress Recovery — Sitar & Surbahar",
-      "status": "CREATE NEW",
-      "priority": "HIGHEST — our #2 winning lane, anchored by Dopamine Reset viral (414K)",
-      "seo_description": "Indian classical music for nervous system reset, cortisol relief, burnout recovery, and clinical-curiosity stress reduction. Sitar, Surbahar, and Sarod sessions. Reset your mind in 1 hour.",
+      "name": "Morning Energy",
+      "status": "KEEP + add Yoga Music",
+      "priority": "HIGH — 68K+ combined views. Best average AVD on the channel (25–33%). Dilruba Yaman (74K) + Productive Day Bansuri (37K) anchor this lane.",
+      "seo_description": "Uplifting Indian classical music to start your day with clarity, motivation, and positive energy. Dilruba, Sitar, Bansuri, and Santoor bring the warmth and forward movement of morning ragas — designed to replace the phone scroll with something that actually sets you up well. Ideal for morning routines, yoga, journaling, or your first hour of work.",
       "videos_in_order": [
-        {"rank": 1, "title": "Sitar for Dopamine Reset | Indian Classical Music for Mindfulness", "id": "SEw8IsSXRSU", "views": 414538, "ctr": 3.26, "note": "ANCHOR — viral magnet pulls people into rest of playlist"},
-        {"rank": 2, "title": "Sitar for Nervous System Healing | Indian Classical Music for Calmness | 1 Hour", "id": "52YU6Q64zVw", "views": 10069, "ctr": 4.16},
-        {"rank": 3, "title": "Calm Music | Sitar for Cortisol Reset | 1.5 hours healing", "id": "cLfbEA5506U", "views": 7072, "ctr": 3.95, "note": "W2 survivor"},
-        {"rank": 4, "title": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour", "id": "Bc92MEMzd5g", "views": 3850, "ctr": 3.56},
-        {"rank": 5, "title": "Brain Reset Music | Sitar for Mental Clarity | 20 Minutes (refreshed Memory Recall)", "id": "IwzyemqVh7c", "note": "Add after Mon refresh"},
-        {"rank": 6, "title": "Mental Break | Sitar for Mind Reset | 20 Minutes (refreshed Concentration)", "id": "ZyV0OfIdDKs", "note": "Add after Mon refresh"},
-        {"rank": 7, "title": "Switch Off | Dilruba Music for Digital Detox | 1 Hour Reset (refreshed)", "id": "3TayWGNOyrY", "note": "Add after Mon refresh"}
+        {"rank": 1, "title": "Morning Energy Music | Dilruba Raga Yaman | 1 Hour", "id": "DMcoOLvmAyQ", "views": 74903, "ctr": 5.19, "note": "ANCHOR — pin first. 74K views, 29% AVD"},
+        {"rank": 2, "title": "Productive Day Music | Positive Morning Vibes | 1 Hour Bansuri Session", "id": "AVg7n2rEBG4", "views": 37883, "ctr": 4.92, "note": "Strong performer — 27% AVD"},
+        {"rank": 3, "title": "Yoga Music | Positive Energy Frequency | 1 Hour", "id": "mjd89dJLam0", "views": 19246, "ctr": 4.80, "note": "Move from Evening Calm — yoga = morning intent"},
+        {"rank": 4, "title": "Morning Motivation | Sitar Music Instrumental | 1.5 Hours", "id": "Cih09cj7bnY", "views": 12744, "ctr": 4.62},
+        {"rank": 5, "title": "Joyful Music | Positive Vibes Music with Santoor | 1 Hour", "id": "KeEFFkaCMRk", "views": 8908, "ctr": 4.86},
+        {"rank": 6, "title": "Sitar Music to Start Your Morning Right | 1.5 Hours", "id": "95NmnEaWJGw", "views": 2953, "ctr": null},
+        {"rank": 7, "title": "Morning Reset Music | Clear Your Head with Sarod Instrumental | 1.5 hours", "id": "cWX2U5VgN6M", "views": 2251, "ctr": null},
+        {"rank": 8, "title": "Morning Energy Music | Santoor Instrumental | Positive Vibes", "id": "izpOuUSyH5Q", "views": 2168, "ctr": 4.18},
+        {"rank": 9, "title": "Uplifting Music | Dilruba for Morning Energy | 1.5 Hours", "id": "0n08FIuVMyw", "views": 2129, "ctr": 3.93},
+        {"rank": 10, "title": "Start Your Day With Peace | Calm Bansuri Meditation | 1.5 hours", "id": "DubeTsFevyI", "views": 1968, "ctr": 3.71},
+        {"rank": 11, "title": "Positive Vibes Music | Feel Good Hour | 1 Hour", "id": "8XDHxadprKs", "views": 222, "ctr": 3.29}
       ],
-      "future_additions": ["Tue May 19 Sitar Brain Detox swing", "Sat PM clinical-reset ships"]
+      "future_additions": ["Any new morning/uplifting/positive-energy ships"]
     },
     {
       "playlist_number": 4,
-      "name": "Calm & Anxiety Relief — Veena & Bansuri Healing",
-      "status": "RENAME existing 'Peaceful Music' + restructure",
-      "priority": "MEDIUM — broad lane, less differentiated than #1-3",
-      "seo_description": "Indian classical instrumental music for anxiety relief and calm. Slow veena, bansuri, and sarangi sessions for nervous system regulation and stress reduction.",
+      "name": "Healing & Anxiety Relief",
+      "status": "RENAME from Healing Music + fix title mismatches + expand",
+      "priority": "HIGH — core channel positioning. 55K+ combined views. Fastest-growing lane as new videos ship. Nervous system healing anchor (28K) is proven.",
+      "seo_description": "Indian classical music for nervous system recovery, anxiety relief, and emotional healing. Sitar, Sarangi, Dilruba, and Bansuri played slowly to lower cortisol, ease overthinking, and help your body shift out of stress mode. Whether you're burning out, feeling overwhelmed, or just need to decompress — this is where to start.",
       "videos_in_order": [
-        {"rank": 1, "title": "Calm Your Mind | Veena Healing Music | 1 hour", "id": "h7jE3BbxdN4", "views": 4979, "ctr": 5.68, "note": "ANCHOR — top AVD 33% on channel"},
-        {"rank": 2, "title": "Yoga Music | Positive Energy Frequency | 1 Hour", "id": "mjd89dJLam0", "views": 9633, "ctr": 4.74},
-        {"rank": 3, "title": "Stress Relief Music | Deep Meditation with Veena Raga & 432Hz | 1 Hour", "id": "5UGTuyNHHHE", "views": 2416, "ctr": 3.92},
-        {"rank": 4, "title": "Peaceful Music | Soothing Music with Veena | 1 Hour", "id": "1jrBZH4K_S8", "views": 2409, "ctr": 4.32},
-        {"rank": 5, "title": "Anxiety Relief Music | Clear Your Mind", "id": "pMDVh0dzUdI", "views": 1783, "ctr": 4.91},
-        {"rank": 6, "title": "Relaxation Music | Bansuri Raga & 432Hz Evening Session | 1 Hour", "id": "g3v4KTVRNEQ", "views": 1406, "ctr": 3.84}
-      ]
+        {"rank": 1, "title": "Sitar for Nervous System Healing | Indian Classical Music for Calmness | 1 Hour", "id": "52YU6Q64zVw", "views": 28888, "ctr": 4.22, "note": "ANCHOR — pin first. 28K views, 29% AVD"},
+        {"rank": 2, "title": "Calm Music | Sitar for Cortisol Reset | 1.5 hours healing", "id": "cLfbEA5506U", "views": 8448, "ctr": 3.86},
+        {"rank": 3, "title": "Comfort Music | Healing Music with Sarangi | 1 Hour", "id": "P-DIkbxipB8", "views": 7632, "ctr": 3.20},
+        {"rank": 4, "title": "Anxiety Relief Music | Clear Your Mind | 1 Hour Dilruba Session", "id": "pMDVh0dzUdI", "views": 7029, "ctr": 4.23},
+        {"rank": 5, "title": "Release Stress | Burnout Music | Santoor & 528Hz", "id": "Z6dZjnUzNXQ", "views": 5515, "ctr": 4.32},
+        {"rank": 6, "title": "Music for Burnout | Find Clamness with Surbahar | 1 Hour", "id": "Bc92MEMzd5g", "views": 5013, "ctr": 3.61},
+        {"rank": 7, "title": "Nostalgia Music | Healing Music with Sarangi | 1.5 Hour", "id": "BXdEaCum01I", "views": 3350, "ctr": 4.17},
+        {"rank": 8, "title": "Stress Relief Music | Deep Meditation with Veena Raga & 432Hz | 1 Hour", "id": "5UGTuyNHHHE", "views": 2757, "ctr": 3.94},
+        {"rank": 9, "title": "Overthinking Music | Healing with Bamboo Flute & Tanpura | 1 Hour", "id": "Y6Ob2P34DHA", "views": 1960, "ctr": 4.20},
+        {"rank": 10, "title": "Let Go Of Stress | Sarangi for Emotional Release | 1.5 Hours", "id": "xY3GQ28LBn0", "views": 1766, "ctr": 3.71},
+        {"rank": 11, "title": "Stress Relief Music | Santoor Instrumental | 3 Hours", "id": "TXfk2UU5MjI", "views": 965, "ctr": null},
+        {"rank": 12, "title": "Overthinking Music | Dilruba Instrumental | 1.5 Hours", "id": "j-B5f9o9QHA", "views": 708, "ctr": null},
+        {"rank": 13, "title": "Emotional Detox | Healing Violin | 1 Hour Release", "id": "62FI6ji47L8", "views": 204, "ctr": 2.37}
+      ],
+      "future_additions": ["Any new anxiety/nervous system/burnout/overthinking ships (core positioning lane — will grow fastest)"]
     },
     {
       "playlist_number": 5,
-      "name": "Morning Energy & Positive Vibes — Bansuri & Santoor",
-      "status": "EXPAND existing 'Morning Focus Music' + reorder",
-      "priority": "MEDIUM — proven morning audience, anchored by Productive Day Bansuri",
-      "seo_description": "Start your day with Indian classical instrumental music. Bansuri, santoor, and dilruba morning sessions for energy, focus, and positive vibes. Productive day mode activated.",
+      "name": "Peaceful Music",
+      "status": "KEEP + curate down to 7 softer ambient videos",
+      "priority": "MEDIUM — softer entry point for new visitors not ready to self-identify with anxiety or sleep issues. Broad 'peaceful music' search term.",
+      "seo_description": "Soft Indian classical instrumental music for quiet moments, gentle background listening, and everyday calm. Veena, Surbahar, Santoor, and Bansuri played slowly — no agenda, no intensity, just peaceful sound. For when you want something beautiful and undemanding in the background.",
       "videos_in_order": [
-        {"rank": 1, "title": "Productive Day Music | Positive Morning Vibes | 1 Hour Bansuri Session", "id": "AVg7n2rEBG4", "views": 24067, "ctr": 4.99, "note": "ANCHOR — 23K views proven"},
-        {"rank": 2, "title": "Yoga Music | Positive Energy Frequency | 1 Hour", "id": "mjd89dJLam0", "views": 9633, "ctr": 4.74, "note": "Also fits #4 — playlist overlap OK"},
-        {"rank": 3, "title": "Joyful Music | Positive Vibes Music with Santoor | 1 Hour", "id": "KeEFFkaCMRk", "views": 5390, "ctr": 4.98},
-        {"rank": 4, "title": "Morning Energy Music | Dilruba Raga Yaman | 1 Hour", "id": "DMcoOLvmAyQ", "views": 4369, "ctr": 5.04},
-        {"rank": 5, "title": "Start Your Day With Peace | Calm Bansuri Meditation | 1 Hour", "id": "DubeTsFevyI", "views": 1592, "ctr": 3.69},
-        {"rank": 6, "title": "Morning Energy Music | Santoor Instrumental | Positive Vibes", "id": "izpOuUSyH5Q", "views": 1330, "ctr": 3.93},
-        {"rank": 7, "title": "Morning Motivation | Sitar Music Instrumental | 1.5 Hours", "id": "Cih09cj7bnY", "views": 1153, "ctr": 4.39}
-      ]
-    },
-    {
-      "playlist_number": 6,
-      "name": "Deep Rest & Wind Down — Surbahar Evening Sessions",
-      "status": "CREATE NEW",
-      "priority": "MEDIUM — anchored by Apr 28 Deep Rest Surbahar (channel #2, 33K views)",
-      "seo_description": "Indian classical instrumental music for deep rest and end-of-day wind down. Slow surbahar, bansuri, and tanpura sessions for nervous system release. For when your body is exhausted but your mind won't stop.",
-      "videos_in_order": [
-        {"rank": 1, "title": "Deep Rest Music | Find Stillness with Surbahar | 1 Hour", "id": "m6aFcw2f58o", "views": 33766, "ctr": 3.74, "note": "ANCHOR — channel #2 video"},
-        {"rank": 2, "title": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour", "id": "Bc92MEMzd5g", "views": 3850, "ctr": 3.56, "note": "Overlap with playlist #3 OK"},
-        {"rank": 3, "title": "Sound Healing Music | Slow Surbahar | 1.5 Hours of Rest", "id": "eaxs5hLcD4U", "views": 941, "ctr": 3.94},
-        {"rank": 4, "title": "Deep Rest Music | Relax Your Mind Body and Soul | Bansuri Instrumental (3hr)", "id": "pivzhMAQFuQ", "views": null, "note": "Sun May 17 ship — add after 48h"}
+        {"rank": 1, "title": "Peaceful Music | Soothing Music with Veena | 1 Hour", "id": "1jrBZH4K_S8", "views": 2711, "ctr": 4.27, "note": "ANCHOR — pin first. Also in Meditation playlist (cross-listed)"},
+        {"rank": 2, "title": "Deep Relaxation Music | Slow Surbahar | 1.5 Hours", "id": "ol5ryBrju2c", "views": 2410, "ctr": 4.40, "note": "Also in Sleep Music (cross-listed)"},
+        {"rank": 3, "title": "Relaxation Music | Bansuri Raga & 432Hz Evening Session | 1 Hour", "id": "g3v4KTVRNEQ", "views": 1497, "ctr": 3.86},
+        {"rank": 4, "title": "Breathe And Relax | Slow Down Music | Veena Instrumental", "id": "FsYTGhdm2uM", "views": 1184, "ctr": 4.27, "note": "Also in Sleep Music (cross-listed)"},
+        {"rank": 5, "title": "Sound Healing Music | Slow Surbahar | 1.5 Hours of Rest", "id": "eaxs5hLcD4U", "views": 1178, "ctr": 3.80},
+        {"rank": 6, "title": "Morning Meditation Music | Tanpura Instrumental | 1.5 Hours of Peaceful Focus", "id": "YZ3xQsejPEs", "views": 1189, "ctr": 4.94},
+        {"rank": 7, "title": "Mental Stillness Music | Slow Santoor | 1.5 Hours", "id": "0Vv0INZ2sVI", "views": 785, "ctr": 3.69}
       ],
-      "future_additions": ["Thu May 21 Surbahar Deep Rest swing", "Future deep-rest ships"]
+      "future_additions": ["Soft ambient ships in Veena/Surbahar/Bansuri that are too gentle for Sleep or Healing playlists"]
     }
   ],
   "playlists_to_retire_or_dismantle": [
-    {
-      "name": "Deep Focus Sessions",
-      "action": "RETIRE or rename to 'Brain & Cognitive Reset'",
-      "rationale": "Focus lane was pre-pivot positioning. Channel has moved away. Current focus-named videos are all in hurting list (being refreshed to clinical-reset framing). Either retire this playlist OR repurpose for the refreshed clinical-curiosity ships."
-    }
+    {"name": "Evening Calm", "action": "FOLD INTO Sleep Music + Peaceful Music", "reason": "7 videos, fully overlaps with Sleep Music and Peaceful Music. No unique intent."},
+    {"name": "Focus Music", "action": "LOW PRIORITY — leave as-is or quietly retire", "reason": "Data verdict: 10 of 13 focus videos under 500 views. 40Hz/Gamma/binaural framing does not match channel audience. Channel pivoted away from productivity in April 2026."}
   ],
   "execution_order_for_user": [
-    "STEP 1 (15 min): Create Playlist #1 Sleep — drag 4 existing videos, write SEO description, set Bansuri Deep Sleep as first. Highest leverage.",
-    "STEP 2 (15 min): Create Playlist #3 Clinical Reset — drag Sitar Dopamine Reset as first (viral magnet), add 3-4 clinical ships. Anchors the lane.",
-    "STEP 3 (10 min): Create Playlist #2 Emotional Healing — add Mon Sarangi as first AFTER it ships, plus Comfort + Nostalgia Sarangi. Skip if Mon hasn't shipped yet.",
-    "STEP 4 (10 min): Create Playlist #6 Deep Rest — Surbahar Apr 28 as anchor + Burnout Surbahar.",
-    "STEP 5 (10 min): Rename 'Peaceful Music' → 'Calm & Anxiety Relief — Veena & Bansuri Healing'. Reorder existing videos: Calm Your Mind Veena first.",
-    "STEP 6 (10 min): Expand 'Morning Focus Music' → 'Morning Energy & Positive Vibes'. Add Productive Day Bansuri as first. Reorder by views.",
-    "STEP 7 (5 min): Decide on 'Deep Focus Sessions' — retire or rename."
+    "1. SLEEP MUSIC: Add Bansuri for Sound Sleep (QNmoY_K5MxI) — it has 63K views and is currently not in any playlist. Critical fix.",
+    "2. MEDITATION: Verify Sitar for Dopamine Reset is pinned at position #1.",
+    "3. MORNING ENERGY: Add Yoga Music | Positive Energy Frequency (mjd89dJLam0) — currently in Evening Calm, belongs here.",
+    "4. HEALING: Rename 'Healing Music' → 'Healing & Anxiety Relief'. Add Anxiety Relief Dilruba + Overthinking Dilruba + Let Go Of Stress Sarangi.",
+    "5. PEACEFUL MUSIC: Trim down to the 7 curated videos listed. Remove any mismatched videos.",
+    "6. SLEEP MUSIC: Add the remaining 13 videos in order from the list above.",
+    "7. CROSS-LIST 3 videos that fit 2 playlists (see notes in video lists)."
   ],
-  "total_time_estimate": "~75 min for full restructure. Can split across 2-3 sessions.",
-  "expected_impact": "If playlists go from 121 lifetime views to even 5% of channel traffic (vs current 2.5%), with 1.9× AVD multiplier, that's ~10-15% lift in total watch hours channel-wide. Highest-leverage low-effort task on the dashboard."
+  "total_time_estimate": "~60 min in YouTube Studio",
+  "expected_impact": "Sequential autoplay across 5 curated playlists. Dopamine Reset (826K) anchors Meditation and feeds 7 downstream videos. Bansuri Sleep (63K) finally gets playlist context. Morning Energy lane (68K+ combined) gets structured for binge-watching."
 }
