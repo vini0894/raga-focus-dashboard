@@ -2172,66 +2172,127 @@ with tab_idea_gen:
     # Sub-tab 4: Next Tests
     # =========================================================================
     with sub_next:
-        st.markdown("### Hypotheses Queue — Next Tests to Run")
-        st.caption("Gaps in the data worth structuring a deliberate test around. Set these up on the next relevant ship.")
+        st.markdown("### Recommended A/B Tests by Theme")
+        st.caption("One concrete test per lane — match to the next video you ship in that theme. Thumb-only tests are preferred: cheaper to run and give clean isolation.")
 
-        hypotheses = [
+        st.info("**Rule:** Never run two Title+Thumb tests on the same theme simultaneously — you lose the ability to isolate what moved the needle. Thumb-only first, then title-only if needed.")
+
+        # ── High Priority
+        st.markdown("#### 🔴 High Priority — Settle the biggest open questions")
+
+        high_tests = [
             {
-                "priority": "🔴 1",
-                "hypothesis": "Intent-descriptor thumb beats Q-hook in sleep lane cleanly",
+                "lane": "Burnout / Rest",
+                "type": "Thumb-only",
+                "a": "REST WITHOUT WORRY",
+                "b": "BURNED OUT AND TIRED?",
+                "settles": "Permission thumb vs exhaustion Q-hook — clean isolation. Test 29 showed 17pp win for REST WITHOUT WORRY but title was also different. This closes it.",
+                "note": "Tests #26 and #27 are running but both are confounded (title+thumb changed together). This test is still needed.",
+            },
+            {
+                "lane": "Overthinking",
+                "type": "Thumb-only",
+                "a": "TOO MANY THOUGHTS?",
+                "b": "SLOW DOWN YOUR THOUGHTS",
+                "settles": "Specific mental Q-hook vs outcome-imperative. Test #8 showed Q-hook wins but was confounded. Test #31 tied with a different setup.",
+                "note": "Next Overthinking/Bamboo Flute or Sitar ship is the right vehicle.",
+            },
+            {
                 "lane": "Sleep",
-                "design": "Thumb-only: **DEEP SLEEP NOW** vs **CAN'T FALL ASLEEP?**",
-                "settles": "Whether sleep lane is intent-match or just anti-Q-hook",
-                "status": "Needs a thumb-only sleep test",
+                "type": "Thumb-only",
+                "a": "DEEP SLEEP NOW",
+                "b": "CAN'T FALL ASLEEP?",
+                "settles": "Intent-descriptor vs problem Q-hook — proves whether sleep lane needs intent-match or is simply anti-Q-hook.",
+                "note": "Wait for Test #24 (SLEEP MUSIC vs TOO TENSE TO REST?) to conclude first — it may already answer this.",
             },
             {
-                "priority": "🔴 2",
-                "hypothesis": "Permission thumb beats both Q-hook and outcome-imperative — strongly supported by Test 29 (REST WITHOUT WORRY, 17.2pp win)",
-                "lane": "Burnout/Rest",
-                "design": "3-way thumb-only: **IT'S OKAY TO REST** vs **BURNED OUT AND TIRED?** vs **RELEASE THE TENSION**",
-                "settles": "Isolates permission as a distinct category (Test 29 was confounded)",
-                "status": "High priority — best current hypothesis",
-            },
-            {
-                "priority": "🟡 3",
-                "hypothesis": "Mental-state Q-hook beats physical-exhaustion Q-hook",
-                "lane": "Any rest lane",
-                "design": "Thumb-only: **MIND WON'T SLOW DOWN?** vs **BODY FEELS HEAVY?**",
-                "settles": "Explains why some Q-hooks win and others lose",
-                "status": "Explains pattern across 9 tests",
-            },
-            {
-                "priority": "🟡 4",
-                "hypothesis": "Plain-language state beats clinical jargon in burnout title",
-                "lane": "Burnout",
-                "design": "Title-only: **Exhausted Mind | Slow Veena | 1.5 Hours** vs **Nervous System Reset | Slow Veena | 1.5 Hours**",
-                "settles": "Settles title lead style for burnout lane",
-                "status": "Test 26 confounded — need isolation",
-            },
-            {
-                "priority": "🟢 5",
-                "hypothesis": "Strong title rescues generic outcome thumb",
-                "lane": "Any lane",
-                "design": "Thumb-only with proven strong title: **STRESSED?** vs **RELAX DEEPLY**",
-                "settles": "Confirms whether generic thumb finding is real or title-confounded",
-                "status": "Only Test 14 is a clean isolation so far",
-            },
-            {
-                "priority": "🟢 6",
-                "hypothesis": "Morning anti-Q-hook rule holds with thumb-only isolation",
-                "lane": "Morning",
-                "design": "Thumb-only morning test: **MORNING BOOST** vs **FEEL UNMOTIVATED?**",
-                "settles": "Test 28 (tie, confounded) introduced doubt — need clean isolation",
-                "status": "5 prior morning tests all showed outcome wins",
+                "lane": "Healing / Nostalgia",
+                "type": "Thumb-only",
+                "a": "EMOTIONAL HEALING",
+                "b": "HEAL YOUR HEART",
+                "settles": "Abstract emotional noun vs outcome-imperative. Test #10 concluded with this direction but title was also different.",
+                "note": "Next Sarangi or nostalgic-feel ship.",
             },
         ]
 
-        for h in hypotheses:
-            with st.expander(f"{h['priority']} · **{h['lane']}** — {h['hypothesis'][:80]}{'…' if len(h['hypothesis'])>80 else ''}"):
-                st.markdown(f"**Hypothesis:** {h['hypothesis']}")
-                st.markdown(f"**Test design:** {h['design']}")
+        for h in high_tests:
+            with st.expander(f"🔴 **{h['lane']}** — {h['type']}: {h['a']} vs {h['b']}"):
+                hc1, hc2 = st.columns(2)
+                with hc1:
+                    st.markdown("**Variant A**")
+                    st.code(h["a"], language=None)
+                with hc2:
+                    st.markdown("**Variant B**")
+                    st.code(h["b"], language=None)
+                st.markdown(f"**Test type:** {h['type']}")
                 st.markdown(f"**What it settles:** {h['settles']}")
-                st.info(f"**Status:** {h['status']}")
+                st.caption(h["note"])
+
+        # ── Medium Priority
+        st.markdown("#### 🟡 Medium Priority — Extend what's already working")
+
+        medium_tests = [
+            {
+                "lane": "Cognitive-Clarity",
+                "type": "Thumb-only",
+                "a": "MENTALLY EXHAUSTED?",
+                "b": "MIND WON'T STOP?",
+                "settles": "Which mental Q-hook phrase performs best. We know the format wins (Test #16, 62/38) — now find the best wording.",
+                "note": "Next Brain Fog / Clarity ship.",
+            },
+            {
+                "lane": "Relaxation / Anxiety",
+                "type": "Thumb-only",
+                "a": "STRESSED?",
+                "b": "CAN'T SWITCH OFF?",
+                "settles": "Does more specific Q-hook beat the proven winner from Test #14? Or is STRESSED? already optimal for this lane?",
+                "note": "Next Bansuri evening or relaxation ship.",
+            },
+            {
+                "lane": "Burnout / Stress",
+                "type": "Title-only",
+                "a": "Restless Mind | Slow Veena | 1.5 Hours",
+                "b": "Nervous System Reset | Slow Veena | 1.5 Hours",
+                "settles": "Plain-language state vs clinical jargon as title lead. Test #26 running but confounded — this is the clean isolation.",
+                "note": "Use same thumbnail on both. Next Veena or Surbahar burnout ship.",
+            },
+            {
+                "lane": "Focus",
+                "type": "Thumb-only",
+                "a": "BOOST YOUR FOCUS",
+                "b": "FOCUS STARTS NOW",
+                "settles": "Does imperative specificity / urgency matter within the outcome-imperative format? Focus lane rule is HIGH — this refines the best phrase.",
+                "note": "Low urgency — lane is already well-established. Run when convenient.",
+            },
+        ]
+
+        for h in medium_tests:
+            with st.expander(f"🟡 **{h['lane']}** — {h['type']}: {h['a'][:40]}{'…' if len(h['a'])>40 else ''} vs {h['b'][:40]}{'…' if len(h['b'])>40 else ''}"):
+                hc1, hc2 = st.columns(2)
+                with hc1:
+                    st.markdown("**Variant A**")
+                    st.code(h["a"], language=None)
+                with hc2:
+                    st.markdown("**Variant B**")
+                    st.code(h["b"], language=None)
+                st.markdown(f"**Test type:** {h['type']}")
+                st.markdown(f"**What it settles:** {h['settles']}")
+                st.caption(h["note"])
+
+        # ── Skip / Wait
+        st.markdown("#### ⚪ Skip or Wait")
+        skip_data = [
+            ("Morning", "3 tests already running (#17, #22, #25). Wait for conclusions before adding more."),
+            ("Deep Rest", "Test #23 running. Wait for conclusion — if BREATHE & RELAX wins cleanly, upgrade to MEDIUM and move on."),
+            ("Calm / Stillness", "Two ties. Format-tolerant lane — content quality is the lever, not text format. Not worth testing further."),
+            ("Comfort / Emotional", "Two ties (#6, #30). Same as Calm/Stillness — skip."),
+        ]
+        skip_df = pd.DataFrame(skip_data, columns=["Theme", "Reason"])
+        st.dataframe(skip_df, use_container_width=True, hide_index=True,
+                     column_config={
+                         "Theme": st.column_config.TextColumn("Theme", width=160),
+                         "Reason": st.column_config.TextColumn("Reason", width=600),
+                     })
 
         st.divider()
         st.markdown("### Quick Pre-Brief Checklist")
@@ -2243,7 +2304,7 @@ with tab_idea_gen:
 - [ ] No Hz, wave type, or raga jargon stuffed in?
 
 **Thumbnail:**
-- [ ] Thumb type is right for the lane? (Check Lane Rules tab)
+- [ ] Thumb type is right for the lane? (Check Lane Rules tab above)
 - [ ] If using Q-hook: is it a *mental/cognitive* state? (Not physical exhaustion or time-of-day)
 - [ ] Avoiding generic soft outcomes? (RELAX DEEPLY, THINK LESS, LET YOURSELF REST — weak)
 - [ ] Mobile readable? (2–3 words, 14–18 chars)
