@@ -1856,6 +1856,9 @@ with tab_briefs:
 # -----------------------------------------------------------------------------
 
 DASHBOARD_DIR = Path(__file__).parent
+PIPELINE_DIR  = (DASHBOARD_DIR / "pipeline") if (DASHBOARD_DIR / "pipeline").exists() else (DASHBOARD_DIR.parent / "pipeline")
+PROPOSALS_DIR = (DASHBOARD_DIR / "videos" / "proposals") if (DASHBOARD_DIR / "videos" / "proposals").exists() else (DASHBOARD_DIR.parent / "videos" / "proposals")
+PROJECT_ROOT  = PIPELINE_DIR.parent
 AB_RAW_CSV   = DASHBOARD_DIR / "data" / "ab_raw_data.csv"
 AB_RULES_JSON = DASHBOARD_DIR / "data" / "playbook" / "ab_pattern_rules.json"
 
