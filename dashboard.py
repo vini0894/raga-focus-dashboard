@@ -673,7 +673,7 @@ with st.sidebar:
 
 # Tabs
 tab_overview, tab_daily, tab_videos, tab_detail, tab_competitors, tab_queue, tab_briefs, tab_idea_gen, tab_title_builder, tab_playlists = st.tabs(
-    ["📊 Overview", "📈 Daily Views", "📺 Videos", "🔍 Video Detail", "⚔️ Competitors", "🚀 Production Queue", "🧠 Brief Queue", "💡 Idea Generation", "🔤 Title Builder", "🎵 Playlists"]
+    ["📊 Overview", "📈 Daily Views", "📺 Videos", "🔍 Video Detail", "⚔️ Competitors", "🚀 Production Queue", "🧠 Brief Queue", "🧪 A/B Insights", "🔤 Title Builder", "🎵 Playlists"]
 )
 
 # -----------------------------------------------------------------------------
@@ -1852,1593 +1852,478 @@ with tab_briefs:
 
 
 # -----------------------------------------------------------------------------
-# Tab: Idea Generation
+# Tab: A/B Insights
 # -----------------------------------------------------------------------------
-import subprocess
-from datetime import date as _idea_date
 
 DASHBOARD_DIR = Path(__file__).parent
-# Repo-local first (deployed mode); fall back to project parent (local dev mode)
-PIPELINE_DIR  = (DASHBOARD_DIR / "pipeline") if (DASHBOARD_DIR / "pipeline").exists() else (DASHBOARD_DIR.parent / "pipeline")
-PROPOSALS_DIR = (DASHBOARD_DIR / "videos" / "proposals") if (DASHBOARD_DIR / "videos" / "proposals").exists() else (DASHBOARD_DIR.parent / "videos" / "proposals")
-PROJECT_ROOT  = PIPELINE_DIR.parent
+AB_RAW_CSV   = DASHBOARD_DIR / "data" / "ab_raw_data.csv"
+AB_RULES_JSON = DASHBOARD_DIR / "data" / "playbook" / "ab_pattern_rules.json"
 
+@st.cache_data(ttl=300)
+def load_ab_raw():
+    if not AB_RAW_CSV.exists():
+        return pd.DataFrame()
+    df = pd.read_csv(AB_RAW_CSV)
+    return df
 
-def _materialize_token_for_subprocess():
-    """On Streamlit Cloud, st.secrets has OAuth but the subprocess can't read st.secrets.
-    Materialize a token.json on disk so signals.py can find it in _enrich_with_stats."""
-    try:
-        if hasattr(st, "secrets") and "oauth" in st.secrets:
-            import json as _json_t
-            oauth = st.secrets["oauth"]
-            token_payload = {
-                "client_id":     oauth["client_id"],
-                "client_secret": oauth["client_secret"],
-                "refresh_token": oauth["refresh_token"],
-                "token":         None,
-                "token_uri":     "https://oauth2.googleapis.com/token",
-                "scopes":        ["https://www.googleapis.com/auth/youtube.readonly"],
-            }
-            (DASHBOARD_DIR / "token.json").write_text(_json_t.dumps(token_payload))
-    except Exception:
-        pass  # silently fall through — pipeline will skip enrichment if no token
-
-
-def _run_pipeline_subprocess():
-    """Invoke pipeline/generate_ideas.py as a subprocess, return (returncode, stdout, stderr)."""
-    if not PIPELINE_DIR.exists():
-        return 127, "", f"Pipeline directory not found at {PIPELINE_DIR}"
-    _materialize_token_for_subprocess()
-    try:
-        proc = subprocess.run(
-            ["python3", "generate_ideas.py"],
-            cwd=str(PIPELINE_DIR),
-            capture_output=True,
-            text=True,
-            timeout=120,
-        )
-        return proc.returncode, proc.stdout, proc.stderr
-    except subprocess.TimeoutExpired:
-        return 124, "", "Pipeline timed out after 120s"
-    except Exception as e:
-        return 1, "", f"Subprocess error: {e}"
-
-
-def _latest_proposal_md():
-    """Return (path, today_str, exists) for today's proposal markdown."""
-    today_str = _idea_date.today().isoformat()
-    p = PROPOSALS_DIR / f"{today_str}.md"
-    return p, today_str, p.exists()
-
-
-# Hardcoded competitor channel IDs — same as pipeline/config.py
-COMPETITOR_CHANNELS = {
-    "Raga Heal":            "UCnCW6fiX-6Jykcl2NBQBIbQ",
-    "Shanti Instrumentals": "UCGVIda_EdGStdRAFMBh6LAA",
-}
-
-
-@st.cache_data(ttl=900)  # 15 min cache
-def fetch_competitor_pulse_live(days: int = 7):
-    """Live YouTube Data API fetch — bypasses pipeline RSS (which can fail on Cloud).
-
-    Returns: {competitor_name: [{title, days_ago, video_id, views, likes, duration}]}
-    Uses dashboard's existing OAuth (works on both local and Cloud via st.secrets).
-    """
-    import datetime as _dt
-    yd = _yt_data()
-    out = {}
-    today = _dt.datetime.now(_dt.timezone.utc).date()
-
-    for name, channel_id in COMPETITOR_CHANNELS.items():
-        try:
-            # Get the uploads playlist for this channel
-            ch = yd.channels().list(part="contentDetails", id=channel_id).execute()
-            if not ch.get("items"):
-                out[name] = []
-                continue
-            uploads_pl = ch["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
-
-            # Get latest videos from that playlist (50 most recent)
-            pl = yd.playlistItems().list(
-                part="contentDetails,snippet", playlistId=uploads_pl, maxResults=50
-            ).execute()
-
-            video_ids = []
-            meta = {}
-            for item in pl.get("items", []):
-                cd_item = item.get("contentDetails", {})
-                sn_item = item.get("snippet", {})
-                vid = cd_item.get("videoId")
-                if not vid:
-                    continue
-                pub_str = cd_item.get("videoPublishedAt") or sn_item.get("publishedAt", "")
-                title = sn_item.get("title", "")
-                try:
-                    pub_dt = _dt.datetime.fromisoformat(pub_str.replace("Z", "+00:00")).date()
-                    days_ago = (today - pub_dt).days
-                except Exception:
-                    days_ago = 999
-                if days_ago <= days:
-                    video_ids.append(vid)
-                    meta[vid] = {"title": title, "days_ago": days_ago, "video_id": vid}
-
-            # Enrich with stats (views/likes/duration)
-            stats = {}
-            for i in range(0, len(video_ids), 50):
-                batch = video_ids[i:i + 50]
-                if not batch:
-                    continue
-                resp = yd.videos().list(part="statistics,contentDetails", id=",".join(batch)).execute()
-                for item in resp.get("items", []):
-                    s = item.get("statistics", {})
-                    stats[item["id"]] = {
-                        "views":    int(s.get("viewCount", 0)),
-                        "likes":    int(s.get("likeCount", 0)),
-                        "duration": item.get("contentDetails", {}).get("duration", ""),
-                    }
-
-            uploads = []
-            for vid in video_ids:
-                m = meta[vid]
-                m.update(stats.get(vid, {}))
-                uploads.append(m)
-            uploads.sort(key=lambda u: u.get("days_ago", 999))
-            out[name] = uploads
-        except Exception as e:
-            out[name] = [{"error": str(e)}]
-    return out
-
-
-def _refresh_reach_history():
-    """Pull fresh per-video stats via the YouTube Analytics MCP function and
-    append a new capture row to REACH_HISTORY.csv. Returns (n_rows, error_or_none).
-    """
-    import csv
-    from datetime import date as _today_d
-    try:
-        info = load_my_channel_info()
-        catalog = load_all_my_videos()
-    except Exception as e:
-        return 0, f"YouTube API call failed: {e}"
-    if catalog.empty:
-        return 0, "Catalog empty (API returned no videos)"
-
-    capture = _today_d.today().isoformat()
-    hist_path = DASHBOARD_DIR / "data" / "REACH_HISTORY.csv"
-    HEADER = ["capture_date", "video_id", "title", "publish_date", "views",
-              "watch_hours", "subscribers_gained", "impressions",
-              "ctr_pct", "avg_view_duration_sec", "avg_view_pct"]
-
-    # Existing keys to dedupe
-    existing_keys = set()
-    if hist_path.exists():
-        with open(hist_path) as f:
-            for r in csv.DictReader(f):
-                existing_keys.add((r["video_id"], r["capture_date"]))
-
-    # Per-video impressions/CTR aren't in the Data API — only Views/duration.
-    # We write what we have; reach details come from the periodic xlsx export.
-    new_rows = []
-    for _, v in catalog.iterrows():
-        if (v["video_id"], capture) in existing_keys:
-            continue
-        new_rows.append({
-            "capture_date":           capture,
-            "video_id":               v["video_id"],
-            "title":                  v["title"],
-            "publish_date":           v["published"],
-            "views":                  int(v["views"]),
-            "watch_hours":            "",
-            "subscribers_gained":    "",
-            "impressions":            "",
-            "ctr_pct":                "",
-            "avg_view_duration_sec":  "",
-            "avg_view_pct":           "",
-        })
-
-    if not new_rows:
-        return 0, None
-
-    with open(hist_path, "a", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=HEADER)
-        for r in new_rows:
-            w.writerow(r)
-    return len(new_rows), None
-
-
-    # ── Mark as Shipped ────────────────────────────────────────────────────────
-    st.divider()
-    st.markdown("### ✅ Mark a video as shipped")
-    st.caption("Use this for videos you uploaded directly without going through the pipeline. Blocks the theme + instrument combo from re-appearing in Idea Gen for 30 days.")
-
-    _ms_title = st.text_input(
-        "Paste the video title you uploaded",
-        key="mark_shipped_title",
-        placeholder="e.g. Overthinking Music | Sarangi Raga | 1 Hour",
-    )
-
-    if _ms_title.strip():
-        import sys as _mssys
-        _mssys.path.insert(0, str(PIPELINE_DIR))
-        try:
-            from build_performance_weights import _detect_instrument as _ms_inst, _detect_problem_kw as _ms_kw
-        except Exception:
-            _detect_instrument_fn = lambda t: ""
-            _detect_problem_kw_fn = lambda t: ""
-        else:
-            _detect_instrument_fn = _ms_inst
-            _detect_problem_kw_fn = _ms_kw
-
-        _ms_title_lower = _ms_title.strip().lower()
-        _ms_detected_inst = _detect_instrument_fn(_ms_title_lower)
-        _ms_detected_kw   = _detect_problem_kw_fn(_ms_title_lower)
-
-        _msc1, _msc2 = st.columns(2)
-        with _msc1:
-            _ms_inst_val = st.text_input(
-                "Instrument detected",
-                value=_ms_detected_inst,
-                key="mark_shipped_inst",
-                help="Edit if wrong",
-            )
-        with _msc2:
-            _ms_kw_val = st.text_input(
-                "Problem keyword detected",
-                value=_ms_detected_kw,
-                key="mark_shipped_kw",
-                help="Edit if wrong — use exact phrase from keyword bank",
-            )
-
-        if st.button("✅ Mark as Shipped", key="mark_shipped_btn", type="primary"):
-            try:
-                import csv as _mscsv
-                from datetime import date as _msdate
-                from pathlib import Path as _msPath
-                _shipped_path = DASHBOARD_DIR / "data" / "shipped_titles.csv"
-                _HEADER = ["shipped_on", "brief_id", "title", "title_length",
-                           "slot_count", "lead_hook", "instrument", "hz", "raga", "wave", "problem_kw"]
-                _parts = [p.strip() for p in _ms_title.split("|") if p.strip()]
-                _new_row = {
-                    "shipped_on":    _msdate.today().isoformat(),
-                    "brief_id":      "",
-                    "title":         _ms_title.strip(),
-                    "title_length":  len(_ms_title.strip()),
-                    "slot_count":    len(_parts),
-                    "lead_hook":     _parts[0] if _parts else "",
-                    "instrument":    _ms_inst_val.strip(),
-                    "hz":            "",
-                    "raga":          "",
-                    "wave":          "",
-                    "problem_kw":    _ms_kw_val.strip().lower(),
-                }
-                import storage as _msstorage
-                _msstorage.append_shipped_title(_new_row)
-                _msstorage.invalidate_cache()
-                st.success(f"✅ Marked as shipped — **{_ms_inst_val or '(no instrument)'}** + **{_ms_kw_val or '(no keyword)'}** blocked for 30 days")
-                st.session_state["mark_shipped_title"] = ""
-            except Exception as _mse:
-                st.error(f"Failed: {_mse}")
-
+@st.cache_data(ttl=300)
+def load_ab_rules():
+    import json as _j
+    if not AB_RULES_JSON.exists():
+        return {}
+    return _j.loads(AB_RULES_JSON.read_text())
 
 with tab_idea_gen:
-    st.subheader("💡 Idea Generation — daily video proposal")
-    st.caption(
-        "Click **Generate Idea** to run the full pipeline: pulls fresh signals "
-        "(own catalog via RSS + competitor RSS), scores all combinations, "
-        "and writes today's proposal. Result renders below."
-    )
+    st.subheader("🧪 A/B Test Insights")
+    st.caption("Live view of all title & thumbnail experiments. Updated whenever new screenshots are banked.")
 
-    # Channel Pulse — fresh top performers, sourced from data/channel_snapshot.json
-    _snap_path = DASHBOARD_DIR / "data" / "channel_snapshot.json"
-    if _snap_path.exists():
-        try:
-            import json as _json_pulse
-            _snap = _json_pulse.loads(_snap_path.read_text())
-            with st.expander(
-                f"📊 Channel Pulse — top performers {_snap.get('window_start','')} → {_snap.get('window_end','')}  "
-                f"(updated {_snap.get('fetched_on','')})",
-                expanded=True,
-            ):
-                _t = _snap.get("totals", {})
-                _mc1, _mc2, _mc3, _mc4 = st.columns(4)
-                _mc1.metric("Views (28d)",       f"{_t.get('views',0):,}")
-                _mc2.metric("Watch hours",       f"{_t.get('watch_hours',0):,.0f}")
-                _mc3.metric("CTR",               f"{_t.get('ctr_pct',0):.2f}%")
-                _mc4.metric("AVD",               f"{_t.get('avd_pct',0):.1f}%")
+    df_ab = load_ab_raw()
+    rules = load_ab_rules()
 
-                _vids = _snap.get("top_videos", [])
-                if _vids:
-                    import pandas as _pd_pulse
-                    _df_pulse = _pd_pulse.DataFrame([
-                        {
-                            "#":          v["rank"],
-                            "Title":      v["title"][:60] + ("…" if len(v["title"]) > 60 else ""),
-                            "Views":      v["views"],
-                            "AVD%":       v["avd_pct"],
-                            "CTR%":       v["ctr_pct"],
-                            "Impr.":      v["impressions"],
-                            "WT (h)":     round(v["watch_hours"], 0),
-                        }
-                        for v in _vids
-                    ])
-                    st.dataframe(_df_pulse, hide_index=True, use_container_width=True)
+    if df_ab.empty:
+        st.warning("No A/B data found. Check that `data/ab_raw_data.csv` exists.")
+        st.stop()
 
-                _ins = _snap.get("insights", [])
-                if _ins:
-                    st.markdown("**Insights:**")
-                    for line in _ins:
-                        st.markdown(f"- {line}")
-        except Exception as _e_pulse:
-            st.caption(f"_Channel Pulse failed to render: {_e_pulse}_")
+    # -------------------------------------------------------------------------
+    # Summary metrics
+    # -------------------------------------------------------------------------
+    total = len(df_ab)
+    concluded = df_ab[df_ab["status"] == "CONCLUDED"]
+    running   = df_ab[df_ab["status"] == "RUNNING"]
+    superseded = df_ab[df_ab["status"] == "SUPERSEDED"]
 
-    col_a, col_b, col_c, col_d = st.columns([2, 2, 2, 3])
+    n_concluded = len(concluded)
+    n_running   = len(running)
+    n_super     = len(superseded)
 
-    with col_a:
-        gen_clicked = st.button("🚀 Generate Idea", type="primary", use_container_width=True)
+    # Wins/ties among concluded
+    a_wins  = concluded["winner"].str.startswith("A").sum()
+    b_wins  = concluded["winner"].str.startswith("B").sum()
+    ties    = concluded["winner"].str.lower().str.contains("tie").sum()
 
-    with col_b:
-        refresh_clicked = st.button("🔄 Refresh Catalog", use_container_width=True,
-                                    help="Clears the dashboard's YouTube API cache so the next run sees your latest uploads.")
-
-    with col_c:
-        reach_clicked = st.button("📊 Refresh REACH", use_container_width=True,
-                                  help="Pulls fresh per-video stats via the YouTube API and appends a new capture row to REACH_HISTORY.csv.")
-
-    with col_d:
-        proposal_path, today_str, has_today = _latest_proposal_md()
-        if has_today:
-            mtime = datetime.fromtimestamp(proposal_path.stat().st_mtime).strftime("%H:%M")
-            st.metric("Today's proposal", f"✓ {today_str}", delta=f"updated {mtime}")
-        else:
-            st.metric("Today's proposal", "—", delta="not yet generated")
+    c1, c2, c3, c4, c5, c6 = st.columns(6)
+    c1.metric("Total tests", total)
+    c2.metric("Concluded", n_concluded)
+    c3.metric("Running", n_running)
+    c4.metric("A wins", int(a_wins))
+    c5.metric("B wins", int(b_wins))
+    c6.metric("Ties", int(ties))
 
     st.divider()
 
-    # ── Refresh catalog handler ──
-    if refresh_clicked:
-        st.cache_data.clear()
-        st.success("✓ Cache cleared. Next API call will fetch fresh data including latest uploads.")
+    # -------------------------------------------------------------------------
+    # Inner sub-tabs
+    # -------------------------------------------------------------------------
+    sub_rules, sub_raw, sub_running, sub_next = st.tabs([
+        "📋 Lane Rules", "📊 All Tests", "▶️ Running Now", "🔬 Next Tests"
+    ])
 
-    # ── Refresh REACH handler ──
-    if reach_clicked:
-        with st.spinner("Pulling fresh stats from YouTube API…"):
-            n, err = _refresh_reach_history()
-        if err:
-            st.error(f"❌ {err}")
-        elif n == 0:
-            st.info("No new rows to write — REACH_HISTORY.csv already has today's capture.")
-        else:
-            st.success(f"✓ Appended {n} new rows to REACH_HISTORY.csv (capture_date={_idea_date.today().isoformat()}).")
-            st.caption("Per-video impressions / CTR / AVD% come from the periodic xlsx export; this captures live views + watch.")
+    # =========================================================================
+    # Sub-tab 1: Lane Rules
+    # =========================================================================
+    with sub_rules:
+        st.markdown("### Thumbnail Text by Lane")
+        st.caption("What wins on the thumbnail in each content lane — based on concluded tests.")
 
-    # ── Generate handler ──
-    if gen_clicked:
-        with st.status("Running pipeline…", expanded=True) as status:
-            st.write("📡 Pulling competitor RSS + own-channel uploads…")
-            st.write("🎯 Scoring combinations and applying gates…")
-            rc, stdout, stderr = _run_pipeline_subprocess()
-            if rc == 0:
-                status.update(label="✓ Pipeline complete", state="complete")
-                if stdout.strip():
-                    with st.expander("Pipeline log", expanded=False):
-                        st.code(stdout, language="text")
-            else:
-                status.update(label=f"❌ Pipeline failed (exit {rc})", state="error")
-                st.error(stderr or stdout or "Unknown error")
-                st.stop()
-        # Force re-read of the proposal file
-        proposal_path, today_str, has_today = _latest_proposal_md()
+        lanes = rules.get("lanes", {})
 
-    # ── Render today's morning brief ──
-    if has_today:
-        # Load JSON sidecar (richer than the MD)
-        proposal_json_path = proposal_path.with_suffix(".json")
-        proposal_data = {}
-        if proposal_json_path.exists():
-            import json as _json
-            try:
-                proposal_data = _json.loads(proposal_json_path.read_text())
-            except Exception:
-                proposal_data = {}
+        thumb_rows = []
+        for lane_key, lane_data in lanes.items():
+            conf = lane_data.get("confidence", "—")
+            win_thumb = lane_data.get("winning_thumb_type", "—")
+            win_ex    = " · ".join(lane_data.get("winning_thumb_examples", [])[:2])
+            avoid_thumb = lane_data.get("avoid_thumb_type", "—")
+            avoid_ex    = " · ".join(lane_data.get("avoid_thumb_examples", [])[:2])
+            evid      = ", ".join(lane_data.get("evidence", [])[:3])
+            conf_emoji = {"HIGH": "🟢", "VERY HIGH": "🟢🟢", "MEDIUM-HIGH": "🔵", "MEDIUM": "🔵", "LOW-MEDIUM": "🟡", "LOW": "🟡", "NONE": "⚪"}.get(conf, "⚪")
+            thumb_rows.append({
+                "Lane": lane_key.replace("_", " ").title(),
+                "✅ Use": f"{win_thumb}" + (f" — {win_ex}" if win_ex else ""),
+                "❌ Avoid": f"{avoid_thumb}" + (f" — {avoid_ex}" if avoid_ex else ""),
+                "Confidence": f"{conf_emoji} {conf}",
+                "Evidence": evid,
+            })
 
-        # Load bank + invalidated set ONCE for the whole tab (used by KO panel,
-        # scratchpad, and Score Check panel below — must be defined before any of them).
-        import csv as _csv
-        bank_path = DASHBOARD_DIR / "data" / "keyword_bank.csv"
-        bank_index = {}
-        if bank_path.exists():
-            with open(bank_path) as f:
-                for row in _csv.DictReader(f):
-                    bank_index[row["phrase"].strip().lower()] = row
+        thumb_df = pd.DataFrame(thumb_rows)
+        st.dataframe(thumb_df, width="stretch", hide_index=True,
+                     column_config={
+                         "Lane": st.column_config.TextColumn("Lane", width=140),
+                         "✅ Use": st.column_config.TextColumn("✅ Use", width=260),
+                         "❌ Avoid": st.column_config.TextColumn("❌ Avoid", width=220),
+                         "Confidence": st.column_config.TextColumn("Confidence", width=130),
+                         "Evidence": st.column_config.TextColumn("Evidence", width=140),
+                     })
 
-        invalidated_path = DASHBOARD_DIR / "data" / "invalidated_keywords.csv"
-        invalidated_set = set()
-        if invalidated_path.exists():
-            with open(invalidated_path) as f:
-                for row in _csv.DictReader(f):
-                    invalidated_set.add(row["phrase"].strip().lower())
+        st.markdown("---")
+        st.markdown("### Title Type by Lane")
 
-        # ─────────────────────────────────────────
-        # Section 0 — Winner-pattern insights (from ab_results.csv)
-        # Surfaces what's been winning so the user iterates with data, not
-        # hardcoded templates. Pattern emerges from outcomes.
-        # ─────────────────────────────────────────
-        ab_path = DASHBOARD_DIR / "data" / "ab_results.csv"
-        if ab_path.exists():
-            try:
-                import csv as _csv_ab
-                ab_rows = []
-                with open(ab_path) as f:
-                    ab_rows = list(_csv_ab.DictReader(f))
-                if ab_rows:
-                    seo_wins = sum(1 for r in ab_rows if r.get("winner") == "A_seo")
-                    q_wins   = sum(1 for r in ab_rows if r.get("winner") == "B_question")
-                    o_wins   = sum(1 for r in ab_rows if r.get("winner") == "C_outcome")
-                    total = len(ab_rows)
-                    winner_titles = [r.get("winner_title", "") for r in ab_rows if r.get("winner_title")]
-                    avg_winner_len = round(sum(len(t) for t in winner_titles) / len(winner_titles)) if winner_titles else 0
-                    last = ab_rows[-1]
-                    bits = []
-                    if seo_wins: bits.append(f"SEO-led {seo_wins}/{total}")
-                    if q_wins:   bits.append(f"Question-led {q_wins}/{total}")
-                    if o_wins:   bits.append(f"Outcome-led {o_wins}/{total}")
-                    st.info(
-                        f"🏆 **What's been winning** ({total} concluded A/B test{'s' if total != 1 else ''}): "
-                        f"{' · '.join(bits)} · avg winning title length **{avg_winner_len} chars** · "
-                        f"latest winner: `{last.get('winner_title', '?')[:75]}` "
-                        f"(margin {last.get('win_margin','?')})"
-                    )
-            except Exception:
-                pass
+        title_rows = []
+        for lane_key, lane_data in lanes.items():
+            conf = lane_data.get("confidence", "—")
+            win_title  = lane_data.get("winning_title_type", "—")
+            win_ex_t   = " · ".join(lane_data.get("winning_title_examples", [])[:1])
+            avoid_title = lane_data.get("avoid_title_type") or "—"
+            avoid_ex_t  = " · ".join(lane_data.get("avoid_title_examples", [])[:1])
+            evid = ", ".join(lane_data.get("evidence", [])[:3])
+            conf_emoji = {"HIGH": "🟢", "VERY HIGH": "🟢🟢", "MEDIUM-HIGH": "🔵", "MEDIUM": "🔵", "LOW-MEDIUM": "🟡", "LOW": "🟡", "NONE": "⚪"}.get(conf, "⚪")
+            title_rows.append({
+                "Lane": lane_key.replace("_", " ").title(),
+                "✅ Use": f"{win_title}",
+                "Example": win_ex_t[:70] + ("…" if len(win_ex_t) > 70 else ""),
+                "❌ Avoid": f"{avoid_title}",
+                "Confidence": f"{conf_emoji} {conf}",
+            })
 
-        # ─────────────────────────────────────────
-        # Section 1 — Competitor Pulse (last 7d)
-        # If the proposal JSON has empty data (RSS failed in Cloud subprocess),
-        # fall back to a live YouTube Data API fetch using the dashboard's auth.
-        # ─────────────────────────────────────────
-        comp_pulse = proposal_data.get("competitor_pulse", {})
-        # Detect "empty pulse" — keys exist but all upload lists are empty
-        pulse_is_empty = comp_pulse and all(len(v) == 0 for v in comp_pulse.values())
-        if pulse_is_empty or not comp_pulse:
-            with st.spinner("📡 Fetching competitor pulse live (RSS fallback)…"):
-                try:
-                    comp_pulse = fetch_competitor_pulse_live(days=7)
-                except Exception as _e:
-                    st.warning(f"Live competitor fetch failed: {_e}")
-                    comp_pulse = {}
-        if comp_pulse:
-            st.markdown("### 📡 Competitor Pulse — last 7 days")
-            # Header strip — count per competitor
-            metric_cols = st.columns(len(comp_pulse) or 1)
-            for col, (comp_name, uploads) in zip(metric_cols, comp_pulse.items()):
-                with col:
-                    label = "uploads (silent this week)" if not uploads else "uploads"
-                    col.metric(comp_name, f"{len(uploads)}", delta=label, delta_color="off")
+        title_df = pd.DataFrame(title_rows)
+        st.dataframe(title_df, width="stretch", hide_index=True,
+                     column_config={
+                         "Lane": st.column_config.TextColumn("Lane", width=140),
+                         "✅ Use": st.column_config.TextColumn("✅ Use", width=200),
+                         "Example": st.column_config.TextColumn("Example title", width=300),
+                         "❌ Avoid": st.column_config.TextColumn("❌ Avoid", width=200),
+                         "Confidence": st.column_config.TextColumn("Confidence", width=130),
+                     })
 
-            # Combined sortable table — Channel · Days ago · Views · Likes · Title
-            pulse_rows = []
-            for comp_name, uploads in comp_pulse.items():
-                for u in uploads:
-                    pulse_rows.append({
-                        "Channel":  comp_name,
-                        "Days ago": u.get("days_ago", 0),
-                        "Views":    u.get("views"),
-                        "Likes":    u.get("likes"),
-                        "Title":    u.get("title", ""),
-                    })
-            if pulse_rows:
-                pulse_df = pd.DataFrame(pulse_rows).sort_values("Days ago")
-                st.dataframe(
-                    pulse_df,
-                    width="stretch",
-                    hide_index=True,
-                    column_config={
-                        "Channel":  st.column_config.TextColumn(width="small"),
-                        "Days ago": st.column_config.NumberColumn(width="small", format="%dd ago"),
-                        "Views":    st.column_config.NumberColumn(width="small", format="%d"),
-                        "Likes":    st.column_config.NumberColumn(width="small", format="%d"),
-                        "Title":    st.column_config.TextColumn(width="large"),
-                    },
+        st.markdown("---")
+        st.markdown("### Universal Rules")
+
+        universal = rules.get("universal_rules", [])
+        if universal:
+            for ur in universal:
+                conf = ur.get("confidence", "")
+                conf_emoji = {"HIGH": "🟢", "MEDIUM": "🔵", "LOW": "🟡"}.get(conf, "⚪")
+                record = ur.get("record", "")
+                action = ur.get("action", "")
+                evid   = ", ".join(ur.get("evidence", [])[:3])
+                st.markdown(
+                    f"**{conf_emoji} {ur['rule']}**  \n"
+                    f"Record: `{record}` · Evidence: {evid}  \n"
+                    f"→ _{action}_"
                 )
-            st.divider()
+                st.markdown("")
 
-        # ─────────────────────────────────────────
-        # Section 2 — Keyword Opportunities (mined from competitors)
-        # ─────────────────────────────────────────
-        ko = proposal_data.get("keyword_opportunities", [])
-        if ko:
-            from urllib.parse import quote_plus
-            st.markdown("### 🔍 Keyword Opportunities — mined from competitor titles")
-            st.caption(
-                "Phrases competitors are using that aren't in our `keyword_bank.csv` yet. "
-                "Run each on VidIQ → paste the score below → bulk-save."
-            )
+        st.markdown("---")
+        st.info(
+            "**⚠️ Confidence tiers:** 🟢 HIGH = 2+ tests, decisive margins — follow without hesitation. "
+            "🔵 MEDIUM = consistent direction but confounded or small margins — default to this. "
+            "🟡 LOW = 1 test or marginal gap — treat as directional lean. "
+            "⚪ NONE = tie or no tests — format-tolerant, content quality dominates."
+        )
 
-            if "ko_score_inputs" not in st.session_state:
-                st.session_state["ko_score_inputs"] = {}
+    # =========================================================================
+    # Sub-tab 2: All Tests (raw data table)
+    # =========================================================================
+    with sub_raw:
+        st.markdown("### All 31 Tests — Raw Data")
+        st.caption("Every test with both variant titles and thumbnail texts side by side. Filter by lane or test type.")
 
-            for c in ko:
-                phrase = c.get("phrase", "")
-                uses = c.get("uses", 0)
-                sources = ", ".join(c.get("sources", []))
-                latest = c.get("latest_days", "?")
-                vidiq_url = f"https://app.vidiq.com/keywords/{quote_plus(phrase)}"
-                yt_url    = f"https://www.youtube.com/results?search_query={quote_plus(phrase)}"
-                row = st.columns([4, 2, 1, 1, 2])
-                with row[0]:
-                    st.markdown(f"**`{phrase}`**")
-                    st.caption(f"used {uses}× by {sources} · latest {latest}d ago")
-                with row[1]:
-                    st.markdown(f"[🔗 VidIQ]({vidiq_url}) · [▶ YouTube]({yt_url})")
-                with row[2]:
-                    score = st.number_input(
-                        "score",
-                        min_value=0, max_value=100, value=0, step=1,
-                        key=f"ko_score_{phrase}",
-                        label_visibility="collapsed",
-                    )
-                with row[3]:
-                    if score >= 60:
-                        st.markdown("✅")
-                    elif score > 0:
-                        st.markdown("❌")
-                    else:
-                        st.markdown("—")
-                with row[4]:
-                    st.caption("type score →")
-                if score > 0:
-                    st.session_state["ko_score_inputs"][phrase] = score
+        # Filters
+        fcol1, fcol2, fcol3 = st.columns(3)
+        lane_options = ["All"] + sorted(df_ab["lane"].dropna().unique().tolist())
+        type_options = ["All"] + sorted(df_ab["test_type"].dropna().unique().tolist())
+        status_options = ["All", "CONCLUDED", "RUNNING", "SUPERSEDED"]
 
-            ko_save_clicked = st.button("💾 Bulk-save mined-keyword scores", key="ko_bulk_save",
-                                        use_container_width=False)
-            if ko_save_clicked:
-                import sys as _sys
-                _sys.path.insert(0, str(PIPELINE_DIR))
-                try:
-                    from persistence import auto_promote_vidiq_scores
-                    scores = {p: s for p, s in st.session_state["ko_score_inputs"].items() if s > 0}
-                    if scores:
-                        result = auto_promote_vidiq_scores(scores, source=f"dashboard-ko-{_idea_date.today().isoformat()}")
-                        promoted = result.get("promoted", [])
-                        invalidated = result.get("invalidated", [])
-                        msg = []
-                        if promoted: msg.append(f"✓ {len(promoted)} promoted")
-                        if invalidated: msg.append(f"✗ {len(invalidated)} invalidated")
-                        st.success(" · ".join(msg))
-                    else:
-                        st.warning("No scores entered yet — type a value > 0 in any row, then save.")
-                except Exception as e:
-                    st.error(f"Save failed: {e}")
-            st.divider()
+        sel_lane   = fcol1.selectbox("Lane", lane_options, key="ab_lane_filter")
+        sel_type   = fcol2.selectbox("Test type", type_options, key="ab_type_filter")
+        sel_status = fcol3.selectbox("Status", status_options, key="ab_status_filter")
 
-        # ─────────────────────────────────────────
-        # Section 2.5 — Test Random Titles (scratchpad)
-        # ─────────────────────────────────────────
-        with st.expander("🧪 Test custom titles / phrases (scratchpad)", expanded=True):
-            st.caption(
-                "Brainstorm space — paste any phrases or full titles, one per line, "
-                "to scan their bank scores, length checks, kill-phrase checks, "
-                "and quick VidIQ / YouTube lookup links. Use this for random ideas "
-                "outside today's pipeline output."
-            )
-            test_input = st.text_area(
-                "Paste phrases or titles (one per line)",
-                placeholder="example:\nsomatic healing music\npolyvagal reset music\nMorning Anxiety? | 528Hz Sitar | Alpha Wave",
-                height=120,
-                key="test_phrases_input",
-            )
-            test_clicked = st.button("🔎 Scan all", key="test_scan_btn")
-            if test_clicked and test_input.strip():
-                from urllib.parse import quote_plus as _qp2
-                # Load kill phrases + own catalog (for recency-overlap check)
-                try:
-                    import sys as _sys2
-                    _sys2.path.insert(0, str(PIPELINE_DIR))
-                    from config import KILL_PHRASES as _KILL
-                    from signals import load_own_catalog, theme_overlap_with_recent, find_in_titles
-                    own_catalog = load_own_catalog()
-                except Exception as _ex:
-                    _KILL = []
-                    own_catalog = []
-                    theme_overlap_with_recent = None
-                    find_in_titles = None
+        df_show = df_ab.copy()
+        if sel_lane != "All":
+            df_show = df_show[df_show["lane"] == sel_lane]
+        if sel_type != "All":
+            df_show = df_show[df_show["test_type"] == sel_type]
+        if sel_status != "All":
+            df_show = df_show[df_show["status"] == sel_status]
 
-                rows = []
-                for raw in test_input.splitlines():
-                    p = raw.strip()
-                    if not p:
-                        continue
-                    p_lower = p.lower()
-                    bank_row = bank_index.get(p_lower)
-                    bank_score = ""
-                    if bank_row:
-                        s = bank_row.get("vidiq_score", "").strip()
-                        if s.isdigit():
-                            bank_score = int(s)
-                    is_inv = p_lower in invalidated_set
-                    kill_hit = next((k for k in _KILL if k in p_lower), None)
-                    is_title_like = "|" in p
-                    length_ok = (60 <= len(p) <= 88) if is_title_like else None
-
-                    # Own-catalog cannibalization check (same gate the pipeline uses).
-                    # 1. Exact-substring match with any title shipped in last 5 days
-                    # 2. Theme-token overlap with any title shipped in last 5 days
-                    own_recency_warnings = []
-                    if own_catalog and find_in_titles is not None:
-                        # Exact-substring check on the FULL phrase first
-                        full_hits = find_in_titles(own_catalog, p_lower, within_days=5)
-                        for d, t in full_hits[:1]:
-                            short = t[:55] + ("…" if len(t) > 55 else "")
-                            own_recency_warnings.append(f"❌ exact match in own video {d}d ago: '{short}'")
-                        # Theme-token overlap (catches Sleep Music vs Can't Fall Asleep)
-                        if not full_hits and theme_overlap_with_recent is not None:
-                            theme_hits = theme_overlap_with_recent(own_catalog, p_lower, within_days=5)
-                            if theme_hits:
-                                tokens = sorted(set(h[0] for h in theme_hits))
-                                first = theme_hits[0]
-                                short = first[2][:55] + ("…" if len(first[2]) > 55 else "")
-                                own_recency_warnings.append(
-                                    f"❌ theme-overlap {tokens} with own video {first[1]}d ago: '{short}'"
-                                )
-
-                    verdict_parts = []
-                    # Order: recency block (highest priority) → kill → invalidated → length → bank → fallback
-                    verdict_parts.extend(own_recency_warnings)
-                    if kill_hit:
-                        verdict_parts.append(f"❌ kill: '{kill_hit}'")
-                    if is_inv:
-                        verdict_parts.append("❌ invalidated")
-                    if is_title_like and length_ok is False:
-                        verdict_parts.append(f"⚠️ len {len(p)}")
-                    if isinstance(bank_score, int):
-                        if bank_score >= 60:
-                            verdict_parts.append(f"✅ bank {bank_score}")
-                        else:
-                            verdict_parts.append(f"⚠️ bank {bank_score}")
-                    if not verdict_parts:
-                        verdict_parts.append("⚠️ untested")
-
-                    rows.append({
-                        "Phrase":  p,
-                        "Length":  len(p),
-                        "Status":  " · ".join(verdict_parts),
-                        "VidIQ":   f"https://app.vidiq.com/keywords/{_qp2(p)}",
-                        "YouTube": f"https://www.youtube.com/results?search_query={_qp2(p)}",
-                    })
-
-                if rows:
-                    test_df = pd.DataFrame(rows)
-                    st.dataframe(
-                        test_df,
-                        width="stretch",
-                        hide_index=True,
-                        column_config={
-                            "Phrase":  st.column_config.TextColumn(width="large"),
-                            "Length":  st.column_config.NumberColumn(width="small"),
-                            "Status":  st.column_config.TextColumn(width="medium"),
-                            "VidIQ":   st.column_config.LinkColumn("VidIQ", display_text="🔗 open"),
-                            "YouTube": st.column_config.LinkColumn("YouTube", display_text="▶ search"),
-                        },
-                    )
-
-                title_lines = [r["Phrase"] for r in rows if "|" in r["Phrase"]]
-                phrase_only_lines = [r["Phrase"] for r in rows if "|" not in r["Phrase"]]
-
-                # ── Plain-phrase score inputs + save (when no pipes — user is testing simple keywords) ──
-                if phrase_only_lines:
-                    st.markdown("---")
-                    st.markdown("**🔬 Save scores for these phrases:**")
-                    st.caption(
-                        "Type a VidIQ score for any phrase below → click Save → "
-                        "≥60 banks to `keyword_bank.csv`, <60 invalidates."
-                    )
-                    if "scratch_phrase_inputs" not in st.session_state:
-                        st.session_state["scratch_phrase_inputs"] = {}
-
-                    for pi, phrase in enumerate(phrase_only_lines, 1):
-                        p_lower = phrase.lower()
-                        existing = bank_index.get(p_lower)
-                        cur = ""
-                        badge = "⚠️ UNTESTED"
-                        if p_lower in invalidated_set:
-                            badge = "❌ INVALIDATED previously"
-                        elif existing:
-                            s = existing.get("vidiq_score", "").strip()
-                            if s.isdigit():
-                                cur = int(s)
-                                badge = f"✅ bank: {s}" if int(s) >= 60 else f"⚠️ bank: {s}"
-
-                        c1, c2, c3, c4 = st.columns([3, 2, 2, 2])
-                        with c1:
-                            st.markdown(f"`{phrase}`")
-                            st.caption(badge)
-                        with c2:
-                            st.markdown(
-                                f"[🔗 VidIQ](https://app.vidiq.com/keywords/{_qp2(phrase)})  ·  "
-                                f"[▶ YT](https://www.youtube.com/results?search_query={_qp2(phrase)})"
-                            )
-                        with c3:
-                            key = f"scratch_phrase_score_{pi}"
-                            new_val = st.number_input(
-                                "score", min_value=0, max_value=100,
-                                value=int(cur) if isinstance(cur, int) else 0,
-                                step=1, key=key, label_visibility="collapsed",
-                            )
-                            if new_val and new_val != (cur if isinstance(cur, int) else 0):
-                                st.session_state["scratch_phrase_inputs"][p_lower] = new_val
-                        with c4:
-                            if new_val >= 60:
-                                st.markdown("✅ pass")
-                            elif new_val > 0:
-                                st.markdown("❌ fail (auto-invalidate)")
-                            else:
-                                st.caption("type score →")
-
-                    save_phrases_clicked = st.button("💾 Save phrase scores", key="scratch_phrases_save_btn")
-                    if save_phrases_clicked:
-                        import sys as _sys4
-                        _sys4.path.insert(0, str(PIPELINE_DIR))
-                        try:
-                            from persistence import auto_promote_vidiq_scores
-                            scores = dict(st.session_state.get("scratch_phrase_inputs", {}))
-                            scores = {k: v for k, v in scores.items() if v > 0}
-                            if scores:
-                                result = auto_promote_vidiq_scores(
-                                    scores,
-                                    source=f"dashboard-scratchpad-phrase-{_idea_date.today().isoformat()}",
-                                )
-                                promoted = result.get("promoted", [])
-                                low_scores = result.get("low_scores", [])
-                                msg = []
-                                if promoted:
-                                    msg.append(f"✓ {len(promoted)} saved to keyword_bank.csv")
-                                if low_scores:
-                                    msg.append(f"⚠️ low scores (<60): {', '.join(low_scores)}")
-                                st.success(" · ".join(msg) if msg else "Nothing changed.")
-                            else:
-                                st.warning("No scores entered yet — type a value > 0 in any field, then save.")
-                        except Exception as _e:
-                            st.error(f"Save failed: {_e}")
-
-                if title_lines:
-                    st.markdown("---")
-                    st.markdown("**🔬 Validate before ship — paste VidIQ scores per component:**")
-                    st.caption(
-                        "For each title, the components below are what YouTube and VidIQ "
-                        "actually score against. Paste each score → click Save → bank auto-updates."
-                    )
-                    if "scratch_score_inputs" not in st.session_state:
-                        st.session_state["scratch_score_inputs"] = {}
-
-                    for ti, title in enumerate(title_lines, 1):
-                        parts = [p.strip() for p in title.split("|") if p.strip()]
-                        # Filter: skip pure-duration parts ("1 Hour", "30 Min")
-                        components = [
-                            p for p in parts
-                            if not (p.lower().endswith("hour") or "min" in p.lower().split()[-1] if p.split() else False)
-                        ]
-                        st.markdown(f"**`{title}`**")
-                        for ci, comp in enumerate(components):
-                            comp_lower = comp.lower()
-                            existing = bank_index.get(comp_lower)
-                            cur = ""
-                            badge = "⚠️ UNTESTED"
-                            if comp_lower in invalidated_set:
-                                badge = "❌ INVALIDATED previously"
-                            elif existing:
-                                s = existing.get("vidiq_score", "").strip()
-                                if s.isdigit():
-                                    cur = int(s)
-                                    badge = f"✅ bank: {s}" if int(s) >= 60 else f"⚠️ bank: {s}"
-
-                            c1, c2, c3, c4 = st.columns([3, 2, 2, 2])
-                            with c1:
-                                st.markdown(f"`{comp}`")
-                                st.caption(badge)
-                            with c2:
-                                st.markdown(
-                                    f"[🔗 VidIQ](https://app.vidiq.com/keywords/{_qp2(comp)})  ·  "
-                                    f"[▶ YT](https://www.youtube.com/results?search_query={_qp2(comp)})"
-                                )
-                            with c3:
-                                key = f"scratch_score_t{ti}_c{ci}"
-                                new_val = st.number_input(
-                                    "score", min_value=0, max_value=100,
-                                    value=int(cur) if isinstance(cur, int) else 0,
-                                    step=1, key=key, label_visibility="collapsed",
-                                )
-                                if new_val and new_val != (cur if isinstance(cur, int) else 0):
-                                    st.session_state["scratch_score_inputs"][comp_lower] = new_val
-                            with c4:
-                                if new_val >= 60:
-                                    st.markdown("✅ pass")
-                                elif new_val > 0:
-                                    st.markdown("❌ fail (auto-invalidate)")
-                                else:
-                                    st.caption("type score →")
-
-                    save_clicked = st.button("💾 Save scratchpad scores", key="scratch_save_btn")
-                    if save_clicked:
-                        import sys as _sys3
-                        _sys3.path.insert(0, str(PIPELINE_DIR))
-                        try:
-                            from persistence import auto_promote_vidiq_scores
-                            scores = dict(st.session_state.get("scratch_score_inputs", {}))
-                            scores = {k: v for k, v in scores.items() if v > 0}
-                            if scores:
-                                result = auto_promote_vidiq_scores(
-                                    scores,
-                                    source=f"dashboard-scratchpad-{_idea_date.today().isoformat()}",
-                                )
-                                promoted = result.get("promoted", [])
-                                low_scores = result.get("low_scores", [])
-                                msg = []
-                                if promoted:
-                                    msg.append(f"✓ {len(promoted)} saved to keyword_bank.csv")
-                                if low_scores:
-                                    msg.append(f"⚠️ low scores (<60): {', '.join(low_scores)}")
-                                st.success(" · ".join(msg))
-                            else:
-                                st.warning("No scores entered — type a value > 0 in any field, then save.")
-                        except Exception as _e:
-                            st.error(f"Save failed: {_e}")
-
-        # ─────────────────────────────────────────
-        # Section 3 — Today's candidates (structured card render from JSON)
-        # ─────────────────────────────────────────
-        st.markdown(f"### 🏆 Today's candidates — {today_str}")
-        st.caption(f"Source: `{proposal_path.relative_to(PROJECT_ROOT)}`")
-
-        # Load JSON for structured render — fall back to MD dump if JSON missing
-        _proposal_json_path_top = proposal_path.with_suffix(".json")
-        if not _proposal_json_path_top.exists():
-            with st.container(border=True):
-                st.markdown(proposal_path.read_text())
-        else:
-            import json as _json_top
-            _pdata = _json_top.loads(_proposal_json_path_top.read_text())
-            _cands_top = _pdata.get("candidates", [])[:3]
-
-            # Cooldown blocks panel (transparency: which problem keywords are
-            # currently blocked because we shipped a similar video recently or
-            # it's still pulling traffic). Auto-clears as videos cool off.
-            _cooldowns = _pdata.get("cooldown_blocks") or {}
-            if _cooldowns:
-                with st.expander(f"⏸ Cooldown blocks ({len(_cooldowns)} problem keyword{'s' if len(_cooldowns)!=1 else ''} on cooldown)", expanded=False):
-                    st.caption(
-                        "Problem keywords blocked because a similar video is in cooldown. "
-                        "Rule: shipped < 14 days ago **OR** ≥30 views accrued in the last 14 days. "
-                        "Auto-unblocks when both conditions clear."
-                    )
-                    for _pkw, _meta in sorted(_cooldowns.items(), key=lambda x: x[1].get("days_since", 999)):
-                        st.markdown(
-                            f"- **`{_pkw}`** — {_meta.get('reason', '')}  \n"
-                            f"  ↳ blocking video: _{_meta.get('video_title', '')}_"
-                        )
-
-            # Bucket-count summary (transparency: are candidates genuine or backfilled?)
-            _bcounts = _pdata.get("bucket_counts")
-            if _bcounts:
-                _bc1, _bc2, _bc3 = st.columns(3)
-                _bc1.metric("🎯 Competitor",         _bcounts.get("competitor", 0))
-                _bc2.metric("📈 Own theme compounding", _bcounts.get("niche", 0))
-                _bc3.metric("🚀 Moonshot",           _bcounts.get("moonshot", 0))
-                _empty = [k for k, v in _bcounts.items() if v == 0]
-                if _empty:
-                    st.warning(
-                        f"⚠️ Empty bucket{'s' if len(_empty) > 1 else ''}: "
-                        f"**{', '.join(_empty)}** — candidates from those slots are backfilled.",
-                        icon="ℹ️",
-                    )
-
-            # Builders are imported lazily so dashboard works even if pipeline not on path
-            import sys as _sys_top
-            _sys_top.path.insert(0, str(PIPELINE_DIR))
+        # Parse shares as floats for coloring
+        def _pct(v):
             try:
-                from scoring import build_variants as _bv_top, build_tags as _bt_top
-                from thumbnail_text import build_thumbnail_text_variants as _btv_top
+                return float(str(v).replace("%","").strip())
             except Exception:
-                _bv_top = _bt_top = _btv_top = None
+                return None
 
-            _STRAT_BADGE = {
-                "competitor": ("🎯", "Competitor",              "#3b82f6"),
-                "niche":      ("📈", "Own theme compounding",   "#10b981"),
-                "moonshot":   ("🚀", "Moonshot",                "#a855f7"),
-            }
+        df_show = df_show.copy()
+        df_show["a_pct"] = df_show["a_share"].apply(_pct)
+        df_show["b_pct"] = df_show["b_share"].apply(_pct)
 
-            for _i, _cand in enumerate(_cands_top, start=1):
-                with st.container(border=True):
-                    # ── Header row: rank · strategy · score ──
-                    _strat = (_cand.get("strategy") or "").lower()
-                    _emoji, _strat_label, _color = _STRAT_BADGE.get(_strat, ("·", _strat.title() or "—", "#9ca3af"))
-                    _h1, _h2, _h3 = st.columns([1, 5, 2])
-                    with _h1:
-                        st.markdown(f"### #{_i}")
-                    with _h2:
-                        st.markdown(f"### {_emoji} {_strat_label}")
-                        if _cand.get("backfilled"):
-                            _for = _cand.get("backfilled_for")
-                            _msg = f"backfilled — {_for} bucket was empty" if _for else "backfilled (bucket empty)"
-                            st.caption(f"⚠️ _{_msg}_")
-                    with _h3:
-                        st.metric("Score", _cand.get("score", "—"), label_visibility="collapsed")
-                        st.caption(f"Score **{_cand.get('score', '—')}**")
+        # Winner badge
+        def _badge(row):
+            w = str(row.get("winner","")).lower()
+            if "tie" in w:
+                return "🤝 Tie"
+            elif w.startswith("a"):
+                return "🏆 A"
+            elif w.startswith("b"):
+                return "🏆 B"
+            elif "running" in str(row.get("status","")).lower():
+                return "▶️ Running"
+            elif "superseded" in str(row.get("status","")).lower():
+                return "🔄 Superseded"
+            return "—"
 
-                    # ── Strategy note as a soft inline banner ──
-                    if _cand.get("strategy_note"):
-                        st.caption(f"💡 _{_cand['strategy_note']}_")
+        df_show["Result"] = df_show.apply(_badge, axis=1)
 
-                    # ── Title ──
-                    _title = _cand.get("title", "")
-                    st.markdown(f"**Title** · {len(_title)} chars")
-                    st.code(_title, language=None)
+        # Margin
+        def _margin(row):
+            a, b = row["a_pct"], row["b_pct"]
+            if a is not None and b is not None:
+                return round(abs(a - b), 1)
+            return None
 
-                    # ── Components row ──
-                    _comp = _cand.get("components", {}) or {}
-                    if _comp:
-                        st.markdown("**Components**")
-                        _cc = st.columns(5)
-                        for _col, (_slot, _label, _key) in zip(_cc, [
-                            ("problem",    "Problem",    "kw"),
-                            ("instrument", "Instrument", "name"),
-                            ("hz",         "Hz",         "hz"),
-                            ("raga",       "Raga",       "name"),
-                            ("wave",       "Wave",       "wave"),
-                        ]):
-                            _o = _comp.get(_slot) or {}
-                            _val = _o.get(_key, "—") or "—"
-                            _vs = _o.get("vidiq_score")
-                            _vs_txt = f"VidIQ {_vs}" if _vs else "untested"
-                            with _col:
-                                st.markdown(f"<div style='font-size:0.78rem;color:#9ca3af'>{_label}</div>"
-                                            f"<div style='font-weight:600'>{_val}</div>"
-                                            f"<div style='font-size:0.72rem;color:#6b7280'>{_vs_txt}</div>",
-                                            unsafe_allow_html=True)
+        df_show["Margin pp"] = df_show.apply(_margin, axis=1)
 
-                    # ── Reasons grouped by sentiment ──
-                    _reasons = _cand.get("reasons", []) or []
-                    if _reasons:
-                        with st.expander(f"📋 Reasons ({len(_reasons)})", expanded=False):
-                            _ok, _warn, _info = [], [], []
-                            for _r in _reasons:
-                                if _r.startswith("✅"):    _ok.append(_r[1:].strip())
-                                elif _r.startswith("⚠️"):  _warn.append(_r[1:].strip())
-                                else:                       _info.append(_r.lstrip("ℹ️ ").strip())
-                            _r1, _r2, _r3 = st.columns(3)
-                            with _r1:
-                                st.markdown(f"**✅ Positives ({len(_ok)})**")
-                                for _x in _ok: st.markdown(f"- {_x}")
-                            with _r2:
-                                st.markdown(f"**⚠️ Cautions ({len(_warn)})**")
-                                for _x in _warn: st.markdown(f"- {_x}")
-                            with _r3:
-                                st.markdown(f"**ℹ️ Notes ({len(_info)})**")
-                                for _x in _info: st.markdown(f"- {_x}")
+        display_cols = [
+            "test_num", "date", "lane", "test_type",
+            "variant_a_title", "variant_a_thumb",
+            "variant_b_title", "variant_b_thumb",
+            "a_share", "b_share", "Margin pp", "Result", "status",
+        ]
+        rename_map = {
+            "test_num": "#", "date": "Date", "lane": "Lane", "test_type": "Type",
+            "variant_a_title": "A Title", "variant_a_thumb": "A Thumb",
+            "variant_b_title": "B Title", "variant_b_thumb": "B Thumb",
+            "a_share": "A %", "b_share": "B %", "status": "Status",
+        }
+        df_display_ab = df_show[display_cols].rename(columns=rename_map)
 
-                    # ── A/B/C title variants ──
-                    if _bv_top and _comp.get("problem"):
-                        try:
-                            _variants = _bv_top(_comp.get("problem", {}), _comp.get("hz", {}),
-                                                _comp.get("instrument", {}), _comp.get("raga", {}),
-                                                _comp.get("wave", {}))
-                            st.markdown("**A/B/C title variants**")
-                            for _vk, _vt in _variants.items():
-                                _v_label = {"A_seo": "A · SEO-led", "B_question": "B · Question-led", "C_outcome": "C · Outcome-led"}.get(_vk, _vk)
-                                st.caption(f"{_v_label} · {len(_vt)} chars")
-                                st.code(_vt, language=None)
-                        except Exception:
-                            pass
+        st.dataframe(
+            df_display_ab,
+            width="stretch",
+            height=600,
+            hide_index=True,
+            column_config={
+                "#": st.column_config.NumberColumn("#", width=40),
+                "Date": st.column_config.TextColumn("Date", width=85),
+                "Lane": st.column_config.TextColumn("Lane", width=140),
+                "Type": st.column_config.TextColumn("Type", width=100),
+                "A Title": st.column_config.TextColumn("A Title", width=260),
+                "A Thumb": st.column_config.TextColumn("A Thumb", width=130),
+                "B Title": st.column_config.TextColumn("B Title", width=260),
+                "B Thumb": st.column_config.TextColumn("B Thumb", width=130),
+                "A %": st.column_config.TextColumn("A %", width=60),
+                "B %": st.column_config.TextColumn("B %", width=60),
+                "Margin pp": st.column_config.NumberColumn("Gap pp", width=65, format="%.1f"),
+                "Result": st.column_config.TextColumn("Result", width=90),
+                "Status": st.column_config.TextColumn("Status", width=90),
+            },
+        )
 
-                    # ── Thumbnail overlay variants ──
-                    if _btv_top and _comp.get("problem", {}).get("kw"):
-                        try:
-                            _thumbs = _btv_top(_comp["problem"]["kw"])
-                            if _thumbs:
-                                st.markdown("**🖼️ Thumbnail overlay text** (validate each in VidIQ)")
-                                _tc = st.columns(3)
-                                for _col, _t in zip(_tc, _thumbs[:3]):
-                                    with _col:
-                                        st.markdown(f"<div style='font-size:0.72rem;color:#9ca3af'>{_t.get('strategy', '').upper()}</div>"
-                                                    f"<div style='font-weight:600;font-size:0.95rem'>{_t.get('text', '')}</div>",
-                                                    unsafe_allow_html=True)
-                                        if _t.get("alts"):
-                                            st.caption(f"alts: {' · '.join(_t['alts'])}")
-                        except Exception:
-                            pass
+        st.markdown(f"**{len(df_show)} tests shown** (of {total} total)")
 
-                    # ── Tags ──
-                    if _bt_top and _comp:
-                        try:
-                            _tags = _bt_top(_comp.get("problem", {}), _comp.get("instrument", {}),
-                                            _comp.get("hz", {}), _comp.get("raga", {}), _comp.get("wave", {}))
-                            if isinstance(_tags, dict):
-                                _tag_list = _tags.get("tags") or _tags.get("stack") or []
-                                _tag_str = ", ".join(_tag_list) if isinstance(_tag_list, list) else str(_tag_list)
-                            elif isinstance(_tags, list):
-                                _tag_str = ", ".join(_tags)
-                            else:
-                                _tag_str = str(_tags)
-                            st.markdown(f"**🏷️ Tags** · {len(_tag_str)}/500 chars")
-                            st.code(_tag_str, language=None)
-                        except Exception:
-                            pass
-
-        # ────────────────────────────────────────────────────
-        # Score Check panel — validate + auto-bank + re-rank
-        # ────────────────────────────────────────────────────
         st.divider()
-        st.markdown("### 🔍 Score Check — validate keywords, auto-bank, re-rank")
-        st.caption(
-            "Read each candidate's keywords below. Paste fresh VidIQ scores → "
-            "**Save** writes to `keyword_bank.csv` (≥60) or `invalidated_keywords.csv` (<60). "
-            "Then **Re-rank** re-runs the pipeline with the new data."
-        )
-        st.info(
-            "**Score legend:** ✅ PASS (≥60) · ❌ FAIL (<60, auto-invalidates) · "
-            "⚠️ UNTESTED (no score yet) · 🟡 STALE (last checked >30d ago, re-validate)",
-            icon="ℹ️",
-        )
+        # --- Win-rate breakdown by thumbnail format
+        st.markdown("### Thumbnail Format Win Rates (concluded tests)")
 
-        # Load proposal JSON sidecar (richer than the MD)
-        proposal_json_path = proposal_path.with_suffix(".json")
-        if proposal_json_path.exists():
-            import json as _json
-            try:
-                proposal_data = _json.loads(proposal_json_path.read_text())
-            except Exception:
-                proposal_data = {}
-        else:
-            proposal_data = {}
+        concluded_df = df_ab[df_ab["status"] == "CONCLUDED"].copy()
+        if not concluded_df.empty:
+            # Classify thumb format from winner side
+            def _thumb_format(text):
+                if not isinstance(text, str):
+                    return "Unknown"
+                t = text.strip().upper()
+                if t.endswith("?"):
+                    return "Q-hook"
+                elif any(kw in t for kw in ["REST", "OKAY", "WORRY", "ALLOW", "GUILT"]):
+                    return "Permission"
+                elif any(kw in t for kw in ["MUSIC", "SLEEP", "RELAX MUSIC"]):
+                    return "Intent-descriptor"
+                else:
+                    return "Outcome-imperative"
 
-        # bank_index and invalidated_set already loaded at the top of the tab.
-        candidates = proposal_data.get("candidates", [])[:3]  # top 3 only — keep UI focused
-        if not candidates:
-            st.info("No candidate JSON found — re-run Generate Idea to get the structured payload.")
-        else:
-            from datetime import date as _d
-            today = _d.today()
+            def _get_winner_thumb(row):
+                w = str(row.get("winner","")).lower()
+                if w.startswith("a") and not "tie" in w:
+                    return row.get("variant_a_thumb","")
+                elif w.startswith("b") and not "tie" in w:
+                    return row.get("variant_b_thumb","")
+                return None
 
-            def score_badge(phrase: str):
-                """Return (badge_label, current_score, last_check, is_invalidated)."""
-                p = phrase.strip().lower()
-                if p in invalidated_set:
-                    return "❌ FAILED previously", None, None, True
-                row = bank_index.get(p)
-                if not row:
-                    return "⚠️ UNTESTED", None, None, False
-                score = row.get("vidiq_score", "").strip()
-                if not score.isdigit():
-                    return "⚠️ UNTESTED", None, row.get("last_score_check", ""), False
-                score = int(score)
-                last_check = row.get("last_score_check", "")
-                stale = False
-                if last_check:
-                    try:
-                        days = (today - _d.fromisoformat(last_check)).days
-                        if days > 30:
-                            stale = True
-                    except Exception:
-                        pass
-                if stale:
-                    return f"🟡 STALE ({score}, checked {last_check})", score, last_check, False
-                if score >= 60:
-                    return f"✅ PASS ({score})", score, last_check, False
-                return f"❌ FAIL ({score})", score, last_check, False
+            concluded_df["winner_thumb"] = concluded_df.apply(_get_winner_thumb, axis=1)
+            concluded_df["thumb_fmt"] = concluded_df["winner_thumb"].apply(_thumb_format)
 
-            # Initialise score-input state
-            if "vidiq_score_inputs" not in st.session_state:
-                st.session_state["vidiq_score_inputs"] = {}
+            # Count wins by format
+            fmt_counts = concluded_df[concluded_df["winner_thumb"].notna()]["thumb_fmt"].value_counts().reset_index()
+            fmt_counts.columns = ["Thumbnail Format", "Wins"]
 
-            for idx, cand in enumerate(candidates, start=1):
-                comp = cand.get("components", {})
-                title = cand.get("title") or cand.get("variants", {}).get("A_seo", "(untitled)")
-                with st.expander(f"#{idx} — {title}", expanded=(idx == 1)):
-                    # Keywords to validate for this candidate.
-                    # NOTE: we deliberately don't ask for the full-title score —
-                    # full titles are never search queries, so VidIQ always scores
-                    # them 20-40 LOW regardless of component quality. Only
-                    # component scores actually matter for ranking.
-                    keywords_to_check = []
-                    seen_kw = set()
-                    def _add_kw(slot, kw, label):
-                        kl = (kw or "").strip().lower()
-                        if kl and kl not in seen_kw:
-                            keywords_to_check.append((slot, kl, label))
-                            seen_kw.add(kl)
-                    # 1. Structured components
-                    if comp.get("problem"):    _add_kw("problem",    comp["problem"]["kw"],         "Problem keyword")
-                    if comp.get("instrument"): _add_kw("instrument", comp["instrument"]["name"],    "Instrument")
-                    if comp.get("hz"):         _add_kw("hz",         comp["hz"]["hz"],              "Hz")
-                    if comp.get("raga"):       _add_kw("raga",       comp["raga"]["name"],          "Raga")
-                    if comp.get("wave"):       _add_kw("wave",       comp["wave"]["wave"],          "Wave")
-
-                    # 2. Compound + sub-phrases mined FROM THE TITLE (so we can
-                    # discover new keywords through the Score Check panel — not
-                    # just validate the 4 structured slots).
-                    # Tokenise the title, build 1-3 word phrases, filter stopwords.
-                    SW = {"the","a","an","of","for","with","to","and","&","|","1",
-                          "hour","raga","wave","session","min","minutes","hr"}
-                    raw_tokens = title.lower().replace("|", " ").split()
-                    tokens = [t.strip("?!,.:;") for t in raw_tokens]
-                    tokens = [t for t in tokens if t]
-                    extras = []
-                    # 1-grams: standalone meaningful words
-                    for t in tokens:
-                        if t not in SW and len(t) > 2 and not t.replace("hz","").isdigit():
-                            extras.append(t)
-                    # 2-grams + 3-grams (likely-search patterns)
-                    for n in (2, 3):
-                        for i in range(len(tokens) - n + 1):
-                            window = tokens[i:i+n]
-                            # skip if mostly stopwords
-                            if sum(1 for t in window if t in SW) > n // 2:
-                                continue
-                            extras.append(" ".join(window))
-                    # Add extras (deduped against structured ones)
-                    for e in extras:
-                        _add_kw("tag", e, "Title sub-phrase")
-
-                    # Promote / Park buttons
-                    promote_col1, promote_col2, promote_col3 = st.columns([2, 1, 1])
-                    with promote_col2:
-                        promote_clicked = st.button(
-                            "🚀 Promote to Brief",
-                            key=f"promote_btn_{idx}",
-                            use_container_width=True,
-                            help="Create a ready-to-paste brief in the Brief Queue tab",
-                        )
-                    with promote_col3:
-                        dismiss_clicked = st.button(
-                            "💤 Park",
-                            key=f"dismiss_btn_{idx}",
-                            use_container_width=True,
-                            help="Snooze this problem for today — comes back tomorrow",
-                        )
-                    if promote_clicked:
-                        try:
-                            proc = subprocess.run(
-                                ["python3", "proposal_to_video.py", "--candidate", str(idx)],
-                                cwd=str(PIPELINE_DIR),
-                                capture_output=True, text=True, timeout=60,
-                            )
-                            if proc.returncode == 0:
-                                st.success(f"✓ Brief created for candidate #{idx}. Check the **🧠 Brief Queue** tab.")
-                                with st.expander("Promote log"):
-                                    st.code(proc.stdout, language="text")
-                            else:
-                                st.error(f"❌ Promote failed (exit {proc.returncode})")
-                                st.code(proc.stderr or proc.stdout)
-                        except Exception as e:
-                            st.error(f"Subprocess error: {e}")
-                    if dismiss_clicked:
-                        try:
-                            import csv as _csvd
-                            from datetime import date as _d2
-                            comp = cand.get("components", {})
-                            problem_kw = comp.get("problem", {}).get("kw", "").lower().strip()
-                            today = _d2.today().isoformat()
-                            dpath = DASHBOARD_DIR / "data" / "dismissed_candidates.csv"
-                            HEADER = ["signature", "problem_keyword", "title", "dismissed_on"]
-                            import storage as _stord
-                            _existing_dismissed = _stord.read_dismissed_candidates()
-                            # Park the PROBLEM KEYWORD for today (not the full signature).
-                            already_today = any(
-                                r.get("problem_keyword", "").strip().lower() == problem_kw
-                                and r.get("dismissed_on") == today
-                                for r in _existing_dismissed
-                            )
-                            if not already_today:
-                                _stord.append_dismissed_candidate({
-                                    "signature":       "",
-                                    "problem_keyword": problem_kw,
-                                    "title":           cand.get("title", ""),
-                                    "dismissed_on":    today,
-                                })
-                                _stord.invalidate_cache()
-                                st.success(f"💤 Parked **'{problem_kw}'** for today. Click Re-rank to see different ideas. Comes back tomorrow.")
-                            else:
-                                st.info("Already parked for today.")
-                        except Exception as e:
-                            st.error(f"Park failed: {e}")
-
-                    st.markdown("**Keywords for this candidate:**")
-                    from urllib.parse import quote_plus as _qp
-                    for slot, kw, label in keywords_to_check:
-                        badge, cur_score, last_check, is_inv = score_badge(kw)
-                        c1, c2, c3, c4 = st.columns([3, 2, 2, 2])
-                        with c1:
-                            st.markdown(f"`{kw}`")
-                            st.caption(f"{label} · {badge}")
-                        with c2:
-                            vidiq_url = f"https://app.vidiq.com/keywords/{_qp(kw)}"
-                            yt_url    = f"https://www.youtube.com/results?search_query={_qp(kw)}"
-                            st.markdown(f"[🔗 VidIQ]({vidiq_url})  ·  [▶ YT]({yt_url})")
-                        with c3:
-                            input_key = f"score_{idx}_{slot}_{kw}"
-                            new_score = st.number_input(
-                                "VidIQ score",
-                                min_value=0, max_value=100,
-                                value=int(cur_score) if cur_score is not None else 0,
-                                step=1, key=input_key,
-                                label_visibility="collapsed",
-                                help="Paste the VidIQ score (0-100). 0 = skip / not yet checked.",
-                            )
-                        with c4:
-                            if new_score and new_score != (cur_score or 0):
-                                st.caption("✏️ changed")
-                            else:
-                                st.caption("— no change —")
-                            # Track for batch save
-                            st.session_state["vidiq_score_inputs"][(idx, slot, kw)] = (new_score, slot if slot != "full_title" else "tag")
-
-            # ── Alternate keyword explorer ──────────────────────────────────
-            st.divider()
-            st.markdown("#### 💡 Add alternate keywords to explore")
-            st.caption(
-                "Spotted a better keyword on VidIQ while scoring? Add it here. "
-                "For ragas, fit against this content's mood is checked automatically against `raga_fit_cache.csv` — "
-                "if a (raga, mood) pair isn't cached yet, you get a copy-paste prompt to ask Claude in chat. "
-                "**Save** banks the score, **Re-rank** rebuilds title variants using your highest-scored keywords."
+            fig_fmt = px.bar(
+                fmt_counts,
+                x="Wins", y="Thumbnail Format", orientation="h",
+                color="Thumbnail Format",
+                title="Wins by thumbnail format",
+                color_discrete_sequence=px.colors.qualitative.Set2,
             )
+            fig_fmt.update_layout(
+                height=280, margin=dict(l=0, r=0, t=40, b=0),
+                template="plotly_dark", paper_bgcolor="#0E1117", plot_bgcolor="#0E1117",
+                showlegend=False,
+            )
+            st.plotly_chart(fig_fmt, width="stretch")
 
-            _SLOT_OPTIONS = ["problem", "raga", "hz", "instrument", "wave", "tag"]
-            _KNOWN_RAGAS = {
-                "bhairavi", "yaman", "bhupali", "darbari", "bhimpalasi", "todi",
-                "marwa", "puriya", "kafi", "bilawal", "kalyan", "bageshri",
-                "malkauns", "kirwani", "charukesi", "hamsadhwani",
-            }
-            _INSTRUMENTS = {
-                "tanpura", "bansuri", "veena", "sitar", "sarangi", "dilruba",
-                "sarod", "shehnai", "flute", "violin", "tabla",
-            }
-            _PROBLEM_WORDS = {
-                "insomnia", "anxiety", "stress", "depression", "focus", "sleep",
-                "calm", "anger", "overthink", "grief", "pain", "fear", "worry",
-                "rest", "relax", "heal", "trauma", "fatigue", "burnout", "lonely",
-                "sad", "nervous", "mind", "mood", "tension", "unwind",
-            }
+            # Margin distribution
+            concluded_df["a_pct"] = concluded_df["a_share"].apply(_pct)
+            concluded_df["b_pct"] = concluded_df["b_share"].apply(_pct)
+            concluded_df["margin"] = concluded_df.apply(_margin, axis=1)
+            decisive = concluded_df[concluded_df["margin"].notna()]
 
-            def _auto_slot(phrase: str) -> str:
-                p = phrase.strip().lower()
-                if p.startswith(("raga ", "raag ")) or p in _KNOWN_RAGAS:
-                    return "raga"
-                if "hz" in p or "hertz" in p:
-                    return "hz"
-                if any(x in p for x in ("delta", "theta", "alpha", "gamma", "binaural", " wave")):
-                    return "wave"
-                if any(x in p for x in _INSTRUMENTS):
-                    return "instrument"
-                if any(x in p for x in _PROBLEM_WORDS):
-                    return "problem"
-                return "tag"
-
-            if "extra_keywords" not in st.session_state:
-                st.session_state["extra_keywords"] = []
-
-            _add_c1, _add_c2, _add_c3 = st.columns([4, 2, 1])
-            with _add_c1:
-                _new_kw = st.text_input(
-                    "Keyword phrase",
-                    key="new_kw_input",
-                    placeholder="e.g. insomnia music, raga yaman, sleep music …",
-                    label_visibility="collapsed",
+            if not decisive.empty:
+                fig_margin = px.histogram(
+                    decisive,
+                    x="margin",
+                    nbins=10,
+                    title="Margin distribution (pp) — concluded tests",
+                    labels={"margin": "Margin (percentage points)", "count": "Tests"},
+                    color_discrete_sequence=["#636EFA"],
                 )
-            with _add_c2:
-                _auto = _auto_slot(_new_kw) if _new_kw else "tag"
-                _slot_pick = st.selectbox(
-                    "Slot", _SLOT_OPTIONS,
-                    index=_SLOT_OPTIONS.index(_auto),
-                    key="new_kw_slot",
-                    label_visibility="collapsed",
-                    help="Auto-detected from the phrase — override if needed",
+                fig_margin.add_vline(x=5, line_dash="dash", line_color="orange",
+                                     annotation_text="5pp decisive")
+                fig_margin.update_layout(
+                    height=260, margin=dict(l=0, r=0, t=40, b=0),
+                    template="plotly_dark", paper_bgcolor="#0E1117", plot_bgcolor="#0E1117",
                 )
-            with _add_c3:
-                _add_btn = st.button("➕ Add", use_container_width=True, key="add_kw_btn")
+                st.plotly_chart(fig_margin, width="stretch")
 
-            if _add_btn and _new_kw.strip():
-                _kw_clean = _new_kw.strip().lower()
-                if not any(e["kw"] == _kw_clean for e in st.session_state["extra_keywords"]):
-                    st.session_state["extra_keywords"].append({"kw": _kw_clean, "slot": _slot_pick})
-                st.rerun()
+    # =========================================================================
+    # Sub-tab 3: Running Now
+    # =========================================================================
+    with sub_running:
+        st.markdown("### Currently Running Tests")
+        st.caption("Scores are directional only — wait for 'Test finished' before banking any rule.")
 
-            if st.session_state["extra_keywords"]:
-                st.markdown("**Alternate keywords to score:**")
-                if "raga_fit_results" not in st.session_state:
-                    st.session_state["raga_fit_results"] = {}
+        running_df = df_ab[df_ab["status"] == "RUNNING"].copy()
 
-                # Derive the dominant problem mood from candidate #1 for fit checks
-                _primary_mood = "sleep"  # fallback
-                if candidates:
-                    _prob_kw = candidates[0].get("components", {}).get("problem", {}).get("kw", "")
-                    if _prob_kw:
-                        import sys as _sys2
-                        _sys2.path.insert(0, str(PIPELINE_DIR))
-                        try:
-                            from raga_validator import mood_from_problem_kw as _mood_fn
-                            _primary_mood = _mood_fn(_prob_kw)
-                        except Exception:
-                            _primary_mood = _prob_kw.lower()
+        if running_df.empty:
+            st.success("No tests currently running.")
+        else:
+            running_df["a_pct"] = running_df["a_share"].apply(_pct)
+            running_df["b_pct"] = running_df["b_share"].apply(_pct)
 
-                _to_remove = []
-                for _ei, _entry in enumerate(st.session_state["extra_keywords"]):
-                    _ekw, _eslot = _entry["kw"], _entry["slot"]
-                    _badge, _cur, _, _inv = score_badge(_ekw)
+            for _, row in running_df.iterrows():
+                a_pct = row["a_pct"]
+                b_pct = row["b_pct"]
+                margin = abs(a_pct - b_pct) if (a_pct is not None and b_pct is not None) else 0
+                leader = "A" if (a_pct or 0) > (b_pct or 0) else "B"
+                decisiveness = "🟢 Decisive (>10pp)" if margin > 10 else ("🟡 Leaning (5-10pp)" if margin > 5 else "⚪ Too close to call")
 
-                    _ec1, _ec2, _ec3, _ec4, _ec5 = st.columns([3, 2, 2, 2, 1])
-                    with _ec1:
-                        st.markdown(f"`{_ekw}`")
-                        st.caption(f"{_eslot} · {_badge}")
-                    with _ec2:
-                        _vidiq_url = f"https://app.vidiq.com/keywords/{_qp(_ekw)}"
-                        _yt_url    = f"https://www.youtube.com/results?search_query={_qp(_ekw)}"
-                        st.markdown(f"[🔗 VidIQ]({_vidiq_url})  ·  [▶ YT]({_yt_url})")
-                    with _ec3:
-                        _escore = st.number_input(
-                            "Score", min_value=0, max_value=100,
-                            value=int(_cur) if _cur else 0,
-                            step=1, key=f"extra_score_{_ei}_{_ekw}",
-                            label_visibility="collapsed",
+                with st.expander(f"#{int(row['test_num'])} · {row['lane']} · {row['test_type']} — Leading: **{leader}** ({decisiveness})"):
+                    rc1, rc2 = st.columns(2)
+                    with rc1:
+                        st.markdown(f"**Variant A** — `{row['a_share']}`")
+                        st.markdown(f"**Title:** {row['variant_a_title']}")
+                        st.markdown(f"**Thumb:** `{row['variant_a_thumb']}`")
+                    with rc2:
+                        st.markdown(f"**Variant B** — `{row['b_share']}`")
+                        st.markdown(f"**Title:** {row['variant_b_title']}")
+                        st.markdown(f"**Thumb:** `{row['variant_b_thumb']}`")
+
+                    if a_pct is not None and b_pct is not None:
+                        bar_df = pd.DataFrame({
+                            "Variant": ["A", "B"],
+                            "Share %": [a_pct, b_pct],
+                            "Color": ["#636EFA" if leader == "A" else "#EF553B",
+                                      "#EF553B" if leader == "A" else "#636EFA"],
+                        })
+                        fig_bar = px.bar(
+                            bar_df, x="Variant", y="Share %",
+                            color="Variant",
+                            color_discrete_sequence=["#636EFA", "#EF553B"],
+                            range_y=[0, 100],
+                            height=200,
                         )
-                    with _ec4:
-                        if _escore and _escore != (_cur or 0):
-                            st.caption("✏️ changed")
-                        else:
-                            st.caption("— no change —")
-                        st.session_state["vidiq_score_inputs"][(-1, _eslot, _ekw)] = (_escore, _eslot)
-                    with _ec5:
-                        if st.button("🗑️", key=f"rm_extra_{_ei}", help="Remove"):
-                            _to_remove.append(_ei)
+                        fig_bar.add_hline(y=50, line_dash="dash", line_color="white", opacity=0.3)
+                        fig_bar.update_layout(
+                            margin=dict(l=0, r=0, t=10, b=0),
+                            template="plotly_dark", paper_bgcolor="#0E1117", plot_bgcolor="#0E1117",
+                            showlegend=False,
+                        )
+                        st.plotly_chart(fig_bar, width="stretch")
 
-                    # Raga fit check — auto-display from CSV cache; for misses, show ask-Claude prompt
-                    if _eslot == "raga":
-                        try:
-                            from raga_validator import lookup_raga_fit, build_ask_prompt
-                            # Try the raw keyword first, then strip "raga " prefix as fallback
-                            _ekw_clean = _ekw.removeprefix("raga ").strip()
-                            _fit_result = lookup_raga_fit(_ekw_clean, _primary_mood) or lookup_raga_fit(_ekw, _primary_mood)
-                        except Exception as _e:
-                            _fit_result = None
-
-                        _fit_icons = {
-                            "strong":  "✅ Strong fit",
-                            "ok":      "✅ Ok",
-                            "caution": "⚠️ Caution",
-                            "avoid":   "❌ Avoid",
-                        }
-                        if _fit_result:
-                            _icon = _fit_icons.get(_fit_result["fit"], _fit_result["fit"])
-                            st.caption(f"{_icon} for **{_primary_mood}** — {_fit_result['reason']}")
-                            if _fit_result.get("alternatives"):
-                                st.caption(f"   ↳ Better: {', '.join(_fit_result['alternatives'])}")
-                        else:
-                            with st.expander(f"❓ Not yet validated — ask Claude in chat"):
-                                st.caption(
-                                    f"This (raga, mood) pair isn't in `data/raga_fit_cache.csv` yet. "
-                                    f"Copy the prompt below into your Claude conversation, get the verdict, "
-                                    f"then append the row to the CSV."
-                                )
-                                st.code(build_ask_prompt(_ekw, _primary_mood), language="text")
-
-                for _i in reversed(_to_remove):
-                    st.session_state["extra_keywords"].pop(_i)
-                if _to_remove:
-                    st.rerun()
-
-            # Save / Rebuild Title / Re-rank buttons
-            col_save, col_rebuild, col_rerank = st.columns(3)
-            with col_save:
-                save_clicked = st.button(
-                    "💾 Save scores", use_container_width=True, key="save_scores_btn",
-                    help="Bank all entered scores to keyword_bank.csv",
-                )
-            with col_rebuild:
-                rebuild_clicked = st.button(
-                    "✏️ Rebuild title only", use_container_width=True, key="rebuild_btn",
-                    help="In-place keyword swap: keep the candidate, just swap higher-scoring keywords into the title slots. No pipeline re-run.",
-                )
-            with col_rerank:
-                rerank_clicked = st.button(
-                    "🔁 Re-rank everything", type="primary", use_container_width=True, key="rerank_btn",
-                    help="Full pipeline re-run with the updated keyword bank — may surface different candidates entirely.",
-                )
-
-            if save_clicked:
-                # Auto-promote scores via persistence.py
-                import sys as _sys
-                _sys.path.insert(0, str(PIPELINE_DIR))
-                try:
-                    from persistence import auto_promote_vidiq_scores
-                    scores_to_save = {}
-                    slot_hints = {}
-                    for (cand_idx, slot, kw), (score, write_slot) in st.session_state["vidiq_score_inputs"].items():
-                        if score and score > 0:
-                            scores_to_save[kw] = score
-                            slot_hints[kw] = write_slot
-                    if scores_to_save:
-                        result = auto_promote_vidiq_scores(scores_to_save, slot_hint=slot_hints, source=f"dashboard-{_idea_date.today().isoformat()}")
-                        promoted = result.get("promoted", [])
-                        low_scores = result.get("low_scores", [])
-                        msg = []
-                        if promoted:
-                            msg.append(f"✓ {len(promoted)} saved to keyword_bank.csv")
-                        if low_scores:
-                            msg.append(f"⚠️ low scores (<60): {', '.join(low_scores)}")
-                        if msg:
-                            st.success(" · ".join(msg))
-                        else:
-                            st.info("No scores to save (all were 0 or unchanged).")
-                    else:
-                        st.warning("No scores entered — type a value > 0 in any field, then Save.")
-                except Exception as e:
-                    st.error(f"Save failed: {e}")
-
-            if rebuild_clicked:
-                # In-place title swap — uses the bank + extra_keywords to find
-                # higher-scoring slot replacements for each candidate, then
-                # rebuilds A/B/C title variants via build_variants().
-                # Does NOT re-run the pipeline; candidate structure stays intact.
-                import sys as _sys3
-                _sys3.path.insert(0, str(PIPELINE_DIR))
-                try:
-                    from scoring import build_variants as _build_variants
-                    from raga_validator import lookup_raga_fit as _lookup_fit, mood_from_problem_kw as _mood_fn2
-                    from copy import deepcopy as _deepcopy
-
-                    # Combine bank scores + just-entered alternate keyword scores
-                    _all_scores = {}
-                    for _ph, _row in bank_index.items():
-                        _s = _row.get("vidiq_score", "").strip()
-                        if _s.isdigit():
-                            _all_scores[(_ph, _row.get("slot", "").strip().lower())] = int(_s)
-                    # Overlay any unsaved typed scores from the score-input dict
-                    for (_ci, _slt, _kw), (_sc, _) in st.session_state.get("vidiq_score_inputs", {}).items():
-                        if _sc and _sc > 0:
-                            _all_scores[(_kw.lower(), _slt)] = max(_all_scores.get((_kw.lower(), _slt), 0), _sc)
-
-                    def _slot_keys(slot):
-                        return [(ph, sc) for (ph, sl), sc in _all_scores.items() if sl == slot]
-
-                    st.markdown("---")
-                    st.markdown("### ✏️ Rebuilt titles (in-place keyword swap)")
-                    st.caption("Same candidates, same instrument/raga structure — just swapped higher-scoring keywords into each slot. No pipeline re-run.")
-
-                    for _idx, _cand in enumerate(candidates, start=1):
-                        _comp = _deepcopy(_cand.get("components", {}))
-                        _orig_title = _cand.get("title") or _cand.get("variants", {}).get("A_seo", "")
-                        _swaps = []  # list of (slot, old_kw, new_kw, old_score, new_score)
-
-                        for _slot_name, _kw_field in (("problem", "kw"), ("raga", "name"), ("hz", "hz"),
-                                                      ("instrument", "name"), ("wave", "wave")):
-                            _slot_obj = _comp.get(_slot_name)
-                            if not _slot_obj:
-                                continue
-                            _cur_kw = (_slot_obj.get(_kw_field) or "").strip().lower()
-                            _cur_score = _all_scores.get((_cur_kw, _slot_name), 0)
-                            _candidates_slot = _slot_keys(_slot_name)
-                            if not _candidates_slot:
-                                continue
-                            _best_kw, _best_score = max(_candidates_slot, key=lambda x: x[1])
-                            if _best_kw != _cur_kw and _best_score > _cur_score:
-                                _swaps.append((_slot_name, _cur_kw, _best_kw, _cur_score, _best_score))
-                                _slot_obj[_kw_field] = _best_kw
-
-                        # Raga fit safety check on any raga swap
-                        _raga_warn = None
-                        if any(s[0] == "raga" for s in _swaps):
-                            _new_raga = _comp["raga"].get("name", "")
-                            _mood = _mood_fn2(_comp.get("problem", {}).get("kw", ""))
-                            _fit = _lookup_fit(_new_raga.removeprefix("raga ").strip(), _mood) or _lookup_fit(_new_raga, _mood)
-                            if _fit and _fit["fit"] in ("avoid", "caution"):
-                                _raga_warn = f"⚠️ Raga fit: **{_fit['fit']}** for {_mood} — {_fit['reason']}"
-
-                        with st.expander(f"#{_idx} — {_orig_title}", expanded=True):
-                            if not _swaps:
-                                st.info("No higher-scoring keywords found in any slot — title unchanged.")
-                                continue
-                            st.markdown("**Swaps applied:**")
-                            for _slot_n, _old, _new, _os, _ns in _swaps:
-                                st.markdown(f"- `{_slot_n}`: ~~{_old}~~ ({_os}) → **{_new}** ({_ns})")
-                            if _raga_warn:
-                                st.warning(_raga_warn)
-                            try:
-                                # Three structurally distinct variants:
-                                #  A — Full SEO (our pipeline default, stuffed control)
-                                #  B — Lean SEO (validated winner pattern, our own A/B test)
-                                #  C — Competitor-pattern adaptation (highest-view template for this mood)
-                                _problem    = _comp.get("problem", {}) or {}
-                                _hz_obj     = _comp.get("hz", {}) or {}
-                                _instr_obj  = _comp.get("instrument", {}) or {}
-                                _raga_obj   = _comp.get("raga", {}) or {}
-                                _wave_obj   = _comp.get("wave", {}) or {}
-
-                                _hook = _problem.get("seo_phrase") or _problem.get("phrase") or (_problem.get("kw", "") or "").title()
-                                _hz_s   = _hz_obj.get("hz", "")
-                                _ins_s  = _instr_obj.get("name", "")
-                                _rag_s  = _raga_obj.get("name", "")
-                                _wav_s  = _wave_obj.get("wave", "")
-                                _wav_out = _wave_obj.get("outcome", "")
-
-                                # A — Full SEO (5 slots)
-                                _va = f"{_hook} | {_hz_s} {_ins_s} Raga {_rag_s} | {_wav_s} Wave {_wav_out} | 1 Hour"
-                                # B — Lean SEO (3 slots, our validated winner)
-                                _vb = f"{_hook} | {_ins_s} Raga {_rag_s} | 1 Hour"
-                                # C — Competitor-pattern adaptation (with fallback)
-                                _vc = None
-                                _vc_caption = None
-                                try:
-                                    from competitor_patterns import apply_pattern_to_candidate as _apply_cp
-                                    _cp_mood = _mood_fn2(_problem.get("kw", ""))
-                                    _cp_result = _apply_cp(_comp, _cp_mood)
-                                    if _cp_result:
-                                        _vc = _cp_result["title"]
-                                        _vc_caption = (
-                                            f"Adapted from {_cp_result['source_channel']}'s "
-                                            f"**{_cp_result['source_views']:,}v** title for `{_cp_result['mood_matched']}`: "
-                                            f"_{_cp_result['source_title']}_"
-                                        )
-                                except Exception:
-                                    pass
-                                if not _vc:
-                                    _vc = f"{_hook} | {_ins_s} Raga {_rag_s}"  # ultra-minimal fallback
-                                    _vc_caption = "_(no competitor data for this mood — using ultra-minimal fallback)_"
-
-                                _variants = [
-                                    ("A — Full SEO (5 slots, stuffed control)",      _va, None),
-                                    ("B — Lean SEO (3 slots, our A/B-validated winner)", _vb, None),
-                                    ("C — Competitor-pattern adaptation",             _vc, _vc_caption),
-                                ]
-                                st.markdown("**Rebuilt variants — three structurally distinct titles:**")
-                                for _label, _vt, _cap in _variants:
-                                    st.caption(f"{_label} · {len(_vt)} chars")
-                                    st.code(_vt, language=None)
-                                    if _cap:
-                                        st.caption(_cap)
-                            except Exception as _be:
-                                st.error(f"variant build failed: {_be}")
-                except Exception as _re:
-                    st.error(f"Rebuild failed: {_re}")
-
-            if rerank_clicked:
-                with st.status("Re-running pipeline…", expanded=True) as status:
-                    st.write("🔁 Reading updated keyword_bank.csv + invalidated_keywords.csv…")
-                    st.write("🎯 Re-scoring candidates with fresh data…")
-                    rc, stdout, stderr = _run_pipeline_subprocess()
-                    if rc == 0:
-                        status.update(label="✓ Re-rank complete", state="complete")
-                    else:
-                        status.update(label=f"❌ Re-rank failed (exit {rc})", state="error")
-                        st.error(stderr or stdout or "Unknown error")
-                        st.stop()
-                st.rerun()
-    else:
+        st.divider()
         st.info(
-            "No proposal for today yet. Click **🚀 Generate Idea** above to run the pipeline."
+            "**Paste new screenshots** to the conversation whenever tests conclude. "
+            "Claude will bank the result and this page updates automatically after you clear cache."
         )
 
-    st.divider()
-    with st.expander("⚙️ How this works"):
-        st.markdown(
-            """
-            **Inputs (read live each run):**
-            - Own-channel RSS (catches new uploads immediately, no manual export needed)
-            - `REACH_HISTORY.csv` (analytics if available, optional)
-            - Raga Heal + Shanti Instrumentals RSS (competitor pulse, last 14d)
-            - `keyword_bank.csv` (validated VidIQ scores)
-            - `config.py` rules (musicology, kill list, scoring weights)
+    # =========================================================================
+    # Sub-tab 4: Next Tests
+    # =========================================================================
+    with sub_next:
+        st.markdown("### Hypotheses Queue — Next Tests to Run")
+        st.caption("Gaps in the data worth structuring a deliberate test around. Set these up on the next relevant ship.")
 
-            **Process:**
-            1. Brute-force every {problem × instrument × Hz × raga × wave} combo
-            2. Apply ~13 automatic gates (length, kill phrases, recency, tonal fit, cannibalization, competitor saturation)
-            3. Score each candidate; rank top 5
-            4. Generate A/B/C title variants + 4-tier tag stack + Suno prompt + production spec
-            5. Write `videos/proposals/YYYY-MM-DD.md` and `.json`
+        hypotheses = [
+            {
+                "priority": "🔴 1",
+                "hypothesis": "Intent-descriptor thumb beats Q-hook in sleep lane cleanly",
+                "lane": "Sleep",
+                "design": "Thumb-only: **DEEP SLEEP NOW** vs **CAN'T FALL ASLEEP?**",
+                "settles": "Whether sleep lane is intent-match or just anti-Q-hook",
+                "status": "Needs a thumb-only sleep test",
+            },
+            {
+                "priority": "🔴 2",
+                "hypothesis": "Permission thumb beats both Q-hook and outcome-imperative — strongly supported by Test 29 (REST WITHOUT WORRY, 17.2pp win)",
+                "lane": "Burnout/Rest",
+                "design": "3-way thumb-only: **IT'S OKAY TO REST** vs **BURNED OUT AND TIRED?** vs **RELEASE THE TENSION**",
+                "settles": "Isolates permission as a distinct category (Test 29 was confounded)",
+                "status": "High priority — best current hypothesis",
+            },
+            {
+                "priority": "🟡 3",
+                "hypothesis": "Mental-state Q-hook beats physical-exhaustion Q-hook",
+                "lane": "Any rest lane",
+                "design": "Thumb-only: **MIND WON'T SLOW DOWN?** vs **BODY FEELS HEAVY?**",
+                "settles": "Explains why some Q-hooks win and others lose",
+                "status": "Explains pattern across 9 tests",
+            },
+            {
+                "priority": "🟡 4",
+                "hypothesis": "Plain-language state beats clinical jargon in burnout title",
+                "lane": "Burnout",
+                "design": "Title-only: **Exhausted Mind | Slow Veena | 1.5 Hours** vs **Nervous System Reset | Slow Veena | 1.5 Hours**",
+                "settles": "Settles title lead style for burnout lane",
+                "status": "Test 26 confounded — need isolation",
+            },
+            {
+                "priority": "🟢 5",
+                "hypothesis": "Strong title rescues generic outcome thumb",
+                "lane": "Any lane",
+                "design": "Thumb-only with proven strong title: **STRESSED?** vs **RELAX DEEPLY**",
+                "settles": "Confirms whether generic thumb finding is real or title-confounded",
+                "status": "Only Test 14 is a clean isolation so far",
+            },
+            {
+                "priority": "🟢 6",
+                "hypothesis": "Morning anti-Q-hook rule holds with thumb-only isolation",
+                "lane": "Morning",
+                "design": "Thumb-only morning test: **MORNING BOOST** vs **FEEL UNMOTIVATED?**",
+                "settles": "Test 28 (tie, confounded) introduced doubt — need clean isolation",
+                "status": "5 prior morning tests all showed outcome wins",
+            },
+        ]
 
-            **Manual gates after** (you do these):
-            - VidIQ score on the full title (must be ≥50)
-            - YouTube top-5 search dominance check
-            """
-        )
+        for h in hypotheses:
+            with st.expander(f"{h['priority']} · **{h['lane']}** — {h['hypothesis'][:80]}{'…' if len(h['hypothesis'])>80 else ''}"):
+                st.markdown(f"**Hypothesis:** {h['hypothesis']}")
+                st.markdown(f"**Test design:** {h['design']}")
+                st.markdown(f"**What it settles:** {h['settles']}")
+                st.info(f"**Status:** {h['status']}")
+
+        st.divider()
+        st.markdown("### Quick Pre-Brief Checklist")
+        st.markdown("""
+**Title:**
+- [ ] Lead slot is SEO-led or lifestyle/mood? (Not Q-hook, not duration, not practice/utility)
+- [ ] 3 slots only? (Not 2, not 4+)
+- [ ] Lead keyword is highest VidIQ score available for this lane?
+- [ ] No Hz, wave type, or raga jargon stuffed in?
+
+**Thumbnail:**
+- [ ] Thumb type is right for the lane? (Check Lane Rules tab)
+- [ ] If using Q-hook: is it a *mental/cognitive* state? (Not physical exhaustion or time-of-day)
+- [ ] Avoiding generic soft outcomes? (RELAX DEEPLY, THINK LESS, LET YOURSELF REST — weak)
+- [ ] Mobile readable? (2–3 words, 14–18 chars)
+- [ ] Thumb energy matches music energy?
+        """)
 
 
 # -----------------------------------------------------------------------------
