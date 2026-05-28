@@ -34,7 +34,7 @@ PLAYBOOK_DIR = DASHBOARD_DIR / "data" / "playbook"
 
 
 def load_playbook():
-    """Load all 6 playbook data files."""
+    """Load all 7 playbook data files."""
     pb = {}
     pb["rules"] = yaml.safe_load((PLAYBOOK_DIR / "playbook_rules.yaml").read_text())
     pb["themes"] = json.loads((PLAYBOOK_DIR / "theme_performance.json").read_text())
@@ -42,6 +42,7 @@ def load_playbook():
     pb["locks"] = json.loads((PLAYBOOK_DIR / "phrase_locks.json").read_text())
     pb["thumb"] = json.loads((PLAYBOOK_DIR / "thumbnail_format_rules.json").read_text())
     pb["instrument_fit"] = json.loads((PLAYBOOK_DIR / "instrument_lane_fit.json").read_text())
+    pb["ab_patterns"] = json.loads((PLAYBOOK_DIR / "ab_pattern_rules.json").read_text())
     return pb
 
 
@@ -126,6 +127,31 @@ def brainstorm(theme: str, instrument: str, slot: str = None, date_str: str = No
             "evidence": thumb_rule["evidence"],
         }
 
+    # A/B pattern rules for this lane
+    ab_lane_key = map_theme_to_ab_lane(theme)
+    ab_lane = pb["ab_patterns"]["lanes"].get(ab_lane_key) if ab_lane_key else None
+    if ab_lane:
+        out["ab_patterns"] = {
+            "lane": ab_lane_key,
+            "n_tests": pb["ab_patterns"]["n_tests"],
+            "confidence": ab_lane["confidence"],
+            "winning_title_type": ab_lane["winning_title_type"],
+            "winning_title_examples": ab_lane.get("winning_title_examples", []),
+            "avoid_title_type": ab_lane.get("avoid_title_type"),
+            "winning_thumb_type": ab_lane["winning_thumb_type"],
+            "winning_thumb_examples": ab_lane.get("winning_thumb_examples", []),
+            "avoid_thumb_type": ab_lane.get("avoid_thumb_type"),
+            "avoid_thumb_examples": ab_lane.get("avoid_thumb_examples", []),
+            "evidence": ab_lane["evidence"],
+            "note": ab_lane.get("note"),
+        }
+        out["ab_universal_rules"] = [
+            {"rule": r["rule"], "action": r["action"], "confidence": r["confidence"]}
+            for r in pb["ab_patterns"]["universal_rules"]
+        ]
+    else:
+        out["ab_patterns"] = {"lane": None, "note": f"No A/B data for theme '{theme}' yet — moonshot territory"}
+
     # Structural rules
     out["structural_rules"] = {
         "char_target": pb["rules"]["structural"]["char_band"]["target"],
@@ -188,6 +214,26 @@ def map_theme_to_thumb_lane(theme: str) -> str:
         "nostalgia": "nostalgia", "uplifting": "uplifting",
     }
     return mapping.get(theme.lower(), theme.lower())
+
+
+def map_theme_to_ab_lane(theme: str) -> str:
+    """Map theme name to ab_pattern_rules.json lane key."""
+    mapping = {
+        "focus": "focus",
+        "morning": "morning", "morning_practice": "morning", "uplifting": "morning",
+        "cognitive": "cognitive_clarity", "brain_detox": "cognitive_clarity", "cognitive_clarity": "cognitive_clarity",
+        "sleep": "sleep",
+        "anxiety": "relaxation_anxiety", "anxiety_stress": "relaxation_anxiety",
+        "relaxation": "relaxation_anxiety", "evening": "relaxation_anxiety",
+        "overthinking": "overthinking",
+        "calm": "calm_healing", "healing": "calm_healing",
+        "burnout": "burnout", "stress_burnout": "burnout", "stress": "burnout", "reset": "burnout",
+        "deep_rest": "deep_rest",
+        "stillness": "calm_stillness",
+        "nostalgia": "nostalgia",
+        "comfort": "comfort_emotional", "emotional": "comfort_emotional",
+    }
+    return mapping.get(theme.lower(), None)
 
 
 # ─────────────────────────────────────────────────────────
@@ -421,6 +467,34 @@ def print_brainstorm(result: dict):
         print(f"  Winners: {', '.join(th['winners'][:5])}")
         if th.get("losers"):
             print(f"  Losers:  {', '.join(th['losers'][:3])}")
+
+    ab = result.get("ab_patterns", {})
+    if ab.get("lane"):
+        print(f"\n🧪 A/B PATTERN RULES (N={result.get('ab_patterns', {}).get('n_tests', '?')} tests · lane: {ab['lane']} · confidence: {ab['confidence']}):")
+        print(f"  Title → USE:   {ab['winning_title_type']}")
+        if ab.get("winning_title_examples"):
+            print(f"                 e.g. \"{ab['winning_title_examples'][0]}\"")
+        if ab.get("avoid_title_type"):
+            print(f"  Title → AVOID: {ab['avoid_title_type']}")
+        print(f"  Thumb → USE:   {ab['winning_thumb_type']}")
+        if ab.get("winning_thumb_examples"):
+            print(f"                 e.g. {' · '.join(ab['winning_thumb_examples'][:3])}")
+        if ab.get("avoid_thumb_type"):
+            print(f"  Thumb → AVOID: {ab['avoid_thumb_type']}", end="")
+            if ab.get("avoid_thumb_examples"):
+                print(f"  (e.g. {', '.join(ab['avoid_thumb_examples'][:2])})", end="")
+            print()
+        if ab.get("note"):
+            print(f"  ⚠️  {ab['note']}")
+        print(f"  Evidence: {', '.join(ab['evidence'])}")
+
+        universal = result.get("ab_universal_rules", [])
+        if universal:
+            print(f"\n  Universal rules (all lanes):")
+            for r in universal[:3]:
+                print(f"    • {r['rule']}  [{r['confidence']}]")
+    elif ab.get("note"):
+        print(f"\n🧪 A/B PATTERNS: {ab['note']}")
 
     s = result.get("structural_rules", {})
     print(f"\n📏 STRUCTURAL RULES:")

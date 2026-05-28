@@ -1,6 +1,6 @@
 {
-  "version": "2026-05-20",
-  "n_tests": 21,
+  "version": "2026-05-28",
+  "n_tests": 30,
   "note": "Derived from ab_analysis.md. Update after each concluded test. Lane keys match map_theme_to_ab_lane() in title_preflight.py.",
   "universal_rules": [
     {
@@ -137,16 +137,17 @@
       "evidence": ["#1 (68/32)", "#2 (51.5/48.5)", "#4 (tie)"]
     },
     "burnout": {
-      "winning_title_type": "Clinical SEO",
-      "winning_title_examples": ["Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour", "Release Stress | Burnout Music | Santoor & 528Hz"],
-      "avoid_title_type": "Generic comfort SEO",
-      "avoid_title_examples": ["Music for Burnout | Find Calmness with Surbahar | 1 Hour"],
-      "winning_thumb_type": "Outcome-statement (tentative)",
-      "winning_thumb_examples": ["REST. RESET. RECOVER."],
-      "avoid_thumb_type": "Q-hook (slight)",
-      "avoid_thumb_examples": ["BURNOUT?"],
-      "confidence": "LOW",
-      "evidence": ["#3 (50.6/49.4)", "#11 (51.4/48.6 — running)"]
+      "winning_title_type": "Plain-language state or Clinical SEO",
+      "winning_title_examples": ["Restless Mind | Slow Veena | 1.5 Hours of Rest", "Release Stress | Burnout Music | Santoor & 528Hz", "Sound Healing Music | Slow Surbahar | 1.5 Hours of Rest"],
+      "avoid_title_type": "Generic comfort SEO or Clinical jargon",
+      "avoid_title_examples": ["Music for Burnout | Find Calmness with Surbahar | 1 Hour", "Adrenaline Reset | Slow Veena | 1.5 Hours"],
+      "winning_thumb_type": "Permission-statement — strongest signal in rest lanes",
+      "winning_thumb_examples": ["REST WITHOUT WORRY", "IT'S OKAY TO REST", "REST. RESET. RECOVER."],
+      "avoid_thumb_type": "Generic outcome-descriptor",
+      "avoid_thumb_examples": ["FOR DRAINED MINDS", "EASE DOWN"],
+      "note": "Test 29 (REST WITHOUT WORRY vs FOR DRAINED MINDS, 58.6/41.4, 17.2pp) is the strongest single-thumb signal in any rest lane. Variables confounded but margin is decisive. Permission framing ('you are allowed to rest') is now the priority to test cleanly.",
+      "confidence": "MEDIUM",
+      "evidence": ["#3 (50.6/49.4)", "#11 tie", "#29 (58.6/41.4 — decisive, confounded)", "#26 running"]
     },
     "deep_rest": {
       "winning_title_type": "SEO-led",
