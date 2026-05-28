@@ -1,58 +1,61 @@
 {
-  "id": "v_2026-05-09_burnout_recovery_surbahar",
-  "status": "DRAFT",
-  "date_shipped": "2026-05-09",
-  "created_at": "2026-05-03",
-  "planned_date": "2026-05-08",
-  "title": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour",
-  "title_variants": {
-    "A": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour",
-    "B": "Mentally Exhausted? | Cortisol Healing with Surbahar | 1 Hour"
-  },
-  "components": {
-    "problem": "burnout recovery",
-    "instrument": "Surbahar",
-    "raga": "Darbari Kanada",
-    "hz": "432Hz",
-    "wave": "Theta"
-  },
-  "validated_keywords": [
-    "burnout recovery (68)",
-    "mentally exhausted (63)",
-    "cortisol (65)",
-    "vagus nerve music (57)",
-    "432hz meditation (61)",
-    "surbahar (64)"
-  ],
-  "strategic_bet": "50K bet, data-pivoted to Surbahar. Channel data (May 2026) shows Surbahar is the proven #1 \u2014 Deep Rest Music | Surbahar hit 2,171 views, 24.5% AVD, 39,108 impressions in its first 5 days. Pairing Surbahar's proven channel signal with Raga Heal's nervous-system formula (182K cluster, ~60K avg). Burnout/vagus emotional territory is adjacent enough to ride the Deep Rest escalation. Tests audience identity: A = wellness optimizer (Burnout Recovery + Vagus Nerve), B = depleted seeker (Mentally Exhausted? + Cortisol Healing).",
-  "success_good": "\u226510K views in 30 days \u00b7 \u22653% CTR \u00b7 \u226518% AVD \u00b7 \u226540s WT/imp",
-  "success_breakthrough": "\u226540K views in 60 days \u00b7 YouTube starts pushing into Healing Music / Vagus Nerve recommendation pools",
-  "tags": "burnout recovery, vagus nerve music, cortisol music, mentally exhausted, nervous system reset, surbahar music, raga darbari, 432hz music, theta wave, parasympathetic, deep relaxation music, healing music, meditation music, indian classical music, stress relief music, calm music, peaceful music, ancient indian healing, mind body reset, anxiety relief music, adrenal fatigue music",
-  "description": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour\n\nIf your body keeps scanning for the next thing \u2014 your shoulders won't drop, your jaw won't unclench, your mind won't stop \u2014 you're not weak. You're stuck in sympathetic overdrive. This is a slow, deep recovery session built around the Surbahar and Raga Darbari Kanada, the raga Indian classical tradition has used for centuries to bring an exhausted nervous system back home.\n\nThe deep, sustained notes of the Surbahar \u2014 deep bass-sitar, low and sustained \u2014 coax the vagus nerve into a parasympathetic state. Layered with 432Hz tuning and a subtle 6Hz Theta carrier, this hour is designed to lower cortisol the way the body actually wants to do it: slowly, without forcing.\n\n\ud83c\udf3f What you'll hear:\n\u2022 Surbahar solo in Raga Darbari Kanada (deep evening healing raga)\n\u2022 Tanpura drone background (steady tonal anchor)\n\u2022 432Hz tuning \u00b7 6Hz Theta wave entrainment\n\n\ud83c\udf3f Chapters:\n00:00 \u2014 Settle in (alap)\n15:00 \u2014 Deepen (slow vistar)\n30:00 \u2014 Hold the rest (sustained passages)\n45:00 \u2014 Return softly\n\n\ud83c\udf3f How to use:\nEyes closed, headphones, quiet room. Don't try to relax \u2014 let the Surbahar do the work.\n\n\ud83c\udf3f Best for:\nOverworked weeks \u00b7 post-deadline crash \u00b7 weekend recovery \u00b7 before deep sleep \u00b7 cortisol-spike mornings \u00b7 adrenal fatigue\n\nIf this brought your shoulders down even one inch \u2014 subscribe. We're building a quiet corner of YouTube for the depleted.\n\n#burnoutrecovery #vagusnervereset #cortisolhealing #surbaharmusic #ragadarbari #432hz #thetawave #nervoussystemreset #parasympathetic #ancientindianhealing",
-  "thumbnail_text_main": "BURNOUT?",
-  "thumbnail_text_variants": [
-    {
-      "label": "A",
-      "text": "BURNOUT?",
-      "strategy": "Question \u2014 pain-state hook"
+    "id": "v_2026-05-09_burnout_recovery_surbahar",
+    "status": "DRAFT",
+    "date_shipped": "2026-05-09",
+    "created_at": "2026-05-03",
+    "planned_date": "2026-05-08",
+    "title": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour",
+    "title_variants": {
+        "A": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour",
+        "B": "Mentally Exhausted? | Cortisol Healing with Surbahar | 1 Hour"
     },
-    {
-      "label": "B",
-      "text": "RESET NOW",
-      "strategy": "Affirming \u2014 action outcome"
-    }
-  ],
-  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate cream parchment border, female figure seated cross-legged in lotus or curled in restful posture, hands resting on knees, eyes closed, evening twilight landscape with deep teal sky behind, traditional Indian temple silhouette in background, deep teal serif typography overlay, mobile-readable single-word hook, aged parchment texture, gold leaf accents on border",
-  "suno_prompt": "Slow meditative Indian classical surbahar solo in raga Darbari Kanada, deep and contemplative, long sustained low bass-sitar drone notes with subtle tanpura background, no percussion, peaceful evening healing mood, 432Hz tuning, very slow tempo around 50-55 BPM, seamless ambient texture suitable for a 1-hour loop, parasympathetic-activating low frequencies, deep emotional resonance, traditional Indian classical sound, no vocals, no melodic surprises, contemplative and restorative throughout",
-  "production_spec": {
-    "duration_minutes": 60,
-    "bpm_range": "55-60",
-    "key_frequency_hz": 432,
-    "binaural_carrier_hz": 6,
-    "binaural_wave": "Theta",
-    "lufs_target": -14,
-    "loop_seam": "crossfade 4-bar tail into head, verify no transient on loop seam",
-    "render": "mp4 1080p \u00b7 static thumbnail \u00b7 audio 48kHz 320kbps stereo",
-    "notes": "Surbahar is the bass sitar \u2014 long sustain, deep low strings. Slower than Sarod (50-55 BPM). Lean into long held notes. Channel data: Deep Rest Music | Surbahar hit 24.5% AVD."
-  }
+    "components": {
+        "problem": "burnout recovery",
+        "instrument": "Surbahar",
+        "raga": "Darbari Kanada",
+        "hz": "432Hz",
+        "wave": "Theta"
+    },
+    "validated_keywords": [
+        "burnout recovery (68)",
+        "mentally exhausted (63)",
+        "cortisol (65)",
+        "vagus nerve music (57)",
+        "432hz meditation (61)",
+        "surbahar (64)"
+    ],
+    "strategic_bet": "50K bet, data-pivoted to Surbahar. Channel data (May 2026) shows Surbahar is the proven #1 \u2014 Deep Rest Music | Surbahar hit 2,171 views, 24.5% AVD, 39,108 impressions in its first 5 days. Pairing Surbahar's proven channel signal with Raga Heal's nervous-system formula (182K cluster, ~60K avg). Burnout/vagus emotional territory is adjacent enough to ride the Deep Rest escalation. Tests audience identity: A = wellness optimizer (Burnout Recovery + Vagus Nerve), B = depleted seeker (Mentally Exhausted? + Cortisol Healing).",
+    "success_good": "\u226510K views in 30 days \u00b7 \u22653% CTR \u00b7 \u226518% AVD \u00b7 \u226540s WT/imp",
+    "success_breakthrough": "\u226540K views in 60 days \u00b7 YouTube starts pushing into Healing Music / Vagus Nerve recommendation pools",
+    "tags": "burnout recovery, vagus nerve music, cortisol music, mentally exhausted, nervous system reset, surbahar music, raga darbari, 432hz music, theta wave, parasympathetic, deep relaxation music, healing music, meditation music, indian classical music, stress relief music, calm music, peaceful music, ancient indian healing, mind body reset, anxiety relief music, adrenal fatigue music",
+    "description": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour\n\nIf your body keeps scanning for the next thing \u2014 your shoulders won't drop, your jaw won't unclench, your mind won't stop \u2014 you're not weak. You're stuck in sympathetic overdrive. This is a slow, deep recovery session built around the Surbahar and Raga Darbari Kanada, the raga Indian classical tradition has used for centuries to bring an exhausted nervous system back home.\n\nThe deep, sustained notes of the Surbahar \u2014 deep bass-sitar, low and sustained \u2014 coax the vagus nerve into a parasympathetic state. Layered with 432Hz tuning and a subtle 6Hz Theta carrier, this hour is designed to lower cortisol the way the body actually wants to do it: slowly, without forcing.\n\n\ud83c\udf3f What you'll hear:\n\u2022 Surbahar solo in Raga Darbari Kanada (deep evening healing raga)\n\u2022 Tanpura drone background (steady tonal anchor)\n\u2022 432Hz tuning \u00b7 6Hz Theta wave entrainment\n\n\ud83c\udf3f Chapters:\n00:00 \u2014 Settle in (alap)\n15:00 \u2014 Deepen (slow vistar)\n30:00 \u2014 Hold the rest (sustained passages)\n45:00 \u2014 Return softly\n\n\ud83c\udf3f How to use:\nEyes closed, headphones, quiet room. Don't try to relax \u2014 let the Surbahar do the work.\n\n\ud83c\udf3f Best for:\nOverworked weeks \u00b7 post-deadline crash \u00b7 weekend recovery \u00b7 before deep sleep \u00b7 cortisol-spike mornings \u00b7 adrenal fatigue\n\nIf this brought your shoulders down even one inch \u2014 subscribe. We're building a quiet corner of YouTube for the depleted.\n\n#burnoutrecovery #vagusnervereset #cortisolhealing #surbaharmusic #ragadarbari #432hz #thetawave #nervoussystemreset #parasympathetic #ancientindianhealing",
+    "thumbnail_text_main": "BURNOUT?",
+    "thumbnail_text_variants": [
+        {
+            "label": "A",
+            "text": "BURNOUT?",
+            "strategy": "Question \u2014 pain-state hook"
+        },
+        {
+            "label": "B",
+            "text": "RESET NOW",
+            "strategy": "Affirming \u2014 action outcome"
+        }
+    ],
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate cream parchment border, female figure seated cross-legged in lotus or curled in restful posture, hands resting on knees, eyes closed, evening twilight landscape with deep teal sky behind, traditional Indian temple silhouette in background, deep teal serif typography overlay, mobile-readable single-word hook, aged parchment texture, gold leaf accents on border",
+    "suno_prompt": "Slow meditative Indian classical surbahar solo in raga Darbari Kanada, deep and contemplative, long sustained low bass-sitar drone notes with subtle tanpura background, no percussion, peaceful evening healing mood, 432Hz tuning, very slow tempo around 50-55 BPM, seamless ambient texture suitable for a 1-hour loop, parasympathetic-activating low frequencies, deep emotional resonance, traditional Indian classical sound, no vocals, no melodic surprises, contemplative and restorative throughout",
+    "production_spec": {
+        "duration_minutes": 60,
+        "bpm_range": "55-60",
+        "key_frequency_hz": 432,
+        "binaural_carrier_hz": 6,
+        "binaural_wave": "Theta",
+        "lufs_target": -14,
+        "loop_seam": "crossfade 4-bar tail into head, verify no transient on loop seam",
+        "render": "mp4 1080p \u00b7 static thumbnail \u00b7 audio 48kHz 320kbps stereo",
+        "notes": "Surbahar is the bass sitar \u2014 long sustain, deep low strings. Slower than Sarod (50-55 BPM). Lean into long held notes. Channel data: Deep Rest Music | Surbahar hit 24.5% AVD."
+    },
+    "playlists": [
+        "Healing & Anxiety Relief"
+    ]
 }

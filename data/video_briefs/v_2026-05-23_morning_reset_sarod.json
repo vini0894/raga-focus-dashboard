@@ -1,72 +1,75 @@
 {
-  "id": "v_2026-05-23_morning_reset_sarod",
-  "status": "DRAFT",
-  "date_shipped": null,
-  "created_at": "2026-05-20",
-  "planned_date": "2026-05-23",
-  "planned_slot": "AM (7am IST)",
-  "title": "Morning Reset Music | Slow Sarod | Clear Your Head",
-  "title_variants": {
-    "A": "Morning Reset Music | Slow Sarod | Clear Your Head",
-    "B": "Before the World Gets Loud | Slow Sarod | 1.5 Hours"
-  },
-  "components": {
-    "problem": "morning grogginess / brain fog / low energy / foggy start to the day",
-    "instrument": "Sarod",
-    "raga": "Bilawal",
-    "hz": "432Hz",
-    "wave": "Alpha"
-  },
-  "validated_keywords": [
-    "Morning Reset Music (63 VidIQ — lead A)",
-    "Mind Reset Music (67 VidIQ — lead B)",
-    "Clear Your Head (59 VidIQ — slot 3)",
-    "slow sarod",
-    "sarod music",
-    "sarod instrumental",
-    "indian classical sarod",
-    "positive energy music (72)",
-    "fresh mind music (61)",
-    "indian classical music",
-    "raga bilawal",
-    "alpha waves",
-    "432Hz",
-    "raga focus"
-  ],
-  "ab_test": {
-    "test_id": "Test 20",
-    "test_type": "TITLE A/B — same thumbnail both variants",
-    "variant_A": {
-      "title": "Morning Reset Music | Slow Sarod | Clear Your Head",
-      "thumbnail_text": "SLOW START",
-      "hypothesis": "'Morning Reset Music' (63 VidIQ) targets morning search cluster — people actively searching for morning music. Tests whether time-specific framing drives stronger discovery and CTR in AM slot."
+    "id": "v_2026-05-23_morning_reset_sarod",
+    "status": "DRAFT",
+    "date_shipped": null,
+    "created_at": "2026-05-20",
+    "planned_date": "2026-05-23",
+    "planned_slot": "AM (7am IST)",
+    "title": "Morning Reset Music | Slow Sarod | Clear Your Head",
+    "title_variants": {
+        "A": "Morning Reset Music | Slow Sarod | Clear Your Head",
+        "B": "Before the World Gets Loud | Slow Sarod | 1.5 Hours"
     },
-    "variant_B": {
-      "title": "Before the World Gets Loud | Slow Sarod | 1.5 Hours",
-      "thumbnail_text": "SLOW START",
-      "hypothesis": "Zero SEO dependency — no keyword lead, no 'music' suffix. Captures the exact pre-morning quiet moment without using the word 'morning'. Works for any timezone. Tests whether contextual-moment framing drives CTR from browse/impressions even without search discovery backing it."
+    "components": {
+        "problem": "morning grogginess / brain fog / low energy / foggy start to the day",
+        "instrument": "Sarod",
+        "raga": "Bilawal",
+        "hz": "432Hz",
+        "wave": "Alpha"
     },
-    "test_method": "Title-only A/B. Same thumbnail both variants — outcome-imperative 'SLOW START' per morning lane rule (Tests 12 + 18 confirmed outcome-imperative thumb wins in morning lane). One variable: SEO keyword lead (A) vs contextual-moment lead with zero SEO dependency (B). First test of this format type on the channel."
-  },
-  "strategic_bet": "FILLER — Sat AM slot. Sarod is supporting tier (clinical reset lane). Morning/cognitive lane is second morning ship this week (Dilruba May 19 was first). Test 20 has genuine strategic value: if B wins, 'Mind Reset Music' becomes a standalone non-time-locked cluster for Sarod, expanding ship flexibility beyond morning slots.",
-  "success_good": "2500+ views, 22%+ AVD, 3.5%+ CTR in 48h",
-  "success_breakthrough": "8000+ views, 26%+ AVD, 4.5%+ CTR — Sarod confirmed in morning/cognitive lane, Mind Reset Music unlocked as non-morning cluster",
-  "tags": "morning reset music, mind reset music, slow sarod, sarod, sarod music, sarod instrumental, indian classical sarod, clear your head, morning music, morning energy, brain reset, cognitive clarity, positive energy music, fresh mind music, alpha waves, 432Hz, indian classical music, indian instrumental music, raga bilawal, raga focus, morning meditation, mental clarity",
-  "description": "Morning Reset Music | Slow Sarod | Clear Your Head\n\nBrain still buffering? Before the day gets loud — give your head a moment. Slow Sarod in the morning is a reset, not a ritual. Press play, let it run.\n\n90 minutes of slow Sarod in Raga Bilawal — the classical morning raga — layered with a gentle Alpha wave to ease the mind into alertness without the spike.\n\n🎵 What you'll hear:\n- Sarod — a deep-bodied plucked instrument, warm and grounding in the lower register\n- Raga Bilawal — the classical morning raga, clear and bright without being jarring\n- A quiet Alpha wave layer to nudge the brain toward alert calm\n- No percussion, no build-up — just a slow, measured unfolding\n\n⏱ Chapters\n0:00   First light\n15:00  Settling in\n35:00  Head clearing\n60:00  Steady and awake\n80:00  Ready\n\n🧠 How to use:\nPut it on while you have your morning drink, get ready, or just sit. It works as background — you don't need to listen actively.\n\n⏱ Best for:\n• Slow mornings before a heavy day\n• Brain fog that doesn't lift on its own\n• Anyone who needs a quiet start\n• Background while getting ready\n• Mid-day reset (works any time)\n\n📺 Subscribe to Raga Focus for daily uploads:\n- Sitar, Sarangi, Veena, Surbahar, Bansuri, Sarod and other Indian instruments\n- Music for anxiety, overthinking, sleep, stress, emotional release\n\n— Raga Focus\n\n#morningresetmusic #mindresetmusic #slowsarod #sarod #indianclassicalmusic #alphawaves #432hz #ragafocus #morningmusic #clearhead",
-  "thumbnail_text_main": "SLOW START",
-  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-cream patterned border with subtle lotus and sun-rise motifs, aged warm parchment background, early morning palette (soft golden light, pale blue sky, warm amber). Central figure: calm man in white cotton kurta with gold trim seated cross-legged playing sarod (recognisable as a large fretless plucked instrument resting on the lap) on a rooftop or open courtyard, early morning light washing over him, birds suggested in the distance. Bold dark-teal serif overlay text reading 'SLOW START' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Warm golden-cream parchment palette, alert yet calm mood, single composed scene, no clutter.",
-  "suno_prompt": "Instrumental only, no vocals. Warm sarod solo in raga Bilawal, bright morning mood, smooth plucked melodic flow with clear articulate notes, no percussion, no tabla, 432Hz tuning, 65-75 BPM moderate-slow tempo, flowing melodic phrases with natural pauses, mid register (warm and grounding, not sharp or piercing), cinematic meditation production, alert and clear, suitable for extended looping. Raga Bilawal tonic C or D. Emotionally: clear, optimistic, like the first hour of a day that might actually go well. Not sleepy, not energetic — settled and ready. Alpha wave layer at -20dB, very subtle.",
-  "production_spec": {
-    "duration_minutes": 90,
-    "bpm_range": "65-75",
-    "key_frequency_hz": 432,
-    "binaural_carrier_hz": 442,
-    "binaural_wave": "Alpha",
-    "binaural_beat_hz": 10.0,
-    "lufs_target": -14,
-    "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
-    "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
-    "notes": "Raga Bilawal — classical morning raga, shuddh (natural) swars, bright and clear character. Sarod should feel warm and grounded, not sharp. Alpha 10Hz for alert calm (not Delta/Theta which induce drowsiness). LUFS -14 (louder than sleep content — morning audience is awake and active). EMOTIONAL TAG ROTATION: clip 1: 'clear and optimistic, like a morning that might go well' · clip 2: 'settled and alert, like breath before a good day' · clip 3: 'warm and grounding, like the first light through a window'."
-  },
-  "experiment_notes": "Test 20 — FORMAT + AUDIENCE CLUSTER A/B.\n\nHypothesis: 'Morning Reset Music' (63) captures morning search traffic but excludes non-morning viewers. 'Mind Reset Music' (67) is time-agnostic — same cognitive-reset intent, higher VidIQ, broader eligibility window.\n\nIf A wins: morning search cluster is the primary discovery mechanic for Sarod AM slot — keep morning framing.\nIf B wins: cognitive-reset cluster is bigger and more time-flexible — 'Mind Reset Music' becomes a standing lead for Sarod regardless of slot time.\n\nSecondary: Sat AM slot tests whether morning uploads (7am IST) on weekends perform differently from weekday AM. Weekend leisure browsing may push impressions differently.\n\nFAILURE MODE: <3% CTR or <20% AVD — Sarod not working in morning lane.\nSUCCESS: 3.5%+ CTR + 22%+ AVD — Sarod viable in morning/cognitive lane, opens regular Sat AM slot."
+    "validated_keywords": [
+        "Morning Reset Music (63 VidIQ \u2014 lead A)",
+        "Mind Reset Music (67 VidIQ \u2014 lead B)",
+        "Clear Your Head (59 VidIQ \u2014 slot 3)",
+        "slow sarod",
+        "sarod music",
+        "sarod instrumental",
+        "indian classical sarod",
+        "positive energy music (72)",
+        "fresh mind music (61)",
+        "indian classical music",
+        "raga bilawal",
+        "alpha waves",
+        "432Hz",
+        "raga focus"
+    ],
+    "ab_test": {
+        "test_id": "Test 20",
+        "test_type": "TITLE A/B \u2014 same thumbnail both variants",
+        "variant_A": {
+            "title": "Morning Reset Music | Slow Sarod | Clear Your Head",
+            "thumbnail_text": "SLOW START",
+            "hypothesis": "'Morning Reset Music' (63 VidIQ) targets morning search cluster \u2014 people actively searching for morning music. Tests whether time-specific framing drives stronger discovery and CTR in AM slot."
+        },
+        "variant_B": {
+            "title": "Before the World Gets Loud | Slow Sarod | 1.5 Hours",
+            "thumbnail_text": "SLOW START",
+            "hypothesis": "Zero SEO dependency \u2014 no keyword lead, no 'music' suffix. Captures the exact pre-morning quiet moment without using the word 'morning'. Works for any timezone. Tests whether contextual-moment framing drives CTR from browse/impressions even without search discovery backing it."
+        },
+        "test_method": "Title-only A/B. Same thumbnail both variants \u2014 outcome-imperative 'SLOW START' per morning lane rule (Tests 12 + 18 confirmed outcome-imperative thumb wins in morning lane). One variable: SEO keyword lead (A) vs contextual-moment lead with zero SEO dependency (B). First test of this format type on the channel."
+    },
+    "strategic_bet": "FILLER \u2014 Sat AM slot. Sarod is supporting tier (clinical reset lane). Morning/cognitive lane is second morning ship this week (Dilruba May 19 was first). Test 20 has genuine strategic value: if B wins, 'Mind Reset Music' becomes a standalone non-time-locked cluster for Sarod, expanding ship flexibility beyond morning slots.",
+    "success_good": "2500+ views, 22%+ AVD, 3.5%+ CTR in 48h",
+    "success_breakthrough": "8000+ views, 26%+ AVD, 4.5%+ CTR \u2014 Sarod confirmed in morning/cognitive lane, Mind Reset Music unlocked as non-morning cluster",
+    "tags": "morning reset music, mind reset music, slow sarod, sarod, sarod music, sarod instrumental, indian classical sarod, clear your head, morning music, morning energy, brain reset, cognitive clarity, positive energy music, fresh mind music, alpha waves, 432Hz, indian classical music, indian instrumental music, raga bilawal, raga focus, morning meditation, mental clarity",
+    "description": "Morning Reset Music | Slow Sarod | Clear Your Head\n\nBrain still buffering? Before the day gets loud \u2014 give your head a moment. Slow Sarod in the morning is a reset, not a ritual. Press play, let it run.\n\n90 minutes of slow Sarod in Raga Bilawal \u2014 the classical morning raga \u2014 layered with a gentle Alpha wave to ease the mind into alertness without the spike.\n\n\ud83c\udfb5 What you'll hear:\n- Sarod \u2014 a deep-bodied plucked instrument, warm and grounding in the lower register\n- Raga Bilawal \u2014 the classical morning raga, clear and bright without being jarring\n- A quiet Alpha wave layer to nudge the brain toward alert calm\n- No percussion, no build-up \u2014 just a slow, measured unfolding\n\n\u23f1 Chapters\n0:00   First light\n15:00  Settling in\n35:00  Head clearing\n60:00  Steady and awake\n80:00  Ready\n\n\ud83e\udde0 How to use:\nPut it on while you have your morning drink, get ready, or just sit. It works as background \u2014 you don't need to listen actively.\n\n\u23f1 Best for:\n\u2022 Slow mornings before a heavy day\n\u2022 Brain fog that doesn't lift on its own\n\u2022 Anyone who needs a quiet start\n\u2022 Background while getting ready\n\u2022 Mid-day reset (works any time)\n\n\ud83d\udcfa Subscribe to Raga Focus for daily uploads:\n- Sitar, Sarangi, Veena, Surbahar, Bansuri, Sarod and other Indian instruments\n- Music for anxiety, overthinking, sleep, stress, emotional release\n\n\u2014 Raga Focus\n\n#morningresetmusic #mindresetmusic #slowsarod #sarod #indianclassicalmusic #alphawaves #432hz #ragafocus #morningmusic #clearhead",
+    "thumbnail_text_main": "SLOW START",
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-cream patterned border with subtle lotus and sun-rise motifs, aged warm parchment background, early morning palette (soft golden light, pale blue sky, warm amber). Central figure: calm man in white cotton kurta with gold trim seated cross-legged playing sarod (recognisable as a large fretless plucked instrument resting on the lap) on a rooftop or open courtyard, early morning light washing over him, birds suggested in the distance. Bold dark-teal serif overlay text reading 'SLOW START' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Warm golden-cream parchment palette, alert yet calm mood, single composed scene, no clutter.",
+    "suno_prompt": "Instrumental only, no vocals. Warm sarod solo in raga Bilawal, bright morning mood, smooth plucked melodic flow with clear articulate notes, no percussion, no tabla, 432Hz tuning, 65-75 BPM moderate-slow tempo, flowing melodic phrases with natural pauses, mid register (warm and grounding, not sharp or piercing), cinematic meditation production, alert and clear, suitable for extended looping. Raga Bilawal tonic C or D. Emotionally: clear, optimistic, like the first hour of a day that might actually go well. Not sleepy, not energetic \u2014 settled and ready. Alpha wave layer at -20dB, very subtle.",
+    "production_spec": {
+        "duration_minutes": 90,
+        "bpm_range": "65-75",
+        "key_frequency_hz": 432,
+        "binaural_carrier_hz": 442,
+        "binaural_wave": "Alpha",
+        "binaural_beat_hz": 10.0,
+        "lufs_target": -14,
+        "loop_seam": "10s in / 30s out, Suno extend 3-4x \u2192 loop in post to fill 90 min",
+        "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+        "notes": "Raga Bilawal \u2014 classical morning raga, shuddh (natural) swars, bright and clear character. Sarod should feel warm and grounded, not sharp. Alpha 10Hz for alert calm (not Delta/Theta which induce drowsiness). LUFS -14 (louder than sleep content \u2014 morning audience is awake and active). EMOTIONAL TAG ROTATION: clip 1: 'clear and optimistic, like a morning that might go well' \u00b7 clip 2: 'settled and alert, like breath before a good day' \u00b7 clip 3: 'warm and grounding, like the first light through a window'."
+    },
+    "experiment_notes": "Test 20 \u2014 FORMAT + AUDIENCE CLUSTER A/B.\n\nHypothesis: 'Morning Reset Music' (63) captures morning search traffic but excludes non-morning viewers. 'Mind Reset Music' (67) is time-agnostic \u2014 same cognitive-reset intent, higher VidIQ, broader eligibility window.\n\nIf A wins: morning search cluster is the primary discovery mechanic for Sarod AM slot \u2014 keep morning framing.\nIf B wins: cognitive-reset cluster is bigger and more time-flexible \u2014 'Mind Reset Music' becomes a standing lead for Sarod regardless of slot time.\n\nSecondary: Sat AM slot tests whether morning uploads (7am IST) on weekends perform differently from weekday AM. Weekend leisure browsing may push impressions differently.\n\nFAILURE MODE: <3% CTR or <20% AVD \u2014 Sarod not working in morning lane.\nSUCCESS: 3.5%+ CTR + 22%+ AVD \u2014 Sarod viable in morning/cognitive lane, opens regular Sat AM slot.",
+    "playlists": [
+        "Morning Energy"
+    ]
 }

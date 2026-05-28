@@ -1,71 +1,74 @@
 {
-  "id": "v_2026-05-23_restless_mind_veena",
-  "status": "DRAFT",
-  "date_shipped": null,
-  "created_at": "2026-05-21",
-  "planned_date": "2026-05-23",
-  "planned_slot": "PM (7pm IST)",
-  "title": "Restless Mind | Slow Veena | 1.5 Hours of Rest",
-  "title_variants": {
-    "A": "Restless Mind | Slow Veena | 1.5 Hours of Rest",
-    "B": "Adrenaline Reset | Slow Veena | 1.5 Hours"
-  },
-  "components": {
-    "problem": "restless mind / wired but tired / adrenaline still running / can't come down after a long day",
-    "instrument": "Veena",
-    "raga": "Yaman",
-    "hz": "432Hz",
-    "wave": "Theta"
-  },
-  "validated_keywords": [
-    "Restless Mind (64 VidIQ — lead A)",
-    "Adrenaline Reset (60 VidIQ — lead B)",
-    "slow veena",
-    "veena music",
-    "veena instrumental",
-    "indian classical veena",
-    "stress relief music (70 — tags)",
-    "restless mind music",
-    "432Hz",
-    "theta waves",
-    "indian classical music",
-    "raga yaman",
-    "raga focus"
-  ],
-  "ab_test": {
-    "test_id": "Test 22",
-    "test_type": "TITLE A/B — same thumbnail both variants",
-    "variant_A": {
-      "title": "Restless Mind | Slow Veena | 1.5 Hours of Rest",
-      "thumbnail_text": "EASE DOWN",
-      "hypothesis": "'Restless Mind' (64 VidIQ) — state-description lead with no Music suffix. Viewer identifies with the exact state. Tests whether raw emotional-state framing pulls CTR without SEO music-noun backing. First time this format tested in clinical/stress lane on Veena."
+    "id": "v_2026-05-23_restless_mind_veena",
+    "status": "DRAFT",
+    "date_shipped": null,
+    "created_at": "2026-05-21",
+    "planned_date": "2026-05-23",
+    "planned_slot": "PM (7pm IST)",
+    "title": "Restless Mind | Slow Veena | 1.5 Hours of Rest",
+    "title_variants": {
+        "A": "Restless Mind | Slow Veena | 1.5 Hours of Rest",
+        "B": "Adrenaline Reset | Slow Veena | 1.5 Hours"
     },
-    "variant_B": {
-      "title": "Adrenaline Reset | Slow Veena | 1.5 Hours",
-      "thumbnail_text": "EASE DOWN",
-      "hypothesis": "'Adrenaline Reset' (60 VidIQ) — clinical physiological hook. Very specific: targets the wired/overstimulated viewer who knows their nervous system is still running. If B wins, Veena has a clinical lane that doesn't require soft framing."
+    "components": {
+        "problem": "restless mind / wired but tired / adrenaline still running / can't come down after a long day",
+        "instrument": "Veena",
+        "raga": "Yaman",
+        "hz": "432Hz",
+        "wave": "Theta"
     },
-    "test_method": "Title-only A/B (Test 22). Same thumbnail both variants — 'EASE DOWN' warm somatic instruction. One variable: emotional state-description (A) vs clinical physiological label (B). Both are fresh formats for Veena — previous Veena ships used soft SEO noun leads (Calm Your Mind, Peaceful Music, Soothing Music) which are now declining."
-  },
-  "strategic_bet": "FILLER — Sat PM slot. Veena is recovering tier — ALL previous soft leads now declining (Soothing Music May 16 = 623 views, channel low). This is the clinical-hook experiment the playbook has been calling for. If either A or B breaks 2,500 views, clinical framing is confirmed for Veena. If both fail, Veena needs a different lane entirely.",
-  "success_good": "2500+ views, 22%+ AVD, 3.5%+ CTR in 48h",
-  "success_breakthrough": "6000+ views, 26%+ AVD — clinical hook confirmed for Veena, opens permanent clinical lane",
-  "tags": "restless mind, adrenaline reset, slow veena, veena, veena music, veena instrumental, indian classical veena, stress relief music, restless mind music, can't calm down, wired but tired, nervous system, adrenaline, 432Hz, theta waves, indian classical music, raga yaman, indian instrumental music, raga focus, calm your nervous system",
-  "description": "Restless Mind | Slow Veena | 1.5 Hours of Rest\n\nStill wired at the end of the day? Body's done but brain hasn't got the message yet — that's adrenaline still running. Slow Veena works directly on that. Not meditation, not sleep music. Just a sustained low-frequency sound that gives your nervous system something to follow down.\n\n90 minutes of slow Veena in Raga Yaman — the classical evening raga — with a quiet Theta wave underneath to ease the mind from alert into rest.\n\n🎵 What you'll hear:\n- Veena — one of the oldest Indian instruments, deep and resonant in the low register\n- Raga Yaman — the classical evening raga, designed to ease the transition from day to night\n- A quiet Theta wave layer to guide the brain from alert into rest\n- No percussion, no sudden changes — slow sustained phrases with long silences\n\n⏱ Chapters\n0:00   Still running\n15:00  Starting to ease\n35:00  Coming down\n60:00  Settled\n80:00  At rest\n\n🧠 How to use:\nPut it on when the day is done but your mind hasn't caught up. Sit, lie down, or just let it run in the background. Don't try to force calm — let the Veena set the pace.\n\n⏱ Best for:\n• Still wired after a long day\n• Adrenaline that won't switch off\n• Restless mind at night\n• Coming down from a stressful day\n• Background for evening wind-down\n\n📺 Subscribe to Raga Focus for daily uploads:\n- Sitar, Sarangi, Veena, Surbahar, Bansuri, Sarod and other Indian instruments\n- Music for anxiety, overthinking, sleep, stress, emotional release\n\n— Raga Focus\n\n#restlessmind #adrenalinereset #slowveena #veena #indianclassicalmusic #stressrelief #432hz #ragafocus #thetawaves #nervousystem",
-  "thumbnail_text_main": "EASE DOWN",
-  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-cream patterned border with subtle lotus and dusk motifs, aged warm parchment background, late evening palette (deep amber fading to violet-blue, soft candlelight). Central figure: serene woman in deep burgundy-and-gold sari seated cross-legged playing veena (recognisable as a large long-necked plucked instrument resting across the lap with a gourd resonator) in a quiet candlelit room, eyes half-closed, expression of settling calm. Single oil lamp nearby, warm amber light. Bold dark-teal serif overlay text reading 'EASE DOWN' centered, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Deep amber-burgundy-cream palette, coming-down mood, single composed scene, no clutter.",
-  "suno_prompt": "Instrumental only, no vocals. Slow veena solo in raga Yaman, late evening mood, deep resonant plucked notes with long sustain, no percussion, no tabla, 432Hz tuning, 55-65 BPM very slow tempo, sparse melodic phrases with long natural silences between them, low-mid register (warm and grounding, not sharp), cinematic evening production, settling and easing, suitable for extended looping. Raga Yaman tonic C or D. Emotionally: like the moment adrenaline finally stops — not sleepy yet, just beginning to come down. Warm, grounding, patient. Theta wave layer at -20dB underneath, very subtle.",
-  "production_spec": {
-    "duration_minutes": 90,
-    "bpm_range": "55-65",
-    "key_frequency_hz": 432,
-    "binaural_carrier_hz": 438,
-    "binaural_wave": "Theta",
-    "binaural_beat_hz": 6.0,
-    "lufs_target": -15,
-    "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
-    "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
-    "notes": "Raga Yaman — classical evening raga, Kalyan thaat. Deep resonant veena low-mid register, NOT high-pitched. Theta 6Hz for transition from alert to rest (not deep sleep — Theta is the bridge state). LUFS -15 (evening audience, slightly louder than sleep content). EMOTIONAL TAG ROTATION: clip 1: 'easing down, like adrenaline finally switching off' · clip 2: 'warm and settling, like the end of a long exhale' · clip 3: 'patient and grounding, like sitting with the quiet'. CLINICAL HIT: Veena recovering tier — audio quality is critical here. First Suno clip must feel genuinely settling. If it feels too bright or too alert — regenerate."
-  },
-  "experiment_notes": "Test 22 — CLINICAL HOOK EXPERIMENT FOR VEENA.\n\nContext: All previous Veena soft leads declining. Soothing Music (May 16) = 623 views = channel low for Veena. Playbook has flagged Veena as 'recovering tier — needs clinical hook.' This is the first deliberate clinical-hook test on Veena.\n\nIf A wins ('Restless Mind'): emotional state-description without Music suffix works — opens a new format for Veena beyond soft SEO leads.\nIf B wins ('Adrenaline Reset'): physiological clinical hook confirmed for Veena — channel has a clinical lane it can use consistently.\nIf both fail (<2K views): Veena may need a different approach entirely — revisit lane assignment.\n\nFAILURE MODE: <2000 views or <20% AVD — clinical hook not working for Veena, escalate to full lane rethink.\nSUCCESS: 2500+ views + 22%+ AVD — clinical framing confirmed, Veena exits recovering tier."
+    "validated_keywords": [
+        "Restless Mind (64 VidIQ \u2014 lead A)",
+        "Adrenaline Reset (60 VidIQ \u2014 lead B)",
+        "slow veena",
+        "veena music",
+        "veena instrumental",
+        "indian classical veena",
+        "stress relief music (70 \u2014 tags)",
+        "restless mind music",
+        "432Hz",
+        "theta waves",
+        "indian classical music",
+        "raga yaman",
+        "raga focus"
+    ],
+    "ab_test": {
+        "test_id": "Test 22",
+        "test_type": "TITLE A/B \u2014 same thumbnail both variants",
+        "variant_A": {
+            "title": "Restless Mind | Slow Veena | 1.5 Hours of Rest",
+            "thumbnail_text": "EASE DOWN",
+            "hypothesis": "'Restless Mind' (64 VidIQ) \u2014 state-description lead with no Music suffix. Viewer identifies with the exact state. Tests whether raw emotional-state framing pulls CTR without SEO music-noun backing. First time this format tested in clinical/stress lane on Veena."
+        },
+        "variant_B": {
+            "title": "Adrenaline Reset | Slow Veena | 1.5 Hours",
+            "thumbnail_text": "EASE DOWN",
+            "hypothesis": "'Adrenaline Reset' (60 VidIQ) \u2014 clinical physiological hook. Very specific: targets the wired/overstimulated viewer who knows their nervous system is still running. If B wins, Veena has a clinical lane that doesn't require soft framing."
+        },
+        "test_method": "Title-only A/B (Test 22). Same thumbnail both variants \u2014 'EASE DOWN' warm somatic instruction. One variable: emotional state-description (A) vs clinical physiological label (B). Both are fresh formats for Veena \u2014 previous Veena ships used soft SEO noun leads (Calm Your Mind, Peaceful Music, Soothing Music) which are now declining."
+    },
+    "strategic_bet": "FILLER \u2014 Sat PM slot. Veena is recovering tier \u2014 ALL previous soft leads now declining (Soothing Music May 16 = 623 views, channel low). This is the clinical-hook experiment the playbook has been calling for. If either A or B breaks 2,500 views, clinical framing is confirmed for Veena. If both fail, Veena needs a different lane entirely.",
+    "success_good": "2500+ views, 22%+ AVD, 3.5%+ CTR in 48h",
+    "success_breakthrough": "6000+ views, 26%+ AVD \u2014 clinical hook confirmed for Veena, opens permanent clinical lane",
+    "tags": "restless mind, adrenaline reset, slow veena, veena, veena music, veena instrumental, indian classical veena, stress relief music, restless mind music, can't calm down, wired but tired, nervous system, adrenaline, 432Hz, theta waves, indian classical music, raga yaman, indian instrumental music, raga focus, calm your nervous system",
+    "description": "Restless Mind | Slow Veena | 1.5 Hours of Rest\n\nStill wired at the end of the day? Body's done but brain hasn't got the message yet \u2014 that's adrenaline still running. Slow Veena works directly on that. Not meditation, not sleep music. Just a sustained low-frequency sound that gives your nervous system something to follow down.\n\n90 minutes of slow Veena in Raga Yaman \u2014 the classical evening raga \u2014 with a quiet Theta wave underneath to ease the mind from alert into rest.\n\n\ud83c\udfb5 What you'll hear:\n- Veena \u2014 one of the oldest Indian instruments, deep and resonant in the low register\n- Raga Yaman \u2014 the classical evening raga, designed to ease the transition from day to night\n- A quiet Theta wave layer to guide the brain from alert into rest\n- No percussion, no sudden changes \u2014 slow sustained phrases with long silences\n\n\u23f1 Chapters\n0:00   Still running\n15:00  Starting to ease\n35:00  Coming down\n60:00  Settled\n80:00  At rest\n\n\ud83e\udde0 How to use:\nPut it on when the day is done but your mind hasn't caught up. Sit, lie down, or just let it run in the background. Don't try to force calm \u2014 let the Veena set the pace.\n\n\u23f1 Best for:\n\u2022 Still wired after a long day\n\u2022 Adrenaline that won't switch off\n\u2022 Restless mind at night\n\u2022 Coming down from a stressful day\n\u2022 Background for evening wind-down\n\n\ud83d\udcfa Subscribe to Raga Focus for daily uploads:\n- Sitar, Sarangi, Veena, Surbahar, Bansuri, Sarod and other Indian instruments\n- Music for anxiety, overthinking, sleep, stress, emotional release\n\n\u2014 Raga Focus\n\n#restlessmind #adrenalinereset #slowveena #veena #indianclassicalmusic #stressrelief #432hz #ragafocus #thetawaves #nervousystem",
+    "thumbnail_text_main": "EASE DOWN",
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-cream patterned border with subtle lotus and dusk motifs, aged warm parchment background, late evening palette (deep amber fading to violet-blue, soft candlelight). Central figure: serene woman in deep burgundy-and-gold sari seated cross-legged playing veena (recognisable as a large long-necked plucked instrument resting across the lap with a gourd resonator) in a quiet candlelit room, eyes half-closed, expression of settling calm. Single oil lamp nearby, warm amber light. Bold dark-teal serif overlay text reading 'EASE DOWN' centered, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Deep amber-burgundy-cream palette, coming-down mood, single composed scene, no clutter.",
+    "suno_prompt": "Instrumental only, no vocals. Slow veena solo in raga Yaman, late evening mood, deep resonant plucked notes with long sustain, no percussion, no tabla, 432Hz tuning, 55-65 BPM very slow tempo, sparse melodic phrases with long natural silences between them, low-mid register (warm and grounding, not sharp), cinematic evening production, settling and easing, suitable for extended looping. Raga Yaman tonic C or D. Emotionally: like the moment adrenaline finally stops \u2014 not sleepy yet, just beginning to come down. Warm, grounding, patient. Theta wave layer at -20dB underneath, very subtle.",
+    "production_spec": {
+        "duration_minutes": 90,
+        "bpm_range": "55-65",
+        "key_frequency_hz": 432,
+        "binaural_carrier_hz": 438,
+        "binaural_wave": "Theta",
+        "binaural_beat_hz": 6.0,
+        "lufs_target": -15,
+        "loop_seam": "10s in / 30s out, Suno extend 3-4x \u2192 loop in post to fill 90 min",
+        "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+        "notes": "Raga Yaman \u2014 classical evening raga, Kalyan thaat. Deep resonant veena low-mid register, NOT high-pitched. Theta 6Hz for transition from alert to rest (not deep sleep \u2014 Theta is the bridge state). LUFS -15 (evening audience, slightly louder than sleep content). EMOTIONAL TAG ROTATION: clip 1: 'easing down, like adrenaline finally switching off' \u00b7 clip 2: 'warm and settling, like the end of a long exhale' \u00b7 clip 3: 'patient and grounding, like sitting with the quiet'. CLINICAL HIT: Veena recovering tier \u2014 audio quality is critical here. First Suno clip must feel genuinely settling. If it feels too bright or too alert \u2014 regenerate."
+    },
+    "experiment_notes": "Test 22 \u2014 CLINICAL HOOK EXPERIMENT FOR VEENA.\n\nContext: All previous Veena soft leads declining. Soothing Music (May 16) = 623 views = channel low for Veena. Playbook has flagged Veena as 'recovering tier \u2014 needs clinical hook.' This is the first deliberate clinical-hook test on Veena.\n\nIf A wins ('Restless Mind'): emotional state-description without Music suffix works \u2014 opens a new format for Veena beyond soft SEO leads.\nIf B wins ('Adrenaline Reset'): physiological clinical hook confirmed for Veena \u2014 channel has a clinical lane it can use consistently.\nIf both fail (<2K views): Veena may need a different approach entirely \u2014 revisit lane assignment.\n\nFAILURE MODE: <2000 views or <20% AVD \u2014 clinical hook not working for Veena, escalate to full lane rethink.\nSUCCESS: 2500+ views + 22%+ AVD \u2014 clinical framing confirmed, Veena exits recovering tier.",
+    "playlists": [
+        "Sleep Music"
+    ]
 }

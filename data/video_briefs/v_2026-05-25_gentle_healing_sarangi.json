@@ -1,71 +1,74 @@
 {
-  "id": "v_2026-05-25_gentle_healing_sarangi",
-  "status": "DRAFT",
-  "date_shipped": null,
-  "created_at": "2026-05-22",
-  "planned_date": "2026-05-25",
-  "planned_slot": "PM (7pm IST)",
-  "title": "Inner Peace Music | Sarangi Healing | 1.5 Hours",
-  "title_variants": {
-    "A": "Inner Peace Music | Sarangi Healing | 1.5 Hours",
-    "B": "Gentle Healing | Inner Peace Sarangi Music | 1.5 Hours"
-  },
-  "components": {
-    "problem": "emotional tension / inner unrest / quiet grief / need for peace",
-    "instrument": "Sarangi",
-    "raga": "Bageshri",
-    "hz": "432Hz",
-    "wave": "Theta"
-  },
-  "validated_keywords": [
-    "inner peace music (73)",
-    "find your calm (62)",
-    "gentle healing (55)",
-    "sarangi music for inner peace (32 — Path 2 niche, ok in non-lead)",
-    "sarangi healing music (29 — Path 2 niche, ok in non-lead)",
-    "healing music (proven lane anchor)",
-    "comfort music (25.9% AVD / 3.13% CTR — sarangi top performer)",
-    "432hz",
-    "theta waves"
-  ],
-  "strategic_bet": "Raga Bindu reference — their 'Gentle Healing | Soothing Indian Classical Music for Stress Relief, Sleep & Inner Peace' hit 651K views in 1 month (15.8K sub channel). Title A tests whether their highest-scoring component (Inner Peace Music 73) as lead can drive discovery. Title B mirrors their emotional-state-lead pattern ('Gentle Healing') that drove the viral hit. Healing lane is Sarangi's proven home: Comfort Music (7.2K / 26.2% AVD) and Nostalgia Music (3.1K / 25.7% AVD) are both dual-winners in this lane. A/B isolates: descriptor-lead (A) vs emotional-state-lead (B). Bageshri raga is quintessential for tender emotional release — strongest fit for this theme.",
-  "success_good": "2000+ views, 24%+ AVD, 3.5%+ CTR in 48h",
-  "success_breakthrough": "8K+ views, 26%+ AVD, 4.5%+ CTR — Raga Bindu pattern confirmed for our channel, emotional-state lead unlocked as new title formula",
-  "ab_test": {
-    "test_id": "Test 20",
-    "test_type": "TITLE A/B — same thumbnail both variants (healing lane is thumb-tied)",
-    "variant_A": {
-      "title": "Inner Peace Music | Sarangi Healing | 1.5 Hours",
-      "thumbnail_text": "INNER PEACE",
-      "hypothesis": "SEO-descriptor lead (73 VidIQ score) — 'Inner Peace Music' is the highest-scoring component and a genuine search query. Tests whether strong VidIQ lead drives more discovery than emotional-state lead."
+    "id": "v_2026-05-25_gentle_healing_sarangi",
+    "status": "DRAFT",
+    "date_shipped": null,
+    "created_at": "2026-05-22",
+    "planned_date": "2026-05-25",
+    "planned_slot": "PM (7pm IST)",
+    "title": "Inner Peace Music | Sarangi Healing | 1.5 Hours",
+    "title_variants": {
+        "A": "Inner Peace Music | Sarangi Healing | 1.5 Hours",
+        "B": "Gentle Healing | Inner Peace Sarangi Music | 1.5 Hours"
     },
-    "variant_B": {
-      "title": "Gentle Healing | Inner Peace Sarangi Music | 1.5 Hours",
-      "thumbnail_text": "INNER PEACE",
-      "hypothesis": "Emotional-state lead inspired by Raga Bindu's 651K hit — 'Gentle Healing' mirrors their exact title lead. Tests whether soft emotional framing resonates in Browse/Suggested feed the way it did for them."
+    "components": {
+        "problem": "emotional tension / inner unrest / quiet grief / need for peace",
+        "instrument": "Sarangi",
+        "raga": "Bageshri",
+        "hz": "432Hz",
+        "wave": "Theta"
     },
-    "test_method": "Title-only A/B (Test 20): same thumbnail 'INNER PEACE' on both variants — healing lane has tied thumb data (per A/B history), so thumb held constant to isolate title variable. Conclude when one variant reaches 60%+ watch-time share over 7+ days."
-  },
-  "tags": "inner peace music, healing music, sarangi, sarangi music, gentle healing, indian classical music, indian instrumental music, emotional healing music, stress relief music, calm music, relaxation music, 432hz, theta waves, raga bageshri, bageshri, indian sarangi, comfort music, anxiety relief music, raga focus, find your calm, emotional release music, meditation music, peaceful music",
-  "description": "Inner Peace Music | Sarangi Healing | 1.5 Hours\n\nIf your chest is tight and you can't quite name why — this is where to start. The Sarangi doesn't ask you to explain. It just holds the feeling until it softens.\n\n90 minutes of slow Sarangi in Raga Bageshri, tuned to 432Hz with a gentle Theta layer. Made for moments when you need to come back to yourself.\n\n🎵 What you'll hear:\n- Sarangi — a bowed string instrument with one of the most human-like voices in Indian classical music\n- Slow, aching phrases with space to breathe in between\n- A soft low-frequency layer to help the nervous system settle\n- Unbroken sound — no jarring transitions, no sudden shifts\n\n⏱ Chapters\n0:00   First breath\n15:00  Letting go\n35:00  Settling in\n60:00  Deep calm\n80:00  Coming back\n\n🧠 How to use:\nPress play. Sit or lie down. Don't try to feel anything specific — just let the Sarangi do what it does. Works with headphones or just in the room around you.\n\n⏱ Best for:\n• Quiet grief or unnamed sadness\n• After a hard conversation\n• Emotional exhaustion\n• Evening wind-down\n• Moments when you just need to feel okay again\n\n📺 Subscribe to Raga Focus for daily uploads:\n- Sitar, Sarangi, Veena, Surbahar, Bansuri, Tanpura and other Indian instruments\n- Music for anxiety, overthinking, sleep, stress, emotional release\n\n— Raga Focus\n\n#innerpeacemusic #healingmusic #sarangi #indianclassicalmusic #432hz #ragafocus #gentlehealing #emotionalhealing",
-  "thumbnail_text_main": "INNER PEACE",
-  "thumbnail_text_variants": [
-    "INNER PEACE",
-    "INNER PEACE"
-  ],
-  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-cream patterned border with subtle lotus and vine motifs, aged warm parchment background, soft late-afternoon palette (warm amber with fading golden light). Central figure: serene woman in a deep rose-and-cream sari with gold accents, seated cross-legged, holding a Sarangi (short bowed string instrument with a wide resonating body) in her lap, eyes half-closed in absorption. A soft indoor scene — a low window with warm light filtering through sheer cloth, a few marigold petals scattered on the floor. Gentle, tender mood — not sorrowful, not celebratory, just quietly present. Bold dark-teal serif overlay text reading 'INNER PEACE' centered, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Aged warm cream parchment palette, contemplative healing mood, single composed scene, no clutter.",
-  "suno_prompt": "Instrumental only, no vocals. Warm bowed Sarangi solo in raga Bageshri, deep emotional healing mood, slow expressive melodic phrasing with natural pauses and silences, no percussion, no tabla, 432Hz tuning, 65-75 BPM slow tempo, mid-to-low register (warm resonant bowed tone, not bright or thin), sparse phrases with emotional weight — each phrase feels considered, not continuous. Cinematic meditation production, hypnotic and tender, suitable for extended looping in post-production. Begins immediately with Sarangi already playing, full sonic presence from first note. Emotional tag: deeply tender, like grief that has finally found a safe place to rest.",
-  "production_spec": {
-    "duration_minutes": 90,
-    "bpm_range": "65-75",
-    "key_frequency_hz": 432,
-    "binaural_carrier_hz": 438,
-    "binaural_wave": "Theta",
-    "binaural_beat_hz": 6.0,
-    "lufs_target": -14,
-    "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
-    "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
-    "notes": "Raga Bageshri — tonic D or C. Sarangi mid-register warm bowed tone — avoid thin/bright rendering. Sparse phrasing with emotional weight is critical: Sarangi's strength is in its sustained, aching notes — do not over-fill. Mix: Sarangi -2dB, Binaural -20dB (subtle Theta layer, should not overpower), Tanpura drone -22dB. LUFS -14dB (healing lane, not sleep — slightly louder than sleep content)."
-  },
-  "experiment_notes": "RAGA BINDU REFERENCE TEST — Test 20. Inspired by Raga Bindu's 'Gentle Healing' hit (651K views in 1 month, 15.8K sub channel). Sarangi is our proven healing instrument: Comfort Music (7.2K / 26.2% AVD) and Nostalgia Music (3.1K / 25.7% AVD). Both titles have been validated and phrase-lock checked.\n\nVariant A: SEO-descriptor lead (Inner Peace Music 73) — does high VidIQ score in lead drive more search + Browse discovery?\nVariant B: Emotional-state lead (Gentle Healing 55) — does Raga Bindu's exact formula translate to our channel?\n\nSame thumb both variants (INNER PEACE — abstract noun, healing lane winner). Title variable isolated.\n\nFAILURE MODE: <2.5% CTR or <22% AVD = Sarangi healing lane has cooled, revisit with stronger clinical hook (per §11 Veena lesson — soft framing fails, Sarangi may need same medicine).\nBREAKTHROUGH: 4.5%+ CTR + 26%+ AVD = emotional-state lead confirmed for healing lane, Raga Bindu formula validated for Raga Focus."
+    "validated_keywords": [
+        "inner peace music (73)",
+        "find your calm (62)",
+        "gentle healing (55)",
+        "sarangi music for inner peace (32 \u2014 Path 2 niche, ok in non-lead)",
+        "sarangi healing music (29 \u2014 Path 2 niche, ok in non-lead)",
+        "healing music (proven lane anchor)",
+        "comfort music (25.9% AVD / 3.13% CTR \u2014 sarangi top performer)",
+        "432hz",
+        "theta waves"
+    ],
+    "strategic_bet": "Raga Bindu reference \u2014 their 'Gentle Healing | Soothing Indian Classical Music for Stress Relief, Sleep & Inner Peace' hit 651K views in 1 month (15.8K sub channel). Title A tests whether their highest-scoring component (Inner Peace Music 73) as lead can drive discovery. Title B mirrors their emotional-state-lead pattern ('Gentle Healing') that drove the viral hit. Healing lane is Sarangi's proven home: Comfort Music (7.2K / 26.2% AVD) and Nostalgia Music (3.1K / 25.7% AVD) are both dual-winners in this lane. A/B isolates: descriptor-lead (A) vs emotional-state-lead (B). Bageshri raga is quintessential for tender emotional release \u2014 strongest fit for this theme.",
+    "success_good": "2000+ views, 24%+ AVD, 3.5%+ CTR in 48h",
+    "success_breakthrough": "8K+ views, 26%+ AVD, 4.5%+ CTR \u2014 Raga Bindu pattern confirmed for our channel, emotional-state lead unlocked as new title formula",
+    "ab_test": {
+        "test_id": "Test 20",
+        "test_type": "TITLE A/B \u2014 same thumbnail both variants (healing lane is thumb-tied)",
+        "variant_A": {
+            "title": "Inner Peace Music | Sarangi Healing | 1.5 Hours",
+            "thumbnail_text": "INNER PEACE",
+            "hypothesis": "SEO-descriptor lead (73 VidIQ score) \u2014 'Inner Peace Music' is the highest-scoring component and a genuine search query. Tests whether strong VidIQ lead drives more discovery than emotional-state lead."
+        },
+        "variant_B": {
+            "title": "Gentle Healing | Inner Peace Sarangi Music | 1.5 Hours",
+            "thumbnail_text": "INNER PEACE",
+            "hypothesis": "Emotional-state lead inspired by Raga Bindu's 651K hit \u2014 'Gentle Healing' mirrors their exact title lead. Tests whether soft emotional framing resonates in Browse/Suggested feed the way it did for them."
+        },
+        "test_method": "Title-only A/B (Test 20): same thumbnail 'INNER PEACE' on both variants \u2014 healing lane has tied thumb data (per A/B history), so thumb held constant to isolate title variable. Conclude when one variant reaches 60%+ watch-time share over 7+ days."
+    },
+    "tags": "inner peace music, healing music, sarangi, sarangi music, gentle healing, indian classical music, indian instrumental music, emotional healing music, stress relief music, calm music, relaxation music, 432hz, theta waves, raga bageshri, bageshri, indian sarangi, comfort music, anxiety relief music, raga focus, find your calm, emotional release music, meditation music, peaceful music",
+    "description": "Inner Peace Music | Sarangi Healing | 1.5 Hours\n\nIf your chest is tight and you can't quite name why \u2014 this is where to start. The Sarangi doesn't ask you to explain. It just holds the feeling until it softens.\n\n90 minutes of slow Sarangi in Raga Bageshri, tuned to 432Hz with a gentle Theta layer. Made for moments when you need to come back to yourself.\n\n\ud83c\udfb5 What you'll hear:\n- Sarangi \u2014 a bowed string instrument with one of the most human-like voices in Indian classical music\n- Slow, aching phrases with space to breathe in between\n- A soft low-frequency layer to help the nervous system settle\n- Unbroken sound \u2014 no jarring transitions, no sudden shifts\n\n\u23f1 Chapters\n0:00   First breath\n15:00  Letting go\n35:00  Settling in\n60:00  Deep calm\n80:00  Coming back\n\n\ud83e\udde0 How to use:\nPress play. Sit or lie down. Don't try to feel anything specific \u2014 just let the Sarangi do what it does. Works with headphones or just in the room around you.\n\n\u23f1 Best for:\n\u2022 Quiet grief or unnamed sadness\n\u2022 After a hard conversation\n\u2022 Emotional exhaustion\n\u2022 Evening wind-down\n\u2022 Moments when you just need to feel okay again\n\n\ud83d\udcfa Subscribe to Raga Focus for daily uploads:\n- Sitar, Sarangi, Veena, Surbahar, Bansuri, Tanpura and other Indian instruments\n- Music for anxiety, overthinking, sleep, stress, emotional release\n\n\u2014 Raga Focus\n\n#innerpeacemusic #healingmusic #sarangi #indianclassicalmusic #432hz #ragafocus #gentlehealing #emotionalhealing",
+    "thumbnail_text_main": "INNER PEACE",
+    "thumbnail_text_variants": [
+        "INNER PEACE",
+        "INNER PEACE"
+    ],
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-cream patterned border with subtle lotus and vine motifs, aged warm parchment background, soft late-afternoon palette (warm amber with fading golden light). Central figure: serene woman in a deep rose-and-cream sari with gold accents, seated cross-legged, holding a Sarangi (short bowed string instrument with a wide resonating body) in her lap, eyes half-closed in absorption. A soft indoor scene \u2014 a low window with warm light filtering through sheer cloth, a few marigold petals scattered on the floor. Gentle, tender mood \u2014 not sorrowful, not celebratory, just quietly present. Bold dark-teal serif overlay text reading 'INNER PEACE' centered, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Aged warm cream parchment palette, contemplative healing mood, single composed scene, no clutter.",
+    "suno_prompt": "Instrumental only, no vocals. Warm bowed Sarangi solo in raga Bageshri, deep emotional healing mood, slow expressive melodic phrasing with natural pauses and silences, no percussion, no tabla, 432Hz tuning, 65-75 BPM slow tempo, mid-to-low register (warm resonant bowed tone, not bright or thin), sparse phrases with emotional weight \u2014 each phrase feels considered, not continuous. Cinematic meditation production, hypnotic and tender, suitable for extended looping in post-production. Begins immediately with Sarangi already playing, full sonic presence from first note. Emotional tag: deeply tender, like grief that has finally found a safe place to rest.",
+    "production_spec": {
+        "duration_minutes": 90,
+        "bpm_range": "65-75",
+        "key_frequency_hz": 432,
+        "binaural_carrier_hz": 438,
+        "binaural_wave": "Theta",
+        "binaural_beat_hz": 6.0,
+        "lufs_target": -14,
+        "loop_seam": "10s in / 30s out, Suno extend 3-4x \u2192 loop in post to fill 90 min",
+        "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+        "notes": "Raga Bageshri \u2014 tonic D or C. Sarangi mid-register warm bowed tone \u2014 avoid thin/bright rendering. Sparse phrasing with emotional weight is critical: Sarangi's strength is in its sustained, aching notes \u2014 do not over-fill. Mix: Sarangi -2dB, Binaural -20dB (subtle Theta layer, should not overpower), Tanpura drone -22dB. LUFS -14dB (healing lane, not sleep \u2014 slightly louder than sleep content)."
+    },
+    "experiment_notes": "RAGA BINDU REFERENCE TEST \u2014 Test 20. Inspired by Raga Bindu's 'Gentle Healing' hit (651K views in 1 month, 15.8K sub channel). Sarangi is our proven healing instrument: Comfort Music (7.2K / 26.2% AVD) and Nostalgia Music (3.1K / 25.7% AVD). Both titles have been validated and phrase-lock checked.\n\nVariant A: SEO-descriptor lead (Inner Peace Music 73) \u2014 does high VidIQ score in lead drive more search + Browse discovery?\nVariant B: Emotional-state lead (Gentle Healing 55) \u2014 does Raga Bindu's exact formula translate to our channel?\n\nSame thumb both variants (INNER PEACE \u2014 abstract noun, healing lane winner). Title variable isolated.\n\nFAILURE MODE: <2.5% CTR or <22% AVD = Sarangi healing lane has cooled, revisit with stronger clinical hook (per \u00a711 Veena lesson \u2014 soft framing fails, Sarangi may need same medicine).\nBREAKTHROUGH: 4.5%+ CTR + 26%+ AVD = emotional-state lead confirmed for healing lane, Raga Bindu formula validated for Raga Focus.",
+    "playlists": [
+        "Meditation"
+    ]
 }

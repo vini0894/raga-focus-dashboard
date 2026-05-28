@@ -1670,6 +1670,45 @@ with tab_briefs:
                     st.markdown("##### 5️⃣ Suno prompt")
                     st.code(brief["suno_prompt"], language="text")
 
+                # ── Playlist assignment ──────────────────────────────────────
+                def _auto_suggest_playlists(_b):
+                    _t = ((_b.get("title") or "") + " " + (_b.get("components", {}).get("problem") or "")).lower()
+                    _res = []
+                    if any(k in _t for k in ["sleep","insomnia","drift off","fall asleep","deep rest","unwind","restless","bedtime"]):
+                        _res.append("Sleep Music")
+                    if any(k in _t for k in ["meditation","mindfulness","dopamine","inner peace","mindful","stillness"]):
+                        _res.append("Meditation")
+                    if any(k in _t for k in ["morning","uplifting","joyful","positive vibes","good energy","productive","yoga","motivation"]):
+                        _res.append("Morning Energy")
+                    if any(k in _t for k in ["anxiety","overthinking","nervous system","cortisol","burnout","stress relief","healing","emotional","comfort","brain fog","mental clarity","worry","overwhelm"]):
+                        _res.append("Healing & Anxiety Relief")
+                    if any(k in _t for k in ["peaceful","relaxation","breathe","soothing","calm","gentle","quiet"]) and not _res:
+                        _res.append("Peaceful Music")
+                    return _res or ["Healing & Anxiety Relief"]
+
+                _pl_list = brief.get("playlists") or []
+                _pl_suggested = not brief.get("playlists")
+                if _pl_suggested:
+                    _pl_list = _auto_suggest_playlists(brief)
+
+                st.markdown("##### 6️⃣ Add to Playlist(s) after publishing")
+                _pl_colors = {
+                    "Sleep Music":              "#1e3a5f",
+                    "Meditation":               "#2d5a27",
+                    "Morning Energy":           "#7d3c00",
+                    "Healing & Anxiety Relief": "#4a235a",
+                    "Peaceful Music":           "#1a4a4a",
+                }
+                _badges = " &nbsp; ".join(
+                    f"<span style='background:{_pl_colors.get(_pl,'#444')};color:white;"
+                    f"padding:5px 14px;border-radius:14px;font-size:13px;"
+                    f"font-weight:600'>🎵 {_pl}</span>"
+                    for _pl in _pl_list
+                )
+                st.markdown(_badges, unsafe_allow_html=True)
+                if _pl_suggested:
+                    st.caption("💡 Auto-suggested from title keywords — confirm when publishing")
+
                 with st.expander("📊 Strategy details", expanded=False):
                     if brief.get("strategic_bet"):
                         st.markdown(f"**Strategic bet:** {brief['strategic_bet']}")
