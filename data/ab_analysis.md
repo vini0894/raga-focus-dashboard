@@ -1,6 +1,6 @@
 # A/B Test Reference — Title & Thumbnail Decision Guide
 
-**N=30 tests (21 concluded, 8 running, 1 superseded) · Last updated: 2026-05-28 · Next update due: when any running test concludes**
+**N=31 tests (22 concluded, 8 running, 1 superseded) · Last updated: 2026-05-28 · Next update due: when any running test concludes**
 Raw data: `ab_raw_data.csv` · Full verdicts: `ab_results.csv`
 
 Use this doc before writing any brief. Start with the two quick-reference tables, then check the universal rules, then check open questions for your specific lane.
