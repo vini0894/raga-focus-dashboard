@@ -1945,13 +1945,13 @@ with tab_idea_gen:
             })
 
         thumb_df = pd.DataFrame(thumb_rows)
-        st.dataframe(thumb_df, width="stretch", hide_index=True,
+        st.dataframe(thumb_df, use_container_width=True, hide_index=True,
                      column_config={
-                         "Lane": st.column_config.TextColumn("Lane", width=140),
-                         "✅ Use": st.column_config.TextColumn("✅ Use", width=260),
-                         "❌ Avoid": st.column_config.TextColumn("❌ Avoid", width=220),
-                         "Confidence": st.column_config.TextColumn("Confidence", width=130),
-                         "Evidence": st.column_config.TextColumn("Evidence", width=140),
+                         "Lane": st.column_config.TextColumn("Lane", width=130),
+                         "✅ Use": st.column_config.TextColumn("✅ Format", width=200),
+                         "❌ Avoid": st.column_config.TextColumn("❌ Avoid", width=200),
+                         "Confidence": st.column_config.TextColumn("Conf", width=120),
+                         "Evidence": st.column_config.TextColumn("Evidence", width=130),
                      })
 
         st.markdown("---")
@@ -1975,32 +1975,45 @@ with tab_idea_gen:
             })
 
         title_df = pd.DataFrame(title_rows)
-        st.dataframe(title_df, width="stretch", hide_index=True,
+        st.dataframe(title_df, use_container_width=True, hide_index=True,
                      column_config={
-                         "Lane": st.column_config.TextColumn("Lane", width=140),
-                         "✅ Use": st.column_config.TextColumn("✅ Use", width=200),
-                         "Example": st.column_config.TextColumn("Example title", width=300),
-                         "❌ Avoid": st.column_config.TextColumn("❌ Avoid", width=200),
-                         "Confidence": st.column_config.TextColumn("Confidence", width=130),
+                         "Lane": st.column_config.TextColumn("Lane", width=130),
+                         "✅ Use": st.column_config.TextColumn("✅ Format", width=180),
+                         "Example": st.column_config.TextColumn("Example title", width=340),
+                         "❌ Avoid": st.column_config.TextColumn("❌ Avoid", width=180),
+                         "Confidence": st.column_config.TextColumn("Conf", width=120),
                      })
 
         st.markdown("---")
         st.markdown("### Universal Rules")
+        st.caption("Apply to every lane, every brief. These are the hardest rules — backed by multiple isolated tests.")
 
         universal = rules.get("universal_rules", [])
         if universal:
+            ur_rows = []
             for ur in universal:
                 conf = ur.get("confidence", "")
                 conf_emoji = {"HIGH": "🟢", "MEDIUM": "🔵", "LOW": "🟡"}.get(conf, "⚪")
-                record = ur.get("record", "")
-                action = ur.get("action", "")
-                evid   = ", ".join(ur.get("evidence", [])[:3])
-                st.markdown(
-                    f"**{conf_emoji} {ur['rule']}**  \n"
-                    f"Record: `{record}` · Evidence: {evid}  \n"
-                    f"→ _{action}_"
-                )
-                st.markdown("")
+                ur_rows.append({
+                    "Conf": f"{conf_emoji} {conf}",
+                    "Rule": ur.get("rule", ""),
+                    "Record": ur.get("record", ""),
+                    "Action": ur.get("action", ""),
+                    "Evidence": ", ".join(ur.get("evidence", [])[:3]),
+                })
+            ur_df = pd.DataFrame(ur_rows)
+            st.dataframe(
+                ur_df,
+                use_container_width=True,
+                hide_index=True,
+                column_config={
+                    "Conf":     st.column_config.TextColumn("Conf", width=100),
+                    "Rule":     st.column_config.TextColumn("Rule", width=340),
+                    "Record":   st.column_config.TextColumn("Record", width=110),
+                    "Action":   st.column_config.TextColumn("→ Action", width=340),
+                    "Evidence": st.column_config.TextColumn("Evidence", width=160),
+                },
+            )
 
         st.markdown("---")
         st.info(
@@ -2014,7 +2027,7 @@ with tab_idea_gen:
     # Sub-tab 2: All Tests (raw data table)
     # =========================================================================
     with sub_raw:
-        st.markdown("### All 31 Tests — Raw Data")
+        st.markdown(f"### All {total} Tests — Raw Data")
         st.caption("Every test with both variant titles and thumbnail texts side by side. Filter by lane or test type.")
 
         # Filters
@@ -2072,40 +2085,52 @@ with tab_idea_gen:
 
         df_show["Margin pp"] = df_show.apply(_margin, axis=1)
 
+        # Add inferred_outcome column if present in CSV
+        has_outcome = "inferred_outcome" in df_show.columns
+
         display_cols = [
             "test_num", "date", "lane", "test_type",
             "variant_a_title", "variant_a_thumb",
             "variant_b_title", "variant_b_thumb",
-            "a_share", "b_share", "Margin pp", "Result", "status",
+            "a_share", "b_share", "Margin pp", "Result",
         ]
+        if has_outcome:
+            display_cols.append("inferred_outcome")
+        display_cols.append("status")
+
         rename_map = {
             "test_num": "#", "date": "Date", "lane": "Lane", "test_type": "Type",
             "variant_a_title": "A Title", "variant_a_thumb": "A Thumb",
             "variant_b_title": "B Title", "variant_b_thumb": "B Thumb",
             "a_share": "A %", "b_share": "B %", "status": "Status",
+            "inferred_outcome": "Inferred Outcome",
         }
         df_display_ab = df_show[display_cols].rename(columns=rename_map)
 
+        col_config = {
+            "#": st.column_config.NumberColumn("#", width=40),
+            "Date": st.column_config.TextColumn("Date", width=85),
+            "Lane": st.column_config.TextColumn("Lane", width=130),
+            "Type": st.column_config.TextColumn("Type", width=95),
+            "A Title": st.column_config.TextColumn("A Title", width=240),
+            "A Thumb": st.column_config.TextColumn("A Thumb", width=120),
+            "B Title": st.column_config.TextColumn("B Title", width=240),
+            "B Thumb": st.column_config.TextColumn("B Thumb", width=120),
+            "A %": st.column_config.TextColumn("A %", width=55),
+            "B %": st.column_config.TextColumn("B %", width=55),
+            "Margin pp": st.column_config.NumberColumn("Gap pp", width=60, format="%.1f"),
+            "Result": st.column_config.TextColumn("Result", width=85),
+            "Status": st.column_config.TextColumn("Status", width=85),
+        }
+        if has_outcome:
+            col_config["Inferred Outcome"] = st.column_config.TextColumn("Inferred Outcome", width=380)
+
         st.dataframe(
             df_display_ab,
-            width="stretch",
+            use_container_width=True,
             height=600,
             hide_index=True,
-            column_config={
-                "#": st.column_config.NumberColumn("#", width=40),
-                "Date": st.column_config.TextColumn("Date", width=85),
-                "Lane": st.column_config.TextColumn("Lane", width=140),
-                "Type": st.column_config.TextColumn("Type", width=100),
-                "A Title": st.column_config.TextColumn("A Title", width=260),
-                "A Thumb": st.column_config.TextColumn("A Thumb", width=130),
-                "B Title": st.column_config.TextColumn("B Title", width=260),
-                "B Thumb": st.column_config.TextColumn("B Thumb", width=130),
-                "A %": st.column_config.TextColumn("A %", width=60),
-                "B %": st.column_config.TextColumn("B %", width=60),
-                "Margin pp": st.column_config.NumberColumn("Gap pp", width=65, format="%.1f"),
-                "Result": st.column_config.TextColumn("Result", width=90),
-                "Status": st.column_config.TextColumn("Status", width=90),
-            },
+            column_config=col_config,
         )
 
         st.markdown(f"**{len(df_show)} tests shown** (of {total} total)")
