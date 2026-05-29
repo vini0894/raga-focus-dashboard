@@ -1,0 +1,100 @@
+{
+    "id": "v_2026-06-03_morning_breathwork_bansuri",
+    "status": "DRAFT",
+    "date_shipped": null,
+    "created_at": "2026-05-28",
+    "planned_date": "2026-06-03",
+    "planned_slot": "AM (7am IST)",
+    "title": "Morning Meditation Music | Bansuri & Breathwork | Indian Classical",
+    "title_variants": {
+        "A": "Morning Meditation Music | Bansuri & Breathwork | Indian Classical",
+        "B": "Morning Meditation Music | Bansuri & Breathwork | Indian Classical"
+    },
+    "components": {
+        "problem": "mind hasn't cleared from the night / body feels unready for the day / need something to slow the breath and reset before everything begins / looking for a deliberate morning ritual not just background music",
+        "instrument": "Bansuri",
+        "raga": "Bhairav",
+        "hz": "432Hz",
+        "wave": "Alpha"
+    },
+    "validated_keywords": [
+        "Morning Meditation Music (slot 1 — lifestyle/outcome lead, morning lane rule)",
+        "Bansuri & Breathwork (slot 2 — instrument + practice anchor)",
+        "Indian Classical (slot 3 — genre anchor)",
+        "morning meditation music",
+        "breathwork music",
+        "pranayama music",
+        "bansuri music",
+        "indian classical bansuri",
+        "indian flute music",
+        "bansuri for meditation",
+        "morning breathwork",
+        "432hz",
+        "alpha waves",
+        "raga bhairav",
+        "bhairav",
+        "morning yoga music",
+        "calm morning music",
+        "indian classical music",
+        "raga focus"
+    ],
+    "ab_test": {
+        "test_id": null,
+        "test_type": "NO A/B — single title, single thumbnail",
+        "variant_A": {
+            "title": "Morning Meditation Music | Bansuri & Breathwork | Indian Classical",
+            "thumbnail_text": "BREATHE DEEPLY",
+            "hypothesis": "Straight ship — no test running. Title follows morning lane rule (outcome/lifestyle SEO lead, 3-slot clean). Thumbnail follows morning lane rule (outcome/directive, not Q-hook). Focus is lane-expansion: first explicit breathwork/pranayama ship on the channel."
+        },
+        "variant_B": {
+            "title": "Morning Meditation Music | Bansuri & Breathwork | Indian Classical",
+            "thumbnail_text": "BREATHE DEEPLY",
+            "hypothesis": "Same as A — no test."
+        },
+        "test_method": "No A/B this ship. Straight filler — using proven morning lane format (outcome/lifestyle lead + outcome thumb). Next breathwork ship can run a test once baseline data exists for the lane."
+    },
+    "strategic_bet": "FILLER — Tue June 3 AM. First explicit breathwork/pranayama ship on the channel. Bansuri is the breathing instrument — played with breath, sounds like breath, the connection is literal and authentic. No other instrument owns this lane the same way. Different from May 30 Sarangi+Tabla yoga (active practice with rhythm) — this is breath-led, no percussion, slower and more spacious. 5 days clear from May 29 Bansuri sleep — different lane, no cannibalization. Reference: Productive Day Bansuri (35,904 views, morning lane) and May 17 Bansuri 3hr (8,967 views, 6.01% CTR). Tuesday AM is a solid browse window for morning ritual content.",
+    "success_good": "3000+ views, 25%+ AVD, 4%+ CTR in 48h",
+    "success_breakthrough": "7000+ views, 28%+ AVD — breathwork lane confirmed repeatable, Bansuri owns morning breathwork, lock as monthly recurring slot",
+    "failure_mode": "<1500 views or <3.5% CTR in 48h — breathwork too niche for browse audience; pivot to broader morning meditation framing without breathwork anchor in slot 2",
+    "reference_ships": [
+        {
+            "title": "Productive Day Music | Positive Morning Vibes | 1 Hour Bansuri Session",
+            "pub": "2026-05-05",
+            "views": 35904,
+            "ctr_pct": null,
+            "avd_pct": null,
+            "notes": "Channel morning Bansuri benchmark"
+        },
+        {
+            "title": "3 Hour Bansuri Music for Relaxation | Indian Classical Music for Deep Sleep",
+            "pub": "2026-05-17",
+            "views": 8967,
+            "ctr_pct": 6.01,
+            "avd_pct": 20.18,
+            "watch_hours": 5428,
+            "notes": "Best Bansuri CTR on channel"
+        }
+    ],
+    "tags": "morning meditation music, breathwork music, pranayama music, bansuri music, indian classical bansuri, indian flute music, bansuri for meditation, morning breathwork, morning yoga music, calm morning music, indian classical music, raga bhairav, bhairav raga, 432hz, alpha waves, breathing music, slow bansuri, indian instrumental music, morning ritual music, raga focus",
+    "description": "Morning Meditation Music | Bansuri & Breathwork | Indian Classical\n\nThe day hasn't started yet. You're still in the space before it.\n\nThis is the moment to breathe deliberately — not just inhale and move, but actually slow down and let the body set its own pace before the day sets one for it. The Bansuri is the right instrument for this. It runs on breath. Every phrase begins and ends with air. There's no rushing it.\n\nThis is 90 minutes of slow Bansuri in Raga Bhairav — the classical Indian morning raga. Bhairav is grounding and unhurried. Its phrases open outward with long silences between them — space you can breathe into. No percussion, no rhythm to track. Just the flute and the morning.\n\nPlay it before your breathwork, during it, or simply while you sit with your tea and let the day come to you slowly.\n\n🎵 What you'll hear:\n- Bansuri — warm bamboo flute, breath-driven and unhurried\n- Raga Bhairav — the classical Indian morning raga, grounding and contemplative\n- Long phrases with generous silence between them — space to breathe\n- No percussion, no tabla — just flute and morning air\n- 90 unbroken minutes at 432Hz tuning\n\n⏱ Chapters\n0:00    First breath — settling in\n20:00   Slow and open\n45:00   Deep stillness\n70:00   Morning clarity\n85:00   Gentle close\n\n🧠 How to use:\nPress play before you begin. Let the Bansuri set the breath pace — its phrases are slow enough to inhale with and exhale with naturally. No effort required. Just breathe with it.\n\n⏱ Best for:\n• Morning breathwork and pranayama\n• Seated morning meditation\n• Slow morning ritual before the day starts\n• Gentle wake-up without alarm energy\n• Yoga with a focus on breath over movement\n\n📺 Subscribe to Raga Focus for daily Indian classical music for meditation, yoga, anxiety, and sleep.\n\n— Raga Focus\n\n#morningmeditationmusic #bansuri #breathworkmusic #pranayama #indianclassicalmusic #432hz #ragabHairav #ragafocus #morningmeditation #indianflute #calmmorning",
+    "thumbnail_text_main": "BREATHE DEEPLY",
+    "thumbnail_text_variants": [
+        "BREATHE DEEPLY"
+    ],
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate warm-gold-and-saffron patterned border with dawn lotus, morning bird and sun-disc motifs, aged warm parchment background, early dawn palette (soft golden light rising from deep indigo, warm amber glow at horizon). Central figure: serene musician in cream-and-gold attire seated cross-legged on a simple woven mat playing bansuri (long bamboo flute held horizontally to lips, eyes gently closed), in a quiet open-air morning courtyard. Soft mist rising from the ground, a single lotus beginning to open in the corner. Expression of complete stillness — breath held lightly, not tense, just present. Bold deep-teal serif overlay text reading 'BREATHE DEEPLY' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Warm dawn gold, deep indigo, and aged cream palette, pre-sunrise stillness mood, single composed scene, no clutter.",
+    "suno_prompt": "Instrumental only, no vocals. Slow bansuri solo in Raga Bhairav, morning breathwork and pranayama mood, warm breath-driven bamboo flute with long sustained notes and generous silence between phrases, no percussion, no tabla, no tanpura drone (bansuri carries the space alone), 432Hz tuning, 60-70 BPM slow morning tempo, mid register (warm and open — not high and piercing), airy and spacious texture with natural breath pauses that match the instrument's own breath cycle, cinematic meditative production, deeply grounding, suitable for extended looping in post-production. Raga Bhairav — Sa Re(komal) Ga Ma Pa Dha(komal) Ni Sa. The flat 2nd and flat 6th give Bhairav its serious, grounding morning gravity. Each phrase should feel like a complete breath — inhale up, exhale down, then silence. IMPORTANT: Long silences between phrases are correct — 8-12 seconds of near-silence is intentional and should not be filled. Emotionally: like the body finding its own rhythm before the day begins — unhurried, deliberate, present. Alpha wave layer at -20dB subtle underneath. No meend glides that are too fast — slow, liquid movement only.",
+    "production_spec": {
+        "duration_minutes": 90,
+        "bpm_range": "60-70",
+        "key_frequency_hz": 432,
+        "binaural_carrier_hz": 210,
+        "binaural_wave": "Alpha",
+        "binaural_beat_hz": 10.0,
+        "lufs_target": -14,
+        "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+        "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+        "notes": "Raga Bhairav — classical Indian morning raga. Sa Re(komal) Ga Ma Pa Dha(komal) Ni Sa. Flat Re and flat Dha create grounding, serious morning quality. NO tabla — breathwork needs space, rhythm would intrude. NO tanpura drone — let the Bansuri carry the silence. Alpha 10Hz binaural — relaxed alertness for morning practice (not Theta/Delta). LUFS -14 (morning active viewer, awake and present). CRITICAL: Long silences between phrases are intentional — 8-12 seconds of near-silence is correct for breathwork. First clip must feel genuinely breathlike before extending — phrases should feel like they're breathing. EMOTIONAL TAG ROTATION: clip 1: 'like the body finding its breath before the day begins' · clip 2: 'unhurried and open — each phrase a complete breath' · clip 3: 'still morning air, the flute barely disturbing it'. 90min = 3-4 Suno clips + loop extension."
+    },
+    "experiment_notes": "No A/B test. Straight filler ship. First breathwork lane ship on the channel — establishing baseline data before testing within the lane. Bansuri is the most authentic instrument for this lane (breath-played, breath-driven). If this ship hits 3K+ views and 25%+ AVD, breathwork is a viable recurring lane — consider Test 31 on the next breathwork ship (outcome thumb 'BREATHE DEEPLY' vs practice-lifestyle 'MORNING RITUAL')."
+}
