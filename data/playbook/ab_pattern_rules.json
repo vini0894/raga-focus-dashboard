@@ -208,7 +208,7 @@
       "winning_thumb_examples": ["LIFT YOUR MOOD"],
       "avoid_thumb_type": "Not yet tested",
       "avoid_thumb_examples": [],
-      "note": "⭐ Test 32: CLEAN title-only isolation (both thumbs identical). 'Good Energy Music' + 'Positive Vibes' beats 'Feel Good Music' + 'Instrumental' by 17.8pp (decisive). Rule: specificity in slot 2 matters — vibe-descriptor (Positive Vibes) beats generic instrument-category (Instrumental). Also confirms higher-VidIQ lead rule. Thumb type not yet tested in this lane.",
+      "note": "⭐ Test 32: CLEAN title-only isolation (both thumbs identical). 'Good Energy Music' + 'Positive Vibes' beats 'Feel Good Music' + 'Instrumental' by 17.8pp (decisive). WHAT LOST: 'Feel Good Music' is too vague — soft emotional hope with no energy/intent signal. 'Instrumental' in slot 2 is format-filler — it describes what the music IS, not what it DOES for the listener. Rule: slot 1 needs an energy-descriptor (not a feeling-word), slot 2 needs a vibe/outcome word (not an instrument-category label). Thumb type not yet tested in this lane.",
       "confidence": "MEDIUM",
       "evidence": ["#32 (58.9/41.1 — clean title-only isolation, user stopped)"]
     }

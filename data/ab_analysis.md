@@ -45,6 +45,11 @@ Use this doc before writing any brief. Start with the two quick-reference tables
 | **Comfort / Emotional** | No signal | — | NONE | #6,7 |
 | **Uplifting / Positive-Vibes** | Energy-descriptor lead (Good Energy Music) + specific vibe descriptor in slot 2 (Positive Vibes) | Generic-feeling lead (Feel Good Music) + instrument-category in slot 2 (Instrumental) | MEDIUM | #32 (58.9/41.1 — clean title-only, 17.8pp decisive) |
 
+**❌ What lost in the Uplifting lane (Test 32):**
+- **"Feel Good Music"** — too vague. "Feel Good" is a soft emotional hope, not a searchable energy state. No intent signal, no specificity. Could describe anything.
+- **"Santoor Instrumental"** in slot 2 — describes the *format*, not the *experience*. "Instrumental" is category filler. A viewer scanning thumbnails gets zero information about what the music will *do for them*.
+- **Pattern:** In the uplifting lane, generic + format beats nobody. You need energy-signal in slot 1 and a vibe/outcome word in slot 2 — not instrument-category or vague feeling words.
+
 ---
 
 ## UNIVERSAL RULES — Apply to every lane, every brief
