@@ -1,6 +1,6 @@
 {
-  "version": "2026-05-28",
-  "n_tests": 30,
+  "version": "2026-05-30",
+  "n_tests": 32,
   "note": "Derived from ab_analysis.md. Update after each concluded test. Lane keys match map_theme_to_ab_lane() in title_preflight.py.",
   "universal_rules": [
     {
@@ -198,6 +198,19 @@
       "note": "Test 6 was a pure tie. Content quality dominates over format in this lane.",
       "confidence": "NONE",
       "evidence": ["#6 (tie)"]
+    },
+    "uplifting": {
+      "winning_title_type": "Energy-descriptor SEO lead + specific vibe descriptor in slot 2",
+      "winning_title_examples": ["Good Energy Music | Santoor for Positive Vibes | 1.5 Hours"],
+      "avoid_title_type": "Generic-feeling SEO lead + generic instrument category in slot 2",
+      "avoid_title_examples": ["Feel Good Music | Santoor Instrumental | 1.5 Hours"],
+      "winning_thumb_type": "Lifestyle outcome (same in Test 32 — not yet tested independently)",
+      "winning_thumb_examples": ["LIFT YOUR MOOD"],
+      "avoid_thumb_type": "Not yet tested",
+      "avoid_thumb_examples": [],
+      "note": "⭐ Test 32: CLEAN title-only isolation (both thumbs identical). 'Good Energy Music' + 'Positive Vibes' beats 'Feel Good Music' + 'Instrumental' by 17.8pp (decisive). Rule: specificity in slot 2 matters — vibe-descriptor (Positive Vibes) beats generic instrument-category (Instrumental). Also confirms higher-VidIQ lead rule. Thumb type not yet tested in this lane.",
+      "confidence": "MEDIUM",
+      "evidence": ["#32 (58.9/41.1 — clean title-only isolation, user stopped)"]
     }
   }
 }

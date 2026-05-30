@@ -1,6 +1,6 @@
 # A/B Test Reference — Title & Thumbnail Decision Guide
 
-**N=31 tests (22 concluded, 8 running, 1 superseded) · Last updated: 2026-05-28 · Next update due: when any running test concludes**
+**N=32 tests (23 concluded, 8 running, 1 superseded) · Last updated: 2026-05-30 · Next update due: when any running test concludes**
 Raw data: `ab_raw_data.csv` · Full verdicts: `ab_results.csv`
 
 Use this doc before writing any brief. Start with the two quick-reference tables, then check the universal rules, then check open questions for your specific lane.
@@ -22,6 +22,7 @@ Use this doc before writing any brief. Start with the two quick-reference tables
 | **Calm / Stillness** | No signal — format-tolerant | — | NONE | #21 concluded tie |
 | **Comfort / Emotional** | No signal — format-tolerant | — | NONE | #6 tie, #30 tie |
 | **Healing / Nostalgia** | Abstract emotional noun (EMOTIONAL HEALING) | Imperative (HEAL YOUR HEART) | LOW-MEDIUM | #10 concluded 53.8/46.2 — user stopped, variables not isolated |
+| **Uplifting / Positive-Vibes** | Not yet tested (thumbs were identical in Test 32) | — | NONE — pending | #32 title-only clean test; thumb untested |
 
 **Key thumb pattern:** Q-hooks work when they name a *mental/cognitive* state (STRESSED?, MENTALLY EXHAUSTED?, TOO MANY THOUGHTS?). They lose when they name a *physical exhaustion or time-of-day* state (TIRED?, FEELING LOW THIS MORNING?, TOO TENSE TO REST?). Lane matters — but so does the *type* of Q-hook.
 
@@ -42,6 +43,7 @@ Use this doc before writing any brief. Start with the two quick-reference tables
 | **Calm / Healing** | Short clean SEO, 3 slots, no stuffing | Long/stuffed (Hz, Schumann, binaural in title) | MEDIUM | #1 (68/32) |
 | **Healing / Nostalgia** | SEO descriptor (Nostalgia Music \| ...) | Instrument-led + poetic phrase | LOW-MEDIUM | #10 concluded 53.8/46.2 — user stopped, variables not isolated |
 | **Comfort / Emotional** | No signal | — | NONE | #6,7 |
+| **Uplifting / Positive-Vibes** | Energy-descriptor lead (Good Energy Music) + specific vibe descriptor in slot 2 (Positive Vibes) | Generic-feeling lead (Feel Good Music) + instrument-category in slot 2 (Instrumental) | MEDIUM | #32 (58.9/41.1 — clean title-only, 17.8pp decisive) |
 
 ---
 
@@ -111,10 +113,11 @@ These are active. Scores shown are directional only — wait for "Test finished"
 | 26 | Restless Mind Veena | Burnout/Rest | Title+Thumb | Restless Mind \| Slow Veena \| 1.5 Hours of Rest + BURNED OUT AND TIRED? | 52.8% | Adrenaline Reset \| Slow Veena \| 1.5 Hours + EASE DOWN | 47.2% | A | ~12d |
 | 27 | Santoor Stress Relief | Stress Relief | Title+Thumb | Stress Relief Music \| Santoor Instrumental \| 3 Hours + IT'S OKAY TO REST | 51.8% | 3 Hour Santoor Music for Stress Relief \| Indian Instrumental Classical Music + FEELING DRAINED? | 48.2% | A | ~13d |
 
-**Recently concluded (banked 2026-05-28):**
+**Recently concluded (banked 2026-05-30):**
 
 | # | Video | Lane | Result | Winner | Loser | Margin |
 |---|---|---|---|---|---|---|
+| 32 | Santoor Positive Vibes | Uplifting/Positive-Vibes | ✅ CONCLUDED May 28–30 (user stopped) | Good Energy Music \| Santoor for Positive Vibes \| 1.5 Hours | Feel Good Music \| Santoor Instrumental \| 1.5 Hours | 58.9% vs 41.1% (17.8pp) — ⭐ clean title-only isolation, specificity in slot 2 wins |
 | 16 | Brain Fog Sarod | Cognitive-Clarity | ✅ CONCLUDED May 15–18 | Mental Clarity Music \| Slow Sarod \| Brain Fog Reset + MENTALLY EXHAUSTED? | Can't Think Clearly? \| Sarod for Mental Reset + RESET YOUR THOUGHTS | 62% vs 38% (24pp) |
 | 28 | Morning Santoor | Morning | ✅ CONCLUDED May 14–17 (tie) | Morning Energy Music \| Santoor Instrumental \| Positive Vibes + NEED A BOOST? (YT promoted) | Start Your Day \| Santoor for Morning Energy + START YOUR DAY | 52.1% vs 47.9% — format-tolerant tie, ⚠️ confounded |
 | 29 | Surbahar Rest | Burnout/Rest | ✅ CONCLUDED May 15–20 (user stopped) | Sound Healing Music \| Slow Surbahar \| 1.5 Hours of Rest + REST WITHOUT WORRY | Healing Frequency Music \| Slow Surbahar + FOR DRAINED MINDS | 58.6% vs 41.4% (17.2pp) — ⭐ strongest permission thumb signal |
