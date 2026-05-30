@@ -1666,9 +1666,28 @@ with tab_briefs:
                     with st.expander("Image prompt (Ideogram / Midjourney)", expanded=False):
                         st.code(brief["thumbnail_prompt"], language="text")
 
-                if brief.get("suno_prompt"):
+                # ── Suno prompt (single or A/B) ──────────────────────────────
+                has_a = bool(brief.get("suno_prompt_A"))
+                has_b = bool(brief.get("suno_prompt_B"))
+                has_legacy = bool(brief.get("suno_prompt"))
+                if has_a or has_b or has_legacy:
                     st.markdown("##### 5️⃣ Suno prompt")
-                    st.code(brief["suno_prompt"], language="text")
+                    if has_a and has_b:
+                        tab_a, tab_b = st.tabs(["Prompt A — CSV reference style", "Prompt B — Compact style"])
+                        with tab_a:
+                            st.caption(f"{len(brief['suno_prompt_A'])} chars · modelled on channel's high-performing prompts (764K, 44K)")
+                            st.code(brief["suno_prompt_A"], language="text")
+                        with tab_b:
+                            st.caption(f"{len(brief['suno_prompt_B'])} chars · compact tag format per Suno docs")
+                            st.code(brief["suno_prompt_B"], language="text")
+                    elif has_a:
+                        st.caption(f"{len(brief['suno_prompt_A'])} chars")
+                        st.code(brief["suno_prompt_A"], language="text")
+                    elif has_b:
+                        st.caption(f"{len(brief['suno_prompt_B'])} chars")
+                        st.code(brief["suno_prompt_B"], language="text")
+                    else:
+                        st.code(brief["suno_prompt"], language="text")
 
                 # ── Playlist assignment ──────────────────────────────────────
                 def _auto_suggest_playlists(_b):
