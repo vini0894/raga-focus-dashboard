@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import re
+from contextlib import contextmanager
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
@@ -27,6 +28,30 @@ st.set_page_config(
     page_icon="🎵",
     layout="wide",
 )
+
+
+@contextmanager
+def api_guard(label: str):
+    """Wrap an API-backed tab body so a live YouTube API failure (quota,
+    expired token, transient 5xx) shows a notice instead of crashing the whole
+    app. File-based tabs (Brief Queue, Title Builder, Playlists) stay usable.
+    Used as: `with tab_x, api_guard("Tab Name"):` — no body re-indentation."""
+    try:
+        yield
+    except Exception as exc:  # noqa: BLE001 — intentional catch-all for resilience
+        msg = str(exc)
+        reason = "live YouTube API is unavailable right now"
+        low = msg.lower()
+        if "quota" in low:
+            reason = "YouTube API daily quota exceeded — resets at midnight Pacific"
+        elif "invalid_grant" in low or "401" in low or "refresh" in low:
+            reason = "YouTube API auth token expired — needs re-authentication"
+        st.warning(
+            f"⚠️ **{label}** unavailable: {reason}. "
+            "File-based tabs (Brief Queue, Title Builder, Playlists) still work."
+        )
+        with st.expander("Error detail"):
+            st.code(msg or type(exc).__name__)
 
 # -----------------------------------------------------------------------------
 # Password gate (for shared/cloud deployment)
@@ -679,7 +704,7 @@ tab_overview, tab_daily, tab_videos, tab_detail, tab_competitors, tab_briefs, ta
 # -----------------------------------------------------------------------------
 # Tab: Overview
 # -----------------------------------------------------------------------------
-with tab_overview:
+with tab_overview, api_guard("Overview"):
     with st.spinner("Loading channel info..."):
         info = load_my_channel_info()
         # The catalog (uploads playlist) refreshes faster than the
@@ -921,7 +946,7 @@ with tab_overview:
 # -----------------------------------------------------------------------------
 # Tab: Daily Views (historical per-video + channel totals)
 # -----------------------------------------------------------------------------
-with tab_daily:
+with tab_daily, api_guard("Daily Views"):
     st.subheader("📈 What's earning views right now")
     st.caption("Per-video momentum view. Δ = absolute view count change vs. the prior equal-length period. Sparkline = last 14 days. Analytics API has a 24-48h lag, so today and yesterday may read low.")
 
@@ -1078,7 +1103,7 @@ with tab_daily:
 # -----------------------------------------------------------------------------
 # Tab: Videos
 # -----------------------------------------------------------------------------
-with tab_videos:
+with tab_videos, api_guard("Videos"):
     with st.spinner("Loading video catalog + retention..."):
         videos = load_all_my_videos()
         retention = load_video_retention_28d()
@@ -1195,7 +1220,7 @@ with tab_videos:
 # -----------------------------------------------------------------------------
 # Tab: Video Detail
 # -----------------------------------------------------------------------------
-with tab_detail:
+with tab_detail, api_guard("Video Detail"):
     st.subheader("🔍 Drill down into any video")
     st.caption("Pick a video to see full metadata, metrics, traffic sources, keyword analysis, and auto-recommendations.")
 
@@ -1419,7 +1444,7 @@ with tab_detail:
 # -----------------------------------------------------------------------------
 # Tab: Competitors
 # -----------------------------------------------------------------------------
-with tab_competitors:
+with tab_competitors, api_guard("Competitors"):
     st.subheader("Side-by-side comparison")
     with st.spinner("Loading competitor data..."):
         my_info = load_my_channel_info()
