@@ -89,8 +89,8 @@
         "DEEP RELAXATION"
     ],
     "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-deep-teal patterned border with lotus and soft healing-light motifs, aged warm parchment background, warm calming palette (deep teal, warm amber, aged cream, soft golden glow). Central figure: serene musician in soft teal-and-gold attire seated cross-legged playing dilruba (bowed string instrument held upright, bow in hand) in a quiet peaceful courtyard. Warm gentle light, expression of deep calm and emotional ease — peaceful, uplifted, at rest. Bold dark-teal serif overlay text reading 'DEEP RELAXATION' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Deep teal, warm amber, and aged cream palette, peaceful healing mood, single composed scene, no clutter. NOTE: placeholder thumbnail concept — confirm/adjust before publish.",
-    "suno_prompt_A": "N/A — rendered from backlog (audio already produced). No Suno generation required.",
-    "suno_prompt_B": "N/A — rendered from backlog (audio already produced). No Suno generation required.",
+    "suno_prompt_A": "Instrumental only, no vocals. Uplifting Indian instrumental music featuring expressive Dilruba lead melodies, sparkling Santoor, rhythmic acoustic strings, soft tabla grooves, gentle hand percussion, warm tanpura, and subtle ambient textures. Positive, energizing, and emotionally soothing with a steady flowing rhythm. Inspiring sunrise-like atmosphere, light classical influences, smooth transitions, vibrant yet relaxing mood, perfect for stress relief, mental clarity, focus, yoga, meditation, productivity, and emotional renewal.",
+    "suno_prompt_B": "Same as A — this is the actual prompt used to generate the rendered backlog track (no separate B variant).",
     "production_spec": {
         "duration_minutes": 90,
         "status": "AUDIO RENDERED (from backlog) — no production needed; needs thumbnail + final title/thumb lock + upload",
