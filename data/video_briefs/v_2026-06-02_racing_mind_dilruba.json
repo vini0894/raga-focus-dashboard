@@ -1,0 +1,111 @@
+{
+    "id": "v_2026-06-02_racing_mind_dilruba",
+    "status": "DRAFT",
+    "date_shipped": null,
+    "created_at": "2026-05-31",
+    "planned_date": "2026-06-02",
+    "planned_slot": "PM (7pm IST)",
+    "title": "Quiet a Racing Mind | Slow Dilruba | Indian Classical",
+    "title_variants": {
+        "A": "Quiet a Racing Mind | Slow Dilruba | Indian Classical",
+        "B": "Quiet a Racing Mind | Slow Dilruba | Indian Classical"
+    },
+    "components": {
+        "problem": "the day is done but the mind won't switch off / thoughts keep looping back on themselves in the evening / lying or sitting there as the head replays everything / mental chatter that won't quiet down at night / need something to slow the looping mind without forcing sleep",
+        "instrument": "Dilruba",
+        "raga": "Kafi",
+        "hz": "432Hz",
+        "wave": "Theta"
+    },
+    "validated_keywords": [
+        "Quiet a Racing Mind (slot 1 — problem/outcome lead; 'racing thoughts music' is in bank but UNVALIDATED, no VidIQ score)",
+        "Slow Dilruba (slot 2 — instrument anchor; 'Slow Dilruba' bank score 34 Low, 'Dilruba Instrumental' 67 — instrument validated at 63)",
+        "Indian Classical (slot 3 — genre anchor; 'indian classical music' 66)",
+        "dilruba (63 — validated, instrument)",
+        "indian classical music (66 — validated)",
+        "theta (61 — validated, wave)",
+        "432hz (74 — validated, hz)",
+        "restless mind (62 — validated, tag)",
+        "quiet night music (61 — validated)",
+        "night music (71 — validated)",
+        "evening music (67 — validated)",
+        "healing music (75 — validated)",
+        "meditation music (80 — validated)",
+        "racing thoughts music (UNVALIDATED — in bank, no VidIQ score)",
+        "kafi (UNVALIDATED — raga, no VidIQ score)",
+        "music for overthinkers (61 — validated, related lane)",
+        "calm your mind (68 — validated)"
+    ],
+    "ab_test": {
+        "test_id": null,
+        "test_type": "NO A/B — single title, single thumbnail",
+        "variant_A": {
+            "title": "Quiet a Racing Mind | Slow Dilruba | Indian Classical",
+            "thumbnail_text": "MIND RACING?",
+            "hypothesis": "Straight catalog ship — no test running. Title leads with the racing-mind problem (distinct from anxiety/overthinking framing the channel just used), instrument anchor in slot 2, genre anchor in slot 3. Thumbnail uses a question hook (proven in evening/relaxation lane, Test 14). Focus is lane coverage: evening racing/looping mind, first Kafi on Dilruba."
+        },
+        "variant_B": {
+            "title": "Quiet a Racing Mind | Slow Dilruba | Indian Classical",
+            "thumbnail_text": "MIND RACING?",
+            "hypothesis": "Same as A — no test."
+        },
+        "test_method": "No A/B this ship. Straight catalog ship using proven evening-lane format (problem lead + Q-hook thumb). Part of the June 1-8 full-volume test week; testing is concentrated on other ships in the week."
+    },
+    "strategic_bet": "STRONG-tier catalog ship — Tue June 2 PM (7pm IST), double-day partner with the Sarod AM ship. Opens the evening 'racing mind / thoughts that won't switch off' lane — deliberately distinct from June 1's anxiety lane (Bansuri) and from Dilruba's own May 26 'Overthinking Music', so the title leads with a racing/looping-mind frame rather than anxiety or overthinking. 7-day cooldown clear from the May 26 Dilruba ship. First Kafi raga on Dilruba (last Dilruba ragas were Bilawal May 19, Yaman May 26) — Kafi's komal Ga + komal Ni give a soft, tender late-evening soothing character that fits a mind winding down. Dilruba is bowed, vocal and melancholic — the right instrument to mirror a looping mind gradually losing its grip. No tabla, spacious, theta for mental quieting.",
+    "success_good": "3000+ views, 28%+ AVD, 4%+ CTR in 48h — in line with Dilruba's typical 28-60K impression band (e.g. May 1 4.55% CTR / 32.9% AVD, May 26 3.78% CTR)",
+    "success_breakthrough": "8000+ views, 32%+ AVD — racing-mind lane confirmed as a repeatable Dilruba slot distinct from anxiety/overthinking; lock for monthly rotation. (Note: the May 9 2.12M-impression result was a one-off outlier, NOT a realistic target.)",
+    "failure_mode": "<1500 views or <3.5% CTR in 48h — racing-mind framing too close to the recently-used overthinking/anxiety titles and cannibalizing, OR Kafi too subtle for browse; pivot next Dilruba ship back to a proven evening frame and a different fresh raga.",
+    "reference_ships": [
+        {
+            "title": "Anxiety Relief Music | Clear Your Mind | Dilruba",
+            "pub": "2026-05-01",
+            "impressions": 158695,
+            "views": 10182,
+            "ctr_pct": 4.55,
+            "avd_pct": 32.9,
+            "notes": "Strong Dilruba evening benchmark — high AVD, solid CTR"
+        },
+        {
+            "title": "Morning Energy Music | Dilruba Raga Yaman",
+            "pub": "2026-05-09",
+            "impressions": 2120168,
+            "views": 114206,
+            "ctr_pct": 3.8,
+            "avd_pct": null,
+            "notes": "OUTLIER — 2.12M impressions is a one-off, not a planning baseline. Do not anchor expectations here."
+        },
+        {
+            "title": "Overthinking Music | Dilruba",
+            "pub": "2026-05-26",
+            "impressions": 28296,
+            "views": 1601,
+            "ctr_pct": 3.78,
+            "avd_pct": null,
+            "notes": "Most recent Dilruba ship — typical 28K-impression band. Racing-mind frame here is the deliberate non-overthinking sibling lane."
+        }
+    ],
+    "tags": "racing thoughts music, quiet a racing mind, restless mind, overthinking music, dilruba, dilruba instrumental, slow dilruba, indian classical music, indian instrumental music, raga kafi, kafi, evening music, night music, quiet night music, calm your mind, meditation music, healing music, theta waves, 432hz, raga focus",
+    "description": "Quiet a Racing Mind | Slow Dilruba | Indian Classical\n\nThe day is over, but your mind didn't get the message.\n\nThe thoughts keep looping — replaying conversations, rehearsing tomorrow, circling back on the same worry you already set down an hour ago. You're tired, but your head won't slow to match. This isn't about forcing sleep. It's about giving a racing mind somewhere softer to land.\n\nThis is 90 minutes of slow Dilruba in Raga Kafi — a bowed Indian string instrument that sounds almost like a human voice, warm and a little melancholic. Kafi is a tender late-evening raga; its gentle, soft notes don't demand anything from you. The Dilruba's long, vocal phrases move slowly enough that the looping thoughts gradually lose their grip. No percussion, no rhythm to chase — just the bow drawing one unhurried line after another.\n\nLeave it playing while you sit, read, journal, or simply let the evening close. Let the mind slow down to the pace of the music instead of the other way around.\n\n🎵 What you'll hear:\n- Dilruba — bowed Indian string instrument, warm and vocal, like a voice gently sighing\n- Raga Kafi — soft, tender late-evening raga with soothing minor-leaning notes\n- Long, slow sustained phrases with gentle slides between them\n- No tabla, no percussion — spacious and unhurried\n- 90 unbroken minutes at 432Hz with subtle Theta-wave tones underneath\n\n⏱ Chapters\n0:00    Settling the noise\n20:00   The mind begins to slow\n45:00   Letting the loops fade\n70:00   Quiet and still\n85:00   Gentle close\n\n🧠 How to use:\nPress play and stop trying to direct your thoughts. Let the Dilruba's slow phrases set the pace. Each time the mind speeds back up, return your attention to the bow. There's nothing to do but let it slow you down.\n\n⏱ Best for:\n• An evening mind that won't switch off\n• Thoughts that keep looping at night\n• Winding down after a long or busy day\n• Quiet reading, journaling, or sitting before bed\n• Slowing a restless head without forcing sleep\n\n📺 Subscribe to Raga Focus for daily Indian classical music for anxiety, overthinking, sleep, and calm.\n\n— Raga Focus\n\n#racingmind #dilruba #indianclassicalmusic #ragakafi #432hz #thetawaves #restlessmind #eveningcalm #overthinking #ragafocus #indianinstrumental",
+    "thumbnail_text_main": "MIND RACING?",
+    "thumbnail_text_variants": [
+        "MIND RACING?"
+    ],
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate patterned border with deep-indigo and muted-gold evening motifs (crescent moon, night lotus, drifting birds settling), aged warm parchment background, late-evening palette (deep indigo and twilight blue with soft warm lamplight glow). Central figure: serene musician in muted cream-and-indigo attire seated cross-legged on a simple woven mat playing a dilruba (bowed Indian string instrument held upright, bow drawn slowly across the strings, eyes gently closed), in a quiet lamplit evening interior or open verandah at dusk. A single oil lamp casting a soft warm glow, faint stars beginning above. Expression of settling stillness — a mind quieting, not tense. Bold deep-teal serif overlay text reading 'MIND RACING?' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Deep indigo, twilight blue, warm lamplight gold and aged cream palette, calm late-evening mood, single composed scene, no clutter.",
+    "suno_prompt_A": "Indian classical dilruba solo in Raga Kafi, evening mood for a racing mind that won't switch off, warm bowed string instrument with a vocal sustained tone, gentle portamento and slow meend slides between notes, soft harmonium-like resonance, Kafi's soft flat 3rd and flat 7th giving a tender soothing late-evening character, tanpura drone underneath, no tabla, no percussion, 432Hz tuning, 55-65 BPM, warm mid register, spacious and unhurried, long sustained phrases with space to breathe, theta binaural at -20dB, cinematic meditative production, seamless loop, like the looping thoughts finally losing their grip and the mind slowing down, no vocals, no humming, no human voice",
+    "suno_prompt_B": "Instrumental only, no vocals, no humming, Indian classical dilruba, Raga Kafi — soft flat 3rd and flat 7th, tender soothing evening raga, warm bowed string with vocal sustained tone, gentle portamento and slow meend slides, harmonium-like resonance, tanpura drone, no tabla, no percussion, 432Hz, 55-65 BPM, theta binaural at -20dB, warm mid register, spacious and unhurried, seamless loop, like the looping thoughts finally losing their grip",
+    "production_spec": {
+        "duration_minutes": 90,
+        "bpm_range": "55-65",
+        "key_frequency_hz": 432,
+        "binaural_carrier_hz": 200,
+        "binaural_wave": "Theta",
+        "binaural_beat_hz": 5.0,
+        "lufs_target": -14,
+        "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+        "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+        "notes": "Raga Kafi — soft, tender late-evening raga. Sa Re Ga(komal) Ma Pa Dha Ni(komal) Sa. The komal Ga (flat 3rd) and komal Ni (flat 7th) give Kafi its gentle, slightly minor, soothing romance/tenderness — well suited to a mind winding down without pushing toward sleep. NO tabla and NO other percussion — Dilruba is bowed, keep it spacious so the vocal sustained tone and slow meend carry the silence. Tanpura drone only. Theta 5Hz binaural (carrier ~200Hz) — deep mental quieting for a looping mind, deeper than Alpha but not the Delta of a pure sleep ship. LUFS -14 (evening, viewer awake and present, not drifting off). First clip must establish the warm vocal bowed tone and slow portamento before extending. EMOTIONAL TAG ROTATION: clip 1: 'like the looping thoughts finally losing their grip' · clip 2: 'the mind slowing down to the pace of the bow' · clip 3: 'a tired head finally allowed to go quiet'. 90min = 3-4 Suno clips + loop extension. First Kafi on Dilruba — confirm the raga reads as Kafi (komal Ga + komal Ni) in the first clip before committing."
+    },
+    "experiment_notes": "No A/B test — straight catalog ship. Part of the June 1-8 full-volume test week; Tuesday June 2 is a double day (this Dilruba PM ship + a Sarod AM ship). This ship opens the evening 'racing mind / thoughts that won't switch off' lane, deliberately framed away from anxiety (June 1 Bansuri owns it) and overthinking (Dilruba May 26 just used it) to avoid cannibalization within the calm/healing cluster. It is also the first Kafi raga on Dilruba. If it hits 3K+ views and 28%+ AVD, the racing-mind frame is a viable distinct evening lane — consider a future thumbnail test ('MIND RACING?' Q-hook vs an outcome thumb like 'QUIET THE LOOP') once baseline data exists. Watch whether 'racing mind' framing measurably out- or under-performs the recent overthinking/anxiety titles to inform whether these are genuinely separate lanes."
+    ,
+    "playlists": ["Healing & Anxiety Relief"]
+}

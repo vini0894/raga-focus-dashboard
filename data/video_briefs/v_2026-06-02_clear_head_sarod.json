@@ -1,0 +1,114 @@
+{
+    "id": "v_2026-06-02_clear_head_sarod",
+    "status": "DRAFT",
+    "date_shipped": null,
+    "created_at": "2026-05-31",
+    "planned_date": "2026-06-02",
+    "planned_slot": "AM (7am IST)",
+    "title": "Clear Your Head Music | Slow Sarod | Indian Classical",
+    "title_variants": {
+        "A": "Clear Your Head Music | Slow Sarod | Indian Classical",
+        "B": "Clear Your Head Music | Slow Sarod | Indian Classical"
+    },
+    "components": {
+        "problem": "woke up with a foggy, cluttered head / mind still tangled from yesterday / can't think straight before the day starts / need something to clear the morning fog and find a clean mental starting point — not to relax into sleep, not to soothe anxiety, just to think clearly",
+        "instrument": "Sarod",
+        "raga": "Ahir Bhairav",
+        "hz": "432Hz",
+        "wave": "Alpha"
+    },
+    "validated_keywords": [
+        "Clear Your Head Music (slot 1 — outcome/directive lead, morning cognitive lane; clear your head music = 58)",
+        "Slow Sarod (slot 2 — instrument anchor; sarod = unvalidated, sarod music tag = 62)",
+        "Indian Classical (slot 3 — genre anchor; indian classical music = 66)",
+        "clear your head music (58)",
+        "brain fog (70)",
+        "think clearly (70)",
+        "deep focus music (tag 70)",
+        "focus music (tag 84)",
+        "deep focus (tag 73)",
+        "brain fog music (tag 63)",
+        "brain fog reset (tag 62)",
+        "morning focus (65)",
+        "morning focus music (tag 68)",
+        "sarod music (tag 62)",
+        "indian classical music (66)",
+        "indian instrumental music (67)",
+        "432hz (74)",
+        "ahir bhairav (unvalidated)",
+        "sarod (instrument, unvalidated)",
+        "alpha (wave, unvalidated)",
+        "raga focus (tag 66)"
+    ],
+    "ab_test": {
+        "test_id": null,
+        "test_type": "NO A/B — single title, single thumbnail",
+        "variant_A": {
+            "title": "Clear Your Head Music | Slow Sarod | Indian Classical",
+            "thumbnail_text": "CLEAR HEAD",
+            "hypothesis": "Straight ship — no test running. Title follows morning lane rule (outcome/directive SEO lead, 3-slot clean) with a fresh validated lead ('clear your head music' = 58) that does NOT reuse 'Mental Clarity' (May 15) or 'Morning Reset' (May 23). Thumbnail follows morning lane rule (outcome/directive, NOT a question)."
+        },
+        "variant_B": {
+            "title": "Clear Your Head Music | Slow Sarod | Indian Classical",
+            "thumbnail_text": "CLEAR HEAD",
+            "hypothesis": "Same as A — no test."
+        },
+        "test_method": "No A/B this ship. Straight catalog ship for the June 1-8 full-volume experiment week (every day shipped, Tue/Thu doubles). Single title, single thumbnail — proven morning cognitive format applied to a fresh lead keyword. Data feeds the volume baseline, not a controlled comparison."
+    },
+    "strategic_bet": "FILLER / catalog — Tue June 2 AM. Double-day partner with a Dilruba PM ship. Sarod is a consistent strong-tier instrument (~48K impressions across recent ships) so it carries a catalog slot well. Morning cognitive lane: clearing a foggy head before the day — distinct from anxiety and sleep, and distinct from the prior two Sarod morning ships ('Mental Clarity'/'Brain Fog Reset' May 15, 'Morning Reset'/'Clear Your Head' May 23) by using a fresh validated lead keyword. First Ahir Bhairav on Sarod (rotates off Bilawal May 15/23 and Bhairavi May 28) — a serene-devotional morning raga that fits the clean-start cognitive intent without going into anxiety or energy framing.",
+    "success_good": "2200+ views, 24%+ AVD, 4%+ CTR in 48h (in line with Sarod's recent ~40-58K impr / ~2200-3300 view band)",
+    "success_breakthrough": "3500+ views, 28%+ AVD, 4.5%+ CTR — 'clear your head' confirms as a repeatable Sarod morning cognitive lead; Ahir Bhairav validated as a fresh morning raga for the instrument; lock as a rotating slot",
+    "failure_mode": "<1800 views or <3.5% CTR in 48h — the third Sarod morning-cognitive ship in ~3 weeks cannibalizes the prior two; rotate Sarod off the morning lane for a cycle or push the lead keyword broader (e.g. 'deep focus music')",
+    "reference_ships": [
+        {
+            "title": "Mental Clarity Music | Slow Sarod | Brain Fog Reset",
+            "pub": "2026-05-15",
+            "impressions": 58139,
+            "views": 3326,
+            "ctr_pct": 4.07,
+            "avd_pct": 23.94,
+            "notes": "Best Sarod morning-cognitive impressions/views to date — lead used 'Mental Clarity' (do not reuse)"
+        },
+        {
+            "title": "Morning Reset Music | Slow Sarod",
+            "pub": "2026-05-23",
+            "impressions": 40717,
+            "views": 2484,
+            "ctr_pct": 4.44,
+            "avd_pct": 27.46,
+            "notes": "Strongest CTR + AVD of the Sarod morning ships — lead used 'Morning Reset' (do not reuse)"
+        },
+        {
+            "title": "Music for Morning Anxiety | Sarod",
+            "pub": "2026-05-28",
+            "impressions": 45437,
+            "views": 2229,
+            "ctr_pct": 3.63,
+            "avd_pct": null,
+            "notes": "Anxiety framing — lower CTR than the cognitive-lane ships; supports keeping this ship in the cognitive lane, not anxiety"
+        }
+    ],
+    "tags": "clear your head music, brain fog music, think clearly, deep focus music, focus music, morning focus music, sarod music, slow sarod, indian classical music, indian instrumental music, mental clarity music, brain fog reset, morning music, ahir bhairav, raga ahir bhairav, 432hz, alpha waves, concentration music, study music, raga focus",
+    "description": "Clear Your Head Music | Slow Sarod | Indian Classical\n\nYou woke up but your head didn't. There's a fog over everything — yesterday's leftovers, half-formed worries, noise with no shape. You can't think straight yet.\n\nThis is the music for that exact moment. Not to relax you back toward sleep, not to soothe anxiety — just to clear the fog and give your mind a clean place to start the day from.\n\nThis is 90 minutes of slow Sarod in Raga Ahir Bhairav — a serene, devotional morning raga. The Sarod is fretless and resonant; its plucked notes slide and bloom and then settle, like the fog lifting off the mind one phrase at a time. A light tabla keeps a quiet forward pulse underneath, so the music moves you gently toward the day instead of holding you still.\n\n🎵 What you'll hear:\n- Sarod — fretless plucked strings, deep resonant sustain and long meend slides\n- Raga Ahir Bhairav — a serene, devotional morning raga (flat Re and flat Ni)\n- Light, low tabla — a quiet forward pulse, never busy\n- A clean, unhurried morning texture — clarity, not energy\n- 90 unbroken minutes at 432Hz tuning\n\n⏱ Chapters\n0:00    The fog — settling in\n20:00   Clearing\n45:00   Open and clear\n70:00   Steady morning focus\n85:00   Gentle close\n\n🧠 How to use:\nPress play before you decide anything. Let the Sarod do the clearing — drink your water, sit for a minute, let the first thoughts arrive on their own. Keep it on through your first task and let the light pulse carry you into the day.\n\n⏱ Best for:\n• Clearing a foggy head first thing in the morning\n• Thinking clearly before the day starts\n• Morning deep work and focused tasks\n• A calm, clean start without alarm-clock urgency\n• Journaling or planning the day\n\n📺 Subscribe to Raga Focus for daily Indian classical music for focus, meditation, anxiety, and sleep.\n\n— Raga Focus\n\n#clearyourhead #sarod #brainfog #deepfocusmusic #focusmusic #indianclassicalmusic #432hz #ahirbhairav #ragafocus #morningfocus #indianinstrumental",
+    "thumbnail_text_main": "CLEAR HEAD",
+    "thumbnail_text_variants": [
+        "CLEAR HEAD"
+    ],
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate warm-gold-and-saffron patterned border with dawn sun-disc, lotus and morning bird motifs, aged warm parchment background, early morning palette (clear golden light, soft amber glow at the horizon, thinning mist). Central figure: serene musician in cream-and-gold attire seated cross-legged playing the sarod (held flat across the lap, fretless metal-faced fingerboard, large round resonator, plucked with a coconut-shell plectrum, eyes calm and clear), in a quiet open-air morning courtyard. Mist visibly lifting and thinning around the figure, the air clearing toward the horizon. Expression of clear, settled alertness — awake and unclouded. Bold deep-teal serif overlay text reading 'CLEAR HEAD' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Warm morning gold, clear amber, and aged cream palette, mist-lifting clarity mood, single composed scene, no clutter.",
+    "suno_prompt_A": "Indian classical sarod solo in Raga Ahir Bhairav, a serene devotional morning raga with flat 2nd and flat 7th giving a fresh ascending calm, clear-headed morning clarity mood, deep resonant fretless plucked sarod with long liquid meend slides and warm sustained sympathetic resonance, light low supportive tabla holding a quiet unhurried forward pulse, 432Hz tuning, 60-70 BPM, warm mid register, spacious but gently moving, cinematic meditative production, seamless loop, alpha binaural at -20dB, like the morning fog lifting off the mind one phrase at a time leaving a clean clear place to begin the day, no vocals, no humming, no human voice",
+    "suno_prompt_B": "Instrumental only, no vocals, no humming, Indian classical sarod, Raga Ahir Bhairav — serene devotional morning raga, flat 2nd and flat 7th, fresh ascending calm, deep resonant fretless plucked sarod, long liquid meend slides, warm sustain, light low tabla keeping a quiet pulse, 432Hz, 60-70 BPM, alpha binaural at -20dB, warm mid register, spacious and moving, seamless loop, like morning fog lifting off the mind",
+    "production_spec": {
+        "duration_minutes": 90,
+        "bpm_range": "60-70",
+        "key_frequency_hz": 432,
+        "binaural_carrier_hz": 210,
+        "binaural_wave": "Alpha",
+        "binaural_beat_hz": 10.0,
+        "lufs_target": -14,
+        "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+        "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+        "notes": "Raga Ahir Bhairav — a serene, devotional morning raga. Sa Re(komal) Ga Ma Pa Dha Ni(komal) Sa. The komal Re (flat 2nd) gives the grave devotional opening of the Bhairav family, while the natural Ga/Dha and komal Ni (flat 7th) lift it into a softer, sweeter, fresher morning ascending quality than pure Bhairav — serene rather than severe, which fits a clean clear-headed morning start without anxiety or energy. SAROD is plucked (fretless metal fingerboard, coconut-shell plectrum) so light tabla is OK and welcome here — it gives a quiet forward morning momentum that suits the cognitive 'move into the day' intent. Keep tabla LOW and supportive, never busy or featured. Alpha 10Hz binaural — relaxed alertness, present and awake (not Theta/Delta). LUFS -14 (morning awake viewer). EMOTIONAL TAG ROTATION: clip 1: 'like the morning fog lifting off the mind, leaving a clean place to begin' · clip 2: 'each plucked note blooms then settles — the head clearing one phrase at a time' · clip 3: 'clear morning light filling a quiet room, unhurried and unclouded'. 90min = 3-4 Suno clips + loop extension."
+    },
+    "playlists": ["Morning & Focus"],
+    "experiment_notes": "Part of the June 1-8 full-volume test week — every day shipped, with Tuesday/Thursday doubles. Straight catalog ship, NO A/B (single title, single thumbnail). This is the morning AM half of the Tue June 2 double; pairs with a Dilruba PM ship. Lead keyword 'clear your head music' (58) is a deliberate fresh pick that avoids reusing the 'Mental Clarity' (May 15) and 'Morning Reset' (May 23) leads of the prior two Sarod morning ships — third Sarod morning-cognitive ship in ~3 weeks, so cannibalization is the main risk to watch. First Ahir Bhairav on Sarod. Compare 48h impressions/CTR against the May 15/23 cognitive ships to gauge lane saturation."
+}

@@ -1,0 +1,110 @@
+{
+    "id": "v_2026-06-06_insomnia_tanpura",
+    "status": "DRAFT",
+    "date_shipped": null,
+    "created_at": "2026-05-31",
+    "planned_date": "2026-06-06",
+    "planned_slot": "PM (7pm IST)",
+    "title": "Sleep Music | Tanpura Drone | Drift Off",
+    "title_variants": {
+        "A": "Sleep Music | Tanpura Drone | Drift Off",
+        "B": "Sleep Music | Tanpura Drone | Drift Off"
+    },
+    "components": {
+        "problem": "can't fall asleep / the mind won't shut off at night / lying awake with thoughts circling / need a continuous, melody-free sound to surrender to and drift into sleep",
+        "instrument": "Tanpura",
+        "raga": "Darbari",
+        "hz": "432Hz",
+        "wave": "Delta"
+    },
+    "validated_keywords": [
+        "Sleep Music (slot 1 — sleep lane lead, vidiq 75)",
+        "Tanpura Drone (slot 2 — instrument anchor, tanpura vidiq 74)",
+        "Drift Off (slot 3 — outcome anchor)",
+        "sleep music",
+        "relaxing sleep music",
+        "insomnia relief",
+        "soft sleep music",
+        "slow sleep music",
+        "music before bed",
+        "tanpura",
+        "432hz",
+        "delta",
+        "binaural",
+        "deep relaxation music",
+        "night music",
+        "indian classical music",
+        "raga focus"
+    ],
+    "ab_test": {
+        "test_id": null,
+        "test_type": "NO A/B — single title, single thumbnail",
+        "variant_A": {
+            "title": "Sleep Music | Tanpura Drone | Drift Off",
+            "thumbnail_text": "CAN'T SLEEP?",
+            "hypothesis": "Straight catalog ship — no test running. Title leads with the channel's strongest sleep-lane keyword ('sleep music', vidiq 75), anchors the instrument ('Tanpura Drone'), and closes on the outcome ('Drift Off'). Thumbnail uses a Q-hook ('CAN'T SLEEP?') which fits the insomnia/sleeplessness frame for a night browse window. Filler ship to hold daily cadence on the channel's dead Saturday slot."
+        },
+        "variant_B": {
+            "title": "Sleep Music | Tanpura Drone | Drift Off",
+            "thumbnail_text": "CAN'T SLEEP?",
+            "hypothesis": "Same as A — no test."
+        },
+        "test_method": "No A/B this ship. Single title, single thumbnail, straight catalog ship. Deliberate filler on the channel's worst-performing weekday (Saturday) — not worth burning a test slot or a Strong/Hero instrument."
+    },
+    "strategic_bet": "FILLER — Sat June 6 PM (7pm IST). This ship exists purely to keep the 1-video/day cadence intact during the June 1-8 full-volume test week. Channel data shows Saturdays always dip (even the hero Sitar dropped on a Saturday), so the day is a known dead slot by design — this is NOT an impressions play. Tanpura is a true filler instrument here: a melody-free drone is the lowest-effort, lowest-stakes thing we can put in the dead Saturday slot without wasting a Strong or Hero instrument on a day that won't convert. Sleep/insomnia lane, where Tanpura has proven baseline (May 13 'Insomnia Relief Music' hit 31,473 impr / 1,949 views / 4.63% CTR / 17.12% AVD). 16d+ since the last Tanpura ship (Yaman, May 21) — cooldown clear. Goal: maintain cadence so YouTube doesn't read a pattern change, full stop.",
+    "success_good": "1500+ views, 4%+ CTR, 15%+ AVD in 48h — Tanpura sleep baseline maintained despite the Saturday suppression. (Realistic bar: Tanpura sleep tops out ~20-31K impr and Saturday cuts into that.)",
+    "success_breakthrough": "3000+ views and 18%+ AVD in 48h — Saturday slot proves it can still carry a quiet sleep ship; worth keeping a recurring low-effort Tanpura sleep filler on Saturdays.",
+    "failure_mode": "Even if this gets <800 views, it is NOT a failure — the ship's only job is to maintain daily cadence on a structurally dead day. True failure would be the brief being so weak it drags channel-average AVD down (e.g. <12% AVD signalling the drone is unlistenable). The success metric here is simply: did we ship and hold cadence.",
+    "reference_ships": [
+        {
+            "title": "Insomnia Relief Music | Tanpura Drone | 1.5 Hours",
+            "pub": "2026-05-13",
+            "impressions": 31473,
+            "views": 1949,
+            "ctr_pct": 4.63,
+            "avd_pct": 17.12,
+            "notes": "Best Tanpura sleep-lane reference — same instrument, same lane. Title we are varying away from."
+        },
+        {
+            "title": "Morning Meditation Music | Tanpura Instrumental",
+            "pub": "2026-05-21",
+            "impressions": 21736,
+            "views": 1277,
+            "ctr_pct": 4.3,
+            "avd_pct": null,
+            "notes": "Most recent Tanpura ship (Yaman). 16d+ cooldown clear by June 6."
+        },
+        {
+            "title": "Let Go Before Sleep | 40 Min Tanpura Drone",
+            "pub": "2026-04-19",
+            "impressions": 4498,
+            "views": 141,
+            "ctr_pct": null,
+            "avd_pct": null,
+            "notes": "Earlier Tanpura sleep ship — short-form, low reach."
+        }
+    ],
+    "tags": "sleep music, relaxing sleep music, insomnia relief, soft sleep music, slow sleep music, music before bed, tanpura, tanpura drone, tanpura music, indian classical music, indian instrumental music, raga darbari, 432hz, delta waves, binaural, deep relaxation music, night music, drone music, music for sleep, raga focus",
+    "description": "Sleep Music | Tanpura Drone | Drift Off\n\nIt's late, and your mind still won't shut off.\n\nThe thoughts keep circling — the day you just had, the day coming tomorrow — and the harder you try to sleep, the more awake you feel. You don't need another melody to follow. You need something to let go into. Something with no beginning and no end, just a steady, unbroken hum you can sink beneath.\n\nThat's what the tanpura does. It's the drone — no melody, no rhythm, nothing for the mind to grab onto. Just a slow, cyclic plucking of strings and the warm shimmer of overtones rising and folding back into each other, on and on. This recording is tuned to the deep, weighted color of Raga Darbari — the great late-night raga, grave and bottomless — so even a drone carries the gravity of the small hours.\n\nLay it under the dark, let the hum fill the room, and stop trying. Let the night itself do the rest.\n\n🎵 What you'll hear:\n- Tanpura — the Indian drone, a continuous resonant wash of overtones\n- Slow, cyclic plucking of strings with the soft jawari buzz that makes it shimmer\n- The deep, weighted color of Raga Darbari — the late-night raga, grave and bottomless\n- No melody, no rhythm, no tabla — nothing to follow, only something to sink into\n- 90 unbroken minutes at 432Hz tuning, with a gentle delta undertone\n\n⏱ Chapters\n0:00    Settling into the dark\n20:00   The hum deepens\n45:00   Letting go\n70:00   Drifting under\n85:00   Stillness\n\n🧠 How to use:\nDim the lights and lie down. Set the volume low — just enough to fill the edges of the room. Don't listen for anything. There's no melody to wait for. Let the drone become the background of the dark and let your attention dissolve into it.\n\n⏱ Best for:\n• Falling asleep when the mind won't stop\n• Insomnia and restless, wakeful nights\n• Lying down to let go at the end of the day\n• A continuous, melody-free sleep background\n• Deep rest without anything to track or follow\n\n📺 Subscribe to Raga Focus for daily Indian classical music for meditation, yoga, anxiety, and sleep.\n\n— Raga Focus\n\n#sleepmusic #tanpura #insomniarelief #relaxingsleepmusic #indianclassicalmusic #432hz #ragadarbari #ragafocus #deltawaves #dronemusic #musicforsleep",
+    "thumbnail_text_main": "CAN'T SLEEP?",
+    "thumbnail_text_variants": [
+        "CAN'T SLEEP?"
+    ],
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate deep-indigo-and-silver patterned border with night motifs — crescent moon, stars, and night lotus, aged dark parchment background, deep nocturnal palette (midnight indigo, soft moonlit silver, faint warm lamp glow). Central figure: a serene figure reclining at rest in a quiet moonlit chamber, eyes gently closed, a tanpura resting upright beside them (tall long-necked drone instrument with a large round gourd body and four long strings, not being actively played — just resonating in the stillness). A single oil lamp glows faintly in the corner, soft moonlight falling through a latticed window. Expression of complete surrender, the body finally letting go. Bold deep-teal serif overlay text reading 'CAN'T SLEEP?' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Midnight indigo, moonlit silver, and aged dark cream palette, deep-night stillness mood, single composed scene, no clutter.",
+    "suno_prompt_A": "Indian classical tanpura drone, deep sleep and insomnia mood, continuous resonant drone with no melody and no rhythm, slow plucked cyclic strings in the steady Sa-Pa-Sa drone cycle, rich overtone wash with the soft jawari buzzing shimmer of the bridge, Raga Darbari coloring — heavy komal-dominant late-night gravity, grave and bottomless, no tabla, no percussion, no flute, 432Hz tuning, 40-50 BPM drone feel, deep warm low register, delta binaural at -20dB, cinematic spacious meditative production, seamless loop, like the night itself humming you to sleep, no vocals, no humming, no human voice",
+    "suno_prompt_B": "Instrumental only, no vocals, no humming, Indian classical tanpura drone, Raga Darbari — heavy komal-dominant late-night gravity, continuous resonant drone, no melody, slow plucked cyclic strings, rich overtone wash, soft jawari buzzing shimmer, no tabla, no percussion, 432Hz, 40-50 BPM drone feel, delta binaural at -20dB, deep warm low register, spacious meditative, seamless loop, like the night itself humming you to sleep",
+    "production_spec": {
+        "duration_minutes": 90,
+        "bpm_range": "40-50",
+        "key_frequency_hz": 432,
+        "binaural_carrier_hz": 180,
+        "binaural_wave": "Delta",
+        "binaural_beat_hz": 2.5,
+        "lufs_target": -18,
+        "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+        "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+        "notes": "Tanpura is a pure DRONE instrument — the continuous Sa-Pa-Sa cyclic plucking of strings, no melody and no rhythm. This is the channel's dedicated sleep/insomnia tool. Raga Darbari's deep komal-dominant character lends late-night gravity even to a melody-free drone bed — the heaviness reads as the small hours. NO tabla, NO percussion, NO melody-driving instrument — the drone must carry the whole 90 min on its own. Delta binaural (2.5Hz beat, ~180Hz carrier) for genuine sleep induction — this is the ONE brief this week using Delta (sleep lane). LUFS -18 — the quietest target in the catalog, correct for a sleep ship played low in a dark room. EMOTIONAL TAG ROTATION (3 metaphors): clip 1: 'like the night itself humming you to sleep' · clip 2: 'a steady hum with no beginning and no end, just something to sink beneath' · clip 3: 'the dark room slowly dissolving, nothing left to hold onto'. 90min = 3-4 Suno clips of the drone + loop extension in post; since there is no melody, loop seams are very forgiving."
+    },
+    "experiment_notes": "No A/B test. Straight catalog filler ship. Part of the June 1-8 full-volume test week — this brief deliberately fills the channel's dead Saturday slot (June 6) with a true filler so that no Strong or Hero instrument is wasted on a day the data shows always dips. Tanpura (a melody-free drone) is the lowest-effort, lowest-stakes instrument in the rotation, making it the right pick for a slot whose only job is to maintain 1-video/day cadence (so YouTube doesn't read a pattern change mid-test). Sleep/insomnia lane, where Tanpura has a proven baseline (May 13 hit 31,473 impr / 4.63% CTR / 17.12% AVD). Title varied away from the prior 'Insomnia Relief Music | Tanpura Drone | 1.5 Hours' to 'Sleep Music | Tanpura Drone | Drift Off' — leading with the higher-scored 'sleep music' (vidiq 75) keyword while keeping the insomnia frame on the thumbnail ('CAN'T SLEEP?'). Success = simply shipping and holding cadence; impressions are not the point.",
+    "playlists": ["Sleep & Deep Rest"]
+}

@@ -1,0 +1,120 @@
+{
+    "id": "v_2026-06-04_heavy_heart_sarangi",
+    "status": "DRAFT",
+    "date_shipped": null,
+    "created_at": "2026-05-31",
+    "planned_date": "2026-06-04",
+    "planned_slot": "PM (7pm IST)",
+    "title": "Music for a Heavy Heart | Sarangi | Indian Classical",
+    "title_variants": {
+        "A": "Music for a Heavy Heart | Sarangi | Indian Classical",
+        "B": "Music for a Heavy Heart | Sarangi | Indian Classical"
+    },
+    "components": {
+        "problem": "carrying something sad / a heavy heart that won't lift / processing grief or heartache / holding it together all day and needing somewhere to finally let the tears come / wanting to feel it through instead of pushing it down",
+        "instrument": "Sarangi",
+        "raga": "Puriya",
+        "hz": "432Hz",
+        "wave": "Theta"
+    },
+    "validated_keywords": [
+        "Music for a Heavy Heart (slot 1 — emotional problem lead, evening lane)",
+        "Sarangi (slot 2 — instrument anchor, the channel's vocal/grief specialist)",
+        "Indian Classical (slot 3 — genre anchor)",
+        "emotional healing music — 60",
+        "gentle healing music — 61",
+        "healing music — 75",
+        "comfort music — 63",
+        "nostalgia music — 76",
+        "heart healing music — 56",
+        "sarangi — 67",
+        "theta — 61",
+        "432hz — 74",
+        "calming music for anxiety — 72",
+        "indian classical music — 66",
+        "indian instrumental music — 67",
+        "raga focus — 66"
+    ],
+    "ab_test": {
+        "test_id": null,
+        "test_type": "NO A/B — single title, single thumbnail",
+        "variant_A": {
+            "title": "Music for a Heavy Heart | Sarangi | Indian Classical",
+            "thumbnail_text": "HEAVY HEART?",
+            "hypothesis": "Straight catalog ship — no test running. Title leads with an emotional problem framing ('Music for a Heavy Heart') that is fresh for Sarangi — distinct from its recent 'Let Go of Stress | Emotional Release' (May 11/18) and 'Inner Peace / Gentle Healing' (May 25). Thumbnail uses a Q-hook ('HEAVY HEART?'), which fits the evening browse window where viewers are arriving with a feeling, not a task."
+        },
+        "variant_B": {
+            "title": "Music for a Heavy Heart | Sarangi | Indian Classical",
+            "thumbnail_text": "HEAVY HEART?",
+            "hypothesis": "Same as A — no test."
+        },
+        "test_method": "No A/B this ship. Single title, single thumbnail. Sarangi's emotional lane is the channel's strongest (Comfort hit 177K impr / 7.8K views). This ship widens that lane into explicit heartache/grief framing without the verbatim 'Emotional Release' or 'Inner Peace' wording already used. Catalog ship — bank the lane, no test."
+    },
+    "strategic_bet": "STRONG — Thu June 4 PM (7pm IST). First Puriya on Sarangi (recent Sarangi ragas were Yaman May 18, Bageshri May 25, Bhairav May 30, Kafi May 15 — Puriya is fresh). The heavy-heart / heartache lane is fresh: distinct from Sarangi's 'Let Go of Stress | Emotional Release' (May 11/18) and 'Inner Peace / Gentle Healing' (May 25). Sarangi is the channel's emotional specialist — the most vocal, human, weeping instrument — and its Comfort ship (May 4) hit 177,779 impr / 7,809 views / 3.18% CTR / 26.02% AVD, the best Sarangi reach on the channel. 5 days clear of May 30 Sarangi (Bhairav, yoga lane) — different raga, different lane, no cannibalization. Thu June 4 is a double day: this Sarangi PM partners with a Veena AM ship. Evening 7pm IST is a strong browse window for sit-with-your-feelings content.",
+    "success_good": "3000+ views, 25%+ AVD, 3.5%+ CTR in 48h",
+    "success_breakthrough": "7000+ views, 28%+ AVD — heavy-heart/heartache lane confirmed as a repeatable Sarangi vertical alongside comfort/nostalgia; lock Puriya as a recurring evening Sarangi raga",
+    "failure_mode": "<1500 views or <3% CTR in 48h — 'heavy heart' framing too heavy/specific for browse; revert to proven Sarangi comfort/nostalgia framing (Comfort, Nostalgia) which already reach 58K–177K impr",
+    "reference_ships": [
+        {
+            "title": "Comfort Music | Healing Music with Sarangi",
+            "pub": "2026-05-04",
+            "impressions": 177779,
+            "views": 7809,
+            "ctr_pct": 3.18,
+            "avd_pct": 26.02,
+            "notes": "Best Sarangi reach on the channel — emotional/comfort lane proven"
+        },
+        {
+            "title": "Nostalgia Music | Healing Music with Sarangi",
+            "pub": "2026-05-10",
+            "impressions": 58857,
+            "views": 3448,
+            "ctr_pct": 4.09,
+            "avd_pct": null,
+            "notes": "Strong CTR on emotional Sarangi framing"
+        },
+        {
+            "title": "Let Go Of Stress | Sarangi for Emotional Release",
+            "pub": "2026-05-18",
+            "impressions": 34425,
+            "views": 1829,
+            "ctr_pct": 3.82,
+            "avd_pct": null,
+            "notes": "Emotional release lane — DO NOT repeat 'Emotional Release' verbatim"
+        },
+        {
+            "title": "Inner Peace Music | Sarangi Healing",
+            "pub": "2026-05-25",
+            "impressions": 28855,
+            "views": 1386,
+            "ctr_pct": 3.33,
+            "avd_pct": null,
+            "notes": "Inner peace / gentle healing lane — DO NOT repeat 'Inner Peace' verbatim"
+        }
+    ],
+    "tags": "music for a heavy heart, emotional healing music, gentle healing music, healing music, comfort music, heart healing music, sarangi, sarangi music, sarangi healing music, indian classical music, indian instrumental music, raga puriya, emotional release, grief music, music for heartache, calming music for anxiety, 432hz, theta waves, soothing music, raga focus",
+    "description": "Music for a Heavy Heart | Sarangi | Indian Classical\n\nYou've been holding it together all day. Maybe longer than that.\n\nThis is for the heaviness you haven't had room to put down — the heartache, the grief, the thing that sits in your chest and doesn't lift just because the day asked you to keep moving. You don't have to push it down here. The Sarangi is the most human-sounding of all Indian instruments — bowed, voiced, it slides and sighs like a voice on the edge of tears. It sounds like crying so you don't have to carry it in alone.\n\nThis is 90 minutes of solo Sarangi in Raga Puriya — a deep evening raga of pathos and introspective longing. There's no rhythm, no tabla, no place you need to be. Just the bow drawing out long, weeping phrases, and the tanpura holding the room open underneath. Let it sit with you. Let the tears come if they want to.\n\n🎵 What you'll hear:\n- Sarangi — bowed gut strings, the most vocal and human of Indian instruments, sliding meend that mimics a crying voice\n- Raga Puriya — a deep evening raga of pathos and introspective longing\n- Sympathetic strings resonating quietly beneath each phrase\n- Tanpura drone — steady, holding the space open\n- No percussion, no tabla — solo Sarangi with room to breathe\n- 90 unbroken minutes at 432Hz tuning\n\n⏱ Chapters\n0:00    The weight you walked in with\n20:00   Letting it surface\n45:00   The deepest part\n70:00   Something easing\n85:00   A quieter close\n\n🧠 How to use:\nPress play, sit or lie down somewhere you won't be interrupted, and let the Sarangi carry the feeling instead of holding it yourself. You don't have to do anything. If the tears come, let them. That's the point.\n\n⏱ Best for:\n• Grief, heartache, and emotional processing\n• Crying it out when you've been holding on too long\n• Quiet evening time alone with a heavy feeling\n• Journaling through something sad\n• Winding down after a hard day\n\n📺 Subscribe to Raga Focus for daily Indian classical music for meditation, anxiety, emotional healing, and sleep.\n\n— Raga Focus\n\n#musicforaheavyheart #sarangi #emotionalhealingmusic #healingmusic #indianclassicalmusic #ragapuriya #432hz #thetawaves #griefmusic #ragafocus #comfortmusic",
+    "thumbnail_text_main": "HEAVY HEART?",
+    "thumbnail_text_variants": [
+        "HEAVY HEART?"
+    ],
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate patterned border in deep teal, indigo and muted gold with evening lotus and dusk-bird motifs, aged warm parchment background, deep evening palette (twilight indigo and violet sky, soft amber lamplight glow). Central figure: a solitary musician in deep-blue and cream attire seated cross-legged on a simple woven mat, playing the sarangi (upright bowed instrument held vertically against the shoulder, bow drawn across the strings, head bowed low, eyes closed), in a quiet dusk courtyard. Expression of tender sorrow held with dignity — not despair, but feeling allowed to surface. A single oil lamp glowing nearby, soft dusk mist, one wilting evening flower in the corner. Bold deep-teal serif overlay text reading 'HEAVY HEART?' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Twilight indigo, muted gold, and aged cream palette, intimate grieving-evening mood, single composed scene, no clutter.",
+    "suno_prompt_A": "Indian classical sarangi solo in Raga Puriya, deep evening raga of pathos and introspective longing, slow grieving mood for a heavy heart, expressive bowed sarangi with gut strings and an intensely vocal human crying tone, long sliding meend that mimics the human voice rising and breaking, quiet sympathetic string resonance underneath, tanpura drone holding the space open, no tabla, no percussion, 432Hz tuning, 50-60 BPM, warm low-to-mid register, deep emotional phrasing with space between phrases, theta binaural at -20dB, cinematic meditative production, seamless loop, like the sound is crying so you don't have to hold it in alone, instrumental only, no vocals, no humming, no human voice — the sarangi only sounds vocal",
+    "suno_prompt_B": "Instrumental only, no vocals, no humming, no human voice, Indian classical sarangi solo, Raga Puriya — deep evening raga of pathos and longing, expressive bowed sarangi with gut strings and an intensely vocal human crying tone, long sliding meend like a voice breaking, sympathetic resonance, tanpura drone, no tabla, 432Hz, 50-60 BPM, theta binaural at -20dB, warm low-mid register, seamless loop, like the sound is crying so you don't have to hold it in alone — the sarangi only sounds vocal",
+    "production_spec": {
+        "duration_minutes": 90,
+        "bpm_range": "50-60",
+        "key_frequency_hz": 432,
+        "binaural_carrier_hz": 200,
+        "binaural_wave": "Theta",
+        "binaural_beat_hz": 5.0,
+        "lufs_target": -14,
+        "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+        "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+        "notes": "Raga Puriya — evening raga, komal Re + teevra Ma + komal Dha, the combination giving intense pathos and an introspective, longing quality (closely related to Marwa family). Solo emotional Sarangi: NO tabla, NO percussion — the instrument needs space, and rhythm would intrude on grief. Tanpura drone only, low underneath. Theta 5Hz binaural — deep relaxation for emotional processing (not sleep Delta, not morning Alpha). LUFS -14. The Sarangi is bowed and SOUNDS like a crying human voice via sliding meend and sympathetic resonance — but the brief must be explicit there is NO actual human voice / no vocals / no humming. EMOTIONAL TAG ROTATION (team reference, one strong metaphor per clip): clip 1: 'like the sound is crying so you don't have to hold it in alone' · clip 2: 'the weight finally finding somewhere to go' · clip 3: 'tender sorrow allowed to surface, then ease'. 90min = 3-4 Suno clips + loop extension."
+    },
+    "experiment_notes": "No A/B test — single title, single thumbnail, straight catalog ship. Part of the June 1-8 full-volume test week. Thu June 4 is a double day: this Sarangi PM ship partners with a Veena AM ship. Bet: extend Sarangi's proven emotional lane (Comfort 177K impr, Nostalgia 58K impr) into explicit heavy-heart / heartache / grief framing — fresh wording that avoids the already-used 'Emotional Release' (May 11/18) and 'Inner Peace' (May 25). First Puriya on Sarangi. If this clears 3K+ views and 25%+ AVD, treat heavy-heart/grief as a confirmed repeatable Sarangi vertical and consider a future A/B (problem-hook 'HEAVY HEART?' vs comfort-frame 'COMFORT') once baseline data exists.",
+    "playlists": [
+        "Healing & Anxiety Relief"
+    ]
+}
