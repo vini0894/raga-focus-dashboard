@@ -1,14 +1,14 @@
 {
     "id": "v_2026-06-03_let_go_surbahar",
-    "status": "DRAFT",
+    "status": "APPROVED",
     "date_shipped": null,
     "created_at": "2026-05-31",
     "planned_date": "2026-06-03",
     "planned_slot": "PM (7pm IST)",
-    "title": "Let Go of the Day | Slow Surbahar | Deep Relaxation",
+    "title": "Meditation Music | Slow Surbahar | Indian Classical",
     "title_variants": {
-        "A": "Let Go of the Day | Slow Surbahar | Deep Relaxation",
-        "B": "Let Go of the Day | Slow Surbahar | Deep Relaxation"
+        "A": "Meditation Music | Slow Surbahar | Indian Classical",
+        "B": "Meditation Music | Slow Surbahar | Indian Classical"
     },
     "components": {
         "problem": "the day is over but the body is still holding it / shoulders, jaw, chest still braced from everything that happened / can't seem to set the day down and just be still / need something deep and slow to surrender into, not sleep yet, just release",
@@ -18,9 +18,9 @@
         "wave": "Theta"
     },
     "validated_keywords": [
-        "Let Go of the Day (slot 1 — evening permission/outcome lead, letting-go lane)",
+        "Meditation Music (slot 1 — VidIQ 80, highest calm-lane lead; FIRST evening/PM use of this lead)",
         "Slow Surbahar (slot 2 — instrument + tempo anchor)",
-        "Deep Relaxation (slot 3 — outcome anchor)",
+        "Indian Classical (slot 3 — genre anchor, VidIQ 66)",
         "deep relaxation music (problem, VidIQ 68)",
         "deep rest music (problem, VidIQ 67)",
         "inner stillness (problem, VidIQ 59)",
@@ -36,23 +36,23 @@
     ],
     "ab_test": {
         "test_id": null,
-        "test_type": "NO A/B — single title, single thumbnail",
+        "test_type": "NO title A/B — single title; deliberate evening-meditation keyword test",
         "variant_A": {
-            "title": "Let Go of the Day | Slow Surbahar | Deep Relaxation",
-            "thumbnail_text": "LET IT GO",
-            "hypothesis": "Straight catalog ship — no test running. Title follows evening letting-go lane (permission/outcome lead, 3-slot clean, validated 'deep relaxation' anchor at VidIQ 68). Thumbnail is a permission/outcome line. Focus is freshening the Surbahar deep-rest lane with a 'letting go of the day' frame and a first-ever Malkauns on Surbahar."
+            "title": "Meditation Music | Slow Surbahar | Indian Classical",
+            "thumbnail_text": "DEEP MEDITATION",
+            "hypothesis": "Single title. 'Meditation Music' (VidIQ 80, highest calm-lane lead) has only ever run in the MORNING/AM slot and never as an exact live lead — this is its first EVENING (PM) test. Malkauns is a deep midnight meditative raga, the natural home for evening meditation. Thumb 'DEEP MEDITATION' = calm-lane descriptor."
         },
         "variant_B": {
-            "title": "Let Go of the Day | Slow Surbahar | Deep Relaxation",
-            "thumbnail_text": "LET IT GO",
-            "hypothesis": "Same as A — no test."
+            "title": "Meditation Music | Slow Surbahar | Indian Classical",
+            "thumbnail_text": "DEEP MEDITATION",
+            "hypothesis": "Same as A — no title test."
         },
-        "test_method": "No A/B this ship. Single title, single thumbnail. Straight catalog-building ship using the proven Surbahar deep-rest format with a refreshed letting-go framing to avoid reusing 'Deep Rest'/'Rest Your Mind' verbatim."
+        "test_method": "No title A/B. The experiment is the keyword x slot combination: first evening (PM) use of the 'Meditation Music' lead. Avoids reusing Surbahar's saturated deep-rest leads (Deep Rest / Deep Relaxation / Rest Your Mind), which showed steep decline on repeat (836K Apr28 -> 41K May21 -> 22K May27) because the Apr 28 winner owns that query. 'Meditation Music' opens a query Surbahar has never claimed."
     },
-    "strategic_bet": "STRONG-tier catalog ship — Wed June 3 PM (7pm IST). First Malkauns on Surbahar, freshening the channel's strongest deep-rest instrument with a 'letting go of the day' frame distinct from its recent 'Deep Rest' (May 14/21), 'Deep Relaxation' (May 21), 'Rest Your Mind' / 'Wind Down' (May 27) ships. Lane is evening surrender — winding down, setting the day's weight down — separate from sleep (Tanpura owns sleep this week) and from anxiety. Wednesdays dip mildly per channel data, so this is catalog-building, not a spike day. 7-day cooldown clear from May 27. Surbahar's Apr 28 'Deep Rest Music | Find Stillness' is the channel's deep-rest benchmark (41,498 views, 22.77% AVD, 3.68% CTR), and May 21 'Deep Relaxation | Slow Surbahar' held a strong 4.46% CTR.",
+    "strategic_bet": "STRONG-tier catalog ship — Wed June 3 PM (7pm IST). Leads with 'Meditation Music' (VidIQ 80 — highest calm-lane lead), deliberately testing it in the EVENING slot for the first time (every prior 'Meditation Music' lead ran morning/AM). Raga Malkauns — a pentatonic all-komal midnight raga of profound depth — is the natural home for evening meditation, so the title honestly fits the music. Avoids reusing Surbahar's saturated deep-rest leads: that lane showed steep diminishing returns on repeat (Deep Rest 836K Apr28 -> Deep Relaxation 41K May21 -> Rest Your Mind 22K May27), because the Apr 28 winner already owns the query and newcomers compete against it. 'Meditation Music' opens an unclaimed query instead of splitting an owned one. Wednesdays dip mildly per channel data, so this is catalog-building, not a spike. First Malkauns on Surbahar; 7-day cooldown clear from May 27.",
     "success_good": "2500+ views, 22%+ AVD, 3.5%+ CTR in 48h",
-    "success_breakthrough": "12000+ views, 25%+ AVD — 'letting go of the day' confirmed as a repeatable Surbahar evening frame, lock as recurring deep-rest slot alongside 'Deep Rest'",
-    "failure_mode": "<1500 views or <3% CTR in 48h — 'let go of the day' framing too soft/ambiguous for browse; revert to the proven 'Deep Rest Music' / 'Deep Relaxation' lead for the next Surbahar ship",
+    "success_breakthrough": "12000+ views, 25%+ AVD — 'Meditation Music' confirmed as a viable EVENING lead; add evening-meditation to the rotation, stop repeating the saturated deep-rest leads",
+    "failure_mode": "<1500 views or <3% CTR in 48h — 'Meditation Music' too generic/saturated for the PM browse window; revert evening Surbahar to a more specific outcome lead next time",
     "reference_ships": [
         {
             "title": "Deep Rest Music | Find Stillness with Surbahar",
@@ -91,13 +91,13 @@
             "notes": "Most recent Surbahar ship — 7d cooldown reference"
         }
     ],
-    "tags": "deep relaxation music, deep rest music, surbahar music, slow surbahar, indian classical music, indian instrumental music, raga malkauns, malkauns, 432hz, theta waves, peaceful music, evening music, unwind after work, slow down music, music after a long day, inner stillness, let go of the day, deep relaxation, meditation music, raga focus",
-    "description": "Let Go of the Day | Slow Surbahar | Deep Relaxation\n\nThe day is over. The body hasn't noticed yet.\n\nYou can stop now. Everything that needed doing is behind you, and the shoulders, the jaw, the breath that's been held high in the chest all day — they can come down. This isn't sleep yet. It's the quieter thing before it: setting the whole day down and finally being still.\n\nThis is 90 minutes of slow Surbahar — the deep bass sitar — in Raga Malkauns. The Surbahar lives in the low register, deep and resonant, its long meend glides moving slowly enough that there's nothing to follow, only somewhere to rest. Malkauns is a midnight raga, pentatonic and entirely in its softest notes, built for profound stillness. There is no percussion. Nothing to keep time. Just deep strings, a tanpura drone, and space.\n\nLet it play in the background of your evening. You don't have to listen. You just have to let it carry the day away.\n\n🎵 What you'll hear:\n- Surbahar — the deep bass sitar, low and resonant, long slow meend glides\n- Raga Malkauns — a pentatonic midnight raga of profound, all-soft-note depth\n- Sustained low tones with long sympathetic-string resonance\n- No tabla, no percussion — only deep strings and drone, full of space\n- 90 unbroken minutes at 432Hz tuning\n\n⏱ Chapters\n0:00    Setting the day down\n20:00   Sinking deeper\n45:00   Deep stillness\n70:00   The day fully released\n85:00   Quiet close\n\n🧠 How to use:\nPress play when you're done for the day. Dim the lights, sit or lie back, and let the low Surbahar tones do the work. No focus required — just let each long phrase pull you a little lower into stillness.\n\n⏱ Best for:\n• Winding down after a long day\n• Evening deep rest and stillness\n• Letting go of held tension before sleep\n• Quiet evening meditation\n• Slow restorative yin yoga or restorative practice\n\n📺 Subscribe to Raga Focus for daily Indian classical music for meditation, deep rest, anxiety, and sleep.\n\n— Raga Focus\n\n#deeprelaxation #surbahar #deeprestmusic #indianclassicalmusic #432hz #ragamalkauns #ragafocus #letgooftheday #eveningmusic #thetawaves #peacefulmusic",
-    "thumbnail_text_main": "LET IT GO",
+    "tags": "deep relaxation music, deep rest music, surbahar music, slow surbahar, indian classical music, indian instrumental music, raga malkauns, malkauns, 432hz, theta waves, peaceful music, evening music, unwind after work, slow down music, music after a long day, inner stillness, evening meditation music, deep meditation, meditation music, raga focus",
+    "description": "Meditation Music | Slow Surbahar | Indian Classical\n\nThe day is over. The body hasn't noticed yet.\n\nYou can stop now. Everything that needed doing is behind you, and the shoulders, the jaw, the breath that's been held high in the chest all day — they can come down. This isn't sleep yet. It's the quieter thing before it: setting the whole day down and finally being still.\n\nThis is 90 minutes of slow Surbahar — the deep bass sitar — in Raga Malkauns. The Surbahar lives in the low register, deep and resonant, its long meend glides moving slowly enough that there's nothing to follow, only somewhere to rest. Malkauns is a midnight raga, pentatonic and entirely in its softest notes, built for profound stillness. There is no percussion. Nothing to keep time. Just deep strings, a tanpura drone, and space.\n\nLet it play in the background of your evening. You don't have to listen. You just have to let it carry the day away.\n\n🎵 What you'll hear:\n- Surbahar — the deep bass sitar, low and resonant, long slow meend glides\n- Raga Malkauns — a pentatonic midnight raga of profound, all-soft-note depth\n- Sustained low tones with long sympathetic-string resonance\n- No tabla, no percussion — only deep strings and drone, full of space\n- 90 unbroken minutes at 432Hz tuning\n\n⏱ Chapters\n0:00    Setting the day down\n20:00   Sinking deeper\n45:00   Deep stillness\n70:00   The day fully released\n85:00   Quiet close\n\n🧠 How to use:\nPress play when you're done for the day. Dim the lights, sit or lie back, and let the low Surbahar tones do the work. No focus required — just let each long phrase pull you a little lower into stillness.\n\n⏱ Best for:\n• Winding down after a long day\n• Evening deep rest and stillness\n• Letting go of held tension before sleep\n• Quiet evening meditation\n• Slow restorative yin yoga or restorative practice\n\n📺 Subscribe to Raga Focus for daily Indian classical music for meditation, deep rest, anxiety, and sleep.\n\n— Raga Focus\n\n#meditationmusic #surbahar #deepmeditation #indianclassicalmusic #432hz #ragamalkauns #ragafocus #eveningmeditation #eveningmusic #thetawaves #peacefulmusic",
+    "thumbnail_text_main": "DEEP MEDITATION",
     "thumbnail_text_variants": [
-        "LET IT GO"
+        "DEEP MEDITATION"
     ],
-    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate deep-indigo-and-gold patterned border with night-lotus, crescent moon and star motifs, aged warm parchment background, deep evening palette (rich indigo and midnight blue softened by warm low lamplight, gold accents). Central figure: serene musician in deep-blue-and-gold attire seated cross-legged on a simple low cushion playing surbahar (large deep bass sitar resting across the lap, long broad neck, eyes gently closed), in a still candlelit evening interior. A single oil lamp glowing warm in the corner, soft shadows, a night sky with a crescent moon visible through an arched window. Expression of complete release — the whole body softened and at rest, weight set down. Bold deep-teal serif overlay text reading 'LET IT GO' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Deep indigo, warm gold lamplight, and aged cream palette, midnight stillness mood, single composed scene, no clutter.",
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate deep-indigo-and-gold patterned border with night-lotus, crescent moon and star motifs, aged warm parchment background, deep evening palette (rich indigo and midnight blue softened by warm low lamplight, gold accents). Central figure: serene musician in deep-blue-and-gold attire seated cross-legged on a simple low cushion playing surbahar (large deep bass sitar resting across the lap, long broad neck, eyes gently closed), in a still candlelit evening interior. A single oil lamp glowing warm in the corner, soft shadows, a night sky with a crescent moon visible through an arched window. Expression of complete release — the whole body softened and at rest, weight set down. Bold deep-teal serif overlay text reading 'DEEP MEDITATION' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Deep indigo, warm gold lamplight, and aged cream palette, midnight stillness mood, single composed scene, no clutter.",
     "suno_prompt_A": "Indian classical surbahar solo in Raga Malkauns, evening deep rest and letting go of the day, deep resonant bass sitar in its low register with long slow meend glides and rich sympathetic string resonance, sustained low tones that hang and decay slowly, Malkauns pentatonic all-komal midnight depth gives a profound meditative gravity, soft tanpura drone underneath, no tabla, no percussion, 432Hz tuning, 45-55 BPM, very slow and spacious with long pauses between phrases, deep low register, cinematic meditative production, seamless loop, like the whole day finally being set down, no vocals, no humming, no human voice",
     "suno_prompt_B": "Instrumental only, no vocals, no humming, Indian classical surbahar, Raga Malkauns — pentatonic all-komal midnight depth, deep resonant bass sitar, low register, long slow meend glides, sustained low tones, sympathetic string resonance, soft tanpura drone, no tabla, no percussion, 432Hz, 45-55 BPM, deep low register, very slow and spacious, seamless loop, like the whole day finally being set down",
     "production_spec": {
@@ -112,7 +112,7 @@
         "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
         "notes": "Raga Malkauns — midnight raga of profound depth. Pentatonic and entirely komal: Sa, Ga(komal), Ma, Dha(komal), Ni(komal), Sa — no Re, no Pa. The all-komal pentatonic shape is what gives Malkauns its heavy, meditative, midnight gravity. Surbahar (deep bass sitar) sits in the low register — let the long sustained low tones and sympathetic resonance carry the space. NO tabla, NO percussion — Surbahar deep rest needs space; rhythm would pull the listener back up. Soft tanpura drone only. Theta 5Hz binaural — deep rest and surrender WITHOUT inducing full sleep (viewer is winding down in the evening, not yet sleeping); do not drop to Delta. LUFS -15 (evening deep rest, quieter than morning/active lanes). 45-55 BPM is very slow — long pauses between phrases are correct. EMOTIONAL TAG ROTATION across the 3-4 source clips: clip 1: 'like the whole day finally being set down' · clip 2: 'sinking slowly into deep evening stillness' · clip 3: 'the body letting go of everything it held'. 90min = 3-4 Suno clips + loop extension."
     },
-    "experiment_notes": "No A/B test. Single title, single thumbnail, straight catalog ship. Part of the June 1-8 full-volume test week — this is the Wed PM single ship (Wednesdays dip mildly per channel data, so framed as catalog-building rather than a spike day). First Malkauns on Surbahar; freshens the deep-rest lane with a 'letting go of the day' frame to avoid reusing 'Deep Rest' / 'Rest Your Mind' verbatim while keeping the validated 'deep relaxation' anchor (VidIQ 68) that drove May 21's 4.46% CTR. If this holds 22%+ AVD and 3.5%+ CTR, 'let go of the day' is a viable recurring Surbahar evening frame to alternate with 'Deep Rest'.",
+    "experiment_notes": "No title A/B — single title, single thumbnail, straight catalog ship. The deliberate experiment is the keyword x slot test: FIRST evening (PM) use of the 'Meditation Music' lead (VidIQ 80) — every prior use ran morning/AM, exact lead never shipped live. Malkauns (deep midnight meditative raga) fits evening meditation. Chosen over reusing Surbahar's deep-rest leads because that lane shows clear cannibalization/diminishing returns on repeat (836K->41K->22K): the Apr 28 winner owns the deep-rest query, so a fresh 'Meditation Music' lead opens new coverage instead of splitting an owned one. If it holds 22%+ AVD and 3.5%+ CTR, evening 'Meditation Music' is a viable recurring lead.",
     "playlists": [
         "Peaceful Music",
         "Sleep & Deep Rest"
