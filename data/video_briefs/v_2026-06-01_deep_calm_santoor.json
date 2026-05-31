@@ -1,0 +1,108 @@
+{
+    "id": "v_2026-06-01_deep_calm_santoor",
+    "status": "DRAFT",
+    "date_shipped": null,
+    "created_at": "2026-05-31",
+    "planned_date": "2026-06-01",
+    "planned_slot": "PM (7pm IST)",
+    "title": "Deep Calm Music | Santoor Instrumental | 1.5 Hours",
+    "title_variants": {
+        "A": "Deep Calm Music | Santoor Instrumental | 1.5 Hours",
+        "B": "Deep Calm Music | Santoor Instrumental | 1.5 Hours"
+    },
+    "components": {
+        "problem": "Monday hits before you've recovered from the week before — the day was full and the body hasn't had a moment to land anywhere. Restless but exhausted. Need something to help it settle without being forced into sleep.",
+        "instrument": "Santoor",
+        "raga": "Bhairavi",
+        "hz": "432Hz",
+        "wave": "Theta"
+    },
+    "validated_keywords": [
+        "Deep Calm Music (slot 1 — VidIQ 63-65, completely fresh lead, never used as lead)",
+        "Santoor Instrumental (slot 2 — VidIQ 65, instrument anchor)",
+        "1.5 Hours (slot 3 — format/duration signal)",
+        "santoor music",
+        "deep calm music",
+        "indian instrumental music",
+        "santoor instrumental",
+        "meditation music",
+        "432hz",
+        "theta waves",
+        "calm music",
+        "relaxing music",
+        "evening music",
+        "indian classical music",
+        "raga bhairavi",
+        "bhairavi",
+        "raga focus",
+        "deep relaxation music",
+        "healing music",
+        "stress relief music"
+    ],
+    "ab_test": {
+        "test_id": "Test 34",
+        "test_type": "THUMB A/B — same title both variants",
+        "variant_A": {
+            "title": "Deep Calm Music | Santoor Instrumental | 1.5 Hours",
+            "thumbnail_text": "PAUSE",
+            "hypothesis": "Single-word directive — minimal, pattern-interrupt format never tested on this channel. No category context (intentionally). Tests whether a single word creates enough intrigue to earn the click from a calm-seeking audience who's already in scroll fatigue. High risk: no category signal. High reward: 'PAUSE' is exactly the emotional instruction the viewer needs — and reads in zero milliseconds on mobile."
+        },
+        "variant_B": {
+            "title": "Deep Calm Music | Santoor Instrumental | 1.5 Hours",
+            "thumbnail_text": "FIND CALM",
+            "hypothesis": "Familiar 'FIND ___' channel format with a fresh specific phrase. 'FIND PEACE', 'FIND STILLNESS', 'FIND CALMNESS' have all been used — but 'FIND CALM' specifically is fresh. Tests whether the familiar outcome-promise format outperforms experimental minimalism in the calm/restoration lane. Backed by calm-lane thumb rule: permission/outcome formats win, Q-hooks lose (N=3)."
+        },
+        "test_method": "Thumb-only A/B (Test 34). Same title both variants: 'Deep Calm Music | Santoor Instrumental | 1.5 Hours'. One variable: single-word experimental directive (A) vs familiar 'FIND ___' outcome format (B). A is a format test — channel has never shipped a single-word thumb. B is within the known winning format for calm/rest lane. If B wins: confirms calm-lane thumb rule is robust to phrasing variation. If A wins: single-word minimalism unlocks a new format tier for calm lane."
+    },
+    "strategic_bet": "STEADY — Mon June 1 PM. Return to Santoor's proven calm lane after two consecutive positive-energy Santoor ships underperformed (May 14 Morning Energy: 18.1% AVD; May 28 Joyful Santoor evening: weak showing). Calm lane is Santoor's empirical best: Apr 27 Burnout Santoor (88K impressions / 33.82% AVD / 5.5K views). Lead phrase 'Deep Calm Music' is completely fresh — zero prior use as slot-1 lead. Raga Bhairavi (not used on Santoor in last 3 ships: May 28 Khamaj, May 14 Bilawal, May 6 Khamaj) — warm devotional quality suits Monday evening settledown. Calm lane YT-placement = gets slotted near channel's top impressions earners (Deep Rest Surbahar 771K, NS Healing Sitar 291K).",
+    "success_good": "3500+ views, 28%+ AVD, 4%+ CTR in 48h",
+    "success_breakthrough": "6000+ views, 32%+ AVD, 4.5%+ CTR — calm lane Santoor confirmed; lock Monday PM calm as recurring slot",
+    "failure_mode": "<1500 views or <3.5% CTR in 48h — either lead phrase has no browse resonance (low impressions) or calm lane is saturated on this channel",
+    "reference_ships": [
+        {
+            "title": "Santoor Music for Burnout and Stress Relief | Indian Classical Music",
+            "pub": "2026-04-27",
+            "impressions": 88000,
+            "views": 5500,
+            "ctr_pct": 4.25,
+            "avd_pct": 33.82,
+            "note": "Calm lane Santoor benchmark — 33.82% AVD is channel high for Santoor"
+        },
+        {
+            "title": "Joyful Music | Santoor Instrumental | 1.5 Hours",
+            "pub": "2026-05-08",
+            "impressions": 132000,
+            "views": 9000,
+            "ctr_pct": 5.02,
+            "avd_pct": 25.61,
+            "note": "Uplifting Santoor ceiling — 132K impressions, strong CTR but lower AVD vs calm lane"
+        }
+    ],
+    "tags": "santoor music, deep calm music, indian instrumental music, santoor instrumental, meditation music, 432hz, theta waves, calm music, relaxing music, evening music, indian classical music, raga bhairavi, bhairavi, raga focus, deep relaxation music, healing music, stress relief music, calm santoor, santoor meditation, indian classical santoor, peaceful music, relaxing santoor music",
+    "description": "Deep Calm Music | Santoor Instrumental | 1.5 Hours\n\nSome evenings you don't need to be put to sleep. You just need to be given somewhere to land.\n\nMonday has a way of arriving before the weekend has properly finished. By evening the body is somewhere between restless and exhausted — not quite able to relax on its own, not quite ready to sleep. There's no emergency. There's just this low-level hum that hasn't switched off yet.\n\nThis is 90 minutes of Santoor in Raga Bhairavi — a deeply warm and grounding evening raga in Indian classical music. Bhairavi doesn't push you anywhere. It just creates enough stillness around you that the noise gradually has nowhere left to go.\n\nThe Santoor is a hammered dulcimer — each note struck and then allowed to ring and fade. There's something about the way it naturally decays that gives the mind room to breathe between phrases.\n\n🎵 What you'll hear:\n- Santoor — bright struck tones that bloom into warm, ringing sustain\n- Raga Bhairavi — emotionally grounding, komal-rich evening raga\n- Slow unhurried phrases with natural space between them\n- 90 minutes, no interruptions\n- A very soft theta layer underneath (-20dB — barely there)\n\n⏱ Chapters\n0:00    Opening\n20:00   Settling in\n45:00   Deep calm\n70:00   Still\n85:00   Quiet close\n\n🧠 How to use:\nPut it on. You don't need to do anything with it. The point isn't to meditate or focus — it's just to stop. The music will do the rest.\n\n⏱ Best for:\n• Monday evening wind-down\n• Mind that hasn't stopped since morning\n• Restless-but-exhausted state\n• Quiet background while you eat, stretch, or just sit\n• Gentle transition toward sleep\n\n📺 Subscribe to Raga Focus for Indian classical music for calm, anxiety relief, and sleep.\n\n— Raga Focus\n\n#santoormusic #deepcalm #indianinstrumental #indianclassicalmusic #432hz #thetawaves #ragafocus #calmmusic #meditationmusic #ragabhairavi #eveningmusic #relaxingmusic",
+    "thumbnail_text_main": "PAUSE",
+    "thumbnail_text_variants": [
+        "PAUSE",
+        "FIND CALM"
+    ],
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-deep-teal patterned border with evening lotus and oil-lamp motifs, aged warm parchment background, evening palette (deep teal, warm amber, aged cream). Central figure: serene musician in soft deep-teal and gold attire, seated cross-legged playing santoor (hammered dulcimer — flat trapezoidal wooden instrument resting horizontally on the lap, struck with lightweight mallets). Quiet inner courtyard setting, warm lamp glow, soft shadows. Expression of deep stillness — eyes gently closed or lowered, completely at rest. Bold dark-teal serif overlay text reading 'PAUSE' centered (variant A) or 'FIND CALM' (variant B), traditional Devanagari-influenced serif typography, high contrast for mobile readability. Deep teal, warm amber, and aged cream palette, composed and uncluttered scene, calm evening mood.",
+    "suno_prompt_A": "Indian classical instrumental, Raga Bhairavi (deeply emotional, komal-dominant, warm settling evening quality — flat 2nd, flat 3rd, flat 6th give it a rich grounding colour), deep calm and restoration mood, hammered dulcimer with characteristic bright percussive attack blooming into warm resonant sustain on longer tones, very light optional tabla at 55 BPM providing sparse rhythmic breath (not driving), 432Hz tuning, theta binaural layer at 5Hz -20dB subtle underneath, mid register (warm, full, not bright), meditative calm production with unhurried phrases and natural space between them, seamless loop-friendly texture, no vocals no humming no human voice. Emotionally: like the body finally being given permission to put down the weight it has been carrying all day — not sudden, just slow and inevitable. Each struck note is an exhale.",
+    "suno_prompt_B": "Instrumental only, no vocals, no humming. Indian classical santoor, Raga Bhairavi — deeply emotional, komal-dominant, warm grounding evening character. Hammered dulcimer with bright percussive attack and warm ringing sustain, very light tabla at 55 BPM sparse pulse, 432Hz, theta 5Hz binaural at -20dB, mid register warm and open, meditative calm production, slow unhurried phrases, loop-friendly seamless texture. Emotionally like the body being given its first real exhale of the day — no urgency, just permission to stop.",
+    "production_spec": {
+        "duration_minutes": 90,
+        "bpm_range": "50-60",
+        "key_frequency_hz": 432,
+        "binaural_carrier_hz": 437,
+        "binaural_wave": "Theta",
+        "binaural_beat_hz": 5.0,
+        "lufs_target": -16,
+        "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+        "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+        "notes": "Raga Bhairavi — deeply emotional evening/closing raga. Komal Re, Ga, Dha, Ni (flat 2nd, 3rd, 6th, 7th). Rich, warm, grounding — not sad, just full. Previous Santoor ragas: May 28 Khamaj, May 14 Bilawal, May 6 Khamaj — Bhairavi is completely fresh for Santoor. Santoor = hammered dulcimer, not plucked: characteristic bright initial strike decaying into warm resonant ring. Theta 5Hz for deep calm without sleep induction. LUFS -16 (evening calm — slightly quieter than cognitive content, slightly louder than sleep). 90min = 3-4 Suno clips + loop extension. EMOTIONAL TAG ROTATION: clip 1: 'like the body landing somewhere after a long day of being asked to stay upright' · clip 2: 'like the hum underneath everything slowly getting quieter' · clip 3: 'still, and warm, and finally — here'."
+    },
+    "experiment_notes": "Test 34 — THUMB-ONLY A/B. Same title both variants: 'Deep Calm Music | Santoor Instrumental | 1.5 Hours'.\n\nA: 'PAUSE' — single-word directive. Experimental format, never tested on this channel. Minimal, high-pattern-interrupt. No category signal. Mobile reads it in <0.5 seconds.\nB: 'FIND CALM' — familiar 'FIND ___' channel format. Specific phrase is fresh (FIND PEACE/FIND STILLNESS/FIND CALMNESS all used, but not FIND CALM specifically). Backed by calm-lane N=3 thumb rule: permission/outcome formats win.\n\nTitle is a straight ship — no title A/B. Week already has Tests 31 (June 5 Sitar title), 32 (June 7 Bansuri thumb), 33 (June 8 Sitar title).\n\nIf A wins: single-word minimalism enters the calm-lane playbook as a valid new format tier.\nIf B wins: 'FIND ___' format is robust across phrase variations; continue iterating the phrase not the format.",
+    "playlists": [
+        "Peaceful Music",
+        "Healing & Anxiety Relief"
+    ]
+}
