@@ -61,6 +61,21 @@ Anxiety/stress lane back-to-back with DIFFERENT instruments within 1–3 days sh
 ## Finding 7 — When 2 instruments ship same day, the stronger absorbs the weaker
 Sitar beats any co-shipped instrument by 3–11×. Reinforces Finding 2 — don't co-ship a hero with anything you want to perform.
 
+## Finding 8 — The one-off giants are non-repeatable surge artifacts; only Sitar repeats
+Every instrument's single biggest video was born in the **May 5–9 algorithmic discovery surge** (channel-wide daily impressions ramped 164K → 1.35M that week). None of these lanes replicated afterward:
+
+| Instrument | The one giant | When | Every ship after |
+|-----------|--------------|------|------------------|
+| Bansuri | 1.2M (Sleep) | May 7 | 38K, 155K, 35K, 10K |
+| Dilruba | 2.1M (Morning Energy, Raga Yaman) | May 9 | **37K (May 19, SAME lane), 28K** |
+| Sitar | 701K (Nervous System) | May 5 | 164K, 224K, 388K, 111K — **kept producing** |
+
+- **Dilruba Morning Energy was explicitly re-attempted on May 19 ("Uplifting Music | Dilruba for Morning Energy") → 37,664 impr — a 98% drop.** The lane does not replicate. Do NOT plan around copying it.
+- The giants were the *surge* lifting everything, not the lane/instrument/raga. When the surge normalized, Bansuri and Dilruba fell to their true ~30-40K level and stayed.
+- **Sitar is the ONLY repeatable hero** — its audience keeps refreshing; the others were captured once and saturated.
+
+**Rule:** You cannot manufacture winner #4 by copying a one-off windfall. The only real levers to raise the floor: (1) Sitar's repeatable weekly engine, (2) genuinely new formats — 3-hour long-form is the one fresh, non-surge signal (155K + 6.17% CTR, channel's highest, on otherwise-tired Bansuri).
+
 ---
 
 ## Net planning implications
