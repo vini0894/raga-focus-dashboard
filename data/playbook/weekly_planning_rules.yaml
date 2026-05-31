@@ -3,9 +3,9 @@
 # Read by: weekly planning chat sessions. Apply BEFORE drafting individual briefs.
 # Companion to: playbook_rules.yaml (per-title rules), phrase_locks.json (reuse), instrument_lane_fit.json (which instrument fits which lane).
 
-version: 1
+version: 2
 generated_at: "2026-05-17"
-last_review: "2026-05-17"
+last_review: "2026-05-31"
 
 # ============================================================
 # 1. CADENCE — ships per week
@@ -26,10 +26,11 @@ slot_allocation:
   double_day_rules:
     use_for:
       - Days with a swing ship (pair safe-AM filler with swing-PM)
-      - Weekend days (Sat/Sun — higher leisure browsing)
       - Days after a swing (leverage push momentum)
+      - Wednesday/Thursday if a second hero instrument is rested
     avoid_for:
       - Days BEFORE a major swing (single-only — protect swing's algorithm push budget)
+      - Weekend days for HERO instruments (Sat/Sun avg 22% fewer impressions — use Strong/Filler for weekend doubles instead)
 
   single_day_rules:
     use_for:
@@ -43,40 +44,127 @@ slot_allocation:
 # 3. INSTRUMENT COOLDOWNS
 # ============================================================
 instrument_cooldown:
-  same_instrument_min_gap_days: 4      # No instrument repeats within 4 days
+  same_instrument_min_gap_days: 5      # No instrument repeats within 5 days (upgraded from 4 — data-backed)
+
+  gap_vs_impressions_evidence:         # Sitar data (May 2026, N=4 ships)
+    gap_3d: 39028                      # ← 3-day gap: heavy penalty
+    gap_5d: 139239                     # ← 5-day gap: 3.6× better than 3d
+    gap_6d: 151476                     # ← 6-day gap: 3.9× better than 3d
+    first_ship: 291401                 # ← Fresh instrument: 7.5× better than 3d
+    conclusion: "5-day minimum. 6-day is meaningfully better when possible."
+
+  lane_diversity_modifier:
+    rule: "Same instrument, DIFFERENT audience lane = gap can be compressed to 3d minimum"
+    rationale: "Algorithm serves different audience pools per lane — morning energy ≠ sleep ≠ anxiety. Different pool = no cannibalization."
+    example: "Bansuri morning productivity (May 5) → Bansuri deep sleep (May 7) = 2d gap, 796K impressions (channel's highest single-video impression day)"
+    confirmed_working: true
+    limit: "Same instrument + same lane back-to-back = NEVER, regardless of gap"
+
   override_conditions:
-    - Replica of proven viral (≥10K views original) — accept 3-day-short cooldown
-    - Different lane completely (e.g. Bansuri sleep vs Bansuri morning yoga — different audience)
+    - Replica of proven viral (≥10K views original) — accept 3d minimum if different lane
+    - Different lane completely (e.g. Bansuri sleep vs Bansuri morning yoga — different audience pool)
   hard_block:
     - Same instrument 2 consecutive ships in same lane = NEVER (channel-page pattern blindness)
+    - Same instrument within 3 days in same lane = NEVER
 
 # ============================================================
 # 4. INSTRUMENT TIERING — who gets swing slots vs filler slots
 # ============================================================
+# DATA-BACKED TIERS (May 2026, N=29 full ships, excluding 1-min shorts):
+# HERO avg impressions:  247,259  (Sitar + Bansuri only)
+# STRONG avg impressions: 74,609  (Sarangi, Dilruba, Surbahar, Sarod)
+# FILLER avg impressions: 31,915  (Veena, Santoor, Tanpura)
+# Hero vs Filler multiplier: 7.7×
+# Hero vs Strong multiplier: 3.3×
+#
+# RULE: Hero ships drive the channel impression floor.
+# Fillers and Strongs do NOT sustain themselves — they borrow heat from hero momentum.
+# Filler immediately after a hero week gets a halo lift (Santoor 107K after Bansuri+Sitar week)
+# but decays fast without hero reinforcement (same Santoor: 107K → 30K → 7.8K over 3 ships).
+
 instrument_tiers:
-  hero:                                # Use for SWINGS + replicas (high algorithm budget)
-    - Sitar                            # Reach hero (Dopamine Reset 414K viral asset)
-    - Bansuri                          # CTR hero (Deep Sleep 5.98% CTR ceiling)
-    - Surbahar                         # Retention hero (Deep Rest 26% AVD anchor)
+  hero:                                # ONLY these two — data-confirmed 247K avg impressions
+    instruments:
+      - Sitar                          # Reach hero — Dopamine Reset 414K viral asset; algo-favoured
+      - Bansuri                        # CTR hero — Deep Sleep 5.98% CTR; highest single-video impressions (796K)
+    slot_priority: "Monday PM first. If not available, Wednesday/Friday. NEVER waste on Sat/Sun when Monday is within 2 days."
+    cooldown: "5 days same lane. 3 days minimum if switching lane (see §3 lane_diversity_modifier)."
+    double_hero_rule: "Two hero instruments on same day = ceiling-breaker. May 5 (Bansuri+Sitar) = 758K. May 7 (Bansuri+Yoga) = 985K. Best mechanism for breakout impression days."
 
-  supporting:                          # Use for safe FILLER ships (variety, not breakthroughs)
-    - Sarangi                          # Emotional comfort lane
-    - Santoor                          # Joyful / morning energy lane
-    - Sarod                            # Clinical-reset alternate (currently winning Test 17)
+  strong:                              # 74K avg impressions — use for doubles, weekend slots, non-hero days
+    instruments:
+      - Sarangi                        # Emotional comfort + yoga lane; highest single Strong (164K May 4)
+      - Surbahar                       # Retention anchor (Deep Rest AVD 26%); NOT hero-tier impressions
+      - Dilruba                        # Morning energy; 155K ceiling when channel is hot
+      - Sarod                          # Clinical-reset alternate; Brain Fog lane
+    slot_priority: "Weekend slots, day-after-hero slots, doubles with a hero, mid-week fillers."
+    note: "Surbahar moved from hero tier — data shows 22K-90K impressions, not 247K. AVD hero only."
 
-  tactical:                            # Low-priority — use sparingly (variety only)
-    - Dilruba                          # Morning energy occasional
-    - Tanpura                          # Sleep solo niche only
+  filler:                              # 32K avg impressions — supporting ships only, NOT swings
+    instruments:
+      - Santoor                        # Calm/restoration lane; ceiling ~107K only when channel is hot from heroes
+      - Tanpura                        # Sleep solo niche; very low solo impressions
+    slot_priority: "Weekend AM doubles, Monday opener before hero arrives, mid-week variety."
+    warning: "Filler impressions decay rapidly without hero momentum. Never schedule filler on Monday PM when a hero is rested."
 
   recovering:                          # NEEDS clinical hook to work — avoid soft framings
-    - Veena                            # Failed in soft-soothing lanes; only clinical-curiosity hooks
+    instruments:
+      - Veena                          # Failed in soft-soothing lanes; only clinical-curiosity hooks
 
   experimental:                        # Moonshots only — don't pin breakthrough hopes
-    - Esraj
-    - Oud
+    instruments:
+      - Esraj
+      - Oud
 
   retired:
-    - Acoustic Guitar                  # Cross-genre risk — abandoned
+    instruments:
+      - Acoustic Guitar                # Cross-genre risk — abandoned
+
+# ============================================================
+# 4b. DAY-OF-WEEK SCHEDULING RULES (banked 2026-05-31)
+# ============================================================
+# Source: Daily channel impression data Apr 4 – May 29 2026 (N=56 days, detrended)
+# Method: Removed linear growth trend → isolated genuine DOW signal from channel growth confound.
+#
+# DETRENDED DOW RESIDUALS (daily channel impressions vs trend):
+#   Monday:    +193K  ← best day
+#   Tuesday:   +111K
+#   Wednesday:  +64K
+#   Thursday:   -26K
+#   Friday:     -97K
+#   Saturday:  -149K  ← worst day
+#   Sunday:    -113K
+#
+# RAW AVERAGES (last 2 stable weeks May 16-29):
+#   Mon: 1,363K  |  Tue: 1,524K  |  Wed: 1,356K  |  Thu: 1,287K
+#   Fri: 1,243K  |  Sat: 1,029K  |  Sun: 1,101K
+#   Weekend avg: 1,065K vs Weekday avg: 1,355K = 22% weekend dip
+
+day_of_week_rules:
+  hero_slot_priority:
+    primary: "Monday PM"               # Highest detrended DOW (+193K). Monday PM ship bursts on Tuesday (+111K). Two best days working for same video.
+    secondary: "Wednesday or Friday"   # If Monday hero is on cooldown, Wed/Fri still above weekend floor
+    avoid: "Saturday and Sunday"       # -149K and -113K below trend respectively. 22% fewer impressions than weekday avg.
+
+  weekend_rule:
+    saturday: "Strong or Filler instruments only. Hero instruments should NOT ship Saturday."
+    sunday: "Strong or Filler preferred. Exception: Sunday PM is acceptable for hero if (a) no Monday slot available within 2 days AND (b) hero has been rested 6+ days."
+    rationale: "Weekend audience browses less in this niche. 22% impression gap is confirmed and real. A hero wasted on Saturday gets ~1,029K channel impressions; same hero on Monday gets ~1,363K."
+
+  monday_hero_rule:
+    rule: "If a hero instrument (Sitar or Bansuri) has ≥5 days of rest and the current slot is Monday PM — use it. Don't fill Monday PM with a filler when a hero is ready."
+    bad_pattern: "Santoor on Monday PM while Sitar has been rested 6 days (leaves ~300K impressions on the table for that video)"
+    good_pattern: "Sitar or Bansuri on Monday PM → burst hits Tuesday → strong early-week compounding"
+
+  day_after_hero:
+    finding: "At scale (1M+ daily impressions), hero ship day does NOT lift next-day channel impressions (difference = 1,658 impressions — effectively zero)"
+    implication: "Individual video impressions still matter (hero = 247K avg per video vs filler = 32K). But the channel-wide floor is driven by catalog, not new ships."
+    catalog_note: "Current channel floor of 1M+ daily impressions is sustained by Sitar Dopamine Reset + Sleep Bansuri catalog. Hero ships build the NEXT catalog winner. Fillers cannot sustain the floor."
+
+  monday_tuesday_peak_explanation:
+    pattern: "Screenshot shows Mon-Tue impression peaks every week — NOT a Tuesday-specific audience effect"
+    actual_cause: "Monday PM ship gets its algorithmic fresh-video burst on Tuesday. Both days are above trend, creating a visible Mon-Tue tandem peak in the graph."
+    test: "May 22-26 had ZERO new ships yet hit 1.51M on Tuesday — because existing catalog (Sitar DR + Sleep Bansuri) gets its weekly re-evaluation push early in the week."
 
 # ============================================================
 # 5. LANE DISTRIBUTION per week
@@ -165,7 +253,7 @@ pre_ship_checklist:
   - phrase_lock_check: "Lead phrase must clear data/playbook/phrase_locks.json"
   - vidiq_floor: "Lead phrase ≥60 for new ships (≥30 for refreshes — see refresh_batches.json)"
   - music_suffix_check: "If lead is state-of-mind phrase (Mental Break, Burnt Out, Tired Mind) → DROP 'Music' suffix (2× VidIQ lift). Keep Music suffix only for SEO-cluster leads (Healing Music, Sleep Music, Brain Reset Music)."
-  - instrument_cooldown: "≥4 days since same instrument last shipped"
+  - instrument_cooldown: "≥5 days since same instrument last shipped (same lane). ≥3 days if switching to completely different audience lane (see §3 lane_diversity_modifier). Run cooldown_check.py to verify."
   - lane_diversification: "Different cluster from previous 48hr ships"
   - dead_lane_check: "Lead does NOT fall into anti_patterns.json dead-lane list (soothing/sound-healing/meditation-music generic, anxiety-as-lead, focus-pre-pivot)"
   - audio_quality_gate: "First Suno clip verified ≤AVD-recovering character before extending"
@@ -224,26 +312,33 @@ ship_seo_layers:
 planning_session_steps:
   1: "Read SESSION_CONTEXT.md to see active swings + last week's results"
   2: "Read data/refresh_batches.json to see parallel refresh experiment status"
-  3: "Identify 3 swings for the week (use swing_criteria above)"
-  4: "Assign swings to PM slots — protect each with single-day-before rule"
-  5: "Fill remaining slots: doubles on weekend + non-swing days, singles before swings"
-  6: "Match instruments to lanes using instrument_lane_fit.json"
-  7: |
+  3: "Identify hero instrument slots first — assign Sitar/Bansuri to Monday PM. Check cooldowns."
+  4: "Identify 2-3 swings for the week (use swing_criteria above). Hero + Monday PM = natural swing slot."
+  5: |
+      Assign day-of-week slots using §4b rules:
+      - Monday PM → Hero (Sitar or Bansuri, whichever has longer cooldown)
+      - Wednesday/Friday → second hero if rested, else Strong instrument
+      - Sat/Sun → Strong or Filler only (22% impression dip confirmed)
+      - Protect each swing with single-day-before rule
+  6: "Fill remaining slots: doubles on weekdays, singles before swings"
+  7: "Match instruments to lanes using instrument_lane_fit.json"
+  8: |
       ⭐ BEFORE proposing any instrument for any slot, RUN cooldown check (mechanical, not memory-based):
         python3 pipeline/cooldown_check.py YYYY-MM-DD
       Returns VIABLE vs BLOCKED list per instrument. NEVER propose a BLOCKED instrument.
       Re-run for EACH new slot in the week.
-  8: "Check lane distribution against target ratios"
-  9: "VidIQ-check fresh lead phrases (≥60 for new, ≥30 for refresh)"
-  10: |
+      Note: cooldown_check enforces 5-day minimum (updated from 4). Lane-diversity override = manual judgment.
+  9: "Check lane distribution against target ratios"
+  10: "VidIQ-check fresh lead phrases (≥60 for new, ≥30 for refresh)"
+  11: |
       Run conflict-check on every proposed lead (4 sources):
       1. data/playbook/phrase_locks.json
       2. Last 20 days briefs (grep data/video_briefs/*.json)
       3. Live channel REACH_HISTORY.csv
       4. Internal-week proposals (collision detection)
-  11: "Lock titles + thumbs per ship"
-  12: "Write briefs to data/video_briefs/v_YYYY-MM-DD_*.json"
-  13: "Update SESSION_CONTEXT §12 pointer + commit"
+  12: "Lock titles + thumbs per ship"
+  13: "Write briefs to data/video_briefs/v_YYYY-MM-DD_*.json"
+  14: "Update SESSION_CONTEXT §12 pointer + commit"
 
 mechanical_check_scripts:
   cooldown_check: "pipeline/cooldown_check.py YYYY-MM-DD — instrument cooldown viability per slot"

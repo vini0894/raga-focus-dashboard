@@ -1,8 +1,18 @@
 """Instrument cooldown check — run BEFORE recommending an instrument for any slot.
 
-Enforces weekly_planning_rules.yaml §3 (4-day cooldown) by cross-checking:
+Enforces weekly_planning_rules.yaml §3 (5-day cooldown, upgraded from 4) by cross-checking:
 1. Live channel ships (REACH_HISTORY.csv latest capture)
 2. Queued briefs (data/video_briefs/*.json with status=DRAFT, planned_date >= target)
+
+Cooldown evidence (Sitar, May 2026):
+  3-day gap →  39K impressions
+  5-day gap → 139K impressions  (3.6× better)
+  6-day gap → 151K impressions  (3.9× better)
+
+Lane-diversity override (manual judgment only — NOT enforced here):
+  Same instrument + different audience lane = 3-day minimum acceptable.
+  Example: Bansuri morning productivity → Bansuri deep sleep = different pool.
+  This script enforces the 5-day hard rule. Override requires explicit human sign-off.
 
 Usage:
     python3 pipeline/cooldown_check.py 2026-05-18
@@ -14,7 +24,23 @@ from pathlib import Path
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
 INSTRUMENTS = ['Sitar','Bansuri','Sarangi','Veena','Surbahar','Sarod','Santoor','Dilruba','Tanpura','Esraj','Violin','Oud']
-MIN_GAP_DAYS = 4
+MIN_GAP_DAYS = 5   # upgraded from 4 — data shows 3-day gap = 39K vs 5-day = 139K (3.6× penalty)
+
+# Tier labels for display — from weekly_planning_rules.yaml §4 (data-backed May 2026)
+INSTRUMENT_TIER = {
+    'Sitar':    '🔥 HERO   (avg 247K impr)',
+    'Bansuri':  '🔥 HERO   (avg 247K impr)',
+    'Sarangi':  '⚡ STRONG (avg  75K impr)',
+    'Surbahar': '⚡ STRONG (avg  75K impr)',
+    'Dilruba':  '⚡ STRONG (avg  75K impr)',
+    'Sarod':    '⚡ STRONG (avg  75K impr)',
+    'Santoor':  '   FILLER (avg  32K impr)',
+    'Veena':    '   FILLER (avg  32K impr)',
+    'Tanpura':  '   FILLER (avg  32K impr)',
+    'Esraj':    '   EXPERIMENTAL',
+    'Violin':   '   EXPERIMENTAL',
+    'Oud':      '   EXPERIMENTAL',
+}
 
 
 def last_live_ship_per_instrument(target_date_str):
@@ -77,9 +103,16 @@ def main(target_date_str):
     last, capture = last_live_ship_per_instrument(target_date_str)
     queued = queued_ships_per_instrument(target_date_str)
 
-    print(f"\n=== INSTRUMENT COOLDOWN CHECK for {target_date_str} ===")
+    dow = target_date.strftime('%A')
+    dow_note = ''
+    if dow == 'Monday':
+        dow_note = ' ← HERO SLOT. Prioritise Sitar or Bansuri if viable (§4b).'
+    elif dow in ('Saturday', 'Sunday'):
+        dow_note = f' ← WEEKEND ({dow}). 22% impression dip vs weekday avg. Use Strong/Filler. Avoid Hero unless 6+ days rested AND no Monday within 2 days.'
+
+    print(f"\n=== INSTRUMENT COOLDOWN CHECK for {target_date_str} ({dow}){dow_note} ===")
     print(f"(Data: REACH_HISTORY capture {capture} + queued briefs ≥ target date)")
-    print(f"(Rule: ≥{MIN_GAP_DAYS}-day gap from last ship AND from queued ships, per weekly_planning_rules.yaml §3)\n")
+    print(f"(Rule: ≥{MIN_GAP_DAYS}-day gap same lane | ≥3-day if lane-switch — see §3. Lane override = human judgment only.)\n")
 
     viable, blocked = [], []
     for inst in INSTRUMENTS:
@@ -110,10 +143,11 @@ def main(target_date_str):
         last_str = f'last:{ls[0]}({gap_back}d)' if ls else 'last:none'
         queued_str = f' queued:{",".join(q[0] for q in qs)}' if qs else ''
 
+        tier = INSTRUMENT_TIER.get(inst, '')
         if flags:
-            blocked.append(f'  {inst:10}  {last_str}{queued_str}  →  {", ".join(flags)}')
+            blocked.append(f'  {inst:10}  {tier:<32}  {last_str}{queued_str}  →  {", ".join(flags)}')
         else:
-            viable.append(f'  {inst:10}  {last_str}{queued_str}  →  ✅ VIABLE')
+            viable.append(f'  {inst:10}  {tier:<32}  {last_str}{queued_str}  →  ✅ VIABLE')
 
     print('VIABLE:')
     for v in viable:
@@ -121,7 +155,8 @@ def main(target_date_str):
     print('\nBLOCKED:')
     for b in blocked:
         print(b)
-    print(f'\nViable count: {len(viable)}/{len(INSTRUMENTS)}\n')
+    print(f'\nViable count: {len(viable)}/{len(INSTRUMENTS)}')
+    print(f'\n📌 REMINDER §4b: Monday PM → Hero first. Weekend → Strong/Filler only.\n')
 
 
 if __name__ == '__main__':
