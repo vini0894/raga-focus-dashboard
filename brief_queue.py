@@ -35,6 +35,7 @@ STATUS_VALUES = [
     "RENDERED",         # MP4 produced, awaiting upload
     "PUBLISHED",        # Live on YouTube
     "COMPLETE",         # A/B test concluded, fully done
+    "PARKED",           # Set aside / off-calendar, saved for a future week
 ]
 
 

@@ -1517,9 +1517,10 @@ with tab_briefs:
         st.markdown("📊 " + "  ·  ".join(_bits), unsafe_allow_html=True)
         st.divider()
 
-        # Split into active vs shipped
+        # Split into active vs parked vs shipped
         shipped_statuses = {"PUBLISHED", "COMPLETE"}
-        active_briefs  = [b for b in briefs if b.get("status", "DRAFT") not in shipped_statuses]
+        parked_briefs  = [b for b in briefs if b.get("status") == "PARKED"]
+        active_briefs  = [b for b in briefs if b.get("status", "DRAFT") not in shipped_statuses and b.get("status") != "PARKED"]
         shipped_briefs = [b for b in briefs if b.get("status", "DRAFT") in shipped_statuses]
 
         # Sort active by planned_date ascending (next-up at top), missing dates last.
@@ -1531,6 +1532,7 @@ with tab_briefs:
             d = b.get("date_shipped") or b.get("planned_date") or "0000-01-01"
             return d
         active_briefs.sort(key=_sort_key_active)
+        parked_briefs.sort(key=lambda b: b.get("created_at") or "0000-01-01", reverse=True)
         shipped_briefs.sort(key=_sort_key_shipped, reverse=True)
 
         def _render_brief_row(b, show_shipped_date=False, is_next=False):
@@ -1778,6 +1780,12 @@ with tab_briefs:
                 _render_brief_row(b, is_next=(i == 0))
         else:
             st.info("No active briefs — generate ideas to fill the queue.")
+
+        # Parked briefs (collapsed) — off-calendar, saved for a future week
+        if parked_briefs:
+            with st.expander(f"🅿️ Parked ({len(parked_briefs)}) — off-calendar, saved for later", expanded=False):
+                for b in parked_briefs:
+                    _render_brief_row(b)
 
         # Shipped briefs (collapsed)
         if shipped_briefs:
