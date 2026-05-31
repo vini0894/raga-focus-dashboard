@@ -6,10 +6,10 @@
     "planned_date": "2026-06-01",
     "planned_slot": "PM (7pm IST)",
     "source": "backlog (pre-rendered — audio done, from user's existing library)",
-    "title": "Deep Relaxation | Dilruba Instrumental Music | 1.5 Hours of Healing",
+    "title": "Deep Relaxation | Release the Day | 1.5 Hours Dilruba Instrumental",
     "title_variants": {
-        "A": "Deep Relaxation | Dilruba Instrumental Music | 1.5 Hours of Healing",
-        "B": "Deep Relaxation | Dilruba Instrumental Music | 1.5 Hours of Healing"
+        "A": "Deep Relaxation | Release the Day | 1.5 Hours Dilruba Instrumental",
+        "B": "Deep Relaxation | Dilruba Instrumental Music | 1.5 Hours"
     },
     "components": {
         "problem": "stress, emotional overwhelm, and constant mental activity making it hard to relax and feel at peace / need a positive space for deep relaxation and inner balance",
@@ -20,9 +20,9 @@
         "wave": "None (no binaural layer)"
     },
     "validated_keywords": [
-        "Deep Relaxation (slot 1 — outcome lead, 'deep relaxation music' VidIQ 68)",
-        "Dilruba Instrumental Music (slot 2 — instrument anchor)",
-        "1.5 Hours of Healing (slot 3 — duration + healing descriptor)",
+        "Deep Relaxation (slot 1 — outcome lead, VidIQ 65)",
+        "Release the Day (slot 2 variant A — evening wind-down hook, VidIQ 52)",
+        "1.5 Hours Dilruba Instrumental (slot 3 — duration + instrument anchor)",
         "deep relaxation music",
         "dilruba instrumental music",
         "stress relief music",
@@ -36,19 +36,19 @@
         "raga focus"
     ],
     "ab_test": {
-        "test_id": null,
-        "test_type": "NO A/B — rendered backlog asset, straight ship",
+        "test_id": "Test 35",
+        "test_type": "TITLE A/B — same thumbnail both variants",
         "variant_A": {
-            "title": "Deep Relaxation | Dilruba Instrumental Music | 1.5 Hours of Healing",
-            "thumbnail_text": "DEEP RELAXATION",
-            "hypothesis": "Straight ship from backlog. Title is a clean 3-slot outcome→instrument→duration structure, time-agnostic. Thumbnail follows calm/relaxation lane rule (outcome/permission descriptor, not Q-hook). Thumbnail text is a PLACEHOLDER — lock before publish."
+            "title": "Deep Relaxation | Release the Day | 1.5 Hours Dilruba Instrumental",
+            "thumbnail_text": "TAKE SOME REST",
+            "hypothesis": "Emotional-hook slot 2 — 'Release the Day' (VidIQ 52) adds an evening wind-down hook on top of the 'Deep Relaxation' (65) calm lead. Tests whether the release hook lifts CTR vs a plain instrument descriptor, within the channel's proven calm/rest lane."
         },
         "variant_B": {
-            "title": "Deep Relaxation | Dilruba Instrumental Music | 1.5 Hours of Healing",
-            "thumbnail_text": "DEEP RELAXATION",
-            "hypothesis": "Same as A — no test."
+            "title": "Deep Relaxation | Dilruba Instrumental Music | 1.5 Hours",
+            "thumbnail_text": "TAKE SOME REST",
+            "hypothesis": "Plain descriptor control — same 'Deep Relaxation' lead, slot 2 is the instrument descriptor (no emotional hook). Isolates the variable: does the 'Release the Day' hook beat a plain descriptor?"
         },
-        "test_method": "No A/B. Pre-rendered backlog asset deployed to fill Mon June 1 PM with zero production cost. Title + thumbnail text are placeholders to lock before publish."
+        "test_method": "Title-only A/B (Test 35). Same thumbnail both variants — 'TAKE SOME REST' (calm-lane permission/outcome directive — proven winning thumb format, N=3; matches the rendered art: tired figure at a desk, evening/moon). Single variable: emotional hook 'Release the Day' (A) vs plain instrument descriptor (B), both sharing the 'Deep Relaxation' (65) lead. Backlog rendered asset, so the A/B is free via YouTube Test & Compare. If A wins: 'Release the ___' hooks lift CTR in the calm lane — reuse. If B wins: keep titles plain/descriptive."
     },
     "strategic_bet": "BACKLOG FILLER — Mon June 1 PM. Pre-rendered Dilruba asset deployed to the Monday slot at zero production cost. Rationale: Sunday May 31 PM ships a 3-hour Sitar (hero + long-form, the channel's one fresh non-surge signal). That Sitar's D+1 tail elevates Monday on its own (cf. May 11 Mon Sitar → May 12 Tue +58K; May 16 Sat Sitar → May 17 Sun +113K). So Monday is already covered — this Dilruba rides the tail rather than carrying the day. Placed PM (not AM) to keep a full ~24h gap from the Sunday evening Sitar so the Sitar's early-test window matures first (avoids Finding 7 absorption). Deep-relaxation/healing lane is distinct from Tuesday's Bansuri anxiety lane (different search intent, different instrument). Dilruba 6 days clear from May 26 (Overthinking). Note: Dilruba's 2.1M (May 9 Morning Energy) was a one-off surge artifact — realistic expectation here is strong-tier ~30-60K.",
     "success_good": "2500+ views, 22%+ AVD, 3.6%+ CTR in 48h",
@@ -83,12 +83,12 @@
         }
     ],
     "tags": "deep relaxation music, dilruba instrumental music, healing music, stress relief music, indian instrumental music, meditation music, calming music, relaxation music, anxiety relief music, emotional balance, indian classical music, santoor music, tanpura, mindfulness music, yoga music, peaceful music, dilruba music, deep relaxation, healing dilruba, raga focus",
-    "description": "Deep Relaxation | Dilruba Instrumental Music | 1.5 Hours of Healing\n\nStress, emotional overwhelm, and constant mental activity can make it difficult to relax and feel at peace. This uplifting Indian instrumental music is designed to help calm the mind, ease emotional tension, and create a positive space for deep relaxation and inner balance.\n\nEnjoy 1 hour 30 minutes of expressive Dilruba melodies blended with Santoor textures, gentle tabla rhythms, warm tanpura resonance, and soothing ambient layers.\n\nPerfect for stress relief, anxiety reduction, meditation, yoga, focus, relaxation, studying, reading, self-care routines, and peaceful daily listening.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Dilruba, Santoor, Tabla & Tanpura\nStyle: Indian ambient instrumental/modern healing raga atmosphere\nMood: Uplifting, peaceful, positive, emotionally soothing\nAtmosphere: Deep relaxation, stress relief, mindfulness, inner balance\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPlay this music while meditating, practicing yoga, working, reading, journaling, relaxing after a long day, or whenever you need a calm and positive mental space. \n\nFor the best experience, use headphones or listen in a quiet environment. Allow the flowing Dilruba melodies to gently guide your mind toward relaxation and clarity.\n\n0:00 Bright Dilruba opening\n11:15 Gentle rhythmic awakening\n22:55 Uplifting melodic flow\n34:45 Peak positive energy\n45:00 Warm reflective transition\n56:15 Deep relaxation atmosphere\n1:07:30 Grounding emotional resonance\n1:18:45 Peaceful settling phase\n1:25:00 Gentle wind down\n1:29:00 Soft fade into stillness\n\n⏱ BEST FOR\nStress relief music\nDeep relaxation\nMeditation & mindfulness\nYoga practice\nPositive healing music\nStudy & focus sessions\nReading & journaling\nMental clarity\nIndian instrumental music\nEmotional balance & inner peace\n\nIf this music helped you relax, recharge, or find a moment of calm, subscribe to Raga Focus for more uninterrupted Indian instrumental music journeys.\n\n#Dilruba #RelaxationMusic #MeditationMusic #HealingMusic #StressRelief #IndianInstrumental #CalmingMusic #Mindfulness #YogaMusic #PeacefulMusic",
-    "thumbnail_text_main": "DEEP RELAXATION",
+    "description": "Deep Relaxation | Release the Day | 1.5 Hours Dilruba Instrumental\n\nStress, emotional overwhelm, and constant mental activity can make it difficult to relax and feel at peace. This uplifting Indian instrumental music is designed to help calm the mind, ease emotional tension, and create a positive space for deep relaxation and inner balance.\n\nEnjoy 1 hour 30 minutes of expressive Dilruba melodies blended with Santoor textures, gentle tabla rhythms, warm tanpura resonance, and soothing ambient layers.\n\nPerfect for stress relief, anxiety reduction, meditation, yoga, focus, relaxation, studying, reading, self-care routines, and peaceful daily listening.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Dilruba, Santoor, Tabla & Tanpura\nStyle: Indian ambient instrumental/modern healing raga atmosphere\nMood: Uplifting, peaceful, positive, emotionally soothing\nAtmosphere: Deep relaxation, stress relief, mindfulness, inner balance\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPlay this music while meditating, practicing yoga, working, reading, journaling, relaxing after a long day, or whenever you need a calm and positive mental space. \n\nFor the best experience, use headphones or listen in a quiet environment. Allow the flowing Dilruba melodies to gently guide your mind toward relaxation and clarity.\n\n0:00 Bright Dilruba opening\n11:15 Gentle rhythmic awakening\n22:55 Uplifting melodic flow\n34:45 Peak positive energy\n45:00 Warm reflective transition\n56:15 Deep relaxation atmosphere\n1:07:30 Grounding emotional resonance\n1:18:45 Peaceful settling phase\n1:25:00 Gentle wind down\n1:29:00 Soft fade into stillness\n\n⏱ BEST FOR\nStress relief music\nDeep relaxation\nMeditation & mindfulness\nYoga practice\nPositive healing music\nStudy & focus sessions\nReading & journaling\nMental clarity\nIndian instrumental music\nEmotional balance & inner peace\n\nIf this music helped you relax, recharge, or find a moment of calm, subscribe to Raga Focus for more uninterrupted Indian instrumental music journeys.\n\n#Dilruba #RelaxationMusic #MeditationMusic #HealingMusic #StressRelief #IndianInstrumental #CalmingMusic #Mindfulness #YogaMusic #PeacefulMusic",
+    "thumbnail_text_main": "TAKE SOME REST",
     "thumbnail_text_variants": [
-        "DEEP RELAXATION"
+        "TAKE SOME REST"
     ],
-    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-deep-teal patterned border with lotus and soft healing-light motifs, aged warm parchment background, warm calming palette (deep teal, warm amber, aged cream, soft golden glow). Central figure: serene musician in soft teal-and-gold attire seated cross-legged playing dilruba (bowed string instrument held upright, bow in hand) in a quiet peaceful courtyard. Warm gentle light, expression of deep calm and emotional ease — peaceful, uplifted, at rest. Bold dark-teal serif overlay text reading 'DEEP RELAXATION' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Deep teal, warm amber, and aged cream palette, peaceful healing mood, single composed scene, no clutter. NOTE: placeholder thumbnail concept — confirm/adjust before publish.",
+    "thumbnail_prompt": "FINAL (already rendered). Pichwai/Kangra miniature painting style, ornate floral gold-and-green patterned border, aged warm parchment background, evening palette with a full moon rising. Central figure: a woman in a green-and-cream floral sari seated at a low wooden writing desk strewn with manuscripts/papers, one hand dabbing her brow with a cloth (tired after a long day of work), gentle contented half-smile, brass inkpot and vessels nearby, river-and-garden landscape behind. Bold dark-green serif overlay text reading 'TAKE SOME REST' on the right third, high contrast for mobile readability. Warm cream, deep green, and aged-gold palette, calm evening 'end of a long day' mood. Calm-lane permission/outcome thumb (proven winning format). Pairs with title hook 'Release the Day'.",
     "suno_prompt_A": "Instrumental only, no vocals. Uplifting Indian instrumental music featuring expressive Dilruba lead melodies, sparkling Santoor, rhythmic acoustic strings, soft tabla grooves, gentle hand percussion, warm tanpura, and subtle ambient textures. Positive, energizing, and emotionally soothing with a steady flowing rhythm. Inspiring sunrise-like atmosphere, light classical influences, smooth transitions, vibrant yet relaxing mood, perfect for stress relief, mental clarity, focus, yoga, meditation, productivity, and emotional renewal.",
     "suno_prompt_B": "Same as A — this is the actual prompt used to generate the rendered backlog track (no separate B variant).",
     "production_spec": {
