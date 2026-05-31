@@ -1,0 +1,108 @@
+{
+    "id": "v_2026-06-01_deep_relaxation_dilruba",
+    "status": "RENDERED",
+    "date_shipped": null,
+    "created_at": "2026-05-31",
+    "planned_date": "2026-06-01",
+    "planned_slot": "PM (7pm IST)",
+    "source": "backlog (pre-rendered — audio done, from user's existing library)",
+    "title": "Deep Relaxation | Dilruba Instrumental Music | 1.5 Hours of Healing",
+    "title_variants": {
+        "A": "Deep Relaxation | Dilruba Instrumental Music | 1.5 Hours of Healing",
+        "B": "Deep Relaxation | Dilruba Instrumental Music | 1.5 Hours of Healing"
+    },
+    "components": {
+        "problem": "stress, emotional overwhelm, and constant mental activity making it hard to relax and feel at peace / need a positive space for deep relaxation and inner balance",
+        "instrument": "Dilruba",
+        "instrument_blend": "Dilruba (lead) + Santoor textures + gentle tabla + tanpura + ambient layers",
+        "raga": "None (ambient healing atmosphere — not a strict raga)",
+        "hz": "unspecified (backlog render)",
+        "wave": "None (no binaural layer)"
+    },
+    "validated_keywords": [
+        "Deep Relaxation (slot 1 — outcome lead, 'deep relaxation music' VidIQ 68)",
+        "Dilruba Instrumental Music (slot 2 — instrument anchor)",
+        "1.5 Hours of Healing (slot 3 — duration + healing descriptor)",
+        "deep relaxation music",
+        "dilruba instrumental music",
+        "stress relief music",
+        "healing music",
+        "indian instrumental music",
+        "meditation music",
+        "calming music",
+        "relaxation music",
+        "anxiety relief music",
+        "indian classical music",
+        "raga focus"
+    ],
+    "ab_test": {
+        "test_id": null,
+        "test_type": "NO A/B — rendered backlog asset, straight ship",
+        "variant_A": {
+            "title": "Deep Relaxation | Dilruba Instrumental Music | 1.5 Hours of Healing",
+            "thumbnail_text": "DEEP RELAXATION",
+            "hypothesis": "Straight ship from backlog. Title is a clean 3-slot outcome→instrument→duration structure, time-agnostic. Thumbnail follows calm/relaxation lane rule (outcome/permission descriptor, not Q-hook). Thumbnail text is a PLACEHOLDER — lock before publish."
+        },
+        "variant_B": {
+            "title": "Deep Relaxation | Dilruba Instrumental Music | 1.5 Hours of Healing",
+            "thumbnail_text": "DEEP RELAXATION",
+            "hypothesis": "Same as A — no test."
+        },
+        "test_method": "No A/B. Pre-rendered backlog asset deployed to fill Mon June 1 PM with zero production cost. Title + thumbnail text are placeholders to lock before publish."
+    },
+    "strategic_bet": "BACKLOG FILLER — Mon June 1 PM. Pre-rendered Dilruba asset deployed to the Monday slot at zero production cost. Rationale: Sunday May 31 PM ships a 3-hour Sitar (hero + long-form, the channel's one fresh non-surge signal). That Sitar's D+1 tail elevates Monday on its own (cf. May 11 Mon Sitar → May 12 Tue +58K; May 16 Sat Sitar → May 17 Sun +113K). So Monday is already covered — this Dilruba rides the tail rather than carrying the day. Placed PM (not AM) to keep a full ~24h gap from the Sunday evening Sitar so the Sitar's early-test window matures first (avoids Finding 7 absorption). Deep-relaxation/healing lane is distinct from Tuesday's Bansuri anxiety lane (different search intent, different instrument). Dilruba 6 days clear from May 26 (Overthinking). Note: Dilruba's 2.1M (May 9 Morning Energy) was a one-off surge artifact — realistic expectation here is strong-tier ~30-60K.",
+    "success_good": "2500+ views, 22%+ AVD, 3.6%+ CTR in 48h",
+    "success_breakthrough": "5000+ views, 25%+ AVD — deep-relaxation Dilruba lane confirmed as a repeatable filler",
+    "failure_mode": "<1200 views or <3.2% CTR in 48h — relaxation lane saturated for Dilruba on this channel; rotate Dilruba to a different lane (overthinking/anxiety) next time",
+    "reference_ships": [
+        {
+            "title": "Morning Energy Music | Dilruba Raga Yaman | 1 Hour",
+            "pub": "2026-05-09",
+            "impressions": 2120168,
+            "views": 114206,
+            "ctr_pct": 3.8,
+            "avd_pct": 24.81,
+            "notes": "Dilruba ceiling — but a ONE-OFF surge artifact (re-attempt May 19 got 37K). Do not treat as a repeatable benchmark."
+        },
+        {
+            "title": "Anxiety Relief Music | Clear Your Mind | 1 Hour Dilruba Session",
+            "pub": "2026-05-01",
+            "impressions": 158695,
+            "views": 10182,
+            "ctr_pct": 4.55,
+            "avd_pct": 32.9,
+            "notes": "Dilruba calm/anxiety lane — strong AVD"
+        },
+        {
+            "title": "Overthinking Music | Dilruba Instrumental | 1.5 Hours",
+            "pub": "2026-05-26",
+            "impressions": 28296,
+            "views": 1601,
+            "ctr_pct": 3.78,
+            "notes": "Most recent Dilruba — realistic recent baseline"
+        }
+    ],
+    "tags": "deep relaxation music, dilruba instrumental music, healing music, stress relief music, indian instrumental music, meditation music, calming music, relaxation music, anxiety relief music, emotional balance, indian classical music, santoor music, tanpura, mindfulness music, yoga music, peaceful music, dilruba music, deep relaxation, healing dilruba, raga focus",
+    "description": "Deep Relaxation | Dilruba Instrumental Music | 1.5 Hours of Healing\n\nStress, emotional overwhelm, and constant mental activity can make it difficult to relax and feel at peace. This uplifting Indian instrumental music is designed to help calm the mind, ease emotional tension, and create a positive space for deep relaxation and inner balance.\n\nEnjoy 1 hour 30 minutes of expressive Dilruba melodies blended with Santoor textures, gentle tabla rhythms, warm tanpura resonance, and soothing ambient layers.\n\nPerfect for stress relief, anxiety reduction, meditation, yoga, focus, relaxation, studying, reading, self-care routines, and peaceful daily listening.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Dilruba, Santoor, Tabla & Tanpura\nStyle: Indian ambient instrumental/modern healing raga atmosphere\nMood: Uplifting, peaceful, positive, emotionally soothing\nAtmosphere: Deep relaxation, stress relief, mindfulness, inner balance\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPlay this music while meditating, practicing yoga, working, reading, journaling, relaxing after a long day, or whenever you need a calm and positive mental space. \n\nFor the best experience, use headphones or listen in a quiet environment. Allow the flowing Dilruba melodies to gently guide your mind toward relaxation and clarity.\n\n0:00 Bright Dilruba opening\n11:15 Gentle rhythmic awakening\n22:55 Uplifting melodic flow\n34:45 Peak positive energy\n45:00 Warm reflective transition\n56:15 Deep relaxation atmosphere\n1:07:30 Grounding emotional resonance\n1:18:45 Peaceful settling phase\n1:25:00 Gentle wind down\n1:29:00 Soft fade into stillness\n\n⏱ BEST FOR\nStress relief music\nDeep relaxation\nMeditation & mindfulness\nYoga practice\nPositive healing music\nStudy & focus sessions\nReading & journaling\nMental clarity\nIndian instrumental music\nEmotional balance & inner peace\n\nIf this music helped you relax, recharge, or find a moment of calm, subscribe to Raga Focus for more uninterrupted Indian instrumental music journeys.\n\n#Dilruba #RelaxationMusic #MeditationMusic #HealingMusic #StressRelief #IndianInstrumental #CalmingMusic #Mindfulness #YogaMusic #PeacefulMusic",
+    "thumbnail_text_main": "DEEP RELAXATION",
+    "thumbnail_text_variants": [
+        "DEEP RELAXATION"
+    ],
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-deep-teal patterned border with lotus and soft healing-light motifs, aged warm parchment background, warm calming palette (deep teal, warm amber, aged cream, soft golden glow). Central figure: serene musician in soft teal-and-gold attire seated cross-legged playing dilruba (bowed string instrument held upright, bow in hand) in a quiet peaceful courtyard. Warm gentle light, expression of deep calm and emotional ease — peaceful, uplifted, at rest. Bold dark-teal serif overlay text reading 'DEEP RELAXATION' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Deep teal, warm amber, and aged cream palette, peaceful healing mood, single composed scene, no clutter. NOTE: placeholder thumbnail concept — confirm/adjust before publish.",
+    "suno_prompt_A": "N/A — rendered from backlog (audio already produced). No Suno generation required.",
+    "suno_prompt_B": "N/A — rendered from backlog (audio already produced). No Suno generation required.",
+    "production_spec": {
+        "duration_minutes": 90,
+        "status": "AUDIO RENDERED (from backlog) — no production needed; needs thumbnail + final title/thumb lock + upload",
+        "instrument_blend": "Dilruba lead + Santoor + gentle tabla + tanpura + ambient layers",
+        "key_frequency_hz": "unspecified (backlog render)",
+        "binaural_wave": "None",
+        "render": "Already rendered (1.5 hours). Confirm format/loudness before upload.",
+        "notes": "Pre-rendered backlog asset — not pipeline-generated. Ambient healing atmosphere, no strict raga. Chapters already authored (see description). Outstanding before publish: (1) generate/confirm thumbnail, (2) lock final title + thumbnail text, (3) upload."
+    },
+    "experiment_notes": "Backlog rendered asset, no A/B. Deployed to Mon June 1 PM to fill the slot at zero production cost while riding the Sunday 3hr Sitar tail. Replaces the racing-mind Dilruba on the calendar (parked — only one Dilruba/week per cooldown). Part of the June 1-8 full-volume experiment week. Deep-relaxation lane, distinct from Tuesday's Bansuri anxiety lane.",
+    "playlists": [
+        "Peaceful Music",
+        "Healing & Anxiety Relief"
+    ]
+}
