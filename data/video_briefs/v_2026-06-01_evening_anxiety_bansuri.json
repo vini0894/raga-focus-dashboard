@@ -1,14 +1,14 @@
 {
     "id": "v_2026-06-01_evening_anxiety_bansuri",
-    "status": "DRAFT",
+    "status": "APPROVED",
     "date_shipped": null,
     "created_at": "2026-05-30",
     "planned_date": "2026-06-02",
     "planned_slot": "PM (7pm IST)",
-    "title": "Music to Calm Anxiety | Slow Bansuri | Indian Classical",
+    "title": "Calming Music for Anxiety | Slow Bansuri | Indian Classical",
     "title_variants": {
-        "A": "Music to Calm Anxiety | Slow Bansuri | Indian Classical",
-        "B": "Music to Calm Anxiety | Slow Bansuri | Indian Classical"
+        "A": "Calming Music for Anxiety | Slow Bansuri | Indian Classical",
+        "B": "Calming Music for Anxiety | Slow Bansuri | Indian Classical"
     },
     "components": {
         "problem": "anxiety that followed you home from work / the day ended but the tension hasn't / body is still in work mode at 7pm / mind still looping on conversations and tasks that haven't resolved",
@@ -18,7 +18,7 @@
         "wave": "Theta"
     },
     "validated_keywords": [
-        "Music to Calm Anxiety (slot 1 — outcome-action lead, anxiety lane)",
+        "Calming Music for Anxiety (slot 1 — anxiety-lane lead, VidIQ 72)",
         "Slow Bansuri (slot 2 — instrument + character descriptor)",
         "Indian Classical (slot 3 — genre anchor)",
         "anxiety music",
@@ -42,16 +42,16 @@
         "test_id": "Test 32",
         "test_type": "THUMB A/B — same title both variants",
         "variant_A": {
-            "title": "Music to Calm Anxiety | Slow Bansuri | Indian Classical",
+            "title": "Calming Music for Anxiety | Slow Bansuri | Indian Classical",
             "thumbnail_text": "STRESSED?",
             "hypothesis": "Broad mental-state Q-hook — 'STRESSED?' is the lane's proven winner (Test 14: beat RELAX DEEPLY 55/45 in relaxation/evening lane). Simple, direct, mobile-readable. Tests whether the broad question hook pulls maximum CTR in the Monday evening anxiety browse window."
         },
         "variant_B": {
-            "title": "Music to Calm Anxiety | Slow Bansuri | Indian Classical",
+            "title": "Calming Music for Anxiety | Slow Bansuri | Indian Classical",
             "thumbnail_text": "STILL ANXIOUS?",
             "hypothesis": "Specific mental-state Q-hook — 'STILL ANXIOUS?' names the Monday evening viewer state precisely. The word 'STILL' adds an emotional layer — anxiety that hasn't left despite the day ending. Tests whether specificity and emotional precision beat the simple broad Q-hook in evening anxiety lane."
         },
-        "test_method": "Thumb-only A/B (Test 32). Same title both variants — 'Music to Calm Anxiety | Slow Bansuri | Indian Classical'. Single variable: broad Q-hook (A) vs specific-emotional Q-hook (B). Both are mental-state Q-hooks — within the proven format for evening/relaxation lane (Test 14 HIGH confidence). This test refines the anxiety lane rule: does specificity and emotional layering beat simplicity within the Q-hook format?"
+        "test_method": "Thumb-only A/B (Test 32). Same title both variants — 'Calming Music for Anxiety | Slow Bansuri | Indian Classical'. Single variable: broad Q-hook (A) vs specific-emotional Q-hook (B). Both are mental-state Q-hooks — within the proven format for evening/relaxation lane (Test 14 HIGH confidence). This test refines the anxiety lane rule: does specificity and emotional layering beat simplicity within the Q-hook format?"
     },
     "strategic_bet": "HERO — Mon June 1 PM. Monday PM = confirmed highest DOW slot (+193K detrended vs trend). Bansuri hero instrument (avg 247K impressions vs 32K filler). 3-day gap from May 29 sleep Bansuri — lane-switch modifier applies: May 29 = sleep/relaxation lane, June 1 = evening anxiety lane, different audience pool. First Bansuri ship in the anxiety lane — lane expansion test. Raga Yaman (not yet used on Bansuri — previous: Darbari May 29, Bhimpalasi May 17). Monday PM hero burst lands on Tuesday — both above-trend days working for same video. Replaces Santoor (filler, 32K avg) in same slot — instrument upgrade alone is a 7× impression multiplier.",
     "success_good": "3000+ views, 22%+ AVD, 4%+ CTR in 48h",
@@ -81,7 +81,7 @@
         }
     ],
     "tags": "music to calm anxiety, anxiety music, bansuri music, bansuri for anxiety, slow bansuri, indian classical bansuri, indian flute music, anxiety relief music, stress relief music, calming music, evening music, raga yaman, yaman raga, 432hz, theta waves, indian classical music, indian instrumental music, relaxing bansuri, anxiety and stress music, raga focus",
-    "description": "Music to Calm Anxiety | Slow Bansuri | Indian Classical\n\nThe day ended. The tension didn't.\n\nSomething about Monday evenings — the body is still in work mode even when the work is done. The mind keeps looping on conversations, tasks that didn't finish, things you said or should have said. You're home, you're still, but you're not actually here yet.\n\nThis is 90 minutes of slow Bansuri in Raga Yaman — the classical Indian evening raga. Yaman is expansive and open. Its raised fourth interval gives it an upward, outward quality — phrases that open instead of close, that ease instead of settle. It doesn't try to sedate. It just makes space.\n\nThe bamboo flute carries it with the warmth of breath. No percussion, no rhythm to track. Just sound that gradually changes the texture of the evening.\n\n🎵 What you'll hear:\n- Bansuri — warm bamboo flute, breath-driven and slow\n- Raga Yaman — the classical Indian evening raga, expansive and open\n- Long sustained phrases with natural silences between them\n- No percussion, no tabla — space to breathe\n- A gentle theta layer barely audible underneath\n- 90 unbroken minutes at 432Hz\n\n⏱ Chapters\n0:00    Still running\n20:00   Beginning to slow\n45:00   Tension releasing\n70:00   Quiet\n85:00   Still\n\n🧠 How to use:\nPress play. Don't try to relax — just let it be on. The Bansuri does the work. You just need to be in the room with it. By the time you notice it's working, it already has been for a while.\n\n⏱ Best for:\n• Anxiety that hasn't switched off after work\n• Monday evening wind-down\n• Mind still looping after the day ends\n• Background while you cook, eat, or just sit\n• Quiet company when the mind is too loud\n\n📺 Subscribe to Raga Focus for daily Indian classical music for anxiety, sleep, and mental calm.\n\n— Raga Focus\n\n#anxietymusic #bansuri #indianclassicalmusic #432hz #thetawaves #eveningmusic #ragafocus #calminganxiety #indianflute #ragayaman #stressrelief",
+    "description": "Calming Music for Anxiety | Slow Bansuri | Indian Classical\n\nThe day ended. The tension didn't.\n\nSomething about Monday evenings — the body is still in work mode even when the work is done. The mind keeps looping on conversations, tasks that didn't finish, things you said or should have said. You're home, you're still, but you're not actually here yet.\n\nThis is 90 minutes of slow Bansuri in Raga Yaman — the classical Indian evening raga. Yaman is expansive and open. Its raised fourth interval gives it an upward, outward quality — phrases that open instead of close, that ease instead of settle. It doesn't try to sedate. It just makes space.\n\nThe bamboo flute carries it with the warmth of breath. No percussion, no rhythm to track. Just sound that gradually changes the texture of the evening.\n\n🎵 What you'll hear:\n- Bansuri — warm bamboo flute, breath-driven and slow\n- Raga Yaman — the classical Indian evening raga, expansive and open\n- Long sustained phrases with natural silences between them\n- No percussion, no tabla — space to breathe\n- A gentle theta layer barely audible underneath\n- 90 unbroken minutes at 432Hz\n\n⏱ Chapters\n0:00    Still running\n20:00   Beginning to slow\n45:00   Tension releasing\n70:00   Quiet\n85:00   Still\n\n🧠 How to use:\nPress play. Don't try to relax — just let it be on. The Bansuri does the work. You just need to be in the room with it. By the time you notice it's working, it already has been for a while.\n\n⏱ Best for:\n• Anxiety that hasn't switched off after work\n• Monday evening wind-down\n• Mind still looping after the day ends\n• Background while you cook, eat, or just sit\n• Quiet company when the mind is too loud\n\n📺 Subscribe to Raga Focus for daily Indian classical music for anxiety, sleep, and mental calm.\n\n— Raga Focus\n\n#anxietymusic #bansuri #indianclassicalmusic #432hz #thetawaves #eveningmusic #ragafocus #calminganxiety #indianflute #ragayaman #stressrelief",
     "thumbnail_text_main": "STRESSED?",
     "thumbnail_text_variants": [
         "STRESSED?",
@@ -102,7 +102,7 @@
         "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
         "notes": "Raga Yaman — classical Indian evening raga. Sa Re Ga Ma(teevra) Pa Dha Ni Sa. The raised 4th (teevra Ma) is Yaman's defining characteristic — gives it the expansive, open, upward quality distinct from heavier evening ragas like Darbari. LUFS -14 (evening viewer, awake and present). Theta 5Hz for anxiety relief. No tabla — space is essential. Bansuri mid-to-low register. EMOTIONAL TAG ROTATION: clip 1: 'evening giving anxiety somewhere to go' · clip 2: 'stress losing its grip — still and open' · clip 3: 'warm and present, held without pressure'."
     },
-    "experiment_notes": "Test 32 — THUMB-ONLY A/B. Same title both variants: 'Music to Calm Anxiety | Slow Bansuri | Indian Classical'.\n\nA: 'STRESSED?' — broad Q-hook, proven lane winner (Test 14: STRESSED? beat RELAX DEEPLY 55/45)\nB: 'STILL ANXIOUS?' — specific-emotional Q-hook, 'STILL' acknowledges persistence of anxiety\n\nAlso a lane expansion test for Bansuri (first Bansuri anxiety lane ship) and a Monday PM hero slot test.\nIf views ≥3000 in 48h → Bansuri anxiety lane viable. If ≥6000 → Monday PM hero placement confirmed as primary lever.\n\nParked version with Sunday framing available at v_2026-06-07_evening_anxiety_bansuri.json for future use.",
+    "experiment_notes": "Test 32 — THUMB-ONLY A/B. Same title both variants: 'Calming Music for Anxiety | Slow Bansuri | Indian Classical'.\n\nA: 'STRESSED?' — broad Q-hook, proven lane winner (Test 14: STRESSED? beat RELAX DEEPLY 55/45)\nB: 'STILL ANXIOUS?' — specific-emotional Q-hook, 'STILL' acknowledges persistence of anxiety\n\nAlso a lane expansion test for Bansuri (first Bansuri anxiety lane ship) and a Monday PM hero slot test.\nIf views ≥3000 in 48h → Bansuri anxiety lane viable. If ≥6000 → Monday PM hero placement confirmed as primary lever.\n\nParked version with Sunday framing available at v_2026-06-07_evening_anxiety_bansuri.json for future use.",
     "playlists": [
         "Healing & Anxiety Relief"
     ]
