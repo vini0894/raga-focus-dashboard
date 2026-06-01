@@ -107,6 +107,17 @@ Reusing a lead/lane that already has a catalog winner = the **new** video compet
 ## Finding 11 — Diversify LANES across the week (segmentation is uncertain) ⭐
 We do not actually know YouTube's segmentation. Recommendation is **viewer-based collaborative filtering**, not clean "lane×instrument buckets." Practical consequence: a **lane-concentrated week competes internally for the same viewer pool** (Finding 2 — "doubles don't add" — scaled to the whole week). Sitar's cross-lane consistency (100–388K across dopamine/cortisol/brain/morning) suggests **instrument-following is real**, so instrument spread is good — but **instrument diversity ≠ lane diversity.** Plan each week as a deliberate **lane SPREAD** (anxiety / cognitive / sleep / emotional / cortisol / morning-energy / relaxation), NOT 8 shades of "calm." A single-lane-heavy week is a concentration bet that only pays off if you're dominating that lane with a *fresh* winner — which "calm" is not.
 
+## Finding 12 — Match lane to BOTH time-of-day AND runtime; AVD is the engine, impressions are downstream ⭐
+Proven the hard way by the May 31 ship: **Sitar 3hr "mental clarity / unclog brain," launched Sunday PM.** CTR was fine (3.5% = channel avg) but **AVD = 14:00 → only ~7.8% of a 3hr video, and BELOW the channel's ~17.5-min blended norm.** Result: 5.2K impressions at 14h — a below-baseline ship.
+
+Three rules fall out of it:
+
+- **Lane × time-of-day must fit.** Cognitive / clarity / focus = a **morning / weekday-daytime** intent (a *task* mindset). Do NOT ship it Sunday evening — that audience is in wind-down mode and won't engage, so retention craters. Evening = wind-down / anxiety / sleep / emotional. Morning = energy / focus / clarity.
+- **Lane × runtime must fit.** **3-hour long-form ONLY for true long-session lanes — sleep, deep rest, study/deep-work background** — where viewers leave it running for hours. For cognitive / evening / anxiety / emotional, use **1.5hr**; those are shorter-session intents and the extra 90 min just tanks AVD%. (Contrast: May 17 "3hr Bansuri Relaxation / Deep Sleep" = 155K, 6.17% CTR — 3hr *worked* because sleep is a genuine long-session use-case.)
+- **AVD is the engine; impressions are a symptom.** Weak retention → weak watch-time/session signal → the algo won't expand → low impressions. A fresh ship's low impressions are usually *caused by* soft AVD, not a separate distribution quirk. **Judge a new ship on CTR + AVD, never the impression count.** And for long-form, judge AVD in **absolute minutes vs the runtime** (target ~25–45+ min for a 3hr), not the channel's blended ~17.5-min %.
+
+**Rule:** match the format to the *session length the lane implies*, and the lane to the *slot's browse intent*. 3hr = sleep/deep-rest/study only. Cognitive = morning/daytime + 1.5hr. When a ship underperforms, look at AVD first — if CTR is fine, do NOT swap the thumbnail.
+
 ## Operating rules (title + thumbnail)
 - **Calm/healing lane thumbnails:** offering / abstract-noun / outcome-state WIN; Q-hooks LOSE (DECISIVE; A/B Test 12: "EMOTIONAL HEALING" beats "HEAL YOUR HEART" 52/48). Use "FEEL BETTER", "FIND PEACE", "RESTORE", "DEEP MEDITATION" — not "DRAINED?", "HEAVY HEART?".
 - **"Healing Music" as a lead underperforms** (1.4–7.8K; the good ones were carried by *other* lead words like Comfort/Nervous System). Avoid the generic Healing Music lead.
