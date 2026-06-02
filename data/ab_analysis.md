@@ -1,6 +1,6 @@
 # A/B Test Reference — Title & Thumbnail Decision Guide
 
-**N=32 tests (23 concluded, 8 running, 1 superseded) · Last updated: 2026-05-30 · Next update due: when any running test concludes**
+**N=36 tests (23 concluded, 12 running, 1 superseded) · Last updated: 2026-06-02 · Next update due: when any running test concludes**
 Raw data: `ab_raw_data.csv` · Full verdicts: `ab_results.csv`
 
 Use this doc before writing any brief. Start with the two quick-reference tables, then check the universal rules, then check open questions for your specific lane.
@@ -128,7 +128,31 @@ These are active. Scores shown are directional only — wait for "Test finished"
 | 29 | Surbahar Rest | Burnout/Rest | ✅ CONCLUDED May 15–20 (user stopped) | Sound Healing Music \| Slow Surbahar \| 1.5 Hours of Rest + REST WITHOUT WORRY | Healing Frequency Music \| Slow Surbahar + FOR DRAINED MINDS | 58.6% vs 41.4% (17.2pp) — ⭐ strongest permission thumb signal |
 | 30 | Sarangi Emotional Release | Emotional/Stress | ✅ CONCLUDED May 20–24 (tie) | CARRYING TOO MUCH EMOTION? (YT promoted) | HEAVY HEART? | 48.6% vs 51.4% — format-tolerant tie, ⚠️ confounded |
 
+| 33 | Sarod Clear Head | Morning/Cognitive-Clarity | Thumb-only | CALM MORNING FOCUS | 53.6% | CLEAR YOUR HEAD | 46.4% | A | ~13d |
+| 34 | Bansuri Sleep Drift | Sleep | Title-only | Sleep Music \| Drift Off Effortlessly \| 1.5 Hours Bansuri | 52.1% | Relaxing Music \| Gentle Deep Rest \| Bansuri Music | 47.9% | A | ~10d |
+| 35 | Sitar Unclog Brain | Cognitive-Clarity | Thumb-only | CAN'T THINK STRAIGHT? | 43.2% | MIND FULL? | 56.8% | B | ~12d |
+| 36 | Dilruba Deep Relaxation | Deep Relaxation | Title-only | Deep Relaxation \| Release the Day \| 1.5 Hours Dilruba Instrumental | 46.3% | Deep Relaxation \| Dilruba Instrumental Music \| 1.5 Hours | 53.7% | B | ~13d |
+
 **⚠️ Tests 9 and 17** — started May 12–16, no recent screenshot. May have concluded. Paste latest screenshots to update.
+
+---
+
+## HYPOTHESIS IMPACT — Tests 33–36 early signals (2026-06-02)
+
+These are all still running — treat as directional only. But here's how they interact with existing rules:
+
+| Test | Early result | Impact on existing hypothesis | Verdict |
+|---|---|---|---|
+| **#33** CALM MORNING FOCUS vs CLEAR YOUR HEAD (thumb-only, morning) | A leading 53.6/46.4 | ✅ Supports morning anti-action rule. Morning-framed outcome (CALM MORNING FOCUS) beats cognitive-action (CLEAR YOUR HEAD). Interesting: title says "Clear Your Head Music" (cognitive framing) but morning thumb wins anyway — morning audience overrides title framing | No change to rule — strengthens it |
+| **#34** Sleep Music vs Relaxing Music (title-only, sleep) | A leading 52.1/47.9 | ✅ Directionally supports sleep lane rule (clinical SEO > generic relaxation lead). "Drift Off Effortlessly" in slot 2 is a new format — watch if margin grows | No change — early support |
+| **#35** CAN'T THINK STRAIGHT? vs MIND FULL? (thumb-only, cognitive) | B leading 56.8/43.2 | ⭐ **NEW SUB-RULE EMERGING:** Both are cognitive Q-hooks (consistent with existing rule — Q-hook belongs in thumb for cognitive lane). But MIND FULL? (2 words, pun) is crushing CAN'T THINK STRAIGHT? (4 words, literal). Q-hook *quality* matters inside the cognitive lane. Compact + clever beats verbose + literal | **Refines cognitive rule — adds Q-hook quality dimension** |
+| **#36** Release the Day vs Dilruba Instrumental Music (title-only, deep relaxation) | B leading 53.7/46.3 | ✅ Supports universal 3-slot rule. Clarifies Test 32 finding: "Positive Vibes" won in slot 2 because it has search intent. "Release the Day" loses because it's purely poetic with zero searchability. **New nuance: slot 2 poetry with 0 VidIQ = dead weight** | **Adds nuance to slot 2 rule: search intent required, not just lifestyle flavor** |
+
+**Key new rule emerging from #35:**
+> Within cognitive-clarity Q-hooks: **compact + wordplay beats verbose + literal**. MIND FULL? (2 words, double meaning) > CAN'T THINK STRAIGHT? (4 words, blunt). When writing cognitive Q-hooks, aim for: mobile-readable length (2–3 words), resonant wordplay if possible, playful rather than anxious tone.
+
+**Key nuance from #36 re slot 2:**
+> Slot 2 needs *search intent* or *specific outcome* — not poetic phrases. "Positive Vibes" won (people search it). "Release the Day" lost (zero searches, pure poetry). "Dilruba Instrumental Music" beats it because at least it's searchable, even if generic.
 
 ---
 

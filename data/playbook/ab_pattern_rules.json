@@ -1,6 +1,6 @@
 {
-  "version": "2026-05-30",
-  "n_tests": 32,
+  "version": "2026-06-02",
+  "n_tests": 36,
   "note": "Derived from ab_analysis.md. Update after each concluded test. Lane keys match map_theme_to_ab_lane() in title_preflight.py.",
   "universal_rules": [
     {
@@ -38,6 +38,13 @@
       "confidence": "MEDIUM",
       "evidence": ["#17", "#8"],
       "action": "When choosing between two SEO leads in the same lane, pick the higher VidIQ score."
+    },
+    {
+      "rule": "Slot 2 requires search intent or specific outcome — poetic lifestyle phrases lose",
+      "record": "1-0 directional (Test 36 running)",
+      "confidence": "LOW — running",
+      "evidence": ["#36 (Release the Day losing 46/54 to Dilruba Instrumental Music)", "#32 (Positive Vibes won 59/41 — has search intent)"],
+      "action": "In slot 2, use words people actually search (Positive Vibes, Instrumental Music) or specific outcome words. Avoid poetry with 0 VidIQ score (Release the Day, Find Your Center)."
     },
     {
       "rule": "IFO format (Instrument-for-Outcome) is format-tolerant, not a winning formula",
@@ -82,7 +89,7 @@
       "winning_thumb_examples": ["MENTALLY EXHAUSTED?", "MENTAL DETOX"],
       "avoid_thumb_type": "Statement",
       "avoid_thumb_examples": ["RESET YOUR THOUGHTS"],
-      "note": "Biggest gap in any test: SEO title + Q-hook thumb crushed Q-hook title + statement thumb 63/37. Q-hook belongs in thumb, not title.",
+      "note": "Biggest gap in any test: SEO title + Q-hook thumb crushed Q-hook title + statement thumb 63/37. Q-hook belongs in thumb, not title. ⭐ NEW SUB-RULE (Test 35 early, running): Within cognitive Q-hooks, COMPACT+PUNNY beats VERBOSE+LITERAL. MIND FULL? (2 words, pun on mindful) leading 56.8/43.2 over CAN'T THINK STRAIGHT? (4 words, literal). Q-hook quality dimensions: (1) mobile-readable length (2-3 words), (2) wordplay/resonance if possible, (3) playful over anxious tone.",
       "confidence": "HIGH",
       "evidence": ["#16 (63/37)", "#19 (62/38)"]
     },
