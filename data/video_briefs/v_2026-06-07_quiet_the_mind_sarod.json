@@ -1,0 +1,111 @@
+{
+    "id": "v_2026-06-07_quiet_the_mind_sarod",
+    "status": "DRAFT",
+    "date_shipped": null,
+    "created_at": "2026-05-31",
+    "planned_date": "2026-06-07",
+    "planned_slot": "PM (7pm IST)",
+    "title": "Music to Quiet the Mind | Slow Sarod | 1.5 Hours",
+    "title_variants": {
+        "A": "Music to Quiet the Mind | Slow Sarod | 1.5 Hours",
+        "B": "Music to Quiet the Mind | Slow Sarod | 1.5 Hours"
+    },
+    "components": {
+        "problem": "the mind won't stop running / thoughts spiraling on top of thoughts / can't sit still without something pulling attention / need something steady enough to quiet the inner noise without trying to fix it",
+        "instrument": "Sarod",
+        "raga": "Bhupali",
+        "hz": "432Hz",
+        "wave": "Theta"
+    },
+    "validated_keywords": [
+        "Music to Quiet the Mind (slot 1 \u2014 overthinking lane lead, fresh phrase on channel; differentiated structure from Sat Jun 6 'Music for Sleepless Nights')",
+        "Slow Sarod (slot 2 \u2014 instrument anchor + tempo descriptor)",
+        "1.5 Hours (slot 3 \u2014 duration anchor)",
+        "calm your mind (68)",
+        "overthinking music (63 \u2014 locked as lead until Jun 15, used as concept anchor only)",
+        "Music for Overthinkers (61)",
+        "release stress (66)",
+        "stress relief music (77)",
+        "sarod music (62)",
+        "bhupali (57)",
+        "theta (61)",
+        "432hz (74)",
+        "indian classical music (66)",
+        "indian instrumental music (67)",
+        "raga focus (66)"
+    ],
+    "ab_test": {
+        "test_id": "Test 35",
+        "test_type": "THUMBNAIL A/B \u2014 same title, two thumbnail texts (Q-hook vs imperative)",
+        "variant_A": {
+            "title": "Music to Quiet the Mind | Slow Sarod | 1.5 Hours",
+            "thumbnail_text": "MIND WON'T STOP?",
+            "hypothesis": "Specific-state Q-hook \u2014 proven format in anxiety/overthinking lane per playbook (Test 14: TOO MANY THOUGHTS beat THINK LESS; Test 8 directionally similar). Triggers state recognition ('yes that's me') and pairs with title verb structure (Music to Quiet \u2194 Mind Won't Stop). The safe/expected winner per N=32 data."
+        },
+        "variant_B": {
+            "title": "Music to Quiet the Mind | Slow Sarod | 1.5 Hours",
+            "thumbnail_text": "STOP OVERTHINKING",
+            "hypothesis": "Imperative format \u2014 fights the playbook rule (THINK LESS lost in Test 14) but matches a high-volume real YT search query ('stop overthinking') and is more specific/named than the abstract THINK LESS imperative that lost. Tests whether the Q-hook>imperative rule holds in the overthinking sub-lane specifically when the imperative names a real search behavior. Sunday's variable/low-stakes slot is the right place to bank this datapoint."
+        },
+        "test_method": "Thumb-only A/B on YouTube native A/B testing. Same title both variants, same thumbnail artwork base (Pichwai/Kangra Sarod scene), only overlay text differs. Isolates the Q-hook-vs-imperative variable cleanly in the overthinking lane. Run for full 7-day window; pick winner by CTR (impressions are equal in YT native A/B). Banks one of the most useful pieces of lane data the channel can collect \u2014 the Q-hook>imperative rule has 2 tests of evidence; a third data point here either reinforces or starts to qualify the rule for the overthinking sub-lane."
+    },
+    "strategic_bet": "STRONG-tier catalog ship \u2014 Sun June 7 PM (7pm IST), single ship. Sundays are variable on the channel, so this is a catalog ship, not a test. Justified repeat of Sarod within a week: 5-day cooldown from the June 2 Sarod, and DIFFERENT lane (morning-cognitive/clear-head \u2192 evening-calm/Sunday wind-down) on a DIFFERENT raga (Ahir Bhairav \u2192 Bhupali), so there is no cannibalization. Bhupali is fresh for the channel's Sarod ladder (recent Sarod ragas were Bilawal May 15/23, Bhairavi May 28, Ahir Bhairav June 2). Sets up the June 8 Monday Sitar hero ship by closing the week on a calm, low-stakes catalog note.",
+    "success_good": "2500+ views, 24%+ AVD, 3.8%+ CTR in 48h (Sunday PM is a variable, lower-traffic window)",
+    "success_breakthrough": "5000+ views, 27%+ AVD \u2014 evening-calm Sarod confirmed as a repeatable Sunday wind-down lane, lock as recurring Sunday slot",
+    "failure_mode": "<1500 views or <3.2% CTR in 48h \u2014 Sarod fatigue from two ships in one week, or evening-calm framing too soft for the Sunday browse audience; space Sarod ships further apart and lean the lead harder on 'relaxing music' next time",
+    "reference_ships": [
+        {
+            "title": "Mental Clarity Music | Slow Sarod | Brain Fog Reset",
+            "pub": "2026-05-15",
+            "impressions": 58139,
+            "views": 3326,
+            "ctr_pct": 4.07,
+            "avd_pct": 23.94,
+            "notes": "Sarod morning-cognitive lane benchmark \u2014 highest Sarod impressions"
+        },
+        {
+            "title": "Morning Reset Music | Slow Sarod",
+            "pub": "2026-05-23",
+            "impressions": 40717,
+            "views": 2484,
+            "ctr_pct": 4.44,
+            "avd_pct": 27.46,
+            "notes": "Best Sarod CTR + AVD on channel \u2014 morning-reset lane"
+        },
+        {
+            "title": "Music for Morning Anxiety | Sarod",
+            "pub": "2026-05-28",
+            "impressions": 45437,
+            "views": 2229,
+            "ctr_pct": 3.63,
+            "avd_pct": null,
+            "notes": "Sarod morning-anxiety lane \u2014 lower CTR, anxiety framing"
+        }
+    ],
+    "tags": "calm evening music, slow sarod, sarod music, calm music, relaxing music, peaceful music, evening music, unwind music, music to unwind, indian classical music, indian instrumental music, raga bhupali, bhupali, 432hz, theta waves, sunday relaxing music, end of day music, slow indian classical, evening meditation music, raga focus",
+    "description": "Music to Quiet the Mind | Slow Sarod | 1.5 Hours\n\nThe mind won't stop. The thoughts keep spiraling on top of each other.\n\nYou know that feeling \u2014 every time you try to sit still, another loop starts. What you didn't say. What you should have done. What's coming tomorrow. The harder you try to quiet it down, the louder it gets. You don't need to *fix* anything. You just need a sound steady enough to give the noise somewhere to land.\n\nThat's what the Sarod does here. Its notes are deep and rounded, sliding into each other without edges \u2014 slow enough that the mind has nothing to grab onto and chase. This is 90 minutes of slow Sarod in Raga Bhupali \u2014 a serene, pentatonic evening raga, light and peaceful, with no sharp turns. Just space for the inner noise to ease.\n\nPlay it when the thoughts won't quiet, when you sit down to read but can't, when the evening needs to slow before anything else can happen.\n\n\ud83c\udfb5 What you'll hear:\n- Sarod \u2014 deep, glassy, resonant plucked strings with long sliding sustain\n- Raga Bhupali \u2014 a serene pentatonic evening raga, peaceful and unhurried\n- Soft tanpura drone underneath, holding the calm\n- Light, sparse tabla kept very low \u2014 presence without momentum\n- 90 unbroken minutes at 432Hz tuning\n\n\u23f1 Chapters\n0:00    The first notes \u2014 settling in\n20:00   The thinking starts to slow\n45:00   Quiet and serene\n70:00   The mind softens\n85:00   Gentle close\n\n\ud83e\udde0 How to use:\nPress play and stop reaching for things. Let the Sarod's slow slides set the pace and let the inner noise ease around it. No effort required \u2014 just listen.\n\n\u23f1 Best for:\n\u2022 An overthinking, racing mind\n\u2022 Spiraling thoughts at the end of the day\n\u2022 Quiet evenings when you can't sit still\n\u2022 Slow reading or sitting with the first quiet hour\n\u2022 Settling the inner noise without forcing it\n\n\ud83d\udcfa Subscribe to Raga Focus for daily Indian classical music for meditation, calm, anxiety, and sleep.\n\n\u2014 Raga Focus\n\n#quietthemind #sarod #overthinkingmusic #relaxingmusic #indianclassicalmusic #432hz #ragabhupali #ragafocus #eveningmusic #busymind #mindfulmusic",
+    "thumbnail_text_main": "MIND WON'T STOP?",
+    "thumbnail_text_variants": [
+        "MIND WON'T STOP?",
+        "STOP OVERTHINKING"
+    ],
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate warm-gold patterned border with dusk lotus, evening lamp and crescent-moon motifs, aged warm parchment background, dusk palette (deep indigo-violet sky settling into warm amber lamplight, soft glow at the horizon). Central figure: serene musician in deep-saffron-and-cream attire seated cross-legged on a simple woven mat playing sarod (rounded fretless lute held across the lap, fingers resting on the strings, eyes gently lowered), in a quiet open-air evening courtyard. A single oil lamp glowing softly nearby, a still pond reflecting the last light. Expression of complete ease \u2014 the day's weight set down, shoulders loose. Bold deep-teal serif overlay text reading \"MIND WON'T STOP?\" top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Warm dusk amber, deep indigo, and aged cream palette, end-of-day stillness mood, single composed scene, no clutter.",
+    "suno_prompt_A": "Indian classical sarod solo in Raga Bhupali, calm evening wind-down mood, deep glassy resonant plucked fretless sarod with long sliding meend between notes and soft gamak ornamentation, rounded edgeless tone that loosens the shoulders, serene pentatonic evening raga \u2014 only five notes, no sharp turns, peaceful and unhurried, soft tanpura drone underneath, very light sparse tabla kept low in the background, 432Hz tuning, 55-65 BPM, warm low-mid register, cinematic meditative production, seamless loop, like the mind finally finding somewhere to land, no vocals, no humming, no human voice",
+    "suno_prompt_B": "Instrumental only, no vocals, no humming, Indian classical sarod, Raga Bhupali \u2014 serene pentatonic evening raga, deep glassy resonant plucked fretless sarod, long sliding meend and soft gamak, soft tanpura drone, very light sparse tabla low in background, 432Hz, 55-65 BPM, warm low-mid register, calm and unhurried, seamless loop, like the mind finally finding somewhere to land",
+    "production_spec": {
+        "duration_minutes": 90,
+        "bpm_range": "55-65",
+        "key_frequency_hz": 432,
+        "binaural_carrier_hz": 200,
+        "binaural_wave": "Theta",
+        "binaural_beat_hz": 5.0,
+        "lufs_target": -15,
+        "loop_seam": "10s in / 30s out, Suno extend 3-4x \u2192 loop in post to fill 90 min",
+        "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+        "notes": "Raga Bhupali \u2014 serene pentatonic (audava) evening raga. Sa Re Ga Pa Dha Sa \u2014 only five notes, NO Ma and NO Ni. The absence of the 4th and 7th gives it an open, light, peaceful character with no tension or sharp resolution \u2014 ideal for end-of-week calm. TABLA: light tabla is fine for Sarod, but keep it VERY low and sparse here \u2014 this is evening calm, not energetic; tabla should add quiet presence, not momentum. If in doubt, drop it entirely. Soft tanpura drone holds the floor. Theta 5Hz binaural \u2014 deep relaxation without pushing toward sleep (this is settling, not sleep music). LUFS -15 (evening calm, slightly quieter than morning-active). EMOTIONAL TAG ROTATION (3 metaphors, one per clip): clip 1: 'like the mind finally finding somewhere to land' \u00b7 clip 2: 'the shoulders finally dropping after a long stretch of days' \u00b7 clip 3: 'Sunday becoming Monday without any rush'. 90min = 3-4 Suno clips + loop extension. NOTE: this is a DIFFERENT raga and DIFFERENT lane from the June 2 Sarod (Ahir Bhairav, morning-cognitive/clear-head) \u2014 this is Bhupali, evening-calm/Sunday wind-down."
+    },
+    "experiment_notes": "Part of the June 1-8 full-volume test week. Sunday slot running Test 35 \u2014 thumb-only A/B isolating Q-hook ('MIND WON'T STOP?') vs imperative ('STOP OVERTHINKING') in the overthinking sub-lane. SECOND Sarod of the week, deliberately placed in a different lane (overthinking vs the June 2 morning-cognitive ship) and a different raga (Bhupali vs Ahir Bhairav) with a 5-day cooldown so the repeat is justified and non-cannibalizing. Sundays are variable/lower-traffic, which makes them the right slot to bank A/B data without burning a hero day. Test will reinforce or qualify the channel's Q-hook>imperative rule (currently backed by Tests 14 + 8). If evening overthinking Sarod hits 2.5K+ views and 24%+ AVD, the lane is worth locking as a recurring Sunday slot. Closes the test week before the June 8 Monday Sitar hero ship.",
+    "playlists": [
+        "Peaceful Music"
+    ]
+}
