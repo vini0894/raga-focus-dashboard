@@ -32,6 +32,33 @@ slot_allocation:
       - Days BEFORE a major swing (single-only — protect swing's algorithm push budget)
       - Weekend days for HERO instruments (Sat/Sun avg 22% fewer impressions — use Strong/Filler for weekend doubles instead)
 
+    viewer_pool_overlap_check:               # Banked 2026-06-03 — caught Thu Jun 4 Veena+Sarangi PM/PM healing double
+      rule: "Two ships on the same day MUST be in DIFFERENT viewer pools, not just different lane labels"
+      pools:                                 # Group by audience overlap, not semantic lane
+        soft_pm:                             # Slow, melodic, evening browse — one pool
+          - calm
+          - healing
+          - emotional
+          - meditation
+          - cognitive_restoration
+          - sleep
+        active_am:                           # Energetic, morning browse — one pool
+          - morning_energy
+          - morning_clarity
+          - morning_motivation
+          - productive_day
+          - uplifting
+        cortisol_anxiety:                    # Nervous-system, all-day browse — one pool
+          - anxiety
+          - cortisol_reset
+          - nervous_system
+          - overthinking
+          - burnout
+      hard_rule: "Both PM ships in soft_pm = HARD FAIL. Both AM ships in active_am = HARD FAIL."
+      soft_rule: "AM (active_am) + PM (soft_pm) on same day = OK — different time, different intent."
+      override: "Allowed only with explicit user 'ship both anyway' acceptance + documented rationale."
+      example_fail: "Thu Jun 4 — Veena 'Restore Your Mind' (cognitive_restoration) + Sarangi 'Emotional Comfort' (emotional) — both PM, both soft_pm pool. Labels differ; viewer pool is identical. CANNIBALIZES."
+
   single_day_rules:
     use_for:
       - Day before any PM swing (give swing 36hr undivided push)

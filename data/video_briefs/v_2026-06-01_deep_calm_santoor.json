@@ -4,105 +4,113 @@
     "date_shipped": null,
     "created_at": "2026-05-31",
     "planned_date": "2026-06-05",
-    "planned_slot": "PM (7pm IST)",
-    "title": "Deep Calm Music | Santoor Instrumental | 1.5 Hours",
+    "planned_slot": "AM (8am IST)",
+    "title": "Bright Morning Music | Santoor Instrumental | 1.5 Hours",
     "title_variants": {
-        "A": "Deep Calm Music | Santoor Instrumental | 1.5 Hours",
-        "B": "Deep Calm Music | Santoor Instrumental | 1.5 Hours"
+        "A": "Bright Morning Music | Santoor Instrumental | 1.5 Hours",
+        "B": "Bright Morning Music | Santoor Instrumental | 1.5 Hours"
     },
     "components": {
-        "problem": "Monday hits before you've recovered from the week before — the day was full and the body hasn't had a moment to land anywhere. Restless but exhausted. Need something to help it settle without being forced into sleep.",
+        "problem": "the day hasn't quite started yet / want to begin without forcing it / need a lift without coffee, noise, or hype / something that brightens the morning gradually and lets the day feel possible",
         "instrument": "Santoor",
-        "raga": "Bhairavi",
+        "raga": "Bhupali",
         "hz": "432Hz",
-        "wave": "Theta"
+        "wave": "Alpha"
     },
     "validated_keywords": [
-        "Deep Calm Music (slot 1 — VidIQ 63-65, completely fresh lead, never used as lead)",
+        "Bright Morning Music (slot 1 — fresh phrase on channel, morning lane lead, lifestyle-specific AM intent)",
         "Santoor Instrumental (slot 2 — VidIQ 65, instrument anchor)",
         "1.5 Hours (slot 3 — format/duration signal)",
-        "santoor music",
-        "deep calm music",
-        "indian instrumental music",
+        "santoor music (62)",
+        "morning music",
+        "bright music",
+        "feel good music",
+        "positive vibes",
         "santoor instrumental",
-        "meditation music",
+        "indian instrumental music",
         "432hz",
-        "theta waves",
-        "calm music",
-        "relaxing music",
-        "evening music",
+        "alpha waves",
+        "morning meditation music",
         "indian classical music",
-        "raga bhairavi",
-        "bhairavi",
+        "raga bhupali",
+        "bhupali",
         "raga focus",
-        "deep relaxation music",
-        "healing music",
-        "stress relief music"
+        "uplifting music",
+        "good morning music"
     ],
     "ab_test": {
         "test_id": "Test 34",
         "test_type": "THUMB A/B — same title both variants",
         "variant_A": {
-            "title": "Deep Calm Music | Santoor Instrumental | 1.5 Hours",
-            "thumbnail_text": "PAUSE",
-            "hypothesis": "Single-word directive — minimal, pattern-interrupt format never tested on this channel. No category context (intentionally). Tests whether a single word creates enough intrigue to earn the click from a calm-seeking audience who's already in scroll fatigue. High risk: no category signal. High reward: 'PAUSE' is exactly the emotional instruction the viewer needs — and reads in zero milliseconds on mobile."
+            "title": "Bright Morning Music | Santoor Instrumental | 1.5 Hours",
+            "thumbnail_text": "FRESH START",
+            "hypothesis": "Outcome/lifestyle phrase — 'FRESH START' names the morning intent without repeating any word from the title. Aligns with morning-lane thumb rule (outcome/lifestyle WINS, Q-hook loses, 0/5 morning tests). Universal phrase, mobile-perfect at 11 chars. The safe pick anchored in proven format."
         },
         "variant_B": {
-            "title": "Deep Calm Music | Santoor Instrumental | 1.5 Hours",
-            "thumbnail_text": "FIND CALM",
-            "hypothesis": "Familiar 'FIND ___' channel format with a fresh specific phrase. 'FIND PEACE', 'FIND STILLNESS', 'FIND CALMNESS' have all been used — but 'FIND CALM' specifically is fresh. Tests whether the familiar outcome-promise format outperforms experimental minimalism in the calm/restoration lane. Backed by calm-lane thumb rule: permission/outcome formats win, Q-hooks lose (N=3)."
+            "title": "Bright Morning Music | Santoor Instrumental | 1.5 Hours",
+            "thumbnail_text": "GOOD VIBES",
+            "hypothesis": "Universal mood/feel-good phrase — tests whether a universal Western feel-good word ('GOOD VIBES') beats a lifestyle-anchored outcome word ('FRESH START') in the bright-morning Santoor lane. Both compliant with morning-lane thumb rule. 'GOOD VIBES' is shorter (10 ch), more emotion-forward, less directive. Banks data on outcome-directive vs mood-naming within the morning category."
         },
-        "test_method": "Thumb-only A/B (Test 34). Same title both variants: 'Deep Calm Music | Santoor Instrumental | 1.5 Hours'. One variable: single-word experimental directive (A) vs familiar 'FIND ___' outcome format (B). A is a format test — channel has never shipped a single-word thumb. B is within the known winning format for calm/rest lane. If B wins: confirms calm-lane thumb rule is robust to phrasing variation. If A wins: single-word minimalism unlocks a new format tier for calm lane."
+        "test_method": "Thumb-only A/B (Test 34). Same title both variants: 'Bright Morning Music | Santoor Instrumental | 1.5 Hours'. One variable: outcome/lifestyle phrase ('FRESH START') vs universal mood phrase ('GOOD VIBES'). Both within the morning-lane winning format (outcome/lifestyle); test isolates directive-vs-mood as the sub-format axis. Banked into the morning-lane sub-format library either way."
     },
-    "strategic_bet": "STEADY — Mon June 1 PM. Return to Santoor's proven calm lane after two consecutive positive-energy Santoor ships underperformed (May 14 Morning Energy: 18.1% AVD; May 28 Joyful Santoor evening: weak showing). Calm lane is Santoor's empirical best: Apr 27 Burnout Santoor (88K impressions / 33.82% AVD / 5.5K views). Lead phrase 'Deep Calm Music' is completely fresh — zero prior use as slot-1 lead. Raga Bhairavi (not used on Santoor in last 3 ships: May 28 Khamaj, May 14 Bilawal, May 6 Khamaj) — warm devotional quality suits Monday evening settledown. Calm lane YT-placement = gets slotted near channel's top impressions earners (Deep Rest Surbahar 771K, NS Healing Sitar 291K).",
-    "success_good": "3500+ views, 28%+ AVD, 4%+ CTR in 48h",
-    "success_breakthrough": "6000+ views, 32%+ AVD, 4.5%+ CTR — calm lane Santoor confirmed; lock Monday PM calm as recurring slot",
-    "failure_mode": "<1500 views or <3.5% CTR in 48h — either lead phrase has no browse resonance (low impressions) or calm lane is saturated on this channel",
+    "strategic_bet": "TARGETED — Fri June 5 AM (8am IST). Deliberate pivot away from Santoor PM calm/energy positions (both proven weaker: May 14 Morning Energy 17.8% AVD, May 28 Good Energy PM 19.8% AVD, May 20 Mental Stillness 18.6% AVD). Empirical lesson from May 8 vs May 28: Santoor uplifting/feel-good lane works in AM (May 8 Joyful Santoor = 33.1% AVD, 5.1% CTR, 13K views) and dies in PM. This brief takes that lesson directly — uplifting Santoor in AM slot with a fresh 'Bright Morning Music' lead, never used on channel. Also de-saturates the calm-heavy week (Mon Dilruba, Tue Bansuri 'Calming Music', Wed Surbahar Meditation, Thu Veena/Sarangi healing doubles all carry calm-family leads). Raga Bhupali — pentatonic ascending bright morning character, fresh for Santoor.",
+    "success_good": "4000+ views, 26%+ AVD, 4.2%+ CTR in 48h — Santoor uplifting AM lane confirmed transferable beyond 'Joyful' framing",
+    "success_breakthrough": "8000+ views, 30%+ AVD, 5%+ CTR — bright morning Santoor enters the rotation as a recurring AM slot, expanding Santoor beyond calm and joyful into a 3rd proven lane",
+    "failure_mode": "<2000 views or <3.5% CTR in 48h — 'Bright Morning' phrase has no browse resonance, or morning Santoor only works with 'Joyful' specifically. If failure: bank 'Bright Morning' as dead lead, default future Santoor AM ships back to feel-good Joyful-adjacent vocabulary.",
     "reference_ships": [
         {
-            "title": "Santoor Music for Burnout and Stress Relief | Indian Classical Music",
-            "pub": "2026-04-27",
-            "impressions": 88000,
-            "views": 5500,
-            "ctr_pct": 4.25,
-            "avd_pct": 33.82,
-            "note": "Calm lane Santoor benchmark — 33.82% AVD is channel high for Santoor"
+            "title": "Joyful Music | Positive Vibes Music with Santoor | 1 Hour",
+            "pub": "2026-05-08",
+            "impressions": 193569,
+            "views": 13471,
+            "ctr_pct": 5.1,
+            "avd_pct": 33.1,
+            "note": "AM uplifting Santoor — channel ceiling for the lane. The success this brief is trying to repeat with fresh 'Bright Morning' framing."
         },
         {
-            "title": "Joyful Music | Santoor Instrumental | 1.5 Hours",
-            "pub": "2026-05-08",
-            "impressions": 132000,
-            "views": 9000,
-            "ctr_pct": 5.02,
-            "avd_pct": 25.61,
-            "note": "Uplifting Santoor ceiling — 132K impressions, strong CTR but lower AVD vs calm lane"
+            "title": "Good Energy Music | Santoor for Positive Vibes | 1.5 Hours",
+            "pub": "2026-05-28",
+            "impressions": 22286,
+            "views": 1450,
+            "ctr_pct": 4.56,
+            "avd_pct": 19.81,
+            "note": "PM uplifting Santoor — failure case. Same instrument + same uplifting family, just wrong time slot. Direct evidence for the AM-not-PM rule this brief follows."
+        },
+        {
+            "title": "Morning Energy Music | Santoor Instrumental | Positive Vibes",
+            "pub": "2026-05-14",
+            "impressions": 37576,
+            "views": 2327,
+            "ctr_pct": 4.31,
+            "avd_pct": 17.81,
+            "note": "Reference for what NOT to lead with. 'Morning Energy' as lead failed for Santoor; 'Bright Morning' tests a fresh adjacent phrase in the same slot."
         }
     ],
-    "tags": "santoor music, deep calm music, indian instrumental music, santoor instrumental, meditation music, 432hz, theta waves, calm music, relaxing music, evening music, indian classical music, raga bhairavi, bhairavi, raga focus, deep relaxation music, healing music, stress relief music, calm santoor, santoor meditation, indian classical santoor, peaceful music, relaxing santoor music",
-    "description": "Deep Calm Music | Santoor Instrumental | 1.5 Hours\n\nSome evenings you don't need to be put to sleep. You just need to be given somewhere to land.\n\nMonday has a way of arriving before the weekend has properly finished. By evening the body is somewhere between restless and exhausted — not quite able to relax on its own, not quite ready to sleep. There's no emergency. There's just this low-level hum that hasn't switched off yet.\n\nThis is 90 minutes of Santoor in Raga Bhairavi — a deeply warm and grounding evening raga in Indian classical music. Bhairavi doesn't push you anywhere. It just creates enough stillness around you that the noise gradually has nowhere left to go.\n\nThe Santoor is a hammered dulcimer — each note struck and then allowed to ring and fade. There's something about the way it naturally decays that gives the mind room to breathe between phrases.\n\n🎵 What you'll hear:\n- Santoor — bright struck tones that bloom into warm, ringing sustain\n- Raga Bhairavi — emotionally grounding, komal-rich evening raga\n- Slow unhurried phrases with natural space between them\n- 90 minutes, no interruptions\n- A very soft theta layer underneath (-20dB — barely there)\n\n⏱ Chapters\n0:00    Opening\n20:00   Settling in\n45:00   Deep calm\n70:00   Still\n85:00   Quiet close\n\n🧠 How to use:\nPut it on. You don't need to do anything with it. The point isn't to meditate or focus — it's just to stop. The music will do the rest.\n\n⏱ Best for:\n• Monday evening wind-down\n• Mind that hasn't stopped since morning\n• Restless-but-exhausted state\n• Quiet background while you eat, stretch, or just sit\n• Gentle transition toward sleep\n\n📺 Subscribe to Raga Focus for Indian classical music for calm, anxiety relief, and sleep.\n\n— Raga Focus\n\n#santoormusic #deepcalm #indianinstrumental #indianclassicalmusic #432hz #thetawaves #ragafocus #calmmusic #meditationmusic #ragabhairavi #eveningmusic #relaxingmusic",
-    "thumbnail_text_main": "PAUSE",
+    "tags": "bright morning music, santoor music, santoor instrumental, morning music, indian instrumental music, 432hz, alpha waves, feel good music, positive vibes music, good morning music, morning meditation music, indian classical music, raga bhupali, bhupali, raga focus, uplifting music, morning santoor, indian classical santoor, sunrise music, music to start the day",
+    "description": "Bright Morning Music | Santoor Instrumental | 1.5 Hours\n\nThe day hasn't quite started yet. Let it begin gently.\n\nNo alarm-blast, no doomscroll, no hype-track to fake the energy. Just a clear, bright sound that lifts the morning gradually — the way real morning light does, slowly filling the room. Light enough to think, warm enough to feel, steady enough to let the day arrive without bracing for it.\n\nThis is 90 minutes of Santoor in Raga Bhupali — a serene, ascending, pentatonic morning raga. Only five notes, all bright, no sharp turns. The Santoor itself is a hammered dulcimer — each note struck and allowed to bloom into a warm ring. The strikes give it gentle rhythm; the ringing gives it spaciousness. Together, the kind of sound that wakes the mind without startling it.\n\nPlay it while you make coffee, stretch, write your first lines, or just sit with the early light.\n\n🎵 What you'll hear:\n- Santoor — bright struck tones that bloom into warm ringing sustain\n- Raga Bhupali — a serene pentatonic morning raga, light and ascending\n- Soft tanpura drone underneath, holding the brightness\n- Light, sparse tabla — gentle morning pulse, not driving\n- 90 unbroken minutes at 432Hz tuning, with a soft alpha undertone for relaxed alertness\n\n⏱ Chapters\n0:00    First light\n20:00   The morning opens\n45:00   Bright and steady\n70:00   The day arrives\n85:00   Gentle close\n\n🧠 How to use:\nPress play before the noise of the day begins. Let the Santoor's bright tones set the tempo. No effort required — just let the morning land.\n\n⏱ Best for:\n• Slow, intentional mornings\n• The first hour after waking\n• Coffee, stretching, journaling, light work\n• Morning yoga or meditation\n• Replacing news/social scroll with something that actually lifts the day\n\n📺 Subscribe to Raga Focus for daily Indian classical music for meditation, focus, anxiety, and sleep.\n\n— Raga Focus\n\n#brightmorningmusic #santoor #morningmusic #feelgoodmusic #indianclassicalmusic #432hz #ragabhupali #ragafocus #positivevibes #goodmorning #uplifting",
+    "thumbnail_text_main": "FRESH START",
     "thumbnail_text_variants": [
-        "PAUSE",
-        "FIND CALM"
+        "FRESH START",
+        "GOOD VIBES"
     ],
-    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate gold-and-deep-teal patterned border with evening lotus and oil-lamp motifs, aged warm parchment background, evening palette (deep teal, warm amber, aged cream). Central figure: serene musician in soft deep-teal and gold attire, seated cross-legged playing santoor (hammered dulcimer — flat trapezoidal wooden instrument resting horizontally on the lap, struck with lightweight mallets). Quiet inner courtyard setting, warm lamp glow, soft shadows. Expression of deep stillness — eyes gently closed or lowered, completely at rest. Bold dark-teal serif overlay text reading 'PAUSE' centered (variant A) or 'FIND CALM' (variant B), traditional Devanagari-influenced serif typography, high contrast for mobile readability. Deep teal, warm amber, and aged cream palette, composed and uncluttered scene, calm evening mood.",
-    "suno_prompt_A": "Indian classical instrumental, Raga Bhairavi (deeply emotional, komal-dominant, warm grounding evening quality), deep calm and restoration mood, hammered dulcimer with characteristic bright percussive attack blooming into warm resonant sustain on longer tones, very light tabla at 55 BPM giving a sparse rhythmic breath not driving, 432Hz tuning, warm mid register, meditative calm production with unhurried phrases and natural space between them, seamless loop-friendly texture, like the body finally being given permission to put down the weight it has carried all day — slow and inevitable, each struck note an exhale, no vocals, no humming, no human voice",
-    "suno_prompt_B": "Instrumental only, no vocals, no humming, Indian classical santoor, Raga Bhairavi — deeply emotional komal-dominant warm grounding evening character, hammered dulcimer with bright percussive attack and warm ringing sustain, very light tabla at 55 BPM sparse pulse, 432Hz, warm mid register, meditative calm, slow unhurried phrases, loop-friendly seamless, like the body's first real exhale of the day — permission to stop",
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate warm-gold and saffron patterned border with morning sun, lotus and songbird motifs, aged warm parchment background, dawn palette (soft saffron, warm amber, gentle peach, aged cream, hint of pale dawn blue at the edges). Central figure: serene musician in cream-and-soft-saffron attire seated cross-legged playing santoor (flat trapezoidal hammered dulcimer resting horizontally on the lap, struck with lightweight mallets), in an open-air morning courtyard. Soft early sunlight streaming in from the side, light morning haze, a single blooming lotus and a small clay water bowl beside them. Expression of quiet ease and gentle alertness — eyes open and softly downcast, faint smile. Bold dark-teal serif overlay text reading 'FRESH START' centered (variant A) or 'GOOD VIBES' (variant B), traditional Devanagari-influenced serif typography, high contrast for mobile readability. Warm dawn saffron, gentle peach, and aged cream palette, bright morning stillness mood, composed and uncluttered scene.",
+    "suno_prompt_A": "Indian classical santoor solo in Raga Bhupali, bright morning uplifting mood, hammered dulcimer with characteristic bright percussive attack blooming into warm ringing sustain, serene pentatonic ascending raga — only five notes, light and airy, no sharp turns, soft tanpura drone underneath, light sparse tabla giving gentle morning pulse not driving, 432Hz tuning, 75-85 BPM, warm bright mid register, alpha binaural at -20dB, cinematic clear morning production with unhurried phrases and natural space between them, seamless loop, like morning light slowly filling a quiet room, no vocals, no humming, no human voice",
+    "suno_prompt_B": "Instrumental only, no vocals, no humming, Indian classical santoor, Raga Bhupali — serene pentatonic ascending bright morning raga, hammered dulcimer with bright percussive attack and warm ringing sustain, soft tanpura drone, light sparse tabla gentle morning pulse, 432Hz, 75-85 BPM, alpha binaural -20dB, warm bright mid register, clear and unhurried, seamless loop, like morning light filling the room",
     "production_spec": {
         "duration_minutes": 90,
-        "bpm_range": "50-60",
+        "bpm_range": "75-85",
         "key_frequency_hz": 432,
-        "binaural_carrier_hz": 437,
-        "binaural_wave": "Theta",
-        "binaural_beat_hz": 5.0,
-        "lufs_target": -16,
+        "binaural_carrier_hz": 200,
+        "binaural_wave": "Alpha",
+        "binaural_beat_hz": 10.0,
+        "lufs_target": -14,
         "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
         "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
-        "notes": "Raga Bhairavi — deeply emotional evening/closing raga. Komal Re, Ga, Dha, Ni (flat 2nd, 3rd, 6th, 7th). Rich, warm, grounding — not sad, just full. Previous Santoor ragas: May 28 Khamaj, May 14 Bilawal, May 6 Khamaj — Bhairavi is completely fresh for Santoor. Santoor = hammered dulcimer, not plucked: characteristic bright initial strike decaying into warm resonant ring. Theta 5Hz for deep calm without sleep induction. LUFS -16 (evening calm — slightly quieter than cognitive content, slightly louder than sleep). 90min = 3-4 Suno clips + loop extension. EMOTIONAL TAG ROTATION: clip 1: 'like the body landing somewhere after a long day of being asked to stay upright' · clip 2: 'like the hum underneath everything slowly getting quieter' · clip 3: 'still, and warm, and finally — here'."
+        "notes": "Raga Bhupali — serene pentatonic (audava) morning/anytime raga with bright ascending character. Sa Re Ga Pa Dha Sa — only five notes, NO Ma and NO Ni. The absence of the 4th and 7th gives it an open, light, peaceful character with no tension — ideal for bright morning. Recent Santoor ragas: May 28 Khamaj, May 14 Bilawal, May 6 Khamaj — Bhupali is fresh for Santoor. TABLA: light tabla gives gentle morning pulse — keep it present but unhurried; this is morning brightness, not driving energy. Soft tanpura drone holds the floor. Alpha 10Hz binaural — relaxed alertness, present and awake (NOT theta/sleep). LUFS -14 (morning-active, slightly louder than calm/evening). EMOTIONAL TAG ROTATION (one per clip): clip 1: 'like morning light slowly filling a quiet room' · clip 2: 'the body finding its own breath before the day asks anything of it' · clip 3: 'the kind of bright that makes the day feel possible'. 90min = 3-4 Suno clips + loop extension. NOTE: This is the FIRST AM Santoor in 3 weeks — slot pivot from PM to AM is the strategic bet (per May 8 vs May 28 evidence)."
     },
-    "experiment_notes": "Test 34 — THUMB-ONLY A/B. Same title both variants: 'Deep Calm Music | Santoor Instrumental | 1.5 Hours'.\n\nA: 'PAUSE' — single-word directive. Experimental format, never tested on this channel. Minimal, high-pattern-interrupt. No category signal. Mobile reads it in <0.5 seconds.\nB: 'FIND CALM' — familiar 'FIND ___' channel format. Specific phrase is fresh (FIND PEACE/FIND STILLNESS/FIND CALMNESS all used, but not FIND CALM specifically). Backed by calm-lane N=3 thumb rule: permission/outcome formats win.\n\nTitle is a straight ship — no title A/B. Week already has Tests 31 (June 5 Sitar title), 32 (June 7 Bansuri thumb), 33 (June 8 Sitar title).\n\nIf A wins: single-word minimalism enters the calm-lane playbook as a valid new format tier.\nIf B wins: 'FIND ___' format is robust across phrase variations; continue iterating the phrase not the format.",
+    "experiment_notes": "Test 34 — THUMB-ONLY A/B. Same title both variants: 'Bright Morning Music | Santoor Instrumental | 1.5 Hours'.\n\nA: 'FRESH START' — outcome/lifestyle phrase. Names morning intent without repeating any word from the title. Safe pick within morning-lane winning format (outcome/lifestyle).\nB: 'GOOD VIBES' — universal Western mood phrase. Tests directive-outcome ('FRESH START') vs mood-naming ('GOOD VIBES') within the morning-lane category. Both compliant with the rule that Q-hooks lose in morning lane (0/5 across all morning tests).\n\nReworked from the original PM 'Deep Calm Music' draft after user-flagged data review: May 8 Joyful Santoor AM = 33.1% AVD / 5.1% CTR / 13K views (winner) vs May 28 Good Energy Santoor PM = 19.8% AVD / 4.6% CTR / 1.45K views (failure). Same instrument, same uplifting family, AM beat PM by 2.4× on views and 1.7× on AVD. This brief takes that lesson literally — AM slot, uplifting lane, fresh non-'Joyful' lead ('Bright Morning Music').\n\nAlso de-saturates the calm-heavy week (Mon Dilruba/Tue Bansuri/Wed Surbahar/Thu Veena+Sarangi all calm-family leads).\n\nIf A wins: 'FRESH START' enters the morning-lane thumb playbook as a proven outcome-directive variant.\nIf B wins: universal mood-naming beats directive in morning lane — bank as a new sub-format rule.",
     "playlists": [
-        "Peaceful Music",
-        "Healing & Anxiety Relief"
+        "Morning Energy",
+        "Peaceful Music"
     ]
 }
