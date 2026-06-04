@@ -1787,11 +1787,18 @@ with tab_briefs:
                 for b in parked_briefs:
                     _render_brief_row(b)
 
-        # Shipped briefs (collapsed)
+        # Shipped briefs (collapsed) — only show last 5 days; older are hidden
         if shipped_briefs:
-            with st.expander(f"✅ Shipped ({len(shipped_briefs)})", expanded=False):
-                for b in shipped_briefs:
-                    _render_brief_row(b, show_shipped_date=True)
+            from datetime import date as _date, timedelta as _td
+            _cutoff = (_date.today() - _td(days=5)).isoformat()
+            shipped_recent = [b for b in shipped_briefs if (b.get("date_shipped") or b.get("planned_date") or "0000-01-01") >= _cutoff]
+            shipped_hidden_count = len(shipped_briefs) - len(shipped_recent)
+            if shipped_recent:
+                with st.expander(f"✅ Shipped — last 5 days ({len(shipped_recent)})", expanded=False):
+                    for b in shipped_recent:
+                        _render_brief_row(b, show_shipped_date=True)
+            if shipped_hidden_count:
+                st.caption(f"📦 {shipped_hidden_count} older shipped briefs hidden (>5 days)")
 
     st.divider()
     st.caption(
