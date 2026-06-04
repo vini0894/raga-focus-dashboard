@@ -1,7 +1,7 @@
 {
     "id": "v_2026-06-04_heavy_heart_sarangi",
-    "status": "APPROVED",
-    "date_shipped": null,
+    "status": "PUBLISHED",
+    "date_shipped": "2026-06-04",
     "created_at": "2026-05-31",
     "planned_date": "2026-06-04",
     "planned_slot": "PM (7pm IST)",
@@ -18,42 +18,42 @@
         "wave": "Theta"
     },
     "validated_keywords": [
-        "Emotional Comfort (slot 1 — offering/abstract-noun lead, VidIQ 58; healing-lane winning format per A/B Test 12)",
-        "Healing Music with Sarangi (slot 2 — DIRECT mirror of May 4 Sarangi winner structure, 177K impr/26% AVD reference)",
-        "1.5 Hours (slot 3 — duration anchor; replaces 'Indian Classical' per Finding 17 — generic genre slot 3 underperforms duration anchor)",
-        "emotional healing music — 60",
-        "gentle healing music — 61",
-        "healing music — 75",
-        "comfort music — 63",
-        "nostalgia music — 76",
-        "heart healing music — 56",
-        "sarangi — 67",
-        "theta — 61",
-        "432hz — 74",
-        "calming music for anxiety — 72",
-        "indian classical music — 66",
-        "indian instrumental music — 67",
-        "raga focus — 66"
+        "Emotional Comfort (slot 1 \u2014 offering/abstract-noun lead, VidIQ 58; healing-lane winning format per A/B Test 12)",
+        "Healing Music with Sarangi (slot 2 \u2014 DIRECT mirror of May 4 Sarangi winner structure, 177K impr/26% AVD reference)",
+        "1.5 Hours (slot 3 \u2014 duration anchor; replaces 'Indian Classical' per Finding 17 \u2014 generic genre slot 3 underperforms duration anchor)",
+        "emotional healing music \u2014 60",
+        "gentle healing music \u2014 61",
+        "healing music \u2014 75",
+        "comfort music \u2014 63",
+        "nostalgia music \u2014 76",
+        "heart healing music \u2014 56",
+        "sarangi \u2014 67",
+        "theta \u2014 61",
+        "432hz \u2014 74",
+        "calming music for anxiety \u2014 72",
+        "indian classical music \u2014 66",
+        "indian instrumental music \u2014 67",
+        "raga focus \u2014 66"
     ],
     "ab_test": {
         "test_id": null,
-        "test_type": "NO A/B — single title, single thumbnail",
+        "test_type": "NO A/B \u2014 single title, single thumbnail",
         "variant_A": {
             "title": "Emotional Comfort | Healing Music with Sarangi | 1.5 Hours",
             "thumbnail_text": "FEEL BETTER",
-            "hypothesis": "Single title, single thumbnail. Offering/abstract-noun lead 'Emotional Comfort' (VidIQ 58) — the healing-lane winning format (A/B Test 12: abstract noun 'EMOTIONAL HEALING' beating imperative 'HEAL YOUR HEART' 52/48). Thumb 'FEEL BETTER' = offering/outcome-state, the calm/healing-lane winning thumb format."
+            "hypothesis": "Single title, single thumbnail. Offering/abstract-noun lead 'Emotional Comfort' (VidIQ 58) \u2014 the healing-lane winning format (A/B Test 12: abstract noun 'EMOTIONAL HEALING' beating imperative 'HEAL YOUR HEART' 52/48). Thumb 'FEEL BETTER' = offering/outcome-state, the calm/healing-lane winning thumb format."
         },
         "variant_B": {
             "title": "Emotional Comfort | Healing Music with Sarangi | 1.5 Hours",
             "thumbnail_text": "FEEL BETTER",
-            "hypothesis": "Same as A — no test."
+            "hypothesis": "Same as A \u2014 no test."
         },
-        "test_method": "No A/B. Considered a title A/B 'Emotional Comfort' vs 'Heal Your Heart Music' (both 58) but skipped it — A/B Test 12 already shows the abstract-noun format beating the 'Heal Your Heart' imperative 52/48, so the result is largely known. Locked the abstract-noun winner. Offering frame + offering thumb; replaced the 'HEAVY HEART?' Q-hook (Q-hooks lose in calm/healing)."
+        "test_method": "No A/B. Considered a title A/B 'Emotional Comfort' vs 'Heal Your Heart Music' (both 58) but skipped it \u2014 A/B Test 12 already shows the abstract-noun format beating the 'Heal Your Heart' imperative 52/48, so the result is largely known. Locked the abstract-noun winner. Offering frame + offering thumb; replaced the 'HEAVY HEART?' Q-hook (Q-hooks lose in calm/healing)."
     },
-    "strategic_bet": "STRONG — Thu June 4 PM, double-day partner with the Veena AM ship. Leads with 'Emotional Comfort' (VidIQ 58) — an OFFERING/abstract-noun frame, the healing-lane winning format (A/B Test 12: abstract-noun beats 'Heal Your Heart' imperative 52/48). DIRECTLY MIRRORS proven Sarangi structure: May 4 'Comfort Music | Healing Music with Sarangi' = 177K impr / 7.8K views / 26% AVD (best Sarangi ship). Reworked 2026-06-04 (was 'Emotional Comfort | Sarangi | Indian Classical' — sparse slot 2 + generic slot 3 hit Finding 17 anti-patterns from day-1 impressions analysis). Now uses winning 'Healing Music with Sarangi' slot 2 + '1.5 Hours' duration anchor. First Puriya on Sarangi. 5d clear of May 30 Sarangi (different raga/lane).",
+    "strategic_bet": "STRONG \u2014 Thu June 4 PM, double-day partner with the Veena AM ship. Leads with 'Emotional Comfort' (VidIQ 58) \u2014 an OFFERING/abstract-noun frame, the healing-lane winning format (A/B Test 12: abstract-noun beats 'Heal Your Heart' imperative 52/48). DIRECTLY MIRRORS proven Sarangi structure: May 4 'Comfort Music | Healing Music with Sarangi' = 177K impr / 7.8K views / 26% AVD (best Sarangi ship). Reworked 2026-06-04 (was 'Emotional Comfort | Sarangi | Indian Classical' \u2014 sparse slot 2 + generic slot 3 hit Finding 17 anti-patterns from day-1 impressions analysis). Now uses winning 'Healing Music with Sarangi' slot 2 + '1.5 Hours' duration anchor. First Puriya on Sarangi. 5d clear of May 30 Sarangi (different raga/lane).",
     "success_good": "3000+ views, 25%+ AVD, 3.5%+ CTR in 48h",
-    "success_breakthrough": "7000+ views, 28%+ AVD — heavy-heart/heartache lane confirmed as a repeatable Sarangi vertical alongside comfort/nostalgia; lock Puriya as a recurring evening Sarangi raga",
-    "failure_mode": "<1500 views or <3% CTR in 48h — 'heavy heart' framing too heavy/specific for browse; revert to proven Sarangi comfort/nostalgia framing (Comfort, Nostalgia) which already reach 58K–177K impr",
+    "success_breakthrough": "7000+ views, 28%+ AVD \u2014 heavy-heart/heartache lane confirmed as a repeatable Sarangi vertical alongside comfort/nostalgia; lock Puriya as a recurring evening Sarangi raga",
+    "failure_mode": "<1500 views or <3% CTR in 48h \u2014 'heavy heart' framing too heavy/specific for browse; revert to proven Sarangi comfort/nostalgia framing (Comfort, Nostalgia) which already reach 58K\u2013177K impr",
     "reference_ships": [
         {
             "title": "Comfort Music | Healing Music with Sarangi",
@@ -62,7 +62,7 @@
             "views": 7809,
             "ctr_pct": 3.18,
             "avd_pct": 26.02,
-            "notes": "Best Sarangi reach on the channel — emotional/comfort lane proven"
+            "notes": "Best Sarangi reach on the channel \u2014 emotional/comfort lane proven"
         },
         {
             "title": "Nostalgia Music | Healing Music with Sarangi",
@@ -80,7 +80,7 @@
             "views": 1829,
             "ctr_pct": 3.82,
             "avd_pct": null,
-            "notes": "Emotional release lane — DO NOT repeat 'Emotional Release' verbatim"
+            "notes": "Emotional release lane \u2014 DO NOT repeat 'Emotional Release' verbatim"
         },
         {
             "title": "Inner Peace Music | Sarangi Healing",
@@ -89,18 +89,18 @@
             "views": 1386,
             "ctr_pct": 3.33,
             "avd_pct": null,
-            "notes": "Inner peace / gentle healing lane — DO NOT repeat 'Inner Peace' verbatim"
+            "notes": "Inner peace / gentle healing lane \u2014 DO NOT repeat 'Inner Peace' verbatim"
         }
     ],
     "tags": "emotional comfort, emotional healing music, gentle healing music, healing music, comfort music, heart healing music, sarangi, sarangi music, sarangi healing music, indian classical music, indian instrumental music, raga puriya, emotional release, grief music, music for heartache, calming music for anxiety, 432hz, theta waves, soothing music, raga focus",
-    "description": "Emotional Comfort | Healing Music with Sarangi | 1.5 Hours\n\nYou've been holding it together all day. Maybe longer than that.\n\nThis is for the heaviness you haven't had room to put down — the heartache, the grief, the thing that sits in your chest and doesn't lift just because the day asked you to keep moving. You don't have to push it down here. The Sarangi is the most human-sounding of all Indian instruments — bowed, voiced, it slides and sighs like a voice on the edge of tears. It sounds like crying so you don't have to carry it in alone.\n\nThis is 90 minutes of solo Sarangi in Raga Puriya — a deep evening raga of pathos and introspective longing. There's no rhythm, no tabla, no place you need to be. Just the bow drawing out long, weeping phrases, and the tanpura holding the room open underneath. Let it sit with you. Let the tears come if they want to.\n\n🎵 What you'll hear:\n- Sarangi — bowed gut strings, the most vocal and human of Indian instruments, sliding meend that mimics a crying voice\n- Raga Puriya — a deep evening raga of pathos and introspective longing\n- Sympathetic strings resonating quietly beneath each phrase\n- Tanpura drone — steady, holding the space open\n- No percussion, no tabla — solo Sarangi with room to breathe\n- 90 unbroken minutes at 432Hz tuning\n\n⏱ Chapters\n0:00    The weight you walked in with\n20:00   Letting it surface\n45:00   The deepest part\n70:00   Something easing\n85:00   A quieter close\n\n🧠 How to use:\nPress play, sit or lie down somewhere you won't be interrupted, and let the Sarangi carry the feeling instead of holding it yourself. You don't have to do anything. If the tears come, let them. That's the point.\n\n⏱ Best for:\n• Grief, heartache, and emotional processing\n• Crying it out when you've been holding on too long\n• Quiet evening time alone with a heavy feeling\n• Journaling through something sad\n• Winding down after a hard day\n\n📺 Subscribe to Raga Focus for daily Indian classical music for meditation, anxiety, emotional healing, and sleep.\n\n— Raga Focus\n\n#emotionalcomfort #sarangi #emotionalhealingmusic #healingmusic #indianclassicalmusic #ragapuriya #432hz #thetawaves #griefmusic #ragafocus #comfortmusic",
+    "description": "Emotional Comfort | Healing Music with Sarangi | 1.5 Hours\n\nYou've been holding it together all day. Maybe longer than that.\n\nThis is for the heaviness you haven't had room to put down \u2014 the heartache, the grief, the thing that sits in your chest and doesn't lift just because the day asked you to keep moving. You don't have to push it down here. The Sarangi is the most human-sounding of all Indian instruments \u2014 bowed, voiced, it slides and sighs like a voice on the edge of tears. It sounds like crying so you don't have to carry it in alone.\n\nThis is 90 minutes of solo Sarangi in Raga Puriya \u2014 a deep evening raga of pathos and introspective longing. There's no rhythm, no tabla, no place you need to be. Just the bow drawing out long, weeping phrases, and the tanpura holding the room open underneath. Let it sit with you. Let the tears come if they want to.\n\n\ud83c\udfb5 What you'll hear:\n- Sarangi \u2014 bowed gut strings, the most vocal and human of Indian instruments, sliding meend that mimics a crying voice\n- Raga Puriya \u2014 a deep evening raga of pathos and introspective longing\n- Sympathetic strings resonating quietly beneath each phrase\n- Tanpura drone \u2014 steady, holding the space open\n- No percussion, no tabla \u2014 solo Sarangi with room to breathe\n- 90 unbroken minutes at 432Hz tuning\n\n\u23f1 Chapters\n0:00    The weight you walked in with\n20:00   Letting it surface\n45:00   The deepest part\n70:00   Something easing\n85:00   A quieter close\n\n\ud83e\udde0 How to use:\nPress play, sit or lie down somewhere you won't be interrupted, and let the Sarangi carry the feeling instead of holding it yourself. You don't have to do anything. If the tears come, let them. That's the point.\n\n\u23f1 Best for:\n\u2022 Grief, heartache, and emotional processing\n\u2022 Crying it out when you've been holding on too long\n\u2022 Quiet evening time alone with a heavy feeling\n\u2022 Journaling through something sad\n\u2022 Winding down after a hard day\n\n\ud83d\udcfa Subscribe to Raga Focus for daily Indian classical music for meditation, anxiety, emotional healing, and sleep.\n\n\u2014 Raga Focus\n\n#emotionalcomfort #sarangi #emotionalhealingmusic #healingmusic #indianclassicalmusic #ragapuriya #432hz #thetawaves #griefmusic #ragafocus #comfortmusic",
     "thumbnail_text_main": "FEEL BETTER",
     "thumbnail_text_variants": [
         "FEEL BETTER"
     ],
-    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate patterned border in deep teal, indigo and muted gold with evening lotus and dusk-bird motifs, aged warm parchment background, deep evening palette (twilight indigo and violet sky, soft amber lamplight glow). Central figure: a solitary musician in deep-blue and cream attire seated cross-legged on a simple woven mat, playing the sarangi (upright bowed instrument held vertically against the shoulder, bow drawn across the strings, head bowed low, eyes closed), in a quiet dusk courtyard. Expression of tender sorrow held with dignity — not despair, but feeling allowed to surface. A single oil lamp glowing nearby, soft dusk mist, one wilting evening flower in the corner. Bold deep-teal serif overlay text reading 'FEEL BETTER' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Twilight indigo, muted gold, and aged cream palette, intimate grieving-evening mood, single composed scene, no clutter.",
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate patterned border in deep teal, indigo and muted gold with evening lotus and dusk-bird motifs, aged warm parchment background, deep evening palette (twilight indigo and violet sky, soft amber lamplight glow). Central figure: a solitary musician in deep-blue and cream attire seated cross-legged on a simple woven mat, playing the sarangi (upright bowed instrument held vertically against the shoulder, bow drawn across the strings, head bowed low, eyes closed), in a quiet dusk courtyard. Expression of tender sorrow held with dignity \u2014 not despair, but feeling allowed to surface. A single oil lamp glowing nearby, soft dusk mist, one wilting evening flower in the corner. Bold deep-teal serif overlay text reading 'FEEL BETTER' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Twilight indigo, muted gold, and aged cream palette, intimate grieving-evening mood, single composed scene, no clutter.",
     "suno_prompt_A": "Indian classical sarangi solo in Raga Puriya, deep evening raga of pathos and introspective longing, slow grieving mood for a heavy heart, expressive bowed sarangi with gut strings and an intensely vocal human crying tone, long sliding meend that mimics a voice rising and breaking, quiet sympathetic resonance underneath, tanpura drone holding the space open, no tabla, 432Hz tuning, 50-60 BPM, warm low-to-mid register, space between phrases, cinematic meditative production, seamless loop, like the sound is crying so you don't have to hold it in alone, no vocals, no humming, no human voice",
-    "suno_prompt_B": "Instrumental only, no vocals, no humming, no human voice, Indian classical sarangi solo, Raga Puriya — deep evening raga of pathos and longing, expressive bowed sarangi with gut strings and a vocal human crying tone, long sliding meend like a voice breaking, sympathetic resonance, tanpura drone, no tabla, 432Hz, 50-60 BPM, warm low-mid register, seamless loop, like the sound is crying so you don't have to hold it alone",
+    "suno_prompt_B": "Instrumental only, no vocals, no humming, no human voice, Indian classical sarangi solo, Raga Puriya \u2014 deep evening raga of pathos and longing, expressive bowed sarangi with gut strings and a vocal human crying tone, long sliding meend like a voice breaking, sympathetic resonance, tanpura drone, no tabla, 432Hz, 50-60 BPM, warm low-mid register, seamless loop, like the sound is crying so you don't have to hold it alone",
     "production_spec": {
         "duration_minutes": 90,
         "bpm_range": "50-60",
@@ -109,11 +109,11 @@
         "binaural_wave": "Theta",
         "binaural_beat_hz": 5.0,
         "lufs_target": -14,
-        "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+        "loop_seam": "10s in / 30s out, Suno extend 3-4x \u2192 loop in post to fill 90 min",
         "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
-        "notes": "Raga Puriya — evening raga, komal Re + teevra Ma + komal Dha, the combination giving intense pathos and an introspective, longing quality (closely related to Marwa family). Solo emotional Sarangi: NO tabla, NO percussion — the instrument needs space, and rhythm would intrude on grief. Tanpura drone only, low underneath. Theta 5Hz binaural — deep relaxation for emotional processing (not sleep Delta, not morning Alpha). LUFS -14. The Sarangi is bowed and SOUNDS like a crying human voice via sliding meend and sympathetic resonance — but the brief must be explicit there is NO actual human voice / no vocals / no humming. EMOTIONAL TAG ROTATION (team reference, one strong metaphor per clip): clip 1: 'like the sound is crying so you don't have to hold it in alone' · clip 2: 'the weight finally finding somewhere to go' · clip 3: 'tender sorrow allowed to surface, then ease'. 90min = 3-4 Suno clips + loop extension."
+        "notes": "Raga Puriya \u2014 evening raga, komal Re + teevra Ma + komal Dha, the combination giving intense pathos and an introspective, longing quality (closely related to Marwa family). Solo emotional Sarangi: NO tabla, NO percussion \u2014 the instrument needs space, and rhythm would intrude on grief. Tanpura drone only, low underneath. Theta 5Hz binaural \u2014 deep relaxation for emotional processing (not sleep Delta, not morning Alpha). LUFS -14. The Sarangi is bowed and SOUNDS like a crying human voice via sliding meend and sympathetic resonance \u2014 but the brief must be explicit there is NO actual human voice / no vocals / no humming. EMOTIONAL TAG ROTATION (team reference, one strong metaphor per clip): clip 1: 'like the sound is crying so you don't have to hold it in alone' \u00b7 clip 2: 'the weight finally finding somewhere to go' \u00b7 clip 3: 'tender sorrow allowed to surface, then ease'. 90min = 3-4 Suno clips + loop extension."
     },
-    "experiment_notes": "No A/B — single title, single thumbnail, straight catalog ship (June 1-8 full-volume week; Thu double with Veena AM). Considered a title A/B 'Emotional Comfort' vs 'Heal Your Heart Music' (both 58) but skipped it: A/B Test 12 already shows the abstract-noun format beating the 'Heal Your Heart' imperative 52/48 in the healing lane. Offering frame chosen over problem frame ('Heavy Heart') per channel data (offering >> problem on views). Rides the proven Comfort lane (177K) with fresh wording. First Puriya on Sarangi.",
+    "experiment_notes": "No A/B \u2014 single title, single thumbnail, straight catalog ship (June 1-8 full-volume week; Thu double with Veena AM). Considered a title A/B 'Emotional Comfort' vs 'Heal Your Heart Music' (both 58) but skipped it: A/B Test 12 already shows the abstract-noun format beating the 'Heal Your Heart' imperative 52/48 in the healing lane. Offering frame chosen over problem frame ('Heavy Heart') per channel data (offering >> problem on views). Rides the proven Comfort lane (177K) with fresh wording. First Puriya on Sarangi.",
     "playlists": [
         "Healing & Anxiety Relief"
     ]

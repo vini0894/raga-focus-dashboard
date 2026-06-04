@@ -1,7 +1,7 @@
 {
     "id": "v_2026-06-04_drained_mind_veena",
-    "status": "APPROVED",
-    "date_shipped": null,
+    "status": "PUBLISHED",
+    "date_shipped": "2026-06-04",
     "created_at": "2026-05-31",
     "planned_date": "2026-06-04",
     "planned_slot": "AM (7am IST)",
@@ -11,16 +11,16 @@
         "B": "Restore Your Mind | Slow Veena | Indian Classical"
     },
     "components": {
-        "problem": "mentally drained / running on empty / gave everything away today and there's nothing left / the mind is depleted, not racing — emptied out, over-spent / need something gentle that slowly refills what was poured out, not stimulation",
+        "problem": "mentally drained / running on empty / gave everything away today and there's nothing left / the mind is depleted, not racing \u2014 emptied out, over-spent / need something gentle that slowly refills what was poured out, not stimulation",
         "instrument": "Veena",
         "raga": "Bhimpalasi",
         "hz": "432Hz",
         "wave": "Alpha"
     },
     "validated_keywords": [
-        "Restore Your Mind (slot 1 — offering/restoration lead, VidIQ 56)",
-        "Slow Veena (slot 2 — instrument + pace anchor)",
-        "Indian Classical (slot 3 — genre anchor)",
+        "Restore Your Mind (slot 1 \u2014 offering/restoration lead, VidIQ 56)",
+        "Slow Veena (slot 2 \u2014 instrument + pace anchor)",
+        "Indian Classical (slot 3 \u2014 genre anchor)",
         "gentle healing music (61)",
         "deep relaxation music (68)",
         "relax mind and body (57)",
@@ -40,23 +40,23 @@
     ],
     "ab_test": {
         "test_id": null,
-        "test_type": "NO A/B — single title, single thumbnail",
+        "test_type": "NO A/B \u2014 single title, single thumbnail",
         "variant_A": {
             "title": "Restore Your Mind | Slow Veena | Indian Classical",
             "thumbnail_text": "RESTORE",
-            "hypothesis": "Single title, single thumbnail. Offering-framed lead 'Restore Your Mind' (VidIQ 56) — channel data shows offering-led titles beat problem-led ones (offering 7.8K-114K views vs problem <3.3K). Thumb 'RESTORE' = offering/outcome, the calm-lane winning format (avoid Q-hooks)."
+            "hypothesis": "Single title, single thumbnail. Offering-framed lead 'Restore Your Mind' (VidIQ 56) \u2014 channel data shows offering-led titles beat problem-led ones (offering 7.8K-114K views vs problem <3.3K). Thumb 'RESTORE' = offering/outcome, the calm-lane winning format (avoid Q-hooks)."
         },
         "variant_B": {
             "title": "Restore Your Mind | Slow Veena | Indian Classical",
             "thumbnail_text": "RESTORE",
-            "hypothesis": "Same as A — no test."
+            "hypothesis": "Same as A \u2014 no test."
         },
         "test_method": "No A/B. Offering frame + offering thumb, both on the calm-lane winning format. Replaced the problem-framed 'Drained Mind' title and the 'DRAINED?' Q-hook thumb (Q-hooks lose in the calm/healing lane)."
     },
-    "strategic_bet": "FILLER — Thu June 4 AM, double-day partner with the Sarangi PM ship. Leads with an OFFERING frame 'Restore Your Mind' (VidIQ 56) instead of naming the problem — channel data shows offering-led titles massively outperform problem-led ones (Morning Energy 114K / Deep Rest 41K / Comfort 7.8K vs Restless Mind 2K / Tired Mind 0.8K). Breaks Veena's saturated '[X] Mind' problem pattern (Tired Mind May 12, Restless Mind May 23) with a restoration offering. First Bhimpalasi on Veena. 12d+ cooldown clear. Benchmark: Calm Your Mind Veena (73K impr / 5.6K views / 33.93% AVD, Apr 26). Thumb 'RESTORE' is an offering/outcome (calm-lane winning format), replacing the old 'DRAINED?' Q-hook.",
-    "success_good": "2000+ views, 28%+ AVD, 3.5%+ CTR in 48h — drained-mind lane viable for Veena",
-    "success_breakthrough": "5000+ views, 32%+ AVD, 5%+ CTR — matches Apr 26 Calm Your Mind benchmark; lock 'drained mind' as a recurring Veena state-lane",
-    "failure_mode": "<800 views or <3% CTR in 48h — 'drained' framing too passive/heavy for browse; pivot back to proven 'Calm Your Mind' / 'Healing Music' Veena framing and drop the depletion-lead",
+    "strategic_bet": "FILLER \u2014 Thu June 4 AM, double-day partner with the Sarangi PM ship. Leads with an OFFERING frame 'Restore Your Mind' (VidIQ 56) instead of naming the problem \u2014 channel data shows offering-led titles massively outperform problem-led ones (Morning Energy 114K / Deep Rest 41K / Comfort 7.8K vs Restless Mind 2K / Tired Mind 0.8K). Breaks Veena's saturated '[X] Mind' problem pattern (Tired Mind May 12, Restless Mind May 23) with a restoration offering. First Bhimpalasi on Veena. 12d+ cooldown clear. Benchmark: Calm Your Mind Veena (73K impr / 5.6K views / 33.93% AVD, Apr 26). Thumb 'RESTORE' is an offering/outcome (calm-lane winning format), replacing the old 'DRAINED?' Q-hook.",
+    "success_good": "2000+ views, 28%+ AVD, 3.5%+ CTR in 48h \u2014 drained-mind lane viable for Veena",
+    "success_breakthrough": "5000+ views, 32%+ AVD, 5%+ CTR \u2014 matches Apr 26 Calm Your Mind benchmark; lock 'drained mind' as a recurring Veena state-lane",
+    "failure_mode": "<800 views or <3% CTR in 48h \u2014 'drained' framing too passive/heavy for browse; pivot back to proven 'Calm Your Mind' / 'Healing Music' Veena framing and drop the depletion-lead",
     "reference_ships": [
         {
             "title": "Calm Your Mind | Veena Healing Music | Indian Classical",
@@ -65,7 +65,7 @@
             "views": 5584,
             "ctr_pct": 5.61,
             "avd_pct": 33.93,
-            "notes": "Veena benchmark — best Veena performance on channel"
+            "notes": "Veena benchmark \u2014 best Veena performance on channel"
         },
         {
             "title": "Peaceful Music | Soothing Music with Veena",
@@ -83,7 +83,7 @@
             "views": 783,
             "ctr_pct": 2.99,
             "avd_pct": null,
-            "notes": "Tired Mind framing — weakest of the recent Veena set; do NOT repeat 'Tired Mind'"
+            "notes": "Tired Mind framing \u2014 weakest of the recent Veena set; do NOT repeat 'Tired Mind'"
         },
         {
             "title": "Restless Mind | Slow Veena",
@@ -92,18 +92,18 @@
             "views": 2011,
             "ctr_pct": 3.57,
             "avd_pct": null,
-            "notes": "Most recent Veena ship — Restless Mind framing; do NOT repeat 'Restless Mind'"
+            "notes": "Most recent Veena ship \u2014 Restless Mind framing; do NOT repeat 'Restless Mind'"
         }
     ],
     "tags": "restore your mind, mind restoration, slow veena, veena music, veena healing music, veena instrumental, gentle healing music, deep relaxation music, healing music, soothing music, calming music, relax mind and body, mind recharge, drained after work, indian classical music, indian instrumental music, raga bhimpalasi, bhimpalasi, 432hz, alpha waves, raga focus",
-    "description": "Restore Your Mind | Slow Veena | Indian Classical\n\nYou gave everything away today. There's nothing left in the tank.\n\nThis isn't a racing mind — it's an empty one. The kind of tired that doesn't want stimulation or motivation, just something quiet to sit beside while the reserves slowly come back. The Veena is the right instrument for this. It's one of the oldest plucked strings in the world — soft, bell-like, sacred. Each note arrives gently and rings out, asking nothing of you.\n\nThis is 90 minutes of slow Veena in Raga Bhimpalasi — a tender afternoon raga of gentle longing and restoration. Its soft glides and unhurried phrasing feel less like music to listen to and more like something slowly being refilled in a mind that gave everything away. No percussion. No urgency. Just space to be empty for a while.\n\nLet it play in the background and stop trying to get anything done. The refilling happens on its own.\n\n🎵 What you'll hear:\n- Veena — ancient plucked string, soft bell-like sustain and gentle fretted glides\n- Raga Bhimpalasi — tender afternoon raga, soft and restorative\n- A quiet tanpura drone underneath — warm, grounding stillness\n- No tabla, no percussion — nothing to track or follow\n- 90 unbroken minutes at 432Hz tuning\n\n⏱ Chapters\n0:00    Settling — putting the day down\n20:00   Soft and slow\n45:00   Quiet refilling\n70:00   Gentle restoration\n85:00   Coming back\n\n🧠 How to use:\nPress play and stop doing. Let the Veena hold the space — you don't have to listen actively. Sit, lie down, or rest your eyes and let the empty feeling soften on its own.\n\n⏱ Best for:\n• Recovering after a long, draining day\n• Resting a mentally over-spent, depleted mind\n• Quiet evenings with nothing left to give\n• Gentle background calm while you do nothing\n• Slow restoration before sleep\n\n📺 Subscribe to Raga Focus for daily Indian classical music for meditation, calm, anxiety, and sleep.\n\n— Raga Focus\n\n#restoreyourmind #veena #veenamusic #healingmusic #gentlehealingmusic #indianclassicalmusic #432hz #ragabhimpalasi #ragafocus #deeprelaxation #soothingmusic",
+    "description": "Restore Your Mind | Slow Veena | Indian Classical\n\nYou gave everything away today. There's nothing left in the tank.\n\nThis isn't a racing mind \u2014 it's an empty one. The kind of tired that doesn't want stimulation or motivation, just something quiet to sit beside while the reserves slowly come back. The Veena is the right instrument for this. It's one of the oldest plucked strings in the world \u2014 soft, bell-like, sacred. Each note arrives gently and rings out, asking nothing of you.\n\nThis is 90 minutes of slow Veena in Raga Bhimpalasi \u2014 a tender afternoon raga of gentle longing and restoration. Its soft glides and unhurried phrasing feel less like music to listen to and more like something slowly being refilled in a mind that gave everything away. No percussion. No urgency. Just space to be empty for a while.\n\nLet it play in the background and stop trying to get anything done. The refilling happens on its own.\n\n\ud83c\udfb5 What you'll hear:\n- Veena \u2014 ancient plucked string, soft bell-like sustain and gentle fretted glides\n- Raga Bhimpalasi \u2014 tender afternoon raga, soft and restorative\n- A quiet tanpura drone underneath \u2014 warm, grounding stillness\n- No tabla, no percussion \u2014 nothing to track or follow\n- 90 unbroken minutes at 432Hz tuning\n\n\u23f1 Chapters\n0:00    Settling \u2014 putting the day down\n20:00   Soft and slow\n45:00   Quiet refilling\n70:00   Gentle restoration\n85:00   Coming back\n\n\ud83e\udde0 How to use:\nPress play and stop doing. Let the Veena hold the space \u2014 you don't have to listen actively. Sit, lie down, or rest your eyes and let the empty feeling soften on its own.\n\n\u23f1 Best for:\n\u2022 Recovering after a long, draining day\n\u2022 Resting a mentally over-spent, depleted mind\n\u2022 Quiet evenings with nothing left to give\n\u2022 Gentle background calm while you do nothing\n\u2022 Slow restoration before sleep\n\n\ud83d\udcfa Subscribe to Raga Focus for daily Indian classical music for meditation, calm, anxiety, and sleep.\n\n\u2014 Raga Focus\n\n#restoreyourmind #veena #veenamusic #healingmusic #gentlehealingmusic #indianclassicalmusic #432hz #ragabhimpalasi #ragafocus #deeprelaxation #soothingmusic",
     "thumbnail_text_main": "RESTORE",
     "thumbnail_text_variants": [
         "RESTORE"
     ],
-    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate warm-gold patterned border with lotus and vine motifs, aged warm parchment background, soft late-afternoon palette (muted amber, dusty rose, soft teal shadows). Central figure: serene musician in cream-and-saffron attire seated cross-legged on a simple woven mat, gently playing a large Veena (long fretted plucked string instrument resting across the lap with a rounded gourd resonator, eyes softly closed). A quiet inner courtyard with soft afternoon light, a few fallen lotus petals, a sense of stillness after exertion. Expression of gentle depletion settling into rest — peaceful, unhurried, restored. Bold deep-teal serif overlay text reading 'RESTORE' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Warm aged gold, soft amber, dusty rose, and cream palette, late-afternoon restorative stillness mood, single composed scene, no clutter.",
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate warm-gold patterned border with lotus and vine motifs, aged warm parchment background, soft late-afternoon palette (muted amber, dusty rose, soft teal shadows). Central figure: serene musician in cream-and-saffron attire seated cross-legged on a simple woven mat, gently playing a large Veena (long fretted plucked string instrument resting across the lap with a rounded gourd resonator, eyes softly closed). A quiet inner courtyard with soft afternoon light, a few fallen lotus petals, a sense of stillness after exertion. Expression of gentle depletion settling into rest \u2014 peaceful, unhurried, restored. Bold deep-teal serif overlay text reading 'RESTORE' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Warm aged gold, soft amber, dusty rose, and cream palette, late-afternoon restorative stillness mood, single composed scene, no clutter.",
     "suno_prompt_A": "Indian classical Veena solo in Raga Bhimpalasi, music for a drained and depleted mind, ancient plucked string with soft bell-like sustain, gentle gamak ornamentation and slow fretted meend glides, Bhimpalasi's flat 3rd and flat 7th giving a tender afternoon longing and restorative quality, warm tanpura drone underneath, no tabla, 432Hz tuning, 55-65 BPM, sacred resonant texture with generous space between phrases, gentle and unhurried, warm mid register, seamless loop, like something slowly being refilled in a mind that gave everything away, no vocals, no humming, no human voice",
-    "suno_prompt_B": "Instrumental only, no vocals, no humming, Indian classical Veena, Raga Bhimpalasi — flat 3rd and flat 7th tender afternoon raga, ancient plucked string with soft bell-like sustain, gentle gamak and slow fretted glides, warm tanpura drone, no tabla, no percussion, 432Hz, 55-65 BPM, warm mid register, sacred resonant, seamless loop, like something slowly being refilled in a mind that gave everything away",
+    "suno_prompt_B": "Instrumental only, no vocals, no humming, Indian classical Veena, Raga Bhimpalasi \u2014 flat 3rd and flat 7th tender afternoon raga, ancient plucked string with soft bell-like sustain, gentle gamak and slow fretted glides, warm tanpura drone, no tabla, no percussion, 432Hz, 55-65 BPM, warm mid register, sacred resonant, seamless loop, like something slowly being refilled in a mind that gave everything away",
     "production_spec": {
         "duration_minutes": 90,
         "bpm_range": "55-65",
@@ -112,9 +112,9 @@
         "binaural_wave": "Alpha",
         "binaural_beat_hz": 10.0,
         "lufs_target": -15,
-        "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+        "loop_seam": "10s in / 30s out, Suno extend 3-4x \u2192 loop in post to fill 90 min",
         "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
-        "notes": "Raga Bhimpalasi — tender afternoon raga. Sa Ga(komal) Ma Pa Ni(komal) Sa ascending; descending uses both Ni (komal and shuddh) — the two Ni and komal Ga give it its longing, restorative afternoon character. Komal Ga + komal Ni are the defining notes. NO tabla, no percussion — drained-mind lane needs space, not rhythm. Keep a warm tanpura drone underneath for grounding stillness. Alpha 10Hz binaural — restful-alert gentle restoration (not Theta/Delta sleep; this is recovery, not drift-off). LUFS -15 (gentle, restorative, slightly quieter than morning-active). Veena should sound plucked and bell-like with audible soft sustain and gentle fretted glides — not legato. EMOTIONAL TAG ROTATION: clip 1: 'like something slowly being refilled in a mind that gave everything away' · clip 2: 'soft and unhurried — the body finally allowed to be empty for a while' · clip 3: 'gentle bell-like notes ringing into stillness, asking nothing'. 90min = 3-4 Suno clips + loop extension."
+        "notes": "Raga Bhimpalasi \u2014 tender afternoon raga. Sa Ga(komal) Ma Pa Ni(komal) Sa ascending; descending uses both Ni (komal and shuddh) \u2014 the two Ni and komal Ga give it its longing, restorative afternoon character. Komal Ga + komal Ni are the defining notes. NO tabla, no percussion \u2014 drained-mind lane needs space, not rhythm. Keep a warm tanpura drone underneath for grounding stillness. Alpha 10Hz binaural \u2014 restful-alert gentle restoration (not Theta/Delta sleep; this is recovery, not drift-off). LUFS -15 (gentle, restorative, slightly quieter than morning-active). Veena should sound plucked and bell-like with audible soft sustain and gentle fretted glides \u2014 not legato. EMOTIONAL TAG ROTATION: clip 1: 'like something slowly being refilled in a mind that gave everything away' \u00b7 clip 2: 'soft and unhurried \u2014 the body finally allowed to be empty for a while' \u00b7 clip 3: 'gentle bell-like notes ringing into stillness, asking nothing'. 90min = 3-4 Suno clips + loop extension."
     },
-    "experiment_notes": "No A/B — single title, single thumbnail, straight catalog ship (June 1-8 full-volume week; Thu double with Sarangi PM). Pivoted from problem-framing ('Drained Mind') to offering-framing ('Restore Your Mind', VidIQ 56) after confirming offering-led titles beat problem-led ones on this channel. Thumb switched from Q-hook 'DRAINED?' to offering 'RESTORE' to match the calm-lane winning format. First Bhimpalasi on Veena."
+    "experiment_notes": "No A/B \u2014 single title, single thumbnail, straight catalog ship (June 1-8 full-volume week; Thu double with Sarangi PM). Pivoted from problem-framing ('Drained Mind') to offering-framing ('Restore Your Mind', VidIQ 56) after confirming offering-led titles beat problem-led ones on this channel. Thumb switched from Q-hook 'DRAINED?' to offering 'RESTORE' to match the calm-lane winning format. First Bhimpalasi on Veena."
 }
