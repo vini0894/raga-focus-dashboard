@@ -1,10 +1,10 @@
 {
     "id": "v_2026-06-05_bright_morning_santoor",
-    "status": "DRAFT",
+    "status": "PARKED",
     "date_shipped": null,
     "created_at": "2026-05-31",
-    "planned_date": "2026-06-05",
-    "planned_slot": "AM (8am IST)",
+    "planned_date": null,
+    "planned_slot": null,
     "title": "Bright Morning Music | Santoor Instrumental | 1.5 Hours",
     "title_variants": {
         "A": "Bright Morning Music | Santoor Instrumental | 1.5 Hours",
@@ -112,5 +112,6 @@
     "playlists": [
         "Morning Energy",
         "Peaceful Music"
-    ]
+    ],
+    "parked_reason": "Parked 2026-06-05 \u2014 could not deliver AM today; brief ready for re-slot to a future AM (next Fri Jun 12 AM is the natural candidate). Keep AM slot (data: Santoor uplifting AM 33% AVD vs PM 19%)."
 }
