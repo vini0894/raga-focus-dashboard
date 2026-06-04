@@ -143,3 +143,49 @@ Three rules fall out of it:
 
 ## ⏳ OPEN EXPERIMENT — full-volume vs lean (decide for the week AFTER June 1-8)
 **June 1-8 is a deliberate full-volume test:** 10 ships (1+/day + Tue/Thu doubles). Hypothesis (from Findings 1-2): all that volume will **NOT** beat the ~1.2M/day catalog floor + the two Monday heroes — most ships just compete for the same pool. **Decision rule:** capture daily channel impressions (the "Content type … Totals.csv" export) across June 1-8; if the weekly total doesn't clearly beat the floor, **go LEAN next week** — 1 ship/day, skip the dead days (Wed/Sat for heroes), and put the saved effort into manufacturing a catalog winner #4 (Sitar engine + 3-hour long-form). **Must paste the daily Totals CSV to make this call.**
+
+---
+
+## ⭐ Findings banked 2026-06-04 (from first per-video × per-day impressions export: May 26 – Jun 2, N=12 ships covered)
+
+### Finding 13 — 7-day patience window (not 48 hours)
+Channel was previously judging new ships on 48-hour data. The per-day data shows this is wrong: **Music for Morning Anxiety Sarod (May 28)** decayed from 20K → 14K → 10K → 7K through day 4, looking like a normal failure. Then on **day 5 it recovered to 13K, holding 13K through day 6** — algorithm gave it a second push driven by its 32% AVD.
+
+**Rule:** Do not declare a ship a failure or pull its thumbnail/title before day 7. If AVD ≥ 27% and CTR ≥ 3.5%, the algorithm may re-push the ship in the day 5-7 window. Pulling early forfeits the recovery.
+
+**Exceptions where 72h is enough:** day-1 impressions <8K AND AVD <18%. That combo never recovers (Surbahar Rest Your Mind, Sitar 3hr cognitive, Jun 1 Dilruba — all matched this pattern, all stayed dead).
+
+### Finding 14 — Cannibalization is fatal within 4 days (Surbahar evidence)
+**Surbahar "Rest Your Mind" (May 27)** had the worst observed decay curve in the export: **12K → 6K → 3K → 1K → 1K → 1K → 1K**. Dead by day 4, flat at 1K for 4 more days. This is in the same deep-rest/Surbahar lane as the April hero "Deep Rest Music | Find Stillness with Surbahar" (797K impressions lifetime, still earning 2K+/day).
+
+**Rule:** Never reuse an instrument + lane pair where the channel already has a >500K-impression hero, UNLESS the new ship leads with a clinically different sub-lane (anxiety vs deep-rest, cortisol vs sleep, etc.). Same-lane same-instrument NEW ships will be killed by the old hero within 4 days. The cannibalization isn't "splits the audience 50/50" — it's "algorithm starves the newcomer entirely."
+
+**Audit list to apply this rule:** Surbahar deep-rest (owned), Sitar cognitive/dopamine (owned by Dopamine Reset), Bansuri sleep (owned by Sound Sleep), Dilruba morning energy (owned by Yaman Morning), Bansuri morning productivity (owned by Productive Day).
+
+### Finding 15 — Algorithm preference is narrower than expected (1-2 growth slots at a time)
+In 14 days of new ships (N=10), only **Sitar Morning Right (May 26)** is in true growth mode (32K → 38K day 1 → day 8 = accelerating). One other ship is in recovery (Morning Anxiety Sarod). The remaining 8 ships are in normal-to-severe decay.
+
+**Implication:** The algorithm appears to hold open ~2 "growth slots" for new content at any time. Trying to ship 8-10 new videos/week to fill those slots doesn't multiply impressions — they just compete for the same 2 slots. **This data argues for LEAN — ship fewer, better-targeted videos, give each one a real shot at the growth slot.**
+
+### Finding 16 — Day-1 impressions are a strong predictor (but not deterministic)
+Across the N=10 cohort:
+- Day-1 ≥20K → 2/2 ended hero-tier or near-hero (Sitar Morning Right, Morning Anxiety Sarod, Sarod Clear Your Head)
+- Day-1 12K-20K → variable (Surbahar Rest Your Mind died; Sleep Bansuri held)
+- Day-1 5K-12K → 4/5 dead by day 7 (Yoga Sarangi, Good Energy Santoor, Dilruba, Sitar 3hr)
+- Day-1 <5K → none recovered
+
+**Rule:** Day-1 impressions below 8K = strong signal the title/thumbnail isn't earning the algorithm push. Don't wait for recovery on these — pull the thumbnail for an A/B retry and ship the next slot fresh.
+
+### Finding 17 — Title patterns that fail to earn day-1 push
+From the 4 weakest day-1 ships in the cohort (all <8K day 1):
+1. **"Calming Music for Anxiety | Slow Bansuri | Indian Classical" (Jun 2 Bansuri, 7K day 1)** — calm-saturated week + generic "Calming" lead
+2. **"Deep Relaxation | Release the Day | 1.5 Hours Dilruba Instrumental" (Jun 1 Dilruba, 7K day 1)** — instrument suffix in slot 3 is unusual on this channel + "Deep Relaxation" generic
+3. **"Sitar to Unclog Your Brain | Instrumental Music | 3 Hours" (May 31 Sitar, 6K day 1)** — format/lane mismatch (cognitive lane + 3hr)
+4. **"Good Energy Music | Santoor for Positive Vibes | 1.5 Hours" (May 28 Santoor PM, 5K day 1)** — PM slot for AM-only lane
+
+**Banked title-pattern anti-rules:**
+- Calm-family lead in a calm-saturated week (4+ calm leads in 7d) → day-1 push is ~50% of normal
+- Instrument descriptor in slot 3 ("...Dilruba Instrumental" suffix) → underperforms "Instrument | Outcome | Duration" structure
+- Wrong format-lane pair (cognitive + 3hr, uplifting + PM) → no day-1 push regardless of title quality
+- "Generic emotional-word + Music" leads (Calming, Soothing, Deep Relaxation as bare phrases) → weakest day-1 impressions
+
