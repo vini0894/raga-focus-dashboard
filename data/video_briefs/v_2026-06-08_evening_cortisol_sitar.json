@@ -8,7 +8,7 @@
     "title": "Sitar for Cortisol Reset | Indian Instrumental Music | 1.5 Hours",
     "title_variants": {
         "A": "Sitar for Cortisol Reset | Indian Instrumental Music | 1.5 Hours",
-        "B": "Cortisol Reset Music | Relax After a Long Day | 1.5 Hours"
+        "B": "Cortisol Reset Music | Sitar Instrumental | 1.5 Hours"
     },
     "components": {
         "problem": "body still holding tension after a long week / cortisol hasn't come down even in the evening / physically wired, can't switch off / stress living in the body not just the mind / Sunday evening and the body still feels like Monday morning",
@@ -19,9 +19,9 @@
     },
     "validated_keywords": [
         "Sitar for Cortisol Reset (slot 1 A — IFO brand format, channel signature, 69 VidIQ)",
-        "Cortisol Reset Music (slot 1 B — outcome lead, 61 VidIQ)",
+        "Cortisol Reset Music (slot 1 B — SEO-led outcome lead, 61 VidIQ)",
         "Indian Instrumental Music (slot 2 A — genre anchor, 65 VidIQ)",
-        "Relax After a Long Day (slot 2 B — situational phrase, unvalidated ~55-65)",
+        "Sitar Instrumental (slot 2 B — instrument anchor for SEO-led format)",
         "cortisol reset music",
         "sitar for cortisol reset",
         "sitar music",
@@ -49,11 +49,11 @@
             "hypothesis": "IFO brand format — 'Sitar for X' is the channel's signature (Dopamine Reset 764K, Nervous System Healing 31K, Brain Detox 13K). Tests whether IFO format works in the EVENING slot — it has been predominantly used in non-time-specific contexts. 'Indian Instrumental Music' as slot 2 replaces overused 'Indian Classical' with broader genre anchor (65 VidIQ). If A wins: IFO format is slot-universal for Sitar."
         },
         "variant_B": {
-            "title": "Cortisol Reset Music | Relax After a Long Day | 1.5 Hours",
+            "title": "Cortisol Reset Music | Sitar Instrumental | 1.5 Hours",
             "thumbnail_text": "CORTISOL RESET",
-            "hypothesis": "Outcome-lead format — 'Cortisol Reset Music' (61 VidIQ) as slot 1 targets health-literate search intent directly. 'Relax After a Long Day' in slot 2 targets the exact situational browse moment (Sunday evening, week ending). Tests whether specific situational phrase in slot 2 lifts CTR vs genre anchor in A. If B wins: situational slot 2 outperforms genre anchor in evening slot — use for future evening ships."
+            "hypothesis": "Pure SEO-led format — 'Cortisol Reset Music' as slot 1 outcome/SEO lead, 'Sitar Instrumental' as slot 2 instrument anchor, '1.5 Hours' as slot 3 duration. Directly mirrors the proven channel structure (May 11 'Calm Music | Sitar for Cortisol Reset | 1.5 hours healing' = 175K impressions, 26.6% AVD). Tests IFO format (A) vs proven SEO-led structure (B) cleanly — single variable change. If B wins: confirms playbook's 'IFO has 2.81% CTR vs SEO-led' rule applies to Sitar even in cortisol lane. If A wins: IFO format is universal for Sitar regardless of structural CTR penalty."
         },
-        "test_method": "Title-only A/B (Test 33). Same thumbnail both variants: 'CORTISOL RESET' — health-literate descriptor, pattern interrupt for browse. Single variable: IFO brand format (A) vs outcome-lead + situational slot 2 (B). Backup thumbnail: 'CAN'T UNWIND?' — swap if CTR <3.2% at 48h check. Complements Test 31 (June 5 morning Sitar: IFO vs SEO-outcome in morning slot). Reading Tests 31 + 33 together: both A win = IFO universal for Sitar; both B win = outcome-lead always wins; split = format is slot-dependent."
+        "test_method": "Title-only A/B (Test 33). Same thumbnail both variants: 'CORTISOL RESET' — health-literate descriptor, pattern interrupt for browse. Single variable: IFO brand format 'Sitar for X' (A) vs SEO-led structure 'X Music | Instrument | Duration' (B). Reworked 2026-06-04 — previous B mixed two variables (lead phrase AND slot 2 situational); new B isolates format alone for a clean read. Backup thumbnail: 'CAN'T UNWIND?' — swap if CTR <3.2% at 48h check. Reading Tests 31 + 33 together: both A win = IFO universal for Sitar; both B win = SEO-led always wins; split = format is slot-dependent."
     },
     "strategic_bet": "SWING — Mon June 8 PM. Sitar algo push active (+60.4% impression growth 2-20 day old videos). Cortisol reset is proven Sitar territory: Nervous System Healing (31K views, 27% AVD), original Cortisol Reset May 11 (8.3K views, Raga Bhairavi). Raga Kedar — never used on any instrument on this channel. Kedar's defining quality: uses both Shuddha Ma (natural 4th) and Teevra Ma (raised 4th), creating an oscillating, grounding, settling character unlike Yaman (pure raised 4th expansive) or Bhairavi (heavy komal-dominant). Key upgrade from May 11: adding light tabla — Suno data shows all high-performing Sitar videos (764K, 11.8K, 9.7K) had tabla; the only no-tabla Sitar (May 11 cortisol reset) was the lowest in the set. Sunday evening browse: high-intent wellness viewers at week's end. 8 days clear from May 31 Sitar.",
     "success_good": "3000+ views, 25%+ AVD, 3.8%+ CTR in 48h",
