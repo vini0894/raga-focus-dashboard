@@ -1,6 +1,6 @@
 {
     "id": "v_2026-06-08_evening_cortisol_sitar",
-    "status": "DRAFT",
+    "status": "APPROVED",
     "date_shipped": null,
     "created_at": "2026-05-30",
     "planned_date": "2026-06-08",
@@ -18,10 +18,10 @@
         "wave": "Alpha"
     },
     "validated_keywords": [
-        "Sitar for Cortisol Reset (slot 1 A — IFO brand format, channel signature, 69 VidIQ)",
-        "Cortisol Reset Music (slot 1 B — SEO-led outcome lead, 61 VidIQ)",
-        "Indian Instrumental Music (slot 2 A — genre anchor, 65 VidIQ)",
-        "Sitar Instrumental (slot 2 B — instrument anchor for SEO-led format)",
+        "Sitar for Cortisol Reset (slot 1 A \u2014 IFO brand format, channel signature, 69 VidIQ)",
+        "Cortisol Reset Music (slot 1 B \u2014 SEO-led outcome lead, 61 VidIQ)",
+        "Indian Instrumental Music (slot 2 A \u2014 genre anchor, 65 VidIQ)",
+        "Sitar Instrumental (slot 2 B \u2014 instrument anchor for SEO-led format)",
         "cortisol reset music",
         "sitar for cortisol reset",
         "sitar music",
@@ -42,23 +42,23 @@
     ],
     "ab_test": {
         "test_id": "Test 33",
-        "test_type": "TITLE A/B — same thumbnail both variants",
+        "test_type": "TITLE A/B \u2014 same thumbnail both variants",
         "variant_A": {
             "title": "Sitar for Cortisol Reset | Indian Instrumental Music | 1.5 Hours",
             "thumbnail_text": "CORTISOL RESET",
-            "hypothesis": "IFO brand format — 'Sitar for X' is the channel's signature (Dopamine Reset 764K, Nervous System Healing 31K, Brain Detox 13K). Tests whether IFO format works in the EVENING slot — it has been predominantly used in non-time-specific contexts. 'Indian Instrumental Music' as slot 2 replaces overused 'Indian Classical' with broader genre anchor (65 VidIQ). If A wins: IFO format is slot-universal for Sitar."
+            "hypothesis": "IFO brand format \u2014 'Sitar for X' is the channel's signature (Dopamine Reset 764K, Nervous System Healing 31K, Brain Detox 13K). Tests whether IFO format works in the EVENING slot \u2014 it has been predominantly used in non-time-specific contexts. 'Indian Instrumental Music' as slot 2 replaces overused 'Indian Classical' with broader genre anchor (65 VidIQ). If A wins: IFO format is slot-universal for Sitar."
         },
         "variant_B": {
             "title": "Cortisol Reset Music | Sitar Instrumental | 1.5 Hours",
             "thumbnail_text": "CORTISOL RESET",
-            "hypothesis": "Pure SEO-led format — 'Cortisol Reset Music' as slot 1 outcome/SEO lead, 'Sitar Instrumental' as slot 2 instrument anchor, '1.5 Hours' as slot 3 duration. Directly mirrors the proven channel structure (May 11 'Calm Music | Sitar for Cortisol Reset | 1.5 hours healing' = 175K impressions, 26.6% AVD). Tests IFO format (A) vs proven SEO-led structure (B) cleanly — single variable change. If B wins: confirms playbook's 'IFO has 2.81% CTR vs SEO-led' rule applies to Sitar even in cortisol lane. If A wins: IFO format is universal for Sitar regardless of structural CTR penalty."
+            "hypothesis": "Pure SEO-led format \u2014 'Cortisol Reset Music' as slot 1 outcome/SEO lead, 'Sitar Instrumental' as slot 2 instrument anchor, '1.5 Hours' as slot 3 duration. Directly mirrors the proven channel structure (May 11 'Calm Music | Sitar for Cortisol Reset | 1.5 hours healing' = 175K impressions, 26.6% AVD). Tests IFO format (A) vs proven SEO-led structure (B) cleanly \u2014 single variable change. If B wins: confirms playbook's 'IFO has 2.81% CTR vs SEO-led' rule applies to Sitar even in cortisol lane. If A wins: IFO format is universal for Sitar regardless of structural CTR penalty."
         },
-        "test_method": "Title-only A/B (Test 33). Same thumbnail both variants: 'CORTISOL RESET' — health-literate descriptor, pattern interrupt for browse. Single variable: IFO brand format 'Sitar for X' (A) vs SEO-led structure 'X Music | Instrument | Duration' (B). Reworked 2026-06-04 — previous B mixed two variables (lead phrase AND slot 2 situational); new B isolates format alone for a clean read. Backup thumbnail: 'CAN'T UNWIND?' — swap if CTR <3.2% at 48h check. Reading Tests 31 + 33 together: both A win = IFO universal for Sitar; both B win = SEO-led always wins; split = format is slot-dependent."
+        "test_method": "Title-only A/B (Test 33). Same thumbnail both variants: 'CORTISOL RESET' \u2014 health-literate descriptor, pattern interrupt for browse. Single variable: IFO brand format 'Sitar for X' (A) vs SEO-led structure 'X Music | Instrument | Duration' (B). Reworked 2026-06-04 \u2014 previous B mixed two variables (lead phrase AND slot 2 situational); new B isolates format alone for a clean read. Backup thumbnail: 'CAN'T UNWIND?' \u2014 swap if CTR <3.2% at 48h check. Reading Tests 31 + 33 together: both A win = IFO universal for Sitar; both B win = SEO-led always wins; split = format is slot-dependent."
     },
-    "strategic_bet": "SWING — Mon June 8 PM. Sitar algo push active (+60.4% impression growth 2-20 day old videos). Cortisol reset is proven Sitar territory: Nervous System Healing (31K views, 27% AVD), original Cortisol Reset May 11 (8.3K views, Raga Bhairavi). Raga Kedar — never used on any instrument on this channel. Kedar's defining quality: uses both Shuddha Ma (natural 4th) and Teevra Ma (raised 4th), creating an oscillating, grounding, settling character unlike Yaman (pure raised 4th expansive) or Bhairavi (heavy komal-dominant). Key upgrade from May 11: adding light tabla — Suno data shows all high-performing Sitar videos (764K, 11.8K, 9.7K) had tabla; the only no-tabla Sitar (May 11 cortisol reset) was the lowest in the set. Sunday evening browse: high-intent wellness viewers at week's end. 8 days clear from May 31 Sitar.",
+    "strategic_bet": "SWING \u2014 Mon June 8 PM. Sitar algo push active (+60.4% impression growth 2-20 day old videos). Cortisol reset is proven Sitar territory: Nervous System Healing (31K views, 27% AVD), original Cortisol Reset May 11 (8.3K views, Raga Bhairavi). Raga Kedar \u2014 never used on any instrument on this channel. Kedar's defining quality: uses both Shuddha Ma (natural 4th) and Teevra Ma (raised 4th), creating an oscillating, grounding, settling character unlike Yaman (pure raised 4th expansive) or Bhairavi (heavy komal-dominant). Key upgrade from May 11: adding light tabla \u2014 Suno data shows all high-performing Sitar videos (764K, 11.8K, 9.7K) had tabla; the only no-tabla Sitar (May 11 cortisol reset) was the lowest in the set. Sunday evening browse: high-intent wellness viewers at week's end. 8 days clear from May 31 Sitar.",
     "success_good": "3000+ views, 25%+ AVD, 3.8%+ CTR in 48h",
-    "success_breakthrough": "6000+ views, 4%+ CTR — cortisol reset lane confirmed strong with Kedar; 'CORTISOL RESET' descriptor thumbnail validated for health-literate browse lane",
-    "failure_mode": "<1500 views or <3.2% CTR — 'CORTISOL RESET' thumbnail too clinical for browse scroll-stopping; swap immediately to 'CAN'T UNWIND?' Q-hook; if CTR recovers, descriptor format only works for search not browse",
+    "success_breakthrough": "6000+ views, 4%+ CTR \u2014 cortisol reset lane confirmed strong with Kedar; 'CORTISOL RESET' descriptor thumbnail validated for health-literate browse lane",
+    "failure_mode": "<1500 views or <3.2% CTR \u2014 'CORTISOL RESET' thumbnail too clinical for browse scroll-stopping; swap immediately to 'CAN'T UNWIND?' Q-hook; if CTR recovers, descriptor format only works for search not browse",
     "reference_ships": [
         {
             "title": "Sitar for Nervous System Healing | Indian Classical Music for Calmness | 1 Hour",
@@ -66,7 +66,7 @@
             "views": 31015,
             "ctr_pct": null,
             "avd_pct": 27.01,
-            "notes": "Channel benchmark — Sitar nervous system/cortisol lane ceiling"
+            "notes": "Channel benchmark \u2014 Sitar nervous system/cortisol lane ceiling"
         },
         {
             "title": "Calm Music | Sitar for Cortisol Reset | 1.5 hours healing",
@@ -74,7 +74,7 @@
             "views": 8351,
             "ctr_pct": null,
             "avd_pct": null,
-            "notes": "Direct lane predecessor — Raga Bhairavi, no tabla, 55-60 BPM. Upgrading: Kedar raga + light tabla"
+            "notes": "Direct lane predecessor \u2014 Raga Bhairavi, no tabla, 55-60 BPM. Upgrading: Kedar raga + light tabla"
         },
         {
             "title": "Sitar for Brain Detox | Clear Your Mind | 1.5 Hours of Indian Classical Music",
@@ -82,19 +82,19 @@
             "views": 9728,
             "ctr_pct": 3.57,
             "avd_pct": 28.92,
-            "notes": "Sitar cognitive lane benchmark — has gentle tabla, strong AVD"
+            "notes": "Sitar cognitive lane benchmark \u2014 has gentle tabla, strong AVD"
         }
     ],
     "tags": "cortisol reset music, sitar for cortisol reset, sitar music, indian instrumental music, relax after a long day, music after a long day, nervous system reset music, stress relief music, indian classical sitar, body relaxation music, evening sitar music, 432hz, alpha waves, raga kedar, kedar raga, indian instrumental, sitar for relaxation, sitar meditation, cortisol music, raga focus",
-    "description": "Sitar for Cortisol Reset | Indian Instrumental Music | 1.5 Hours\n\nSome stress doesn't leave when the day does.\n\nThe work is over. The week is done. But the body is still running — still holding the tension it built up over five days of decisions, pressure, and staying switched on. You can't force it to stop. You can't think your way out of cortisol. You just need something to sit with while it gradually releases.\n\nThis is 90 minutes of Sitar in Raga Kedar — an evening raga with a distinctive oscillating quality unlike any other. Kedar alternates between its natural and raised fourth, creating phrases that feel like they're gently loosening something. Not pulling, just easing. Light tabla underneath — enough rhythm to keep the music present and alive, not enough to feel like anything is being demanded of you.\n\nPress play. Sit with it. The body will follow.\n\n🎵 What you'll hear:\n- Sitar — warm plucked tones, characteristic meend glides and gamak ornamentation\n- Raga Kedar — distinctive oscillating quality, grounding and devotional\n- Light tabla — very low dynamic, steady pulse, present but never demanding\n- Soft tanpura drone underneath\n- 90 unbroken minutes at 432Hz\n- Subtle alpha wave layer barely audible underneath\n\n⏱ Chapters\n0:00    Still running\n20:00   Beginning to settle\n45:00   The body releasing\n70:00   Quiet\n85:00   Reset\n\n🧠 How to use:\nYou don't need to do anything. Press play and let it be on. The Sitar handles the reset. By the time you notice the tension is leaving, it will already have been leaving for a while.\n\n⏱ Best for:\n• End-of-week body tension and cortisol buildup\n• Sunday evening reset before the new week starts\n• Stress that lives in the body, not just the mind\n• Background for winding down after a long day\n• Nervous system downregulation after high-pressure days\n\n📺 Subscribe to Raga Focus for daily Indian classical music for anxiety, sleep, and mental calm.\n\n— Raga Focus\n\n#cortisolreset #sitarmusic #indianinstrumental #432hz #alphawaves #eveningmusic #ragafocus #nervousystemreset #stressrelief #ragakedar #indianclassicalmusic",
+    "description": "Sitar for Cortisol Reset | Indian Instrumental Music | 1.5 Hours\n\nSome stress doesn't leave when the day does.\n\nThe work is over. The week is done. But the body is still running \u2014 still holding the tension it built up over five days of decisions, pressure, and staying switched on. You can't force it to stop. You can't think your way out of cortisol. You just need something to sit with while it gradually releases.\n\nThis is 90 minutes of Sitar in Raga Kedar \u2014 an evening raga with a distinctive oscillating quality unlike any other. Kedar alternates between its natural and raised fourth, creating phrases that feel like they're gently loosening something. Not pulling, just easing. Light tabla underneath \u2014 enough rhythm to keep the music present and alive, not enough to feel like anything is being demanded of you.\n\nPress play. Sit with it. The body will follow.\n\n\ud83c\udfb5 What you'll hear:\n- Sitar \u2014 warm plucked tones, characteristic meend glides and gamak ornamentation\n- Raga Kedar \u2014 distinctive oscillating quality, grounding and devotional\n- Light tabla \u2014 very low dynamic, steady pulse, present but never demanding\n- Soft tanpura drone underneath\n- 90 unbroken minutes at 432Hz\n- Subtle alpha wave layer barely audible underneath\n\n\u23f1 Chapters\n0:00    Still running\n20:00   Beginning to settle\n45:00   The body releasing\n70:00   Quiet\n85:00   Reset\n\n\ud83e\udde0 How to use:\nYou don't need to do anything. Press play and let it be on. The Sitar handles the reset. By the time you notice the tension is leaving, it will already have been leaving for a while.\n\n\u23f1 Best for:\n\u2022 End-of-week body tension and cortisol buildup\n\u2022 Sunday evening reset before the new week starts\n\u2022 Stress that lives in the body, not just the mind\n\u2022 Background for winding down after a long day\n\u2022 Nervous system downregulation after high-pressure days\n\n\ud83d\udcfa Subscribe to Raga Focus for daily Indian classical music for anxiety, sleep, and mental calm.\n\n\u2014 Raga Focus\n\n#cortisolreset #sitarmusic #indianinstrumental #432hz #alphawaves #eveningmusic #ragafocus #nervousystemreset #stressrelief #ragakedar #indianclassicalmusic",
     "thumbnail_text_main": "CORTISOL RESET",
     "thumbnail_text_variants": [
         "CORTISOL RESET",
         "CAN'T UNWIND?"
     ],
-    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate deep-indigo-and-gold patterned border with evening lotus, oil-lamp flame and settling-dusk motifs, aged warm parchment background, late evening palette (deep indigo fading to warm amber, soft oil-lamp glow, the stillness of a day finally ending). Central figure: serene musician in deep-navy-and-gold attire seated cross-legged playing sitar (long-necked plucked instrument with gourd resonator, held diagonally) in a quiet evening courtyard. Warm lamplight falling softly across the scene, body language of gentle release — not collapsed, not tense, just settling. Expression of quiet letting-go — the week finally being put down. Bold dark-teal serif overlay text reading 'CORTISOL RESET' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Deep indigo, warm amber, and aged cream palette, still evening mood, single composed scene, no clutter.",
+    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate deep-indigo-and-gold patterned border with evening lotus, oil-lamp flame and settling-dusk motifs, aged warm parchment background, late evening palette (deep indigo fading to warm amber, soft oil-lamp glow, the stillness of a day finally ending). Central figure: serene musician in deep-navy-and-gold attire seated cross-legged playing sitar (long-necked plucked instrument with gourd resonator, held diagonally) in a quiet evening courtyard. Warm lamplight falling softly across the scene, body language of gentle release \u2014 not collapsed, not tense, just settling. Expression of quiet letting-go \u2014 the week finally being put down. Bold dark-teal serif overlay text reading 'CORTISOL RESET' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Deep indigo, warm amber, and aged cream palette, still evening mood, single composed scene, no clutter.",
     "suno_prompt_A": "Instrumental only, no vocals, Indian classical sitar in Raga Kedar, evening cortisol reset mood, warm plucked sitar with meend glissando slides and gamak ornamentation, Kedar alternates natural and raised 4th creating oscillating settling quality, devotional and grounding character, light tabla at very low dynamic giving forward momentum not dominating, soft tanpura drone, 432Hz tuning, 65-75 BPM, grounded and present not dreamy or dissolving, warm mid register, cinematic meditative production, seamless loop, like the body finally getting permission to put down the weight it has been carrying, no humming, no human voice",
-    "suno_prompt_B": "Instrumental only, no vocals, no humming, Indian classical sitar, Raga Kedar — alternates natural and raised 4th oscillating settling quality, meend glissando slides and gamak ornamentation, light tabla very low dynamic, tanpura drone, 432Hz, 65-75 BPM, warm mid register, forward momentum grounded and present, seamless loop, like the body putting down the weight it has been carrying",
+    "suno_prompt_B": "Instrumental only, no vocals, no humming, Indian classical sitar, Raga Kedar \u2014 alternates natural and raised 4th oscillating settling quality, meend glissando slides and gamak ornamentation, light tabla very low dynamic, tanpura drone, 432Hz, 65-75 BPM, warm mid register, forward momentum grounded and present, seamless loop, like the body putting down the weight it has been carrying",
     "production_spec": {
         "duration_minutes": 90,
         "bpm_range": "65-75",
@@ -103,9 +103,13 @@
         "binaural_wave": "Alpha",
         "binaural_beat_hz": 10.0,
         "lufs_target": -14,
-        "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+        "loop_seam": "10s in / 30s out, Suno extend 3-4x \u2192 loop in post to fill 90 min",
         "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
-        "notes": "Raga Kedar — both Shuddha and Teevra Ma used; oscillating quality is Kedar's identity. KEY UPGRADE from May 11 Cortisol Reset (Bhairavi, no tabla, 8.3K views): adding light tabla — Suno data analysis shows all high-performing Sitar videos (764K Dopamine Reset, 11.8K Morning Motivation, 9.7K Brain Detox) had tabla; no-tabla Sitar underperformed. Tabla must stay at very low dynamic — present for momentum, never dominant. Alpha 10Hz binaural — parasympathetic activation for cortisol regulation (not Theta/Delta — viewer is awake, not sleeping). LUFS -14 (evening viewer, present and aware). BPM 65-75 — forward momentum, not sleep tempo. Physical Sitar: meend glissandos + gamak ornamentation must be present. EMOTIONAL TAG ROTATION: clip 1: 'body putting down the week's weight' · clip 2: 'tension releasing gradually' · clip 3: 'still and grounded — week finally ending'. 90min = 3-4 Suno clips + loop extension."
+        "notes": "Raga Kedar \u2014 both Shuddha and Teevra Ma used; oscillating quality is Kedar's identity. KEY UPGRADE from May 11 Cortisol Reset (Bhairavi, no tabla, 8.3K views): adding light tabla \u2014 Suno data analysis shows all high-performing Sitar videos (764K Dopamine Reset, 11.8K Morning Motivation, 9.7K Brain Detox) had tabla; no-tabla Sitar underperformed. Tabla must stay at very low dynamic \u2014 present for momentum, never dominant. Alpha 10Hz binaural \u2014 parasympathetic activation for cortisol regulation (not Theta/Delta \u2014 viewer is awake, not sleeping). LUFS -14 (evening viewer, present and aware). BPM 65-75 \u2014 forward momentum, not sleep tempo. Physical Sitar: meend glissandos + gamak ornamentation must be present. EMOTIONAL TAG ROTATION: clip 1: 'body putting down the week's weight' \u00b7 clip 2: 'tension releasing gradually' \u00b7 clip 3: 'still and grounded \u2014 week finally ending'. 90min = 3-4 Suno clips + loop extension."
     },
-    "experiment_notes": "Test 33 — TITLE-ONLY A/B. IFO brand format (A) vs outcome-lead + situational slot 2 (B). Same thumbnail both variants: 'CORTISOL RESET'. Backup thumbnail: 'CAN'T UNWIND?' — swap at 48h if CTR < 3.2%.\n\nA: 'Sitar for Cortisol Reset | Indian Instrumental Music | 1.5 Hours' — IFO pattern in evening slot\nB: 'Cortisol Reset Music | Relax After a Long Day | 1.5 Hours' — outcome-lead + situational slot 2\n\nComplements Test 31 (June 5 morning Sitar). Cross-reading:\n- Both A win → IFO format universal for Sitar regardless of slot\n- Both B win → SEO-outcome lead always wins for Sitar\n- Split → IFO is slot-dependent — morning and evening behave differently\n\n'Relax After a Long Day' (B slot 2) is unvalidated — if B wins, bank the phrase with actual CTR data.\nRaga Kedar first use on channel — note if AVD exceeds May 11 Cortisol Reset benchmark (Bhairavi, no tabla). Data point for raga + tabla combination impact."
+    "experiment_notes": "Test 33 \u2014 TITLE-ONLY A/B. IFO brand format (A) vs outcome-lead + situational slot 2 (B). Same thumbnail both variants: 'CORTISOL RESET'. Backup thumbnail: 'CAN'T UNWIND?' \u2014 swap at 48h if CTR < 3.2%.\n\nA: 'Sitar for Cortisol Reset | Indian Instrumental Music | 1.5 Hours' \u2014 IFO pattern in evening slot\nB: 'Cortisol Reset Music | Relax After a Long Day | 1.5 Hours' \u2014 outcome-lead + situational slot 2\n\nComplements Test 31 (June 5 morning Sitar). Cross-reading:\n- Both A win \u2192 IFO format universal for Sitar regardless of slot\n- Both B win \u2192 SEO-outcome lead always wins for Sitar\n- Split \u2192 IFO is slot-dependent \u2014 morning and evening behave differently\n\n'Relax After a Long Day' (B slot 2) is unvalidated \u2014 if B wins, bank the phrase with actual CTR data.\nRaga Kedar first use on channel \u2014 note if AVD exceeds May 11 Cortisol Reset benchmark (Bhairavi, no tabla). Data point for raga + tabla combination impact.",
+    "playlists": [
+        "Healing & Anxiety Relief",
+        "Meditation"
+    ]
 }
