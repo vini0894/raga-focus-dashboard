@@ -1,10 +1,10 @@
 {
     "id": "v_2026-06-05_end_of_day_santoor",
-    "status": "APPROVED",
+    "status": "PARKED",
     "date_shipped": null,
     "created_at": "2026-05-31",
-    "planned_date": "2026-06-05",
-    "planned_slot": "PM (7pm IST)",
+    "planned_date": null,
+    "planned_slot": null,
     "title": "End of Day Music | Santoor Instrumental | 1.5 Hours",
     "title_variants": {
         "A": "End of Day Music | Santoor Instrumental | 1.5 Hours",
@@ -100,5 +100,6 @@
     "playlists": [
         "Peaceful Music"
     ],
-    "next_step": "PRODUCE: Generate 3 Suno clips with prompt A and B alternating, splice in post to 90min, render at 432Hz / Theta 5Hz / LUFS -16"
+    "next_step": "PRODUCE: Generate 3 Suno clips with prompt A and B alternating, splice in post to 90min, render at 432Hz / Theta 5Hz / LUFS -16",
+    "parked_reason": "Parked 2026-06-05 \u2014 replaced for Friday by stronger Bansuri Sleep play (preserves Mon Sitar swing while adding +20-25K Fri-Sat momentum). Keep as future Friday filler option for low-stakes lifestyle-pool weeks."
 }
