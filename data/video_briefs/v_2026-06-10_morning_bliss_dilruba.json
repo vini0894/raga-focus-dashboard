@@ -5,10 +5,10 @@
   "created_at": "2026-06-05",
   "planned_date": "2026-06-10",
   "planned_slot": "AM",
-  "title": "Morning Bliss Music | Dilruba Raga Yaman | 1.5 Hours",
+  "title": "Sunrise Music | Dilruba Raga Yaman | 1.5 Hours",
   "title_variants": {
-    "A": "Morning Bliss Music | Dilruba Raga Yaman | 1.5 Hours",
-    "B": "Sunrise Music | Dilruba Raga Yaman | 1.5 Hours"
+    "A": "Sunrise Music | Dilruba Raga Yaman | 1.5 Hours",
+    "B": "Morning Bliss Music | Dilruba Raga Yaman | 1.5 Hours"
   },
   "components": {
     "problem": "want a gentle, warm, uplifting start to the morning",
@@ -18,31 +18,45 @@
     "wave": "Alpha"
   },
   "validated_keywords": [
-    "Morning Bliss Music (slot 1, variant A — VidIQ 61, FRESH lead, no cannibalization with owned 'Morning Energy' Dilruba hero 155K)",
-    "Sunrise Music (slot 1, variant B — VidIQ PENDING, fresh lead)",
-    "Dilruba Raga Yaman (slot 2 — proven raga, 29.3% AVD on the Morning Energy winner)",
-    "1.5 Hours (slot 3 — duration)",
+    "Morning Bliss Music (slot 1, variant A \u2014 VidIQ 61, FRESH lead, no cannibalization with owned 'Morning Energy' Dilruba hero 155K)",
+    "Sunrise Music (slot 1, variant B \u2014 VidIQ PENDING, fresh lead)",
+    "Dilruba Raga Yaman (slot 2 \u2014 proven raga, 29.3% AVD on the Morning Energy winner)",
+    "1.5 Hours (slot 3 \u2014 duration)",
     "morning music",
     "indian classical music"
   ],
   "ab_test": {
     "test_id": "Test 39",
-    "test_type": "TITLE A/B — same thumb both variants (isolates lead phrase)",
-    "variant_A": {"title": "Morning Bliss Music | Dilruba Raga Yaman | 1.5 Hours", "thumbnail_text": "BRIGHT DAY AHEAD", "hypothesis": "Fresh 'Morning Bliss' lead (61) — serene-uplift, mood-coherent with the warm bow."},
-    "variant_B": {"title": "Sunrise Music | Dilruba Raga Yaman | 1.5 Hours", "thumbnail_text": "BRIGHT DAY AHEAD", "hypothesis": "Fresh 'Sunrise' lead — universal high-search dawn imagery. Tests which fresh lead the algorithm prefers for Dilruba morning."},
-    "test_method": "Title-only A/B. Parallel structure, same raga, same thumb ('BRIGHT DAY AHEAD'). One variable: lead phrase (Morning Bliss vs Sunrise). Both avoid the owned 'Morning Energy' lead (cannibalization)."
+    "test_type": "TITLE A/B \u2014 same thumb both variants (isolates lead phrase)",
+    "variant_A": {
+      "title": "Sunrise Music | Dilruba Raga Yaman | 1.5 Hours",
+      "thumbnail_text": "BRIGHT DAY AHEAD",
+      "hypothesis": "CONTROL \u2014 fresh non-morning lead (de-saturates the morning-heavy AM week). Universal high-search dawn imagery, mood-coherent with the warm bow."
+    },
+    "variant_B": {
+      "title": "Morning Bliss Music | Dilruba Raga Yaman | 1.5 Hours",
+      "thumbnail_text": "BRIGHT DAY AHEAD",
+      "hypothesis": "VARIANT \u2014 fresh morning-anchored lead (VidIQ 61), serene-uplift."
+    },
+    "test_method": "Title-only A/B. Parallel structure, same raga, same thumb ('BRIGHT DAY AHEAD'). One variable: lead phrase (Sunrise [control, no morning] vs Morning Bliss). Sunrise promoted to control to de-saturate the morning-heavy week."
   },
-  "strategic_bet": "TARGETED — Wed Jun 10 AM. Dilruba's two proven lanes (Morning Energy 155K, Clear-Your-Mind 77K/32.2% AVD) are BOTH owned, so any fresh lead is an audition. We avoid reusing 'Morning Energy' (cannibalization) and the failed synonyms (Good Energy 19.8% AVD, Uplifting 1.3K, Vitality 31). Two fresh leads tested head-to-head; Raga Yaman kept (empirically delivered 29.3% AVD AM despite generic 'evening' theory). Also diversifies week title structure away from 'Morning ___ Music' monotony (Sunrise variant).",
+  "strategic_bet": "TARGETED \u2014 Wed Jun 10 AM. Dilruba's two proven lanes (Morning Energy 155K, Clear-Your-Mind 77K/32.2% AVD) are BOTH owned, so any fresh lead is an audition. We avoid reusing 'Morning Energy' (cannibalization) and the failed synonyms (Good Energy 19.8% AVD, Uplifting 1.3K, Vitality 31). Two fresh leads tested head-to-head; Raga Yaman kept (empirically delivered 29.3% AVD AM despite generic 'evening' theory). Also diversifies week title structure away from 'Morning ___ Music' monotony (Sunrise variant).",
   "success_good": "5000+ views, 26%+ AVD, 4.5%+ CTR in 7d",
   "success_breakthrough": "11000+ views, 29%+ AVD (matches Morning Energy hero)",
-  "failure_mode": "<2500 views or <3.8% CTR by day 7 — fresh leads lack resonance; signal that Dilruba morning only works with 'Morning Energy + Yaman' and the slot should switch instruments next time.",
-  "reference_ships": ["Morning Energy Music | Dilruba Raga Yaman | 1 Hour (155K impr / 11K v / 29.3% AVD / 5.19% CTR — owned hero, lead avoided)"],
+  "failure_mode": "<2500 views or <3.8% CTR by day 7 \u2014 fresh leads lack resonance; signal that Dilruba morning only works with 'Morning Energy + Yaman' and the slot should switch instruments next time.",
+  "reference_ships": [
+    "Morning Energy Music | Dilruba Raga Yaman | 1 Hour (155K impr / 11K v / 29.3% AVD / 5.19% CTR \u2014 owned hero, lead avoided)"
+  ],
   "tags": "morning bliss music, sunrise music, dilruba music, dilruba instrumental, raga yaman, morning music, indian instrumental music, 432hz, alpha waves, indian classical music, raga focus, peaceful morning music, music to start the day, morning dilruba",
-  "description": "TODO — write accessible-voice description in production session.",
+  "description": "TODO \u2014 write accessible-voice description in production session.",
   "thumbnail_text_main": "BRIGHT DAY AHEAD",
-  "thumbnail_text_variants": ["BRIGHT DAY AHEAD", "MORNING GLOW", "RISE & SHINE"],
+  "thumbnail_text_variants": [
+    "BRIGHT DAY AHEAD",
+    "MORNING GLOW",
+    "RISE & SHINE"
+  ],
   "thumbnail_prompt": "Pichwai/Kangra miniature style, ornate warm-gold border, aged cream parchment, warm sunrise palette (saffron, amber, peach, dawn gold). Serene musician playing dilruba (bowed string instrument held upright, bowed with right hand) in an open courtyard at sunrise, soft warm dawn light, blissful uplifting mood. Dark-teal serif overlay 'BRIGHT DAY AHEAD', lower third, mobile-readable. No clutter.",
-  "suno_prompt_A": "TODO — finalize in production session (Dilruba, Raga Yaman, warm bowed string, light/no tabla, 432Hz, gentle morning uplift).",
+  "suno_prompt_A": "TODO \u2014 finalize in production session (Dilruba, Raga Yaman, warm bowed string, light/no tabla, 432Hz, gentle morning uplift).",
   "suno_prompt_B": "TODO",
   "production_spec": {
     "duration_minutes": 90,
@@ -52,6 +66,8 @@
     "binaural_beat_hz": 10.0,
     "notes": "Dilruba = warm, vocal-like bowed string. Raga Yaman (proven AM despite generic evening theory). Binaural Alpha in POST only."
   },
-  "experiment_notes": "Test 39. VidIQ pending on 'Sunrise Music' (variant B). Morning Bliss banked 61.",
-  "playlists": ["Morning Energy"]
+  "experiment_notes": "Test 39. Sunrise promoted to control (de-saturation). VidIQ pending on 'Sunrise Music'; Morning Bliss banked 61. NOTE: as a title A/B both rotate live, so 'Morning Bliss' still runs ~half the time \u2014 for full morning-free Wed, drop to a single Sunrise title.",
+  "playlists": [
+    "Morning Energy"
+  ]
 }
