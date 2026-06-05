@@ -1,0 +1,57 @@
+{
+  "id": "v_2026-06-11_morning_yoga_sarangi",
+  "status": "DRAFT",
+  "date_shipped": null,
+  "created_at": "2026-06-05",
+  "planned_date": "2026-06-11",
+  "planned_slot": "AM",
+  "title": "Morning Yoga & Meditation | Sarangi & Tabla | 1.5 Hours",
+  "title_variants": {
+    "A": "Morning Yoga & Meditation | Sarangi & Tabla | 1.5 Hours",
+    "B": "Morning Yoga & Meditation | Sarangi & Tabla | 1.5 Hours"
+  },
+  "components": {
+    "problem": "morning yoga / meditation / breath practice — calm flowing accompaniment",
+    "instrument": "Sarangi",
+    "raga": "Bilawal",
+    "hz": "432Hz",
+    "wave": "Alpha"
+  },
+  "validated_keywords": [
+    "Morning Yoga & Meditation (slot 1 — Yoga = 32.9%-AVD lane; Meditation Music VidIQ 80; morning-anchoring passes generic-soft anti-pattern that bare 'Yoga & Meditation Music' fails)",
+    "Sarangi & Tabla (slot 2 — yoga lane uses tabla, banked; instrument anchor)",
+    "1.5 Hours (slot 3 — duration)",
+    "meditation music (80)",
+    "yoga music",
+    "indian classical music"
+  ],
+  "ab_test": {
+    "test_id": "none",
+    "test_type": "SINGLE — no A/B (single title + thumb)",
+    "variant_A": {"title": "Morning Yoga & Meditation | Sarangi & Tabla | 1.5 Hours", "thumbnail_text": "MORNING STRETCH"},
+    "variant_B": {"title": "Morning Yoga & Meditation | Sarangi & Tabla | 1.5 Hours", "thumbnail_text": "MORNING STRETCH"},
+    "test_method": "Single ship. Thumb 'MORNING STRETCH' (vibes_state, yoga-specific lifestyle; no Q-hook per morning lane rule)."
+  },
+  "strategic_bet": "TARGETED — Thu Jun 11 AM. Yoga is the channel's highest-AVD lane (32.9%, Yoga Music | Positive Energy Frequency 188K/12.3K). Morning-anchored lead avoids the locked 'Yoga Music' lead AND the generic-soft anti-pattern, while combining the proven Yoga lane with the top-VidIQ 'Meditation' (80). Sarangi + Tabla is the proven yoga-lane instrumentation. Candidate permanent recurring yoga slot if it repeats.",
+  "success_good": "6000+ views, 28%+ AVD, 4.3%+ CTR in 7d",
+  "success_breakthrough": "12000+ views, 32%+ AVD — yoga lane confirmed recurring",
+  "failure_mode": "<3000 views or <20% AVD by day 7",
+  "reference_ships": ["Yoga Music | Positive Energy Frequency | 1 Hour (188K impr / 12.3K v / 32.9% AVD — the yoga lane winner)"],
+  "tags": "morning yoga music, yoga & meditation music, meditation music, yoga music, sarangi music, sarangi, tabla, morning music, indian instrumental music, 432hz, alpha waves, indian classical music, raga focus, morning meditation music, yoga flow music",
+  "description": "TODO — write accessible-voice description in production session.",
+  "thumbnail_text_main": "MORNING STRETCH",
+  "thumbnail_text_variants": ["MORNING STRETCH", "BREATHE & MOVE", "MORNING RITUAL"],
+  "thumbnail_prompt": "Pichwai/Kangra miniature style, ornate warm-gold border, aged cream parchment, fresh morning palette. Serene figure in a calm morning yoga/meditation posture in a sunlit courtyard, with a musician playing sarangi (upright bowed string) nearby and light tabla; soft golden morning light, peaceful flowing mood. Dark-teal serif overlay 'MORNING STRETCH', lower third, mobile-readable. No clutter.",
+  "suno_prompt_A": "TODO — finalize in production session (Sarangi + light tabla, yoga/meditation flow, Raga Bilawal, 432Hz, slow steady morning).",
+  "suno_prompt_B": "TODO",
+  "production_spec": {
+    "duration_minutes": 90,
+    "bpm_range": "70-78",
+    "key_frequency_hz": 432,
+    "binaural_wave": "Alpha",
+    "binaural_beat_hz": 10.0,
+    "notes": "Yoga lane = Sarangi + light Tabla (banked, unlike healing-Sarangi which has no tabla). Raga Bilawal (morning) — adjust in production. Binaural Alpha in POST only."
+  },
+  "experiment_notes": "Title recommended this session, pending final user lock. Highest-AVD lane — candidate permanent yoga slot.",
+  "playlists": ["Morning Energy", "Meditation"]
+}
