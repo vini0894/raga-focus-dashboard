@@ -1,0 +1,86 @@
+{
+  "id": "v_2026-06-15_wind_down_sarod",
+  "status": "DRAFT",
+  "date_shipped": null,
+  "created_at": "2026-06-14",
+  "planned_date": "2026-06-15",
+  "planned_slot": "PM (7pm IST)",
+  "title": "Wind Down Music | Slow Sarod | Indian Classical",
+  "title_variants": {
+    "A": "Wind Down Music | Slow Sarod | Indian Classical",
+    "B": "Release the Day | Slow Sarod | 1.5 Hours of Calm"
+  },
+  "components": {
+    "problem": "the day is over but the body hasn't caught up / shoulders still up by the ears / mind still half at work / can't sit down and actually let go / needs something steady and deep enough to signal that the day is done",
+    "instrument": "Sarod",
+    "raga": "Darbari Kanada",
+    "hz": "432Hz",
+    "wave": "Theta"
+  },
+  "validated_keywords": [
+    "Wind Down Music (slot 1 — FRESH lead, never used on channel; searchable evening-relaxation term; LOCKED by user 2026-06-14)",
+    "Slow Sarod (slot 2 — instrument + tempo anchor; established Sarod descriptor)",
+    "Indian Classical (slot 3 — genre anchor)",
+    "Release the Day (variant B lead — FRESH, never used; evocative offering framing)",
+    "VIDIQ PENDING (user locked title without VidIQ — backfill scores for 'Wind Down Music' / 'Release the Day' when convenient)",
+    "sarod music (62)",
+    "darbari kanada (musicology META)",
+    "theta (61)",
+    "432hz (74)",
+    "indian classical music (66)",
+    "indian instrumental music (67)",
+    "raga focus (66)"
+  ],
+  "ab_test": {
+    "test_id": "Test 40",
+    "test_type": "TITLE A/B — same thumbnail, two fresh titles (optional; user may ship single locked title A)",
+    "variant_A": {
+      "title": "Wind Down Music | Slow Sarod | Indian Classical",
+      "thumbnail_text": "CAN'T SETTLE?",
+      "hypothesis": "SEO-led fresh lead. 'Wind Down Music' is a searchable evening-relaxation term never used on channel, paired with the proven specific-state Q-hook thumb. Safe/expected winner per the SEO-led title + Q-hook thumb pattern (preflight: anxiety/relaxation lane)."
+    },
+    "variant_B": {
+      "title": "Release the Day | Slow Sarod | 1.5 Hours of Calm",
+      "thumbnail_text": "CAN'T SETTLE?",
+      "hypothesis": "Evocative offering lead (also fresh). Tests whether an emotional 'let go of the day' framing out-pulls the literal 'wind down music' SEO term in the evening-decompression lane. Same thumb both variants isolates the title variable cleanly."
+    },
+    "test_method": "Optional thumb-fixed title A/B on YouTube native A/B. SAME thumbnail (CAN'T SETTLE?, same Pichwai artwork) on both, only the title differs — isolates SEO-literal vs evocative-offering lead in the wind-down lane. Thumb answer is already settled for this lane (Q-hook wins), so the title is the only useful variable to test. Pick winner by CTR over 7 days. If shipping single, use variant A only."
+  },
+  "strategic_bet": "STRONG-tier audition ship — Mon June 15 PM (7pm IST), single ship, part of the LEAN week. Sarod cleared the 5-day same-lane cooldown from the June 7 'Quiet the Mind' Sarod, AND this is a DIFFERENT lane (overthinking/quiet-mind → evening wind-down/decompression) on a DIFFERENT raga (Bhupali → Darbari Kanada), so there is no cannibalization with the June 7 ship. Deliberately pivoted OFF overthinking because a Sarod overthinking video shipped only 8 days prior. Opens a FRESH evening-decompression lane on never-used leads (Wind Down / Release the Day). Sarod + wind-down is moonshot/untested (preflight) — this is a genuine lane experiment. Monday evening per user decision; impression bet for the week is the Wed Sitar positive-energy ship, so this is a catalog/retention audition, judged on CTR + AVD, not impressions.",
+  "success_good": "2500+ views, 25%+ AVD, 3.8%+ CTR in 7 days",
+  "success_breakthrough": "5000+ views, 28%+ AVD — evening wind-down confirmed as a repeatable Sarod lane; lock as recurring evening-decompression slot",
+  "failure_mode": "<1500 views or <3.2% CTR in 7 days, OR day-1 impressions <8K with AVD <18% — wind-down lead too generic / Sarod fatigue; next time lean harder on a specific evening-state hook and space Sarod further",
+  "reference_ships": [
+    {"title": "Music for Morning Anxiety | Sarod Instrumental | 1.5 hrs", "pub": "2026-05-28", "impressions": 140989, "ctr": 4.14, "avp": 34.85, "note": "best-retaining Sarod — the AVD ceiling to aim for"},
+    {"title": "Clear Your Head Music | Slow Sarod | Indian Classical", "pub": "2026-06-02", "impressions": 58829, "ctr": 3.89, "avp": 27.41, "note": "best June ship; same 'Slow Sarod | Indian Classical' structure"},
+    {"title": "Music to Quiet the Mind | Slow Sarod | 1.5 Hours", "pub": "2026-06-07", "impressions": 44195, "ctr": 3.40, "avp": 21.77, "note": "the Jun 7 Sarod we are deliberately NOT echoing — different lane/raga"},
+    {"title": "Stress Relief Music | Santoor Instrumental | 3 Hours", "pub": "2026-05-24", "impressions": 44397, "ctr": 4.61, "avp": 25.30, "note": "adjacent stress/decompression lane reference"}
+  ],
+  "tags": [
+    "wind down music", "slow sarod", "sarod music", "indian classical music",
+    "indian instrumental music", "evening relaxation music", "stress relief music",
+    "calm music", "relaxing music", "decompress music", "after work relaxation",
+    "music to unwind", "raga darbari", "raga focus", "deep relaxation"
+  ],
+  "description": "Wind Down Music | Slow Sarod | Indian Classical\n\nThe day is over — but your body hasn't caught up yet. Shoulders still up by your ears, mind still half at work, and no matter how you sit, you can't quite settle.\n\nStart here. Ninety minutes of slow, deep sarod to help you finally let the day go and wind all the way down.\n\nWhat you'll hear: deep, unhurried sarod over a soft drone — spacious and warm, no sudden shifts, nothing that pulls you back into the day. Just a slow, steady descent into calm.\n\nBest for: the end of a long day · after-work decompression · the hour before bed · a quiet room and a pair of headphones.\n\n🔔 Subscribe to Raga Focus for slow Indian instrumental music to wind down, let go, and rest.",
+  "thumbnail_text_main": "CAN'T SETTLE?",
+  "thumbnail_text_variants": ["CAN'T SETTLE?", "WOUND UP?", "BRAIN STILL ON?"],
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate warm-gold patterned border with dusk lotus and crescent-moon motifs, aged warm parchment background, dusk/evening palette (deep indigo-violet sky settling into warm amber lamplight, soft glow at the horizon, a single oil lamp). Central figure: a serene musician seated in a relaxed, unhurried posture playing a sarod, shoulders dropped, eyes softly closed — body language of someone finally letting go. IMPORTANT: vary the interior composition from the channel's other Sarod thumbnails (different scene/angle/lamp placement) so it is visually distinct in-feed, NOT the same painting relabeled. Overlay text 'CAN'T SETTLE?' top-right in dark-teal serif, large and mobile-readable (2 words, scans in under 1 second at grid size). Mobile-first: minimal clutter.",
+  "suno_prompt_A": "Slow Indian classical instrumental, Raga Darbari Kanada — komal-dominant with deep midnight gravity, the feeling of a wound-up body finally being allowed to let the day go, expressive deep-resonant sarod with weighty plucked strokes, meend glides and gamak ornamentation with long contemplative pauses, soft tanpura drone underneath, no tabla, 432Hz tuning, 55 BPM, low-mid register, warm intimate close-mic production, seamless loop-friendly texture, like the evening finally unclenching the shoulders, no vocals, no humming, no human voice",
+  "suno_prompt_B": "Instrumental only, no vocals, no humming, slow Indian classical sarod, Raga Darbari Kanada — komal-dominant deep midnight gravity, deep-resonant sarod with weighty plucked strokes and slow meend glides, long contemplative pauses, soft tanpura drone, no tabla, 432Hz, 55 BPM, low-mid register, warm intimate production, seamless loop, like the day's tension finally letting go",
+  "production_spec": {
+    "duration_minutes": 90,
+    "bpm_range": "50-58",
+    "key_frequency_hz": 432,
+    "binaural_carrier_hz": 200,
+    "binaural_wave": "Theta",
+    "binaural_beat_hz": 6.0,
+    "binaural_level_db": -20,
+    "lufs_target": -15,
+    "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+    "render": "MP4 1920x1080, AAC 320kbps, 48kHz",
+    "notes": "No tabla — keep percussion-free; the deep Sarod + tanpura drone carries it. Darbari Kanada in low-mid register for evening weight. Theta 6Hz (deep relaxation, not sleep) under at -20dB. Binaural stays OUT of the Suno prompt (post-production layer only)."
+  },
+  "experiment_notes": "Lane pivoted from overthinking → evening wind-down on 2026-06-14 because 'Music to Quiet the Mind | Slow Sarod' (Jun 7, 8 days prior) already occupies Sarod+overthinking (cannibalization + repetition risk). Title 'Wind Down Music' and thumb 'CAN'T SETTLE?' both verified FRESH (never used on channel) against per_video_lifetime_2026-06-14.csv + brief thumbnail-text history. Title locked by user; VidIQ backfill pending (non-blocking). Sarod+wind-down is moonshot/untested per preflight — banks a new lane datapoint either way.",
+  "playlists": ["Healing & Anxiety Relief Music"]
+}
