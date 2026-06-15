@@ -1,0 +1,85 @@
+{
+  "id": "v_2026-06-17_positive_energy_sitar",
+  "status": "DRAFT",
+  "date_shipped": null,
+  "created_at": "2026-06-14",
+  "planned_date": "2026-06-17",
+  "planned_slot": "AM (7am IST)",
+  "title": "Remove Negative Energy | Sitar Music | 1.5 Hours",
+  "title_variants": {
+    "A": "Remove Negative Energy | Sitar Music | 1.5 Hours",
+    "B": "Healing Energy Music | Sitar Instrumental | 1.5 Hours"
+  },
+  "components": {
+    "problem": "the air feels heavy / carrying stuck, low, draining energy from people and screens / need to clear the heaviness and feel light, bright and positive again / a reset for the energy you're moving through the day with",
+    "instrument": "Sitar",
+    "raga": "Bhupali",
+    "hz": "528Hz",
+    "wave": "Alpha"
+  },
+  "validated_keywords": [
+    "Remove Negative Energy (62 — FRESH lead, never used on channel; clear benefit + spiritual-cleanse hook)",
+    "Healing Energy (62 — variant B lead, FRESH)",
+    "Boost Your Aura (62 — reserved alt)",
+    "Attract Positive Energy (61 — reserved alt)",
+    "Sitar Music (slot 2 — ACTIVE framing; NOT 'Slow Sitar' which fails for Sitar)",
+    "1.5 Hours (slot 3 — duration anchor)",
+    "sitar music (proven Sitar anchor)",
+    "bhupali (musicology META — pentatonic joyful positive)",
+    "528hz (energy/healing genre frequency)",
+    "alpha (relaxed positive presence)",
+    "indian classical music (66)",
+    "raga focus (66)"
+  ],
+  "ab_test": {
+    "test_id": "Test 41",
+    "test_type": "TITLE A/B — same outcome thumb, two fresh energy framings (removal vs healing)",
+    "variant_A": {
+      "title": "Remove Negative Energy | Sitar Music | 1.5 Hours",
+      "thumbnail_text": "RAISE YOUR ENERGY",
+      "hypothesis": "Removal framing ('remove negative energy') — high-curiosity, benefit-clear spiritual-cleanse lead. Paired with an aspirational OUTCOME thumb (preflight: uplifting/energy lane = outcome-imperative wins, Q-hook LOSES in all 3 morning tests). Tests whether the largest fresh demand pool (energy cleansing) catches with the reach-hero instrument."
+    },
+    "variant_B": {
+      "title": "Healing Energy Music | Sitar Instrumental | 1.5 Hours",
+      "thumbnail_text": "RAISE YOUR ENERGY",
+      "hypothesis": "Healing framing ('healing energy') — softer, wellness-coded vs the removal framing. Same outcome thumb isolates the title variable: does 'remove the negative' (problem-solve) or 'healing energy' (positive-state) pull harder in this untapped lane?"
+    },
+    "test_method": "Thumb-fixed TITLE A/B on YouTube native A/B. SAME outcome thumb (RAISE YOUR ENERGY) both variants — NOT a Q-hook (preflight: morning/uplifting is the clearest anti-Q-hook thumb lane, Tests 12/17/20). Isolates removal-vs-healing energy framing. Winner by CTR over 7 days. This is the week's IMPRESSION BET, so also watch day-1 impressions: a fresh lane catching = the goal."
+  },
+  "strategic_bet": "⭐ THE WEEK'S IMPRESSION BET. Sitar (the channel's only repeatable REACH HERO) pointed at a FRESH, untapped, large-demand lane — spiritual/positive energy — to ADD impressions rather than redistribute. Rationale: (1) positive-energy framing is the channel's HIGHEST-CTR cluster (Yoga Positive Energy 4.51%/436K, Joyful Positive Vibes 5.47%/181K, Good Energy 4.87%) and high CTR is what gives a fresh-lane video its best shot at the algorithm push; (2) ZERO cannibalization — it touches none of Sitar's owned lanes (dopamine/nervous-system/brain-detox/cortisol/morning-motivation); (3) Sitar's bright articulate sound FITS uplifting energy; (4) leads already VidIQ-scored 61-62. Sitar cleared the 5-day cooldown (last Jun 12 Morning Motivation → viable Jun 17). Sitar×uplifting is UNTESTED/moonshot (preflight) — a genuine new-pillar experiment. Slot AM for morning-positivity intent + AM>PM median. COORDINATION: Tuesday's Sarangi must lead with 'Morning Yoga' (NOT 'Positive Energy') to avoid week-wide energy-word saturation (Tue + Wed both energy-family). Risk: spiritual lane is slightly off the anxiety/sleep core, and the algorithm has no Sitar-energy authority yet, so initial push is less certain than an owned lane — that's the price of opening fresh impression ground.",
+  "success_good": "50K+ impressions in 7 days (fresh lane catching), 3.8%+ CTR, 22%+ AVD",
+  "success_breakthrough": "150K+ impressions, 25%+ AVD — spiritual/positive-energy confirmed as a NEW repeatable Sitar pillar; build a cluster (Healing Energy, Boost Your Aura, Attract Positive Energy on deck)",
+  "failure_mode": "day-1 impressions <8K AND AVD <18% — fresh lane didn't catch / spiritual audience mismatch with the channel's wellness core; revert to proven Sitar lanes and treat energy cluster as closed",
+  "reference_ships": [
+    {"title": "Yoga Music | Positive Energy Frequency | 1.5 Hour", "pub": "2026-05-07", "impressions": 436135, "ctr": 4.51, "avp": 33.75, "note": "the positive-energy proof — highest retainer + high CTR; the shape to echo (different instrument)"},
+    {"title": "Joyful Music | Positive Vibes Music with Santoor | 1 Hour", "pub": "2026-05-08", "impressions": 181505, "ctr": 5.47, "avp": 31.78, "note": "positive-vibes cluster = channel's highest CTR"},
+    {"title": "Sitar Music to Start Your Morning Right | 1.5 Hours", "pub": "2026-05-26", "impressions": 530968, "ctr": 4.11, "avp": 30.35, "note": "Sitar's high-CTR non-cognitive precedent (morning) — energy is the adjacent fresh pool"}
+  ],
+  "tags": [
+    "remove negative energy", "positive energy music", "healing energy", "sitar music",
+    "sitar instrumental", "528hz", "energy cleansing music", "raise your energy",
+    "spiritual music", "positive vibes", "aura cleansing", "indian classical music",
+    "raga focus", "uplifting music", "good energy"
+  ],
+  "description": "Remove Negative Energy | Sitar Music | 1.5 Hours\n\nSome days the air just feels heavy — like you've been carrying low, stuck, draining energy from screens, from people, from the noise of the day.\n\nStart here. Ninety minutes of bright, uplifting sitar to clear the heaviness and raise your energy — so you feel lighter, clearer, and positive again.\n\nWhat you'll hear: warm, bright sitar over a gentle pulse — open and luminous, lifting rather than soothing you down. Music that makes a room feel clearer.\n\nBest for: clearing stuck or low energy · a fresh start to the day · resetting after a draining stretch · positive-energy rituals and a pair of headphones.\n\n🔔 Subscribe to Raga Focus for Indian instrumental music to clear negativity, raise your energy, and feel good.",
+  "thumbnail_text_main": "RAISE YOUR ENERGY",
+  "thumbnail_text_variants": ["RAISE YOUR ENERGY", "CLEAR THE NEGATIVITY", "FEEL THE SHIFT"],
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate warm-gold patterned border. BRIGHT, LUMINOUS dawn palette — radiant gold and warm light, soft sun-rays / glow, lotus and uplifting motifs (NOT dusk/evening — this is the bright, rising-energy ship, contrast it against the evening Sarod thumb). Central figure: a serene, upright musician playing a sitar, posture open and light, a soft luminous aura/glow around them suggesting positive energy. IMPORTANT: vary the interior composition from the channel's other Sitar thumbnails so it is visually distinct in-feed (not the same painting relabeled). Overlay text 'RAISE YOUR ENERGY' in dark-teal serif, large and mobile-readable. This lane uses an OUTCOME/lifestyle overlay, NOT a question Q-hook. Mobile-first: minimal clutter, bright and inviting.",
+  "suno_prompt_A": "Bright uplifting Indian classical instrumental, Raga Bhupali — pentatonic, joyful, positive and light, the feeling of heaviness lifting and a room filling with clear bright light, warm plucked sitar with meend glissando slides and gamak ornamentation, light tabla keeping a gentle positive pulse, soft tanpura drone, 528Hz tuning, 78 BPM, mid-high register, warm open airy production, seamless loop-friendly texture, like negativity dissolving and energy rising, no vocals, no humming, no human voice",
+  "suno_prompt_B": "Instrumental only, no vocals, no humming, bright uplifting Indian classical sitar, Raga Bhupali — pentatonic joyful positive light, warm plucked sitar with meend glides and gamak, light tabla gentle pulse, soft tanpura drone, 528Hz, 78 BPM, mid-high register, warm open airy production, seamless loop, like energy rising and the air clearing",
+  "production_spec": {
+    "duration_minutes": 90,
+    "bpm_range": "75-82",
+    "key_frequency_hz": 528,
+    "binaural_carrier_hz": 200,
+    "binaural_wave": "Alpha",
+    "binaural_beat_hz": 10.0,
+    "binaural_level_db": -20,
+    "lufs_target": -14,
+    "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+    "render": "MP4 1920x1080, AAC 320kbps, 48kHz",
+    "notes": "INCLUDE light tabla (Sitar performs better with tabla per channel data — only no-tabla Sitar underperformed). 528Hz (energy/healing genre frequency) instead of the usual 432Hz — thematically apt for the energy lane + a genre SEO signal. Alpha 10Hz under at -20dB (relaxed positive presence, awake not drowsy). Bright mid-high register — this ship LIFTS, it does not soothe down. Binaural stays OUT of the Suno prompt."
+  },
+  "experiment_notes": "THE IMPRESSION BET of the LEAN week. Lane = spiritual/positive energy — leads 'Remove Negative Energy' (62), 'Healing Energy' (62), 'Boost Your Aura' (62) all verified FRESH on channel. Thumb 'RAISE YOUR ENERGY' (outcome, NOT Q-hook — preflight: uplifting lane is the clearest anti-Q-hook thumb lane) verified unused. Sitar kept ACTIVE ('Sitar Music', never 'Slow Sitar' — Sitar fails passive framings). Tabla INCLUDED (Sitar pattern). 528Hz chosen over 432Hz for genre fit. Sitar×uplifting untested = moonshot, banks a new-pillar datapoint. COORDINATION FLAG: Tuesday Sarangi must NOT also lead with 'Positive Energy' (use 'Morning Yoga') to avoid Tue+Wed energy-word saturation.",
+  "playlists": ["Morning Energy Music", "Meditation Music"]
+}
