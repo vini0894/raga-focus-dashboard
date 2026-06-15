@@ -1,7 +1,7 @@
 {
   "id": "v_2026-06-12_morning_motivation_sitar",
-  "status": "DRAFT",
-  "date_shipped": null,
+  "status": "PUBLISHED",
+  "date_shipped": "2026-06-12",
   "created_at": "2026-06-05",
   "planned_date": "2026-06-12",
   "planned_slot": "AM",
@@ -18,10 +18,10 @@
     "wave": "Alpha"
   },
   "validated_keywords": [
-    "Morning Motivation (slot 1, variant A — VidIQ 66, proven morning-Sitar lead: 8.3K views / 139K impr / 4.62% CTR / 26.9% AVD)",
-    "Motivation Music (slot 1, variant B — VidIQ 72, highest-scored phrase, no 'morning' word)",
-    "Sitar Instrumental (slot 2 — instrument anchor)",
-    "1.5 Hours (slot 3 — format/duration signal)",
+    "Morning Motivation (slot 1, variant A \u2014 VidIQ 66, proven morning-Sitar lead: 8.3K views / 139K impr / 4.62% CTR / 26.9% AVD)",
+    "Motivation Music (slot 1, variant B \u2014 VidIQ 72, highest-scored phrase, no 'morning' word)",
+    "Sitar Instrumental (slot 2 \u2014 instrument anchor)",
+    "1.5 Hours (slot 3 \u2014 format/duration signal)",
     "morning motivation music (61)",
     "morning energy music (70)",
     "motivation music (72)",
@@ -37,7 +37,7 @@
   ],
   "ab_test": {
     "test_id": "Test 38",
-    "test_type": "TITLE A/B — same thumb both variants. NOTE: confounded — A varies BOTH format (IFO) and the 'morning' word vs B (SEO-led, no morning). Verdict is directional, not single-variable.",
+    "test_type": "TITLE A/B \u2014 same thumb both variants. NOTE: confounded \u2014 A varies BOTH format (IFO) and the 'morning' word vs B (SEO-led, no morning). Verdict is directional, not single-variable.",
     "variant_A": {
       "title": "Sitar for Morning Motivation | Indian Instrumental | 1.5 Hours",
       "thumbnail_text": "START STRONG",
@@ -46,26 +46,30 @@
     "variant_B": {
       "title": "Motivation Music | Sitar Instrumental | 1.5 Hours",
       "thumbnail_text": "START STRONG",
-      "hypothesis": "Drops the 'morning' word; leads with the higher-scored, time-neutral 'Motivation Music' (72 VidIQ). Tests whether a stronger generic-motivation keyword pulls more total reach than the morning-anchored phrase — if B wins, motivation content travels beyond the AM-only audience."
+      "hypothesis": "Drops the 'morning' word; leads with the higher-scored, time-neutral 'Motivation Music' (72 VidIQ). Tests whether a stronger generic-motivation keyword pulls more total reach than the morning-anchored phrase \u2014 if B wins, motivation content travels beyond the AM-only audience."
     },
-    "test_method": "Title-only A/B (Test 38). Identical structure, identical thumb ('START STRONG' — motivation/lifestyle-coded, deliberately time-neutral so it does not reintroduce 'morning' on variant B). One variable: the word 'morning' in slot 1 ('Morning Motivation' vs 'Motivation Music'). Both leads are lifestyle/mood-led per the morning-lane STRICT winning format; neither uses a Q-hook (0/5 morning Q-hook wins). Banks a direct read on morning-word value in the motivation lane."
+    "test_method": "Title-only A/B (Test 38). Identical structure, identical thumb ('START STRONG' \u2014 motivation/lifestyle-coded, deliberately time-neutral so it does not reintroduce 'morning' on variant B). One variable: the word 'morning' in slot 1 ('Morning Motivation' vs 'Motivation Music'). Both leads are lifestyle/mood-led per the morning-lane STRICT winning format; neither uses a Q-hook (0/5 morning Q-hook wins). Banks a direct read on morning-word value in the motivation lane."
   },
-  "strategic_bet": "TARGETED — Fri Jun 12 AM (8am IST). Sitar's proven non-giant morning lane: 'Morning Motivation' is the only morning Sitar to clear 100K+ impressions (139K) AND post its highest CTR (4.62%) with healthy 26.9% AVD. This is a deliberate replica of that winner, run as a clean title A/B to settle the 'morning' word question. Placed Friday (not the dead Saturday slot) as a lane-switch override: Mon Jun 8 PM is the locked Sitar Cortisol swing (cortisol_anxiety pool, evening); this is active_am pool / morning / motivation — genuine lane + pool + time-of-day switch at 4-day gap (clears the ≥3-day lane-switch rule). MUST stay motivation/energy-coded, NOT cognitive/clarity-coded, to avoid cannibalizing the protected May 26 'Morning Right' growth swing and the owned Sitar cognitive/dopamine query space (Finding 14). Raga Bilawal — classic bright cheerful morning raga, distinct from Sitar's evening cortisol/cognitive ragas.",
-  "success_good": "6000+ views, 26%+ AVD, 4.4%+ CTR in 7 days — morning-motivation Sitar lane confirmed repeatable; banks the morning-word verdict.",
-  "success_breakthrough": "12000+ views, 29%+ AVD, 4.8%+ CTR — morning Sitar enters rotation as a recurring AM lane alongside Bansuri-productive and Dilruba-energy.",
-  "failure_mode": "<3000 views or <3.8% CTR by day 7 (AVD <20%) — morning Sitar only worked once via algo timing, not lane magnetism. If failure: default future morning Sitar back to the single proven title verbatim and stop testing the lane.",
+  "strategic_bet": "TARGETED \u2014 Fri Jun 12 AM (8am IST). Sitar's proven non-giant morning lane: 'Morning Motivation' is the only morning Sitar to clear 100K+ impressions (139K) AND post its highest CTR (4.62%) with healthy 26.9% AVD. This is a deliberate replica of that winner, run as a clean title A/B to settle the 'morning' word question. Placed Friday (not the dead Saturday slot) as a lane-switch override: Mon Jun 8 PM is the locked Sitar Cortisol swing (cortisol_anxiety pool, evening); this is active_am pool / morning / motivation \u2014 genuine lane + pool + time-of-day switch at 4-day gap (clears the \u22653-day lane-switch rule). MUST stay motivation/energy-coded, NOT cognitive/clarity-coded, to avoid cannibalizing the protected May 26 'Morning Right' growth swing and the owned Sitar cognitive/dopamine query space (Finding 14). Raga Bilawal \u2014 classic bright cheerful morning raga, distinct from Sitar's evening cortisol/cognitive ragas.",
+  "success_good": "6000+ views, 26%+ AVD, 4.4%+ CTR in 7 days \u2014 morning-motivation Sitar lane confirmed repeatable; banks the morning-word verdict.",
+  "success_breakthrough": "12000+ views, 29%+ AVD, 4.8%+ CTR \u2014 morning Sitar enters rotation as a recurring AM lane alongside Bansuri-productive and Dilruba-energy.",
+  "failure_mode": "<3000 views or <3.8% CTR by day 7 (AVD <20%) \u2014 morning Sitar only worked once via algo timing, not lane magnetism. If failure: default future morning Sitar back to the single proven title verbatim and stop testing the lane.",
   "reference_ships": [
-    "Morning Motivation | Sitar Music Instrumental | 1.5 Hours (8,273 views / 139K impr / 4.62% CTR / 26.9% AVD — the winner this replicates)",
-    "Sitar for Nervous System Healing (17.6K / 291K impr / 28.8% AVD — Sitar's restoration ceiling, DIFFERENT lane, do not echo)",
-    "Productive Day Music | Positive Morning Vibes | Bansuri (30.9K / 26.9% AVD — morning-lane lifestyle-lead exemplar)"
+    "Morning Motivation | Sitar Music Instrumental | 1.5 Hours (8,273 views / 139K impr / 4.62% CTR / 26.9% AVD \u2014 the winner this replicates)",
+    "Sitar for Nervous System Healing (17.6K / 291K impr / 28.8% AVD \u2014 Sitar's restoration ceiling, DIFFERENT lane, do not echo)",
+    "Productive Day Music | Positive Morning Vibes | Bansuri (30.9K / 26.9% AVD \u2014 morning-lane lifestyle-lead exemplar)"
   ],
   "tags": "morning motivation, motivation music, sitar instrumental, sitar music, morning music, indian instrumental music, 432hz, alpha waves, uplifting music, positive morning music, good morning music, morning energy music, productive day music, indian classical music, raga bilawal, bilawal, raga focus, morning sitar, focus music, music to start the day",
-  "description": "Morning Motivation | Sitar Instrumental | 1.5 Hours\n\nStart the day with drive, not dread.\n\nNo coffee-jolt, no doomscroll, no hype-track to fake the energy. Just a clear, bright sound that wakes the mind up gently and points it forward — steady enough to think, warm enough to feel, energizing enough to actually get moving.\n\nThis is 90 minutes of Sitar in Raga Bilawal — a classic bright, cheerful morning raga built entirely on natural, open notes, so it lifts without tension. The Sitar leads with warm plucked melody and gentle glissando slides over a soft rolling tabla and a low tanpura drone. Tuned to 432Hz with a light Alpha-wave layer underneath to keep the mind alert but unhurried.\n\nPut it on while you make coffee, plan the day, journal, stretch, or ease into focused work. Let the momentum build on its own.\n\nWHAT YOU'LL HEAR\n• Bright, uplifting Sitar melody in Raga Bilawal\n• Soft, rolling tabla keeping a gentle forward pulse\n• Warm tanpura drone underneath\n• 90 minutes, seamless — no jarring breaks\n\nBEST FOR\n• Slow productive mornings\n• Planning, journaling, or easing into work\n• A lift without the caffeine crash\n\nSubscribe to Raga Focus for more Indian classical music for focus, calm, and better mornings.",
+  "description": "Morning Motivation | Sitar Instrumental | 1.5 Hours\n\nStart the day with drive, not dread.\n\nNo coffee-jolt, no doomscroll, no hype-track to fake the energy. Just a clear, bright sound that wakes the mind up gently and points it forward \u2014 steady enough to think, warm enough to feel, energizing enough to actually get moving.\n\nThis is 90 minutes of Sitar in Raga Bilawal \u2014 a classic bright, cheerful morning raga built entirely on natural, open notes, so it lifts without tension. The Sitar leads with warm plucked melody and gentle glissando slides over a soft rolling tabla and a low tanpura drone. Tuned to 432Hz with a light Alpha-wave layer underneath to keep the mind alert but unhurried.\n\nPut it on while you make coffee, plan the day, journal, stretch, or ease into focused work. Let the momentum build on its own.\n\nWHAT YOU'LL HEAR\n\u2022 Bright, uplifting Sitar melody in Raga Bilawal\n\u2022 Soft, rolling tabla keeping a gentle forward pulse\n\u2022 Warm tanpura drone underneath\n\u2022 90 minutes, seamless \u2014 no jarring breaks\n\nBEST FOR\n\u2022 Slow productive mornings\n\u2022 Planning, journaling, or easing into work\n\u2022 A lift without the caffeine crash\n\nSubscribe to Raga Focus for more Indian classical music for focus, calm, and better mornings.",
   "thumbnail_text_main": "START STRONG",
-  "thumbnail_text_variants": ["START STRONG", "MORNING ENERGY", "FIND YOUR DRIVE"],
-  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate warm-gold and saffron patterned border with morning sun, lotus and songbird motifs, aged warm parchment background, bright dawn palette (warm saffron, amber gold, soft peach, aged cream, a hint of pale dawn blue). Central figure: an upright, alert musician in cream-and-saffron attire seated cross-legged playing the sitar (long-necked fretted lute with a large round gourd resonator, held at an upward angle, plucked with the right hand), in an open-air sunlit courtyard at early morning. Clear golden side-light, crisp fresh air, a single blooming lotus and a songbird mid-flight to signal a day beginning with energy. Mood: bright, awake, forward-moving — NOT sleepy or meditative. Dark-teal serif text overlay reading 'START STRONG', clean and bold, lower third, mobile-readable at grid size. No clutter.",
-  "suno_prompt_A": "North Indian classical instrumental, Raga Bilawal — bright all-natural-note morning raga with an open, cheerful, ascending character, uplifting and energizing morning mood, warm plucked sitar leading with meend glissando slides and gamak ornamentation, light supporting tabla holding a gentle rolling teental groove, soft tanpura drone underneath, tuned to 432Hz, 88 BPM, mid-to-high register, clean warm studio production, seamless loop-friendly phrasing with no abrupt transitions, like first sunlight spreading across a courtyard while the day quietly gathers momentum, no vocals, no humming, no human voice",
-  "suno_prompt_B": "Instrumental only, no vocals, no humming, North Indian classical sitar, Raga Bilawal — bright cheerful morning raga on open natural notes, warm plucked sitar with meend slides and gamak ornaments, light rolling tabla, soft tanpura drone, 432Hz, 88 BPM, mid-high register, clean warm production, seamless loop, like morning light gathering momentum",
+  "thumbnail_text_variants": [
+    "START STRONG",
+    "MORNING ENERGY",
+    "FIND YOUR DRIVE"
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate warm-gold and saffron patterned border with morning sun, lotus and songbird motifs, aged warm parchment background, bright dawn palette (warm saffron, amber gold, soft peach, aged cream, a hint of pale dawn blue). Central figure: an upright, alert musician in cream-and-saffron attire seated cross-legged playing the sitar (long-necked fretted lute with a large round gourd resonator, held at an upward angle, plucked with the right hand), in an open-air sunlit courtyard at early morning. Clear golden side-light, crisp fresh air, a single blooming lotus and a songbird mid-flight to signal a day beginning with energy. Mood: bright, awake, forward-moving \u2014 NOT sleepy or meditative. Dark-teal serif text overlay reading 'START STRONG', clean and bold, lower third, mobile-readable at grid size. No clutter.",
+  "suno_prompt_A": "North Indian classical instrumental, Raga Bilawal \u2014 bright all-natural-note morning raga with an open, cheerful, ascending character, uplifting and energizing morning mood, warm plucked sitar leading with meend glissando slides and gamak ornamentation, light supporting tabla holding a gentle rolling teental groove, soft tanpura drone underneath, tuned to 432Hz, 88 BPM, mid-to-high register, clean warm studio production, seamless loop-friendly phrasing with no abrupt transitions, like first sunlight spreading across a courtyard while the day quietly gathers momentum, no vocals, no humming, no human voice",
+  "suno_prompt_B": "Instrumental only, no vocals, no humming, North Indian classical sitar, Raga Bilawal \u2014 bright cheerful morning raga on open natural notes, warm plucked sitar with meend slides and gamak ornaments, light rolling tabla, soft tanpura drone, 432Hz, 88 BPM, mid-high register, clean warm production, seamless loop, like morning light gathering momentum",
   "production_spec": {
     "duration_minutes": 90,
     "bpm_range": "85-92",
@@ -74,10 +78,13 @@
     "binaural_wave": "Alpha",
     "binaural_beat_hz": 10.0,
     "lufs_target": -14,
-    "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+    "loop_seam": "10s in / 30s out, Suno extend 3-4x \u2192 loop in post to fill 90 min",
     "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
-    "notes": "Raga Bilawal — the shuddha (all-natural-note) parent scale, classic morning raga, bright and cheerful with no tension. Sitar leads with light tabla (Sitar performance rule — every high-performing Sitar ship had tabla; the only no-tabla Sitar was the lowest). Keep tempo brisk-but-calm (85-92 BPM) — motivation/energy, not frantic. Binaural Alpha 10Hz layer added in POST only (kept out of the Suno prompt per standing rule)."
+    "notes": "Raga Bilawal \u2014 the shuddha (all-natural-note) parent scale, classic morning raga, bright and cheerful with no tension. Sitar leads with light tabla (Sitar performance rule \u2014 every high-performing Sitar ship had tabla; the only no-tabla Sitar was the lowest). Keep tempo brisk-but-calm (85-92 BPM) \u2014 motivation/energy, not frantic. Binaural Alpha 10Hz layer added in POST only (kept out of the Suno prompt per standing rule)."
   },
-  "experiment_notes": "Test 38 — first clean isolation of the 'morning' title word in the MOTIVATION lane (prior morning-word tests 28/30 were anxiety + yoga lanes). Thumb held constant ('START STRONG', time-neutral) so the only variable is 'Morning Motivation' vs 'Motivation Music'. If A wins: morning-anchoring lifts AM-slot CTR — keep morning word for AM ships. If B wins: stronger generic keyword travels wider — reconsider morning-word dogma for motivation content. Lane-switch override logged (4-day gap from Mon Cortisol Sitar, different pool).",
-  "playlists": ["Morning Energy", "Meditation"]
+  "experiment_notes": "Test 38 \u2014 first clean isolation of the 'morning' title word in the MOTIVATION lane (prior morning-word tests 28/30 were anxiety + yoga lanes). Thumb held constant ('START STRONG', time-neutral) so the only variable is 'Morning Motivation' vs 'Motivation Music'. If A wins: morning-anchoring lifts AM-slot CTR \u2014 keep morning word for AM ships. If B wins: stronger generic keyword travels wider \u2014 reconsider morning-word dogma for motivation content. Lane-switch override logged (4-day gap from Mon Cortisol Sitar, different pool).",
+  "playlists": [
+    "Morning Energy",
+    "Meditation"
+  ]
 }

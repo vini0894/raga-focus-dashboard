@@ -1,7 +1,7 @@
 {
   "id": "v_2026-06-09_productive_morning_bansuri",
-  "status": "DRAFT",
-  "date_shipped": null,
+  "status": "PUBLISHED",
+  "date_shipped": "2026-06-09",
   "created_at": "2026-06-05",
   "planned_date": "2026-06-09",
   "planned_slot": "AM",
@@ -18,31 +18,43 @@
     "wave": "Alpha"
   },
   "validated_keywords": [
-    "Productive Morning Music (slot 1 — FRESH lead, differentiated from owned 'Productive Day' hero 466K to avoid cannibalization; VidIQ PENDING, fallback 'Positive Morning Music' 70)",
-    "Bansuri Flute (slot 2 — instrument anchor)",
-    "1.5 Hours (slot 3 — duration)",
+    "Productive Morning Music (slot 1 \u2014 FRESH lead, differentiated from owned 'Productive Day' hero 466K to avoid cannibalization; VidIQ PENDING, fallback 'Positive Morning Music' 70)",
+    "Bansuri Flute (slot 2 \u2014 instrument anchor)",
+    "1.5 Hours (slot 3 \u2014 duration)",
     "morning music",
     "productive music",
     "indian instrumental music"
   ],
   "ab_test": {
     "test_id": "none",
-    "test_type": "SINGLE — no A/B (single title + thumb)",
-    "variant_A": {"title": "Productive Morning Music | Bansuri Flute | 1.5 Hours", "thumbnail_text": "MORNING FLOW"},
-    "variant_B": {"title": "Productive Morning Music | Bansuri Flute | 1.5 Hours", "thumbnail_text": "MORNING FLOW"},
-    "test_method": "Single ship. Thumb 'MORNING FLOW' (vibes_state, gentle-productive — mood-coherent with breathy flute; no Q-hook per morning lane rule)."
+    "test_type": "SINGLE \u2014 no A/B (single title + thumb)",
+    "variant_A": {
+      "title": "Productive Morning Music | Bansuri Flute | 1.5 Hours",
+      "thumbnail_text": "MORNING FLOW"
+    },
+    "variant_B": {
+      "title": "Productive Morning Music | Bansuri Flute | 1.5 Hours",
+      "thumbnail_text": "MORNING FLOW"
+    },
+    "test_method": "Single ship. Thumb 'MORNING FLOW' (vibes_state, gentle-productive \u2014 mood-coherent with breathy flute; no Q-hook per morning lane rule)."
   },
-  "strategic_bet": "TARGETED — Tue Jun 9 AM. Bansuri's only proven morning lane is productive/positive-morning (Productive Day 466K/30.9K/26.9% AVD). Fresh 'Productive Morning' lead (vs owned 'Productive Day' verbatim) keeps the proven lane while minimizing query overlap with the 466K hero (under 500K fatal threshold). Mood-coherent — gentle flute = calm-productive, not peppy.",
+  "strategic_bet": "TARGETED \u2014 Tue Jun 9 AM. Bansuri's only proven morning lane is productive/positive-morning (Productive Day 466K/30.9K/26.9% AVD). Fresh 'Productive Morning' lead (vs owned 'Productive Day' verbatim) keeps the proven lane while minimizing query overlap with the 466K hero (under 500K fatal threshold). Mood-coherent \u2014 gentle flute = calm-productive, not peppy.",
   "success_good": "5000+ views, 25%+ AVD, 4.3%+ CTR in 7d",
   "success_breakthrough": "15000+ views, 28%+ AVD",
-  "failure_mode": "<2500 views or <3.8% CTR by day 7 — 'Productive Morning' has no fresh resonance; default back to proven productive-positive vocabulary.",
-  "reference_ships": ["Productive Day Music | Positive Morning Vibes | Bansuri (466K impr / 30.9K v / 26.9% AVD — the owned hero this differentiates from)"],
+  "failure_mode": "<2500 views or <3.8% CTR by day 7 \u2014 'Productive Morning' has no fresh resonance; default back to proven productive-positive vocabulary.",
+  "reference_ships": [
+    "Productive Day Music | Positive Morning Vibes | Bansuri (466K impr / 30.9K v / 26.9% AVD \u2014 the owned hero this differentiates from)"
+  ],
   "tags": "productive morning music, bansuri music, bansuri flute, morning music, indian instrumental music, 432hz, alpha waves, focus music, morning meditation music, indian classical music, raga bilawal, raga focus, productive day music, music to start the day, morning bansuri",
-  "description": "TODO — write accessible-voice description in production session (SEO-first opening, emotional hook, what-you'll-hear, best-for, subscribe).",
+  "description": "TODO \u2014 write accessible-voice description in production session (SEO-first opening, emotional hook, what-you'll-hear, best-for, subscribe).",
   "thumbnail_text_main": "MORNING FLOW",
-  "thumbnail_text_variants": ["MORNING FLOW", "MORNING RESET", "EASE INTO FOCUS"],
+  "thumbnail_text_variants": [
+    "MORNING FLOW",
+    "MORNING RESET",
+    "EASE INTO FOCUS"
+  ],
   "thumbnail_prompt": "Pichwai/Kangra miniature style, ornate warm-gold border, aged cream parchment, bright morning palette. Serene focused musician playing bansuri (bamboo transverse flute) in a sunlit courtyard, gentle golden morning light, calm-productive mood. Dark-teal serif overlay 'MORNING FLOW', lower third, mobile-readable. No clutter.",
-  "suno_prompt_A": "TODO — finalize in production session (Bansuri, Raga Bilawal, no tabla, 432Hz, ~80 BPM, gentle productive morning).",
+  "suno_prompt_A": "TODO \u2014 finalize in production session (Bansuri, Raga Bilawal, no tabla, 432Hz, ~80 BPM, gentle productive morning).",
   "suno_prompt_B": "TODO",
   "production_spec": {
     "duration_minutes": 90,
@@ -50,8 +62,10 @@
     "key_frequency_hz": 432,
     "binaural_wave": "Alpha",
     "binaural_beat_hz": 10.0,
-    "notes": "Bansuri = NO tabla (Bansuri performance rule). Raga Bilawal — bright morning. Binaural Alpha in POST only."
+    "notes": "Bansuri = NO tabla (Bansuri performance rule). Raga Bilawal \u2014 bright morning. Binaural Alpha in POST only."
   },
   "experiment_notes": "VidIQ pending on 'Productive Morning Music'. If <60, swap lead to 'Positive Morning Music' (70).",
-  "playlists": ["Morning Energy"]
+  "playlists": [
+    "Morning Energy"
+  ]
 }

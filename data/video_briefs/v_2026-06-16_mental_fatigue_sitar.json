@@ -8,7 +8,7 @@
   "title": "Music for Mental Fatigue | Sitar Music | 1.5 Hours",
   "title_variants": {
     "A": "Music for Mental Fatigue | Sitar Music | 1.5 Hours",
-    "B": "Still Your Mind | Sitar Instrumental | 1.5 Hours"
+    "B": "Music for Mental Fatigue | Sitar Music | 1.5 Hours"
   },
   "components": {
     "problem": "mentally fatigued after a long day of thinking / brain feels foggy and drained but the day isn't over / not sleepy, just spent / needs to clear the fatigue and come back sharp, not be put to sleep",
@@ -31,18 +31,23 @@
   ],
   "ab_test": {
     "test_id": "Test 42",
-    "test_type": "TITLE A/B — same thumb, clinical-problem lead vs offering lead (both music-intent)",
+    "test_type": "THUMBNAIL A/B — single validated title, 3 Q-hook framings of mental-overwhelm (YouTube native Test & Compare)",
     "variant_A": {
       "title": "Music for Mental Fatigue | Sitar Music | 1.5 Hours",
       "thumbnail_text": "MENTALLY DRAINED?",
-      "hypothesis": "Clinical-problem lead. 'Mental Fatigue' is Sitar's proven clinical pattern (dopamine/nervous-system/cortisol/brain-detox), and it's the ONE clinical term that passed the music-intent SERP test (59 with 'Music for'). Paired with a specific-state Q-hook thumb (cognitive lane = Q-hook wins). Tests whether the clinical hook that built your biggest videos works on a FRESH clinical term."
+      "hypothesis": "State-match thumb — mirrors the title (fatigue/drained). Specific-state Q-hook (cognitive lane = Q-hook wins). The coherent/safe variant; expected baseline."
     },
     "variant_B": {
-      "title": "Still Your Mind | Sitar Instrumental | 1.5 Hours",
-      "thumbnail_text": "MENTALLY DRAINED?",
-      "hypothesis": "Offering/outcome lead (still your mind), also music-intent (59) and fresh. Same thumb isolates the title: does the clinical-problem framing ('Mental Fatigue') or the calm-offering framing ('Still Your Mind') pull harder in Sitar's evening calm-cognitive lane?"
+      "title": "Music for Mental Fatigue | Sitar Music | 1.5 Hours",
+      "thumbnail_text": "SCATTERED THOUGHTS?",
+      "hypothesis": "Broadening thumb — different-but-related state (unfocused vs drained), like NS Healing's 'STRESS DETOX' thumb over its 'Nervous System Healing' title. Catches the 'my mind is all over the place' browser the title doesn't name. Most relatable/self-recognition trigger of the three."
     },
-    "test_method": "Thumb-fixed TITLE A/B on YouTube native A/B. SAME Q-hook thumb (MENTALLY DRAINED?) both variants. Winner by CTR over 7 days. Banks the clinical-vs-offering question for Sitar's evening cognitive lane — high-value since clinical is supposedly Sitar's strength."
+    "variant_C": {
+      "title": "Music for Mental Fatigue | Sitar Music | 1.5 Hours",
+      "thumbnail_text": "BRAIN FRIED?",
+      "hypothesis": "Casual-slang pattern-interrupt — colloquial vs the formal 'drained/scattered'. Tests whether casual punch out-clicks clinical phrasing in the feed."
+    },
+    "test_method": "Single title (validated music-intent lead). 3-thumbnail A/B on YouTube native Test & Compare — same title + same Pichwai artwork base, only overlay text differs. Isolates the Q-hook framing cleanly. Winner by CTR over the full test window. Tests drained vs scattered vs fried — which framing of mental overwhelm earns the click in Sitar's evening cognitive lane."
   },
   "strategic_bet": "STRONG-tier audition ship — Tue June 16 PM, evening calm-COGNITIVE lane (Sitar's evening-winnable zone, the Dopamine Reset model: Sitar wins evening when the LANE is cognitive-restoration, not passive sleep). Clinical hook ('Mental Fatigue') chosen because clinical is Sitar's proven pattern AND it's the only clinical term that passed the music-intent SERP test (others were informational mirages). CRITICAL FRAMING: aim at ACTIVE RESTORATION (clear the fatigue, come back sharp) NOT passive rest — restorative-bright music, NOT drowsy, or Sitar fails (its passive/sleep attempts all flopped). This is a T1-FRIENDLY lane (calm-cognitive 'clear your mind' = 31-36% T1 share per country analysis) — consider the 10pm IST slot to test US afternoon/evening reach. NOTE: ships Sitar 6 days before the Jun 22 Dopamine swing — accepted trade-off (swing will be good, not max-rested). Catalog/audition ship judged on CTR + AVD, not impressions.",
   "success_good": "2500+ views, 24%+ AVD, 3.8%+ CTR in 7 days; T1 share 25%+ (the lane should over-index T1)",
@@ -61,7 +66,7 @@
   ],
   "description": "Music for Mental Fatigue | Sitar Music | 1.5 Hours\n\nNot tired enough to sleep — just mentally spent. Hours of thinking, screens, decisions, and your brain feels foggy and drained, but the day isn't done.\n\nStart here. Ninety minutes of warm, clear sitar to lift the mental fatigue and bring you back sharp — restoring your focus, not putting you to sleep.\n\nWhat you'll hear: bright, unhurried sitar over a soft pulse — open and clarifying, the feeling of fog lifting and the mind coming back online.\n\nBest for: end-of-day mental recovery · clearing brain fog · resetting between work blocks · a quiet space and a pair of headphones.\n\n🔔 Subscribe to Raga Focus for Indian instrumental music to clear mental fatigue, restore focus, and feel sharp again.",
   "thumbnail_text_main": "MENTALLY DRAINED?",
-  "thumbnail_text_variants": ["MENTALLY DRAINED?", "MIND ON OVERDRIVE?", "BRAIN FRIED?"],
+  "thumbnail_text_variants": ["MENTALLY DRAINED?", "SCATTERED THOUGHTS?", "BRAIN FRIED?"],
   "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate warm-gold patterned border. Evening palette but LUMINOUS and CLARIFYING (not dusky-drowsy) — warm amber light with a sense of clearing/lifting, soft glow suggesting fog dissolving and clarity returning. Central figure: an alert, upright musician playing a sitar, composed and clear-eyed (restored, NOT slumped/sleepy) — body language of someone coming back to sharpness. IMPORTANT: vary the interior composition from the channel's other Sitar thumbnails so it is visually distinct in-feed (not the same painting relabeled). Overlay text 'MENTALLY DRAINED?' in dark-teal serif, large and mobile-readable (2 words, scans under 1 second). This is a Q-hook (cognitive lane = Q-hook wins). Mobile-first: minimal clutter.",
   "suno_prompt_A": "Warm clarifying Indian classical instrumental, Raga Yaman — raised teevra Ma, expansive outward open evening character, the feeling of mental fog lifting and a tired mind coming back sharp and clear, warm plucked sitar with meend glissando slides and gamak ornamentation, light tabla keeping a gentle steady pulse, soft tanpura drone, 432Hz tuning, 68 BPM, mid register, warm open airy production, seamless loop-friendly texture, like clarity returning to a drained mind, restorative not drowsy, no vocals, no humming, no human voice",
   "suno_prompt_B": "Instrumental only, no vocals, no humming, warm clarifying Indian classical sitar, Raga Yaman — teevra Ma expansive open evening, warm plucked sitar with meend glides and gamak, light tabla gentle pulse, soft tanpura drone, 432Hz, 68 BPM, mid register, warm open airy production, seamless loop, like mental fog lifting and the mind coming back sharp, restorative not drowsy",

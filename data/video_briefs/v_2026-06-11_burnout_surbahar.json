@@ -1,7 +1,7 @@
 {
   "id": "v_2026-06-11_burnout_surbahar",
-  "status": "DRAFT",
-  "date_shipped": null,
+  "status": "PUBLISHED",
+  "date_shipped": "2026-06-11",
   "created_at": "2026-06-05",
   "planned_date": "2026-06-11",
   "planned_slot": "PM",
@@ -18,35 +18,47 @@
     "wave": "Theta"
   },
   "validated_keywords": [
-    "Burnout Recovery Music (slot 1, variant A — burnout music VidIQ 65; proven Surbahar #2 lane 90K/25.4% AVD)",
-    "Music for Burnout (slot 1, variant B — burnout music 65, alt framing)",
-    "Slow Surbahar (slot 2/3 — Path 2: niche instrument low VidIQ OK, instrument-in-title matters empirically)",
-    "Surbahar & Vagus Reset (variant B slot 2 — vagus nerve music 57, clinical SEO)",
+    "Burnout Recovery Music (slot 1, variant A \u2014 burnout music VidIQ 65; proven Surbahar #2 lane 90K/25.4% AVD)",
+    "Music for Burnout (slot 1, variant B \u2014 burnout music 65, alt framing)",
+    "Slow Surbahar (slot 2/3 \u2014 Path 2: niche instrument low VidIQ OK, instrument-in-title matters empirically)",
+    "Surbahar & Vagus Reset (variant B slot 2 \u2014 vagus nerve music 57, clinical SEO)",
     "nervous system reset (66)",
     "1.5 Hours (duration)",
     "indian classical music"
   ],
   "ab_test": {
     "test_id": "Test 40",
-    "test_type": "TITLE A/B — same thumb both variants (isolates lead framing)",
-    "variant_A": {"title": "Burnout Recovery Music | Slow Surbahar | 1.5 Hours", "thumbnail_text": "BURNT OUT?", "hypothesis": "Outcome-led 'Burnout Recovery' (proven 90K lane) — recovery framing. Cleaner SEO lead."},
-    "variant_B": {"title": "Music for Burnout | Surbahar & Vagus Reset | 1.5 Hours", "thumbnail_text": "BURNT OUT?", "hypothesis": "'Music for Burnout' lead + clinical 'Vagus Reset' slot 2 — tests whether the clinical vagus angle adds pull over plain recovery framing."},
-    "test_method": "Title-only A/B. Same thumb 'BURNT OUT?' (Q-hook — WINS in anxiety/cortisol lanes, the opposite of the morning rule). One variable: 'Burnout Recovery' (outcome) vs 'Music for Burnout' + 'Vagus Reset' (clinical). Both stay in Surbahar's proven burnout lane, clinically distinct from the OWNED deep-rest hero (770K)."
+    "test_type": "TITLE A/B \u2014 same thumb both variants (isolates lead framing)",
+    "variant_A": {
+      "title": "Burnout Recovery Music | Slow Surbahar | 1.5 Hours",
+      "thumbnail_text": "BURNT OUT?",
+      "hypothesis": "Outcome-led 'Burnout Recovery' (proven 90K lane) \u2014 recovery framing. Cleaner SEO lead."
+    },
+    "variant_B": {
+      "title": "Music for Burnout | Surbahar & Vagus Reset | 1.5 Hours",
+      "thumbnail_text": "BURNT OUT?",
+      "hypothesis": "'Music for Burnout' lead + clinical 'Vagus Reset' slot 2 \u2014 tests whether the clinical vagus angle adds pull over plain recovery framing."
+    },
+    "test_method": "Title-only A/B. Same thumb 'BURNT OUT?' (Q-hook \u2014 WINS in anxiety/cortisol lanes, the opposite of the morning rule). One variable: 'Burnout Recovery' (outcome) vs 'Music for Burnout' + 'Vagus Reset' (clinical). Both stay in Surbahar's proven burnout lane, clinically distinct from the OWNED deep-rest hero (770K)."
   },
-  "strategic_bet": "TARGETED — Thu Jun 11 PM. Surbahar's deep-rest lane is OWNED (770K hero, Finding 14 off-limits). Burnout is its decisively-best non-deep-rest lane (90K/25.4% AVD vs 22K/14K for other attempts). Fresh burnout lead (not the May 8 title verbatim). cortisol_anxiety pool, spaced from Mon Sitar cortisol + Sun Sarod anxiety (different days, no same-day clash). Q-hook thumb is correct here (anxiety/cortisol = Q-hook WINS, unlike morning).",
-  "success_good": "4000+ views, 24%+ AVD, 3.6%+ CTR in 7d — burnout Surbahar lane reconfirmed",
-  "success_breakthrough": "9000+ views, 27%+ AVD — matches/beats the May 8 burnout precedent",
+  "strategic_bet": "TARGETED \u2014 Thu Jun 11 PM. Surbahar's deep-rest lane is OWNED (770K hero, Finding 14 off-limits). Burnout is its decisively-best non-deep-rest lane (90K/25.4% AVD vs 22K/14K for other attempts). Fresh burnout lead (not the May 8 title verbatim). cortisol_anxiety pool, spaced from Mon Sitar cortisol + Sun Sarod anxiety (different days, no same-day clash). Q-hook thumb is correct here (anxiety/cortisol = Q-hook WINS, unlike morning).",
+  "success_good": "4000+ views, 24%+ AVD, 3.6%+ CTR in 7d \u2014 burnout Surbahar lane reconfirmed",
+  "success_breakthrough": "9000+ views, 27%+ AVD \u2014 matches/beats the May 8 burnout precedent",
   "failure_mode": "<2000 views or <3.3% CTR by day 7",
   "reference_ships": [
-    "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour (90K impr / 4.4K v / 25.4% AVD — the proven lane this refreshes)",
-    "Deep Rest | Find Stillness with Surbahar (770K — OWNED, deliberately avoided)"
+    "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour (90K impr / 4.4K v / 25.4% AVD \u2014 the proven lane this refreshes)",
+    "Deep Rest | Find Stillness with Surbahar (770K \u2014 OWNED, deliberately avoided)"
   ],
   "tags": "burnout recovery music, music for burnout, surbahar music, slow surbahar, vagus nerve reset, nervous system reset, stress relief music, 432hz, theta waves, indian classical music, raga darbari, raga focus, deep relaxation music, calming music, evening relaxation",
-  "description": "TODO — write accessible-voice description in production session (visceral burnout hook, what-you'll-hear, best-for, subscribe).",
+  "description": "TODO \u2014 write accessible-voice description in production session (visceral burnout hook, what-you'll-hear, best-for, subscribe).",
   "thumbnail_text_main": "BURNT OUT?",
-  "thumbnail_text_variants": ["BURNT OUT?", "RUNNING ON EMPTY?", "DEEPLY DRAINED?"],
+  "thumbnail_text_variants": [
+    "BURNT OUT?",
+    "RUNNING ON EMPTY?",
+    "DEEPLY DRAINED?"
+  ],
   "thumbnail_prompt": "Pichwai/Kangra miniature style, ornate warm-gold border, aged cream parchment, deep dusk palette (indigo, deep teal, muted gold, candle warmth). Weary figure seated, shoulders softening, beside a musician playing surbahar (large bass sitar, deep long-necked lute, plucked slowly); low evening light, candle glow, sense of finally letting the body recover. Dark-teal serif overlay 'BURNT OUT?', lower third, mobile-readable. No clutter.",
-  "suno_prompt_A": "TODO — finalize in production session (Surbahar = NO tabla/percussion, Raga Darbari deep restorative, 432Hz, very slow ~55-65 BPM, long sustained meend, theta in post).",
+  "suno_prompt_A": "TODO \u2014 finalize in production session (Surbahar = NO tabla/percussion, Raga Darbari deep restorative, 432Hz, very slow ~55-65 BPM, long sustained meend, theta in post).",
   "suno_prompt_B": "TODO",
   "production_spec": {
     "duration_minutes": 90,
@@ -54,8 +66,10 @@
     "key_frequency_hz": 432,
     "binaural_wave": "Theta",
     "binaural_beat_hz": 5.0,
-    "notes": "Surbahar = NO tabla/percussion (performance rule — deep sustained bass sitar carries the space). Raga Darbari Kanada — deep, serious, calming gravitas, fits burnout heaviness. Binaural Theta in POST only."
+    "notes": "Surbahar = NO tabla/percussion (performance rule \u2014 deep sustained bass sitar carries the space). Raga Darbari Kanada \u2014 deep, serious, calming gravitas, fits burnout heaviness. Binaural Theta in POST only."
   },
-  "experiment_notes": "Test 40 — first burnout-lane refresh since May 8. Q-hook thumb (BURNT OUT?) per anxiety/cortisol lane rule. Avoids OWNED deep-rest. Banked problem-thumb candidates for the lane: RUNNING ON EMPTY?, DEEPLY DRAINED?.",
-  "playlists": ["Healing & Anxiety Relief"]
+  "experiment_notes": "Test 40 \u2014 first burnout-lane refresh since May 8. Q-hook thumb (BURNT OUT?) per anxiety/cortisol lane rule. Avoids OWNED deep-rest. Banked problem-thumb candidates for the lane: RUNNING ON EMPTY?, DEEPLY DRAINED?.",
+  "playlists": [
+    "Healing & Anxiety Relief"
+  ]
 }

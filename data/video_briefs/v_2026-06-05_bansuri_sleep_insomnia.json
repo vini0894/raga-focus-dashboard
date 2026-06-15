@@ -1,114 +1,114 @@
 {
-    "id": "v_2026-06-05_bansuri_sleep_insomnia",
-    "status": "APPROVED",
-    "date_shipped": null,
-    "created_at": "2026-06-05",
-    "planned_date": "2026-06-05",
-    "planned_slot": "PM (7pm IST)",
-    "title": "Sleep Music for Insomnia | Slow Bansuri | 1.5 Hours",
-    "title_variants": {
-        "A": "Sleep Music for Insomnia | Slow Bansuri | 1.5 Hours",
-        "B": "Bedtime Bansuri Music | Indian Classical | 1.5 Hours"
+  "id": "v_2026-06-05_bansuri_sleep_insomnia",
+  "status": "PUBLISHED",
+  "date_shipped": "2026-06-05",
+  "created_at": "2026-06-05",
+  "planned_date": "2026-06-05",
+  "planned_slot": "PM (7pm IST)",
+  "title": "Sleep Music for Insomnia | Slow Bansuri | 1.5 Hours",
+  "title_variants": {
+    "A": "Sleep Music for Insomnia | Slow Bansuri | 1.5 Hours",
+    "B": "Bedtime Bansuri Music | Indian Classical | 1.5 Hours"
+  },
+  "components": {
+    "problem": "lying awake at 11pm and the mind won't shut off / tried to sleep an hour ago and still wide-eyed / want something to give the body permission to drop, not a meditation track to follow / need long-form so it carries you through the falling-asleep window without ending",
+    "instrument": "Bansuri",
+    "raga": "Yaman",
+    "hz": "432Hz",
+    "wave": "Delta"
+  },
+  "validated_keywords": [
+    "Sleep Music for Insomnia (slot 1 A \u2014 clinical sub-niche SEO; fits Finding 14 exception for clinically different sub-lane vs Bansuri Sound Sleep hero)",
+    "Bedtime Bansuri Music (slot 1 B \u2014 lifestyle/time-anchored lead; tests pain-vs-lifestyle hypothesis)",
+    "Slow Bansuri (slot 2 A \u2014 instrument + tempo anchor)",
+    "Indian Classical (slot 2 B \u2014 genre anchor)",
+    "1.5 Hours (slot 3 \u2014 duration anchor per Finding 17)",
+    "sleep music (75 \u2014 lead-locked through Jun 18, used as concept anchor only)",
+    "insomnia relief (63)",
+    "deep sleep (locked through Jun 6)",
+    "bansuri sleep music",
+    "bedtime music",
+    "sleep music bansuri",
+    "indian classical sleep music",
+    "flute sleep music",
+    "delta waves",
+    "432hz (74)",
+    "raga yaman",
+    "raga focus (66)"
+  ],
+  "ab_test": {
+    "test_id": "Test 37",
+    "test_type": "PAIRED-BUNDLE A/B \u2014 title AND thumb vary together (clinical bundle vs lifestyle-psychological bundle)",
+    "variant_A": {
+      "title": "Sleep Music for Insomnia | Slow Bansuri | 1.5 Hours",
+      "thumbnail_text": "INSOMNIA RELIEF",
+      "hypothesis": "CLINICAL-CLINICAL BUNDLE \u2014 name the pain in title AND thumb. Title 'Sleep Music for Insomnia' + Thumb 'INSOMNIA RELIEF' = fully clinical pain-naming alignment. Targets the clinical pain-searcher who wants the problem named explicitly. Fits Finding 14 cannibalization exception (clinically different sub-niche of Bansuri sleep) so unlocks the hero-cannibalization gate. Bansuri \u00d7 Insomnia is fresh cross \u2014 Tanpura May 13 used 'Insomnia Relief' as title (32K weak), but Bansuri instrument hasn't been tested in insomnia lane. The clinical descriptor pair should reinforce search-intent matching."
     },
-    "components": {
-        "problem": "lying awake at 11pm and the mind won't shut off / tried to sleep an hour ago and still wide-eyed / want something to give the body permission to drop, not a meditation track to follow / need long-form so it carries you through the falling-asleep window without ending",
-        "instrument": "Bansuri",
-        "raga": "Yaman",
-        "hz": "432Hz",
-        "wave": "Delta"
+    "variant_B": {
+      "title": "Bedtime Bansuri Music | Indian Classical | 1.5 Hours",
+      "thumbnail_text": "STOP TRYING",
+      "hypothesis": "LIFESTYLE + PSYCHOLOGICAL BUNDLE \u2014 lifestyle title 'Bedtime Bansuri Music' + paradoxical thumb 'STOP TRYING'. Title captures the 'going to bed now' lifestyle moment. Thumb names the insomnia psychological paradox (trying harder to sleep makes it worse). Tests whether lifestyle title + psychological-trigger thumb beats fully clinical bundle. STOP TRYING is a pattern-interrupt thumb in sleep lane (doesn't say 'sleep' word) \u2014 Dopamine Reset-style trigger vocabulary."
     },
-    "validated_keywords": [
-        "Sleep Music for Insomnia (slot 1 A \u2014 clinical sub-niche SEO; fits Finding 14 exception for clinically different sub-lane vs Bansuri Sound Sleep hero)",
-        "Bedtime Bansuri Music (slot 1 B \u2014 lifestyle/time-anchored lead; tests pain-vs-lifestyle hypothesis)",
-        "Slow Bansuri (slot 2 A \u2014 instrument + tempo anchor)",
-        "Indian Classical (slot 2 B \u2014 genre anchor)",
-        "1.5 Hours (slot 3 \u2014 duration anchor per Finding 17)",
-        "sleep music (75 \u2014 lead-locked through Jun 18, used as concept anchor only)",
-        "insomnia relief (63)",
-        "deep sleep (locked through Jun 6)",
-        "bansuri sleep music",
-        "bedtime music",
-        "sleep music bansuri",
-        "indian classical sleep music",
-        "flute sleep music",
-        "delta waves",
-        "432hz (74)",
-        "raga yaman",
-        "raga focus (66)"
-    ],
-    "ab_test": {
-        "test_id": "Test 37",
-        "test_type": "PAIRED-BUNDLE A/B \u2014 title AND thumb vary together (clinical bundle vs lifestyle-psychological bundle)",
-        "variant_A": {
-            "title": "Sleep Music for Insomnia | Slow Bansuri | 1.5 Hours",
-            "thumbnail_text": "INSOMNIA RELIEF",
-            "hypothesis": "CLINICAL-CLINICAL BUNDLE \u2014 name the pain in title AND thumb. Title 'Sleep Music for Insomnia' + Thumb 'INSOMNIA RELIEF' = fully clinical pain-naming alignment. Targets the clinical pain-searcher who wants the problem named explicitly. Fits Finding 14 cannibalization exception (clinically different sub-niche of Bansuri sleep) so unlocks the hero-cannibalization gate. Bansuri \u00d7 Insomnia is fresh cross \u2014 Tanpura May 13 used 'Insomnia Relief' as title (32K weak), but Bansuri instrument hasn't been tested in insomnia lane. The clinical descriptor pair should reinforce search-intent matching."
-        },
-        "variant_B": {
-            "title": "Bedtime Bansuri Music | Indian Classical | 1.5 Hours",
-            "thumbnail_text": "STOP TRYING",
-            "hypothesis": "LIFESTYLE + PSYCHOLOGICAL BUNDLE \u2014 lifestyle title 'Bedtime Bansuri Music' + paradoxical thumb 'STOP TRYING'. Title captures the 'going to bed now' lifestyle moment. Thumb names the insomnia psychological paradox (trying harder to sleep makes it worse). Tests whether lifestyle title + psychological-trigger thumb beats fully clinical bundle. STOP TRYING is a pattern-interrupt thumb in sleep lane (doesn't say 'sleep' word) \u2014 Dopamine Reset-style trigger vocabulary."
-        },
-        "test_method": "PAIRED-BUNDLE A/B (Test 37) \u2014 title AND thumb vary together per variant. Not single-variable isolated; banks bundle-level signal which is more actionable for future Bansuri sleep ships. YouTube native A/B test runs both variant titles + their matched thumbs. Same thumbnail artwork base (Pichwai/Kangra night Bansuri scene, deep indigo + silver palette, moonlit chamber) \u2014 only overlay text differs per variant. If A wins: clinical pain-naming throughout (title + thumb) is the unlock for Bansuri sleep \u2014 future sleep ships use clinical vocabulary consistently. If B wins: lifestyle title + psychological-trigger thumb beats clinical \u2014 future sleep ships use lifestyle-moment titles paired with paradox thumbs. If close (<5% delta): bundle approach is neutral; revert to single-variable testing in next sleep ship."
+    "test_method": "PAIRED-BUNDLE A/B (Test 37) \u2014 title AND thumb vary together per variant. Not single-variable isolated; banks bundle-level signal which is more actionable for future Bansuri sleep ships. YouTube native A/B test runs both variant titles + their matched thumbs. Same thumbnail artwork base (Pichwai/Kangra night Bansuri scene, deep indigo + silver palette, moonlit chamber) \u2014 only overlay text differs per variant. If A wins: clinical pain-naming throughout (title + thumb) is the unlock for Bansuri sleep \u2014 future sleep ships use clinical vocabulary consistently. If B wins: lifestyle title + psychological-trigger thumb beats clinical \u2014 future sleep ships use lifestyle-moment titles paired with paradox thumbs. If close (<5% delta): bundle approach is neutral; revert to single-variable testing in next sleep ship."
+  },
+  "strategic_bet": "MOMENTUM-PRESERVING FILLER \u2014 Fri June 5 PM (7pm IST). Reworked from parked End of Day Santoor (lifestyle pool, 5-20K floor) to Bansuri Sleep (sleep pool, 30-50K floor) \u2014 adds +20-25K Fri-Sat momentum without burning Mon Sitar swing (different instrument). May 29 Bansuri Sleep 'Drift Off' precedent = 42K, 21% AVD, 4.8% CTR \u2014 formula intact. Bansuri is channel's most multi-lane proven instrument (4 of top 10 lifetime ships). Cooldown: Bansuri last Jun 2 (anxiety), 3d gap + different lane (anxiety \u2192 sleep) = allowed per banked diversity modifier. Accepting mild Sat Tanpura sleep pool overlap (~5-10K cannibalization on Sat) as acceptable cost for Fri lift. Raga Yaman \u2014 channel-proven sleep raga (Bansuri Sound Sleep hero 1.4M used Yaman; Can't Fall Asleep 323K used Yaman).",
+  "success_good": "4000+ views, 22%+ AVD, 4%+ CTR in 48h \u2014 Bansuri sleep formula maintained, momentum filler succeeded",
+  "success_breakthrough": "10000+ views, 25%+ AVD, 5%+ CTR \u2014 Insomnia sub-niche or Bedtime lifestyle opens new audience pocket; bank as recurring Friday slot",
+  "failure_mode": "<1500 views or <3.5% CTR in 48h \u2014 Bansuri sleep cannibalized by May 7 hero (1.4M Sound Sleep) despite framing variation. If failure: bank both phrases as dead, stop testing Bansuri sleep ships until May 7 hero cools below 1M/month",
+  "reference_ships": [
+    {
+      "title": "Bansuri for Sound Sleep | Deep Sleep Music | 1 Hour",
+      "pub": "2026-05-07",
+      "impressions": 1407610,
+      "views": 86879,
+      "ctr_pct": 4.94,
+      "avd_pct": 15.78,
+      "note": "Bansuri sleep hero \u2014 1.4M lifetime. Risk source for Finding 14 cannibalization. Reason for clinical sub-niche framing in variant A."
     },
-    "strategic_bet": "MOMENTUM-PRESERVING FILLER \u2014 Fri June 5 PM (7pm IST). Reworked from parked End of Day Santoor (lifestyle pool, 5-20K floor) to Bansuri Sleep (sleep pool, 30-50K floor) \u2014 adds +20-25K Fri-Sat momentum without burning Mon Sitar swing (different instrument). May 29 Bansuri Sleep 'Drift Off' precedent = 42K, 21% AVD, 4.8% CTR \u2014 formula intact. Bansuri is channel's most multi-lane proven instrument (4 of top 10 lifetime ships). Cooldown: Bansuri last Jun 2 (anxiety), 3d gap + different lane (anxiety \u2192 sleep) = allowed per banked diversity modifier. Accepting mild Sat Tanpura sleep pool overlap (~5-10K cannibalization on Sat) as acceptable cost for Fri lift. Raga Yaman \u2014 channel-proven sleep raga (Bansuri Sound Sleep hero 1.4M used Yaman; Can't Fall Asleep 323K used Yaman).",
-    "success_good": "4000+ views, 22%+ AVD, 4%+ CTR in 48h \u2014 Bansuri sleep formula maintained, momentum filler succeeded",
-    "success_breakthrough": "10000+ views, 25%+ AVD, 5%+ CTR \u2014 Insomnia sub-niche or Bedtime lifestyle opens new audience pocket; bank as recurring Friday slot",
-    "failure_mode": "<1500 views or <3.5% CTR in 48h \u2014 Bansuri sleep cannibalized by May 7 hero (1.4M Sound Sleep) despite framing variation. If failure: bank both phrases as dead, stop testing Bansuri sleep ships until May 7 hero cools below 1M/month",
-    "reference_ships": [
-        {
-            "title": "Bansuri for Sound Sleep | Deep Sleep Music | 1 Hour",
-            "pub": "2026-05-07",
-            "impressions": 1407610,
-            "views": 86879,
-            "ctr_pct": 4.94,
-            "avd_pct": 15.78,
-            "note": "Bansuri sleep hero \u2014 1.4M lifetime. Risk source for Finding 14 cannibalization. Reason for clinical sub-niche framing in variant A."
-        },
-        {
-            "title": "Sleep Music | Drift Off Effortlessly | 1.5 Hours Bansuri",
-            "pub": "2026-05-29",
-            "impressions": 41887,
-            "views": 2653,
-            "ctr_pct": 4.78,
-            "avd_pct": 21.13,
-            "note": "Most recent Bansuri sleep ship. Confirms Bansuri sleep formula still earns ~42K despite hero. Target floor for tonight."
-        },
-        {
-            "title": "Can't Fall Asleep | Raga Yaman Bansuri | Delta Wave Sleep Session",
-            "pub": "2026-04-22",
-            "impressions": 323897,
-            "views": 20745,
-            "ctr_pct": 4.96,
-            "avd_pct": 20.95,
-            "note": "Insomnia-adjacent Bansuri ship at 323K \u2014 supports clinical specificity unlock for variant A."
-        }
-    ],
-    "tags": "sleep music for insomnia, bedtime bansuri music, sleep music bansuri, insomnia relief, bansuri sleep music, indian classical sleep music, flute sleep music, deep sleep music, sleep music indian, slow bansuri, bansuri instrumental, indian instrumental music, indian classical music, raga yaman, yaman, 432hz, delta waves, sleep music for adults, bedtime music, raga focus",
-    "description": "Sleep Music for Insomnia | Slow Bansuri | 1.5 Hours\n\nIt's 11pm. You tried to sleep an hour ago, and you're still wide awake.\n\nThe mind is still moving \u2014 running through the day, the conversations, the things you didn't finish. You don't need another meditation to follow. You don't need to be told to breathe. You just need a sound steady enough that the body finally gets permission to drop, and long enough that it carries you all the way through the falling-asleep window without ending.\n\nThis is 90 minutes of slow solo Bansuri in Raga Yaman \u2014 a deep, expansive evening raga of stillness and serenity. The Bansuri is the bamboo flute \u2014 soft, breath-driven, naturally rising and falling like a slow exhale. Yaman is the raga of evening turning to night: spacious, unhurried, slightly melancholic \u2014 exactly the texture of a mind finally letting go.\n\nSet the volume low, dim the lights, and let it play. Stop trying to sleep. Let the music do it.\n\n\ud83c\udfb5 What you'll hear:\n- Bansuri \u2014 slow, breath-driven solo bamboo flute with natural breath pauses\n- Raga Yaman \u2014 a deep evening raga of stillness, the channel's proven sleep raga\n- Soft tanpura drone holding the room open underneath\n- No tabla, no percussion \u2014 just flute and drone with space to breathe\n- 90 unbroken minutes at 432Hz tuning, with a soft delta undertone for sleep induction\n\n\u23f1 Chapters\n0:00    Settling into the dark\n20:00   The mind starting to slow\n45:00   Deep stillness\n70:00   Drifting under\n85:00   Quiet close\n\n\ud83e\udde0 How to use:\nLie down in the dark. Set the volume low \u2014 just enough to fill the edges of the room. Don't listen for anything; let the breath of the flute become the breath of the room and let your attention dissolve into it.\n\n\u23f1 Best for:\n\u2022 Insomnia and restless wakeful nights\n\u2022 The 11pm mind that won't shut off\n\u2022 Falling asleep when you've already tried once\n\u2022 Long-form sleep that carries you all the way through\n\u2022 Reading or quiet bedtime before turning off the lights\n\n\ud83d\udcfa Subscribe to Raga Focus for daily Indian classical music for meditation, calm, anxiety, and sleep.\n\n\u2014 Raga Focus\n\n#sleepmusicforinsomnia #bedtimebansurimusic #bansurisleepmusic #insomniarelief #indianclassicalmusic #432hz #ragayaman #ragafocus #deltawaves #sleepmusic #fluteformsleep",
-    "thumbnail_text_main": "INSOMNIA RELIEF",
-    "thumbnail_text_variants": [
-        "INSOMNIA RELIEF",
-        "STOP TRYING"
-    ],
-    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate patterned border in deep indigo, silver and aged cream with night-lotus, crescent-moon and star motifs, aged dark parchment background, deep nocturnal palette (midnight indigo, soft moonlit silver, faint warm lamp glow). Central figure: serene musician in deep-indigo and silver-trim attire seated cross-legged playing bansuri (bamboo flute held horizontally to the lips, eyes gently closed), in a quiet moonlit chamber. A single oil lamp glows faintly in the corner, soft moonlight falling through a latticed window. Expression of complete surrender, peaceful absorption \u2014 the breath flowing through the flute without effort. Bold deep-teal serif overlay text reading 'INSOMNIA RELIEF' centered (variant A) or 'STOP TRYING' (variant B), traditional Devanagari-influenced serif typography, high contrast for mobile readability. Midnight indigo, moonlit silver, and aged dark cream palette, deep-night stillness mood, composed and uncluttered single scene.",
-    "suno_prompt_A": "Indian classical bansuri solo in Raga Yaman, deep evening raga of stillness and serenity (raised 4th teevra Ma, expansive outward open evening character), insomnia and deep sleep induction mood, breath-driven bamboo flute with long sustained notes and natural breath pauses between phrases, soft airy gentle low-register tone like a slow exhale, soft tanpura drone underneath holding the room open, no tabla, no percussion, no rhythm, 432Hz tuning, 50-60 BPM drone feel, warm low-mid register, delta binaural at -20dB, spacious meditative production with extended pauses, seamless loop-friendly texture, like the body finally being given permission to drop into sleep, no vocals, no humming, no human voice",
-    "suno_prompt_B": "Instrumental only, no vocals, no humming, no human voice, Indian classical bansuri solo, Raga Yaman \u2014 deep evening raga of stillness, raised 4th teevra Ma expansive evening character, breath-driven bamboo flute with long sustained notes and natural breath pauses, soft airy low-register tone, soft tanpura drone, no tabla, no percussion, 432Hz, 50-60 BPM, warm low-mid register, delta binaural -20dB, spacious meditative, seamless loop, like the breath of the night itself",
-    "production_spec": {
-        "duration_minutes": 90,
-        "bpm_range": "50-60",
-        "key_frequency_hz": 432,
-        "binaural_carrier_hz": 180,
-        "binaural_wave": "Delta",
-        "binaural_beat_hz": 3.0,
-        "lufs_target": -18,
-        "loop_seam": "10s in / 30s out, Suno extend 3-4x \u2192 loop in post to fill 90 min",
-        "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
-        "notes": "Raga Yaman \u2014 deep evening raga of stillness and serenity (raised 4th teevra Ma giving the expansive outward open evening character). Channel-proven sleep raga: Bansuri Sound Sleep hero (1.4M lifetime) used Yaman; Can't Fall Asleep (323K) also Yaman. TABLA: NO tabla per banked Bansuri rule (Bansuri sleep heroes all tabla-free). Soft tanpura drone only. Delta 3Hz binaural at -20dB for genuine sleep induction. LUFS -18 (quietest target, correct for sleep played low in dark room). Bansuri = breath-driven bamboo flute \u2014 long sustained notes with NATURAL BREATH PAUSES between phrases (this is critical \u2014 the spaces are as important as the notes). Soft airy tone, not bright. 90min = 3-4 Suno clips of 2-3min each + loop extension. Sleep ships are forgiving on loop seams since listeners are drifting off. EMOTIONAL TAG ROTATION (one strong metaphor per clip): clip 1: 'like the body finally being given permission to drop into sleep' \u00b7 clip 2: 'the breath of the flute becoming the breath of the room' \u00b7 clip 3: 'the 11pm mind finally getting somewhere to land'. STRATEGIC NOTE: this ship maintains Friday channel momentum while protecting Mon Sitar swing \u2014 don't over-produce. Quality matters but cinematic ambition is wrong target. Aim for 'gentle and unbroken' over 'dramatic'."
+    {
+      "title": "Sleep Music | Drift Off Effortlessly | 1.5 Hours Bansuri",
+      "pub": "2026-05-29",
+      "impressions": 41887,
+      "views": 2653,
+      "ctr_pct": 4.78,
+      "avd_pct": 21.13,
+      "note": "Most recent Bansuri sleep ship. Confirms Bansuri sleep formula still earns ~42K despite hero. Target floor for tonight."
     },
-    "experiment_notes": "Test 37 \u2014 PAIRED-BUNDLE A/B for Bansuri sleep lane (banks clinical-vs-lifestyle BUNDLE data).\n\nVARIANT A \u2014 Clinical-Clinical Bundle:\n  Title: 'Sleep Music for Insomnia | Slow Bansuri | 1.5 Hours'\n  Thumb: 'INSOMNIA RELIEF'\n  \u2192 Fully clinical pain-naming alignment\n\nVARIANT B \u2014 Lifestyle + Psychological Bundle:\n  Title: 'Bedtime Bansuri Music | Indian Classical | 1.5 Hours'\n  Thumb: 'STOP TRYING'\n  \u2192 Lifestyle title + paradoxical psychological thumb\n\nDesign choice: title AND thumb vary together (not single-variable isolated). Trade-off: can't isolate which variable did the lifting. Benefit: each variant is internally coherent \u2014 viewer sees consistent message across title + thumb. Banks bundle-level signal which is more actionable for future Bansuri sleep brief direction.\n\nStrategic context: Reworked from parked End of Day Santoor after user momentum concern. Bansuri Sleep (May 29 precedent 42K) gives +20-25K Fri-Sat lift over lifestyle Santoor (5-20K) without burning Mon Sitar swing.\n\nPool: soft_pm (sleep) \u2014 accepting mild Sat Tanpura sleep pool overlap as cost.\n\nIf A wins: clinical pain-naming throughout (title + thumb) is the unlock for Bansuri sleep going forward.\nIf B wins: lifestyle moment + psychological-trigger thumb beats clinical \u2014 bank as new sleep-ship recipe.\nIf close (<5%): bundle approach neutral; revert to single-variable testing next sleep ship.",
-    "playlists": [
-        "Sleep & Deep Rest"
-    ],
-    "next_step": "PRODUCE: (1) Generate 3 Suno clips using prompt A (long descriptive) and B (compact) alternating, render at 432Hz / Delta 3Hz / LUFS -18 / 90 min. (2) Generate 2 thumbnails \u2014 both use same Pichwai/Kangra night Bansuri scene base; only overlay text differs: A = INSOMNIA RELIEF, B = STOP TRYING. (3) Upload to YT with native A/B test enabled, paired-bundle config (Title A + Thumb A vs Title B + Thumb B)."
+    {
+      "title": "Can't Fall Asleep | Raga Yaman Bansuri | Delta Wave Sleep Session",
+      "pub": "2026-04-22",
+      "impressions": 323897,
+      "views": 20745,
+      "ctr_pct": 4.96,
+      "avd_pct": 20.95,
+      "note": "Insomnia-adjacent Bansuri ship at 323K \u2014 supports clinical specificity unlock for variant A."
+    }
+  ],
+  "tags": "sleep music for insomnia, bedtime bansuri music, sleep music bansuri, insomnia relief, bansuri sleep music, indian classical sleep music, flute sleep music, deep sleep music, sleep music indian, slow bansuri, bansuri instrumental, indian instrumental music, indian classical music, raga yaman, yaman, 432hz, delta waves, sleep music for adults, bedtime music, raga focus",
+  "description": "Sleep Music for Insomnia | Slow Bansuri | 1.5 Hours\n\nIt's 11pm. You tried to sleep an hour ago, and you're still wide awake.\n\nThe mind is still moving \u2014 running through the day, the conversations, the things you didn't finish. You don't need another meditation to follow. You don't need to be told to breathe. You just need a sound steady enough that the body finally gets permission to drop, and long enough that it carries you all the way through the falling-asleep window without ending.\n\nThis is 90 minutes of slow solo Bansuri in Raga Yaman \u2014 a deep, expansive evening raga of stillness and serenity. The Bansuri is the bamboo flute \u2014 soft, breath-driven, naturally rising and falling like a slow exhale. Yaman is the raga of evening turning to night: spacious, unhurried, slightly melancholic \u2014 exactly the texture of a mind finally letting go.\n\nSet the volume low, dim the lights, and let it play. Stop trying to sleep. Let the music do it.\n\n\ud83c\udfb5 What you'll hear:\n- Bansuri \u2014 slow, breath-driven solo bamboo flute with natural breath pauses\n- Raga Yaman \u2014 a deep evening raga of stillness, the channel's proven sleep raga\n- Soft tanpura drone holding the room open underneath\n- No tabla, no percussion \u2014 just flute and drone with space to breathe\n- 90 unbroken minutes at 432Hz tuning, with a soft delta undertone for sleep induction\n\n\u23f1 Chapters\n0:00    Settling into the dark\n20:00   The mind starting to slow\n45:00   Deep stillness\n70:00   Drifting under\n85:00   Quiet close\n\n\ud83e\udde0 How to use:\nLie down in the dark. Set the volume low \u2014 just enough to fill the edges of the room. Don't listen for anything; let the breath of the flute become the breath of the room and let your attention dissolve into it.\n\n\u23f1 Best for:\n\u2022 Insomnia and restless wakeful nights\n\u2022 The 11pm mind that won't shut off\n\u2022 Falling asleep when you've already tried once\n\u2022 Long-form sleep that carries you all the way through\n\u2022 Reading or quiet bedtime before turning off the lights\n\n\ud83d\udcfa Subscribe to Raga Focus for daily Indian classical music for meditation, calm, anxiety, and sleep.\n\n\u2014 Raga Focus\n\n#sleepmusicforinsomnia #bedtimebansurimusic #bansurisleepmusic #insomniarelief #indianclassicalmusic #432hz #ragayaman #ragafocus #deltawaves #sleepmusic #fluteformsleep",
+  "thumbnail_text_main": "INSOMNIA RELIEF",
+  "thumbnail_text_variants": [
+    "INSOMNIA RELIEF",
+    "STOP TRYING"
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate patterned border in deep indigo, silver and aged cream with night-lotus, crescent-moon and star motifs, aged dark parchment background, deep nocturnal palette (midnight indigo, soft moonlit silver, faint warm lamp glow). Central figure: serene musician in deep-indigo and silver-trim attire seated cross-legged playing bansuri (bamboo flute held horizontally to the lips, eyes gently closed), in a quiet moonlit chamber. A single oil lamp glows faintly in the corner, soft moonlight falling through a latticed window. Expression of complete surrender, peaceful absorption \u2014 the breath flowing through the flute without effort. Bold deep-teal serif overlay text reading 'INSOMNIA RELIEF' centered (variant A) or 'STOP TRYING' (variant B), traditional Devanagari-influenced serif typography, high contrast for mobile readability. Midnight indigo, moonlit silver, and aged dark cream palette, deep-night stillness mood, composed and uncluttered single scene.",
+  "suno_prompt_A": "Indian classical bansuri solo in Raga Yaman, deep evening raga of stillness and serenity (raised 4th teevra Ma, expansive outward open evening character), insomnia and deep sleep induction mood, breath-driven bamboo flute with long sustained notes and natural breath pauses between phrases, soft airy gentle low-register tone like a slow exhale, soft tanpura drone underneath holding the room open, no tabla, no percussion, no rhythm, 432Hz tuning, 50-60 BPM drone feel, warm low-mid register, delta binaural at -20dB, spacious meditative production with extended pauses, seamless loop-friendly texture, like the body finally being given permission to drop into sleep, no vocals, no humming, no human voice",
+  "suno_prompt_B": "Instrumental only, no vocals, no humming, no human voice, Indian classical bansuri solo, Raga Yaman \u2014 deep evening raga of stillness, raised 4th teevra Ma expansive evening character, breath-driven bamboo flute with long sustained notes and natural breath pauses, soft airy low-register tone, soft tanpura drone, no tabla, no percussion, 432Hz, 50-60 BPM, warm low-mid register, delta binaural -20dB, spacious meditative, seamless loop, like the breath of the night itself",
+  "production_spec": {
+    "duration_minutes": 90,
+    "bpm_range": "50-60",
+    "key_frequency_hz": 432,
+    "binaural_carrier_hz": 180,
+    "binaural_wave": "Delta",
+    "binaural_beat_hz": 3.0,
+    "lufs_target": -18,
+    "loop_seam": "10s in / 30s out, Suno extend 3-4x \u2192 loop in post to fill 90 min",
+    "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+    "notes": "Raga Yaman \u2014 deep evening raga of stillness and serenity (raised 4th teevra Ma giving the expansive outward open evening character). Channel-proven sleep raga: Bansuri Sound Sleep hero (1.4M lifetime) used Yaman; Can't Fall Asleep (323K) also Yaman. TABLA: NO tabla per banked Bansuri rule (Bansuri sleep heroes all tabla-free). Soft tanpura drone only. Delta 3Hz binaural at -20dB for genuine sleep induction. LUFS -18 (quietest target, correct for sleep played low in dark room). Bansuri = breath-driven bamboo flute \u2014 long sustained notes with NATURAL BREATH PAUSES between phrases (this is critical \u2014 the spaces are as important as the notes). Soft airy tone, not bright. 90min = 3-4 Suno clips of 2-3min each + loop extension. Sleep ships are forgiving on loop seams since listeners are drifting off. EMOTIONAL TAG ROTATION (one strong metaphor per clip): clip 1: 'like the body finally being given permission to drop into sleep' \u00b7 clip 2: 'the breath of the flute becoming the breath of the room' \u00b7 clip 3: 'the 11pm mind finally getting somewhere to land'. STRATEGIC NOTE: this ship maintains Friday channel momentum while protecting Mon Sitar swing \u2014 don't over-produce. Quality matters but cinematic ambition is wrong target. Aim for 'gentle and unbroken' over 'dramatic'."
+  },
+  "experiment_notes": "Test 37 \u2014 PAIRED-BUNDLE A/B for Bansuri sleep lane (banks clinical-vs-lifestyle BUNDLE data).\n\nVARIANT A \u2014 Clinical-Clinical Bundle:\n  Title: 'Sleep Music for Insomnia | Slow Bansuri | 1.5 Hours'\n  Thumb: 'INSOMNIA RELIEF'\n  \u2192 Fully clinical pain-naming alignment\n\nVARIANT B \u2014 Lifestyle + Psychological Bundle:\n  Title: 'Bedtime Bansuri Music | Indian Classical | 1.5 Hours'\n  Thumb: 'STOP TRYING'\n  \u2192 Lifestyle title + paradoxical psychological thumb\n\nDesign choice: title AND thumb vary together (not single-variable isolated). Trade-off: can't isolate which variable did the lifting. Benefit: each variant is internally coherent \u2014 viewer sees consistent message across title + thumb. Banks bundle-level signal which is more actionable for future Bansuri sleep brief direction.\n\nStrategic context: Reworked from parked End of Day Santoor after user momentum concern. Bansuri Sleep (May 29 precedent 42K) gives +20-25K Fri-Sat lift over lifestyle Santoor (5-20K) without burning Mon Sitar swing.\n\nPool: soft_pm (sleep) \u2014 accepting mild Sat Tanpura sleep pool overlap as cost.\n\nIf A wins: clinical pain-naming throughout (title + thumb) is the unlock for Bansuri sleep going forward.\nIf B wins: lifestyle moment + psychological-trigger thumb beats clinical \u2014 bank as new sleep-ship recipe.\nIf close (<5%): bundle approach neutral; revert to single-variable testing next sleep ship.",
+  "playlists": [
+    "Sleep & Deep Rest"
+  ],
+  "next_step": "PRODUCE: (1) Generate 3 Suno clips using prompt A (long descriptive) and B (compact) alternating, render at 432Hz / Delta 3Hz / LUFS -18 / 90 min. (2) Generate 2 thumbnails \u2014 both use same Pichwai/Kangra night Bansuri scene base; only overlay text differs: A = INSOMNIA RELIEF, B = STOP TRYING. (3) Upload to YT with native A/B test enabled, paired-bundle config (Title A + Thumb A vs Title B + Thumb B)."
 }

@@ -1,113 +1,113 @@
 {
-    "id": "v_2026-06-06_inner_stillness_tanpura",
-    "status": "APPROVED",
-    "date_shipped": null,
-    "created_at": "2026-05-31",
-    "planned_date": "2026-06-06",
-    "planned_slot": "PM (7pm IST)",
-    "title": "Inner Stillness Music | Slow Tanpura Drone | 1.5 Hours",
-    "title_variants": {
-        "A": "Inner Stillness Music | Slow Tanpura Drone | 1.5 Hours",
-        "B": "Inner Stillness Music | Slow Tanpura Drone | 1.5 Hours"
+  "id": "v_2026-06-06_inner_stillness_tanpura",
+  "status": "PUBLISHED",
+  "date_shipped": "2026-06-06",
+  "created_at": "2026-05-31",
+  "planned_date": "2026-06-06",
+  "planned_slot": "PM (7pm IST)",
+  "title": "Inner Stillness Music | Slow Tanpura Drone | 1.5 Hours",
+  "title_variants": {
+    "A": "Inner Stillness Music | Slow Tanpura Drone | 1.5 Hours",
+    "B": "Inner Stillness Music | Slow Tanpura Drone | 1.5 Hours"
+  },
+  "components": {
+    "problem": "want a meditation backing that asks nothing from the mind / not sleep, not anxiety relief, just a tonal anchor to drop attention into / need a sound with no melodic events so the mind has nothing to follow and can finally settle into its own quiet",
+    "instrument": "Tanpura",
+    "raga": "Bhairavi (tonal key only \u2014 pure drone)",
+    "hz": "432Hz",
+    "wave": "Theta"
+  },
+  "validated_keywords": [
+    "Inner Stillness Music (slot 1 \u2014 wellness-aligned outcome lead, VidIQ 60, fresh on channel, tier-1 audience vocabulary)",
+    "Slow Tanpura Drone (slot 2 \u2014 instrument + format anchor, leans into Tanpura's drone identity)",
+    "1.5 Hours (slot 3 \u2014 duration anchor per Finding 17)",
+    "inner stillness music \u2014 60",
+    "drone meditation music",
+    "tanpura drone music",
+    "meditation drone",
+    "tanpura meditation music",
+    "deep meditation music",
+    "indian classical drone",
+    "theta meditation",
+    "432hz (74)",
+    "meditation music (locked through Jun 23, used as concept anchor only)",
+    "tanpura music",
+    "mental stillness",
+    "still mind music",
+    "raga focus (66)"
+  ],
+  "ab_test": {
+    "test_id": null,
+    "test_type": "NO A/B \u2014 single title, single thumbnail (Sat dead-day filler, niche meditation audience)",
+    "variant_A": {
+      "title": "Inner Stillness Music | Slow Tanpura Drone | 1.5 Hours",
+      "thumbnail_text": "STILL THE MIND",
+      "hypothesis": "Single title + single thumb. 'Inner Stillness Music' lead (VidIQ 60) targets meditation/stillness search intent with tier-1 wellness vocabulary. Thumb 'STILL THE MIND' = imperative outcome (sleep-lane format rule applies broadly to meditation/stillness lanes \u2014 outcome-imperative wins). Fresh drone-meditation lane never tested on channel. Pattern-interrupt vs the calm/sleep/anxiety thumbs the channel typically uses."
     },
-    "components": {
-        "problem": "want a meditation backing that asks nothing from the mind / not sleep, not anxiety relief, just a tonal anchor to drop attention into / need a sound with no melodic events so the mind has nothing to follow and can finally settle into its own quiet",
-        "instrument": "Tanpura",
-        "raga": "Bhairavi (tonal key only \u2014 pure drone)",
-        "hz": "432Hz",
-        "wave": "Theta"
+    "variant_B": {
+      "title": "Inner Stillness Music | Slow Tanpura Drone | 1.5 Hours",
+      "thumbnail_text": "STILL THE MIND",
+      "hypothesis": "Same as A \u2014 no test. Sat dead-day filler, niche audience, save A/B budget for higher-stakes ships."
     },
-    "validated_keywords": [
-        "Inner Stillness Music (slot 1 \u2014 wellness-aligned outcome lead, VidIQ 60, fresh on channel, tier-1 audience vocabulary)",
-        "Slow Tanpura Drone (slot 2 \u2014 instrument + format anchor, leans into Tanpura's drone identity)",
-        "1.5 Hours (slot 3 \u2014 duration anchor per Finding 17)",
-        "inner stillness music \u2014 60",
-        "drone meditation music",
-        "tanpura drone music",
-        "meditation drone",
-        "tanpura meditation music",
-        "deep meditation music",
-        "indian classical drone",
-        "theta meditation",
-        "432hz (74)",
-        "meditation music (locked through Jun 23, used as concept anchor only)",
-        "tanpura music",
-        "mental stillness",
-        "still mind music",
-        "raga focus (66)"
-    ],
-    "ab_test": {
-        "test_id": null,
-        "test_type": "NO A/B \u2014 single title, single thumbnail (Sat dead-day filler, niche meditation audience)",
-        "variant_A": {
-            "title": "Inner Stillness Music | Slow Tanpura Drone | 1.5 Hours",
-            "thumbnail_text": "STILL THE MIND",
-            "hypothesis": "Single title + single thumb. 'Inner Stillness Music' lead (VidIQ 60) targets meditation/stillness search intent with tier-1 wellness vocabulary. Thumb 'STILL THE MIND' = imperative outcome (sleep-lane format rule applies broadly to meditation/stillness lanes \u2014 outcome-imperative wins). Fresh drone-meditation lane never tested on channel. Pattern-interrupt vs the calm/sleep/anxiety thumbs the channel typically uses."
-        },
-        "variant_B": {
-            "title": "Inner Stillness Music | Slow Tanpura Drone | 1.5 Hours",
-            "thumbnail_text": "STILL THE MIND",
-            "hypothesis": "Same as A \u2014 no test. Sat dead-day filler, niche audience, save A/B budget for higher-stakes ships."
-        },
-        "test_method": "No A/B. Single ship. Sat dead-day (banked rule: Sat 22% impressions penalty even for heroes) doesn't justify burning an A/B test slot. Title and thumb both chosen on best-evidence direction. Reading this brief's outcome: if 15K+ impressions and 22%+ AVD, drone meditation lane viable for future low-stakes weeks. If <8K impressions, drone meditation lane too narrow for this channel's audience."
+    "test_method": "No A/B. Single ship. Sat dead-day (banked rule: Sat 22% impressions penalty even for heroes) doesn't justify burning an A/B test slot. Title and thumb both chosen on best-evidence direction. Reading this brief's outcome: if 15K+ impressions and 22%+ AVD, drone meditation lane viable for future low-stakes weeks. If <8K impressions, drone meditation lane too narrow for this channel's audience."
+  },
+  "strategic_bet": "DEAD-DAY NICHE FILLER \u2014 Sat June 6 PM (7pm IST). Pivoted from sleep lane (which would have cannibalized Fri Bansuri Sleep) to drone meditation (fresh own-pool niche). Tanpura is filler-tier instrument (no hero on channel, max 32K precedent) so this is deliberately a low-stakes ship. Drone meditation lane = own audience pool (meditation practitioners, sound healers, mantra-adjacent practitioners) \u2014 does not compete with Fri Bansuri Sleep (sleep seekers), Sun Sarod Overthinking (cortisol_anxiety), or Mon Sitar Cortisol (cortisol_anxiety swing). Saturday + Tanpura + niche lane = realistic 12-25K impressions, 22-28% AVD. NOT chasing barrier-break. NOT touching Mon swing. Just maintaining cadence with a brand-aligned tier-1 wellness ship on a structurally dead day. The strategic value is consistency + first channel data point on drone meditation lane (could unlock future low-stakes weeks).",
+  "success_good": "3000+ views, 22%+ AVD, 3.5%+ CTR in 48h \u2014 drone meditation lane viable for future filler weeks",
+  "success_breakthrough": "8000+ views, 28%+ AVD \u2014 drone meditation has hidden audience pull; lock as recurring Sat slot",
+  "failure_mode": "<800 views or <3% CTR in 48h \u2014 drone meditation too narrow for channel's English wellness audience. If failure: bank drone meditation as dead lane, return to Tanpura sleep for future filler ships (accepting Bansuri sleep cannibalization cost)",
+  "reference_ships": [
+    {
+      "title": "Overthinking Music | Healing with Bamboo Flute & Tanpura | 1 Hour",
+      "pub": "2026-05-03",
+      "impressions": 27804,
+      "views": 1561,
+      "ctr_pct": 4.17,
+      "avd_pct": 26.24,
+      "note": "Tanpura's channel-best AVD result \u2014 paired with Bamboo Flute in overthinking lane. Confirms Tanpura can earn 26%+ AVD with the right lane framing. This brief takes the same principle (Tanpura in fresh non-sleep lane) but solo drone in meditation framing."
     },
-    "strategic_bet": "DEAD-DAY NICHE FILLER \u2014 Sat June 6 PM (7pm IST). Pivoted from sleep lane (which would have cannibalized Fri Bansuri Sleep) to drone meditation (fresh own-pool niche). Tanpura is filler-tier instrument (no hero on channel, max 32K precedent) so this is deliberately a low-stakes ship. Drone meditation lane = own audience pool (meditation practitioners, sound healers, mantra-adjacent practitioners) \u2014 does not compete with Fri Bansuri Sleep (sleep seekers), Sun Sarod Overthinking (cortisol_anxiety), or Mon Sitar Cortisol (cortisol_anxiety swing). Saturday + Tanpura + niche lane = realistic 12-25K impressions, 22-28% AVD. NOT chasing barrier-break. NOT touching Mon swing. Just maintaining cadence with a brand-aligned tier-1 wellness ship on a structurally dead day. The strategic value is consistency + first channel data point on drone meditation lane (could unlock future low-stakes weeks).",
-    "success_good": "3000+ views, 22%+ AVD, 3.5%+ CTR in 48h \u2014 drone meditation lane viable for future filler weeks",
-    "success_breakthrough": "8000+ views, 28%+ AVD \u2014 drone meditation has hidden audience pull; lock as recurring Sat slot",
-    "failure_mode": "<800 views or <3% CTR in 48h \u2014 drone meditation too narrow for channel's English wellness audience. If failure: bank drone meditation as dead lane, return to Tanpura sleep for future filler ships (accepting Bansuri sleep cannibalization cost)",
-    "reference_ships": [
-        {
-            "title": "Overthinking Music | Healing with Bamboo Flute & Tanpura | 1 Hour",
-            "pub": "2026-05-03",
-            "impressions": 27804,
-            "views": 1561,
-            "ctr_pct": 4.17,
-            "avd_pct": 26.24,
-            "note": "Tanpura's channel-best AVD result \u2014 paired with Bamboo Flute in overthinking lane. Confirms Tanpura can earn 26%+ AVD with the right lane framing. This brief takes the same principle (Tanpura in fresh non-sleep lane) but solo drone in meditation framing."
-        },
-        {
-            "title": "Insomnia Relief Music | Tanpura Drone | 1.5 Hours",
-            "pub": "2026-05-13",
-            "impressions": 32739,
-            "views": 1989,
-            "ctr_pct": 4.55,
-            "avd_pct": 17.19,
-            "note": "Tanpura's impression ceiling on channel (32K). Sleep lane \u2014 what this brief deliberately AVOIDS to escape Fri Bansuri Sleep cannibalization."
-        },
-        {
-            "title": "Morning Meditation Music | Tanpura Instrumental | 1.5 Hours of Peaceful Focus",
-            "pub": "2026-05-21",
-            "impressions": 23625,
-            "views": 1340,
-            "ctr_pct": 4.16,
-            "avd_pct": 20.15,
-            "note": "Closest reference (meditation lane Tanpura) \u2014 though morning-coded. PM evening drone meditation is fresh."
-        }
-    ],
-    "tags": "inner stillness music, slow tanpura drone, drone meditation music, tanpura meditation music, meditation drone, tanpura drone music, indian classical drone, deep meditation music, theta meditation, mental stillness music, still the mind, indian classical music, indian instrumental music, tanpura instrumental, 432hz, theta waves, meditation music, mindfulness music, slow indian classical, raga focus",
-    "description": "Inner Stillness Music | Slow Tanpura Drone | 1.5 Hours\n\nSome moments you don't need music to feel something. You just need a sound to drop attention into.\n\nThis is for those moments. Not sleep, not active relaxation, not a meditation guided by anyone \u2014 just a tonal anchor with nothing to follow. The mind has nothing to chase, no melodic phrase to anticipate, no rhythm to count. And in the absence of all those things, the noise inside has nowhere left to go.\n\nThis is 90 minutes of pure solo Tanpura drone. The Tanpura is the Indian drone instrument \u2014 four long strings tuned to a root key, plucked in a slow cyclic pattern, with the characteristic jawari buzz that creates a rich resonant overtone wash. There's no melody. There's no raga in the usual sense \u2014 just the continuous tonal center, vibrating into the room like the inside of a deep bell.\n\nSit upright with it for meditation, lie down with it to drop in, or have it underneath you as you sit quietly and do nothing.\n\n\ud83c\udfb5 What you'll hear:\n- Tanpura \u2014 the Indian drone, four-string cyclic plucking in a slow steady pattern\n- Rich resonant overtone wash with the soft jawari buzz that makes it shimmer\n- Deep warm low register with rising harmonic overtones\n- No melody, no rhythm, no tabla, no percussion \u2014 pure tonal anchor\n- 90 unbroken minutes at 432Hz tuning, with a soft theta undertone for meditative depth\n\n\u23f1 Chapters\n0:00    Settling in\n20:00   The mind beginning to quiet\n45:00   Pure tonal anchor\n70:00   Deep stillness\n85:00   Quiet close\n\n\ud83e\udde0 How to use:\nSit or lie down somewhere quiet. Set the volume low \u2014 just enough to fill the edges of the room. Don't listen for anything. There's no melody to wait for. Let the drone become the background of the silence and let your attention settle into it.\n\n\u23f1 Best for:\n\u2022 Silent meditation backing (without guided voice)\n\u2022 Sitting practice \u2014 zazen, vipassana, breath observation\n\u2022 Sound bath / sound healing sessions\n\u2022 Mantra repetition (use as drone underneath your own chanting)\n\u2022 Any moment that needs a tonal anchor with nothing to follow\n\n\ud83d\udcfa Subscribe to Raga Focus for daily Indian classical music for meditation, calm, anxiety, and sleep.\n\n\u2014 Raga Focus\n\n#innerstillnessmusic #tanpuradrone #dronemeditationmusic #meditationmusic #tanpuramusic #indianclassicalmusic #432hz #thetawaves #ragafocus #stillthemind #mindfulnessmusic",
-    "thumbnail_text_main": "STILL THE MIND",
-    "thumbnail_text_variants": [
-        "STILL THE MIND"
-    ],
-    "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate patterned border in deep slate-blue, antique silver and aged cream with mountain, lotus and rising-sun-disc motifs, aged warm parchment background, deep meditative palette (deep slate-blue, antique silver, soft amber lamplight, aged cream). Central figure: serene musician seated cross-legged in deep slate-blue and silver-trim attire in formal meditation posture, eyes gently closed, with a tanpura held upright at the side (tall long-necked drone instrument with a large round gourd body and four long strings, gently plucked) \u2014 figure is in deep stillness, the instrument resonating beside them like a meditation companion rather than being actively performed. Simple inner space, single soft lamp, no decorative clutter. Expression of profound interior quiet \u2014 not asleep, fully present and still. Bold deep-teal serif overlay text reading 'STILL THE MIND' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Deep slate-blue, antique silver, and aged cream palette, deep meditative stillness mood, composed and uncluttered single scene.",
-    "suno_prompt_A": "Indian classical tanpura drone meditation, deep tonal drone with no melody and no rhythm, slow plucked cyclic Sa-Pa-Sa-Sa drone cycle (root-fifth-root-root traditional tanpura pattern), rich resonant overtone wash with the characteristic soft jawari buzzing shimmer of the bridge, tuned to warm low fundamental key (Bhairavi tonal center), no melodic phrases, no raga exposition, no tabla, no percussion \u2014 just the continuous drone, 432Hz tuning, very slow 40-50 BPM drone pulse, deep warm low register with rising overtone harmonics, theta binaural at -20dB, meditative immersive production, seamless loop-friendly texture, like the inside of a deep bell vibrating into stillness \u2014 nothing to follow, just something to settle into, no vocals, no humming, no human voice",
-    "suno_prompt_B": "Instrumental only, no vocals, no humming, no human voice, Indian classical tanpura drone \u2014 deep tonal drone with no melody and no rhythm, slow plucked cyclic Sa-Pa-Sa-Sa pattern, rich overtone wash with soft jawari shimmer, warm low fundamental (Bhairavi key), no tabla, no percussion, 432Hz, 40-50 BPM drone pulse, deep warm low register, theta binaural -20dB, meditative immersive, seamless loop, like the inside of a deep bell vibrating",
-    "production_spec": {
-        "duration_minutes": 90,
-        "bpm_range": "40-50",
-        "key_frequency_hz": 432,
-        "binaural_carrier_hz": 200,
-        "binaural_wave": "Theta",
-        "binaural_beat_hz": 5.0,
-        "lufs_target": -16,
-        "loop_seam": "10s in / 30s out, Suno extend 3-4x \u2192 loop in post to fill 90 min. Drone ships are EXTREMELY forgiving on loop seams since there is no melodic event to disrupt.",
-        "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
-        "notes": "PURE TANPURA DRONE \u2014 fundamentally different from sleep ships. No melodic instrument, no raga exposition, just the tonal anchor. TABLA: NO tabla, NO percussion \u2014 rhythm would intrude on the meditative tonal center. Tanpura cycle: Sa-Pa-Sa-Sa (root-fifth-root-root) is the traditional cyclic plucking pattern \u2014 slow, steady, hypnotic. Jawari buzz is the SIGNATURE \u2014 the bridge resonance that creates the rich overtone shimmer. Without it the drone sounds dead. Theta 5Hz binaural at -20dB \u2014 meditation depth (not delta sleep, not alpha awake). LUFS -16 = meditation calm target. Bhairavi tonal key chosen for warm low fundamental \u2014 but raga itself doesn't matter since there's no melody. Could be Yaman or Bhairav key \u2014 Tanpura is just root + 5th. EMOTIONAL TAG ROTATION (one strong metaphor per clip, team reference): clip 1: 'like the inside of a deep bell vibrating into stillness' \u00b7 clip 2: 'nothing to follow, just something to settle into' \u00b7 clip 3: 'the room itself becoming the meditation'. STRATEGIC NOTE: Sat dead-day niche filler. Drone meditation audience is small but loyal \u2014 production quality should match the niche (deep, immersive, no compromises on the jawari shimmer)."
+    {
+      "title": "Insomnia Relief Music | Tanpura Drone | 1.5 Hours",
+      "pub": "2026-05-13",
+      "impressions": 32739,
+      "views": 1989,
+      "ctr_pct": 4.55,
+      "avd_pct": 17.19,
+      "note": "Tanpura's impression ceiling on channel (32K). Sleep lane \u2014 what this brief deliberately AVOIDS to escape Fri Bansuri Sleep cannibalization."
     },
-    "experiment_notes": "Sat Jun 6 PM \u2014 niche drone meditation filler. No A/B test (dead-day, save test budget for higher-stakes ships).\n\nPivoted from sleep lane (Music for Sleepless Nights) to drone meditation (Inner Stillness Music) after Fri Bansuri Sleep was locked \u2014 same-pool cannibalization avoided.\n\nFirst channel data point on drone meditation lane: if 15K+ / 22%+ AVD, drone meditation viable for future Sat/filler weeks. If <8K, drone meditation too narrow for tier-1 wellness audience \u2014 return to sleep lane for filler.\n\nStrategic context: Sat is structurally dead-day on channel (banked 22% impression penalty). This brief deliberately is NOT a barrier-break attempt \u2014 it's cadence maintenance + lane scouting + brand consistency. Mon Jun 8 Sitar Cortisol swing fully protected (different pool entirely: drone meditation vs cortisol_anxiety).",
-    "playlists": [
-        "Meditation"
-    ],
-    "next_step": "PRODUCE: Generate 3 Suno clips with prompt A (long descriptive) and B (compact) alternating. Render at 432Hz / Theta 5Hz @ -20dB / LUFS -16 / 90 min. Single thumbnail with STILL THE MIND overlay. Loop seams very forgiving (no melody to disrupt)."
+    {
+      "title": "Morning Meditation Music | Tanpura Instrumental | 1.5 Hours of Peaceful Focus",
+      "pub": "2026-05-21",
+      "impressions": 23625,
+      "views": 1340,
+      "ctr_pct": 4.16,
+      "avd_pct": 20.15,
+      "note": "Closest reference (meditation lane Tanpura) \u2014 though morning-coded. PM evening drone meditation is fresh."
+    }
+  ],
+  "tags": "inner stillness music, slow tanpura drone, drone meditation music, tanpura meditation music, meditation drone, tanpura drone music, indian classical drone, deep meditation music, theta meditation, mental stillness music, still the mind, indian classical music, indian instrumental music, tanpura instrumental, 432hz, theta waves, meditation music, mindfulness music, slow indian classical, raga focus",
+  "description": "Inner Stillness Music | Slow Tanpura Drone | 1.5 Hours\n\nSome moments you don't need music to feel something. You just need a sound to drop attention into.\n\nThis is for those moments. Not sleep, not active relaxation, not a meditation guided by anyone \u2014 just a tonal anchor with nothing to follow. The mind has nothing to chase, no melodic phrase to anticipate, no rhythm to count. And in the absence of all those things, the noise inside has nowhere left to go.\n\nThis is 90 minutes of pure solo Tanpura drone. The Tanpura is the Indian drone instrument \u2014 four long strings tuned to a root key, plucked in a slow cyclic pattern, with the characteristic jawari buzz that creates a rich resonant overtone wash. There's no melody. There's no raga in the usual sense \u2014 just the continuous tonal center, vibrating into the room like the inside of a deep bell.\n\nSit upright with it for meditation, lie down with it to drop in, or have it underneath you as you sit quietly and do nothing.\n\n\ud83c\udfb5 What you'll hear:\n- Tanpura \u2014 the Indian drone, four-string cyclic plucking in a slow steady pattern\n- Rich resonant overtone wash with the soft jawari buzz that makes it shimmer\n- Deep warm low register with rising harmonic overtones\n- No melody, no rhythm, no tabla, no percussion \u2014 pure tonal anchor\n- 90 unbroken minutes at 432Hz tuning, with a soft theta undertone for meditative depth\n\n\u23f1 Chapters\n0:00    Settling in\n20:00   The mind beginning to quiet\n45:00   Pure tonal anchor\n70:00   Deep stillness\n85:00   Quiet close\n\n\ud83e\udde0 How to use:\nSit or lie down somewhere quiet. Set the volume low \u2014 just enough to fill the edges of the room. Don't listen for anything. There's no melody to wait for. Let the drone become the background of the silence and let your attention settle into it.\n\n\u23f1 Best for:\n\u2022 Silent meditation backing (without guided voice)\n\u2022 Sitting practice \u2014 zazen, vipassana, breath observation\n\u2022 Sound bath / sound healing sessions\n\u2022 Mantra repetition (use as drone underneath your own chanting)\n\u2022 Any moment that needs a tonal anchor with nothing to follow\n\n\ud83d\udcfa Subscribe to Raga Focus for daily Indian classical music for meditation, calm, anxiety, and sleep.\n\n\u2014 Raga Focus\n\n#innerstillnessmusic #tanpuradrone #dronemeditationmusic #meditationmusic #tanpuramusic #indianclassicalmusic #432hz #thetawaves #ragafocus #stillthemind #mindfulnessmusic",
+  "thumbnail_text_main": "STILL THE MIND",
+  "thumbnail_text_variants": [
+    "STILL THE MIND"
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate patterned border in deep slate-blue, antique silver and aged cream with mountain, lotus and rising-sun-disc motifs, aged warm parchment background, deep meditative palette (deep slate-blue, antique silver, soft amber lamplight, aged cream). Central figure: serene musician seated cross-legged in deep slate-blue and silver-trim attire in formal meditation posture, eyes gently closed, with a tanpura held upright at the side (tall long-necked drone instrument with a large round gourd body and four long strings, gently plucked) \u2014 figure is in deep stillness, the instrument resonating beside them like a meditation companion rather than being actively performed. Simple inner space, single soft lamp, no decorative clutter. Expression of profound interior quiet \u2014 not asleep, fully present and still. Bold deep-teal serif overlay text reading 'STILL THE MIND' top-center, traditional Devanagari-influenced serif typography, high contrast for mobile readability. Deep slate-blue, antique silver, and aged cream palette, deep meditative stillness mood, composed and uncluttered single scene.",
+  "suno_prompt_A": "Indian classical tanpura drone meditation, deep tonal drone with no melody and no rhythm, slow plucked cyclic Sa-Pa-Sa-Sa drone cycle (root-fifth-root-root traditional tanpura pattern), rich resonant overtone wash with the characteristic soft jawari buzzing shimmer of the bridge, tuned to warm low fundamental key (Bhairavi tonal center), no melodic phrases, no raga exposition, no tabla, no percussion \u2014 just the continuous drone, 432Hz tuning, very slow 40-50 BPM drone pulse, deep warm low register with rising overtone harmonics, theta binaural at -20dB, meditative immersive production, seamless loop-friendly texture, like the inside of a deep bell vibrating into stillness \u2014 nothing to follow, just something to settle into, no vocals, no humming, no human voice",
+  "suno_prompt_B": "Instrumental only, no vocals, no humming, no human voice, Indian classical tanpura drone \u2014 deep tonal drone with no melody and no rhythm, slow plucked cyclic Sa-Pa-Sa-Sa pattern, rich overtone wash with soft jawari shimmer, warm low fundamental (Bhairavi key), no tabla, no percussion, 432Hz, 40-50 BPM drone pulse, deep warm low register, theta binaural -20dB, meditative immersive, seamless loop, like the inside of a deep bell vibrating",
+  "production_spec": {
+    "duration_minutes": 90,
+    "bpm_range": "40-50",
+    "key_frequency_hz": 432,
+    "binaural_carrier_hz": 200,
+    "binaural_wave": "Theta",
+    "binaural_beat_hz": 5.0,
+    "lufs_target": -16,
+    "loop_seam": "10s in / 30s out, Suno extend 3-4x \u2192 loop in post to fill 90 min. Drone ships are EXTREMELY forgiving on loop seams since there is no melodic event to disrupt.",
+    "render": "MP4 1920x1080, AAC 320kbps, 48kHz, +faststart",
+    "notes": "PURE TANPURA DRONE \u2014 fundamentally different from sleep ships. No melodic instrument, no raga exposition, just the tonal anchor. TABLA: NO tabla, NO percussion \u2014 rhythm would intrude on the meditative tonal center. Tanpura cycle: Sa-Pa-Sa-Sa (root-fifth-root-root) is the traditional cyclic plucking pattern \u2014 slow, steady, hypnotic. Jawari buzz is the SIGNATURE \u2014 the bridge resonance that creates the rich overtone shimmer. Without it the drone sounds dead. Theta 5Hz binaural at -20dB \u2014 meditation depth (not delta sleep, not alpha awake). LUFS -16 = meditation calm target. Bhairavi tonal key chosen for warm low fundamental \u2014 but raga itself doesn't matter since there's no melody. Could be Yaman or Bhairav key \u2014 Tanpura is just root + 5th. EMOTIONAL TAG ROTATION (one strong metaphor per clip, team reference): clip 1: 'like the inside of a deep bell vibrating into stillness' \u00b7 clip 2: 'nothing to follow, just something to settle into' \u00b7 clip 3: 'the room itself becoming the meditation'. STRATEGIC NOTE: Sat dead-day niche filler. Drone meditation audience is small but loyal \u2014 production quality should match the niche (deep, immersive, no compromises on the jawari shimmer)."
+  },
+  "experiment_notes": "Sat Jun 6 PM \u2014 niche drone meditation filler. No A/B test (dead-day, save test budget for higher-stakes ships).\n\nPivoted from sleep lane (Music for Sleepless Nights) to drone meditation (Inner Stillness Music) after Fri Bansuri Sleep was locked \u2014 same-pool cannibalization avoided.\n\nFirst channel data point on drone meditation lane: if 15K+ / 22%+ AVD, drone meditation viable for future Sat/filler weeks. If <8K, drone meditation too narrow for tier-1 wellness audience \u2014 return to sleep lane for filler.\n\nStrategic context: Sat is structurally dead-day on channel (banked 22% impression penalty). This brief deliberately is NOT a barrier-break attempt \u2014 it's cadence maintenance + lane scouting + brand consistency. Mon Jun 8 Sitar Cortisol swing fully protected (different pool entirely: drone meditation vs cortisol_anxiety).",
+  "playlists": [
+    "Meditation"
+  ],
+  "next_step": "PRODUCE: Generate 3 Suno clips with prompt A (long descriptive) and B (compact) alternating. Render at 432Hz / Theta 5Hz @ -20dB / LUFS -16 / 90 min. Single thumbnail with STILL THE MIND overlay. Loop seams very forgiving (no melody to disrupt)."
 }
