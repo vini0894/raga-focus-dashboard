@@ -1,146 +1,157 @@
 {
   "version": 1,
-  "generated_at": "2026-05-21T09:53:30",
+  "generated_at": "2026-06-16T22:21:36",
   "channel_ctr_avg": 3.63,
   "channel_avd_avg": 21.3,
   "instrument_summary": {
     "sitar": {
-      "n": 8,
-      "ctr_avg": 3.5,
-      "avd_avg": 23.15,
+      "n": 11,
+      "ctr_avg": 3.54,
+      "avd_avg": 24.75,
       "role": "REACH_HERO"
     },
     "surbahar": {
-      "n": 2,
-      "ctr_avg": 3.99,
-      "avd_avg": 24.89,
+      "n": 4,
+      "ctr_avg": 3.88,
+      "avd_avg": 22.49,
       "role": "WORKHORSE"
     },
     "bansuri": {
-      "n": 5,
-      "ctr_avg": 4.87,
-      "avd_avg": 22.16,
-      "role": "CTR_HERO"
+      "n": 7,
+      "ctr_avg": 4.34,
+      "avd_avg": 20.2,
+      "role": "UNCLASSIFIED"
     },
     "sarangi": {
-      "n": 3,
-      "ctr_avg": 3.97,
-      "avd_avg": 17.89,
+      "n": 4,
+      "ctr_avg": 4.15,
+      "avd_avg": 19.4,
       "role": "WORKHORSE"
     },
     "(none)": {
       "n": 5,
-      "ctr_avg": 3.71,
-      "avd_avg": 23.12,
+      "ctr_avg": 5.12,
+      "avd_avg": 19.95,
       "role": "UNCLASSIFIED"
     },
     "veena": {
-      "n": 4,
-      "ctr_avg": 4.64,
-      "avd_avg": 27.49,
+      "n": 5,
+      "ctr_avg": 4.27,
+      "avd_avg": 26.03,
       "role": "RETENTION_HERO"
     },
     "santoor": {
-      "n": 3,
-      "ctr_avg": 4.15,
-      "avd_avg": 35.05,
+      "n": 5,
+      "ctr_avg": 3.81,
+      "avd_avg": 30.68,
       "role": "WORKHORSE"
     },
     "tanpura": {
-      "n": 3,
-      "ctr_avg": 2.46,
-      "avd_avg": 21.75,
+      "n": 5,
+      "ctr_avg": 3.43,
+      "avd_avg": 20.37,
       "role": "MOONSHOT_UNTESTED_MODERN"
     },
     "dilruba": {
-      "n": 4,
-      "ctr_avg": 3.49,
-      "avd_avg": 19.32,
+      "n": 5,
+      "ctr_avg": 3.78,
+      "avd_avg": 24.52,
       "role": "MID_WORKHORSE"
     },
     "tabla": {
       "n": 1,
-      "ctr_avg": 5.85,
-      "avd_avg": 10.75,
+      "ctr_avg": 5.19,
+      "avd_avg": 9.37,
       "role": "UNCLASSIFIED"
     },
     "violin": {
       "n": 1,
-      "ctr_avg": 2.86,
-      "avd_avg": 14.63,
+      "ctr_avg": 2.37,
+      "avd_avg": 9.04,
       "role": "UNCLASSIFIED"
     },
     "bamboo_flute": {
       "n": 1,
-      "ctr_avg": 2.45,
-      "avd_avg": 7.6,
+      "ctr_avg": 2.96,
+      "avd_avg": 6.4,
       "role": "UNCLASSIFIED"
     },
     "esraj": {
       "n": 1,
-      "ctr_avg": 2.83,
-      "avd_avg": 6.81,
+      "ctr_avg": 2.25,
+      "avd_avg": 8.85,
       "role": "MOONSHOT_UNTESTED_MODERN"
     },
     "sarod": {
-      "n": 1,
-      "ctr_avg": 2.28,
-      "avd_avg": 4.66,
+      "n": 2,
+      "ctr_avg": 3.07,
+      "avd_avg": 13.13,
       "role": "MOONSHOT_UNTESTED_MODERN"
     },
     "swaramandal": {
       "n": 1,
-      "ctr_avg": 1.65,
-      "avd_avg": 2.41,
+      "ctr_avg": 1.96,
+      "avd_avg": 6.09,
       "role": "UNCLASSIFIED"
     },
     "cello": {
       "n": 1,
-      "ctr_avg": 1.02,
-      "avd_avg": 36.91,
+      "ctr_avg": 2.92,
+      "avd_avg": 37.78,
+      "role": "UNCLASSIFIED"
+    },
+    "none": {
+      "n": 1,
+      "ctr_avg": 3.9,
+      "avd_avg": 20.07,
       "role": "UNCLASSIFIED"
     }
   },
   "lane_summary": {
     "reset": {
-      "n": 5,
-      "ctr_avg": 2.8,
-      "avd_avg": 17.41
+      "n": 6,
+      "ctr_avg": 2.63,
+      "avd_avg": 18.68
     },
     "calm": {
-      "n": 6,
-      "ctr_avg": 4.0,
-      "avd_avg": 23.08
+      "n": 7,
+      "ctr_avg": 4.09,
+      "avd_avg": 23.96
     },
     "focus": {
-      "n": 12,
-      "ctr_avg": 3.6,
-      "avd_avg": 26.17
+      "n": 16,
+      "ctr_avg": 4.35,
+      "avd_avg": 24.64
     },
     "healing": {
-      "n": 7,
-      "ctr_avg": 4.21,
-      "avd_avg": 26.42
+      "n": 9,
+      "ctr_avg": 3.91,
+      "avd_avg": 24.5
     },
     "sleep": {
-      "n": 3,
-      "ctr_avg": 4.84,
-      "avd_avg": 19.12
+      "n": 5,
+      "ctr_avg": 4.53,
+      "avd_avg": 18.44
     },
     "uplifting": {
       "n": 3,
-      "ctr_avg": 4.19,
-      "avd_avg": 21.0
+      "ctr_avg": 4.32,
+      "avd_avg": 21.55
     },
     "anxiety_stress": {
       "n": 6,
-      "ctr_avg": 3.12,
-      "avd_avg": 14.41
+      "ctr_avg": 2.81,
+      "avd_avg": 16.46
     },
     "other": {
-      "n": 2,
-      "ctr_avg": 2.78,
-      "avd_avg": 12.56
+      "n": 1,
+      "ctr_avg": 2.25,
+      "avd_avg": 8.85
+    },
+    "clinical": {
+      "n": 7,
+      "ctr_avg": 3.91,
+      "avd_avg": 21.98
     }
   },
   "matrix": {
@@ -148,50 +159,50 @@
       "instrument": "sitar",
       "lane": "reset",
       "n": 1,
-      "ctr_avg": 3.42,
-      "avd_avg": 19.5,
-      "views_med": 194768,
-      "views_max": 194768,
+      "ctr_avg": 3.22,
+      "avd_avg": 16.06,
+      "views_med": 593231,
+      "views_max": 593231,
       "top_title": "Sitar for Dopamine Reset | Indian Classical Music for Mindfulness"
     },
     "surbahar__calm": {
       "instrument": "surbahar",
       "lane": "calm",
-      "n": 1,
-      "ctr_avg": 3.94,
-      "avd_avg": 26.01,
-      "views_med": 19252,
-      "views_max": 19252,
+      "n": 2,
+      "ctr_avg": 4.04,
+      "avd_avg": 21.41,
+      "views_med": 19291,
+      "views_max": 37688,
       "top_title": "Deep Rest Music | Find Stillness with Surbahar | 1 Hour"
     },
     "bansuri__focus": {
       "instrument": "bansuri",
       "lane": "focus",
       "n": 1,
-      "ctr_avg": 5.26,
-      "avd_avg": 31.0,
-      "views_med": 6946,
-      "views_max": 6946,
+      "ctr_avg": 4.92,
+      "avd_avg": 26.91,
+      "views_med": 30874,
+      "views_max": 30874,
       "top_title": "Productive Day Music | Positive Morning Vibes | 1 Hour Bansuri Session"
     },
     "sitar__healing": {
       "instrument": "sitar",
       "lane": "healing",
       "n": 1,
-      "ctr_avg": 4.09,
-      "avd_avg": 29.25,
-      "views_med": 5370,
-      "views_max": 5370,
+      "ctr_avg": 4.22,
+      "avd_avg": 28.82,
+      "views_med": 17606,
+      "views_max": 17606,
       "top_title": "Sitar for Nervous System Healing | Indian Classical Music for Calmness | 1 Hour"
     },
     "bansuri__sleep": {
       "instrument": "bansuri",
       "lane": "sleep",
-      "n": 2,
-      "ctr_avg": 6.23,
-      "avd_avg": 20.75,
-      "views_med": 4120,
-      "views_max": 4922,
+      "n": 3,
+      "ctr_avg": 5.26,
+      "avd_avg": 19.63,
+      "views_med": 9329,
+      "views_max": 47794,
       "top_title": "Can't Fall Asleep | Raga Yaman Bansuri | Delta Wave Sleep Session | 1 Hour"
     },
     "sarangi__healing": {
@@ -199,229 +210,219 @@
       "lane": "healing",
       "n": 2,
       "ctr_avg": 3.69,
-      "avd_avg": 23.63,
-      "views_med": 2669,
-      "views_max": 4791,
+      "avd_avg": 25.94,
+      "views_med": 5172,
+      "views_max": 7234,
       "top_title": "Comfort Music | Healing Music with Sarangi | 1 Hour"
     },
     "(none)__uplifting": {
       "instrument": "(none)",
       "lane": "uplifting",
       "n": 2,
-      "ctr_avg": 3.8,
-      "avd_avg": 20.61,
-      "views_med": 1946,
-      "views_max": 3834,
+      "ctr_avg": 4.04,
+      "avd_avg": 19.52,
+      "views_med": 6190,
+      "views_max": 12259,
       "top_title": "Yoga Music | Positive Energy Frequency | 1 Hour"
     },
     "veena__healing": {
       "instrument": "veena",
       "lane": "healing",
-      "n": 1,
-      "ctr_avg": 5.48,
-      "avd_avg": 32.88,
-      "views_med": 2330,
-      "views_max": 2330,
+      "n": 2,
+      "ctr_avg": 4.44,
+      "avd_avg": 24.88,
+      "views_med": 3006,
+      "views_max": 5338,
       "top_title": "Calm Your Mind |  Veena Healing Music | 1 hour"
     },
     "veena__anxiety_stress": {
       "instrument": "veena",
       "lane": "anxiety_stress",
       "n": 1,
-      "ctr_avg": 3.93,
-      "avd_avg": 26.99,
-      "views_med": 2138,
-      "views_max": 2138,
+      "ctr_avg": 3.94,
+      "avd_avg": 27.82,
+      "views_med": 2590,
+      "views_max": 2590,
       "top_title": "Stress Relief Music | Deep Meditation with Veena Raga & 432Hz | 1 Hour"
     },
     "santoor__healing": {
       "instrument": "santoor",
       "lane": "healing",
       "n": 1,
-      "ctr_avg": 5.45,
-      "avd_avg": 35.13,
-      "views_med": 2066,
-      "views_max": 2066,
+      "ctr_avg": 4.32,
+      "avd_avg": 33.82,
+      "views_med": 5283,
+      "views_max": 5283,
       "top_title": "Release Stress | Burnout Music | Santoor & 528Hz"
     },
     "veena__calm": {
       "instrument": "veena",
       "lane": "calm",
       "n": 2,
-      "ctr_avg": 4.57,
-      "avd_avg": 25.05,
-      "views_med": 1414,
-      "views_max": 2041,
+      "ctr_avg": 4.27,
+      "avd_avg": 26.29,
+      "views_med": 1867,
+      "views_max": 2550,
       "top_title": "Peaceful Music | Soothing Music with Veena | 1 Hour"
     },
     "surbahar__reset": {
       "instrument": "surbahar",
       "lane": "reset",
       "n": 1,
-      "ctr_avg": 4.03,
-      "avd_avg": 23.76,
-      "views_med": 1450,
-      "views_max": 1450,
+      "ctr_avg": 3.61,
+      "avd_avg": 25.37,
+      "views_med": 4357,
+      "views_max": 4357,
       "top_title": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour"
     },
     "tanpura__healing": {
       "instrument": "tanpura",
       "lane": "healing",
       "n": 1,
-      "ctr_avg": 4.17,
-      "avd_avg": 25.81,
-      "views_med": 1395,
-      "views_max": 1395,
+      "ctr_avg": 4.2,
+      "avd_avg": 25.44,
+      "views_med": 1810,
+      "views_max": 1810,
       "top_title": "Overthinking Music | Healing with Bamboo Flute & Tanpura | 1 Hour"
     },
     "bansuri__calm": {
       "instrument": "bansuri",
       "lane": "calm",
       "n": 1,
-      "ctr_avg": 3.88,
-      "avd_avg": 29.23,
-      "views_med": 1234,
-      "views_max": 1234,
+      "ctr_avg": 3.86,
+      "avd_avg": 29.01,
+      "views_med": 1497,
+      "views_max": 1497,
       "top_title": "Relaxation Music | Bansuri Raga & 432Hz Evening Session | 1 Hour"
     },
     "santoor__uplifting": {
       "instrument": "santoor",
       "lane": "uplifting",
       "n": 1,
-      "ctr_avg": 4.95,
-      "avd_avg": 21.78,
-      "views_med": 954,
-      "views_max": 954,
+      "ctr_avg": 4.86,
+      "avd_avg": 25.61,
+      "views_med": 6997,
+      "views_max": 6997,
       "top_title": "Joyful Music | Positive Vibes Music with Santoor | 1 Hour"
     },
     "dilruba__anxiety_stress": {
       "instrument": "dilruba",
       "lane": "anxiety_stress",
       "n": 1,
-      "ctr_avg": 4.33,
-      "avd_avg": 27.25,
-      "views_med": 713,
-      "views_max": 713,
+      "ctr_avg": 4.23,
+      "avd_avg": 32.16,
+      "views_med": 4660,
+      "views_max": 4660,
       "top_title": "Anxiety Relief Music | Clear Your Mind | 1 Hour Dilruba Session"
     },
     "dilruba__calm": {
       "instrument": "dilruba",
       "lane": "calm",
       "n": 1,
-      "ctr_avg": 3.78,
-      "avd_avg": 16.19,
-      "views_med": 710,
-      "views_max": 710,
-      "top_title": "Breathing Exercise Music | Dilruba Raga Yaman | Alpha Wave Calm Session"
+      "ctr_avg": 5.19,
+      "avd_avg": 29.32,
+      "views_med": 11017,
+      "views_max": 11017,
+      "top_title": "Morning Energy Music | Dilruba Raga Yaman | 1 Hour"
     },
     "sitar__focus": {
       "instrument": "sitar",
       "lane": "focus",
-      "n": 4,
-      "ctr_avg": 3.6,
-      "avd_avg": 28.93,
-      "views_med": 289,
-      "views_max": 620,
-      "top_title": "Memory Recall | Sitar Music | Brainwave Entrainment | 20 Min"
+      "n": 5,
+      "ctr_avg": 3.69,
+      "avd_avg": 29.18,
+      "views_med": 560,
+      "views_max": 8273,
+      "top_title": "Brain Reset Music | Sitar for Mental Clarity | 20 Minutes"
     },
     "dilruba__reset": {
       "instrument": "dilruba",
       "lane": "reset",
-      "n": 1,
-      "ctr_avg": 3.13,
-      "avd_avg": 15.55,
-      "views_med": 323,
-      "views_max": 323,
-      "top_title": "Nervous System Reset | Quiet Your Mind with Dilruba Instrumental Music | 1 Hour"
+      "n": 2,
+      "ctr_avg": 2.77,
+      "avd_avg": 21.2,
+      "views_med": 260,
+      "views_max": 430,
+      "top_title": "Switch Off | Dilruba Music for Digital Detox | 1 Hour Reset"
     },
     "santoor__focus": {
       "instrument": "santoor",
       "lane": "focus",
-      "n": 1,
-      "ctr_avg": 2.06,
-      "avd_avg": 48.25,
-      "views_med": 187,
-      "views_max": 187,
+      "n": 2,
+      "ctr_avg": 3.08,
+      "avd_avg": 37.66,
+      "views_med": 1117,
+      "views_max": 1759,
       "top_title": "Focus Music Santoor | 40Hz Gamma Waves | 40 Min Deep Work"
     },
     "sitar__anxiety_stress": {
       "instrument": "sitar",
       "lane": "anxiety_stress",
       "n": 2,
-      "ctr_avg": 3.03,
-      "avd_avg": 10.37,
-      "views_med": 113,
-      "views_max": 186,
+      "ctr_avg": 2.29,
+      "avd_avg": 13.21,
+      "views_med": 177,
+      "views_max": 292,
       "top_title": "Mind at Rest | Sitar & Alpha Waves | 1 Hour Anxiety Relief Music"
     },
     "tabla__focus": {
       "instrument": "tabla",
       "lane": "focus",
       "n": 1,
-      "ctr_avg": 5.85,
-      "avd_avg": 10.75,
-      "views_med": 123,
-      "views_max": 123,
+      "ctr_avg": 5.19,
+      "avd_avg": 9.37,
+      "views_med": 282,
+      "views_max": 282,
       "top_title": "Tabla Music for Morning Focus & Motivation | 40Hz Gamma Energy"
     },
     "(none)__focus": {
       "instrument": "(none)",
       "lane": "focus",
       "n": 2,
-      "ctr_avg": 3.84,
-      "avd_avg": 28.71,
-      "views_med": 73,
-      "views_max": 107,
+      "ctr_avg": 7.29,
+      "avd_avg": 23.38,
+      "views_med": 123,
+      "views_max": 183,
       "top_title": "Can't Focus? | 10 Min Deep Work Session | Raga-Inspired Piano Music"
-    },
-    "dilruba__other": {
-      "instrument": "dilruba",
-      "lane": "other",
-      "n": 1,
-      "ctr_avg": 2.72,
-      "avd_avg": 18.31,
-      "views_med": 72,
-      "views_max": 72,
-      "top_title": "Digital Detox Music | Dilruba Strings | Neural Rest | 1 Hour"
     },
     "tanpura__sleep": {
       "instrument": "tanpura",
       "lane": "sleep",
-      "n": 1,
-      "ctr_avg": 2.06,
-      "avd_avg": 15.88,
-      "views_med": 71,
-      "views_max": 71,
-      "top_title": "Let Go Before Sleep | 40 Min Tanpura Drone for Insomnia & Calm"
+      "n": 2,
+      "ctr_avg": 3.43,
+      "avd_avg": 16.66,
+      "views_med": 876,
+      "views_max": 1655,
+      "top_title": "Insomnia Relief Music | Tanpura Drone | 1.5 Hours"
     },
     "violin__healing": {
       "instrument": "violin",
       "lane": "healing",
       "n": 1,
-      "ctr_avg": 2.86,
-      "avd_avg": 14.63,
-      "views_med": 67,
-      "views_max": 67,
-      "top_title": "Emotional Release | Violin & 40Hz Gamma Waves | 1 Hour Emotional Healing Music"
+      "ctr_avg": 2.37,
+      "avd_avg": 9.04,
+      "views_med": 85,
+      "views_max": 85,
+      "top_title": "Emotional Detox | Healing Violin | 1 Hour Release"
     },
     "sarangi__focus": {
       "instrument": "sarangi",
       "lane": "focus",
       "n": 1,
-      "ctr_avg": 4.52,
-      "avd_avg": 6.42,
-      "views_med": 55,
-      "views_max": 55,
+      "ctr_avg": 5.53,
+      "avd_avg": 7.56,
+      "views_med": 139,
+      "views_max": 139,
       "top_title": "Brain Fog? | Think Clearly with Sarangi 40Hz Gamma | 1 Hour"
     },
     "bamboo_flute__focus": {
       "instrument": "bamboo_flute",
       "lane": "focus",
       "n": 1,
-      "ctr_avg": 2.45,
-      "avd_avg": 7.6,
-      "views_med": 50,
-      "views_max": 50,
+      "ctr_avg": 2.96,
+      "avd_avg": 6.4,
+      "views_med": 91,
+      "views_max": 91,
       "top_title": "Focus Music | Bamboo Flute 40Hz | Deep Work 1 Hour"
     },
     "tanpura__reset": {
@@ -438,30 +439,30 @@
       "instrument": "bansuri",
       "lane": "anxiety_stress",
       "n": 1,
-      "ctr_avg": 2.73,
-      "avd_avg": 9.08,
-      "views_med": 41,
-      "views_max": 41,
+      "ctr_avg": 2.14,
+      "avd_avg": 6.27,
+      "views_med": 83,
+      "views_max": 83,
       "top_title": "Bansuri for Anxiety & Overthinking \ud83c\udf3f | Mind Too Loud | 528Hz"
     },
     "esraj__other": {
       "instrument": "esraj",
       "lane": "other",
       "n": 1,
-      "ctr_avg": 2.83,
-      "avd_avg": 6.81,
-      "views_med": 40,
-      "views_max": 40,
+      "ctr_avg": 2.25,
+      "avd_avg": 8.85,
+      "views_med": 68,
+      "views_max": 68,
       "top_title": "Overcome Procrastination | Esraj Music | Start working now"
     },
     "(none)__calm": {
       "instrument": "(none)",
       "lane": "calm",
       "n": 1,
-      "ctr_avg": 3.26,
-      "avd_avg": 16.97,
-      "views_med": 34,
-      "views_max": 34,
+      "ctr_avg": 2.95,
+      "avd_avg": 13.97,
+      "views_med": 65,
+      "views_max": 65,
       "top_title": "Mindful Music | Relaxation | 40Hz Gamma Binaural Beats"
     },
     "sarod__reset": {
@@ -478,21 +479,111 @@
       "instrument": "swaramandal",
       "lane": "anxiety_stress",
       "n": 1,
-      "ctr_avg": 1.65,
-      "avd_avg": 2.41,
-      "views_med": 29,
-      "views_max": 29,
+      "ctr_avg": 1.96,
+      "avd_avg": 6.09,
+      "views_med": 72,
+      "views_max": 72,
       "top_title": "Overthinking? Trust Your Gut | Swaramandal Delta Waves for Intuition Awakening"
     },
     "cello__focus": {
       "instrument": "cello",
       "lane": "focus",
       "n": 1,
-      "ctr_avg": 1.02,
-      "avd_avg": 36.91,
-      "views_med": 19,
-      "views_max": 19,
+      "ctr_avg": 2.92,
+      "avd_avg": 37.78,
+      "views_med": 94,
+      "views_max": 94,
       "top_title": "Cello for Creative Flow | 20 Min Focus | 6Hz Theta Waves"
+    },
+    "sitar__clinical": {
+      "instrument": "sitar",
+      "lane": "clinical",
+      "n": 2,
+      "ctr_avg": 4.25,
+      "avd_avg": 27.54,
+      "views_med": 5155,
+      "views_max": 7977,
+      "top_title": "Calm Music | Sitar for Cortisol Reset | 1.5 hours healing"
+    },
+    "none__clinical": {
+      "instrument": "none",
+      "lane": "clinical",
+      "n": 1,
+      "ctr_avg": 3.9,
+      "avd_avg": 20.07,
+      "views_med": 2216,
+      "views_max": 2216,
+      "top_title": "Calm an Overactive Mind | Chandra Raga | Deep Nervous System Healing"
+    },
+    "sarod__clinical": {
+      "instrument": "sarod",
+      "lane": "clinical",
+      "n": 1,
+      "ctr_avg": 3.86,
+      "avd_avg": 21.6,
+      "views_med": 2052,
+      "views_max": 2052,
+      "top_title": "Mental Clarity Music | Slow Sarod | Brain Fog Reset"
+    },
+    "bansuri__clinical": {
+      "instrument": "bansuri",
+      "lane": "clinical",
+      "n": 1,
+      "ctr_avg": 3.71,
+      "avd_avg": 20.28,
+      "views_med": 1789,
+      "views_max": 1789,
+      "top_title": "Start Your Day With Peace | Calm Bansuri Meditation | 1.5 hours"
+    },
+    "surbahar__healing": {
+      "instrument": "surbahar",
+      "lane": "healing",
+      "n": 1,
+      "ctr_avg": 3.8,
+      "avd_avg": 21.76,
+      "views_med": 1178,
+      "views_max": 1178,
+      "top_title": "Sound Healing Music | Slow Surbahar | 1.5 Hours of Rest"
+    },
+    "dilruba__focus": {
+      "instrument": "dilruba",
+      "lane": "focus",
+      "n": 1,
+      "ctr_avg": 3.93,
+      "avd_avg": 18.74,
+      "views_med": 1363,
+      "views_max": 1363,
+      "top_title": "Uplifting Music | Dilruba for Morning Energy | 1.5 Hours"
+    },
+    "sarangi__clinical": {
+      "instrument": "sarangi",
+      "lane": "clinical",
+      "n": 1,
+      "ctr_avg": 3.71,
+      "avd_avg": 18.17,
+      "views_med": 1198,
+      "views_max": 1198,
+      "top_title": "Let Go Of Stress | Sarangi for Emotional Release | 1.5 Hours"
+    },
+    "santoor__clinical": {
+      "instrument": "santoor",
+      "lane": "clinical",
+      "n": 1,
+      "ctr_avg": 3.69,
+      "avd_avg": 18.66,
+      "views_med": 395,
+      "views_max": 395,
+      "top_title": "Mental Stillness Music | Slow Santoor | 1.5 Hours"
+    },
+    "tanpura__focus": {
+      "instrument": "tanpura",
+      "lane": "focus",
+      "n": 1,
+      "ctr_avg": 4.94,
+      "avd_avg": 19.56,
+      "views_med": 207,
+      "views_max": 207,
+      "top_title": "Morning Meditation Music | Tanpura Instrumental | 1.5 Hours of Peaceful Focus"
     }
   }
 }
