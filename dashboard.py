@@ -697,8 +697,8 @@ with st.sidebar:
     st.caption("Dashboard reads from YouTube API via the authenticated MCP server + REACH_DATA.md for manual reach captures.")
 
 # Tabs
-tab_overview, tab_daily, tab_videos, tab_detail, tab_competitors, tab_briefs, tab_idea_gen, tab_title_builder, tab_playlists = st.tabs(
-    ["📊 Overview", "📈 Daily Views", "📺 Videos", "🔍 Video Detail", "⚔️ Competitors", "🧠 Brief Queue", "🧪 A/B Insights", "🔤 Title Builder", "🎵 Playlists"]
+tab_overview, tab_daily, tab_videos, tab_detail, tab_competitors, tab_briefs, tab_idea_gen, tab_title_builder, tab_playlists, tab_thumbs = st.tabs(
+    ["📊 Overview", "📈 Daily Views", "📺 Videos", "🔍 Video Detail", "⚔️ Competitors", "🧠 Brief Queue", "🧪 A/B Insights", "🔤 Title Builder", "🎵 Playlists", "🖼️ Thumbnails"]
 )
 
 # -----------------------------------------------------------------------------
@@ -3818,3 +3818,78 @@ with tab_playlists:
                 f"Created: {_plan.get('created_at', '?')} · "
                 "Edit JSON directly to update this view."
             )
+
+
+# -----------------------------------------------------------------------------
+# Tab: Thumbnails — thumbnail-refresh queue (data/thumbnail_refresh_queue.json)
+# -----------------------------------------------------------------------------
+with tab_thumbs:
+    import json as _thumb_json
+    from datetime import date as _thumb_date
+    st.subheader("🖼️ Thumbnail Refresh Queue")
+
+    _tq_path = DASHBOARD_DIR / "data" / "thumbnail_refresh_queue.json"
+    if not _tq_path.exists():
+        st.info("No thumbnail_refresh_queue.json found.")
+    else:
+        _tq = _thumb_json.loads(_tq_path.read_text())
+        st.caption(_tq.get("purpose", ""))
+        st.caption(f"📏 Rule: {_tq.get('rule', '')}")
+        st.caption(f"⏱ Monitor: {_tq.get('monitor', '')}")
+
+        _today = _thumb_date.today().isoformat()
+        _cat_label = {
+            "hard_swap": ("🟢 Hard-swap", "Cooling/stable — just replace the thumbnail."),
+            "test_compare": ("🟡 Test & Compare", "Accelerating — A/B/C test, never hard-swap (resets learned CTR)."),
+            "blocked": ("⛔ Blocked", "Mid-A/B — hands off until the active test concludes."),
+        }
+        _order = {"hard_swap": 0, "test_compare": 1, "blocked": 2}
+        _items = sorted(_tq.get("items", []), key=lambda i: (_order.get(i.get("category"), 9), i.get("scheduled_date") or "9999"))
+
+        for _it in _items:
+            _cat = _it.get("category", "")
+            _badge, _hint = _cat_label.get(_cat, ("•", ""))
+            _dt = _it.get("scheduled_date") or "—"
+            _status = _it.get("status", "")
+            _due = ""
+            if _it.get("scheduled_date"):
+                if _it["scheduled_date"] < _today and _status == "PENDING":
+                    _due = " ⚠️ OVERDUE"
+                elif _it["scheduled_date"] == _today and _status == "PENDING":
+                    _due = " 🔔 TODAY"
+
+            with st.container(border=True):
+                _c1, _c2 = st.columns([3, 1])
+                with _c1:
+                    st.markdown(f"**{_it.get('video', '?')}**")
+                    st.caption(f"{_badge} · lane: {_it.get('lane', '?')} · _{_hint}_")
+                with _c2:
+                    st.markdown(f"**📅 {_dt}**{_due}")
+                    st.caption(f"{_status} · `{_it.get('video_id', '')}`")
+
+                _cur = _it.get("current", {})
+                if _cur:
+                    _bits = []
+                    if "ctr_pct" in _cur: _bits.append(f"CTR {_cur['ctr_pct']}%")
+                    if "avd_pct" in _cur: _bits.append(f"AVD {_cur['avd_pct']}%")
+                    if "relRet" in _cur: _bits.append(f"relRet {_cur['relRet']}")
+                    if "impressions" in _cur: _bits.append(f"{int(_cur['impressions']):,} impr")
+                    if "views" in _cur: _bits.append(f"{int(_cur['views']):,} views")
+                    st.caption("📊 Current: " + " · ".join(_bits) + (f" — {_cur['note']}" if _cur.get("note") else ""))
+
+                _texts = _it.get("new_thumb_text", [])
+                if _texts:
+                    _verb = "Test all 3:" if _cat == "test_compare" else "New thumbnail text (pick one):"
+                    st.markdown(f"**{_verb}**")
+                    st.markdown("  ".join(f"&nbsp;`{_t}`&nbsp;" for _t in _texts), unsafe_allow_html=True)
+                if _it.get("thumb_format"):
+                    st.caption(f"🎨 Format: {_it['thumb_format']}")
+                if _it.get("why"):
+                    with st.expander("Why this video", expanded=False):
+                        st.write(_it["why"])
+
+        st.markdown("---")
+        st.caption(
+            f"📄 Source: `data/thumbnail_refresh_queue.json` · Created: {_tq.get('created_at', '?')} · "
+            "Edit the JSON to add videos or mark items DONE."
+        )

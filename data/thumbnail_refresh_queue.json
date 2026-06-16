@@ -1,0 +1,80 @@
+{
+  "created_at": "2026-06-16",
+  "purpose": "Thumbnail-refresh queue. Target = high-retention + low-CTR videos where the thumbnail is the bottleneck (algo would push harder if CTR rose). Hard-swap cooling/stable videos; Test & Compare accelerating / mid-A/B ones (a hard swap resets a learned CTR signal and can kill momentum).",
+  "rule": "AVD high + CTR < 3.63% channel avg = thumbnail-capped. Low AVD = retention problem, thumbnail won't fix (skip).",
+  "monitor": "7-day window post-change. Hard-swap target: CTR +0.5pt or more. Test & Compare auto-keeps the winner.",
+  "items": [
+    {
+      "video": "Comfort Music | Healing Music with Sarangi | 1 Hour",
+      "video_id": "P-DIkbxipB8",
+      "lane": "emotional / healing",
+      "category": "hard_swap",
+      "scheduled_date": "2026-06-20",
+      "status": "PENDING",
+      "current": { "avd_pct": 26.2, "ctr_pct": 3.2, "impressions": 164950, "views": 7234 },
+      "thumb_format": "abstract_noun",
+      "new_thumb_text": ["EMOTIONAL HEALING", "FIND PEACE"],
+      "why": "165K impressions already flowing but click-capped at 3.2% CTR — highest-ROI swap on the channel. 26% AVD proves the content. Cooling/stable = safe to hard-swap."
+    },
+    {
+      "video": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour",
+      "video_id": "Bc92MEMzd5g",
+      "lane": "burnout / nervous-system",
+      "category": "hard_swap",
+      "scheduled_date": "2026-06-20",
+      "status": "PENDING",
+      "current": { "avd_pct": 25.4, "ctr_pct": 3.61, "impressions": 90483, "views": 4357 },
+      "thumb_format": "permission / outcome",
+      "new_thumb_text": ["NERVOUS SYSTEM RESET", "REST WITHOUT WORRY"],
+      "why": "90K impressions, click-capped. 25% AVD proves retention. Cooling/stable = safe to hard-swap."
+    },
+    {
+      "video": "Deep Relaxation Music | Slow Surbahar | 1.5 Hours",
+      "video_id": "ol5ryBrju2c",
+      "lane": "deep-rest / calm",
+      "category": "hard_swap",
+      "scheduled_date": "2026-06-20",
+      "status": "PENDING",
+      "current": { "relRet": 0.61, "views": 3300, "note": "channel's BEST peer-relative retainer, reach-starved" },
+      "thumb_format": "outcome_state",
+      "new_thumb_text": ["FIND STILLNESS", "DEEP REST"],
+      "why": "Hidden gem — highest relative-retention on the channel but only 3.3K views. Not accelerating = lowest-risk refresh; give proven retention a reach shot."
+    },
+    {
+      "video": "Music for Morning Anxiety | Sarod Instrumental | 1.5 hrs",
+      "video_id": "sSwLnfp77ig",
+      "lane": "morning anxiety",
+      "category": "hard_swap",
+      "scheduled_date": "2026-06-20",
+      "status": "PENDING",
+      "current": { "relRet": 0.55, "views": 7800, "note": "hidden gem, retention-proven" },
+      "thumb_format": "outcome (morning lane = NO Q-hook)",
+      "new_thumb_text": ["EASE INTO THE DAY", "CALM MORNING"],
+      "why": "relRet 0.55, retention-proven, reach-starved. Morning lane loses Q-hooks 0/5 — use outcome/lifestyle text only."
+    },
+    {
+      "video": "Sitar for Nervous System Healing | Indian Classical Music",
+      "video_id": "52YU6Q64zVw",
+      "lane": "nervous-system / cognitive",
+      "category": "test_compare",
+      "scheduled_date": "2026-06-20",
+      "status": "PENDING",
+      "current": { "avd_pct": 25.0, "ctr_pct": 3.0, "note": "ACCELERATING through day 42 — channel's clearest true-grower" },
+      "thumb_format": "Test & Compare (A/B/C)",
+      "new_thumb_text": ["STRESS DETOX (keep as control)", "CALM YOUR NERVES", "NERVOUS SYSTEM RESET"],
+      "why": "CTR-capped at 3.0% but mid-acceleration — a HARD swap could kill momentum. Use YouTube Test & Compare so the winner is auto-kept with zero downside."
+    },
+    {
+      "video": "Sitar for Brain Detox | Clear Your Mind | 1.5 Hours",
+      "video_id": "mDCDS2TlK4k",
+      "lane": "cognitive / detox",
+      "category": "blocked",
+      "scheduled_date": null,
+      "status": "BLOCKED",
+      "current": { "avd_pct": 31.0, "ctr_pct": 3.1, "note": "active title A/B running + decelerating" },
+      "thumb_format": "Test & Compare (after title A/B concludes)",
+      "new_thumb_text": ["CLEAR YOUR MIND", "BRAIN DETOX", "MENTAL RESET"],
+      "why": "CTR-capped (31% AVP, 3.1% CTR) but has an ACTIVE title A/B — hands off until that test concludes, then Test & Compare. No date until unblocked."
+    }
+  ]
+}
