@@ -5,12 +5,12 @@
   "created_at": "2026-06-16",
   "planned_date": "2026-06-17",
   "planned_slot": "PM (evening · 7pm IST)",
-  "title": "Music to Release Tension | Soothing Strings | 1.5 Hours",
+  "title": "Music to Release Tension | Indian Classical | 1.5 Hours",
   "title_variants": {
-    "A": "Music to Release Tension | Soothing Strings | 1.5 Hours",
-    "B": "Music to Release Tension | Soothing Strings | 1.5 Hours"
+    "A": "Music to Release Tension | Indian Classical | 1.5 Hours",
+    "B": "Music to Decompress | Indian Classical | 1.5 Hours"
   },
-  "title_note": "Instrument (Veena) deliberately NOT named in title (user rule 2026-06-16): lead with the benefit + a broadly-understood descriptor ('Soothing Strings'), not the niche instrument name. Deviation from the Path-2 instrument-in-title playbook rule, run deliberately.",
+  "title_note": "TITLE A/B = GEO-FRAMING TEST. A 'Release Tension' (61) = India-resonant ('tension' is everyday vernacular for the 67% India audience). B 'Music to Decompress' (62) = T1-resonant (modern Western wellness vocab). Slot 2 fixed = 'Indian Classical' on BOTH so ONLY the lead varies (clean read) — and it restores the genre signal that feeds our suggested-network (rides the Indian-classical-wellness cluster). Instrument (Veena) deliberately NOT named per user rule. Tests purely which geo-framing pulls — feeds the T1/RPM reach strategy.",
   "components": {
     "problem": "body is holding the day's stress — tight shoulders, clenched jaw, a braced chest — physically wound up, needs the body to let go and soften",
     "instrument": "Veena",
@@ -19,44 +19,45 @@
     "wave": "Theta"
   },
   "validated_keywords": [
-    "Release Tension (VidIQ 61, 'Music to' form — music-intent confirmed; FRESH on channel)",
-    "Slow Heart Rate 25 / Deep Breathing 28 / Calm Your Body 25 / Feel Safe and Calm 25 — all cratered with 'Music for/to' (banked dead)",
-    "Soothing Strings (slot-2 descriptor — replaces instrument name per user rule; broadly understood, appealing)",
+    "Release Tension (VidIQ 61, 'Music to' form — music-intent confirmed; FRESH; India-resonant lead = Variant A)",
+    "Music to Decompress (VidIQ 62 — T1-resonant Western wellness lead = Variant B; FRESH, avoids the owned 'nervous system' query)",
+    "Slow Heart Rate 25 / Deep Breathing 28 / Calm Your Body 25 / Feel Safe and Calm 25 — all cratered (banked dead)",
+    "Indian Classical (slot-2 genre anchor on both variants — suggested-network signal; not an instrument, respects no-instrument rule)",
     "bhairavi (musicology META — deeply emotional komal-dominant cathartic evening feel)",
     "theta (5-6Hz deep relaxation, parasympathetic let-go, not sleep)",
     "432hz (74)"
   ],
   "ab_test": {
-    "test_id": "T_2026-06-17_tension_thumb",
-    "test_type": "THUMBNAIL A/B (title fixed both variants — thumbnail is the only variable)",
-    "note": "A = 'UNCLENCH' (visceral single-word body cue, mobile-dominant pattern-interrupt) vs B = 'RELEASE TENSION' (clear descriptive offering, title-matched). Both are offering/outcome (calm-healing lane = offering wins, Q-hook loses per Test 12) — so this isolates visceral-cue vs descriptive-offering within the winning format, not offering-vs-Q-hook. Same Pichwai art both variants; only the overlay text differs."
+    "test_id": "T_2026-06-17_tension_geo",
+    "test_type": "TITLE A/B (geo-framing) — lead varies, slot-2 + thumbnail FIXED on both",
+    "note": "A 'Release Tension' (India-frame) vs B 'Music to Decompress' (T1-frame). VidIQ 61 vs 62 = balanced, so the result isolates the geo-framing. SINGLE thumbnail on both = 'TOO TENSE?' (Q-hook). Q-hook chosen on the BANKED A/B evidence that the relaxation/rest/tension lane FAVORS Q-hooks (Test 8: 'STRESSED?' beat offering +10pp; YT's CTR engine repeatedly promotes Q-hooks in this lane) — overturns the earlier 'offering wins' assumption, which is actually the morning/focus/sleep rule, NOT this lane. Cannot run title A/B + thumb A/B together (confounded), so thumb is held fixed to isolate the title test. NOTE: 'TOO TENSE?' is dead-simple — decodes instantly for India + T1.",
+    "do_not_also_thumb_test": true
   },
-  "strategic_bet": "Wed Jun 17 PM dip-day RETENTION audition on Veena. HONEST CONTEXT: fresh per-video data (Jun 16) shows Veena's recent retention slipped (Jun 4 Restore Your Mind 19% AVP, Jun 9 Mental Health 12.5%) vs its older form (Calm Your Mind 33%, Breathe 33%, Peaceful 31%). THE BET: those recent dips came on GENERIC-SOFT lanes ('Mental Health / Rest Better', 'Restore Your Mind') — exactly the soft-Veena framings that have always underperformed — NOT on the instrument. Veena's WINS are all concrete calm/healing hooks (Calm Your Mind, Breathe And Relax). 'Release Tension' gives Veena a concrete somatic job + Raga Bhairavi (cathartic release) — the hypothesis is this restores the 30%+ retention. NOT a reach bet (VidIQ 61 = low competition, thin demand → feed-click + retention play). Cooldown clear (last Veena Jun 9 = 8d); accepted as 3rd Veena in 13d. Lane = somatic body-tension, the one fresh body-state the week doesn't touch (Tue cognitive, Thu emotional, Fri rumination, yesterday's Wind Down decompression). Judge on AVD + CTR, NOT impressions.",
-  "success_good": "1500+ views, 25%+ AVD, 3.6%+ CTR in 7 days — the concrete-hook bet restores Veena retention",
-  "success_breakthrough": "4000+ views, 30%+ AVD — Veena back to old form on a targeted somatic lane; build a body-tension cluster",
-  "failure_mode": "<800 views or AVD <18% — if AVD is low, the Veena retention slide is the instrument/music (not just lane) → stop defaulting to Veena and rotate to a proven recent retainer (Sarod/Bansuri/Santoor). If CTR is the miss, the no-instrument title under-signalled.",
+  "strategic_bet": "Wed Jun 17 PM dip-day RETENTION audition on Veena, doubling as a GEO-FRAMING title test (India 'Release Tension' vs T1 'Decompress'). HONEST CONTEXT: fresh per-video data (Jun 16) shows Veena's recent retention slipped (Jun 4 Restore Your Mind 19% AVP, Jun 9 Mental Health 12.5%) vs older form (Calm Your Mind 33%, Breathe 33%). THE BET: those dips came on GENERIC-SOFT lanes, not the instrument — a concrete somatic hook + Raga Bhairavi (cathartic release) should restore 30%+ retention. NOT a reach bet (61/62 = low competition, thin demand). Cooldown clear (last Veena Jun 9 = 8d). Lane = somatic body-tension, the one fresh body-state the week doesn't touch. CONFLICT-CHECKED: rejected the stronger T1 frame 'Calm Your Nervous System' because the nervous-system query is owned by the accelerating NS Healing hero AND we're refreshing NS Healing + Burnout Surbahar with nervous-system thumbs THIS week (Jun 17/21) — 'Decompress' sidesteps that collision. Judge on AVD + CTR + T1 share, NOT impressions.",
+  "success_good": "1500+ views, 25%+ AVD, 3.6%+ CTR in 7 days; the geo test resolves (one framing clearly leads)",
+  "success_breakthrough": "4000+ views, 30%+ AVD — Veena retention restored on a targeted somatic lane; AND if 'Decompress' wins with elevated T1 share, we've found a T1-reach framing to scale",
+  "failure_mode": "<800 views or AVD <18% — if AVD is low, the Veena retention slide is the instrument (not just lane) → stop defaulting to Veena, rotate to a proven recent retainer. If CTR is the miss, the no-instrument title under-signalled.",
   "reference_ships": [
-    {"title": "Calm Your Mind | Veena Healing Music", "ctr": 4.28, "avp": 33.31, "note": "Veena's best — concrete calm hook + 33% AVD. The target this ship is trying to restore."},
-    {"title": "Breathe And Relax | Slow Down Music | Veena", "ctr": 4.13, "avp": 33.09, "note": "concrete somatic-ish hook, 33% AVD — the winning Veena pattern"},
-    {"title": "Mental Health Music | Rest Better | Veena", "pub": "2026-06-09", "ctr": 3.75, "avp": 12.52, "note": "the recent FLOP — generic-soft lane, 12.5% AVD. What to avoid: this ship's lane is concrete by contrast."},
-    {"title": "Restore Your Mind | Slow Veena", "pub": "2026-06-04", "ctr": 3.45, "avp": 19.14, "note": "recent weak — generic 'restore' framing"}
+    {"title": "Calm Your Mind | Veena Healing Music", "ctr": 4.28, "avp": 33.31, "note": "Veena's best — concrete calm hook + 33% AVD. The target this ship tries to restore."},
+    {"title": "Breathe And Relax | Slow Down Music | Veena", "ctr": 4.13, "avp": 33.09, "note": "concrete somatic hook, 33% AVD — the winning Veena pattern"},
+    {"title": "Mental Health Music | Rest Better | Veena", "pub": "2026-06-09", "ctr": 3.75, "avp": 12.52, "note": "the recent FLOP — generic-soft lane, 12.5% AVD. What to avoid."}
   ],
   "tags": [
-    "release tension music", "tension relief music", "music to release tension",
-    "relaxing music", "soothing strings", "veena music", "indian classical music",
+    "release tension music", "music to decompress", "tension relief music",
+    "relaxing music", "decompress music", "indian classical music",
     "body relaxation music", "muscle tension relief", "deep relaxation music",
     "stress relief music", "evening relaxation", "indian instrumental music",
-    "raga focus", "unwind music"
+    "raga focus", "unwind music", "soothing music"
   ],
-  "description": "Music to Release Tension | Soothing Strings | 1.5 Hours\n\nIf your shoulders are up around your ears and your jaw is tight — start here. The day's stress doesn't just sit in your head; it settles into the body and holds on.\n\nNinety minutes of slow, deep soothing strings to let that tension go — soft enough to feel your shoulders drop, your jaw unclench, and your breath slow down.\n\nWhat you'll hear: deep, resonant strings with long sustained notes over a gentle drone — warm and unhurried, the feeling of the body finally putting down the weight it has been carrying.\n\nBest for: unwinding after a long day · easing physical tension · before bed or a warm bath · a quiet room and a pair of headphones.\n\n🔔 Subscribe to Raga Focus for Indian instrumental music to release tension, calm the body, and let the day go.",
-  "thumbnail_text_main": "UNCLENCH",
-  "thumbnail_text_variants": ["UNCLENCH", "RELEASE TENSION"],
-  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate warm-gold patterned border. Calm evening palette — warm, soft, low amber light, a settled and unhurried mood (relaxed, not drowsy-dark). Central figure: a serene musician playing a veena, shoulders relaxed and body soft/at ease (the visible release of held tension), composed and calm. IMPORTANT: vary the interior composition from the channel's other Veena/calm thumbnails so it is visually distinct in-feed. Overlay text 'RELEASE TENSION' in dark-teal serif, large and mobile-readable (2 words, scans under 1 second). OFFERING/outcome label (calm-healing lane = offering wins, NOT a Q-hook). Mobile-first: minimal clutter.",
-  "suno_prompt_A": "Deeply relaxing Indian classical instrumental, Raga Bhairavi — komal-dominant cathartic evening character, the feeling of the body finally getting permission to put down the weight it has been carrying, deep resonant plucked veena with long sustained notes, gentle meend glides and soft gamak ornamentation, warm woody resonance, soft tanpura drone underneath, no tabla, 432Hz tuning, 54 BPM, low-mid register, warm intimate spacious production, seamless loop-friendly texture, like tension melting out of tight shoulders and a clenched jaw, slow and unhurried, no vocals, no humming, no human voice",
-  "suno_prompt_B": "Instrumental only, no vocals, no humming, deeply relaxing Indian classical veena, Raga Bhairavi — komal cathartic evening, deep resonant plucked veena with long sustained notes, gentle meend and soft gamak, warm woody resonance, soft tanpura drone, no tabla, 432Hz, 54 BPM, low-mid register, warm intimate spacious, seamless loop, like tension melting from tight shoulders and a clenched jaw",
+  "description": "Music to Release Tension | Indian Classical | 1.5 Hours\n\nIf your shoulders are up around your ears and your jaw is tight — start here. The day's stress doesn't just sit in your head; it settles into the body and holds on.\n\nNinety minutes of slow, deep Indian classical strings to let that tension go — soft enough to feel your shoulders drop, your jaw unclench, and your breath slow down.\n\nWhat you'll hear: deep, resonant veena with long sustained notes over a gentle drone — warm and unhurried, the feeling of the body finally putting down the weight it has been carrying.\n\nBest for: unwinding after a long day · easing physical tension · before bed or a warm bath · a quiet room and a pair of headphones.\n\n🔔 Subscribe to Raga Focus for Indian instrumental music to release tension, calm the body, and let the day go.",
+  "thumbnail_text_main": "TOO TENSE?",
+  "thumbnail_text_variants": ["TOO TENSE?"],
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate warm-gold patterned border. Calm evening palette — warm, soft, low amber light, settled and unhurried. Central figure: a musician with a veena, body language reading subtle HELD tension easing into release (shoulders carrying the day, on the verge of softening) — relatable recognition of 'too tense', with the warm light promising relief. IMPORTANT: vary the interior composition from the channel's other Veena/calm thumbnails so it is visually distinct in-feed. Overlay text 'TOO TENSE?' in dark-teal serif, large and mobile-readable (2 words, scans under 1 second). This is a Q-hook (banked A/B evidence: relaxation/tension lane FAVORS Q-hooks; YT promotes them for CTR). Mobile-first: minimal clutter.",
+  "suno_prompt_A": "Intimate live acoustic recording of a solo veena, master Indian classical player, opens immediately with a warm captivating melodic phrase from the very first second (no slow fade-in, no long intro), real wooden instrument close-miked with natural string resonance, deeply emotive and soothing, expressive rising and falling phrases with long singing sustained notes, soft meend glides and gentle swells, soft tanpura drone, no tabla, warm full-bodied woody tone, present and flowing, healing and tender, like the body softening and letting go of held tension, seamless loopable, no vocals, no humming, no human voice",
+  "suno_prompt_B": "Instrumental only, no vocals, no humming, soulful solo Saraswati veena, master Indian classical performance, deep resonant gourd-bodied string with buzzing jawari resonance and sliding gamaka ornaments, rich warm full-bodied tone, emotional and moving, phrases that rise and fall with soulful swells and gentle release, long singing sustained notes, soft tanpura drone, no tabla, Raga Bhairavi, present and flowing not draggy, healing and tender, seamless loopable",
   "production_spec": {
     "duration_minutes": 90,
-    "bpm_range": "50-58",
+    "bpm_range": "54-62",
     "key_frequency_hz": 432,
     "binaural_carrier_hz": 200,
     "binaural_wave": "Theta",
@@ -65,8 +66,8 @@
     "lufs_target": -16,
     "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
     "render": "MP4 1920x1080, AAC 320kbps, 48kHz",
-    "notes": "Somatic body-relaxation, evening. NO tabla (Veena, like Sarangi/Surbahar). Theta 6Hz = deep let-go, not sleep. Slow (54 BPM) but warm and present, not drone-dead. Raga Bhairavi for cathartic release. CRITICAL given recent Veena AVD slide: keep the deep resonant veena character FORWARD and the piece engaging — do NOT let it drift thin/generic-soft/sleepy (that is exactly how the Jun 4 + Jun 9 Veena ships lost retention). If the first Suno clip sounds thin or new-agey, regenerate toward warm woody resonance."
+    "notes": "Veena = bowed?? NO — plucked Saraswati veena. NO tabla. Theta 6Hz = deep let-go, not sleep. PRESENT-NOT-DEAD OPENING: render the video to OPEN on the strongest/most captivating phrase, not Suno's slow intro (the loop lets you choose the entry point — the first 30s is where 40-52% decide to stay). 54-62 BPM = slow but breathing, not droning. CRITICAL given recent Veena AVD slide: keep the warm woody resonant veena FORWARD and engaging — reject any clip that drifts thin/synthy/new-agey/sleepy (that is how Jun 4 + Jun 9 Veena lost retention). Generate 5-6 and cherry-pick the warmest take."
   },
-  "experiment_notes": "Instrument kept as Veena (user 2026-06-16: do not switch instrument). Last Veena = Jun 9 (8d, cooldown clear); this is the 3rd Veena in 13d. Fresh per-video data (Jun 16) flags Veena's recent retention slide (12-19% vs old 31-33%) — bet is that the recent flops were generic-soft LANES (Mental Health, Restore), not the instrument, and a concrete somatic hook (Release Tension) + Bhairavi restores form. Title drops the instrument name per user rule ('Soothing Strings'). Lane 'Release Tension' = VidIQ 61, music-intent validated. If AVD is still weak here, that's the signal Veena itself is fading and we rotate instruments.",
+  "experiment_notes": "Instrument kept as Veena (user: do not switch). Last Veena Jun 9 (8d cooldown clear); 3rd Veena in 13d (accepted). TWO tests on this ship: (1) GEO-FRAMING title A/B — 'Release Tension' (India) vs 'Music to Decompress' (T1), slot-2 fixed 'Indian Classical', both VidIQ 61/62. (2) Thumb held single 'TOO TENSE?' (Q-hook) per banked lane evidence that relaxation/tension FAVORS Q-hooks (corrected the earlier 'offering wins' claim, which is the morning/focus rule). Rejected 'Calm Your Nervous System' (stronger T1 pull) on conflict-check: nervous-system query owned by accelerating NS Healing hero + we're refreshing NS Healing/Burnout with nervous-system thumbs Jun 17/21 = self-cannibalization. All cooldown/cannibalization checks on fresh data through Jun 16.",
   "playlists": ["Healing & Anxiety Relief Music", "Peaceful Music"]
 }
