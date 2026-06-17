@@ -1,88 +1,16 @@
 {
   "created_at": "2026-06-16",
-  "purpose": "Thumbnail-refresh queue. Target = high-retention + low-CTR videos where the thumbnail is the bottleneck (algo would push harder if CTR rose). Hard-swap cooling/stable videos; Test & Compare accelerating / mid-A/B ones (a hard swap resets a learned CTR signal and can kill momentum).",
-  "rule": "AVD high + CTR < 3.63% channel avg = thumbnail-capped. Low AVD = retention problem, thumbnail won't fix (skip).",
-  "monitor": "7-day window post-change. Hard-swap target: CTR +0.5pt or more. Test & Compare auto-keeps the winner.",
-  "stagger_rationale": "Dates staggered ~2-3 days apart so each change gets a clean 7-day CTR read against the declining-catalog backdrop (vs 5 swaps at once = unattributable). Order: zero-risk test first (longest runway) -> highest-ROI hard-swap on the no-ship refresh day -> same-instrument Surbahars spaced -> reach-starved gems trail into next week.",
+  "rechecked_at": "2026-06-17",
+  "purpose": "Thumbnail-refresh queue. Target = high-retention + low-CTR videos where the thumbnail is the bottleneck (algo would push harder if CTR rose). Hard-swap cooling/stable videos; Test & Compare accelerating / mid-A/B ones.",
+  "rule": "AVD high + CTR < 3.68% channel avg = thumbnail-capped. Low AVD = retention problem, thumbnail won't fix (skip). CTR at/above avg = thumbnail fine, drop from queue.",
+  "recheck_note": "2026-06-17: re-evaluated against the FRESH per-video export (pervideo_2026-06-16.csv). The original queue was built on the stale May-31 CTR. DROPPED 3 hard-swaps that now show HEALTHY CTR (no longer capped): Burnout Surbahar (4.76%), Deep Relaxation Surbahar (4.73%), Morning Anxiety Sarod (4.17%) — their thumbnails are fine, not the bottleneck. ADDED Emotional Comfort Sarangi (3.58%, capped). Net firm queue = NS Healing + Comfort Sarangi + Emotional Comfort (+ Brain Detox once its title A/B is confirmed concluded).",
+  "monitor": "7-day window post-change. Hard-swap target: CTR +0.5pt. Test & Compare auto-keeps the winner.",
+  "dropped_on_recheck": [
+    {"video": "Burnout Recovery | Vagus Nerve Reset with Surbahar", "fresh_ctr": 4.76, "reason": "CTR healthy — thumbnail not the bottleneck"},
+    {"video": "Deep Relaxation Music | Slow Surbahar", "fresh_ctr": 4.73, "reason": "CTR healthy — and it's a hidden gem already pulling clicks; leave it"},
+    {"video": "Music for Morning Anxiety | Sarod", "fresh_ctr": 4.17, "reason": "CTR healthy (and 35% AVP) — leave it"}
+  ],
   "items": [
-    {
-      "video": "Comfort Music | Healing Music with Sarangi | 1 Hour",
-      "video_id": "P-DIkbxipB8",
-      "lane": "emotional / healing",
-      "category": "hard_swap",
-      "scheduled_date": "2026-06-20",
-      "status": "PENDING",
-      "current": {
-        "avd_pct": 26.2,
-        "ctr_pct": 3.2,
-        "impressions": 164950,
-        "views": 7234
-      },
-      "thumb_format": "abstract_noun",
-      "new_thumb_text": [
-        "EMOTIONAL HEALING",
-        "FIND PEACE"
-      ],
-      "why": "165K impressions already flowing but click-capped at 3.2% CTR — highest-ROI swap on the channel. 26% AVD proves the content. Cooling/stable = safe to hard-swap."
-    },
-    {
-      "video": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour",
-      "video_id": "Bc92MEMzd5g",
-      "lane": "burnout / nervous-system",
-      "category": "hard_swap",
-      "scheduled_date": "2026-06-21",
-      "status": "PENDING",
-      "current": {
-        "avd_pct": 25.4,
-        "ctr_pct": 3.61,
-        "impressions": 90483,
-        "views": 4357
-      },
-      "thumb_format": "permission / outcome",
-      "new_thumb_text": [
-        "NERVOUS SYSTEM RESET",
-        "REST WITHOUT WORRY"
-      ],
-      "why": "90K impressions, click-capped. 25% AVD proves retention. Cooling/stable = safe to hard-swap."
-    },
-    {
-      "video": "Deep Relaxation Music | Slow Surbahar | 1.5 Hours",
-      "video_id": "ol5ryBrju2c",
-      "lane": "deep-rest / calm",
-      "category": "hard_swap",
-      "scheduled_date": "2026-06-24",
-      "status": "PENDING",
-      "current": {
-        "relRet": 0.61,
-        "views": 3300,
-        "note": "channel's BEST peer-relative retainer, reach-starved"
-      },
-      "thumb_format": "outcome_state",
-      "new_thumb_text": [
-        "FIND STILLNESS",
-        "DEEP REST"
-      ],
-      "why": "Hidden gem — highest relative-retention on the channel but only 3.3K views. Not accelerating = lowest-risk refresh; give proven retention a reach shot."
-    },
-    {
-      "video": "Music for Morning Anxiety | Sarod Instrumental | 1.5 hrs",
-      "video_id": "sSwLnfp77ig",
-      "lane": "morning anxiety",
-      "category": "hard_swap",
-      "scheduled_date": "2026-06-26",
-      "status": "PENDING",
-      "current": {
-        "relRet": 0.55,
-        "views": 7800,
-        "note": "hidden gem, retention-proven"
-      },
-      "thumb_format": "outcome (morning lane = NO Q-hook)",
-      "new_thumb_text": [
-        "EASE INTO THE DAY",
-        "CALM MORNING"
-      ],
-      "why": "relRet 0.55, retention-proven, reach-starved. Morning lane loses Q-hooks 0/5 — use outcome/lifestyle text only."
-    },
     {
       "video": "Sitar for Nervous System Healing | Indian Classical Music",
       "video_id": "52YU6Q64zVw",
@@ -90,18 +18,34 @@
       "category": "test_compare",
       "scheduled_date": "2026-06-17",
       "status": "PENDING",
-      "current": {
-        "avd_pct": 25.0,
-        "ctr_pct": 3.0,
-        "note": "ACCELERATING through day 42 — channel's clearest true-grower"
-      },
+      "current": { "avp_pct": 24.8, "ctr_pct": 2.95, "impressions": 1471069, "note": "channel's biggest click-capped grower — 1.47M impr at 2.95% CTR" },
       "thumb_format": "Test & Compare (A/B/C)",
-      "new_thumb_text": [
-        "STRESS DETOX (keep as control)",
-        "CALM YOUR NERVES",
-        "NERVOUS SYSTEM RESET"
-      ],
-      "why": "CTR-capped at 3.0% but mid-acceleration — a HARD swap could kill momentum. Use YouTube Test & Compare so the winner is auto-kept with zero downside."
+      "new_thumb_text": ["STRESS DETOX (keep as control)", "CALM YOUR NERVES", "NERVOUS SYSTEM RESET"],
+      "why": "Highest-leverage on the channel — 1.47M impressions capped at 2.95% CTR. Mid-acceleration, so Test & Compare (never hard-swap)."
+    },
+    {
+      "video": "Comfort Music | Healing Music with Sarangi | 1 Hour",
+      "video_id": "P-DIkbxipB8",
+      "lane": "emotional / healing",
+      "category": "hard_swap",
+      "scheduled_date": "2026-06-20",
+      "status": "PENDING",
+      "current": { "avp_pct": 25.42, "ctr_pct": 3.19, "impressions": 25340 },
+      "thumb_format": "abstract_noun (emotional lane is format-tolerant)",
+      "new_thumb_text": ["EMOTIONAL HEALING", "FIND PEACE"],
+      "why": "Still click-capped on fresh data (3.19% CTR, 25% AVP). Cooling/stable = safe hard-swap. NOTE: re-thumbs the Sarangi-emotional lane the same week as Fri's new Sarangi heartache ship — fine (refresh on an old video, not a new ship), but don't pile a 3rd Sarangi-emotional change on the same days."
+    },
+    {
+      "video": "Emotional Comfort | Sarangi | Indian Classical",
+      "video_id": "fqjZNDFcu-8",
+      "lane": "emotional / comfort",
+      "category": "hard_swap",
+      "scheduled_date": "2026-06-24",
+      "status": "PENDING",
+      "current": { "avp_pct": 25.64, "ctr_pct": 3.58, "impressions": 39463 },
+      "thumb_format": "offering/abstract (emotional lane format-tolerant)",
+      "new_thumb_text": ["FEEL HELD", "FIND COMFORT"],
+      "why": "Added on the Jun-16 recheck — capped at 3.58% CTR / 25.6% AVP / 39K impr. Spaced to Jun 24 to avoid piling onto the Comfort refresh (Jun 20) + Fri Sarangi ship (Sarangi-emotional overload). Distinct text from Comfort's 'EMOTIONAL HEALING'."
     },
     {
       "video": "Sitar for Brain Detox | Clear Your Mind | 1.5 Hours",
@@ -110,18 +54,10 @@
       "category": "blocked",
       "scheduled_date": null,
       "status": "BLOCKED",
-      "current": {
-        "avd_pct": 31.0,
-        "ctr_pct": 3.1,
-        "note": "active title A/B running + decelerating"
-      },
-      "thumb_format": "Test & Compare (after title A/B concludes)",
-      "new_thumb_text": [
-        "CLEAR YOUR MIND",
-        "BRAIN DETOX",
-        "MENTAL RESET"
-      ],
-      "why": "CTR-capped (31% AVP, 3.1% CTR) but has an ACTIVE title A/B — hands off until that test concludes, then Test & Compare. No date until unblocked."
+      "current": { "avp_pct": 31.33, "ctr_pct": 2.95, "impressions": 748264, "note": "strongly capped (31% AVP, 2.95% CTR, 748K impr) — but had an active title A/B" },
+      "thumb_format": "Test & Compare (after title A/B confirmed concluded)",
+      "new_thumb_text": ["CLEAR YOUR MIND", "BRAIN DETOX", "MENTAL RESET"],
+      "why": "Big click-capped grower (748K impr). VERIFY its title A/B has concluded (started ~May, likely done by now) — if concluded, UNBLOCK and run Test & Compare. Until confirmed, hold (don't disturb a running experiment)."
     }
   ]
 }
