@@ -1,7 +1,7 @@
 {
   "id": "v_2026-06-16_mental_fatigue_sitar",
-  "status": "DRAFT",
-  "date_shipped": null,
+  "status": "PUBLISHED",
+  "date_shipped": "2026-06-16",
   "created_at": "2026-06-14",
   "planned_date": "2026-06-16",
   "planned_slot": "PM (7pm IST · consider 10pm IST for T1 test)",
@@ -39,19 +39,52 @@
   "success_breakthrough": "5000+ views, 27%+ AVD, T1 share 30%+ — clinical evening Sitar confirmed as a repeatable lane AND a T1-reach lane; build a fresh-clinical cluster",
   "failure_mode": "<1500 views or <3.2% CTR in 7 days, OR AVD <18% — clinical hook didn't land OR the music drifted passive/sleepy (Sitar can't do drowsy); next time keep it restorative-bright and lean the lead on a proven offering phrase",
   "reference_ships": [
-    {"title": "Sitar for Brain Detox | Clear Your Mind", "pub": "2026-05-19", "impressions": 702454, "ctr": 2.99, "avp": 31.33, "t1_share": 31, "note": "the model — Sitar clinical-cognitive, 31% AVP, 31% T1. Restoration not rest."},
-    {"title": "Sitar for Nervous System Healing", "pub": "2026-05-05", "impressions": 1442174, "avp": 24.88, "t1_share": 21, "note": "Sitar clinical pattern, accelerating"},
-    {"title": "Anxiety Relief Music | Clear Your Mind | Dilruba", "pub": "2026-05-01", "t1_share": 36, "note": "#1 T1-share video — 'clear your mind' cognitive lane is the T1 magnet"}
+    {
+      "title": "Sitar for Brain Detox | Clear Your Mind",
+      "pub": "2026-05-19",
+      "impressions": 702454,
+      "ctr": 2.99,
+      "avp": 31.33,
+      "t1_share": 31,
+      "note": "the model — Sitar clinical-cognitive, 31% AVP, 31% T1. Restoration not rest."
+    },
+    {
+      "title": "Sitar for Nervous System Healing",
+      "pub": "2026-05-05",
+      "impressions": 1442174,
+      "avp": 24.88,
+      "t1_share": 21,
+      "note": "Sitar clinical pattern, accelerating"
+    },
+    {
+      "title": "Anxiety Relief Music | Clear Your Mind | Dilruba",
+      "pub": "2026-05-01",
+      "t1_share": 36,
+      "note": "#1 T1-share video — 'clear your mind' cognitive lane is the T1 magnet"
+    }
   ],
   "tags": [
-    "music for mental fatigue", "mental fatigue", "sitar music", "sitar instrumental",
-    "indian classical music", "mental clarity music", "brain fog music", "restore focus",
-    "calm cognitive music", "mentally drained", "indian instrumental music", "raga yaman",
-    "raga focus", "mental recovery music", "tired mind music"
+    "music for mental fatigue",
+    "mental fatigue",
+    "sitar music",
+    "sitar instrumental",
+    "indian classical music",
+    "mental clarity music",
+    "brain fog music",
+    "restore focus",
+    "calm cognitive music",
+    "mentally drained",
+    "indian instrumental music",
+    "raga yaman",
+    "raga focus",
+    "mental recovery music",
+    "tired mind music"
   ],
   "description": "Music for Mental Fatigue | Sitar Music | 1.5 Hours\n\nNot tired enough to sleep — just mentally spent. Hours of thinking, screens, decisions, and your brain feels foggy and drained, but the day isn't done.\n\nStart here. Ninety minutes of warm, clear sitar to lift the mental fatigue and bring you back sharp — restoring your focus, not putting you to sleep.\n\nWhat you'll hear: bright, unhurried sitar over a soft pulse — open and clarifying, the feeling of fog lifting and the mind coming back online.\n\nBest for: end-of-day mental recovery · clearing brain fog · resetting between work blocks · a quiet space and a pair of headphones.\n\n🔔 Subscribe to Raga Focus for Indian instrumental music to clear mental fatigue, restore focus, and feel sharp again.",
   "thumbnail_text_main": "MENTALLY DRAINED?",
-  "thumbnail_text_variants": ["MENTALLY DRAINED?"],
+  "thumbnail_text_variants": [
+    "MENTALLY DRAINED?"
+  ],
   "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate warm-gold patterned border. Evening palette but LUMINOUS and CLARIFYING (not dusky-drowsy) — warm amber light with a sense of clearing/lifting, soft glow suggesting fog dissolving and clarity returning. Central figure: an alert, upright musician playing a sitar, composed and clear-eyed (restored, NOT slumped/sleepy) — body language of someone coming back to sharpness. IMPORTANT: vary the interior composition from the channel's other Sitar thumbnails so it is visually distinct in-feed (not the same painting relabeled). Overlay text 'MENTALLY DRAINED?' in dark-teal serif, large and mobile-readable (2 words, scans under 1 second). This is a Q-hook (cognitive lane = Q-hook wins). Mobile-first: minimal clutter.",
   "suno_prompt_A": "Warm clarifying Indian classical instrumental, Raga Yaman — raised teevra Ma, expansive outward open evening character, the feeling of mental fog lifting and a tired mind coming back sharp and clear, warm plucked sitar with meend glissando slides and gamak ornamentation, light tabla keeping a gentle steady pulse, soft tanpura drone, 432Hz tuning, 68 BPM, mid register, warm open airy production, seamless loop-friendly texture, like clarity returning to a drained mind, restorative not drowsy, no vocals, no humming, no human voice",
   "suno_prompt_B": "Instrumental only, no vocals, no humming, warm clarifying Indian classical sitar, Raga Yaman — teevra Ma expansive open evening, warm plucked sitar with meend glides and gamak, light tabla gentle pulse, soft tanpura drone, 432Hz, 68 BPM, mid register, warm open airy production, seamless loop, like mental fog lifting and the mind coming back sharp, restorative not drowsy",
@@ -69,5 +102,8 @@
     "notes": "CRITICAL: restorative-BRIGHT, NOT drowsy. Mental fatigue = active restoration (clear the fog, come back sharp), NOT sleep. Alpha 10Hz (relaxed alertness), mid register, 68 BPM (present, not sleepy). INCLUDE light tabla (Sitar pattern). Raga Yaman opens/lifts the tired mind rather than sedating. If the first Suno clip sounds drowsy/sleepy, regenerate — Sitar fails passive."
   },
   "experiment_notes": "Clinical lane chosen via the music-intent SERP test: of the clinical candidates, ONLY 'Music for Mental Fatigue' held its VidIQ score (59) with the 'Music for' prefix — Sensory Overload (69→30), Mental Exhaustion (64→25), Mental Noise (62→30) all cratered = informational intent, no music demand. Banked rule: score the 'Music for X' form, not standalone. Title kept ACTIVE ('Sitar Music', not 'Slow Sitar'). Thumb is clinical-curiosity Q-hook (feed-driven, doesn't need search intent). T1-friendly lane (calm-cognitive = 31-36% T1) — flagged 10pm IST slot option for US-reach test. Sitar ships 6d before Jun 22 Dopamine swing (accepted).",
-  "playlists": ["Healing & Anxiety Relief Music", "Meditation Music"]
+  "playlists": [
+    "Healing & Anxiety Relief Music",
+    "Meditation Music"
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "v_2026-06-18_morning_gratitude_santoor",
-  "status": "DRAFT",
-  "date_shipped": null,
+  "status": "PUBLISHED",
+  "date_shipped": "2026-06-18",
   "created_at": "2026-06-17",
   "planned_date": "2026-06-18",
   "planned_slot": "AM-intent · PUBLISH ~5:00pm IST (= US East-coast morning ~7:30am ET — deliberately timed for the T1-seeding experiment)",
@@ -30,27 +30,57 @@
     "test_id": "T_2026-06-18_gratitude_thumb",
     "test_type": "THUMBNAIL A/B (title fixed — thumbnail is the only variable)",
     "note": "A 'WAKE UP GRATEFUL' (action+emotion) vs B 'BEGIN WITH GRATITUDE' (intention/ritual). BOTH lifestyle + gratitude-coherent — testing WITHIN the winning format (morning lane = lifestyle wins, Q-hook loses decisively 5+ tests). This isolates phrasing: action-emotion vs intention. Same bright-sunrise Pichwai art both; only overlay text differs. NOTE: 'BEGIN WITH GRATITUDE' (19ch) reads slightly smaller on mobile than 'WAKE UP GRATEFUL' (16ch) — watch if B underperforms purely on legibility.",
-    "thumb_variants": ["WAKE UP GRATEFUL", "BEGIN WITH GRATITUDE"]
+    "thumb_variants": [
+      "WAKE UP GRATEFUL",
+      "BEGIN WITH GRATITUDE"
+    ]
   },
   "strategic_bet": "Thu Jun 18 = MORNING SPREAD ship (week was evening-heavy) + a T1-SEEDING EXPERIMENT. Santoor chosen: cleanest cooldown (5d) and uplifting is its BEST lane (Joyful 32% AVP / 5.56% CTR). The experiment: publish at ~5pm IST (US East morning) so YouTube's initial probe samples the US pool, paired with a T1-framed title (gratitude practice = Western wellness) to reinforce the seed — testing whether timing + framing can tilt the video's audience pool toward T1 (higher RPM). HONEST MECHANISM: the early-engagement sample DOES influence the algo's audience model, but content-cluster gravity (Indian classical + our India-heavy network) pulls back toward 67/19, and the seed only 'takes' if the US sample actually engages — so expect a TILT (25-35% T1), not a full flip. Cost: gives up the India-morning probe on this one ship — acceptable on a low-stakes spread ship where the LEARNING (a repeatable T1-reach lever) is the prize. Judge on T1 share + CTR + AVD, NOT impressions.",
   "success_good": "1500+ views, 24%+ AVD, 4%+ CTR in 7 days AND T1 share >=25% (above our 19% baseline = some seeding effect)",
   "success_breakthrough": "T1 share >30% at day 7 — the US-morning-publish + T1-framing seeding lever WORKS and is repeatable; build a T1-reach playbook around it. Bonus if 4000+ views / 28%+ AVD.",
   "failure_mode": "T1 share <20% (content-cluster gravity won — timing alone can't override Indian-classical pull; don't repeat the timing sacrifice) OR <800 views / AVD <18% (uplifting Santoor + gratitude didn't land). If CTR is the miss, the thumb under-hooked.",
   "reference_ships": [
-    {"title": "Joyful Music | Positive Vibes Music with Santoor", "ctr": 5.56, "avp": 32.26, "note": "Santoor's best lane — uplifting at 32% AVP. The retention bar."},
-    {"title": "Yoga Music | Positive Energy Frequency", "ctr": 4.47, "avp": 33.72, "note": "uplifting/positive lane retains very high (34%) AND over-indexes T1 — the model for this seeding bet"},
-    {"title": "Anxiety Relief Music | Clear Your Mind | Dilruba", "t1_share": 36, "note": "our #1 T1-share video — confirms calm/positive-cognitive framing magnetizes T1"}
+    {
+      "title": "Joyful Music | Positive Vibes Music with Santoor",
+      "ctr": 5.56,
+      "avp": 32.26,
+      "note": "Santoor's best lane — uplifting at 32% AVP. The retention bar."
+    },
+    {
+      "title": "Yoga Music | Positive Energy Frequency",
+      "ctr": 4.47,
+      "avp": 33.72,
+      "note": "uplifting/positive lane retains very high (34%) AND over-indexes T1 — the model for this seeding bet"
+    },
+    {
+      "title": "Anxiety Relief Music | Clear Your Mind | Dilruba",
+      "t1_share": 36,
+      "note": "our #1 T1-share video — confirms calm/positive-cognitive framing magnetizes T1"
+    }
   ],
   "tags": [
-    "morning gratitude music", "gratitude music", "morning music",
-    "uplifting music", "positive morning music", "indian classical music",
-    "santoor music", "morning meditation music", "good morning music",
-    "mindful morning", "morning routine music", "indian instrumental music",
-    "raga focus", "feel good music", "positive energy music"
+    "morning gratitude music",
+    "gratitude music",
+    "morning music",
+    "uplifting music",
+    "positive morning music",
+    "indian classical music",
+    "santoor music",
+    "morning meditation music",
+    "good morning music",
+    "mindful morning",
+    "morning routine music",
+    "indian instrumental music",
+    "raga focus",
+    "feel good music",
+    "positive energy music"
   ],
   "description": "Morning Gratitude Music | Indian Classical | 1.5 Hours\n\nStart your morning here. Before the messages, the to-do list, the rush — give yourself ninety minutes of warm, uplifting Indian classical music to begin the day grateful and light.\n\nWhat you'll hear: bright, shimmering santoor over a gentle pulse — sunny and open, the feeling of morning light filling a quiet room and a good mood settling in.\n\nBest for: morning routines · journaling or gratitude practice · a slow coffee · easing into the day before anything is asked of you.\n\n🔔 Subscribe to Raga Focus for Indian instrumental music to start your day grateful, calm, and bright.",
   "thumbnail_text_main": "WAKE UP GRATEFUL",
-  "thumbnail_text_variants": ["WAKE UP GRATEFUL", "BEGIN WITH GRATITUDE"],
+  "thumbnail_text_variants": [
+    "WAKE UP GRATEFUL",
+    "BEGIN WITH GRATITUDE"
+  ],
   "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate warm-gold patterned border. BRIGHT SUNRISE morning palette — warm golden light, soft dawn glow, hopeful and energizing (not dusky/evening). Central figure: a serene, content musician beginning the day with a santoor, upright and gently smiling, bathed in morning light — body language of a fresh, grateful start. IMPORTANT: vary the interior composition from the channel's other morning/Santoor thumbnails so it is visually distinct in-feed. Overlay text (A: 'WAKE UP GRATEFUL' / B: 'BEGIN WITH GRATITUDE') in dark-teal serif, large and mobile-readable (scans under 1 second). LIFESTYLE/outcome text — morning lane = lifestyle wins, NEVER a Q-hook. The distinctive Indian-miniature style is cultural authority that intrigues T1 wellness viewers — keep it. Mobile-first: minimal clutter.",
   "suno_prompt_A": "Uplifting Indian classical instrumental, Raga Bhupali — joyful pentatonic, bright positive and light, the warm feeling of waking up grateful to a new day, hammered santoor dulcimer with bright shimmering percussive attack and warm resonant sustain, gentle light tabla keeping an easy morning pulse, soft tanpura drone, 432Hz, 80 BPM, bright mid-high register, warm sunny open production, seamless loop-friendly texture, like morning light filling a quiet room, hopeful and grateful, no vocals, no humming, no human voice",
   "suno_prompt_B": "Instrumental only, no vocals, no humming, uplifting Indian classical santoor, Raga Bhupali — joyful pentatonic bright and light, hammered santoor with bright shimmering attack and warm resonant sustain, gentle light tabla easy pulse, soft tanpura drone, 432Hz, 80 BPM, bright mid-high register, warm sunny open, seamless loop, like morning light filling a quiet room, hopeful and grateful",
@@ -68,5 +98,8 @@
     "notes": "Uplifting morning — bright and positive, NOT slow/sleepy. Santoor = hammered dulcimer (bright shimmering attack + warm sustain). LIGHT tabla OK (Santoor uplifting tolerates it). Alpha 10Hz (awake, present). Bhupali = joyful pentatonic. 80 BPM = upbeat-but-calm. PRESENT-NOT-DEAD OPENING: render the video to open on the brightest/most inviting phrase. Keep it sunny and warm — if a clip sounds melancholic or dim, regenerate (Bhupali should feel hopeful)."
   },
   "experiment_notes": "TWO things on this ship: (1) MORNING SPREAD — week was evening-heavy (Mon wind-down, Tue mental fatigue, Wed tension, Fri heartache); this adds a morning lane. (2) T1-SEEDING EXPERIMENT — publish ~5pm IST (US morning) + T1-framed gratitude title to test whether timing + framing tilts the audience pool toward T1 (higher RPM). Measure T1 share at day 7: >30% = lever works (repeatable), <20% = content-gravity won. Honest expectation: a tilt (25-35%), not a flip. Single title (clean T1-share read) + thumb A/B (WAKE UP GRATEFUL vs RISE & SHINE, both lifestyle = within-format test). Morning Ritual dropped (VidIQ 27 dead). Cooldown Santoor 5d clear (last Jun 13). Reshuffle: Sarangi heartache moved Thu->Fri (replaces the broken Dilruba Overthinking).",
-  "playlists": ["Morning Energy", "Meditation Music"]
+  "playlists": [
+    "Morning Energy",
+    "Meditation Music"
+  ]
 }
