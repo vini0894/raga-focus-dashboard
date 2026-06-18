@@ -1,0 +1,111 @@
+{
+  "id": "v_2026-06-19_heavy_heart_sarangi",
+  "status": "DRAFT",
+  "date_shipped": null,
+  "created_at": "2026-06-17",
+  "planned_date": "2026-06-19",
+  "planned_slot": "PM (evening · ~7pm IST — its real audience; emotional/wind-down intent)",
+  "title": "Music for a Heavy Heart | Indian Classical | 1.5 Hours",
+  "title_variants": {
+    "A": "Music for a Heavy Heart | Indian Classical | 1.5 Hours",
+    "B": "When your heart feels heavy, let this hold you"
+  },
+  "title_note": "TITLE A/B = FORMAT TEST. A = our standard 3-slot SEO pipe format (control, VidIQ 62). B = a natural full SENTENCE, no pipes, no 'Indian Classical' genre tag (deliberate experiment). B intentionally FAILS the preflight slot_count gate (1 slot) — that's the point: testing whether our pipe-stuffed convention is even optimal for EMOTIONAL feed-content, where 88% of traffic is cold browse/suggested (not search). Emotional lane is format-tolerant, so it's the right lane to test this. If B wins, a human-sentence title style is unlocked for emotional ships. Tradeoff: B drops the duration signal (real cost for long ambient) — accepted for a clean format read. Heartbreak (25, dead) dropped; Heavy Heart held at 62.",
+  "components": {
+    "problem": "heart feels heavy — grief, heartache, sadness, the weight of loss or longing / wants something tender and human to sit with the feeling, not fix it or rush it",
+    "instrument": "Sarangi",
+    "raga": "Bhimpalasi",
+    "hz": "432Hz",
+    "wave": "Theta"
+  },
+  "validated_keywords": [
+    "Music for a Heavy Heart (VidIQ 62, FRESH — emotional lead, Variant A control)",
+    "Heavy Heart Music (57 — close variant)",
+    "Music for Heartbreak (25 — DEAD, music-intent fail; 'heartbreak' has low music-search demand; dropped)",
+    "Variant B = natural sentence 'When your heart feels heavy, let this hold you' — NOT VidIQ-scored; feed-hook/format test, not a search play (sentences aren't searchable)",
+    "bhimpalasi (musicology META — poignant evening raga, tender longing)",
+    "theta (5-6Hz deep emotional relaxation)",
+    "432hz (74)"
+  ],
+  "ab_test": {
+    "test_id": "T_2026-06-19_heart_format",
+    "test_type": "TITLE A/B (FORMAT test) — thumbnail fixed both",
+    "note": "A 'Music for a Heavy Heart | Indian Classical | 1.5 Hours' (standard SEO pipe format) vs B 'When your heart feels heavy, let this hold you' (natural sentence: recognition + comfort-promise, no pipes, no genre tag, no duration). Tests the title CONVENTION itself on emotional feed-content. SINGLE thumb both = 'YOU'RE NOT ALONE' (companionship offering — coheres with 'let this hold you'; emotional lane is format-tolerant, isolates the title). B overrides the slot_count gate intentionally. If B wins decisively, roll the natural-sentence style into the emotional/healing playbook.",
+    "thumb_variants": [
+      "YOU'RE NOT ALONE"
+    ]
+  },
+  "thumbnail_backup": {
+    "swap_text": "HEAVY HEART?",
+    "swap_if": "7-day CTR < 3.2% (below the emotional-Sarangi norm of ~3.3-3.6%)",
+    "rationale": "Primary 'YOU'RE NOT ALONE' is a companionship offering. If it under-clicks, swap to the Q-hook 'HEAVY HEART?' — the emotional lane is format-tolerant on watch-time but YT's CTR engine repeatedly PROMOTES Q-hooks (state-recognition pulls the click). Second backup: 'IT'S OKAY TO GRIEVE' (permission, the +17pp category). Do NOT use 'EMOTIONAL HEALING' (Comfort refresh) or 'FEEL HELD' (Emotional Comfort refresh) — avoid self-collision."
+  },
+  "strategic_bet": "Fri Jun 19 PM — the week's STRONG, fresh content ship (vs Wed/Thu's thin audition + experiment ships). Lane = HEARTACHE / heavy-heart, which is FRESH (never used) and Sarangi's BEST instrument fit (Nostalgia 36% AVP / 5.18% CTR, Emotional Comfort 26%, Comfort 26% — Sarangi's emotional/nostalgia lane is its top retainer). Cooldown clear (last Sarangi Jun 11 = 8d). Doubles as a TITLE-FORMAT experiment (standard SEO vs natural sentence) — low-risk because A is the proven control. Evening publish (~7pm IST) = correct emotional/wind-down intent (NOT a US-morning-timing ship — heartache doesn't fit morning). Judge on CTR + AVD (target Sarangi-emotional 25%+); the format A/B is a bonus learning.",
+  "success_good": "1800+ views, 25%+ AVD, 3.8%+ CTR in 7 days; the format A/B resolves",
+  "success_breakthrough": "4000+ views, 30%+ AVD — heartache confirmed as a strong fresh Sarangi lane; AND if B (sentence) wins, a new emotional-title style is unlocked",
+  "failure_mode": "<1000 views or AVD <20% — heartache didn't land OR raga/music too heavy-sad to sit with; next emotional ship lean to Comfort/Nostalgia (proven). If B tanks vs A, the pipe-format convention holds for emotional too.",
+  "reference_ships": [
+    {
+      "title": "Nostalgia Music | Healing Music with Sarangi",
+      "ctr": 5.18,
+      "avp": 35.99,
+      "note": "Sarangi's BEST — emotional/nostalgia at 36% AVP. The retention bar for this lane."
+    },
+    {
+      "title": "Emotional Comfort | Sarangi",
+      "pub": "2026-06-04",
+      "ctr": 3.58,
+      "avp": 25.71,
+      "note": "recent emotional Sarangi, 26% AVP — solid"
+    },
+    {
+      "title": "Comfort Music | Healing with Sarangi",
+      "ctr": 3.23,
+      "avp": 26.22,
+      "note": "emotional Sarangi 26% AVP — being re-thumbed Jun 20 (don't overlap text)"
+    }
+  ],
+  "tags": [
+    "music for a heavy heart",
+    "heavy heart music",
+    "sad music",
+    "emotional healing music",
+    "music for grief",
+    "healing music",
+    "sarangi music",
+    "indian classical music",
+    "emotional music",
+    "music for sadness",
+    "comfort music",
+    "indian instrumental music",
+    "raga focus",
+    "soothing music",
+    "music to heal"
+  ],
+  "description": "Music for a Heavy Heart | Indian Classical | 1.5 Hours\n\nWhen your heart feels heavy — grief, heartache, a sadness you can't quite name — you don't always need to fix it. Sometimes you just need something tender to sit with you.\n\nNinety minutes of slow, singing Indian classical music to hold the feeling gently — not to rush you past it, but to keep you company while it softens.\n\nWhat you'll hear: an expressive bowed instrument, voice-like and aching, over a soft drone — warm, human, and unhurried, like being understood without words.\n\nBest for: heavy evenings · grief or heartache · letting yourself feel · a quiet room and a pair of headphones.\n\n🔔 Subscribe to Raga Focus for Indian instrumental music to comfort a heavy heart and gently heal.",
+  "thumbnail_text_main": "YOU'RE NOT ALONE",
+  "thumbnail_text_variants": [
+    "YOU'RE NOT ALONE"
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate warm-gold patterned border. Warm, tender evening palette — soft low amber light, gentle and consoling (melancholic but not bleak). Central figure: a musician playing a sarangi (bowed upright Indian classical string instrument — show the bow clearly), posture soft and inward, a quiet ache easing toward peace — the feeling of being gently held. IMPORTANT: vary the interior composition from the channel's other Sarangi/emotional thumbnails so it is visually distinct in-feed (and do NOT reuse 'EMOTIONAL HEALING' — that text is reserved for the Comfort refresh Jun 20). Overlay text 'YOU'RE NOT ALONE' in dark-teal serif, large and mobile-readable. Companionship offering (coheres with the 'let this hold you' title; emotional lane is format-tolerant). Mobile-first: minimal clutter.",
+  "suno_prompt_A": "Deeply emotional Indian classical instrumental, Raga Bhimpalasi — tender poignant evening longing, the feeling of sitting with a heavy heart and being gently understood, expressive bowed sarangi like an aching human voice with slow singing phrases, soft meend glides and emotional ornamentation, warm woody resonance, soft tanpura drone underneath, no tabla, 432Hz tuning, 52 BPM, low-mid register, warm intimate spacious production, seamless loop-friendly texture, like grief slowly softening into peace, slow and unhurried, no vocals, no humming, no human voice",
+  "suno_prompt_B": "Instrumental only, no vocals, no humming, deeply emotional Indian classical sarangi, Raga Bhimpalasi — tender poignant evening, expressive bowed sarangi like an aching human voice with slow singing phrases, soft meend glides and emotional ornamentation, warm woody resonance, soft tanpura drone, no tabla, 432Hz, 52 BPM, low-mid register, warm intimate spacious, seamless loop, like grief softening into peace",
+  "production_spec": {
+    "duration_minutes": 90,
+    "bpm_range": "48-56",
+    "key_frequency_hz": 432,
+    "binaural_carrier_hz": 200,
+    "binaural_wave": "Theta",
+    "binaural_beat_hz": 6.0,
+    "binaural_level_db": -20,
+    "lufs_target": -16,
+    "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+    "render": "MP4 1920x1080, AAC 320kbps, 48kHz",
+    "notes": "Emotional/heartache, evening. Sarangi = expressive BOWED string, voice-like and aching (its vocal timbre IS the emotional payload). NO tabla (the emotional instrument carries the space). Theta 6Hz. Slow (52 BPM), tender. Raga Bhimpalasi = poignant longing. CAUTION: tender and aching, but should soften toward PEACE by feel — not relentlessly bleak/depressing (we want 'held and understood', then easing). PRESENT-NOT-DEAD OPENING: open on the most expressive, aching phrase. If Suno gives a thin/generic violin, regenerate toward warm woody bowed sarangi resonance."
+  },
+  "experiment_notes": "Fri = the week's strong fresh-content ship (heartache, Sarangi's best lane, 36% AVP ceiling). Reshuffle: moved from Thu->Fri, replacing the broken Dilruba 'Overthinking' (cannibalized May 26). TITLE A/B is a FORMAT test: standard SEO pipe (A) vs natural sentence no-pipes no-genre (B) — B overrides slot_count gate deliberately to test whether the convention itself is optimal for emotional feed-content (88% cold browse). Single thumb FIND PEACE isolates the title. Evening publish (NOT US-morning — heartache is evening-intent; the US-timing experiment is deferred to next week on a fitting morning ship vs the Gratitude India-morning control). VidIQ: Heavy Heart 62, Heavy Heart Music 57, Heartbreak 25-dead. Cooldown/cannibalization checked on fresh Jun-16/18 data.",
+  "playlists": [
+    "Healing & Anxiety Relief Music",
+    "Peaceful Music"
+  ]
+}
