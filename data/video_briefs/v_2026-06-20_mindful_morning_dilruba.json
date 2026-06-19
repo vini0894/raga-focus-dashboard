@@ -1,0 +1,71 @@
+{
+  "id": "v_2026-06-20_mindful_morning_dilruba",
+  "status": "DRAFT",
+  "date_shipped": null,
+  "created_at": "2026-06-19",
+  "planned_date": "2026-06-20",
+  "planned_slot": "PUBLISH ~5:00pm IST (= US East-coast morning ~7:30am ET — US-SEEDING experiment). Saturday weekend = leisure morning for US wellness viewers.",
+  "title": "Mindfulness Music | Indian Classical | 1.5 Hours",
+  "title_variants": {
+    "A": "Mindful Morning Music | Indian Classical | 1.5 Hours",
+    "B": "Mindfulness Music | Indian Classical | 1.5 Hours"
+  },
+  "title_note": "TITLE A/B = MORNING-KEYWORD test (rides a US-SEEDING timing experiment). A 'Mindful Morning' (57) = morning-anchored → targets morning-context serving → at 5pm IST publish, hits US morning. B 'Mindfulness' (67) = generic, no time-lock → reaches all-day (US morning + India evening + anyone active). Tests whether 'morning' HELPS (targets the slot) or HURTS (caps all-day reach). Main field set to B as the default-display since it scored higher. ENTANGLEMENT NOTE: morning-keyword and the 5pm-IST timing interact — read as 'which title+timing combo wins + its T1 share', not perfectly isolated. Instrument (Dilruba) not named per user rule.",
+  "components": {
+    "problem": "wants a calm, present, mindful start — gentle uplifting music to be present and ease into the day (or any quiet moment), not anxious or rushed",
+    "instrument": "Dilruba",
+    "raga": "Bilawal",
+    "hz": "432Hz",
+    "wave": "Alpha"
+  },
+  "validated_keywords": [
+    "Mindfulness Music (VidIQ 67 — generic/all-day lead, Variant B; strong evergreen search term; FRESH-enough, only an old abandoned 40Hz 'Mindful Music' exists = negligible)",
+    "Mindful Morning Music (VidIQ 57 — morning-anchored lead, Variant A; narrower but targets morning-context)",
+    "Indian Classical (slot-2 genre anchor; not an instrument)",
+    "bilawal (musicology META — all-natural intervals, bright open morning character)",
+    "alpha (10Hz relaxed alertness — present and awake)",
+    "432hz (74)"
+  ],
+  "ab_test": {
+    "test_id": "T_2026-06-20_morning_keyword",
+    "test_type": "TITLE A/B (morning-keyword) — thumbnail fixed both",
+    "note": "A 'Mindful Morning Music' (57, morning-anchored) vs B 'Mindfulness Music' (67, generic all-day). Tests whether the 'morning' keyword helps (morning-context targeting → US morning at 5pm IST) or hurts (caps all-day reach). SINGLE thumb both = 'BE PRESENT' (mindfulness-neutral offering — works for morning AND all-day; calm lane = offering safe, no Q-hook). Both published 5pm IST as part of the US-seeding experiment. NOTE: VidIQ already differs (57 vs 67), so a B win conflates 'no-morning' with 'stronger keyword' — read directionally.",
+    "thumb_variants": ["BE PRESENT"]
+  },
+  "strategic_bet": "Sat Jun 20 — the US-SEEDING experiment (run on an otherwise-empty, low-stakes Saturday — the IDEAL slot: it targets US weekend morning, not our dead India-Saturday; it's a test not a reach bet; and it uses Dilruba so the Mon Dopamine Sitar swing stays fully protected). Publish ~5pm IST (US East morning) + a morning-keyword title (A) to seed the US pool, with B (generic) as the all-day control within the same ship. Pairs with the Thu Gratitude (Santoor, India-morning 6:30am) as the timing control: same uplifting/mindful lane, TIMING is the variable. HONEST MECHANISM: early-engagement sample influences the algo's audience model, but content-cluster gravity (Indian classical + India-heavy network) pulls back — expect a TILT not a flip. Dilruba cooldown clear (last Jun 10 = 10d). Judge on day-7 T1 SHARE % (not raw views — Saturday is low-volume) + CTR + AVD.",
+  "success_good": "T1 share >=25% at day 7 (above 19% baseline = some seeding effect); 1000+ views, 22%+ AVD, 4%+ CTR. Morning-keyword A/B resolves.",
+  "success_breakthrough": "T1 share >30% at day 7 AND the morning variant (A) wins → US-morning-publish + morning-keyword is a confirmed, repeatable T1-reach lever. Build a T1 playbook around it.",
+  "failure_mode": "T1 share <20% (timing/keyword can't override content-cluster gravity — stop sacrificing slots for US-timing) OR <600 views / AVD <18% (mindful-morning Dilruba didn't land). If A (morning) badly loses B, 'morning' caps reach — drop it from titles.",
+  "reference_ships": [
+    {"title": "Morning Gratitude Music | Santoor (Jun 18)", "note": "THE CONTROL — India-morning (6:30am IST) seed, same mindful/uplifting lane. Compare T1 share."},
+    {"title": "Anxiety Relief Music | Clear Your Mind | Dilruba", "ctr": 4.0, "avp": 30.91, "t1_share": 36, "note": "our #1 T1-share video AND a Dilruba — calm-cognitive framing magnetizes T1; good omen for Dilruba+mindfulness"},
+    {"title": "Yoga Music | Positive Energy Frequency", "avp": 33.72, "note": "uplifting/wellness lane over-indexes T1 + retains 34% — the model"}
+  ],
+  "tags": [
+    "mindfulness music", "mindful morning music", "morning music", "meditation music",
+    "uplifting music", "indian classical music", "calm music", "present moment music",
+    "mindful music", "morning meditation", "indian instrumental music", "raga focus",
+    "positive morning music", "relaxing music", "be present"
+  ],
+  "description": "Mindfulness Music | Indian Classical | 1.5 Hours\n\nA gentle, present space — whether you're starting the day or just need to land back in the moment. Ninety minutes of warm Indian classical music to slow your breath, settle your mind, and simply be here.\n\nWhat you'll hear: an expressive bowed dilruba with a warm, voice-like tone over a soft pulse — bright and open, the feeling of a calm, clear mind in the present moment.\n\nBest for: mindfulness or breathing practice · a slow morning · journaling · easing back into the present when the day gets loud.\n\n🔔 Subscribe to Raga Focus for Indian instrumental music to stay present, calm, and clear.",
+  "thumbnail_text_main": "BE PRESENT",
+  "thumbnail_text_variants": ["BE PRESENT"],
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate warm-gold patterned border. Bright, calm morning-to-daylight palette — warm soft golden light, serene and present (works for morning OR any calm moment, not strictly dawn). Central figure: a serene, centered musician playing a dilruba (bowed upright Indian classical string — show the bow), composed and gently present, soft light around them. IMPORTANT: vary the interior composition from the channel's other morning/calm thumbnails so it is visually distinct in-feed. Overlay text 'BE PRESENT' in dark-teal serif, large and mobile-readable. Mindfulness-neutral offering (works for the morning AND the generic title; calm lane = offering, NOT a Q-hook). The Indian-miniature style = cultural authority that intrigues T1 wellness viewers. Mobile-first: minimal clutter.",
+  "suno_prompt_A": "Calm uplifting Indian classical instrumental, Raga Bilawal — all-natural intervals, bright open present morning character, the warm settled feeling of a clear and present mind, expressive bowed dilruba with warm voice-like sustained tones and gentle meend glides, light tabla keeping a soft easy pulse, soft tanpura drone, 432Hz, 74 BPM, warm mid register, bright open airy production, seamless loop-friendly texture, like sunlight filling a quiet room and the mind settling into the present, calm and present, no vocals, no humming, no human voice",
+  "suno_prompt_B": "Instrumental only, no vocals, no humming, calm uplifting Indian classical dilruba, Raga Bilawal — bright open present morning, expressive bowed dilruba with warm voice-like sustained tones and gentle meend, light tabla soft easy pulse, soft tanpura drone, 432Hz, 74 BPM, warm mid register, bright open airy, seamless loop, like sunlight filling a quiet room and the mind settling into the present",
+  "production_spec": {
+    "duration_minutes": 90,
+    "bpm_range": "70-78",
+    "key_frequency_hz": 432,
+    "binaural_carrier_hz": 200,
+    "binaural_wave": "Alpha",
+    "binaural_beat_hz": 10.0,
+    "binaural_level_db": -20,
+    "lufs_target": -15,
+    "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+    "render": "MP4 1920x1080, AAC 320kbps, 48kHz",
+    "notes": "Calm-present, NOT high-energy or sleepy — 'mindful' = awake and settled. Dilruba = warm bowed string, voice-like. LIGHT tabla OK (soft morning pulse). Alpha 10Hz (present, awake). Bilawal = bright open morning. 74 BPM = unhurried but present. PRESENT-NOT-DEAD OPENING: open on a warm inviting phrase. Bright and clear, not dim/sad. PUBLISH ~5pm IST."
+  },
+  "experiment_notes": "Sat = US-SEEDING experiment on an empty low-stakes day (concedes the earlier 'no ship Saturday' call — for a US-targeted TEST, Saturday is ideal: targets US weekend morning not dead India-Saturday, non-Sitar so Mon swing safe). Publish 5pm IST (US morning). TWO reads: (1) morning-keyword title A/B — A 'Mindful Morning' (57) vs B 'Mindfulness' (67); does 'morning' help or cap reach? (2) US-seed: day-7 T1 share vs Gratitude (Santoor India-morning control). Entangled (keyword strength differs 57/67 + timing interacts) — read directionally. Dilruba 10d cooldown clear. Single thumb BE PRESENT. Read T1 SHARE %, not raw views (Saturday low-volume).",
+  "playlists": ["Meditation Music", "Morning Energy"]
+}
