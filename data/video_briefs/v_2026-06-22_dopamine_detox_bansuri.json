@@ -7,7 +7,7 @@
   "title": "Bansuri for Dopamine Detox | Music for an Overstimulated Mind | 1.5 Hours",
   "title_variants": {
     "A": "Bansuri for Dopamine Detox | Music for an Overstimulated Mind | 1.5 Hours",
-    "B": "Dopamine Detox Music | Bansuri Flute for an Overstimulated Mind | 1.5 Hours"
+    "B": "Dopamine Detox Music | Bansuri for an Overstimulated Mind | 1.5 Hours"
   },
   "components": {
     "problem": "overstimulated mind after a noisy dopamine-saturated day — screens, notifications, decisions, audio everywhere, nervous system still firing. Not tired enough to sleep, not sharp enough to think. Needs the volume of the world turned down without falling asleep.",
@@ -32,7 +32,7 @@
     "test_id": "Test 41",
     "test_type": "TITLE A/B (same thumb both variants per banked rule for cannibal-test lanes)",
     "variant_A": "Bansuri for Dopamine Detox | Music for an Overstimulated Mind | 1.5 Hours (VidIQ 94)",
-    "variant_B": "Dopamine Detox Music | Bansuri Flute for an Overstimulated Mind | 1.5 Hours (VidIQ 91)",
+    "variant_B": "Dopamine Detox Music | Bansuri for an Overstimulated Mind | 1.5 Hours (structurally tighter than original 'Bansuri Flute' variant which scored 91 — redundant 'Flute' removed; expected score similar or higher)",
     "isolated_variable": "IFO-lead ('Bansuri for X') vs SEO-keyword-lead ('Dopamine Detox Music | Bansuri Flute for X')",
     "hypothesis": "IFO-lead leverages Sitar Dopamine Reset giant's algorithmic-bucket signal (similar structure, sibling-instrument). SEO-keyword-lead leverages 36K-search exact-match phrase first. If A wins → algo-bucket signal carries more weight than keyword positioning. If B wins → fresh-keyword cold-search wins over algo-bucket.",
     "thumb_locked": "OVERSTIMULATED? (mirrors title anchor phrase, validated Q-hook pattern per Test 16 cognitive lane winner)",
