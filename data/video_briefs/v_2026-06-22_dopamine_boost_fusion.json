@@ -1,0 +1,79 @@
+{
+  "id": "v_2026-06-22_dopamine_boost_fusion",
+  "status": "PUBLISHED",
+  "date_shipped": "2026-06-22",
+  "created_at": "2026-06-21",
+  "planned_date": "2026-06-22",
+  "planned_slot": "PM (7pm IST — heatmap peak)",
+  "video_id": "vjv4ZUNj9ag",
+  "title": "Music for Dopamine Boost | Sitar & Bansuri for Positive Energy | 1.5 Hours",
+  "title_variants": {
+    "A": "Music for Dopamine Boost | Sitar & Bansuri for Positive Energy | 1.5 Hours",
+    "B": "Positive Energy Music | Dopamine Boost with Sitar & Bansuri | 1.5 Hours"
+  },
+  "components": {
+    "problem": "flat, low-energy, unmotivated — wants a natural lift and clean focus without caffeine or hype. Positive-but-calm energy to feel good and focused (NOT high-energy hype; uplifting + relaxation).",
+    "instrument": "Sitar + Bansuri + Tabla (fusion)",
+    "raga": "Bhupali",
+    "hz": "432Hz",
+    "wave": "Alpha"
+  },
+  "validated_keywords": [
+    "Music for Dopamine Boost (music-intent form; rides the dopamine cluster, positive valence)",
+    "Positive Energy (176K/mo searches, comp 30 — big evergreen keyword; our own precedent: Yoga Positive Energy 41K, Joyful Positive Vibes 21K)",
+    "Dopamine Boost (trend word — Classical Fusion's 137K Boost ship validated the lane this week)",
+    "Sitar & Bansuri (named fusion instruments — differentiated from Classical Fusion's 'Flute, Sitar & Tabla' clone)",
+    "bhupali (musicology META — joyful major pentatonic Sa Re Ga Pa Dha; bright, clean, uplifting — measured from the reference track at D major pentatonic / 66 BPM)",
+    "alpha (10Hz — relaxed alertness / positive focus, not drowsy)"
+  ],
+  "ab_test": {
+    "test_id": "Test 41",
+    "test_type": "Shipped with Variant A title; B retained as alternative",
+    "thumb_shipped": "LIFT YOUR MOOD (Pichwai/Kangra bansuri image, bright daytime palette)"
+  },
+  "strategic_bet": "MONDAY swing — first FUSION-format ship (bansuri + sitar + tabla) and first positive Dopamine-Boost lane. Pivoted from the originally-planned Dopamine Detox because (a) Boost avoids cannibalizing the Sitar Dopamine Reset giant (opposite valence — up-regulate vs the giant's down-regulate), (b) Classical Fusion's 137K Dopamine Boost this week validated the lane live, (c) 'Positive Energy' is a 176K/comp-30 evergreen keyword we have precedent for. Music matched to the reference: bright Raga Bhupali (major pentatonic), ~66 BPM, energetic-but-calm fusion, 432Hz. Shipped 7pm IST (heatmap peak) into India evening + 4 of 5 T1 markets active.",
+  "result_notes": "EARLY READ (day 1, 2026-06-22): soft on impressions. Likely causes: (1) 'LIFT YOUR MOOD' is a soft positive declarative thumb — under-pulls vs pain/problem Q-hooks (positive declaratives are weaker CTR drivers); (2) positive/energy lane is currently weak for us (adjacent to the dead morning-energy pool). LESSON applied to Tue Jun 23 (Digital Burnout): switched to a pain/behavior Q-hook thumb ('CAN'T STOP SCROLLING?') + clear pain-signal title lead. WATCH: if impressions stay soft at 48h, run a Test & Compare with a pain-hook thumb variant (e.g. 'OVERSTIMULATED?' / 'SCREENS GOT YOU WIRED?') — no re-upload needed.",
+  "tags": [
+    "music for dopamine boost",
+    "positive energy music",
+    "dopamine boost",
+    "sitar music",
+    "bansuri music",
+    "indian classical fusion",
+    "focus music",
+    "uplifting indian music",
+    "positive energy",
+    "feel good music",
+    "indian instrumental music",
+    "raga bhupali",
+    "morning music",
+    "good vibes music",
+    "raga focus"
+  ],
+  "description": "Music for Dopamine Boost | Sitar & Bansuri for Positive Energy | 1.5 Hours\n\nFeeling flat? This is a natural lift — no caffeine, no hype. Ninety minutes of bright, uplifting Indian classical fusion to boost your mood, clear your focus, and bring back a little positive energy.\n\nWhat you'll hear: a warm, bright weave of bansuri (bamboo flute), sitar, and gentle tabla in Raga Bhupali — joyful and clean, like clean morning light filling a room. Uplifting but unhurried — positive energy without the jitter.\n\nBest for: a positive reset · focus and flow at work or study · lifting a low mood · clean energy for the day · a bright background for anything that needs a little lift.\n\n🔔 Subscribe to Raga Focus for Indian instrumental music to lift your mood, boost positive energy, and find clear, calm focus.",
+  "thumbnail_text_main": "LIFT YOUR MOOD",
+  "thumbnail_text_variants": [
+    "LIFT YOUR MOOD"
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting, ornate warm-gold floral border. BRIGHT daytime palette — luminous cream/gold, sunlit warmth, fresh open lake-and-palace landscape. Central figure: a serene, blissful musician playing bansuri, with a sitar visible in the foreground (shows the fusion) — joyful clarity and positive energy. Distinct from the channel's dusky evening/calm thumbnails (this is bright, warm, open). Overlay text 'LIFT YOUR MOOD' in dark-teal serif, large stacked, mobile-readable. Declarative positive (NOT a question). NOTE (post-launch learning): soft positive declarative under-pulled on impressions vs pain Q-hooks — consider Test & Compare with a stronger hook if reach stays soft.",
+  "suno_prompt_A": "Uplifting Indian classical fusion, Raga Bhupali — joyful major pentatonic (Sa Re Ga Pa Dha), clean bright open character. Begins with a short gentle swell, the bright bansuri melody arriving within the first 4 seconds over a soft tanpura drone; a light tabla settles into a relaxed lilting teental groove and a warm plucked sitar answers in call-and-response with meend slides and gentle taan runs. Bansuri leads as the singing voice, sitar weaving warm accents, subtle santoor shimmer underneath. 432Hz, 66 BPM, mid register, warm radiant production with natural breath, even and steady throughout. The feeling of clean morning light filling a room and the mind waking up clear, positive and focused. Seamless loop-friendly, no vocals, no humming, no human voice.",
+  "suno_prompt_B": "Instrumental only, no vocals, no humming. Uplifting Indian classical fusion — bright bansuri-led with sitar and light tabla. Raga Bhupali, joyful major pentatonic (Sa Re Ga Pa Dha). Gentle quick intro, bright bansuri melody by 4s over soft tanpura, relaxed lilting tabla groove, warm sitar call-and-response with meend and taan, subtle santoor shimmer. 432Hz, 66 BPM, mid register, radiant airy production. Like clean morning light and a clear, positive, focused mind. Seamless loop.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "bpm_range": "64-70",
+    "key_frequency_hz": 432,
+    "binaural_carrier_hz": 200,
+    "binaural_wave": "Alpha",
+    "binaural_beat_hz": 10.0,
+    "binaural_level_db": -20,
+    "lufs_target": -15,
+    "loop_seam": "Suno extend 4-5x on the best take → loop in post to fill 90 min, crossfade boundaries",
+    "render": "MP4 1920x1080, AAC 320kbps, 48kHz",
+    "notes": "FUSION: bansuri-led + sitar accents + light tabla (gentle teental). Bright Raga Bhupali, ~66 BPM, positive-but-calm (Alpha 10Hz, not drowsy, not hype). Spec matched to the reference track (Classical Fusion Dopamine Boost = D major pentatonic / 66 BPM / mid brightness). Hook: melody by ~4s, no long silent build."
+  },
+  "experiment_notes": "Test 41 — first fusion-format + first positive Dopamine-Boost lane. Music spec reverse-engineered from acoustic analysis of the reference (Classical Fusion 137K Boost): Raga Bhupali / 66 BPM / mid brightness / gentle-quick intro. Title differentiated from the CF clone (Sitar & Bansuri, not 'Flute, Sitar & Tabla'; 'Positive Energy' lead via 176K keyword). Day-1 impression read soft → lesson banked + applied to Tue (pain Q-hook). VidIQ scored pre-launch (title A 95 earlier in planning).",
+  "playlists": [
+    "Morning Energy",
+    "Meditation Music"
+  ]
+}
