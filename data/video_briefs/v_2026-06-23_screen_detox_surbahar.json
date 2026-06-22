@@ -1,0 +1,101 @@
+{
+  "id": "v_2026-06-23_screen_detox_surbahar",
+  "status": "DRAFT",
+  "created_at": "2026-06-22",
+  "planned_date": "2026-06-23",
+  "planned_slot": "PM (evening — heatmap peak 6-9pm IST)",
+  "title": "Screen Detox Music | Indian Instrumental | 1.5 Hours",
+  "title_variants": {
+    "A": "Screen Detox Music | Indian Instrumental | 1.5 Hours",
+    "B": "Music for Digital Burnout | Surbahar Instrumental | 1.5 Hours"
+  },
+  "ab_note": "A is the LOCKED primary (user-confirmed): 'Screen Detox Music | Indian Instrumental'. B retained as optional native-A/B alt (Screen Detox vs Digital Burnout). Same thumb either way. NOTE on slot 2: 'Indian Instrumental' chosen over 'Surbahar Instrumental' because Surbahar is near-unsearchable (Path-2 rule) while 'Indian Instrumental' is a searched genre term + clearer signal; the instrument is carried by the thumbnail, description, and tags instead.",
+  "components": {
+    "problem": "screen detox — fried and wired after endless screens, notifications, and doomscrolling. Can't stop scrolling; mind won't switch off because it's been overstimulated all day. Needs to put the phone down, unplug, and let the nervous system recover.",
+    "instrument": "Surbahar",
+    "raga": "Bageshri",
+    "hz": "432Hz",
+    "wave": "Theta"
+  },
+  "validated_keywords": [
+    "Screen Detox Music (clear pain/intent signal in lead position = strong who-to-surface-to targeting; FRESH on our channel; distinct from the giant's owned 'digital detox' tag — 'screen' ≠ 'digital', so a fresh query that rides the cluster without being buried)",
+    "Indian Instrumental (searched genre term + clear genre signal; chosen for slot 2 over 'Surbahar' because Surbahar is near-unsearchable per Path-2 rule — instrument carried by thumb/desc/tags instead)",
+    "Digital Burnout (variant B alternative — also clear, slightly more buffer from the giant's 'digital detox' tag)",
+    "bageshri (musicology META — late evening, soothing, introspective; fits screen-detox unwind/recovery)",
+    "theta (6Hz — deep relaxation for a wired, overstimulated mind, not sleep)",
+    "Surbahar (named in description + tags + shown on thumbnail; the 5.3% CTR + 35% AVP under-shipped instrument, different from the Sitar giant)",
+    "CLUSTER STRATEGY: screen-detox rides the dopamine/detox cluster (inheritance from Dopamine Reset's suggested feed) but is NOT the giant's exact 'digital detox' tag. Tags deliberately EXCLUDE 'digital detox music'."
+  ],
+  "ab_test": {
+    "test_id": "Test 42",
+    "test_type": "Single locked title + single locked thumb (optional native A/B: Screen Detox vs Digital Burnout)",
+    "thumb_locked": "CAN'T STOP SCROLLING? (pain/behavior Q-hook — instant self-recognition; the deliberate correction to Monday's soft 'LIFT YOUR MOOD' declarative, which under-pulled on impressions)"
+  },
+  "strategic_bet": "TUESDAY (high-impression day) supporting ship — Surbahar Screen Detox. Designed to LAND on impressions, applying Monday's lesson: Monday's 'Music for Dopamine Boost' + soft 'LIFT YOUR MOOD' thumb under-pulled (soft positive declaratives don't drive CTR; positive lane weak for us). Tuesday corrects with a PAIN/behavior Q-hook thumb ('CAN'T STOP SCROLLING?' = instant self-recognition) + a clear pain-signal title lead ('Screen Detox' tells YouTube exactly who to surface to). Most coherent title-thumb pairing yet: screen detox <> can't stop scrolling. Lane rides the dopamine/detox cluster (the channel's only working signal = impression inheritance) but stays out of the giant's exact 'digital detox' tag. Surbahar = high-CTR(5.3%)+high-AVP(35%) under-shipped instrument, different from the Sitar giant; instrument carried by thumb/desc/tags while title uses the searchable 'Indian Instrumental'. T1-skewing lane (screen detox = Western tech-worker concept = higher RPM = $200/day lever). Down-regulate (clean pool vs Monday's up-regulate Boost). HONEST: new-ship impressions are decided by early CTR then algorithmic expansion — we maximize CTR + ride a live cluster, but the reliable impression engine remains the catalog (a Test & Compare on a hero is the higher-certainty reach lever, in addition to shipping).",
+  "success_good": "2,500+ views, 24%+ AVD, 4%+ CTR in 7 days, T1 share 25%+ — screen-detox confirmed as a viable T1-skewing lane",
+  "success_breakthrough": "8,000+ views, 28%+ AVD, T1 share 30%+ — screen-detox is a repeatable T1 lane we can own; build a screen-detox / digital-overwhelm cluster (Surbahar/Sarod)",
+  "failure_mode": "<1,500 views OR <3.2% CTR OR <17% AVD in 7 days — pain hook didn't pull, OR got starved by the Dopamine Reset giant despite tag-avoidance. Next: move to a lane fully outside the giant's net (burnout/vagus, devotional).",
+  "reference_ships": [
+    {
+      "title": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1.5 Hours",
+      "pub": "2026-05-09",
+      "views": 2043,
+      "avp": 34.86,
+      "ctr": 5.28,
+      "note": "Surbahar's high-CTR + high-AVP signature in a fresh non-owned query"
+    },
+    {
+      "title": "Screen Time Sickness? | 432Hz Raga Bhairavi Nervous System Reset (Raga Heal)",
+      "pub": "competitor",
+      "note": "competitor proof that the screen/digital pain Q-hook works in this niche"
+    },
+    {
+      "title": "Music for Dopamine Boost | Sitar & Bansuri for Positive Energy (Mon Jun 22, ours)",
+      "videoId": "vjv4ZUNj9ag",
+      "note": "the lesson — soft 'LIFT YOUR MOOD' thumb + positive lane under-pulled on impressions; Tuesday corrects with a pain Q-hook + clear pain-signal title"
+    }
+  ],
+  "tags": [
+    "screen detox music",
+    "screen detox",
+    "digital burnout",
+    "screen fatigue",
+    "doomscrolling",
+    "unplug music",
+    "surbahar",
+    "surbahar music",
+    "indian instrumental music",
+    "evening relaxation music",
+    "screen time relief",
+    "unwind after work",
+    "indian classical meditation",
+    "raga bageshri",
+    "raga focus"
+  ],
+  "description": "Screen Detox Music | Indian Instrumental | 1.5 Hours\n\nCan't stop scrolling? Fried by the feed? A full day of screens, notifications and doomscrolling leaves you wired but exhausted — mind still buzzing long after you put the phone down. Time for a screen detox.\n\nStart here. Ninety minutes of slow, deep surbahar — the bass cousin of the sitar — to help you unplug and let an overstimulated mind recover. Long resonant notes, wide space, nothing to look at. Close the eyes and let the digital noise drain out.\n\nWhat you'll hear: deep, warm Indian classical string tones in Raga Bageshri — soothing late-evening character, unhurried, with long sustains and quiet pauses. No glare, no busy rhythm. Just slowness and space to recover.\n\nBest for: a screen detox after a day of devices · putting the phone down for the night · resting a wired, overstimulated mind · a phone-free wind-down · a dark room and headphones.\n\n🔔 Subscribe to Raga Focus for Indian instrumental music for your screen detox — unplug from the feed and let an overstimulated mind come down.",
+  "thumbnail_text_main": "CAN'T STOP SCROLLING?",
+  "thumbnail_text_variants": [
+    "CAN'T STOP SCROLLING?"
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate warm-gold patterned border. EVENING palette — deep teal, indigo, aged-cream parchment, low warm lantern glow, the world gone dark and quiet (the opposite of a glowing screen). Central figure: a still, composed musician with a surbahar (large deep sitar), eyes closed, seated calm in low evening light — the posture of someone who has finally put the screens away. Mood = relief, dark quiet, the glare gone. Visually distinct from the channel's bright/morning thumbnails. Overlay text 'CAN'T STOP SCROLLING?' in dark-teal serif, large and mobile-readable (pain/behavior Q-hook for the screen-detox lane). Mobile-first: minimal clutter, high overlay contrast.",
+  "suno_prompt_A": "Slow deep Indian surbahar (bass sitar), Raga Bageshri — soothing late-evening introspective character, the feeling of putting the phone down after a day of screens and letting a wired, overstimulated mind slowly recover, deep resonant plucked string tones with long meend glissando slides and gamak ornamentation and long restful pauses, soft tanpura drone underneath, no percussion, no tabla, 432Hz tuning, 52 BPM, low register, warm intimate spacious production, the deep string entering clearly within the first few seconds (no long silent build), seamless loop-friendly texture, like dark quiet replacing screen glare, deeply unwinding not drowsy, no vocals, no humming, no human voice",
+  "suno_prompt_B": "Instrumental only, no vocals, no humming, no tabla, no percussion, slow deep surbahar bass sitar, Raga Bageshri — soothing late-evening introspective, deep resonant plucked tones with long meend slides, gamak, and long pauses, soft tanpura drone, 432Hz, 52 BPM, low register, warm spacious intimate production, deep string enters within first few seconds (no silent build), seamless loop, like a screen detox letting an overstimulated mind recover, unwinding not drowsy",
+  "production_spec": {
+    "duration_minutes": 90,
+    "bpm_range": "50-56",
+    "key_frequency_hz": 432,
+    "binaural_carrier_hz": 150,
+    "binaural_wave": "Theta",
+    "binaural_beat_hz": 6.0,
+    "binaural_level_db": -20,
+    "lufs_target": -15,
+    "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+    "render": "MP4 1920x1080, AAC 320kbps, 48kHz",
+    "notes": "Surbahar-ONLY (no tabla, no percussion). Deep low register, slow 52 BPM but NOT sleep-drowsy — Theta 6Hz = deep relaxation for a wired, overstimulated mind. Raga Bageshri's soothing late-evening character fits screen-detox recovery / unplug. CANNIBAL-SAFEGUARD: must sound distinct from the owned 'Deep Rest Surbahar' hero — frame as recovering/unplugging from screen overstimulation, not passive deep-rest. Deep string should enter within the first few seconds (hook) — avoid a long silent tanpura-only intro."
+  },
+  "experiment_notes": "Test 42 — Surbahar Screen Detox, single locked title ('Screen Detox Music | Indian Instrumental | 1.5 Hours') + thumb ('CAN'T STOP SCROLLING?'). Optional native A/B: Screen Detox vs Digital Burnout. Designed to LAND on impressions by correcting Monday's soft-thumb under-pull: pain/behavior Q-hook + clear pain-signal lead. Slot 2 uses searchable 'Indian Instrumental' (Surbahar near-unsearchable per Path-2; instrument carried by thumb/desc/tags). Rides dopamine/detox cluster (inheritance) but avoids the giant's exact 'digital detox' tag. T1-skewing lane = RPM aligned with $200/day. VidIQ NOT scored (credits reserved for user's automation). Cooldown 12d. Pool soft_pm/down-regulate (≠ Mon active).",
+  "playlists": [
+    "Healing & Anxiety Relief Music",
+    "Meditation Music"
+  ]
+}
