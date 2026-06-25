@@ -1,0 +1,124 @@
+{
+  "id": "v_2026-06-26_kindness_bansuri",
+  "status": "DRAFT",
+  "created_at": "2026-06-26",
+  "planned_date": "2026-06-26",
+  "planned_slot": "AM · PUBLISH 6:30am IST (= US Thursday evening ~9pm ET — hybrid window: India morning + US wind-down on Suggested)",
+  "title": "Kindness Music | Warm Bansuri Morning | 1.5 hours",
+  "title_variants": {
+    "A": "Kindness Music | Warm Bansuri Morning | 1.5 hours",
+    "B": "Compassion Music | Bansuri for Heart Healing | 1.5 hours"
+  },
+  "title_note": "Native YouTube title A/B. Tests TWO variables together: (1) lead word — Kindness (universal, India-morning-friendly) vs Compassion (VidIQ 62 = highest of cluster, T1-wellness anchor); (2) time-anchor — A has 'Morning' for India routine + Bansuri catalog signal; B drops Morning and adds 'Heart Healing' for T1 anytime-wellness pull. Whichever wins teaches a real strategic pattern. BE KIND thumbnail coherent with BOTH (outward-directed imperative aligns with Kindness mirror AND outward Compassion concept).",
+  "components": {
+    "instrument": "Bansuri",
+    "raga": "Bhupali",
+    "hz": "432Hz",
+    "wave": "Alpha",
+    "tempo_bpm": 70
+  },
+  "validated_keywords": [
+    "Kindness Music (lead variant A — universal accessible English, mirrors BE KIND thumb)",
+    "Compassion Music (VidIQ 62 — lead variant B, T1-wellness highest in cluster)",
+    "Music for Kindness (VidIQ 33 — informational form)",
+    "Music for Compassion (VidIQ 30 — informational form, banked)",
+    "Self-Compassion Music (VidIQ 25 — banked, dropped due to thumb mismatch with BE KIND)",
+    "Loving Kindness Music (VidIQ 29 — banked)",
+    "Bansuri (slot-2 instrument anchor for A)",
+    "Heart Healing (slot-2 wellness anchor for B)",
+    "bhupali (musicology META — joyful pentatonic, warm and intimate)",
+    "alpha (10Hz relaxed alertness — present and awake, morning)",
+    "432hz (74 — channel default for warm/healing)"
+  ],
+  "ab_test": {
+    "test_id": "T_2026-06-26_kindness_title",
+    "test_type": "TITLE A/B (thumbnail fixed — title is the only variable)",
+    "note": "Tests lead-word + time-anchor together. A: Kindness Music | Warm Bansuri Morning | 1.5 hours = cultural+morning anchored, mirrors BE KIND directly. B: Compassion Music | Bansuri for Heart Healing | 1.5 hours = T1-wellness time-neutral, leverages Compassion's VidIQ 62 advantage. Single BE KIND thumbnail across both variants — isolates title as the only variable. Read at day 7 + day 14 for CTR delta, T1 share delta, and AVD."
+  },
+  "strategic_bet": "Fri Jun 26 = GRATITUDE-CLUSTER EXTENSION ship. Morning Gratitude (Jun 18) is the working precedent — T1-pulling, slow-building, the soft-adjacent path that threads the 'manifestation rabbit hole' without breaking embedding. This ship extends that cluster with kindness/compassion — adjacent positive-psych wellness vocabulary (Kristin Neff / Tara Brach / Headspace register). Bansuri chosen: under-shipped this week (last Bansuri Jun 14), cooldown clear (12d), matches calm/intimate music character. Single fresh-melodious-morning audio character (Bhupali, 70 BPM, 432Hz) for both audiences (India morning + US Thursday-evening tail via Suggested). T1 reach is the cost lever. The bet: a second wellness-cluster ship after Gratitude starts forming the channel embedding for the Calm-app / Headspace / mindful-living co-view graph (one ship in a new cluster does nothing; two starts forming the signal).",
+  "success_good": "1500+ views at day 7 with AVP ≥22%, CTR ≥4%, AND T1 share ≥25% (≥4pp above channel baseline 21%). Day-14 trajectory tracks Morning Gratitude's slow-build curve.",
+  "success_breakthrough": "T1 share ≥30% at day 14 AND 3000+ views = wellness cluster reproduces (two-ship pattern confirmed) — Build a kindness/compassion/loving-kindness/equanimity expansion series. Bonus if AVP ≥28% (above the Sitar-cluster's recent 18-23% range = music-quality fix landed).",
+  "failure_mode": "T1 share <20% (cluster gravity stayed India-only — gratitude was a one-off) OR AVP <18% (music's 2% retention cliff recurs — confirms recent Sitar-cluster pattern is a production-process issue, not a cluster issue) OR <800 views with low CTR (thumb didn't hook AND title didn't catch).",
+  "reference_ships": [
+    {
+      "title": "Morning Gratitude Music | Indian Classical | 1.5 Hours",
+      "shipped": "2026-06-18",
+      "note": "DIRECT PRECEDENT — same T1-wellness cluster, T1-pulling, slow build. This ship extends that pattern. Read its day-14 trajectory before judging this one."
+    },
+    {
+      "title": "Yoga Music | Positive Energy Frequency",
+      "rpm": 8.38,
+      "avp": 33.49,
+      "note": "T1-skewing wellness lane benchmark — highest RPM on channel. Self-compassion + kindness is in the same Tara-Brach/Kristin-Neff/Headspace co-view graph."
+    },
+    {
+      "title": "Productive Day Music | Positive Morning Vibes | 1 Hour Bansuri Session",
+      "ctr": 5.37,
+      "avp": 30.95,
+      "rpm": 5.5,
+      "note": "Bansuri morning hero — proves the instrument + morning + offering format works at this duration band."
+    },
+    {
+      "title": "Bansuri 3hr for Relaxation | Indian Classical Music for Deep Sleep",
+      "ctr": 5.83,
+      "avp": 22.5,
+      "watch_hours": 32288,
+      "note": "Bansuri retention benchmark — slow Bansuri at 22% AVP delivers the watch-hours. Aim for ≥22% AVP this ship."
+    }
+  ],
+  "tags": [
+    "kindness music",
+    "compassion music",
+    "loving kindness music",
+    "self compassion music",
+    "bansuri music",
+    "bansuri flute",
+    "morning music",
+    "meditation music",
+    "mindfulness music",
+    "indian classical music",
+    "gentle morning music",
+    "morning meditation music",
+    "heart healing music",
+    "raga focus",
+    "morning practice music"
+  ],
+  "description": "Kindness Music | A 1.5 hour bansuri practice for a gentler morning.\n\nIf you've been running on autopilot — jaw clenched, shoulders at your ears before the day has even begun — this is a place to start over. Soft bansuri flute. No rush. Begin with kindness. Toward yourself first.\n\n▸ What you'll hear\n• Slow bansuri flute, played softly\n• A calm morning arc that opens gently, settles deep, returns soft\n• 1.5 hours of seamless music — no abrupt transitions\n• Played at a tempo that lets you actually breathe\n\n▸ Best for\n• Slow mornings before the world starts asking things of you\n• A loving-kindness or self-compassion meditation\n• Morning journaling, gentle yoga, or quiet tea\n• Background for therapy or inner work\n• Anyone who's been hard on themselves lately\n\n▸ Chapters\n0:00 — Begin with kindness\n15:00 — Softening the morning\n30:00 — Inner stillness\n45:00 — Heart space\n1:00:00 — Gentle return\n1:15:00 — Close with care\n\n▸ About Raga Focus\nSlow Indian instrumental music for body regulation, calm cognition, and gentler mornings. New session every weekday.\n\nSubscribe if this gave you a moment.\n\n#bansuri #compassionmusic #kindnessmusic #morningmusic #meditationmusic",
+  "thumbnail_text_main": "BE KIND",
+  "thumbnail_text_variants": [
+    "BE KIND"
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, pastoral forest-grove variant (NOT royal-palace setting). Ornate floral border in deep forest-green + gold + pink. Central figure: a serene woman in cream-and-soft-blue sari with gold thread embroidery and gold-trimmed dupatta veil over her head, seated on the ground, eyes softly closed, slight peaceful smile, holding a golden bamboo bansuri flute to her lips. Behind her: a quiet woodland grove with soft trees, dappled morning light, scattered wildflowers in the foreground, hint of a path winding into distance. Cream/aged-parchment background on the right side gives clean space for text. Overlay text 'BE KIND' in DARK FOREST-GREEN serif, large block letters, mobile-readable (scans under 1 second). Text on right, figure on left — survives YT player overlays on mobile. Soft warm luminous morning atmosphere, devotional/contemplative tone (NOT royal/grand). Vrindavan-grove aesthetic (Krishna-flute mythology) — culturally authentic anchor for Bansuri.",
+  "suno_prompt_A": "Gentle Indian classical instrumental, Raga Bhupali — joyful pentatonic warm and intimate, the warm feeling of inner kindness on a fresh morning, soft bamboo bansuri flute with breathy warm tone played slowly, no tabla (Bansuri solo with drone only), soft tanpura drone in background, 432Hz, 70 BPM, warm mid-register, fresh morning melodious production, like sunlight filtering through trees in a quiet grove, hopeful and tender, seamless loop-friendly texture, no vocals, no humming, no human voice",
+  "suno_prompt_B": "Instrumental only no vocals no humming, soft Indian bamboo flute bansuri solo, Raga Bhupali pentatonic warm joyful, breathy tender tone, 432Hz, 70 BPM, gentle morning warmth, soft tanpura drone backdrop, no tabla no percussion, peaceful intimate atmosphere like morning light in a forest grove, seamless loop",
+  "production_spec": {
+    "duration_minutes": 90,
+    "bpm_range": "65-75",
+    "key_frequency_hz": 432,
+    "binaural_carrier_hz": 200,
+    "binaural_wave": "Alpha",
+    "binaural_beat_hz": 10.0,
+    "binaural_level_db": -20,
+    "lufs_target": -14,
+    "loop_structure": "3 source clips (~3min each) trimmed to energetic-edges, merged with 2.5s qsin equal-power crossfades into 8:09 base unit (v5). Looped 12x with 3s qsin crossfades at loop joins. First cycle uses full v5 (preserves File 1 soft fade-in opener). Subsequent cycles use trimmed v5 (edges cut to avoid melodic-overlap on loop joins — the lesson from this session). Final 10s afade-out to silence.",
+    "render": "MP4 1920x1080 H.264 ultrafast/CRF22, AAC 192kbps stereo 48kHz, 312MB output, +faststart",
+    "files": {
+      "audio_master": "raw files/2026-06-26_kindness_bansuri/loop_90min_FINAL.wav",
+      "video_final": "raw files/2026-06-26_kindness_bansuri/video_FINAL.mp4",
+      "thumbnail": "raw files/2026-06-26_kindness_bansuri/thumbnail.png",
+      "merged_base_unit": "raw files/2026-06-26_kindness_bansuri/merged_8min_v5.wav",
+      "raw_sources": [
+        "source_1_opener.wav",
+        "source_3_middle.wav",
+        "source_2_closer.wav"
+      ]
+    },
+    "notes": "MUSIC-QUALITY CARE: deliberate attention to opening 3 minutes (long Bansuri alaap intro before any energy build) — addresses the recent Sitar-cluster 2% retention cliff finding (recent Sitar ships lost 7-11pp more audience at 2:00 mark than May-era equivalents in same lanes; isolated music-quality issue in opening passages). Bhupali = joyful pentatonic but used in WARM/TENDER register here (not bright/uplifting) — fits compassion/kindness emotional intent. No tabla (Bansuri solo + tanpura drone only) — keeps the meditative/intimate space. 70 BPM = slow enough for breath, not so slow it loses momentum."
+  },
+  "experiment_notes": "GRATITUDE-CLUSTER EXTENSION (ship #2 of the T1-wellness cluster after Morning Gratitude Jun 18). Audience-coherence test scored 4/4 (kindness/compassion lane is mainstream-validated wellness, NOT fringe manifestation — coherent with channel embedding). Native title A/B isolates two strategic variables (cultural-morning vs T1-time-neutral). Single BE KIND thumbnail (Pichwai forest-grove variant, devotional pose) coherent with both title concepts (outward-directed kindness imperative). Audio production care on opening passages (addresses recent Sitar-cluster 2% retention cliff). VidIQ scores: compassion music 62 (highest), but music-for-X intent forms all scored 25-33 — accepting that this is a Browse/Suggested-only ship (Search demand low for this vocabulary), betting on wellness-cluster Suggested-feed compounding with Gratitude. T1 share at day 14 is the breakthrough signal. If this lands, kindness/compassion/loving-kindness/equanimity/letting-go expansion series is unlocked.",
+  "playlists": [
+    "Morning Energy Music",
+    "Healing & Anxiety Relief Music",
+    "Meditation Music"
+  ]
+}
