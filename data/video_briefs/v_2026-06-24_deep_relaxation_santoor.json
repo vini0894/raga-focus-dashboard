@@ -1,0 +1,102 @@
+{
+  "id": "v_2026-06-24_deep_relaxation_santoor",
+  "status": "DRAFT",
+  "created_at": "2026-06-24",
+  "planned_date": "2026-06-24",
+  "planned_slot": "Evening ship — publish ~6:00pm IST",
+  "title": "Deep Relaxation Music | Santoor Instrumental | 1.5 Hours",
+  "title_variants": {
+    "A": "Deep Relaxation Music | Santoor Instrumental | 1.5 Hours",
+    "B": "Deep Relaxation Music | Calm & Unwind | 1.5 Hours"
+  },
+  "title_note": "A/B test: instrument signal (A) vs mood phrase (B). Hypothesis: A gets 12x broader impression seeding (instrument = targeting signal); B may CTR higher but get fewer impressions. Watch BOTH impression volume AND CTR — CTR alone won't tell the full story if B gets starved on distribution. A is the safe ship; B is the test. Lead keyword 'Deep Relaxation' consistent across both variants and thumbnail = strong algorithm coherence signal.",
+  "components": {
+    "problem": "body won't unwind even after the day is done — tension sitting in muscles, mind still running, can't fully let go and sink into rest",
+    "instrument": "Santoor",
+    "raga": "Yaman",
+    "hz": "432Hz",
+    "wave": "Alpha"
+  },
+  "validated_keywords": [
+    "Deep Relaxation Music (lead keyword — 23d since last use, open lane)",
+    "Santoor Instrumental (instrument signal — 11d cooldown clear, proven 33% AVP lane)",
+    "yaman (evening raga — expansive, open, raised 4th, settling quality)",
+    "432hz (standard relaxation tuning)",
+    "alpha (8-10Hz — calm alertness into physical release)"
+  ],
+  "ab_test": {
+    "test_id": "T_2026-06-24_deeprelax_title",
+    "test_type": "TITLE A/B (instrument signal vs mood phrase — thumbnail fixed)",
+    "note": "Testing whether instrument name in slot-2 drives meaningfully more impressions vs a mood phrase. Data across catalog: instrument titles average 356K impressions vs 29K without — 12x difference. But catalog-level data is confounded by older/larger videos. This is the cleanest controlled test on our own channel. Watch impression VOLUME on both variants at day 3.",
+    "title_variants": {
+      "A": "Deep Relaxation Music | Santoor Instrumental | 1.5 Hours",
+      "B": "Deep Relaxation Music | Calm & Unwind | 1.5 Hours"
+    }
+  },
+  "strategic_bet": "Wed Jun 24 ship. Goal: break the June sub-2K-view streak (Mon Dopamine Boost 15.3% AVP = no expansion; Tue Screen Detox too early to judge). Santoor chosen: 11d cooldown clear, highest AVD in catalog (Stress Relief 3hr = 50:15), proven 33% AVP in deep-calm lanes. Deep Relaxation lane is open (last used Jun 1 Dilruba, 23d ago, non-climber). Three active Santoor videos (Gratitude Jun 18, Stress Relief gem A/B running, today) — cannibalization risk is LOW because lanes are distinct (morning gratitude vs stress relief vs deep relaxation) and the gem has only 38K impressions (not a climber). Title A/B doubles as an instrument-signal test. Thumbnail coherence: 'DEEP RELAXATION' on thumb + 'Deep Relaxation Music' leading both title variants = strongest consistent algo signal we can give.",
+  "success_good": "2,000+ views, 26%+ AVP, 4%+ CTR in 7 days",
+  "success_breakthrough": "5,000+ views, 30%+ AVP — Santoor deep relaxation lane confirms as a repeatable second lane alongside the stress relief gem",
+  "failure_mode": "AVP <20% (music didn't retain — production issue, check if Yaman pacing is too static) OR <500 views at day 7 (neither variant seeded). If A and B both fail on impressions, the lane itself may be saturated or the thumbnail hook is wrong.",
+  "reference_ships": [
+    {
+      "video_id": "TXfk2UU5MjI",
+      "title": "Stress Relief Music | Santoor Instrumental | 3 Hours",
+      "avp": 27.92,
+      "avd": "0:50:15",
+      "note": "Primary music reference — highest AVD in catalog. Match this pacing: slow, evolving, space between phrases. The 50-min AVD means the music genuinely holds attention. Use this as Suno style reference."
+    },
+    {
+      "video_id": "KeEFFkaCMRk",
+      "title": "Joyful Music | Positive Vibes Music with Santoor",
+      "avp": 32.97,
+      "avd": "0:29:40",
+      "note": "Best Santoor CTR + views. Different lane (uplifting) but confirms instrument retains well. Avoid upbeat energy — this one is the anti-template for today's slow/deep direction."
+    }
+  ],
+  "tags": [
+    "deep relaxation music",
+    "relaxation music",
+    "santoor music",
+    "indian classical music",
+    "calm music",
+    "stress relief music",
+    "meditation music",
+    "indian instrumental music",
+    "raga yaman",
+    "432hz music",
+    "sleep music",
+    "healing music",
+    "unwind music",
+    "raga focus",
+    "peaceful music"
+  ],
+  "description": "Deep Relaxation Music | Santoor Instrumental | 1.5 Hours\n\nThis is for the end of the day when your body still hasn't gotten the message that it's over.\n\nNinety minutes of slow, meditative santoor in Raga Yaman — an evening raga with an open, expansive quality that gently unties what the day wound tight. No rush. No peak. Just a long, unhurried descent into stillness.\n\nWhat you'll hear: the hammered shimmer of santoor with long phrase spaces, soft tanpura drone underneath, tuned to 432Hz with alpha wave support for physical release.\n\nBest for: after work · unwinding before bed · body scan or progressive relaxation · sitting with a quiet cup of tea when you need the room to finally go still.\n\n🔔 Subscribe to Raga Focus for Indian instrumental music that helps you actually relax.",
+  "thumbnail_text_main": "DEEP RELAXATION",
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting style, ornate warm-gold patterned border, aged parchment background. EVENING/DUSK palette — deep warm amber and soft teal, candlelight glow, still and unhurried. Central composition: a pair of santoor mallets resting on the strings of a santoor — no hands, no figure — as if the player has just stopped and the room has gone quiet. One candle glowing softly in the background. The instrument fills most of the frame. Overlay text 'DEEP RELAXATION' in large bold teal serif, top or center. Mobile-first: text must read in under 1 second. The candlelight + resting mallets = permission to stop. Miniature-art border gives cultural authenticity. Clean, uncluttered composition.",
+  "suno_prompt_A": "Indian classical instrumental, Raga Yaman — raised 4th (teevra Ma), expansive outward open evening character, gradually settling and releasing, hammered santoor dulcimer with characteristic bright percussive attack and long warm resonant sustain, slow deliberate mallet strikes with generous space between phrases — like the body finally getting permission to put down the weight it has been carrying, soft tanpura drone underneath holding everything still, no tabla, 432Hz tuning, slow tempo 55-60 BPM, mid-low register with occasional bright peaks, warm golden reverb, seamless loop-friendly ambient texture, no vocals, no humming, no human voice",
+  "suno_prompt_B": "Instrumental only, no vocals, no humming, Indian classical santoor deep relaxation, Raga Yaman — raised 4th, expansive evening open quality, hammered santoor dulcimer slow deliberate mallet strikes with long resonant sustain and generous space between phrases, soft tanpura drone, no tabla, 432Hz, 55-60 BPM, mid-low warm register, golden reverb, seamless loop, like the body finally releasing what the day wound tight",
+  "production_spec": {
+    "duration_minutes": 90,
+    "bpm_range": "55-62",
+    "key_frequency_hz": 432,
+    "binaural_carrier_hz": 200,
+    "binaural_wave": "Alpha",
+    "binaural_beat_hz": 9.0,
+    "binaural_level_db": -20,
+    "lufs_target": -14,
+    "loop_seam": "10s in / 30s out, Suno extend 3-4x → loop in post to fill 90 min",
+    "render": "MP4 1920x1080, AAC 320kbps, 48kHz",
+    "notes": "SLOW and SPACIOUS is the goal — reference the Stress Relief Santoor 3hr (TXfk2UU5MjI, 50:15 AVD) for pacing. Long phrase pauses are a feature not a bug. No tabla. Yaman = evening open quality, should feel like a room going quiet after a long day. If a clip sounds busy or rushed, regenerate. Opening should be the calmest, most inviting phrase — no abrupt attack at the start."
+  },
+  "cooldown_checks": {
+    "instrument_santoor": "Last: Jun 13 (Bright Morning) = 11d ✅",
+    "lane_deep_relaxation": "Last: Jun 1 (Dilruba) = 23d ✅",
+    "title_structure": "No repeat of yesterday's [X] | [Instrument] Instrumental | 1.5 Hours — Title A uses same structure but different instrument/lane; Title B breaks the structure entirely ✅",
+    "active_climbers": "Gratitude (Jun 18) slow-climbing but different lane (morning). Sitar NS Healing still climbing but different instrument. No block. ✅"
+  },
+  "playlists": [
+    "Deep Relaxation",
+    "Meditation Music",
+    "Evening Wind Down"
+  ]
+}

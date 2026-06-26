@@ -1,0 +1,99 @@
+{
+  "week_id": "wk_2026-06-27",
+  "week_start": "2026-06-27",
+  "week_end": "2026-07-03",
+  "status": "planned",
+  "notes": "Pivoted per research/session_findings_2026-06-26.md — high-RPM lanes prioritized, Mon Dopamine kept as music-fix experiment, calm Suno prompts mandatory for all calm-lane ships.",
+  "ships": [
+    {
+      "date": "2026-06-27",
+      "type": "refresh",
+      "target_video": "Sitar for Brain Detox",
+      "action": "re-thumb",
+      "thumb_text": "BRAIN FOG?",
+      "lane": "cognitive",
+      "rpm_tier": "highest",
+      "status": "planned",
+      "notes": "Freebie per session_findings §C. Zero production cost. Compact Q-hook per cognitive lane rule."
+    },
+    {
+      "date": "2026-06-29",
+      "type": "ship",
+      "instrument": "Sitar",
+      "title_direction": "Dopamine Cleanse | Sitar Music | 1.5 Hours",
+      "lane": "cognitive-dopamine",
+      "runtime_min": 90,
+      "suno_prompt_rule": "CALM",
+      "rpm_tier": "low (morning) — experiment",
+      "status": "planned",
+      "experiment": {
+        "hypothesis": "Calm Suno prompt fixes the lane's weak music retention (RRP 0.42 baseline).",
+        "success_criteria": "AVD >= 25% AND views >= 10K within 7 days",
+        "failure_criteria": "AVD < 20% AND views < 5K within 7 days = lane structurally weak, retire Dopamine angle"
+      },
+      "brief_path": null
+    },
+    {
+      "date": "2026-06-30",
+      "type": "ship",
+      "instrument": "Surbahar",
+      "title_direction": "Sleep Music | Surbahar | 3 Hours",
+      "title_variants_draft": [
+        "3 Hour Sleep Music | Surbahar Drone | Deep Night",
+        "Sleep Through the Night | Surbahar | 3 Hours",
+        "Slow Sleep Music | Surbahar Instrumental | 3 Hours"
+      ],
+      "thumb_text": "DRIFT TO SLEEP",
+      "yt_native_test": "title_3way",
+      "lane": "sleep",
+      "sub_lane": "sleep (NOT deep-rest — dodges cannibalization with Apr 28 hero per Finding 14)",
+      "runtime_min": 180,
+      "suno_prompt_rule": "CALM",
+      "rpm_tier": "high (3hr factor: $6.37)",
+      "status": "planned",
+      "brief_path": null
+    },
+    {
+      "date": "2026-07-01",
+      "type": "ship",
+      "instrument": "Sarangi",
+      "title_direction": "Anxiety Relief Music | Sarangi Instrumental | 1.5 Hours",
+      "lane": "anxiety",
+      "runtime_min": 90,
+      "suno_prompt_rule": "CALM",
+      "rpm_tier": "$5.33",
+      "status": "planned",
+      "brief_path": null
+    },
+    {
+      "date": "2026-07-02",
+      "type": "ship",
+      "instrument": "Sarod",
+      "title_direction": "Mental Clarity Music | Sarod | 1.5 Hours",
+      "lane": "cognitive",
+      "runtime_min": 90,
+      "suno_prompt_rule": "CALM",
+      "rpm_tier": "$6.47",
+      "status": "planned",
+      "brief_path": null
+    },
+    {
+      "date": "2026-07-03",
+      "type": "review",
+      "action": "Read Mon experiment + Tue 3hr early signal; plan wk_2026-07-04",
+      "status": "planned"
+    }
+  ],
+  "preflight_pending": [
+    "Cooldown check for Mon-Thu dates",
+    "Phrase locks scan (20d window)",
+    "VidIQ scores on: Dopamine Cleanse, Sleep Music, Anxiety Relief Music, Mental Clarity Music",
+    "Suno prompts drafted (4 ships) per CALM-prompt rule from session_findings Finding 3",
+    "Brief JSONs written to video_briefs/ — NO premature JSON until title+thumb+lane LOCKED per banked rule"
+  ],
+  "week_level_decisions": {
+    "calm_prompt_rule": "All calm-lane Suno prompts this week must avoid: 'upbeat, uplifting, energetic, forward momentum, not sleepy, never sluggish, driving, propulsive'. Must include: 'slow, spacious, low register, long pauses, no momentum, breath between notes, restful'.",
+    "dopamine_experiment_framing": "Mon Dopamine = SINGLE experiment to test music-fix hypothesis, not a weekly default. Wed/Thu cover the revenue base with high-RPM lanes.",
+    "thumb_test_observation_window": "Active thumb tests from 2026-06-26 session (Mental Fatigue Sitar, Restless Mind Veena) read at day 7 — Jul 3 review."
+  }
+}
