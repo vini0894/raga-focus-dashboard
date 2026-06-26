@@ -1,8 +1,8 @@
 {
-  "version": 2,
-  "generated_at": "2026-05-17",
-  "generated_from": "research/channel_playbook_v1.md §10 + 18 A/B tests",
-  "description": "Lane × winning thumbnail-text-format matrix. Use to pick the right thumb style for a given title. UPDATED 2026-05-17 with Tests 15-18 — sleep no longer 'tolerant' (Test 16 overturned Test 10); cognitive_clarity lane added (Test 17 63/37 decisive).",
+  "version": 3,
+  "generated_at": "2026-06-26",
+  "generated_from": "research/channel_playbook_v1.md §10 + 40 A/B tests (SS-verified shares) + thumbnail_dataset.csv. See research/lane_packaging_guide_v1.md for combined title+thumb.",
+  "description": "Lane × winning thumbnail-text-format matrix. Use to pick the right thumb style for a given title. v3 (2026-06-26): morning anti-Q-hook LOCKED (5 tests, 0 Q wins); compact-Q sub-rule added to cognitive (#35); permission format added to stress_burnout (#29 +17.2pp). Companion: data/playbook/lane_packaging_directions.json (title+thumb combined).",
   "rule_for_refresh_batches": "Mix formats across batch — don't ship 4 Q-hooks in a row (channel-page pattern blindness). 2 Q-hook + 2 outcome-imperative is healthy ratio for a 4-refresh batch.",
   "pairing_convention": {
     "rule": "Matched-pair A/B: If title is SEO/statement → use Q-hook thumb. If title is Q-hook → use outcome-imperative thumb.",
@@ -34,11 +34,12 @@
       "note": "Lane is THUMB-FORMAT TOLERANT — Q-hooks tied in Test 7. Abstract-noun edges imperative."
     },
     "stress_burnout": {
-      "winning_format": "outcome_statement",
+      "winning_format": "permission_or_q_hook",
       "confidence": "DIRECTIONAL",
-      "evidence": "A/B Test 13 running: REST. RESET. RECOVER. leading BURNOUT? 51/49",
-      "winners": ["REST. RESET. RECOVER.", "CORTISOL DOWN", "STRESS LOOP?"],
-      "losers": ["BURNOUT? (Q — losing marginally 49/51)"]
+      "evidence": "v3: Permission format is a distinct winner — #29 REST WITHOUT WORRY +17.2pp, #27 IT'S OKAY TO REST leading. Q-hook & statement also compete (#2 NEED REST?, #3 OVERWHELMED? both A-wins). #23 outcome (BREATHE & RELAX) edged Q in deep-rest.",
+      "winners": ["IT'S OKAY TO REST", "REST WITHOUT WORRY", "BREATHE & RELAX", "REST. RESET. RECOVER."],
+      "losers": ["FOR DRAINED MINDS (lost to permission)"],
+      "note": "Permission ('it's okay to...') emerged as a distinct winning category in v3 — gives the burnout viewer permission to stop, vs naming the pain."
     },
     "anxiety_overthinking": {
       "winning_format": "specific_state_q_hook",
@@ -49,12 +50,12 @@
       "note": "The ONLY lane where Q-hook thumbs decisively win"
     },
     "morning_practice": {
-      "winning_format": "vibes_state",
-      "confidence": "DECISIVE",
-      "evidence": "A/B Test 14: CALM MORNING VIBES beat MORNING PEACE 59/41",
-      "winners": ["CALM MORNING VIBES", "MORNING ENERGY", "START YOUR DAY"],
-      "losers": ["MORNING PEACE (affect — lost decisive 41/59)"],
-      "avoid_format": "affect_only"
+      "winning_format": "outcome_imperative_or_vibes_state",
+      "confidence": "LOCKED",
+      "evidence": "v3: anti-Q-hook LOCKED across 5 tests, 0 Q-hook wins. #17 START YOUR DAY STRONG 55.9/44.1, #22 WAKE UP PEACEFULLY 57.5/42.5, #40 POSITIVE MORNING VIBES 54.3/45.7, #12 CALM MORNING VIBES 59/41, #20 FRESH START won.",
+      "winners": ["START YOUR DAY STRONG", "WAKE UP PEACEFULLY", "POSITIVE MORNING VIBES", "WIN YOUR DAY", "FRESH START", "CALM MORNING VIBES"],
+      "losers": ["FEELING UNMOTIVATED? (44/56)", "RUSHED MORNING? (42/57)", "HAVE A BRIGHT DAY (46/54)", "MORNING PEACE (41/59)", "FEELING LOW THIS MORNING?"],
+      "avoid_format": "q_hook"
     },
     "sleep": {
       "winning_format": "outcome_imperative",
@@ -69,10 +70,11 @@
       "winning_format": "specific_state_q_hook",
       "confidence": "DECISIVE",
       "evidence": "A/B Test 17 (May 15-): MENTALLY EXHAUSTED? Q-hook + SEO-led title beat RESET YOUR THOUGHTS statement + Q-lead title 63/37 (26.4pp gap — biggest ever).",
-      "winners": ["MENTALLY EXHAUSTED?", "BRAIN FOG?", "MIND CLOUDY?", "MENTAL FATIGUE?", "CAN'T THINK?", "BRAIN DRAINED?"],
-      "losers": ["RESET YOUR THOUGHTS (statement — lost 37/63)"],
+      "winners": ["MIND FULL?", "BRAIN FOG?", "MIND CLOUDY?", "MENTAL FATIGUE?", "CAN'T THINK?"],
+      "losers": ["RESET YOUR THOUGHTS (statement — lost 37/63)", "CAN'T THINK STRAIGHT? (verbose Q — lost 46/54 to compact MIND FULL?, #35)"],
       "avoid_format": "outcome_statement",
-      "note": "Brain Fog / cognitive-reset / mental clarity audience wants viewer-state recognition (Q-hook), not promised outcome. Tightest clinical-curiosity lane."
+      "compact_subrule": "v3 (#35 54/46): within Q-hooks, COMPACT 2-3 words beats verbose. 'MIND FULL?' (punny, 2-word) beat 'CAN'T THINK STRAIGHT?' (4-word). Mobile readability compounds with Q-hook intent.",
+      "note": "Brain Fog / cognitive-reset / mental clarity audience wants viewer-state recognition (Q-hook), not promised outcome — but keep it SHORT. Highest-RPM lane ($6.47). Use 1.5hr runtime, not 3hr."
     },
     "relaxation_evening": {
       "winning_format": "specific_state_q_hook",
