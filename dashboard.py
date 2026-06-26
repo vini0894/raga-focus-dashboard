@@ -98,6 +98,25 @@ COMPETITORS = {
 REACH_DATA_FILE = Path(__file__).parent / "data" / "REACH_DATA.md"
 REACH_HISTORY_FILE = Path(__file__).parent / "data" / "REACH_HISTORY.csv"
 KEYWORD_DATA_FILE = Path(__file__).parent / "data" / "KEYWORD_DATA.md"
+WEEKLY_PLANS_DIR = Path(__file__).parent / "data" / "weekly_plans"
+
+
+def load_active_weekly_plan():
+    """Return the most recent (by week_start) weekly plan from data/weekly_plans/, or None."""
+    import json as _json
+    if not WEEKLY_PLANS_DIR.exists():
+        return None
+    latest = None
+    for f in WEEKLY_PLANS_DIR.glob("wk_*.json"):
+        try:
+            with open(f) as fh:
+                plan = _json.load(fh)
+            if latest is None or plan.get("week_start", "") > latest.get("week_start", ""):
+                latest = plan
+        except Exception:
+            continue
+    return latest
+
 
 # CTR / retention benchmarks for the Indian-classical focus/meditation niche
 CTR_FLOOR = 2.0   # below = bad
@@ -1491,6 +1510,45 @@ with tab_briefs:
         "appears here automatically. The old Production Queue tab stays untouched "
         "as a parallel view until this one is fully validated."
     )
+
+    # ---- Weekly Tentative Plan (reads data/weekly_plans/wk_*.json) ----
+    _plan = load_active_weekly_plan()
+    if _plan:
+        _week_id = _plan.get("week_id", "?")
+        _start = _plan.get("week_start", "?")
+        _end = _plan.get("week_end", "?")
+        with st.expander(f"🗓️ Weekly Tentative Plan — {_week_id} ({_start} → {_end})", expanded=True):
+            if _plan.get("notes"):
+                st.caption(_plan["notes"])
+            _ships = _plan.get("ships", [])
+            if _ships:
+                _rows = []
+                for s in _ships:
+                    _rows.append({
+                        "Date": s.get("date", ""),
+                        "Type": s.get("type", ""),
+                        "Instrument": s.get("instrument") or s.get("target_video", "—"),
+                        "Lane": s.get("lane", ""),
+                        "Runtime (min)": s.get("runtime_min", ""),
+                        "Title / Action": s.get("title_direction") or s.get("action") or "",
+                        "Thumb": s.get("thumb_text", ""),
+                        "Suno rule": s.get("suno_prompt_rule", ""),
+                        "RPM tier": s.get("rpm_tier", ""),
+                        "Status": s.get("status", ""),
+                    })
+                st.dataframe(pd.DataFrame(_rows), width="stretch", hide_index=True)
+            _preflight = _plan.get("preflight_pending", [])
+            if _preflight:
+                st.markdown("**Preflight pending:**")
+                for item in _preflight:
+                    st.markdown(f"- {item}")
+            _decisions = _plan.get("week_level_decisions", {})
+            if _decisions:
+                with st.expander("⭐ Week-level decisions", expanded=False):
+                    for k, v in _decisions.items():
+                        st.markdown(f"**{k}**: {v}")
+        st.divider()
+    # ---- end Weekly Tentative Plan ----
 
     if st.button("🔄 Refresh briefs", key="refresh_briefs"):
         st.cache_data.clear()
