@@ -28,7 +28,7 @@ adhd brain fog,problem,60,Low,KEYWORD_DATA.md migration (Psych2Go,2026-04-25,202
 deep meditation,problem,60,Medium,KEYWORD_DATA.md migration (The Honest Guys (1.28M,2026-04-25,2026-04-25
 dopamine reset,problem,68,,config.py,2026-04-25,2026-04-28
 emotional overwhelm,problem,,,config.py,2026-04-25,
-heavy heart music,problem,,,config.py,2026-04-25,
+heavy heart music,problem,57,,chat_2026-06-17,2026-04-25,2026-06-18
 racing thoughts music,problem,,,config.py,2026-04-25,
 sunday anxiety,problem,,,config.py,2026-04-25,
 vagus nerve music,problem,57,,session,2026-04-25,2026-05-03
@@ -324,7 +324,7 @@ release your stress,problem,26,,chat-2026-05-31 vidiq paste,2026-05-31,2026-05-3
 release the day,problem,52,,chat-2026-05-31 vidiq paste,2026-05-31,2026-05-31
 release the tension,problem,27,,chat-2026-05-31 vidiq paste,2026-05-31,2026-05-31
 slow bansuri for anxiety,problem,28,,chat-2026-05-31 vidiq paste,2026-05-31,2026-05-31
-music for a heavy heart,problem,30,,chat-2026-05-31 vidiq paste,2026-05-31,2026-05-31
+music for a heavy heart,problem,62,,chat_2026-06-17,2026-05-31,2026-06-18
 mental exhaustion,problem,60,,chat-2026-05-31 vidiq paste,2026-05-31,2026-05-31
 find comfort,problem,51,,chat-2026-05-31 vidiq paste,2026-05-31,2026-05-31
 solace,problem,68,,chat-2026-05-31 vidiq paste,2026-05-31,2026-05-31
@@ -337,3 +337,23 @@ drone music for stillness,problem,36,,session,2026-06-05,2026-06-05
 inner stillness music,problem,60,,session,2026-06-05,2026-06-05
 morning vitality music,problem,31,,session_2026-06-05,2026-06-05,2026-06-05
 morning bliss music,problem,61,,session_2026-06-05,2026-06-05,2026-06-05
+overstimulated mind,problem,61,,chat_2026-06-16,2026-06-16,2026-06-16
+release tension,problem,61,,chat_2026-06-16,2026-06-16,2026-06-16
+slow your heart rate,problem,25,,chat_2026-06-16,2026-06-16,2026-06-16
+deep breathing,problem,28,,chat_2026-06-16,2026-06-16,2026-06-16
+calm your body,problem,25,,chat_2026-06-16,2026-06-16,2026-06-16
+feel safe and calm,problem,25,,chat_2026-06-16,2026-06-16,2026-06-16
+music to decompress,problem,62,,chat_2026-06-17,2026-06-17,2026-06-17
+decompress,problem,62,,chat_2026-06-17,2026-06-17,2026-06-17
+morning gratitude music,problem,60,,chat_2026-06-17,2026-06-17,2026-06-17
+morning ritual music,problem,27,,chat_2026-06-17,2026-06-17,2026-06-17
+music for heartbreak,problem,25,,chat_2026-06-17,2026-06-18,2026-06-18
+mindful morning music,problem,57,,chat_2026-06-19,2026-06-19,2026-06-19
+mindfulness music,problem,67,,chat_2026-06-19,2026-06-19,2026-06-19
+music for kindness,problem,33,,chat-paste 2026-06-25,2026-06-25,2026-06-25
+music for inner kindness,problem,28,,chat-paste 2026-06-25,2026-06-25,2026-06-25
+music for loving kindness,problem,29,,chat-paste 2026-06-25,2026-06-25,2026-06-25
+compassion music,problem,62,,chat-paste 2026-06-25,2026-06-25,2026-06-25
+music for compassion,problem,30,,chat-paste 2026-06-25,2026-06-25,2026-06-25
+compassion practice music,problem,31,,chat-paste 2026-06-25,2026-06-25,2026-06-25
+self-compassion music,problem,25,,chat-paste 2026-06-25,2026-06-25,2026-06-25
