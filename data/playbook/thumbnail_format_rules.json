@@ -1,87 +1,163 @@
 {
   "version": 3,
   "generated_at": "2026-06-26",
-  "generated_from": "research/channel_playbook_v1.md §10 + 40 A/B tests (SS-verified shares) + thumbnail_dataset.csv. See research/lane_packaging_guide_v1.md for combined title+thumb.",
-  "description": "Lane × winning thumbnail-text-format matrix. Use to pick the right thumb style for a given title. v3 (2026-06-26): morning anti-Q-hook LOCKED (5 tests, 0 Q wins); compact-Q sub-rule added to cognitive (#35); permission format added to stress_burnout (#29 +17.2pp). Companion: data/playbook/lane_packaging_directions.json (title+thumb combined).",
-  "rule_for_refresh_batches": "Mix formats across batch — don't ship 4 Q-hooks in a row (channel-page pattern blindness). 2 Q-hook + 2 outcome-imperative is healthy ratio for a 4-refresh batch.",
+  "generated_from": "research/channel_playbook_v1.md \u00a710 + 40 A/B tests (SS-verified shares) + thumbnail_dataset.csv. See research/lane_packaging_guide_v1.md for combined title+thumb.",
+  "description": "Lane \u00d7 winning thumbnail-text-format matrix. Use to pick the right thumb style for a given title. v3 (2026-06-26): morning anti-Q-hook LOCKED (5 tests, 0 Q wins); compact-Q sub-rule added to cognitive (#35); permission format added to stress_burnout (#29 +17.2pp). Companion: data/playbook/lane_packaging_directions.json (title+thumb combined).",
+  "rule_for_refresh_batches": "Mix formats across batch \u2014 don't ship 4 Q-hooks in a row (channel-page pattern blindness). 2 Q-hook + 2 outcome-imperative is healthy ratio for a 4-refresh batch.",
   "pairing_convention": {
-    "rule": "Matched-pair A/B: If title is SEO/statement → use Q-hook thumb. If title is Q-hook → use outcome-imperative thumb.",
-    "rationale": "Preserves test power — never both Q, never both statement"
+    "rule": "Matched-pair A/B: If title is SEO/statement \u2192 use Q-hook thumb. If title is Q-hook \u2192 use outcome-imperative thumb.",
+    "rationale": "Preserves test power \u2014 never both Q, never both statement"
   },
   "lane_rules": {
     "focus": {
       "winning_format": "outcome_imperative",
       "confidence": "DECISIVE",
       "evidence": "A/B Test 6: BOOST YOUR FOCUS beat NEED ENERGY RESET? 73/27",
-      "winners": ["BOOST YOUR FOCUS", "LOCK IN", "CLARITY MODE", "SHARP MIND", "BOOST FOCUS NOW"],
-      "losers": ["NEED ENERGY RESET? (lost 27/73)", "BRAIN FOG? (Q-hook)", "DISTRACTED?"],
+      "winners": [
+        "BOOST YOUR FOCUS",
+        "LOCK IN",
+        "CLARITY MODE",
+        "SHARP MIND",
+        "BOOST FOCUS NOW"
+      ],
+      "losers": [
+        "NEED ENERGY RESET? (lost 27/73)",
+        "BRAIN FOG? (Q-hook)",
+        "DISTRACTED?"
+      ],
       "avoid_format": "q_hook"
     },
     "calm": {
       "winning_format": "outcome_state",
       "confidence": "DECISIVE",
       "evidence": "A/B Test 2: SEO Calm Your Mind beat Q-hook Feeling Lost? 68/32",
-      "winners": ["FIND PEACE", "FEEL CALM", "QUIET MIND", "CALM YOUR MIND", "STILLNESS"],
-      "losers": ["FEELING LOST? (lost 32/68)"],
+      "winners": [
+        "FIND PEACE",
+        "FEEL CALM",
+        "QUIET MIND",
+        "CALM YOUR MIND",
+        "STILLNESS"
+      ],
+      "losers": [
+        "FEELING LOST? (lost 32/68)"
+      ],
       "avoid_format": "q_hook"
     },
     "healing": {
       "winning_format": "abstract_noun",
       "confidence": "DIRECTIONAL",
       "evidence": "A/B Test 12 running: EMOTIONAL HEALING leading HEAL YOUR HEART 52/48; Test 7 tied",
-      "winners": ["EMOTIONAL HEALING", "FEEL CALM", "FIND PEACE", "BUSY MIND?"],
-      "losers": ["HEAL YOUR HEART (imperative — losing 48/52)"],
-      "note": "Lane is THUMB-FORMAT TOLERANT — Q-hooks tied in Test 7. Abstract-noun edges imperative."
+      "winners": [
+        "EMOTIONAL HEALING",
+        "FEEL CALM",
+        "FIND PEACE",
+        "BUSY MIND?"
+      ],
+      "losers": [
+        "HEAL YOUR HEART (imperative \u2014 losing 48/52)"
+      ],
+      "note": "Lane is THUMB-FORMAT TOLERANT \u2014 Q-hooks tied in Test 7. Abstract-noun edges imperative."
     },
     "stress_burnout": {
       "winning_format": "permission_or_q_hook",
       "confidence": "DIRECTIONAL",
-      "evidence": "v3: Permission format is a distinct winner — #29 REST WITHOUT WORRY +17.2pp, #27 IT'S OKAY TO REST leading. Q-hook & statement also compete (#2 NEED REST?, #3 OVERWHELMED? both A-wins). #23 outcome (BREATHE & RELAX) edged Q in deep-rest.",
-      "winners": ["IT'S OKAY TO REST", "REST WITHOUT WORRY", "BREATHE & RELAX", "REST. RESET. RECOVER."],
-      "losers": ["FOR DRAINED MINDS (lost to permission)"],
-      "note": "Permission ('it's okay to...') emerged as a distinct winning category in v3 — gives the burnout viewer permission to stop, vs naming the pain."
+      "evidence": "v3: Permission format is a distinct winner \u2014 #29 REST WITHOUT WORRY +17.2pp, #27 IT'S OKAY TO REST leading. Q-hook & statement also compete (#2 NEED REST?, #3 OVERWHELMED? both A-wins). #23 outcome (BREATHE & RELAX) edged Q in deep-rest.",
+      "winners": [
+        "IT'S OKAY TO REST",
+        "REST WITHOUT WORRY",
+        "BREATHE & RELAX",
+        "REST. RESET. RECOVER."
+      ],
+      "losers": [
+        "FOR DRAINED MINDS (lost to permission)"
+      ],
+      "note": "Permission ('it's okay to...') emerged as a distinct winning category in v3 \u2014 gives the burnout viewer permission to stop, vs naming the pain."
     },
     "anxiety_overthinking": {
       "winning_format": "specific_state_q_hook",
       "confidence": "DIRECTIONAL",
       "evidence": "A/B Test 9: TOO MANY THOUGHTS? beat THINK LESS",
-      "winners": ["TOO MANY THOUGHTS?", "BUSY MIND?", "MENTAL OVERLOAD?", "STRESSED OUT?", "MIND RACING?"],
-      "losers": ["THINK LESS (imperative — lost to TOO MANY THOUGHTS)"],
+      "winners": [
+        "TOO MANY THOUGHTS?",
+        "BUSY MIND?",
+        "MENTAL OVERLOAD?",
+        "STRESSED OUT?",
+        "MIND RACING?"
+      ],
+      "losers": [
+        "THINK LESS (imperative \u2014 lost to TOO MANY THOUGHTS)"
+      ],
       "note": "The ONLY lane where Q-hook thumbs decisively win"
     },
     "morning_practice": {
       "winning_format": "outcome_imperative_or_vibes_state",
       "confidence": "LOCKED",
       "evidence": "v3: anti-Q-hook LOCKED across 5 tests, 0 Q-hook wins. #17 START YOUR DAY STRONG 55.9/44.1, #22 WAKE UP PEACEFULLY 57.5/42.5, #40 POSITIVE MORNING VIBES 54.3/45.7, #12 CALM MORNING VIBES 59/41, #20 FRESH START won.",
-      "winners": ["START YOUR DAY STRONG", "WAKE UP PEACEFULLY", "POSITIVE MORNING VIBES", "WIN YOUR DAY", "FRESH START", "CALM MORNING VIBES"],
-      "losers": ["FEELING UNMOTIVATED? (44/56)", "RUSHED MORNING? (42/57)", "HAVE A BRIGHT DAY (46/54)", "MORNING PEACE (41/59)", "FEELING LOW THIS MORNING?"],
+      "winners": [
+        "START YOUR DAY STRONG",
+        "WAKE UP PEACEFULLY",
+        "POSITIVE MORNING VIBES",
+        "WIN YOUR DAY",
+        "FRESH START",
+        "CALM MORNING VIBES"
+      ],
+      "losers": [
+        "FEELING UNMOTIVATED? (44/56)",
+        "RUSHED MORNING? (42/57)",
+        "HAVE A BRIGHT DAY (46/54)",
+        "MORNING PEACE (41/59)",
+        "FEELING LOW THIS MORNING?"
+      ],
       "avoid_format": "q_hook"
     },
     "sleep": {
       "winning_format": "outcome_imperative",
       "confidence": "DECISIVE",
-      "evidence": "A/B Test 16 (May 14): DRIFT TO SLEEP outcome-imperative beat DEEPLY DRAINED? Q-hook 55/45. Overturns earlier Test 10 'tie' interpretation. Test 16 paired with Insomnia Relief Music lead vs Sound Sleep — outcome+clinical-lead combo wins.",
-      "winners": ["DRIFT TO SLEEP", "FALL ASLEEP FAST", "DEEP SLEEP NOW", "SLEEP WITHOUT STRESS"],
-      "losers": ["DEEPLY DRAINED? (Q-hook lost 45/55)"],
+      "evidence": "A/B Test 16 (May 14): DRIFT TO SLEEP outcome-imperative beat DEEPLY DRAINED? Q-hook 55/45. Overturns earlier Test 10 'tie' interpretation. Test 16 paired with Insomnia Relief Music lead vs Sound Sleep \u2014 outcome+clinical-lead combo wins.",
+      "winners": [
+        "DRIFT TO SLEEP",
+        "FALL ASLEEP FAST",
+        "DEEP SLEEP NOW",
+        "SLEEP WITHOUT STRESS"
+      ],
+      "losers": [
+        "DEEPLY DRAINED? (Q-hook lost 45/55)"
+      ],
       "avoid_format": "q_hook",
       "note": "Test 10 said 'tied' but Test 16 with proper clinical-state lead crystallized that sleep lane wants imperative thumbs. Q-hook recognizes the problem; imperative promises the resolution (which is what sleep audience clicks for)."
     },
     "cognitive_clarity": {
       "winning_format": "specific_state_q_hook",
       "confidence": "DECISIVE",
-      "evidence": "A/B Test 17 (May 15-): MENTALLY EXHAUSTED? Q-hook + SEO-led title beat RESET YOUR THOUGHTS statement + Q-lead title 63/37 (26.4pp gap — biggest ever).",
-      "winners": ["MIND FULL?", "BRAIN FOG?", "MIND CLOUDY?", "MENTAL FATIGUE?", "CAN'T THINK?"],
-      "losers": ["RESET YOUR THOUGHTS (statement — lost 37/63)", "CAN'T THINK STRAIGHT? (verbose Q — lost 46/54 to compact MIND FULL?, #35)"],
+      "evidence": "A/B Test 17 (May 15-): MENTALLY EXHAUSTED? Q-hook + SEO-led title beat RESET YOUR THOUGHTS statement + Q-lead title 63/37 (26.4pp gap \u2014 biggest ever).",
+      "winners": [
+        "MIND FULL?",
+        "BRAIN FOG?",
+        "MIND CLOUDY?",
+        "MENTAL FATIGUE?",
+        "CAN'T THINK?"
+      ],
+      "losers": [
+        "RESET YOUR THOUGHTS (statement \u2014 lost 37/63)",
+        "CAN'T THINK STRAIGHT? (verbose Q \u2014 lost 46/54 to compact MIND FULL?, #35)"
+      ],
       "avoid_format": "outcome_statement",
       "compact_subrule": "v3 (#35 54/46): within Q-hooks, COMPACT 2-3 words beats verbose. 'MIND FULL?' (punny, 2-word) beat 'CAN'T THINK STRAIGHT?' (4-word). Mobile readability compounds with Q-hook intent.",
-      "note": "Brain Fog / cognitive-reset / mental clarity audience wants viewer-state recognition (Q-hook), not promised outcome — but keep it SHORT. Highest-RPM lane ($6.47). Use 1.5hr runtime, not 3hr."
+      "note": "Brain Fog / cognitive-reset / mental clarity audience wants viewer-state recognition (Q-hook), not promised outcome \u2014 but keep it SHORT. Highest-RPM lane ([redacted]). Use 1.5hr runtime, not 3hr."
     },
     "relaxation_evening": {
       "winning_format": "specific_state_q_hook",
       "confidence": "DECISIVE",
       "evidence": "A/B Test 15 (May 5, thumb-only test with identical titles): STRESSED? Q-hook beat RELAX DEEPLY outcome-imperative 55/45 (10.4pp). Pure thumb-format isolation.",
-      "winners": ["STRESSED?", "OVERWHELMED?", "TENSE?", "MIND RACING?"],
-      "losers": ["RELAX DEEPLY (outcome — lost 45/55)"],
+      "winners": [
+        "STRESSED?",
+        "OVERWHELMED?",
+        "TENSE?",
+        "MIND RACING?"
+      ],
+      "losers": [
+        "RELAX DEEPLY (outcome \u2014 lost 45/55)"
+      ],
       "avoid_format": "outcome_imperative",
       "note": "Evening relaxation/wind-down audience responds to state-recognition Q-hooks, not action verbs."
     },
@@ -89,26 +165,34 @@
       "winning_format": "abstract_noun",
       "confidence": "DIRECTIONAL",
       "evidence": "Same as healing (Test 12)",
-      "winners": ["EMOTIONAL HEALING", "SWEET MEMORIES"],
-      "losers": ["HEAL YOUR HEART (imperative)"]
+      "winners": [
+        "EMOTIONAL HEALING",
+        "SWEET MEMORIES"
+      ],
+      "losers": [
+        "HEAL YOUR HEART (imperative)"
+      ]
     },
     "uplifting": {
       "winning_format": "vibes_state",
       "confidence": "INFERRED",
       "evidence": "Inferred from Test 14 cross-lane (vibes beat affect in morning)",
-      "winners": ["UNLOCK JOY", "MORNING ENERGY", "BRIGHT DAY"],
+      "winners": [
+        "UNLOCK JOY",
+        "MORNING ENERGY",
+        "BRIGHT DAY"
+      ],
       "losers": [],
-      "note": "Untested directly — under-explored theme"
+      "note": "Untested directly \u2014 under-explored theme"
     }
   },
-
   "thumb_format_definitions": {
-    "outcome_imperative": "Action verb directing viewer to outcome state — 'BOOST FOCUS', 'LOCK IN'",
-    "outcome_state": "Noun phrase naming the desired state — 'FIND PEACE', 'QUIET MIND'",
-    "outcome_statement": "Declarative outcome promise — 'REST. RESET. RECOVER.'",
-    "abstract_noun": "Noun-based emotional concept — 'EMOTIONAL HEALING', 'SWEET MEMORIES'",
-    "specific_state_q_hook": "Specific viewer-state question — 'BUSY MIND?', 'MENTAL OVERLOAD?'",
-    "vibes_state": "Vibe/mood evocation — 'CALM MORNING VIBES', 'MORNING ENERGY'",
-    "tolerant": "Multiple formats work — lane is forgiving"
+    "outcome_imperative": "Action verb directing viewer to outcome state \u2014 'BOOST FOCUS', 'LOCK IN'",
+    "outcome_state": "Noun phrase naming the desired state \u2014 'FIND PEACE', 'QUIET MIND'",
+    "outcome_statement": "Declarative outcome promise \u2014 'REST. RESET. RECOVER.'",
+    "abstract_noun": "Noun-based emotional concept \u2014 'EMOTIONAL HEALING', 'SWEET MEMORIES'",
+    "specific_state_q_hook": "Specific viewer-state question \u2014 'BUSY MIND?', 'MENTAL OVERLOAD?'",
+    "vibes_state": "Vibe/mood evocation \u2014 'CALM MORNING VIBES', 'MORNING ENERGY'",
+    "tolerant": "Multiple formats work \u2014 lane is forgiving"
   }
 }

@@ -10,124 +10,213 @@
       "title": {
         "lead": "time-specific lifestyle (Morning Energy, Morning Motivation, Productive Day, Good Energy, Joyful, Yoga); action-utility phrasing wins (Music to Start Your Morning Right)",
         "slot2": "specificity beats generic (Dilruba Raga Yaman > Dilruba Instrumental; Positive Vibes > Instrumental)",
-        "avoid_lead": ["Feel Good", "Positive Energy", "Breathing Exercise", "Q-hook"]
+        "avoid_lead": [
+          "Feel Good",
+          "Positive Energy",
+          "Breathing Exercise",
+          "Q-hook"
+        ]
       },
       "thumbnail": {
         "winning_format": "outcome_imperative",
-        "winners": ["START YOUR DAY STRONG", "WAKE UP PEACEFULLY", "POSITIVE MORNING VIBES", "WIN YOUR DAY", "FRESH START"],
+        "winners": [
+          "START YOUR DAY STRONG",
+          "WAKE UP PEACEFULLY",
+          "POSITIVE MORNING VIBES",
+          "WIN YOUR DAY",
+          "FRESH START"
+        ],
         "avoid_format": "q_hook",
         "evidence": "Q-hook 0 wins / 5 tests; #17 56/44, #22 57/42, #40 54/46, #12 59/41"
       },
-      "instruments": ["Sitar", "Dilruba", "Bansuri", "Santoor"],
-      "rpm_tier": "low_volume"
+      "instruments": [
+        "Sitar",
+        "Dilruba",
+        "Bansuri",
+        "Santoor"
+      ]
     },
     "sleep": {
       "confidence": "MED",
       "title": {
         "lead": "clinical/direct (Sleep Music, Deep Sleep); outcome-first edges instrument-first (#39)",
         "slot2": "outcome phrase (Drift Off Effortlessly) or instrument",
-        "avoid_lead": ["Relaxing Music (generic)"]
+        "avoid_lead": [
+          "Relaxing Music (generic)"
+        ]
       },
       "thumbnail": {
         "winning_format": "outcome_imperative",
-        "winners": ["DRIFT TO SLEEP", "FALL ASLEEP FAST", "SLEEP MUSIC"],
+        "winners": [
+          "DRIFT TO SLEEP",
+          "FALL ASLEEP FAST",
+          "SLEEP MUSIC"
+        ],
         "avoid_format": "q_hook",
         "evidence": "#24 52/48 (SLEEP MUSIC > TOO TENSE TO REST?), #15 DRIFT TO SLEEP > DEEPLY DRAINED?"
       },
-      "instruments": ["Bansuri", "Tanpura", "Surbahar"],
+      "instruments": [
+        "Bansuri",
+        "Tanpura",
+        "Surbahar"
+      ],
       "runtime": "3hr OK (long-session lane)",
-      "avd_note": "AVD INVERTED - low AVD is GOOD (fell asleep). Never read low AVD as bad music here.",
-      "rpm_tier": "low"
+      "avd_note": "AVD INVERTED - low AVD is GOOD (fell asleep). Never read low AVD as bad music here."
     },
     "anxiety_overthinking": {
       "confidence": "MED",
       "title": {
         "lead": "Anxiety Relief Music, Overthinking Music",
         "slot2": "pair with Sarod/Dilruba clinical state",
-        "avoid_lead": ["Sitar pairing (anxiety+Sitar fails)"]
+        "avoid_lead": [
+          "Sitar pairing (anxiety+Sitar fails)"
+        ]
       },
       "thumbnail": {
         "winning_format": "specific_state_q_hook",
-        "winners": ["ANXIOUS MIND?", "OVERACTIVE MIND?", "TOO MANY THOUGHTS?", "MIND RACING?"],
+        "winners": [
+          "ANXIOUS MIND?",
+          "OVERACTIVE MIND?",
+          "TOO MANY THOUGHTS?",
+          "MIND RACING?"
+        ],
         "evidence": "#8 TOO MANY THOUGHTS? > THINK LESS; outcome (CALM YOUR ANXIETY) competitive",
         "note": "Lowest-CTR lane (3.63) but healthy AVD + high RPM = packaging is the bottleneck, music is fine. Highest re-thumbnail upside."
       },
-      "instruments": ["Sarod", "Dilruba", "Veena"],
-      "rpm_tier": "high"
+      "instruments": [
+        "Sarod",
+        "Dilruba",
+        "Veena"
+      ]
     },
     "cognitive_clarity": {
       "confidence": "MED",
       "title": {
         "lead": "SEO/clinical (Mental Clarity Music, Clear Your Head, Brain Detox); SEO-lead beats Q-lead in title",
         "slot2": "searchable cognitive term",
-        "avoid_lead": ["Q-hook in title"]
+        "avoid_lead": [
+          "Q-hook in title"
+        ]
       },
       "thumbnail": {
         "winning_format": "specific_state_q_hook_COMPACT",
-        "winners": ["MIND FULL?", "BRAIN FOG?", "MIND CLOUDY?"],
+        "winners": [
+          "MIND FULL?",
+          "BRAIN FOG?",
+          "MIND CLOUDY?"
+        ],
         "avoid": "verbose Q (CAN'T THINK STRAIGHT?)",
         "evidence": "#35 54/46 compact beat verbose; max 2-3 words"
       },
-      "instruments": ["Sarod", "Santoor", "Sitar"],
-      "runtime": "1.5hr NOT 3hr (cognitive intent doesn't sit 3 hours)",
-      "rpm_tier": "highest"
+      "instruments": [
+        "Sarod",
+        "Santoor",
+        "Sitar"
+      ],
+      "runtime": "1.5hr NOT 3hr (cognitive intent doesn't sit 3 hours)"
     },
     "stress_burnout_rest": {
       "confidence": "MED",
       "title": {
         "lead": "Stress Relief Music, Burnout Recovery, Deep Relaxation, Cortisol Reset",
         "slot2": "instrument or outcome",
-        "avoid_lead": ["poetic-only slot 2"]
+        "avoid_lead": [
+          "poetic-only slot 2"
+        ]
       },
       "thumbnail": {
         "winning_format": "permission_or_q_hook",
-        "winners": ["IT'S OKAY TO REST", "REST WITHOUT WORRY", "BREATHE & RELAX"],
+        "winners": [
+          "IT'S OKAY TO REST",
+          "REST WITHOUT WORRY",
+          "BREATHE & RELAX"
+        ],
         "evidence": "#29 +17.2pp permission win; #23 outcome edges Q in deep-rest; permission is a distinct winning format here"
       },
-      "instruments": ["Surbahar", "Santoor", "Sitar", "Veena(clinical)"],
-      "rpm_tier": "high"
+      "instruments": [
+        "Surbahar",
+        "Santoor",
+        "Sitar",
+        "Veena(clinical)"
+      ]
     },
     "calm_daytime": {
       "confidence": "MED",
-      "title": {"lead": "SEO descriptor (Peaceful Music, Calm Your Mind)", "slot2": "instrument-descriptor > poetry", "avoid_lead": ["poetic slot-2 with 0 search intent"]},
+      "title": {
+        "lead": "SEO descriptor (Peaceful Music, Calm Your Mind)",
+        "slot2": "instrument-descriptor > poetry",
+        "avoid_lead": [
+          "poetic slot-2 with 0 search intent"
+        ]
+      },
       "thumbnail": {
         "winning_format": "outcome_state",
-        "winners": ["FIND PEACE", "FEEL CALM", "QUIET MIND"],
+        "winners": [
+          "FIND PEACE",
+          "FEEL CALM",
+          "QUIET MIND"
+        ],
         "avoid_format": "q_hook",
         "evidence": "Test 2 decisive 68/32 (Calm Your Mind > Feeling Lost?)"
       },
-      "instruments": ["Veena", "Santoor"],
-      "rpm_tier": "mid"
+      "instruments": [
+        "Veena",
+        "Santoor"
+      ]
     },
     "relaxation_evening": {
       "confidence": "LOW",
       "warning": "OPPOSITE thumb rule from calm_daytime - evening wind-down tolerates Q-hook. n=1, thin.",
       "thumbnail": {
         "winning_format": "specific_state_q_hook",
-        "winners": ["STRESSED?", "OVERWHELMED?", "TENSE?"],
+        "winners": [
+          "STRESSED?",
+          "OVERWHELMED?",
+          "TENSE?"
+        ],
         "avoid_format": "outcome_imperative",
         "evidence": "#14 thumb-only 55/45 (STRESSED? > RELAX DEEPLY)"
-      },
-      "rpm_tier": "mid"
+      }
     },
     "healing_nostalgia": {
       "confidence": "LOW",
-      "title": {"lead": "abstract-noun (Nostalgia Music, Emotional Comfort)", "slot2": "Healing Music with {instrument}"},
+      "title": {
+        "lead": "abstract-noun (Nostalgia Music, Emotional Comfort)",
+        "slot2": "Healing Music with {instrument}"
+      },
       "thumbnail": {
         "winning_format": "abstract_noun",
-        "winners": ["EMOTIONAL HEALING", "SWEET MEMORIES"],
+        "winners": [
+          "EMOTIONAL HEALING",
+          "SWEET MEMORIES"
+        ],
         "avoid": "imperative (HEAL YOUR HEART)",
         "evidence": "#10 abstract won; #6 tied"
       },
-      "instruments": ["Sarangi", "Veena"],
-      "rpm_tier": "mid"
+      "instruments": [
+        "Sarangi",
+        "Veena"
+      ]
     },
     "uplifting": {
       "confidence": "LOW",
-      "title": {"lead": "specific energy descriptor (Good Energy > Feel Good)", "slot2": "vibe-outcome word (Positive Vibes)"},
-      "thumbnail": {"winning_format": "vibes_state", "winners": ["UNLOCK JOY", "BRIGHTEN YOUR DAY", "RAISE YOUR ENERGY"], "avoid": "flat affect"},
-      "instruments": ["Santoor", "Dilruba"],
-      "rpm_tier": "unknown"
+      "title": {
+        "lead": "specific energy descriptor (Good Energy > Feel Good)",
+        "slot2": "vibe-outcome word (Positive Vibes)"
+      },
+      "thumbnail": {
+        "winning_format": "vibes_state",
+        "winners": [
+          "UNLOCK JOY",
+          "BRIGHTEN YOUR DAY",
+          "RAISE YOUR ENERGY"
+        ],
+        "avoid": "flat affect"
+      },
+      "instruments": [
+        "Santoor",
+        "Dilruba"
+      ]
     }
   },
   "cross_cutting_rules": [
@@ -140,7 +229,19 @@
     "Low AVD != bad music by default: check sleep-lane (expected), runtime mismatch, or title-promise mismatch first."
   ],
   "rethumbnail_targets": [
-    {"video_id": "mDCDS2TlK4k", "title": "Sitar for Brain Detox", "ctr": 2.66, "avd": 33.1, "reason": "cognitive (highest RPM), music retains, thumb is the ceiling"},
-    {"video_id": "qZZuJV79mDc", "title": "1.5 Hour Bansuri to Unwind", "ctr": 4.56, "avd": 24.9, "reason": "high AVD for sleep lane, weak CTR"}
+    {
+      "video_id": "mDCDS2TlK4k",
+      "title": "Sitar for Brain Detox",
+      "ctr": 2.66,
+      "avd": 33.1,
+      "reason": "cognitive (highest RPM), music retains, thumb is the ceiling"
+    },
+    {
+      "video_id": "qZZuJV79mDc",
+      "title": "1.5 Hour Bansuri to Unwind",
+      "ctr": 4.56,
+      "avd": 24.9,
+      "reason": "high AVD for sleep lane, weak CTR"
+    }
   ]
 }

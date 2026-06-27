@@ -102,8 +102,15 @@ WEEKLY_PLANS_DIR = Path(__file__).parent / "data" / "weekly_plans"
 
 
 def load_active_weekly_plan():
-    """Return the most recent (by week_start) weekly plan from data/weekly_plans/, or None."""
+    """Return the most recent (by week_start) weekly plan from data/weekly_plans/, or None.
+
+    Defensively strips any revenue/RPM keys from ships before returning — the
+    dashboard is publicly accessible, RPM/revenue data is private (lives only in
+    data/private/ which is gitignored). Even if a plan file accidentally contains
+    rpm_tier or similar, this load function will not surface it.
+    """
     import json as _json
+    import re as _re
     if not WEEKLY_PLANS_DIR.exists():
         return None
     latest = None
@@ -115,7 +122,24 @@ def load_active_weekly_plan():
                 latest = plan
         except Exception:
             continue
-    return latest
+    if latest is None:
+        return None
+    # ---- Defensive RPM/revenue redaction ----
+    REDACT_KEYS = {"rpm_tier", "rpm", "revenue", "revenue_tier", "rev", "earnings", "estimated_revenue"}
+    DOLLAR_RE = _re.compile(r"\$\s?\d+(\.\d+)?")
+    def _scrub_text(s):
+        if not isinstance(s, str):
+            return s
+        return DOLLAR_RE.sub("[redacted]", s).replace("RPM", "tier")
+    def _scrub(node):
+        if isinstance(node, dict):
+            return {k: _scrub(v) for k, v in node.items() if k.lower() not in REDACT_KEYS}
+        if isinstance(node, list):
+            return [_scrub(x) for x in node]
+        if isinstance(node, str):
+            return _scrub_text(node)
+        return node
+    return _scrub(latest)
 
 
 # CTR / retention benchmarks for the Indian-classical focus/meditation niche
@@ -1533,7 +1557,6 @@ with tab_briefs:
                         "Title / Action": s.get("title_direction") or s.get("action") or "",
                         "Thumb": s.get("thumb_text", ""),
                         "Suno rule": s.get("suno_prompt_rule", ""),
-                        "RPM tier": s.get("rpm_tier", ""),
                         "Status": s.get("status", ""),
                     })
                 st.dataframe(pd.DataFrame(_rows), width="stretch", hide_index=True)

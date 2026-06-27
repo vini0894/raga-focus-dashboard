@@ -3,7 +3,7 @@
   "week_start": "2026-06-27",
   "week_end": "2026-07-03",
   "status": "planned",
-  "notes": "Pivoted per research/session_findings_2026-06-26.md — high-RPM lanes prioritized, Mon Dopamine kept as music-fix experiment, calm Suno prompts mandatory for all calm-lane ships.",
+  "notes": "Pivoted per research/session_findings_2026-06-26.md \u2014 calm Suno prompts mandatory for all calm-lane ships. Mon Dopamine kept as music-fix experiment.",
   "ships": [
     {
       "date": "2026-06-27",
@@ -12,9 +12,8 @@
       "action": "re-thumb",
       "thumb_text": "BRAIN FOG?",
       "lane": "cognitive",
-      "rpm_tier": "highest",
       "status": "planned",
-      "notes": "Freebie per session_findings §C. Zero production cost. Compact Q-hook per cognitive lane rule."
+      "notes": "Freebie per session_findings \u00a7C. Zero production cost. Compact Q-hook per cognitive lane rule."
     },
     {
       "date": "2026-06-29",
@@ -24,7 +23,6 @@
       "lane": "cognitive-dopamine",
       "runtime_min": 90,
       "suno_prompt_rule": "CALM",
-      "rpm_tier": "low (morning) — experiment",
       "status": "planned",
       "experiment": {
         "hypothesis": "Calm Suno prompt fixes the lane's weak music retention (RRP 0.42 baseline).",
@@ -46,10 +44,9 @@
       "thumb_text": "DRIFT TO SLEEP",
       "yt_native_test": "title_3way",
       "lane": "sleep",
-      "sub_lane": "sleep (NOT deep-rest — dodges cannibalization with Apr 28 hero per Finding 14)",
+      "sub_lane": "sleep (NOT deep-rest \u2014 dodges cannibalization with Apr 28 hero per Finding 14)",
       "runtime_min": 180,
       "suno_prompt_rule": "CALM",
-      "rpm_tier": "high (3hr factor: $6.37)",
       "status": "planned",
       "brief_path": null
     },
@@ -61,7 +58,6 @@
       "lane": "anxiety",
       "runtime_min": 90,
       "suno_prompt_rule": "CALM",
-      "rpm_tier": "$5.33",
       "status": "planned",
       "brief_path": null
     },
@@ -73,7 +69,6 @@
       "lane": "cognitive",
       "runtime_min": 90,
       "suno_prompt_rule": "CALM",
-      "rpm_tier": "$6.47",
       "status": "planned",
       "brief_path": null
     },
@@ -89,11 +84,11 @@
     "Phrase locks scan (20d window)",
     "VidIQ scores on: Dopamine Cleanse, Sleep Music, Anxiety Relief Music, Mental Clarity Music",
     "Suno prompts drafted (4 ships) per CALM-prompt rule from session_findings Finding 3",
-    "Brief JSONs written to video_briefs/ — NO premature JSON until title+thumb+lane LOCKED per banked rule"
+    "Brief JSONs written to video_briefs/ \u2014 NO premature JSON until title+thumb+lane LOCKED per banked rule"
   ],
   "week_level_decisions": {
     "calm_prompt_rule": "All calm-lane Suno prompts this week must avoid: 'upbeat, uplifting, energetic, forward momentum, not sleepy, never sluggish, driving, propulsive'. Must include: 'slow, spacious, low register, long pauses, no momentum, breath between notes, restful'.",
-    "dopamine_experiment_framing": "Mon Dopamine = SINGLE experiment to test music-fix hypothesis, not a weekly default. Wed/Thu cover the revenue base with high-RPM lanes.",
-    "thumb_test_observation_window": "Active thumb tests from 2026-06-26 session (Mental Fatigue Sitar, Restless Mind Veena) read at day 7 — Jul 3 review."
+    "dopamine_experiment_framing": "Mon Dopamine = SINGLE experiment to test music-fix hypothesis, not a weekly default. Wed/Thu cover the revenue base with high-revenue lanes.",
+    "thumb_test_observation_window": "Active thumb tests from 2026-06-26 session (Mental Fatigue Sitar, Restless Mind Veena) read at day 7 \u2014 Jul 3 review."
   }
 }
