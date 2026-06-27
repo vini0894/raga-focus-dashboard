@@ -2300,7 +2300,7 @@ with tab_idea_gen:
                             template="plotly_dark", paper_bgcolor="#0E1117", plot_bgcolor="#0E1117",
                             showlegend=False,
                         )
-                        st.plotly_chart(fig_bar, width="stretch")
+                        st.plotly_chart(fig_bar, width="stretch", key=f"ab_running_bar_{int(row['test_num'])}")
 
         st.divider()
         st.info(
