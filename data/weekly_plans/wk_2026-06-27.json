@@ -19,7 +19,7 @@
       "date": "2026-06-29",
       "type": "ship",
       "instrument": "Sitar",
-      "title_direction": "Dopamine Cleanse | Sitar Music | 1.5 Hours",
+      "title_direction": "Dopamine Detox | Sitar Music | 1.5 Hours",
       "lane": "cognitive-dopamine",
       "runtime_min": 90,
       "suno_prompt_rule": "CALM",
@@ -29,7 +29,9 @@
         "success_criteria": "AVD >= 25% AND views >= 10K within 7 days",
         "failure_criteria": "AVD < 20% AND views < 5K within 7 days = lane structurally weak, retire Dopamine angle"
       },
-      "brief_path": null
+      "brief_path": "data/video_briefs/v_2026-06-29_dopamine_detox_sitar.json",
+      "thumb_text": "MIND FULL?",
+      "vidiq_lead_score": 71
     },
     {
       "date": "2026-06-30",
@@ -82,7 +84,7 @@
   "preflight_pending": [
     "Cooldown check for Mon-Thu dates",
     "Phrase locks scan (20d window)",
-    "VidIQ scores on: Dopamine Cleanse, Sleep Music, Anxiety Relief Music, Mental Clarity Music",
+    "VidIQ scores remaining: Sleep Music, Anxiety Relief Music, Mental Clarity Music (Mon Dopamine Detox = 71 \u2705 banked)",
     "Suno prompts drafted (4 ships) per CALM-prompt rule from session_findings Finding 3",
     "Brief JSONs written to video_briefs/ \u2014 NO premature JSON until title+thumb+lane LOCKED per banked rule"
   ],
