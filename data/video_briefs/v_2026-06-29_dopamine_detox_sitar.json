@@ -3,46 +3,59 @@
   "status": "DRAFT",
   "created_at": "2026-06-27",
   "planned_date": "2026-06-29",
-  "planned_slot": "Monday PM ship — hero slot per cooldown_check.py §4b",
+  "planned_slot": "Monday AM ship \u2014 slot chosen per Finding 12 (cognitive lane = morning intent) over \u00a74b PM-hero rule. Experiment is AVD-focused; cognitive\u00d7evening = retention crater per banked rule.",
   "title": "Dopamine Detox | Sitar Music | 1.5 Hours",
   "title_variants": {
     "A": "Dopamine Detox | Sitar Music | 1.5 Hours"
   },
-  "title_note": "Single title (no A/B) — Mon is a music-fix experiment, isolating MUSIC QUALITY as the variable. Adding title A/B would confound the read. 'Dopamine Detox' chosen over 'Dopamine Cleanse' on VidIQ data (Detox 71 vs Cleanse 59, 12pt gap). Differentiates from 19M Dopamine Reset hero via sub-lane (Detox vs Reset) per Finding 14 exception. Char count 44 — within [46,55] band lower edge.",
+  "title_note": "Single title (no A/B) \u2014 Mon is a music-fix experiment, isolating MUSIC QUALITY as the variable. Adding title A/B would confound the read. 'Dopamine Detox' chosen over 'Dopamine Cleanse' on VidIQ data (Detox 71 vs Cleanse 59, 12pt gap). Differentiates from 19M Dopamine Reset hero via sub-lane (Detox vs Reset) per Finding 14 exception. Char count 44 \u2014 within [46,55] band lower edge.",
   "components": {
     "instrument": "Sitar",
-    "instrument_role": "HERO — Sitar is the only repeatable hero per §8.5 impression_dynamics_findings",
+    "instrument_role": "HERO \u2014 Sitar is the only repeatable hero per \u00a78.5 impression_dynamics_findings",
     "lane": "cognitive-dopamine",
     "runtime_min": 90,
-    "raga": "TBD — candidate Bhairavi (contemplative, grounded) or Bhimpalasi (afternoon/cognitive)",
-    "binaural": "TBD — likely Alpha 8-10Hz for cognitive reset"
+    "raga": "TBD \u2014 candidate Bhairavi (contemplative, grounded) or Bhimpalasi (afternoon/cognitive)",
+    "binaural": "TBD \u2014 likely Alpha 8-10Hz for cognitive reset"
   },
   "validated_keywords": [
-    "Dopamine Detox (lead — VidIQ 71, banked 2026-06-27, highest cognitive-dopamine score in bank)",
-    "Sitar Music Instrumental (slot 2 — VidIQ 69, proven instrument-signal format)",
-    "1.5 Hours (runtime per cognitive lane rule — NOT 3hr, viewer won't sit 3hrs in cognitive intent per Finding 12)"
+    "Dopamine Detox (lead \u2014 VidIQ 71, banked 2026-06-27, highest cognitive-dopamine score in bank)",
+    "Sitar Music Instrumental (slot 2 \u2014 VidIQ 69, proven instrument-signal format)",
+    "1.5 Hours (runtime per cognitive lane rule \u2014 NOT 3hr, viewer won't sit 3hrs in cognitive intent per Finding 12)"
   ],
   "thumbnail": {
     "text": "MIND FULL?",
     "format": "specific_state_q_hook_COMPACT",
-    "format_evidence": "Cognitive_clarity lane: DECISIVE Q-hook winner (Test 17 26.4pp gap — biggest ever). Compact sub-rule (#35): 'MIND FULL?' beat 'CAN'T THINK STRAIGHT?' 54/46.",
+    "format_evidence": "Cognitive_clarity lane: DECISIVE Q-hook winner (Test 17 26.4pp gap \u2014 biggest ever). Compact sub-rule (#35): 'MIND FULL?' beat 'CAN'T THINK STRAIGHT?' 54/46.",
     "char_count": 9,
-    "visual_notes": "Pichwai/Kangra miniature style — solo sitar player, traditional sari, seated cross-legged, half-turned. Setting: temple courtyard at dusk OR forest grove with stream. Mood: contemplative, head slightly bowed, eyes closed. Text overlay 'MIND FULL?' dark teal serif, right third of frame. Avoid: clutter, multiple figures, bright morning colors (cognitive lane = clinical/grounded).",
-    "collision_check": "Sat Jun 27 Brain Detox re-thumb uses BRAIN FOG? — different text, no channel-page collision."
+    "visual_notes": "Pichwai/Kangra miniature style \u2014 solo sitar player, traditional sari, seated cross-legged, half-turned. Setting: temple courtyard at dusk OR forest grove with stream. Mood: contemplative, head slightly bowed, eyes closed. Text overlay 'MIND FULL?' dark teal serif, right third of frame. Avoid: clutter, multiple figures, bright morning colors (cognitive lane = clinical/grounded).",
+    "collision_check": "Sat Jun 27 Brain Detox re-thumb uses BRAIN FOG? \u2014 different text, no channel-page collision."
   },
-  "description": "Dopamine Detox | Sitar Music for Mental Reset | 1.5 Hours\n\nIf your brain feels overstimulated from scrolling, notifications, and constant input — this is your reset.\n\n90 minutes of slow, contemplative sitar designed to quiet the mental noise and restore your focus. Let your nervous system settle.\n\nWhat you'll hear:\n• Slow Hindustani sitar — meditative phrasing, no sudden shifts\n• Soft tabla and tanpura grounding the silence\n• Recorded warm and intimate, no electronic processing\n\nBest for:\n• Post-work decompression\n• Reading or quiet focus\n• Reset after heavy screen time\n• Anxious or scattered evenings\n\nPress play. Put the phone down. Let your mind empty.",
+  "description": "Dopamine Detox | Sitar Music for Mental Reset | 1.5 Hours\n\nIf your brain feels overstimulated from scrolling, notifications, and constant input \u2014 this is your reset.\n\n90 minutes of slow, contemplative sitar designed to quiet the mental noise and restore your focus. Let your nervous system settle.\n\nWhat you'll hear:\n\u2022 Slow Hindustani sitar \u2014 meditative phrasing, no sudden shifts\n\u2022 Soft tabla and tanpura grounding the silence\n\u2022 Recorded warm and intimate, no electronic processing\n\nBest for:\n\u2022 Post-work decompression\n\u2022 Reading or quiet focus\n\u2022 Reset after heavy screen time\n\u2022 Anxious or scattered evenings\n\nPress play. Put the phone down. Let your mind empty.",
   "tags": [
-    "dopamine detox", "dopamine reset", "sitar music", "sitar instrumental",
-    "indian classical music", "hindustani classical", "mental reset music",
-    "brain fog music", "mind reset", "dopamine cleanse", "nervous system reset",
-    "slow sitar", "sitar for focus", "mental clarity music", "instrumental focus music",
-    "calming sitar", "deep work sitar", "indian instrumental"
+    "dopamine detox",
+    "dopamine reset",
+    "sitar music",
+    "sitar instrumental",
+    "indian classical music",
+    "hindustani classical",
+    "mental reset music",
+    "brain fog music",
+    "mind reset",
+    "dopamine cleanse",
+    "nervous system reset",
+    "slow sitar",
+    "sitar for focus",
+    "mental clarity music",
+    "instrumental focus music",
+    "calming sitar",
+    "deep work sitar",
+    "indian instrumental"
   ],
   "suno_prompt": null,
-  "suno_prompt_note": "PARKED — user noted Suno prompts not landing well on text-based outputs. Needs separate Suno exploration session. Music quality is the actual experiment variable here per session_findings Finding 3 — must apply CALM rule (avoid: upbeat/uplifting/energetic/forward momentum/not sleepy/never sluggish/driving/propulsive; include: slow/spacious/low register/long pauses/no momentum/breath between notes/restful) regardless of final prompt phrasing.",
+  "suno_prompt_note": "PARKED \u2014 user noted Suno prompts not landing well on text-based outputs. Needs separate Suno exploration session. Music quality is the actual experiment variable here per session_findings Finding 3 \u2014 must apply CALM rule (avoid: upbeat/uplifting/energetic/forward momentum/not sleepy/never sluggish/driving/propulsive; include: slow/spacious/low register/long pauses/no momentum/breath between notes/restful) regardless of final prompt phrasing.",
   "experiment": {
     "type": "music-fix hypothesis test",
-    "hypothesis": "Calm Suno prompt fixes the dopamine lane's weak music retention (RRP 0.42 baseline per session_findings_2026-06-26.md Finding 3). Previous Jun 22 Dopamine Boost replica failed (AVP 15.6%, 881 views) — attributed to upbeat music in calm-lane prompt. This ship inverts that: same lane, calm prompt.",
+    "hypothesis": "Calm Suno prompt fixes the dopamine lane's weak music retention (RRP 0.42 baseline per session_findings_2026-06-26.md Finding 3). Previous Jun 22 Dopamine Boost replica failed (AVP 15.6%, 881 views) \u2014 attributed to upbeat music in calm-lane prompt. This ship inverts that: same lane, calm prompt.",
     "success_criteria": "AVD >= 25% AND views >= 10K within 7 days = hypothesis confirmed, lane is music-fixable",
     "failure_criteria": "AVD < 20% AND views < 5K within 7 days = lane structurally weak (low RPM + cannibalized by hero), retire Dopamine angle for future ships",
     "neutral_zone": "AVD 20-25% or views 5-10K = directional, needs second test to confirm"
@@ -51,38 +64,38 @@
     {
       "video_id": "DMcoOLvmAyQ",
       "title": "Sitar for Dopamine Reset (the 19M hero)",
-      "role": "DIFFERENTIATE — our ship must NOT compete on 'Dopamine Reset' query; uses 'Detox' sub-lane per Finding 14 exception",
-      "note": "Hero's CTR was 3.42% (below channel avg 3.63%) — surge mechanic was the engine, NOT title magnetism. Our ship cannot replicate the surge."
+      "role": "DIFFERENTIATE \u2014 our ship must NOT compete on 'Dopamine Reset' query; uses 'Detox' sub-lane per Finding 14 exception",
+      "note": "Hero's CTR was 3.42% (below channel avg 3.63%) \u2014 surge mechanic was the engine, NOT title magnetism. Our ship cannot replicate the surge."
     },
     {
       "video_id": "mDCDS2TlK4k",
       "title": "Sitar for Brain Detox | Clear Your Mind | 1.5 Hours",
-      "role": "LANE PROOF — Sitar + cognitive + Detox precedent at 748K impressions, 33% AVD",
+      "role": "LANE PROOF \u2014 Sitar + cognitive + Detox precedent at 748K impressions, 33% AVD",
       "note": "Cognitive lane works for Sitar. Our ship targets adjacent dopamine cluster with same instrument coherence."
     },
     {
       "video_id": "52YU6Q64zVw",
       "title": "Sitar for Nervous System Healing | Indian Classical Music",
-      "role": "RETENTION PROOF — Sitar holds long-form in nervous-system/cognitive lane (1.47M imp, 24.8% AVD)",
+      "role": "RETENTION PROOF \u2014 Sitar holds long-form in nervous-system/cognitive lane (1.47M imp, 24.8% AVD)",
       "note": "Pacing reference: slow Sitar with space holds the cognitive audience past 20% AVD."
     }
   ],
   "end_screen": {
-    "primary": "Sitar for Brain Detox (mDCDS2TlK4k) — same lane + same instrument chain",
-    "backup": "Sitar for Nervous System Healing (52YU6Q64zVw) — adjacent cognitive lane authority"
+    "primary": "Sitar for Brain Detox (mDCDS2TlK4k) \u2014 same lane + same instrument chain",
+    "backup": "Sitar for Nervous System Healing (52YU6Q64zVw) \u2014 adjacent cognitive lane authority"
   },
   "strategic_bet": "Mon Jun 29 hero slot. THE music-fix experiment of the week. If calm Suno prompt + Sitar (hero) + Dopamine Detox (VidIQ 71 lead) doesn't lift the dopamine-lane retention floor, the lane is structurally dead and we retire Dopamine framings entirely. Wed/Thu ships (Sarangi anxiety, Sarod cognitive) cover the revenue base regardless of Mon outcome.",
   "preflight_passed": {
-    "cooldown": "Sitar viable (7d rest from Jun 22), Monday HERO slot per §4b",
-    "phrase_locks": "No collision — Dopamine Detox is fresh lead phrase, Sitar Music Instrumental free",
+    "cooldown": "Sitar viable (7d rest from Jun 22), Monday HERO slot per \u00a74b",
+    "phrase_locks": "No collision \u2014 Dopamine Detox is fresh lead phrase, Sitar Music Instrumental free",
     "cannibalization_check": "Sub-lane (Detox vs Reset) satisfies Finding 14 exception against 19M Dopamine Reset hero",
-    "vidiq": "Lead VidIQ 71 (Dopamine Detox, banked 2026-06-27) — strong-lead zone alongside Brain Fog (70), Sitar Music Instrumental (69)",
-    "thumb_format": "MIND FULL? — cognitive lane DECISIVE Q-hook winner per Test 17 (26.4pp gap), compact sub-rule winner per #35"
+    "vidiq": "Lead VidIQ 71 (Dopamine Detox, banked 2026-06-27) \u2014 strong-lead zone alongside Brain Fog (70), Sitar Music Instrumental (69)",
+    "thumb_format": "MIND FULL? \u2014 cognitive lane DECISIVE Q-hook winner per Test 17 (26.4pp gap), compact sub-rule winner per #35"
   },
   "pending": [
-    "Suno prompt (parked — needs separate exploration)",
+    "Suno prompt (parked \u2014 needs separate exploration)",
     "Final raga selection (Bhairavi vs Bhimpalasi)",
     "Music render + Pichwai thumbnail render"
   ],
-  "day_7_read": "2026-07-06 — measure CTR, AVD, views against experiment criteria. Update wk_2026-06-27.json status field."
+  "day_7_read": "2026-07-06 \u2014 measure CTR, AVD, views against experiment criteria. Update wk_2026-06-27.json status field."
 }

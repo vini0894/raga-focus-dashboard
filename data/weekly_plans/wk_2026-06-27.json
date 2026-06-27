@@ -31,7 +31,9 @@
       },
       "brief_path": "data/video_briefs/v_2026-06-29_dopamine_detox_sitar.json",
       "thumb_text": "MIND FULL?",
-      "vidiq_lead_score": 71
+      "vidiq_lead_score": 71,
+      "planned_slot": "Monday AM",
+      "slot_rationale": "AM per Finding 12 (cognitive lane = morning intent) \u2014 overrides \u00a74b PM-hero rule because experiment is AVD-focused. Cognitive viewer in evening = wind-down mode = retention craters."
     },
     {
       "date": "2026-06-30",
@@ -50,7 +52,10 @@
       "runtime_min": 180,
       "suno_prompt_rule": "CALM",
       "status": "planned",
-      "brief_path": null
+      "brief_path": null,
+      "planned_slot": "Tuesday PM (evening)",
+      "slot_rationale": "PM per Finding 12 (sleep lane = evening/wind-down intent). 3hr runtime matches long-session sleep use case.",
+      "spacing_note": "~36hr spacing from Mon AM ship \u2014 lets Mon Dopamine occupy growth slot before Tue Sleep enters (Finding 15). Different lanes = different viewer pools = no internal cannibalization (Finding 11)."
     },
     {
       "date": "2026-07-01",
