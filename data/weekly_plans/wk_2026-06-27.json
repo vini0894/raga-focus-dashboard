@@ -39,23 +39,23 @@
       "date": "2026-06-30",
       "type": "ship",
       "instrument": "Surbahar",
-      "title_direction": "Sleep Music | Surbahar | 3 Hours",
+      "title_direction": "Sleep Music | Surbahar Drone | 3 Hours",
       "title_variants_draft": [
-        "3 Hour Sleep Music | Surbahar Drone | Deep Night",
-        "Sleep Through the Night | Surbahar | 3 Hours",
-        "Slow Sleep Music | Surbahar Instrumental | 3 Hours"
+        "Sleep Music | Surbahar Drone | 3 Hours"
       ],
       "thumb_text": "DRIFT TO SLEEP",
-      "yt_native_test": "title_3way",
+      "yt_native_test": "none (single title)",
       "lane": "sleep",
       "sub_lane": "sleep (NOT deep-rest \u2014 dodges cannibalization with Apr 28 hero per Finding 14)",
       "runtime_min": 180,
       "suno_prompt_rule": "CALM",
       "status": "planned",
-      "brief_path": null,
+      "brief_path": "data/video_briefs/v_2026-06-30_sleep_music_surbahar_3hr.json",
       "planned_slot": "Tuesday PM (evening)",
       "slot_rationale": "PM per Finding 12 (sleep lane = evening/wind-down intent). 3hr runtime matches long-session sleep use case.",
-      "spacing_note": "~36hr spacing from Mon AM ship \u2014 lets Mon Dopamine occupy growth slot before Tue Sleep enters (Finding 15). Different lanes = different viewer pools = no internal cannibalization (Finding 11)."
+      "spacing_note": "~36hr spacing from Mon AM ship \u2014 lets Mon Dopamine occupy growth slot before Tue Sleep enters (Finding 15). Different lanes = different viewer pools = no internal cannibalization (Finding 11).",
+      "title_note": "Narrowed from 3-way A/B to single title. Original Variant B (Sleep Through the Night) dropped on VidIQ check (26 \u2014 catastrophic). Single title isolates instrument\u00d7runtime experiment.",
+      "vidiq_lead_score": 75
     },
     {
       "date": "2026-07-01",
