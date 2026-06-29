@@ -3,91 +3,103 @@
   "status": "DRAFT",
   "created_at": "2026-06-27",
   "planned_date": "2026-06-30",
-  "planned_slot": "Tuesday PM (evening) — sleep lane × evening intent per Finding 12. 3hr runtime matches long-session sleep use case. ~36hr spacing from Mon AM ship (Finding 15 growth-slot protection).",
-  "title": "Sleep Music | Surbahar Drone | 3 Hours",
+  "planned_slot": "Tuesday PM (evening) \u2014 sleep lane \u00d7 evening intent per Finding 12. 3hr runtime matches long-session sleep use case. ~36hr spacing from Mon AM ship (Finding 15 growth-slot protection).",
+  "title": "Deep Sleep Music | Surbahar Instrumental | 3 Hours",
   "title_variants": {
-    "A": "Sleep Music | Surbahar Drone | 3 Hours"
+    "A": "Deep Sleep Music | Surbahar Instrumental | 3 Hours"
   },
-  "title_note": "Single title (no A/B) — Tue is an instrument×runtime experiment (Surbahar at 3hr is untested in our catalog). Title A/B would confound that read. Lead 'Sleep Music' is the highest-VidIQ sleep phrase in bank (75). Dropped original Variant B ('Sleep Through the Night') after VidIQ check returned 26 (catastrophic). Dropped Variant C ('Slow Sleep Music' = 57) in favor of stronger lead.",
+  "title_note": "Title updated from 'Sleep Music | Surbahar Drone | 3 Hours' to 'Deep Sleep Music | Surbahar Instrumental | 3 Hours' on 2026-06-28. Rationale: 'Deep Sleep Music' has empirical channel validation (another Surbahar-cluster video running at 300K+ views with this keyword). Switched 'Surbahar Drone' to 'Surbahar Instrumental' \u2014 proven slot-2 format on channel. Char count 50 \u2014 hits banded [46-55] sweet spot. Cannibalization note: same-lead phrase as Bansuri Sound Sleep slot 2 \u2014 different instrument + different runtime satisfies Finding 14 exception.",
   "components": {
     "instrument": "Surbahar",
-    "instrument_role": "STRONG (avg 75K impr per cooldown_check tier) — 7d rested",
+    "instrument_role": "STRONG (avg 75K impr per cooldown_check tier) \u2014 7d rested",
     "lane": "sleep",
-    "sub_lane": "sleep (NOT deep-rest — dodges cannibalization with Apr 28 Deep Rest hero per Finding 14 exception)",
+    "sub_lane": "sleep (NOT deep-rest \u2014 dodges cannibalization with Apr 28 Deep Rest hero per Finding 14 exception)",
     "runtime_min": 180,
     "format_experiment": "Surbahar at 3hr is UNTESTED in catalog. Existing 3hr ships: Bansuri 3hr Relaxation (464K hero), Quiet Night Bansuri 3hr (54K, 6.71% CTR), Stress Relief Santoor 3hr (36K, 28% AVD), Sitar 3hr Unclog Brain (19K FAIL). Surbahar 3hr = the new bet.",
-    "raga": "TBD — candidate Bhairavi (closing/healing) or Darbari Kanada (deep evening, contemplative)",
-    "binaural": "TBD — likely Delta 1-4Hz for sleep-through"
+    "raga": "TBD \u2014 candidate Bhairavi (closing/healing) or Darbari Kanada (deep evening, contemplative)",
+    "binaural": "TBD \u2014 likely Delta 1-4Hz for sleep-through"
   },
   "validated_keywords": [
-    "Sleep Music (lead — VidIQ 75, highest sleep score in bank)",
-    "Surbahar Drone (slot 2 — drone descriptor matches instrument's actual character; Surbahar VidIQ 64 standalone)",
-    "3 Hours (runtime signal — long-session sleep lane, banked OK per sleep lane rule)"
+    "Deep Sleep Music (lead \u2014 empirical channel proof: existing 300K+ Surbahar-cluster video uses this keyword)",
+    "Surbahar Instrumental (slot 2 \u2014 proven slot-2 instrument format on channel)",
+    "3 Hours (runtime signal \u2014 long-session sleep lane)"
   ],
   "thumbnail": {
     "text": "DRIFT TO SLEEP",
     "format": "outcome_imperative",
-    "format_evidence": "Sleep lane: DECISIVE outcome_imperative winner (Test 16 — DRIFT TO SLEEP beat DEEPLY DRAINED? Q-hook 55/45). avoid Q-hook in sleep lane per playbook v3.",
+    "format_evidence": "Sleep lane: DECISIVE outcome_imperative winner (Test 16 \u2014 DRIFT TO SLEEP beat DEEPLY DRAINED? Q-hook 55/45). avoid Q-hook in sleep lane per playbook v3.",
     "char_count": 13,
-    "visual_notes": "Pichwai/Kangra miniature style — solo Surbahar player (large gourd, long fretboard distinctive). Setting: moonlit garden, deep night sky with subtle stars. Mood: serene, eyes closed, fully absorbed. Text overlay 'DRIFT TO SLEEP' dark teal serif, right third of frame. Avoid: bright colors, daytime imagery, multiple figures. Convey night/sleep through palette (deep blues, purples, soft moonlight).",
+    "visual_notes": "Pichwai/Kangra miniature style \u2014 solo Surbahar player (large gourd, long fretboard distinctive). Setting: moonlit garden, deep night sky with subtle stars. Mood: serene, eyes closed, fully absorbed. Text overlay 'DRIFT TO SLEEP' dark teal serif, right third of frame. Avoid: bright colors, daytime imagery, multiple figures. Convey night/sleep through palette (deep blues, purples, soft moonlight).",
     "collision_check": "Different from Sat Brain Detox refresh (BRAIN FOG?) + Mon Dopamine Detox (MIND FULL?) + recent Insomnia Tanpura refresh (DEEP SLEEP NOW). Channel-page variety preserved."
   },
-  "description": "Sleep Music | 3 Hours of Surbahar Drone for Deep Sleep\n\nFor nights when your mind won't stop and sleep feels far away. Three hours of slow, hypnotic Surbahar drone designed to carry you through the night.\n\nThis is sleep-through music, not background music. Press play, set your phone aside, and let the deep tones do the work.\n\nWhat you'll hear:\n• Slow Surbahar (deeper, larger cousin of the sitar) — sustained low-register drone\n• Soft tanpura grounding the silence\n• Recorded warm and acoustic, no electronic processing\n• Long sustained notes with breath between phrases — no rhythm, no buildup\n\nBest for:\n• Falling asleep when your mind is racing\n• Sleeping through the night without waking\n• Anxiety at bedtime\n• Late-night insomnia\n\nLights off. Press play. Let go.",
+  "description": "Sleep Music | 3 Hours of Surbahar Drone for Deep Sleep\n\nFor nights when your mind won't stop and sleep feels far away. Three hours of slow, hypnotic Surbahar drone designed to carry you through the night.\n\nThis is sleep-through music, not background music. Press play, set your phone aside, and let the deep tones do the work.\n\nWhat you'll hear:\n\u2022 Slow Surbahar (deeper, larger cousin of the sitar) \u2014 sustained low-register drone\n\u2022 Soft tanpura grounding the silence\n\u2022 Recorded warm and acoustic, no electronic processing\n\u2022 Long sustained notes with breath between phrases \u2014 no rhythm, no buildup\n\nBest for:\n\u2022 Falling asleep when your mind is racing\n\u2022 Sleeping through the night without waking\n\u2022 Anxiety at bedtime\n\u2022 Late-night insomnia\n\nLights off. Press play. Let go.",
   "tags": [
-    "sleep music", "3 hour sleep music", "deep sleep music", "surbahar",
-    "surbahar music", "surbahar instrumental", "indian classical sleep music",
-    "hindustani sleep music", "drone music for sleep", "slow sleep music",
-    "music for insomnia", "sleep through the night", "deep night music",
-    "sleep meditation", "calming sleep music", "instrumental sleep music",
-    "indian flute sleep", "low frequency sleep music"
+    "sleep music",
+    "3 hour sleep music",
+    "deep sleep music",
+    "surbahar",
+    "surbahar music",
+    "surbahar instrumental",
+    "indian classical sleep music",
+    "hindustani sleep music",
+    "drone music for sleep",
+    "slow sleep music",
+    "music for insomnia",
+    "sleep through the night",
+    "deep night music",
+    "sleep meditation",
+    "calming sleep music",
+    "instrumental sleep music",
+    "indian flute sleep",
+    "low frequency sleep music"
   ],
   "suno_prompt": null,
-  "suno_prompt_note": "PARKED — needs separate Suno exploration. CALM rule mandatory: avoid upbeat/uplifting/energetic/forward momentum/not sleepy/never sluggish/driving/propulsive. Include slow/spacious/low register/long pauses/no momentum/breath between notes/restful. Pacing reference: 3 Hour Bansuri Music for Relaxation (464K hero, 22.6% AVD, 40min avg watch) — match that 'slow evolving, space between phrases' character but with Surbahar's deeper drone register. For 3hr specifically: 'no song structure, continuous seamless drone-led piece with subtle melodic phrases emerging and dissolving' — Suno needs explicit no-section-breaks language.",
+  "suno_prompt_note": "PARKED \u2014 needs separate Suno exploration. CALM rule mandatory: avoid upbeat/uplifting/energetic/forward momentum/not sleepy/never sluggish/driving/propulsive. Include slow/spacious/low register/long pauses/no momentum/breath between notes/restful. Pacing reference: 3 Hour Bansuri Music for Relaxation (464K hero, 22.6% AVD, 40min avg watch) \u2014 match that 'slow evolving, space between phrases' character but with Surbahar's deeper drone register. For 3hr specifically: 'no song structure, continuous seamless drone-led piece with subtle melodic phrases emerging and dissolving' \u2014 Suno needs explicit no-section-breaks language.",
   "experiment": {
-    "type": "instrument × runtime experiment",
-    "hypothesis": "Surbahar at 3hr length holds sleep audience past the 12% AVD failure threshold (Sitar 3hr Cognitive failed at 12% — wrong lane×runtime). Sleep lane is the right place for 3hr per Finding 12. Surbahar's drone character should sustain the long form better than Sitar's plucked notes did.",
-    "success_criteria": "AVD% 15%+ (sleep-lane AVD INVERTED — lower is better, means viewer fell asleep) AND views 5K+ within 7 days. Avg view duration 25min+ acceptable for sleep (Bansuri 3hr hero = 40min, but Bansuri owns that). Watch CTR also — 4%+ confirms thumb pulls.",
-    "failure_criteria": "AVD < 8% (too low even for sleep — means viewers bounced, not slept) OR views < 1K (algorithm didn't push at all)",
+    "type": "instrument \u00d7 runtime experiment",
+    "hypothesis": "Surbahar at 3hr length holds sleep audience past the 12% AVD failure threshold (Sitar 3hr Cognitive failed at 12% \u2014 wrong lane\u00d7runtime). Sleep lane is the right place for 3hr per Finding 12. Surbahar's drone character should sustain the long form better than Sitar's plucked notes did.",
+    "success_criteria": "AVD% 15%+ (sleep-lane AVD INVERTED \u2014 lower is better, means viewer fell asleep) AND views 5K+ within 7 days. Avg view duration 25min+ acceptable for sleep (Bansuri 3hr hero = 40min, but Bansuri owns that). Watch CTR also \u2014 4%+ confirms thumb pulls.",
+    "failure_criteria": "AVD < 8% (too low even for sleep \u2014 means viewers bounced, not slept) OR views < 1K (algorithm didn't push at all)",
     "neutral_zone": "Views 1-5K with healthy AVD = directional, may need second test with different sub-lane framing"
   },
   "reference_ships": [
     {
       "video_id": "(Apr 28 Surbahar Deep Rest hero)",
       "title": "Deep Rest Music | Find Stillness with Surbahar | 1.5 Hours",
-      "role": "DIFFERENTIATE — owns deep-rest query (797K lifetime imp). Our ship uses Sleep sub-lane to dodge cannibalization per Finding 14 exception.",
+      "role": "DIFFERENTIATE \u2014 owns deep-rest query (797K lifetime imp). Our ship uses Sleep sub-lane to dodge cannibalization per Finding 14 exception.",
       "note": "Our ship's lead must NOT include 'Deep Rest' or 'Stillness' phrases."
     },
     {
       "video_id": "(May 17 Bansuri 3hr hero)",
       "title": "3 Hour Bansuri Music for Relaxation | Indian Classical Music",
-      "role": "FORMAT PROOF — 3hr at scale works for sleep lane (464K imp, 22.6% AVD, 40min avg)",
+      "role": "FORMAT PROOF \u2014 3hr at scale works for sleep lane (464K imp, 22.6% AVD, 40min avg)",
       "note": "Different instrument (Bansuri vs Surbahar) so no direct cannibalization. Pacing/character reference for Suno prompt."
     },
     {
       "video_id": "(May 31 Sitar 3hr FAIL)",
       "title": "Sitar to Unclog Your Brain | Instrumental Music | 3 Hours",
-      "role": "FAILURE PROOF — 12.2% AVD, the banked evidence that cognitive×3hr breaks. Our ship avoids this by being in sleep lane (right lane for 3hr).",
+      "role": "FAILURE PROOF \u2014 12.2% AVD, the banked evidence that cognitive\u00d73hr breaks. Our ship avoids this by being in sleep lane (right lane for 3hr).",
       "note": "Watch our AVD against this 12% floor."
     }
   ],
   "end_screen": {
-    "primary": "Bansuri for Sound Sleep (1.3M imp hero) — same sleep lane, different instrument, strongest sleep authority on channel",
-    "backup": "3 Hour Bansuri Music for Relaxation (464K imp) — same 3hr + sleep format precedent"
+    "primary": "Bansuri for Sound Sleep (1.3M imp hero) \u2014 same sleep lane, different instrument, strongest sleep authority on channel",
+    "backup": "3 Hour Bansuri Music for Relaxation (464K imp) \u2014 same 3hr + sleep format precedent"
   },
-  "strategic_bet": "Tue Jun 30 evening ship. Surbahar's untested 3hr bet — Surbahar's drone character (low-register sustained tones) should fit 3hr sleep better than Sitar's plucked attacks (which failed at 3hr cognitive). Different sub-lane (Sleep vs Deep Rest) dodges Finding 14 cannibalization. If this works, Surbahar 3hr becomes a repeatable sleep format alongside Bansuri 3hr. If it fails, 3hr sleep is Bansuri-exclusive territory.",
+  "strategic_bet": "Tue Jun 30 evening ship. Surbahar's untested 3hr bet \u2014 Surbahar's drone character (low-register sustained tones) should fit 3hr sleep better than Sitar's plucked attacks (which failed at 3hr cognitive). Different sub-lane (Sleep vs Deep Rest) dodges Finding 14 cannibalization. If this works, Surbahar 3hr becomes a repeatable sleep format alongside Bansuri 3hr. If it fails, 3hr sleep is Bansuri-exclusive territory.",
   "preflight_passed": {
     "cooldown": "Surbahar viable (7d rest from Jun 23)",
     "phrase_locks": "Sleep Music lead is fresh (no phrase lock active). 'Drift to Sleep' free Jun 18 (now past).",
-    "cannibalization_check": "Sleep sub-lane vs Deep Rest sub-lane satisfies Finding 14 exception",
-    "vidiq": "Lead VidIQ 75 (Sleep Music) — strongest sleep lead in bank",
-    "thumb_format": "DRIFT TO SLEEP — sleep lane DECISIVE outcome_imperative winner per Test 16",
-    "lane_time_fit": "Sleep × evening × 3hr — all aligned per Finding 12"
+    "cannibalization_check": "'Deep Sleep Music' lead also appears in slot 2 of Bansuri Sound Sleep (1.3M hero). Different instrument (Surbahar vs Bansuri) + different runtime (3hr vs 1hr) satisfies Finding 14 sub-lane exception. Plus user has live evidence the keyword supports multiple ships at scale (300K+ running).",
+    "vidiq": "Lead 'Deep Sleep Music' validated empirically \u2014 another channel video at 300K+ views uses this keyword. VidIQ score not formally banked but proven via live performance.",
+    "thumb_format": "DRIFT TO SLEEP \u2014 sleep lane DECISIVE outcome_imperative winner per Test 16",
+    "lane_time_fit": "Sleep \u00d7 evening \u00d7 3hr \u2014 all aligned per Finding 12"
   },
   "pending": [
-    "Suno prompt (parked — needs separate exploration)",
+    "Suno prompt (parked \u2014 needs separate exploration)",
     "Final raga selection (Bhairavi vs Darbari Kanada)",
-    "Music render (3hr is long — multiple Suno clips merged + looped per banked Suno rule)",
+    "Music render (3hr is long \u2014 multiple Suno clips merged + looped per banked Suno rule)",
     "Pichwai thumbnail render (Surbahar visual + DRIFT TO SLEEP overlay)"
   ],
-  "day_7_read": "2026-07-07 — measure AVD (sleep-inverted: lower = good, target 15%+), views (5K+ success), CTR (4%+). Update wk_2026-06-27.json status field. If success, Surbahar 3hr becomes a repeatable format; if fail, retire Surbahar 3hr and stay Bansuri-exclusive for long-form sleep."
+  "day_7_read": "2026-07-07 \u2014 measure AVD (sleep-inverted: lower = good, target 15%+), views (5K+ success), CTR (4%+). Update wk_2026-06-27.json status field. If success, Surbahar 3hr becomes a repeatable format; if fail, retire Surbahar 3hr and stay Bansuri-exclusive for long-form sleep."
 }

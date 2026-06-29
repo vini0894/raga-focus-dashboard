@@ -39,9 +39,9 @@
       "date": "2026-06-30",
       "type": "ship",
       "instrument": "Surbahar",
-      "title_direction": "Sleep Music | Surbahar Drone | 3 Hours",
+      "title_direction": "Deep Sleep Music | Surbahar Instrumental | 3 Hours",
       "title_variants_draft": [
-        "Sleep Music | Surbahar Drone | 3 Hours"
+        "Deep Sleep Music | Surbahar Instrumental | 3 Hours"
       ],
       "thumb_text": "DRIFT TO SLEEP",
       "yt_native_test": "none (single title)",
@@ -54,7 +54,7 @@
       "planned_slot": "Tuesday PM (evening)",
       "slot_rationale": "PM per Finding 12 (sleep lane = evening/wind-down intent). 3hr runtime matches long-session sleep use case.",
       "spacing_note": "~36hr spacing from Mon AM ship \u2014 lets Mon Dopamine occupy growth slot before Tue Sleep enters (Finding 15). Different lanes = different viewer pools = no internal cannibalization (Finding 11).",
-      "title_note": "Narrowed from 3-way A/B to single title. Original Variant B (Sleep Through the Night) dropped on VidIQ check (26 \u2014 catastrophic). Single title isolates instrument\u00d7runtime experiment.",
+      "title_note": "Updated Jun 28 from 'Sleep Music | Surbahar Drone | 3 Hours'. Reason: empirical channel proof (Surbahar-cluster video running at 300K+ uses 'Deep Sleep Music' lead). Cannibalization satisfied via different instrument + different runtime (Finding 14 sub-lane exception).",
       "vidiq_lead_score": 75
     },
     {
