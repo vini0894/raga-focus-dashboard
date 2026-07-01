@@ -1,0 +1,109 @@
+{
+  "id": "v_2026-07-01_anxiety_relief_sarangi",
+  "status": "DRAFT",
+  "created_at": "2026-06-28",
+  "planned_date": "2026-07-01",
+  "planned_slot": "Wednesday PM (evening) — anxiety lane × evening intent per Finding 12. Wind-down audience receptive to anxiety-relief framing.",
+  "title": "Anxiety Relief Music | Sarangi Instrumental | 1.5 Hours",
+  "title_variants": {
+    "A": "Anxiety Relief Music | Sarangi Instrumental | 1.5 Hours",
+    "B": "Relax Your Mind | Sarangi Instrumental | 1.5 Hours"
+  },
+  "title_note": "2-way title A/B — same instrument slot 2 + same runtime + same thumb. Isolates LEAD FRAMING as the only variable. Tests clinical (Anxiety Relief Music, VidIQ 70) vs imperative/lifestyle (Relax Your Mind, VidIQ 77 — 7pt higher, adapted from 141K source video with 277× top multiplier). Either result becomes banked rule for future anxiety-lane ships.",
+  "yt_native_test": "title_2way",
+  "components": {
+    "instrument": "Sarangi",
+    "instrument_role": "STRONG (avg 75K impr per cooldown_check tier) — 20d rested",
+    "lane": "anxiety",
+    "runtime_min": 90,
+    "raga": "TBD — candidate Bhairavi (soulful, emotional healing) or Jog (evening reflection)",
+    "binaural": "TBD — likely Alpha 8-10Hz for anxiety-release"
+  },
+  "validated_keywords": [
+    "Anxiety Relief Music (Variant A lead — VidIQ 70, banked)",
+    "Relax Your Mind (Variant B lead — VidIQ 77, banked 2026-06-28, adapted from 141K source with 277× multiplier)",
+    "Sarangi Instrumental (slot 2 — VidIQ 67 standalone Sarangi + proven slot-2 format)",
+    "1.5 Hours (runtime per anxiety-lane rule — evening wind-down doesn't sit 3hrs)"
+  ],
+  "thumbnail": {
+    "primary": {
+      "text": "STRESSED OUT?",
+      "char_count": 12,
+      "format": "specific_state_q_hook_COMPACT",
+      "why_primary": "Universal Q-hook, wins anxiety lane per playbook v3. DIFFERENT visual structure from Mon MIND FULL? and Tue DRIFT TO SLEEP — channel-page variety preserved. Doesn't favor either title variant → clean A/B read."
+    },
+    "alternative": {
+      "text": "BUSY MIND?",
+      "char_count": 10,
+      "format": "specific_state_q_hook_COMPACT",
+      "why_alternative": "Also anxiety-lane winner + more compact. RISK: same 'MIND X?' structure as Mon MIND FULL? — channel-page repetition may reduce click-magnetism when both appear side by side.",
+      "note": "User-requested alternative. Pick between STRESSED OUT? and BUSY MIND? before ship."
+    },
+    "format_evidence": "Anxiety_overthinking lane: specific_state_q_hook DECISIVE. Winners per playbook v3 lane_packaging_directions: ANXIOUS MIND?, OVERACTIVE MIND?, TOO MANY THOUGHTS?, MIND RACING?, STRESSED OUT?, BUSY MIND?. Compact 2-3 words per #35 sub-rule.",
+    "visual_notes": "Pichwai/Kangra miniature style — solo Sarangi player (small bowed instrument, held vertically). Setting: dim interior with soft candlelight OR outdoor grove at dusk. Mood: expressive, slight melancholy, eyes closed. Text overlay top-right, dark teal serif. Palette: warm ambers + deep teals (Sarangi's emotional lane character). Avoid: bright day colors, clinical/sterile settings.",
+    "collision_check": "STRESSED OUT? — no collision. BUSY MIND? — structural echo of Mon MIND FULL? (both MIND X?). Prefer STRESSED OUT? if channel-page diversity valued higher than compact-form preference."
+  },
+  "description": "Anxiety Relief Music | Sarangi Instrumental for Deep Calm | 1.5 Hours\n\nFor the days when your chest feels tight and your mind won't stop turning — this is your unwind.\n\n90 minutes of soulful Sarangi, the bowed instrument closest to the human voice. Let it carry the tension out of your body.\n\nWhat you'll hear:\n• Slow Sarangi — emotive, expressive, low register\n• Soft tanpura drone beneath\n• Recorded warm and acoustic, no electronic processing\n• No sudden shifts, no buildup — just gentle release\n\nBest for:\n• Post-work anxiety wind-down\n• Chest tightness and shallow breathing\n• Racing thoughts before bed\n• Emotional heaviness that won't lift\n\nBreathe out. Let it go.",
+  "tags": [
+    "anxiety relief music",
+    "relax your mind",
+    "sarangi music",
+    "sarangi instrumental",
+    "indian classical music",
+    "hindustani classical",
+    "music for anxiety",
+    "stress relief music",
+    "anxiety music",
+    "calming sarangi",
+    "meditation music",
+    "instrumental relaxing music",
+    "deep calm music",
+    "emotional release music",
+    "evening relaxation music",
+    "anti anxiety music",
+    "soulful sarangi",
+    "indian instrumental"
+  ],
+  "suno_prompt": null,
+  "suno_prompt_note": "PARKED — needs separate exploration. CALM rule mandatory. For Sarangi specifically: emphasize bowed-string emotional expressiveness ('soulful, vocal-like, expressive melodic phrases with meend slides'). Sarangi is closest to human voice in Hindustani tradition — leverage that emotional character. Suggested opener structure: 'No vocals. Solo sarangi, Raga Bhairavi, emotional anxiety-release mood. Cold open mid-melody. Slow ~55 BPM, expressive vocal-like phrasing with meend slides. Tanpura drone beneath — only 2 instruments, no tabla, no percussion. Continuous flow, seamless loop. No vocals, no humming.' Bhairavi has retention proof in Surbahar burnout ships (35-39% AVD) — same emotional register works for Sarangi.",
+  "strategic_bet": "Wed Jul 1 evening ship. Covers the anxiety lane (Wed/Thu are the 'revenue base' ships per week_level_decisions). Title A/B tests a real 7-point VidIQ gap: clinical (Anxiety Relief 70) vs imperative (Relax Your Mind 77). Either winner becomes banked rule for future anxiety ships. Sarangi is 20d rested — cleanest cooldown of the week's ships.",
+  "reference_ships": [
+    {
+      "video_id": "(May 25 Sarangi Emotional Comfort)",
+      "title": "Emotional Comfort | Sarangi | Indian Classical (39K, 3.58% CTR, 25.6% AVD)",
+      "role": "LANE PROOF — Sarangi holds emotional/anxiety-adjacent audience at 25%+ AVD",
+      "note": "Pacing reference: slow soulful phrasing with space"
+    },
+    {
+      "video_id": "(May 30 Yoga Sarangi)",
+      "title": "Yoga & Meditation Music | Sarangi & Tabla | Indian Classical",
+      "role": "COOLDOWN PROOF — last Sarangi ship, 20d ago",
+      "note": "Sufficient cooldown; different sub-lane (yoga vs anxiety)"
+    },
+    {
+      "video_id": "(Jun 4 Sarangi Heavy Heart)",
+      "title": "Heavy Heart | Sarangi | Indian Classical",
+      "role": "SUB-LANE ADJACENT — emotional/heartache framing (Sarangi's natural fit)",
+      "note": "Different sub-lane (heart vs anxiety) — no direct cannibalization"
+    }
+  ],
+  "end_screen": {
+    "primary": "Emotional Comfort | Sarangi (25% AVD) — same instrument + emotional-anxiety adjacent lane",
+    "backup": "Comfort Music | Healing Music with Sarangi | 1 Hour — Sarangi authority chain"
+  },
+  "preflight_passed": {
+    "cooldown": "Sarangi viable (20d rest from Jun 11 — cleanest of the week)",
+    "phrase_locks": "Both 'Anxiety Relief Music' and 'Relax Your Mind' fresh — no active locks",
+    "cannibalization_check": "Sarangi + anxiety = fresh combination. Existing Sarangi ships are emotional/heartache/yoga sub-lanes, not clinical anxiety. Finding 14 exception satisfied.",
+    "vidiq": "Variant A lead 70 (Anxiety Relief Music), Variant B lead 77 (Relax Your Mind) — both strong-band. B is 7pt higher, adapted from 277× multiplier source.",
+    "thumb_format": "STRESSED OUT? (primary) — anxiety lane specific_state_q_hook winner + channel-page structure diversity. BUSY MIND? (alternative per user request) — same lane fit but structural echo of Mon.",
+    "lane_time_fit": "Anxiety × evening (Wed PM) — banked lane-time fit per Finding 12"
+  },
+  "pending": [
+    "Suno prompt (parked — needs separate exploration)",
+    "Final raga selection (Bhairavi vs Jog)",
+    "Thumb choice: STRESSED OUT? (recommended) or BUSY MIND? (user alternative)",
+    "Music render + Pichwai thumbnail render"
+  ],
+  "day_7_read": "2026-07-08 — measure both title variants' CTR + AVD + views. Winner bank as anxiety-lane rule (clinical-lead vs imperative-lead). Update wk_2026-06-27.json status field."
+}

@@ -61,12 +61,24 @@
       "date": "2026-07-01",
       "type": "ship",
       "instrument": "Sarangi",
-      "title_direction": "Anxiety Relief Music | Sarangi Instrumental | 1.5 Hours",
+      "title_direction": "Anxiety Relief Music | Sarangi Instrumental | 1.5 Hours (A) vs Relax Your Mind | Sarangi Instrumental | 1.5 Hours (B)",
       "lane": "anxiety",
       "runtime_min": 90,
       "suno_prompt_rule": "CALM",
       "status": "planned",
-      "brief_path": null
+      "brief_path": "data/video_briefs/v_2026-07-01_anxiety_relief_sarangi.json",
+      "title_variants_draft": [
+        "Anxiety Relief Music | Sarangi Instrumental | 1.5 Hours",
+        "Relax Your Mind | Sarangi Instrumental | 1.5 Hours"
+      ],
+      "thumb_text": "STRESSED OUT? (primary) or BUSY MIND? (alternative)",
+      "yt_native_test": "title_2way",
+      "planned_slot": "Wednesday PM (evening)",
+      "vidiq_leads": {
+        "A_Anxiety_Relief_Music": 70,
+        "B_Relax_Your_Mind": 77
+      },
+      "title_note": "A/B title test \u2014 clinical (VidIQ 70) vs imperative (VidIQ 77, 141K source 277x multiplier). Same instrument + runtime + thumb \u2192 isolates lead framing variable."
     },
     {
       "date": "2026-07-02",
