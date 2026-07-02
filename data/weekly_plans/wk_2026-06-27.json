@@ -84,12 +84,20 @@
       "date": "2026-07-02",
       "type": "ship",
       "instrument": "Sarod",
-      "title_direction": "Mental Clarity Music | Sarod | 1.5 Hours",
+      "title_direction": "Focus Music | Sarod Instrumental | 1.5 Hours",
       "lane": "cognitive",
       "runtime_min": 90,
       "suno_prompt_rule": "CALM",
       "status": "planned",
-      "brief_path": null
+      "brief_path": "data/video_briefs/v_2026-07-02_focus_music_sarod.json",
+      "title_variants_draft": [
+        "Focus Music | Sarod Instrumental | 1.5 Hours"
+      ],
+      "thumb_text": "MIND CLOUDY?",
+      "vidiq_lead_score": 84,
+      "planned_slot": "Thursday AM",
+      "slot_rationale": "AM per Finding 12 (cognitive = morning intent). Same slot pattern as Mon.",
+      "title_note": "Focus Music (VidIQ 84 \u2014 highest cognitive) fresh bet on Sarod. Past Focus Music attempts on Santoor/Sitar sub-hero \u2014 three fresh variables this time (instrument + simpler title + CALM prompt)."
     },
     {
       "date": "2026-07-03",
