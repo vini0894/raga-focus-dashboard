@@ -3,34 +3,35 @@
   "status": "DRAFT",
   "created_at": "2026-07-01",
   "planned_date": "2026-07-02",
-  "planned_slot": "Thursday AM ship — cognitive lane = morning intent per Finding 12. Same slot pattern as Mon Dopamine Detox (AM cognitive). ~40hr spacing from Wed PM Sarangi ship.",
+  "planned_slot": "Thursday AM ship \u2014 cognitive lane = morning intent per Finding 12. Same slot pattern as Mon Dopamine Detox (AM cognitive). ~40hr spacing from Wed PM Sarangi ship.",
   "title": "Focus Music | Sarod Instrumental | 1.5 Hours",
   "title_variants": {
-    "A": "Focus Music | Sarod Instrumental | 1.5 Hours"
+    "A": "Mental Clarity Music | Sarod Instrumental | 1.5 Hours",
+    "B": "Focus Music | Sarod Instrumental | 1.5 Hours"
   },
-  "title_note": "Single title. Focus Music lead (VidIQ 84 — highest cognitive score in bank). Chose over Mental Clarity Music (VidIQ 65) despite existing 37% AVD Sarod version — fresh angle bet with 19pt VidIQ upside. User flag noted: Focus Music has spotty channel history (past attempts on Santoor/Sitar with 40Hz binaural framing all sub-hero). Three fresh variables this time: (1) Sarod hasn't been paired with Focus Music, (2) simpler 3-component title vs past 40Hz-binaural clutter, (3) CALM Suno prompt vs past experimental production. Char count 44 — slightly below [46-55] band, acceptable given clean simplicity.",
+  "title_note": "A/B test \u2014 proven formula vs higher VidIQ fresh angle. Variant A (Mental Clarity Music VidIQ 65) replicates the 37% AVD May 15 Sarod formula. Variant B (Focus Music VidIQ 84) is the highest cognitive VidIQ in bank but has spotty channel history. Same instrument + slot 2 + slot 3 + thumb + Suno = only lead phrase varies. Real learnable question: does higher VidIQ beat empirical catalog retention?",
   "components": {
     "instrument": "Sarod",
-    "instrument_role": "STRONG (avg 75K impr per cooldown_check tier) — 17d rested",
+    "instrument_role": "STRONG (avg 75K impr per cooldown_check tier) \u2014 17d rested",
     "lane": "cognitive / focus",
     "runtime_min": 90,
-    "raga": "TBD — candidate Bhimpalasi (afternoon cognitive) or Bageshri (introspective focus)",
-    "binaural": "TBD — likely Alpha 8-10Hz for focus/attention"
+    "raga": "TBD \u2014 candidate Bhimpalasi (afternoon cognitive) or Bageshri (introspective focus)",
+    "binaural": "TBD \u2014 likely Alpha 8-10Hz for focus/attention"
   },
   "validated_keywords": [
-    "Focus Music (lead — VidIQ 84, highest cognitive score in bank)",
-    "Sarod Instrumental (slot 2 — proven format, Sarod = clinical/cognitive instrument on channel)",
-    "1.5 Hours (runtime — cognitive lane rule NOT 3hr per Finding 12)"
+    "Focus Music (lead \u2014 VidIQ 84, highest cognitive score in bank)",
+    "Sarod Instrumental (slot 2 \u2014 proven format, Sarod = clinical/cognitive instrument on channel)",
+    "1.5 Hours (runtime \u2014 cognitive lane rule NOT 3hr per Finding 12)"
   ],
   "thumbnail": {
     "text": "MIND CLOUDY?",
     "char_count": 12,
     "format": "specific_state_q_hook_COMPACT",
-    "format_evidence": "Cognitive_clarity lane DECISIVE Q-hook winner (Test 17 26.4pp gap — biggest ever). Compact sub-rule (#35): 2-3 words. 'MIND CLOUDY?' listed as banked cognitive-lane winner in playbook v3.",
-    "visual_notes": "Pichwai/Kangra miniature style — solo Sarod player (larger fretless plucked instrument, resonant body). Setting: temple courtyard at dawn OR forest grove with morning mist. Mood: contemplative, focused, slight forward lean. Dark teal serif 'MIND CLOUDY?' top-right. Palette: warm morning light + deep teals. Cognitive lane = clinical/grounded feel.",
-    "collision_check": "Different from Mon MIND FULL? (structural echo but different adjective — cloudy vs full — visual variety). Different from Sat BRAIN FOG? Different from Tue DRIFT TO SLEEP + Wed REACH STILLNESS. Channel-page variety preserved."
+    "format_evidence": "Cognitive_clarity lane DECISIVE Q-hook winner (Test 17 26.4pp gap \u2014 biggest ever). Compact sub-rule (#35): 2-3 words. 'MIND CLOUDY?' listed as banked cognitive-lane winner in playbook v3.",
+    "visual_notes": "Pichwai/Kangra miniature style \u2014 solo Sarod player (larger fretless plucked instrument, resonant body). Setting: temple courtyard at dawn OR forest grove with morning mist. Mood: contemplative, focused, slight forward lean. Dark teal serif 'MIND CLOUDY?' top-right. Palette: warm morning light + deep teals. Cognitive lane = clinical/grounded feel.",
+    "collision_check": "Different from Mon MIND FULL? (structural echo but different adjective \u2014 cloudy vs full \u2014 visual variety). Different from Sat BRAIN FOG? Different from Tue DRIFT TO SLEEP + Wed REACH STILLNESS. Channel-page variety preserved."
   },
-  "description": "Focus Music | Sarod Instrumental for Deep Work & Mental Clarity | 1.5 Hours\n\nFor mornings when your mind feels foggy and you need to actually focus — this is your reset.\n\n90 minutes of slow, meditative Sarod (deeper cousin of the sitar, with a rich resonant character) designed to quiet mental noise and settle you into focused work.\n\nWhat you'll hear:\n• Slow Hindustani Sarod — contemplative phrasing, no sudden shifts\n• Soft tabla and tanpura grounding the sound\n• Recorded warm and acoustic, no electronic processing\n• Long sustained phrases with space between — nothing distracting\n\nBest for:\n• Deep work sessions\n• Reading, writing, coding\n• Mental clarity after screen fatigue\n• Meditation before a task-heavy morning\n• ADHD-friendly ambient focus\n\nPress play. Close the tabs. Get into it.",
+  "description": "Focus Music | Sarod Instrumental for Deep Work & Mental Clarity | 1.5 Hours\n\nFor mornings when your mind feels foggy and you need to actually focus \u2014 this is your reset.\n\n90 minutes of slow, meditative Sarod (deeper cousin of the sitar, with a rich resonant character) designed to quiet mental noise and settle you into focused work.\n\nWhat you'll hear:\n\u2022 Slow Hindustani Sarod \u2014 contemplative phrasing, no sudden shifts\n\u2022 Soft tabla and tanpura grounding the sound\n\u2022 Recorded warm and acoustic, no electronic processing\n\u2022 Long sustained phrases with space between \u2014 nothing distracting\n\nBest for:\n\u2022 Deep work sessions\n\u2022 Reading, writing, coding\n\u2022 Mental clarity after screen fatigue\n\u2022 Meditation before a task-heavy morning\n\u2022 ADHD-friendly ambient focus\n\nPress play. Close the tabs. Get into it.",
   "tags": [
     "focus music",
     "sarod music",
@@ -52,51 +53,54 @@
     "indian instrumental"
   ],
   "suno_prompt": null,
-  "suno_prompt_note": "PARKED — user's separate Suno exploration. CALM rule mandatory. Sarod-specific: emphasize warm resonant plucked-string character ('deep warm sarod with sustained resonance, meend slides, sympathetic strings'). Sarod is fretless plucked — more contemplative than sitar's crisp attack. Pacing reference: Mental Clarity Music Slow Sarod Brain Fog Reset (May 15) achieved 37% AVD — match that character. Suggested opener: 'No vocals. Solo sarod, Raga Bhimpalasi, deep contemplative focus mood. Cold open mid-melody. 55 BPM, sustained melodic phrases with meend ornaments. Tanpura drone, sparse soft tabla — sarod leads always. Same 3 instruments, seamless loop. No vocals, no humming.'",
+  "suno_prompt_note": "PARKED \u2014 user's separate Suno exploration. CALM rule mandatory. Sarod-specific: emphasize warm resonant plucked-string character ('deep warm sarod with sustained resonance, meend slides, sympathetic strings'). Sarod is fretless plucked \u2014 more contemplative than sitar's crisp attack. Pacing reference: Mental Clarity Music Slow Sarod Brain Fog Reset (May 15) achieved 37% AVD \u2014 match that character. Suggested opener: 'No vocals. Solo sarod, Raga Bhimpalasi, deep contemplative focus mood. Cold open mid-melody. 55 BPM, sustained melodic phrases with meend ornaments. Tanpura drone, sparse soft tabla \u2014 sarod leads always. Same 3 instruments, seamless loop. No vocals, no humming.'",
   "experiment": {
-    "type": "fresh-lead + instrument pairing test",
-    "hypothesis": "Focus Music lead (VidIQ 84, highest cognitive in bank) with Sarod (17d rested STRONG tier) captures cognitive audience that past Focus Music attempts (on Santoor + Sitar with 40Hz binaural framing) missed. Three fresh variables: instrument novelty, simpler title, CALM Suno prompt.",
-    "success_criteria": "AVD >= 25% AND views >= 8K within 7 days = fresh angle works, Focus Music lead has channel viability",
-    "failure_criteria": "AVD < 18% AND views < 3K within 7 days = Focus Music consistently underperforms on our channel regardless of instrument/framing, retire from lead pool",
-    "neutral_zone": "AVD 18-25% or views 3-8K = directional, needs second attempt with different framing"
+    "type": "title A/B \u2014 VidIQ vs empirical retention head-to-head",
+    "hypothesis": "Head-to-head test between two defensible leads: (A) Mental Clarity Music (VidIQ 65) replicating the 37% AVD May 15 Sarod formula, vs (B) Focus Music (VidIQ 84) \u2014 highest cognitive VidIQ but Focus Music has spotty history on Santoor/Sitar attempts. Same everything else. Isolates VidIQ signal vs catalog performance as competing rules.",
+    "success_criteria": "One variant wins by >5pp AND overall ship hits AVD>=25%, views>=8K in 7 days",
+    "failure_criteria": "Both variants underperform (AVD<18% AND views<3K each) = Sarod cognitive lane is saturated regardless of framing",
+    "neutral_zone": "AVD 18-25% or views 3-8K = directional, needs second attempt with different framing",
+    "what_we_learn": "If A wins \u2192 replicate proven-formula leads, deprioritize VidIQ. If B wins \u2192 trust VidIQ over catalog history. If tied \u2192 both signals valid, decide case-by-case."
   },
   "reference_ships": [
     {
       "video_id": "(May 15 Mental Clarity Music Slow Sarod)",
       "title": "Mental Clarity Music | Slow Sarod | Brain Fog Reset",
-      "role": "PACING REFERENCE — 14K imp, **37.4% AVD** (highest of any Sarod cognitive ship). Different lead but same instrument+lane. Match that pacing character.",
+      "role": "PACING REFERENCE \u2014 14K imp, **37.4% AVD** (highest of any Sarod cognitive ship). Different lead but same instrument+lane. Match that pacing character.",
       "note": "37% AVD proves Sarod holds cognitive audience. Music quality is the retention lever."
     },
     {
       "video_id": "(Jun 2 Clear Your Head Music Slow Sarod)",
       "title": "Clear Your Head Music | Slow Sarod | Indian Classical",
-      "role": "RECENT SUCCESS PROOF — 65K imp, 29% AVD. Sarod cognitive lane has current traction.",
-      "note": "Different sub-lane (Clear Head vs Focus) — no direct cannibalization."
+      "role": "RECENT SUCCESS PROOF \u2014 65K imp, 29% AVD. Sarod cognitive lane has current traction.",
+      "note": "Different sub-lane (Clear Head vs Focus) \u2014 no direct cannibalization."
     },
     {
       "video_id": "(May 23 Morning Reset Music Sarod)",
       "title": "Morning Reset Music | Sarod Instrumental | Clear Your Head",
-      "role": "COOLDOWN PROOF — last Sarod ship, 17d ago. Sufficient rest.",
-      "note": "Morning Reset framing — different from our Focus framing."
+      "role": "COOLDOWN PROOF \u2014 last Sarod ship, 17d ago. Sufficient rest.",
+      "note": "Morning Reset framing \u2014 different from our Focus framing."
     }
   ],
   "end_screen": {
-    "primary": "Mental Clarity Music | Slow Sarod | Brain Fog Reset (37% AVD) — same instrument + same lane authority",
-    "backup": "Clear Your Head Music | Slow Sarod — same instrument + adjacent sub-lane"
+    "primary": "Mental Clarity Music | Slow Sarod | Brain Fog Reset (37% AVD) \u2014 same instrument + same lane authority",
+    "backup": "Clear Your Head Music | Slow Sarod \u2014 same instrument + adjacent sub-lane"
   },
-  "strategic_bet": "Thu Jul 2 AM ship. Fresh Focus Music lead bet on Sarod. VidIQ 84 is real — if it converts, banks Focus Music as future cognitive lead template. If it flops, confirms Focus Music consistently underperforms on channel regardless of instrument framing (retire from lead pool). Either outcome = high-information learning. Sarod cognitive lane is saturated (4 recent ships) but all sub-hero — room for a cleaner-format winner. User flagged Focus Music history is spotty but agreed to try — commits to the experiment.",
+  "strategic_bet": "Thu Jul 2 AM ship. Fresh Focus Music lead bet on Sarod. VidIQ 84 is real \u2014 if it converts, banks Focus Music as future cognitive lead template. If it flops, confirms Focus Music consistently underperforms on channel regardless of instrument framing (retire from lead pool). Either outcome = high-information learning. Sarod cognitive lane is saturated (4 recent ships) but all sub-hero \u2014 room for a cleaner-format winner. User flagged Focus Music history is spotty but agreed to try \u2014 commits to the experiment.",
   "preflight_passed": {
-    "cooldown": "Sarod viable (17d rest from Jun 15) — STRONG tier",
+    "cooldown": "Sarod viable (17d rest from Jun 15) \u2014 STRONG tier",
     "phrase_locks": "Focus Music lead is fresh (no phrase lock active). Sarod Instrumental free.",
-    "cannibalization_check": "Existing 14K Sarod cognitive ship uses 'Mental Clarity Music' lead — different phrase, sub-threshold anyway. Finding 14 rule (>500K hero) not triggered.",
-    "vidiq": "Lead VidIQ 84 (Focus Music) — highest cognitive score in bank.",
-    "thumb_format": "MIND CLOUDY? — cognitive lane DECISIVE Q-hook winner + compact per #35 sub-rule.",
+    "cannibalization_check": "Existing 14K Sarod cognitive ship uses 'Mental Clarity Music' lead \u2014 different phrase, sub-threshold anyway. Finding 14 rule (>500K hero) not triggered.",
+    "vidiq": "Lead VidIQ 84 (Focus Music) \u2014 highest cognitive score in bank.",
+    "thumb_format": "MIND CLOUDY? \u2014 cognitive lane DECISIVE Q-hook winner + compact per #35 sub-rule.",
     "lane_time_fit": "Cognitive lane = morning intent per Finding 12. AM slot aligned. Same pattern as Mon Dopamine Detox."
   },
   "pending": [
-    "Suno prompt (parked — user's separate exploration)",
+    "Enter BOTH title variants in YT native A/B when uploading",
+    "Suno prompt (parked \u2014 user's separate exploration)",
     "Final raga selection (Bhimpalasi vs Bageshri)",
     "Music render + Pichwai thumbnail render"
   ],
-  "day_7_read": "2026-07-09 — measure CTR, AVD, views against experiment criteria. If success → bank Focus Music as viable cognitive lead template. If failure → retire Focus Music from lead pool."
+  "day_7_read": "2026-07-09 \u2014 measure CTR, AVD, views against experiment criteria. If success \u2192 bank Focus Music as viable cognitive lead template. If failure \u2192 retire Focus Music from lead pool.",
+  "yt_native_test": "title_2way"
 }
