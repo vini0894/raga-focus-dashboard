@@ -740,9 +740,54 @@ with st.sidebar:
     st.caption("Dashboard reads from YouTube API via the authenticated MCP server + REACH_DATA.md for manual reach captures.")
 
 # Tabs
-tab_overview, tab_daily, tab_videos, tab_detail, tab_competitors, tab_briefs, tab_idea_gen, tab_title_builder, tab_playlists, tab_thumbs = st.tabs(
-    ["📊 Overview", "📈 Daily Views", "📺 Videos", "🔍 Video Detail", "⚔️ Competitors", "🧠 Brief Queue", "🧪 A/B Insights", "🔤 Title Builder", "🎵 Playlists", "🖼️ Thumbnails"]
+tab_health, tab_overview, tab_daily, tab_videos, tab_detail, tab_competitors, tab_briefs, tab_idea_gen, tab_title_builder, tab_thumbs = st.tabs(
+    ["🩺 Daily Health", "📊 Overview", "📈 Daily Views", "📺 Videos", "🔍 Video Detail", "⚔️ Competitors", "🧠 Brief Queue", "🧪 A/B Insights", "🔤 Title Builder", "🖼️ Thumbnails"]
 )
+
+# -----------------------------------------------------------------------------
+# Tab: Daily Health  (Stage-2 monitor output — reads data/daily_health.json)
+# -----------------------------------------------------------------------------
+with tab_health:
+    import json as _json
+    st.subheader("🩺 Daily Health")
+    _hf = Path(__file__).parent / "data" / "daily_health.json"
+    if not _hf.exists():
+        st.info("No health report yet. Run `python tools/refresh_daily.py` (or the daily cron) to generate it.")
+    else:
+        _h = _json.loads(_hf.read_text())
+        c1, c2, c3 = st.columns(3)
+        c1.metric("Report date", _h.get("generated", "—"))
+        c2.metric("Active ships (≤30d)", len(_h.get("active_ships", [])))
+        c3.metric("Re-thumbnail targets", len(_h.get("rethumbnail", [])))
+
+        st.markdown("#### Active ships")
+        _rows = _h.get("active_ships", [])
+        if _rows:
+            _df = pd.DataFrame(_rows)
+            _order = {"RE-THUMBNAIL": 0, "UNDERPERFORMING": 1, "CHECK-MUSIC": 2, "WATCH": 3, "HEALTHY": 4}
+            _emoji = {"HEALTHY": "✅", "RE-THUMBNAIL": "🔁", "CHECK-MUSIC": "🎵", "UNDERPERFORMING": "⚠️", "WATCH": "⏳"}
+            _df = _df.assign(_o=_df["verdict"].map(lambda v: _order.get(v, 9))).sort_values("_o").drop(columns="_o")
+            _df["verdict"] = _df["verdict"].map(lambda v: f"{_emoji.get(v, '')} {v}")
+            _cols = ["verdict", "title", "days_live", "lane", "ctr", "avd", "views", "action"]
+            st.dataframe(_df[_cols].head(15), use_container_width=True, hide_index=True)
+            if len(_df) > 15:
+                with st.expander(f"View all active ships ({len(_df) - 15} more)"):
+                    st.dataframe(_df[_cols].iloc[15:], use_container_width=True, hide_index=True)
+        else:
+            st.caption("No active ships.")
+
+        _rt = _h.get("rethumbnail", [])
+        if _rt:
+            st.markdown("#### 🔁 Re-thumbnail candidates — proven music, weak CTR (highest-value tweaks)")
+            st.dataframe(pd.DataFrame(_rt)[["title", "lane", "ctr", "lane_ctr_median", "avd", "views"]],
+                         use_container_width=True, hide_index=True)
+
+        _ab = _h.get("ab_capture", [])
+        if _ab:
+            st.markdown("#### 🧪 A/B tests likely concluded — capture the result from Studio")
+            st.dataframe(pd.DataFrame(_ab)[["test", "lane", "age_days", "a", "b"]],
+                         use_container_width=True, hide_index=True)
+        st.caption("Generated daily by the Stage-2 monitor (`tools/monitor.py`). Revenue-free; full digest stays local.")
 
 # -----------------------------------------------------------------------------
 # Tab: Overview
@@ -3763,146 +3808,6 @@ with tab_title_builder:
 # =============================================================================
 # Tab: Playlists — strategic playlist build plan + per-playlist video ordering
 # =============================================================================
-with tab_playlists:
-    st.markdown("## 🎵 Playlist Strategy")
-    st.caption(
-        "Playlists drive **36-min AVD on Raga Focus vs 19-min channel avg** "
-        "(1.9× retention multiplier) but currently only 2.5% of traffic. "
-        "Building 6 themed playlists with proper ordering + SEO descriptions is "
-        "the highest-leverage 1-hour task on the channel."
-    )
-
-    import json as _json
-    _pl_path = Path(__file__).parent / "data" / "playlists_plan.json"
-    if not _pl_path.exists():
-        st.error("Playlists plan not found at data/playlists_plan.json")
-    else:
-        try:
-            _plan = _json.loads(_pl_path.read_text())
-        except Exception as _e:
-            st.error(f"Failed to load playlists_plan.json: {_e}")
-            _plan = None
-
-        if _plan:
-            # ---- Header metrics ----
-            _cs = _plan.get("current_state", {})
-            _existing = _cs.get("existing_playlists", [])
-            _existing_total_views = _cs.get("total_playlist_views", 0)
-            _missing = _cs.get("missing_playlists", [])
-            _to_build = _plan.get("playlists_to_build", [])
-
-            c1, c2, c3, c4 = st.columns(4)
-            c1.metric("Existing playlists", len(_existing), help="On-channel today")
-            c2.metric("Missing themes", len(_missing), help="Need to be created")
-            c3.metric("Total existing views", f"{_existing_total_views:,}", help="Across all current playlists")
-            c4.metric("Planned playlists", len(_to_build), help="Full restructured plan")
-
-            st.markdown("---")
-
-            # ---- Existing playlists summary ----
-            with st.expander("📌 Current playlist state", expanded=False):
-                if _existing:
-                    _df_existing = pd.DataFrame(_existing)
-                    st.dataframe(_df_existing, use_container_width=True, hide_index=True)
-                if _missing:
-                    st.markdown(f"**Missing themed playlists:** {', '.join(_missing)}")
-                _adv = _cs.get("playlist_avd_advantage", "")
-                if _adv:
-                    st.caption(f"AVD advantage: {_adv}")
-
-            # ---- Ordering principle ----
-            _principle = _plan.get("ordering_principle", "")
-            if _principle:
-                st.info(f"💡 **Ordering principle:** {_principle}")
-
-            # ---- Execution order ----
-            with st.expander("🎯 Execution order (step-by-step, ~75 min total)", expanded=True):
-                _steps = _plan.get("execution_order_for_user", [])
-                for _step in _steps:
-                    st.markdown(f"- {_step}")
-                _est = _plan.get("total_time_estimate", "")
-                _impact = _plan.get("expected_impact", "")
-                if _est:
-                    st.caption(f"⏱ {_est}")
-                if _impact:
-                    st.success(f"📈 **Expected impact:** {_impact}")
-
-            st.markdown("---")
-            st.markdown("### Playlists to build / restructure")
-
-            # ---- Per-playlist cards ----
-            _priority_colors = {
-                "HIGHEST": "🔥",
-                "HIGH": "🔥",
-                "MEDIUM": "🟡",
-                "LOW": "🟢",
-            }
-
-            for _pl in _to_build:
-                _num = _pl.get("playlist_number", "?")
-                _name = _pl.get("name", "Untitled")
-                _status = _pl.get("status", "")
-                _priority = _pl.get("priority", "")
-                _seo = _pl.get("seo_description", "")
-                _videos = _pl.get("videos_in_order", [])
-                _future = _pl.get("future_additions", [])
-
-                # Priority emoji
-                _pri_emoji = "🟡"
-                for _key, _emo in _priority_colors.items():
-                    if _key in _priority.upper():
-                        _pri_emoji = _emo
-                        break
-
-                with st.expander(
-                    f"{_pri_emoji} **Playlist #{_num} — {_name}** · _{_status}_",
-                    expanded=False,
-                ):
-                    if _priority:
-                        st.caption(f"**Priority:** {_priority}")
-
-                    st.markdown("**SEO Description (copy-paste into YT Studio):**")
-                    st.code(_seo, language="text")
-
-                    st.markdown(f"**Videos in order ({len(_videos)}):**")
-                    if _videos:
-                        _vid_rows = []
-                        for _v in _videos:
-                            _vid_rows.append({
-                                "Rank": _v.get("rank", ""),
-                                "Title": _v.get("title", ""),
-                                "Video ID": _v.get("id", ""),
-                                "Views": f"{_v.get('views'):,}" if isinstance(_v.get("views"), (int, float)) else "—",
-                                "CTR%": f"{_v.get('ctr'):.2f}" if isinstance(_v.get("ctr"), (int, float)) else "—",
-                                "Note": _v.get("note", ""),
-                            })
-                        _df_vids = pd.DataFrame(_vid_rows)
-                        st.dataframe(_df_vids, use_container_width=True, hide_index=True)
-
-                    if _future:
-                        st.markdown("**Future additions:**")
-                        for _fa in _future:
-                            st.markdown(f"- {_fa}")
-
-            # ---- Playlists to retire ----
-            _retire = _plan.get("playlists_to_retire_or_dismantle", [])
-            if _retire:
-                st.markdown("---")
-                with st.expander("🗑 Playlists to retire / repurpose", expanded=False):
-                    for _r in _retire:
-                        st.markdown(f"**{_r.get('name', '?')}** — _{_r.get('action', '')}_")
-                        st.caption(_r.get("rationale", ""))
-
-            st.markdown("---")
-            st.caption(
-                f"📄 Source: `data/playlists_plan.json` · "
-                f"Created: {_plan.get('created_at', '?')} · "
-                "Edit JSON directly to update this view."
-            )
-
-
-# -----------------------------------------------------------------------------
-# Tab: Thumbnails — thumbnail-refresh queue (data/thumbnail_refresh_queue.json)
 # -----------------------------------------------------------------------------
 with tab_thumbs:
     import json as _thumb_json
