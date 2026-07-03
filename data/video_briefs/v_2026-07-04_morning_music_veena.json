@@ -1,6 +1,6 @@
 {
   "id": "v_2026-07-04_morning_music_veena",
-  "status": "DRAFT",
+  "status": "PARKED",
   "created_at": "2026-07-03",
   "planned_date": "2026-07-04",
   "planned_slot": "Saturday AM ship \u2014 shifted from Fri Jul 3 AM after Fri morning window passed. Sat AM preserves Morning-title coherence (viewer in morning state matches Morning Music framing). Weekend impression dip (~22%) is real but smaller cost than Fri PM title-time mismatch. See title_note.",
@@ -8,7 +8,7 @@
   "title_variants": {
     "A": "Morning Music | Veena Instrumental | 1.5 Hours"
   },
-  "title_note": "Single title. 'Morning Music' is the highest-VidIQ morning lead in bank (77) with no exact-phrase catalog collision. Veena at 24d rest is cleanest cooldown of the week. Char count 46 \u2014 in banded [46-55] sweet spot. Novel Veena-morning pairing = fresh instrument-lane combination (Veena historically clinical/emotional, never morning-anchored). If this works, unlocks Veena as a morning-instrument template. SHIFTED 2026-07-03 PM: Fri morning window passed. Sat AM preserves title-time coherence vs Fri PM ship (which would mismatch morning framing to evening viewers). Weekend impression dip < wrong-time-of-day CTR crater.",
+  "title_note": "Single title. 'Morning Music' is the highest-VidIQ morning lead in bank (77) with no exact-phrase catalog collision. Veena at 24d rest is cleanest cooldown of the week. Char count 46 \u2014 in banded [46-55] sweet spot. Novel Veena-morning pairing = fresh instrument-lane combination (Veena historically clinical/emotional, never morning-anchored). If this works, unlocks Veena as a morning-instrument template. SHIFTED 2026-07-03 PM: Fri morning window passed. Sat AM preserves title-time coherence vs Fri PM ship (which would mismatch morning framing to evening viewers). Weekend impression dip < wrong-time-of-day CTR crater. PARKED 2026-07-03 PM: Sat AM skipped in favor of clean 5-weekday cadence + growth-slot protection (Finding 15). Veena-morning experiment better tested on wk_2026-07-04 Mon/Tue AM slot (full weekday impression pool). Ship kept for future scheduling.",
   "components": {
     "instrument": "Veena",
     "instrument_role": "FILLER (avg 32K impr per cooldown_check tier) \u2014 24d rested, cleanest cooldown this week",

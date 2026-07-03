@@ -130,22 +130,10 @@
     },
     {
       "date": "2026-07-04",
-      "type": "ship",
-      "instrument": "Veena",
-      "lane": "morning",
-      "runtime_min": 90,
-      "suno_prompt_rule": "CALM (morning warmth OK)",
-      "title_direction": "Morning Music | Veena Instrumental | 1.5 Hours",
-      "title_variants_draft": [
-        "Morning Music | Veena Instrumental | 1.5 Hours"
-      ],
-      "thumb_text": "FRESH START",
-      "yt_native_test": "none (single title)",
-      "brief_path": "data/video_briefs/v_2026-07-04_morning_music_veena.json",
-      "planned_slot": "Saturday AM",
-      "vidiq_lead_score": 77,
-      "status": "planned",
-      "title_note": "SHIFTED from Fri Jul 3 AM. Morning-title \u00d7 Sat AM slot preserves coherence. Novel Veena-morning pairing intact."
+      "type": "skipped",
+      "reason": "Skipped for clean 5-weekday cadence + growth-slot protection (Finding 15). Fri PM Happy Music A/B needs breathing room in growth slot. Veena-morning experiment parked to wk_2026-07-04 for weekday impression pool.",
+      "parked_brief": "data/video_briefs/v_2026-07-04_morning_music_veena.json (PARKED \u2014 reuse for wk_2026-07-04 Mon/Tue AM)",
+      "status": "skipped"
     }
   ],
   "preflight_pending": [
