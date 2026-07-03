@@ -107,9 +107,22 @@
     },
     {
       "date": "2026-07-03",
-      "type": "review",
-      "action": "Read Mon experiment + Tue 3hr early signal; plan wk_2026-07-04",
-      "status": "planned"
+      "type": "ship",
+      "instrument": "Veena",
+      "lane": "morning",
+      "runtime_min": 90,
+      "suno_prompt_rule": "CALM (morning warmth OK)",
+      "title_direction": "Morning Music | Veena Instrumental | 1.5 Hours",
+      "title_variants_draft": [
+        "Morning Music | Veena Instrumental | 1.5 Hours"
+      ],
+      "thumb_text": "FRESH START",
+      "yt_native_test": "none (single title)",
+      "brief_path": "data/video_briefs/v_2026-07-03_morning_music_veena.json",
+      "planned_slot": "Friday AM",
+      "vidiq_lead_score": 77,
+      "status": "planned",
+      "title_note": "Novel Veena-morning pairing. Cleanest cooldown of the week (24d). VidIQ 77 highest morning lead. Complements week's instrument diversity: Sitar/Surbahar/Sarangi/Sarod/Veena."
     }
   ],
   "preflight_pending": [
