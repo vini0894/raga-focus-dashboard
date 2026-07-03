@@ -1,7 +1,7 @@
 {
   "week_id": "wk_2026-06-27",
   "week_start": "2026-06-27",
-  "week_end": "2026-07-03",
+  "week_end": "2026-07-04",
   "status": "planned",
   "notes": "Pivoted per research/session_findings_2026-06-26.md \u2014 calm Suno prompts mandatory for all calm-lane ships. Mon Dopamine kept as music-fix experiment.",
   "ships": [
@@ -107,6 +107,12 @@
     },
     {
       "date": "2026-07-03",
+      "type": "skipped",
+      "reason": "Fri morning window passed before production could complete. Shifted to Sat AM to preserve Morning-title \u00d7 morning-viewer-state coherence. See v_2026-07-04_morning_music_veena.json.",
+      "status": "skipped"
+    },
+    {
+      "date": "2026-07-04",
       "type": "ship",
       "instrument": "Veena",
       "lane": "morning",
@@ -118,11 +124,11 @@
       ],
       "thumb_text": "FRESH START",
       "yt_native_test": "none (single title)",
-      "brief_path": "data/video_briefs/v_2026-07-03_morning_music_veena.json",
-      "planned_slot": "Friday AM",
+      "brief_path": "data/video_briefs/v_2026-07-04_morning_music_veena.json",
+      "planned_slot": "Saturday AM",
       "vidiq_lead_score": 77,
       "status": "planned",
-      "title_note": "Novel Veena-morning pairing. Cleanest cooldown of the week (24d). VidIQ 77 highest morning lead. Complements week's instrument diversity: Sitar/Surbahar/Sarangi/Sarod/Veena."
+      "title_note": "SHIFTED from Fri Jul 3 AM. Morning-title \u00d7 Sat AM slot preserves coherence. Novel Veena-morning pairing intact."
     }
   ],
   "preflight_pending": [
