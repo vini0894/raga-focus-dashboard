@@ -111,17 +111,22 @@
       "instrument": "Mix (user-composed)",
       "lane": "uplifting / feel-good evening",
       "runtime_min": 90,
-      "title_direction": "Happy Music | Uplifting Indian Instrumental | 1.5 Hours",
+      "title_direction": "A: Happy Music | Uplifting Indian Instrumental vs B: Inner Happiness Music | Indian Instrumental",
       "title_variants_draft": [
-        "Happy Music | Uplifting Indian Instrumental | 1.5 Hours"
+        "Happy Music | Uplifting Indian Instrumental | 1.5 Hours",
+        "Inner Happiness Music | Indian Instrumental | 1.5 Hours"
       ],
       "thumb_text": "UNLOCK JOY",
-      "yt_native_test": "none (single title)",
+      "yt_native_test": "title_2way",
       "brief_path": "data/video_briefs/v_2026-07-03_happy_music_mix.json",
       "planned_slot": "Friday PM (evening)",
       "vidiq_lead_score": 72,
       "status": "planned",
-      "title_note": "Happy Music (72) lead + Uplifting (66) slot 2 = both banked searchable. Music pre-composed by user."
+      "title_note": "A/B: data-safe (A, VidIQ 72) vs aesthetic-emotional bet (B, VidIQ 28). Tests whether emotional resonance beats VidIQ on Browse/Suggested traffic.",
+      "vidiq_leads": {
+        "A_Happy_Music": 72,
+        "B_Inner_Happiness_Music": 28
+      }
     },
     {
       "date": "2026-07-04",

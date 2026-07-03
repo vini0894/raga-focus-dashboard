@@ -6,9 +6,10 @@
   "planned_slot": "Friday PM (evening) \u2014 uplifting \u00d7 weekend-start feel-good intent. User-composed mix.",
   "title": "Happy Music | Uplifting Indian Instrumental | 1.5 Hours",
   "title_variants": {
-    "A": "Happy Music | Uplifting Indian Instrumental | 1.5 Hours"
+    "A": "Happy Music | Uplifting Indian Instrumental | 1.5 Hours",
+    "B": "Inner Happiness Music | Indian Instrumental | 1.5 Hours"
   },
-  "title_note": "Single title. Happy Music (VidIQ 72 \u2014 highest joy-family score) leads. 'Uplifting Indian Instrumental' slot 2 combines banked-searchable adjective (Uplifting VidIQ 66) + mix-signaling. Char 50 \u2014 in band [46-55]. Both lead + slot 2 have real search intent (no poetic violation per rule #36).",
+  "title_note": "A/B test \u2014 high-VidIQ direct SEO vs aesthetic-emotional bet. Variant A: Happy Music (VidIQ 72) + Uplifting Indian Instrumental (slot 2 VidIQ 66). Variant B: Inner Happiness Music (VidIQ 28, DEAD zone) + Indian Instrumental. Real learnable question: does emotional-resonance framing (Inner Happiness) overcome 44pt VidIQ deficit on 88% Browse/Suggested traffic? Note: slot 2 differs between variants (Uplifting Indian Instrumental vs Indian Instrumental) \u2014 per user design. Not a fully isolated variable, but tests broader concept.",
   "components": {
     "instrument": "Mix \u2014 user-composed multi-instrument Indian Classical",
     "lane": "uplifting / feel-good evening",
@@ -51,11 +52,12 @@
   "suno_prompt": null,
   "suno_prompt_note": "N/A \u2014 music already produced by user (pre-composed multi-instrument mix).",
   "experiment": {
-    "type": "clean-lead joy-family test \u2014 Fri PM slot",
-    "hypothesis": "Happy Music (VidIQ 72) lead + Uplifting Indian Instrumental slot 2 captures Fri PM feel-good audience. Novel Fri PM uplifting slot (uplifting lane typically morning).",
+    "type": "title A/B \u2014 data-safe vs aesthetic-emotional bet",
+    "hypothesis": "Head-to-head: (A) Happy Music (VidIQ 72 direct SEO, highest joy-family) vs (B) Inner Happiness Music (VidIQ 28, aesthetic-emotional). Tests whether emotional resonance overcomes large VidIQ gap on Browse/Suggested-heavy traffic. Risk: B may starve on impressions given low search-side score. If B holds its own, banks emotional-resonance rule; if A crushes, confirms VidIQ discipline.",
     "success_criteria": "AVD >= 22% AND views >= 4K within 7 days = viable Fri-PM uplifting template",
     "failure_criteria": "AVD < 15% AND views < 1K = Fri PM uplifting slot doesn't work",
-    "neutral_zone": "AVD 15-22% or views 1-4K = directional"
+    "neutral_zone": "AVD 15-22% or views 1-4K = directional",
+    "what_we_learn": "If A wins by >5pp \u2192 VidIQ discipline confirmed, don't bet aesthetic against 40+ pt gaps. If B ties or wins \u2192 emotional resonance beats VidIQ on 88% Browse/Suggested traffic. If B starves on impressions \u2192 confirms VidIQ threshold matters."
   },
   "reference_ships": [
     {
@@ -80,13 +82,15 @@
     "cooldown": "Instrument mix (user-composed) \u2014 not cooldown-restricted.",
     "phrase_locks": "Happy Music lead is fresh (no active phrase lock).",
     "cannibalization_check": "Dodges 169K Joyful, 347K Positive Energy Yoga, 33K Good Energy Santoor via distinct lead. Happy Music has no catalog collision.",
-    "vidiq": "Lead 72 (Happy Music, banked), slot 2 'Uplifting' component 66 (banked). Both searchable.",
+    "vidiq": "Variant A: Happy Music 72 + Uplifting 66 (both banked, both searchable). Variant B: Inner Happiness Music 28 (banked DEAD zone but aesthetic-emotional bet).",
     "thumb_format": "UNLOCK JOY \u2014 banked uplifting-lane winner (vibes_state).",
     "lane_time_fit": "Uplifting \u00d7 Fri PM = novel time slot for uplifting lane (typically morning). Weekend-start intent."
   },
   "pending": [
+    "Enter BOTH title variants in YT native A/B when uploading",
     "Pichwai thumbnail render with UNLOCK JOY overlay",
     "Upload + schedule Fri PM"
   ],
-  "day_7_read": "2026-07-10 \u2014 measure CTR, AVD, views."
+  "day_7_read": "2026-07-10 \u2014 measure CTR, AVD, views.",
+  "yt_native_test": "title_2way"
 }
