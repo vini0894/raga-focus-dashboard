@@ -1,0 +1,92 @@
+{
+  "id": "v_2026-07-03_happy_music_mix",
+  "status": "DRAFT",
+  "created_at": "2026-07-03",
+  "planned_date": "2026-07-03",
+  "planned_slot": "Friday PM (evening) \u2014 uplifting \u00d7 weekend-start feel-good intent. User-composed mix.",
+  "title": "Happy Music | Uplifting Indian Instrumental | 1.5 Hours",
+  "title_variants": {
+    "A": "Happy Music | Uplifting Indian Instrumental | 1.5 Hours"
+  },
+  "title_note": "Single title. Happy Music (VidIQ 72 \u2014 highest joy-family score) leads. 'Uplifting Indian Instrumental' slot 2 combines banked-searchable adjective (Uplifting VidIQ 66) + mix-signaling. Char 50 \u2014 in band [46-55]. Both lead + slot 2 have real search intent (no poetic violation per rule #36).",
+  "components": {
+    "instrument": "Mix \u2014 user-composed multi-instrument Indian Classical",
+    "lane": "uplifting / feel-good evening",
+    "runtime_min": 90,
+    "raga": "Determined by user's produced music",
+    "binaural": "N/A (pre-composed)"
+  },
+  "validated_keywords": [
+    "Happy Music (lead \u2014 VidIQ 72, highest joy-family score in bank, clean cannibalization)",
+    "Uplifting Indian Instrumental (slot 2 \u2014 Uplifting VidIQ 66, banked searchable adjective + mix signal)",
+    "1.5 Hours (runtime)"
+  ],
+  "thumbnail": {
+    "text": "UNLOCK JOY",
+    "char_count": 10,
+    "format": "vibes_state",
+    "format_evidence": "Uplifting lane winning format per playbook v3 (banked winner). Compact 2 words.",
+    "visual_notes": "Pichwai/Kangra miniature \u2014 potentially multi-figure celebration scene or single figure with instruments in temple courtyard / garden with warm golden-hour light. Dark teal serif 'UNLOCK JOY' top-right. Palette: warm ambers + soft golds + gentle teals. Feel: uplifted celebratory contemplative.",
+    "collision_check": "No collision with week's other thumbs (Mon MIND FULL?, Tue DRIFT TO SLEEP, Wed REACH STILLNESS, Thu MIND CLOUDY?, Sat FRESH START)."
+  },
+  "description": "Happy Music | Uplifting Indian Instrumental | 1.5 Hours\n\nFor Friday evenings when the weekend feels close and you want to lift your mood \u2014 this is your soundtrack.\n\n90 minutes of uplifting Indian classical instrumental (mix) designed to lift without overwhelming. Warm, celebratory, but never rushed.\n\nWhat you'll hear:\n\u2022 Multi-instrument Indian classical mix\n\u2022 Warm resonant character throughout\n\u2022 Recorded acoustic, no electronic processing\n\u2022 Uplifted but calm \u2014 no jolts\n\nBest for:\n\u2022 Friday evening wind-down\n\u2022 Weekend morning breakfast\n\u2022 Cooking, gathering, hosting\n\u2022 Anytime you need a mood lift\n\nPress play. Breathe. Smile.",
+  "tags": [
+    "happy music",
+    "uplifting music",
+    "feel good music",
+    "joy music",
+    "indian classical music",
+    "hindustani classical",
+    "indian instrumental",
+    "positive music",
+    "cheerful music",
+    "weekend music",
+    "friday music",
+    "evening music",
+    "uplifting indian instrumental",
+    "mood lift music",
+    "indian classical instrumental",
+    "instrumental music"
+  ],
+  "suno_prompt": null,
+  "suno_prompt_note": "N/A \u2014 music already produced by user (pre-composed multi-instrument mix).",
+  "experiment": {
+    "type": "clean-lead joy-family test \u2014 Fri PM slot",
+    "hypothesis": "Happy Music (VidIQ 72) lead + Uplifting Indian Instrumental slot 2 captures Fri PM feel-good audience. Novel Fri PM uplifting slot (uplifting lane typically morning).",
+    "success_criteria": "AVD >= 22% AND views >= 4K within 7 days = viable Fri-PM uplifting template",
+    "failure_criteria": "AVD < 15% AND views < 1K = Fri PM uplifting slot doesn't work",
+    "neutral_zone": "AVD 15-22% or views 1-4K = directional"
+  },
+  "reference_ships": [
+    {
+      "video_id": "(May 8 Joyful Santoor)",
+      "title": "Joyful Music | Positive Vibes Music with Santoor | 1 Hour",
+      "role": "DIFFERENTIATE \u2014 owns 'Joyful Music' query (169K imp, 33% AVD). Our Pure Joy Music dodges via distinct lead phrase.",
+      "note": "Confirms joy/uplifting audience exists on channel."
+    },
+    {
+      "video_id": "(May 7 Yoga Music Positive Energy)",
+      "title": "Yoga Music | Positive Energy Frequency | 1.5 Hour",
+      "role": "DIFFERENTIATE \u2014 owns 'Positive Energy' + 'Yoga Music' (347K, 34% AVD). Our ship uses different lead entirely.",
+      "note": "Uplifting-morning has strong catalog authority; our Fri PM slot tests uplifting-evening."
+    }
+  ],
+  "end_screen": {
+    "primary": "Joyful Music | Positive Vibes | Santoor (169K, 33% AVD) \u2014 same lane authority chain",
+    "backup": "Yoga Music | Positive Energy Frequency (347K, 34% AVD) \u2014 adjacent uplifting authority"
+  },
+  "strategic_bet": "Fri Jul 3 PM ship. Uplifting evening slot rarely tested. Music already produced = no quality risk. Happy Music (VidIQ 72) dodges 169K Joyful cannibalization via distinct lead phrase. Complements week: Sitar cognitive \u00b7 Surbahar sleep \u00b7 Sarangi meditation \u00b7 Sarod focus \u00b7 [Fri PM Happy Music Mix] \u00b7 [Sat AM plan TBD].",
+  "preflight_passed": {
+    "cooldown": "Instrument mix (user-composed) \u2014 not cooldown-restricted.",
+    "phrase_locks": "Happy Music lead is fresh (no active phrase lock).",
+    "cannibalization_check": "Dodges 169K Joyful, 347K Positive Energy Yoga, 33K Good Energy Santoor via distinct lead. Happy Music has no catalog collision.",
+    "vidiq": "Lead 72 (Happy Music, banked), slot 2 'Uplifting' component 66 (banked). Both searchable.",
+    "thumb_format": "UNLOCK JOY \u2014 banked uplifting-lane winner (vibes_state).",
+    "lane_time_fit": "Uplifting \u00d7 Fri PM = novel time slot for uplifting lane (typically morning). Weekend-start intent."
+  },
+  "pending": [
+    "Pichwai thumbnail render with UNLOCK JOY overlay",
+    "Upload + schedule Fri PM"
+  ],
+  "day_7_read": "2026-07-10 \u2014 measure CTR, AVD, views."
+}

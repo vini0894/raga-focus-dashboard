@@ -107,9 +107,21 @@
     },
     {
       "date": "2026-07-03",
-      "type": "skipped",
-      "reason": "Fri morning window passed before production could complete. Shifted to Sat AM to preserve Morning-title \u00d7 morning-viewer-state coherence. See v_2026-07-04_morning_music_veena.json.",
-      "status": "skipped"
+      "type": "ship",
+      "instrument": "Mix (user-composed)",
+      "lane": "uplifting / feel-good evening",
+      "runtime_min": 90,
+      "title_direction": "Happy Music | Uplifting Indian Instrumental | 1.5 Hours",
+      "title_variants_draft": [
+        "Happy Music | Uplifting Indian Instrumental | 1.5 Hours"
+      ],
+      "thumb_text": "UNLOCK JOY",
+      "yt_native_test": "none (single title)",
+      "brief_path": "data/video_briefs/v_2026-07-03_happy_music_mix.json",
+      "planned_slot": "Friday PM (evening)",
+      "vidiq_lead_score": 72,
+      "status": "planned",
+      "title_note": "Happy Music (72) lead + Uplifting (66) slot 2 = both banked searchable. Music pre-composed by user."
     },
     {
       "date": "2026-07-04",
