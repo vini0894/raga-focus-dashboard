@@ -1,0 +1,97 @@
+{
+  "id": "v_2026-07-04_peaceful_music_veena",
+  "status": "DRAFT",
+  "created_at": "2026-07-03",
+  "planned_date": "2026-07-04",
+  "planned_slot": "Saturday PM (evening) — wind-down/relaxation lane × evening intent. ~36hr spacing from Fri PM Happy Music ship = clean growth-slot separation (Finding 15).",
+  "title": "Peaceful Music | Veena Instrumental | 1.5 Hours",
+  "title_variants": {
+    "A": "Peaceful Music | Veena Instrumental | 1.5 Hours"
+  },
+  "title_note": "Single title. Peaceful Music (VidIQ 72 — highest evening/calm score in bank, clean cannibalization) leads. Veena Instrumental slot 2 (proven format, 25d rested — cleanest cooldown). Char count 47 — in banded [46-55] sweet spot. Wind-down/relaxation lane fits Sat evening post-day decompression intent.",
+  "components": {
+    "instrument": "Veena",
+    "instrument_role": "FILLER (avg 32K impr per cooldown_check tier) — 25d rested",
+    "lane": "wind-down / relaxation evening",
+    "runtime_min": 90,
+    "raga": "TBD — candidate Yaman (evening romantic-serene) or Bhairavi (soulful closing)",
+    "binaural": "TBD — likely Alpha 8-10Hz for evening wind-down"
+  },
+  "validated_keywords": [
+    "Peaceful Music (lead — VidIQ 72, highest calm/evening score in bank, clean cannibalization)",
+    "Veena Instrumental (slot 2 — proven Veena format on channel, 25d rested)",
+    "1.5 Hours (runtime — evening wind-down norm)"
+  ],
+  "thumbnail": {
+    "text": "QUIET MIND",
+    "char_count": 10,
+    "format": "outcome_state",
+    "format_evidence": "Calm/relaxation lane winning format per playbook v3: outcome_state (DECISIVE — Test 2 68/32). 'QUIET MIND' listed as banked calm-lane winner. Structurally distinct from week's other thumbs (Mon MIND FULL? Q-hook, Tue DRIFT TO SLEEP verb+noun, Wed REACH STILLNESS verb+noun, Thu MIND CLOUDY? Q-hook, Fri UNLOCK JOY verb+noun).",
+    "visual_notes": "Pichwai/Kangra miniature — solo Veena player (long-necked stringed instrument, held horizontally). Setting: candlelit interior OR moonlit garden. Mood: serene, eyes closed, contemplative. Dark teal serif 'QUIET MIND' top-right. Palette: warm ambers + deep teals for evening wind-down feel. Avoid: bright day colors, energetic imagery.",
+    "collision_check": "Zero collision with week's other thumbs (structurally distinct: MIND X? / verb+noun family). Sat evening = novel outcome-state placement."
+  },
+  "description": "Peaceful Music | Veena Instrumental for Evening Wind-Down | 1.5 Hours\n\nFor Saturday evenings when the week is done and you want to actually rest — this is your soundtrack.\n\n90 minutes of slow, contemplative Veena (the ancient long-necked lute of South India, deep resonant character) designed to help you settle into weekend calm.\n\nWhat you'll hear:\n• Slow Hindustani Veena — sustained resonant plucked-string phrasing\n• Soft tanpura drone beneath\n• Recorded warm and acoustic, no electronic processing\n• Long sustained phrases with breath between\n\nBest for:\n• Saturday evening decompression\n• Post-workweek unwinding\n• Meditation and reflection\n• Reading, journaling, quiet time\n• Winding down before Sunday morning\n\nDim the lights. Press play. Let the week go.",
+  "tags": [
+    "peaceful music",
+    "veena music",
+    "veena instrumental",
+    "indian classical music",
+    "hindustani classical",
+    "evening relaxation music",
+    "calming music",
+    "quiet mind music",
+    "wind down music",
+    "evening meditation music",
+    "peaceful evening music",
+    "relaxing indian instrumental",
+    "instrumental music for relaxation",
+    "indian instrumental",
+    "sat evening music",
+    "weekend calm music",
+    "veena for peace",
+    "slow indian classical"
+  ],
+  "suno_prompt": null,
+  "suno_prompt_note": "PARKED — needs Suno exploration. CALM rule mandatory. Veena-specific: emphasize warm resonant plucked-string character with sympathetic strings ('deep sweet veena with sustained resonance, meend slides'). Suggested opener: 'No vocals. Solo veena, Raga Yaman, deep serene evening mood. Cold open mid-melody, no slow alap. 55 BPM, sustained melodic phrases with meend ornaments. Tanpura drone beneath — only 2 instruments, no tabla, no percussion. Continuous flow, seamless loop. No vocals, no humming.'",
+  "experiment": {
+    "type": "evening wind-down slot test",
+    "hypothesis": "Veena at 25d rest is due for a swing. Peaceful Music (VidIQ 72) is high-quality clean lead. Sat evening wind-down slot is rarely tested. Complements week: Sitar cognitive · Surbahar sleep · Sarangi meditation · Sarod focus · Fri Happy Music uplifting · Sat Peaceful Veena wind-down.",
+    "success_criteria": "AVD >= 22% AND views >= 4K within 7 days = viable Sat evening template",
+    "failure_criteria": "AVD < 15% AND views < 1K = Sat evening slot doesn't work",
+    "neutral_zone": "AVD 15-22% or views 1-4K = directional"
+  },
+  "reference_ships": [
+    {
+      "video_id": "(May 6 Peaceful Veena)",
+      "title": "Peaceful Music | Soothing Music with Veena | 1 Hour",
+      "role": "PACING REFERENCE — 6K imp, 33% AVD (Veena's highest AVD ship). Similar lead concept, older/small ship — not blocking cannibalization.",
+      "note": "Veena holds contemplative audience at 33% AVD. Match that pacing character."
+    },
+    {
+      "video_id": "(Apr 26 Calm Your Mind Veena)",
+      "title": "Calm Your Mind | Veena Healing Music | 1 hour",
+      "role": "VEENA LANE PROOF — 14K imp, 32% AVD. Veena + calm lane established retention pattern.",
+      "note": "Similar pacing translates."
+    }
+  ],
+  "end_screen": {
+    "primary": "Peaceful Music | Soothing Music with Veena | 1 Hour (33% AVD) — same instrument authority chain",
+    "backup": "Calm Your Mind | Veena Healing Music | 1 hour (32% AVD) — Veena calm-lane authority"
+  },
+  "strategic_bet": "Sat Jul 4 PM ship. Veena wind-down evening slot. Peaceful Music (VidIQ 72) is high-quality clean lead. 36hr spacing from Fri PM protects growth slots (Finding 15). Different lane (evening wind-down vs Fri PM uplifting) = different viewer pool = no internal cannibalization. Completes 6-ship week with clean lane spread: cognitive · sleep · meditation-T1 · cognitive-focus · uplifting-evening · wind-down-evening.",
+  "preflight_passed": {
+    "cooldown": "Veena viable (25d rest from Jun 9) — cleanest of the week, FILLER tier",
+    "phrase_locks": "Peaceful Music lead is fresh (no active phrase lock).",
+    "cannibalization_check": "May 6 Peaceful Veena (6K, sub-threshold) exists — different slot 2 (Soothing Music with Veena vs Veena Instrumental). Finding 14 rule (>500K hero) not triggered. Clean.",
+    "vidiq": "Lead VidIQ 72 (Peaceful Music, banked) — highest calm/evening score in bank.",
+    "thumb_format": "QUIET MIND — banked calm-lane outcome-state winner. Structurally distinct from all week's thumbs.",
+    "lane_time_fit": "Wind-down/relaxation × evening = aligned per Finding 12."
+  },
+  "pending": [
+    "Suno prompt (parked — separate exploration)",
+    "Final raga selection (Yaman evening vs Bhairavi closing)",
+    "Music render + Pichwai thumbnail render",
+    "Upload + schedule Sat PM"
+  ],
+  "day_7_read": "2026-07-11 — measure CTR, AVD, views."
+}
