@@ -1,0 +1,108 @@
+{
+  "week_id": "wk_2026-07-06",
+  "week_start": "2026-07-06",
+  "week_end": "2026-07-12",
+  "status": "locked",
+  "notes": "First Stage-3-prepared week (prep_wk_2026-07-06.json). Lane tilt per lane_priority (T1/high-value lanes). Slots fixed by user production window: Mon/Tue/Wed evening + Thu morning + Fri evening. All Suno prompts = SHORT one-liner default (banked 2026-07-05); calm lanes calm, 'slow' wording reserved for sleep/deep-rest lanes only.",
+  "ships": [
+    {
+      "date": "2026-07-06",
+      "type": "refresh",
+      "target_video": "Sitar for Brain Detox | Clear Your Mind (mDCDS2TlK4k)",
+      "action": "re-thumbnail",
+      "thumb_text": "BRAIN FOG?",
+      "lane": "cognitive",
+      "status": "planned",
+      "notes": "Zero-cost side-task, still #1 undone re-thumb (CTR 2.75 vs lane 3.31). Thu's NEW cognitive ship must use a DIFFERENT compact-Q text than BRAIN FOG?."
+    },
+    {
+      "date": "2026-07-06",
+      "type": "ship",
+      "instrument": "Surbahar",
+      "lane": "deep_rest",
+      "planned_slot": "Monday PM 19:00 IST",
+      "runtime_min": 180,
+      "title_direction": "Decompress lead (VidIQ 62) — must read as evening REST, explicitly NOT sleep (6d-old Surbahar 3hr sleep sibling live). e.g. 'Music to Decompress | Surbahar Instrumental | 3 Hours'",
+      "thumb_format": "permission_or_q_hook",
+      "suno_prompt_rule": "CALM + slow allowed (deep-rest lane)",
+      "suno_prompt_draft": "Instrumental only, no vocals, no humming — slow Indian classical surbahar in Raga Yaman, deep resonant plucked strings with long meend slides and spacious pauses, low tanpura drone, no percussion, 55–60 BPM, seamless loop.",
+      "vidiq_lead_score": 62,
+      "status": "planned",
+      "experiment": {
+        "hypothesis": "3hr deep-rest on best DOW = the week's watch-time/value bet (top runtime bucket); swing per swing_criteria (winning lane + deliberate format experiment).",
+        "success_criteria": "AVD >= 12% of 3hr (~22min) AND day-2 impressions hold vs day-1",
+        "failure_criteria": "AVD < 8% of 3hr by day 7"
+      },
+      "slot_rationale": "OVERRIDE documented: (a) Monday PM hero-slot rule filled with Strong-tier Surbahar, not Sitar — 3hr bet takes the best day per user decision + push window lands Tue/Wed (+111K/+64K); Sitar hero moved to Thu AM (cognitive needs morning intent, Finding 12). (b) deep_rest moved off its 'Thu PM ideal' — pre-decay guidance, outweighed by push-window logic. (c) Finding 18: NO room-based spacing planned — slots by intent only."
+    },
+    {
+      "date": "2026-07-07",
+      "type": "ship",
+      "instrument": "Dilruba",
+      "lane": "anxiety_overthinking",
+      "planned_slot": "Tuesday PM 19:00 IST",
+      "runtime_min": 90,
+      "title_direction": "Music for Overthinkers lead (VidIQ 61). ⚠ Differentiate slot-2/3 AND thumb from May 26 'Overthinking Music | Dilruba Instrumental' (42d ago, clear of locks but same instrument+concept on channel page).",
+      "thumb_format": "specific_state_q_hook",
+      "suno_prompt_rule": "CALM, no 'slow' (anxiety lane) — gentle/flowing wording, BPM carries tempo",
+      "suno_prompt_draft": "Instrumental only, no vocals, no humming — gentle Indian classical dilruba in Raga Kedar, expressive bowed strings with soft settling phrases and spacious pauses, low tanpura drone, no percussion, 50–55 BPM, seamless loop.",
+      "vidiq_lead_score": 61,
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-08",
+      "type": "ship",
+      "instrument": "Santoor",
+      "lane": "relaxation_evening",
+      "planned_slot": "Wednesday PM 19:00 IST",
+      "runtime_min": 90,
+      "title_direction": "Relax Your Mind lead (VidIQ 77, scored Jun 28 — freshest-validated lead of the week). State-lead: no 'Music' suffix on lead.",
+      "thumb_format": "outcome_state",
+      "suno_prompt_rule": "CALM, no 'slow' (daytime/evening relax lane) — santoor hammered attack gives natural motion",
+      "vidiq_lead_score": 77,
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-09",
+      "type": "ship",
+      "instrument": "Sitar",
+      "lane": "cognitive_clarity",
+      "planned_slot": "Thursday AM 07:00 IST",
+      "runtime_min": 90,
+      "title_direction": "Mental Reset lead (VidIQ 63 standalone May 11 — re-score in music-intent form optional before brief). Avoid detox/dopamine/brain words (channel-page collision: Dopamine Detox Jun 29 + Brain Detox re-thumb Mon).",
+      "thumb_format": "specific_state_q_hook_COMPACT",
+      "thumb_note": "Compact Q <=3 words, must differ from Monday's BRAIN FOG? re-thumb text",
+      "suno_prompt_rule": "CALM, no 'slow' (cognitive AM) — BPM top of band 75-80, light tabla per Sitar rule",
+      "suno_prompt_draft": "Instrumental only, no vocals, no humming — calm Indian classical sitar in Raga Bhairav, warm plucked sitar with graceful meend slides, soft steady tabla keeping gentle momentum, unhurried flowing feel, 75–80 BPM, seamless loop.",
+      "vidiq_lead_score": 63,
+      "status": "planned",
+      "slot_rationale": "Best decay-era AM precedent is Thu AM (Morning Gratitude Jun 18 = 17.8K impr/day). Hero instrument x AM slot (AM median 10.8K vs PM 4.5K impr/day last 3 weeks)."
+    },
+    {
+      "date": "2026-07-10",
+      "type": "ship",
+      "instrument": "Sarangi",
+      "lane": "healing_nostalgia",
+      "planned_slot": "Friday PM 19:00 IST",
+      "runtime_min": 90,
+      "title_direction": "Healing Frequency Music lead (VidIQ 70). Differentiate from Jul 1 'Meditation Music | Sarangi' (9d, same lane).",
+      "thumb_format": "abstract_noun",
+      "suno_prompt_rule": "CALM, no 'slow' — sarangi bowed emotional phrases carry the feel",
+      "vidiq_lead_score": 70,
+      "status": "planned",
+      "notes": "Weekend-room natural experiment data point: Fri ship gets ~60h room — track day-2/day-3 impression retention vs Mon-Thu ships (Finding 18 open thread)."
+    }
+  ],
+  "preflight_pending": [
+    "Per-ship: 3 title variants + title_preflight.py --validate at brief time (leads locked here, full titles are not)",
+    "Optional: user re-scores 'Mental Reset' in music-intent form before Thu brief (current 63 is standalone, pre-music-intent-rule)",
+    "User decision: two unshipped Jul 4 Veena DRAFT briefs (Peaceful Music / Morning Music) — ship weekend, reschedule, or PARK",
+    "Log ACTUAL Suno prompt + video_id per ship after publish (new store rule)"
+  ],
+  "week_level_decisions": [
+    "Finding 18 banked: upload room/spacing has no independent effect — slots set by intent + production window only",
+    "Suno prompts: SHORT one-liner default; 'slow' wording reserved for sleep/deep-rest lanes (banked 2026-07-05)",
+    "No sleep-lane ship this week (T1/value tilt; sleep skews India + lowest lane value); 3hr format carries the watch-time bet instead",
+    "Brief suno_prompt fields deprecated — briefs carry the one-liner draft only; actual used prompt logged post-ship"
+  ]
+}
