@@ -1,11 +1,11 @@
 {
-  "purpose": "VidIQ-scored phrases held for specific upcoming ships (reserved), plus phrases tested and confirmed dead. Companion to keyword_bank.csv — this file tracks ASSIGNMENT/STATUS, the CSV tracks SCORES.",
-  "last_updated": "2026-05-17",
+  "purpose": "VidIQ-scored phrases held for specific upcoming ships (reserved), plus phrases tested and confirmed dead. Companion to keyword_bank.csv \u2014 this file tracks ASSIGNMENT/STATUS, the CSV tracks SCORES.",
+  "last_updated": "2026-07-06",
   "reserved_for_upcoming_ships": [
     {
       "phrase": "Mind Reset Music",
       "vidiq": 67,
-      "reserved_for": "v_2026-05-22_deep_sleep_bansuri Variant A (one of 3 candidates — lock by Tue)",
+      "reserved_for": "v_2026-05-22_deep_sleep_bansuri Variant A (one of 3 candidates \u2014 lock by Tue)",
       "note": "Top candidate for Fri Bansuri Deep Sleep swing"
     },
     {
@@ -23,13 +23,13 @@
     {
       "phrase": "Tired Mind",
       "vidiq": 67,
-      "reserved_for": "Future fresh ship — Sarangi or Sitar wired-mind audience",
+      "reserved_for": "Future fresh ship \u2014 Sarangi or Sitar wired-mind audience",
       "note": "DO NOT use for refresh of failed Veena ship (cluster collision)"
     },
     {
       "phrase": "Burnt Out",
       "vidiq": 59,
-      "reserved_for": "Future fresh burnout/stress ship — Sarangi/Sitar/Surbahar",
+      "reserved_for": "Future fresh burnout/stress ship \u2014 Sarangi/Sitar/Surbahar",
       "note": "Peak emotional state phrase, high search at moment of need"
     },
     {
@@ -41,26 +41,32 @@
     {
       "phrase": "Fresh Mind Music",
       "vidiq": 61,
-      "reserved_for": "Future morning/cognitive AM ship — evergreen geo-neutral lead",
+      "reserved_for": "Future morning/cognitive AM ship \u2014 evergreen geo-neutral lead",
       "note": "Almost used Tue May 19 AM Dilruba but Uplifting Music (65) won on VidIQ + first-mover cluster. Still strong as 2nd-choice morning lead."
     },
     {
       "phrase": "Positive Energy Music",
       "vidiq": 72,
-      "reserved_for": "Future morning/uplifting ship — HIGHEST evergreen morning score but minor cannibalization risk with live Yoga Music ship (May 7, slot-2 use)",
+      "reserved_for": "Future morning/uplifting ship \u2014 HIGHEST evergreen morning score but minor cannibalization risk with live Yoga Music ship (May 7, slot-2 use)",
       "note": "Use only if at least 30+ days from May 7 Yoga Music ship to clear cluster overlap. Or use with a DIFFERENT lane positioning (e.g. evening uplifting)."
     },
     {
       "phrase": "Get Going",
       "vidiq": 51,
-      "reserved_for": "Backup option only — barely passes refresh-floor (50)",
+      "reserved_for": "Backup option only \u2014 barely passes refresh-floor (50)",
       "note": "Below new-ship floor (60). Use only for refreshes or if better leads exhausted."
     },
     {
       "phrase": "Mind Detox",
-      "vidiq": "untested — fresh momentum from competitor (Shanti '90 Min Sitar For Mind Detox' = 8.8K views in 5 days, May 12)",
-      "reserved_for": "Future Sitar/Sarod/Bansuri ship — minimum 14 days separation from Tue May 19 Brain Detox to avoid channel-page cluster duplication",
-      "note": "DO NOT use within 14 days of Brain Detox (Tue May 19) — visual/semantic duplicate on channel page. Earliest ship date: ~June 2. Strong fresh competitor momentum worth riding."
+      "vidiq": "untested \u2014 fresh momentum from competitor (Shanti '90 Min Sitar For Mind Detox' = 8.8K views in 5 days, May 12)",
+      "reserved_for": "Future Sitar/Sarod/Bansuri ship \u2014 minimum 14 days separation from Tue May 19 Brain Detox to avoid channel-page cluster duplication",
+      "note": "DO NOT use within 14 days of Brain Detox (Tue May 19) \u2014 visual/semantic duplicate on channel page. Earliest ship date: ~June 2. Strong fresh competitor momentum worth riding."
+    },
+    {
+      "phrase": "Switch Off",
+      "vidiq": 64,
+      "reserved_for": "Future evening wind-down / digital-detox ship (Surbahar/Dilruba/Santoor) \u2014 was variant C of v_2026-07-06 decompress brief, cut when user narrowed test to A/B",
+      "note": "Score banked Apr 2026 (stale) \u2014 re-score in music-intent form before leading a ship. Evening intent built in; only prior use = Apr 11 Dilruba refresh (clear)."
     }
   ],
   "already_locked_in_refreshes": [
@@ -87,7 +93,7 @@
     {
       "phrase": "Uplifting Music",
       "vidiq": 65,
-      "used_in": "Tue May 19 AM Dilruba ship (v_2026-05-19_uplifting_dilruba) — first ship in channel Uplifting cluster #9"
+      "used_in": "Tue May 19 AM Dilruba ship (v_2026-05-19_uplifting_dilruba) \u2014 first ship in channel Uplifting cluster #9"
     }
   ],
   "dead_phrases_do_not_use": [
@@ -126,20 +132,25 @@
       "phrase": "Emotional Detox Music",
       "vidiq": 26,
       "tested": "2026-05-17",
-      "note": "Dropping 'Music' suffix lifts to 58 — see rule"
+      "note": "Dropping 'Music' suffix lifts to 58 \u2014 see rule"
     },
     {
       "phrase": "Mental Break Music",
       "vidiq": 28,
       "tested": "2026-05-17",
-      "note": "Dropping 'Music' suffix lifts to 57 — see rule"
+      "note": "Dropping 'Music' suffix lifts to 57 \u2014 see rule"
     },
     {
       "phrase": "Notification Fatigue",
       "vidiq": 34,
       "tested": "2026-05-17",
       "note": "Passes refresh floor (30+) but weak"
+    },
+    {
+      "phrase": "Let the Day Go",
+      "vidiq": 33,
+      "tested": "2026-07-06"
     }
   ],
-  "channel_rule_discovered_2026_05_17": "Dropping 'Music' suffix from state-based leads roughly DOUBLES VidIQ score. Mental Break Music 28 → Mental Break 57 (2.0×); Emotional Detox Music 26 → Emotional Detox 58 (2.2×). Apply: for state-of-mind leads, drop Music; let instrument slot 2 carry music signal. KEEP 'Music' suffix only for SEO-cluster leads where it's the dominant search form (Healing Music, Sleep Music, Brain Reset Music)."
+  "channel_rule_discovered_2026_05_17": "Dropping 'Music' suffix from state-based leads roughly DOUBLES VidIQ score. Mental Break Music 28 \u2192 Mental Break 57 (2.0\u00d7); Emotional Detox Music 26 \u2192 Emotional Detox 58 (2.2\u00d7). Apply: for state-of-mind leads, drop Music; let instrument slot 2 carry music signal. KEEP 'Music' suffix only for SEO-cluster leads where it's the dominant search form (Healing Music, Sleep Music, Brain Reset Music)."
 }

@@ -10,7 +10,7 @@
     "B": "Decompress After Work | Surbahar Raga Yaman | 3 Hours",
     "C": "Switch Off Tonight | Surbahar Evening Rest | 3 Hours"
   },
-  "title_note": "Three distinct evening-release words (unwind 62 / decompress-after-work 60 / switch off 64 — all clear the 60 floor, scored 2026-07-06 except Switch Off banked Apr). Three distinct slot-2s — deliberately breaks the '{Lead} | {Instrument} Instrumental | {Duration}' skeleton used by 4 of the last 5 ships. All read as evening REST, never sleep (6d-old Surbahar 3hr sleep sibling). 'Let the Day Go' scored 33 — rejected as lead, retained as backup THUMB text (permission framing is a browse play). Prior 'unwind' ship (May 22 Bansuri) was reach-starved, not packaging-weak: CTR 4.82 / AVD 31.75 both above channel medians.",
+  "title_note": "TEST = A/B ONLY (user-locked 2026-07-06): A 'Music to Unwind' (62) vs B 'Decompress After Work' (60) — isolates the release word + slot-2 specificity, same thumb both. C 'Switch Off Tonight' (64) = RESERVE, not in test (parked in reserved_phrases.json). All read as evening REST, never sleep (6d-old Surbahar 3hr sleep sibling). 'Let the Day Go' scored 33 — dead as lead (added to dead list), retained as backup THUMB text only. Prior 'unwind' ship (May 22 Bansuri) was reach-starved, not packaging-weak: CTR 4.82 / AVD 31.75 both above channel medians.",
   "components": {
     "instrument": "Surbahar",
     "instrument_role": "STRONG — deep-rest lane specialist / retention anchor (Deep Rest Find Stillness: 53K views, 26% AVD)",
