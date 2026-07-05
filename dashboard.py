@@ -1613,8 +1613,12 @@ with tab_briefs:
             _decisions = _plan.get("week_level_decisions", {})
             if _decisions:
                 with st.expander("⭐ Week-level decisions", expanded=False):
-                    for k, v in _decisions.items():
-                        st.markdown(f"**{k}**: {v}")
+                    if isinstance(_decisions, dict):
+                        for k, v in _decisions.items():
+                            st.markdown(f"**{k}**: {v}")
+                    else:  # tolerate list-form plan files
+                        for item in _decisions:
+                            st.markdown(f"- {item}")
         st.divider()
     # ---- end Weekly Tentative Plan ----
 

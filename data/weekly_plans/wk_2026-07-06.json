@@ -100,10 +100,10 @@
     "User decision: two unshipped Jul 4 Veena DRAFT briefs (Peaceful Music / Morning Music) — ship weekend, reschedule, or PARK",
     "Log ACTUAL Suno prompt + video_id per ship after publish (new store rule)"
   ],
-  "week_level_decisions": [
-    "Finding 18 banked: upload room/spacing has no independent effect — slots set by intent + production window only",
-    "Suno prompts: SHORT one-liner default; 'slow' wording reserved for sleep/deep-rest lanes (banked 2026-07-05)",
-    "No sleep-lane ship this week (T1/value tilt; sleep skews India + lowest lane value); 3hr format carries the watch-time bet instead",
-    "Brief suno_prompt fields deprecated — briefs carry the one-liner draft only; actual used prompt logged post-ship"
-  ]
+  "week_level_decisions": {
+    "finding_18_no_room_planning": "Upload room/spacing has no independent effect — slots set by intent + production window only",
+    "suno_short_default": "SHORT one-liner prompts default; 'slow' wording reserved for sleep/deep-rest lanes (banked 2026-07-05)",
+    "no_sleep_ship": "No sleep-lane ship this week (T1/value tilt; sleep skews India + lowest lane priority); 3hr format carries the watch-time bet instead",
+    "brief_suno_deprecated": "Brief suno_prompt fields carry the one-liner draft only; actual used prompt logged post-ship"
+  }
 }
