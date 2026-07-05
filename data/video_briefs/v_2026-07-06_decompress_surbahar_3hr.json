@@ -28,12 +28,12 @@
     {"phrase": "Let the Day Go", "vidiq": 33, "scored": "2026-07-06 — REJECTED as lead, thumb-text only"}
   ],
   "thumbnail": {
-    "text": "DAY IS DONE",
-    "format": "permission_statement",
-    "ab_pair": "NONE — title-only A/B this ship (one thumb across all 3 title variants; don't stack tests on thin reach). LONG DAY? (q_hook) = day-7 swap-if candidate.",
-    "backup_text": "LET THE DAY GO",
-    "format_evidence": "Lane format permission_or_q_hook — Test 29 permission thumb (REST WITHOUT WORRY) strongest burnout-lane signal 58.6/41.4. Fresh text, not recycling Test 29.",
-    "char_count": 11,
+    "text": "LONG DAY?",
+    "format": "q_hook_compact",
+    "ab_pair": "NONE — title-only A/B this ship (one thumb across all 3 title variants; don't stack tests on thin reach). DAY IS DONE (permission) = day-7 swap-if candidate.",
+    "backup_text": "DAY IS DONE · LET THE DAY GO",
+    "format_evidence": "LOCKED by user 2026-07-06. Lane format permission_or_q_hook; preflight A/B pattern shows Q-hook slight lean for calm/rest thumbs (NEED REST? / STRESSED? family). 2 words, instant self-recognition at evening browse.",
+    "char_count": 9,
     "visual_notes": "Pichwai/Kangra base, dusk/evening palette — mood MUST match slow Yaman music (mood mismatch is fatal). Figure at rest, no clutter, mobile-first.",
     "collision_check": "Differs from same-day Brain Detox re-thumb (BRAIN FOG?) and from Thu cognitive ship's compact-Q. No live thumb uses DAY IS DONE / LONG DAY?."
   },
