@@ -155,6 +155,11 @@
       "phrase": "Music for a Busy Mind",
       "vidiq": 24,
       "tested": "2026-07-06"
+    },
+    {
+      "phrase": "Music to Calm Your Thoughts",
+      "vidiq": 27,
+      "tested": "2026-07-06"
     }
   ],
   "channel_rule_discovered_2026_05_17": "Dropping 'Music' suffix from state-based leads roughly DOUBLES VidIQ score. Mental Break Music 28 \u2192 Mental Break 57 (2.0\u00d7); Emotional Detox Music 26 \u2192 Emotional Detox 58 (2.2\u00d7). Apply: for state-of-mind leads, drop Music; let instrument slot 2 carry music signal. KEEP 'Music' suffix only for SEO-cluster leads where it's the dominant search form (Healing Music, Sleep Music, Brain Reset Music)."
