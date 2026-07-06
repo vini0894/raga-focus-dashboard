@@ -1,83 +1,116 @@
 {
   "id": "v_2026-07-06_decompress_surbahar_3hr",
-  "status": "DRAFT",
+  "status": "PUBLISHED",
   "created_at": "2026-07-06",
   "planned_date": "2026-07-06",
-  "planned_slot": "Monday PM 19:00 IST — deep-rest lane × evening intent. Best PM slot of the week for the 3hr watch-time swing; push window lands Tue (+111K) / Wed (+64K). Slot set by intent, NOT spacing (Finding 18: room has no independent effect).",
+  "planned_slot": "Monday PM 19:00 IST \u2014 deep-rest lane \u00d7 evening intent. Best PM slot of the week for the 3hr watch-time swing; push window lands Tue (+111K) / Wed (+64K). Slot set by intent, NOT spacing (Finding 18: room has no independent effect).",
   "title": "Music to Unwind | Surbahar Instrumental | 3 Hours",
   "title_variants": {
     "A": "Music to Unwind | Surbahar Instrumental | 3 Hours",
     "B": "Decompress After Work | Surbahar Raga Yaman | 3 Hours",
     "C": "Switch Off Tonight | Surbahar Evening Rest | 3 Hours"
   },
-  "title_note": "TEST = A/B ONLY (user-locked 2026-07-06): A 'Music to Unwind' (62) vs B 'Decompress After Work' (60) — isolates the release word + slot-2 specificity, same thumb both. C 'Switch Off Tonight' (64) = RESERVE, not in test (parked in reserved_phrases.json). All read as evening REST, never sleep (6d-old Surbahar 3hr sleep sibling). 'Let the Day Go' scored 33 — dead as lead (added to dead list), retained as backup THUMB text only. Prior 'unwind' ship (May 22 Bansuri) was reach-starved, not packaging-weak: CTR 4.82 / AVD 31.75 both above channel medians.",
+  "title_note": "TEST = A/B ONLY (user-locked 2026-07-06): A 'Music to Unwind' (62) vs B 'Decompress After Work' (60) \u2014 isolates the release word + slot-2 specificity, same thumb both. C 'Switch Off Tonight' (64) = RESERVE, not in test (parked in reserved_phrases.json). All read as evening REST, never sleep (6d-old Surbahar 3hr sleep sibling). 'Let the Day Go' scored 33 \u2014 dead as lead (added to dead list), retained as backup THUMB text only. Prior 'unwind' ship (May 22 Bansuri) was reach-starved, not packaging-weak: CTR 4.82 / AVD 31.75 both above channel medians.",
   "components": {
     "instrument": "Surbahar",
-    "instrument_role": "STRONG — deep-rest lane specialist / retention anchor (Deep Rest Find Stillness: 53K views, 26% AVD)",
+    "instrument_role": "STRONG \u2014 deep-rest lane specialist / retention anchor (Deep Rest Find Stillness: 53K views, 26% AVD)",
     "lane": "deep_rest",
-    "sub_lane": "evening_decompress (awake wind-down — NOT sleep)",
+    "sub_lane": "evening_decompress (awake wind-down \u2014 NOT sleep)",
     "runtime_min": 180,
     "format_experiment": "3hr = top runtime bucket; week's watch-time swing",
-    "raga": "Yaman — raised 4th, expansive open evening character (differentiates from sleep sibling's register)",
-    "binaural": "Delta 3Hz at -20dB — POST-PRODUCTION ONLY, never in Suno prompt"
+    "raga": "Yaman \u2014 raised 4th, expansive open evening character (differentiates from sleep sibling's register)",
+    "binaural": "Delta 3Hz at -20dB \u2014 POST-PRODUCTION ONLY, never in Suno prompt"
   },
   "validated_keywords": [
     "Music to Unwind (62, 2026-07-06)",
     "Decompress After Work (60, 2026-07-06)",
-    "Switch Off (64, Apr — stale, reserve variant)",
-    "Let the Day Go (33 — REJECTED as lead, thumb-text only)"
+    "Switch Off (64, Apr \u2014 stale, reserve variant)",
+    "Let the Day Go (33 \u2014 REJECTED as lead, thumb-text only)"
   ],
   "thumbnail_text_main": "LONG DAY?",
   "thumbnail_text_variants": [
-    {"label": "LOCKED", "text": "LONG DAY?", "strategy": "Compact Q-hook (2 words, 9ch) — same thumb on BOTH title variants (title-only A/B). Q-hook slight lean in calm/rest lane."},
-    {"label": "SWAP-IF (day 7)", "text": "DAY IS DONE", "strategy": "Permission statement — Test 29 family. Swap candidate if CTR below lane median at day 7."}
+    {
+      "label": "LOCKED",
+      "text": "LONG DAY?",
+      "strategy": "Compact Q-hook (2 words, 9ch) \u2014 same thumb on BOTH title variants (title-only A/B). Q-hook slight lean in calm/rest lane."
+    },
+    {
+      "label": "SWAP-IF (day 7)",
+      "text": "DAY IS DONE",
+      "strategy": "Permission statement \u2014 Test 29 family. Swap candidate if CTR below lane median at day 7."
+    }
   ],
-  "thumbnail_prompt": "Pichwai/Kangra miniature style, ornate border, aged parchment — EVENING dusk palette (deep blues/warm amber, not daytime cream). A figure at rest in a quiet courtyard or veranda at twilight, surbahar resting beside them. No clutter, mobile-first composition. Dark-teal serif overlay text: LONG DAY?",
-  "playlists": ["Peaceful Music"],
+  "thumbnail_prompt": "Pichwai/Kangra miniature style, ornate border, aged parchment \u2014 EVENING dusk palette (deep blues/warm amber, not daytime cream). A figure at rest in a quiet courtyard or veranda at twilight, surbahar resting beside them. No clutter, mobile-first composition. Dark-teal serif overlay text: LONG DAY?",
+  "playlists": [
+    "Peaceful Music"
+  ],
   "thumbnail": {
     "text": "LONG DAY?",
     "format": "q_hook_compact",
-    "ab_pair": "NONE — title-only A/B this ship (one thumb across all 3 title variants; don't stack tests on thin reach). DAY IS DONE (permission) = day-7 swap-if candidate.",
-    "backup_text": "DAY IS DONE · LET THE DAY GO",
+    "ab_pair": "NONE \u2014 title-only A/B this ship (one thumb across all 3 title variants; don't stack tests on thin reach). DAY IS DONE (permission) = day-7 swap-if candidate.",
+    "backup_text": "DAY IS DONE \u00b7 LET THE DAY GO",
     "format_evidence": "LOCKED by user 2026-07-06. Lane format permission_or_q_hook; preflight A/B pattern shows Q-hook slight lean for calm/rest thumbs (NEED REST? / STRESSED? family). 2 words, instant self-recognition at evening browse.",
     "char_count": 9,
-    "visual_notes": "Pichwai/Kangra base, dusk/evening palette — mood MUST match slow Yaman music (mood mismatch is fatal). Figure at rest, no clutter, mobile-first.",
+    "visual_notes": "Pichwai/Kangra base, dusk/evening palette \u2014 mood MUST match slow Yaman music (mood mismatch is fatal). Figure at rest, no clutter, mobile-first.",
     "collision_check": "Differs from same-day Brain Detox re-thumb (BRAIN FOG?) and from Thu cognitive ship's compact-Q. No live thumb uses DAY IS DONE / LONG DAY?."
   },
-  "description": "Music to Unwind | Surbahar Instrumental | 3 Hours of Evening Calm\n\nAfter a long day, the body wants to rest — but the mind keeps replaying, planning, and scrolling.\n\nThis peaceful Indian ambient meditation music is designed to help you put the day down: slow racing thoughts, release built-up tension, and ease your evening into deep, calm rest.\n\nEnjoy 3 hours of deep, resonant surbahar melodies blended with warm tanpura drone, soft ambient textures, and long spacious pauses designed for unhurried evening listening.\n\nPerfect for unwinding after work, evening relaxation, stress relief, reading, dinner ambience, meditation, mindfulness, gentle yoga, journaling, and peaceful nights at home.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Surbahar (bass sitar) & Tanpura Drone\nRaga: Raga Yaman — the classic evening raga\nStyle: Indian ambient meditation / slow evening instrumental\nMood: Calm, deep, warm, spacious, grounding\nAtmosphere: Evening unwind, after-work decompression, quiet rest\nDuration: 3 Hours\n\n🎧 HOW TO USE\nPress play in the early evening — after work, over dinner, while reading, or in the last quiet hour before your night routine. Keep the volume low and let the deep surbahar tones slow everything down. For the most immersive experience, use headphones or listen in a quiet room.\n\n⏱ Chapters\n0:00 Gentle evening opening\n15:00 Slow unwinding descent\n30:00 Warm resonant stillness\n45:00 Deep tension release\n1:00:00 Quiet reflective space\n1:15:00 Grounded evening calm\n1:30:00 Soft meditative depth\n1:45:00 Spacious inner quiet\n2:00:00 Deep restful resonance\n2:15:00 Slow harmonic drift\n2:30:00 Evening stillness settles\n2:45:00 Gentle fade toward night\n\n⏱ BEST FOR\nUnwinding after work\nEvening relaxation\nStress relief & decompression\nReading & quiet hobbies\nDinner & home ambience\nMeditation & mindfulness\nGentle evening yoga\nJournaling & reflection\nSlowing a busy mind\nPeaceful start to the night\n\nIf this music helped you unwind, let go of the day, or find a quieter evening, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#MusicToUnwind #Surbahar #IndianAmbientMusic #RelaxingMusic #EveningCalm",
-  "description_note": "Format = data/playbook/description_template.md (captured from LIVE videos 2026-07-06). Chapter timestamps are even 15-min placeholders — adjust to actual clip boundaries at render if they differ.",
-  "tags": ["music to decompress", "decompress after work", "unwind music", "music to unwind", "switch off", "evening relaxation music", "wind down music", "surbahar", "surbahar instrumental", "indian classical surbahar", "raga yaman", "stress relief after work", "deep relaxation music", "relaxing instrumental music", "3 hours relaxing music", "evening rest music", "raga focus", "indian instrumental music"],
-  "suno_prompt": "Instrumental only, no vocals, no humming — slow Indian classical surbahar in Raga Yaman, deep resonant plucked strings with long meend slides and spacious pauses, low tanpura drone, no percussion, 55–60 BPM, seamless loop.",
-  "suno_prompt_note": "SHORT one-liner per banked 2026-07-05 default. 'Slow' allowed (deep-rest lane exemption). Verify clip 1 genuinely calm BEFORE extending. 2-3 min clips → loop/merge to 180 min in post. LOG THE ACTUAL USED PROMPT + video_id after publish (new store rule).",
+  "description": "Music to Unwind | Surbahar Instrumental | 3 Hours of Evening Calm\n\nAfter a long day, the body wants to rest \u2014 but the mind keeps replaying, planning, and scrolling.\n\nThis peaceful Indian ambient meditation music is designed to help you put the day down: slow racing thoughts, release built-up tension, and ease your evening into deep, calm rest.\n\nEnjoy 3 hours of deep, resonant surbahar melodies blended with warm tanpura drone, soft ambient textures, and long spacious pauses designed for unhurried evening listening.\n\nPerfect for unwinding after work, evening relaxation, stress relief, reading, dinner ambience, meditation, mindfulness, gentle yoga, journaling, and peaceful nights at home.\n\n\ud83c\udfb5 ABOUT THIS MUSIC\nInstrument: Surbahar (bass sitar) & Tanpura Drone\nRaga: Raga Yaman \u2014 the classic evening raga\nStyle: Indian ambient meditation / slow evening instrumental\nMood: Calm, deep, warm, spacious, grounding\nAtmosphere: Evening unwind, after-work decompression, quiet rest\nDuration: 3 Hours\n\n\ud83c\udfa7 HOW TO USE\nPress play in the early evening \u2014 after work, over dinner, while reading, or in the last quiet hour before your night routine. Keep the volume low and let the deep surbahar tones slow everything down. For the most immersive experience, use headphones or listen in a quiet room.\n\n\u23f1 Chapters\n0:00 Gentle evening opening\n15:00 Slow unwinding descent\n30:00 Warm resonant stillness\n45:00 Deep tension release\n1:00:00 Quiet reflective space\n1:15:00 Grounded evening calm\n1:30:00 Soft meditative depth\n1:45:00 Spacious inner quiet\n2:00:00 Deep restful resonance\n2:15:00 Slow harmonic drift\n2:30:00 Evening stillness settles\n2:45:00 Gentle fade toward night\n\n\u23f1 BEST FOR\nUnwinding after work\nEvening relaxation\nStress relief & decompression\nReading & quiet hobbies\nDinner & home ambience\nMeditation & mindfulness\nGentle evening yoga\nJournaling & reflection\nSlowing a busy mind\nPeaceful start to the night\n\nIf this music helped you unwind, let go of the day, or find a quieter evening, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#MusicToUnwind #Surbahar #IndianAmbientMusic #RelaxingMusic #EveningCalm",
+  "description_note": "Format = data/playbook/description_template.md (captured from LIVE videos 2026-07-06). Chapter timestamps are even 15-min placeholders \u2014 adjust to actual clip boundaries at render if they differ.",
+  "tags": [
+    "music to decompress",
+    "decompress after work",
+    "unwind music",
+    "music to unwind",
+    "switch off",
+    "evening relaxation music",
+    "wind down music",
+    "surbahar",
+    "surbahar instrumental",
+    "indian classical surbahar",
+    "raga yaman",
+    "stress relief after work",
+    "deep relaxation music",
+    "relaxing instrumental music",
+    "3 hours relaxing music",
+    "evening rest music",
+    "raga focus",
+    "indian instrumental music"
+  ],
+  "suno_prompt": "Instrumental only, no vocals, no humming \u2014 slow Indian classical surbahar in Raga Yaman, deep resonant plucked strings with long meend slides and spacious pauses, low tanpura drone, no percussion, 55\u201360 BPM, seamless loop.",
+  "suno_prompt_note": "SHORT one-liner per banked 2026-07-05 default. 'Slow' allowed (deep-rest lane exemption). Verify clip 1 genuinely calm BEFORE extending. 2-3 min clips \u2192 loop/merge to 180 min in post. LOG THE ACTUAL USED PROMPT + video_id after publish (new store rule).",
   "experiment": {
-    "type": "3hr format × deep-rest lane swing (week's watch-time bet)",
+    "type": "3hr format \u00d7 deep-rest lane swing (week's watch-time bet)",
     "hypothesis": "Evening long-form rest is the best-performing PM category in the decay window; Surbahar's drone register carries 3hr sessions (retention anchor lane fit).",
     "success_criteria": "AVD >= 12% of 3hr (~22 min) AND day-2 impressions hold vs day-1",
     "failure_criteria": "AVD < 8% (~14 min) by day 7",
-    "neutral_zone": "AVD 8-12% — read against watch-hours/session length before judging; deep-rest AVD reads partially sleep-inverted"
+    "neutral_zone": "AVD 8-12% \u2014 read against watch-hours/session length before judging; deep-rest AVD reads partially sleep-inverted"
   },
   "reference_ships": [
-    "Deep Rest Music | Find Stillness with Surbahar (53K, 26% AVD — lane anchor; do NOT reuse its Deep Rest lead)",
-    "3 Hour Bansuri Music for Relaxation (73K — 3hr rest format proof)",
+    "Deep Rest Music | Find Stillness with Surbahar (53K, 26% AVD \u2014 lane anchor; do NOT reuse its Deep Rest lead)",
+    "3 Hour Bansuri Music for Relaxation (73K \u2014 3hr rest format proof)",
     "Quiet Night Music | Slow Bansuri | 3 Hours (best recent PM launch, 8.5K impr/day)"
   ],
   "end_screen": {
-    "primary": "Deep Rest Music | Find Stillness with Surbahar (lane owner — session-time handoff)",
+    "primary": "Deep Rest Music | Find Stillness with Surbahar (lane owner \u2014 session-time handoff)",
     "backup": "3 Hour Bansuri Music for Relaxation"
   },
-  "strategic_bet": "Monday-best-day given to the 3hr swing instead of a hero-instrument reach play — decay mode: fresh ships land 1-5K views regardless, so the slot goes to the ship that builds the next catalog watch-time asset. Surbahar over Bansuri: Bansuri owns sleep/rest queries (Sound Sleep 197K + 3hr Relaxation 73K + Quiet Night 3wk old) — a new Bansuri entry fights its own catalog (Finding 14); Surbahar competes in open deep-rest space it already anchors.",
+  "strategic_bet": "Monday-best-day given to the 3hr swing instead of a hero-instrument reach play \u2014 decay mode: fresh ships land 1-5K views regardless, so the slot goes to the ship that builds the next catalog watch-time asset. Surbahar over Bansuri: Bansuri owns sleep/rest queries (Sound Sleep 197K + 3hr Relaxation 73K + Quiet Night 3wk old) \u2014 a new Bansuri entry fights its own catalog (Finding 14); Surbahar competes in open deep-rest space it already anchors.",
   "preflight_passed": {
-    "cooldown": "Surbahar 6d since Jun 30 (>5d; lane-switch sleep→deep-rest)",
-    "phrase_locks": "Live-catalog check 2026-07-06 vs all 106 titles (publish_times.csv) — leads fresh; NOTE: phrase_locks.json regen unreliable (shipped_titles.csv missing late-June ships — known gap)",
+    "cooldown": "Surbahar 6d since Jun 30 (>5d; lane-switch sleep\u2192deep-rest)",
+    "phrase_locks": "Live-catalog check 2026-07-06 vs all 106 titles (publish_times.csv) \u2014 leads fresh; NOTE: phrase_locks.json regen unreliable (shipped_titles.csv missing late-June ships \u2014 known gap)",
     "cannibalization_check": "Rest-not-sleep wording vs Jun 30 sibling; avoids 'Deep Rest' owner phrase; avoids Bansuri-owned query space; differentiated from Jun 23 Surbahar Digital Burnout (13d, different query family)",
     "vidiq": "All 3 leads >= 60 floor",
     "thumb_format": "permission_or_q_hook per lane rules",
-    "lane_time_fit": "deep_rest × PM × 3hr — long-session lane, evening intent (Finding 12)"
+    "lane_time_fit": "deep_rest \u00d7 PM \u00d7 3hr \u2014 long-session lane, evening intent (Finding 12)"
   },
   "pending": [
     "User: confirm playlist assignment (1-2) at upload",
     "User: log actual Suno prompt + video_id after publish",
     "Day-2 check: impressions holding vs day-1 (monitor picks it up automatically)"
   ],
-  "day_7_read": "2026-07-13 — AVD vs 12%/8% bands, day-2 impression hold, CTR vs 4% — feeds Finding 18 open thread (Mon ship room baseline) + 3hr-format verdict. Update wk_2026-07-06.json ship status."
+  "day_7_read": "2026-07-13 \u2014 AVD vs 12%/8% bands, day-2 impression hold, CTR vs 4% \u2014 feeds Finding 18 open thread (Mon ship room baseline) + 3hr-format verdict. Update wk_2026-07-06.json ship status.",
+  "video_id": "_GwaxeCviFo",
+  "shipped_title": "Music to Unwind | Surbahar Instrumental | 3 Hours",
+  "date_shipped": "2026-07-06",
+  "ab_shipped": "A (Music to Unwind) as default; B Decompress After Work in Test & Compare"
 }

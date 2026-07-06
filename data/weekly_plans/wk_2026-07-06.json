@@ -28,13 +28,14 @@
       "suno_prompt_rule": "CALM + slow allowed (deep-rest lane)",
       "suno_prompt_draft": "Instrumental only, no vocals, no humming \u2014 slow Indian classical surbahar in Raga Yaman, deep resonant plucked strings with long meend slides and spacious pauses, low tanpura drone, no percussion, 55\u201360 BPM, seamless loop.",
       "vidiq_lead_score": 62,
-      "status": "planned",
+      "status": "published",
       "experiment": {
         "hypothesis": "3hr deep-rest on best DOW = the week's watch-time/value bet (top runtime bucket); swing per swing_criteria (winning lane + deliberate format experiment).",
         "success_criteria": "AVD >= 12% of 3hr (~22min) AND day-2 impressions hold vs day-1",
         "failure_criteria": "AVD < 8% of 3hr by day 7"
       },
-      "slot_rationale": "OVERRIDE documented: (a) Monday PM hero-slot rule filled with Strong-tier Surbahar, not Sitar \u2014 3hr bet takes the best day per user decision + push window lands Tue/Wed (+111K/+64K); Sitar hero moved to Thu AM (cognitive needs morning intent, Finding 12). (b) deep_rest moved off its 'Thu PM ideal' \u2014 pre-decay guidance, outweighed by push-window logic. (c) Finding 18: NO room-based spacing planned \u2014 slots by intent only."
+      "slot_rationale": "OVERRIDE documented: (a) Monday PM hero-slot rule filled with Strong-tier Surbahar, not Sitar \u2014 3hr bet takes the best day per user decision + push window lands Tue/Wed (+111K/+64K); Sitar hero moved to Thu AM (cognitive needs morning intent, Finding 12). (b) deep_rest moved off its 'Thu PM ideal' \u2014 pre-decay guidance, outweighed by push-window logic. (c) Finding 18: NO room-based spacing planned \u2014 slots by intent only.",
+      "video_id": "_GwaxeCviFo"
     },
     {
       "date": "2026-07-07",
