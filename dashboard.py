@@ -1863,7 +1863,9 @@ with tab_briefs:
                     return _res or ["Healing & Anxiety Relief"]
 
                 _pl_list = brief.get("playlists") or []
-                _pl_suggested = not brief.get("playlists")
+                if not isinstance(_pl_list, list):  # tolerate dict/str-form briefs
+                    _pl_list = []
+                _pl_suggested = not _pl_list
                 if _pl_suggested:
                     _pl_list = _auto_suggest_playlists(brief)
 
@@ -1895,7 +1897,10 @@ with tab_briefs:
                             for k, v in comps.items()
                         ))
                     if brief.get("validated_keywords"):
-                        st.markdown("**Validated keywords:** " + ", ".join(brief["validated_keywords"]))
+                        st.markdown("**Validated keywords:** " + ", ".join(
+                            k if isinstance(k, str)
+                            else f"{k.get('phrase', '?')} ({k.get('vidiq', '?')})"
+                            for k in brief["validated_keywords"]))
 
                 if brief.get("production_spec"):
                     with st.expander("🛠️ Production spec", expanded=False):

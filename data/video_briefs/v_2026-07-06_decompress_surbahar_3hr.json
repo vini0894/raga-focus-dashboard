@@ -22,11 +22,18 @@
     "binaural": "Delta 3Hz at -20dB — POST-PRODUCTION ONLY, never in Suno prompt"
   },
   "validated_keywords": [
-    {"phrase": "Music to Unwind", "vidiq": 62, "scored": "2026-07-06"},
-    {"phrase": "Decompress After Work", "vidiq": 60, "scored": "2026-07-06"},
-    {"phrase": "Switch Off", "vidiq": 64, "scored": "2026-04 (stale — accepted, non-primary variant)"},
-    {"phrase": "Let the Day Go", "vidiq": 33, "scored": "2026-07-06 — REJECTED as lead, thumb-text only"}
+    "Music to Unwind (62, 2026-07-06)",
+    "Decompress After Work (60, 2026-07-06)",
+    "Switch Off (64, Apr — stale, reserve variant)",
+    "Let the Day Go (33 — REJECTED as lead, thumb-text only)"
   ],
+  "thumbnail_text_main": "LONG DAY?",
+  "thumbnail_text_variants": [
+    {"label": "LOCKED", "text": "LONG DAY?", "strategy": "Compact Q-hook (2 words, 9ch) — same thumb on BOTH title variants (title-only A/B). Q-hook slight lean in calm/rest lane."},
+    {"label": "SWAP-IF (day 7)", "text": "DAY IS DONE", "strategy": "Permission statement — Test 29 family. Swap candidate if CTR below lane median at day 7."}
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature style, ornate border, aged parchment — EVENING dusk palette (deep blues/warm amber, not daytime cream). A figure at rest in a quiet courtyard or veranda at twilight, surbahar resting beside them. No clutter, mobile-first composition. Dark-teal serif overlay text: LONG DAY?",
+  "playlists": ["Peaceful Music"],
   "thumbnail": {
     "text": "LONG DAY?",
     "format": "q_hook_compact",
@@ -57,11 +64,6 @@
   "end_screen": {
     "primary": "Deep Rest Music | Find Stillness with Surbahar (lane owner — session-time handoff)",
     "backup": "3 Hour Bansuri Music for Relaxation"
-  },
-  "playlists": {
-    "target_count": "1-2 (max 2, banked rule)",
-    "suggestion": "evening rest / deep relaxation playlist",
-    "confirm": "user picks exact playlist(s) at upload"
   },
   "strategic_bet": "Monday-best-day given to the 3hr swing instead of a hero-instrument reach play — decay mode: fresh ships land 1-5K views regardless, so the slot goes to the ship that builds the next catalog watch-time asset. Surbahar over Bansuri: Bansuri owns sleep/rest queries (Sound Sleep 197K + 3hr Relaxation 73K + Quiet Night 3wk old) — a new Bansuri entry fights its own catalog (Finding 14); Surbahar competes in open deep-rest space it already anchors.",
   "preflight_passed": {
