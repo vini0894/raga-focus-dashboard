@@ -1,0 +1,69 @@
+{
+  "id": "v_2026-07-07_overthinkers_dilruba",
+  "status": "DRAFT",
+  "created_at": "2026-07-06",
+  "planned_date": "2026-07-07",
+  "planned_slot": "PM (19:00 IST) — anxiety/overthinking × evening wind-down intent (Jul 1 precedent: wind-down audience receptive to anxiety-relief framing).",
+  "title": "Music for Overthinkers | Dilruba Raga Kedar | 1.5 Hours",
+  "title_variants": {
+    "A": "Music for Overthinkers | Dilruba Raga Kedar | 1.5 Hours",
+    "B": "Stop Overthinking | Slow Dilruba Strings | 1.5 Hours"
+  },
+  "title_note": "TEST = A/B: audience-noun lead (Music for Overthinkers, 62 fresh 2026-07-06) vs imperative state lead (Stop Overthinking, 61 — Music-suffix dropped per state-lead rule). Same thumb both. Default = A per higher-VidIQ rule. 'Music for a Busy Mind' scored 24 → dead-listed. Exact lead phrase NEVER live before (was unused variant B of the May 26 ship); overthinking concept last led 42d ago (May 26 Dilruba, 2.6K — no owner). Slot-2s deliberately avoid 'Dilruba Instrumental' (the May 26 sibling's skeleton). Future note: 'Meditation Music for Overthinking' scored 80 and WON Test 8 — locked until ~Jul 21 (Meditation Music led Jul 1 Sarangi); strongest lead for the NEXT anxiety ship.",
+  "components": {
+    "instrument": "Dilruba",
+    "instrument_role": "STRONG — anxiety lane DUAL_WINNER cell (May 1 Dilruba anxiety: CTR 4.23 / AVD 32.2). Rested 27d. One of only 2 instruments cleared for anxiety leads.",
+    "lane": "anxiety_overthinking",
+    "sub_lane": "overthinking / mental quiet (evening)",
+    "runtime_min": 90,
+    "raga": "Kedar — alternating natural/raised 4th, oscillating settling quality (the 'settling' raga fits a mind slowing down)",
+    "binaural": "Theta 5-6Hz at -20dB — POST-PRODUCTION ONLY"
+  },
+  "validated_keywords": [
+    "Music for Overthinkers (62, 2026-07-06)",
+    "Stop Overthinking (61, 2026-07-06)",
+    "Music for a Busy Mind (24 — DEAD-LISTED)"
+  ],
+  "thumbnail_text_main": "TOO MANY THOUGHTS?",
+  "thumbnail_text_variants": [
+    {"label": "LOCKED", "text": "TOO MANY THOUGHTS?", "strategy": "Specific-state Q-hook — PROVEN winner in this exact lane (Test 8: beat THINK LESS). Same thumb on both title variants (title-only A/B)."},
+    {"label": "BACKUP", "text": "MIND RACING?", "strategy": "Listed lane winner family — swap-if candidate at day 7 if CTR below lane median."}
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature style, ornate border, aged parchment — evening palette. A seated figure with eyes closed, faint spiral/cloud motifs above the head dissolving into open sky, dilruba resting nearby. Minimal, mobile-first. Dark-teal serif overlay text: TOO MANY THOUGHTS?",
+  "playlists": ["Healing & Anxiety Relief"],
+  "description": "Music for Overthinkers | Dilruba Raga Kedar | 1.5 Hours of Mental Quiet\n\nWhen your mind won't stop — replaying conversations, rechecking worries, racing through tomorrow — rest can feel impossible.\n\nThis peaceful Indian ambient meditation music is designed to slow mental chatter, soften anxious thought loops, and give an overthinking mind somewhere gentle to land.\n\nEnjoy 1 hour 30 minutes of expressive bowed dilruba melodies blended with warm tanpura drone, soft ambient textures, and slow settling phrases that gradually quiet the mind.\n\nPerfect for overthinking relief, anxiety relief, meditation, mindfulness, evening wind-down, stress relief, journaling, reading, deep breathing, and peaceful nighttime listening.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Dilruba (bowed strings) & Tanpura Drone\nRaga: Raga Kedar — the settling evening raga\nStyle: Indian ambient meditation / slow healing instrumental\nMood: Gentle, warm, settling, reassuring\nAtmosphere: Mental quiet, anxiety relief, evening calm\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPlay this when your thoughts are loud — in the evening after a stressful day, during meditation or breathwork, while journaling, or in the hour before bed. Keep the volume soft and let the bowed dilruba slow your thinking down. For the most immersive experience, use headphones or listen in a quiet room.\n\n⏱ Chapters\n0:00 Soft landing for a loud mind\n10:00 Slow settling phrases\n20:00 Warm bowed stillness\n30:00 Thoughts begin to space out\n40:00 Deep tanpura grounding\n50:00 Gentle emotional release\n1:00:00 Quiet inner steadiness\n1:10:00 Calm without effort\n1:20:00 Mind at ease\n1:26:00 Soft closing stillness\n\n⏱ BEST FOR\nOverthinking relief\nAnxiety relief music\nMeditation & mindfulness\nEvening wind-down\nStress relief & relaxation\nJournaling & reflection\nDeep breathing practice\nQuiet reading\nBefore-sleep calm\nIndian instrumental meditation\n\nIf this music helped quiet your mind, ease anxious thoughts, or soften a stressful evening, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#MusicForOverthinkers #Dilruba #IndianAmbientMusic #AnxietyRelief #CalmMusic",
+  "description_note": "Format per data/playbook/description_template.md. 1.5hr = clean 10-min chapter marks per template convention.",
+  "tags": ["music for overthinkers", "stop overthinking", "overthinking relief", "anxiety relief music", "calming music for anxiety", "music to quiet the mind", "dilruba", "dilruba instrumental", "indian classical dilruba", "raga kedar", "evening relaxation music", "stress relief music", "meditation music", "mindfulness music", "1.5 hour relaxing music", "raga focus", "indian instrumental music"],
+  "suno_prompt": "Instrumental only, no vocals, no humming — gentle Indian classical dilruba in Raga Kedar, expressive bowed strings with soft settling phrases and spacious pauses, low tanpura drone, no percussion, 50–55 BPM, seamless loop.",
+  "suno_prompt_note": "SHORT one-liner default. NO 'slow' (anxiety lane not exempt) — BPM carries tempo. Verify clip 1 genuinely calm before extending. Log ACTUAL used prompt + video_id after publish.",
+  "experiment": {
+    "type": "Title A/B — lead framing (audience-noun vs imperative state), thumb held constant",
+    "hypothesis": "Dilruba × anxiety is the channel's only DUAL_WINNER cell; a fresh overthinking lead on the proven instrument should beat the lane's decay-era baseline.",
+    "success_criteria": "CTR >= 4% AND AVD >= 25% (Dilruba anxiety precedent: 4.23 / 32.2)",
+    "failure_criteria": "CTR < 3% OR AVD < 18% by day 7",
+    "neutral_zone": "Between bands — hold thumb, read A/B shares before any change"
+  },
+  "reference_ships": [
+    "Anxiety Relief Music | Clear Your Mind | 1 Hour Dilruba Session (May 1 — 27.6K, CTR 4.23 / AVD 32.2, the cell's proof)",
+    "Overthinking Music | Dilruba Instrumental (May 26 — 2.6K, decay-normal; differentiate from it)",
+    "Test 8: TOO MANY THOUGHTS? thumb beat THINK LESS in this lane"
+  ],
+  "end_screen": {
+    "primary": "Anxiety Relief Music | Clear Your Mind | 1 Hour Dilruba Session (lane anchor)",
+    "backup": "Sitar for Nervous System Healing (lane owner — session-time handoff)"
+  },
+  "strategic_bet": "Highest-confidence ship of the week: only DUAL_WINNER instrument×lane cell + 27d-rested instrument + #2 RPM lane + fresh never-used lead + thumb with a live A/B win in this exact lane.",
+  "preflight_passed": {
+    "cooldown": "Dilruba 27d (last Jun 10) — deep clear",
+    "phrase_locks": "Live-catalog check 2026-07-06: both leads never used in any live title; overthinking concept 42d clear",
+    "cannibalization_check": "No lane owner (May 26 sibling 2.6K); slot-2s avoid its 'Dilruba Instrumental' skeleton; avoids 'Nervous System' (owned by Sitar 105K)",
+    "vidiq": "A=62, B=61 — both clear the 60 floor, scored today",
+    "thumb_format": "specific_state_q_hook — lane winner + Test 8 live win",
+    "lane_time_fit": "anxiety × PM evening wind-down (Jul 1 precedent)"
+  },
+  "pending": [
+    "User: log actual Suno prompt + video_id after publish",
+    "Day-7 read feeds A/B word-framing verdict (log to ab_raw_data.csv at capture)"
+  ],
+  "day_7_read": "2026-07-14 — CTR vs 4%/3% bands, AVD vs 25%/18%, A/B shares. Update wk_2026-07-06.json ship status."
+}
