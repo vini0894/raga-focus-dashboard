@@ -189,3 +189,37 @@ From the 4 weakest day-1 ships in the cohort (all <8K day 1):
 - Wrong format-lane pair (cognitive + 3hr, uplifting + PM) → no day-1 push regardless of title quality
 - "Generic emotional-word + Music" leads (Calming, Soothing, Deep Relaxation as bare phrases) → weakest day-1 impressions
 
+
+### Finding 18 — Upload "room"/spacing has NO independent effect at hour granularity (tested 2026-07-05)
+Hypothesis (user): more hours of room before the next upload → better impressions for the live video.
+Test: exact publishedAt timestamps backfilled via Data API for all 106 uploads (`data/publish_times.csv`),
+joined to earliest 1-14d launch capture, impressions normalized per day live. n=98 full-length ships.
+
+- **Surge era (≤May): correlation is NEGATIVE** (Spearman −0.21 to −0.31) — confounded by deliberate
+  double-placement on hot Mon/Tue hero days, but clearly no positive room effect.
+- **Decay era (Jun+): apparent +0.25 collapses on inspection** — the 29-44h "room" bucket is n=3 and
+  ALL are AM ships. In the fixed AM(07:00)/PM(19:00) grid, room is **collinear with slot**:
+  AM→next-day-PM = 36h, PM→next-day-AM = 12h. "36h room" ≈ "AM ship" — the already-banked
+  AM>PM(+70% median) + Monday + hero effects explain it. Tue–Fri decay-only Spearman = +0.09 ≈ zero.
+- Counter-example: top decay-era launcher (Clear Your Head Sarod, 34.8K impr/day, Jun 2 AM) had only
+  12h room on BOTH sides (double day).
+- **Rule: do NOT plan around inter-upload spacing at 1/day cadence.** Slot-by-intent (Finding 12) and
+  viewer-pool separation (§2 pools) already capture the real mechanism (same-pool push competition).
+  Skipping a day to "make room" costs a slot for an effect indistinguishable from zero.
+- **Open natural experiment:** Fri ships get ~60h weekend room for free under Mon-Fri cadence. Compare
+  Fri vs Mon-Thu day-2/day-3 impression retention after 3-4 weeks before revisiting.
+
+### Finding 19 — Cannibalization decomposed: INSTRUMENT spacing + LEAD-PHRASE ownership, NOT lane labels (tested 2026-07-06)
+2x2 scan, n=73 ships (exact timestamps × earliest 1-14d launch capture, impressions/day):
+- Same INSTRUMENT within <=4d (lane fresh): **1,346/d vs 5,133/d baseline — ~4x penalty [n=4]**.
+  Independently consistent with the §3 Sitar gap table (39K @3d vs 139K @5d). Two methods agree.
+- Same coarse LANE within <=4d (instrument fresh): 6,826/d [n=33] — **no penalty**.
+- Known cannibalization deaths were LEAD-PHRASE/query-level, not lane-level: Tanpura "Sound Sleep"
+  6d after the Bansuri "Sound Sleep" owner → 2.2K views (different instrument, same phrase);
+  Surbahar "rest"-phrase sequence vs its own owner (836K→41K→22K).
+- Working model: (a) same instrument too soon = same sound-audience pool split + feed sameness →
+  day-scale spacing penalty; (b) same lead phrase as a BIG catalog owner = newcomer loses the
+  ranking fight at any spacing; (c) coarse lane repeat costs nothing measurable.
+- **Rules:** keep the 5-day instrument cooldown (best-supported rule we have) · enforce freshness at
+  the LEAD-PHRASE level vs catalog owners (4-source conflict check) · do NOT block plans on
+  lane-label repetition alone. Caveat: penalty cell n=4 — direction solid, magnitude soft.
