@@ -6,9 +6,10 @@
   "planned_slot": "PM (19:00 IST) \u2014 anxiety/overthinking \u00d7 evening wind-down intent (Jul 1 precedent: wind-down audience receptive to anxiety-relief framing).",
   "title": "Music for Overthinkers | Dilruba Raga Kedar | 1.5 Hours",
   "title_variants": {
-    "A": "Music for Overthinkers | Dilruba Raga Kedar | 1.5 Hours"
+    "A": "Music for Overthinkers | Dilruba Raga Kedar | 1.5 Hours",
+    "B": "Mental Overload | Slow Dilruba Strings | 1.5 Hours"
   },
-  "title_note": "SINGLE TITLE (user-locked 2026-07-06): 'Music for Overthinkers | Dilruba Raga Kedar' (62, fresh). No title A/B \u2014 B candidates exhausted: 'Stop Overthinking' (61) rejected for catalog overthink-root repetition (user rule: avoid same text visible across catalog), 'Switch Off Tonight' = internal-week collision with Mon variant C, 'Music for a Busy Mind' 24 dead, 'Music to Calm Your Thoughts' 27 dead. NEXT anxiety ship (>Jul 21): A/B vs 'Meditation Music for Overthinking' (80, Test-8 winner, lead-locked until Meditation Music clears 20d from Jul 1).",
+  "title_note": "TEST = A/B (user-locked 2026-07-06): A 'Music for Overthinkers | Dilruba Raga Kedar' (62, audience-noun query) vs B 'Mental Overload | Slow Dilruba Strings' (62, specific-state self-recognition). Both fresh/never-live; tied VidIQ \u2192 A default (incumbent lead). Same thumb both (title-only A/B). Rejected: 'Stop Overthinking' (61, catalog overthink-root repeat), 'Switch Off Tonight' (Mon variant-C collision), 'Music for a Busy Mind' 24 dead, 'Music to Calm Your Thoughts' 27 dead, 'Ease Worry' (C, unscored \u2014 held). NOTE accepted by user: 'Mental Overload' (Tue) + 'Mental Reset' (Thu) = 2 'Mental' leads this week, under saturation bar (3+/10d), non-consecutive. NEXT anxiety ship (>Jul 21): A/B vs 'Meditation Music for Overthinking' (80, Test-8 winner).",
   "components": {
     "instrument": "Dilruba",
     "instrument_role": "STRONG \u2014 anxiety lane DUAL_WINNER cell (May 1 Dilruba anxiety: CTR 4.23 / AVD 32.2). Rested 27d. One of only 2 instruments cleared for anxiety leads.",
@@ -20,15 +21,16 @@
   },
   "validated_keywords": [
     "Music for Overthinkers (62, 2026-07-06)",
-    "Stop Overthinking (61, 2026-07-06)",
-    "Music for a Busy Mind (24 \u2014 DEAD-LISTED)"
+    "Music for Mental Overload (62, 2026-07-06)",
+    "Stop Overthinking (61 \u2014 held, catalog-root repeat)",
+    "Music for a Busy Mind (24 \u2014 DEAD) \u00b7 Music to Calm Your Thoughts (27 \u2014 DEAD)"
   ],
   "thumbnail_text_main": "TOO MANY THOUGHTS?",
   "thumbnail_text_variants": [
     {
       "label": "LOCKED",
       "text": "TOO MANY THOUGHTS?",
-      "strategy": "Specific-state Q-hook \u2014 PROVEN winner in this exact lane (Test 8: beat THINK LESS). Single title, single thumb \u2014 clean cell read."
+      "strategy": "Specific-state Q-hook \u2014 PROVEN winner in this exact lane (Test 8: beat THINK LESS). Same thumb on BOTH title variants (title-only A/B)."
     },
     {
       "label": "BACKUP",
@@ -64,11 +66,11 @@
   "suno_prompt": "Instrumental only, no vocals, no humming \u2014 gentle Indian classical dilruba in Raga Kedar, expressive bowed strings with soft settling phrases and spacious pauses, low tanpura drone, no percussion, 50\u201355 BPM, seamless loop.",
   "suno_prompt_note": "SHORT one-liner default. NO 'slow' (anxiety lane not exempt) \u2014 BPM carries tempo. Verify clip 1 genuinely calm before extending. Log ACTUAL used prompt + video_id after publish.",
   "experiment": {
-    "type": "Cell validation \u2014 no A/B (single title, locked thumb)",
-    "hypothesis": "Dilruba x anxiety DUAL_WINNER cell + fresh never-used lead beats decay-era lane baseline without any packaging test riding on it.",
-    "success_criteria": "CTR >= 4% AND AVD >= 25% (cell precedent: 4.23 / 32.2)",
+    "type": "Title A/B \u2014 lead framing (audience-noun 'Overthinkers' vs specific-state 'Mental Overload'), thumb held constant",
+    "hypothesis": "Dilruba x anxiety DUAL_WINNER cell; a fresh overthinking-space lead beats decay-era baseline. A/B reads which framing the anxiety browser self-selects into.",
+    "success_criteria": "CTR >= 4% AND AVD >= 25% (cell precedent 4.23 / 32.2)",
     "failure_criteria": "CTR < 3% OR AVD < 18% by day 7",
-    "neutral_zone": "Between bands \u2014 swap thumb to MIND RACING? only if CTR-side fails"
+    "neutral_zone": "Between bands \u2014 hold thumb, read A/B shares before any change"
   },
   "reference_ships": [
     "Anxiety Relief Music | Clear Your Mind | 1 Hour Dilruba Session (May 1 \u2014 27.6K, CTR 4.23 / AVD 32.2, the cell's proof)",
