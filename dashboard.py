@@ -1671,10 +1671,11 @@ with tab_briefs:
                 with c1:
                     planned = b.get("planned_date") or ""
                     # Slot badge: 🌅 AM (morning, 7am IST) / 🌙 PM (evening, 7pm IST)
-                    slot_raw = b.get("planned_slot") or ""
-                    if slot_raw.startswith("AM"):
+                    # Detect AM/PM anywhere before a parenthetical note (briefs write "06:00 IST — Mon AM (…)")
+                    slot_head = (b.get("planned_slot") or "").split("(")[0].upper()
+                    if "AM" in slot_head:
                         slot_badge = "<span style='background:#ffa500;color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;margin-right:6px;'>🌅 AM</span>"
-                    elif slot_raw.startswith("PM"):
+                    elif "PM" in slot_head:
                         slot_badge = "<span style='background:#4a90e2;color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;margin-right:6px;'>🌙 PM</span>"
                     else:
                         slot_badge = ""
@@ -1729,10 +1730,10 @@ with tab_briefs:
                 st.markdown(f"## 📋 {brief.get('title', '(untitled)')}")
                 _meta = f"Slug: `{brief['id']}`  ·  Status: **{brief.get('status', 'DRAFT')}**"
                 # Slot badge in detail view
-                _slot_raw = brief.get("planned_slot") or ""
-                if _slot_raw.startswith("AM"):
+                _slot_head = (brief.get("planned_slot") or "").split("(")[0].upper()
+                if "AM" in _slot_head:
                     _meta += "  ·  🌅 **AM (Morning · 7am IST)**"
-                elif _slot_raw.startswith("PM"):
+                elif "PM" in _slot_head:
                     _meta += "  ·  🌙 **PM (Evening · 7pm IST)**"
                 if brief.get("planned_date"):
                     _meta += f"  ·  Planned: {brief['planned_date']}"

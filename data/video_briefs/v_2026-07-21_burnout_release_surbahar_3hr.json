@@ -1,0 +1,56 @@
+{
+  "id": "v_2026-07-21_burnout_release_surbahar_3hr",
+  "status": "DRAFT",
+  "locked": true,
+  "created_at": "2026-07-18",
+  "planned_date": "2026-07-21",
+  "planned_slot": "19:00 IST — Tue PM (evening wind-down content, evening publish)",
+  "title": "Burnout Music | Slow Surbahar Raga Bhupali | 3 Hours",
+  "title_variants": {
+    "A": "Burnout Music | Slow Surbahar Raga Bhupali | 3 Hours",
+    "B": "Release Stress Music | Slow Surbahar | 3 Hours"
+  },
+  "title_note": "A/B SCORE-vs-FRESHNESS test. A = Burnout Music (VidIQ 63, clears floor, HIGHER score — but overlaps 3 owned Surbahar-burnout videos: Burnout Recovery ×2 + Digital Burnout). B = Release Stress Music (59, freshest/least-cannibalizing, 1 under floor). Music-intent lesson banked: 'Music for the Burnt Out' form = 30 (dead); standalone 'Burnt Out' 59 was informational-intent inflated. Both pipeline VERDICT=PASS. Differentiated from Jul 6 'Music to Unwind | Surbahar | 3 Hours' (relaxation register) by stress/burnout intent.",
+  "lane": "stress_burnout",
+  "instrument": "Surbahar",
+  "raga": "Bhupali",
+  "validated_keywords": [
+    "Burnout Music — 63 (A lead)",
+    "Release Stress Music — 59 (B lead)",
+    "Music for the Burnt Out — 30 (DEAD, music-intent form)"
+  ],
+  "thumbnail_text_main": "BURNED OUT?",
+  "thumbnail_text_variants": [
+    {"label": "A / burnout", "text": "BURNED OUT?", "strategy": "specific-state Q-hook (anxiety_stress LOCKED thumb format per pipeline); FRESH vs 99 used; pairs with Burnout title"},
+    {"label": "B / stress", "text": "STILL STRESSED?", "strategy": "specific-state Q-hook; FRESH; pairs with Release Stress title"}
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A weary figure resting at dusk, low warm lamplight, a surbahar (bass sitar) resting beside. Heavy, grounded, end-of-day exhaustion easing into rest. Dark-teal serif overlay text.",
+  "thumbnail_ab_note": "Both variants are specific-state Q-hooks — the anxiety_stress lane's directional thumb format (pipeline: STRESSED OUT? / TOO MANY THOUGHTS? win; generic imperatives lose). So if YouTube auto-picks either post-test, format stays lane-correct (per A/B-rule-aligned rule).",
+  "playlists": ["Meditation", "Peaceful Music"],
+  "description": [
+    "Burnout Music | Slow Surbahar Instrumental | 3 Hours of Indian Classical Music to release stress and rest a burnt-out mind.",
+    "",
+    "When you've got nothing left, let the sound carry the weight for a while. Three deep, slow hours of resonant surbahar in Raga Bhupali — low, unhurried, and grounding — made to play in the background while you decompress after a draining day, breathe, and let your nervous system finally power down.",
+    "",
+    "No ads breaking the calm. Just continuous Indian classical music for stress relief and deep rest.",
+    "",
+    "Best for: burnout recovery · after-work decompression · stress relief · evening wind-down · deep rest.",
+    "",
+    "Put it on, lower the lights, and let yourself stop for a while. 🌙"
+  ],
+  "tags": ["burnout music", "stress relief music", "release stress", "surbahar music", "slow surbahar", "indian classical music", "3 hours", "deep rest music", "calm music", "evening relaxation", "decompress after work", "raga bhupali"],
+  "suno_prompt": "Instrumental only, no vocals, no humming — slow deep Indian classical surbahar (bass sitar) in Raga Bhupali, resonant low plucked notes with long meend glides over a sustained tanpura drone, no tabla, very slow ~55 BPM, heavy grounding restful evening character, seamless loop.",
+  "suno_prompt_note": "Surbahar rule: NO tabla (tabla is a Sitar marker; Bansuri/Surbahar go without). Deep-rest/stress lane: 'slow / very slow' IS allowed (audience is winding down). Bhupali = serene evening pentatonic, no tension notes — deepest-calm evening raga. Low BPM (~55) for restorative rest. Surbahar = forgiving on raga (instrument alone signals genre) but named anyway.",
+  "experiment": "STRESS lane (under-served in last 21d, high-value). Surbahar×stress = untested/moonshot per pipeline; anxiety_stress theme = weak-as-lead → leaned on strong SEO lead (Burnout 63) + calming middle. 3hr is drone-friendly for stress (Santoor Stress 3hr = your top per-view value asset). A/B: burnout (63, crowded) vs release-stress (59, fresh) resolves the score-vs-cannibalization question. Steady-value ship, not a breakout bet.",
+  "production_spec": {
+    "duration_minutes": 180,
+    "format": "3hr",
+    "loop_note": "Generate 4-6 slow deep Bhupali surbahar clips (NO tabla, sustained tanpura drone, ~55 BPM), crossfade-merge into a seamless ~180min loop. Flat dynamics, no builds — background rest for hours.",
+    "publish": "2026-07-21 ~19:00 IST (evening content, evening publish for wind-down search intent)"
+  },
+  "preflight_passed": true,
+  "preflight_detail": "cooldown_check: Surbahar VIABLE (12-14d rest, STRONG tier). title_preflight --validate: A + B both VERDICT=PASS. Thumb texts dedup'd vs 99-row history (BURNED OUT? + STILL STRESSED? both FRESH). Thumb format = specific-state Q-hook (anxiety_stress lane). CANNIBALIZATION FLAG: A (Burnout) overlaps 3 owned Surbahar-burnout videos — low cost at their small view counts; A/B will show if it matters.",
+  "pending": [],
+  "version": "v1 — title + thumbnail A/B LOCKED by user 2026-07-18",
+  "description_note": "Follows description_template.md style (SEO opener, emotional hook, no-ads promise, 'Best for' section). v1 — refine at production."
+}
