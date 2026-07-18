@@ -789,6 +789,32 @@ with tab_health:
                          use_container_width=True, hide_index=True)
         st.caption("Generated daily by the Stage-2 monitor (`tools/monitor.py`). Revenue-free; full digest stays local.")
 
+    # --- Playlist routing (reads data/playlists.json; refresh via tools/pull_playlists.py) ---
+    _pf = Path(__file__).parent / "data" / "playlists.json"
+    if _pf.exists():
+        _pl = _json.loads(_pf.read_text())
+        st.divider()
+        st.markdown("#### 📋 Playlist routing")
+        st.caption(f"Live playlist sequences + planned rebuilds. Updated {_pl.get('updated', '—')} — "
+                   "re-pull after Studio edits with `python3 tools/pull_playlists.py`.")
+        for _p in _pl.get("planned", []):
+            with st.expander(f"🎯 PLANNED · {_p['name']} — {len(_p.get('videos', []))} videos", expanded=False):
+                if _p.get("status"):
+                    st.warning(_p["status"])
+                if _p.get("purpose"):
+                    st.caption(_p["purpose"])
+                if _p.get("description"):
+                    st.markdown("**Playlist description (paste-ready):**")
+                    st.code(_p["description"], language=None)
+                st.dataframe(pd.DataFrame(_p["videos"]), use_container_width=True, hide_index=True)
+                if _p.get("remove"):
+                    st.markdown("**Remove:** " + " · ".join(_p["remove"]))
+                if _p.get("orphan_rescues"):
+                    st.markdown("**Orphan rescues:** " + " · ".join(_p["orphan_rescues"]))
+        for _p in _pl.get("live", []):
+            with st.expander(f"📃 {_p['name']} — {_p.get('count', len(_p.get('videos', [])))} videos"):
+                st.dataframe(pd.DataFrame(_p["videos"]), use_container_width=True, hide_index=True)
+
 # -----------------------------------------------------------------------------
 # Tab: Overview
 # -----------------------------------------------------------------------------
