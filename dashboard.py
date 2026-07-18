@@ -1703,11 +1703,11 @@ with tab_briefs:
                         options=BRIEF_STATUS_VALUES,
                         index=BRIEF_STATUS_VALUES.index(b.get("status", "DRAFT"))
                               if b.get("status") in BRIEF_STATUS_VALUES else 0,
-                        key=f"brief_status_{b['id']}",
+                        key=f"brief_status_{b.get('id', b.get('planned_date','na'))}",
                         label_visibility="collapsed",
                     )
                     if new_status != b.get("status"):
-                        set_brief_status(b["id"], new_status)
+                        set_brief_status(b.get("id", ""), new_status)
                         st.rerun()
                 with c3:
                     if st.button("View brief", key=f"view_{b['id']}"):
@@ -3835,10 +3835,12 @@ with tab_thumbs:
         _today = _thumb_date.today().isoformat()
         _cat_label = {
             "hard_swap": ("🟢 Hard-swap", "Cooling/stable — just replace the thumbnail."),
+            "hard_swap_plus_title_fix": ("🟢 Hard-swap + title", "Replace thumbnail and fix the title lead."),
             "test_compare": ("🟡 Test & Compare", "Accelerating — A/B/C test, never hard-swap (resets learned CTR)."),
             "blocked": ("⛔ Blocked", "Mid-A/B — hands off until the active test concludes."),
+            "done": ("✅ Done", "Resolved — winner live. Hold; do not re-test."),
         }
-        _order = {"hard_swap": 0, "test_compare": 1, "blocked": 2}
+        _order = {"hard_swap": 0, "hard_swap_plus_title_fix": 0, "test_compare": 1, "blocked": 2, "done": 3}
         _items = sorted(_tq.get("items", []), key=lambda i: (_order.get(i.get("category"), 9), i.get("scheduled_date") or "9999"))
 
         for _it in _items:
@@ -3852,6 +3854,10 @@ with tab_thumbs:
                     _due = " ⚠️ OVERDUE"
                 elif _it["scheduled_date"] == _today and _status == "PENDING":
                     _due = " 🔔 TODAY"
+            if _status == "RUNNING":
+                _read = _it.get("read_date")
+                _tnum = _it.get("ab_test_num")
+                _due = f" 🧪 LIVE" + (f" · read {_read}" if _read else "") + (f" · Test #{_tnum}" if _tnum else "")
 
             with st.container(border=True):
                 _c1, _c2 = st.columns([3, 1])

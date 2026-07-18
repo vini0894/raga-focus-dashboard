@@ -1,0 +1,65 @@
+{
+  "id": "v_2026-07-17_healing_frequency_sarangi_3hr",
+  "status": "DRAFT",
+  "created_at": "2026-07-11",
+  "planned_date": "2026-07-17",
+  "planned_slot": "19:00 IST \u2014 Fri PM",
+  "title": "Healing Frequency Music | Sarangi & Tanpura | 3 Hours",
+  "title_variants": {
+    "A": "Healing Frequency Music | Sarangi & Tanpura | 3 Hours",
+    "B": "Music for Emotional Healing | Slow Sarangi | 3 Hours"
+  },
+  "title_note": "",
+  "lane": "healing_deep_rest",
+  "instrument": "Sarangi",
+  "raga": "Kirwani",
+  "validated_keywords": [
+    "healing frequency music \u2014 70 (highest lead on board)",
+    "emotional healing music \u2014 60 (healing kept mid-title in B per banked rule)"
+  ],
+  "thumbnail_text_main": "GENTLE REPAIR",
+  "thumbnail_text_variants": [
+    {
+      "label": "main",
+      "text": "GENTLE REPAIR",
+      "strategy": "abstract-noun per healing rule; replaces INNER REPAIR (INNER worn x2 incl on a Sarangi video); REPAIR/MEND family virgin"
+    },
+    {
+      "label": "backup",
+      "text": "QUIET MENDING",
+      "strategy": "softer evocative alternative"
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, cream parchment. Woman playing sarangi (bowed, upright \u2014 visible) in a twilight garden, tender and consoling mood, warm dusk light. Large dark-teal serif: GENTLE REPAIR. Minimal clutter.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Peaceful Music"
+  ],
+  "description": [
+    "Healing Frequency Music | Sarangi & Tanpura | 3 Hours of Gentle Repair\n\nSome days leave a mark. A heavy conversation, a long stretch of holding it together, a tiredness that sleep alone doesn't fix. This is music for those days.\n\nThis tender Indian string music is designed for emotional decompression \u2014 the sarangi is the instrument closest to the human voice, and for three hours it does the sitting-with-you that words can't.\n\nEnjoy 3 hours of slow, voice-like sarangi over a warm tanpura drone \u2014 sweet, gently melancholic phrases that soften into warmth, with no percussion and no interruptions.\n\nPerfect for emotional decompression after hard days, deep rest, quiet evenings, processing heavy feelings, reading, gentle self-care routines, resting with eyes closed, or leaving on softly while you sleep.\n\n\ud83c\udfb5 ABOUT THIS MUSIC\nInstrument: Sarangi \u2014 a bowed string instrument with an almost human, singing tone\nRaga: Kirwani \u2014 tender and sweetly melancholic, resolving into warmth\nStyle: Slow Indian classical ambient\nMood: Consoling, warm, deeply restful\nAtmosphere: Twilight softness \u2014 held without words\nDuration: 3 hours, uninterrupted\n\n\ud83c\udfa7 HOW TO USE\nPut it on low and let it stay. You don't need to listen closely \u2014 let the sarangi carry the feeling while you rest, read, or simply be quiet for a while.\n\n\u23f1 CHAPTERS\n0:00  Arriving as you are\n0:20  The heart unclenches\n0:40  A voice like comfort\n1:00  Gentle repair begins\n1:20  Softening old weight\n1:40  Warmth returns slowly\n2:00  Deep tender rest\n2:20  Held without words\n2:40  Quiet mending\n2:55  Gentle fade into silence\n\n\u23f1 BEST FOR\nEmotional decompression after a hard day\nDeep rest without sleep\nQuiet, restorative evenings\nProcessing heavy feelings gently\nReading or resting with eyes closed\nSelf-care and recovery days\nComfort during difficult stretches\nSoft background for sleep\nUnwinding a tired heart\nFeeling accompanied in quiet\n\nIf this music helped you rest and mend a little, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#HealingMusic #Sarangi #IndianAmbientMusic #GentleRepair #DeepRest"
+  ],
+  "tags": [
+    "healing frequency music",
+    "emotional healing music",
+    "sarangi music",
+    "indian classical music",
+    "music for a heavy heart",
+    "deep rest music",
+    "calming music",
+    "raga kirwani",
+    "3 hour relaxing music",
+    "peaceful instrumental"
+  ],
+  "suno_prompt": "Sarangi solo in Raga Kirwani, tender bowed strings with a voice-like singing tone, sweet melancholy resolving into warmth, soft tanpura drone, no percussion, very slow, around 50 BPM, deeply consoling, instrumental only, no vocals",
+  "suno_prompt_note": "",
+  "experiment": "Second 3hr of the week (Mon Santoor is the other) \u2014 different pool (healing/emotional vs deep-calm), 4 days apart, evening window where 3hr is proven.",
+  "production_spec": {
+    "duration_minutes": 180,
+    "loop_note": "multiple 2-3min Suno clips looped seamlessly"
+  },
+  "preflight_passed": true,
+  "pending": [],
+  "version": "v1 \u2014 titles/thumb text subject to A/B refinement pass (user, 2026-07-11)",
+  "ab_test_note": "Slot-2 of A changed from 'Sarangi Instrumental' (HARD: reused 10d ago, Jul 1) to 'Sarangi & Tanpura'.",
+  "description_note": "Written to data/playbook/description_template.md (live-channel format, 2026-07-06). 3hr chapter marks are clean 20-min placeholders \u2014 adjust to actual clip boundaries after the merge if known."
+}

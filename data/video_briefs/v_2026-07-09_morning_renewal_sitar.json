@@ -1,0 +1,94 @@
+{
+  "id": "v_2026-07-09_morning_renewal_sitar",
+  "status": "DRAFT",
+  "created_at": "2026-07-06",
+  "planned_date": "2026-07-09",
+  "planned_slot": "Thursday AM 07:00 IST \u2014 morning lane \u00d7 the week's only AM slot (best decay-era launch DOW: Morning Gratitude Thu Jun 18 = 17.8K impr/day). Deliberate morning ship = lane diversity break from an otherwise all-calm week.",
+  "title": "Sitar for Morning Renewal | Indian Classical Music for a Fresh Start",
+  "title_variants": {
+    "A": "Sitar for Morning Renewal | Indian Classical Music for a Fresh Start",
+    "B": "Music for Positivity | Sitar Instrumental | 1.5 Hours"
+  },
+  "title_note": "TEST = A/B (user-driven, locked 2026-07-06): A evocative morning-anchored LONG format (66ch, 2-slot \u2014 \u26a0 INTENTIONAL OVERRIDE of char_over_65 + two_slot; documented experiment) vs B feeling-anchored SEO-short 'Music for Positivity' (61, LOW competition \u2014 rankable for our size; chosen over 'Positive Energy Music' 72 because that field is owned by 1.85-2.27M-sub channels). B deliberately DROPS 'morning' \u2192 broadens from time-of-day to feeling intent + cuts channel-page morning saturation. This is the SECOND long-evocative test this week (Wed = first) \u2014 cross-lane REPLICATION (relaxation + morning), intentional not confounded: win-both = strong signal, split = lane-dependent. Rejected: Fresh Morning/Positive Morning (64, 'morning' saturation), Peaceful Morning (calm-coded, clashes w/ refreshing music), Fresh Start Music (collides w/ A), Positive Vibes/Positive Energy (used/owned).",
+  "components": {
+    "instrument": "Sitar",
+    "instrument_role": "HERO \u2014 AM slot. Sitar-morning = channel's strongest non-Dopamine precedent (Start Your Morning Right 60K, Morning Motivation 32K).",
+    "lane": "morning_renewal",
+    "runtime_min": 90,
+    "raga": "Bilawal \u2014 all-natural intervals, bright open ascending MORNING character (refreshing, NOT Bhairav's grounding/serious)",
+    "binaural": "Alpha 10Hz at -20dB \u2014 POST-PRODUCTION ONLY",
+    "energy": "REFRESHING / bright / awakening \u2014 NOT slow. Morning lane keeps energy; mood must match Fresh Start title + BEGIN AGAIN thumb (mismatch = fatal)."
+  },
+  "validated_keywords": [
+    "Music for Positivity (61, LOW competition, 2026-07-06)",
+    "Morning Renewal / Fresh Start (A \u2014 evocative, full-title VidIQ 72; deprecated signal, empirical test)"
+  ],
+  "thumbnail_text_main": "LIGHTER TODAY",
+  "thumbnail_text_variants": [
+    {
+      "label": "LOCKED",
+      "text": "LIGHTER TODAY",
+      "strategy": "Outcome/statement (morning rule: never Q-hook). Names the FEELING positivity delivers (relief, lightness) \u2014 bridges BOTH titles (Morning Renewal + Music for Positivity). 13ch mobile-perfect, fresh, coheres w/ bright refreshing music. Held constant across A/B."
+    },
+    {
+      "label": "BACKUP",
+      "text": "BEGIN AGAIN",
+      "strategy": "Renewal/reset statement \u2014 day-7 swap-if if CTR below morning lane median."
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature style, ornate border, aged parchment \u2014 BRIGHT morning palette (warm dawn gold, soft light, fresh not dark). A figure greeting a new day at sunrise, sitar nearby, open airy composition. Refreshing, awake feel \u2014 NOT dusk/calm. Minimal, mobile-first. Dark-teal serif overlay text: LIGHTER TODAY",
+  "playlists": [
+    "Morning Energy"
+  ],
+  "description": "Sitar for Morning Renewal | Indian Classical Music for a Fresh Start\n\nSome mornings you just want to begin again \u2014 clear the noise of yesterday and step into the day feeling lighter.\n\nThis bright Indian classical sitar music is made to gently lift your energy: a fresh, unhurried start that wakes the mind without rushing it.\n\nEnjoy 1 hour 30 minutes of warm, uplifting sitar melodies in a bright morning raga, blended with light tabla and a gentle tanpura drone \u2014 refreshing, positive, and easy to start the day with.\n\nPerfect for morning routines, a positive start, gentle wake-ups, morning yoga and stretching, journaling, a fresh mindset, working with good energy, and bright uninterrupted mornings.\n\n\ud83c\udfb5 ABOUT THIS MUSIC\nInstrument: Sitar, light tabla & tanpura drone\nRaga: Raga Bilawal \u2014 bright, open, ascending morning character\nStyle: Indian classical / uplifting morning instrumental\nMood: Bright, fresh, positive, gently uplifting, awakening\nAtmosphere: Morning renewal, positive energy, a fresh start\nDuration: 1 hour 30 minutes\n\n\ud83c\udfa7 HOW TO USE\nPress play as you start your morning \u2014 with coffee, during your routine, light stretching or yoga, journaling, or easing into work. Let the bright sitar lift the energy of the room. For the most immersive experience, use headphones or good speakers.\n\n\u23f1 Chapters\n0:00 A fresh morning opening\n10:00 Bright rising melodies\n20:00 Gentle uplifting flow\n30:00 Positive morning momentum\n40:00 Warm open sitar\n50:00 Light and clear\n1:00:00 Renewed morning energy\n1:10:00 Steady bright movement\n1:20:00 A hopeful lift\n1:26:00 Soft bright close\n\n\u23f1 BEST FOR\nMorning routines\nA positive start to the day\nGentle wake-ups\nMorning yoga & stretching\nJournaling & a fresh mindset\nWorking with good energy\nBright focus\nA hopeful reset\nPositivity & uplift\nIndian instrumental mornings\n\nIf this music helped you start fresh, feel lighter, or bring some positivity into your day, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#MorningRenewal #Sitar #MusicForPositivity #IndianClassicalMusic #FreshStart",
+  "description_note": "Format per data/playbook/description_template.md. REFRESHING register (not calm). If B wins the A/B, swap the title-repeat line to the B title.",
+  "tags": [
+    "music for positivity",
+    "morning renewal",
+    "fresh start music",
+    "sitar for morning",
+    "positive energy music",
+    "uplifting indian music",
+    "sitar",
+    "sitar instrumental",
+    "indian classical sitar",
+    "raga bilawal",
+    "morning meditation music",
+    "good energy music",
+    "morning routine music",
+    "1.5 hour sitar music",
+    "raga focus",
+    "indian instrumental music"
+  ],
+  "suno_prompt": "Instrumental only, no vocals, no humming \u2014 melodious refreshing morning sitar in Raga Bilawal, bright plucked sitar with a gentle uplifting lift, light tabla, 85\u201390 BPM, seamless loop.",
+  "suno_prompt_note": "REFRESHING morning \u2014 NOT slow, NOT calm. Bilawal (bright) + 85-90 BPM (top of morning-energy band) + light tabla (Sitar rule). Mood must match Fresh Start title + BEGIN AGAIN thumb. Verify clip 1 is bright/uplifting (not draggy) before extending. Log actual prompt + video_id after publish.",
+  "experiment": {
+    "type": "Title A/B \u2014 A evocative-long morning-anchored vs B SEO-short feeling-anchored (drops 'morning'). Thumb constant. A = documented char/slot override.",
+    "hypothesis": "Cross-lane replication of the long-evocative test (Wed = relaxation, Thu = morning). Also: does dropping 'morning' for broad feeling-intent ('positivity', low-comp) pull wider than time-anchoring?",
+    "success_criteria": "CTR >= 4.5% (morning lane median) AND AVD >= 28% (morning cluster runs high)",
+    "failure_criteria": "CTR < 3.5% OR AVD < 22% by day 7",
+    "read_caveat": "A varies length+anchor+lead together; B win = 'evocative-long direction has signal' pooled with Wed's read"
+  },
+  "reference_ships": [
+    "Sitar Music to Start Your Morning Right (May 26 \u2014 60K, Sitar-morning proof)",
+    "Morning Gratitude (Jun 18 \u2014 best decay-era Thu AM launch, 17.8K impr/day)"
+  ],
+  "end_screen": {
+    "primary": "Sitar Music to Start Your Morning Right (60K morning winner)",
+    "backup": "Productive Day Music Bansuri"
+  },
+  "strategic_bet": "Hero Sitar on the week's only AM slot (best DOW for launch). Traded top-value cognitive lane (user rejected \u2014 Jul 2 Mental Clarity repeat) for morning diversity + a refreshing break from the all-calm week. Doubles as the morning-lane replication of the long-evocative title experiment.",
+  "preflight_passed": {
+    "cooldown": "Sitar 17d (last Jun 22) \u2014 deep clear",
+    "phrase_locks": "brief_check.py vs LIVE catalog 2026-07-08: both variants + BEGIN AGAIN thumb clean (no reuse/owner/saturation)",
+    "cannibalization_check": "B drops owned/used morning phrases; A's 'Morning Renewal'/'Fresh Start' never used; avoids Morning Energy (Dilruba 341K owner)",
+    "vidiq": "B=61 (low comp). A=full-title 72 (deprecated signal, empirical)",
+    "thumb_format": "outcome/statement BEGIN AGAIN \u2014 morning rule (never Q-hook), fresh",
+    "lane_time_fit": "morning \u00d7 AM 07:00 \u2014 intent-perfect"
+  },
+  "pending": [
+    "User: log actual Suno prompt + video_id after publish",
+    "Day-7: A/B B-share \u2192 pooled long-evocative verdict w/ Wed \u2192 bank to ab_raw_data.csv"
+  ],
+  "day_7_read": "2026-07-16 \u2014 A/B B-share, CTR vs 4.5%, AVD vs 28%. Combine w/ Wed for the long-evocative-format verdict. Update wk plan."
+}

@@ -351,6 +351,9 @@ KILL_PHRASES = [
 COMPETITORS = {
     "Raga Heal":            "UCnCW6fiX-6Jykcl2NBQBIbQ",
     "Shanti Instrumentals": "UCGVIda_EdGStdRAFMBh6LAA",
+    # Added 2026-07-11: 19.2K-sub channel with two >65x cortisol-lane breakouts
+    # (465K + 275K views, Bansuri+Bhairavi+morning formula) — same-size outlier, watch closely
+    "Dhun Detox":           "UCFIhuorVyl6NaK84wsjta9g",
 }
 
 # Our own channel — for live catalog awareness (RSS has freshest data)

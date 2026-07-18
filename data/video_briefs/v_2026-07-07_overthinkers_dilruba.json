@@ -81,7 +81,7 @@
     "primary": "Anxiety Relief Music | Clear Your Mind | 1 Hour Dilruba Session (lane anchor)",
     "backup": "Sitar for Nervous System Healing (lane owner \u2014 session-time handoff)"
   },
-  "strategic_bet": "Highest-confidence ship of the week: only DUAL_WINNER instrument\u00d7lane cell + 27d-rested instrument + #2 RPM lane + fresh never-used lead + thumb with a live A/B win in this exact lane.",
+  "strategic_bet": "Highest-confidence ship of the week: only DUAL_WINNER instrument\u00d7lane cell + 27d-rested instrument + #[high-value] lane + fresh never-used lead + thumb with a live A/B win in this exact lane.",
   "preflight_passed": {
     "cooldown": "Dilruba 27d (last Jun 10) \u2014 deep clear",
     "phrase_locks": "Live-catalog check 2026-07-06: both leads never used in any live title; overthinking concept 42d clear",

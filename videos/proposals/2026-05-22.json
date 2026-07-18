@@ -1,0 +1,756 @@
+{
+  "date": "2026-05-22",
+  "candidates": [
+    {
+      "title": "Too Much Stress | Ambient Music with Veena | 1 Hour",
+      "score": 143,
+      "variants": {
+        "A_seo": "Too Much Stress | Ambient Music with Veena | 1 Hour",
+        "B_question": "Feeling Stressed? | Ambient Music with Raga Bhupali | 1 Hour"
+      },
+      "reasons": [
+        "\u2139\ufe0f Audience cluster 'evening_serene' covered 4\u00d7 in last 5d (label only \u2014 different SEO keyword still rankable)",
+        "\u2705 Tonal: Veena = primary fit for stress (+20)",
+        "\u2139\ufe0f Veena last used 10d ago \u2014 clear",
+        "\u2b50 Veena: 0 competitor uses in 30d \u2014 unique to us",
+        "\u2705 Alpha matches 'too much stress'",
+        "\u26a0\ufe0f Veena underperforming: 2467 avg views (score 0.73\u00d7)"
+      ],
+      "components": {
+        "problem": {
+          "kw": "too much stress",
+          "seo_phrase": "Too Much Stress",
+          "action_phrase": "Release Stress",
+          "question": "Feeling Stressed?",
+          "outcome": "Too Much Stress",
+          "outcome_short": "Release Stress",
+          "vidiq_score": 53,
+          "vidiq_comp": ""
+        },
+        "instrument": {
+          "name": "Veena",
+          "vidiq_score": 62,
+          "vidiq_comp": "Unknown",
+          "aliases": [
+            "veena"
+          ]
+        },
+        "hz": {
+          "hz": "432Hz",
+          "category": "classic healing",
+          "meaning": "universal harmony",
+          "vidiq_score": 74,
+          "vidiq_comp": "Low"
+        },
+        "raga": {
+          "name": "Bhupali",
+          "time": "evening",
+          "mood": "serenity",
+          "vidiq_score": 57,
+          "vidiq_comp": "Med"
+        },
+        "wave": {
+          "wave": "Alpha",
+          "outcome": "Calm Session",
+          "matches": [
+            "overthinking",
+            "anxiety",
+            "stress",
+            "racing"
+          ],
+          "vidiq_score": null,
+          "vidiq_comp": ""
+        }
+      },
+      "strategy": "niche",
+      "strategy_note": "Doubling down on 'evening_serene' cluster \u2014 your proven audience",
+      "bucket_filled": "niche",
+      "backfilled": false
+    },
+    {
+      "title": "Feeling Lost In Life | Coding Music with Swarmandal | 1 Hour",
+      "score": 200,
+      "variants": {
+        "A_seo": "Feeling Lost In Life | Coding Music with Swarmandal | 1 Hour",
+        "B_question": "Feeling Lost? | Coding Music with Raga Bhairavi | 1 Hour"
+      },
+      "reasons": [
+        "\u2705 'feeling lost in life' VidIQ 65 HIGH (+10)",
+        "\u2b50 Swarmandal: 0 competitor uses in 30d \u2014 unique to us",
+        "\u274c Swarmandal: no competitor signal in 30d AND no VidIQ score \u2014 non-trending",
+        "\ud83c\udf19 Moonshot novelty bonus +105"
+      ],
+      "components": {
+        "problem": {
+          "kw": "feeling lost in life",
+          "seo_phrase": "Feeling Lost In Life",
+          "action_phrase": "Find Your Way",
+          "question": "Feeling Lost?",
+          "outcome": "Feeling Lost In Life",
+          "outcome_short": "Find Your Way",
+          "vidiq_score": 65,
+          "vidiq_comp": "Medium"
+        },
+        "instrument": {
+          "name": "Swarmandal",
+          "vidiq_score": null,
+          "vidiq_comp": "Unknown",
+          "aliases": [
+            "swarmandal",
+            "swara mandal"
+          ]
+        },
+        "hz": {
+          "hz": "432Hz",
+          "category": "classic healing",
+          "meaning": "universal harmony",
+          "vidiq_score": 74,
+          "vidiq_comp": "Low"
+        },
+        "raga": {
+          "name": "Bhairavi",
+          "time": "morning",
+          "mood": "devotional",
+          "vidiq_score": null,
+          "vidiq_comp": ""
+        },
+        "wave": {
+          "wave": "Binaural",
+          "outcome": "Nervous System Reset",
+          "matches": [
+            "nervous system",
+            "vagus",
+            "reset"
+          ],
+          "vidiq_score": 71,
+          "vidiq_comp": ""
+        }
+      },
+      "strategy": "moonshot",
+      "strategy_note": "Fresh angle outside your proven lane \u2014 high-variance bet",
+      "bucket_filled": "moonshot",
+      "backfilled": false
+    },
+    {
+      "title": "Emotional Overwhelm Music | Ambient Music with Esraj | 1 Hour",
+      "score": 194,
+      "variants": {
+        "A_seo": "Emotional Overwhelm Music | Ambient Music with Esraj | 1 Hour",
+        "B_question": "Emotionally Overwhelmed? | Ambient Music with Raga Malkauns | 1 Hour"
+      },
+      "reasons": [
+        "\u26a0\ufe0f 'emotional overwhelm' VidIQ score unknown \u2014 must validate before ship",
+        "\u2705 Tonal: Esraj = primary fit for emotional (+20)",
+        "\u2139\ufe0f Esraj last used 42d ago \u2014 clear",
+        "\u2b50 Esraj: 0 competitor uses in 30d \u2014 unique to us",
+        "\u274c Esraj: no competitor signal in 30d AND no VidIQ score \u2014 non-trending",
+        "\u26a0\ufe0f Esraj underperforming: 68 avg views (score 0.29\u00d7)",
+        "\ud83c\udf19 Moonshot novelty bonus +115"
+      ],
+      "components": {
+        "problem": {
+          "kw": "emotional overwhelm",
+          "seo_phrase": "Emotional Overwhelm Music",
+          "action_phrase": "Find Relief",
+          "question": "Emotionally Overwhelmed?",
+          "outcome": "Release Emotional Overwhelm",
+          "outcome_short": "Find Relief",
+          "vidiq_score": null,
+          "vidiq_comp": ""
+        },
+        "instrument": {
+          "name": "Esraj",
+          "vidiq_score": null,
+          "vidiq_comp": "Unknown",
+          "aliases": [
+            "esraj"
+          ]
+        },
+        "hz": {
+          "hz": "432Hz",
+          "category": "classic healing",
+          "meaning": "universal harmony",
+          "vidiq_score": 74,
+          "vidiq_comp": "Low"
+        },
+        "raga": {
+          "name": "Malkauns",
+          "time": "midnight",
+          "mood": "depth",
+          "vidiq_score": null,
+          "vidiq_comp": ""
+        },
+        "wave": {
+          "wave": "Binaural",
+          "outcome": "Nervous System Reset",
+          "matches": [
+            "nervous system",
+            "vagus",
+            "reset"
+          ],
+          "vidiq_score": 71,
+          "vidiq_comp": ""
+        }
+      },
+      "strategy": "moonshot",
+      "strategy_note": "Fresh angle outside your proven lane \u2014 high-variance bet",
+      "bucket_filled": "moonshot",
+      "backfilled": true,
+      "backfilled_for": "competitor"
+    }
+  ],
+  "bucket_counts": {
+    "competitor": 0,
+    "niche": 45,
+    "moonshot": 122
+  },
+  "cooldown_blocks": {
+    "comfort music": {
+      "reason": "shipped 13d ago (floor)",
+      "video_title": "Comfort Music | Healing Music with Sarangi | 1 Hour",
+      "video_id": "v_2026-05-04_comfort_sarangi",
+      "days_since": 13,
+      "views_14d": 0
+    },
+    "joyful music": {
+      "reason": "shipped 13d ago (floor)",
+      "video_title": "Joyful Music | Positive Vibes Music with Santoor | 1 Hour",
+      "video_id": "v_2026-05-06_joyful_santoor",
+      "days_since": 13,
+      "views_14d": 0
+    },
+    "peaceful music": {
+      "reason": "shipped 13d ago (floor)",
+      "video_title": "Peaceful Music | Soothing Music with Veena | 1 Hour",
+      "video_id": "v_2026-05-07_peaceful_veena",
+      "days_since": 13,
+      "views_14d": 0
+    },
+    "sleep music": {
+      "reason": "shipped 13d ago (floor)",
+      "video_title": "Sleep Music | Relaxing Music with Bansuri | 1 Hour",
+      "video_id": "v_2026-05-08_sleep_bansuri",
+      "days_since": 13,
+      "views_14d": 0
+    },
+    "breathing exercise music": {
+      "reason": "shipped 13d ago (floor)",
+      "video_title": "Breathing Exercise Music | Dilruba Raga Yaman | Alpha Wave Calm Session",
+      "video_id": "DMcoOLvmAyQ",
+      "days_since": 13,
+      "views_14d": 0
+    },
+    "burnout recovery": {
+      "reason": "shipped 13d ago (floor)",
+      "video_title": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour",
+      "video_id": "v_2026-05-09_burnout_recovery_surbahar",
+      "days_since": 13,
+      "views_14d": 0
+    },
+    "nostalgia music": {
+      "reason": "shipped 10d ago (floor)",
+      "video_title": "Nostalgia Music | Healing Music with Sarangi | 1 Hour",
+      "video_id": "v_2026-05-06_nostalgia_sarangi",
+      "days_since": 10,
+      "views_14d": 0
+    },
+    "cortisol reset": {
+      "reason": "shipped 10d ago (floor)",
+      "video_title": "Calm Music | Sitar for Cortisol Reset",
+      "video_id": "v_2026-05-11_cortisol_reset_sitar",
+      "days_since": 10,
+      "views_14d": 0
+    },
+    "mind tired / mental fatigue / inability to wind down": {
+      "reason": "shipped 6d ago (floor)",
+      "video_title": "Soothing Music | Veena for Tired Mind | 1.5 Hours",
+      "video_id": "v_2026-05-12_mind_tired_veena",
+      "days_since": 6,
+      "views_14d": 0
+    },
+    "anxiety relief / morning calm / breath-driven grounding": {
+      "reason": "shipped 6d ago (floor)",
+      "video_title": "Meditation Music | Slow Bansuri | 1.5 Hour Healing",
+      "video_id": "v_2026-05-12_morning_bansuri",
+      "days_since": 6,
+      "views_14d": 0
+    },
+    "sleep / falling asleep / insomnia": {
+      "reason": "shipped 6d ago (floor)",
+      "video_title": "Sound Sleep | Relaxing Music with Tanpura | 1.5 Hours",
+      "video_id": "v_2026-05-13_sleep_tanpura",
+      "days_since": 6,
+      "views_14d": 0
+    },
+    "morning energy / positive start to day": {
+      "reason": "shipped 6d ago (floor)",
+      "video_title": "Morning Energy Music | Santoor Instrumental | Positive Vibes",
+      "video_id": "v_2026-05-14_morning_energy_santoor",
+      "days_since": 6,
+      "views_14d": 0
+    },
+    "deep rest / mental exhaustion / nervous-system decompression": {
+      "reason": "shipped 6d ago (floor)",
+      "video_title": "Sound Healing Music | Slow Surbahar | 1.5 Hours of Rest",
+      "video_id": "v_2026-05-14_deep_rest_surbahar",
+      "days_since": 6,
+      "views_14d": 0
+    },
+    "brain fog / mental fatigue / cognitive recovery": {
+      "reason": "shipped 6d ago (floor)",
+      "video_title": "Mental Clarity Music | Slow Sarod | Brain Fog Reset",
+      "video_id": "v_2026-05-13_brain_fog_sarod",
+      "days_since": 6,
+      "views_14d": 0
+    },
+    "emotional release": {
+      "reason": "shipped 4d ago (floor)",
+      "video_title": "Healing Music | Sarangi for Emotional Release | 1.5 Hours",
+      "video_id": "v_2026-05-11_emotional_release_sarangi",
+      "days_since": 4,
+      "views_14d": 0
+    },
+    "brain fog / mental clarity / cognitive detox": {
+      "reason": "shipped 3d ago (floor)",
+      "video_title": "2 Hour Sitar to Clear Your Mind Instantly | Indian Classical Music for Brain Detox",
+      "video_id": "v_2026-05-19_brain_detox_sitar",
+      "days_since": 3,
+      "views_14d": 0
+    },
+    "morning energy / fresh start": {
+      "reason": "shipped 3d ago (floor)",
+      "video_title": "Uplifting Music | Dilruba for Morning Energy | 1.5 Hours",
+      "video_id": "v_2026-05-19_uplifting_dilruba",
+      "days_since": 3,
+      "views_14d": 0
+    },
+    "mental stillness / calm mind": {
+      "reason": "shipped 2d ago (floor)",
+      "video_title": "Mental Stillness | Santoor for Calm Mind | 1.5 Hours",
+      "video_id": "v_2026-05-20_mental_stillness_santoor",
+      "days_since": 2,
+      "views_14d": 0
+    },
+    "sleep / deep sleep": {
+      "reason": "shipped 5d ago (floor)",
+      "video_title": "Relaxing Music | Bansuri & Tanpura for Deep Sleep | 1.5 Hours",
+      "video_id": "v_2026-05-17_sleep_rest_bansuri_tanpura",
+      "days_since": 5,
+      "views_14d": 0
+    },
+    "morning meditation": {
+      "reason": "shipped 1d ago (floor)",
+      "video_title": "Morning Meditation Music | Tanpura Instrumental | 1.5 Hours of Peaceful Focus",
+      "video_id": "YZ3xQsejPEs",
+      "days_since": 1,
+      "views_14d": 0
+    },
+    "deep relaxation music": {
+      "reason": "shipped 1d ago (floor)",
+      "video_title": "Deep Relaxation Music | Slow Surbahar | 1.5 Hours",
+      "video_id": "ol5ryBrju2c",
+      "days_since": 1,
+      "views_14d": 0
+    },
+    "deep calm": {
+      "reason": "shipped 6d ago (floor)",
+      "video_title": "Calm an Overactive Mind | Chandra Raga | Deep Nervous System Healing",
+      "video_id": "NDoTueJoTRA",
+      "days_since": 6,
+      "views_14d": 0
+    },
+    "brain reset music": {
+      "reason": "shipped 7d ago (floor)",
+      "video_title": "Mental Clarity Music | Slow Sarod | Brain Fog Reset",
+      "video_id": "nASQJJ0M_Rs",
+      "days_since": 7,
+      "views_14d": 0
+    },
+    "positive vibes music": {
+      "reason": "shipped 8d ago (floor)",
+      "video_title": "Morning Energy Music | Santoor Instrumental | Positive Vibes",
+      "video_id": "izpOuUSyH5Q",
+      "days_since": 8,
+      "views_14d": 0
+    },
+    "music to heal": {
+      "reason": "shipped 8d ago (floor)",
+      "video_title": "Sound Healing Music | Slow Surbahar | 1.5 Hours of Rest",
+      "video_id": "eaxs5hLcD4U",
+      "days_since": 8,
+      "views_14d": 0
+    },
+    "insomnia relief": {
+      "reason": "shipped 9d ago (floor)",
+      "video_title": "Insomnia Relief Music | Tanpura Drone | 1.5 Hours",
+      "video_id": "O8z-M9lOIzM",
+      "days_since": 9,
+      "views_14d": 0
+    },
+    "music for calm": {
+      "reason": "shipped 11d ago (floor)",
+      "video_title": "Calm Music | Sitar for Cortisol Reset | 1.5 hours healing",
+      "video_id": "cLfbEA5506U",
+      "days_since": 11,
+      "views_14d": 0
+    },
+    "unwind music": {
+      "reason": "shipped 0d ago (floor 7d)",
+      "video_title": "1.5 Hour Bansuri to Unwind | Breathe and Let Go",
+      "video_id": "qZZuJV79mDc",
+      "days_since": 0,
+      "views_14d": 0
+    },
+    "morning focus": {
+      "reason": "shipped 1d ago (floor 7d)",
+      "video_title": "Morning Meditation Music | Tanpura Instrumental | 1.5 Hours of Peaceful Focus",
+      "video_id": "YZ3xQsejPEs",
+      "days_since": 1,
+      "views_14d": 207
+    },
+    "uplifting music": {
+      "reason": "shipped 3d ago (floor 7d)",
+      "video_title": "Uplifting Music | Dilruba for Morning Energy | 1.5 Hours",
+      "video_id": "0n08FIuVMyw",
+      "days_since": 3,
+      "views_14d": 912
+    },
+    "release stress": {
+      "reason": "shipped 4d ago (floor 7d)",
+      "video_title": "Let Go Of Stress | Sarangi for Emotional Release | 1.5 Hours",
+      "video_id": "xY3GQ28LBn0",
+      "days_since": 4,
+      "views_14d": 569
+    },
+    "stress release music": {
+      "reason": "shipped 4d ago (floor 7d)",
+      "video_title": "Let Go Of Stress | Sarangi for Emotional Release | 1.5 Hours",
+      "video_id": "xY3GQ28LBn0",
+      "days_since": 4,
+      "views_14d": 569
+    },
+    "calm your mind": {
+      "reason": "shipped 6d ago (floor 7d)",
+      "video_title": "Calm an Overactive Mind | Chandra Raga | Deep Nervous System Healing",
+      "video_id": "NDoTueJoTRA",
+      "days_since": 6,
+      "views_14d": 1739
+    },
+    "calmness": {
+      "reason": "shipped 6d ago (floor 7d)",
+      "video_title": "Calm an Overactive Mind | Chandra Raga | Deep Nervous System Healing",
+      "video_id": "NDoTueJoTRA",
+      "days_since": 6,
+      "views_14d": 1739
+    },
+    "deep calm music": {
+      "reason": "shipped 6d ago (floor 7d)",
+      "video_title": "Calm an Overactive Mind | Chandra Raga | Deep Nervous System Healing",
+      "video_id": "NDoTueJoTRA",
+      "days_since": 6,
+      "views_14d": 1739
+    },
+    "brain fog": {
+      "reason": "still active (1195 views last 7d)",
+      "video_title": "Mental Clarity Music | Slow Sarod | Brain Fog Reset",
+      "video_id": "nASQJJ0M_Rs",
+      "days_since": 7,
+      "views_14d": 1195
+    },
+    "cortisol": {
+      "reason": "still active (905 views last 7d)",
+      "video_title": "Calm Music | Sitar for Cortisol Reset | 1.5 hours healing",
+      "video_id": "cLfbEA5506U",
+      "days_since": 11,
+      "views_14d": 905
+    },
+    "burnout music": {
+      "reason": "still active (507 views last 7d)",
+      "video_title": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour",
+      "video_id": "Bc92MEMzd5g",
+      "days_since": 13,
+      "views_14d": 507
+    },
+    "recovery music": {
+      "reason": "still active (507 views last 7d)",
+      "video_title": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour",
+      "video_id": "Bc92MEMzd5g",
+      "days_since": 13,
+      "views_14d": 507
+    },
+    "vagus nerve music": {
+      "reason": "still active (507 views last 7d)",
+      "video_title": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1 Hour",
+      "video_id": "Bc92MEMzd5g",
+      "days_since": 13,
+      "views_14d": 507
+    },
+    "overthinking music": {
+      "reason": "still active (668 views last 7d)",
+      "video_title": "Overthinking Music | Healing with Bamboo Flute & Tanpura | 1 Hour",
+      "video_id": "Y6Ob2P34DHA",
+      "days_since": 19,
+      "views_14d": 668
+    },
+    "feel good music": {
+      "reason": "still active (167 views last 7d)",
+      "video_title": "Feel Good \u00b7 Gentle Acoustic Guitar \u00b7 1-Minute Mood Lift  #focusmusic #deepwork #indianclassicalmusic",
+      "video_id": "SHCYDfIMMkg",
+      "days_since": 19,
+      "views_14d": 167
+    },
+    "gentle music": {
+      "reason": "still active (167 views last 7d)",
+      "video_title": "Feel Good \u00b7 Gentle Acoustic Guitar \u00b7 1-Minute Mood Lift  #focusmusic #deepwork #indianclassicalmusic",
+      "video_id": "SHCYDfIMMkg",
+      "days_since": 19,
+      "views_14d": 167
+    },
+    "breathe and relax": {
+      "reason": "still active (715 views last 7d)",
+      "video_title": "Breathe And Relax | Slow Down Music | Veena Instrumental",
+      "video_id": "FsYTGhdm2uM",
+      "days_since": 20,
+      "views_14d": 715
+    },
+    "slow down music": {
+      "reason": "still active (715 views last 7d)",
+      "video_title": "Breathe And Relax | Slow Down Music | Veena Instrumental",
+      "video_id": "FsYTGhdm2uM",
+      "days_since": 20,
+      "views_14d": 715
+    },
+    "reset your mind": {
+      "reason": "still active (120 views last 7d)",
+      "video_title": "Pause Here \u00b7 1 Minute Tanpura Calm \u00b7 Reset Your Mind \ud83c\udf19",
+      "video_id": "mboU-eNrY-o",
+      "days_since": 20,
+      "views_14d": 120
+    },
+    "mind reset music": {
+      "reason": "still active (120 views last 7d)",
+      "video_title": "Pause Here \u00b7 1 Minute Tanpura Calm \u00b7 Reset Your Mind \ud83c\udf19",
+      "video_id": "mboU-eNrY-o",
+      "days_since": 20,
+      "views_14d": 120
+    },
+    "anxiety relief music": {
+      "reason": "still active (4063 views last 7d)",
+      "video_title": "Anxiety Relief Music | Clear Your Mind | 1 Hour Dilruba Session",
+      "video_id": "pMDVh0dzUdI",
+      "days_since": 21,
+      "views_14d": 4063
+    },
+    "dopamine reset": {
+      "reason": "still active (466953 views last 7d)",
+      "video_title": "Sitar for Dopamine Reset | Indian Classical Music for Mindfulness",
+      "video_id": "SEw8IsSXRSU",
+      "days_since": 23,
+      "views_14d": 466953
+    },
+    "deep rest music": {
+      "reason": "still active (23556 views last 7d)",
+      "video_title": "Deep Rest Music | Find Stillness with Surbahar | 1 Hour",
+      "video_id": "m6aFcw2f58o",
+      "days_since": 24,
+      "views_14d": 23556
+    },
+    "stress relief music": {
+      "reason": "still active (624 views last 7d)",
+      "video_title": "Stress Relief Music | Deep Meditation with Veena Raga & 432Hz | 1 Hour",
+      "video_id": "5UGTuyNHHHE",
+      "days_since": 28,
+      "views_14d": 624
+    },
+    "deep meditation": {
+      "reason": "still active (624 views last 7d)",
+      "video_title": "Stress Relief Music | Deep Meditation with Veena Raga & 432Hz | 1 Hour",
+      "video_id": "5UGTuyNHHHE",
+      "days_since": 28,
+      "views_14d": 624
+    },
+    "nervous system reset": {
+      "reason": "still active (123 views last 7d)",
+      "video_title": "Nervous System Reset | Quiet Your Mind with Dilruba Instrumental Music | 1 Hour",
+      "video_id": "XSIsS9ZZgLg",
+      "days_since": 29,
+      "views_14d": 123
+    },
+    "adhd focus music": {
+      "reason": "still active (51 views last 7d)",
+      "video_title": "ADHD Brain Fog Music | Sitar + 40Hz Gamma | 1 Hour Focus",
+      "video_id": "PCshMQuu41I",
+      "days_since": 32,
+      "views_14d": 51
+    },
+    "adhd brain fog": {
+      "reason": "still active (51 views last 7d)",
+      "video_title": "ADHD Brain Fog Music | Sitar + 40Hz Gamma | 1 Hour Focus",
+      "video_id": "PCshMQuu41I",
+      "days_since": 32,
+      "views_14d": 51
+    },
+    "think clearly": {
+      "reason": "still active (90 views last 7d)",
+      "video_title": "Brain Fog? | Think Clearly with Sarangi 40Hz Gamma | 1 Hour",
+      "video_id": "bM4M5T6wW48",
+      "days_since": 45,
+      "views_14d": 90
+    },
+    "music for overthinkers": {
+      "reason": "still active (90 views last 7d)",
+      "video_title": "Brain Fog? | Think Clearly with Sarangi 40Hz Gamma | 1 Hour",
+      "video_id": "bM4M5T6wW48",
+      "days_since": 45,
+      "views_14d": 90
+    }
+  },
+  "lead_recommendation": [
+    "A_seo",
+    "\u2b50 Concluded A/B: SEO won 6/23 tests (latest 2026-06-05, +56% margin)."
+  ],
+  "keyword_opportunities": [
+    {
+      "phrase": "indian classical meditation music",
+      "uses": 11,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 7
+    },
+    {
+      "phrase": "deep relaxation anxiety relief music",
+      "uses": 2,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 7
+    },
+    {
+      "phrase": "deep relaxation anxiety relief",
+      "uses": 2,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 7
+    },
+    {
+      "phrase": "peaceful meditation sounds music",
+      "uses": 2,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 7
+    },
+    {
+      "phrase": "peaceful meditation sounds",
+      "uses": 2,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 7
+    },
+    {
+      "phrase": "for deep work music",
+      "uses": 2,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 15
+    },
+    {
+      "phrase": "for deep work",
+      "uses": 2,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 15
+    },
+    {
+      "phrase": "focus flow productivity music",
+      "uses": 2,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 15
+    },
+    {
+      "phrase": "focus flow productivity",
+      "uses": 2,
+      "sources": [
+        "Shanti Instrumentals"
+      ],
+      "latest_days": 15
+    },
+    {
+      "phrase": "tibetan bowl harmonics music",
+      "uses": 1,
+      "sources": [
+        "Raga Heal"
+      ],
+      "latest_days": 0
+    }
+  ],
+  "competitor_pulse": {
+    "Raga Heal": [
+      {
+        "title": "Tibetan Bowl Harmonics \u00d7 Bansuri | Quiet the Overthinking Mind",
+        "days_ago": 0,
+        "video_id": "FHQkZZRVAEE",
+        "views": null,
+        "likes": null,
+        "duration": null
+      },
+      {
+        "title": "741Hz Santoor Protocol \u2728 Dissolve Brain Fog & Restore Mental Clarity",
+        "days_ago": 2,
+        "video_id": "DLJhFcznOtQ",
+        "views": null,
+        "likes": null,
+        "duration": null
+      },
+      {
+        "title": "Kerala Temple Bansuri Music with Monsoon Rain \ud83c\udf27\ufe0f | Anxiety Relief & Deep Relaxation",
+        "days_ago": 4,
+        "video_id": "ySb-cmmGhLs",
+        "views": null,
+        "likes": null,
+        "duration": null
+      },
+      {
+        "title": "Stuck Mentally? Raag Yaman for Deep Focus & Creative Flow",
+        "days_ago": 7,
+        "video_id": "pBE09YbcRKI",
+        "views": null,
+        "likes": null,
+        "duration": null
+      }
+    ],
+    "Shanti Instrumentals": [
+      {
+        "title": "Healing Santoor Music | Deep Relaxation & Anxiety Relief | Peaceful Meditation Sounds",
+        "days_ago": 7,
+        "video_id": "l9dLcbNIwVI",
+        "views": null,
+        "likes": null,
+        "duration": null
+      },
+      {
+        "title": "Melt Your Stress Away | Indian Classical Meditation Music | Santoor, Tabla, Tanpura",
+        "days_ago": 7,
+        "video_id": "VdeCPYKXhTc",
+        "views": null,
+        "likes": null,
+        "duration": null
+      },
+      {
+        "title": "Mental Detox With Sitar | Indian Classical Meditation Music | Purify, Reset & Breathe",
+        "days_ago": 7,
+        "video_id": "J8BcetT4-wA",
+        "views": null,
+        "likes": null,
+        "duration": null
+      }
+    ]
+  }
+}

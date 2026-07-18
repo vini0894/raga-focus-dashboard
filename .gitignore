@@ -29,3 +29,7 @@ build/
 # Heavy raw exports (kept locally, not in repo)
 data/reach_exports/
 data/private/
+
+# DuckDB warehouse (private — contains revenue + per-video metrics)
+data/raga_focus_private.duckdb
+data/raga_focus_private.duckdb.wal

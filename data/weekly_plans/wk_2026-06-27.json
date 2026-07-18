@@ -157,7 +157,7 @@
   ],
   "week_level_decisions": {
     "calm_prompt_rule": "All calm-lane Suno prompts this week must avoid: 'upbeat, uplifting, energetic, forward momentum, not sleepy, never sluggish, driving, propulsive'. Must include: 'slow, spacious, low register, long pauses, no momentum, breath between notes, restful'.",
-    "dopamine_experiment_framing": "Mon Dopamine = SINGLE experiment to test music-fix hypothesis, not a weekly default. Wed/Thu cover the revenue base with high-revenue lanes.",
+    "dopamine_experiment_framing": "Mon Dopamine = SINGLE experiment to test music-fix hypothesis, not a weekly default. Wed/Thu cover the reach base with high-reach lanes.",
     "thumb_test_observation_window": "Active thumb tests from 2026-06-26 session (Mental Fatigue Sitar, Restless Mind Veena) read at day 7 \u2014 Jul 3 review."
   }
 }

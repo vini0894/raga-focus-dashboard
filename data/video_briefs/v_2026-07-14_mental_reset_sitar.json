@@ -1,0 +1,64 @@
+{
+  "id": "v_2026-07-14_mental_reset_sitar",
+  "status": "DRAFT",
+  "created_at": "2026-07-11",
+  "planned_date": "2026-07-14",
+  "planned_slot": "19:00 IST \u2014 Tue PM",
+  "title": "Mental Reset | Sitar for an Overstimulated Mind | 1.5 Hours",
+  "title_variants": {
+    "A": "Mental Reset | Sitar for an Overstimulated Mind | 1.5 Hours",
+    "B": "Music for an Overstimulated Mind | Sitar Instrumental | 1.5 Hours"
+  },
+  "title_note": "TWO-STRONG-KEYWORDS test: 'mental reset' (63) vs 'overstimulated mind' (unscored lead \u2014 trend exception: Raga Heal 198K outlier + 2 niche copies; zero internal owner). Winner = anchor query for future cognitive Sitar ships. Log as Test #48 at launch.",
+  "lane": "cognitive",
+  "instrument": "Sitar",
+  "raga": "Madhuvanti",
+  "validated_keywords": [
+    "mental reset \u2014 63",
+    "overstimulated mind \u2014 UNSCORED lead, trend exception (198K/496K Raga Heal outliers; niche-proven register)"
+  ],
+  "thumbnail_text_main": "TOO MANY TABS?",
+  "thumbnail_text_variants": [
+    {
+      "label": "main",
+      "text": "TOO MANY TABS?",
+      "strategy": "screen-native state-recognition for the overstimulated scroller; fresh across all surfaces incl private dataset"
+    },
+    {
+      "label": "backup",
+      "text": "CLUTTERED MIND?",
+      "strategy": "felt-state alternative (note: MIND-question family crowded \u2014 backup only)"
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, cream parchment. Woman playing sitar (instrument clearly visible) in a bright daytime courtyard, alert-serene mood. Large dark-teal serif: TOO MANY TABS?.",
+  "playlists": [
+    "Meditation",
+    "Peaceful Music"
+  ],
+  "description": [
+    "Mental Reset | Sitar for an Overstimulated Mind | 1.5 Hours of Clear Calm\n\nToo many tabs open \u2014 on your screen and in your head. Notifications, half-finished thoughts, the scroll that never ends. Your mind hasn't had a quiet minute all day.\n\nThis calm Indian instrumental music is designed to help an overstimulated mind put things down one at a time and come back to clear, unhurried ground.\n\nEnjoy 1.5 hours of warm, clear sitar phrases blended with a steady tanpura drone and soft, distant tabla \u2014 unhurried melodies with real space between the notes.\n\nPerfect for a midday mental reset, decluttering your head after too much screen time, studying, journaling, quiet work, an evening unwind, meditation, or slow deep breathing.\n\n\ud83c\udfb5 ABOUT THIS MUSIC\nInstrument: Sitar \u2014 plucked strings with a warm, rounded, resonant tone\nRaga: Madhuvanti \u2014 a clear, gently uplifting afternoon raga\nStyle: Slow Indian classical instrumental\nMood: Clear, calm, quietly refreshing\nAtmosphere: Bright but unhurried \u2014 like a clean desk for the mind\nDuration: 1.5 hours, uninterrupted\n\n\ud83c\udfa7 HOW TO USE\nPlay it when your head feels crowded. Each time your attention gets pulled away, let the next sitar phrase bring it back. By the end, fewer tabs.\n\n\u23f1 CHAPTERS\n0:00  Stepping out of the noise\n0:10  The first deep breath\n0:20  Tabs closing one by one\n0:30  Space between thoughts\n0:40  The mind declutters\n0:50  Clear and unhurried\n1:00  The reset takes hold\n1:10  Quiet steady clarity\n1:20  Fresh mental ground\n\n\u23f1 BEST FOR\nRecovering from digital overload\nA mental reset between work blocks\nStudying or reading with a busy mind\nQuieting the urge to scroll\nJournaling and reflection\nEvening decompression\nMeditation for restless attention\nBackground calm for focused work\nSlowing racing input\nFinding one clear thought again\n\nIf this music helped you clear the clutter and reset, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#MentalReset #Sitar #IndianClassicalMusic #OverstimulatedMind"
+  ],
+  "tags": [
+    "mental reset music",
+    "sitar music",
+    "overstimulated mind",
+    "indian classical music",
+    "music for focus and calm",
+    "dopamine detox music",
+    "calm sitar",
+    "raga madhuvanti",
+    "mental clarity music",
+    "stress relief"
+  ],
+  "suno_prompt": "Sitar solo in Raga Madhuvanti, unhurried and clear, warm rounded plucks with long sustain, soft tabla far in the background, tanpura drone, daytime clarity mood, around 65 BPM, instrumental only, no vocals",
+  "suno_prompt_note": "",
+  "experiment": "HERO SHIP \u2014 Sitar first clean day (5d). Rides the Overstimulated Mind niche phrase (198K competitor outlier) in slot-2 where unscored is allowed.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "loop_note": "multiple 2-3min Suno clips looped seamlessly"
+  },
+  "preflight_passed": true,
+  "pending": [],
+  "version": "v1 \u2014 titles/thumb text subject to A/B refinement pass (user, 2026-07-11)",
+  "description_note": "Written to data/playbook/description_template.md (live-channel format, 2026-07-06). 3hr chapter marks are clean 20-min placeholders \u2014 adjust to actual clip boundaries after the merge if known."
+}

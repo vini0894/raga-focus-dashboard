@@ -1,0 +1,97 @@
+{
+  "id": "v_2026-07-10_sleep_through_night_bansuri",
+  "status": "DRAFT",
+  "created_at": "2026-07-06",
+  "planned_date": "2026-07-10",
+  "planned_slot": "Friday PM 19:00 IST \u2014 sleep lane \u00d7 the classic Friday sleep slot. 3hr long-session format. Week-closer on a rested hero (Bansuri 11d).",
+  "title": "Music to Sleep Through the Night | Bansuri | 3 Hours",
+  "title_variants": {
+    "A": "Music to Sleep Through the Night | Bansuri | 3 Hours",
+    "B": "Feel Light | Bamboo Flute for Sleep | 3 Hours"
+  },
+  "title_note": "TEST = A/B (user-locked 2026-07-06): A literal staying-asleep BENEFIT 'Sleep Through the Night' vs B FEELING 'Feel Light' (fresh, never used, echoes Thu's 'light' theme). \u26a0 VidIQ PENDING \u2014 locked structurally per user; score 'Music to Sleep Through the Night' + 'Feel Light' (\u226560 gate) before publish. FRESH sleep angle: deliberately dodges the OWNED queries \u2014 brief_check flagged & we rejected 'Sleep Music' lead (Sound Sleep 97K owner) + 'Deep Sleep' (owned). Also dodges the 2 existing 3hr Bansuri (Relaxation May 17, Quiet Night Jun 14) by staking the staying-asleep sub-angle. A uses 'Bansuri' (niche), B uses 'Bamboo Flute' (broad search) \u2192 A/B covers both instrument search terms. Redundant 'Bansuri...Flute' two-slot fixed per user (bansuri = bamboo flute).",
+  "components": {
+    "instrument": "Bansuri",
+    "instrument_role": "HERO \u2014 rested 11d. Sleep is Bansuri's owned lane (Sound Sleep 197K); this stakes a FRESH sub-angle (stay-asleep) so it doesn't cannibalize.",
+    "lane": "sleep",
+    "sub_lane": "sleep-through-the-night / staying asleep (NOT fall-asleep/deep-sleep \u2014 those are owned)",
+    "runtime_min": 180,
+    "raga": "Bageshri \u2014 late-evening, longing, introspective (drowsy night character)",
+    "binaural": "Delta 3Hz at -20dB \u2014 POST-PRODUCTION ONLY (deep sleep)"
+  },
+  "validated_keywords": [
+    "Music to Sleep Through the Night (VidIQ PENDING)",
+    "Feel Light (VidIQ PENDING, never used)",
+    "Sleep Music (REJECTED lead \u2014 owned by Sound Sleep 97K)",
+    "Deep Sleep (REJECTED lead \u2014 owned)"
+  ],
+  "thumbnail_text_main": "SLEEP ALL NIGHT",
+  "thumbnail_text_variants": [
+    {
+      "label": "LOCKED",
+      "text": "SLEEP ALL NIGHT",
+      "strategy": "Sleep-keyword thumb (user call) + on-angle staying-asleep. Sleep lane winner = keyword-forward (Test 24: SLEEP MUSIC won; that exact text is used, SLEEP ALL NIGHT is the fresh equivalent). 15ch mobile-optimal. Held constant across A/B. Note: sleep keyword on THUMB is fine \u2014 no title/SEO cannibalization (thumb text is not search-indexed)."
+    },
+    {
+      "label": "BACKUP",
+      "text": "SLEEP TILL MORNING",
+      "strategy": "On-angle alt (18ch) \u2014 day-7 swap-if."
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature style, ornate border, aged parchment \u2014 deep night palette (indigo/midnight blue, moon, soft stars). A figure sleeping peacefully through the night, bansuri resting nearby. Calm, dark, restful. Mobile-first. Dark-teal or cream serif overlay text: SLEEP ALL NIGHT",
+  "playlists": [
+    "Sleep Music"
+  ],
+  "description": "Music to Sleep Through the Night | Bansuri | 3 Hours of Deep Rest\n\nIt's not always falling asleep that's hard \u2014 it's staying asleep. Waking at 3am, a restless mind, a night that never feels deep enough.\n\nThis soft Indian bamboo flute (bansuri) music is made to carry you gently through the whole night \u2014 slow, low, and continuous, with nothing to jolt you awake.\n\nEnjoy 3 hours of breathy, drowsy bansuri blended with a warm tanpura drone and soft ambient texture \u2014 no percussion, no build-ups, no interruptions. Just an even, calming current to sleep straight through.\n\nPerfect for sleeping through the night, insomnia and 3am waking, deep rest, meditation before sleep, and quiet nighttime calm.\n\n\ud83c\udfb5 ABOUT THIS MUSIC\nInstrument: Bansuri (Indian bamboo flute) & Tanpura Drone\nRaga: Raga Bageshri \u2014 soft late-night character\nStyle: Indian ambient sleep / deep-rest instrumental\nMood: Slow, low, drowsy, continuous, calming\nAtmosphere: Sleep through the night, deep rest, nighttime stillness\nDuration: 3 Hours\n\n\ud83c\udfa7 HOW TO USE\nPlay this as you get into bed. Keep the volume low, set your phone aside, and let the soft bansuri hold the whole night. For the most immersive experience, use headphones for a while, or play quietly through a speaker.\n\n\u23f1 Chapters\n0:00 Settling into the night\n18:00 Soft drowsy bansuri\n36:00 Low continuous calm\n54:00 Deep tanpura grounding\n1:12:00 Drifting deeper\n1:30:00 Middle-of-night stillness\n1:48:00 Even, unbroken rest\n2:06:00 Quiet night current\n2:24:00 Soft floating calm\n2:42:00 Deep restful drone\n2:58:00 Gentle fade toward morning\n\n\u23f1 BEST FOR\nSleeping through the night\nInsomnia & 3am waking\nDeep rest & recovery\nMeditation before sleep\nQuiet nighttime calm\nStaying asleep longer\nRestless minds at night\nIndian flute sleep music\nNight-shift rest\nCalm background for the night\n\nIf this music helped you sleep through the night or rest more deeply, subscribe to Raga Focus for more uninterrupted Indian instrumental sleep music.\n\n#SleepThroughTheNight #Bansuri #SleepMusic #BambooFlute #DeepSleep",
+  "description_note": "Format per data/playbook/description_template.md. 3hr chapter marks (~18min) \u2014 adjust to real clip boundaries at render.",
+  "tags": [
+    "sleep through the night",
+    "stay asleep",
+    "music to sleep all night",
+    "insomnia relief music",
+    "bansuri",
+    "bamboo flute",
+    "indian flute sleep music",
+    "raga bageshri",
+    "3 hour sleep music",
+    "deep sleep music",
+    "night music",
+    "tanpura drone",
+    "calm sleep music",
+    "raga focus",
+    "indian instrumental music"
+  ],
+  "suno_prompt": "Instrumental only, no vocals, no humming \u2014 slow deep bansuri bamboo flute for sleep, soft breathy low notes with long spacious pauses, gentle tanpura drone, no percussion, 45\u201350 BPM, seamless loop.",
+  "suno_prompt_note": "SLEEP LANE \u2014 'slow' allowed + wanted (drowsy, drone-like). 45-50 BPM (deep-sleep band). No tabla (Bansuri rule). Verify clip 1 is genuinely drowsy/continuous before extending. 3hr = loop/merge in post. Delta 3Hz binaural post-production. Log actual prompt + video_id after publish.",
+  "experiment": {
+    "type": "Title A/B \u2014 benefit (Sleep Through the Night) vs feeling (Feel Light), thumb constant. Also: 3rd 3hr Bansuri via a FRESH sub-angle (does staying-asleep carve new space vs the 2 relaxation/sleep 3hr Bansuris?).",
+    "hypothesis": "Bansuri-3hr-sleep is a repeatable format (Quiet Night launched best-in-window WITH the May 17 one live). A fresh staying-asleep angle finds its own query without cannibalizing.",
+    "success_criteria": "Day-2 impressions hold + avg watch >= 25 min (long-form sleep target; AVD% reads low/inverted for sleep)",
+    "failure_criteria": "Day-1 impressions < 8K AND avg watch < 15 min by day 7",
+    "read_caveat": "Sleep AVD% is inverted (viewer falls asleep = good). Judge on watch-hours + impressions, not AVD%."
+  },
+  "reference_ships": [
+    "3 Hour Bansuri Music for Relaxation (May 17 \u2014 39K, 40min watch, the format proof)",
+    "Quiet Night 3hr Bansuri (Jun 14 \u2014 best recent PM launch, 8.5K impr/day)",
+    "Bansuri for Sound Sleep (May 7 \u2014 197K owner; do NOT reuse its Deep Sleep/Sleep Music leads)"
+  ],
+  "end_screen": {
+    "primary": "3 Hour Bansuri Music for Relaxation (session-time handoff)",
+    "backup": "Bansuri for Sound Sleep"
+  },
+  "strategic_bet": "Week-closer on a rested hero via a proven-repeatable format (3hr Bansuri sleep) with a FRESH staying-asleep angle. Watch-hours/India play (reverses the week's T1 tilt \u2014 deliberate, a safe high-volume closer). 2nd 3hr production of the week.",
+  "preflight_passed": {
+    "cooldown": "Bansuri 11d (last Jun 29) \u2014 clear",
+    "phrase_locks": "brief_check.py vs LIVE catalog 2026-07-08 (post-stopword-fix): both variants + thumb clean. Rejected 'Sleep Music'/'Deep Sleep' leads (owner-flagged).",
+    "cannibalization_check": "Fresh staying-asleep sub-angle avoids owned Deep Sleep/Sleep Music; 'Bansuri' vs 'Bamboo Flute' across A/B; distinct from the 2 existing 3hr Bansuri (Relaxation/Quiet Night leads)",
+    "vidiq": "\u26a0 PENDING \u2014 structural lock; score both leads before publish",
+    "thumb_format": "outcome_imperative SLEEP TILL MORNING \u2014 sleep lane winner, fresh",
+    "lane_time_fit": "sleep \u00d7 PM Friday \u00d7 3hr \u2014 long-session, intent-perfect"
+  },
+  "pending": [
+    "\u26a0 VidIQ score both leads (\u226560) before publish",
+    "Log actual Suno prompt + video_id after publish",
+    "Day-2 impression + watch-hours read"
+  ],
+  "day_7_read": "2026-07-17 \u2014 impressions hold, avg watch, A/B B-share (benefit vs feeling). Does 3hr Bansuri stay-asleep carve new space? Update wk plan + bank."
+}

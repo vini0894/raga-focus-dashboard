@@ -1,0 +1,73 @@
+{
+  "id": "v_2026-07-13_deep_calm_santoor_3hr",
+  "status": "DRAFT",
+  "created_at": "2026-07-11",
+  "planned_date": "2026-07-13",
+  "planned_slot": "19:00 IST Mon \u2014 RESCHEDULED from 06:30 (AM-window experiment postponed to Mon Jul 20); 19:00 = the proven 3hr slot",
+  "title": "Peace of Mind Music | Santoor Instrumental | 3 Hours",
+  "title_variants": {
+    "A": "Peace of Mind Music | Santoor Instrumental | 3 Hours",
+    "B": "Deep Calm | Indian Classical Music | 3 Hours"
+  },
+  "title_note": "PACKAGE test (user-designed, 2026-07-11): A = emotional lead + instrument slot-2 (niche-authority package, 60-lead) vs B = functional state-lead + generic genre slot-2 (broad-appeal package, 65-lead). Deliberately composite \u2014 decides which complete packaging philosophy wins the dual dawn/evening audience, package-level like Test #37. Log as Test #47 at launch.",
+  "lane": "deep_rest_stress",
+  "instrument": "Santoor",
+  "raga": "Bhairavi",
+  "validated_keywords": [
+    "peace of mind music \u2014 60 (2026-07-11)",
+    "deep calm \u2014 65 (state-lead, suffix-drop rule)"
+  ],
+  "thumbnail_text_main": "TAKE IT SLOW",
+  "thumbnail_text_variants": [
+    {
+      "label": "main",
+      "text": "TAKE IT SLOW",
+      "strategy": "permission-tone idiom, time-neutral for dual dawn/evening window (Test #37: permission family wins stress-rest)"
+    },
+    {
+      "label": "backup",
+      "text": "NO RUSH",
+      "strategy": "7ch compact permission, maximum mobile render"
+    },
+    {
+      "label": "backup2",
+      "text": "AT EASE",
+      "strategy": "calm-state offering, dual-window"
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting, ornate floral border on aged cream parchment. A woman reclining at ease on a palace terrace, serene, eyes soft \u2014 NOT playing; a santoor rests beside her. Golden-hour light deliberately ambiguous (reads as sunrise or sunset), warm amber sky, distant hills. Large dark-teal serif overlay: TAKE IT SLOW. Minimal clutter, mobile-first.",
+  "playlists": [
+    "Peaceful Music",
+    "Healing & Anxiety Relief"
+  ],
+  "description": [
+    "Deep Calm | Santoor Instrumental | 3 Hours of Peaceful Rest\n\nMaybe you're closing out a long day. Maybe the week has only just begun and your mind is already running ahead of you. Either way \u2014 this is a soft place to land.\n\nThis peaceful Indian ambient meditation music is designed to slow a busy mind and settle the body, whether you're winding down the evening or easing into a new day.\n\nEnjoy 3 hours of gentle santoor melodies blended with a warm tanpura drone and soft ambient textures \u2014 slow, shimmering strings with long fading notes and no sudden changes.\n\nPerfect for unwinding after a long day, slow mornings, meditation, reading, gentle yoga, resting, journaling, quiet evenings, background calm at home, or simply sitting still.\n\n\ud83c\udfb5 ABOUT THIS MUSIC\nInstrument: Santoor \u2014 hammered strings with a soft, shimmering, bell-like tone\nRaga: Bhairavi \u2014 the gentle 'any-hour' raga, traditionally played to close a concert\nStyle: Slow Indian classical ambient\nMood: Deeply calm, unhurried, reassuring\nAtmosphere: Warm, spacious, softly glowing\nDuration: 3 hours, uninterrupted\n\n\ud83c\udfa7 HOW TO USE\nPress play, set the volume low, and let it stay on in the background. There's nothing to follow and nothing to do \u2014 let the music set the pace and take it slow.\n\n\u23f1 CHAPTERS\n0:00  A soft place to land\n0:20  Letting the week loosen\n0:40  Slow shimmering stillness\n1:00  Deep calm settles in\n1:20  Nothing left to do\n1:40  Resting without effort\n2:00  Peace of mind returns\n2:20  Quiet inner spaciousness\n2:40  Drifting gently onward\n2:55  Gentle fade into silence\n\n\u23f1 BEST FOR\nEvening wind-down\nA calm, unhurried start to the week\nDeep relaxation after a heavy day\nMeditation and breathwork\nQuiet reading or journaling\nGentle yoga or stretching\nBackground calm for the whole room\nSettling an overactive mind\nRest without needing to sleep\nSlowing down when everything feels rushed\n\nIf this music helped you slow down and find some peace of mind, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#DeepCalm #Santoor #IndianAmbientMusic #PeacefulRest"
+  ],
+  "tags": [
+    "deep calm music",
+    "peace of mind music",
+    "santoor music",
+    "santoor instrumental",
+    "indian classical music",
+    "calming music",
+    "stress relief music",
+    "relaxing instrumental music",
+    "3 hour relaxing music",
+    "raga bhairavi",
+    "music to relax",
+    "nervous system regulation",
+    "lower cortisol naturally",
+    "somatic calm",
+    "peaceful music"
+  ],
+  "suno_prompt": "Santoor solo in Raga Bhairavi, slow shimmering hammered strings with long fading resonance, warm tanpura drone beneath, around 55 BPM, spacious, deeply restful and serene, instrumental only, no vocals",
+  "suno_prompt_note": "\u26a0 PREFERRED: recover the actual prompt of parent TXfk2UU5MjI (Stress Relief Santoor 3hr, 47min AVD) from Suno history and swap in. Above is the pattern-based fallback. Genuinely CALM \u2014 no upbeat/energetic terms.",
+  "experiment": "SLOT NOTE (2026-07-13): AM-window experiment POSTPONED to Mon Jul 20 \u2014 shipping at proven 19:00 instead. Now a standard clone of the 47min-AVD parent; judge on the normal 3hr curve (slow d1-3, accel d4-5, AVD \u226530min). Title A/B still launches as Test #47 at publish.",
+  "production_spec": {
+    "duration_minutes": 180,
+    "loop_note": "multiple 2-3min Suno clips looped seamlessly to 3:00:00"
+  },
+  "preflight_passed": true,
+  "pending": [],
+  "description_note": "Written to data/playbook/description_template.md (live-channel format, 2026-07-06). 3hr chapter marks are clean 20-min placeholders \u2014 adjust to actual clip boundaries after the merge if known."
+}

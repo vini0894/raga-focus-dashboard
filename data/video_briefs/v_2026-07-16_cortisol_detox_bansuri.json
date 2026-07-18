@@ -1,0 +1,63 @@
+{
+  "id": "v_2026-07-16_cortisol_detox_bansuri",
+  "status": "DRAFT",
+  "created_at": "2026-07-11",
+  "planned_date": "2026-07-16",
+  "planned_slot": "06:30 IST \u2014 Thu AM",
+  "title": "Cortisol Detox Music | Bansuri & Tanpura | 1.5 Hours",
+  "title_variants": {
+    "A": "Cortisol Detox Music | Bansuri & Tanpura | 1.5 Hours",
+    "B": "Morning Cortisol Detox | Bansuri Raga Bhairavi | 1.5 Hours"
+  },
+  "title_note": "",
+  "lane": "cortisol_morning_clinical",
+  "instrument": "Bansuri",
+  "raga": "Bhairavi",
+  "validated_keywords": [
+    "cortisol detox music \u2014 59 (1pt under bar; trend exception: Dhun Detox 465K >100x + 275K 67.9x + Raga Heal 424K, all Bansuri+Bhairavi+morning)"
+  ],
+  "thumbnail_text_main": "SOFT START",
+  "thumbnail_text_variants": [
+    {
+      "label": "main",
+      "text": "SOFT START",
+      "strategy": "outcome/lifestyle per banked morning rule (Q-hooks 0/5 in morning lane); time-free per user; matches Bhairavi dawn register"
+    },
+    {
+      "label": "backup",
+      "text": "GENTLE START",
+      "strategy": "same family, softer"
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, cream parchment. Woman playing bansuri flute at sunrise \u2014 explicit dawn: golden sun low on horizon, birds, lotus pond. Large dark-teal serif: SOFT START.",
+  "playlists": [
+    "Morning Energy",
+    "Healing & Anxiety Relief"
+  ],
+  "description": [
+    "Cortisol Detox Music | Bansuri & Tanpura | 1.5 Hours for a Calm Morning\n\nCortisol \u2014 the body's stress hormone \u2014 peaks in the first hour after you wake. If your mornings start anxious, heart already racing before the day has even begun, you're not imagining it.\n\nThis gentle Indian flute music is designed to ease that early tension and give your nervous system a softer start \u2014 calm first, day second.\n\nEnjoy 1.5 hours of soft, breathy bansuri in the traditional dawn raga, floating over a warm tanpura drone \u2014 no percussion, no builds, just slow even phrases.\n\nPerfect for easing morning anxiety, meditation and breathwork, slow mornings, gentle stretching or yoga, morning tea or coffee in quiet, journaling, or a gentler alternative to reaching for your phone.\n\n\ud83c\udfb5 ABOUT THIS MUSIC\nInstrument: Bansuri \u2014 a bamboo flute with a soft, breathy, human warmth\nRaga: Bhairavi \u2014 the classic dawn raga, devotional and gently grounding\nStyle: Slow Indian classical morning meditation\nMood: Soft, settling, quietly hopeful\nAtmosphere: Early light, unhurried, warm\nDuration: 1.5 hours, uninterrupted\n\n\ud83c\udfa7 HOW TO USE\nPlay it in the first hour of your day \u2014 while you wake, stretch, breathe, or sit with your tea. Let the flute set your pace before the world sets it for you.\n\n\u23f1 CHAPTERS\n0:00  Waking gently\n0:10  The breath slows down\n0:20  Morning tension eases\n0:30  Soft dawn stillness\n0:40  Coming back to calm\n0:50  The body settles\n1:00  A soft start holds\n1:10  Quiet steady ease\n1:20  Ready for the day\n\n\u23f1 BEST FOR\nAnxious or wired mornings\nMorning meditation and breathwork\nA slow, phone-free start\nGentle morning yoga\nLowering stress before work\nQuiet breakfast or tea\nMorning journaling\nSettling a racing heart\nEasing into a demanding day\nBuilding a calmer wake-up routine\n\nIf this music helped you start your day calmer, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#CortisolDetox #Bansuri #MorningCalm #IndianFluteMusic"
+  ],
+  "tags": [
+    "cortisol detox music",
+    "lower cortisol",
+    "morning anxiety relief",
+    "bansuri music",
+    "raga bhairavi",
+    "morning meditation music",
+    "indian flute music",
+    "stress hormone",
+    "calm morning music",
+    "nervous system regulation"
+  ],
+  "suno_prompt": "Bansuri flute in Raga Bhairavi, soft breathy sustained notes, dawn serenity, warm tanpura drone, no percussion, slow and gentle, around 55 BPM, morning devotional calm, instrumental only, no vocals",
+  "suno_prompt_note": "",
+  "experiment": "TREND RIDE: enter via suggested-adjacency to Dhun Detox 465K + Raga Heal 424K. Offering-led (not their Q-lead). Watch Dhun Detox RSS for next moves.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "loop_note": "multiple 2-3min Suno clips looped seamlessly"
+  },
+  "preflight_passed": true,
+  "pending": [],
+  "version": "v1 \u2014 titles/thumb text subject to A/B refinement pass (user, 2026-07-11)",
+  "description_note": "Written to data/playbook/description_template.md (live-channel format, 2026-07-06). 3hr chapter marks are clean 20-min placeholders \u2014 adjust to actual clip boundaries after the merge if known."
+}

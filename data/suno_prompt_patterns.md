@@ -1,7 +1,28 @@
 # Suno Prompt Patterns — Raga Focus
 
-Last updated: 2026-05-30
-Source: Analysis of channel's Suno prompt CSV vs actual YouTube view performance (N=17 videos)
+Last updated: 2026-07-05
+Source: Analysis of channel's Suno prompt CSV vs actual YouTube view performance (N=17 videos); length-vs-AVD check 2026-07-05 (N=36, warehouse video_360)
+
+## ⭐ DEFAULT = SHORT ONE-LINER (user rule, banked 2026-07-05)
+
+Long prompts don't help — user-observed on generated output, and warehouse confirms no
+retention penalty for short prompts (median AVD: short <350ch = 25.6%, medium 350-550 = 24.8%, n=36).
+The old 400-650 char "optimal" was correlated against VIEWS, which are title/thumb-driven — ignore it.
+
+**Default structure (~180-300 chars, one line):**
+```
+Instrumental only, no vocals, no humming — [slow/calm per lane] Indian classical [instrument]
+in Raga [name], [ONE physical descriptor], [tabla per instrument rule], [BPM per lane], seamless loop.
+```
+Keep: no-vocals first · instrument + ONE physical descriptor · raga name · tabla rule · BPM · loop · calm/energy per lane.
+Drop by default (add back only if a clip generates badly): emotional metaphor, Hz tuning, register, production tags.
+The sections below remain the reference for WHICH raga/BPM/tabla to pick — not for prompt length.
+
+**⭐ TEMPO WORDS (banked 2026-07-05):** the word "slow" makes Suno generate VERY slow draggy
+output → retention risk. Let the BPM NUMBER set tempo; use "gentle / flowing / unhurried /
+steady" for calmness instead of "slow". Reserve "slow / very slow" for SLEEP and DEEP-REST
+lanes only (audience is falling asleep — drag is fine there). Cognitive / morning / daytime
+lanes: no "slow" anywhere in the prompt, BPM at the TOP of the lane band.
 
 ---
 

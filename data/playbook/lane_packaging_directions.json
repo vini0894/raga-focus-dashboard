@@ -3,7 +3,7 @@
   "generated_at": "2026-06-26",
   "status": "DIRECTIONAL",
   "generated_from": "40 A/B tests (SS-verified shares, ab_raw_data.csv) + 99-video vision-verified thumbnail_dataset.csv + playbook refresh",
-  "caveat": "Most lane x format cells are n=2-10. Strong prior, not proof. CTR=packaging signal, within-lane AVD=music/match signal (sleep AVD inverted). The 2 revenue pillars (Dopamine Reset, Morning Energy Dilruba) are below-median CTR AND AVD in lane - they won on reach, not packaging; do not copy them.",
+  "caveat": "Most lane x format cells are n=2-10. Strong prior, not proof. CTR=packaging signal, within-lane AVD=music/match signal (sleep AVD inverted). The 2 reach pillars (Dopamine Reset, Morning Energy Dilruba) are below-median CTR AND AVD in lane - they won on reach, not packaging; do not copy them.",
   "lanes": {
     "morning_energy": {
       "confidence": "HIGH",

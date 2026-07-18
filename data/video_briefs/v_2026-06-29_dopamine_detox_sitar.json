@@ -57,7 +57,7 @@
     "type": "music-fix hypothesis test",
     "hypothesis": "Calm Suno prompt fixes the dopamine lane's weak music retention (RRP 0.42 baseline per session_findings_2026-06-26.md Finding 3). Previous Jun 22 Dopamine Boost replica failed (AVP 15.6%, 881 views) \u2014 attributed to upbeat music in calm-lane prompt. This ship inverts that: same lane, calm prompt.",
     "success_criteria": "AVD >= 25% AND views >= 10K within 7 days = hypothesis confirmed, lane is music-fixable",
-    "failure_criteria": "AVD < 20% AND views < 5K within 7 days = lane structurally weak (low RPM + cannibalized by hero), retire Dopamine angle for future ships",
+    "failure_criteria": "AVD < 20% AND views < 5K within 7 days = lane structurally weak (low value + cannibalized by hero), retire Dopamine angle for future ships",
     "neutral_zone": "AVD 20-25% or views 5-10K = directional, needs second test to confirm"
   },
   "reference_ships": [
@@ -84,7 +84,7 @@
     "primary": "Sitar for Brain Detox (mDCDS2TlK4k) \u2014 same lane + same instrument chain",
     "backup": "Sitar for Nervous System Healing (52YU6Q64zVw) \u2014 adjacent cognitive lane authority"
   },
-  "strategic_bet": "Mon Jun 29 hero slot. THE music-fix experiment of the week. If calm Suno prompt + Sitar (hero) + Dopamine Detox (VidIQ 71 lead) doesn't lift the dopamine-lane retention floor, the lane is structurally dead and we retire Dopamine framings entirely. Wed/Thu ships (Sarangi anxiety, Sarod cognitive) cover the revenue base regardless of Mon outcome.",
+  "strategic_bet": "Mon Jun 29 hero slot. THE music-fix experiment of the week. If calm Suno prompt + Sitar (hero) + Dopamine Detox (VidIQ 71 lead) doesn't lift the dopamine-lane retention floor, the lane is structurally dead and we retire Dopamine framings entirely. Wed/Thu ships (Sarangi anxiety, Sarod cognitive) cover the reach base regardless of Mon outcome.",
   "preflight_passed": {
     "cooldown": "Sitar viable (7d rest from Jun 22), Monday HERO slot per \u00a74b",
     "phrase_locks": "No collision \u2014 Dopamine Detox is fresh lead phrase, Sitar Music Instrumental free",

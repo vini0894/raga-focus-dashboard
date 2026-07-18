@@ -1,144 +1,121 @@
 {
   "created_at": "2026-06-16",
-  "rechecked_at": "2026-06-26",
-  "purpose": "Thumbnail-refresh queue. Target = high-retention + low-CTR videos where the thumbnail is the bottleneck (algo would push harder if CTR rose). Hard-swap cooling/stable videos; Test & Compare accelerating / mid-A/B ones.",
-  "rule": "AVD high + CTR < 3.68% channel avg = thumbnail-capped. Low AVD = retention problem, thumbnail won't fix (skip). CTR at/above avg = thumbnail fine, drop from queue.",
-  "recheck_note": "2026-06-17: re-evaluated against the FRESH per-video export (pervideo_2026-06-16.csv). The original queue was built on the stale May-31 CTR. DROPPED 3 hard-swaps that now show HEALTHY CTR (no longer capped): Burnout Surbahar (4.76%), Deep Relaxation Surbahar (4.73%), Morning Anxiety Sarod (4.17%) \u2014 their thumbnails are fine, not the bottleneck. ADDED Emotional Comfort Sarangi (3.58%, capped). Net firm queue = NS Healing + Comfort Sarangi + Emotional Comfort (+ Brain Detox once its title A/B is confirmed concluded).",
+  "cleaned_at": "2026-07-03",
+  "purpose": "Thumbnail-refresh queue. Target = high-retention + low-CTR videos where the thumbnail is the bottleneck. Active_queue = decisions to act on THIS week. Archive = concluded/parked history.",
+  "rule": "AVD high + CTR below channel avg 3.68% = thumbnail-capped. Low AVD = retention problem, thumbnail won't fix (skip). CTR at/above avg = thumbnail fine, drop from queue.",
   "monitor": "7-day window post-change. Hard-swap target: CTR +0.5pt. Test & Compare auto-keeps the winner.",
-  "dropped_on_recheck": [
+  "active_queue": [
     {
-      "video": "Burnout Recovery | Vagus Nerve Reset with Surbahar",
-      "fresh_ctr": 4.76,
-      "reason": "CTR healthy \u2014 thumbnail not the bottleneck"
-    },
-    {
-      "video": "Deep Relaxation Music | Slow Surbahar",
-      "fresh_ctr": 4.73,
-      "reason": "CTR healthy \u2014 and it's a hidden gem already pulling clicks; leave it"
-    },
-    {
-      "video": "Music for Morning Anxiety | Sarod",
-      "fresh_ctr": 4.17,
-      "reason": "CTR healthy (and 35% AVP) \u2014 leave it"
+      "video": "Music for Mental Fatigue | Sitar Music | 1.5 Hours",
+      "video_id": "uxkD-QODdFY",
+      "lane": "cognitive / mental fatigue",
+      "category": "hard_swap_post_ab",
+      "scheduled_date": "2026-07-03",
+      "status": "TO_ACTION",
+      "current": {
+        "avp_pct": 27.5,
+        "ctr_pct": 2.0,
+        "impressions_7d": 1800,
+        "note": "Test #41 concluded Jul 2 \u2014 no clear winner. YT kept LET MIND REST. Post-test CTR CRASHED to 2.0% (-42% from 3.4% during test). Both A/B variants violated banked cognitive Q-hook rule."
+      },
+      "thumb_format": "specific_state_q_hook_COMPACT (banked cognitive-lane DECISIVE winner per Test 17 26.4pp gap)",
+      "new_thumb_text": [
+        "BRAIN OVERLOAD? (14ch \u2014 catalog-clean per rule catalog-check-before-proposing)"
+      ],
+      "alternatives": [
+        "MENTALLY EXHAUSTED? (17ch, banked Test #17 winner, direct semantic match to Mental Fatigue)",
+        "MIND CLOUDY? / MIND FULL? / BRAIN FOG? \u2014 ALL BLOCKED (in use elsewhere on channel this week)"
+      ],
+      "why": "Corrected 2026-07-03 after catalog-check: MIND FULL? is LIVE on Mon Dopamine Detox Sitar this week = channel-page collision. CAN'T THINK? conflicts with catalog Sarod 'Can't Think Clearly?' title. BRAIN OVERLOAD? is banked cognitive Q-hook format, semantically matches 'Mental Fatigue' (overload = fatigued mind), and is clean across ab_raw + briefs + live titles + reserved. Compound play: also attach to Sitar hero end screens (Dopamine Reset 12.9M, Brain Detox 748K, NS Healing 1.47M).",
+      "read_date": "2026-07-10",
+      "catalog_check_2026-07-03": "MIND FULL? blocked (Mon Dopamine live). CAN'T THINK? adjacent-title conflict. BRAIN OVERLOAD? clean."
     }
   ],
-  "items": [
+  "concluded_recent": [
+    {
+      "video": "Sitar for Brain Detox | Clear Your Mind | 1.5 Hours",
+      "video_id": "mDCDS2TlK4k",
+      "concluded_date": "2026-07-04",
+      "winner": "BRAIN FOG?",
+      "margin": "61.9/38.1 (+23.8pp) vs MENTAL DETOX",
+      "impact_note": "Post-win CTR 2.96 \u2192 3.5. Third cognitive-lane compact-Q confirmation.",
+      "ab_test_num": 43
+    },
+    {
+      "video": "Stress Relief Music | Santoor Instrumental | 3 Hours",
+      "video_id": "TXfk2UU5MjI",
+      "concluded_date": "2026-07-05",
+      "winner": "A: IT'S OKAY TO REST (56.1%)",
+      "margin": "56.1/43.9 vs RELEASE STRESS \u2014 YT verdict: 'no clear winner'",
+      "impact_note": "CTR held 4.7% (stable, working) but impressions -50% (age-driven decay). See packaging_impact.csv Test #37.",
+      "ab_test_num": 37,
+      "follow_up_action": "Hero-end-screen redirect (source TBD) \u2014 tracked in end_screen_redirects.csv"
+    },
+    {
+      "video": "Music for Mental Fatigue | Sitar Music | 1.5 Hours",
+      "video_id": "uxkD-QODdFY",
+      "concluded_date": "2026-07-02",
+      "winner": "no_clear_winner (YT chose B: LET MIND REST)",
+      "margin": "A: BRAIN BURN OUT 53.1% vs B: LET MIND REST 46.9%",
+      "impact_note": "Post-test CTR crashed -42% (2.0% now vs 3.4% during test). Both violated cognitive Q-hook rule. NOW ACTIVE for re-thumb to MIND FULL? \u2014 see active_queue.",
+      "ab_test_num": 41
+    },
+    {
+      "video": "Music to Release Tension | Indian Classical | 1 Hour",
+      "video_id": "0kLeLN3jqoM",
+      "concluded_date": "2026-07-03",
+      "winner": "STOP WORRYING (52.4% vs 47.6% TOO TENSE?)",
+      "margin": "5pp \u2014 YT verdict: \"they all performed well\"",
+      "impact_note": "CTR +6% (3.2%) \u2014 packaging works. AVD ceiling 22% (13:17/60min) below anxiety-lane 25% target. Retention-capped video, not packaging-capped. Retired from active queue per user verdict.",
+      "ab_test_num": "44_ReleaseTension",
+      "user_verdict_2026-07-03": "AVD too low to justify further optimization. Retire."
+    },
+    {
+      "video": "Insomnia Relief Music | Tanpura Drone | 1.5 Hours",
+      "video_id": "O8z-M9lOIzM",
+      "concluded_date": "2026-07-03",
+      "winner": "N/A \u2014 single swap, no A/B",
+      "margin": "N/A",
+      "impact_note": "RESCUE FAILED. Title change to \"Sound Sleep\" + DEEP SLEEP NOW thumb crashed impressions -85%, views -90%. LIKELY cannibalization with 1.3M Bansuri for Sound Sleep hero. AVD 16.7% (~15min). Retired per user verdict \u2014 video beyond salvage from packaging.",
+      "refresh_ref": "Refresh_InsomniaTanpura",
+      "user_verdict_2026-07-03": "AVD too low + cannibalized by hero. Beyond salvage."
+    },
+    {
+      "video": "Music for a Restless Mind | Veena Instrumental | 1.5 Hours",
+      "video_id": "ZwJiMj0Vjak",
+      "concluded_date": "2026-07-10",
+      "winner": "YT chose BRAIN ON LOOP? (insufficient impressions)",
+      "margin": "N/A \u2014 insufficient data",
+      "impact_note": "CTR HELD/IMPROVED 3.07\u21923.3% (latest 3.8%). AVD ROSE +56% to 31:20 (~35% of 90min) \u2014 strong retention. Impressions -91% age-driven but packaging_verdict=WORKING. IDEAL hero-attach candidate \u2014 31min AVD chains cleanly.",
+      "ab_test_num": 42,
+      "follow_up_action": "Attach to Sitar/Veena hero end screen for impression injection (tracked in end_screen_redirects.csv when set up)"
+    }
+  ],
+  "parked": [
     {
       "video": "Sitar for Nervous System Healing | Indian Classical Music",
       "video_id": "52YU6Q64zVw",
       "lane": "nervous-system / cognitive",
-      "category": "test_compare",
-      "scheduled_date": "2026-06-17",
-      "status": "PENDING",
-      "current": {
-        "avp_pct": 24.8,
-        "ctr_pct": 2.95,
-        "impressions": 1471069,
-        "note": "channel's biggest click-capped grower \u2014 1.47M impr at 2.95% CTR"
-      },
-      "thumb_format": "Test & Compare (A/B/C)",
-      "new_thumb_text": [
-        "STRESS DETOX (keep as control)",
-        "CALM YOUR NERVES",
-        "NERVOUS SYSTEM RESET"
-      ],
-      "why": "Highest-leverage on the channel \u2014 1.47M impressions capped at 2.95% CTR. Mid-acceleration, so Test & Compare (never hard-swap)."
+      "status": "TEST_RUNNING",
+      "ab_test_num": 45,
+      "note": "Test #45 running (STRESS DETOX vs CAN'T RELAX?). Not touched today. Scheduled read Jul 18."
     },
     {
       "video": "Comfort Music | Healing Music with Sarangi | 1 Hour",
       "video_id": "P-DIkbxipB8",
       "lane": "emotional / healing",
-      "category": "hard_swap",
-      "scheduled_date": "2026-06-20",
-      "status": "PENDING",
-      "current": {
-        "avp_pct": 25.42,
-        "ctr_pct": 3.19,
-        "impressions": 25340
-      },
-      "thumb_format": "abstract_noun (emotional lane is format-tolerant)",
-      "new_thumb_text": [
-        "EMOTIONAL HEALING",
-        "FIND PEACE"
-      ],
-      "why": "Still click-capped on fresh data (3.19% CTR, 25% AVP). Cooling/stable = safe hard-swap. NOTE: re-thumbs the Sarangi-emotional lane the same week as Fri's new Sarangi heartache ship \u2014 fine (refresh on an old video, not a new ship), but don't pile a 3rd Sarangi-emotional change on the same days."
+      "original_schedule": "2026-06-20",
+      "status": "PARKED",
+      "note": "Was queued for hard-swap (EMOTIONAL HEALING or FIND PEACE) but not actioned. Kept in parked \u2014 revisit when we have production capacity for old-catalog refreshes."
     },
     {
       "video": "Emotional Comfort | Sarangi | Indian Classical",
       "video_id": "fqjZNDFcu-8",
       "lane": "emotional / comfort",
-      "category": "hard_swap",
-      "scheduled_date": "2026-06-24",
-      "status": "PENDING",
-      "current": {
-        "avp_pct": 25.64,
-        "ctr_pct": 3.58,
-        "impressions": 39463
-      },
-      "thumb_format": "offering/abstract (emotional lane format-tolerant)",
-      "new_thumb_text": [
-        "FEEL HELD",
-        "FIND COMFORT"
-      ],
-      "why": "Added on the Jun-16 recheck \u2014 capped at 3.58% CTR / 25.6% AVP / 39K impr. Spaced to Jun 24 to avoid piling onto the Comfort refresh (Jun 20) + Fri Sarangi ship (Sarangi-emotional overload). Distinct text from Comfort's 'EMOTIONAL HEALING'."
-    },
-    {
-      "video": "Sitar for Brain Detox | Clear Your Mind | 1.5 Hours",
-      "video_id": "mDCDS2TlK4k",
-      "lane": "cognitive / detox",
-      "category": "blocked",
-      "scheduled_date": null,
-      "status": "BLOCKED",
-      "current": {
-        "avp_pct": 31.33,
-        "ctr_pct": 2.95,
-        "impressions": 748264,
-        "note": "strongly capped (31% AVP, 2.95% CTR, 748K impr) \u2014 but had an active title A/B"
-      },
-      "thumb_format": "Test & Compare (after title A/B confirmed concluded)",
-      "new_thumb_text": [
-        "CLEAR YOUR MIND",
-        "BRAIN DETOX",
-        "MENTAL RESET"
-      ],
-      "why": "Big click-capped grower (748K impr). VERIFY its title A/B has concluded (started ~May, likely done by now) \u2014 if concluded, UNBLOCK and run Test & Compare. Until confirmed, hold (don't disturb a running experiment)."
-    },
-    {
-      "video": "Music to Release Tension | Indian Classical | 1 Hour",
-      "video_id": "0kLeLN3jqoM",
-      "lane": "stress / tension",
-      "category": "hard_swap",
-      "scheduled_date": "2026-06-26",
-      "status": "PENDING",
-      "current": {
-        "avp_pct": 20.8,
-        "ctr_pct": 3.11,
-        "impressions": 27672
-      },
-      "thumb_format": "permission_imperative",
-      "new_thumb_text": [
-        "STOP WORRYING"
-      ],
-      "why": "Single swap (not A/B). Generic 'Indian Classical' title lead, CTR below avg, AVD healthy = thumb is bottleneck. STOP WORRYING signals anxiety audience \u2014 shifts viewer pool from body-tension to mental-anxiety (higher RPM lane). Mobile-instant 12ch."
-    },
-    {
-      "video": "Insomnia Relief Music | Tanpura Drone | 1.5 Hours",
-      "video_id": "TBD",
-      "lane": "sleep",
-      "category": "hard_swap_plus_title_fix",
-      "scheduled_date": "2026-06-26",
-      "status": "PENDING",
-      "current": {
-        "avp_pct": 22.5,
-        "ctr_pct": 2.61,
-        "impressions": 5017
-      },
-      "thumb_format": "outcome_imperative",
-      "new_thumb_text": [
-        "DEEP SLEEP NOW"
-      ],
-      "why": "Rescue mode \u2014 packaging + positioning together. CTR 2.61% (low), distribution collapsed (5K from 35K peak). Sleep keyword missing from title \u2014 proposed title fix: 'Sleep Music for Insomnia | Tanpura Drone | 1.5 Hours'. Thumb DEEP SLEEP NOW satisfies sleep lane outcome-imperative rule + has sleep keyword (user observation). Coherence-risk noted: Tanpura drone may pull meditation audience not insomniacs."
+      "original_schedule": "2026-06-24",
+      "status": "PARKED",
+      "note": "Was queued for hard-swap (FEEL HELD or FIND COMFORT) but not actioned. Kept in parked \u2014 revisit alongside Comfort Music if we do a Sarangi refresh batch."
     }
   ],
-  "recheck_note_2026-06-26": "Added 2 single-thumb refreshes from Jun 26 thumb-test session: Release Tension (STOP WORRYING) + Insomnia Tanpura (DEEP SLEEP NOW + title fix). Both single-swap not A/B. A/B tests (Mental Fatigue Sitar + Restless Mind Veena) logged separately in ab_raw_data.csv as Tests 41/42."
+  "cleanup_note_2026-07-03": "Cleaned queue to focus on today's decisions. Active queue = 4 items: (1) Mental Fatigue Sitar new re-thumb to MIND FULL?, (2-3) Release Tension + Insomnia Tanpura day-7 reads pending, (4) Restless Mind Veena Test #42 read pending. Concluded_recent captures Brain Detox #43, Stress Relief #37, Mental Fatigue #41 with impact notes. Parked = 3 items (NS Healing #45 running, 2 old Sarangi hard-swaps never actioned). Full A/B outcomes with impact deltas live in data/packaging_impact.csv. | UPDATE: Release Tension retired from active_queue after Jul 3 read \u2014 AVD 22% is retention-capped (user verdict). Insomnia Tanpura still pending read. | Jul 3 evening: All day-7 reads complete. Insomnia Tanpura RESCUE FAILED (Sound Sleep cannibalization + low AVD) \u2014 retired. Restless Mind Veena Test #42 concluded with strong retention (31:20 AVD) \u2014 retired to concluded, ideal hero-attach candidate. Active queue = 1 item (Mental Fatigue Sitar re-thumb)."
 }

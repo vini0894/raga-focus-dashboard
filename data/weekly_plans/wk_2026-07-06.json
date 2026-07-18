@@ -59,41 +59,42 @@
       "lane": "relaxation_evening",
       "planned_slot": "Wednesday PM 19:00 IST",
       "runtime_min": 90,
-      "title_direction": "Relax Your Mind lead (VidIQ 77, scored Jun 28 \u2014 freshest-validated lead of the week). State-lead: no 'Music' suffix on lead.",
+      "title_direction": "LOCKED 2026-07-06 \u2014 A/B FORMAT EXPT: A 'Relax Your Mind | Santoor & Tanpura' (77, control) vs B 'Santoor for the After-Work Blur | ...Come Back Down' (long evocative, documented override). Thumb: FEEL CALM.",
       "thumb_format": "outcome_state",
       "suno_prompt_rule": "CALM, no 'slow' (daytime/evening relax lane) \u2014 santoor hammered attack gives natural motion",
       "vidiq_lead_score": 77,
-      "status": "planned"
+      "status": "planned",
+      "brief_path": "data/video_briefs/v_2026-07-08_relax_your_mind_santoor.json"
     },
     {
       "date": "2026-07-09",
       "type": "ship",
       "instrument": "Sitar",
-      "lane": "cognitive_clarity",
+      "lane": "morning_renewal",
       "planned_slot": "Thursday AM 07:00 IST",
       "runtime_min": 90,
-      "title_direction": "Mental Reset lead (VidIQ 63 standalone May 11 \u2014 re-score in music-intent form optional before brief). Avoid detox/dopamine/brain words (channel-page collision: Dopamine Detox Jun 29 + Brain Detox re-thumb Mon).",
-      "thumb_format": "specific_state_q_hook_COMPACT",
+      "title_direction": "LOCKED 2026-07-06 \u2014 A/B: A 'Sitar for Morning Renewal | ...Fresh Start' (evocative, 72) vs B 'Music for Positivity | Sitar Instrumental' (61, low-comp, drops 'morning'). Thumb: LIGHTER TODAY. REFRESHING music (Bilawal 85-90 BPM). Pivoted OFF cognitive (Jul 2 Mental Clarity repeat).",
+      "thumb_format": "outcome_statement",
       "thumb_note": "Compact Q <=3 words, must differ from Monday's BRAIN FOG? re-thumb text",
-      "suno_prompt_rule": "CALM, no 'slow' (cognitive AM) \u2014 BPM top of band 75-80, light tabla per Sitar rule",
+      "suno_prompt_rule": "REFRESHING \u2014 Bilawal, 85-90 BPM, bright (NOT slow/calm)",
       "suno_prompt_draft": "Instrumental only, no vocals, no humming \u2014 calm Indian classical sitar in Raga Bhairav, warm plucked sitar with graceful meend slides, soft steady tabla keeping gentle momentum, unhurried flowing feel, 75\u201380 BPM, seamless loop.",
       "vidiq_lead_score": 63,
       "status": "planned",
-      "slot_rationale": "Best decay-era AM precedent is Thu AM (Morning Gratitude Jun 18 = 17.8K impr/day). Hero instrument x AM slot (AM median 10.8K vs PM 4.5K impr/day last 3 weeks)."
+      "slot_rationale": "Best decay-era AM precedent is Thu AM (Morning Gratitude Jun 18 = 17.8K impr/day). Hero instrument x AM slot (AM median 10.8K vs PM 4.5K impr/day last 3 weeks).",
+      "brief_path": "data/video_briefs/v_2026-07-09_morning_renewal_sitar.json"
     },
     {
       "date": "2026-07-10",
       "type": "ship",
-      "instrument": "Sarangi",
-      "lane": "healing_nostalgia",
+      "instrument": "Bansuri",
+      "lane": "sleep",
       "planned_slot": "Friday PM 19:00 IST",
-      "runtime_min": 90,
-      "title_direction": "Healing Frequency Music lead (VidIQ 70). Differentiate from Jul 1 'Meditation Music | Sarangi' (9d, same lane).",
-      "thumb_format": "abstract_noun",
-      "suno_prompt_rule": "CALM, no 'slow' \u2014 sarangi bowed emotional phrases carry the feel",
-      "vidiq_lead_score": 70,
+      "runtime_min": 180,
+      "title_direction": "LOCKED 2026-07-06 (VidIQ pending) \u2014 A/B: A 'Music to Sleep Through the Night | Bansuri | 3 Hours' vs B 'Feel Light | Bamboo Flute for Sleep | 3 Hours'. Thumb: SLEEP ALL NIGHT. 3hr Bansuri, fresh stay-asleep angle. Pivoted OFF Sarangi-healing (saturated).",
+      "thumb_format": "outcome_imperative",
+      "suno_prompt_rule": "SLEEP \u2014 slow/drowsy allowed, 45-50 BPM, no tabla, delta binaural post",
       "status": "planned",
-      "notes": "Weekend-room natural experiment data point: Fri ship gets ~60h room \u2014 track day-2/day-3 impression retention vs Mon-Thu ships (Finding 18 open thread)."
+      "brief_path": "data/video_briefs/v_2026-07-10_sleep_through_night_bansuri.json"
     }
   ],
   "preflight_pending": [
@@ -105,7 +106,7 @@
   "week_level_decisions": {
     "finding_18_no_room_planning": "Upload room/spacing has no independent effect \u2014 slots set by intent + production window only",
     "suno_short_default": "SHORT one-liner prompts default; 'slow' wording reserved for sleep/deep-rest lanes (banked 2026-07-05)",
-    "no_sleep_ship": "No sleep-lane ship this week (T1/value tilt; sleep skews India + lowest lane priority); 3hr format carries the watch-time bet instead",
+    "no_sleep_ship": "Week tilted T1/value (cognitive/anxiety/relax/morning) \u2014 BUT Friday pivoted to a 3hr Bansuri SLEEP ship (fresh stay-asleep angle) as a deliberate watch-hours week-closer on a rested hero. Sarangi-healing dropped (channel saturated).",
     "brief_suno_deprecated": "Brief suno_prompt fields carry the one-liner draft only; actual used prompt logged post-ship"
   }
 }

@@ -1,0 +1,64 @@
+{
+  "id": "v_2026-07-15_brain_power_sarod",
+  "status": "DRAFT",
+  "created_at": "2026-07-11",
+  "planned_date": "2026-07-15",
+  "planned_slot": "19:00 IST \u2014 Wed PM",
+  "title": "Brain Power Music | Slow Sarod | Indian Classical",
+  "title_variants": {
+    "A": "Brain Power Music | Slow Sarod | Indian Classical",
+    "B": "Music for a Clear Head | Slow Sarod | 1.5 Hours"
+  },
+  "title_note": "",
+  "lane": "cognitive",
+  "instrument": "Sarod",
+  "raga": "Ahir Bhairav",
+  "validated_keywords": [
+    "brain power music \u2014 63",
+    "(B lead) music for a clear head \u2014 derived from clear-head family, non-lead scored context"
+  ],
+  "thumbnail_text_main": "SLOW THINKING?",
+  "thumbnail_text_variants": [
+    {
+      "label": "main",
+      "text": "SLOW THINKING?",
+      "strategy": "felt-state Q; replaces FOGGY ALL DAY? (FOG family collides with live BRAIN FOG? winner on Brain Detox)"
+    },
+    {
+      "label": "backup",
+      "text": "DULL MIND?",
+      "strategy": "compact alternative, DULL virgin on channel"
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, cream parchment. Woman playing sarod (fretless, deep-bodied \u2014 instrument visible) on a veranda in soft morning light, contemplative. Large dark-teal serif: SLOW THINKING?.",
+  "playlists": [
+    "Meditation",
+    "Peaceful Music"
+  ],
+  "description": [
+    "Brain Power Music | Slow Sarod | 1.5 Hours of Clear Thinking\n\nWhen your head feels like it's wading through fog \u2014 slow to start, hard to hold a thought \u2014 the answer usually isn't more stimulation. It's less.\n\nThis slow Indian classical music is designed to clear mental fog and support calm, focused thinking without demanding your attention.\n\nEnjoy 1.5 hours of deep, resonant sarod \u2014 long liquid sliding notes over a warm tanpura drone, slow and evenly paced from start to finish.\n\nPerfect for deep work, reading, studying, clearing morning brain fog, writing, problem solving, a quiet reset between meetings, or any task that needs a clear head.\n\n\ud83c\udfb5 ABOUT THIS MUSIC\nInstrument: Sarod \u2014 a deep, fretless string instrument with long, liquid, sliding notes\nRaga: Ahir Bhairav \u2014 a serene morning raga with a fresh, clear-headed character\nStyle: Slow Indian classical solo\nMood: Grounded, lucid, quietly focused\nAtmosphere: Deep and spacious \u2014 room to think\nDuration: 1.5 hours, uninterrupted\n\n\ud83c\udfa7 HOW TO USE\nPut it on before the work starts, volume low. The sarod's slow phrases give your thinking a steady floor \u2014 no hooks, no builds, nothing to pull you away.\n\n\u23f1 CHAPTERS\n0:00  First light of clarity\n0:10  The fog begins to lift\n0:20  Deep resonant grounding\n0:30  Slow liquid phrases\n0:40  Thinking in straight lines\n0:50  Steady clear attention\n1:00  Effortless mental flow\n1:10  Calm sharp stillness\n1:20  Clear to the end\n\n\u23f1 BEST FOR\nDeep work and long reading sessions\nClearing brain fog in the morning\nWriting and studying\nSlow, deliberate thinking\nA reset between meetings\nQuiet analytical work\nBackground for concentration\nMental fatigue recovery\nPlanning and journaling\nWorking without noise or lyrics\n\nIf this music helped you think clearly again, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#BrainPower #Sarod #IndianClassicalMusic #ClearMind"
+  ],
+  "tags": [
+    "brain power music",
+    "slow sarod",
+    "sarod instrumental",
+    "mental clarity music",
+    "brain fog",
+    "indian classical music",
+    "deep focus music",
+    "raga ahir bhairav",
+    "clear your mind",
+    "study music"
+  ],
+  "suno_prompt": "Indian classical sarod solo in Raga Ahir Bhairav, serene devotional morning raga, deep resonant fretless plucked sarod with long liquid sliding notes, warm tanpura drone, slow and spacious, around 55 BPM, instrumental only, no vocals",
+  "suno_prompt_note": "",
+  "experiment": "MUSIC-RESTORATION TEST: prompt = the on-file Clear Your Head winner DNA (38.2% AVP, May era). Success = AVP >= 30% at day 7. Judge on AVP, not reach.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "loop_note": "multiple 2-3min Suno clips looped seamlessly"
+  },
+  "preflight_passed": true,
+  "pending": [],
+  "version": "v1 \u2014 titles/thumb text subject to A/B refinement pass (user, 2026-07-11)",
+  "description_note": "Written to data/playbook/description_template.md (live-channel format, 2026-07-06). 3hr chapter marks are clean 20-min placeholders \u2014 adjust to actual clip boundaries after the merge if known."
+}

@@ -1,0 +1,92 @@
+{
+  "week": "wk_2026-07-13",
+  "status": "SLOTS_LOCKED",
+  "locked_on": "2026-07-11",
+  "week_level_decisions": {
+    "slot_layout": "Mon AM 06:30 \u00b7 Tue PM 19:00 \u00b7 Wed PM 19:00 \u00b7 Thu AM 06:30 \u00b7 Fri PM 19:00 (IST)",
+    "layout_thesis": "Monday-loading barbell: bank on Mon (best fresh-ship day) with AM slot + 36.5h runway; Thu AM replicates the Jun-18/Jun-29 AM+runway pattern (2 best week-1 launches of last 3 weeks, ~2x PM median). Wed PM absorbs the 11.5h squeeze (weakest day; recent squeeze penalty weak). Confidence ~65-70%, concept-confounded \u2014 this week doubles as the experiment (strong concept Mon AM, mid concept Thu AM).",
+    "concept_allocation_rule": "Strongest Sitar-free concept -> Mon AM. Sitar hero (first clean day) -> Tue PM. Week's lowest-stakes concept -> Wed PM (sacrifice slot). Morning-uplift -> Thu AM. Fri PM inherits weekend runway.",
+    "no_weekend_ships": "Sat/Sun Jul 11-12 skipped deliberately (week 5/5 complete; Sat dead, sleep lane blocked by Jul-10 Bansuri 3hr launch).",
+    "timing_experiment": "Log week-1 views per slot to test Monday-loading vs PM baseline (n grows ~5/wk).",
+    "trend_alert_2026-07-11": "Morning-cortisol Indian-classical lane is in active algo push (Dhun Detox >100x outliers). Thu AM rides it; Dhun Detox added to competitor RSS tracker.",
+    "reschedule_2026-07-13": "Mon AM slipped \u2192 shipped 19:00 PM (streak intact, proven 3hr slot). AM+36h window experiment postponed to Mon Jul 20 \u2014 candidate: rested Sitar on the barbell slot."
+  },
+  "slots": [
+    {
+      "date": "2026-07-13",
+      "dow": "Mon",
+      "slot": "PM",
+      "publish_ist": "19:00",
+      "runway_h": 24,
+      "role": "deep-calm 3hr clone \u2014 RESCHEDULED to PM; AM-window experiment \u2192 Mon Jul 20",
+      "lane": "deep_rest_stress",
+      "instrument": "Santoor",
+      "status": "BRIEF_WRITTEN",
+      "duration": "3hr",
+      "title_ab": {
+        "A": "Peace of Mind Music | Santoor Instrumental | 3 Hours",
+        "B": "Deep Calm | Indian Classical Music | 3 Hours (package test: niche-authority vs broad-appeal)"
+      },
+      "dual_window": "06:30 IST Mon = Sun 21:00 ET \u2014 India Mon-morning + T1 Sunday-evening; title/music/thumb all time-neutral",
+      "pending": [
+        "parent Suno prompt recovery (optional swap-in before render)",
+        "launch title test in Studio at publish \u2192 log as Test #47"
+      ],
+      "thumb": "TAKE IT SLOW \u00b7 resting figure, santoor beside \u00b7 golden-hour dual-read"
+    },
+    {
+      "date": "2026-07-14",
+      "dow": "Tue",
+      "slot": "PM",
+      "publish_ist": "19:00",
+      "runway_h": 24,
+      "role": "cognitive hero \u2014 Mental Reset / Overstimulated Mind",
+      "lane": "TBD",
+      "instrument": "Sitar",
+      "status": "LOCKED",
+      "title_ab": {
+        "A": "Mental Reset | Sitar for an Overstimulated Mind | 1.5 Hours",
+        "B": "Music for an Overstimulated Mind | Sitar Instrumental | 1.5 Hours"
+      },
+      "thumb": "TOO MANY TABS?"
+    },
+    {
+      "date": "2026-07-15",
+      "dow": "Wed",
+      "slot": "PM",
+      "publish_ist": "19:00",
+      "runway_h": 11.5,
+      "role": "cognitive \u2014 Brain Power (music-restoration test)",
+      "lane": "cognitive",
+      "instrument": "Sarod",
+      "status": "BRIEF_WRITTEN_V1",
+      "duration": "1.5hr"
+    },
+    {
+      "date": "2026-07-16",
+      "dow": "Thu",
+      "slot": "AM",
+      "publish_ist": "06:30",
+      "runway_h": 36.5,
+      "role": "morning-cortisol trend ride",
+      "lane": "cortisol_morning_clinical",
+      "instrument": "Bansuri",
+      "status": "BRIEF_WRITTEN_V1",
+      "duration": "1.5hr"
+    },
+    {
+      "date": "2026-07-17",
+      "dow": "Fri",
+      "slot": "PM",
+      "publish_ist": "19:00",
+      "runway_h": 60,
+      "role": "healing/deep-rest 3hr \u2014 Healing Frequency",
+      "lane": "TBD",
+      "instrument": "Sarangi",
+      "status": "BRIEF_WRITTEN_V1"
+    }
+  ],
+  "preflight_pending": [
+    "all lanes/leads/titles \u2014 pending user picks per slot"
+  ]
+}

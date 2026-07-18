@@ -1,0 +1,58 @@
+{
+  "id": "v_2026-07-20_calm_morning_sitar_3hr",
+  "status": "DRAFT",
+  "locked": true,
+  "created_at": "2026-07-18",
+  "planned_date": "2026-07-20",
+  "planned_slot": "06:00 IST — Mon AM (morning-lane content, morning publish)",
+  "title": "Calm Morning Music | Sitar Instrumental | 3 Hours",
+  "title_variants": {
+    "A": "Calm Morning Music | Sitar Instrumental | 3 Hours",
+    "B": "Relaxing Sitar Music | Indian Classical | 3 Hours"
+  },
+  "title_note": "A/B FRAMING test — A = morning-framed (calm-lifestyle lead, satisfies morning-lane rule + signals calm for 3hr AVD), B = generic all-day-relaxation (drops 'morning' to test whether morning-framing narrows reach). Both pipeline VERDICT=PASS. Lead 'morning music' banked 77; 'calm' qualifier unscored (optional VidIQ). AVOIDED practice/soft leads (focus/meditation) — pipeline hard-rejects them in morning lane (W2 crash, -17pp).",
+  "lane": "morning",
+  "lane_subregister": "calm-background (focus/mindfulness use-case) — NOT upbeat morning-energy",
+  "instrument": "Sitar",
+  "raga": "Bhairavi",
+  "validated_keywords": [
+    "morning music — 77",
+    "calm music — 74",
+    "relaxing (generic B) — evergreen",
+    "calm morning music — UNSCORED qualifier (optional VidIQ confirm)"
+  ],
+  "thumbnail_text_main": "SLOW MORNINGS",
+  "thumbnail_text_variants": [
+    {"label": "A / morning", "text": "SLOW MORNINGS", "strategy": "vibes-state (morning-lane LOCKED format, no Q-hook); FRESH — not in 99 used texts; calm-valenced to match a 3hr calm video"},
+    {"label": "B / generic", "text": "PURE CALM", "strategy": "vibes-state; FRESH; calm, not morning-bound — pairs with generic title B"}
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. Serene seated figure in calm meditation at dawn, warm golden sunrise light washing over a temple-and-river landscape, a sitar resting beside. Soft, unhurried, peaceful morning mood. Dark-teal serif overlay text.",
+  "thumbnail_ab_note": "Both variants respect the morning-lane LOCKED thumb format (outcome/vibes-state, never Q-hook) — so if YouTube auto-picks the loser post-test, CTR does not crash (per A/B-rule-aligned rule).",
+  "playlists": ["Meditation", "Peaceful Music"],
+  "description": [
+    "Calm Morning Music | Sitar Instrumental | 3 Hours of Indian Classical Music for a slow, peaceful start to your day.",
+    "",
+    "Let the morning arrive gently. Three unhurried hours of warm, meditative sitar in Raga Bhairavi — soft enough to keep in the background while you wake up slowly, journal, stretch, or ease into focused work, calm enough to let your mind settle before the day picks up speed.",
+    "",
+    "No ads interrupting the calm. Just continuous, flowing Indian classical music for a mindful morning.",
+    "",
+    "Best for: slow mornings · morning routine · gentle focus & study · meditation · a quiet, unrushed start.",
+    "",
+    "Find a comfortable place, take a slow breath, and let the morning unfold at its own pace. 🌅"
+  ],
+  "tags": ["calm morning music", "morning music", "relaxing sitar music", "sitar music", "indian classical music", "3 hours", "calm music", "peaceful music", "slow morning", "morning meditation music", "background music for focus", "raga bhairavi"],
+  "suno_prompt": "Instrumental only, no vocals, no humming — gentle flowing Indian classical sitar in Raga Bhairavi, warm plucked sitar with meend glissando slides and soft gamak ornamentation, light supportive tabla, unhurried ~70 BPM, calm devotional morning character, seamless loop.",
+  "suno_prompt_note": "Morning-lane rule: NO 'slow' — used 'gentle/flowing/unhurried' + BPM ~70 (calm-background register, low enough to hold AVD across 3hr but not draggy). Sitar rule: named raga (Bhairavi) + ONE physical descriptor (meend/gamak) + LIGHT TABLA (every high-perf Sitar had tabla). Bhairavi = calm devotional morning.",
+  "experiment": "HERO OPENER — Sitar on Monday hero slot (6d rest, §4b prioritises hero). DOUBLE MOONSHOT flagged by pipeline: (1) Sitar×morning = untested combo, (2) 3hr calm-morning = no precedent. value thesis: watch-MINUTES drive value (r=0.85 > AVD% r=0.74); a 3hr calm-focus at even ~18% AVD banks ~32 watch-min = matches the best 1.5h morning winners AND ~doubles Dopamine Reset's per-view value. Also banks watch-HOURS fast → feeds impressions. A/B tests morning vs generic framing to learn which the audience wants.",
+  "production_spec": {
+    "duration_minutes": 180,
+    "format": "3hr",
+    "loop_note": "Generate 4-6 gentle 2-3min Bhairavi sitar clips (light tabla, ~70 BPM), crossfade-merge into a seamless ~180min loop (see MERGE recipe). Keep dynamics flat/even — no builds; it must hold as background for hours.",
+    "publish": "2026-07-20 ~06:00 IST (morning content, morning publish)"
+  },
+  "preflight_passed": true,
+  "preflight_detail": "cooldown_check 2026-07-20: Sitar ✅ VIABLE (6d ≥ 5-day rule, hero slot). title_preflight --validate: A + B both VERDICT=PASS (3-slot, char-band OK, no anti-patterns). Thumb texts dedup'd vs 99-row thumbnail history (both FRESH). Thumb format = outcome/vibes-state (morning LOCKED).",
+  "pending": ["OPTIONAL: VidIQ confirm exact 'Calm Morning Music' lead form (music-intent) — not required to proceed"],
+  "version": "v1 — title + thumbnail A/B LOCKED by user 2026-07-18",
+  "description_note": "Follows description_template.md style (SEO-first opener with title, emotional hook, no-ads promise, structured 'Best for' section). v1 — refine at production."
+}

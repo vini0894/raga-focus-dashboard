@@ -1,0 +1,94 @@
+{
+  "id": "v_2026-07-08_relax_your_mind_santoor",
+  "status": "DRAFT",
+  "created_at": "2026-07-06",
+  "planned_date": "2026-07-08",
+  "planned_slot": "Wednesday PM 19:00 IST \u2014 relaxation-evening lane \u00d7 wind-down intent.",
+  "title": "Relax Your Mind | Santoor & Tanpura | 1.5 Hours",
+  "title_variants": {
+    "A": "Relax Your Mind | Santoor & Tanpura | 1.5 Hours",
+    "B": "Santoor for the After-Work Blur | Calm Indian Classical Music to Come Back Down"
+  },
+  "title_note": "TEST = A/B FORMAT EXPERIMENT (user-locked 2026-07-06). A (control) 'Relax Your Mind' (77, proven short state-lead). B (SWING) 'Santoor for the After-Work Blur | ... Come Back Down' \u2014 full LONG evocative-moment format (~78ch). \u26a0 INTENTIONAL OVERRIDE: B breaks char_over_65 + two_slot + char_band HARD rules by design. Rationale: those rules come from A/B tests of GENERIC long-vs-short; the evocative moment-lead format is UNTESTED on this channel (user call: 'we never tried these so we won't know'). Native A/B contains downside (A carries the video). Perfect lane fit \u2014 'after-work / come back down' IS relaxation-evening, so no lane confound. CAVEAT: B varies length+lead+tail together \u2192 a B win means 'this direction has signal', decompose in follow-up. Both 'After-Work Blur' + 'Come Back Down' fresh/never-used.",
+  "components": {
+    "instrument": "Santoor",
+    "instrument_role": "FILLER \u2014 expendable slot, correct place to run a format experiment. 30.7% AVD avg (retention-strong).",
+    "lane": "relaxation_evening",
+    "runtime_min": 90,
+    "raga": "Khamaj \u2014 folk-ish, warm, earthy evening emotion",
+    "binaural": "Alpha 10Hz at -20dB \u2014 POST-PRODUCTION ONLY"
+  },
+  "validated_keywords": [
+    "Relax Your Mind (77, 2026-06-28)",
+    "After-Work Blur (B experiment \u2014 full-title VidIQ 86, deprecated signal; testing empirically)",
+    "Come Back Down (B experiment \u2014 fresh)"
+  ],
+  "thumbnail_text_main": "FEEL CALM",
+  "thumbnail_text_variants": [
+    {
+      "label": "LOCKED",
+      "text": "FEEL CALM",
+      "strategy": "Outcome-state \u2014 DECISIVE lane winner (preflight), never used, distinct from Tue's TOO MANY THOUGHTS?. Held constant across BOTH title variants (title-only A/B \u2014 do not stack thumb test on the title experiment)."
+    },
+    {
+      "label": "BACKUP",
+      "text": "EVENING CALM",
+      "strategy": "Lane-specific fresh alt; coheres with B's 'after-work' framing if we want thumb-title alignment."
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature style, ornate border, aged parchment \u2014 evening dusk palette. A figure seated peacefully at twilight, santoor resting nearby, soft lamp glow. Minimal, mobile-first. Dark-teal serif overlay text: FEEL CALM",
+  "playlists": [
+    "Peaceful Music"
+  ],
+  "description": "Relax Your Mind | Santoor & Tanpura | 1.5 Hours of Evening Calm\n\nAt the end of a full day, the mind is still busy even when the body wants to rest.\n\nThis peaceful Indian ambient meditation music is designed to loosen mental tension, soften the noise of the day, and ease you into a calm, unhurried evening.\n\nEnjoy 1 hour 30 minutes of warm santoor melodies blended with gentle tanpura drone, soft ambient textures, and shimmering resonant phrases that gradually settle the mind.\n\nPerfect for evening relaxation, unwinding after work, stress relief, reading, dinner ambience, meditation, mindfulness, journaling, and peaceful nights at home.\n\n\ud83c\udfb5 ABOUT THIS MUSIC\nInstrument: Santoor (hammered strings) & Tanpura Drone\nRaga: Raga Khamaj \u2014 warm, earthy evening character\nStyle: Indian ambient meditation / calm evening instrumental\nMood: Warm, gentle, settling, spacious\nAtmosphere: Evening calm, relaxation, quiet mind\nDuration: 1 hour 30 minutes\n\n\ud83c\udfa7 HOW TO USE\nPlay this in the evening \u2014 while winding down after work, over dinner, reading, or before your night routine. Keep the volume soft and let the shimmering santoor slow the mind down. For the most immersive experience, use headphones or listen in a quiet room.\n\n\u23f1 Chapters\n0:00 Gentle evening opening\n10:00 Warm settling resonance\n20:00 Soft shimmering calm\n30:00 The day begins to loosen\n40:00 Deep tanpura grounding\n50:00 Quiet unhurried flow\n1:00:00 Spacious inner ease\n1:10:00 Warm evening stillness\n1:20:00 Calm without effort\n1:26:00 Soft closing resonance\n\n\u23f1 BEST FOR\nEvening relaxation\nUnwinding after work\nStress relief & calm\nReading & quiet hobbies\nDinner & home ambience\nMeditation & mindfulness\nJournaling & reflection\nSlowing a busy mind\nPeaceful evenings\nIndian instrumental meditation\n\nIf this music helped you relax, loosen the day, or find a calmer evening, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#RelaxYourMind #Santoor #IndianAmbientMusic #RelaxingMusic #EveningCalm",
+  "description_note": "Format per data/playbook/description_template.md. If variant B wins the A/B, update the title-repeat line to match at that point.",
+  "tags": [
+    "relax your mind",
+    "evening relaxation music",
+    "unwind after work",
+    "music to come back down",
+    "santoor",
+    "santoor instrumental",
+    "indian classical santoor",
+    "raga khamaj",
+    "stress relief music",
+    "calming music",
+    "meditation music",
+    "relaxing instrumental music",
+    "1.5 hour relaxing music",
+    "wind down music",
+    "raga focus",
+    "indian instrumental music"
+  ],
+  "suno_prompt": "Instrumental only, no vocals, no humming \u2014 calm Indian classical santoor in Raga Khamaj, warm hammered strings with soft shimmering resonance and gentle unhurried phrases, low tanpura drone, 60\u201365 BPM, seamless loop.",
+  "suno_prompt_note": "SHORT one-liner. NO 'slow' (relaxation-evening not exempt) \u2014 santoor's hammered attack gives natural motion; BPM carries tempo. Verify clip 1 calm before extending. Log actual prompt + video_id after publish.",
+  "experiment": {
+    "type": "Title A/B \u2014 FORMAT: proven short state-lead (A) vs long evocative moment-lead (B). Documented rule-override.",
+    "hypothesis": "An evocative moment-lead ('the After-Work Blur') in the long VidIQ-style format may out-click our short state-lead on the cold feed \u2014 untested; only way to know is to run it.",
+    "success_criteria": "B share > 55% at day 7 = long evocative format has real signal \u2192 decompose next",
+    "failure_criteria": "B share < 45% = confirms short-clean orthodoxy holds; A carries video",
+    "read_caveat": "B changes length + lead + tail at once; a win = direction has signal, not which piece"
+  },
+  "reference_ships": [
+    "Bright Morning Santoor (Jun 13 \u2014 4K, 27.4% AVD, Santoor calm precedent)",
+    "Stress Relief Santoor 3hr (May 24 \u2014 Santoor retention anchor)"
+  ],
+  "end_screen": {
+    "primary": "a calm/relaxation catalog winner",
+    "backup": "Deep Rest Find Stillness Surbahar"
+  },
+  "strategic_bet": "Expendable filler slot used to run the channel's FIRST long-evocative-title experiment (native A/B contains risk). Wednesday chosen over Thursday to protect the higher-value Sitar AM slot.",
+  "preflight_passed": {
+    "cooldown": "Santoor 14d (last Jun 24) \u2014 clear",
+    "phrase_locks": "\u26a0 engine stale (shipped_titles.csv gap) \u2014 MANUAL live-catalog check 2026-07-08: 'Relax Your Mind' + 'After-Work Blur' + 'Come Back Down' never used",
+    "cannibalization_check": "No relaxation-evening owner; distinct from Jun 24 Deep Relaxation Santoor (different lead)",
+    "vidiq": "A=77 (control). B = documented override, empirical test",
+    "thumb_format": "outcome_state FEEL CALM \u2014 decisive lane winner, fresh",
+    "lane_time_fit": "relaxation-evening \u00d7 PM"
+  },
+  "pending": [
+    "Log actual Suno prompt + video_id after publish",
+    "Day-7: read A/B B-share for the long-format verdict \u2192 bank to ab_raw_data.csv"
+  ],
+  "day_7_read": "2026-07-15 \u2014 A/B B-share (long-format signal), CTR vs lane 3.92, AVD. Update wk plan + bank the format verdict."
+}
