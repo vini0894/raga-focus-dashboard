@@ -5,18 +5,18 @@
   "created_at": "2026-07-20",
   "planned_date": "2026-07-22",
   "planned_slot": "19:00 IST — Wed PM (evening wind-down content, evening publish)",
-  "title": "Release Anxiety Tonight | Slow Sarod | 1.5 Hours",
+  "title": "Release Anxiety & Negative Thoughts | Slow Sarod | 1.5 Hours",
   "title_variants": {
-    "A": "Release Anxiety Tonight | Slow Sarod | 1.5 Hours",
-    "B": "Release Anxiety & Negative Thoughts | Slow Sarod | 1.5 Hours"
+    "A": "Release Anxiety & Negative Thoughts | Slow Sarod | 1.5 Hours",
+    "B": "Music for Anxiety Relief | Slow Sarod | 1.5 Hours"
   },
-  "title_note": "2-title A/B. A = OUR format (minimalist single hook); lead 'Release Anxiety' = VidIQ 58 (banked chat 2026-07-20, FRESH/not-owned), 'Tonight' added for evening framing + to clear the char band. B = REFERENCE-INSPIRED dual hook (from the 'Release Anxiety & Negative Thoughts | Healing Bansuri Flute' video the user shared), stripped of the weak 'Deep Relaxation/Healing' wrapper. NOTE: 'Negative Thoughts' classifies to the unmapped 'other' lane, so B is also a register experiment. INSTRUMENT = Sarod (v2 correction — see version note): the reference was Bansuri, but Bansuri shipped 2026-07-17 (Cortisol Detox | Bansuri & Tanpura | 1.5hr) → a Bansuri+tanpura+1.5hr ship 5 days later was a near-clone, so reverted to Sarod (data-backed anxiety instrument, 7-day cooldown, no clone). Both titles PASS preflight (A 48ch / B 60ch).",
+  "title_note": "TWO-HYPOTHESIS A/B — two DIFFERENT lead keywords (not the same lead in two structures; that only tests a suffix, teaches nothing transferable). A = EMOTIONAL dual-hook 'Release Anxiety & Negative Thoughts' (from the user-supplied reference video; 'Release Anxiety' = 58 banked FRESH, 'Negative Thoughts' fresh but unmapped 'other' lane). B = SEO-DRIVEN 'Music for Anxiety Relief' (VidIQ 69, high-intent 'Music for X' form; ⚠️ soft cluster-overlap w/ a 94-day-old 'Anxiety Relief Music' ship — past-lock, reusable, user-accepted). THE TEST: does a fresh emotional hook beat proven high-intent SEO phrasing in the anxiety lane? — transferable to every future anxiety ship. Same thumb on both isolates the keyword variable. Both PASS preflight (A 60ch / B 49ch), both lead-prescreened. INSTRUMENT = Sarod (v2 fix: reference was Bansuri, but Bansuri shipped 2026-07-17 Cortisol Detox | Bansuri & Tanpura | 1.5hr → clone at the 5-day min; Sarod is 7-day clean + anxiety-proven).",
   "lane": "anxiety",
   "instrument": "Sarod",
   "raga": "Bageshri",
   "validated_keywords": [
-    "Release Anxiety — 58 (banked chat 2026-07-20; FRESH, not owned; below 60 floor but Browse-driven + lane exhausted)",
-    "Release Anxiety & Negative Thoughts — FRESH dual-hook (reference-inspired); 'Negative Thoughts' = unmapped 'other' lane = register experiment",
+    "A / emotional: 'Release Anxiety & Negative Thoughts' — FRESH dual-hook; 'Release Anxiety' 58 banked + 'Negative Thoughts' fresh (unmapped 'other' lane)",
+    "B / SEO: 'Music for Anxiety Relief' — 69 banked, high-intent 'Music for X' form; soft cluster-overlap w/ 94d-old 'Anxiety Relief Music' (past-lock, reusable)",
     "Thumb Q-hooks (MIND WON'T STOP? / CAN'T SWITCH OFF?) — browse/suggested states, thumbnail only, never title leads"
   ],
   "thumbnail_text_main": "MIND WON'T STOP?",
@@ -28,7 +28,7 @@
   "thumbnail_ab_note": "Both variants are specific-state Q-hooks — anxiety lane's WINNING thumb format (Q-hook beats outcome here). Same-lane-format so it's safe whichever YouTube auto-picks. This is a TITLE A/B, so keep the thumb constant to isolate the title variable; the two Q-hooks are near-equivalent framings of the same anxious-mind state.",
   "playlists": ["Healing & Anxiety Relief", "Meditation", "Peaceful Music"],
   "description": [
-    "Release Anxiety Tonight | Slow Sarod | 1.5 Hours of Indian Classical Music to release anxiety and quiet the thoughts that won't switch off.",
+    "Release Anxiety & Negative Thoughts | Slow Sarod | 1.5 Hours of Indian Classical Music to release anxiety and quiet the thoughts that won't switch off.",
     "",
     "When the day leaves your mind racing, let the sarod slow it down. Ninety minutes of deep, resonant sarod in Raga Bageshri — tender, grounding, and unhurried — made to play in the background while you let the tension drain, breathe, and finally set the day's worries down for the night.",
     "",
@@ -41,7 +41,7 @@
   "tags": ["release anxiety", "release anxiety music", "anxiety relief music", "negative thoughts", "sarod music", "slow sarod", "indian classical music", "1.5 hours", "calm music", "music for anxiety", "overactive mind", "raga bageshri", "evening wind down"],
   "suno_prompt": "Instrumental only, no vocals, no humming — deep gentle Indian classical sarod in Raga Bageshri, resonant plucked sarod with slow meend glides and grounding low register, soft light tabla, unhurried ~60 BPM, tender settling late-evening character that releases anxiety and quiets a busy mind, seamless loop.",
   "suno_prompt_note": "Anxiety/evening = calming, settling — genuinely calm (calm-lane rule, no upbeat/energetic). Bageshri = tender late-night raga, soothes anxious feelings (raga_fit_cache: Bageshri×anxiety = STRONG). Sarod = resonant plucked + meend, grounding low register; soft light tabla for gentle structure (OK on Sarod). NO tanpura — deliberately dropped (Jul 16 Sarangi&Tanpura + Jul 17 Bansuri&Tanpura already saturated that pairing). ~60 BPM. Darbari Kanada is a Sarod-idiomatic alternative raga if Bageshri clips generate weakly.",
-  "experiment": "ANXIETY lane fresh-lead recovery. The anxiety/overthinking/stress cluster is near-exhausted (lead_prescreen 2026-07-20: only ~5/16 candidate leads FRESH channel-wide) — this opens a FRESH angle from a user-supplied reference ('Release Anxiety & Negative Thoughts'). 2-title A/B: A = our minimalist format in the mapped anxiety lane ($5.64 RPM), B = reference-style dual-hook probing the unmapped 'negative thoughts' register. Instrument corrected Bansuri→Sarod (v2) after the Bansuri version cloned Jul-17 Cortisol Detox (Bansuri & Tanpura, 1.5hr) at the 5-day cooldown minimum — Sarod anxiety is retention-proven (Anxiety Relief Slow Sarod, AVD 38) and 7 days clean.",
+  "experiment": "ANXIETY lane fresh-lead recovery + a genuine 2-hypothesis title A/B. The anxiety cluster is near-exhausted (lead_prescreen 2026-07-20: ~5/16 leads FRESH channel-wide). A/B tests two DIFFERENT keywords head-to-head: A = fresh EMOTIONAL dual-hook 'Release Anxiety & Negative Thoughts' (user reference), B = high-intent SEO 'Music for Anxiety Relief' (69). Learns which framing wins the anxiety lane ($5.64 RPM) — transferable. Instrument corrected Bansuri→Sarod (v2) after the Bansuri version cloned Jul-17 Cortisol Detox (Bansuri & Tanpura, 1.5hr) at the 5-day cooldown minimum; Sarod anxiety is retention-proven (Anxiety Relief Slow Sarod, AVD 38) and 7 days clean.",
   "production_spec": {
     "duration_minutes": 90,
     "format": "1.5hr",
@@ -54,6 +54,6 @@
     "OPTIONAL: score 'Release Anxiety & Negative Thoughts' or 'Let Go of Anxiety' if we want a clean ≥60 lead (current lead 'Release Anxiety' = 58, accepted as fresh Browse-driven lead)",
     "Dedup-check thumb variant B 'CAN'T SWITCH OFF?' vs thumb history before production"
   ],
-  "version": "v2 — instrument corrected Bansuri→Sarod 2026-07-20 (Bansuri cloned Jul-17 Cortisol Detox packaging at 5-day min). Supersedes v_2026-07-22_release_anxiety_bansuri.",
+  "version": "v3 — A/B redesigned to TWO distinct keyword hypotheses (A emotional dual-hook vs B SEO 'Music for Anxiety Relief') per user 2026-07-20; instrument Sarod (v2 fix, Bansuri cloned Jul-17). Supersedes v_2026-07-22_release_anxiety_bansuri.",
   "description_note": "Follows description_template.md style. v2 — refine at production. Supersedes v_2026-07-22_release_anxiety_bansuri (removed) and v_2026-07-22_stop_overthinking_sarod (PARKED)."
 }
