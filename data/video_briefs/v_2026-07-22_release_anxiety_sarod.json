@@ -1,0 +1,59 @@
+{
+  "id": "v_2026-07-22_release_anxiety_sarod",
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-07-20",
+  "planned_date": "2026-07-22",
+  "planned_slot": "19:00 IST — Wed PM (evening wind-down content, evening publish)",
+  "title": "Release Anxiety Tonight | Slow Sarod | 1.5 Hours",
+  "title_variants": {
+    "A": "Release Anxiety Tonight | Slow Sarod | 1.5 Hours",
+    "B": "Release Anxiety & Negative Thoughts | Slow Sarod | 1.5 Hours"
+  },
+  "title_note": "2-title A/B. A = OUR format (minimalist single hook); lead 'Release Anxiety' = VidIQ 58 (banked chat 2026-07-20, FRESH/not-owned), 'Tonight' added for evening framing + to clear the char band. B = REFERENCE-INSPIRED dual hook (from the 'Release Anxiety & Negative Thoughts | Healing Bansuri Flute' video the user shared), stripped of the weak 'Deep Relaxation/Healing' wrapper. NOTE: 'Negative Thoughts' classifies to the unmapped 'other' lane, so B is also a register experiment. INSTRUMENT = Sarod (v2 correction — see version note): the reference was Bansuri, but Bansuri shipped 2026-07-17 (Cortisol Detox | Bansuri & Tanpura | 1.5hr) → a Bansuri+tanpura+1.5hr ship 5 days later was a near-clone, so reverted to Sarod (data-backed anxiety instrument, 7-day cooldown, no clone). Both titles PASS preflight (A 48ch / B 60ch).",
+  "lane": "anxiety",
+  "instrument": "Sarod",
+  "raga": "Bageshri",
+  "validated_keywords": [
+    "Release Anxiety — 58 (banked chat 2026-07-20; FRESH, not owned; below 60 floor but Browse-driven + lane exhausted)",
+    "Release Anxiety & Negative Thoughts — FRESH dual-hook (reference-inspired); 'Negative Thoughts' = unmapped 'other' lane = register experiment",
+    "Thumb Q-hooks (MIND WON'T STOP? / CAN'T SWITCH OFF?) — browse/suggested states, thumbnail only, never title leads"
+  ],
+  "thumbnail_text_main": "MIND WON'T STOP?",
+  "thumbnail_text_variants": [
+    {"label": "A", "text": "MIND WON'T STOP?", "strategy": "specific-state Q-hook (anxiety lane WINS Q-hook); verified FRESH vs thumb history 2026-07-20; coherent with Release Anxiety"},
+    {"label": "B", "text": "CAN'T SWITCH OFF?", "strategy": "evening-anxiety Q-hook, coherent with 'Tonight' framing; DEDUP-CHECK vs thumb history at production before use"}
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A figure at dusk with a visibly restless, swirling mind slowly settling into stillness, low warm lamplight, a sarod resting beside them. The moment the anxiety finally loosens its grip. Dark-teal serif overlay text.",
+  "thumbnail_ab_note": "Both variants are specific-state Q-hooks — anxiety lane's WINNING thumb format (Q-hook beats outcome here). Same-lane-format so it's safe whichever YouTube auto-picks. This is a TITLE A/B, so keep the thumb constant to isolate the title variable; the two Q-hooks are near-equivalent framings of the same anxious-mind state.",
+  "playlists": ["Healing & Anxiety Relief", "Meditation", "Peaceful Music"],
+  "description": [
+    "Release Anxiety Tonight | Slow Sarod | 1.5 Hours of Indian Classical Music to release anxiety and quiet the thoughts that won't switch off.",
+    "",
+    "When the day leaves your mind racing, let the sarod slow it down. Ninety minutes of deep, resonant sarod in Raga Bageshri — tender, grounding, and unhurried — made to play in the background while you let the tension drain, breathe, and finally set the day's worries down for the night.",
+    "",
+    "No ads breaking the calm. Just continuous Indian classical music to ease anxiety and an overactive mind.",
+    "",
+    "Best for: releasing anxiety · a mind that won't stop · negative thoughts · evening wind-down · letting the day go.",
+    "",
+    "Put it on, let your shoulders drop, and let the anxiety loosen its grip. 🌙"
+  ],
+  "tags": ["release anxiety", "release anxiety music", "anxiety relief music", "negative thoughts", "sarod music", "slow sarod", "indian classical music", "1.5 hours", "calm music", "music for anxiety", "overactive mind", "raga bageshri", "evening wind down"],
+  "suno_prompt": "Instrumental only, no vocals, no humming — deep gentle Indian classical sarod in Raga Bageshri, resonant plucked sarod with slow meend glides and grounding low register, soft light tabla, unhurried ~60 BPM, tender settling late-evening character that releases anxiety and quiets a busy mind, seamless loop.",
+  "suno_prompt_note": "Anxiety/evening = calming, settling — genuinely calm (calm-lane rule, no upbeat/energetic). Bageshri = tender late-night raga, soothes anxious feelings (raga_fit_cache: Bageshri×anxiety = STRONG). Sarod = resonant plucked + meend, grounding low register; soft light tabla for gentle structure (OK on Sarod). NO tanpura — deliberately dropped (Jul 16 Sarangi&Tanpura + Jul 17 Bansuri&Tanpura already saturated that pairing). ~60 BPM. Darbari Kanada is a Sarod-idiomatic alternative raga if Bageshri clips generate weakly.",
+  "experiment": "ANXIETY lane fresh-lead recovery. The anxiety/overthinking/stress cluster is near-exhausted (lead_prescreen 2026-07-20: only ~5/16 candidate leads FRESH channel-wide) — this opens a FRESH angle from a user-supplied reference ('Release Anxiety & Negative Thoughts'). 2-title A/B: A = our minimalist format in the mapped anxiety lane ($5.64 RPM), B = reference-style dual-hook probing the unmapped 'negative thoughts' register. Instrument corrected Bansuri→Sarod (v2) after the Bansuri version cloned Jul-17 Cortisol Detox (Bansuri & Tanpura, 1.5hr) at the 5-day cooldown minimum — Sarod anxiety is retention-proven (Anxiety Relief Slow Sarod, AVD 38) and 7 days clean.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "loop_note": "Generate 4-6 deep gentle Bageshri sarod clips (~60 BPM, soft light tabla, NO tanpura), crossfade-merge into a seamless ~90min loop. Grounding and even — settling, not sleepy.",
+    "publish": "2026-07-22 ~19:00 IST (evening content, evening publish for wind-down intent)"
+  },
+  "preflight_passed": true,
+  "preflight_detail": "lead_prescreen 2026-07-20: 'Release Anxiety' / 'Release Anxiety Tonight' / 'Release Anxiety & Negative Thoughts' all FRESH. title_preflight --validate: A 'Release Anxiety Tonight | Slow Sarod | 1.5 Hours' = PASS (48ch, 3 slots); B = PASS (60ch, acceptable). cooldown_check: Sarod VIABLE Wed (last live Jul 15 Brain Power, 7-day gap, STRONG tier). PACKAGING-CLONE check: last Sarod-anxiety = Jun 7 (no recent clone; recent Sarods are cognitive). raga_fit_cache: Bageshri×anxiety = STRONG. Thumb 'MIND WON'T STOP?' FRESH; 'CAN'T SWITCH OFF?' pending dedup at production.",
+  "pending": [
+    "OPTIONAL: score 'Release Anxiety & Negative Thoughts' or 'Let Go of Anxiety' if we want a clean ≥60 lead (current lead 'Release Anxiety' = 58, accepted as fresh Browse-driven lead)",
+    "Dedup-check thumb variant B 'CAN'T SWITCH OFF?' vs thumb history before production"
+  ],
+  "version": "v2 — instrument corrected Bansuri→Sarod 2026-07-20 (Bansuri cloned Jul-17 Cortisol Detox packaging at 5-day min). Supersedes v_2026-07-22_release_anxiety_bansuri.",
+  "description_note": "Follows description_template.md style. v2 — refine at production. Supersedes v_2026-07-22_release_anxiety_bansuri (removed) and v_2026-07-22_stop_overthinking_sarod (PARKED)."
+}
