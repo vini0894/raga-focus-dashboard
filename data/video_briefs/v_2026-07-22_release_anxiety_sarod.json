@@ -17,15 +17,14 @@
   "validated_keywords": [
     "A / emotional: 'Release Anxiety & Negative Thoughts' — FRESH dual-hook; 'Release Anxiety' 58 banked + 'Negative Thoughts' fresh (unmapped 'other' lane)",
     "B / SEO: 'Music for Anxiety Relief' — 69 banked, high-intent 'Music for X' form; soft cluster-overlap w/ 94d-old 'Anxiety Relief Music' (past-lock, reusable)",
-    "Thumb Q-hooks (MIND WON'T STOP? / CAN'T SWITCH OFF?) — browse/suggested states, thumbnail only, never title leads"
+    "Thumb: 'THOUGHTS TOO LOUD?' (FIXED across both titles, FRESH vs 45-text history) — anxiety Q-hook, thumbnail only, never a title lead"
   ],
-  "thumbnail_text_main": "MIND WON'T STOP?",
+  "thumbnail_text_main": "THOUGHTS TOO LOUD?",
   "thumbnail_text_variants": [
-    {"label": "A", "text": "MIND WON'T STOP?", "strategy": "specific-state Q-hook (anxiety lane WINS Q-hook); verified FRESH vs thumb history 2026-07-20; coherent with Release Anxiety"},
-    {"label": "B", "text": "CAN'T SWITCH OFF?", "strategy": "evening-anxiety Q-hook, coherent with 'Tonight' framing; DEDUP-CHECK vs thumb history at production before use"}
+    {"label": "fixed", "text": "THOUGHTS TOO LOUD?", "strategy": "FIXED across BOTH title variants — this is a TITLE A/B, so the thumb is held constant to isolate the keyword variable. Specific-state Q-hook (anxiety lane WINS Q-hook); verified FRESH vs the 45-text shipped thumb history 2026-07-20; 18 chars, mobile-readable; pairs with the 'Negative Thoughts' lead (A) and the SEO lead (B)."}
   ],
   "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A figure at dusk with a visibly restless, swirling mind slowly settling into stillness, low warm lamplight, a sarod resting beside them. The moment the anxiety finally loosens its grip. Dark-teal serif overlay text.",
-  "thumbnail_ab_note": "Both variants are specific-state Q-hooks — anxiety lane's WINNING thumb format (Q-hook beats outcome here). Same-lane-format so it's safe whichever YouTube auto-picks. This is a TITLE A/B, so keep the thumb constant to isolate the title variable; the two Q-hooks are near-equivalent framings of the same anxious-mind state.",
+  "thumbnail_ab_note": "TITLE A/B → thumbnail is FIXED ('THOUGHTS TOO LOUD?') on BOTH title variants, so any CTR movement is attributable to the title/keyword, not the thumb (don't change two variables at once). Q-hook is the anxiety lane's winning thumb format. Dedup-checked FRESH vs the 45 shipped thumb texts 2026-07-20.",
   "playlists": ["Healing & Anxiety Relief", "Meditation", "Peaceful Music"],
   "description": [
     "Release Anxiety & Negative Thoughts | Slow Sarod | 1.5 Hours of Indian Classical Music to release anxiety and quiet the thoughts that won't switch off.",
@@ -51,8 +50,7 @@
   "preflight_passed": true,
   "preflight_detail": "lead_prescreen 2026-07-20: 'Release Anxiety' / 'Release Anxiety Tonight' / 'Release Anxiety & Negative Thoughts' all FRESH. title_preflight --validate: A 'Release Anxiety Tonight | Slow Sarod | 1.5 Hours' = PASS (48ch, 3 slots); B = PASS (60ch, acceptable). cooldown_check: Sarod VIABLE Wed (last live Jul 15 Brain Power, 7-day gap, STRONG tier). PACKAGING-CLONE check: last Sarod-anxiety = Jun 7 (no recent clone; recent Sarods are cognitive). raga_fit_cache: Bageshri×anxiety = STRONG. Thumb 'MIND WON'T STOP?' FRESH; 'CAN'T SWITCH OFF?' pending dedup at production.",
   "pending": [
-    "OPTIONAL: score 'Release Anxiety & Negative Thoughts' or 'Let Go of Anxiety' if we want a clean ≥60 lead (current lead 'Release Anxiety' = 58, accepted as fresh Browse-driven lead)",
-    "Dedup-check thumb variant B 'CAN'T SWITCH OFF?' vs thumb history before production"
+    "None blocking — fully locked: 2 title-keyword hypotheses (A emotional / B SEO) + FIXED thumb 'THOUGHTS TOO LOUD?', all gate-cleared 2026-07-20 (lead_prescreen · title_preflight · cooldown · packaging-clone · thumb-dedup)"
   ],
   "version": "v3 — A/B redesigned to TWO distinct keyword hypotheses (A emotional dual-hook vs B SEO 'Music for Anxiety Relief') per user 2026-07-20; instrument Sarod (v2 fix, Bansuri cloned Jul-17). Supersedes v_2026-07-22_release_anxiety_bansuri.",
   "description_note": "Follows description_template.md style. v2 — refine at production. Supersedes v_2026-07-22_release_anxiety_bansuri (removed) and v_2026-07-22_stop_overthinking_sarod (PARKED)."
