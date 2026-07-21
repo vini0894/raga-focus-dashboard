@@ -1,0 +1,79 @@
+{
+  "id": "v_2026-07-23_emotional_detox_sarangi",
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-07-21",
+  "planned_date": "2026-07-23",
+  "planned_slot": "19:00 IST \u2014 Thu PM (evening emotional-release, evening publish)",
+  "title": "Emotional Detox | Slow Sarangi Instrumental | 1.5 Hours",
+  "title_variants": {
+    "A": "Emotional Detox | Slow Sarangi Instrumental | 1.5 Hours",
+    "B": "Heal Your Heart | Sarangi Raga Kirwani | 1.5 Hours"
+  },
+  "title_note": "TWO-HYPOTHESIS A/B (different lead keywords per banked rule). A = CLINICAL-DETOX hook 'Emotional Detox' \u2014 VidIQ 58 banked, RESERVED phrase deployed as intended (suffix-drop rule: 'Emotional Detox Music' = 26 DEAD, bare form = 58), and competitor-validated THIS WEEK (Dhun Detox 'Emotional Detox \ud83c\udf3f Raag Bhairavi' = 17K views in 6 days). B = FRESH EMOTIONAL-OFFERING hook 'Heal Your Heart' \u2014 VidIQ 60 (banked chat 2026-07-21), with named-raga slot 2 (competitor formula element: Dhun/Raga Heal breakouts all carry named ragas). THE TEST: clinical-detox framing vs warm emotional-offering framing in the emotional-release register. Anti-decay rationale: this is the clinical-somatic register that made ALL our reach (Dopamine 7.3M / Nervous System 596K) and is winning the niche today \u2014 NOT the generic-soft register (Peace of Mind/Healing Frequency, CTR ~3) that July shipped.",
+  "lane": "healing",
+  "instrument": "Sarangi",
+  "raga": "Kirwani",
+  "validated_keywords": [
+    "A: 'Emotional Detox' \u2014 58 banked, reserved-phrase deployment; suffix-drop rule applied; Dhun validating at 17K/6d right now",
+    "B: 'Heal Your Heart' \u2014 60 (banked chat 2026-07-21), FRESH via lead_prescreen; warm-offering hypothesis + named raga Kirwani in slot 2",
+    "Thumb: 'LET IT GO' \u2014 FRESH vs shipped thumb history; outcome/offering format (healing lane rule: Q-hooks LOSE here, Test 12)"
+  ],
+  "thumbnail_text_main": "LET IT GO",
+  "thumbnail_text_variants": [
+    {
+      "label": "fixed",
+      "text": "LET IT GO",
+      "strategy": "FIXED across both title variants (title A/B \u2014 thumb constant isolates the keyword variable). Outcome/offering format per healing-lane banked rule (calm/healing thumbs: offering/outcome WIN, Q-hooks LOSE \u2014 Test 12). 9 chars, mobile-huge. Dedup-verified FRESH 2026-07-21. Coherent with both Emotional Detox (release) and Heal Your Heart (offering)."
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A seated figure at dusk releasing a dissolving weight from their chest \u2014 the weight breaking into drifting petals/birds carried away over a calm river, warm low lamplight, a sarangi resting beside them. The moment of emotional release. Dark-teal serif overlay text.",
+  "thumbnail_ab_note": "TITLE A/B \u2192 thumbnail FIXED ('LET IT GO') on both variants so CTR movement attributes to the title keyword. Healing/emotional lane = outcome/offering thumb wins (Q-hook LOSES here per Test 12 \u2014 opposite of anxiety lane). Dedup-checked FRESH vs full shipped thumb-text history 2026-07-21.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Peaceful Music",
+    "Meditation"
+  ],
+  "description": [
+    "Emotional Detox | Slow Sarangi Instrumental | 1.5 Hours of Indian Classical Music to release heavy feelings and let your heart settle.",
+    "",
+    "Some days you carry more than you can name. Let the sarangi carry it for a while. Ninety minutes of slow, deeply expressive bowed sarangi in Raga Kirwani \u2014 tender, warm, and unhurried \u2014 made to play softly while you breathe, loosen what you've been holding, and let the weight of the day dissolve.",
+    "",
+    "No ads breaking the calm. Just continuous Indian classical music for emotional release and a lighter heart.",
+    "",
+    "Best for: emotional release \u00b7 a heavy heart \u00b7 letting go \u00b7 evening wind-down \u00b7 quiet healing.",
+    "",
+    "Put it on, breathe out slowly, and let it go. \ud83c\udf19"
+  ],
+  "tags": [
+    "emotional detox",
+    "heal your heart",
+    "emotional healing music",
+    "sarangi music",
+    "slow sarangi",
+    "raga kirwani",
+    "indian classical music",
+    "1.5 hours",
+    "music for emotional release",
+    "letting go music",
+    "healing music",
+    "calm music",
+    "evening wind down"
+  ],
+  "suno_prompt": "Instrumental only, no vocals, no humming \u2014 slow deeply expressive Indian classical sarangi in Raga Kirwani, warm bowed sarangi with long aching meend glides and tender phrasing, sparse and spacious, NO tabla, very gentle ~55 BPM, soft emotional late-evening character that releases heavy feelings, seamless loop.",
+  "suno_prompt_note": "MAY-GRADE CALM (the retention fix \u2014 May cohort 33% AVD vs July 21%: it's the MUSIC). Genuinely calm, zero upbeat/energetic terms. Kirwani\u00d7emotional = STRONG (raga_fit_cache: 'sweet and romantic \u2014 great for emotional content'). Sarangi = the voice-like emotional instrument; its ONE quality-proven register is emotional (Nostalgia Sarangi: AVD 41.2%, CTR 7.1). NO tabla, NO tanpura named (Jul-16 ship was 'Sarangi & Tanpura' \u2014 deliberately solo to differentiate packaging). Slow ~55 BPM.",
+  "experiment": "ANTI-DECAY SHIP 1/2 (banked 2026-07-21 analysis): reclaim the clinical-somatic register we invented (Dopamine/Nervous System/Cortisol made ALL channel reach) and abandoned for generic-soft framings (July cohort: median CTR 3.28, AVD 21% vs May 33%). Dhun Detox (27.8K subs, smaller than us) is scaling this exact formula NOW \u2014 'Emotional Detox Bhairavi' 17K views/6d proves fresh ships CAN reach in this niche. A/B: clinical-detox vs emotional-offering. DOCUMENTED OVERRIDE: brief_gate flags packaging vs Jul-16 'Healing Frequency | Sarangi & Tanpura' (same instrument+format+lane, 7d) \u2014 accepted deliberately: that ship was the DEAD generic-soft register (CTR 2.89), this is a register replacement, solo sarangi (no tanpura), different query family entirely. Sarangi\u00d7healing median is FLOP-tier BUT the emotional framing is the proven outlier (41% AVD) \u2014 targeted replica of the outlier, not a blind lane pick.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "loop_note": "Generate 4-6 slow expressive Kirwani sarangi clips (~55 BPM, solo, NO tabla/tanpura), crossfade-merge into a seamless ~90min loop. Tender and spacious \u2014 emotional release, not sleepy, not upbeat.",
+    "publish": "2026-07-23 ~19:00 IST (evening emotional-release intent)"
+  },
+  "preflight_passed": true,
+  "preflight_detail": "lead_prescreen 2026-07-21: 'Emotional Detox' fresh-as-lead (reserved, never led a ship), 'Heal Your Heart' FRESH. Scores: 58 banked + 60 banked (chat 2026-07-21). cooldown_check: Sarangi VIABLE Thu (last live Jul 16, 7d gap, STRONG tier). raga_fit_cache: Kirwani\u00d7emotional = STRONG. Thumb 'LET IT GO' dedup-verified FRESH. brief_gate: ab_leads PASS (distinct keywords) \u00b7 packaging_clone = DOCUMENTED OVERRIDE vs Jul-16 (see experiment field) \u00b7 track_record = deliberate outlier-replica (see experiment field).",
+  "pending": [
+    "None blocking \u2014 locked as anti-decay ship 1/2 with documented overrides (see experiment field)"
+  ],
+  "version": "v1 \u2014 anti-decay clinical-register A/B (Emotional Detox vs Heal Your Heart) LOCKED by user 2026-07-21. Supersedes v_2026-07-23_positive_morning_dilruba (PARKED \u2014 morning lane already covered Mon + Dilruba morning is a documented FLOP).",
+  "description_note": "Follows description_template.md style. v1 \u2014 refine at production."
+}

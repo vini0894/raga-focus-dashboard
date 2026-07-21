@@ -78,19 +78,35 @@ def last_live_ship_per_instrument(target_date_str):
 
 
 def queued_ships_per_instrument(target_date_str):
-    """All DRAFT briefs (before AND after target). Returns dict[instrument] -> list of (date, title).
+    """All committed (not-yet-shipped) briefs (before AND after target).
+    Returns dict[instrument] -> list of (date, title).
     Briefs before target act as backward constraints (ship hasn't landed in shipped_titles yet).
-    Briefs after target act as forward constraints."""
+    Briefs after target act as forward constraints.
+    Status source of truth = brief_status.json override (a LOCKED brief is APPROVED+, not DRAFT);
+    filtering on DRAFT-only would make cooldown blind to locked ships. Instrument lives at the
+    brief top level ('instrument'), NOT under 'components' (which is null) — the old code read
+    components and silently matched nothing."""
+    committed = ("DRAFT", "PENDING_REVIEW", "APPROVED", "IN_PRODUCTION", "RENDERED")
+    status_override = {}
+    sfile = DATA_DIR / "brief_status.json"
+    if sfile.exists():
+        try:
+            status_override = json.load(open(sfile))
+        except Exception:
+            status_override = {}
     queued = {inst: [] for inst in INSTRUMENTS}
     for f in glob.glob(str(DATA_DIR / "video_briefs" / "*.json")):
         try:
             b = json.load(open(f))
-            if b.get('status') != 'DRAFT':
+            bid = b.get('id') or Path(f).stem
+            status = status_override.get(bid, b.get('status', ''))
+            if status not in committed:
                 continue
             pd = b.get('planned_date', '')
             if not pd:
                 continue
-            inst_field = (b.get('components', {}).get('instrument') or '').split()[0]
+            inst_raw = (b.get('instrument') or (b.get('components') or {}).get('instrument') or '').split()
+            inst_field = inst_raw[0] if inst_raw else ''
             if inst_field in INSTRUMENTS:
                 queued[inst_field].append((pd, b.get('title', '')[:55]))
         except Exception:

@@ -1,0 +1,81 @@
+{
+  "id": "v_2026-07-24_cant_sleep_bansuri_3hr",
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-07-21",
+  "planned_date": "2026-07-24",
+  "planned_slot": "21:00 IST \u2014 Fri night (sleep content, night publish for sleep-onset intent)",
+  "title": "Can't Sleep Tonight? | Raga Yaman Bansuri | 3 Hours",
+  "title_variants": {
+    "A": "Can't Sleep Tonight? | Raga Yaman Bansuri | 3 Hours",
+    "B": "Fall Asleep Fast | Slow Bansuri Flute | 3 Hours"
+  },
+  "title_note": "TWO-HYPOTHESIS A/B (different lead keywords per banked rule). A = Q-HOOK IMMEDIACY + NAMED RAGA \u2014 resurrects the channel's HIGHEST-CTR FORMULA EVER ('Can't Fall Asleep | Raga Yaman Bansuri', Apr 22 = CTR 9.36%, never repeated), the same formula Dhun Detox is scaling now ('Can't Fall Asleep? \ud83c\udf19 Raag Yaman Santoor' = 20K views). 'Can't Sleep Tonight' is the FRESH variant of that lead (orig is 90d past \u2014 this avoids exact-lead reuse while keeping the formula). B = OUTCOME-SEO 'Fall Asleep Fast' \u2014 VidIQ 60 (banked chat 2026-07-21), FRESH, the sleep lane's outcome-first phrasing (banked: outcome-first edges instrument-first, Test #39). THE TEST: insomnia Q-hook immediacy vs outcome-imperative SEO in the sleep lane.",
+  "lane": "sleep",
+  "instrument": "Bansuri",
+  "raga": "Yaman",
+  "validated_keywords": [
+    "A: 'Can't Sleep Tonight' \u2014 fresh variant of the 9.36%-CTR Apr-22 formula (Q-hook + named raga); state query with huge real search volume",
+    "B: 'Fall Asleep Fast' \u2014 60 (banked chat 2026-07-21), FRESH via lead_prescreen; outcome-imperative SEO hypothesis",
+    "Thumb: 'ASLEEP IN MINUTES' \u2014 FRESH vs shipped thumb history; outcome-imperative (sleep lane's WINNING thumb format \u2014 Q-hook loses in sleep, banked)"
+  ],
+  "thumbnail_text_main": "ASLEEP IN MINUTES",
+  "thumbnail_text_variants": [
+    {
+      "label": "fixed",
+      "text": "ASLEEP IN MINUTES",
+      "strategy": "FIXED across both title variants (title A/B \u2014 thumb constant isolates the keyword variable). Outcome-imperative per sleep-lane banked rule (sleep thumbs: outcome-imperative WINS, Q-hook loses \u2014 opposite of anxiety). 17 chars, mobile-readable. Dedup-verified FRESH 2026-07-21. Pairs as problem\u2192solution with title A's 'Can't Sleep Tonight?' and reinforces title B."
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A moonlit night scene \u2014 a figure finally asleep in a peaceful bedchamber, deep indigo night sky with a large serene moon, a bansuri resting on the windowsill, soft stars over a quiet river. Total stillness and relief. Dark-teal serif overlay text.",
+  "thumbnail_ab_note": "TITLE A/B \u2192 thumbnail FIXED ('ASLEEP IN MINUTES') on both variants so CTR movement attributes to the title keyword. Sleep lane = outcome-imperative thumb (banked \u2014 Q-hooks lose in sleep; the Q lives in title A instead, where the 9.36% precedent proved it). Dedup-checked FRESH vs full shipped thumb-text history 2026-07-21.",
+  "playlists": [
+    "Sleep Music",
+    "Peaceful Music",
+    "Meditation"
+  ],
+  "description": [
+    "Can't Sleep Tonight? | Raga Yaman Bansuri | 3 Hours of Indian Classical Sleep Music to help you fall asleep fast and stay asleep.",
+    "",
+    "When your body is tired but your mind won't stop, let the bansuri slow everything down. Three hours of soft, breathy bamboo flute in Raga Yaman \u2014 the classical Indian evening raga for deep peace \u2014 played low and slow so you can put it on, close your eyes, and drift off without trying.",
+    "",
+    "No ads for the full three hours once you're asleep-friendly \u2014 just continuous, gentle flute for deep rest.",
+    "",
+    "Best for: falling asleep fast \u00b7 insomnia \u00b7 a racing mind at night \u00b7 staying asleep \u00b7 deep rest.",
+    "",
+    "Put it on low, get comfortable, and let sleep come to you. \ud83c\udf19",
+    "",
+    "\u23f1 Best played 30-60 minutes before you want to be asleep."
+  ],
+  "tags": [
+    "cant sleep",
+    "fall asleep fast",
+    "sleep music",
+    "deep sleep music",
+    "bansuri sleep music",
+    "raga yaman",
+    "indian flute music",
+    "3 hours sleep music",
+    "insomnia relief",
+    "music for sleeping",
+    "bamboo flute",
+    "sleep meditation",
+    "night music"
+  ],
+  "suno_prompt": "Instrumental only, no vocals, no humming \u2014 very soft breathy Indian bamboo flute (bansuri) in Raga Yaman, long slow sustained notes with gentle meend glides over a barely-there warm drone, NO tabla, NO percussion, very slow ~50 BPM, hushed night-time sleep character that gets sleepier as it goes, seamless loop.",
+  "suno_prompt_note": "MAY-GRADE CALM, maximum sleep register (the retention fix). Bansuri = NO TABLA (banked rule). Yaman\u00d7sleep = STRONG (raga_fit_cache: 'evening peace raga \u2014 ideal for sleep onset'). Genuinely sleepy \u2014 zero upbeat/energetic/bright terms, ~50 BPM, hushed. Drone kept unnamed/minimal (Jul-17 ship was 'Bansuri & Tanpura' \u2014 keep packaging distinct). Sleep-lane AVD reads inverted (people fall asleep) \u2014 judge on watch-time not AVD%.",
+  "experiment": "ANTI-DECAY SHIP 2/2 (banked 2026-07-21 analysis): the ONE intersection of proven-reach combo and proven-CTR formula. Bansuri\u00d7sleep\u00d73hr = the channel's ONLY PROVEN available combo (track_record: n=3, med 12,060v \u2014 3hr Bansuri Relaxation 36K). Packaging = the channel's highest-CTR formula ever (Q-hook + named raga, 9.36% Apr 22, never repeated) which Dhun is scaling today. A/B: insomnia-Q immediacy vs outcome-SEO. DOCUMENTED OVERRIDE: brief_gate flags lane-clone vs Jul-10 'Music to Sleep Through the Night | Bansuri | 3 Hours' (14d) \u2014 accepted deliberately: different query family (can't-sleep/insomnia Q vs sleep-through-night outcome), Jul-10 holds only 50K impressions (owner threshold = 500K, not an owner), and this is the only reach play available with every other proven combo cooldown-blocked. Bansuri cooldown clean (last Jul 17 \u2192 free Jul 22).",
+  "production_spec": {
+    "duration_minutes": 180,
+    "format": "3hr",
+    "loop_note": "Generate 5-6 very soft Yaman bansuri clips (~50 BPM, no tabla, minimal drone), crossfade-merge into a seamless ~180min loop per MERGE recipe. Hushed and even \u2014 sleepier as it progresses, never brightening.",
+    "publish": "2026-07-24 ~21:00 IST (night publish \u2014 sleep-onset window)"
+  },
+  "preflight_passed": true,
+  "preflight_detail": "lead_prescreen 2026-07-21: 'Fall Asleep Fast' FRESH (60 banked); 'Can't Sleep Tonight' = fresh variant of Apr-22 lead (90d past-lock, REPEAT-family deliberate formula-resurrection). cooldown_check: Bansuri VIABLE Fri (last live Jul 17, 7d gap, HERO tier). raga_fit_cache: Yaman\u00d7sleep = STRONG. Thumb 'ASLEEP IN MINUTES' dedup-verified FRESH. track_record: Bansuri\u00d7sleep\u00d73hr PROVEN (n=3, med 12K \u2014 the only proven available combo this week). brief_gate: ab_leads PASS (distinct keywords) \u00b7 packaging_clone vs Jul-10 = DOCUMENTED OVERRIDE (see experiment field).",
+  "pending": [
+    "None blocking \u2014 locked as anti-decay ship 2/2 with documented override (see experiment field)"
+  ],
+  "version": "v1 \u2014 anti-decay reach play (9.36%-CTR formula \u00d7 only proven combo) LOCKED by user 2026-07-21.",
+  "description_note": "Follows description_template.md style. v1 \u2014 refine at production."
+}

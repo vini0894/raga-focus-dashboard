@@ -1,23 +1,24 @@
 {
   "purpose": "VidIQ-scored phrases held for specific upcoming ships (reserved), plus phrases tested and confirmed dead. Companion to keyword_bank.csv \u2014 this file tracks ASSIGNMENT/STATUS, the CSV tracks SCORES.",
-  "last_updated": "2026-07-06",
+  "last_updated": "2026-07-19",
+  "stale_review_note": "2026-07-19 hygiene pass: re-pointed 3 dead 'v_2026-05-22_deep_sleep_bansuri' reservations (that ship went live 2026-05, reservation void) to a generic future sleep slot; scores left AS-IS (re-scoring needs VidIQ — reserved for user). Entries flagged 'stale' below (Switch Off, Mind Detox) still need a music-intent re-score before leading a ship.",
   "reserved_for_upcoming_ships": [
     {
       "phrase": "Mind Reset Music",
       "vidiq": 67,
-      "reserved_for": "v_2026-05-22_deep_sleep_bansuri Variant A (one of 3 candidates \u2014 lock by Tue)",
-      "note": "Top candidate for Fri Bansuri Deep Sleep swing"
+      "reserved_for": "Future fresh Bansuri/sleep ship (orig v_2026-05-22 shipped 2026-05 \u2014 reservation re-pointed 2026-07-19)",
+      "note": "Top sleep-lead candidate (VidIQ 67, banked). Re-verify in music-intent form before leading."
     },
     {
       "phrase": "Sleep Anxiety Music",
       "vidiq": 57,
-      "reserved_for": "v_2026-05-22_deep_sleep_bansuri Variant B (one of 3 candidates)",
+      "reserved_for": "Future fresh sleep ship (orig v_2026-05-22 shipped 2026-05 — reservation re-pointed 2026-07-19)",
       "note": "Most direct clinical-state sleep fit"
     },
     {
       "phrase": "Wind Down Music",
       "vidiq": 58,
-      "reserved_for": "v_2026-05-22_deep_sleep_bansuri Variant C (one of 3 candidates)",
+      "reserved_for": "Future fresh sleep ship (orig v_2026-05-22 shipped 2026-05 — reservation re-pointed 2026-07-19)",
       "note": "Fresh sleep-transition framing"
     },
     {

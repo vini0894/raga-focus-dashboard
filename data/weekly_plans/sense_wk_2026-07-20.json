@@ -1,0 +1,200 @@
+{
+  "week_id": "wk_2026-07-20",
+  "generated": "2026-07-19",
+  "week_start": "2026-07-20",
+  "week_end": "2026-07-26",
+  "freshness": {
+    "snapshot": "2026-07-18",
+    "age_days": 0,
+    "stale": false
+  },
+  "trajectory": {
+    "regime": "DECAY",
+    "diagnosis": "DISTRIBUTION is the bottleneck, NOT packaging. Impressions are falling while CTR is RISING \u2014 titles/thumbs are working; reach is the constraint. Lever this week: new-lane expansion + playlist/end-screen routing + lane-priority tilt. Re-thumbs help watch-time, not reach.",
+    "delta": {
+      "span": "2026-06-22 \u2192 2026-07-18",
+      "impressions": {
+        "from": 26738638,
+        "to": 14760137,
+        "pct": -44.8
+      },
+      "subs_gained": {
+        "from": 13206,
+        "to": 6585,
+        "pct": -50.1
+      },
+      "views": {
+        "from": 1486043,
+        "to": 975469,
+        "pct": -34.4
+      },
+      "watch_hours": {
+        "from": 467324,
+        "to": 314260,
+        "pct": -32.8
+      },
+      "ctr_pp": 0.61,
+      "avd_pp": -0.05
+    },
+    "series": [
+      {
+        "date": "2026-06-22",
+        "n_videos": 96,
+        "impressions": 26738638,
+        "ctr": 3.81,
+        "avd": 20.31,
+        "subs": 13206,
+        "views": 1486043
+      },
+      {
+        "date": "2026-06-24",
+        "n_videos": 97,
+        "impressions": 25992587,
+        "ctr": 3.84,
+        "avd": 20.31,
+        "subs": 12821,
+        "views": 1455542
+      },
+      {
+        "date": "2026-06-25",
+        "n_videos": 99,
+        "impressions": 24423616,
+        "ctr": 3.91,
+        "avd": 20.31,
+        "subs": 12142,
+        "views": 1396219
+      },
+      {
+        "date": "2026-07-02",
+        "n_videos": 103,
+        "impressions": 20317951,
+        "ctr": 4.09,
+        "avd": 20.05,
+        "subs": 10016,
+        "views": 1224726
+      },
+      {
+        "date": "2026-07-05",
+        "n_videos": 106,
+        "impressions": 18784677,
+        "ctr": 4.18,
+        "avd": 19.96,
+        "subs": 9181,
+        "views": 1160276
+      },
+      {
+        "date": "2026-07-08",
+        "n_videos": 107,
+        "impressions": 17832152,
+        "ctr": 4.21,
+        "avd": 19.88,
+        "subs": 8625,
+        "views": 1114262
+      },
+      {
+        "date": "2026-07-10",
+        "n_videos": 110,
+        "impressions": 16509015,
+        "ctr": 4.29,
+        "avd": 19.97,
+        "subs": 7850,
+        "views": 1056563
+      },
+      {
+        "date": "2026-07-18",
+        "n_videos": 116,
+        "impressions": 14760137,
+        "ctr": 4.42,
+        "avd": 20.26,
+        "subs": 6585,
+        "views": 975469
+      }
+    ]
+  },
+  "locked_week": {
+    "slots_filled": 4,
+    "ships": [
+      {
+        "date": "2026-07-20",
+        "status": "APPROVED",
+        "locked": true,
+        "instrument": "Sitar",
+        "lane": "morning",
+        "runtime": "3hr",
+        "title": "Calm Morning Music | Sitar Instrumental | 3 Hours",
+        "lead": "Calm Morning Music"
+      },
+      {
+        "date": "2026-07-21",
+        "status": "APPROVED",
+        "locked": true,
+        "instrument": "Surbahar",
+        "lane": "stress_burnout",
+        "runtime": "3hr",
+        "title": "Burnout Music | Slow Surbahar Raga Bhupali | 3 Hours",
+        "lead": "Burnout Music"
+      },
+      {
+        "date": "2026-07-22",
+        "status": "DRAFT",
+        "locked": false,
+        "instrument": "Sarod",
+        "lane": "anxiety",
+        "runtime": "1.5hr",
+        "title": "Stop Overthinking Music | Slow Sarod | 1.5 Hours",
+        "lead": "Stop Overthinking Music"
+      },
+      {
+        "date": "2026-07-23",
+        "status": "DRAFT",
+        "locked": false,
+        "instrument": "Dilruba",
+        "lane": "morning",
+        "runtime": "1.5hr",
+        "title": "Positive Morning Music | Dilruba Instrumental | 1.5 Hours",
+        "lead": "Positive Morning Music"
+      }
+    ],
+    "open_weekday_slots": [
+      "2026-07-24"
+    ],
+    "lanes_covered": {
+      "morning": 2,
+      "stress_burnout": 1,
+      "anxiety": 1
+    },
+    "instruments_used": {
+      "Sitar": 1,
+      "Surbahar": 1,
+      "Sarod": 1,
+      "Dilruba": 1
+    },
+    "spillover_beyond_week": []
+  },
+  "sense_flags": {
+    "uncovered_priority_lanes": [
+      "cognitive",
+      "calm_relax",
+      "healing",
+      "sleep"
+    ],
+    "adjacency_dupes": [],
+    "title_word_saturation": [
+      {
+        "word": "morning",
+        "count": 2
+      },
+      {
+        "word": "slow",
+        "count": 2
+      }
+    ]
+  },
+  "next_steps": [
+    "This is the SENSE pass \u2014 read it, THEN run plan_prep.py for the candidate slate (FILTER pass).",
+    "Regime = DECAY: DISTRIBUTION is the bottleneck, NOT packaging. Impressions are falling while CTR is RISING \u2014 titles/thumbs are working; reach is the constraint. Lever this week: new-lane expansion + playlist/end-screen routing + lane-priority tilt. Re-thumbs help watch-time, not reach.",
+    "Open weekday slots to fill: 2026-07-24",
+    "Priority lanes NOT yet covered by locked ships: cognitive, calm_relax, healing, sleep \u2014 steer open slots here for lane-spread.",
+    "After plan_prep, run the CRITIQUE pass (lane-spread \u00b7 saturation \u00b7 hypothesis-overlap \u00b7 'strongest argument this plan is wrong') before locking."
+  ]
+}

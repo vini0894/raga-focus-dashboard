@@ -1,0 +1,54 @@
+{
+  "id": "v_2026-07-22_stop_overthinking_sarod",
+  "status": "DRAFT",
+  "locked": true,
+  "created_at": "2026-07-18",
+  "planned_date": "2026-07-22",
+  "planned_slot": "19:00 IST — Wed PM (evening wind-down content, evening publish)",
+  "title": "Stop Overthinking Music | Slow Sarod | 1.5 Hours",
+  "title_variants": {
+    "A": "Stop Overthinking Music | Slow Sarod | 1.5 Hours"
+  },
+  "title_note": "SINGLE title (anxiety leads are scarce/owned — A/B runs on the THUMBNAIL instead). Lead 'Stop Overthinking Music' = VidIQ 61 (banked, real search demand, FREE — not owned). Chosen over competitor terms Neural Stillness/Hyperactive Mind/Quiet the Noise which ALL cratered as leads (24-28 — suggested-feed terms, ~0 search volume). Also beats owned/cannibalizing options (Anxiety Relief-Sarod, Calming for Anxiety-Bansuri, Restless Mind-Veena). Pipeline VERDICT=PASS. CAVEAT: banked 61 may be standalone-inflated vs exact music-form — optional confirm.",
+  "lane": "anxiety",
+  "instrument": "Sarod",
+  "raga": "Darbari Kanada",
+  "validated_keywords": [
+    "Stop Overthinking Music — 61 (real-search SEO lead)",
+    "Neural Stillness/Hyperactive Mind/Quiet the Noise — 24-28 DEAD as leads → thumbnail Q-hooks only"
+  ],
+  "thumbnail_text_main": "STILL OVERTHINKING?",
+  "thumbnail_text_variants": [
+    {"label": "A", "text": "STILL OVERTHINKING?", "strategy": "specific-state Q-hook (anxiety lane WINS Q-hook per pipeline); FRESH vs 99 used; coherent with title"},
+    {"label": "B", "text": "MIND WON'T STOP?", "strategy": "specific-state Q-hook; FRESH; the hyperactive/overactive-mind state (competitor-validated frame) used CORRECTLY as a thumb, not a title lead"}
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A figure with a visibly busy, swirling mind gradually settling at dusk, low warm lamplight, a sarod resting beside. The moment thoughts finally slow. Dark-teal serif overlay text.",
+  "thumbnail_ab_note": "Both variants are specific-state Q-hooks — the anxiety lane's WINNING thumb format (Q-hook beats outcome/imperative here). Format-safe if YouTube auto-picks either. This is where the dead competitor terms (Neural Stillness/Hyperactive Mind, VidIQ 24-28) belong: browse/suggested states that win on the thumb, never the search title.",
+  "playlists": ["Meditation", "Peaceful Music"],
+  "description": [
+    "Stop Overthinking Music | Slow Sarod | 1.5 Hours of Indian Classical Music to quiet a mind that won't switch off.",
+    "",
+    "When your thoughts keep looping, let the sarod slow them down. Ninety minutes of deep, unhurried sarod in Raga Darbari Kanada — grounding, low, and steadying — made to play in the background while you let the mental noise settle, breathe, and stop chasing every thought at the end of the day.",
+    "",
+    "No ads breaking the calm. Just continuous Indian classical music to ease overthinking and an overactive mind.",
+    "",
+    "Best for: overthinking · a racing mind · evening wind-down · anxiety relief · letting the day go.",
+    "",
+    "Put it on, let your shoulders drop, and let the thoughts slow down. 🌙"
+  ],
+  "tags": ["stop overthinking music", "overthinking music", "anxiety relief music", "sarod music", "slow sarod", "indian classical music", "1.5 hours", "calm music", "music for a busy mind", "overactive mind", "raga darbari kanada"],
+  "suno_prompt": "Instrumental only, no vocals, no humming — deep gentle Indian classical sarod in Raga Darbari Kanada, resonant plucked sarod with slow meend glides and grounding low register, soft light tabla, unhurried ~62 BPM, settling calming evening character, seamless loop.",
+  "suno_prompt_note": "Anxiety/evening = calming, settling. 'Slow/gentle' OK here (evening wind-down, not morning). Darbari Kanada = deep serious grounding night raga — settles an overactive mind. Sarod = resonant plucked + meend; soft light tabla for gentle structure (not driving). Low BPM (~62) for calm.",
+  "experiment": "ANXIETY lane — highest RPM ($6.11) AND under-served. Competitor traction confirms overthinking/overactive-mind is the hot space (Raga Heal/Shanti) — but those neuro terms are SUGGESTED-feed plays with ~0 search volume (VidIQ 24-28), so used as THUMB Q-hooks while the TITLE takes a real-search lead ('Stop Overthinking' 61). Single title + thumbnail A/B (STILL OVERTHINKING? vs MIND WON'T STOP?). Sarod anxiety is retention-proven (Anxiety Relief Slow Sarod, AVD 38). Fresh vs owned Anxiety Relief/Overthinking.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "loop_note": "Generate 4-6 deep gentle Darbari Kanada sarod clips (~62 BPM, soft light tabla), crossfade-merge into a seamless ~90min loop. Grounding and even — settling, not sleepy.",
+    "publish": "2026-07-22 ~19:00 IST (evening content, evening publish for wind-down intent)"
+  },
+  "preflight_passed": true,
+  "preflight_detail": "cooldown_check: Sarod VIABLE (7d by Wed, STRONG tier). title_preflight --validate: VERDICT=PASS. Thumb texts dedup'd vs 99-row history (STILL OVERTHINKING? + MIND WON'T STOP? both FRESH; OVERACTIVE MIND?/MIND TOO LOUD? were USED). Thumb format = specific-state Q-hook (anxiety lane WINS). Lead 'Stop Overthinking' free (not owned).",
+  "pending": ["OPTIONAL: confirm 'Stop Overthinking Music' exact music-intent form (banked 61 may be standalone-inflated)"],
+  "version": "v1 — title + thumbnail A/B LOCKED by user 2026-07-18",
+  "description_note": "Follows description_template.md style. v1 — refine at production."
+}
