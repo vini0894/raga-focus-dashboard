@@ -19,16 +19,16 @@
     "B: 'Heal Your Heart' \u2014 60 (banked chat 2026-07-21), FRESH via lead_prescreen; warm-offering hypothesis + named raga Kirwani in slot 2",
     "Thumb: 'LET IT GO' \u2014 FRESH vs shipped thumb history; outcome/offering format (healing lane rule: Q-hooks LOSE here, Test 12)"
   ],
-  "thumbnail_text_main": "LET IT GO",
+  "thumbnail_text_main": "HEART HEALING",
   "thumbnail_text_variants": [
     {
       "label": "fixed",
-      "text": "LET IT GO",
-      "strategy": "FIXED across both title variants (title A/B \u2014 thumb constant isolates the keyword variable). Outcome/offering format per healing-lane banked rule (calm/healing thumbs: offering/outcome WIN, Q-hooks LOSE \u2014 Test 12). 9 chars, mobile-huge. Dedup-verified FRESH 2026-07-21. Coherent with both Emotional Detox (release) and Heal Your Heart (offering)."
+      "text": "HEART HEALING",
+      "strategy": "FIXED across both title variants. CORRECTED to exact banked format: healing_nostalgia lane's proven winning_format is ABSTRACT_NOUN (EMOTIONAL HEALING / SWEET MEMORIES precedent), not outcome-imperative. 'HEART HEALING' is a pure noun-phrase, bridges both leads (echoes B's 'Heart', complements A's 'Detox') without repeating either title. Q-hook confirmed the loser in this lane (Test 12). Dedup-verified FRESH vs shipped thumb history 2026-07-21."
     }
   ],
   "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A seated figure at dusk releasing a dissolving weight from their chest \u2014 the weight breaking into drifting petals/birds carried away over a calm river, warm low lamplight, a sarangi resting beside them. The moment of emotional release. Dark-teal serif overlay text.",
-  "thumbnail_ab_note": "TITLE A/B \u2192 thumbnail FIXED ('LET IT GO') on both variants so CTR movement attributes to the title keyword. Healing/emotional lane = outcome/offering thumb wins (Q-hook LOSES here per Test 12 \u2014 opposite of anxiety lane). Dedup-checked FRESH vs full shipped thumb-text history 2026-07-21.",
+  "thumbnail_ab_note": "TITLE A/B \u2192 thumbnail FIXED ('HEART HEALING') on both variants so CTR movement attributes to the title keyword. Healing/emotional lane's exact banked winning format = abstract_noun (lane_packaging_directions.json), NOT outcome-imperative and NOT Q-hook (Q-hook LOSES per Test 12). Dedup-checked FRESH vs full shipped thumb-text history 2026-07-21.",
   "playlists": [
     "Healing & Anxiety Relief",
     "Peaceful Music",
