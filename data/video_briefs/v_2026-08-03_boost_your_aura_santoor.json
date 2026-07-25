@@ -70,10 +70,16 @@
   "publish": "2026-08-03 06:30 IST"
  },
  "preflight_passed": true,
- "preflight_detail": "title_preflight PASS both (50/52 chars, 3-slot). cooldown: Santoor last live Jul 13 (21d by publish ✓); ⚠ if Wed Jul-29 placeholder ships Santoor cognitive, gap becomes 5d (legal-minimum) — prefer a non-Santoor Wed or drop Wed. raga_fit: morning=Bhairav/Bhairavi/Bilawal only (cache-verified; Bhupali/Khamaj rejected as evening ragas). Thumb dedup 0 hits. Audience-coherence 4/4.",
+ "preflight_detail": "title_preflight PASS both (50/52 chars, 3-slot). cooldown: Santoor last live Jul 13 (21d by publish ✓); ⚠ if Wed Jul-29 placeholder ships Santoor cognitive, gap becomes 5d (legal-minimum) — prefer a non-Santoor Wed or drop Wed. raga_fit: morning=Bhairav/Bhairavi/Bilawal only (cache-verified; Bhupali/Khamaj rejected as evening ragas). Thumb dedup 0 hits. Audience-coherence 4/4. brief_gate: track_record FLOP OVERRIDDEN (Joyful 12K misfiled to 1hr cell by title-string parse — see gate_override).",
  "pending": [
   "Launch title A/B in Studio at publish + log to ab_raw_data.csv",
   "Day-7 geo read"
  ],
- "version": "v1 — LOCKED by user 2026-07-25 ('lock this for next monday'). First ship of the spiritual-energy cluster."
+ "version": "v1 — LOCKED by user 2026-07-25 ('lock this for next monday'). First ship of the spiritual-energy cluster.",
+ "gate_override": {
+  "gate": "brief_gate.track_record",
+  "verdict_shown": "FLOP — Santoor×morning×1.5hr n=2 med 719v",
+  "override_reason": "Gate's format parser misfiles the lane's biggest win: 'Joyful Music | Positive Vibes Music with Santoor | 1 HOUR' is titled 1hr but is 5400s = 90min actual. True Santoor×morning-family 1.5hr record = n=3 (Joyful 12,193v · Bright Morning 1,179v · Morning Energy Santoor 217v) = MODEST with a 12K best, not FLOP. Override documented 2026-07-25; track_record should parse duration, not title strings (queued for the gates-upgrade build).",
+  "approved_by": "user lock 2026-07-25"
+ }
 }
