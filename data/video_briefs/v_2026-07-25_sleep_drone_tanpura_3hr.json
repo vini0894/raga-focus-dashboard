@@ -1,7 +1,7 @@
 {
  "id": "v_2026-07-25_sleep_drone_tanpura_3hr",
- "status": "PARKED",
- "locked": false,
+ "status": "APPROVED",
+ "locked": true,
  "created_at": "2026-07-25",
  "planned_date": "2026-07-25",
  "planned_slot": "~19:30 IST Sat — evening sleep intent; Sat launch index 123% (2nd best)",
@@ -73,9 +73,16 @@
  "preflight_passed": true,
  "preflight_detail": "title_preflight PASS both variants (46/53 chars, 3-slot, no anti-patterns — q_hook rule now enforced at HIGH). cooldown: Tanpura viable (last Jul 17, 8d). lead_prescreen + full catalog scan (A/B losers, brief variants, banked scores) run 2026-07-25. Thumb dedup 0 hits. brief_gate: pending run.",
  "pending": [
-  "Replace the dead-lane 'Deep Work' description on the upload with this brief's description BEFORE publishing",
-  "Launch title A/B in Studio at publish + log to ab_raw_data.csv",
-  "Optional: score 'fall asleep fast music' for the bank"
+  "EAR BAR before upload: warm/thick, consistent across crossfades, personally sleepable — if it fails the bar, do not upload (Fri sleep fork revives)",
+  "Upload with THIS brief's description (NOT the staged 'Deep Work' copy — staged bansuri uploads stay private/unused)",
+  "Publish ~19:30-21:00 IST · playlists Sleep Music + Peaceful Music",
+  "Launch title A/B in Studio at publish + log variants to ab_raw_data.csv"
  ],
- "version": "v1 → PARKED 2026-07-25 (user): brief_gate FAIL (Tanpura×sleep FLOP, n=3 med 17v) + bansuri render failure made every Sat path an exception. Sleep 3hr moves to Fri 2026-07-31 as Surbahar (proven cell, best launch day). Title pair + DEEP SLEEP TONIGHT thumb + drone description reusable there."
+ "version": "v2 — UNPARKED + LOCKED 2026-07-25 evening: user confirmed 3hr drone ships tonight. Gate override documented. Fri 31 resolves to CALM fork; Thu 30 upgrades to 3hr per accepted format plan.",
+ "gate_override": {
+  "gate": "brief_gate.track_record",
+  "verdict_shown": "FLOP — Tanpura×sleep n=3 med 17v CTR 2.44 AVD 11.3%",
+  "override_reason": "FLOP decomposes: the reach failure belongs to tanpura-in-TITLE packaging (owner ships: 1,800 and 91 lifetime impressions — search-dead), which this ship removes via no-instrument titles; the true-drone precedent retained 36.6% AVD. Music risk mitigated by ear-test gate before upload (user-applied). Falsification: if d7 true impressions/day <0.5× same-age cohort, the cell is confirmed dead regardless of packaging — bank it.",
+  "approved_by": "user 2026-07-25 ('yes today we are doing 3 hr')"
+ }
 }

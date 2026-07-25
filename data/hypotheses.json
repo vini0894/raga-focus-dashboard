@@ -71,7 +71,9 @@
    "predicted_metric": "A ship launched Thu/Fri should post >=1.5x the age-4-12d true impressions/day of a comparable-strength cell launched Mon/Wed in the same month. Falsified if Mon/Wed ships match or beat Thu/Fri over the next ~6 ships.",
    "relevant_lanes": [],
    "relevant_instruments": [],
-   "linked_ships": [],
+   "linked_ships": [
+    "v_2026-07-25_sleep_drone_tanpura_3hr"
+   ],
    "promoted_rule": null,
    "caveats": "OBSERVATIONAL, not randomised — which concept shipped on which day was a human choice, so selection bias is live (if stronger concepts were deliberately placed Mon-Wed, the true Fri advantage would be even larger; if experiments went to Fri, it could be smaller). n=16 Fri / n=14 Mon. Treat as a scheduling PRIOR, not a settled rule, until 6+ deliberate ships test it."
   },
