@@ -1,0 +1,79 @@
+{
+ "id": "v_2026-07-30_relaxing_calm_surbahar",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-07-25",
+ "planned_date": "2026-07-30",
+ "planned_slot": "19:00 IST Thu — evening unwind intent",
+ "title": "Relaxing Music | Surbahar Instrumental | 1.5 Hours",
+ "title_variants": {
+  "A": "Relaxing Music | Surbahar Instrumental | 1.5 Hours",
+  "B": "Slow Living | Calm Instrumental Music | 1.5 Hours"
+ },
+ "title_note": "T1-LIFESTYLE vs SEO register test — cross-lane replication of Monday's T1 experiment in a PM lane. A = generic SEO control (relaxing music 75). B = T1-lifestyle vocabulary (Slow Living 64; 'slow' saturation ⚠ accepted as deliberate — the register is the hypothesis).",
+ "lane": "calm_relax",
+ "instrument": "Surbahar",
+ "raga": "Khamaj",
+ "validated_keywords": [
+  "A: 'relaxing music' — 75 banked; plan_prep freshness-passed (no owning lead ship)",
+  "B: 'Slow Living' — 64 banked 2026-07-25 wave, FRESH; T1-lifestyle register",
+  "Blocked checked: 'Unhurried' 37 · 'Relax Your Mind' (Jul-8 live owner) · 'Music to Unwind' (Jul-6 Surbahar owner still growing +201% — owner-still-earning)"
+ ],
+ "thumbnail_text_main": "EASE INTO EVENING",
+ "thumbnail_text_variants": [
+  {
+   "label": "fixed",
+   "text": "EASE INTO EVENING",
+   "strategy": "FIXED both arms (title register is the variable). Outcome/abstract per calm lane rule (Q-hook LOSES, Test 12). 17ch/3 words. Dedup 0 hits 2026-07-25 (SETTLE IN rejected — 6 catalog hits)."
+  }
+ ],
+ "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A veranda at golden dusk, a figure reclined with tea, a large surbahar resting against the balustrade, long soft shadows, swallows in a warm sky. Unhurried end of day. Dark-teal serif overlay text.",
+ "thumbnail_ab_note": "Title A/B → thumb FIXED; both arms rule-aligned for calm lane.",
+ "playlists": [
+  "Peaceful Music",
+  "Meditation"
+ ],
+ "description": [
+  "Relaxing Music | Surbahar Instrumental | 1.5 Hours of deep, slow Indian classical surbahar to ease your evening down.",
+  "",
+  "Ninety minutes of the surbahar's deep, resonant strings in Raga Khamaj — warm, unhurried, and spacious — for the hours when the day is done and you finally get to slow down.",
+  "",
+  "🎧 HOW TO USE — low volume while you cook, read, stretch, or sit on the balcony. Music for doing less.",
+  "",
+  "⏱ BEST FOR — evening wind-down · slow living · gentle relaxation · unplugging after work · quiet company",
+  "",
+  "🎵 ABOUT — the surbahar is the bass sitar of Indian classical music, built for slowness; Raga Khamaj is the light, warm raga of easeful evenings.",
+  "",
+  "#RelaxingMusic #SlowLiving #SurbaharMusic #IndianClassicalMusic #EveningMusic"
+ ],
+ "tags": [
+  "relaxing music",
+  "slow living",
+  "surbahar instrumental",
+  "calm instrumental music",
+  "raga khamaj",
+  "indian classical music",
+  "1.5 hours",
+  "evening relaxation",
+  "unwind music",
+  "peaceful evening",
+  "gentle music",
+  "slow down"
+ ],
+ "suno_prompt": "Instrumental only, slow deep surbahar in Raga Khamaj, warm resonant meend glides over a soft tanpura drone, no percussion, ~55 BPM, spacious easeful evening character, gently unhurried, seamless loop.",
+ "suno_prompt_note": "MAY-GRADE CALM (calm lane = genuinely calm, zero upbeat terms). Khamaj = light evening raga, differentiates from Sat's Yaman and Fri's Darbari. No tabla.",
+ "experiment": "HYPOTHESIS [h_2026-07-25_t1_vocab_register — 3rd linked ship]: does T1-lifestyle vocabulary (Slow Living) hold its own against proven SEO (Relaxing) in a PM lane? Cross-lane replication of Monday's morning test. Read: d7 CTR share + per-video geo T1 watch-% + power check.",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "loop_note": "4-6 slow Khamaj surbahar clips, crossfade-merge to ~90min.",
+  "publish": "2026-07-30 19:00 IST"
+ },
+ "preflight_passed": true,
+ "preflight_detail": "title_preflight PASS both (50/49 chars, 3-slot, validated 2026-07-25). cooldown: Surbahar viable Thu (last Jul 21, 9d). Thumb dedup 0 hits. Full catalog scan on leads 2026-07-25. Pool: soft_pm between Tue/Fri cortisol ships — strict alternation.",
+ "pending": [
+  "Launch title A/B in Studio at publish + log to ab_raw_data.csv",
+  "Day-7 geo read"
+ ],
+ "version": "v1 — LOCKED 2026-07-25 (user: 'lets atleast do 4 ships between mon-friday'). 4th Mon-Fri ship; Thu↔Fri swapped so the 3hr swing takes the 199% day."
+}

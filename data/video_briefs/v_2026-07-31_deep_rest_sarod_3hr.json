@@ -1,10 +1,10 @@
 {
- "id": "v_2026-07-30_deep_rest_sarod_3hr",
+ "id": "v_2026-07-31_deep_rest_sarod_3hr",
  "status": "APPROVED",
  "locked": true,
  "created_at": "2026-07-25",
- "planned_date": "2026-07-30",
- "planned_slot": "19:00 IST Thu — evening deep-rest intent; Thu launch index 112%",
+ "planned_date": "2026-07-31",
+ "planned_slot": "19:00 IST Fri — evening deep-rest intent; Fri launch index 199% (best day) gets the week's 3hr swing",
  "title": "Deep Rest Music | Sarod Instrumental | 3 Hours",
  "title_variants": {
   "A": "Deep Rest Music | Sarod Instrumental | 3 Hours",
@@ -70,10 +70,10 @@
   "publish": "2026-07-30 19:00 IST"
  },
  "preflight_passed": true,
- "preflight_detail": "title_preflight PASS both at 3-Hours suffix (46/48 chars, 3-slot). cooldown: Sarod viable Thu (last Jul 22, 8d). Sarod×stress = THIN n=1 (passes; 3hr cell untested = experimental). Spacing vs Sat 3hr: 5 days, different pools (soft_pm sleep vs cortisol deep-rest), different use-cases (overnight vs evening). Thumb dedup 0 hits. Full catalog scan on leads 2026-07-25.",
+ "preflight_detail": "title_preflight PASS both at 3-Hours suffix (46/48 chars, 3-slot). cooldown: Sarod viable Fri (last Jul 22, 9d). Sarod×stress = THIN n=1 (passes; 3hr cell untested = experimental). Spacing vs Sat 3hr: 6 days, different pools (soft_pm sleep vs cortisol deep-rest), different use-cases (overnight vs evening). Thumb dedup 0 hits. Full catalog scan on leads 2026-07-25.",
  "pending": [
   "Launch title A/B in Studio at publish + log to ab_raw_data.csv",
   "Music-quality call at production: 3hr only if clips clear the May-grade bar"
  ],
- "version": "v1 — LOCKED by user 2026-07-25 ('thu we can do a 3hr'). Second 3hr of the week by design (Sat sleep + Thu deep-rest)."
+ "version": "v2 — moved Thu→Fri 2026-07-25 per user 4-ship Mon-Fri directive: the 3hr swing belongs on the 199% launch day; pools now alternate (Tue cortisol → Thu soft_pm → Fri cortisol). v1 was locked as Thu."
 }
