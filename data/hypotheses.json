@@ -74,6 +74,24 @@
    "linked_ships": [],
    "promoted_rule": null,
    "caveats": "OBSERVATIONAL, not randomised — which concept shipped on which day was a human choice, so selection bias is live (if stronger concepts were deliberately placed Mon-Wed, the true Fri advantage would be even larger; if experiments went to Fri, it could be smaller). n=16 Fri / n=14 Mon. Treat as a scheduling PRIOR, not a settled rule, until 6+ deliberate ships test it."
+  },
+  {
+   "id": "h_2026-07-25_t1_vocab_register",
+   "created": "2026-07-25",
+   "status": "TESTING",
+   "source": "chat_2026-07-25 — 28-video per-video geo scan (Analytics API)",
+   "statement": "Western-wellness vocabulary in the title lead pulls T1 watch-share; Indian-classical specificity (named raga/instrument leads) pulls India. Observed: wellness-vocab titles 34-41% T1 watch-time (Gratitude 39.5, Productive Day 39.0, Yoga 34.1) vs raga/instrument leads 1-16% (Can't Fall Asleep Raga Yaman 3.4). T1-share correlates only r=0.11 with RPM (AVD dominates) — so this is a REACH-mix lever, not a direct RPM lever.",
+   "predicted_metric": "A T1-vocab-led ship posts ≥30% T1 watch-share at d7 (channel baseline ~20-25%); the register arm (somatic vs clarity vs spiritual) that wins CTR while holding ≥30% T1 becomes the default T1 register.",
+   "relevant_lanes": [
+    "morning"
+   ],
+   "relevant_instruments": [],
+   "linked_ships": [
+    "v_2026-07-27_grounding_morning_sitar",
+    "v_2026-08-03_boost_your_aura_santoor"
+   ],
+   "promoted_rule": null,
+   "caveats": "Observational, lane-confounded (T1-heavy titles are mostly morning/uplift — may be the lane T1 wants, not the words). The two linked A/Bs are the controlled test."
   }
  ]
 }
