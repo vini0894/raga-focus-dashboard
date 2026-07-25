@@ -1,0 +1,78 @@
+{
+ "id": "v_2026-07-28_calm_your_nerves_veena",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-07-25",
+ "planned_date": "2026-07-28",
+ "planned_slot": "19:00 IST Tue — evening anxiety intent",
+ "title": "Calm Your Nerves | Veena Instrumental | 1.5 Hours",
+ "title_variants": {
+  "A": "Calm Your Nerves | Veena Instrumental | 1.5 Hours",
+  "B": "Vagus Nerve Reset | Veena Instrumental | 1.5 Hours"
+ },
+ "title_note": "REGISTER TEST — the direct h_2026-07-22_clinical_hook_recovery A/B. A = generic-soft somatic (Music to Calm Your Nerves, 60). B = clinical-somatic (Vagus Nerve Reset, 60). Same score, same structure, same instrument — register is the only variable. Veena clinical-hook rule honored on B; A tests whether Veena can carry a softer somatic lead at all.",
+ "lane": "anxiety",
+ "instrument": "Veena",
+ "raga": "Darbari",
+ "validated_keywords": [
+  "A: 'Music to Calm Your Nerves' — 60 (banked 2026-07-25); phrase-fresh as lead; note: 'CALM YOUR NERVES' appeared once as a losing/tie THUMB in #44 — as a TITLE lead it is untested (flagged, accepted)",
+  "B: 'Vagus Nerve Reset' — 60 banked; owner ('Burnout Recovery | Vagus Nerve Reset', May 9, 1,654v, 80d, decayed, Surbahar) = old/small/spent → passes the owner-still-earning rule that BLOCKED 'Nervous System Reset' (its owner still earns ~19K impr/day)",
+  "Blocked checked: 'nervous system reset' (live owner still earning — hard NO per Finding 14) · 'release the pressure' (tension-synonym of live Jun-17 ship) · 'unclench' 26 · 'self compassion' 29 (salvaged as Thu thumb)"
+ ],
+ "thumbnail_text_main": "ON EDGE?",
+ "thumbnail_text_variants": [
+  {
+   "label": "fixed",
+   "text": "ON EDGE?",
+   "strategy": "FIXED across both title variants (title register is the variable). Compact state Q-hook, 8 chars — anxiety lane's banked winning format (Q wins: ANXIOUS MIND?, TOO MANY THOUGHTS?). Dedup-verified 0 hits 2026-07-25. Q-hooks live in THUMBS for anxiety/cognitive only, never titles."
+  }
+ ],
+ "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A figure seated at dusk with shoulders just beginning to drop, a large veena across their lap, strings faintly glowing, cool twilight blues warming to a small lamp flame. The first moment of settling. Dark-teal serif overlay text.",
+ "thumbnail_ab_note": "Thumb FIXED; both title arms are rule-aligned (no Q-hook titles). If YT auto-picks either winner, both respect lane rules — no Test-#41-style crash exposure.",
+ "playlists": [
+  "Healing & Anxiety Relief",
+  "Meditation"
+ ],
+ "description": [
+  "Calm Your Nerves | Veena Instrumental | 1.5 Hours of slow Indian classical veena to settle an anxious evening.",
+  "",
+  "When your body won't come off alert — jaw tight, chest high, thoughts circling — this is ninety minutes of slow, warm veena in Raga Darbari to bring your nervous system down gently.",
+  "",
+  "🎧 HOW TO USE — low volume, evening light low. Breathe slower than the music. Nothing here spikes or surprises.",
+  "",
+  "⏱ BEST FOR — evening anxiety · unwinding after a hard day · settling before sleep · slow breathing practice",
+  "",
+  "🎵 ABOUT — the veena is one of India's oldest instruments, its deep rounded tone long associated with steadiness and contemplation. Raga Darbari is the midnight raga of gravity and calm.",
+  "",
+  "#CalmMusic #AnxietyRelief #VeenaMusic #IndianClassicalMusic #NervousSystem"
+ ],
+ "tags": [
+  "calm your nerves",
+  "vagus nerve reset",
+  "anxiety relief music",
+  "veena instrumental",
+  "raga darbari",
+  "indian classical music",
+  "1.5 hours",
+  "calming music",
+  "nervous system calm",
+  "evening relaxation",
+  "music for anxiety",
+  "settle your mind"
+ ],
+ "suno_prompt": "Instrumental only, slow gentle South Indian veena in Raga Darbari, soft rounded plucked phrases over a warm tanpura drone, no percussion, ~55 BPM, tender and spacious, deeply calming late-evening character, seamless loop.",
+ "suno_prompt_note": "MAY-GRADE CALM (retention fix). Zero upbeat/energetic terms. Darbari = banked evening/gravity raga; differentiates from Sat's Yaman. No tabla.",
+ "experiment": "HYPOTHESIS [h_2026-07-22_clinical_hook_recovery → TESTING]: clinical-somatic register (B) beats generic-soft (A) on CTR in browse. Matched pair: identical score (60/60), structure, instrument, thumb. Read: CTR share day 7-14 + power check; if B wins ≥55/45 it is the 3rd clinical-register confirmation (after Cortisol Detox 222% cohort + Dhun Detox external). Also: first Veena anxiety ship — tests the 'Veena needs clinical hook' rule on the A arm.",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "loop_note": "4-6 slow Darbari veena clips, crossfade-merge to ~90min, consistent calm level.",
+  "publish": "2026-07-28 19:00 IST"
+ },
+ "preflight_passed": true,
+ "preflight_detail": "title_preflight PASS both (49/50 chars, 3-slot). cooldown: Veena viable (last Jun 9, 49d). Full catalog scan run 2026-07-25 (A/B losers + brief variants + banked scores + synonym clusters). Thumb dedup 0 hits. brief_gate: pending run.",
+ "pending": [
+  "Launch title A/B in Studio at publish + log to ab_raw_data.csv"
+ ],
+ "version": "v1 — LOCKED by user 2026-07-25 (chat). Register-test design per user's hypothesis-driven A/B directive."
+}

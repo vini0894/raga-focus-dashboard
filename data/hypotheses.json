@@ -1,77 +1,79 @@
 {
-  "purpose": "Standing ledger of strategic bets — the compounding-strategy layer on top of the mechanical gates (cooldown/track_record/clone/lead_prescreen). A finding discovered once (competitor research, a track_record pattern, an A/B result) gets banked here as a tracked hypothesis instead of being re-derived every time it's asked about. recommend_slot.py reads this to tag candidates with the bet they'd be testing.",
-  "lifecycle": "PROPOSED (stated, not yet tested) -> TESTING (a ship is live against it) -> CONFIRMED or KILLED (enough evidence to close it) -> promoted_rule (folded into a permanent playbook rule, e.g. anti_patterns.json / lane_packaging_directions.json)",
-  "last_updated": "2026-07-24",
-  "hypotheses": [
-    {
-      "id": "h_2026-07-22_clinical_hook_recovery",
-      "created": "2026-07-22",
-      "status": "PROPOSED",
-      "statement": "Clinical-somatic hook framing (present-tense Q-hook + named raga + Hz + cortisol/vagus/nervous-system language) recovers channel reach. Evidence: our own all-time reach leaders used this exact register (Dopamine Reset, Nervous System Healing, our highest-ever CTR 9.36% ship 'Can't Fall Asleep | Raga Yaman Bansuri'), then we drifted to generic-soft framing ('Peace of Mind', 'Healing Frequency', 'Calm Morning') — same-format cohort CTR fell 4.62 (May) -> 3.28 (July). Meanwhile a SMALLER niche competitor (Dhun Detox, 27.8K subs) is riding this exact abandoned formula to 15x view-velocity vs their own older catalog, and Raga Heal/Shanti both show flat-to-accelerating fresh-upload performance using the same register — while our fresh-upload performance is declining. This suggests the decay is channel-specific (packaging drift), not niche-wide.",
-      "predicted_metric": "A ship using this register should land CTR >= 4.5% (vs the July cohort median 3.28%) and/or beat its lane's recent median views.",
-      "relevant_lanes": [
-        "cognitive",
-        "anxiety",
-        "stress_burnout",
-        "morning",
-        "sleep"
-      ],
-      "relevant_instruments": [],
-      "linked_ships": [],
-      "source": "chat_2026-07-22 — competitor decay research + own reach-leader audit",
-      "promoted_rule": null
-    },
-    {
-      "id": "h_2026-07-20_emotional_healing_lane_dead",
-      "created": "2026-07-20",
-      "status": "KILLED",
-      "statement": "The 'emotional/healing/heart/comfort/nostalgia' lane does not generate real reach on this channel, regardless of instrument.",
-      "predicted_metric": "n/a — this is a closed finding, not an open bet.",
-      "evidence": "Every emotional/heart/comfort/nostalgia ship ever made (n=6-7, all instruments): lifetime TOTAL views = 2,795 — 0.3% of one month's current channel views. track_record: Sarangi×healing = FLOP (n=7, median 299v, CTR 2.92). Every other instrument in this lane is UNTESTED (zero data, not proof of viability). One outlier (Nostalgia Music, CTR 7.15/AVD 40.9%) proves the MUSIC/retention can be excellent, but reach has never once broken ~1,500 views regardless of framing or instrument. Confirmed 2026-07-20 after nearly locking a Sarangi-healing brief that would have been the lane's 7th consecutive weak result.",
-      "relevant_lanes": [
-        "healing"
-      ],
-      "relevant_instruments": [],
-      "linked_ships": [
-        "v_2026-07-16 Healing Frequency Music (Sarangi&Tanpura)",
-        "v_2026-05-10 Nostalgia Music (Sarangi)"
-      ],
-      "source": "chat_2026-07-20 — user asked 'do you think emotional lane has worked for us'",
-      "promoted_rule": "Should be folded into anti_patterns.json as a dead-lane detector (pending) — recommend_slot.py enforces it via track_record's FLOP verdict in the interim."
-    },
-    {
-      "id": "h_2026-07-11_bansuri_sleep_only",
-      "created": "2026-07-11",
-      "status": "CONFIRMED",
-      "statement": "Bansuri's only PROVEN lane on this channel is SLEEP. Outside sleep it consistently underperforms.",
-      "predicted_metric": "n/a — closed finding.",
-      "evidence": "track_record: Bansuri×sleep = PROVEN (n=6, median 8,240v, best 36,475v). Bansuri×morning = FLOP (n=5, median 1,636v). Bansuri×calm = UNTESTED but a 1.5hr attempt scored 445v when checked ad hoc. Confirmed 2026-07-20 when a Bansuri×relaxation recommendation was checked against real channel stats and found to flop, and again when a Bansuri×anxiety brief was found to clone Jul-17's Cortisol Detox (Bansuri&Tanpura) at the 5-day cooldown minimum.",
-      "relevant_lanes": [
-        "morning",
-        "calm_relax",
-        "healing",
-        "anxiety",
-        "stress_burnout"
-      ],
-      "relevant_instruments": [
-        "Bansuri"
-      ],
-      "linked_ships": [],
-      "source": "banked in memory feedback_check_track_record.md; formalized into ledger 2026-07-22",
-      "promoted_rule": "Banked in SESSION_CONTEXT + user memory feedback_check_track_record.md"
-    },
-    {
-      "id": "h_2026-07-24_launch_day_inversion",
-      "created": "2026-07-24",
-      "status": "PROPOSED",
-      "source": "chat_2026-07-24 — user challenged the Fri slot; measured both effects separately",
-      "statement": "CONSUMPTION and LAUNCH-DAY are different effects and they point opposite ways. Consumption (channel impressions by weekday, de-trended vs trailing-7d mean, n=67 days): Mon 129% > Wed 115% > Tue 114% > Thu 106% > Fri 99% > Sun 110% > Sat 90% — the audience watches most Mon-Wed, which is where the banked 'Mondays always spike / place the rested hero on Monday PM' rule came from. But that measures CATALOG consumption. LAUNCH day, measured on true window-free impressions/day at age 4-12d, de-trended against each month's own median (n=110 ships): Fri 199% > Sat 128% > Thu 112% > Tue 106% > Mon 85% > Wed 77% > Sun 61%. Mon-Wed median 89% vs Thu-Fri median 163%. Not outlier-driven (10/16 Fri ships beat their month median vs 6/14 Mon ships). Not a measurement-window artifact either (the age-4-12d window overlaps the Mon-Wed consumption peak slightly more for Fri launches, but that accounts for ~4%, not a 2.3x gap). MECHANISM (untested): Monday's larger viewer pool is soaked up by the catalog giants, so a fresh ship competes hardest for share on exactly the day the pool is biggest — consistent with the banked 'one viewer pool per day; extra ships split it' finding. Friday's pool is smaller but the catalog is quieter, so a new ship takes a larger share of it.",
-      "predicted_metric": "A ship launched Thu/Fri should post >=1.5x the age-4-12d true impressions/day of a comparable-strength cell launched Mon/Wed in the same month. Falsified if Mon/Wed ships match or beat Thu/Fri over the next ~6 ships.",
-      "relevant_lanes": [],
-      "relevant_instruments": [],
-      "linked_ships": [],
-      "promoted_rule": null,
-      "caveats": "OBSERVATIONAL, not randomised — which concept shipped on which day was a human choice, so selection bias is live (if stronger concepts were deliberately placed Mon-Wed, the true Fri advantage would be even larger; if experiments went to Fri, it could be smaller). n=16 Fri / n=14 Mon. Treat as a scheduling PRIOR, not a settled rule, until 6+ deliberate ships test it."
-    }
-  ]
+ "purpose": "Standing ledger of strategic bets — the compounding-strategy layer on top of the mechanical gates (cooldown/track_record/clone/lead_prescreen). A finding discovered once (competitor research, a track_record pattern, an A/B result) gets banked here as a tracked hypothesis instead of being re-derived every time it's asked about. recommend_slot.py reads this to tag candidates with the bet they'd be testing.",
+ "lifecycle": "PROPOSED (stated, not yet tested) -> TESTING (a ship is live against it) -> CONFIRMED or KILLED (enough evidence to close it) -> promoted_rule (folded into a permanent playbook rule, e.g. anti_patterns.json / lane_packaging_directions.json)",
+ "last_updated": "2026-07-25",
+ "hypotheses": [
+  {
+   "id": "h_2026-07-22_clinical_hook_recovery",
+   "created": "2026-07-22",
+   "status": "TESTING",
+   "statement": "Clinical-somatic hook framing (present-tense Q-hook + named raga + Hz + cortisol/vagus/nervous-system language) recovers channel reach. Evidence: our own all-time reach leaders used this exact register (Dopamine Reset, Nervous System Healing, our highest-ever CTR 9.36% ship 'Can't Fall Asleep | Raga Yaman Bansuri'), then we drifted to generic-soft framing ('Peace of Mind', 'Healing Frequency', 'Calm Morning') — same-format cohort CTR fell 4.62 (May) -> 3.28 (July). Meanwhile a SMALLER niche competitor (Dhun Detox, 27.8K subs) is riding this exact abandoned formula to 15x view-velocity vs their own older catalog, and Raga Heal/Shanti both show flat-to-accelerating fresh-upload performance using the same register — while our fresh-upload performance is declining. This suggests the decay is channel-specific (packaging drift), not niche-wide.",
+   "predicted_metric": "A ship using this register should land CTR >= 4.5% (vs the July cohort median 3.28%) and/or beat its lane's recent median views.",
+   "relevant_lanes": [
+    "cognitive",
+    "anxiety",
+    "stress_burnout",
+    "morning",
+    "sleep"
+   ],
+   "relevant_instruments": [],
+   "linked_ships": [
+    "v_2026-07-28_calm_your_nerves_veena"
+   ],
+   "source": "chat_2026-07-22 — competitor decay research + own reach-leader audit",
+   "promoted_rule": null
+  },
+  {
+   "id": "h_2026-07-20_emotional_healing_lane_dead",
+   "created": "2026-07-20",
+   "status": "KILLED",
+   "statement": "The 'emotional/healing/heart/comfort/nostalgia' lane does not generate real reach on this channel, regardless of instrument.",
+   "predicted_metric": "n/a — this is a closed finding, not an open bet.",
+   "evidence": "Every emotional/heart/comfort/nostalgia ship ever made (n=6-7, all instruments): lifetime TOTAL views = 2,795 — 0.3% of one month's current channel views. track_record: Sarangi×healing = FLOP (n=7, median 299v, CTR 2.92). Every other instrument in this lane is UNTESTED (zero data, not proof of viability). One outlier (Nostalgia Music, CTR 7.15/AVD 40.9%) proves the MUSIC/retention can be excellent, but reach has never once broken ~1,500 views regardless of framing or instrument. Confirmed 2026-07-20 after nearly locking a Sarangi-healing brief that would have been the lane's 7th consecutive weak result.",
+   "relevant_lanes": [
+    "healing"
+   ],
+   "relevant_instruments": [],
+   "linked_ships": [
+    "v_2026-07-16 Healing Frequency Music (Sarangi&Tanpura)",
+    "v_2026-05-10 Nostalgia Music (Sarangi)"
+   ],
+   "source": "chat_2026-07-20 — user asked 'do you think emotional lane has worked for us'",
+   "promoted_rule": "Should be folded into anti_patterns.json as a dead-lane detector (pending) — recommend_slot.py enforces it via track_record's FLOP verdict in the interim."
+  },
+  {
+   "id": "h_2026-07-11_bansuri_sleep_only",
+   "created": "2026-07-11",
+   "status": "CONFIRMED",
+   "statement": "Bansuri's only PROVEN lane on this channel is SLEEP. Outside sleep it consistently underperforms.",
+   "predicted_metric": "n/a — closed finding.",
+   "evidence": "track_record: Bansuri×sleep = PROVEN (n=6, median 8,240v, best 36,475v). Bansuri×morning = FLOP (n=5, median 1,636v). Bansuri×calm = UNTESTED but a 1.5hr attempt scored 445v when checked ad hoc. Confirmed 2026-07-20 when a Bansuri×relaxation recommendation was checked against real channel stats and found to flop, and again when a Bansuri×anxiety brief was found to clone Jul-17's Cortisol Detox (Bansuri&Tanpura) at the 5-day cooldown minimum.",
+   "relevant_lanes": [
+    "morning",
+    "calm_relax",
+    "healing",
+    "anxiety",
+    "stress_burnout"
+   ],
+   "relevant_instruments": [
+    "Bansuri"
+   ],
+   "linked_ships": [],
+   "source": "banked in memory feedback_check_track_record.md; formalized into ledger 2026-07-22",
+   "promoted_rule": "Banked in SESSION_CONTEXT + user memory feedback_check_track_record.md"
+  },
+  {
+   "id": "h_2026-07-24_launch_day_inversion",
+   "created": "2026-07-24",
+   "status": "PROPOSED",
+   "source": "chat_2026-07-24 — user challenged the Fri slot; measured both effects separately",
+   "statement": "CONSUMPTION and LAUNCH-DAY are different effects and they point opposite ways. Consumption (channel impressions by weekday, de-trended vs trailing-7d mean, n=67 days): Mon 129% > Wed 115% > Tue 114% > Thu 106% > Fri 99% > Sun 110% > Sat 90% — the audience watches most Mon-Wed, which is where the banked 'Mondays always spike / place the rested hero on Monday PM' rule came from. But that measures CATALOG consumption. LAUNCH day, measured on true window-free impressions/day at age 4-12d, de-trended against each month's own median (n=110 ships): Fri 199% > Sat 128% > Thu 112% > Tue 106% > Mon 85% > Wed 77% > Sun 61%. Mon-Wed median 89% vs Thu-Fri median 163%. Not outlier-driven (10/16 Fri ships beat their month median vs 6/14 Mon ships). Not a measurement-window artifact either (the age-4-12d window overlaps the Mon-Wed consumption peak slightly more for Fri launches, but that accounts for ~4%, not a 2.3x gap). MECHANISM (untested): Monday's larger viewer pool is soaked up by the catalog giants, so a fresh ship competes hardest for share on exactly the day the pool is biggest — consistent with the banked 'one viewer pool per day; extra ships split it' finding. Friday's pool is smaller but the catalog is quieter, so a new ship takes a larger share of it.",
+   "predicted_metric": "A ship launched Thu/Fri should post >=1.5x the age-4-12d true impressions/day of a comparable-strength cell launched Mon/Wed in the same month. Falsified if Mon/Wed ships match or beat Thu/Fri over the next ~6 ships.",
+   "relevant_lanes": [],
+   "relevant_instruments": [],
+   "linked_ships": [],
+   "promoted_rule": null,
+   "caveats": "OBSERVATIONAL, not randomised — which concept shipped on which day was a human choice, so selection bias is live (if stronger concepts were deliberately placed Mon-Wed, the true Fri advantage would be even larger; if experiments went to Fri, it could be smaller). n=16 Fri / n=14 Mon. Treat as a scheduling PRIOR, not a settled rule, until 6+ deliberate ships test it."
+  }
+ ]
 }
