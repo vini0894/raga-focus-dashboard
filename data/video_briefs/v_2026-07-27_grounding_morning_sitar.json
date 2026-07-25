@@ -1,0 +1,79 @@
+{
+ "id": "v_2026-07-27_grounding_morning_sitar",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-07-25",
+ "planned_date": "2026-07-27",
+ "planned_slot": "06:30 IST Mon — morning-lane AM slot (lane-intent match; Mon-AM = morning's strong cell)",
+ "title": "Grounding Music | Begin the Day Calm | 1.5 Hours",
+ "title_variants": {
+  "A": "Grounding Music | Begin the Day Calm | 1.5 Hours",
+  "B": "Morning Clarity | Peaceful Instrumental | 1.5 Hours"
+ },
+ "title_note": "T1-REGISTER TEST, both arms NO-INSTRUMENT (constant, not the variable — music is Sitar). A = somatic T1 vocabulary (Grounding, 59, user override 2026-07-25). B = clarity-lifestyle T1 vocabulary (Morning Clarity, 60). Register is the only variable. T1 exemplars this replicates: Morning Gratitude 39.5% T1-wt / Productive Day 39.0% / Yoga 34.1% — all Western-wellness leads, none name an instrument.",
+ "lane": "morning",
+ "instrument": "Sitar",
+ "raga": "Bilawal",
+ "validated_keywords": [
+  "A: 'grounding music' — 59 (re-scored 2026-07-25; explicit user override of the 60 floor — fresh everywhere in catalog, T1-somatic register)",
+  "B: 'morning clarity music' — 60 (banked 2026-07-25); fresh as lead",
+  "Rejected for this slot: Morning Ritual 27 · Wake Up Calm 27 · 'Calm Morning' bigram (live Jul-20 Sitar ship, phrase-lock window) · 'Morning Energy' (owned by the 95K Dilruba giant still at 63K impr/day)"
+ ],
+ "thumbnail_text_main": "START STEADY",
+ "thumbnail_text_variants": [
+  {
+   "label": "fixed",
+   "text": "START STEADY",
+   "strategy": "FIXED across both arms (title register is the variable). Outcome-imperative per morning rule (Q-hook 0/5). 12 chars, 2 words — mobile-optimal. Dedup 0 hits 2026-07-25. Bridges both leads: steadiness = grounding (A) and clear start (B)."
+  }
+ ],
+ "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A figure standing barefoot on warm earth in a courtyard at sunrise, first gold light on their face, steam rising from a small clay cup nearby, soft green garden beyond. Rooted, unhurried morning. NO instrument visible (no-instrument packaging). Dark-teal serif overlay text.",
+ "thumbnail_ab_note": "Title A/B → thumb FIXED. Morning lane = outcome-imperative only; both arms rule-aligned so a YT auto-pick cannot violate the lane rule.",
+ "playlists": [
+  "Morning Energy",
+  "Meditation"
+ ],
+ "description": [
+  "Grounding Music | Begin the Day Calm | 1.5 Hours of gentle Indian classical sitar to start your morning steady and clear.",
+  "",
+  "Before the phone, before the rush — ninety minutes of warm, unhurried sitar in Raga Bilawal, the classical morning raga, to let your day begin on your terms.",
+  "",
+  "🎧 HOW TO USE — play softly while you wake, stretch, make tea, or sit for a few quiet minutes. Gentle energy, nothing jarring.",
+  "",
+  "⏱ BEST FOR — grounding practice · calm mornings · gentle focus · morning meditation · starting the day without noise",
+  "",
+  "🎵 ABOUT — Raga Bilawal is the bright, open morning raga of Indian classical music — clear-eyed and warm, traditionally played as the day begins.",
+  "",
+  "#GroundingMusic #MorningMusic #IndianClassicalMusic #CalmMorning #SitarMusic"
+ ],
+ "tags": [
+  "grounding music",
+  "morning clarity",
+  "calm morning music",
+  "indian classical music",
+  "sitar instrumental",
+  "raga bilawal",
+  "1.5 hours",
+  "peaceful morning",
+  "morning meditation music",
+  "gentle morning music",
+  "start the day calm",
+  "mindful morning"
+ ],
+ "suno_prompt": "Instrumental only, gentle bright sitar in Raga Bilawal with soft light tabla, warm rounded tone, easy unhurried morning character around 65 BPM, calm positive energy without excitement, seamless loop.",
+ "suno_prompt_note": "Morning lane KEEPS gentle energy (banked — calm-prompt rule applies to sleep/anxiety/rest lanes, not morning). Tabla WITH sitar per banked pairing. May-grade care: warm and rounded, no thin/bright shimmer.",
+ "experiment": "HYPOTHESIS (T1-vocabulary register): which T1 register pulls the T1 audience — somatic (Grounding) vs clarity-lifestyle (Morning Clarity)? Read: day-7 per-video geo (T1 watch-%) via experiment_reads + CTR share + A/B power check. Constants: no-instrument titles (both arms), fixed thumb, 06:30 AM slot. Also feeds Mon-AM morning-lane cell (n=2 → n=3) and the T1-vocabulary observational finding (28-video geo scan 2026-07-24).",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "loop_note": "4-6 gentle Bilawal sitar clips with soft tabla, crossfade-merge to ~90min, consistent warm level.",
+  "publish": "2026-07-27 06:30 IST"
+ },
+ "preflight_passed": true,
+ "preflight_detail": "title_preflight PASS both (48/51 chars, 3-slot). cooldown: Sitar viable Mon (last Jul 20, 7d; soft-clone flag vs Jul-20 Sitar-morning-3hr mitigated: different format 1.5hr, no-instrument packaging, fresh leads — Finding 19 keys on lead ownership, both leads fresh). Full catalog scan + thumb dedup (0 hits) 2026-07-25.",
+ "pending": [
+  "Launch title A/B in Studio at publish + log to ab_raw_data.csv",
+  "Day-7 geo read (experiment_reads or manual segment_pull)"
+ ],
+ "version": "v1 — LOCKED by user 2026-07-25 (Grounding override explicit). T1-register experiment per hypothesis-driven A/B directive."
+}
