@@ -1,0 +1,79 @@
+{
+ "id": "v_2026-07-30_deep_rest_sarod_3hr",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-07-25",
+ "planned_date": "2026-07-30",
+ "planned_slot": "19:00 IST Thu — evening deep-rest intent; Thu launch index 112%",
+ "title": "Deep Rest Music | Sarod Instrumental | 3 Hours",
+ "title_variants": {
+  "A": "Deep Rest Music | Sarod Instrumental | 3 Hours",
+  "B": "It's Okay to Rest | Sarod Instrumental | 3 Hours"
+ },
+ "title_note": "PERMISSION-REGISTER TITLE TEST. A = generic-SEO control (deep rest music 67, deliberate 93d repeat — owner Apr-28 Surbahar 2,885v old/small/decayed, different instrument). B = permission register as TITLE lead ('It's Okay to Rest' — thumb-proven 2/2 in stress lane, never tested as a title). Register is the only variable; thumb fixed.",
+ "lane": "stress_burnout",
+ "instrument": "Sarod",
+ "raga": "Darbari",
+ "validated_keywords": [
+  "A: 'deep rest music' — 67 banked; owner old+small+decayed = passes owner-still-earning rule",
+  "B: 'It's Okay to Rest' — experimental permission arm (banked winning thumb phrase family: IT'S OKAY TO REST / REST WITHOUT WORRY, #29 +17.2pp); VidIQ-secondary by design",
+  "Blocked checked: 'release stress' (stress-family clash with Jul-25 Sacred Silence retitle) · 'decompress' (lost #46) · 'unclench' 26 · 'stress relief music' (consumed by retitle)"
+ ],
+ "thumbnail_text_main": "KIND TO YOURSELF",
+ "thumbnail_text_variants": [
+  {
+   "label": "fixed",
+   "text": "KIND TO YOURSELF",
+   "strategy": "FIXED both arms (title register is the variable). Permission format = stress lane's banked winner (2/2). 16 chars/3 words mobile-optimal. Self-Compassion salvage (scored 29 as lead — dead as keyword, alive as register). Dedup 0 hits 2026-07-25."
+  }
+ ],
+ "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A figure sunk into cushions at dusk, shoulders fully dropped, eyes soft, a sarod resting beside them, low amber lamplight, a window of deep evening blue. Total permission to stop. Dark-teal serif overlay text.",
+ "thumbnail_ab_note": "Title A/B → thumb FIXED. Both arms rule-aligned (permission/outcome family — no Q-hook), so a YT auto-pick cannot violate the lane rule.",
+ "playlists": [
+  "Healing & Anxiety Relief",
+  "Peaceful Music"
+ ],
+ "description": [
+  "Deep Rest Music | Sarod Instrumental | 3 Hours of slow Indian classical sarod for evenings when you have nothing left.",
+  "",
+  "You don't have to fix anything tonight. Three hours of deep, warm sarod in Raga Darbari — slow, heavy, and kind — to let your body finally stand down.",
+  "",
+  "🎧 HOW TO USE — low volume, lights low. Long enough to carry a whole evening of rest, reading, or drifting.",
+  "",
+  "⏱ BEST FOR — burnout recovery · deep rest · evening wind-down · after a hard week · rest without guilt",
+  "",
+  "🎵 ABOUT — the sarod's deep fretless voice is Indian classical music's most grounded sound; Raga Darbari is the midnight raga of gravity and stillness.",
+  "",
+  "#DeepRest #SarodMusic #StressRelief #IndianClassicalMusic #RestMusic"
+ ],
+ "tags": [
+  "deep rest music",
+  "sarod instrumental",
+  "its okay to rest",
+  "stress relief",
+  "raga darbari",
+  "indian classical music",
+  "3 hours",
+  "burnout recovery music",
+  "evening rest music",
+  "calm sarod",
+  "rest without guilt",
+  "deep relaxation"
+ ],
+ "suno_prompt": "Instrumental only, very slow deep sarod in Raga Darbari, warm fretless glides over a soft tanpura drone, no percussion, ~50 BPM, heavy and tender late-evening stillness, deeply restful, seamless loop.",
+ "suno_prompt_note": "MAY-GRADE CALM mandatory — the whole 3hr bet is AVD (Sarod May cluster ran 38-39% AVP with good music). ⚠ FORMAT IS CONDITIONAL ON MUSIC: if the Sarod clips come out mediocre, ship 1.5hr instead — 3hr of average music is worse than 1.5hr of good (AVP collapse). No tabla.",
+ "experiment": "HYPOTHESIS (permission-register title transfer): does the thumb-proven permission register (2/2 in stress) transfer to TITLE leads? Read: d7 CTR share + power check. Secondary: first Sarod 3hr — best-retention instrument × long format; precedent Stress Relief Santoor 3hr = channel-best AVD 45:13 + top RPM. Feeds format economics (3hr sanctioned for deep-rest).",
+ "production_spec": {
+  "duration_minutes": 180,
+  "format": "3hr",
+  "loop_note": "5-7 slow Darbari sarod clips, long crossfades, consistent heavy-calm level. DOWNGRADE to 90min if clip quality is mediocre.",
+  "publish": "2026-07-30 19:00 IST"
+ },
+ "preflight_passed": true,
+ "preflight_detail": "title_preflight PASS both at 3-Hours suffix (46/48 chars, 3-slot). cooldown: Sarod viable Thu (last Jul 22, 8d). Sarod×stress = THIN n=1 (passes; 3hr cell untested = experimental). Spacing vs Sat 3hr: 5 days, different pools (soft_pm sleep vs cortisol deep-rest), different use-cases (overnight vs evening). Thumb dedup 0 hits. Full catalog scan on leads 2026-07-25.",
+ "pending": [
+  "Launch title A/B in Studio at publish + log to ab_raw_data.csv",
+  "Music-quality call at production: 3hr only if clips clear the May-grade bar"
+ ],
+ "version": "v1 — LOCKED by user 2026-07-25 ('thu we can do a 3hr'). Second 3hr of the week by design (Sat sleep + Thu deep-rest)."
+}
