@@ -1,0 +1,79 @@
+{
+ "id": "v_2026-07-30_digital_detox_surbahar",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-07-25",
+ "planned_date": "2026-07-30",
+ "planned_slot": "19:00 IST Thu — evening unplug intent",
+ "title": "Digital Detox Music | Surbahar Instrumental | 1.5 Hours",
+ "title_variants": {
+  "A": "Digital Detox Music | Surbahar Instrumental | 1.5 Hours",
+  "B": "Stop Doomscrolling | Surbahar Instrumental | 1.5 Hours"
+ },
+ "title_note": "DIGITAL/DOPAMINE CLUSTER REVIVAL — the niche's #1 breakout (Raga Heal 'Dopamine Reset | 639Hz Bansuri Digital Detox' 7.67 v/sub + 496K 'Digital Detox' w/ DOOM SCROLLING? thumb) is OUR abandoned formula. A = clinical cluster lead (digital detox 64, deliberate repeat — owners: Apr-11 15v dead + concept-sibling Digital Burnout 762v/0.13% non-authority). B = modern-state register (Stop Doomscrolling — fresh, imperative not Q). Bansuri variant HARD-REJECTED by orchestrator (packaging clone: 13d from Cortisol Detox, same instrument+format+lane) — Surbahar is the gate-clean instrument.",
+ "lane": "cognitive",
+ "instrument": "Surbahar",
+ "raga": "Khamaj",
+ "validated_keywords": [
+  "A: 'digital detox' — 64 banked (Medium comp); deliberate repeat, no authority owner (sibling Digital Burnout: ~600-1K impr/day, CTR 2.83 — demand feed EXISTS, conversion failed → register is the fix)",
+  "B: 'Stop Doomscrolling' — FRESH (prescreen 2026-07-25); modern-state imperative, no Q-title (q_hook_title_lead = HIGH)",
+  "Blocked: Bansuri variant (orchestrator packaging_clone ⛔) · 'Dopamine Detox' (owner growing +128%) · 'Dopamine Reset' (the giant) · 'mind detox music' 54 · 'overstimulated' <20d lock"
+ ],
+ "thumbnail_text_main": "PHONE BRAIN?",
+ "thumbnail_text_variants": [
+  {
+   "label": "fixed",
+   "text": "PHONE BRAIN?",
+   "strategy": "FIXED both arms (title register is the variable). Compact modern-state Q-hook, 11 chars — cognitive lane's banked winning format (Q wins 3/3, incl BRAIN FOG? +23.8pp). Ours, not Raga Heal's DOOM SCROLLING? (validated register, original text). Dedup 0 hits 2026-07-25."
+  }
+ ],
+ "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A figure setting a small glowing rectangle face-down on a table and turning toward an open dusk window, a large surbahar waiting beside the sill, cool evening blues with one warm lamp. The moment of putting the phone down. Dark-teal serif overlay text.",
+ "thumbnail_ab_note": "Title A/B → thumb FIXED. Q-hook is thumb-only and cognitive is the lane where it wins — both arms rule-aligned.",
+ "playlists": [
+  "Meditation",
+  "Peaceful Music"
+ ],
+ "description": [
+  "Digital Detox Music | Surbahar Instrumental | 1.5 Hours of deep Indian classical surbahar to switch your mind off the feed.",
+  "",
+  "Put the phone face-down. Ninety minutes of slow, resonant surbahar in Raga Khamaj — deep, spacious, and completely offline — to let an overstimulated mind come back to itself.",
+  "",
+  "🎧 HOW TO USE — screen away, volume low. For the hour after work, an evening off the feed, or any time your attention feels shredded.",
+  "",
+  "⏱ BEST FOR — digital detox · doomscrolling recovery · attention reset · evening unplugging · deep calm",
+  "",
+  "🎵 ABOUT — the surbahar is the deep bass sitar of Indian classical music, built for slowness the internet never allows; Raga Khamaj is the light, warm raga of easeful evenings.",
+  "",
+  "#DigitalDetox #Doomscrolling #SurbaharMusic #IndianClassicalMusic #CalmMusic"
+ ],
+ "tags": [
+  "digital detox music",
+  "stop doomscrolling",
+  "surbahar instrumental",
+  "screen break music",
+  "attention reset",
+  "indian classical music",
+  "1.5 hours",
+  "calm music",
+  "unplug",
+  "evening wind down",
+  "overstimulation relief",
+  "raga khamaj"
+ ],
+ "suno_prompt": "Instrumental only, slow deep surbahar in Raga Khamaj, long resonant meend glides over a soft tanpura drone, no percussion, ~55 BPM, spacious offline evening stillness, mind switching off, seamless loop.",
+ "suno_prompt_note": "MAY-GRADE CALM (cognitive/unplug = calm register, zero upbeat terms). Khamaj freed by parking the calm brief. No tabla.",
+ "experiment": "HYPOTHESIS [h_2026-07-22_clinical_hook_recovery — 2nd linked ship]: the digital/dopamine cluster we invented still reaches when packaged in the clinical-modern register. Evidence FOR: competitor running our formula at 7.67 v/sub + 496K; our sibling gets a steady ~1K impr/day concept feed. Evidence AGAINST: that sibling converts at CTR 2.83 — so REGISTER, not topic, is the variable. A/B: clinical-cluster lead vs modern-state imperative. Read: d7 CTR share + cohort impressions + power check; sibling absorbs = fine (spent).",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "loop_note": "4-6 slow Khamaj surbahar clips, crossfade-merge to ~90min, consistent deep-calm level.",
+  "publish": "2026-07-30 19:00 IST"
+ },
+ "preflight_passed": true,
+ "preflight_detail": "Full orchestrator run 2026-07-25 (user-requested): Bansuri×cognitive×1.5hr HARD-REJECTED [packaging_clone 13d Cortisol Detox]; Surbahar freed by parking incumbent calm brief (live gap 9d ✓); Surbahar×cognitive UNTESTED (experimental, no clone — Digital Burnout Jun-23 is stress-lane tuple, 37d). Titles preflight PASS (55/54 chars). Thumb dedup 0. Leads prescreened. Pools alternate Tue cortisol → Thu soft_pm → Fri cortisol.",
+ "pending": [
+  "Launch title A/B in Studio at publish + log to ab_raw_data.csv",
+  "Day-7 read: CTR + cohort impressions + whether the register fixed the sibling's 2.83 CTR problem"
+ ],
+ "version": "v1 — LOCKED by user 2026-07-25 ('perfect'). Replaces v_2026-07-30_relaxing_calm_surbahar (PARKED). Competitor-validated cluster revival."
+}

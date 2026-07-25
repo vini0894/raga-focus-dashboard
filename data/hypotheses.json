@@ -18,7 +18,8 @@
    ],
    "relevant_instruments": [],
    "linked_ships": [
-    "v_2026-07-28_calm_your_nerves_veena"
+    "v_2026-07-28_calm_your_nerves_veena",
+    "v_2026-07-30_digital_detox_surbahar"
    ],
    "source": "chat_2026-07-22 — competitor decay research + own reach-leader audit",
    "promoted_rule": null
@@ -90,8 +91,7 @@
    "relevant_instruments": [],
    "linked_ships": [
     "v_2026-07-27_grounding_morning_sitar",
-    "v_2026-08-03_boost_your_aura_santoor",
-    "v_2026-07-30_relaxing_calm_surbahar"
+    "v_2026-08-03_boost_your_aura_santoor"
    ],
    "promoted_rule": null,
    "caveats": "Observational, lane-confounded (T1-heavy titles are mostly morning/uplift — may be the lane T1 wants, not the words). The two linked A/Bs are the controlled test."

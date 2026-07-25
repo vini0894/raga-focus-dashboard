@@ -1,7 +1,7 @@
 {
  "id": "v_2026-07-30_relaxing_calm_surbahar",
- "status": "APPROVED",
- "locked": true,
+ "status": "PARKED",
+ "locked": false,
  "created_at": "2026-07-25",
  "planned_date": "2026-07-30",
  "planned_slot": "19:00 IST Thu — evening unwind intent",
@@ -75,5 +75,5 @@
   "Launch title A/B in Studio at publish + log to ab_raw_data.csv",
   "Day-7 geo read"
  ],
- "version": "v1 — LOCKED 2026-07-25 (user: 'lets atleast do 4 ships between mon-friday'). 4th Mon-Fri ship; Thu↔Fri swapped so the 3hr swing takes the 199% day."
+ "version": "v1 — LOCKED 2026-07-25 (user: 'lets atleast do 4 ships between mon-friday'). 4th Mon-Fri ship; Thu↔Fri swapped so the 3hr swing takes the 199% day. → PARKED 2026-07-25 (user swap to digital-detox cognitive: kills the Deep-Rest/Relaxing near-pair; calm_relax = weakest competitive lane 0.19 v/sub). Package fully validated — reusable any future week."
 }
