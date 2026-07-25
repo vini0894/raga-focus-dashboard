@@ -1,0 +1,687 @@
+{
+  "week_id": "wk_2026-07-27",
+  "generated": "2026-07-24",
+  "week_start": "2026-07-27",
+  "week_end": "2026-08-02",
+  "freshness": {
+    "snapshot": "2026-07-24",
+    "age_days": 0,
+    "stale": false
+  },
+  "mode": "decay_lean \u2014 fresh ships land 1-5K regardless; judge on AVD not views; tilt lane_priority; refreshes ride IN ADDITION to the daily ship",
+  "lane_priority": [
+    "stress_burnout",
+    "anxiety",
+    "cognitive",
+    "calm_relax",
+    "healing",
+    "sleep",
+    "morning"
+  ],
+  "instrument_next_free": {
+    "Sitar": {
+      "last_shipped": "2026-07-20",
+      "free_from": "2026-07-25",
+      "tier": "hero"
+    },
+    "Bansuri": {
+      "last_shipped": "2026-07-17",
+      "free_from": "2026-07-22",
+      "tier": "hero"
+    },
+    "Sarangi": {
+      "last_shipped": "2026-07-16",
+      "free_from": "2026-07-21",
+      "tier": "strong"
+    },
+    "Veena": {
+      "last_shipped": "2026-06-09",
+      "free_from": "2026-06-14",
+      "tier": "recovering"
+    },
+    "Surbahar": {
+      "last_shipped": "2026-07-21",
+      "free_from": "2026-07-26",
+      "tier": "strong"
+    },
+    "Sarod": {
+      "last_shipped": "2026-07-22",
+      "free_from": "2026-07-27",
+      "tier": "strong"
+    },
+    "Santoor": {
+      "last_shipped": "2026-07-13",
+      "free_from": "2026-07-18",
+      "tier": "filler"
+    },
+    "Dilruba": {
+      "last_shipped": "2026-07-07",
+      "free_from": "2026-07-12",
+      "tier": "strong"
+    },
+    "Tanpura": {
+      "last_shipped": "2026-07-17",
+      "free_from": "2026-07-22",
+      "tier": "filler"
+    },
+    "Esraj": {
+      "last_shipped": "2026-04-10",
+      "free_from": "2026-04-15",
+      "tier": "experimental"
+    },
+    "Violin": {
+      "last_shipped": "2026-04-11",
+      "free_from": "2026-04-16",
+      "tier": "experimental"
+    },
+    "Oud": {
+      "last_shipped": "2026-05-02",
+      "free_from": "2026-05-07",
+      "tier": "experimental"
+    }
+  },
+  "lane_state": {
+    "calm_relax": {
+      "n_videos": 18,
+      "recent_14d": 1,
+      "status": "fresh"
+    },
+    "anxiety": {
+      "n_videos": 15,
+      "recent_14d": 1,
+      "status": "owned",
+      "owner_title": "Sitar for Nervous System Healing | Indian Classical Music for Calmness | 1.5 Hours",
+      "owner_note": "fresh lead REQUIRED \u2014 don't fight the owner on its query; avoid same instrument+lane as owner (Finding 14)"
+    },
+    "healing": {
+      "n_videos": 8,
+      "recent_14d": 1,
+      "status": "fresh"
+    },
+    "stress_burnout": {
+      "n_videos": 17,
+      "recent_14d": 1,
+      "status": "fresh"
+    },
+    "cognitive": {
+      "n_videos": 22,
+      "recent_14d": 3,
+      "status": "fresh"
+    },
+    "morning": {
+      "n_videos": 26,
+      "recent_14d": 1,
+      "status": "owned",
+      "owner_title": "Sitar for Dopamine Reset | Indian Classical Music for Mindfulness",
+      "owner_note": "fresh lead REQUIRED \u2014 don't fight the owner on its query; avoid same instrument+lane as owner (Finding 14)"
+    },
+    "sleep": {
+      "n_videos": 12,
+      "recent_14d": 0,
+      "status": "owned",
+      "owner_title": "Bansuri for Sound Sleep | Deep Sleep Music | 1 Hour",
+      "owner_note": "fresh lead REQUIRED \u2014 don't fight the owner on its query; avoid same instrument+lane as owner (Finding 14)"
+    }
+  },
+  "day_slots": [
+    {
+      "date": "2026-07-27",
+      "dow": "Mon",
+      "type": "core",
+      "dow_note": "Mon +193K best day \u2014 hero slot; burst lands Tue",
+      "viable_instruments": [
+        "Sitar",
+        "Bansuri",
+        "Sarangi",
+        "Surbahar",
+        "Sarod",
+        "Dilruba",
+        "Santoor",
+        "Tanpura",
+        "Veena",
+        "Esraj",
+        "Violin",
+        "Oud"
+      ],
+      "suggested": {
+        "lane": "stress_burnout",
+        "packaging_lane": "stress_burnout_rest",
+        "why": "lane_priority order + cooldown + pool spread",
+        "lane_status": "fresh",
+        "owner_warning": null,
+        "instruments": [
+          "Sitar",
+          "Surbahar",
+          "Santoor"
+        ],
+        "thumb_format": "permission_or_q_hook",
+        "thumb_examples": [
+          "IT'S OKAY TO REST",
+          "REST WITHOUT WORRY",
+          "BREATHE & RELAX"
+        ],
+        "title_lead_direction": "Stress Relief Music, Burnout Recovery, Deep Relaxation, Cortisol Reset",
+        "runtime_min": 90,
+        "suno": "CALM prompt \u2014 no upbeat/energetic/not-sleepy terms",
+        "candidate_leads": [
+          {
+            "phrase": "decompress",
+            "vidiq": 62.0,
+            "source": "bank",
+            "status": "ready",
+            "note": ""
+          },
+          {
+            "phrase": "decompress after work",
+            "vidiq": 60.0,
+            "source": "bank",
+            "status": "ready",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-07-28",
+      "dow": "Tue",
+      "type": "core",
+      "dow_note": "Tue +111K",
+      "viable_instruments": [
+        "Sitar",
+        "Bansuri",
+        "Sarangi",
+        "Surbahar",
+        "Sarod",
+        "Dilruba",
+        "Santoor",
+        "Tanpura",
+        "Veena",
+        "Esraj",
+        "Violin",
+        "Oud"
+      ],
+      "suggested": {
+        "lane": "cognitive",
+        "packaging_lane": "cognitive_clarity",
+        "why": "lane_priority order + cooldown + pool spread",
+        "lane_status": "fresh",
+        "owner_warning": null,
+        "instruments": [
+          "Sitar",
+          "Sarod",
+          "Santoor"
+        ],
+        "thumb_format": "specific_state_q_hook_COMPACT",
+        "thumb_examples": [
+          "MIND FULL?",
+          "BRAIN FOG?",
+          "MIND CLOUDY?"
+        ],
+        "title_lead_direction": "SEO/clinical (Mental Clarity Music, Clear Your Head, Brain Detox); SEO-lead beats Q-lead in title",
+        "runtime_min": 90,
+        "suno": "CALM prompt \u2014 no upbeat/energetic/not-sleepy terms",
+        "candidate_leads": [
+          {
+            "phrase": "Mind Detox",
+            "vidiq": null,
+            "source": "reserved",
+            "status": "NEEDS VidIQ \u2014 score the 'Music for X' form, not standalone",
+            "note": "DO NOT use within 14 days of Brain Detox (Tue May 19) \u2014 visual/semantic duplicate on chann"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-07-29",
+      "dow": "Wed",
+      "type": "core",
+      "dow_note": "Wed +64K",
+      "viable_instruments": [
+        "Sitar",
+        "Bansuri",
+        "Sarangi",
+        "Surbahar",
+        "Sarod",
+        "Dilruba",
+        "Santoor",
+        "Tanpura",
+        "Veena",
+        "Esraj",
+        "Violin",
+        "Oud"
+      ],
+      "suggested": {
+        "lane": "stress_burnout",
+        "packaging_lane": "stress_burnout_rest",
+        "why": "lane_priority order + cooldown + pool spread",
+        "lane_status": "fresh",
+        "owner_warning": null,
+        "instruments": [
+          "Sitar",
+          "Surbahar",
+          "Santoor"
+        ],
+        "thumb_format": "permission_or_q_hook",
+        "thumb_examples": [
+          "IT'S OKAY TO REST",
+          "REST WITHOUT WORRY",
+          "BREATHE & RELAX"
+        ],
+        "title_lead_direction": "Stress Relief Music, Burnout Recovery, Deep Relaxation, Cortisol Reset",
+        "runtime_min": 90,
+        "suno": "CALM prompt \u2014 no upbeat/energetic/not-sleepy terms",
+        "candidate_leads": [
+          {
+            "phrase": "decompress",
+            "vidiq": 62.0,
+            "source": "bank",
+            "status": "ready",
+            "note": ""
+          },
+          {
+            "phrase": "decompress after work",
+            "vidiq": 60.0,
+            "source": "bank",
+            "status": "ready",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-07-30",
+      "dow": "Thu",
+      "type": "core",
+      "dow_note": "Thu \u221226K",
+      "viable_instruments": [
+        "Sitar",
+        "Bansuri",
+        "Sarangi",
+        "Surbahar",
+        "Sarod",
+        "Dilruba",
+        "Santoor",
+        "Tanpura",
+        "Veena",
+        "Esraj",
+        "Violin",
+        "Oud"
+      ],
+      "suggested": {
+        "lane": "calm_relax",
+        "packaging_lane": "calm_daytime",
+        "why": "lane_priority order + cooldown + pool spread",
+        "lane_status": "fresh",
+        "owner_warning": null,
+        "instruments": [
+          "Santoor",
+          "Veena (clinical hook only)"
+        ],
+        "thumb_format": "outcome_state",
+        "thumb_examples": [
+          "FIND PEACE",
+          "FEEL CALM",
+          "QUIET MIND"
+        ],
+        "title_lead_direction": "SEO descriptor (Peaceful Music, Calm Your Mind)",
+        "runtime_min": 90,
+        "suno": "CALM prompt \u2014 no upbeat/energetic/not-sleepy terms",
+        "candidate_leads": [
+          {
+            "phrase": "relax music",
+            "vidiq": 77.0,
+            "source": "bank",
+            "status": "ready",
+            "note": ""
+          },
+          {
+            "phrase": "instrumental music relaxing",
+            "vidiq": 70.0,
+            "source": "bank",
+            "status": "ready",
+            "note": ""
+          },
+          {
+            "phrase": "relaxing instrumental music",
+            "vidiq": 70.0,
+            "source": "bank",
+            "status": "ready",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-07-31",
+      "dow": "Fri",
+      "type": "core",
+      "dow_note": "Fri \u221297K",
+      "viable_instruments": [
+        "Sitar",
+        "Bansuri",
+        "Sarangi",
+        "Surbahar",
+        "Sarod",
+        "Dilruba",
+        "Santoor",
+        "Tanpura",
+        "Veena",
+        "Esraj",
+        "Violin",
+        "Oud"
+      ],
+      "suggested": {
+        "lane": "anxiety",
+        "packaging_lane": "anxiety_overthinking",
+        "why": "lane_priority order + cooldown + pool spread",
+        "lane_status": "owned",
+        "owner_warning": "fresh lead REQUIRED \u2014 don't fight the owner on its query; avoid same instrument+lane as owner (Finding 14)",
+        "instruments": [
+          "Sarod",
+          "Dilruba",
+          "Veena (clinical hook only)"
+        ],
+        "thumb_format": "specific_state_q_hook",
+        "thumb_examples": [
+          "ANXIOUS MIND?",
+          "OVERACTIVE MIND?",
+          "TOO MANY THOUGHTS?"
+        ],
+        "title_lead_direction": "Anxiety Relief Music, Overthinking Music",
+        "runtime_min": 90,
+        "suno": "CALM prompt \u2014 no upbeat/energetic/not-sleepy terms",
+        "candidate_leads": [
+          {
+            "phrase": "stop overthinking",
+            "vidiq": 61.0,
+            "source": "bank",
+            "status": "ready",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-01",
+      "dow": "Sat",
+      "type": "optional",
+      "dow_note": "Sat \u2212149K worst day \u2014 Strong/Filler only",
+      "viable_instruments": [
+        "Sitar",
+        "Bansuri",
+        "Sarangi",
+        "Surbahar",
+        "Sarod",
+        "Dilruba",
+        "Santoor",
+        "Tanpura",
+        "Veena",
+        "Esraj",
+        "Violin",
+        "Oud"
+      ],
+      "suggested": {
+        "lane": null,
+        "note": "optional weekend slot \u2014 Strong/Filler only if shipping"
+      }
+    },
+    {
+      "date": "2026-08-02",
+      "dow": "Sun",
+      "type": "optional",
+      "dow_note": "Sun \u2212113K \u2014 Strong/Filler preferred",
+      "viable_instruments": [
+        "Sitar",
+        "Bansuri",
+        "Sarangi",
+        "Surbahar",
+        "Sarod",
+        "Dilruba",
+        "Santoor",
+        "Tanpura",
+        "Veena",
+        "Esraj",
+        "Violin",
+        "Oud"
+      ],
+      "suggested": {
+        "lane": null,
+        "note": "optional weekend slot \u2014 Strong/Filler only if shipping"
+      }
+    }
+  ],
+  "side_tasks": {
+    "rethumbnail_queue": [
+      {
+        "title": "3 Hour Bansuri Music for Relaxation | Indian Classical Music for Deep Sleep",
+        "lane": "sleep",
+        "ctr": 4.66,
+        "lane_ctr_median": 6.15,
+        "avd": 22.8,
+        "views": 36286
+      },
+      {
+        "title": "Yoga Music | Positive Energy Frequency | 1.5 Hour",
+        "lane": "morning",
+        "ctr": 4.68,
+        "lane_ctr_median": 4.71,
+        "avd": 35.4,
+        "views": 12154
+      },
+      {
+        "title": "Sitar for Brain Detox | Clear Your Mind | 1.5 Hours of Indian Classical Music",
+        "lane": "cognitive",
+        "ctr": 3.49,
+        "lane_ctr_median": 3.62,
+        "avd": 35.4,
+        "views": 7183
+      }
+    ],
+    "ab_capture_due": [],
+    "watch_ships": [
+      "Burnout Music | Slow Surbahar Raga Bhupali | 3 Hours",
+      "Calm Morning Music | Sitar Instrumental | 3 Hours"
+    ]
+  },
+  "saturation_watch": [
+    {
+      "word": "slow",
+      "count": 4
+    },
+    {
+      "word": "bansuri",
+      "count": 3
+    }
+  ],
+  "candidate_leads_by_lane": {
+    "sleep": [
+      {
+        "phrase": "relaxing sleep music",
+        "vidiq": 73.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      },
+      {
+        "phrase": "snowy night music",
+        "vidiq": 65.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      },
+      {
+        "phrase": "insomnia relief",
+        "vidiq": 63.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      },
+      {
+        "phrase": "slow night music",
+        "vidiq": 62.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      },
+      {
+        "phrase": "acoustic guitar sleep music",
+        "vidiq": 61.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      },
+      {
+        "phrase": "soft sleep music",
+        "vidiq": 60.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      }
+    ],
+    "morning": [
+      {
+        "phrase": "Positive Energy Music",
+        "vidiq": 72,
+        "source": "reserved",
+        "status": "ready",
+        "note": "Use only if at least 30+ days from May 7 Yoga Music ship to clear cluster overlap. Or use "
+      },
+      {
+        "phrase": "motivation music",
+        "vidiq": 72.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      },
+      {
+        "phrase": "Positive Morning Music",
+        "vidiq": 70.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      },
+      {
+        "phrase": "morning routine music",
+        "vidiq": 66.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      },
+      {
+        "phrase": "morning acoustic guitar",
+        "vidiq": 64.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      },
+      {
+        "phrase": "day start music",
+        "vidiq": 63.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      }
+    ],
+    "cognitive": [
+      {
+        "phrase": "Mind Detox",
+        "vidiq": null,
+        "source": "reserved",
+        "status": "NEEDS VidIQ \u2014 score the 'Music for X' form, not standalone",
+        "note": "DO NOT use within 14 days of Brain Detox (Tue May 19) \u2014 visual/semantic duplicate on chann"
+      }
+    ],
+    "calm_relax": [
+      {
+        "phrase": "relax music",
+        "vidiq": 77.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      },
+      {
+        "phrase": "instrumental music relaxing",
+        "vidiq": 70.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      },
+      {
+        "phrase": "relaxing instrumental music",
+        "vidiq": 70.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      },
+      {
+        "phrase": "deep calm",
+        "vidiq": 65.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      },
+      {
+        "phrase": "unwind after work",
+        "vidiq": 64.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      },
+      {
+        "phrase": "deep calm music",
+        "vidiq": 63.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      }
+    ],
+    "healing": [
+      {
+        "phrase": "gentle healing music",
+        "vidiq": 61.0,
+        "source": "bank",
+        "status": "ready",
+        "note": "\u26a0 'Healing Music' lead underperforms (banked \u00a78) \u2014 prefer as slot-2"
+      },
+      {
+        "phrase": "emotional healing music",
+        "vidiq": 60.0,
+        "source": "bank",
+        "status": "ready",
+        "note": "\u26a0 'Healing Music' lead underperforms (banked \u00a78) \u2014 prefer as slot-2"
+      }
+    ],
+    "stress_burnout": [
+      {
+        "phrase": "decompress",
+        "vidiq": 62.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      },
+      {
+        "phrase": "decompress after work",
+        "vidiq": 60.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      }
+    ],
+    "anxiety": [
+      {
+        "phrase": "stop overthinking",
+        "vidiq": 61.0,
+        "source": "bank",
+        "status": "ready",
+        "note": ""
+      }
+    ]
+  },
+  "next_steps": [
+    "Slate lists instrument OPTIONS per day, not assignments \u2014 picking one blocks it for the next 4 days; re-run pipeline/cooldown_check.py per slot as picks are locked",
+    "User VidIQ scores needed ('Music for X' form) for: Mind Detox",
+    "Then \u00a7AUTO-TRIGGER STEP 2: 4-source conflict check on the live YT CSV before locking any lead",
+    "Vary title structure across consecutive ships (channel-page diversity rule)",
+    "Briefs are written ONLY after user approves the plan (no premature JSON)"
+  ]
+}
