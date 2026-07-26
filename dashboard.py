@@ -3871,16 +3871,27 @@ with tab_thumbs:
                 key=lambda i: i.get("scheduled_date") or "9999",
             )
 
+            def _studio_url(_i):
+                _vid = (_i.get("video_id") or "").strip()
+                if _vid and " " not in _vid:
+                    return f"https://studio.youtube.com/video/{_vid}/analytics/tab-reach/period-week"
+                return None
+
+            _linkcol = st.column_config.LinkColumn("Open", display_text="Studio ↗", width="small")
+            _datecol = st.column_config.TextColumn(width="small")
+
             st.markdown("#### 🧪 Live now")
             if _live:
                 st.dataframe(pd.DataFrame([{
                     "Test": f"#{i.get('ab_test_num', '—')}",
-                    "Video": i.get("video", ""),
+                    "Video": i.get("video", "")[:60],
                     "Testing": "   vs   ".join(i.get("new_thumb_text", [])),
                     "Started": i.get("scheduled_date", ""),
                     "7-day read": i.get("read_date", ""),
                     "Verdict ~": (date.fromisoformat(i["scheduled_date"]) + timedelta(days=14)).isoformat() if i.get("scheduled_date") else "",
-                } for i in _live]), hide_index=True, use_container_width=True)
+                    "Open": _studio_url(i),
+                } for i in _live]), hide_index=True, use_container_width=True,
+                    column_config={"Open": _linkcol, "Started": _datecol, "7-day read": _datecol, "Verdict ~": _datecol})
             else:
                 st.caption("No tests running.")
 
@@ -3888,36 +3899,39 @@ with tab_thumbs:
                 st.markdown("#### 📅 Scheduled")
                 st.dataframe(pd.DataFrame([{
                     "Date": i.get("scheduled_date", ""),
-                    "Video": i.get("video", ""),
+                    "Video": i.get("video", "")[:60],
                     "Action": _act_map.get(i.get("category"), i.get("category", "")),
                     "New text / title": " · ".join(i.get("new_thumb_text", [])),
+                    "Open": _studio_url(i),
                     "Note": (i.get("current", {}).get("note") or i.get("why") or "")[:110],
-                } for i in _sched]), hide_index=True, use_container_width=True)
+                } for i in _sched]), hide_index=True, use_container_width=True,
+                    column_config={"Open": _linkcol, "Date": _datecol})
 
             _reads = []
             for i in _board:
-                _v = i.get("video", "")[:48]
                 _sd = i.get("scheduled_date")
                 _cat = i.get("category")
+                _row = {"Video": i.get("video", "")[:60], "Open": _studio_url(i)}
                 if i.get("status") == "RUNNING":
                     if i.get("read_date"):
-                        _reads.append((i["read_date"], f"Test #{i.get('ab_test_num', '')} 7-day read — {_v}"))
+                        _reads.append({"Date": i["read_date"], "Read": f"Test #{i.get('ab_test_num', '')} — 7-day read", **_row})
                     if _sd:
-                        _reads.append(((date.fromisoformat(_sd) + timedelta(days=14)).isoformat(),
-                                       f"Test #{i.get('ab_test_num', '')} verdict + post-CTR — {_v}"))
+                        _reads.append({"Date": (date.fromisoformat(_sd) + timedelta(days=14)).isoformat(),
+                                       "Read": f"Test #{i.get('ab_test_num', '')} — verdict + post-CTR", **_row})
                 elif _cat == "test_compare" and _sd:
-                    _reads.append(((date.fromisoformat(_sd) + timedelta(days=7)).isoformat(),
-                                   f"7-day read (if launched) — {_v}"))
+                    _reads.append({"Date": (date.fromisoformat(_sd) + timedelta(days=7)).isoformat(),
+                                   "Read": "7-day read (if launched)", **_row})
                 elif _cat == "hard_swap" and _sd:
-                    _reads.append(((date.fromisoformat(_sd) + timedelta(days=7)).isoformat(),
-                                   f"Before/after CTR — {_v}"))
+                    _reads.append({"Date": (date.fromisoformat(_sd) + timedelta(days=7)).isoformat(),
+                                   "Read": "Before/after CTR", **_row})
                 elif _cat in ("hard_swap_plus_title_fix", "routing") and _sd:
-                    _label = "Routing impressions check" if _cat == "routing" else "Search-impressions read"
-                    _reads.append(((date.fromisoformat(_sd) + timedelta(days=14)).isoformat(), f"{_label} — {_v}"))
+                    _reads.append({"Date": (date.fromisoformat(_sd) + timedelta(days=14)).isoformat(),
+                                   "Read": "Routing impressions check" if _cat == "routing" else "Search-impressions read", **_row})
             if _reads:
                 st.markdown("#### 📖 Read calendar")
-                st.dataframe(pd.DataFrame(sorted(_reads), columns=["Date", "What to read"]),
-                             hide_index=True, use_container_width=True)
+                st.dataframe(pd.DataFrame(sorted(_reads, key=lambda r: r["Date"]))[["Date", "Read", "Video", "Open"]],
+                             hide_index=True, use_container_width=True,
+                             column_config={"Open": _linkcol, "Date": _datecol})
 
             st.markdown("---")
             st.markdown("#### 📋 Item details")
