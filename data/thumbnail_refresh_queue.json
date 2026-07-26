@@ -211,6 +211,27 @@
    "why": "Test #51 \u2014 the #1 packaging bet of the Jul-26 triage. Rule-violating Q-hook on the biggest live non-Dopamine pool. Above-median CTR on live flow = the banked condition for tail re-expansion. Hypothesis vehicle 2. Verdict ~Aug 9."
   },
   {
+   "video": "Mental Stillness Music | Slow Santoor | 1.5 Hours",
+   "video_id": "0Vv0INZ2sVI",
+   "lane": "calm_relax",
+   "category": "test_compare",
+   "status": "RUNNING",
+   "ab_test_num": 52,
+   "scheduled_date": "2026-07-26",
+   "read_date": "2026-08-09",
+   "current": {
+    "ctr_pct": 3.92,
+    "impressions": 2094,
+    "note": "~75 impr/day \u2014 YT verdict will likely be insufficient; judge by own before/after read. Peak-era: CTR 3.4 / AVD 20.0 (retention-capped \u2014 expectations low)"
+   },
+   "new_thumb_text": [
+    "A: MIND FEELING HEAVY? + Mental Stillness Music | Slow Santoor",
+    "B: HEAVY MIND? + Music for Mental Stillness | Instrumental Music"
+   ],
+   "thumb_format": "both arms Q-hook (calm lane prefers outcome/abstract \u2014 check post-test CTR per Test #41 lesson)",
+   "why": "User-launched Title+Thumb structure test ({X} Music vs Music for {X}). Variant B drops the instrument from the title \u2014 watch that against the instrument-in-title signature. Read ~Aug 9."
+  },
+  {
    "video": "Sitar for Nervous System Healing | Indian Classical Music for Calmness | 1.5 Hours",
    "lane": "anxiety",
    "category": "test_compare",
