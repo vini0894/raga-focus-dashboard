@@ -357,6 +357,24 @@
     "NEW TITLE: Find Your Calm | Bansuri & Tanpura | 1.5 Hours"
    ],
    "why": "Problem-lead violation (offering beats problem, banked). Lead scored 62, FRESH, 46ch. OPTIONAL \u2014 user's call. Read Aug 14."
+  },
+  {
+   "video": "End-screen routing \u2014 5 donor\u2192target pairs",
+   "lane": "cross-lane",
+   "category": "routing",
+   "status": "PENDING",
+   "scheduled_date": "2026-07-27",
+   "current": {
+    "note": "The distribution lever (re-thumb converts, routing distributes \u2014 Test #43 lesson). All targets peak-era AVD-verified."
+   },
+   "new_thumb_text": [
+    "Dopamine Reset \u2192 Morning Gratitude",
+    "NS Healing \u2192 Anxiety Relief Dilruba + Restless Mind",
+    "3hr Bansuri \u2192 Drift Off Effortlessly",
+    "Productive Day \u2192 Morning Gratitude",
+    "Morning Energy \u2192 Morning Gratitude"
+   ],
+   "why": "Wire in Studio end-screen editor during the Mon Jul 27 session. Log pairs into end_screen_redirects.csv once set (source_hero fields have been TBD since Jul 3). Impressions check Aug 10."
   }
  ]
 }

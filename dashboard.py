@@ -3859,6 +3859,69 @@ with tab_thumbs:
         st.caption(f"📏 Rule: {_tq.get('rule', '')}")
         st.caption(f"⏱ Monitor: {_tq.get('monitor', '')}")
 
+        _board = _tq.get("items", [])
+        if _board:
+            _act_map = {
+                "test_compare": "Thumb A/B", "hard_swap": "Hard swap",
+                "hard_swap_plus_title_fix": "Title edit", "routing": "End-screen routing",
+            }
+            _live = [i for i in _board if i.get("status") == "RUNNING"]
+            _sched = sorted(
+                [i for i in _board if i.get("status") != "RUNNING"],
+                key=lambda i: i.get("scheduled_date") or "9999",
+            )
+
+            st.markdown("#### 🧪 Live now")
+            if _live:
+                st.dataframe(pd.DataFrame([{
+                    "Test": f"#{i.get('ab_test_num', '—')}",
+                    "Video": i.get("video", ""),
+                    "Testing": "   vs   ".join(i.get("new_thumb_text", [])),
+                    "Started": i.get("scheduled_date", ""),
+                    "7-day read": i.get("read_date", ""),
+                    "Verdict ~": (date.fromisoformat(i["scheduled_date"]) + timedelta(days=14)).isoformat() if i.get("scheduled_date") else "",
+                } for i in _live]), hide_index=True, use_container_width=True)
+            else:
+                st.caption("No tests running.")
+
+            if _sched:
+                st.markdown("#### 📅 Scheduled")
+                st.dataframe(pd.DataFrame([{
+                    "Date": i.get("scheduled_date", ""),
+                    "Video": i.get("video", ""),
+                    "Action": _act_map.get(i.get("category"), i.get("category", "")),
+                    "New text / title": " · ".join(i.get("new_thumb_text", [])),
+                    "Note": (i.get("current", {}).get("note") or i.get("why") or "")[:110],
+                } for i in _sched]), hide_index=True, use_container_width=True)
+
+            _reads = []
+            for i in _board:
+                _v = i.get("video", "")[:48]
+                _sd = i.get("scheduled_date")
+                _cat = i.get("category")
+                if i.get("status") == "RUNNING":
+                    if i.get("read_date"):
+                        _reads.append((i["read_date"], f"Test #{i.get('ab_test_num', '')} 7-day read — {_v}"))
+                    if _sd:
+                        _reads.append(((date.fromisoformat(_sd) + timedelta(days=14)).isoformat(),
+                                       f"Test #{i.get('ab_test_num', '')} verdict + post-CTR — {_v}"))
+                elif _cat == "test_compare" and _sd:
+                    _reads.append(((date.fromisoformat(_sd) + timedelta(days=7)).isoformat(),
+                                   f"7-day read (if launched) — {_v}"))
+                elif _cat == "hard_swap" and _sd:
+                    _reads.append(((date.fromisoformat(_sd) + timedelta(days=7)).isoformat(),
+                                   f"Before/after CTR — {_v}"))
+                elif _cat in ("hard_swap_plus_title_fix", "routing") and _sd:
+                    _label = "Routing impressions check" if _cat == "routing" else "Search-impressions read"
+                    _reads.append(((date.fromisoformat(_sd) + timedelta(days=14)).isoformat(), f"{_label} — {_v}"))
+            if _reads:
+                st.markdown("#### 📖 Read calendar")
+                st.dataframe(pd.DataFrame(sorted(_reads), columns=["Date", "What to read"]),
+                             hide_index=True, use_container_width=True)
+
+            st.markdown("---")
+            st.markdown("#### 📋 Item details")
+
         _today = _thumb_date.today().isoformat()
         _cat_label = {
             "hard_swap": ("🟢 Hard-swap", "Cooling/stable — just replace the thumbnail."),
