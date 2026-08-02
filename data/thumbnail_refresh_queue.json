@@ -137,6 +137,85 @@
    "impact_note": "CTR HELD/IMPROVED 3.07\u21923.3% (latest 3.8%). AVD ROSE +56% to 31:20 (~35% of 90min) \u2014 strong retention. Impressions -91% age-driven but packaging_verdict=WORKING. IDEAL hero-attach candidate \u2014 31min AVD chains cleanly.",
    "ab_test_num": 42,
    "follow_up_action": "Attach to Sitar/Veena hero end screen for impression injection (tracked in end_screen_redirects.csv when set up)"
+  },
+  {
+   "video": "Sitar for Brain Detox | Clear Your Mind | 1.5 Hours",
+   "lane": "cognitive",
+   "category": "hard_swap",
+   "status": "DONE",
+   "scheduled_date": "2026-07-27",
+   "current": {
+    "ctr_pct": 3.49,
+    "impressions": 122873,
+    "note": "live thumb MENTAL DETOX is the 38% LOSER of concluded Test #43 (BRAIN FOG? won 61.9/38.1) \u2014 winner text was collision-blocked, swap never executed"
+   },
+   "new_thumb_text": [
+    "FOGGY MIND?",
+    "MIND CLOUDY? (alt)"
+   ],
+   "thumb_format": "specific_state_q_hook COMPACT (cognitive DECISIVE, Tests 17+35+43)",
+   "why": "NO new A/B \u2014 don't re-test a known answer. Apply the won format with a collision-free text. Conversion-only; distribution = end-screen routing (Test #43's own banked lesson).",
+   "video_id": "mDCDS2TlK4k",
+   "done_note": "Verified live 2026-08-02: BRAIN FOG? (Test-#43 winning text; queue had proposed FOGGY MIND?). Cognitive Q-hook = correct format."
+  },
+  {
+   "video": "Music for Mental Fatigue | Sitar Music | 1.5 Hours",
+   "video_id": "uxkD-QODdFY",
+   "lane": "cognitive",
+   "category": "hard_swap",
+   "status": "DONE",
+   "scheduled_date": "2026-07-27",
+   "current": {
+    "ctr_pct": 2.79,
+    "impressions": 6457,
+    "note": "~250 impr/day \u2014 hygiene only, expect nothing; queued since Jul 3 and never executed"
+   },
+   "new_thumb_text": [
+    "BRAIN OVERLOAD?"
+   ],
+   "thumb_format": "specific_state_q_hook COMPACT",
+   "why": "Clears the oldest TO_ACTION debt. Removes a rule-violating statement thumb (LET MIND REST, post-crash CTR 2.0).",
+   "done_note": "Verified live 2026-08-02: BRAIN BURN OUT (queue had proposed BRAIN OVERLOAD?). Swap done, text differs from plan."
+  },
+  {
+   "video": "TITLE EDIT \u2014 Relaxation Music | Bansuri Raga & 432Hz Evening Session",
+   "lane": "calm_relax",
+   "category": "hard_swap_plus_title_fix",
+   "status": "DONE",
+   "scheduled_date": "2026-07-28",
+   "current": {
+    "ctr_pct": 3.86,
+    "avd_pct": 29.01,
+    "impressions": 1348,
+    "note": "peak-era: 27.4K impr, CTR 3.86, AVD 29.0 (REAL). Dead now"
+   },
+   "new_thumb_text": [
+    "NEW TITLE: Inner Calm Music | Bansuri Evening Raga | 1 Hour"
+   ],
+   "why": "Hz-stuffing = the banked Test-1 loser pattern. New lead scored 61, FRESH. Thumb unchanged. Read Aug 11.",
+   "video_id": "g3v4KTVRNEQ",
+   "done_note": "Verified in Aug-2 CSV: live title IS 'Inner Calm Music | Bansuri Evening Raga | 1 Hour'."
+  },
+  {
+   "video": "Quiet Night Music | Slow Bansuri Flute | 3 Hours",
+   "lane": "sleep",
+   "category": "test_compare",
+   "status": "CANCELLED",
+   "scheduled_date": "2026-07-29",
+   "read_date": "2026-08-05",
+   "current": {
+    "ctr_pct": 6.63,
+    "impressions": 96587,
+    "note": "CTR blend fell 0.40 in 6 days = active fatigue; AND its SLEEP BETTER text collides with the newer rising 'Sleep Through the Night' ship"
+   },
+   "new_thumb_text": [
+    "DEEP REST TONIGHT",
+    "REST EASY (alt)"
+   ],
+   "thumb_format": "outcome_imperative (sleep rule)",
+   "why": "Fatigue + live channel-page text collision fixed in one move. Staggered to Wed so Test #51 (same lane) gets 3 clean days first. Verdict ~Aug 12.",
+   "video_id": "xfcNnj0fF5s",
+   "done_note": "Verified live 2026-08-02: still SLEEP BETTER \u2014 test never launched. CANCELLED per 2026-08-02 decision: 0.31pp off lane median AND the channel's #1 T1 video (35.5%) \u2014 leave it alone."
   }
  ],
  "parked": [
@@ -237,13 +316,13 @@
    "lane": "anxiety",
    "category": "test_compare",
    "status": "PENDING",
-   "scheduled_date": "2026-07-27",
+   "scheduled_date": "2026-08-08",
    "read_date": "2026-08-03",
    "current": {
     "ctr_pct": 3.88,
     "impressions": 542314,
     "avd_pct": 24.82,
-    "note": "PRE-CHECK FIRST: pull 7-day Reach SS \u2014 HOLD if 7d CTR >= ~4.4 (blend is rising +0.14, Morning-Energy precedent)"
+    "note": "Verified live 2026-08-02: still STRESS DETOX, test never launched. STILL VALID \u2014 the 2026-08-02 rescue audit independently flagged this video (CTR 3.89 vs anxiety 4.42, AVD 28.6 healthy, 495K impr). \u26a0\ufe0f image is a PERFORMER (playing sitar) \u2014 worst-converting composition (3.03 vs 5.6-6.1 viewer-state); fix the IMAGE, not just text."
    },
    "new_thumb_text": [
     "MENTAL OVERLOAD?",
@@ -254,97 +333,22 @@
    "video_id": "52YU6Q64zVw"
   },
   {
-   "video": "Sitar for Brain Detox | Clear Your Mind | 1.5 Hours",
-   "lane": "cognitive",
-   "category": "hard_swap",
-   "status": "PENDING",
-   "scheduled_date": "2026-07-27",
-   "current": {
-    "ctr_pct": 3.49,
-    "impressions": 122873,
-    "note": "live thumb MENTAL DETOX is the 38% LOSER of concluded Test #43 (BRAIN FOG? won 61.9/38.1) \u2014 winner text was collision-blocked, swap never executed"
-   },
-   "new_thumb_text": [
-    "FOGGY MIND?",
-    "MIND CLOUDY? (alt)"
-   ],
-   "thumb_format": "specific_state_q_hook COMPACT (cognitive DECISIVE, Tests 17+35+43)",
-   "why": "NO new A/B \u2014 don't re-test a known answer. Apply the won format with a collision-free text. Conversion-only; distribution = end-screen routing (Test #43's own banked lesson).",
-   "video_id": "mDCDS2TlK4k"
-  },
-  {
-   "video": "Music for Mental Fatigue | Sitar Music | 1.5 Hours",
-   "video_id": "uxkD-QODdFY",
-   "lane": "cognitive",
-   "category": "hard_swap",
-   "status": "PENDING",
-   "scheduled_date": "2026-07-27",
-   "current": {
-    "ctr_pct": 2.79,
-    "impressions": 6457,
-    "note": "~250 impr/day \u2014 hygiene only, expect nothing; queued since Jul 3 and never executed"
-   },
-   "new_thumb_text": [
-    "BRAIN OVERLOAD?"
-   ],
-   "thumb_format": "specific_state_q_hook COMPACT",
-   "why": "Clears the oldest TO_ACTION debt. Removes a rule-violating statement thumb (LET MIND REST, post-crash CTR 2.0)."
-  },
-  {
    "video": "TITLE EDIT \u2014 Peaceful Music | Soothing Music with Veena | 1 Hour",
    "lane": "calm_relax",
    "category": "hard_swap_plus_title_fix",
    "status": "PENDING",
-   "scheduled_date": "2026-07-28",
+   "scheduled_date": "2026-08-08",
    "current": {
     "ctr_pct": 4.22,
     "avd_pct": 29.5,
     "impressions": 1869,
-    "note": "peak-era: 51.7K impr, CTR 4.22, AVD 29.5 (REAL, peak-gated). Dead now \u2014 title play = search lottery, nothing to lose"
+    "note": "Verified in Aug-2 CSV: title UNCHANGED \u2014 edit never done. Video is 207 views/1,897 impr; low stakes, do whenever in Studio."
    },
    "new_thumb_text": [
     "NEW TITLE: Slow Living Music | Veena Instrumental | 1 Hour"
    ],
    "why": "Double-generic title (two '...Music' slots). New lead scored 64, prescreened FRESH, 49ch preflight PASS. Thumb unchanged. Read search impressions Aug 11.",
    "video_id": "1jrBZH4K_S8"
-  },
-  {
-   "video": "TITLE EDIT \u2014 Relaxation Music | Bansuri Raga & 432Hz Evening Session",
-   "lane": "calm_relax",
-   "category": "hard_swap_plus_title_fix",
-   "status": "PENDING",
-   "scheduled_date": "2026-07-28",
-   "current": {
-    "ctr_pct": 3.86,
-    "avd_pct": 29.01,
-    "impressions": 1348,
-    "note": "peak-era: 27.4K impr, CTR 3.86, AVD 29.0 (REAL). Dead now"
-   },
-   "new_thumb_text": [
-    "NEW TITLE: Inner Calm Music | Bansuri Evening Raga | 1 Hour"
-   ],
-   "why": "Hz-stuffing = the banked Test-1 loser pattern. New lead scored 61, FRESH. Thumb unchanged. Read Aug 11.",
-   "video_id": "g3v4KTVRNEQ"
-  },
-  {
-   "video": "Quiet Night Music | Slow Bansuri Flute | 3 Hours",
-   "lane": "sleep",
-   "category": "test_compare",
-   "status": "PENDING",
-   "scheduled_date": "2026-07-29",
-   "read_date": "2026-08-05",
-   "current": {
-    "ctr_pct": 6.63,
-    "impressions": 96587,
-    "note": "CTR blend fell 0.40 in 6 days = active fatigue; AND its SLEEP BETTER text collides with the newer rising 'Sleep Through the Night' ship"
-   },
-   "new_thumb_text": [
-    "DEEP REST TONIGHT",
-    "REST EASY (alt)"
-   ],
-   "thumb_format": "outcome_imperative (sleep rule)",
-   "why": "Fatigue + live channel-page text collision fixed in one move. Staggered to Wed so Test #51 (same lane) gets 3 clean days first. Verdict ~Aug 12.",
-   "video_id": "xfcNnj0fF5s"
   },
   {
    "video": "TITLE EDIT (optional) \u2014 Overthinking Music | Healing with Bamboo Flute & Tanpura | 1.5 Hours",
@@ -357,30 +361,12 @@
     "ctr_pct": 4.13,
     "avd_pct": 25.07,
     "impressions": 2480,
-    "note": "peak-era: 37.5K impr, CTR 4.13, AVD 25.07 \u2014 marginal survivor of the peak-era purge"
+    "note": "Verified in Aug-2 CSV: title unchanged (optional item). \u26a0\ufe0f NEW CONTEXT 2026-08-02: this video (8.99 CTR / 46.1 AVD) is now the banked precedent cell for Thu Aug-6's Tanpura\u00d7anxiety ship \u2014 consider LEAVING the title so the precedent stays clean."
    },
    "new_thumb_text": [
     "NEW TITLE: Find Your Calm | Bansuri & Tanpura | 1.5 Hours"
    ],
    "why": "Problem-lead violation (offering beats problem, banked). Lead scored 62, FRESH, 46ch. OPTIONAL \u2014 user's call. Read Aug 14."
-  },
-  {
-   "video": "End-screen routing \u2014 5 donor\u2192target pairs",
-   "lane": "cross-lane",
-   "category": "routing",
-   "status": "SUPERSEDED",
-   "scheduled_date": "2026-07-27",
-   "current": {
-    "note": "The distribution lever (re-thumb converts, routing distributes \u2014 Test #43 lesson). All targets peak-era AVD-verified."
-   },
-   "new_thumb_text": [
-    "Dopamine Reset \u2192 Morning Gratitude",
-    "NS Healing \u2192 Anxiety Relief Dilruba + Restless Mind",
-    "3hr Bansuri \u2192 Drift Off Effortlessly",
-    "Productive Day \u2192 Morning Gratitude",
-    "Morning Energy \u2192 Morning Gratitude"
-   ],
-   "why": "SUPERSEDED 2026-08-02 \u2014 end screens MEASURED DEAD: 101 views channel-wide in a month (0.01%); Dopamine Reset produced 7. Structural (last 5-20s of 1.5-3hr ambient video; viewer asleep/gone/TV). Replaced by PLAYLIST routing (4.94% of views, 9.6% of watch-time), executed 2026-08-02 in two audience-matched tracks: Peaceful Music reordered (user), Meditation/Healing fixes listed in ROUTING_PASS_2026-08-05.md. Donor\u2192target must be T1-register-matched: Dopamine (15.7% T1) never points at a T1 video \u2014 the old pair 'Dopamine Reset \u2192 Morning Gratitude (38.0% T1)' was exactly the mismatch to avoid."
   },
   {
    "video": "Music for Overthinkers | Dilruba Raga Kedar | 1.5 Hours",
