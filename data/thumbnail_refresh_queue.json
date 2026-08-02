@@ -1,6 +1,6 @@
 {
  "created_at": "2026-06-16",
- "cleaned_at": "2026-07-26",
+ "cleaned_at": "2026-08-02",
  "purpose": "Thumbnail-refresh queue. Target = high-retention + low-CTR videos where the thumbnail is the bottleneck. Active_queue = decisions to act on THIS week. Archive = concluded/parked history.",
  "rule": "AVD high + CTR below channel avg 3.68% = thumbnail-capped. Low AVD = retention problem, thumbnail won't fix (skip). CTR at/above avg = thumbnail fine, drop from queue.",
  "monitor": "7-day window post-change. Hard-swap target: CTR +0.5pt. Test & Compare auto-keeps the winner.",
@@ -201,7 +201,7 @@
    "current": {
     "ctr_pct": 4.66,
     "impressions": 330637,
-    "note": "FLAT window 11-12K/day live; CTR eroded 5.79->4.66 over 5 wks = thumb fatigue; sleep alive-median 6.39"
+    "note": "Challenger DEEP SLEEP NOW confirmed LIVE via CDN 2026-08-02 (night scene, viewer resting, bansuri at frame edge \u2014 on-pattern per \u00a77b). 7-day read DUE TODAY 2026-08-02; verdict ~Aug 9. \u26a0\ufe0f CTR quoted anywhere from the Aug-2 CSV (4.67) is mostly the OLD thumb's number \u2014 read post-swap CTR only."
    },
    "new_thumb_text": [
     "DEEP SLEEP NOW (challenger)",
@@ -368,7 +368,7 @@
    "video": "End-screen routing \u2014 5 donor\u2192target pairs",
    "lane": "cross-lane",
    "category": "routing",
-   "status": "PENDING",
+   "status": "SUPERSEDED",
    "scheduled_date": "2026-07-27",
    "current": {
     "note": "The distribution lever (re-thumb converts, routing distributes \u2014 Test #43 lesson). All targets peak-era AVD-verified."
@@ -380,7 +380,46 @@
     "Productive Day \u2192 Morning Gratitude",
     "Morning Energy \u2192 Morning Gratitude"
    ],
-   "why": "Wire in Studio end-screen editor during the Mon Jul 27 session. Log pairs into end_screen_redirects.csv once set (source_hero fields have been TBD since Jul 3). Impressions check Aug 10."
+   "why": "SUPERSEDED 2026-08-02 \u2014 end screens MEASURED DEAD: 101 views channel-wide in a month (0.01%); Dopamine Reset produced 7. Structural (last 5-20s of 1.5-3hr ambient video; viewer asleep/gone/TV). Replaced by PLAYLIST routing (4.94% of views, 9.6% of watch-time), executed 2026-08-02 in two audience-matched tracks: Peaceful Music reordered (user), Meditation/Healing fixes listed in ROUTING_PASS_2026-08-05.md. Donor\u2192target must be T1-register-matched: Dopamine (15.7% T1) never points at a T1 video \u2014 the old pair 'Dopamine Reset \u2192 Morning Gratitude (38.0% T1)' was exactly the mismatch to avoid."
+  },
+  {
+   "video": "Music for Overthinkers | Dilruba Raga Kedar | 1.5 Hours",
+   "lane": "anxiety",
+   "category": "hard_swap",
+   "status": "PENDING",
+   "scheduled_date": "2026-08-08",
+   "current": {
+    "ctr_pct": 2.96,
+    "impressions": 44540,
+    "note": "Worst proportional converter on the channel: 2.96 vs anxiety median 4.42. AVD healthy 23.7% \u2192 conversion problem, not retention. Current text MIND RACING?"
+   },
+   "new_thumb_text": [
+    "SETTLE YOUR MIND",
+    "QUIET THE NOISE (alt)"
+   ],
+   "thumb_format": "anxiety is format-TIED (imperative 3.50 vs Q-hook 3.52, n=5/8) \u2014 choose on fit; ANXIOUS MIND? (4.36, lane best) is on another live video",
+   "why": "2026-08-02 rescue audit. Small immediate dollars (small) but re-thumb repairs CONVERSION; if the algorithm re-tests the video the better converter compounds. Image: viewer-state, not performer.",
+   "video_id": "tZP2B_aG300"
+  },
+  {
+   "video": "Deep Rest Music | Find Stillness with Surbahar | 1.5 Hours",
+   "lane": "stress_burnout",
+   "category": "hard_swap",
+   "status": "PENDING",
+   "scheduled_date": "2026-08-08",
+   "current": {
+    "ctr_pct": 3.59,
+    "impressions": 41623,
+    "note": "NEED REST? is the ONE live thumb contradicting its own lane's data: stress_burnout imperative 3.54 > Q-hook 3.22, and permission won its A/B (IT'S OKAY TO REST 4.71). AVD healthy 26.1%."
+   },
+   "new_thumb_text": [
+    "REST NOW",
+    "IT'S OKAY TO STOP (permission alt)"
+   ],
+   "thumb_format": "imperative or permission \u2014 NOT Q-hook (only live format-rule violation on the channel)",
+   "why": "2026-08-02 rescue audit. Tiny upside but zero-cost correctness fix. Image: viewer-state, not performer.",
+   "video_id": "m6aFcw2f58o"
   }
- ]
+ ],
+ "audit_note_2026-08-02": "Full rescue audit run (>=1,000 views, >=20K impr, CTR below lane median, AVD gate, peak-era rule): only 2 NEW actionable items (added above). Killed by gates: Dopamine Reset + Bansuri Sound Sleep (AVD-capped ~18% \u2014 packaging cannot fix), Morning Energy Dilruba (banked do-not-touch during active push; biggest theoretical upside the largest on the channel \u2014 revisit when 28d impr <1M), Quiet Night (0.31pp off median + #1 T1 video \u2014 leave). 3hr Bansuri already RUNNING as Test #51. Verify thumbs against LIVE CDN (i.ytimg.com/vi/<id>/maxresdefault.jpg), never thumbnail_dataset.csv alone \u2014 dataset verified Jul 25, drift since; it showed '?' for a thumb that had been swapped Jul 26."
 }
