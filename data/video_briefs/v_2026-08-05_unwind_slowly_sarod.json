@@ -20,15 +20,15 @@
     "track_record: THIN (n=1, med 469v, CTR 3.77, AVD 31.7%) \u2014 Calm Music | Sarod Instrumental | Gentle Healing",
     "Alternative that DID clear the floor: 'Music Before Bed' (61, FRESH) \u2014 the only one available in these three lanes"
   ],
-  "thumbnail_text_main": "NOTHING TO DO",
+  "thumbnail_text_main": "SETTLE HERE",
   "thumbnail_text_variants": [
     {
       "label": "fixed",
-      "text": "NOTHING TO DO",
-      "strategy": "Permission register \u2014 banked as the winner in stress/rest lanes (2/2). Not a Q-hook: Q wins cognitive and anxiety, not calm. 13 chars, inside the 14-18 mobile band. Dedup 0 hits across all briefs."
+      "text": "SETTLE HERE",
+      "strategy": "Imperative + place \u2014 the construction of 'PAUSE HERE', which is the channel's second-highest-CTR thumbnail at 7.45. 11 chars. Dedup 0 hits across all briefs and the thumbnail dataset. Pairs with the title without repeating it: the title offers the activity ('Unwind Slowly'), the thumb says stop where you are.\n\n\u26a0\ufe0f CHOSEN ON FIT, NOT ON EVIDENCE. The calm_relax lane has NO thumbnail above 2,000 views in thumbnail_dataset.csv \u2014 it is unmeasured at any scale where CTR means anything. Full-sample numbers lean imperative (3.47, n=9) over Q-hook (3.25, n=6) and permission (3.57, n=1), but that is weak and not survivor-bias-stripped.\n\nDo NOT read this ship's result as evidence for a calm_relax format rule in either direction \u2014 the lane needs several measured ships first.\n\nRejected: 'NOTHING TO DO' (original pick \u2014 describes an empty evening, which is not most viewers' reality) \u00b7 'REST DEEPLY' (good, mirrors SLEEP DEEPLY/SLEEP BETTER, but 'SETTLE HERE' matches the single best-converting thumbnail on the channel) \u00b7 permission-register options like 'IT CAN WAIT' and 'REST IS ALLOWED' (the banked permission rule for stress-rest rests on n=2 and does not extend to calm_relax)."
     }
   ],
-  "thumbnail_prompt": "Pichwai/Kangra miniature on aged cream parchment, ornate gold and deep-teal border. \u26a0\ufe0f Show the VIEWER in their own moment, NOT a musician performing \u2014 measured 2026-08-02: performer thumbnails convert worst (3.03%) while viewer-in-their-own-moment converts best (6.11%, 5.57%). A sarod may rest at frame edge; it must not be the subject. Overlay 'NOTHING TO DO' in large dark-teal serif with a second tier reading 'Sarod \u00b7 Raga Bageshri' \u2014 put the text in its own banner panel at ~35% of frame, which is what both competitor breakouts do and what keeps text legible at 120px.",
+  "thumbnail_prompt": "Pichwai/Kangra miniature on aged cream parchment, ornate gold and deep-teal border. \u26a0\ufe0f Show the VIEWER in their own moment, NOT a musician performing \u2014 measured 2026-08-02: performer thumbnails convert worst (3.03%) while viewer-in-their-own-moment converts best (6.11%, 5.57%). A sarod may rest at frame edge; it must not be the subject. Overlay 'SETTLE HERE' in large dark-teal serif with a second tier reading 'Sarod \u00b7 Raga Bageshri' \u2014 put the text in its own banner panel at ~35% of frame, which is what both competitor breakouts do and what keeps text legible at 120px.",
   "playlists": [
     "Peaceful Music",
     "Healing & Anxiety Relief"
