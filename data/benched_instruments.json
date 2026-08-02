@@ -1,0 +1,14 @@
+{
+  "_doc": "Instruments the gates must NOT propose, for any lane or format. This is a HARD filter applied before cooldown. Edit this file to bench or un-bench — do not hard-code benches in tooling. Read by tools/recommend_slot.py (and any other gate that proposes instruments).",
+  "_why_this_file_exists": "2026-08-02: fixing the track_record duration bug flipped Dilruba x anxiety from FLOP to MODEST, and it immediately became the #1 recommendation for BOTH Thu Aug 6 and Fri Aug 7. Dilruba had been benched by the user on 2026-07-25, but the bench lived only in SESSION_CONTEXT and memory - no tool enforced it. It was caught by hand. A bench that only exists in prose will eventually ship a video.",
+  "benched": [
+    {
+      "instrument": "Dilruba",
+      "benched_on": "2026-07-25",
+      "benched_by": "user",
+      "reason": "Every tried cell is a FLOP - morning n=3 median 671 views, anxiety n=2 median 1,048. Its only apparent win was the unrepeatable May-9 surge windfall, and the music audit showed that video actually carried Santoor audio, not Dilruba.",
+      "unbench_condition": "Explicit user say-so plus a fresh hypothesis. Do not propose it even as an off-list experimental arm.",
+      "note": "After the 2026-08-02 track_record duration fix its verdict reads MODEST (n=3, med 1,922v). The bench is a USER DECISION and overrides the gate verdict."
+    }
+  ]
+}

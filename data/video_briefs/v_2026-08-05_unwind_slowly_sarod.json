@@ -1,0 +1,65 @@
+{
+  "id": "v_2026-08-05_unwind_slowly_sarod",
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-08-02",
+  "planned_date": "2026-08-05",
+  "planned_slot": "19:00 IST Wed \u2014 evening unwind intent",
+  "title": "Unwind Slowly | Slow Sarod | 1.5 Hours of Calm",
+  "title_variants": {
+    "LOCKED": "Unwind Slowly | Slow Sarod | 1.5 Hours of Calm"
+  },
+  "title_note": "\u26a0\ufe0f DELIBERATE VidIQ-FLOOR OVERRIDE (user, 2026-08-02). Lead scores 21-31, under the >=60 new-ship bar. Reason: the >=60 pool in sleep/anxiety/calm_relax is EXHAUSTED \u2014 of 10 banked phrases >=60 in these lanes, 8 are past-locks, same-concept, A/B losers or anti-patterns; only 'music before bed' (61) and 'relaxing instrumental music' (70) survive, and the second is textbook generic-soft. The prescreener itself now returns the contradiction: 'peaceful music for sleep' scores 62 AND is rejected as anti-pattern:generic_soft_framing_leads. The floor and the generic-soft anti-pattern disqualify each other, so the floor is not functioning as a gate. Counter-evidence to title rule (1) 'higher VidIQ = better lead' (which rests on n=2 concluded tests): 'Music to Sleep Through the Night' (CTR 7.15, best at scale) and 'Quiet Night Music' (6.53, 35.5% T1) are both distinctive low-search-volume leads. VidIQ measures SEARCH, which is 17% of channel traffic vs 27% suggested and 36% subscriber. THIS WEEK IS THE TEST: 3 ships at 30-31 against Monday's 66. If the low scorers land at or above the recent ~3% CTR floor, rule (1) needs re-derivation on a bigger sample.\n\n\u26a0\ufe0f n=1 CELL. This is a coin flip, not a forecast. Recorded so the outcome is not read as evidence either way without more ships.",
+  "lane": "calm_relax",
+  "instrument": "Sarod",
+  "raga": "Bageshri",
+  "validated_keywords": [
+    "Lead scores 31 \u2014 BELOW the >=60 bar, shipped as a deliberate override (see title_note)",
+    "Lead prescreened FRESH 2026-08-02 \u2014 no conflict vs live titles, briefs, A/B losers or reserved phrases",
+    "track_record: THIN (n=1, med 469v, CTR 3.77, AVD 31.7%) \u2014 Calm Music | Sarod Instrumental | Gentle Healing",
+    "Alternative that DID clear the floor: 'Music Before Bed' (61, FRESH) \u2014 the only one available in these three lanes"
+  ],
+  "thumbnail_text_main": "NOTHING TO DO",
+  "thumbnail_text_variants": [
+    {
+      "label": "fixed",
+      "text": "NOTHING TO DO",
+      "strategy": "Permission register \u2014 banked as the winner in stress/rest lanes (2/2). Not a Q-hook: Q wins cognitive and anxiety, not calm. 13 chars, inside the 14-18 mobile band. Dedup 0 hits across all briefs."
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature on aged cream parchment, ornate gold and deep-teal border. \u26a0\ufe0f Show the VIEWER in their own moment, NOT a musician performing \u2014 measured 2026-08-02: performer thumbnails convert worst (3.03%) while viewer-in-their-own-moment converts best (6.11%, 5.57%). A sarod may rest at frame edge; it must not be the subject. Overlay 'NOTHING TO DO' in large dark-teal serif with a second tier reading 'Sarod \u00b7 Raga Bageshri' \u2014 put the text in its own banner panel at ~35% of frame, which is what both competitor breakouts do and what keeps text legible at 120px.",
+  "playlists": [
+    "Peaceful Music",
+    "Healing & Anxiety Relief"
+  ],
+  "description": "Unwind Slowly | Slow Sarod | 1.5 Hours of Calm of Slow the evening down and let the day finish\n\nThe evening arrives and there is still a list running in your head. Nothing on it has to happen now.\n\nThis peaceful Indian ambient meditation music is designed to slow the evening down and let the day finish.\n\nEnjoy 1.5 hours of warm sarod melodies over a soft tanpura drone, looped seamlessly so nothing interrupts you.\n\nPerfect for evening wind-down, reading, cooking, a bath, journalling, stretching, quiet company, switching off after work, early night, doing nothing at all.\n\n\ud83c\udfb5 ABOUT THIS MUSIC\nInstrument: Sarod\nRaga: Bageshri\nStyle: Indian classical ambient, instrumental only\nMood: Calm, steady, unhurried\nDuration: 1.5 hours\n\n\ud83c\udfa7 HOW TO USE\nKeep the volume low enough that it sits underneath the room rather than filling it. Headphones deepen the drone, but this works just as well through a speaker.\n\n\u23f1 CHAPTERS\n0:00 \u2014 Setting the day down\n9:00 \u2014 Letting the room go quiet\n18:00 \u2014 Softening\n27:00 \u2014 Unhurried\n36:00 \u2014 Warmth settling\n45:00 \u2014 Nothing pressing\n54:00 \u2014 Slower still\n63:00 \u2014 Ease\n72:00 \u2014 Quiet continuing\n81:00 \u2014 Drifting toward rest\n\n\u23f1 BEST FOR\nEvening wind-down\nReading before bed\nCooking slowly\nA long bath\nJournalling\nStretching\nQuiet time with someone\nSwitching off after work\nEasing into an early night\nDoing nothing on purpose\n\nIf this music helped, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#UnwindSlowly #SarodMusic #IndianAmbientMusic #EveningCalm",
+  "tags": [
+    "unwind slowly",
+    "calm music",
+    "sarod instrumental",
+    "relaxing instrumental music",
+    "indian classical music",
+    "raga bageshri",
+    "evening music",
+    "1.5 hours",
+    "slow living",
+    "music to unwind",
+    "deep relaxation",
+    "peaceful evening"
+  ],
+  "suno_prompt": "Instrumental only, no vocals \u2014 gentle Indian classical sarod in Raga Bageshri, warm fretless tone with long natural decay, unhurried evening character around 62 BPM, calm and settled, seamless loop.",
+  "suno_prompt_note": "Short one-liner per the banked default. NO tabla \u2014 calm_relax wants ambience, not pulse. The word 'slow' is kept OUT of the prompt (it makes Suno generate draggy output); 62 BPM sets the tempo. The TITLE may say 'Slow Sarod' \u2014 title and prompt are different surfaces.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-08-05 19:00 IST"
+  },
+  "preflight_passed": true,
+  "preflight_detail": "char band OK (46 chars) \u00b7 3 slots \u00b7 no anti-pattern hits \u00b7 lead FRESH \u00b7 thumb dedup 0 hits",
+  "pending": [
+    "Ear-test the clips before upload \u2014 if they miss the bar, do not ship",
+    "Generate the thumbnail per the viewer-not-performer rule",
+    "No A/B on this ship \u2014 single title, single thumbnail"
+  ],
+  "version": 1
+}

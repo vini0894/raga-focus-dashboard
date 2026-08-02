@@ -1,0 +1,65 @@
+{
+  "id": "v_2026-08-07_sleep_without_waking_bansuri_3hr",
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-08-02",
+  "planned_date": "2026-08-07",
+  "planned_slot": "19:00 IST Fri \u2014 the week's ANCHOR. Fri is the best launch day (index 199).",
+  "title": "Sleep Without Waking | Slow Bamboo Flute | 3 Hours",
+  "title_variants": {
+    "LOCKED": "Sleep Without Waking | Slow Bamboo Flute | 3 Hours"
+  },
+  "title_note": "\u26a0\ufe0f DELIBERATE VidIQ-FLOOR OVERRIDE (user, 2026-08-02). Lead scores 21-31, under the >=60 new-ship bar. Reason: the >=60 pool in sleep/anxiety/calm_relax is EXHAUSTED \u2014 of 10 banked phrases >=60 in these lanes, 8 are past-locks, same-concept, A/B losers or anti-patterns; only 'music before bed' (61) and 'relaxing instrumental music' (70) survive, and the second is textbook generic-soft. The prescreener itself now returns the contradiction: 'peaceful music for sleep' scores 62 AND is rejected as anti-pattern:generic_soft_framing_leads. The floor and the generic-soft anti-pattern disqualify each other, so the floor is not functioning as a gate. Counter-evidence to title rule (1) 'higher VidIQ = better lead' (which rests on n=2 concluded tests): 'Music to Sleep Through the Night' (CTR 7.15, best at scale) and 'Quiet Night Music' (6.53, 35.5% T1) are both distinctive low-search-volume leads. VidIQ measures SEARCH, which is 17% of channel traffic vs 27% suggested and 36% subscriber. THIS WEEK IS THE TEST: 3 ships at 30-31 against Monday's 66. If the low scorers land at or above the recent ~3% CTR floor, rule (1) needs re-derivation on a bigger sample.",
+  "lane": "sleep",
+  "instrument": "Bansuri",
+  "raga": "Bageshri",
+  "validated_keywords": [
+    "Lead scores 25 \u2014 BELOW the >=60 bar, shipped as a deliberate override (see title_note)",
+    "Lead prescreened FRESH 2026-08-02 \u2014 no conflict vs live titles, briefs, A/B losers or reserved phrases",
+    "track_record: PROVEN (n=3, med 8,421v, CTR 6.53, AVD 23.2%) \u2014 the ONLY 3hr cell that clears every gate",
+    "Alternative that DID clear the floor: 'Music Before Bed' (61, FRESH) \u2014 the only one available in these three lanes"
+  ],
+  "thumbnail_text_main": "SLEEP UNBROKEN",
+  "thumbnail_text_variants": [
+    {
+      "label": "fixed",
+      "text": "SLEEP UNBROKEN",
+      "strategy": "Outcome-imperative \u2014 banked as what the sleep lane wants, and explicitly NOT tolerant of Q-hooks. Mirrors the title promise without repeating its words. 14 chars, bottom of the mobile band. Dedup 0 hits."
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature on aged cream parchment, ornate gold and deep-teal border. \u26a0\ufe0f Show the VIEWER in their own moment, NOT a musician performing \u2014 measured 2026-08-02: performer thumbnails convert worst (3.03%) while viewer-in-their-own-moment converts best (6.11%, 5.57%). A bansuri may rest at frame edge; it must not be the subject. Overlay 'SLEEP UNBROKEN' in large dark-teal serif with a second tier reading 'Bansuri \u00b7 Raga Bageshri' \u2014 put the text in its own banner panel at ~35% of frame, which is what both competitor breakouts do and what keeps text legible at 120px.",
+  "playlists": [
+    "Sleep Music",
+    "Peaceful Music"
+  ],
+  "description": "Sleep Without Waking | Slow Bamboo Flute | 3 Hours of Hold one unbroken texture through the whole night so nothing wakes you\n\nIt is not falling asleep that is the problem. It is 3am, and being awake again, and the hours until morning.\n\nThis peaceful Indian ambient meditation music is designed to hold one unbroken texture through the whole night so nothing wakes you.\n\nEnjoy 3 hours of low breathy bamboo flute over a soft tanpura drone, with no dynamic jumps and no silences, looped seamlessly so nothing interrupts you.\n\nPerfect for sleeping through the night, waking at 3am, insomnia, light sleepers, shift work, jet lag, noisy neighbours, restless nights, napping, keeping a room from going silent.\n\n\ud83c\udfb5 ABOUT THIS MUSIC\nInstrument: Bansuri\nRaga: Bageshri\nStyle: Indian classical ambient, instrumental only\nMood: Calm, steady, unhurried\nDuration: 3 hours\n\n\ud83c\udfa7 HOW TO USE\nKeep the volume low enough that it sits underneath the room rather than filling it. Headphones deepen the drone, but this works just as well through a speaker.\n\n\u23f1 CHAPTERS\n0:00:00 \u2014 Settling in\n0:15:00 \u2014 The room going quiet\n0:30:00 \u2014 First depth\n0:45:00 \u2014 Steady through the hour\n1:00:00 \u2014 Deeper\n1:15:00 \u2014 Middle of the night\n1:30:00 \u2014 Unbroken\n1:45:00 \u2014 Still going\n2:00:00 \u2014 Toward morning\n2:15:00 \u2014 Last hour\n2:30:00 \u2014 Light returning\n2:45:00 \u2014 Fading out\n\n\u23f1 BEST FOR\nSleeping through the night\nWaking at 3am\nInsomnia\nLight sleepers\nShift work\nJet lag\nMasking noise\nRestless nights\nLong naps\nKeeping a room from going silent\n\nIf this music helped, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#SleepWithoutWaking #BambooFlute #DeepSleepMusic #IndianAmbientMusic",
+  "tags": [
+    "sleep without waking",
+    "sleep music",
+    "deep sleep music",
+    "bamboo flute",
+    "bansuri music",
+    "indian classical music",
+    "raga bageshri",
+    "3 hours",
+    "insomnia relief",
+    "sleep through the night",
+    "night music",
+    "music before bed"
+  ],
+  "suno_prompt": "Instrumental only, no vocals \u2014 very slow Indian classical bamboo flute in Raga Bageshri, breathy warm low register with long sustained notes, soft tanpura drone beneath, around 50 BPM, seamless loop.",
+  "suno_prompt_note": "'Slow / very slow' IS permitted here \u2014 sleep and deep-rest are the only lanes where drag is safe, because the listener is falling asleep. NO tabla (banked rule: tabla for Sitar, never for Bansuri/Surbahar). 6 clips merged to ~180min per MERGE_AND_LOOP_RECIPE.",
+  "production_spec": {
+    "duration_minutes": 180,
+    "format": "3hr",
+    "publish": "2026-08-07 19:00 IST"
+  },
+  "preflight_passed": true,
+  "preflight_detail": "char band OK (50 chars) \u00b7 3 slots \u00b7 no anti-pattern hits \u00b7 lead FRESH \u00b7 thumb dedup 0 hits",
+  "pending": [
+    "Ear-test the clips before upload \u2014 if they miss the bar, do not ship",
+    "Generate the thumbnail per the viewer-not-performer rule",
+    "No A/B on this ship \u2014 single title, single thumbnail"
+  ],
+  "version": 1
+}

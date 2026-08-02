@@ -1,0 +1,65 @@
+{
+  "id": "v_2026-08-06_steady_breathing_tanpura",
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-08-02",
+  "planned_date": "2026-08-06",
+  "planned_slot": "19:00 IST Thu \u2014 evening anxiety intent",
+  "title": "Steady Your Breathing | Slow Tanpura | 1.5 Hours",
+  "title_variants": {
+    "LOCKED": "Steady Your Breathing | Slow Tanpura | 1.5 Hours"
+  },
+  "title_note": "\u26a0\ufe0f DELIBERATE VidIQ-FLOOR OVERRIDE (user, 2026-08-02). Lead scores 21-31, under the >=60 new-ship bar. Reason: the >=60 pool in sleep/anxiety/calm_relax is EXHAUSTED \u2014 of 10 banked phrases >=60 in these lanes, 8 are past-locks, same-concept, A/B losers or anti-patterns; only 'music before bed' (61) and 'relaxing instrumental music' (70) survive, and the second is textbook generic-soft. The prescreener itself now returns the contradiction: 'peaceful music for sleep' scores 62 AND is rejected as anti-pattern:generic_soft_framing_leads. The floor and the generic-soft anti-pattern disqualify each other, so the floor is not functioning as a gate. Counter-evidence to title rule (1) 'higher VidIQ = better lead' (which rests on n=2 concluded tests): 'Music to Sleep Through the Night' (CTR 7.15, best at scale) and 'Quiet Night Music' (6.53, 35.5% T1) are both distinctive low-search-volume leads. VidIQ measures SEARCH, which is 17% of channel traffic vs 27% suggested and 36% subscriber. THIS WEEK IS THE TEST: 3 ships at 30-31 against Monday's 66. If the low scorers land at or above the recent ~3% CTR floor, rule (1) needs re-derivation on a bigger sample.\n\n\u26a0\ufe0f n=1 CELL. This is a coin flip, not a forecast. Recorded so the outcome is not read as evidence either way without more ships.",
+  "lane": "anxiety",
+  "instrument": "Tanpura",
+  "raga": "Bhimpalasi",
+  "validated_keywords": [
+    "Lead scores 30 \u2014 BELOW the >=60 bar, shipped as a deliberate override (see title_note)",
+    "Lead prescreened FRESH 2026-08-02 \u2014 no conflict vs live titles, briefs, A/B losers or reserved phrases",
+    "track_record: THIN (n=1, med 348v, CTR 8.99, AVD 46.1%) \u2014 Overthinking Music | Healing with Bamboo Flute & Tanpura",
+    "Alternative that DID clear the floor: 'Music Before Bed' (61, FRESH) \u2014 the only one available in these three lanes"
+  ],
+  "thumbnail_text_main": "CHEST TIGHT?",
+  "thumbnail_text_variants": [
+    {
+      "label": "fixed",
+      "text": "CHEST TIGHT?",
+      "strategy": "Q-hook \u2014 banked as the winner in cognitive and anxiety (3/3), and still permitted in THUMBS after Q-hook titles were retired. Somatic and present-tense: names a body state the viewer has RIGHT NOW rather than an abstract mood, which is the register the competitor breakouts use. 12 chars. Dedup 0 hits."
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature on aged cream parchment, ornate gold and deep-teal border. \u26a0\ufe0f Show the VIEWER in their own moment, NOT a musician performing \u2014 measured 2026-08-02: performer thumbnails convert worst (3.03%) while viewer-in-their-own-moment converts best (6.11%, 5.57%). A tanpura may rest at frame edge; it must not be the subject. Overlay 'CHEST TIGHT?' in large dark-teal serif with a second tier reading 'Tanpura \u00b7 Raga Bhimpalasi' \u2014 put the text in its own banner panel at ~35% of frame, which is what both competitor breakouts do and what keeps text legible at 120px.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Meditation"
+  ],
+  "description": "Steady Your Breathing | Slow Tanpura | 1.5 Hours of Give your breath something slow and steady to follow\n\nYour breathing has gone shallow and high in your chest, and you probably have not noticed until now.\n\nThis peaceful Indian ambient meditation music is designed to give your breath something slow and steady to follow.\n\nEnjoy 1.5 hours of deep tanpura drone, resonant and unhurried, looped seamlessly so nothing interrupts you.\n\nPerfect for anxious evenings, before a difficult conversation, after bad news, breathwork, panic settling, lying down, meditation, when your mind will not slow, before sleep, whenever your chest feels tight.\n\n\ud83c\udfb5 ABOUT THIS MUSIC\nInstrument: Tanpura\nRaga: Bhimpalasi\nStyle: Indian classical ambient, instrumental only\nMood: Calm, steady, unhurried\nDuration: 1.5 hours\n\n\ud83c\udfa7 HOW TO USE\nKeep the volume low enough that it sits underneath the room rather than filling it. Headphones deepen the drone, but this works just as well through a speaker.\n\n\u23f1 CHAPTERS\n0:00 \u2014 First settling\n9:00 \u2014 Breath finding its floor\n18:00 \u2014 Slower\n27:00 \u2014 Steady\n36:00 \u2014 Loosening\n45:00 \u2014 Deeper resonance\n54:00 \u2014 Quiet holding\n63:00 \u2014 Even slower\n72:00 \u2014 Nothing to brace against\n81:00 \u2014 Coming to rest\n\n\u23f1 BEST FOR\nAnxious evenings\nBefore a difficult conversation\nAfter bad news\nBreathwork practice\nSettling a racing heart\nLying down in the dark\nMeditation\nWhen your mind will not slow\nBefore sleep\nWhenever your chest feels tight\n\nIf this music helped, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#SteadyYourBreathing #TanpuraMusic #AnxietyRelief #IndianAmbientMusic",
+  "tags": [
+    "steady your breathing",
+    "anxiety relief music",
+    "tanpura instrumental",
+    "calming music",
+    "indian classical music",
+    "raga bhimpalasi",
+    "drone music",
+    "1.5 hours",
+    "breathwork music",
+    "nervous system",
+    "music for anxiety",
+    "deep calm"
+  ],
+  "suno_prompt": "Instrumental only, no vocals \u2014 Indian classical tanpura drone in Bhimpalasi tuning, deep resonant strings with long shimmering sustain, very gradual harmonic movement, around 52 BPM, steady and grounding, seamless loop.",
+  "suno_prompt_note": "\u26a0\ufe0f PRODUCTION RISK: a pure tanpura piece is extremely sparse. The one precedent \u2014 Morning Meditation Music | Tanpura Instrumental \u2014 held 49.6% AVD, so sparseness is not a retention problem. But if the clips come back lifeless on the ear-test, do NOT add bamboo flute: that would make it a Bansuri ship and collide with Friday's cooldown. Add a low sarangi or veena undertone instead.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-08-06 19:00 IST"
+  },
+  "preflight_passed": true,
+  "preflight_detail": "char band OK (48 chars) \u00b7 3 slots \u00b7 no anti-pattern hits \u00b7 lead FRESH \u00b7 thumb dedup 0 hits",
+  "pending": [
+    "Ear-test the clips before upload \u2014 if they miss the bar, do not ship",
+    "Generate the thumbnail per the viewer-not-performer rule",
+    "No A/B on this ship \u2014 single title, single thumbnail"
+  ],
+  "version": 1
+}
