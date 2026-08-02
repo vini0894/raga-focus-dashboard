@@ -19,15 +19,15 @@
     "track_record: THIN (n=1, med 348v, CTR 8.99, AVD 46.1%) \u2014 Overthinking Music | Healing with Bamboo Flute & Tanpura",
     "Alternative that DID clear the floor: 'Music Before Bed' (61, FRESH) \u2014 the only one available in these three lanes"
   ],
-  "thumbnail_text_main": "CHEST TIGHT?",
+  "thumbnail_text_main": "BREATHE EASIER",
   "thumbnail_text_variants": [
     {
       "label": "fixed",
-      "text": "CHEST TIGHT?",
-      "strategy": "Q-hook \u2014 banked as the winner in cognitive and anxiety (3/3), and still permitted in THUMBS after Q-hook titles were retired. Somatic and present-tense: names a body state the viewer has RIGHT NOW rather than an abstract mood, which is the register the competitor breakouts use. 12 chars. Dedup 0 hits."
+      "text": "BREATHE EASIER",
+      "strategy": "IMPERATIVE register \u2014 verb + comparative, the exact construction of 'SLEEP BETTER', which appears TWICE in the channel's top six thumbnails by CTR (6.83 and 6.71). 14 chars, mid mobile band. Dedup 0 hits across all briefs and the thumbnail dataset.\n\n\u26a0\ufe0f THIS OVERRIDES THE BANKED LANE-FORMAT RULE. thumbnail_format_rules says anxiety/cognitive wants a Q-HOOK (banked 3/3). That rule came from three A/B tests inside ONE lane. Ranking the whole thumbnail dataset by CTR tells a different story: of the top 18, FOURTEEN are imperatives or noun-states and only four are Q-hooks \u2014 and the two highest (DEEP FOCUS NOW 15.06, PAUSE HERE 7.45) are both imperatives. The winning shape is verb-first, two words, states the outcome: SLEEP BETTER \u00b7 SLEEP DEEPLY \u00b7 FALL ASLEEP FAST \u00b7 WIN YOUR DAY \u00b7 BRIGHTEN YOUR DAY \u00b7 REST. RESET. RECOVER.\n\nRejected: CHEST TIGHT? / JAW CLENCHED? / SHOULDERS UP? \u2014 symptom-interrogation Q-hooks. They follow the lane rule but not the CTR evidence, and they name discomfort where the winners name a result.\n\nMild redundancy against the title ('Steady Your Breathing') is DELIBERATE and accepted: the winners repeat too \u2014 FALL ASLEEP FAST sits on sleep-titled videos at 5.39.\n\n\u26a0\ufe0f CAVEAT ON THE EVIDENCE: thumbnail_dataset.csv has no impressions column, so this ranking is NOT stripped of survivor bias \u2014 DEEP FOCUS NOW's 15.06 is almost certainly the April video with ~664 impressions. The pattern holds down the whole list, not just the top, which is why it is worth acting on. But if this ship and Wednesday's both land well, re-derive the lane-format rule on impression-weighted data before promoting it."
     }
   ],
-  "thumbnail_prompt": "Pichwai/Kangra miniature on aged cream parchment, ornate gold and deep-teal border. \u26a0\ufe0f Show the VIEWER in their own moment, NOT a musician performing \u2014 measured 2026-08-02: performer thumbnails convert worst (3.03%) while viewer-in-their-own-moment converts best (6.11%, 5.57%). A tanpura may rest at frame edge; it must not be the subject. Overlay 'CHEST TIGHT?' in large dark-teal serif with a second tier reading 'Tanpura \u00b7 Raga Bhimpalasi' \u2014 put the text in its own banner panel at ~35% of frame, which is what both competitor breakouts do and what keeps text legible at 120px.",
+  "thumbnail_prompt": "Pichwai/Kangra miniature on aged cream parchment, ornate gold and deep-teal border. \u26a0\ufe0f Show the VIEWER in their own moment, NOT a musician performing \u2014 measured 2026-08-02: performer thumbnails convert worst (3.03%) while viewer-in-their-own-moment converts best (6.11%, 5.57%). A tanpura may rest at frame edge; it must not be the subject. Overlay 'BREATHE EASIER' in large dark-teal serif with a second tier reading 'Tanpura \u00b7 Raga Bhimpalasi' \u2014 put the text in its own banner panel at ~35% of frame, which is what both competitor breakouts do and what keeps text legible at 120px.",
   "playlists": [
     "Healing & Anxiety Relief",
     "Meditation"
