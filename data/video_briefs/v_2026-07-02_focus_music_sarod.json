@@ -4,12 +4,11 @@
   "created_at": "2026-07-01",
   "planned_date": "2026-07-02",
   "planned_slot": "Thursday AM ship \u2014 cognitive lane = morning intent per Finding 12. Same slot pattern as Mon Dopamine Detox (AM cognitive). ~40hr spacing from Wed PM Sarangi ship.",
-  "title": "Focus Music | Sarod Instrumental | 1.5 Hours",
+  "title": "Music for Mental Clarity | Sarod Instrumental | 1.5 Hours",
   "title_variants": {
-    "A": "Music for Mental Clarity | Sarod Instrumental | 1.5 Hours",
-    "B": "Focus Music | Sarod Instrumental | 1.5 Hours"
+    "LIVE": "Music for Mental Clarity | Sarod Instrumental | 1.5 Hours"
   },
-  "title_note": "A/B test \u2014 music-intent form vs high VidIQ direct SEO. Variant A: 'Music for Mental Clarity' (music-intent form of Mental Clarity concept, VidIQ unscored \u2014 needs banking). Variant B: 'Focus Music' (VidIQ 84 \u2014 highest cognitive score). Same instrument + slot 2 + slot 3 + thumb + Suno = only lead phrase varies. Tests: does music-intent form's conversion advantage per banked rule overcome the VidIQ score gap with direct SEO Focus Music?",
+  "title_note": "SHIPPED. Live title differs from the briefed variants (chosen at upload). `planned_title_variants` preserves what was briefed; `title` / `title_variants` now carry what is ACTUALLY LIVE so the Brief Queue stops showing a title that never existed. Matched to the live catalog by PUBLISH DATE, not by string similarity \u2014 fuzzy matching mis-assigned this one on the first pass. \u2b50 RULE: write the real published title back into the brief on every ship.",
   "components": {
     "instrument": "Sarod",
     "instrument_role": "STRONG (avg 75K impr per cooldown_check tier) \u2014 17d rested",
@@ -103,5 +102,9 @@
     "Music render + Pichwai thumbnail render"
   ],
   "day_7_read": "2026-07-09 \u2014 measure CTR, AVD, views against experiment criteria. If success \u2192 bank Focus Music as viable cognitive lead template. If failure \u2192 retire Focus Music from lead pool.",
-  "yt_native_test": "title_2way"
+  "yt_native_test": "title_2way",
+  "planned_title_variants": {
+    "A": "Music for Mental Clarity | Sarod Instrumental | 1.5 Hours",
+    "B": "Focus Music | Sarod Instrumental | 1.5 Hours"
+  }
 }

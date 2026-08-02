@@ -5,12 +5,11 @@
   "created_at": "2026-07-25",
   "planned_date": "2026-07-25",
   "planned_slot": "~19:30 IST Sat \u2014 evening sleep intent; Sat launch index 123% (2nd best)",
-  "title": "Sleep Music | Raga Yaman Night Drone | 3 Hours",
+  "title": "Can't Sleep Tonight? | Tanpura Instrumental Music | 3 Hours",
   "title_variants": {
-    "A": "Sleep Music | Raga Yaman Night Drone | 3 Hours",
-    "B": "Music to Fall Asleep Fast | Deep Sleep Drone | 3 Hours"
+    "LIVE": "Can't Sleep Tonight? | Tanpura Instrumental Music | 3 Hours"
   },
-  "title_note": "Q-hook title REMOVED per 2026-07-25 rule (q_hook_title_lead now HIGH severity). A = search-authority lead (sleep music 75) + named-raga slot 2. B = outcome-imperative lead \u2014 sanctioned experimental arm (unscored; 'FALL ASLEEP FAST' is banked winning thumb vocabulary). No instrument named in either title (tanpura is the music, not the packaging).",
+  "title_note": "SHIPPED 2026-07-25. Live title differs from the briefed variants \u2014 final title was chosen at upload. `planned_title_variants` keeps what was briefed ('Sleep Music | Raga Yaman Night Drone | 3 Hours' / 'Music to Fall Asleep Fast | Deep Sleep Drone | 3 Hours'); `title` and `title_variants` now carry what is ACTUALLY LIVE so the Brief Queue stops showing a title that never existed. \u2b50 RULE: on every ship, write the real published title back into the brief \u2014 the live title is the only truth for conflict checks, and briefs diverge from live ~17% of the time.",
   "lane": "sleep",
   "instrument": "Tanpura (drone \u2014 replaces failed Bansuri renders)",
   "raga": "Yaman",
@@ -86,5 +85,9 @@
     "approved_by": "user 2026-07-25 ('yes today we are doing 3 hr')"
   },
   "shipped_title": "Can't Sleep Tonight? | Tanpura Instrumental Music | 3 Hours",
-  "shipped_note": "Title changed at upload from the briefed variants. Live title is the ONLY truth for conflict checks \u2014 log shipped_title on every brief so lead_prescreen and catalog checks see the real phrase."
+  "shipped_note": "Title changed at upload from the briefed variants. Live title is the ONLY truth for conflict checks \u2014 log shipped_title on every brief so lead_prescreen and catalog checks see the real phrase.",
+  "planned_title_variants": {
+    "A": "Sleep Music | Raga Yaman Night Drone | 3 Hours",
+    "B": "Music to Fall Asleep Fast | Deep Sleep Drone | 3 Hours"
+  }
 }

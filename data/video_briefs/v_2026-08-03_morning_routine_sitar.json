@@ -4,35 +4,42 @@
   "locked": true,
   "created_at": "2026-08-02",
   "planned_date": "2026-08-03",
-  "planned_slot": "06:30 IST Mon — morning-routine intent; Mon-AM is the morning lane's exception cell",
+  "planned_slot": "06:30 IST Mon \u2014 morning-routine intent; Mon-AM is the morning lane's exception cell",
   "title": "Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours",
   "title_variants": {
-    "B": "Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours",
-    "C": "Wake Up Slowly | Sitar Morning Music | 1.5 Hours"
+    "B": "Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours"
   },
-  "title_note": "TWO arms only (user dropped the third 2026-08-02). B = searchable lead (VidIQ 66) + the 432Hz register test; C = distinctive T1-register lead (VidIQ 25). Leads differ, so this is two hypotheses per the A/B rule. ⚠️ Hz is CONFOUNDED with the lead here — a B win will not isolate whether 432Hz or 'Morning Routine Music' did the work; a clean Hz read needs a later same-lead pair. ⚠️ 'Slow Sitar' in B sits slightly against morning-lane energy and the SET THE DAY RIGHT thumb — dropping the word (48 chars, still in band) would remove the incoherence and keep the Hz test intact. Flagged, not changed, since B is locked.",
+  "title_note": "SINGLE TITLE (user 2026-08-02). Variant C 'Wake Up Slowly' DROPPED so the THUMBNAIL is the only variable \u2014 YouTube Test & Compare varies thumbnails only, so a simultaneous title A/B would confound both. Traded the title test for the thumbnail test because thumbnail is banked at 1.8x the leverage of title and sub-3% CTR is the acute problem. \u26a0\ufe0f CONSEQUENCE: with no no-Hz arm, the 432Hz register question CANNOT be read from this ship \u2014 there is no control. It stays an unresolved hypothesis; give it a dedicated same-lead A/B later. \u26a0\ufe0f 'Slow Sitar' still sits slightly against morning-lane energy; dropping the word leaves 48 chars, in band.",
   "lane": "morning",
   "instrument": "Sitar",
   "raga": "Ahir Bhairav",
   "validated_keywords": [
-    "B lead: 'Morning Routine Music' — VidIQ 66, prescreen FRESH 2026-08-02, clears the >=60 floor",
-    "C lead: 'Wake Up Slowly' — VidIQ 25, prescreen FRESH; deliberately below the floor as the T1-register arm (the >=60 gate is banked as structurally selecting generic-soft)",
-    "'Sitar Morning Music' — VidIQ 28, slot-2 descriptor only, not a lead",
-    "432Hz — register test, first numeric-Hz ship since the April pre-pivot era",
+    "B lead: 'Morning Routine Music' \u2014 VidIQ 66, prescreen FRESH 2026-08-02, clears the >=60 floor",
+    "C lead: 'Wake Up Slowly' \u2014 VidIQ 25, prescreen FRESH; deliberately below the floor as the T1-register arm (the >=60 gate is banked as structurally selecting generic-soft)",
+    "'Sitar Morning Music' \u2014 VidIQ 28, slot-2 descriptor only, not a lead",
+    "432Hz \u2014 register test, first numeric-Hz ship since the April pre-pivot era",
     "Rejected: 'Morning Music' 77 and 'Positive Morning Music' 70 both lost A/B #40; 'Ease Into the Day' 28 dropped for the higher-scoring B lead; 'Fresh Start Music' 66 flagged as same-concept as live Morning Renewal (24d)"
   ],
   "thumbnail_text_main": "SET THE DAY RIGHT",
   "thumbnail_text_variants": [
     {
-      "label": "fixed",
+      "label": "ARM A \u2014 modern",
       "text": "SET THE DAY RIGHT",
-      "strategy": "FIXED across BOTH arms — title register is the variable, so the thumb must be held constant or the A/B reads nothing. Outcome-imperative, which is the morning lane's LOCKED winning format (Q-hooks 0 wins across 5 tests). Echoes 'Sitar Music to Start Your Morning Right' (29,399 views, the best post-surge morning performer) without reusing its wording. 17 chars, inside the 14-18 mobile band. Dedup: 0 hits against all 49 shipped thumbnail texts, 2026-08-02."
+      "strategy": "IDENTICAL text on both arms \u2014 same words, same size, same position. Text is the constant; only the world changes. A win must be attributable to the imagery or it teaches nothing carryable."
+    },
+    {
+      "label": "ARM B \u2014 traditional",
+      "text": "SET THE DAY RIGHT",
+      "strategy": "Same text as Arm A. The two arms hold the HUMAN MOMENT constant (woman alone at dawn, warm cup in both hands, open book) and vary only the world around it \u2014 contemporary room vs Mughal palace terrace. That pairing is what makes the result interpretable."
     }
   ],
-  "thumbnail_prompt": "Pichwai/Kangra miniature painting style on aged cream parchment with an ornate hand-painted border. Early-morning scene: a seated figure in profile at the edge of a still lotus pond, soft sunrise light breaking over low hills behind, a few cranes at the water's edge. Warm gold and pale rose dawn palette with deep teal accents. Overlay text 'SET THE DAY RIGHT' in dark-teal serif, upper third, large and uncluttered for mobile. No sitar depicted in close-up; keep the composition calm and open.",
-  "thumbnail_ab_note": "Single thumbnail on both title arms. Do NOT let YouTube auto-generate a second thumb variant — the lane's format is locked and an off-format auto-pick has crashed CTR before (Test #41, -42%).",
-  "playlists": ["Morning Energy", "Peaceful Music"],
-  "description": "Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours of Calm, Unhurried Start\n\nSome mornings you wake up already behind. The phone is in your hand before your feet are on the floor, and the day starts pulling at you before you have had a chance to arrive in it.\n\nThis peaceful Indian ambient meditation music is designed to slow the first hour down — to give you something steady to move through your morning alongside, instead of rushing at it.\n\nEnjoy 1.5 hours of gentle sitar melodies blended with a soft tanpura drone, light tabla and warm ambient textures, tuned to 432Hz and looped seamlessly so nothing interrupts you.\n\nPerfect for morning routines, waking up gently, stretching, journaling, yoga, morning meditation, making coffee, getting ready for work, quiet reading, light housework, or simply sitting still before the day begins.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sitar, with tanpura drone and light tabla\nRaga: Ahir Bhairav — a traditional early-morning raga, warm and gently uplifting\nStyle: Indian classical ambient, instrumental only\nMood: Calm, steady, quietly positive\nAtmosphere: Soft dawn light, unhurried\nTuning: 432Hz\nDuration: 1.5 hours\n\n🎧 HOW TO USE\nPut this on as soon as you wake, before you reach for anything else. Keep the volume low enough that it sits underneath the room rather than filling it. Headphones deepen the tanpura drone, but this works just as well through a speaker while you move around.\n\n⏱ CHAPTERS\n0:00 — First light\n9:00 — Waking gently\n18:00 — Settling into the morning\n27:00 — Steady and unhurried\n36:00 — Warmth building\n45:00 — Clear and open\n54:00 — Moving through the hour\n63:00 — Quiet momentum\n72:00 — Soft continuation\n81:00 — Carrying the calm forward\n\n⏱ BEST FOR\nWaking up without rushing\nMorning routines and getting ready\nStretching and gentle yoga\nMorning meditation\nJournaling and planning the day\nMaking breakfast or coffee\nQuiet reading before work\nLight housework\nEasing morning tension\nStarting the day with a clear head\n\nIf this music helped you start the day calmer and less rushed, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#MorningRoutineMusic #SitarMusic #IndianAmbientMusic #MorningMeditation #432Hz",
+  "thumbnail_prompt": "TWO ARMS \u2014 matched pose, opposite worlds. Identical text block on both: 'SET THE DAY RIGHT' in large dark-teal serif, right third, with a second tier beneath reading 'Sitar \u00b7 Raga Ahir Bhairav \u00b7 432Hz'. Same framing, same text size and position, same border weight.\n\nARM A (MODERN): Contemporary lifestyle illustration, clean and airy. One woman in simple modern loungewear seated by a large window in early-morning light, holding a warm mug in both hands, an open journal and a small vase of flowers beside her. Warm white, soft sage, pale oak palette. Minimal, generous negative space, modern wellness aesthetic. One figure only.\n\nARM B (TRADITIONAL): Pichwai/Kangra miniature on aged parchment with ornate gold and deep-teal border. One Indian woman in a cream-and-gold sari seated on a Mughal pavilion terrace at sunrise, holding a brass cup in both hands, an open book and a brass vase of flowers beside her. Palace and river soft in the distance. THIN THE CLUTTER to match Arm A's density: drop the diya, drop the lotus bowl, keep only cup + book + one vase.\n\n\u26a0\ufe0f Neither arm shows a sitar being played. Our own data: performer thumbnails convert WORST (Grounding, sitar player, CTR 3.03) while viewer-in-their-own-morning converts best (Start Your Day Strong, waking in bed, 6.11; Positive Morning Vibes, jogging with earbuds, 5.57). A sitar may rest at frame edge; it must not be the subject.",
+  "thumbnail_ab_note": "THIS IS THE EXPERIMENT \u2014 Studio Test & Compare, 2 thumbnails, 1 title. First time the channel has ever varied the IMAGE: all 40+ prior A/B tests varied thumbnail TEXT only. \u26a0\ufe0f ON CONCLUSION: pull the COUNTRY SPLIT per arm before reading the winner. If traditional wins in India and modern wins in T1, that is a geography lever, not a losing arm \u2014 and it is the read the T1 push needs.",
+  "playlists": [
+    "Morning Energy",
+    "Peaceful Music"
+  ],
+  "description": "Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours of Calm, Unhurried Start\n\nSome mornings you wake up already behind. The phone is in your hand before your feet are on the floor, and the day starts pulling at you before you have had a chance to arrive in it.\n\nThis peaceful Indian ambient meditation music is designed to slow the first hour down \u2014 to give you something steady to move through your morning alongside, instead of rushing at it.\n\nEnjoy 1.5 hours of gentle sitar melodies blended with a soft tanpura drone, light tabla and warm ambient textures, tuned to 432Hz and looped seamlessly so nothing interrupts you.\n\nPerfect for morning routines, waking up gently, stretching, journaling, yoga, morning meditation, making coffee, getting ready for work, quiet reading, light housework, or simply sitting still before the day begins.\n\n\ud83c\udfb5 ABOUT THIS MUSIC\nInstrument: Sitar, with tanpura drone and light tabla\nRaga: Ahir Bhairav \u2014 a traditional early-morning raga, warm and gently uplifting\nStyle: Indian classical ambient, instrumental only\nMood: Calm, steady, quietly positive\nAtmosphere: Soft dawn light, unhurried\nTuning: 432Hz\nDuration: 1.5 hours\n\n\ud83c\udfa7 HOW TO USE\nPut this on as soon as you wake, before you reach for anything else. Keep the volume low enough that it sits underneath the room rather than filling it. Headphones deepen the tanpura drone, but this works just as well through a speaker while you move around.\n\n\u23f1 CHAPTERS\n0:00 \u2014 First light\n9:00 \u2014 Waking gently\n18:00 \u2014 Settling into the morning\n27:00 \u2014 Steady and unhurried\n36:00 \u2014 Warmth building\n45:00 \u2014 Clear and open\n54:00 \u2014 Moving through the hour\n63:00 \u2014 Quiet momentum\n72:00 \u2014 Soft continuation\n81:00 \u2014 Carrying the calm forward\n\n\u23f1 BEST FOR\nWaking up without rushing\nMorning routines and getting ready\nStretching and gentle yoga\nMorning meditation\nJournaling and planning the day\nMaking breakfast or coffee\nQuiet reading before work\nLight housework\nEasing morning tension\nStarting the day with a clear head\n\nIf this music helped you start the day calmer and less rushed, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#MorningRoutineMusic #SitarMusic #IndianAmbientMusic #MorningMeditation #432Hz",
   "tags": [
     "morning routine music",
     "wake up slowly",
@@ -47,29 +54,31 @@
     "gentle morning music",
     "start the day calm"
   ],
-  "suno_prompt": "Instrumental only, no vocals — gentle Indian classical sitar in Raga Ahir Bhairav with soft light tabla, warm rounded tone, unhurried steady morning character around 70 BPM, calm positive energy, seamless loop.",
-  "suno_prompt_note": "Short one-liner per the banked default (~205 chars). NO 'slow' anywhere — morning lane, and 'slow' makes Suno generate draggy output that costs retention; the BPM number sets tempo. Tabla included per the Sitar rule (tabla for Sitar, none for Bansuri/Surbahar). 432Hz is NOT in the prompt — it is applied in post (see production_spec), because Hz tags in the prompt degrade generation.",
+  "suno_prompt": "Instrumental only, no vocals \u2014 gentle Indian classical sitar in Raga Ahir Bhairav with soft light tabla, warm rounded tone, unhurried steady morning character around 70 BPM, calm positive energy, seamless loop.",
+  "suno_prompt_note": "Short one-liner per the banked default (~205 chars). NO 'slow' anywhere \u2014 morning lane, and 'slow' makes Suno generate draggy output that costs retention; the BPM number sets tempo. Tabla included per the Sitar rule (tabla for Sitar, none for Bansuri/Surbahar). 432Hz is NOT in the prompt \u2014 it is applied in post (see production_spec), because Hz tags in the prompt degrade generation.",
   "experiment": {
-    "hypotheses": [
-      "h_2026-08-02_hz_register (new): a numeric Hz token in the title lifts reach. First numeric-Hz ship since the April pre-pivot era — all 8 prior Hz titles are confounded by dead lane + dead era + short runtime, so they are not evidence against. Competitor-validated: 6 current breakouts across Raga Heal and Dhun Detox all carry Hz.",
-      "h_2026-07-25_t1_vocab_register (TESTING): C is the distinctive/low-VidIQ T1-register arm against B's searchable/high-VidIQ arm."
-    ],
-    "read_at": "d7 — views/day, CTR, and T1 watch-share per arm",
-    "caveat": "Hz and the lead keyword are confounded in this pair. Treat a B win as directional on both, not conclusive on either."
+    "type": "thumbnail A/B (image is the variable \u2014 a channel first)",
+    "hypothesis": "h_2026-08-02_thumb_cultural_register (new): the cultural WORLD of the thumbnail gates click-through, and gates it differently by geography. Modern/contemporary imagery converts T1; traditional Indian imagery converts India. Held constant: the human moment (woman alone at dawn, warm cup, open book) and the entire text block.",
+    "why_not_a_replica": "Deliberately NOT two variants of a known winner. Replicating the 6.11%/5.57% morning composition would say which replica is better, not whether the visual language itself is the ceiling. User directive 2026-08-02: 'copying something does get us new winners but trying a hypothesis will.'",
+    "read_at": "d7 \u2014 CTR per arm, then COUNTRY SPLIT per arm",
+    "caveat": "~20K first-week impressions is near the power floor (Test #41 came back underpowered, #42 was voided). The two arms differ on palette, density and century as well as culture, so read it as package-level.",
+    "next_test": "Figure count \u2014 1 vs group. Live prior: Morning Energy (6 figures) is the #2 video but its 3.88% CTR is BELOW the 4.71% channel average, i.e. it won on distribution, never shown to convert. Run it where a group reads naturally."
   },
   "production_spec": {
     "duration_minutes": 90,
     "format": "1.5hr",
     "loop_note": "4-6 gentle Ahir Bhairav sitar clips with soft tabla, crossfade-merge to ~90min, consistent warm level.",
-    "tuning": "⚠️ REQUIRED: pitch-shift the final master to 432Hz before upload. Title B claims 432Hz — the audio must actually carry it.",
+    "tuning": "\u26a0\ufe0f REQUIRED: pitch-shift the final master to 432Hz before upload. Title B claims 432Hz \u2014 the audio must actually carry it.",
     "publish": "2026-08-03 06:30 IST"
   },
   "preflight_passed": true,
-  "preflight_detail": "Both arms: char band OK (B 53, C 48; band 46-55) · 3 slots · no anti-pattern hits · leads prescreened FRESH 2026-08-02 · thumbnail dedup 0/49 · morning-lane thumb format = outcome-imperative (locked, anti-Q-hook)",
+  "preflight_detail": "Both arms: char band OK (B 53, C 48; band 46-55) \u00b7 3 slots \u00b7 no anti-pattern hits \u00b7 leads prescreened FRESH 2026-08-02 \u00b7 thumbnail dedup 0/49 \u00b7 morning-lane thumb format = outcome-imperative (locked, anti-Q-hook)",
   "pending": [
-    "Confirm whether to drop 'Slow' from title B (see title_note) before scheduling",
-    "Apply the 432Hz pitch-shift in post — do not skip, the title claims it",
-    "Launch the two-arm test in Studio at publish and log to ab_raw_data.csv"
+    "Generate both thumbnail arms \u2014 matched pose, matched text block, Arm B thinned to Arm A's density",
+    "Decide whether to drop 'Slow' from the title (48 chars, still in band)",
+    "Apply the 432Hz pitch-shift in post \u2014 the title claims it, and there is no longer an A/B arm justifying it",
+    "Launch Test & Compare with the 2 thumbnails + single title; log to ab_raw_data.csv",
+    "On conclusion: COUNTRY SPLIT per arm before declaring a winner"
   ],
-  "version": 1
+  "version": 2
 }

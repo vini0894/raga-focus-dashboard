@@ -4,54 +4,79 @@
   "locked": true,
   "created_at": "2026-07-20",
   "planned_date": "2026-07-22",
-  "planned_slot": "19:00 IST — Wed PM (evening wind-down content, evening publish)",
-  "title": "Release Anxiety & Negative Thoughts | Slow Sarod | 1.5 Hours",
+  "planned_slot": "19:00 IST \u2014 Wed PM (evening wind-down content, evening publish)",
+  "title": "Music for Anxiety Relief | Slow Sarod | 1.5 Hours",
   "title_variants": {
-    "A": "Release Anxiety & Negative Thoughts | Slow Sarod | 1.5 Hours",
-    "B": "Music for Anxiety Relief | Slow Sarod | 1.5 Hours"
+    "LIVE": "Music for Anxiety Relief | Slow Sarod | 1.5 Hours"
   },
-  "title_note": "TWO-HYPOTHESIS A/B — two DIFFERENT lead keywords (not the same lead in two structures; that only tests a suffix, teaches nothing transferable). A = EMOTIONAL dual-hook 'Release Anxiety & Negative Thoughts' (from the user-supplied reference video; 'Release Anxiety' = 58 banked FRESH, 'Negative Thoughts' fresh but unmapped 'other' lane). B = SEO-DRIVEN 'Music for Anxiety Relief' (VidIQ 69, high-intent 'Music for X' form; ⚠️ soft cluster-overlap w/ a 94-day-old 'Anxiety Relief Music' ship — past-lock, reusable, user-accepted). THE TEST: does a fresh emotional hook beat proven high-intent SEO phrasing in the anxiety lane? — transferable to every future anxiety ship. Same thumb on both isolates the keyword variable. Both PASS preflight (A 60ch / B 49ch), both lead-prescreened. INSTRUMENT = Sarod (v2 fix: reference was Bansuri, but Bansuri shipped 2026-07-17 Cortisol Detox | Bansuri & Tanpura | 1.5hr → clone at the 5-day min; Sarod is 7-day clean + anxiety-proven).",
+  "title_note": "SHIPPED. Live title differs from the briefed variants (chosen at upload). `planned_title_variants` preserves what was briefed; `title` / `title_variants` now carry what is ACTUALLY LIVE so the Brief Queue stops showing a title that never existed. Matched to the live catalog by PUBLISH DATE, not by string similarity \u2014 fuzzy matching mis-assigned this one on the first pass. \u2b50 RULE: write the real published title back into the brief on every ship.",
   "lane": "anxiety",
   "instrument": "Sarod",
   "raga": "Bageshri",
   "validated_keywords": [
-    "A / emotional: 'Release Anxiety & Negative Thoughts' — FRESH dual-hook; 'Release Anxiety' 58 banked + 'Negative Thoughts' fresh (unmapped 'other' lane)",
-    "B / SEO: 'Music for Anxiety Relief' — 69 banked, high-intent 'Music for X' form; soft cluster-overlap w/ 94d-old 'Anxiety Relief Music' (past-lock, reusable)",
-    "Thumb: 'THOUGHTS TOO LOUD?' (FIXED across both titles, FRESH vs 45-text history) — anxiety Q-hook, thumbnail only, never a title lead"
+    "A / emotional: 'Release Anxiety & Negative Thoughts' \u2014 FRESH dual-hook; 'Release Anxiety' 58 banked + 'Negative Thoughts' fresh (unmapped 'other' lane)",
+    "B / SEO: 'Music for Anxiety Relief' \u2014 69 banked, high-intent 'Music for X' form; soft cluster-overlap w/ 94d-old 'Anxiety Relief Music' (past-lock, reusable)",
+    "Thumb: 'THOUGHTS TOO LOUD?' (FIXED across both titles, FRESH vs 45-text history) \u2014 anxiety Q-hook, thumbnail only, never a title lead"
   ],
   "thumbnail_text_main": "THOUGHTS TOO LOUD?",
   "thumbnail_text_variants": [
-    {"label": "fixed", "text": "THOUGHTS TOO LOUD?", "strategy": "FIXED across BOTH title variants — this is a TITLE A/B, so the thumb is held constant to isolate the keyword variable. Specific-state Q-hook (anxiety lane WINS Q-hook); verified FRESH vs the 45-text shipped thumb history 2026-07-20; 18 chars, mobile-readable; pairs with the 'Negative Thoughts' lead (A) and the SEO lead (B)."}
+    {
+      "label": "fixed",
+      "text": "THOUGHTS TOO LOUD?",
+      "strategy": "FIXED across BOTH title variants \u2014 this is a TITLE A/B, so the thumb is held constant to isolate the keyword variable. Specific-state Q-hook (anxiety lane WINS Q-hook); verified FRESH vs the 45-text shipped thumb history 2026-07-20; 18 chars, mobile-readable; pairs with the 'Negative Thoughts' lead (A) and the SEO lead (B)."
+    }
   ],
   "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A figure at dusk with a visibly restless, swirling mind slowly settling into stillness, low warm lamplight, a sarod resting beside them. The moment the anxiety finally loosens its grip. Dark-teal serif overlay text.",
-  "thumbnail_ab_note": "TITLE A/B → thumbnail is FIXED ('THOUGHTS TOO LOUD?') on BOTH title variants, so any CTR movement is attributable to the title/keyword, not the thumb (don't change two variables at once). Q-hook is the anxiety lane's winning thumb format. Dedup-checked FRESH vs the 45 shipped thumb texts 2026-07-20.",
-  "playlists": ["Healing & Anxiety Relief", "Meditation", "Peaceful Music"],
+  "thumbnail_ab_note": "TITLE A/B \u2192 thumbnail is FIXED ('THOUGHTS TOO LOUD?') on BOTH title variants, so any CTR movement is attributable to the title/keyword, not the thumb (don't change two variables at once). Q-hook is the anxiety lane's winning thumb format. Dedup-checked FRESH vs the 45 shipped thumb texts 2026-07-20.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Meditation",
+    "Peaceful Music"
+  ],
   "description": [
     "Release Anxiety & Negative Thoughts | Slow Sarod | 1.5 Hours of Indian Classical Music to release anxiety and quiet the thoughts that won't switch off.",
     "",
-    "When the day leaves your mind racing, let the sarod slow it down. Ninety minutes of deep, resonant sarod in Raga Bageshri — tender, grounding, and unhurried — made to play in the background while you let the tension drain, breathe, and finally set the day's worries down for the night.",
+    "When the day leaves your mind racing, let the sarod slow it down. Ninety minutes of deep, resonant sarod in Raga Bageshri \u2014 tender, grounding, and unhurried \u2014 made to play in the background while you let the tension drain, breathe, and finally set the day's worries down for the night.",
     "",
     "No ads breaking the calm. Just continuous Indian classical music to ease anxiety and an overactive mind.",
     "",
-    "Best for: releasing anxiety · a mind that won't stop · negative thoughts · evening wind-down · letting the day go.",
+    "Best for: releasing anxiety \u00b7 a mind that won't stop \u00b7 negative thoughts \u00b7 evening wind-down \u00b7 letting the day go.",
     "",
-    "Put it on, let your shoulders drop, and let the anxiety loosen its grip. 🌙"
+    "Put it on, let your shoulders drop, and let the anxiety loosen its grip. \ud83c\udf19"
   ],
-  "tags": ["release anxiety", "release anxiety music", "anxiety relief music", "negative thoughts", "sarod music", "slow sarod", "indian classical music", "1.5 hours", "calm music", "music for anxiety", "overactive mind", "raga bageshri", "evening wind down"],
-  "suno_prompt": "Instrumental only, no vocals, no humming — deep gentle Indian classical sarod in Raga Bageshri, resonant plucked sarod with slow meend glides and grounding low register, soft light tabla, unhurried ~60 BPM, tender settling late-evening character that releases anxiety and quiets a busy mind, seamless loop.",
-  "suno_prompt_note": "Anxiety/evening = calming, settling — genuinely calm (calm-lane rule, no upbeat/energetic). Bageshri = tender late-night raga, soothes anxious feelings (raga_fit_cache: Bageshri×anxiety = STRONG). Sarod = resonant plucked + meend, grounding low register; soft light tabla for gentle structure (OK on Sarod). NO tanpura — deliberately dropped (Jul 16 Sarangi&Tanpura + Jul 17 Bansuri&Tanpura already saturated that pairing). ~60 BPM. Darbari Kanada is a Sarod-idiomatic alternative raga if Bageshri clips generate weakly.",
-  "experiment": "ANXIETY lane fresh-lead recovery + a genuine 2-hypothesis title A/B. The anxiety cluster is near-exhausted (lead_prescreen 2026-07-20: ~5/16 leads FRESH channel-wide). A/B tests two DIFFERENT keywords head-to-head: A = fresh EMOTIONAL dual-hook 'Release Anxiety & Negative Thoughts' (user reference), B = high-intent SEO 'Music for Anxiety Relief' (69). Learns which framing wins the anxiety lane ($5.64 RPM) — transferable. Instrument corrected Bansuri→Sarod (v2) after the Bansuri version cloned Jul-17 Cortisol Detox (Bansuri & Tanpura, 1.5hr) at the 5-day cooldown minimum; Sarod anxiety is retention-proven (Anxiety Relief Slow Sarod, AVD 38) and 7 days clean.",
+  "tags": [
+    "release anxiety",
+    "release anxiety music",
+    "anxiety relief music",
+    "negative thoughts",
+    "sarod music",
+    "slow sarod",
+    "indian classical music",
+    "1.5 hours",
+    "calm music",
+    "music for anxiety",
+    "overactive mind",
+    "raga bageshri",
+    "evening wind down"
+  ],
+  "suno_prompt": "Instrumental only, no vocals, no humming \u2014 deep gentle Indian classical sarod in Raga Bageshri, resonant plucked sarod with slow meend glides and grounding low register, soft light tabla, unhurried ~60 BPM, tender settling late-evening character that releases anxiety and quiets a busy mind, seamless loop.",
+  "suno_prompt_note": "Anxiety/evening = calming, settling \u2014 genuinely calm (calm-lane rule, no upbeat/energetic). Bageshri = tender late-night raga, soothes anxious feelings (raga_fit_cache: Bageshri\u00d7anxiety = STRONG). Sarod = resonant plucked + meend, grounding low register; soft light tabla for gentle structure (OK on Sarod). NO tanpura \u2014 deliberately dropped (Jul 16 Sarangi&Tanpura + Jul 17 Bansuri&Tanpura already saturated that pairing). ~60 BPM. Darbari Kanada is a Sarod-idiomatic alternative raga if Bageshri clips generate weakly.",
+  "experiment": "ANXIETY lane fresh-lead recovery + a genuine 2-hypothesis title A/B. The anxiety cluster is near-exhausted (lead_prescreen 2026-07-20: ~5/16 leads FRESH channel-wide). A/B tests two DIFFERENT keywords head-to-head: A = fresh EMOTIONAL dual-hook 'Release Anxiety & Negative Thoughts' (user reference), B = high-intent SEO 'Music for Anxiety Relief' (69). Learns which framing wins the anxiety lane ($5.64 RPM) \u2014 transferable. Instrument corrected Bansuri\u2192Sarod (v2) after the Bansuri version cloned Jul-17 Cortisol Detox (Bansuri & Tanpura, 1.5hr) at the 5-day cooldown minimum; Sarod anxiety is retention-proven (Anxiety Relief Slow Sarod, AVD 38) and 7 days clean.",
   "production_spec": {
     "duration_minutes": 90,
     "format": "1.5hr",
-    "loop_note": "Generate 4-6 deep gentle Bageshri sarod clips (~60 BPM, soft light tabla, NO tanpura), crossfade-merge into a seamless ~90min loop. Grounding and even — settling, not sleepy.",
+    "loop_note": "Generate 4-6 deep gentle Bageshri sarod clips (~60 BPM, soft light tabla, NO tanpura), crossfade-merge into a seamless ~90min loop. Grounding and even \u2014 settling, not sleepy.",
     "publish": "2026-07-22 ~19:00 IST (evening content, evening publish for wind-down intent)"
   },
   "preflight_passed": true,
-  "preflight_detail": "lead_prescreen 2026-07-20: 'Release Anxiety' / 'Release Anxiety Tonight' / 'Release Anxiety & Negative Thoughts' all FRESH. title_preflight --validate: A 'Release Anxiety Tonight | Slow Sarod | 1.5 Hours' = PASS (48ch, 3 slots); B = PASS (60ch, acceptable). cooldown_check: Sarod VIABLE Wed (last live Jul 15 Brain Power, 7-day gap, STRONG tier). PACKAGING-CLONE check: last Sarod-anxiety = Jun 7 (no recent clone; recent Sarods are cognitive). raga_fit_cache: Bageshri×anxiety = STRONG. Thumb 'MIND WON'T STOP?' FRESH; 'CAN'T SWITCH OFF?' pending dedup at production.",
+  "preflight_detail": "lead_prescreen 2026-07-20: 'Release Anxiety' / 'Release Anxiety Tonight' / 'Release Anxiety & Negative Thoughts' all FRESH. title_preflight --validate: A 'Release Anxiety Tonight | Slow Sarod | 1.5 Hours' = PASS (48ch, 3 slots); B = PASS (60ch, acceptable). cooldown_check: Sarod VIABLE Wed (last live Jul 15 Brain Power, 7-day gap, STRONG tier). PACKAGING-CLONE check: last Sarod-anxiety = Jun 7 (no recent clone; recent Sarods are cognitive). raga_fit_cache: Bageshri\u00d7anxiety = STRONG. Thumb 'MIND WON'T STOP?' FRESH; 'CAN'T SWITCH OFF?' pending dedup at production.",
   "pending": [
-    "None blocking — fully locked: 2 title-keyword hypotheses (A emotional / B SEO) + FIXED thumb 'THOUGHTS TOO LOUD?', all gate-cleared 2026-07-20 (lead_prescreen · title_preflight · cooldown · packaging-clone · thumb-dedup)"
+    "None blocking \u2014 fully locked: 2 title-keyword hypotheses (A emotional / B SEO) + FIXED thumb 'THOUGHTS TOO LOUD?', all gate-cleared 2026-07-20 (lead_prescreen \u00b7 title_preflight \u00b7 cooldown \u00b7 packaging-clone \u00b7 thumb-dedup)"
   ],
-  "version": "v3 — A/B redesigned to TWO distinct keyword hypotheses (A emotional dual-hook vs B SEO 'Music for Anxiety Relief') per user 2026-07-20; instrument Sarod (v2 fix, Bansuri cloned Jul-17). Supersedes v_2026-07-22_release_anxiety_bansuri.",
-  "description_note": "Follows description_template.md style. v2 — refine at production. Supersedes v_2026-07-22_release_anxiety_bansuri (removed) and v_2026-07-22_stop_overthinking_sarod (PARKED)."
+  "version": "v3 \u2014 A/B redesigned to TWO distinct keyword hypotheses (A emotional dual-hook vs B SEO 'Music for Anxiety Relief') per user 2026-07-20; instrument Sarod (v2 fix, Bansuri cloned Jul-17). Supersedes v_2026-07-22_release_anxiety_bansuri.",
+  "description_note": "Follows description_template.md style. v2 \u2014 refine at production. Supersedes v_2026-07-22_release_anxiety_bansuri (removed) and v_2026-07-22_stop_overthinking_sarod (PARKED).",
+  "planned_title_variants": {
+    "A": "Release Anxiety & Negative Thoughts | Slow Sarod | 1.5 Hours",
+    "B": "Music for Anxiety Relief | Slow Sarod | 1.5 Hours"
+  }
 }

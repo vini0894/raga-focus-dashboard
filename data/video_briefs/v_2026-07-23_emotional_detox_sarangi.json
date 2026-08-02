@@ -5,12 +5,11 @@
   "created_at": "2026-07-21",
   "planned_date": "2026-07-23",
   "planned_slot": "19:00 IST \u2014 Thu PM (evening emotional-release, evening publish)",
-  "title": "Emotional Detox | Slow Sarangi Instrumental | 1.5 Hours",
+  "title": "Sacred Silence | Slow Sarangi Instrumental for Stress Relief, Sleep & Inner Peace",
   "title_variants": {
-    "A": "Emotional Detox | Slow Sarangi Instrumental | 1.5 Hours",
-    "B": "Heal Your Heart | Sarangi Raga Kirwani | 1.5 Hours"
+    "LIVE": "Sacred Silence | Slow Sarangi Instrumental for Stress Relief, Sleep & Inner Peace"
   },
-  "title_note": "TWO-HYPOTHESIS A/B (different lead keywords per banked rule). A = CLINICAL-DETOX hook 'Emotional Detox' \u2014 VidIQ 58 banked, RESERVED phrase deployed as intended (suffix-drop rule: 'Emotional Detox Music' = 26 DEAD, bare form = 58), and competitor-validated THIS WEEK (Dhun Detox 'Emotional Detox \ud83c\udf3f Raag Bhairavi' = 17K views in 6 days). B = FRESH EMOTIONAL-OFFERING hook 'Heal Your Heart' \u2014 VidIQ 60 (banked chat 2026-07-21), with named-raga slot 2 (competitor formula element: Dhun/Raga Heal breakouts all carry named ragas). THE TEST: clinical-detox framing vs warm emotional-offering framing in the emotional-release register. Anti-decay rationale: this is the clinical-somatic register that made ALL our reach (Dopamine 7.3M / Nervous System 596K) and is winning the niche today \u2014 NOT the generic-soft register (Peace of Mind/Healing Frequency, CTR ~3) that July shipped.",
+  "title_note": "SHIPPED. Live title differs from the briefed variants (chosen at upload). `planned_title_variants` preserves what was briefed; `title` / `title_variants` now carry what is ACTUALLY LIVE so the Brief Queue stops showing a title that never existed. Matched to the live catalog by PUBLISH DATE, not by string similarity \u2014 fuzzy matching mis-assigned this one on the first pass. \u2b50 RULE: write the real published title back into the brief on every ship.",
   "lane": "healing",
   "instrument": "Sarangi",
   "raga": "Kirwani",
@@ -75,5 +74,9 @@
     "None blocking \u2014 locked as anti-decay ship 1/2 with documented overrides (see experiment field)"
   ],
   "version": "v1 \u2014 anti-decay clinical-register A/B (Emotional Detox vs Heal Your Heart) LOCKED by user 2026-07-21. Supersedes v_2026-07-23_positive_morning_dilruba (PARKED \u2014 morning lane already covered Mon + Dilruba morning is a documented FLOP).",
-  "description_note": "Follows description_template.md style. v1 \u2014 refine at production."
+  "description_note": "Follows description_template.md style. v1 \u2014 refine at production.",
+  "planned_title_variants": {
+    "A": "Emotional Detox | Slow Sarangi Instrumental | 1.5 Hours",
+    "B": "Heal Your Heart | Sarangi Raga Kirwani | 1.5 Hours"
+  }
 }
