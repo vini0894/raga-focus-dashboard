@@ -1,85 +1,88 @@
 {
- "id": "v_2026-08-03_boost_your_aura_santoor",
- "status": "APPROVED",
- "locked": true,
- "created_at": "2026-07-25",
- "planned_date": "2026-08-03",
- "planned_slot": "06:30 IST Mon — morning-family AM intent; Mon-AM strong cell (~303%)",
- "title": "Uplifting Music | Santoor Instrumental | 1.5 Hours",
- "title_variants": {
-  "A": "Uplifting Music | Santoor Instrumental | 1.5 Hours",
-  "B": "Boost Your Aura | Bright Santoor Morning | 1.5 Hours"
- },
- "title_note": "UNTAPPED-CLUSTER TEST. A = generic uplifting SEO (owner 'Uplifting Music | Dilruba' 671v/76d/decayed = reusable under owner rule). B = FIRST ship of the banked spiritual-energy cluster (Boost Your Aura 62, banked 2026-05-11, never used) — offering-framing per banked rule; 'Remove Negative Energy' 62 held as backup (problem-framing). Both preflight PASS 2026-07-25.",
- "lane": "morning",
- "instrument": "Santoor",
- "raga": "Bilawal",
- "validated_keywords": [
-  "A: 'uplifting music' — reusable lead (owner old/small/decayed: 671v, 76d by publish)",
-  "B: 'Boost Your Aura' — 62 banked, FRESH, first deployment of the untapped spiritual/energy cluster (§7); if B wins it prices the whole family (Remove Negative Energy 62 · Attract Positive Energy 61 · Healing Energy 62) for follow-ups",
-  "Blocked checked: 'Joyful Music' (owner 12,193v still earning 5.5K impr/day — owner-still-earning HARD block) · 'Inner Happiness' (22d, growing +100%) · 'Happy Music' (22d) · 'Good Energy' (used)"
- ],
- "thumbnail_text_main": "LIFT YOUR MORNING",
- "thumbnail_text_variants": [
-  {
-   "label": "fixed",
-   "text": "LIFT YOUR MORNING",
-   "strategy": "FIXED across both arms (title register is the variable). Outcome-imperative per morning rule (Q 0/5). 17 chars/3 words. Dedup 0 hits 2026-07-25."
+  "id": "v_2026-08-03_boost_your_aura_santoor",
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-07-25",
+  "planned_date": "2026-07-30",
+  "planned_slot": "06:30 IST Mon \u2014 morning-family AM intent; Mon-AM strong cell (~303%)",
+  "title": "Uplifting Music | Santoor Instrumental | 1.5 Hours",
+  "title_variants": {
+    "LIVE": "Uplifting Music | Santoor Instrumental | 1.5 Hours"
+  },
+  "title_note": "SHIPPED 2026-07-30, not the planned Aug 3 \u2014 the Santoor uplifting ship was pulled forward and published Thursday Jul 30 instead. planned_date corrected so it stops occupying the Aug 3 slot in the Brief Queue. `planned_title_variants` keeps the A/B that was briefed ('Uplifting Music' vs 'Boost Your Aura'); the 'Boost Your Aura' spiritual-energy-cluster test was NOT run \u2014 that phrase is still unspent.",
+  "lane": "morning",
+  "instrument": "Santoor",
+  "raga": "Bilawal",
+  "validated_keywords": [
+    "A: 'uplifting music' \u2014 reusable lead (owner old/small/decayed: 671v, 76d by publish)",
+    "B: 'Boost Your Aura' \u2014 62 banked, FRESH, first deployment of the untapped spiritual/energy cluster (\u00a77); if B wins it prices the whole family (Remove Negative Energy 62 \u00b7 Attract Positive Energy 61 \u00b7 Healing Energy 62) for follow-ups",
+    "Blocked checked: 'Joyful Music' (owner 12,193v still earning 5.5K impr/day \u2014 owner-still-earning HARD block) \u00b7 'Inner Happiness' (22d, growing +100%) \u00b7 'Happy Music' (22d) \u00b7 'Good Energy' (used)"
+  ],
+  "thumbnail_text_main": "LIFT YOUR MORNING",
+  "thumbnail_text_variants": [
+    {
+      "label": "fixed",
+      "text": "LIFT YOUR MORNING",
+      "strategy": "FIXED across both arms (title register is the variable). Outcome-imperative per morning rule (Q 0/5). 17 chars/3 words. Dedup 0 hits 2026-07-25."
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A sunlit figure at a bright window at sunrise, hammered santoor before them, mallets mid-sparkle, gold morning light flooding a warm room, marigolds on the sill. Light, lifted, radiant morning energy. Dark-teal serif overlay text.",
+  "thumbnail_ab_note": "Title A/B \u2192 thumb FIXED; both arms rule-aligned (outcome-imperative lane).",
+  "playlists": [
+    "Morning Energy",
+    "Meditation"
+  ],
+  "description": [
+    "Uplifting Music | Santoor Instrumental | 1.5 Hours of bright Indian classical santoor to lift your morning energy.",
+    "",
+    "Ninety minutes of sparkling hammered santoor in Raga Bilawal \u2014 light, warm, and quietly joyful \u2014 to clear the heaviness and let your day open bright.",
+    "",
+    "\ud83c\udfa7 HOW TO USE \u2014 play as you wake, stretch, or start your morning routine. Bright but never loud.",
+    "",
+    "\u23f1 BEST FOR \u2014 morning energy \u00b7 positive vibes \u00b7 lifting a low mood \u00b7 aura and energy cleansing practice \u00b7 a bright start",
+    "",
+    "\ud83c\udfb5 ABOUT \u2014 the santoor's hundred shimmering strings have long been the sound of lightness in Indian classical music; Raga Bilawal is the open, clear-eyed morning raga.",
+    "",
+    "#UpliftingMusic #SantoorMusic #PositiveEnergy #IndianClassicalMusic #MorningMusic"
+  ],
+  "tags": [
+    "uplifting music",
+    "boost your aura",
+    "santoor instrumental",
+    "positive energy music",
+    "raga bilawal",
+    "indian classical music",
+    "1.5 hours",
+    "morning energy",
+    "feel good music",
+    "aura cleansing",
+    "bright morning music",
+    "spiritual energy music"
+  ],
+  "suno_prompt": "Instrumental only, bright shimmering hammered santoor in Raga Bilawal with soft light tabla, sparkling warm tone, gentle joyful morning energy around 70 BPM, light and open without excitement, seamless loop.",
+  "suno_prompt_note": "Morning/uplifting lane KEEPS gentle energy (banked). Santoor = the lane's proven instrument (Joyful 12,193v). May-grade care: shimmer must stay warm, not thin.",
+  "experiment": "HYPOTHESIS (untapped spiritual-energy cluster + T1 register): does spiritual-energy T1 vocabulary (Boost Your Aura) beat generic uplifting SEO on CTR, and does it pull T1 watch-share \u226530%? Read: d7 CTR share + per-video geo via experiment_reads + power check. Feeds h_2026-07-25_t1_vocab_register. B-win unlocks the 3 remaining scored cluster keywords as follow-ups.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "loop_note": "4-6 bright Bilawal santoor clips with light tabla, crossfade-merge to ~90min.",
+    "publish": "2026-08-03 06:30 IST"
+  },
+  "preflight_passed": true,
+  "preflight_detail": "title_preflight PASS both (50/52 chars, 3-slot). cooldown: Santoor last live Jul 13 (21d by publish \u2713); \u26a0 if Wed Jul-29 placeholder ships Santoor cognitive, gap becomes 5d (legal-minimum) \u2014 prefer a non-Santoor Wed or drop Wed. raga_fit: morning=Bhairav/Bhairavi/Bilawal only (cache-verified; Bhupali/Khamaj rejected as evening ragas). Thumb dedup 0 hits. Audience-coherence 4/4. brief_gate: track_record FLOP OVERRIDDEN (Joyful 12K misfiled to 1hr cell by title-string parse \u2014 see gate_override).",
+  "pending": [
+    "Launch title A/B in Studio at publish + log to ab_raw_data.csv",
+    "Day-7 geo read"
+  ],
+  "version": "v1 \u2014 LOCKED by user 2026-07-25 ('lock this for next monday'). First ship of the spiritual-energy cluster.",
+  "gate_override": {
+    "gate": "brief_gate.track_record",
+    "verdict_shown": "FLOP \u2014 Santoor\u00d7morning\u00d71.5hr n=2 med 719v",
+    "override_reason": "Gate's format parser misfiles the lane's biggest win: 'Joyful Music | Positive Vibes Music with Santoor | 1 HOUR' is titled 1hr but is 5400s = 90min actual. True Santoor\u00d7morning-family 1.5hr record = n=3 (Joyful 12,193v \u00b7 Bright Morning 1,179v \u00b7 Morning Energy Santoor 217v) = MODEST with a 12K best, not FLOP. Override documented 2026-07-25; track_record should parse duration, not title strings (queued for the gates-upgrade build).",
+    "approved_by": "user lock 2026-07-25"
+  },
+  "planned_title_variants": {
+    "A": "Uplifting Music | Santoor Instrumental | 1.5 Hours",
+    "B": "Boost Your Aura | Bright Santoor Morning | 1.5 Hours"
   }
- ],
- "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A sunlit figure at a bright window at sunrise, hammered santoor before them, mallets mid-sparkle, gold morning light flooding a warm room, marigolds on the sill. Light, lifted, radiant morning energy. Dark-teal serif overlay text.",
- "thumbnail_ab_note": "Title A/B → thumb FIXED; both arms rule-aligned (outcome-imperative lane).",
- "playlists": [
-  "Morning Energy",
-  "Meditation"
- ],
- "description": [
-  "Uplifting Music | Santoor Instrumental | 1.5 Hours of bright Indian classical santoor to lift your morning energy.",
-  "",
-  "Ninety minutes of sparkling hammered santoor in Raga Bilawal — light, warm, and quietly joyful — to clear the heaviness and let your day open bright.",
-  "",
-  "🎧 HOW TO USE — play as you wake, stretch, or start your morning routine. Bright but never loud.",
-  "",
-  "⏱ BEST FOR — morning energy · positive vibes · lifting a low mood · aura and energy cleansing practice · a bright start",
-  "",
-  "🎵 ABOUT — the santoor's hundred shimmering strings have long been the sound of lightness in Indian classical music; Raga Bilawal is the open, clear-eyed morning raga.",
-  "",
-  "#UpliftingMusic #SantoorMusic #PositiveEnergy #IndianClassicalMusic #MorningMusic"
- ],
- "tags": [
-  "uplifting music",
-  "boost your aura",
-  "santoor instrumental",
-  "positive energy music",
-  "raga bilawal",
-  "indian classical music",
-  "1.5 hours",
-  "morning energy",
-  "feel good music",
-  "aura cleansing",
-  "bright morning music",
-  "spiritual energy music"
- ],
- "suno_prompt": "Instrumental only, bright shimmering hammered santoor in Raga Bilawal with soft light tabla, sparkling warm tone, gentle joyful morning energy around 70 BPM, light and open without excitement, seamless loop.",
- "suno_prompt_note": "Morning/uplifting lane KEEPS gentle energy (banked). Santoor = the lane's proven instrument (Joyful 12,193v). May-grade care: shimmer must stay warm, not thin.",
- "experiment": "HYPOTHESIS (untapped spiritual-energy cluster + T1 register): does spiritual-energy T1 vocabulary (Boost Your Aura) beat generic uplifting SEO on CTR, and does it pull T1 watch-share ≥30%? Read: d7 CTR share + per-video geo via experiment_reads + power check. Feeds h_2026-07-25_t1_vocab_register. B-win unlocks the 3 remaining scored cluster keywords as follow-ups.",
- "production_spec": {
-  "duration_minutes": 90,
-  "format": "1.5hr",
-  "loop_note": "4-6 bright Bilawal santoor clips with light tabla, crossfade-merge to ~90min.",
-  "publish": "2026-08-03 06:30 IST"
- },
- "preflight_passed": true,
- "preflight_detail": "title_preflight PASS both (50/52 chars, 3-slot). cooldown: Santoor last live Jul 13 (21d by publish ✓); ⚠ if Wed Jul-29 placeholder ships Santoor cognitive, gap becomes 5d (legal-minimum) — prefer a non-Santoor Wed or drop Wed. raga_fit: morning=Bhairav/Bhairavi/Bilawal only (cache-verified; Bhupali/Khamaj rejected as evening ragas). Thumb dedup 0 hits. Audience-coherence 4/4. brief_gate: track_record FLOP OVERRIDDEN (Joyful 12K misfiled to 1hr cell by title-string parse — see gate_override).",
- "pending": [
-  "Launch title A/B in Studio at publish + log to ab_raw_data.csv",
-  "Day-7 geo read"
- ],
- "version": "v1 — LOCKED by user 2026-07-25 ('lock this for next monday'). First ship of the spiritual-energy cluster.",
- "gate_override": {
-  "gate": "brief_gate.track_record",
-  "verdict_shown": "FLOP — Santoor×morning×1.5hr n=2 med 719v",
-  "override_reason": "Gate's format parser misfiles the lane's biggest win: 'Joyful Music | Positive Vibes Music with Santoor | 1 HOUR' is titled 1hr but is 5400s = 90min actual. True Santoor×morning-family 1.5hr record = n=3 (Joyful 12,193v · Bright Morning 1,179v · Morning Energy Santoor 217v) = MODEST with a 12K best, not FLOP. Override documented 2026-07-25; track_record should parse duration, not title strings (queued for the gates-upgrade build).",
-  "approved_by": "user lock 2026-07-25"
- }
 }

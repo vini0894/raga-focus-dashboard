@@ -4,20 +4,21 @@
   "locked": true,
   "created_at": "2026-07-25",
   "planned_date": "2026-08-04",
-  "planned_slot": "Tue Aug 4 \u2014 SCHEDULED in Studio (uploaded 2026-07-28, private until publish)",
-  "title": "Digital Detox Music | Surbahar Instrumental | 1.5 Hours",
+  "planned_slot": "19:00 IST Tue \u2014 evening unplug intent. Uploaded 2026-07-28, private/scheduled in Studio.",
+  "title": "Digital Detox Music | Unplug and Reset | 1.5 Hours",
   "title_variants": {
-    "A": "Digital Detox Music | Surbahar Instrumental | 1.5 Hours",
-    "B": "Stop Doomscrolling | Surbahar Instrumental | 1.5 Hours"
+    "LOCKED": "Digital Detox Music | Unplug and Reset | 1.5 Hours"
   },
-  "title_note": "DIGITAL/DOPAMINE CLUSTER REVIVAL \u2014 the niche's #1 breakout (Raga Heal 'Dopamine Reset | 639Hz Bansuri Digital Detox' 7.67 v/sub + 496K 'Digital Detox' w/ DOOM SCROLLING? thumb) is OUR abandoned formula. A = clinical cluster lead (digital detox 64, deliberate repeat \u2014 owners: Apr-11 15v dead + concept-sibling Digital Burnout 762v/0.13% non-authority). B = modern-state register (Stop Doomscrolling \u2014 fresh, imperative not Q). Bansuri variant HARD-REJECTED by orchestrator (packaging clone: 13d from Cortisol Detox, same instrument+format+lane) \u2014 Surbahar is the gate-clean instrument.",
+  "title_note": "LOCKED 2026-08-02 (user). Instrument REMOVED from the title. The briefed A/B ('Digital Detox Music' vs 'Stop Doomscrolling') is NOT running \u2014 the video is already uploaded single-title, so this is a straight re-title: an OBSERVATION, not a controlled test. WHY drop 'Surbahar Instrumental': Surbahar measured 10.6% T1 across n=5, dead last of seven instruments and about half the 20.4% channel average. The case is SUBTRACTIVE (removing a known-worst signal) \u2014 NOT a bet that no-instrument titles are magic, that cell is only n=3. Second independent line: banked Jul-11 finding that no-instrument titles ran +73% impressions/day in the decay era. Slot 2 'Unplug and Reset' \u2014 prescreen FRESH, preflight PASS at 50 chars. Rejected: 'Quiet the Noise' (banks 27, under the >=60 bar), 'Calm Instrumental Music' (same-concept as live). \u26a0\ufe0f Surbahar STAYS in description and tags \u2014 it still does SEO work; only the TITLE carries the register signal.",
   "lane": "cognitive",
   "instrument": "Surbahar",
   "raga": "Khamaj",
   "validated_keywords": [
-    "A: 'digital detox' \u2014 64 banked (Medium comp); deliberate repeat, no authority owner (sibling Digital Burnout: ~600-1K impr/day, CTR 2.83 \u2014 demand feed EXISTS, conversion failed \u2192 register is the fix)",
-    "B: 'Stop Doomscrolling' \u2014 FRESH (prescreen 2026-07-25); modern-state imperative, no Q-title (q_hook_title_lead = HIGH)",
-    "Blocked: Bansuri variant (orchestrator packaging_clone \u26d4) \u00b7 'Dopamine Detox' (owner growing +128%) \u00b7 'Dopamine Reset' (the giant) \u00b7 'mind detox music' 54 \u00b7 'overstimulated' <20d lock"
+    "Lead: 'Digital Detox Music' \u2014 VidIQ 64, Medium comp, no authority owner",
+    "Slot 2: 'Unplug and Reset' \u2014 FRESH (prescreen 2026-08-02), plain-English outcome, no instrument",
+    "Instrument deliberately ABSENT \u2014 Surbahar is the channel's worst T1 instrument (10.6%, n=5)",
+    "Dropped: 'Stop Doomscrolling' (briefed B arm, not running \u2014 already uploaded single-title)",
+    "Rejected slot-2: 'Quiet the Noise' (27, under bar) \u00b7 'Calm Instrumental Music' (same-concept as live)"
   ],
   "thumbnail_text_main": "PHONE BRAIN?",
   "thumbnail_text_variants": [
@@ -72,8 +73,14 @@
   "preflight_passed": true,
   "preflight_detail": "Full orchestrator run 2026-07-25 (user-requested): Bansuri\u00d7cognitive\u00d71.5hr HARD-REJECTED [packaging_clone 13d Cortisol Detox]; Surbahar freed by parking incumbent calm brief (live gap 9d \u2713); Surbahar\u00d7cognitive UNTESTED (experimental, no clone \u2014 Digital Burnout Jun-23 is stress-lane tuple, 37d). Titles preflight PASS (55/54 chars). Thumb dedup 0. Leads prescreened. Pools alternate Tue cortisol \u2192 Thu soft_pm \u2192 Fri cortisol.",
   "pending": [
-    "Launch title A/B in Studio at publish + log to ab_raw_data.csv",
-    "Day-7 read: CTR + cohort impressions + whether the register fixed the sibling's 2.83 CTR problem"
+    "\u26a0\ufe0f CHANGE THE TITLE IN STUDIO \u2014 the brief alone does not update the uploaded video",
+    "Confirm the Studio publish date is 2026-08-04 (API exposes upload time only, not schedule)",
+    "Check the thumbnail IMAGE: if it shows someone PLAYING a surbahar, swap it \u2014 performer thumbs are the worst converters (3.03%) vs viewer-state (5.6-6.1%). Thumb TEXT 'PHONE BRAIN?' is correct, Q-hooks win cognitive 3/3.",
+    "No A/B on this ship \u2014 record the outcome as observational only"
   ],
-  "version": "v1 \u2014 LOCKED by user 2026-07-25 ('perfect'). Replaces v_2026-07-30_relaxing_calm_surbahar (PARKED). Competitor-validated cluster revival."
+  "version": 2,
+  "planned_title_variants": {
+    "A": "Digital Detox Music | Surbahar Instrumental | 1.5 Hours",
+    "B": "Stop Doomscrolling | Surbahar Instrumental | 1.5 Hours"
+  }
 }

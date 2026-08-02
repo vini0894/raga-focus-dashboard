@@ -1,0 +1,35 @@
+{
+  "week": "wk_2026-08-10",
+  "created": "2026-08-02",
+  "status": "INTENT \u2014 not locked, no briefs written",
+  "carried_from": "2026-08-02 session",
+  "locked_experiments": [
+    {
+      "slot": "mid-week",
+      "cell": "Deep work x 3hr, OFFERING register",
+      "hypothesis": "h_2026-08-09_deep_work_offering_register",
+      "note": "User locked 2026-08-02. Title must read as an offering ('3 Hours of Deep Work'), NEVER a tool ('Focus Music', 'Concentration', Hz/gamma/binaural, ADHD). Instrument TBD. Must not displace the week's proven sleep 3hr anchor."
+    },
+    {
+      "slot": "anchor",
+      "cell": "Santoor x sleep x 3hr",
+      "note": "Opens the sleep-3hr instrument rotation. UNTESTED cell, no clone. Santoor is the #2 T1 instrument (27.3% vs 20.4% channel avg), so a sleep 3hr does NOT have to mean low T1 \u2014 that was packaging, not lane. Space it properly from the Aug 7 Bansuri sleep 3hr."
+    }
+  ],
+  "open_rotation_sleep_3hr": [
+    "Santoor (T1 27.3)",
+    "Sitar (T1 21.1)",
+    "Veena (unmeasured)",
+    "Esraj (unmeasured)"
+  ],
+  "open_questions": [
+    "432Hz register \u2014 unresolved. Aug 3 ships it with NO control arm, so it cannot be read. Needs a dedicated same-lead A/B (identical title, Hz vs no-Hz).",
+    "Figure count in thumbnails \u2014 1 vs group. Morning Energy (6 figures) is the #2 video but its CTR is below channel average: won on distribution, never shown to convert.",
+    "Short-runtime reach (h_2026-08-02_shortform_runtime) \u2014 parked for a low-stakes slot, never a Monday or anchor."
+  ],
+  "tooling_debt": [
+    "recommend_slot does NOT enforce the Dilruba bench. After the track_record duration fix, Dilruba x anxiety flipped FLOP -> MODEST and became the #1 pick for Thu AND Fri. It was filtered by hand. Needs a BENCHED list the gates actually read.",
+    "tools/ is outside any git repo \u2014 track_record.py fix (2026-08-02) has no backup or history.",
+    "Push guard matches the WORD not a figure; tighten to '\"rpm\":\\s*[0-9]' and '\\$[0-9]'."
+  ]
+}

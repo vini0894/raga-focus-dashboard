@@ -4,6 +4,25 @@
   "last_updated": "2026-07-26",
   "hypotheses": [
     {
+      "id": "h_2026-08-09_deep_work_offering_register",
+      "created": "2026-08-02",
+      "status": "PROPOSED",
+      "statement": "The focus/deep-work lane failed on FRAMING, not on concept. Every focus ship the channel has made used a TOOL register \u2014 'Instant focus music', 'Deep Focus 40Hz Gamma Binaural', 'ADHD Brain Fog', 'Overcome Procrastination'. The one productivity ship that used an OFFERING register \u2014 'Productive Day Music | Positive Morning Vibes' \u2014 is a top performer (7,121 views, 35.2% T1, one of the channel's best on both axes). Predict: a long work-session ship framed as an offering ('3 Hours of Deep Work') performs like Productive Day, not like Instant Focus. Format is 3hr because the banked long-form finding names STUDY as a long-session lane alongside sleep and deep-rest.",
+      "predicted_metric": "views/day and CTR at d7 vs the 1.5hr cognitive cohort; CTR above the ~3% recent-ship floor",
+      "relevant_lanes": [
+        "cognitive",
+        "focus"
+      ],
+      "relevant_instruments": [
+        "Sitar",
+        "Santoor",
+        "Sarod"
+      ],
+      "linked_ships": [],
+      "source": "WHY IT DESERVES A TEST \u2014 the negative evidence is confounded exactly as the Hz evidence was: 7 of 9 focus videos are Apr 5-15, all 20-60min, all pre-pivot (pivot was 2026-04-17), all dead-era short-form. AND there is NO killed-focus hypothesis in this ledger \u2014 the 'dead lane: focus_productivity_pre_pivot' tag that plan_prep uses to exclude focus keywords has no recorded evidence behind it. It is a label, not a finding. WHAT ARGUES AGAINST \u2014 'Sitar to Unclog Your Brain | 3 Hours' (May 31, genuinely post-pivot, genuinely 180min) did 94 views at CTR 1.90, the channel's worst 3hr, and it shipped during the surge when distribution was easiest. Corrected gate still reads cognitive weakly: Sitar FLOP n=7 med 101, Sarod FLOP n=4 med 970. Audience-coherence ~2/4 \u2014 focus is an ACTIVATION intent while the channel's audience arrives for DE-activation (sleep/anxiety/calm). TEST DESIGN \u2014 3hr, OFFERING register ('3 Hours of Deep Work', 'A Long Work Session'), never tool register ('Focus Music', 'Concentration', Hz/gamma/binaural, ADHD). Mid-week slot. MUST NOT displace the proven Bansuri x sleep x 3hr cell on Friday, which is the week's anchor. SCOPE NOTE \u2014 this is a LANE-EXPANSION bet, not a fix for 3hr supply. 3hr supply is already solved by rotating instruments inside sleep: Santoor, Sitar, Veena and Esraj are all UNTESTED at sleep x 3hr, which is the channel's strongest cell. User locked this for wk_2026-08-10 on 2026-08-02.",
+      "promoted_rule": ""
+    },
+    {
       "id": "h_2026-08-02_shortform_runtime",
       "created": "2026-08-02",
       "status": "PROPOSED",
