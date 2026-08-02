@@ -1,88 +1,90 @@
 {
- "id": "v_2026-07-25_sleep_drone_tanpura_3hr",
- "status": "APPROVED",
- "locked": true,
- "created_at": "2026-07-25",
- "planned_date": "2026-07-25",
- "planned_slot": "~19:30 IST Sat — evening sleep intent; Sat launch index 123% (2nd best)",
- "title": "Sleep Music | Raga Yaman Night Drone | 3 Hours",
- "title_variants": {
-  "A": "Sleep Music | Raga Yaman Night Drone | 3 Hours",
-  "B": "Music to Fall Asleep Fast | Deep Sleep Drone | 3 Hours"
- },
- "title_note": "Q-hook title REMOVED per 2026-07-25 rule (q_hook_title_lead now HIGH severity). A = search-authority lead (sleep music 75) + named-raga slot 2. B = outcome-imperative lead — sanctioned experimental arm (unscored; 'FALL ASLEEP FAST' is banked winning thumb vocabulary). No instrument named in either title (tanpura is the music, not the packaging).",
- "lane": "sleep",
- "instrument": "Tanpura (drone — replaces failed Bansuri renders)",
- "raga": "Yaman",
- "validated_keywords": [
-  "A lead: 'sleep music' — 75 banked; owner ('Sleep Music | Drift Off Effortlessly', May 29, 827v, 57d) is old/small/decayed = safe deliberate repeat per the owner-still-earning rule",
-  "B lead: 'Music to Fall Asleep Fast' — experimental arm per banked 3-variant structure; 'fall asleep fast music' queued for VidIQ",
-  "Blocked checked: 'deep sleep music' lead NOT used (owner Surbahar Jun 30 still growing +948% impr — cannibalization); 'night music' lead NOT used (Quiet Night growing +106%); 'yoga nidra' failed floor at 55"
- ],
- "thumbnail_text_main": "DEEP SLEEP TONIGHT",
- "thumbnail_text_variants": [
-  {
-   "label": "fixed",
-   "text": "DEEP SLEEP TONIGHT",
-   "strategy": "FIXED across both title variants — title register (search-authority vs outcome) is the only variable. Outcome-imperative per sleep lane rule (Q-hook 0 wins; outcome wins #24/#15). Dedup-verified 0 hits vs all shipped thumbs 2026-07-25."
-  }
- ],
- "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A moonlit night courtyard, a figure asleep under a heavy indigo sky with a low golden moon, a tanpura resting against the bed, deep blues and warm lamp glow. Stillness, weight of night. Dark-teal serif overlay text.",
- "thumbnail_ab_note": "Title A/B → thumb FIXED so CTR movement attributes to the title register. Sleep lane = outcome-imperative only.",
- "playlists": [
-  "Sleep Music",
-  "Peaceful Music"
- ],
- "description": [
-  "Sleep Music | Raga Yaman Night Drone | 3 Hours of deep, continuous Indian drone music to help you fall asleep and stay asleep all night.",
-  "",
-  "If your mind is still running when the lights go off — let this drone carry it down. Three hours of warm, unbroken tanpura resonance in Raga Yaman, the classical evening raga, with no melody to follow and no percussion to pull you back. Just a deep, dark bed of sound to sink into.",
-  "",
-  "🎧 HOW TO USE — play at low volume, screen off. The drone is continuous and loops seamlessly; there is nothing to wait for. If you wake in the night, let it guide you back down.",
-  "",
-  "⏱ BEST FOR — falling asleep fast · staying asleep · night-time anxiety · deep rest · yoga nidra practice",
-  "",
-  "🎵 ABOUT — Raga Yaman is the great evening raga of Indian classical music, associated for centuries with settling the mind at dusk. This session renders it as a pure night drone: warm low tanpura resonance, very slow harmonic swells, no interruptions.",
-  "",
-  "#SleepMusic #DeepSleep #RagaYaman #IndianClassicalMusic #DroneMusic"
- ],
- "tags": [
-  "sleep music",
-  "deep sleep music",
-  "fall asleep fast",
-  "raga yaman",
-  "night drone",
-  "tanpura drone",
-  "indian classical music",
-  "3 hours",
-  "music for sleep",
-  "insomnia relief",
-  "calm night music",
-  "deep rest",
-  "yoga nidra music"
- ],
- "suno_prompt": "Instrumental only, deep continuous tanpura drone in Raga Yaman, warm low resonance, very slow gentle harmonic swells, no melody, no percussion, spacious and dark, seamless loop for deep sleep.",
- "suno_prompt_note": "DRONE = the Suno-reliability pick after bansuri renders failed 2026-07-25. Genuinely calm, zero upbeat terms (sleep lane rule). True-drone precedents retain 36.6%/38.7% AVD. Generate 4-6 clips, crossfade-merge to ~3hr per MERGE recipe.",
- "experiment": "HYPOTHESIS (Sat A/B): sleep viewers click OUTCOME framing over search-category framing in browse. A=search-authority ('Sleep Music'+raga), B=outcome ('Fall Asleep Fast'). Read: CTR share at day 7-14 + A/B power check (~10K impr/wk floor per Test #42 rule). Secondary: drone-led 3hr AVD vs the 3hr sleep cohort (Quiet Night 38.8%, Sleep Through Night 39.4%, Deep Sleep Surbahar 33.4%). Also feeds h_2026-07-24_launch_day_inversion (Sat launch).",
- "production_spec": {
-  "duration_minutes": 180,
-  "format": "3hr",
-  "loop_note": "4-6 tanpura drone clips, long crossfades, no audible seams. Dark, warm, consistent level throughout.",
-  "publish": "2026-07-25 ~19:30 IST"
- },
- "preflight_passed": true,
- "preflight_detail": "title_preflight PASS both variants (46/53 chars, 3-slot, no anti-patterns — q_hook rule now enforced at HIGH). cooldown: Tanpura viable (last Jul 17, 8d). lead_prescreen + full catalog scan (A/B losers, brief variants, banked scores) run 2026-07-25. Thumb dedup 0 hits. brief_gate: pending run.",
- "pending": [
-  "EAR BAR before upload: warm/thick, consistent across crossfades, personally sleepable — if it fails the bar, do not upload (Fri sleep fork revives)",
-  "Upload with THIS brief's description (NOT the staged 'Deep Work' copy — staged bansuri uploads stay private/unused)",
-  "Publish ~19:30-21:00 IST · playlists Sleep Music + Peaceful Music",
-  "Launch title A/B in Studio at publish + log variants to ab_raw_data.csv"
- ],
- "version": "v2 — UNPARKED + LOCKED 2026-07-25 evening: user confirmed 3hr drone ships tonight. Gate override documented. Fri 31 resolves to CALM fork; Thu 30 upgrades to 3hr per accepted format plan.",
- "gate_override": {
-  "gate": "brief_gate.track_record",
-  "verdict_shown": "FLOP — Tanpura×sleep n=3 med 17v CTR 2.44 AVD 11.3%",
-  "override_reason": "FLOP decomposes: the reach failure belongs to tanpura-in-TITLE packaging (owner ships: 1,800 and 91 lifetime impressions — search-dead), which this ship removes via no-instrument titles; the true-drone precedent retained 36.6% AVD. Music risk mitigated by ear-test gate before upload (user-applied). Falsification: if d7 true impressions/day <0.5× same-age cohort, the cell is confirmed dead regardless of packaging — bank it.",
-  "approved_by": "user 2026-07-25 ('yes today we are doing 3 hr')"
- }
+  "id": "v_2026-07-25_sleep_drone_tanpura_3hr",
+  "status": "PUBLISHED",
+  "locked": true,
+  "created_at": "2026-07-25",
+  "planned_date": "2026-07-25",
+  "planned_slot": "~19:30 IST Sat \u2014 evening sleep intent; Sat launch index 123% (2nd best)",
+  "title": "Sleep Music | Raga Yaman Night Drone | 3 Hours",
+  "title_variants": {
+    "A": "Sleep Music | Raga Yaman Night Drone | 3 Hours",
+    "B": "Music to Fall Asleep Fast | Deep Sleep Drone | 3 Hours"
+  },
+  "title_note": "Q-hook title REMOVED per 2026-07-25 rule (q_hook_title_lead now HIGH severity). A = search-authority lead (sleep music 75) + named-raga slot 2. B = outcome-imperative lead \u2014 sanctioned experimental arm (unscored; 'FALL ASLEEP FAST' is banked winning thumb vocabulary). No instrument named in either title (tanpura is the music, not the packaging).",
+  "lane": "sleep",
+  "instrument": "Tanpura (drone \u2014 replaces failed Bansuri renders)",
+  "raga": "Yaman",
+  "validated_keywords": [
+    "A lead: 'sleep music' \u2014 75 banked; owner ('Sleep Music | Drift Off Effortlessly', May 29, 827v, 57d) is old/small/decayed = safe deliberate repeat per the owner-still-earning rule",
+    "B lead: 'Music to Fall Asleep Fast' \u2014 experimental arm per banked 3-variant structure; 'fall asleep fast music' queued for VidIQ",
+    "Blocked checked: 'deep sleep music' lead NOT used (owner Surbahar Jun 30 still growing +948% impr \u2014 cannibalization); 'night music' lead NOT used (Quiet Night growing +106%); 'yoga nidra' failed floor at 55"
+  ],
+  "thumbnail_text_main": "DEEP SLEEP TONIGHT",
+  "thumbnail_text_variants": [
+    {
+      "label": "fixed",
+      "text": "DEEP SLEEP TONIGHT",
+      "strategy": "FIXED across both title variants \u2014 title register (search-authority vs outcome) is the only variable. Outcome-imperative per sleep lane rule (Q-hook 0 wins; outcome wins #24/#15). Dedup-verified 0 hits vs all shipped thumbs 2026-07-25."
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A moonlit night courtyard, a figure asleep under a heavy indigo sky with a low golden moon, a tanpura resting against the bed, deep blues and warm lamp glow. Stillness, weight of night. Dark-teal serif overlay text.",
+  "thumbnail_ab_note": "Title A/B \u2192 thumb FIXED so CTR movement attributes to the title register. Sleep lane = outcome-imperative only.",
+  "playlists": [
+    "Sleep Music",
+    "Peaceful Music"
+  ],
+  "description": [
+    "Sleep Music | Raga Yaman Night Drone | 3 Hours of deep, continuous Indian drone music to help you fall asleep and stay asleep all night.",
+    "",
+    "If your mind is still running when the lights go off \u2014 let this drone carry it down. Three hours of warm, unbroken tanpura resonance in Raga Yaman, the classical evening raga, with no melody to follow and no percussion to pull you back. Just a deep, dark bed of sound to sink into.",
+    "",
+    "\ud83c\udfa7 HOW TO USE \u2014 play at low volume, screen off. The drone is continuous and loops seamlessly; there is nothing to wait for. If you wake in the night, let it guide you back down.",
+    "",
+    "\u23f1 BEST FOR \u2014 falling asleep fast \u00b7 staying asleep \u00b7 night-time anxiety \u00b7 deep rest \u00b7 yoga nidra practice",
+    "",
+    "\ud83c\udfb5 ABOUT \u2014 Raga Yaman is the great evening raga of Indian classical music, associated for centuries with settling the mind at dusk. This session renders it as a pure night drone: warm low tanpura resonance, very slow harmonic swells, no interruptions.",
+    "",
+    "#SleepMusic #DeepSleep #RagaYaman #IndianClassicalMusic #DroneMusic"
+  ],
+  "tags": [
+    "sleep music",
+    "deep sleep music",
+    "fall asleep fast",
+    "raga yaman",
+    "night drone",
+    "tanpura drone",
+    "indian classical music",
+    "3 hours",
+    "music for sleep",
+    "insomnia relief",
+    "calm night music",
+    "deep rest",
+    "yoga nidra music"
+  ],
+  "suno_prompt": "Instrumental only, deep continuous tanpura drone in Raga Yaman, warm low resonance, very slow gentle harmonic swells, no melody, no percussion, spacious and dark, seamless loop for deep sleep.",
+  "suno_prompt_note": "DRONE = the Suno-reliability pick after bansuri renders failed 2026-07-25. Genuinely calm, zero upbeat terms (sleep lane rule). True-drone precedents retain 36.6%/38.7% AVD. Generate 4-6 clips, crossfade-merge to ~3hr per MERGE recipe.",
+  "experiment": "HYPOTHESIS (Sat A/B): sleep viewers click OUTCOME framing over search-category framing in browse. A=search-authority ('Sleep Music'+raga), B=outcome ('Fall Asleep Fast'). Read: CTR share at day 7-14 + A/B power check (~10K impr/wk floor per Test #42 rule). Secondary: drone-led 3hr AVD vs the 3hr sleep cohort (Quiet Night 38.8%, Sleep Through Night 39.4%, Deep Sleep Surbahar 33.4%). Also feeds h_2026-07-24_launch_day_inversion (Sat launch).",
+  "production_spec": {
+    "duration_minutes": 180,
+    "format": "3hr",
+    "loop_note": "4-6 tanpura drone clips, long crossfades, no audible seams. Dark, warm, consistent level throughout.",
+    "publish": "2026-07-25 ~19:30 IST"
+  },
+  "preflight_passed": true,
+  "preflight_detail": "title_preflight PASS both variants (46/53 chars, 3-slot, no anti-patterns \u2014 q_hook rule now enforced at HIGH). cooldown: Tanpura viable (last Jul 17, 8d). lead_prescreen + full catalog scan (A/B losers, brief variants, banked scores) run 2026-07-25. Thumb dedup 0 hits. brief_gate: pending run.",
+  "pending": [
+    "EAR BAR before upload: warm/thick, consistent across crossfades, personally sleepable \u2014 if it fails the bar, do not upload (Fri sleep fork revives)",
+    "Upload with THIS brief's description (NOT the staged 'Deep Work' copy \u2014 staged bansuri uploads stay private/unused)",
+    "Publish ~19:30-21:00 IST \u00b7 playlists Sleep Music + Peaceful Music",
+    "Launch title A/B in Studio at publish + log variants to ab_raw_data.csv"
+  ],
+  "version": "v2 \u2014 UNPARKED + LOCKED 2026-07-25 evening: user confirmed 3hr drone ships tonight. Gate override documented. Fri 31 resolves to CALM fork; Thu 30 upgrades to 3hr per accepted format plan.",
+  "gate_override": {
+    "gate": "brief_gate.track_record",
+    "verdict_shown": "FLOP \u2014 Tanpura\u00d7sleep n=3 med 17v CTR 2.44 AVD 11.3%",
+    "override_reason": "FLOP decomposes: the reach failure belongs to tanpura-in-TITLE packaging (owner ships: 1,800 and 91 lifetime impressions \u2014 search-dead), which this ship removes via no-instrument titles; the true-drone precedent retained 36.6% AVD. Music risk mitigated by ear-test gate before upload (user-applied). Falsification: if d7 true impressions/day <0.5\u00d7 same-age cohort, the cell is confirmed dead regardless of packaging \u2014 bank it.",
+    "approved_by": "user 2026-07-25 ('yes today we are doing 3 hr')"
+  },
+  "shipped_title": "Can't Sleep Tonight? | Tanpura Instrumental Music | 3 Hours",
+  "shipped_note": "Title changed at upload from the briefed variants. Live title is the ONLY truth for conflict checks \u2014 log shipped_title on every brief so lead_prescreen and catalog checks see the real phrase."
 }

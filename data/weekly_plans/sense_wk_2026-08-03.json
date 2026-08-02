@@ -1,0 +1,148 @@
+{
+  "week_id": "wk_2026-08-03",
+  "generated": "2026-08-01",
+  "week_start": "2026-08-03",
+  "week_end": "2026-08-09",
+  "freshness": {
+    "snapshot": "2026-08-01",
+    "age_days": 0,
+    "stale": false
+  },
+  "trajectory": {
+    "regime": "DECAY",
+    "diagnosis": "DISTRIBUTION is the bottleneck, NOT packaging. Impressions are falling while CTR is RISING \u2014 titles/thumbs are working; reach is the constraint. Lever this week: new-lane expansion + playlist/end-screen routing + lane-priority tilt. Re-thumbs help watch-time, not reach.",
+    "delta": {
+      "span": "2026-07-05 \u2192 2026-08-01",
+      "impressions": {
+        "from": 18784677,
+        "to": 10705009,
+        "pct": -43.0
+      },
+      "subs_gained": {
+        "from": 9181,
+        "to": 3885,
+        "pct": -57.7
+      },
+      "views": {
+        "from": 1160276,
+        "to": 754556,
+        "pct": -35.0
+      },
+      "watch_hours": {
+        "from": 363201,
+        "to": 261440,
+        "pct": -28.0
+      },
+      "ctr_pp": 0.53,
+      "avd_pp": 1.61
+    },
+    "series": [
+      {
+        "date": "2026-07-05",
+        "n_videos": 106,
+        "impressions": 18784677,
+        "ctr": 4.18,
+        "avd": 19.96,
+        "subs": 9181,
+        "views": 1160276
+      },
+      {
+        "date": "2026-07-08",
+        "n_videos": 107,
+        "impressions": 17832152,
+        "ctr": 4.21,
+        "avd": 19.88,
+        "subs": 8625,
+        "views": 1114262
+      },
+      {
+        "date": "2026-07-10",
+        "n_videos": 110,
+        "impressions": 16509015,
+        "ctr": 4.29,
+        "avd": 19.97,
+        "subs": 7850,
+        "views": 1056563
+      },
+      {
+        "date": "2026-07-18",
+        "n_videos": 116,
+        "impressions": 14760137,
+        "ctr": 4.42,
+        "avd": 20.26,
+        "subs": 6585,
+        "views": 975469
+      },
+      {
+        "date": "2026-07-21",
+        "n_videos": 117,
+        "impressions": 14182132,
+        "ctr": 4.44,
+        "avd": 20.48,
+        "subs": 6127,
+        "views": 942123
+      },
+      {
+        "date": "2026-07-22",
+        "n_videos": 117,
+        "impressions": 13926770,
+        "ctr": 4.45,
+        "avd": 20.59,
+        "subs": 5929,
+        "views": 927865
+      },
+      {
+        "date": "2026-07-24",
+        "n_videos": 119,
+        "impressions": 13283721,
+        "ctr": 4.47,
+        "avd": 20.78,
+        "subs": 5435,
+        "views": 892623
+      },
+      {
+        "date": "2026-08-01",
+        "n_videos": 124,
+        "impressions": 10705009,
+        "ctr": 4.71,
+        "avd": 21.57,
+        "subs": 3885,
+        "views": 754556
+      }
+    ]
+  },
+  "locked_week": {
+    "slots_filled": 0,
+    "ships": [],
+    "open_weekday_slots": [
+      "2026-08-03",
+      "2026-08-04",
+      "2026-08-05",
+      "2026-08-06",
+      "2026-08-07"
+    ],
+    "lanes_covered": {},
+    "instruments_used": {},
+    "spillover_beyond_week": []
+  },
+  "sense_flags": {
+    "uncovered_priority_lanes": [
+      "calm_relax",
+      "cognitive",
+      "stress_burnout",
+      "anxiety",
+      "healing",
+      "sleep",
+      "morning"
+    ],
+    "adjacency_dupes": [],
+    "title_word_saturation": []
+  },
+  "next_steps": [
+    "This is the SENSE pass \u2014 read it, THEN run plan_prep.py for the candidate slate (FILTER pass).",
+    "Regime = DECAY: DISTRIBUTION is the bottleneck, NOT packaging. Impressions are falling while CTR is RISING \u2014 titles/thumbs are working; reach is the constraint. Lever this week: new-lane expansion + playlist/end-screen routing + lane-priority tilt. Re-thumbs help watch-time, not reach.",
+    "Open weekday slots to fill: 2026-08-03, 2026-08-04, 2026-08-05, 2026-08-06, 2026-08-07",
+    "Priority lanes NOT yet covered by locked ships: calm_relax, cognitive, stress_burnout, anxiety, healing, sleep, morning \u2014 steer open slots here for lane-spread.",
+    "After plan_prep, run the CRITIQUE pass (lane-spread \u00b7 saturation \u00b7 hypothesis-overlap \u00b7 'strongest argument this plan is wrong') before locking."
+  ]
+}

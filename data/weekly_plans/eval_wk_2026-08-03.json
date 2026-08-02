@@ -1,0 +1,279 @@
+{
+  "week_id": "wk_2026-08-03",
+  "generated": "2026-08-01",
+  "regime": "DECAY",
+  "competitor_snapshot": "2026-07-19",
+  "weightings_legend": {
+    "t1_growth": {
+      "rev": 0.25,
+      "t1": 0.45,
+      "strat": 0.2,
+      "comp": 0.1
+    },
+    "revenue_max": {
+      "rev": 0.55,
+      "t1": 0.15,
+      "strat": 0.2,
+      "comp": 0.1
+    },
+    "balanced": {
+      "rev": 0.3,
+      "t1": 0.3,
+      "strat": 0.25,
+      "comp": 0.15
+    }
+  },
+  "slots": [
+    {
+      "date": "2026-08-03",
+      "dow": "Mon",
+      "type": "open",
+      "current_draft_lane": null,
+      "ranked_lanes": {
+        "t1_growth": [
+          "anxiety",
+          "cognitive",
+          "morning",
+          "stress_burnout",
+          "calm_relax",
+          "healing",
+          "sleep"
+        ],
+        "revenue_max": [
+          "anxiety",
+          "morning",
+          "cognitive",
+          "calm_relax",
+          "stress_burnout",
+          "healing",
+          "sleep"
+        ],
+        "balanced": [
+          "anxiety",
+          "morning",
+          "cognitive",
+          "stress_burnout",
+          "calm_relax",
+          "healing",
+          "sleep"
+        ]
+      },
+      "viable_lanes": [
+        "cognitive",
+        "anxiety",
+        "stress_burnout",
+        "healing",
+        "calm_relax",
+        "morning",
+        "sleep"
+      ],
+      "excluded": []
+    },
+    {
+      "date": "2026-08-04",
+      "dow": "Tue",
+      "type": "open",
+      "current_draft_lane": null,
+      "ranked_lanes": {
+        "t1_growth": [
+          "anxiety",
+          "cognitive",
+          "morning",
+          "stress_burnout",
+          "calm_relax",
+          "healing",
+          "sleep"
+        ],
+        "revenue_max": [
+          "anxiety",
+          "morning",
+          "cognitive",
+          "calm_relax",
+          "stress_burnout",
+          "healing",
+          "sleep"
+        ],
+        "balanced": [
+          "anxiety",
+          "morning",
+          "cognitive",
+          "stress_burnout",
+          "calm_relax",
+          "healing",
+          "sleep"
+        ]
+      },
+      "viable_lanes": [
+        "cognitive",
+        "anxiety",
+        "stress_burnout",
+        "healing",
+        "calm_relax",
+        "morning",
+        "sleep"
+      ],
+      "excluded": []
+    },
+    {
+      "date": "2026-08-05",
+      "dow": "Wed",
+      "type": "open",
+      "current_draft_lane": null,
+      "ranked_lanes": {
+        "t1_growth": [
+          "anxiety",
+          "cognitive",
+          "morning",
+          "stress_burnout",
+          "calm_relax",
+          "healing",
+          "sleep"
+        ],
+        "revenue_max": [
+          "anxiety",
+          "morning",
+          "cognitive",
+          "calm_relax",
+          "stress_burnout",
+          "healing",
+          "sleep"
+        ],
+        "balanced": [
+          "anxiety",
+          "morning",
+          "cognitive",
+          "stress_burnout",
+          "calm_relax",
+          "healing",
+          "sleep"
+        ]
+      },
+      "viable_lanes": [
+        "cognitive",
+        "anxiety",
+        "stress_burnout",
+        "healing",
+        "calm_relax",
+        "morning",
+        "sleep"
+      ],
+      "excluded": []
+    },
+    {
+      "date": "2026-08-06",
+      "dow": "Thu",
+      "type": "open",
+      "current_draft_lane": null,
+      "ranked_lanes": {
+        "t1_growth": [
+          "anxiety",
+          "cognitive",
+          "morning",
+          "stress_burnout",
+          "calm_relax",
+          "healing",
+          "sleep"
+        ],
+        "revenue_max": [
+          "anxiety",
+          "morning",
+          "cognitive",
+          "calm_relax",
+          "stress_burnout",
+          "healing",
+          "sleep"
+        ],
+        "balanced": [
+          "anxiety",
+          "morning",
+          "cognitive",
+          "stress_burnout",
+          "calm_relax",
+          "healing",
+          "sleep"
+        ]
+      },
+      "viable_lanes": [
+        "cognitive",
+        "anxiety",
+        "stress_burnout",
+        "healing",
+        "calm_relax",
+        "morning",
+        "sleep"
+      ],
+      "excluded": []
+    },
+    {
+      "date": "2026-08-07",
+      "dow": "Fri",
+      "type": "open",
+      "current_draft_lane": null,
+      "ranked_lanes": {
+        "t1_growth": [
+          "anxiety",
+          "cognitive",
+          "morning",
+          "stress_burnout",
+          "calm_relax",
+          "healing",
+          "sleep"
+        ],
+        "revenue_max": [
+          "anxiety",
+          "morning",
+          "cognitive",
+          "calm_relax",
+          "stress_burnout",
+          "healing",
+          "sleep"
+        ],
+        "balanced": [
+          "anxiety",
+          "morning",
+          "cognitive",
+          "stress_burnout",
+          "calm_relax",
+          "healing",
+          "sleep"
+        ]
+      },
+      "viable_lanes": [
+        "cognitive",
+        "anxiety",
+        "stress_burnout",
+        "healing",
+        "calm_relax",
+        "morning",
+        "sleep"
+      ],
+      "excluded": []
+    }
+  ],
+  "competitor_pick": {
+    "date": "2026-08-03",
+    "lane": "morning",
+    "instruments": [
+      "Sitar",
+      "Bansuri",
+      "Dilruba"
+    ],
+    "inspired_by": {
+      "title": "Dopamine Reset | 639Hz Bansuri for Deep Digital Detox & Inner Balance",
+      "competitor": "Raga Heal",
+      "views_per_sub": 7.67,
+      "levers": [
+        "Hz-in-title",
+        "clinical-term",
+        "immediacy"
+      ]
+    },
+    "dupe_warning": null
+  },
+  "next_steps": [
+    "EVALUATE ranks candidate lanes per movable slot under 3 weightings \u2014 human picks the philosophy per week.",
+    "Regime=DECAY. Uncovered priority lanes: anxiety, calm_relax, cognitive, healing, morning, sleep, stress_burnout.",
+    "The competitor_pick is the 1 competitor-inspired ship (only if it cleared every gate).",
+    "Lock title/thumb per \u00a7AUTO-TRIGGER steps 2-5 (VidIQ + 4-source conflict check) before writing briefs."
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "v_2026-08-03_morning_routine_sitar",
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-08-02",
+  "planned_date": "2026-08-03",
+  "planned_slot": "06:30 IST Mon — morning-routine intent; Mon-AM is the morning lane's exception cell",
+  "title": "Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours",
+  "title_variants": {
+    "B": "Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours",
+    "C": "Wake Up Slowly | Sitar Morning Music | 1.5 Hours"
+  },
+  "title_note": "TWO arms only (user dropped the third 2026-08-02). B = searchable lead (VidIQ 66) + the 432Hz register test; C = distinctive T1-register lead (VidIQ 25). Leads differ, so this is two hypotheses per the A/B rule. ⚠️ Hz is CONFOUNDED with the lead here — a B win will not isolate whether 432Hz or 'Morning Routine Music' did the work; a clean Hz read needs a later same-lead pair. ⚠️ 'Slow Sitar' in B sits slightly against morning-lane energy and the SET THE DAY RIGHT thumb — dropping the word (48 chars, still in band) would remove the incoherence and keep the Hz test intact. Flagged, not changed, since B is locked.",
+  "lane": "morning",
+  "instrument": "Sitar",
+  "raga": "Ahir Bhairav",
+  "validated_keywords": [
+    "B lead: 'Morning Routine Music' — VidIQ 66, prescreen FRESH 2026-08-02, clears the >=60 floor",
+    "C lead: 'Wake Up Slowly' — VidIQ 25, prescreen FRESH; deliberately below the floor as the T1-register arm (the >=60 gate is banked as structurally selecting generic-soft)",
+    "'Sitar Morning Music' — VidIQ 28, slot-2 descriptor only, not a lead",
+    "432Hz — register test, first numeric-Hz ship since the April pre-pivot era",
+    "Rejected: 'Morning Music' 77 and 'Positive Morning Music' 70 both lost A/B #40; 'Ease Into the Day' 28 dropped for the higher-scoring B lead; 'Fresh Start Music' 66 flagged as same-concept as live Morning Renewal (24d)"
+  ],
+  "thumbnail_text_main": "SET THE DAY RIGHT",
+  "thumbnail_text_variants": [
+    {
+      "label": "fixed",
+      "text": "SET THE DAY RIGHT",
+      "strategy": "FIXED across BOTH arms — title register is the variable, so the thumb must be held constant or the A/B reads nothing. Outcome-imperative, which is the morning lane's LOCKED winning format (Q-hooks 0 wins across 5 tests). Echoes 'Sitar Music to Start Your Morning Right' (29,399 views, the best post-surge morning performer) without reusing its wording. 17 chars, inside the 14-18 mobile band. Dedup: 0 hits against all 49 shipped thumbnail texts, 2026-08-02."
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature painting style on aged cream parchment with an ornate hand-painted border. Early-morning scene: a seated figure in profile at the edge of a still lotus pond, soft sunrise light breaking over low hills behind, a few cranes at the water's edge. Warm gold and pale rose dawn palette with deep teal accents. Overlay text 'SET THE DAY RIGHT' in dark-teal serif, upper third, large and uncluttered for mobile. No sitar depicted in close-up; keep the composition calm and open.",
+  "thumbnail_ab_note": "Single thumbnail on both title arms. Do NOT let YouTube auto-generate a second thumb variant — the lane's format is locked and an off-format auto-pick has crashed CTR before (Test #41, -42%).",
+  "playlists": ["Morning Energy", "Peaceful Music"],
+  "description": "Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours of Calm, Unhurried Start\n\nSome mornings you wake up already behind. The phone is in your hand before your feet are on the floor, and the day starts pulling at you before you have had a chance to arrive in it.\n\nThis peaceful Indian ambient meditation music is designed to slow the first hour down — to give you something steady to move through your morning alongside, instead of rushing at it.\n\nEnjoy 1.5 hours of gentle sitar melodies blended with a soft tanpura drone, light tabla and warm ambient textures, tuned to 432Hz and looped seamlessly so nothing interrupts you.\n\nPerfect for morning routines, waking up gently, stretching, journaling, yoga, morning meditation, making coffee, getting ready for work, quiet reading, light housework, or simply sitting still before the day begins.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sitar, with tanpura drone and light tabla\nRaga: Ahir Bhairav — a traditional early-morning raga, warm and gently uplifting\nStyle: Indian classical ambient, instrumental only\nMood: Calm, steady, quietly positive\nAtmosphere: Soft dawn light, unhurried\nTuning: 432Hz\nDuration: 1.5 hours\n\n🎧 HOW TO USE\nPut this on as soon as you wake, before you reach for anything else. Keep the volume low enough that it sits underneath the room rather than filling it. Headphones deepen the tanpura drone, but this works just as well through a speaker while you move around.\n\n⏱ CHAPTERS\n0:00 — First light\n9:00 — Waking gently\n18:00 — Settling into the morning\n27:00 — Steady and unhurried\n36:00 — Warmth building\n45:00 — Clear and open\n54:00 — Moving through the hour\n63:00 — Quiet momentum\n72:00 — Soft continuation\n81:00 — Carrying the calm forward\n\n⏱ BEST FOR\nWaking up without rushing\nMorning routines and getting ready\nStretching and gentle yoga\nMorning meditation\nJournaling and planning the day\nMaking breakfast or coffee\nQuiet reading before work\nLight housework\nEasing morning tension\nStarting the day with a clear head\n\nIf this music helped you start the day calmer and less rushed, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#MorningRoutineMusic #SitarMusic #IndianAmbientMusic #MorningMeditation #432Hz",
+  "tags": [
+    "morning routine music",
+    "wake up slowly",
+    "sitar morning music",
+    "432hz music",
+    "indian classical music",
+    "sitar instrumental",
+    "raga ahir bhairav",
+    "morning meditation music",
+    "calm morning music",
+    "1.5 hours",
+    "gentle morning music",
+    "start the day calm"
+  ],
+  "suno_prompt": "Instrumental only, no vocals — gentle Indian classical sitar in Raga Ahir Bhairav with soft light tabla, warm rounded tone, unhurried steady morning character around 70 BPM, calm positive energy, seamless loop.",
+  "suno_prompt_note": "Short one-liner per the banked default (~205 chars). NO 'slow' anywhere — morning lane, and 'slow' makes Suno generate draggy output that costs retention; the BPM number sets tempo. Tabla included per the Sitar rule (tabla for Sitar, none for Bansuri/Surbahar). 432Hz is NOT in the prompt — it is applied in post (see production_spec), because Hz tags in the prompt degrade generation.",
+  "experiment": {
+    "hypotheses": [
+      "h_2026-08-02_hz_register (new): a numeric Hz token in the title lifts reach. First numeric-Hz ship since the April pre-pivot era — all 8 prior Hz titles are confounded by dead lane + dead era + short runtime, so they are not evidence against. Competitor-validated: 6 current breakouts across Raga Heal and Dhun Detox all carry Hz.",
+      "h_2026-07-25_t1_vocab_register (TESTING): C is the distinctive/low-VidIQ T1-register arm against B's searchable/high-VidIQ arm."
+    ],
+    "read_at": "d7 — views/day, CTR, and T1 watch-share per arm",
+    "caveat": "Hz and the lead keyword are confounded in this pair. Treat a B win as directional on both, not conclusive on either."
+  },
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "loop_note": "4-6 gentle Ahir Bhairav sitar clips with soft tabla, crossfade-merge to ~90min, consistent warm level.",
+    "tuning": "⚠️ REQUIRED: pitch-shift the final master to 432Hz before upload. Title B claims 432Hz — the audio must actually carry it.",
+    "publish": "2026-08-03 06:30 IST"
+  },
+  "preflight_passed": true,
+  "preflight_detail": "Both arms: char band OK (B 53, C 48; band 46-55) · 3 slots · no anti-pattern hits · leads prescreened FRESH 2026-08-02 · thumbnail dedup 0/49 · morning-lane thumb format = outcome-imperative (locked, anti-Q-hook)",
+  "pending": [
+    "Confirm whether to drop 'Slow' from title B (see title_note) before scheduling",
+    "Apply the 432Hz pitch-shift in post — do not skip, the title claims it",
+    "Launch the two-arm test in Studio at publish and log to ab_raw_data.csv"
+  ],
+  "version": 1
+}
