@@ -1,0 +1,77 @@
+{
+  "id": "v_2026-08-12_racing_thoughts_veena",
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-08-07",
+  "planned_date": "2026-08-12",
+  "planned_slot": "19:00 IST Wed — evening anxiety intent",
+  "title": "Racing Thoughts | Veena Instrumental | 1.5 Hours",
+  "title_variants": {
+    "A": "Racing Thoughts | Veena Instrumental | 1.5 Hours",
+    "B": "Anxiety Detox Music | Veena Instrumental | 1.5 Hours"
+  },
+  "title_note": "NATIVE TITLE A/B — h_2026-07-22_clinical_hook_recovery ship #3. A = 'Racing Thoughts' (music-form scored 56 — just under the 60 bar, accepted: state-hook register, and search is 19.5% of traffic). B = 'Anxiety Detox' (27 — never a search play; the clinical-DETOX register bet: Cortisol Detox 3,716v is the channel's best fresh ship and the detox cluster is competitor-validated by Dhun Detox). Shared slot-2 'Veena Instrumental' isolates the lead. ⚠ Known soft echo: 'Calm Your Nerves | Veena Instrumental' live 15d (different lane — calm_relax — so the clone gate passes; orchestrator soft-flagged it, accepted). Veena rule honored: Veena works ONLY with a clinical/state hook — both arms comply; no generic-soft framing. This is also the fallback-ladder partner for Tuesday: if Bansuri renders fail Tue, THIS ship moves up to Tue 19:00 and Brain Fog moves to Wed (rung 2 in v_2026-08-11's ladder).",
+  "lane": "anxiety",
+  "instrument": "Veena",
+  "raga": "Darbari",
+  "validated_keywords": [
+    "music for racing thoughts = 56 (banked 2026-08-07) — near-bar state lead",
+    "anxiety detox music = 27 — documented floor override, clinical-register hypothesis arm",
+    "Both titles preflight PASS (48/52 chars) · leads prescreened FRESH 2026-08-07",
+    "Veena × anxiety: orchestrator #1 candidate all week (0.938, on-packaging-list)"
+  ],
+  "thumbnail_text_main": "SPIRALING?",
+  "thumbnail_text_variants": [
+    {
+      "label": "fixed",
+      "text": "SPIRALING?",
+      "strategy": "Anxiety lane thumb format = specific-state Q-hook. 10 chars, single-word Q, modern anxious-mind vocabulary, reads huge at 120px. Fresh vs all 105 used texts (ANXIOUS MIND? / MIND RACING? / ON EDGE? are used; SPIRALING? is not) and shares no word with either title arm. Alt: 'WOUND UP?' (9ch, also fresh)."
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature on aged cream parchment, ornate gold and deep-teal border. Show the VIEWER, not a performer: a person sitting at the edge of their evening — lamp-lit room, hand to chest or temple, the moment of noticing the mind won't stop. NO instrument as subject. Overlay 'SPIRALING?' in large dark-teal serif in its own banner panel at ~35% of frame, second tier 'Veena · Raga Darbari'. Mobile-first, legible at 120px.",
+  "ab_test": {
+    "type": "native title A/B (Studio Test & compare)",
+    "hypothesis": "h_2026-07-22_clinical_hook_recovery ship #3 — state-hook lead (Racing Thoughts, 56) vs clinical-detox register (Anxiety Detox, 27) in the anxiety lane",
+    "arm_A": "Racing Thoughts (state hook)",
+    "arm_B": "Anxiety Detox Music (clinical-detox register)",
+    "fixed": "thumbnail image + text identical on both arms; slot-2 shared",
+    "launch": "Studio Test & compare at publish; log to ab_raw_data.csv with the next test number",
+    "read": "d7 2026-08-19 per-arm share · d14 2026-08-26 post-test CTR — row in data/experiment_calendar.md"
+  },
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Peaceful Music"
+  ],
+  "description": "Racing Thoughts | Veena Instrumental | 1.5 Hours of calm Indian music to slow a spinning mind\n\nIt is late, the day is over, and your mind is still running laps — replaying conversations, rehearsing tomorrow, refusing to sit down.\n\nThis peaceful Indian ambient music gives a racing mind 90 minutes of low, steady ground to land on.\n\nYou'll hear the veena — a deep, resonant plucked instrument — moving in long unhurried phrases over a soft tanpura drone. No percussion, no swells, nothing sudden. Just weight and warmth, low enough to think slower against.\n\nPerfect for evening anxiety, overthinking, a mind that won't switch off, decompressing after a heavy day, or quiet company while journaling it all out.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Veena\nRaga: Darbari — the deep, grave night raga, built for settling\nStyle: Indian classical ambient, instrumental only\nMood: Grounded, unhurried, steady\nDuration: 1.5 hours\n\n🎧 HOW TO USE\nPut it on when the mental noise starts and keep the volume low — this music works underneath your evening, not on top of it. Headphones deepen the drone.\n\n⏱ CHAPTERS\n0:00:00 — Noticing the noise\n0:08:00 — First ground\n0:15:00 — Slowing the loop\n0:23:00 — Longer breaths\n0:30:00 — The mind sits down\n0:38:00 — Low and steady\n0:45:00 — Fewer thoughts\n0:53:00 — Settling deeper\n1:00:00 — Quiet weight\n1:08:00 — Room to rest\n1:15:00 — Still water\n1:23:00 — Carrying the calm to bed\n\n⏱ BEST FOR\nEvening anxiety\nOverthinking and mental loops\nA mind that won't switch off\nDecompressing after a heavy day\nJournaling\nGentle background calm\nPre-sleep wind-down\nBreathing exercises\n\nIf this music helped, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#RacingThoughts #VeenaMusic #AnxietyRelief #IndianAmbientMusic",
+  "tags": [
+    "racing thoughts",
+    "music for racing thoughts",
+    "anxiety detox",
+    "veena instrumental",
+    "veena music",
+    "indian classical music",
+    "raga darbari",
+    "calm music for anxiety",
+    "overthinking",
+    "evening relaxation music",
+    "instrumental music",
+    "1.5 hours"
+  ],
+  "suno_prompt": "Instrumental only, no vocals, no humming — gentle Indian classical Saraswati veena in Raga Darbari, warm deep plucked veena with resonant sustain and gentle meend slides, soft tanpura drone beneath, no tabla, around 55 BPM, seamless loop.",
+  "suno_prompt_note": "Anxiety/evening lane: genuinely CALM prompt — no upbeat/energetic/forward-momentum words, and no 'slow' either (the BPM number carries tempo; 55 = the 50-60 evening-anxiety band). No tabla. 6 clips merged to ~90min per recipe.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-08-12 19:00 IST"
+  },
+  "preflight_passed": true,
+  "preflight_detail": "A 48ch PASS · B 52ch PASS · leads FRESH · thumb SPIRALING? fresh vs 105, no title-word overlap · Veena clinical-hook rule satisfied",
+  "pending": [
+    "Generate Veena clips + ear-test: grounded and steady, no drag, no brightness spikes",
+    "Generate ONE thumbnail (no image test — Monday holds the week's image A/B)",
+    "If Tuesday's Bansuri fails its render: THIS ship moves to Tue 19:00 (rung 2) — dates in both briefs' ladders",
+    "Launch native title A/B at publish + log to ab_raw_data.csv",
+    "Read d7 2026-08-19 per experiment_calendar.md → update h_2026-07-22_clinical_hook_recovery"
+  ],
+  "version": 1
+}

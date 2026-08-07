@@ -1,0 +1,77 @@
+{
+  "id": "v_2026-08-14_bedtime_surbahar_3hr",
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-08-07",
+  "planned_date": "2026-08-14",
+  "planned_slot": "19:00 IST Fri — the week's ANCHOR. Fri is the best launch day (index 199).",
+  "title": "Bedtime Music | Surbahar Instrumental | 3 Hours",
+  "title_variants": {
+    "A": "Bedtime Music | Surbahar Instrumental | 3 Hours",
+    "B": "Wake Up Rested | Surbahar Instrumental | 3 Hours"
+  },
+  "title_note": "NATIVE TITLE A/B on the week's revenue anchor. A = 'Bedtime Music' (68 — the search-noun arm and the week's best-scored lead). B = 'Wake Up Rested' (26 — the §7b.5 PARKED direction shipped as a title: promise the MORNING AFTER rather than the night; shares its construction with the channel's highest-T1 thumb WAKE UP GRATEFUL 38.0% T1; deliberate floor override, register bet). Shared slot-2 'Surbahar Instrumental' isolates the lead — it echoes the Jun-30 parent's slot-2 at 45d, far outside all locks. INSTRUMENT CONTEXT: Surbahar replaces Bansuri as the sleep anchor because ⭐ BANSURI 3HR PRODUCTION IS BLOCKED (content-violation flags, user 2026-08-07 — memory project_bansuri_3hr_production_blocked). Surbahar × sleep × 3hr precedent: Deep Sleep Surbahar 3hr (Jun 30) 3,076v with CTR 7.41 — the best CTR of the entire fresh cohort — and RPM climbing +47% since July. Part of this test therefore also reads: does the proven-cell swap hold anchor reach vs the Bansuri benchmarks (median 9,712v)?",
+  "lane": "sleep",
+  "instrument": "Surbahar",
+  "raga": "Malkauns",
+  "validated_keywords": [
+    "bedtime music = 68 (banked 2026-08-07) — week's best-scored lead",
+    "wake up rested = 26 — documented floor override; outcome-register hypothesis arm (standalone-intent caveat pre-flagged)",
+    "natural sleep aid music = 29 REJECTED · night routine music = 61 reserved",
+    "Both titles preflight PASS (47/48 chars) · leads prescreened FRESH 2026-08-07",
+    "Sleep-lane spacing: 7d from the Aug-7 Sitar anchor (≥5d rule clear) · Surbahar 10d clear"
+  ],
+  "thumbnail_text_main": "SLEEP DEEPLY",
+  "thumbnail_text_variants": [
+    {
+      "label": "fixed",
+      "text": "SLEEP DEEPLY",
+      "strategy": "Sleep lane thumb = outcome-imperative (banked; sleep lane is NOT Q-hook tolerant). 12 chars, verb+manner — the SLEEP BETTER 6.83 construction family without reusing the used text. Fresh vs all 105 used texts (SLEEP ALL NIGHT / SLEEP PEACEFULLY / SLEEP TILL MORNING / SLEEP UNBROKEN are used; SLEEP DEEPLY is not) and shares no word with either title arm. Alt: 'THROUGH THE NIGHT' (17ch, also fresh)."
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature on aged cream parchment, ornate gold and deep-teal border. Show the VIEWER, not a performer: a sleeper deep under covers in a dark-blue night room, moonlight at the window, utterly still — the night held safely. NO instrument anywhere in frame. Overlay 'SLEEP DEEPLY' in large dark-teal serif in its own banner panel at ~35% of frame, second tier 'Surbahar · Raga Malkauns'. ⚠ Keep this visually DISTINCT from tonight's Aug-7 sleep thumb (SLEEP UNBROKEN) — different palette temperature or composition, since both will sit on the channel page together. Mobile-first, legible at 120px.",
+  "ab_test": {
+    "type": "native title A/B (Studio Test & compare)",
+    "hypothesis": "Search-noun (Bedtime Music, 68) vs morning-after outcome promise (Wake Up Rested, 26) on a sleep anchor — plus the anchor-reach read on the Surbahar-for-Bansuri swap",
+    "arm_A": "Bedtime Music (search noun)",
+    "arm_B": "Wake Up Rested (outcome register, WAKE UP GRATEFUL construction family)",
+    "fixed": "thumbnail image + text identical on both arms; slot-2 shared",
+    "launch": "Studio Test & compare at publish; log to ab_raw_data.csv with the next test number",
+    "read": "d7 2026-08-21 per-arm share · d14 2026-08-28 post-test CTR · benchmark views vs Surbahar 3,076 / Bansuri 9,712 sleep-3hr precedents — row in data/experiment_calendar.md"
+  },
+  "playlists": [
+    "Sleep Music",
+    "Peaceful Music"
+  ],
+  "description": "Bedtime Music | Surbahar Instrumental | 3 Hours of deep Indian sleep music for the whole night\n\nThe day ends twice — once when you decide it's over, and once when your mind agrees. This is music for the space in between.\n\nThis peaceful Indian ambient sleep music holds one deep, unbroken texture for 3 hours, so you can drift off without anything pulling you back.\n\nYou'll hear the surbahar — the deepest voice in the sitar family — moving in long, low phrases over a soft tanpura drone. No percussion, no dynamic jumps, no silences. Just depth, slowly repeating, until the room disappears.\n\nPerfect for falling asleep, staying asleep, bedtime routines, light sleepers, late reading before bed, or keeping the night from going silent.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Surbahar\nRaga: Malkauns — the deep midnight raga, ancient and still\nStyle: Indian classical ambient, instrumental only\nMood: Deep, dark, unbroken\nDuration: 3 hours\n\n🎧 HOW TO USE\nStart it at lights-out with the volume just above silence. Speaker beats headphones for sleep — let it sit under the room. The loop is seamless; nothing will wake you.\n\n⏱ CHAPTERS\n0:00:00 — Lights out\n0:15:00 — The room settles\n0:30:00 — First depth\n0:45:00 — Drifting\n1:00:00 — Deep water\n1:15:00 — Middle of the night\n1:30:00 — Held\n1:45:00 — Still going\n2:00:00 — Deepest hour\n2:15:00 — Toward morning\n2:30:00 — Light far off\n2:45:00 — Rested\n\n⏱ BEST FOR\nFalling asleep\nStaying asleep through the night\nBedtime routines\nLight sleepers\nInsomnia-prone nights\nLate reading before bed\nMasking street noise\nWaking up rested\n\nIf this music helped, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#BedtimeMusic #SurbaharMusic #DeepSleepMusic #IndianAmbientMusic",
+  "tags": [
+    "bedtime music",
+    "wake up rested",
+    "sleep music",
+    "deep sleep music",
+    "surbahar instrumental",
+    "surbahar music",
+    "indian classical music",
+    "raga malkauns",
+    "3 hours",
+    "sleep through the night",
+    "night music",
+    "instrumental sleep music"
+  ],
+  "suno_prompt": "Instrumental only, no vocals, no humming — very slow Indian classical surbahar in Raga Malkauns, deep resonant string tones with long meend slides and gamak ornamentation and long pauses, soft tanpura drone beneath, no tabla, around 50 BPM, seamless loop.",
+  "suno_prompt_note": "Sleep lane: 'slow / very slow' IS permitted here (the one lane where drag is safe — the listener is falling asleep). NO tabla for Surbahar (banked). BPM 50 = the 45-55 deep-sleep band. 6 clips merged to ~180min per MERGE_AND_LOOP_RECIPE. Surbahar renders do NOT hit the Bansuri violation issue — that constraint is instrument-specific.",
+  "production_spec": {
+    "duration_minutes": 180,
+    "format": "3hr",
+    "publish": "2026-08-14 19:00 IST"
+  },
+  "preflight_passed": true,
+  "preflight_detail": "A 47ch PASS · B 48ch PASS · leads FRESH · thumb SLEEP DEEPLY fresh vs 105, no title-word overlap · sleep-lane ≥5d spacing clear (7d) · packaging vs Jun-30 parent clears the 21d clone window (45d)",
+  "pending": [
+    "Generate Surbahar clips + merge to ~180min — ear-test bar: warm, consistent, sleepable; if it fails, do NOT ship (drop to 1.5hr rather than ship weak 3hr music)",
+    "Generate ONE thumbnail — visually distinct from the Aug-7 SLEEP UNBROKEN thumb (both live on the channel page)",
+    "Launch native title A/B at publish + log to ab_raw_data.csv",
+    "Read d7 2026-08-21 per experiment_calendar.md: per-arm share + views vs the 3,076/9,712 precedents → verdict on the Surbahar-anchor swap"
+  ],
+  "version": 1
+}
