@@ -1,7 +1,7 @@
 {
-  "purpose": "Standing ledger of strategic bets \u2014 the compounding-strategy layer on top of the mechanical gates (cooldown/track_record/clone/lead_prescreen). A finding discovered once (competitor research, a track_record pattern, an A/B result) gets banked here as a tracked hypothesis instead of being re-derived every time it's asked about. recommend_slot.py reads this to tag candidates with the bet they'd be testing.",
+  "purpose": "Standing ledger of strategic bets — the compounding-strategy layer on top of the mechanical gates (cooldown/track_record/clone/lead_prescreen). A finding discovered once (competitor research, a track_record pattern, an A/B result) gets banked here as a tracked hypothesis instead of being re-derived every time it's asked about. recommend_slot.py reads this to tag candidates with the bet they'd be testing.",
   "lifecycle": "PROPOSED (stated, not yet tested) -> TESTING (a ship is live against it) -> CONFIRMED or KILLED (enough evidence to close it) -> promoted_rule (folded into a permanent playbook rule, e.g. anti_patterns.json / lane_packaging_directions.json)",
-  "last_updated": "2026-07-26",
+  "last_updated": "2026-08-07",
   "hypotheses": [
     {
       "id": "h_2026-08-07_playlist_routing",
@@ -24,7 +24,7 @@
       "id": "h_2026-08-09_deep_work_offering_register",
       "created": "2026-08-02",
       "status": "PROPOSED",
-      "statement": "The focus/deep-work lane failed on FRAMING, not on concept. Every focus ship the channel has made used a TOOL register \u2014 'Instant focus music', 'Deep Focus 40Hz Gamma Binaural', 'ADHD Brain Fog', 'Overcome Procrastination'. The one productivity ship that used an OFFERING register \u2014 'Productive Day Music | Positive Morning Vibes' \u2014 is a top performer (7,121 views, 35.2% T1, one of the channel's best on both axes). Predict: a long work-session ship framed as an offering ('3 Hours of Deep Work') performs like Productive Day, not like Instant Focus. Format is 3hr because the banked long-form finding names STUDY as a long-session lane alongside sleep and deep-rest.",
+      "statement": "The focus/deep-work lane failed on FRAMING, not on concept. Every focus ship the channel has made used a TOOL register — 'Instant focus music', 'Deep Focus 40Hz Gamma Binaural', 'ADHD Brain Fog', 'Overcome Procrastination'. The one productivity ship that used an OFFERING register — 'Productive Day Music | Positive Morning Vibes' — is a top performer (7,121 views, 35.2% T1, one of the channel's best on both axes). Predict: a long work-session ship framed as an offering ('3 Hours of Deep Work') performs like Productive Day, not like Instant Focus. Format is 3hr because the banked long-form finding names STUDY as a long-session lane alongside sleep and deep-rest.",
       "predicted_metric": "views/day and CTR at d7 vs the 1.5hr cognitive cohort; CTR above the ~3% recent-ship floor",
       "relevant_lanes": [
         "cognitive",
@@ -36,7 +36,7 @@
         "Sarod"
       ],
       "linked_ships": [],
-      "source": "WHY IT DESERVES A TEST \u2014 the negative evidence is confounded exactly as the Hz evidence was: 7 of 9 focus videos are Apr 5-15, all 20-60min, all pre-pivot (pivot was 2026-04-17), all dead-era short-form. AND there is NO killed-focus hypothesis in this ledger \u2014 the 'dead lane: focus_productivity_pre_pivot' tag that plan_prep uses to exclude focus keywords has no recorded evidence behind it. It is a label, not a finding. WHAT ARGUES AGAINST \u2014 'Sitar to Unclog Your Brain | 3 Hours' (May 31, genuinely post-pivot, genuinely 180min) did 94 views at CTR 1.90, the channel's worst 3hr, and it shipped during the surge when distribution was easiest. Corrected gate still reads cognitive weakly: Sitar FLOP n=7 med 101, Sarod FLOP n=4 med 970. Audience-coherence ~2/4 \u2014 focus is an ACTIVATION intent while the channel's audience arrives for DE-activation (sleep/anxiety/calm). TEST DESIGN \u2014 3hr, OFFERING register ('3 Hours of Deep Work', 'A Long Work Session'), never tool register ('Focus Music', 'Concentration', Hz/gamma/binaural, ADHD). Mid-week slot. MUST NOT displace the proven Bansuri x sleep x 3hr cell on Friday, which is the week's anchor. SCOPE NOTE \u2014 this is a LANE-EXPANSION bet, not a fix for 3hr supply. 3hr supply is already solved by rotating instruments inside sleep: Santoor, Sitar, Veena and Esraj are all UNTESTED at sleep x 3hr, which is the channel's strongest cell. User locked this for wk_2026-08-10 on 2026-08-02.",
+      "source": "WHY IT DESERVES A TEST — the negative evidence is confounded exactly as the Hz evidence was: 7 of 9 focus videos are Apr 5-15, all 20-60min, all pre-pivot (pivot was 2026-04-17), all dead-era short-form. AND there is NO killed-focus hypothesis in this ledger — the 'dead lane: focus_productivity_pre_pivot' tag that plan_prep uses to exclude focus keywords has no recorded evidence behind it. It is a label, not a finding. WHAT ARGUES AGAINST — 'Sitar to Unclog Your Brain | 3 Hours' (May 31, genuinely post-pivot, genuinely 180min) did 94 views at CTR 1.90, the channel's worst 3hr, and it shipped during the surge when distribution was easiest. Corrected gate still reads cognitive weakly: Sitar FLOP n=7 med 101, Sarod FLOP n=4 med 970. Audience-coherence ~2/4 — focus is an ACTIVATION intent while the channel's audience arrives for DE-activation (sleep/anxiety/calm). TEST DESIGN — 3hr, OFFERING register ('3 Hours of Deep Work', 'A Long Work Session'), never tool register ('Focus Music', 'Concentration', Hz/gamma/binaural, ADHD). Mid-week slot. MUST NOT displace the proven Bansuri x sleep x 3hr cell on Friday, which is the week's anchor. SCOPE NOTE — this is a LANE-EXPANSION bet, not a fix for 3hr supply. 3hr supply is already solved by rotating instruments inside sleep: Santoor, Sitar, Veena and Esraj are all UNTESTED at sleep x 3hr, which is the channel's strongest cell. User locked this for wk_2026-08-10 on 2026-08-02.",
       "promoted_rule": ""
     },
     {
@@ -55,15 +55,17 @@
         "Sitar",
         "Santoor"
       ],
-      "linked_ships": [],
-      "source": "Dhun Detox catalog pull 2026-08-02 (34.3K subs): <45min n=18 med 440 v/day vs 45min+ n=25 med 98 (4.5x). SAME title/raga/instrument/Hz at two runtimes: 'Morning Cortisol Detox' 19min=25,798 v/day vs 75min=427 (60x); 'Cortisol Too High This Morning?' 18min=12,347 vs 60min=1,469 (8x). Their 19-min video = 928,726 views/36d = 45% of channel lifetime views. CONFOUND: long versions published AFTER the short ones into a query the short already owned; both hits are the same concept on one channel. NOTE the banked '1hr format is dead' verdict does NOT refute this \u2014 it rests on the AVD identity, which is silent on totals when views move 10x. TEST: one ~20-min morning/cortisol piece on a LOW-STAKES slot, never Monday or the week anchor. User 2026-08-02: declined for Monday \u2014 'we can't bet on timing like this' \u2014 parked for a lower-stakes slot.",
+      "linked_ships": [
+        "2026-08-03 · Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours [vD-GBhRqEV8]"
+      ],
+      "source": "Dhun Detox catalog pull 2026-08-02 (34.3K subs): <45min n=18 med 440 v/day vs 45min+ n=25 med 98 (4.5x). SAME title/raga/instrument/Hz at two runtimes: 'Morning Cortisol Detox' 19min=25,798 v/day vs 75min=427 (60x); 'Cortisol Too High This Morning?' 18min=12,347 vs 60min=1,469 (8x). Their 19-min video = 928,726 views/36d = 45% of channel lifetime views. CONFOUND: long versions published AFTER the short ones into a query the short already owned; both hits are the same concept on one channel. NOTE the banked '1hr format is dead' verdict does NOT refute this — it rests on the AVD identity, which is silent on totals when views move 10x. TEST: one ~20-min morning/cortisol piece on a LOW-STAKES slot, never Monday or the week anchor. User 2026-08-02: declined for Monday — 'we can't bet on timing like this' — parked for a lower-stakes slot.",
       "promoted_rule": ""
     },
     {
       "id": "h_2026-07-22_clinical_hook_recovery",
       "created": "2026-07-22",
       "status": "TESTING",
-      "statement": "Clinical-somatic hook framing (present-tense Q-hook + named raga + Hz + cortisol/vagus/nervous-system language) recovers channel reach. Evidence: our own all-time reach leaders used this exact register (Dopamine Reset, Nervous System Healing, our highest-ever CTR 9.36% ship 'Can't Fall Asleep | Raga Yaman Bansuri'), then we drifted to generic-soft framing ('Peace of Mind', 'Healing Frequency', 'Calm Morning') \u2014 same-format cohort CTR fell 4.62 (May) -> 3.28 (July). Meanwhile a SMALLER niche competitor (Dhun Detox, 27.8K subs) is riding this exact abandoned formula to 15x view-velocity vs their own older catalog, and Raga Heal/Shanti both show flat-to-accelerating fresh-upload performance using the same register \u2014 while our fresh-upload performance is declining. This suggests the decay is channel-specific (packaging drift), not niche-wide.",
+      "statement": "Clinical-somatic hook framing (present-tense Q-hook + named raga + Hz + cortisol/vagus/nervous-system language) recovers channel reach. Evidence: our own all-time reach leaders used this exact register (Dopamine Reset, Nervous System Healing, our highest-ever CTR 9.36% ship 'Can't Fall Asleep | Raga Yaman Bansuri'), then we drifted to generic-soft framing ('Peace of Mind', 'Healing Frequency', 'Calm Morning') — same-format cohort CTR fell 4.62 (May) -> 3.28 (July). Meanwhile a SMALLER niche competitor (Dhun Detox, 27.8K subs) is riding this exact abandoned formula to 15x view-velocity vs their own older catalog, and Raga Heal/Shanti both show flat-to-accelerating fresh-upload performance using the same register — while our fresh-upload performance is declining. This suggests the decay is channel-specific (packaging drift), not niche-wide.",
       "predicted_metric": "A ship using this register should land CTR >= 4.5% (vs the July cohort median 3.28%) and/or beat its lane's recent median views.",
       "relevant_lanes": [
         "cognitive",
@@ -75,9 +77,16 @@
       "relevant_instruments": [],
       "linked_ships": [
         "v_2026-07-28_calm_your_nerves_veena",
-        "v_2026-07-30_digital_detox_surbahar"
+        "v_2026-07-30_digital_detox_surbahar",
+        "2026-07-22 · Music for Anxiety Relief | Slow Sarod | 1.5 Hours [T9jWuS2TTLA]",
+        "2026-07-23 · Sacred Silence | Slow Sarangi Instrumental for Stress Relief, Sleep & Inner Peace [1kvhHueoUsU]",
+        "2026-07-25 · Can't Sleep Tonight? | Tanpura Instrumental Music | 3 Hours [hRnjQpZN5MI]",
+        "2026-07-30 · Uplifting Music | Santoor Instrumental | 1.5 Hours [g5rAHcWaaAk]",
+        "2026-07-31 · Deep Rest Music | Sarod Instrumental | 3 Hours [Rgw8F6mJ1Fk]",
+        "2026-08-03 · Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours [vD-GBhRqEV8]",
+        "2026-08-04 · Digital Detox Music | Surbahar Instrumental | 1.5 Hours [ZGJge4uivIk]"
       ],
-      "source": "chat_2026-07-22 \u2014 competitor decay research + own reach-leader audit",
+      "source": "chat_2026-07-22 — competitor decay research + own reach-leader audit",
       "promoted_rule": null
     },
     {
@@ -85,8 +94,8 @@
       "created": "2026-07-20",
       "status": "KILLED",
       "statement": "The 'emotional/healing/heart/comfort/nostalgia' lane does not generate real reach on this channel, regardless of instrument.",
-      "predicted_metric": "n/a \u2014 this is a closed finding, not an open bet.",
-      "evidence": "Every emotional/heart/comfort/nostalgia ship ever made (n=6-7, all instruments): lifetime TOTAL views = 2,795 \u2014 0.3% of one month's current channel views. track_record: Sarangi\u00d7healing = FLOP (n=7, median 299v, CTR 2.92). Every other instrument in this lane is UNTESTED (zero data, not proof of viability). One outlier (Nostalgia Music, CTR 7.15/AVD 40.9%) proves the MUSIC/retention can be excellent, but reach has never once broken ~1,500 views regardless of framing or instrument. Confirmed 2026-07-20 after nearly locking a Sarangi-healing brief that would have been the lane's 7th consecutive weak result.",
+      "predicted_metric": "n/a — this is a closed finding, not an open bet.",
+      "evidence": "Every emotional/heart/comfort/nostalgia ship ever made (n=6-7, all instruments): lifetime TOTAL views = 2,795 — 0.3% of one month's current channel views. track_record: Sarangi×healing = FLOP (n=7, median 299v, CTR 2.92). Every other instrument in this lane is UNTESTED (zero data, not proof of viability). One outlier (Nostalgia Music, CTR 7.15/AVD 40.9%) proves the MUSIC/retention can be excellent, but reach has never once broken ~1,500 views regardless of framing or instrument. Confirmed 2026-07-20 after nearly locking a Sarangi-healing brief that would have been the lane's 7th consecutive weak result.",
       "relevant_lanes": [
         "healing"
       ],
@@ -95,16 +104,16 @@
         "v_2026-07-16 Healing Frequency Music (Sarangi&Tanpura)",
         "v_2026-05-10 Nostalgia Music (Sarangi)"
       ],
-      "source": "chat_2026-07-20 \u2014 user asked 'do you think emotional lane has worked for us'",
-      "promoted_rule": "Should be folded into anti_patterns.json as a dead-lane detector (pending) \u2014 recommend_slot.py enforces it via track_record's FLOP verdict in the interim."
+      "source": "chat_2026-07-20 — user asked 'do you think emotional lane has worked for us'",
+      "promoted_rule": "Should be folded into anti_patterns.json as a dead-lane detector (pending) — recommend_slot.py enforces it via track_record's FLOP verdict in the interim."
     },
     {
       "id": "h_2026-07-11_bansuri_sleep_only",
       "created": "2026-07-11",
       "status": "CONFIRMED",
       "statement": "Bansuri's only PROVEN lane on this channel is SLEEP. Outside sleep it consistently underperforms.",
-      "predicted_metric": "n/a \u2014 closed finding.",
-      "evidence": "track_record: Bansuri\u00d7sleep = PROVEN (n=6, median 8,240v, best 36,475v). Bansuri\u00d7morning = FLOP (n=5, median 1,636v). Bansuri\u00d7calm = UNTESTED but a 1.5hr attempt scored 445v when checked ad hoc. Confirmed 2026-07-20 when a Bansuri\u00d7relaxation recommendation was checked against real channel stats and found to flop, and again when a Bansuri\u00d7anxiety brief was found to clone Jul-17's Cortisol Detox (Bansuri&Tanpura) at the 5-day cooldown minimum.",
+      "predicted_metric": "n/a — closed finding.",
+      "evidence": "track_record: Bansuri×sleep = PROVEN (n=6, median 8,240v, best 36,475v). Bansuri×morning = FLOP (n=5, median 1,636v). Bansuri×calm = UNTESTED but a 1.5hr attempt scored 445v when checked ad hoc. Confirmed 2026-07-20 when a Bansuri×relaxation recommendation was checked against real channel stats and found to flop, and again when a Bansuri×anxiety brief was found to clone Jul-17's Cortisol Detox (Bansuri&Tanpura) at the 5-day cooldown minimum.",
       "relevant_lanes": [
         "morning",
         "calm_relax",
@@ -123,63 +132,81 @@
       "id": "h_2026-07-24_launch_day_inversion",
       "created": "2026-07-24",
       "status": "PROPOSED",
-      "source": "chat_2026-07-24 \u2014 user challenged the Fri slot; measured both effects separately",
-      "statement": "CONSUMPTION and LAUNCH-DAY are different effects and they point opposite ways. Consumption (channel impressions by weekday, de-trended vs trailing-7d mean, n=67 days): Mon 129% > Wed 115% > Tue 114% > Thu 106% > Fri 99% > Sun 110% > Sat 90% \u2014 the audience watches most Mon-Wed, which is where the banked 'Mondays always spike / place the rested hero on Monday PM' rule came from. But that measures CATALOG consumption. LAUNCH day, measured on true window-free impressions/day at age 4-12d, de-trended against each month's own median (n=110 ships): Fri 199% > Sat 128% > Thu 112% > Tue 106% > Mon 85% > Wed 77% > Sun 61%. Mon-Wed median 89% vs Thu-Fri median 163%. Not outlier-driven (10/16 Fri ships beat their month median vs 6/14 Mon ships). Not a measurement-window artifact either (the age-4-12d window overlaps the Mon-Wed consumption peak slightly more for Fri launches, but that accounts for ~4%, not a 2.3x gap). MECHANISM (untested): Monday's larger viewer pool is soaked up by the catalog giants, so a fresh ship competes hardest for share on exactly the day the pool is biggest \u2014 consistent with the banked 'one viewer pool per day; extra ships split it' finding. Friday's pool is smaller but the catalog is quieter, so a new ship takes a larger share of it.",
+      "source": "chat_2026-07-24 — user challenged the Fri slot; measured both effects separately",
+      "statement": "CONSUMPTION and LAUNCH-DAY are different effects and they point opposite ways. Consumption (channel impressions by weekday, de-trended vs trailing-7d mean, n=67 days): Mon 129% > Wed 115% > Tue 114% > Thu 106% > Fri 99% > Sun 110% > Sat 90% — the audience watches most Mon-Wed, which is where the banked 'Mondays always spike / place the rested hero on Monday PM' rule came from. But that measures CATALOG consumption. LAUNCH day, measured on true window-free impressions/day at age 4-12d, de-trended against each month's own median (n=110 ships): Fri 199% > Sat 128% > Thu 112% > Tue 106% > Mon 85% > Wed 77% > Sun 61%. Mon-Wed median 89% vs Thu-Fri median 163%. Not outlier-driven (10/16 Fri ships beat their month median vs 6/14 Mon ships). Not a measurement-window artifact either (the age-4-12d window overlaps the Mon-Wed consumption peak slightly more for Fri launches, but that accounts for ~4%, not a 2.3x gap). MECHANISM (untested): Monday's larger viewer pool is soaked up by the catalog giants, so a fresh ship competes hardest for share on exactly the day the pool is biggest — consistent with the banked 'one viewer pool per day; extra ships split it' finding. Friday's pool is smaller but the catalog is quieter, so a new ship takes a larger share of it.",
       "predicted_metric": "A ship launched Thu/Fri should post >=1.5x the age-4-12d true impressions/day of a comparable-strength cell launched Mon/Wed in the same month. Falsified if Mon/Wed ships match or beat Thu/Fri over the next ~6 ships.",
       "relevant_lanes": [],
       "relevant_instruments": [],
       "linked_ships": [
-        "v_2026-07-25_sleep_drone_tanpura_3hr"
+        "v_2026-07-25_sleep_drone_tanpura_3hr",
+        "2026-07-25 · Can't Sleep Tonight? | Tanpura Instrumental Music | 3 Hours [hRnjQpZN5MI]",
+        "2026-07-27 · Grounding Music | Begin the Day Calm | 1.5 Hours [389_wDY1gWQ]",
+        "2026-07-28 · Calm Your Nerves | Veena Instrumental | 1.5 Hours [ngHSWDF2hYQ]",
+        "2026-07-30 · Uplifting Music | Santoor Instrumental | 1.5 Hours [g5rAHcWaaAk]",
+        "2026-07-31 · Deep Rest Music | Sarod Instrumental | 3 Hours [Rgw8F6mJ1Fk]",
+        "2026-08-03 · Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours [vD-GBhRqEV8]",
+        "2026-08-04 · Digital Detox Music | Surbahar Instrumental | 1.5 Hours [ZGJge4uivIk]",
+        "2026-08-05 · Unwind Slowly | Slow Sarod | 1.5 Hours of Calm [bLcdd43fTWw]"
       ],
       "promoted_rule": null,
-      "caveats": "OBSERVATIONAL, not randomised \u2014 which concept shipped on which day was a human choice, so selection bias is live (if stronger concepts were deliberately placed Mon-Wed, the true Fri advantage would be even larger; if experiments went to Fri, it could be smaller). n=16 Fri / n=14 Mon. Treat as a scheduling PRIOR, not a settled rule, until 6+ deliberate ships test it."
+      "caveats": "OBSERVATIONAL, not randomised — which concept shipped on which day was a human choice, so selection bias is live (if stronger concepts were deliberately placed Mon-Wed, the true Fri advantage would be even larger; if experiments went to Fri, it could be smaller). n=16 Fri / n=14 Mon. Treat as a scheduling PRIOR, not a settled rule, until 6+ deliberate ships test it."
     },
     {
       "id": "h_2026-07-25_t1_vocab_register",
       "created": "2026-07-25",
       "status": "TESTING",
-      "source": "chat_2026-07-25 \u2014 28-video per-video geo scan (Analytics API)",
-      "statement": "Western-wellness vocabulary in the title lead pulls T1 watch-share; Indian-classical specificity (named raga/instrument leads) pulls India. Observed: wellness-vocab titles 34-41% T1 watch-time (Gratitude 39.5, Productive Day 39.0, Yoga 34.1) vs raga/instrument leads 1-16% (Can't Fall Asleep Raga Yaman 3.4). T1-share correlates only r=0.11 with the per-view monetisation axis (AVD dominates) \u2014 so this is a REACH-mix lever, not a direct monetisation lever.",
-      "predicted_metric": "A T1-vocab-led ship posts \u226530% T1 watch-share at d7 (channel baseline ~20-25%); the register arm (somatic vs clarity vs spiritual) that wins CTR while holding \u226530% T1 becomes the default T1 register.",
+      "source": "chat_2026-07-25 — 28-video per-video geo scan (Analytics API)",
+      "statement": "Western-wellness vocabulary in the title lead pulls T1 watch-share; Indian-classical specificity (named raga/instrument leads) pulls India. Observed: wellness-vocab titles 34-41% T1 watch-time (Gratitude 39.5, Productive Day 39.0, Yoga 34.1) vs raga/instrument leads 1-16% (Can't Fall Asleep Raga Yaman 3.4). T1-share correlates only r=0.11 with the per-view monetisation axis (AVD dominates) — so this is a REACH-mix lever, not a direct monetisation lever.",
+      "predicted_metric": "A T1-vocab-led ship posts ≥30% T1 watch-share at d7 (channel baseline ~20-25%); the register arm (somatic vs clarity vs spiritual) that wins CTR while holding ≥30% T1 becomes the default T1 register.",
       "relevant_lanes": [
         "morning"
       ],
       "relevant_instruments": [],
       "linked_ships": [
         "v_2026-07-27_grounding_morning_sitar",
-        "v_2026-08-03_boost_your_aura_santoor"
+        "v_2026-08-03_boost_your_aura_santoor",
+        "2026-07-30 · Uplifting Music | Santoor Instrumental | 1.5 Hours [g5rAHcWaaAk]",
+        "2026-08-03 · Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours [vD-GBhRqEV8]"
       ],
       "promoted_rule": null,
-      "caveats": "Observational, lane-confounded (T1-heavy titles are mostly morning/uplift \u2014 may be the lane T1 wants, not the words). The two linked A/Bs are the controlled test."
+      "caveats": "Observational, lane-confounded (T1-heavy titles are mostly morning/uplift — may be the lane T1 wants, not the words). The two linked A/Bs are the controlled test."
     },
     {
       "id": "h_2026-07-26_thumb_refresh_expands_impressions",
       "created": "2026-07-26",
       "status": "TESTING",
-      "source": "chat_2026-07-26 \u2014 user asked 'any possibility that thumbnail also leads to more impressions?' during Test #50 launch",
-      "statement": "A thumbnail refresh on a still-ALIVE decaying video can expand impressions (flatten the decay slope), not just convert better. Mechanism: impressions are downstream of predicted performance (expected CTR x expected watch-time); a thumb that lifts real CTR while AVD holds raises the serving score and widens sampling. This is DISTINCT from the banked dead-video finding (Test #43 Brain Detox: CTR +0.7pp, impressions kept falling \u2014 no re-expansion once a video is churned). Conditions for the effect: (1) video still in active rotation (Morning Energy = ~27K impr/day at launch), (2) CTR crosses above the alive-morning peer band (~4.3-5.6; baseline 4.4 rising), (3) AVD holds within ~2pp (energy-promise vs calm Yaman music is the risk). If confirmed, re-thumb targeting shifts from 'weak-CTR dead videos' (worthless) to 'fatigued-thumb ALIVE videos' (the 3hr Bansuri + this).",
-      "predicted_metric": "Test #50 vehicle (Morning Energy Dilruba, DMcoOLvmAyQ, launched 2026-07-26; pre-test slope 53K->27K impr/day, -38% w/w). CONFIRMED if challenger (BOOST YOUR ENERGY) wins/co-leads watch-time share AND w/w impressions slope flattens to better than ~-20% at the 14d read AND AVD within 2pp of ~22 baseline. KILLED-for-alive-videos if challenger wins share but slope stays <=-30% w/w (would extend Test-43's 'conversion not distribution' rule to alive videos). VOID if control wins (no packaging delta applied). Ignore any 3-5 day novelty re-test bump \u2014 judge at 14d only.",
+      "source": "chat_2026-07-26 — user asked 'any possibility that thumbnail also leads to more impressions?' during Test #50 launch",
+      "statement": "A thumbnail refresh on a still-ALIVE decaying video can expand impressions (flatten the decay slope), not just convert better. Mechanism: impressions are downstream of predicted performance (expected CTR x expected watch-time); a thumb that lifts real CTR while AVD holds raises the serving score and widens sampling. This is DISTINCT from the banked dead-video finding (Test #43 Brain Detox: CTR +0.7pp, impressions kept falling — no re-expansion once a video is churned). Conditions for the effect: (1) video still in active rotation (Morning Energy = ~27K impr/day at launch), (2) CTR crosses above the alive-morning peer band (~4.3-5.6; baseline 4.4 rising), (3) AVD holds within ~2pp (energy-promise vs calm Yaman music is the risk). If confirmed, re-thumb targeting shifts from 'weak-CTR dead videos' (worthless) to 'fatigued-thumb ALIVE videos' (the 3hr Bansuri + this).",
+      "predicted_metric": "Test #50 vehicle (Morning Energy Dilruba, DMcoOLvmAyQ, launched 2026-07-26; pre-test slope 53K->27K impr/day, -38% w/w). CONFIRMED if challenger (BOOST YOUR ENERGY) wins/co-leads watch-time share AND w/w impressions slope flattens to better than ~-20% at the 14d read AND AVD within 2pp of ~22 baseline. KILLED-for-alive-videos if challenger wins share but slope stays <=-30% w/w (would extend Test-43's 'conversion not distribution' rule to alive videos). VOID if control wins (no packaging delta applied). Ignore any 3-5 day novelty re-test bump — judge at 14d only.",
       "relevant_lanes": [
         "morning"
       ],
       "relevant_instruments": [],
       "linked_ships": [
-        "Test #50 ab_raw_data.csv \u2014 Morning Energy Music | Dilruba Raga Yaman (DMcoOLvmAyQ)",
-        "Test #51 ab_raw_data.csv \u2014 3 Hour Bansuri Relaxation/Deep Sleep (n=2 vehicle; flat-window baseline is the cleaner slope read)"
+        "Test #50 ab_raw_data.csv — Morning Energy Music | Dilruba Raga Yaman (DMcoOLvmAyQ)",
+        "Test #51 ab_raw_data.csv — 3 Hour Bansuri Relaxation/Deep Sleep (n=2 vehicle; flat-window baseline is the cleaner slope read)",
+        "2026-07-30 · Uplifting Music | Santoor Instrumental | 1.5 Hours [g5rAHcWaaAk]",
+        "2026-08-03 · Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours [vD-GBhRqEV8]"
       ],
       "promoted_rule": null,
-      "caveats": "n=1, single video. Age-decay confound: judge the slope against the video's own pre-test trajectory, not absolute impressions. Reads scheduled: ~Aug 2 (7d) and ~Aug 9 (test conclusion). Companion end-screen wiring to Morning Gratitude, if done, slightly contaminates attribution \u2014 note the wiring date at read time."
+      "caveats": "n=1, single video. Age-decay confound: judge the slope against the video's own pre-test trajectory, not absolute impressions. Reads scheduled: ~Aug 2 (7d) and ~Aug 9 (test conclusion). Companion end-screen wiring to Morning Gratitude, if done, slightly contaminates attribution — note the wiring date at read time."
     },
     {
       "id": "h_2026-08-10_thumb_composition_bed",
       "created": "2026-08-07",
       "status": "TESTING",
-      "statement": "Thumbnail IMAGE composition is a first-order CTR lever and the in-bed rest-framing specifically beats other viewer-moment compositions in the morning lane. Basis: cross-VIDEO measurement 2026-08-02 (waking/stretching in bed 6.11 pct vs jogging-with-earbuds 5.57 vs musician-performing 3.03) \u2014 confounded, different videos. All 40+ prior A/Bs varied thumb TEXT only; the image has never been the tested variable. First clean within-video test: v_2026-08-10_quiet_morning_sarangi, arm A bed vs arm B window-with-tea, identical text/title.",
-      "prediction": "Arm A (bed) takes >=55 pct share; if arms tie, the viewer-not-performer principle matters but the specific moment does not \u2014 both remain valid, pick per lane mood.",
+      "statement": "Thumbnail IMAGE composition is a first-order CTR lever and the in-bed rest-framing specifically beats other viewer-moment compositions in the morning lane. Basis: cross-VIDEO measurement 2026-08-02 (waking/stretching in bed 6.11 pct vs jogging-with-earbuds 5.57 vs musician-performing 3.03) — confounded, different videos. CORRECTION 2026-08-07: this is image test #2 — #1 is v_2026-08-03_morning_routine_sitar (modern vs traditional world), read due 2026-08-10; read it first. This test: v_2026-08-10_quiet_morning_sarangi, arm A bed vs arm B window-with-tea, identical text/title.",
+      "prediction": "Arm A (bed) takes >=55 pct share; if arms tie, the viewer-not-performer principle matters but the specific moment does not — both remain valid, pick per lane mood.",
       "read": "d7 per-arm share + post-test CTR (no-winner rule). Update this entry with the verdict.",
       "ships": [
         "v_2026-08-10_quiet_morning_sarangi"
-      ]
+      ],
+      "read_due": {
+        "d7": "2026-08-17",
+        "d14_post_ctr": "2026-08-24"
+      },
+      "calendar": "data/experiment_calendar.md",
+      "linked_ships": []
     }
   ]
 }

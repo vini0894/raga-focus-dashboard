@@ -33,7 +33,7 @@
   ],
   "thumbnail_prompt": "Pichwai/Kangra miniature on aged cream parchment, ornate gold and deep-teal border. Show the VIEWER living their quiet morning, NOT a musician performing — NO instrument anywhere in frame. TWO IMAGE ARMS, identical style, palette, figure and text; ONLY the moment changes. ARM A (bed): a person waking and stretching in bed, soft dawn light through a window — the composition measured at 6.11% CTR. ARM B (window): the same person standing at the window with a cup of tea, same dawn light, same unhurried energy. Overlay 'TAKE THE MORNING' in large dark-teal serif in its own banner panel at ~35% of frame, second tier reading 'Sarangi · Raga Bilawal'. Mobile-first: text must scan at 120px.",
   "ab_test": {
-    "type": "thumbnail_image — FIRST-EVER image A/B (all 40+ prior tests varied text only)",
+    "type": "thumbnail_image — image A/B #2 (CORRECTED 2026-08-07: the FIRST image test is v_2026-08-03_morning_routine_sitar, modern-vs-traditional world, launched Aug 3 and READ DUE Aug 10 — read it BEFORE launching this one; its result may inform the arms)",
     "hypothesis_id": "h_2026-08-10_thumb_composition_bed",
     "arm_A": "waking/stretching in bed (the cross-video 6.11% composition)",
     "arm_B": "at the window with tea (different viewer-moment, same principle)",
