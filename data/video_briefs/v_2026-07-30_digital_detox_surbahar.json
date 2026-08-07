@@ -1,35 +1,35 @@
 {
   "id": "v_2026-07-30_digital_detox_surbahar",
-  "status": "APPROVED",
+  "status": "PUBLISHED",
   "locked": true,
   "created_at": "2026-07-25",
   "planned_date": "2026-08-04",
-  "planned_slot": "19:00 IST Tue \u2014 evening unplug intent. Uploaded 2026-07-28, private/scheduled in Studio.",
+  "planned_slot": "19:00 IST Tue — evening unplug intent. Uploaded 2026-07-28, private/scheduled in Studio.",
   "title": "Digital Detox Music | Unplug and Reset | 1.5 Hours",
   "title_variants": {
     "LOCKED": "Digital Detox Music | Unplug and Reset | 1.5 Hours"
   },
-  "title_note": "LOCKED 2026-08-02 (user). Instrument REMOVED from the title. The briefed A/B ('Digital Detox Music' vs 'Stop Doomscrolling') is NOT running \u2014 the video is already uploaded single-title, so this is a straight re-title: an OBSERVATION, not a controlled test. WHY drop 'Surbahar Instrumental': Surbahar measured 10.6% T1 across n=5, dead last of seven instruments and about half the 20.4% channel average. The case is SUBTRACTIVE (removing a known-worst signal) \u2014 NOT a bet that no-instrument titles are magic, that cell is only n=3. Second independent line: banked Jul-11 finding that no-instrument titles ran +73% impressions/day in the decay era. Slot 2 'Unplug and Reset' \u2014 prescreen FRESH, preflight PASS at 50 chars. Rejected: 'Quiet the Noise' (banks 27, under the >=60 bar), 'Calm Instrumental Music' (same-concept as live). \u26a0\ufe0f Surbahar STAYS in description and tags \u2014 it still does SEO work; only the TITLE carries the register signal.",
+  "title_note": "LOCKED 2026-08-02 (user). Instrument REMOVED from the title. The briefed A/B ('Digital Detox Music' vs 'Stop Doomscrolling') is NOT running — the video is already uploaded single-title, so this is a straight re-title: an OBSERVATION, not a controlled test. WHY drop 'Surbahar Instrumental': Surbahar measured 10.6% T1 across n=5, dead last of seven instruments and about half the 20.4% channel average. The case is SUBTRACTIVE (removing a known-worst signal) — NOT a bet that no-instrument titles are magic, that cell is only n=3. Second independent line: banked Jul-11 finding that no-instrument titles ran +73% impressions/day in the decay era. Slot 2 'Unplug and Reset' — prescreen FRESH, preflight PASS at 50 chars. Rejected: 'Quiet the Noise' (banks 27, under the >=60 bar), 'Calm Instrumental Music' (same-concept as live). ⚠️ Surbahar STAYS in description and tags — it still does SEO work; only the TITLE carries the register signal.",
   "lane": "cognitive",
   "instrument": "Surbahar",
   "raga": "Khamaj",
   "validated_keywords": [
-    "Lead: 'Digital Detox Music' \u2014 VidIQ 64, Medium comp, no authority owner",
-    "Slot 2: 'Unplug and Reset' \u2014 FRESH (prescreen 2026-08-02), plain-English outcome, no instrument",
-    "Instrument deliberately ABSENT \u2014 Surbahar is the channel's worst T1 instrument (10.6%, n=5)",
-    "Dropped: 'Stop Doomscrolling' (briefed B arm, not running \u2014 already uploaded single-title)",
-    "Rejected slot-2: 'Quiet the Noise' (27, under bar) \u00b7 'Calm Instrumental Music' (same-concept as live)"
+    "Lead: 'Digital Detox Music' — VidIQ 64, Medium comp, no authority owner",
+    "Slot 2: 'Unplug and Reset' — FRESH (prescreen 2026-08-02), plain-English outcome, no instrument",
+    "Instrument deliberately ABSENT — Surbahar is the channel's worst T1 instrument (10.6%, n=5)",
+    "Dropped: 'Stop Doomscrolling' (briefed B arm, not running — already uploaded single-title)",
+    "Rejected slot-2: 'Quiet the Noise' (27, under bar) · 'Calm Instrumental Music' (same-concept as live)"
   ],
   "thumbnail_text_main": "PHONE BRAIN?",
   "thumbnail_text_variants": [
     {
       "label": "fixed",
       "text": "PHONE BRAIN?",
-      "strategy": "FIXED both arms (title register is the variable). Compact modern-state Q-hook, 11 chars \u2014 cognitive lane's banked winning format (Q wins 3/3, incl BRAIN FOG? +23.8pp). Ours, not Raga Heal's DOOM SCROLLING? (validated register, original text). Dedup 0 hits 2026-07-25."
+      "strategy": "FIXED both arms (title register is the variable). Compact modern-state Q-hook, 11 chars — cognitive lane's banked winning format (Q wins 3/3, incl BRAIN FOG? +23.8pp). Ours, not Raga Heal's DOOM SCROLLING? (validated register, original text). Dedup 0 hits 2026-07-25."
     }
   ],
   "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A figure setting a small glowing rectangle face-down on a table and turning toward an open dusk window, a large surbahar waiting beside the sill, cool evening blues with one warm lamp. The moment of putting the phone down. Dark-teal serif overlay text.",
-  "thumbnail_ab_note": "Title A/B \u2192 thumb FIXED. Q-hook is thumb-only and cognitive is the lane where it wins \u2014 both arms rule-aligned.",
+  "thumbnail_ab_note": "Title A/B → thumb FIXED. Q-hook is thumb-only and cognitive is the lane where it wins — both arms rule-aligned.",
   "playlists": [
     "Meditation",
     "Peaceful Music"
@@ -37,13 +37,13 @@
   "description": [
     "Digital Detox Music | Surbahar Instrumental | 1.5 Hours of deep Indian classical surbahar to switch your mind off the feed.",
     "",
-    "Put the phone face-down. Ninety minutes of slow, resonant surbahar in Raga Khamaj \u2014 deep, spacious, and completely offline \u2014 to let an overstimulated mind come back to itself.",
+    "Put the phone face-down. Ninety minutes of slow, resonant surbahar in Raga Khamaj — deep, spacious, and completely offline — to let an overstimulated mind come back to itself.",
     "",
-    "\ud83c\udfa7 HOW TO USE \u2014 screen away, volume low. For the hour after work, an evening off the feed, or any time your attention feels shredded.",
+    "🎧 HOW TO USE — screen away, volume low. For the hour after work, an evening off the feed, or any time your attention feels shredded.",
     "",
-    "\u23f1 BEST FOR \u2014 digital detox \u00b7 doomscrolling recovery \u00b7 attention reset \u00b7 evening unplugging \u00b7 deep calm",
+    "⏱ BEST FOR — digital detox · doomscrolling recovery · attention reset · evening unplugging · deep calm",
     "",
-    "\ud83c\udfb5 ABOUT \u2014 the surbahar is the deep bass sitar of Indian classical music, built for slowness the internet never allows; Raga Khamaj is the light, warm raga of easeful evenings.",
+    "🎵 ABOUT — the surbahar is the deep bass sitar of Indian classical music, built for slowness the internet never allows; Raga Khamaj is the light, warm raga of easeful evenings.",
     "",
     "#DigitalDetox #Doomscrolling #SurbaharMusic #IndianClassicalMusic #CalmMusic"
   ],
@@ -63,7 +63,7 @@
   ],
   "suno_prompt": "Instrumental only, slow deep surbahar in Raga Khamaj, long resonant meend glides over a soft tanpura drone, no percussion, ~55 BPM, spacious offline evening stillness, mind switching off, seamless loop.",
   "suno_prompt_note": "MAY-GRADE CALM (cognitive/unplug = calm register, zero upbeat terms). Khamaj freed by parking the calm brief. No tabla.",
-  "experiment": "HYPOTHESIS [h_2026-07-22_clinical_hook_recovery \u2014 2nd linked ship]: the digital/dopamine cluster we invented still reaches when packaged in the clinical-modern register. Evidence FOR: competitor running our formula at 7.67 v/sub + 496K; our sibling gets a steady ~1K impr/day concept feed. Evidence AGAINST: that sibling converts at CTR 2.83 \u2014 so REGISTER, not topic, is the variable. A/B: clinical-cluster lead vs modern-state imperative. Read: d7 CTR share + cohort impressions + power check; sibling absorbs = fine (spent).",
+  "experiment": "HYPOTHESIS [h_2026-07-22_clinical_hook_recovery — 2nd linked ship]: the digital/dopamine cluster we invented still reaches when packaged in the clinical-modern register. Evidence FOR: competitor running our formula at 7.67 v/sub + 496K; our sibling gets a steady ~1K impr/day concept feed. Evidence AGAINST: that sibling converts at CTR 2.83 — so REGISTER, not topic, is the variable. A/B: clinical-cluster lead vs modern-state imperative. Read: d7 CTR share + cohort impressions + power check; sibling absorbs = fine (spent).",
   "production_spec": {
     "duration_minutes": 90,
     "format": "1.5hr",
@@ -71,16 +71,18 @@
     "publish": "2026-07-30 19:00 IST"
   },
   "preflight_passed": true,
-  "preflight_detail": "Full orchestrator run 2026-07-25 (user-requested): Bansuri\u00d7cognitive\u00d71.5hr HARD-REJECTED [packaging_clone 13d Cortisol Detox]; Surbahar freed by parking incumbent calm brief (live gap 9d \u2713); Surbahar\u00d7cognitive UNTESTED (experimental, no clone \u2014 Digital Burnout Jun-23 is stress-lane tuple, 37d). Titles preflight PASS (55/54 chars). Thumb dedup 0. Leads prescreened. Pools alternate Tue cortisol \u2192 Thu soft_pm \u2192 Fri cortisol.",
+  "preflight_detail": "Full orchestrator run 2026-07-25 (user-requested): Bansuri×cognitive×1.5hr HARD-REJECTED [packaging_clone 13d Cortisol Detox]; Surbahar freed by parking incumbent calm brief (live gap 9d ✓); Surbahar×cognitive UNTESTED (experimental, no clone — Digital Burnout Jun-23 is stress-lane tuple, 37d). Titles preflight PASS (55/54 chars). Thumb dedup 0. Leads prescreened. Pools alternate Tue cortisol → Thu soft_pm → Fri cortisol.",
   "pending": [
-    "\u26a0\ufe0f CHANGE THE TITLE IN STUDIO \u2014 the brief alone does not update the uploaded video",
+    "⚠️ CHANGE THE TITLE IN STUDIO — the brief alone does not update the uploaded video",
     "Confirm the Studio publish date is 2026-08-04 (API exposes upload time only, not schedule)",
-    "Check the thumbnail IMAGE: if it shows someone PLAYING a surbahar, swap it \u2014 performer thumbs are the worst converters (3.03%) vs viewer-state (5.6-6.1%). Thumb TEXT 'PHONE BRAIN?' is correct, Q-hooks win cognitive 3/3.",
-    "No A/B on this ship \u2014 record the outcome as observational only"
+    "Check the thumbnail IMAGE: if it shows someone PLAYING a surbahar, swap it — performer thumbs are the worst converters (3.03%) vs viewer-state (5.6-6.1%). Thumb TEXT 'PHONE BRAIN?' is correct, Q-hooks win cognitive 3/3.",
+    "No A/B on this ship — record the outcome as observational only"
   ],
   "version": 2,
   "planned_title_variants": {
     "A": "Digital Detox Music | Surbahar Instrumental | 1.5 Hours",
     "B": "Stop Doomscrolling | Surbahar Instrumental | 1.5 Hours"
-  }
+  },
+  "shipped_title": "Digital Detox Music | Surbahar Instrumental | 1.5 Hours",
+  "shipped_note": "Shipped 2026-08-04. Title changed at upload from the locked 'Unplug and Reset' variant — recorded per the shipped_title rule so prescreen sees the real phrase; this is why auto-status missed the flip."
 }
