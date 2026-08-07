@@ -4,6 +4,23 @@
   "last_updated": "2026-07-26",
   "hypotheses": [
     {
+      "id": "h_2026-08-07_playlist_routing",
+      "created": "2026-08-07",
+      "status": "TESTING",
+      "statement": "Reordering playlists so high-RPM, audience-matched videos sit directly behind the big-impression donors raises channel playlist share of watch-time. Routing redistributes existing traffic to better-earning videos; it does not create reach.",
+      "predicted_metric": "playlist share of channel WATCH-TIME. Pre Jul28-31 = 8.92%. Post-shuffle-1 Aug2-4 = 9.44%. Success = holds at or above ~9.4% across Aug 9-15 once new-ship inventory is netted out. MEASURE AT CHANNEL LEVEL ONLY - per-target counts are 1-5 views/day and unmoved controls swung -56% to +19%.",
+      "relevant_lanes": [
+        "sleep",
+        "calm_relax",
+        "anxiety",
+        "cognitive"
+      ],
+      "relevant_instruments": [],
+      "linked_ships": [],
+      "source": "Interventions: user playlist shuffles 2026-08-02 and 2026-08-07. Baseline positions + per-video metrics captured in data/playlist_snapshots/playlists_2026-08-07.json. Full method, confounds and checklist in data/playlist_snapshots/ANALYSIS_PLAN_wk_2026-08-10.md. ORIGIN: end screens measured DEAD (101 views channel-wide in a month, 0.01%) - playlists are the only working routing surface (4.94% of views but 8.92% of watch-time). CONSTRAINT: donor T1 share must be >= target T1 or the target gets diluted; Dopamine Reset (15.7% T1) must never point at a T1 video. CONFOUNDS to state in the read: 5 new ships entered playlists Aug 3-7; the channel independently inflected from 19,255 to ~25,000 daily views; the two shuffles are 5 days apart and cannot be separated. EXPECTED MAGNITUDE: low hundreds per month. The original the original headline figure model assumed 3x impressions on 17 targets; total playlist traffic is only ~36,800 views/28d channel-wide, so doubling it is worth roughly a quarter of that.",
+      "promoted_rule": ""
+    },
+    {
       "id": "h_2026-08-09_deep_work_offering_register",
       "created": "2026-08-02",
       "status": "PROPOSED",

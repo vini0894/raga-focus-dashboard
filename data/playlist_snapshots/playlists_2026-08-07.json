@@ -1,0 +1,1554 @@
+{
+ "captured_at": "2026-08-07",
+ "captured_after": "user playlist shuffles of 2026-08-02 and 2026-08-07",
+ "why": "BASELINE for the wk_2026-08-10 read. Without a positional snapshot the shuffles cannot be evaluated.",
+ "playlists": {
+  "Healing & Anxiety Relief Music": {
+   "count": 40,
+   "order": [
+    {
+     "pos": 1,
+     "title": "Sitar for Nervous System Healing | Indian Classical Music for Calmness | 1.5 Hours",
+     "views": 28474.0,
+     "rpm": 5.16,
+     "impressions": 482633.0,
+     "ctr": 3.96
+    },
+    {
+     "pos": 2,
+     "title": "Peace of Mind Music | Santoor Instrumental | 3 Hours",
+     "views": 1775.0,
+     "rpm": 6.47,
+     "impressions": 30026.0,
+     "ctr": 3.43
+    },
+    {
+     "pos": 3,
+     "title": "Stress Relief Music | Santoor Instrumental | 3 Hours",
+     "views": 884.0,
+     "rpm": 8.14,
+     "impressions": 9399.0,
+     "ctr": 4.53
+    },
+    {
+     "pos": 4,
+     "title": "Anxiety Relief Music | Clear Your Mind | 1 Hour Dilruba Session",
+     "views": 1904.0,
+     "rpm": 7.7,
+     "impressions": 23797.0,
+     "ctr": 4.97
+    },
+    {
+     "pos": 5,
+     "title": "Calm Music | Sitar for Cortisol Reset | 1.5 hours healing",
+     "views": 1535.0,
+     "rpm": 5.64,
+     "impressions": 18795.0,
+     "ctr": 4.75
+    },
+    {
+     "pos": 6,
+     "title": "Comfort Music | Healing Music with Sarangi | 1 Hour",
+     "views": 178.0,
+     "rpm": 2.4,
+     "impressions": 2230.0,
+     "ctr": 4.08
+    },
+    {
+     "pos": 7,
+     "title": "Release Stress | Burnout Music | Santoor & 528Hz",
+     "views": 67.0,
+     "rpm": 3.72,
+     "impressions": 1498.0,
+     "ctr": 2.2
+    },
+    {
+     "pos": 8,
+     "title": "Nostalgia Music | Healing Music with Sarangi | 1.5 Hour",
+     "views": 1172.0,
+     "rpm": 7.65,
+     "impressions": 11172.0,
+     "ctr": 6.73
+    },
+    {
+     "pos": 9,
+     "title": "Stress Relief Music | Deep Meditation with Veena | 1 Hour",
+     "views": 51.0,
+     "rpm": 3.08,
+     "impressions": 1118.0,
+     "ctr": 2.24
+    },
+    {
+     "pos": 10,
+     "title": "Overthinking Music | Dilruba Instrumental | 1.5 Hours",
+     "views": 166.0,
+     "rpm": 2.15,
+     "impressions": 2613.0,
+     "ctr": 3.94
+    },
+    {
+     "pos": 11,
+     "title": "Emotional Comfort | Sarangi | Indian Classical",
+     "views": 176.0,
+     "rpm": 2.91,
+     "impressions": 2451.0,
+     "ctr": 3.39
+    },
+    {
+     "pos": 12,
+     "title": "Overthinking Music | Healing with Bamboo Flute & Tanpura | 1 Hour",
+     "views": 395.0,
+     "rpm": 8.71,
+     "impressions": 3097.0,
+     "ctr": 9.62
+    },
+    {
+     "pos": 13,
+     "title": "Inner Happiness Music | Indian Instrumental | 1.5 Hours",
+     "views": 990.0,
+     "rpm": 4.81,
+     "impressions": 13203.0,
+     "ctr": 4.48
+    },
+    {
+     "pos": 14,
+     "title": "Let Go Of Stress | Sarangi for Emotional Release | 1.5 Hours",
+     "views": 114.0,
+     "rpm": 3.62,
+     "impressions": 1588.0,
+     "ctr": 3.15
+    },
+    {
+     "pos": 15,
+     "title": "Music for Dopamine Boost | Sitar & Bansuri for Positive Energy | 1.5 Hours",
+     "views": 435.0,
+     "rpm": 4.14,
+     "impressions": 4586.0,
+     "ctr": 5.28
+    },
+    {
+     "pos": 16,
+     "title": "Burnout Recovery Music | Slow Surbahar | 1.5 Hours",
+     "views": 113.0,
+     "rpm": 4.12,
+     "impressions": 2940.0,
+     "ctr": 2.41
+    },
+    {
+     "pos": 17,
+     "title": "Calm Music | Sarod Instrumental | Gentle Healing | 1.5 Hours",
+     "views": 303.0,
+     "rpm": 6.92,
+     "impressions": 4856.0,
+     "ctr": 3.79
+    },
+    {
+     "pos": 18,
+     "title": "Music for Overthinkers | Dilruba Raga Kedar | 1.5 Hours",
+     "views": 974.0,
+     "rpm": 2.89,
+     "impressions": 21130.0,
+     "ctr": 3.12
+    },
+    {
+     "pos": 19,
+     "title": "Music to Release Tension | Indian Classical | 1 Hour",
+     "views": 123.0,
+     "rpm": 1.35,
+     "impressions": 2706.0,
+     "ctr": 1.63
+    },
+    {
+     "pos": 20,
+     "title": "Sitar for Cortisol Reset | Indian Instrumental Music | 1.5 Hours",
+     "views": 105.0,
+     "rpm": 2.75,
+     "impressions": 2039.0,
+     "ctr": 2.8
+    },
+    {
+     "pos": 21,
+     "title": "Music for a Heavy Heart | Indian Classical | 1.5 Hours",
+     "views": 145.0,
+     "rpm": 3.77,
+     "impressions": 3216.0,
+     "ctr": 2.58
+    },
+    {
+     "pos": 22,
+     "title": "Music for Mental Clarity | Sarod Instrumental | 1.5 Hours",
+     "views": 405.0,
+     "rpm": 4.08,
+     "impressions": 5719.0,
+     "ctr": 4.25
+    },
+    {
+     "pos": 23,
+     "title": "Music for Digital Burnout | Surbahar Instrumental | 1.5 Hours",
+     "views": 178.0,
+     "rpm": 2.72,
+     "impressions": 3990.0,
+     "ctr": 2.86
+    },
+    {
+     "pos": 24,
+     "title": "Music for Mental Fatigue | Sitar Music | 1.5 Hours",
+     "views": 97.0,
+     "rpm": 3.45,
+     "impressions": 2606.0,
+     "ctr": 2.3
+    },
+    {
+     "pos": 25,
+     "title": "Sitar to Unclog Your Brain | Instrumental Music | 3 Hours",
+     "views": 79.0,
+     "rpm": 3.43,
+     "impressions": 2240.0,
+     "ctr": 1.88
+    },
+    {
+     "pos": 26,
+     "title": "Mental Health Music | Rest Better | Veena Instrumental | 1.5 Hours",
+     "views": 54.0,
+     "rpm": 2.54,
+     "impressions": 1855.0,
+     "ctr": 2.05
+    },
+    {
+     "pos": 27,
+     "title": "Calming Music for Anxiety | Slow Bansuri | Indian Classical",
+     "views": 34.0,
+     "rpm": 4.38,
+     "impressions": 1351.0,
+     "ctr": 1.33
+    },
+    {
+     "pos": 28,
+     "title": "Deep Relaxation | Dilruba Instrumental Music | 1.5 Hours",
+     "views": 33.0,
+     "rpm": 3.61,
+     "impressions": 1370.0,
+     "ctr": 1.39
+    },
+    {
+     "pos": 29,
+     "title": "Healing Frequency Music | Sarangi & Tanpura | 1.5 Hours",
+     "views": 1626.0,
+     "rpm": 2.85,
+     "impressions": 39892.0,
+     "ctr": 3.04
+    },
+    {
+     "pos": 30,
+     "title": "Emotional Detox | Healing Violin | 1 Hour Release",
+     "views": 32.0,
+     "rpm": 3.47,
+     "impressions": 780.0,
+     "ctr": 2.95
+    },
+    {
+     "pos": 31,
+     "title": "Cortisol Detox Music | Bansuri & Tanpura | 1.5 Hours",
+     "views": 3716.0,
+     "rpm": 5.08,
+     "impressions": 67194.0,
+     "ctr": 3.8
+    },
+    {
+     "pos": 32,
+     "title": "Sitar for Brain Detox | Clear Your Mind | 1.5 Hours of Indian Classical Music",
+     "views": 3826.0,
+     "rpm": 6.32,
+     "impressions": 65498.0,
+     "ctr": 3.38
+    },
+    {
+     "pos": 33,
+     "title": "Music for Anxiety Relief | Slow Sarod | 1.5 Hours",
+     "views": 848.0,
+     "rpm": 3.9,
+     "impressions": 20840.0,
+     "ctr": 2.96
+    },
+    {
+     "pos": 34,
+     "title": "Sacred Silence | Slow Sarangi Instrumental for Stress Relief, Sleep & Inner Peace",
+     "views": 569.0,
+     "rpm": 5.6,
+     "impressions": 11656.0,
+     "ctr": 3.65
+    },
+    {
+     "pos": 35,
+     "title": "Calm Your Nerves | Veena Instrumental | 1.5 Hours",
+     "views": 1087.0,
+     "rpm": 4.08,
+     "impressions": 26760.0,
+     "ctr": 2.93
+    },
+    {
+     "pos": 36,
+     "title": "Deep Rest Music | Sarod Instrumental | 3 Hours",
+     "views": 794.0,
+     "rpm": 5.32,
+     "impressions": 18991.0,
+     "ctr": 2.96
+    },
+    {
+     "pos": 37,
+     "title": "Mental Clarity Music | Slow Sarod | Brain Fog Reset",
+     "views": 1227.0,
+     "rpm": 7.94,
+     "impressions": 10126.0,
+     "ctr": 8.31
+    },
+    {
+     "pos": 38,
+     "title": "Anxiety Relief Music | Slow Sarod | Indian Classical",
+     "views": 2330.0,
+     "rpm": 7.3,
+     "impressions": 28377.0,
+     "ctr": 5.37
+    },
+    {
+     "pos": 39,
+     "title": "Unwind Slowly | Slow Sarod | 1.5 Hours of Calm",
+     "views": 218.0,
+     "rpm": 3.87,
+     "impressions": 4575.0,
+     "ctr": 3.39
+    },
+    {
+     "pos": 40,
+     "title": "Steady Your Breathing | Slow Tanpura | 1.5 Hours",
+     "views": 0,
+     "rpm": 0,
+     "impressions": 0,
+     "ctr": 0
+    }
+   ]
+  },
+  "Morning Energy Music": {
+   "count": 24,
+   "order": [
+    {
+     "pos": 1,
+     "title": "Morning Energy Music | Dilruba Raga Yaman | 1.5 Hours",
+     "views": 83471.0,
+     "rpm": 5.5,
+     "impressions": 1382639.0,
+     "ctr": 4.05
+    },
+    {
+     "pos": 2,
+     "title": "Sitar Music to Start Your Morning Right | 1.5 Hours",
+     "views": 25181.0,
+     "rpm": 3.71,
+     "impressions": 294062.0,
+     "ctr": 5.69
+    },
+    {
+     "pos": 3,
+     "title": "Productive Day Music | Positive Morning Vibes | 1 Hour Bansuri Session",
+     "views": 5889.0,
+     "rpm": 6.95,
+     "impressions": 62167.0,
+     "ctr": 5.48
+    },
+    {
+     "pos": 4,
+     "title": "Yoga Music | Positive Energy Frequency | 1.5 Hour",
+     "views": 11892.0,
+     "rpm": 7.41,
+     "impressions": 155449.0,
+     "ctr": 4.89
+    },
+    {
+     "pos": 5,
+     "title": "Morning Motivation | Sitar Music Instrumental | 1.5 Hours",
+     "views": 5846.0,
+     "rpm": 5.93,
+     "impressions": 56830.0,
+     "ctr": 6.2
+    },
+    {
+     "pos": 6,
+     "title": "Joyful Music | Positive Vibes Music with Santoor | 1 Hour",
+     "views": 9573.0,
+     "rpm": 6.96,
+     "impressions": 121042.0,
+     "ctr": 5.6
+    },
+    {
+     "pos": 7,
+     "title": "Morning Gratitude Music | Indian Classical | 1.5 Hours",
+     "views": 1624.0,
+     "rpm": 8.7,
+     "impressions": 14116.0,
+     "ctr": 6.61
+    },
+    {
+     "pos": 8,
+     "title": "Bright Morning Music | Santoor Instrumental | 1.5 Hours",
+     "views": 418.0,
+     "rpm": 3.86,
+     "impressions": 4956.0,
+     "ctr": 5.0
+    },
+    {
+     "pos": 9,
+     "title": "Uplifting Music | Dilruba for Morning Energy | 1.5 Hours",
+     "views": 692.0,
+     "rpm": 5.96,
+     "impressions": 5366.0,
+     "ctr": 9.39
+    },
+    {
+     "pos": 10,
+     "title": "Start Your Day With Peace | Calm Bansuri Meditation | 1.5 hours",
+     "views": 925.0,
+     "rpm": 8.15,
+     "impressions": 9716.0,
+     "ctr": 6.53
+    },
+    {
+     "pos": 11,
+     "title": "Morning Reset Music | Sarod Instrumental | Clear Your Head",
+     "views": 108.0,
+     "rpm": 3.31,
+     "impressions": 1663.0,
+     "ctr": 2.47
+    },
+    {
+     "pos": 12,
+     "title": "Morning Energy Music | Santoor Instrumental | Positive Vibes",
+     "views": 140.0,
+     "rpm": 2.28,
+     "impressions": 1683.0,
+     "ctr": 4.22
+    },
+    {
+     "pos": 13,
+     "title": "Productive Morning Music | Bansuri Flute | 1.5 Hours",
+     "views": 350.0,
+     "rpm": 3.84,
+     "impressions": 2963.0,
+     "ctr": 5.7
+    },
+    {
+     "pos": 14,
+     "title": "Kindness Music | Warm Bansuri Morning | 1.5 hours",
+     "views": 204.0,
+     "rpm": 3.89,
+     "impressions": 4069.0,
+     "ctr": 3.0
+    },
+    {
+     "pos": 15,
+     "title": "Sitar for Morning Motivation | Indian Instrumental | 1.5 Hours",
+     "views": 101.0,
+     "rpm": 1.73,
+     "impressions": 2412.0,
+     "ctr": 2.2
+    },
+    {
+     "pos": 16,
+     "title": "Mindful Morning Music | Indian Classical | 1.5 Hours",
+     "views": 245.0,
+     "rpm": 3.65,
+     "impressions": 3368.0,
+     "ctr": 3.21
+    },
+    {
+     "pos": 17,
+     "title": "Sitar for Morning Renewal | Indian Classical Music for a Fresh Start",
+     "views": 1118.0,
+     "rpm": 4.69,
+     "impressions": 20111.0,
+     "ctr": 3.93
+    },
+    {
+     "pos": 18,
+     "title": "Meditation Music | Sarangi & Tabla | 1.5 Hours",
+     "views": 128.0,
+     "rpm": 3.64,
+     "impressions": 2569.0,
+     "ctr": 2.76
+    },
+    {
+     "pos": 19,
+     "title": "Sunrise Music | Dilruba Raga Yaman | 1.5 Hours",
+     "views": 52.0,
+     "rpm": 2.6,
+     "impressions": 1828.0,
+     "ctr": 1.64
+    },
+    {
+     "pos": 20,
+     "title": "Tabla Music for Morning Focus & Motivation | 40Hz Gamma Energy",
+     "views": 29.0,
+     "rpm": 1.31,
+     "impressions": 271.0,
+     "ctr": 2.95
+    },
+    {
+     "pos": 21,
+     "title": "Cortisol Detox Music | Bansuri & Tanpura | 1.5 Hours",
+     "views": 3716.0,
+     "rpm": 5.08,
+     "impressions": 67194.0,
+     "ctr": 3.8
+    },
+    {
+     "pos": 22,
+     "title": "Grounding Music | Begin the Day Calm | 1.5 Hours",
+     "views": 1105.0,
+     "rpm": 3.67,
+     "impressions": 26467.0,
+     "ctr": 3.05
+    },
+    {
+     "pos": 23,
+     "title": "Boost Your Aura | Bright Santoor Morning | 1.5 Hours",
+     "views": 0,
+     "rpm": 0,
+     "impressions": 0,
+     "ctr": 0
+    },
+    {
+     "pos": 24,
+     "title": "Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours",
+     "views": 1047.0,
+     "rpm": 4.85,
+     "impressions": 25513.0,
+     "ctr": 3.04
+    }
+   ]
+  },
+  "Meditation Music": {
+   "count": 28,
+   "order": [
+    {
+     "pos": 1,
+     "title": "Sitar for Dopamine Reset | Indian Classical Music for Mindfulness",
+     "views": 326933.0,
+     "rpm": 3.19,
+     "impressions": 4442459.0,
+     "ctr": 4.88
+    },
+    {
+     "pos": 2,
+     "title": "Morning Gratitude Music | Indian Classical | 1.5 Hours",
+     "views": 1624.0,
+     "rpm": 8.7,
+     "impressions": 14116.0,
+     "ctr": 6.61
+    },
+    {
+     "pos": 3,
+     "title": "Calm Your Mind | Veena Healing Music | 1.5 hours",
+     "views": 172.0,
+     "rpm": 3.97,
+     "impressions": 2328.0,
+     "ctr": 4.25
+    },
+    {
+     "pos": 4,
+     "title": "Calm an Overactive Mind | Chandra Raga | Deep Nervous System Healing",
+     "views": 332.0,
+     "rpm": 3.27,
+     "impressions": 3103.0,
+     "ctr": 3.38
+    },
+    {
+     "pos": 5,
+     "title": "Dopamine Detox | Bansuri Music | 1.5 Hours",
+     "views": 1385.0,
+     "rpm": 3.73,
+     "impressions": 16101.0,
+     "ctr": 5.3
+    },
+    {
+     "pos": 6,
+     "title": "Peaceful Music | Soothing Music with Veena | 1 Hour",
+     "views": 303.0,
+     "rpm": 8.34,
+     "impressions": 2157.0,
+     "ctr": 9.97
+    },
+    {
+     "pos": 7,
+     "title": "Music for Dopamine Boost | Sitar & Bansuri for Positive Energy | 1.5 Hours",
+     "views": 435.0,
+     "rpm": 4.14,
+     "impressions": 4586.0,
+     "ctr": 5.28
+    },
+    {
+     "pos": 8,
+     "title": "Yoga & Meditation Music | Sarangi & Tabla | Indian Classical",
+     "views": 153.0,
+     "rpm": 6.05,
+     "impressions": 2250.0,
+     "ctr": 4.31
+    },
+    {
+     "pos": 9,
+     "title": "Inner Peace Music | Sarangi Healing | 1.5 Hours",
+     "views": 111.0,
+     "rpm": 6.71,
+     "impressions": 1546.0,
+     "ctr": 3.95
+    },
+    {
+     "pos": 10,
+     "title": "Morning Meditation Music | Tanpura Instrumental | 1.5 Hours of Peaceful Focus",
+     "views": 244.0,
+     "rpm": 11.62,
+     "impressions": 1961.0,
+     "ctr": 8.31
+    },
+    {
+     "pos": 11,
+     "title": "Mental Reset | Sitar for an Overstimulated Mind | 1.5 Hours",
+     "views": 1783.0,
+     "rpm": 4.67,
+     "impressions": 37178.0,
+     "ctr": 3.31
+    },
+    {
+     "pos": 12,
+     "title": "Relaxing Sitar Music | Indian Classical | 3 Hours",
+     "views": 1719.0,
+     "rpm": 5.82,
+     "impressions": 29879.0,
+     "ctr": 3.54
+    },
+    {
+     "pos": 13,
+     "title": "Mindful Morning Music | Indian Classical | 1.5 Hours",
+     "views": 245.0,
+     "rpm": 3.65,
+     "impressions": 3368.0,
+     "ctr": 3.21
+    },
+    {
+     "pos": 14,
+     "title": "Meditation Music | Sarangi Instrumental | 1.5 Hours",
+     "views": 269.0,
+     "rpm": 5.88,
+     "impressions": 5593.0,
+     "ctr": 3.38
+    },
+    {
+     "pos": 15,
+     "title": "Santoor Music for Mindfulness and Emotional Balance | 1.5 Hours",
+     "views": 318.0,
+     "rpm": 8.81,
+     "impressions": 2752.0,
+     "ctr": 8.43
+    },
+    {
+     "pos": 16,
+     "title": "Music for Digital Burnout | Surbahar Instrumental | 1.5 Hours",
+     "views": 178.0,
+     "rpm": 2.72,
+     "impressions": 3990.0,
+     "ctr": 2.86
+    },
+    {
+     "pos": 17,
+     "title": "Music for Mental Fatigue | Sitar Music | 1.5 Hours",
+     "views": 97.0,
+     "rpm": 3.45,
+     "impressions": 2606.0,
+     "ctr": 2.3
+    },
+    {
+     "pos": 18,
+     "title": "Can't Sleep Tonight? | Tanpura Instrumental Music | 3 Hours",
+     "views": 1402.0,
+     "rpm": 5.34,
+     "impressions": 20274.0,
+     "ctr": 5.0
+    },
+    {
+     "pos": 19,
+     "title": "Boost Your Aura | Bright Santoor Morning | 1.5 Hours",
+     "views": 0,
+     "rpm": 0,
+     "impressions": 0,
+     "ctr": 0
+    },
+    {
+     "pos": 20,
+     "title": "Inner Stillness Music | Slow Tanpura Drone | 1.5 Hours",
+     "views": 48.0,
+     "rpm": 1.92,
+     "impressions": 1562.0,
+     "ctr": 1.92
+    },
+    {
+     "pos": 21,
+     "title": "Meditation Music | Sarangi & Tabla | 1.5 Hours",
+     "views": 128.0,
+     "rpm": 3.64,
+     "impressions": 2569.0,
+     "ctr": 2.76
+    },
+    {
+     "pos": 22,
+     "title": "Grounding Music | Begin the Day Calm | 1.5 Hours",
+     "views": 1105.0,
+     "rpm": 3.67,
+     "impressions": 26467.0,
+     "ctr": 3.05
+    },
+    {
+     "pos": 23,
+     "title": "Brain Power Music | Slow Sarod | Indian Classical",
+     "views": 1089.0,
+     "rpm": 2.34,
+     "impressions": 24532.0,
+     "ctr": 3.02
+    },
+    {
+     "pos": 24,
+     "title": "Calm Your Nerves | Veena Instrumental | 1.5 Hours",
+     "views": 1087.0,
+     "rpm": 4.08,
+     "impressions": 26760.0,
+     "ctr": 2.93
+    },
+    {
+     "pos": 25,
+     "title": "Burnout Music | Slow Surbahar Raga Bhupali | 3 Hours",
+     "views": 971.0,
+     "rpm": 4.7,
+     "impressions": 21106.0,
+     "ctr": 3.29
+    },
+    {
+     "pos": 26,
+     "title": "Music for Anxiety Relief | Slow Sarod | 1.5 Hours",
+     "views": 848.0,
+     "rpm": 3.9,
+     "impressions": 20840.0,
+     "ctr": 2.96
+    },
+    {
+     "pos": 27,
+     "title": "Digital Detox Music | Surbahar Instrumental | 1.5 Hours",
+     "views": 1071.0,
+     "rpm": 4.4,
+     "impressions": 20835.0,
+     "ctr": 2.96
+    },
+    {
+     "pos": 28,
+     "title": "Steady Your Breathing | Slow Tanpura | 1.5 Hours",
+     "views": 0,
+     "rpm": 0,
+     "impressions": 0,
+     "ctr": 0
+    }
+   ]
+  },
+  "Sleep Music": {
+   "count": 21,
+   "order": [
+    {
+     "pos": 1,
+     "title": "Music to Sleep Through the Night | Bansuri | 3 Hours",
+     "views": 9712.0,
+     "rpm": 6.86,
+     "impressions": 98062.0,
+     "ctr": 7.31
+    },
+    {
+     "pos": 2,
+     "title": "3 Hour Bansuri Music for Relaxation | Indian Instrumental Music for Deep Sleep",
+     "views": 23774.0,
+     "rpm": 6.85,
+     "impressions": 233645.0,
+     "ctr": 4.64
+    },
+    {
+     "pos": 3,
+     "title": "Quiet Night Music | Slow Bansuri Flute | 3 Hours",
+     "views": 4258.0,
+     "rpm": 8.56,
+     "impressions": 40428.0,
+     "ctr": 6.67
+    },
+    {
+     "pos": 4,
+     "title": "Bansuri for Sound Sleep | Deep Sleep Music | 1 Hour",
+     "views": 100727.0,
+     "rpm": 2.79,
+     "impressions": 1283439.0,
+     "ctr": 5.94
+    },
+    {
+     "pos": 5,
+     "title": "Can't Sleep Tonight? | Tanpura Instrumental Music | 3 Hours",
+     "views": 1402.0,
+     "rpm": 5.34,
+     "impressions": 20274.0,
+     "ctr": 5.0
+    },
+    {
+     "pos": 6,
+     "title": "Deep Rest Music | Find Stillness with Surbahar | 1.5 Hours",
+     "views": 2047.0,
+     "rpm": 4.47,
+     "impressions": 35970.0,
+     "ctr": 3.56
+    },
+    {
+     "pos": 7,
+     "title": "Can't Fall Asleep | Raga Yaman Bansuri | Delta Wave Sleep Session | 1 Hour",
+     "views": 3258.0,
+     "rpm": 2.59,
+     "impressions": 25120.0,
+     "ctr": 9.25
+    },
+    {
+     "pos": 8,
+     "title": "Sleep Music | Drift Off Effortlessly | 1.5 Hours Bansuri",
+     "views": 572.0,
+     "rpm": 6.93,
+     "impressions": 6209.0,
+     "ctr": 5.14
+    },
+    {
+     "pos": 9,
+     "title": "Deep Relaxation Music | Slow Surbahar | 1.5 Hours",
+     "views": 1240.0,
+     "rpm": 8.01,
+     "impressions": 11746.0,
+     "ctr": 6.79
+    },
+    {
+     "pos": 10,
+     "title": "Deep Sleep Music | Surbahar Instrumental | 3 Hours",
+     "views": 3076.0,
+     "rpm": 6.58,
+     "impressions": 31171.0,
+     "ctr": 7.41
+    },
+    {
+     "pos": 11,
+     "title": "1.5 Hour Bansuri to Unwind | Breathe and Let Go",
+     "views": 344.0,
+     "rpm": 7.06,
+     "impressions": 3301.0,
+     "ctr": 5.57
+    },
+    {
+     "pos": 12,
+     "title": "Music for a Restless Mind | Veena Instrumental | 1.5 Hours",
+     "views": 92.0,
+     "rpm": 7.03,
+     "impressions": 1763.0,
+     "ctr": 2.89
+    },
+    {
+     "pos": 13,
+     "title": "Rest Your Mind | Surbahar for Calmness | 1.5 Hours",
+     "views": 156.0,
+     "rpm": 5.92,
+     "impressions": 2317.0,
+     "ctr": 4.4
+    },
+    {
+     "pos": 14,
+     "title": "Sound Sleep | Relaxing Music with Tanpura | 1.5 Hours",
+     "views": 46.0,
+     "rpm": 2.59,
+     "impressions": 1187.0,
+     "ctr": 2.36
+    },
+    {
+     "pos": 15,
+     "title": "Breathe And Relax | Slow Down Music | Veena Instrumental",
+     "views": 128.0,
+     "rpm": 6.37,
+     "impressions": 1606.0,
+     "ctr": 5.92
+    },
+    {
+     "pos": 16,
+     "title": "Inner Calm Music | Bansuri Evening Raga | 1 Hour",
+     "views": 42.0,
+     "rpm": 2.76,
+     "impressions": 1092.0,
+     "ctr": 1.92
+    },
+    {
+     "pos": 17,
+     "title": "Sound Healing Music | Slow Surbahar | 1.5 Hours of Rest",
+     "views": 368.0,
+     "rpm": 7.89,
+     "impressions": 2727.0,
+     "ctr": 9.94
+    },
+    {
+     "pos": 18,
+     "title": "Music for a Tired Soul | Sleep Better | 1.5 Hours of Indian Flute",
+     "views": 104.0,
+     "rpm": 2.35,
+     "impressions": 2070.0,
+     "ctr": 2.95
+    },
+    {
+     "pos": 19,
+     "title": "Meditation Music | Slow Surbahar | Indian Classical",
+     "views": 80.0,
+     "rpm": 5.65,
+     "impressions": 1615.0,
+     "ctr": 3.16
+    },
+    {
+     "pos": 20,
+     "title": "Music for Tired Mind | Slow down with Veena | 1.5 Hours",
+     "views": 41.0,
+     "rpm": 3.29,
+     "impressions": 1024.0,
+     "ctr": 1.17
+    },
+    {
+     "pos": 21,
+     "title": "Sleep Without Waking | Slow Sitar Instrumental | 3 Hours",
+     "views": 0,
+     "rpm": 0,
+     "impressions": 0,
+     "ctr": 0
+    }
+   ]
+  },
+  "Peaceful Music": {
+   "count": 48,
+   "order": [
+    {
+     "pos": 1,
+     "title": "Sitar for Dopamine Reset | Indian Classical Music for Mindfulness",
+     "views": 326933.0,
+     "rpm": 3.19,
+     "impressions": 4442459.0,
+     "ctr": 4.88
+    },
+    {
+     "pos": 2,
+     "title": "Stress Relief Music | Santoor Instrumental | 3 Hours",
+     "views": 884.0,
+     "rpm": 8.14,
+     "impressions": 9399.0,
+     "ctr": 4.53
+    },
+    {
+     "pos": 3,
+     "title": "Mental Clarity Music | Slow Sarod | Brain Fog Reset",
+     "views": 1227.0,
+     "rpm": 7.94,
+     "impressions": 10126.0,
+     "ctr": 8.31
+    },
+    {
+     "pos": 4,
+     "title": "Nostalgia Music | Healing Music with Sarangi | 1.5 Hour",
+     "views": 1172.0,
+     "rpm": 7.65,
+     "impressions": 11172.0,
+     "ctr": 6.73
+    },
+    {
+     "pos": 5,
+     "title": "Anxiety Relief Music | Slow Sarod | Indian Classical",
+     "views": 2330.0,
+     "rpm": 7.3,
+     "impressions": 28377.0,
+     "ctr": 5.37
+    },
+    {
+     "pos": 6,
+     "title": "Peace of Mind Music | Santoor Instrumental | 3 Hours",
+     "views": 1775.0,
+     "rpm": 6.47,
+     "impressions": 30026.0,
+     "ctr": 3.43
+    },
+    {
+     "pos": 7,
+     "title": "Mental Reset | Sitar for an Overstimulated Mind | 1.5 Hours",
+     "views": 1783.0,
+     "rpm": 4.67,
+     "impressions": 37178.0,
+     "ctr": 3.31
+    },
+    {
+     "pos": 8,
+     "title": "Sitar for Nervous System Healing | Indian Classical Music for Calmness | 1.5 Hours",
+     "views": 28474.0,
+     "rpm": 5.16,
+     "impressions": 482633.0,
+     "ctr": 3.96
+    },
+    {
+     "pos": 9,
+     "title": "3 Hour Bansuri Music for Relaxation | Indian Instrumental Music for Deep Sleep",
+     "views": 23774.0,
+     "rpm": 6.85,
+     "impressions": 233645.0,
+     "ctr": 4.64
+    },
+    {
+     "pos": 10,
+     "title": "Deep Rest Music | Find Stillness with Surbahar | 1.5 Hours",
+     "views": 2047.0,
+     "rpm": 4.47,
+     "impressions": 35970.0,
+     "ctr": 3.56
+    },
+    {
+     "pos": 11,
+     "title": "Calm Music | Sitar for Cortisol Reset | 1.5 hours healing",
+     "views": 1535.0,
+     "rpm": 5.64,
+     "impressions": 18795.0,
+     "ctr": 4.75
+    },
+    {
+     "pos": 12,
+     "title": "Comfort Music | Healing Music with Sarangi | 1 Hour",
+     "views": 178.0,
+     "rpm": 2.4,
+     "impressions": 2230.0,
+     "ctr": 4.08
+    },
+    {
+     "pos": 13,
+     "title": "Burnout Recovery | Vagus Nerve Reset with Surbahar | 1.5 Hours",
+     "views": 1348.0,
+     "rpm": 7.52,
+     "impressions": 14657.0,
+     "ctr": 5.99
+    },
+    {
+     "pos": 14,
+     "title": "Release Stress | Burnout Music | Santoor & 528Hz",
+     "views": 67.0,
+     "rpm": 3.72,
+     "impressions": 1498.0,
+     "ctr": 2.2
+    },
+    {
+     "pos": 15,
+     "title": "Deep Relaxation Music | Slow Surbahar | 1.5 Hours",
+     "views": 1240.0,
+     "rpm": 8.01,
+     "impressions": 11746.0,
+     "ctr": 6.79
+    },
+    {
+     "pos": 16,
+     "title": "Bright Morning Music | Santoor Instrumental | 1.5 Hours",
+     "views": 418.0,
+     "rpm": 3.86,
+     "impressions": 4956.0,
+     "ctr": 5.0
+    },
+    {
+     "pos": 17,
+     "title": "Peaceful Music | Soothing Music with Veena | 1 Hour",
+     "views": 303.0,
+     "rpm": 8.34,
+     "impressions": 2157.0,
+     "ctr": 9.97
+    },
+    {
+     "pos": 18,
+     "title": "1.5 Hour Bansuri to Unwind | Breathe and Let Go",
+     "views": 344.0,
+     "rpm": 7.06,
+     "impressions": 3301.0,
+     "ctr": 5.57
+    },
+    {
+     "pos": 19,
+     "title": "Stress Relief Music | Deep Meditation with Veena | 1 Hour",
+     "views": 51.0,
+     "rpm": 3.08,
+     "impressions": 1118.0,
+     "ctr": 2.24
+    },
+    {
+     "pos": 20,
+     "title": "Music to Quiet the Mind | Slow Sarod | 1.5 Hours",
+     "views": 257.0,
+     "rpm": 4.33,
+     "impressions": 3173.0,
+     "ctr": 4.38
+    },
+    {
+     "pos": 21,
+     "title": "Overthinking Music | Healing with Bamboo Flute & Tanpura | 1 Hour",
+     "views": 395.0,
+     "rpm": 8.71,
+     "impressions": 3097.0,
+     "ctr": 9.62
+    },
+    {
+     "pos": 22,
+     "title": "Rest Your Mind | Surbahar for Calmness | 1.5 Hours",
+     "views": 156.0,
+     "rpm": 5.92,
+     "impressions": 2317.0,
+     "ctr": 4.4
+    },
+    {
+     "pos": 23,
+     "title": "Sound Sleep | Relaxing Music with Tanpura | 1.5 Hours",
+     "views": 46.0,
+     "rpm": 2.59,
+     "impressions": 1187.0,
+     "ctr": 2.36
+    },
+    {
+     "pos": 24,
+     "title": "Inner Peace Music | Sarangi Healing | 1.5 Hours",
+     "views": 111.0,
+     "rpm": 6.71,
+     "impressions": 1546.0,
+     "ctr": 3.95
+    },
+    {
+     "pos": 25,
+     "title": "Breathe And Relax | Slow Down Music | Veena Instrumental",
+     "views": 128.0,
+     "rpm": 6.37,
+     "impressions": 1606.0,
+     "ctr": 5.92
+    },
+    {
+     "pos": 26,
+     "title": "Inner Calm Music | Bansuri Evening Raga | 1 Hour",
+     "views": 42.0,
+     "rpm": 2.76,
+     "impressions": 1092.0,
+     "ctr": 1.92
+    },
+    {
+     "pos": 27,
+     "title": "Sound Healing Music | Slow Surbahar | 1.5 Hours of Rest",
+     "views": 368.0,
+     "rpm": 7.89,
+     "impressions": 2727.0,
+     "ctr": 9.94
+    },
+    {
+     "pos": 28,
+     "title": "Restore Your Mind | Slow Veena | Indian Classical",
+     "views": 142.0,
+     "rpm": 6.81,
+     "impressions": 2081.0,
+     "ctr": 1.83
+    },
+    {
+     "pos": 29,
+     "title": "Music to Release Tension | Indian Classical | 1 Hour",
+     "views": 123.0,
+     "rpm": 1.35,
+     "impressions": 2706.0,
+     "ctr": 1.63
+    },
+    {
+     "pos": 30,
+     "title": "Music to Unwind | Surbahar Instrumental | 3 Hours",
+     "views": 834.0,
+     "rpm": 5.78,
+     "impressions": 13154.0,
+     "ctr": 3.23
+    },
+    {
+     "pos": 31,
+     "title": "Instant focus music  | Sitar Instrumental | 1 hour",
+     "views": 94.0,
+     "rpm": 3.11,
+     "impressions": 1075.0,
+     "ctr": 2.51
+    },
+    {
+     "pos": 32,
+     "title": "Music for a Heavy Heart | Indian Classical | 1.5 Hours",
+     "views": 145.0,
+     "rpm": 3.77,
+     "impressions": 3216.0,
+     "ctr": 2.58
+    },
+    {
+     "pos": 33,
+     "title": "Relaxing Sitar Music | Indian Classical | 3 Hours",
+     "views": 1719.0,
+     "rpm": 5.82,
+     "impressions": 29879.0,
+     "ctr": 3.54
+    },
+    {
+     "pos": 34,
+     "title": "Meditation Music | Slow Surbahar | Indian Classical",
+     "views": 80.0,
+     "rpm": 5.65,
+     "impressions": 1615.0,
+     "ctr": 3.16
+    },
+    {
+     "pos": 35,
+     "title": "Deep Relaxation Music | Santoor Instrumental | 1.5 Hours",
+     "views": 176.0,
+     "rpm": 2.11,
+     "impressions": 3063.0,
+     "ctr": 3.75
+    },
+    {
+     "pos": 36,
+     "title": "Relax Your Mind | Santoor & Tanpura | 1.5 Hours",
+     "views": 607.0,
+     "rpm": 3.97,
+     "impressions": 11436.0,
+     "ctr": 3.32
+    },
+    {
+     "pos": 37,
+     "title": "Mental Break | Sitar for Mind Reset | 20 Minutes",
+     "views": 28.0,
+     "rpm": 1.25,
+     "impressions": 831.0,
+     "ctr": 1.44
+    },
+    {
+     "pos": 38,
+     "title": "Healing Frequency Music | Sarangi & Tanpura | 1.5 Hours",
+     "views": 1626.0,
+     "rpm": 2.85,
+     "impressions": 39892.0,
+     "ctr": 3.04
+    },
+    {
+     "pos": 39,
+     "title": "Mind at Rest | Sitar & Alpha Waves | 1 Hour Anxiety Relief Music",
+     "views": 26.0,
+     "rpm": 0.58,
+     "impressions": 810.0,
+     "ctr": 2.47
+    },
+    {
+     "pos": 40,
+     "title": "Brain Power Music | Slow Sarod | Indian Classical",
+     "views": 1089.0,
+     "rpm": 2.34,
+     "impressions": 24532.0,
+     "ctr": 3.02
+    },
+    {
+     "pos": 41,
+     "title": "Burnout Music | Slow Surbahar Raga Bhupali | 3 Hours",
+     "views": 971.0,
+     "rpm": 4.7,
+     "impressions": 21106.0,
+     "ctr": 3.29
+    },
+    {
+     "pos": 42,
+     "title": "Music for Anxiety Relief | Slow Sarod | 1.5 Hours",
+     "views": 848.0,
+     "rpm": 3.9,
+     "impressions": 20840.0,
+     "ctr": 2.96
+    },
+    {
+     "pos": 43,
+     "title": "Can't Sleep Tonight? | Tanpura Instrumental Music | 3 Hours",
+     "views": 1402.0,
+     "rpm": 5.34,
+     "impressions": 20274.0,
+     "ctr": 5.0
+    },
+    {
+     "pos": 44,
+     "title": "Digital Detox Music | Surbahar Instrumental | 1.5 Hours",
+     "views": 1071.0,
+     "rpm": 4.4,
+     "impressions": 20835.0,
+     "ctr": 2.96
+    },
+    {
+     "pos": 45,
+     "title": "Deep Rest Music | Sarod Instrumental | 3 Hours",
+     "views": 794.0,
+     "rpm": 5.32,
+     "impressions": 18991.0,
+     "ctr": 2.96
+    },
+    {
+     "pos": 46,
+     "title": "Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours",
+     "views": 1047.0,
+     "rpm": 4.85,
+     "impressions": 25513.0,
+     "ctr": 3.04
+    },
+    {
+     "pos": 47,
+     "title": "Unwind Slowly | Slow Sarod | 1.5 Hours of Calm",
+     "views": 218.0,
+     "rpm": 3.87,
+     "impressions": 4575.0,
+     "ctr": 3.39
+    },
+    {
+     "pos": 48,
+     "title": "Sleep Without Waking | Slow Sitar Instrumental | 3 Hours",
+     "views": 0,
+     "rpm": 0,
+     "impressions": 0,
+     "ctr": 0
+    }
+   ]
+  },
+  "Morning Focus Music": {
+   "count": 15,
+   "order": [
+    {
+     "pos": 1,
+     "title": "Morning Energy Music | Dilruba Raga Yaman | 1.5 Hours",
+     "views": 83471.0,
+     "rpm": 5.5,
+     "impressions": 1382639.0,
+     "ctr": 4.05
+    },
+    {
+     "pos": 2,
+     "title": "Productive Day Music | Positive Morning Vibes | 1 Hour Bansuri Session",
+     "views": 5889.0,
+     "rpm": 6.95,
+     "impressions": 62167.0,
+     "ctr": 5.48
+    },
+    {
+     "pos": 3,
+     "title": "Yoga Music | Positive Energy Frequency | 1.5 Hour",
+     "views": 11892.0,
+     "rpm": 7.41,
+     "impressions": 155449.0,
+     "ctr": 4.89
+    },
+    {
+     "pos": 4,
+     "title": "Morning Motivation | Sitar Music Instrumental | 1.5 Hours",
+     "views": 5846.0,
+     "rpm": 5.93,
+     "impressions": 56830.0,
+     "ctr": 6.2
+    },
+    {
+     "pos": 5,
+     "title": "Anxiety Relief Music | Slow Sarod | Indian Classical",
+     "views": 2330.0,
+     "rpm": 7.3,
+     "impressions": 28377.0,
+     "ctr": 5.37
+    },
+    {
+     "pos": 6,
+     "title": "Mental Clarity Music | Slow Sarod | Brain Fog Reset",
+     "views": 1227.0,
+     "rpm": 7.94,
+     "impressions": 10126.0,
+     "ctr": 8.31
+    },
+    {
+     "pos": 7,
+     "title": "Clear Your Head Music | Slow Sarod | Indian Classical",
+     "views": 801.0,
+     "rpm": 6.81,
+     "impressions": 8718.0,
+     "ctr": 5.74
+    },
+    {
+     "pos": 8,
+     "title": "Start Your Day With Peace | Calm Bansuri Meditation | 1.5 hours",
+     "views": 925.0,
+     "rpm": 8.15,
+     "impressions": 9716.0,
+     "ctr": 6.53
+    },
+    {
+     "pos": 9,
+     "title": "Morning Reset Music | Sarod Instrumental | Clear Your Head",
+     "views": 108.0,
+     "rpm": 3.31,
+     "impressions": 1663.0,
+     "ctr": 2.47
+    },
+    {
+     "pos": 10,
+     "title": "Stress Relief Music | Deep Meditation with Veena | 1 Hour",
+     "views": 51.0,
+     "rpm": 3.08,
+     "impressions": 1118.0,
+     "ctr": 2.24
+    },
+    {
+     "pos": 11,
+     "title": "Morning Energy Music | Santoor Instrumental | Positive Vibes",
+     "views": 140.0,
+     "rpm": 2.28,
+     "impressions": 1683.0,
+     "ctr": 4.22
+    },
+    {
+     "pos": 12,
+     "title": "Yoga & Meditation Music | Sarangi & Tabla | Indian Classical",
+     "views": 153.0,
+     "rpm": 6.05,
+     "impressions": 2250.0,
+     "ctr": 4.31
+    },
+    {
+     "pos": 13,
+     "title": "Morning Meditation Music | Tanpura Instrumental | 1.5 Hours of Peaceful Focus",
+     "views": 244.0,
+     "rpm": 11.62,
+     "impressions": 1961.0,
+     "ctr": 8.31
+    },
+    {
+     "pos": 14,
+     "title": "Mental Break | Sitar for Mind Reset | 20 Minutes",
+     "views": 28.0,
+     "rpm": 1.25,
+     "impressions": 831.0,
+     "ctr": 1.44
+    },
+    {
+     "pos": 15,
+     "title": "Tabla Music for Morning Focus & Motivation | 40Hz Gamma Energy",
+     "views": 29.0,
+     "rpm": 1.31,
+     "impressions": 271.0,
+     "ctr": 2.95
+    }
+   ]
+  },
+  "Deep Focus Sessions": {
+   "count": 13,
+   "order": [
+    {
+     "pos": 1,
+     "title": "Calm an Overactive Mind | Chandra Raga | Deep Nervous System Healing",
+     "views": 332.0,
+     "rpm": 3.27,
+     "impressions": 3103.0,
+     "ctr": 3.38
+    },
+    {
+     "pos": 2,
+     "title": "Instant focus music  | Sitar Instrumental | 1 hour",
+     "views": 94.0,
+     "rpm": 3.11,
+     "impressions": 1075.0,
+     "ctr": 2.51
+    },
+    {
+     "pos": 3,
+     "title": "Focus Music Santoor | 40Hz Gamma Waves | 40 Min Deep Work",
+     "views": 52.0,
+     "rpm": 3.54,
+     "impressions": 982.0,
+     "ctr": 2.65
+    },
+    {
+     "pos": 4,
+     "title": "Deep Focus Music | 40Hz Gamma Binaural Beats for Concentration",
+     "views": 108.0,
+     "rpm": 1.51,
+     "impressions": 591.0,
+     "ctr": 12.52
+    },
+    {
+     "pos": 5,
+     "title": "Brain Reset Music | Sitar for Mental Clarity | 20 Minutes",
+     "views": 45.0,
+     "rpm": 1.8,
+     "impressions": 929.0,
+     "ctr": 2.8
+    },
+    {
+     "pos": 6,
+     "title": "Mental Break | Sitar for Mind Reset | 20 Minutes",
+     "views": 28.0,
+     "rpm": 1.25,
+     "impressions": 831.0,
+     "ctr": 1.44
+    },
+    {
+     "pos": 7,
+     "title": "Tabla Music for Morning Focus & Motivation | 40Hz Gamma Energy",
+     "views": 29.0,
+     "rpm": 1.31,
+     "impressions": 271.0,
+     "ctr": 2.95
+    },
+    {
+     "pos": 8,
+     "title": "Nervous System Reset | Quiet Your Mind with Dilruba Instrumental Music | 1 Hour",
+     "views": 39.0,
+     "rpm": 4.33,
+     "impressions": 432.0,
+     "ctr": 3.24
+    },
+    {
+     "pos": 9,
+     "title": "Positive Vibes Music | Feel Good Hour | 1 Hour",
+     "views": 71.0,
+     "rpm": 8.96,
+     "impressions": 938.0,
+     "ctr": 4.16
+    },
+    {
+     "pos": 10,
+     "title": "Cello for Creative Flow | 20 Min Focus | 6Hz Theta Waves",
+     "views": 37.0,
+     "rpm": 1.59,
+     "impressions": 830.0,
+     "ctr": 3.25
+    },
+    {
+     "pos": 11,
+     "title": "Brain Fog? | Think Clearly with Sarangi 40Hz Gamma | 1 Hour",
+     "views": 11.0,
+     "rpm": 2.91,
+     "impressions": 70.0,
+     "ctr": 4.29
+    },
+    {
+     "pos": 12,
+     "title": "Switch Off | Dilruba Music for Digital Detox | 1 Hour Reset",
+     "views": 11.0,
+     "rpm": 2.55,
+     "impressions": 61.0,
+     "ctr": 3.28
+    },
+    {
+     "pos": 13,
+     "title": "Mindful Music | Relaxation | 40Hz Gamma Binaural Beats",
+     "views": 12.0,
+     "rpm": 2.25,
+     "impressions": 18.0,
+     "ctr": 22.22
+    }
+   ]
+  }
+ }
+}
