@@ -1,0 +1,80 @@
+{
+  "id": "v_2026-08-10_quiet_morning_sarangi",
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-08-07",
+  "planned_date": "2026-08-10",
+  "planned_slot": "06:30 IST Mon — morning intent, hero slot (Mon-AM is morning-lane's exception cell)",
+  "title": "Quiet Morning | Sarangi Raga Bilawal | 1.5 Hours",
+  "title_variants": {
+    "A": "Quiet Morning | Sarangi Raga Bilawal | 1.5 Hours",
+    "B": "Morning Stillness | Bowed Sarangi | 1.5 Hours of Calm",
+    "C": "Morning Without Rush | Raga Bilawal | 1.5 Hours"
+  },
+  "title_note": "A LOCKED single (user, 2026-08-07) — this ship's one A/B slot is spent on the THUMBNAIL IMAGE (first-ever image test), so no title test runs despite native title A/B being available (corrected 2026-08-07: Test & compare DOES test titles natively; channel runs it every ship). B and C are recorded alternates, NEVER LIVE — a future read must not treat them as tested-and-lost. Lead choice: 'quiet morning' VidIQ 72 HIGH (volume High, competition Low, In-Title 0/21 = real gap; searchers served by 6.6M/7.1M-view calm-instrumental morning playlists that never say the phrase) beat 'morning stillness' 60 (Medium volume; results are SPOKEN guided meditation — meditation is a dead lane here: 8 post-surge ships, median 244v) and 'fresh morning music' 60 (REJECTED: deep-house/chillout audience behind the query = the banked 'soulful' audience-fit failure pattern, plus 29d concept-repeat of 'Fresh Start' Jul-9). 'Quiet Morning' is also the morning mirror of the owned 'Quiet Night Music' register (CTR 6.53, 35.5% T1, RPM climbing) — cluster precedent, and it mood-matches the bowed sarangi. Instrument in title kept deliberately: named-instrument ships 6,429 impr/day vs 4,810 no-instrument (banked 2026-08-07 read); morning word kept: within-lane, time-of-day-named ships beat time-neutral on impressions (7,482 vs 4,278/day), CTR AND views — do not strip 'morning' for genericity.",
+  "lane": "morning",
+  "instrument": "Sarangi",
+  "raga": "Bilawal",
+  "validated_keywords": [
+    "quiet morning = 72 (VidIQ HIGH · volume High · competition Low · In-Title 0/21) — banked 2026-08-07",
+    "morning stillness = 60 (Medium volume; spoken-meditation audience) — B alternate only, never live",
+    "fresh morning music = 60 — REJECTED for audience-fit (deep-house results) + 29d concept-repeat",
+    "Slot-2 phrases 'Sarangi Raga Bilawal' / 'Bowed Sarangi' + thumb 'TAKE THE MORNING' all prescreened FRESH 2026-08-07",
+    "Instrument choice: orchestrator survivor #1 for Mon morning after Santoor and Bansuri hard-rejected as morning FLOPs; Sitar cooldown-blocked by the Aug-7 anchor (now Sitar); Sarod benched 2026-08-07 (impressions-starved: 3,620/day vs channel ~5,700)",
+    "Raga Bilawal = 'strong' morning fit in raga_fit_cache ('classic morning raga — bright and cheerful'; Raga Heal 24K precedent)"
+  ],
+  "thumbnail_text_main": "TAKE THE MORNING",
+  "thumbnail_text_variants": [
+    {
+      "label": "fixed-both-arms",
+      "text": "TAKE THE MORNING",
+      "strategy": "Text is FIXED on both arms — the image is the variable. 16 chars / 3 words, verb+time construction (the 'PAUSE HERE' 7.45% form). Morning lane: outcome register, never Q-hook (0/5 in tests). Dedup: 0 hits vs 105 used texts ('NO RUSH' and 'SLOW MORNINGS' are used — avoided). Alternate if mood reads too assertive at render time: 'EASE INTO IT' (also FRESH)."
+    }
+  ],
+  "thumbnail_prompt": "Pichwai/Kangra miniature on aged cream parchment, ornate gold and deep-teal border. Show the VIEWER living their quiet morning, NOT a musician performing — NO instrument anywhere in frame. TWO IMAGE ARMS, identical style, palette, figure and text; ONLY the moment changes. ARM A (bed): a person waking and stretching in bed, soft dawn light through a window — the composition measured at 6.11% CTR. ARM B (window): the same person standing at the window with a cup of tea, same dawn light, same unhurried energy. Overlay 'TAKE THE MORNING' in large dark-teal serif in its own banner panel at ~35% of frame, second tier reading 'Sarangi · Raga Bilawal'. Mobile-first: text must scan at 120px.",
+  "ab_test": {
+    "type": "thumbnail_image — FIRST-EVER image A/B (all 40+ prior tests varied text only)",
+    "hypothesis_id": "h_2026-08-10_thumb_composition_bed",
+    "arm_A": "waking/stretching in bed (the cross-video 6.11% composition)",
+    "arm_B": "at the window with tea (different viewer-moment, same principle)",
+    "fixed": "title + thumb text identical on both arms — image is the only variable",
+    "launch": "Studio Test & compare at publish; log to ab_raw_data.csv with the next test number",
+    "read": "day-7: per-arm share + post-test CTR (YT 'no clear winner' = data-insufficiency, always pull post-CTR); both arms are viewer-moment compositions so an auto-picked loser violates no lane rule"
+  },
+  "playlists": [
+    "Morning Energy",
+    "Peaceful Music"
+  ],
+  "description": "Quiet Morning | Sarangi Raga Bilawal | 1.5 Hours of calm Indian instrumental music to start the day slowly\n\nThe first hour of the day decides its pace. Before the phone, before the rush — a quiet morning is something you can choose.\n\nThis peaceful Indian ambient music holds a soft, unhurried brightness for 90 minutes, so your morning can open gently instead of starting with noise.\n\nYou'll hear the sarangi — a bowed instrument that sounds closer to a human voice than anything else in Indian music — carrying warm, sustained phrases over a soft tanpura drone. No percussion, no jumps, nothing sudden.\n\nPerfect for slow mornings, coffee or chai in silence, journaling, morning reading, gentle stretching, easing into work, or simply keeping the house calm while the day begins.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sarangi\nRaga: Bilawal — the classic bright morning raga\nStyle: Indian classical ambient, instrumental only\nMood: Quiet, warm, unhurried\nDuration: 1.5 hours\n\n🎧 HOW TO USE\nPut it on when you wake and let it run through your whole morning routine. Works on a speaker filling the room or on headphones — keep it just under conversation volume.\n\n⏱ CHAPTERS\n0:00:00 — First light\n0:08:00 — The house still quiet\n0:15:00 — Warming up\n0:23:00 — Chai steam\n0:30:00 — Settling into the day\n0:38:00 — Unhurried\n0:45:00 — Soft focus\n0:53:00 — Mid-morning calm\n1:00:00 — Steady brightness\n1:08:00 — Gentle momentum\n1:15:00 — The day, slowly\n1:23:00 — Carrying the calm forward\n\n⏱ BEST FOR\nSlow mornings\nCoffee or chai in silence\nJournaling and morning pages\nMorning reading\nGentle stretching\nEasing into work\nCalm start before a busy day\nKeeping the room peaceful\n\nIf this music helped, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#QuietMorning #SarangiMusic #MorningMusic #IndianAmbientMusic",
+  "tags": [
+    "quiet morning",
+    "morning music",
+    "sarangi music",
+    "sarangi",
+    "raga bilawal",
+    "indian classical music",
+    "calm morning music",
+    "peaceful morning music",
+    "morning relaxation music",
+    "instrumental music",
+    "1.5 hours",
+    "slow morning"
+  ],
+  "suno_prompt": "Instrumental only, no vocals, no humming — gentle Indian classical sarangi in Raga Bilawal, expressive bowed sarangi like a human voice with warm sustained phrases, soft tanpura drone beneath, no tabla, around 70 BPM, seamless loop.",
+  "suno_prompt_note": "Morning lane: NO 'slow' anywhere in the prompt (Suno over-drags on it — tempo lives in the BPM number; 70 = top of the morning-breathwork 60-70 band). NO tabla — both Sarangi+Tabla ships flopped (153v, 128v). 'Like a human voice' is the sarangi's banked physical descriptor. Keep energy gentle-bright, not sleepy: this is a morning ship, not sleep. 6 clips merged to ~90min per recipe.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-08-10 06:30 IST"
+  },
+  "preflight_passed": true,
+  "preflight_detail": "title A: 48 chars in [46,55] · 3 slots · no anti-pattern hits · VERDICT PASS (B 53 and C 47 also PASS) · lead 'quiet morning' FRESH + VidIQ 72 · slot-2 FRESH · thumb text FRESH, dedup 0/105",
+  "pending": [
+    "Generate Suno clips + merge to ~90min — ear-test bar: gentle-bright, voice-like bow, NO drag (this is not a sleep bed); if it fails, do not ship",
+    "Generate BOTH thumbnail arms (bed / window-with-tea) — identical style, figure, palette, text; no instrument in frame",
+    "Launch Test & compare (thumbnail image A/B) at publish + log to ab_raw_data.csv with the next test number",
+    "Day-7 read: per-arm share AND post-test CTR (no-winner rule) → update h_2026-08-10_thumb_composition_bed",
+    "Confirm whether the Aug-6 Tanpura ship went live (affects nothing on this brief, open week item)"
+  ],
+  "version": 1
+}

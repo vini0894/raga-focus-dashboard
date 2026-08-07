@@ -152,6 +152,17 @@
       ],
       "promoted_rule": null,
       "caveats": "n=1, single video. Age-decay confound: judge the slope against the video's own pre-test trajectory, not absolute impressions. Reads scheduled: ~Aug 2 (7d) and ~Aug 9 (test conclusion). Companion end-screen wiring to Morning Gratitude, if done, slightly contaminates attribution \u2014 note the wiring date at read time."
+    },
+    {
+      "id": "h_2026-08-10_thumb_composition_bed",
+      "created": "2026-08-07",
+      "status": "TESTING",
+      "statement": "Thumbnail IMAGE composition is a first-order CTR lever and the in-bed rest-framing specifically beats other viewer-moment compositions in the morning lane. Basis: cross-VIDEO measurement 2026-08-02 (waking/stretching in bed 6.11 pct vs jogging-with-earbuds 5.57 vs musician-performing 3.03) \u2014 confounded, different videos. All 40+ prior A/Bs varied thumb TEXT only; the image has never been the tested variable. First clean within-video test: v_2026-08-10_quiet_morning_sarangi, arm A bed vs arm B window-with-tea, identical text/title.",
+      "prediction": "Arm A (bed) takes >=55 pct share; if arms tie, the viewer-not-performer principle matters but the specific moment does not \u2014 both remain valid, pick per lane mood.",
+      "read": "d7 per-arm share + post-test CTR (no-winner rule). Update this entry with the verdict.",
+      "ships": [
+        "v_2026-08-10_quiet_morning_sarangi"
+      ]
     }
   ]
 }
