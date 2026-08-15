@@ -1,0 +1,78 @@
+{
+ "id": "v_2026-08-17_remove_negative_energy_tanpura",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-08-15",
+ "planned_date": "2026-08-17",
+ "planned_slot": "06:30 IST Mon — best consumption day (129%); uplifting AM intent",
+ "title": "Remove Negative Energy | Tanpura & 528Hz | 1.5 Hours",
+ "title_variants": {
+  "A": "Remove Negative Energy | Tanpura & 528Hz | 1.5 Hours",
+  "B": "Raise Your Vibration | Slow Tanpura | 1.5 Hours"
+ },
+ "title_note": "SPIRITUAL-ENERGY CLUSTER PROBE 1/3 (Tanpura). Swapped OFF Santoor 2026-08-15 — gate caught Santoor×morning is a FLOP cell (n=5 med 355v; Boost Aura was an outlier, not proof). Tanpura×morning = THIN but highest-engagement precedent (Morning Meditation CTR 10.77, AVD 50.4%). A=removal (Remove Negative Energy 62) vs B=elevation (Raise Your Vibration, fresh).",
+ "lane": "morning",
+ "instrument": "Tanpura",
+ "raga": "Bilawal",
+ "validated_keywords": [
+  "A: 'Remove Negative Energy' 62 (banked, first deployment of untapped §7 cluster)",
+  "B: 'Raise Your Vibration' — fresh (prescreen 2026-08-15), experimental arm",
+  "Cluster siblings queued: Attract Positive 61 (Tue), Healing Energy 62 (Fri) — decisive 3-instrument probe"
+ ],
+ "thumbnail_text_main": "LIGHTER BY MORNING",
+ "thumbnail_text_variants": [
+  {
+   "label": "fixed",
+   "text": "LIGHTER BY MORNING",
+   "strategy": "FIXED both arms. Outcome-imperative per morning rule. Dedup-fresh 2026-08-15 (FEEL THE SHIFT was used)."
+  }
+ ],
+ "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A figure at a sunlit window at dawn, dark heavy smoke lifting off their shoulders and dissolving into gold morning light, a santoor before them, marigolds. The moment heaviness leaves. Dark-teal serif overlay text.",
+ "thumbnail_ab_note": "Title A/B (removal vs elevation) → thumb FIXED. Both arms outcome-form, morning-rule aligned.",
+ "playlists": [
+  "Morning Energy",
+  "Meditation"
+ ],
+ "description": [
+  "Remove Negative Energy | Santoor & 528Hz | 1.5 Hours of bright Indian classical santoor to clear heavy energy and start your day light.",
+  "",
+  "Some mornings you wake up already carrying weight. Ninety minutes of shimmering hammered santoor in Raga Bilawal, tuned to a warm 528Hz, to help the heaviness lift and your energy reset before the day begins.",
+  "",
+  "🎧 HOW TO USE — play softly as you wake, stretch, or sit quietly. Bright but never jarring.",
+  "",
+  "⏱ BEST FOR — clearing negative energy · morning energy reset · aura cleansing · a light, positive start",
+  "",
+  "🎵 ABOUT — Raga Bilawal is the clear, open morning raga of Indian classical music; the santoor's hundred strings have long been the sound of lightness.",
+  "",
+  "#RemoveNegativeEnergy #PositiveEnergy #SantoorMusic #528Hz #MorningMusic"
+ ],
+ "tags": [
+  "remove negative energy",
+  "raise your vibration",
+  "positive energy music",
+  "tanpura drone",
+  "528hz",
+  "raga bilawal",
+  "indian classical music",
+  "1.5 hours",
+  "aura cleansing",
+  "morning energy",
+  "energy cleanse music",
+  "spiritual music"
+ ],
+ "suno_prompt": "Instrumental only, warm continuous tanpura drone in Raga Bilawal, 528Hz tuning, gentle luminous overtones, very slow soft swells, no percussion, light grounding morning character, seamless loop.",
+ "suno_prompt_note": "Drone = Suno-reliable, warm not thin. Gentle-uplift (morning), 528Hz cleanse character. Tanpura's precedent = very high AVD (50%).",
+ "experiment": "HYPOTHESIS [h_2026-08-15_spiritual_energy_cluster — TESTING, ship 1/3]: does the untapped spiritual-energy cluster reach? A/B tests removal (Remove Negative) vs elevation (Raise Vibration) framing. Read: d7 CTR + cohort impressions + power check. Cluster verdict from the 3-instrument probe (Santoor/Sitar/Tanpura).",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "publish": "2026-08-17 06:30 IST",
+  "loop_note": "4-6 bright Bilawal santoor clips, crossfade to ~90min."
+ },
+ "preflight_passed": true,
+ "preflight_detail": "title_preflight PASS (52/45c). cooldown Tanpura 6d ✓ (last Aug 11). track_record THIN (not flop). No clone. Thumb LIGHTER BY MORNING dedup-fresh.",
+ "pending": [
+  "Launch title A/B in Studio at publish + log to ab_raw_data.csv"
+ ],
+ "version": "v2 — Santoor→Tanpura (gate: Santoor-morning FLOP). Cluster probe 1/3. LOCKED user 2026-08-15."
+}

@@ -1,0 +1,78 @@
+{
+ "id": "v_2026-08-21_healing_energy_veena",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-08-15",
+ "planned_date": "2026-08-21",
+ "planned_slot": "06:30 IST Fri — uplifting AM; Fri strong launch day",
+ "title": "Healing Energy | Slow Veena & 528Hz | 1.5 Hours",
+ "title_variants": {
+  "A": "Healing Energy | Slow Veena & 528Hz | 1.5 Hours",
+  "B": "Good Energy Flow | Veena & 528Hz | 1.5 Hours"
+ },
+ "title_note": "SPIRITUAL-ENERGY CLUSTER PROBE 3/3 (Veena) — completes the 3-instrument test (Tanpura Mon / Sitar Tue / Veena Fri). Veena = the healing instrument, fits 'Healing Energy'. Veena×morning UNTESTED (not flop). A=healing (Healing Energy 62) vs B=flow (Good Energy Flow, fresh).",
+ "lane": "morning",
+ "instrument": "Veena",
+ "raga": "Bilawal",
+ "validated_keywords": [
+  "A: 'Healing Energy' 62 (banked cluster); B: 'Good Energy Flow' — fresh",
+  "Tanpura viable (last Aug 11 Brain-Fog co-credit, 10d). Drone-based energy = calm-uplift hybrid."
+ ],
+ "thumbnail_text_main": "RAISE YOUR VIBE",
+ "thumbnail_text_variants": [
+  {
+   "label": "fixed",
+   "text": "RAISE YOUR VIBE",
+   "strategy": "FIXED both arms. Outcome-imperative (morning/uplift). Dedup-fresh 2026-08-15."
+  }
+ ],
+ "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A serene figure seated in soft golden morning light with gentle luminous energy rising around them, a tall tanpura beside them, warm and calm. Quiet healing energy. Dark-teal serif overlay text.",
+ "thumbnail_ab_note": "Title A/B → thumb FIXED. Uplift = outcome-form.",
+ "playlists": [
+  "Morning Energy",
+  "Meditation"
+ ],
+ "description": [
+  "Healing Energy | Slow Tanpura & 528Hz | 1.5 Hours of deep, resonant drone to restore your energy and settle your morning.",
+  "",
+  "Ninety minutes of a warm, continuous tanpura drone in Raga Bilawal, tuned to 528Hz — spacious and grounding — to help your energy come back to center at the start of the day.",
+  "",
+  "🎧 HOW TO USE — play softly while you wake, breathe, or sit quietly. A steady, healing hum.",
+  "",
+  "⏱ BEST FOR — energy healing · gentle morning grounding · aura cleansing · quiet reset",
+  "",
+  "🎵 ABOUT — the tanpura is the drone heart of Indian classical music, its overtones long used to steady the mind; Raga Bilawal is the clear morning raga.",
+  "",
+  "#HealingEnergy #PositiveEnergy #TanpuraMusic #528Hz #MorningMusic"
+ ],
+ "tags": [
+  "healing energy",
+  "good energy flow",
+  "positive energy music",
+  "veena instrumental",
+  "528hz",
+  "raga bilawal",
+  "indian classical music",
+  "1.5 hours",
+  "energy healing",
+  "aura cleansing",
+  "morning energy",
+  "spiritual music"
+ ],
+ "suno_prompt": "Instrumental only, slow warm South Indian veena in Raga Bilawal over a soft tanpura drone, 528Hz tuning, rounded gentle plucked phrases, no percussion, spacious healing morning character around 60 BPM, seamless loop.",
+ "suno_prompt_note": "Veena = deep rounded healing tone. 528Hz character. Gentle-uplift (morning), not sleepy. May-grade calm.",
+ "experiment": "HYPOTHESIS [h_2026-08-15_spiritual_energy_cluster 3/3]: closes the 3-instrument cluster probe. If ≥2 of 3 energy ships beat cohort, the cluster is a NEW winner register → scale it. A/B healing vs flow framing.",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "publish": "2026-08-21 06:30 IST",
+  "loop_note": "4-6 tanpura-drone clips (Bilawal, 528Hz), crossfade ~90min."
+ },
+ "preflight_passed": true,
+ "preflift_detail": "title_preflight PASS both. cooldown Tanpura 10d ✓. Thumb dedup-fresh. Leads fresh.",
+ "pending": [
+  "Launch title A/B in Studio + log"
+ ],
+ "version": "v2 — Tanpura→Veena (Tanpura moved to Mon). Cluster probe 3/3. LOCKED user 2026-08-15.",
+ "preflight_detail": "title_preflight PASS both. cooldown Veena 9d ✓ (last Aug 12). track_record UNTESTED morning (not flop). No clone. Thumb RAISE YOUR VIBE dedup-fresh."
+}

@@ -1,0 +1,79 @@
+{
+ "id": "v_2026-08-20_overnight_calm_bansuri_3hr",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-08-15",
+ "planned_date": "2026-08-20",
+ "planned_slot": "19:00 IST Thu — evening sleep intent",
+ "title": "Overnight Calm | Bansuri Sleep Music | 3 Hours",
+ "title_variants": {
+  "A": "Overnight Calm | Bansuri Sleep Music | 3 Hours",
+  "B": "Fall Into Deep Sleep | Slow Bansuri Drone | 3 Hours"
+ },
+ "title_note": "FLAGSHIP — PROVEN sleep 3hr cell (Bansuri×sleep×3hr n=3 med 9,559v). Drone register WON last batch (Can't Sleep Tonight tanpura drone 1.56x cohort, CTR 5.4). A=outcome-calm (Overnight Calm) vs B=action (Fall Into Deep Sleep). Both fresh. No Q-hook title (retired).",
+ "lane": "sleep",
+ "instrument": "Bansuri",
+ "raga": "Yaman",
+ "validated_keywords": [
+  "A: 'Overnight Calm' — fresh; B: 'Fall Into Deep Sleep' — fresh",
+  "Sleep = #2 revenue lane by volume; drone format won. Bansuri = the proven sleep instrument (banked: Bansuri's only proven lane = sleep).",
+  "Blocked: 'sleep without waking' (flopped 0.22x Aug 7), 'can't sleep' (Jul 25 drone, 21d)"
+ ],
+ "thumbnail_text_main": "RIGHT THROUGH THE NIGHT",
+ "thumbnail_text_variants": [
+  {
+   "label": "fixed",
+   "text": "RIGHT THROUGH THE NIGHT",
+   "strategy": "FIXED both arms. Outcome-imperative (sleep rule; Q-hook loses). Dedup-fresh 2026-08-15."
+  }
+ ],
+ "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A figure deeply asleep under a vast indigo night sky with a low golden moon, a bansuri resting beside the bed, deep calm blues, one soft lamp. Unbroken sleep. Dark-teal serif overlay text.",
+ "thumbnail_ab_note": "Title A/B → thumb FIXED. Sleep = outcome-imperative both arms.",
+ "playlists": [
+  "Sleep Music",
+  "Peaceful Music"
+ ],
+ "description": [
+  "Overnight Calm | Bansuri Sleep Music | 3 Hours of slow, continuous bamboo flute to help you fall asleep and stay asleep all night.",
+  "",
+  "When the day won't switch off, let the bansuri carry it down. Three hours of soft, unbroken bamboo flute in Raga Yaman, the evening raga, with no percussion and nothing to pull you back — a deep, warm bed of sound to sleep right through the night.",
+  "",
+  "🎧 HOW TO USE — low volume, screen off. It loops seamlessly for the whole night.",
+  "",
+  "⏱ BEST FOR — falling asleep · staying asleep · night-time calm · deep rest",
+  "",
+  "🎵 ABOUT — Raga Yaman is the great evening raga of Indian classical music, played for centuries to settle the mind at nightfall.",
+  "",
+  "#SleepMusic #DeepSleep #BansuriMusic #RagaYaman #IndianClassicalMusic"
+ ],
+ "tags": [
+  "overnight calm",
+  "fall into deep sleep",
+  "sleep music",
+  "bansuri sleep music",
+  "deep sleep music",
+  "raga yaman",
+  "indian classical music",
+  "3 hours",
+  "music for sleep",
+  "stay asleep",
+  "insomnia relief",
+  "night music"
+ ],
+ "suno_prompt": "Instrumental only, very slow soft bamboo flute (bansuri) in Raga Yaman over a warm low tanpura drone, no percussion, gentle breathy long tones, ~50 BPM, deep dark night-time stillness for sleep, seamless loop.",
+ "suno_prompt_note": "MAY-GRADE CALM, genuinely sleepy (sleep lane). ⚠ if bansuri renders thin/shrill (the Jul-25 failure), fall back to a deep tanpura-drone bed under it or ship tanpura-drone. Ear-bar before upload.",
+ "experiment": "HYPOTHESIS [h_2026-07-22... drone-sleep continuation]: replicate the Can't Sleep Tonight drone win (1.56x cohort) in the PROVEN Bansuri sleep 3hr cell. Read: d7 CTR + cohort impressions + AVD vs 3hr-sleep cohort (Quiet Night 38.8%, Sleep Through Night 39.4%).",
+ "production_spec": {
+  "duration_minutes": 180,
+  "format": "3hr",
+  "publish": "2026-08-20 19:00 IST",
+  "loop_note": "5-7 slow Yaman bansuri clips over tanpura drone, long crossfades to ~3hr, consistent deep-calm level."
+ },
+ "preflight_passed": true,
+ "preflight_detail": "title_preflight PASS both (46/51c). cooldown Bansuri 9d ✓. track_record PROVEN (9,559 med). Thumb dedup-fresh. Leads fresh.",
+ "pending": [
+  "EAR-BAR before upload (bansuri render quality — Jul-25 lesson)",
+  "Launch title A/B in Studio + log"
+ ],
+ "version": "v1 — LOCKED user 2026-08-15. Flagship sleep-drone."
+}

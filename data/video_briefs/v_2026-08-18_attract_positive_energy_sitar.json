@@ -1,0 +1,85 @@
+{
+ "id": "v_2026-08-18_attract_positive_energy_sitar",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-08-15",
+ "planned_date": "2026-08-18",
+ "planned_slot": "06:30 IST Tue — 2nd-best consumption day (114%); HERO instrument returns to winning register",
+ "title": "Attract Positive Energy | Sitar & 432Hz | 1.5 Hours",
+ "title_variants": {
+  "A": "Attract Positive Energy | Sitar & 432Hz | 1.5 Hours",
+  "B": "Cleanse Your Energy | Sitar & 432Hz | 1.5 Hours"
+ },
+ "title_note": "HERO SHIP — Sitar restored to its WINNING cell (Morning Routine | Slow Sitar & 432Hz won 1.01x cohort, AVD 30.6%) after being wasted on Sleep Without Waking (0.22x) + Cozy Evening (180v) last batch. CLUSTER PROBE 2/3. A=attraction (Attract Positive Energy 61) vs B=cleansing (Cleanse Your Energy, fresh). Hz-in-title = the winning formula.",
+ "lane": "morning",
+ "instrument": "Sitar",
+ "raga": "Bilawal",
+ "validated_keywords": [
+  "A: 'Attract Positive Energy' 61 (banked untapped cluster)",
+  "B: 'Cleanse Your Energy' — fresh, experimental arm",
+  "HERO: Sitar carries 47% of channel views (Dopamine Reset); its proven fresh cell = morning+Hz (Morning Routine won). This restores it there."
+ ],
+ "thumbnail_text_main": "START LIGHTER",
+ "thumbnail_text_variants": [
+  {
+   "label": "fixed",
+   "text": "START LIGHTER",
+   "strategy": "FIXED both arms. Outcome-imperative (morning rule). Dedup-fresh 2026-08-15."
+  }
+ ],
+ "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A figure stepping into a bright sunlit courtyard at dawn, warm golden rays wrapping around them, a sitar resting nearby, birds rising. Positive energy drawn in with the morning light. Dark-teal serif overlay text.",
+ "thumbnail_ab_note": "Title A/B (attract vs cleanse) → thumb FIXED. Morning-rule aligned.",
+ "playlists": [
+  "Morning Energy",
+  "Meditation"
+ ],
+ "description": [
+  "Attract Positive Energy | Sitar & 432Hz | 1.5 Hours of warm Indian classical sitar to draw in good energy and start your morning bright.",
+  "",
+  "Set the tone before the day sets it for you. Ninety minutes of gentle, warm sitar in Raga Bilawal at a soothing 432Hz — light and open — to help you begin grounded, clear, and positive.",
+  "",
+  "🎧 HOW TO USE — play softly while you wake, stretch, or start your morning routine.",
+  "",
+  "⏱ BEST FOR — attracting positive energy · morning energy · a calm-but-bright start · energy cleansing",
+  "",
+  "🎵 ABOUT — the sitar is Indian classical music's most iconic voice; Raga Bilawal is its clear, warm morning raga.",
+  "",
+  "#AttractPositiveEnergy #PositiveEnergy #SitarMusic #432Hz #MorningMusic"
+ ],
+ "tags": [
+  "attract positive energy",
+  "cleanse your energy",
+  "positive energy music",
+  "sitar instrumental",
+  "432hz",
+  "raga bilawal",
+  "indian classical music",
+  "1.5 hours",
+  "morning energy",
+  "good energy music",
+  "aura cleansing",
+  "spiritual music"
+ ],
+ "suno_prompt": "Instrumental only, gentle warm sitar in Raga Bilawal with soft light tabla, 432Hz tuning, easy bright morning energy around 66 BPM, calm and positive without excitement, seamless loop.",
+ "suno_prompt_note": "HERO ship — this is Sitar's proven winning formula (Morning Routine 432Hz AVD 30.6%). Warm rounded tone, no thin shimmer. May-grade care.",
+ "experiment": "HYPOTHESIS [h_2026-08-15_spiritual_energy_cluster 2/3] + HERO-RESTORATION: Sitar back in its winning morning+Hz cell after two wasted ships. A/B attract vs cleanse. Read: d7 CTR + cohort + T1 geo (morning-uplift is a T1 register). Predict: beats the 0.22x/180v it posted on sleep/cozy-evening.",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "publish": "2026-08-18 06:30 IST",
+  "loop_note": "4-6 warm Bilawal sitar clips + soft tabla, crossfade ~90min."
+ },
+ "gate_override": {
+  "gate": "packaging_clone",
+  "verdict": "Sitar×morning×1.5hr vs Morning Routine (Aug 3, 15d)",
+  "override_reason": "Deliberate repeat of the channel's most recent WINNING cell (Morning Routine 1.01x, AVD 30.6%) with a fresh cluster concept; owner decayed to 1,306 impr/day (<2000 line). Restoring the hero instrument to its proven register — the point of the week.",
+  "approved_by": "user 2026-08-15"
+ },
+ "preflight_passed": true,
+ "preflight_detail": "title_preflight PASS both (51/47c). cooldown Sitar 5d ✓ (last Cozy Evening Aug 13). clone OVERRIDE documented (winning cell + decayed owner). Thumb START LIGHTER dedup-fresh.",
+ "pending": [
+  "Launch title A/B in Studio at publish + log to ab_raw_data.csv",
+  "d7 geo read (T1 share)"
+ ],
+ "version": "v1 — LOCKED user 2026-08-15. HERO restoration + cluster probe 2/3."
+}
