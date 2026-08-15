@@ -1,84 +1,84 @@
 {
-  "id": "v_2026-08-11_brain_fog_bansuri",
-  "status": "APPROVED",
-  "locked": true,
-  "created_at": "2026-08-07",
-  "planned_date": "2026-08-11",
-  "planned_slot": "19:00 IST Tue — evening cognitive intent",
-  "title": "Brain Fog Music | Bansuri & Tanpura | 1.5 Hours",
-  "title_variants": {
-    "A": "Brain Fog Music | Bansuri & Tanpura | 1.5 Hours",
-    "B": "Mental Space Music | Bansuri & Tanpura | 1.5 Hours"
-  },
-  "title_note": "NATIVE TITLE A/B — this ship's one test (thumb is FIXED; Monday holds the week's image test). Both arms share slot-2 'Bansuri & Tanpura' deliberately so the LEAD is the only variable (same convention as the Aug-7 anchor pair). A = 'Brain Fog' (VidIQ 70, deliberate REPEAT — last led ~84d ago, well past every lock, never paired with Bansuri; thumb 'BRAIN FOG?' won Test #43 +23.8pp so the concept is proven in this lane). B = 'Mental Space' (music-form scored 34 — a REGISTER bet on abstract-offering, not a search play; documented VidIQ-floor override). REJECTED: 'Declutter Your Mind' — textbook music-intent crater (standalone 58 → music-form 26) and the results page is book summaries + hypnosis (spoken content, zero music) = wrong audience, per the banked music-intent rule. Cell context: Bansuri × cognitive × 1.5hr extends the channel's best fresh-cognitive result (Cortisol Detox Jul-17: 3,716v, $18.86, HEALTHY). Nearest neighbour IS that ship (same Bansuri+Tanpura+1.5hr packaging at 25d — outside the 21d clone window, different lead; noted, accepted).",
-  "lane": "cognitive",
-  "instrument": "Bansuri",
-  "raga": "Yaman",
-  "validated_keywords": [
-    "brain fog = 70 (standalone; music-form unscored — optional VidIQ ask 'brain fog music' to confirm no crater)",
-    "mental space music = 34 — register bet, documented floor override (search is 19.5% of traffic; ship lives in browse)",
-    "declutter your mind: REJECTED — 58 standalone vs 26 music-form crater + spoken-content audience",
-    "Both titles + Sitar-fallback versions preflight PASS (47/50/48/51 chars, all in band)",
-    "Lead prescreen: 'Brain Fog' deliberate REPEAT (84d) · 'Mental Space' FRESH"
-  ],
-  "instrument_fallback_ladder": {
-    "context": "Bansuri renders are hitting content-violation flags (2026-08-07 user report; 3hr blocked outright, 1.5hr sometimes fails too). This ladder is pre-agreed — execute on the day without re-planning.",
-    "rung_1": "PRIMARY: Bansuri renders clear → ship this brief as-is Tue 19:00.",
-    "rung_2": "Bansuri NOT clear by Tue: SWAP DAYS with Wed — ship v_2026-08-12 Veena × anxiety on Tue 19:00 (Veena is 14d clear on Tue, brief ready), move THIS brief to Wed Aug 12. Bansuri gains 24h of production runway. Nothing else moves.",
-    "rung_3": "Bansuri STILL not clear by Wed: swap instrument to SITAR — titles become 'Brain Fog Music | Sitar Instrumental | 1.5 Hours' (48ch PASS) / 'Mental Space Music | Sitar Instrumental | 1.5 Hours' (51ch PASS), both preflight-validated 2026-08-07. Sitar is viable from Aug 12 (5d after the Aug-7 anchor), rests otherwise this week, zero downstream clashes; Sitar × cognitive is the lane's proven-ish cell (Mental Reset 1,783v · Brain Detox 3,826v). Swap the Suno prompt to the Sitar line in suno_prompt_note and update thumb 2nd tier to 'Sitar · Raga Yaman'."
-  },
-  "thumbnail_text_main": "OVERLOADED?",
-  "thumbnail_text_variants": [
-    {
-      "label": "fixed",
-      "text": "OVERLOADED?",
-      "strategy": "Cognitive is the ONE lane with a real thumb-format effect: Q-hook 3.52 vs imperative 2.87 — Q-hook is the rule here. 11 chars, single word + '?', reads huge at 120px. Fresh vs all 105 used texts (MENTAL OVERLOAD? is used; bare OVERLOADED? is not) and shares no word with either title arm (thumb must not repeat title words since the thumb is fixed across both). Alt if the render wants two words: 'FOGGY HEAD?' — but only over the B-arm-leaning read; it echoes A's 'fog'."
-    }
-  ],
-  "thumbnail_prompt": "Pichwai/Kangra miniature on aged cream parchment, ornate gold and deep-teal border. Show the VIEWER, not a performer: a person at an evening desk or window, day's-end light, slightly weary posture easing — the moment of switching off a cluttered head. NO instrument as subject (may rest at frame edge at most). Overlay 'OVERLOADED?' in large dark-teal serif in its own banner panel at ~35% of frame, second tier 'Bansuri · Raga Yaman' (switch to 'Sitar · Raga Yaman' if rung 3 fires). Mobile-first, text legible at 120px.",
-  "ab_test": {
-    "type": "native title A/B (Studio Test & compare)",
-    "hypothesis": "Proven clinical-state lead at high VidIQ (Brain Fog 70) vs abstract-offering register at low VidIQ (Mental Space 34) in the cognitive lane — a direct read on whether the VidIQ floor predicts anything for a browse-driven channel",
-    "arm_A": "Brain Fog Music (state, scored 70)",
-    "arm_B": "Mental Space Music (abstract offering, scored 34)",
-    "fixed": "thumbnail image + text identical on both arms; slot-2 shared",
-    "launch": "Studio Test & compare at publish; log to ab_raw_data.csv with the next test number",
-    "read": "day-7 per-arm share + post-test CTR (no-winner rule)"
-  },
-  "playlists": [
-    "Meditation",
-    "Peaceful Music"
-  ],
-  "description": "Brain Fog Music | Bansuri & Tanpura | 1.5 Hours of calm Indian instrumental music to clear a tired head\n\nYou know the feeling — the day is not over, but your head is. Thoughts feel slow, everything takes twice as long, and what you actually need is quiet.\n\nThis peaceful Indian ambient music gives your mind 90 minutes of low, steady calm so the fog can lift on its own.\n\nYou'll hear a breath-driven bamboo flute carrying long, unhurried phrases over a soft tanpura drone — no percussion, no sudden changes, nothing that asks for your attention.\n\nPerfect for clearing your head after work, an evening reset, reading without noise, winding down a busy mind, or easing the transition from work to home.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Bansuri\nRaga: Yaman — the classic evening raga, warm and settling\nStyle: Indian classical ambient, instrumental only\nMood: Quiet, steady, clearing\nDuration: 1.5 hours\n\n🎧 HOW TO USE\nPut it on when the workday ends and let it run. Speaker or headphones both work — keep it just under conversation volume and let it sit behind whatever you're doing.\n\n⏱ CHAPTERS\n0:00:00 — Setting the day down\n0:08:00 — First quiet\n0:15:00 — The fog starts to thin\n0:23:00 — Slower thoughts\n0:30:00 — Clear patches\n0:38:00 — Settling\n0:45:00 — Head above water\n0:53:00 — Quiet focus\n1:00:00 — Evening steadiness\n1:08:00 — Lighter\n1:15:00 — Room to think\n1:23:00 — Clear and calm\n\n⏱ BEST FOR\nClearing your head after work\nEvening mental reset\nReading in quiet\nWinding down a busy mind\nWork-to-home transition\nGentle background calm\nEasing screen fatigue\nAn unhurried end to the day\n\nIf this music helped, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#BrainFogMusic #BansuriMusic #IndianAmbientMusic #CalmMusic",
-  "tags": [
-    "brain fog music",
-    "brain fog",
-    "mental space music",
-    "bansuri music",
-    "bansuri and tanpura",
-    "indian classical music",
-    "raga yaman",
-    "calm music",
-    "mental clarity",
-    "evening relaxation music",
-    "instrumental music",
-    "1.5 hours"
-  ],
-  "suno_prompt": "Instrumental only, no vocals, no humming — gentle Indian classical bamboo flute in Raga Yaman, breath-driven bansuri with long sustained notes and natural breath pauses, soft tanpura drone beneath, no tabla, around 75 BPM, seamless loop.",
-  "suno_prompt_note": "Cognitive/evening lane: NO 'slow' anywhere (BPM number sets tempo; 75 = mid of the 70-80 cognitive band — forward movement without urgency). NO tabla for Bansuri (banked rule). RUNG-3 SITAR VERSION: 'Instrumental only, no vocals, no humming — gentle Indian classical sitar in Raga Yaman, warm plucked sitar with meend glissando slides and soft gamak ornamentation, soft tanpura drone beneath, around 75 BPM, seamless loop.' (Tabla is ALLOWED with Sitar but keep this one percussion-free — evening wind-down, not morning energy.) 6 clips merged to ~90min per recipe.",
-  "production_spec": {
-    "duration_minutes": 90,
-    "format": "1.5hr",
-    "publish": "2026-08-11 19:00 IST"
-  },
-  "preflight_passed": true,
-  "preflight_detail": "A 47ch PASS · B 50ch PASS · Sitar-fallback A 48ch / B 51ch PASS · leads prescreened (A deliberate REPEAT 84d, B FRESH) · thumb OVERLOADED? fresh vs 105 used texts, no title-word overlap",
-  "pending": [
-    "Generate Bansuri clips EARLY (violation risk is the whole reason for the ladder) — if flagged, execute rung 2 (day-swap with Wed Veena) then rung 3 (Sitar)",
-    "Ear-test: gentle-bright evening calm, no drag — cognitive is not sleep",
-    "Generate ONE thumbnail (no image test this ship — Monday holds that)",
-    "Launch native title A/B in Test & compare at publish + log to ab_raw_data.csv",
-    "Day-7 read: per-arm share + post-test CTR"
-  ],
-  "version": 1
+ "id": "v_2026-08-11_brain_fog_bansuri",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-08-07",
+ "planned_date": "2026-08-11",
+ "planned_slot": "19:00 IST Tue — evening cognitive intent",
+ "title": "Brain Fog Music | Bansuri & Tanpura | 1.5 Hours",
+ "title_variants": {
+  "A": "Brain Fog Music | Bansuri & Tanpura | 1.5 Hours",
+  "B": "Mental Space Music | Bansuri & Tanpura | 1.5 Hours"
+ },
+ "title_note": "NATIVE TITLE A/B — this ship's one test (thumb is FIXED; Monday holds the week's image test). Both arms share slot-2 'Bansuri & Tanpura' deliberately so the LEAD is the only variable (same convention as the Aug-7 anchor pair). A = 'Brain Fog' (VidIQ 70, deliberate REPEAT — last led ~84d ago, well past every lock, never paired with Bansuri; thumb 'BRAIN FOG?' won Test #43 +23.8pp so the concept is proven in this lane). B = 'Mental Space' (music-form scored 34 — a REGISTER bet on abstract-offering, not a search play; documented VidIQ-floor override). REJECTED: 'Declutter Your Mind' — textbook music-intent crater (standalone 58 → music-form 26) and the results page is book summaries + hypnosis (spoken content, zero music) = wrong audience, per the banked music-intent rule. Cell context: Bansuri × cognitive × 1.5hr extends the channel's best fresh-cognitive result (Cortisol Detox Jul-17: 3,716v, [rev], HEALTHY). Nearest neighbour IS that ship (same Bansuri+Tanpura+1.5hr packaging at 25d — outside the 21d clone window, different lead; noted, accepted).",
+ "lane": "cognitive",
+ "instrument": "Bansuri",
+ "raga": "Yaman",
+ "validated_keywords": [
+  "brain fog = 70 (standalone; music-form unscored — optional VidIQ ask 'brain fog music' to confirm no crater)",
+  "mental space music = 34 — register bet, documented floor override (search is 19.5% of traffic; ship lives in browse)",
+  "declutter your mind: REJECTED — 58 standalone vs 26 music-form crater + spoken-content audience",
+  "Both titles + Sitar-fallback versions preflight PASS (47/50/48/51 chars, all in band)",
+  "Lead prescreen: 'Brain Fog' deliberate REPEAT (84d) · 'Mental Space' FRESH"
+ ],
+ "instrument_fallback_ladder": {
+  "context": "Bansuri renders are hitting content-violation flags (2026-08-07 user report; 3hr blocked outright, 1.5hr sometimes fails too). This ladder is pre-agreed — execute on the day without re-planning.",
+  "rung_1": "PRIMARY: Bansuri renders clear → ship this brief as-is Tue 19:00.",
+  "rung_2": "Bansuri NOT clear by Tue: SWAP DAYS with Wed — ship v_2026-08-12 Veena × anxiety on Tue 19:00 (Veena is 14d clear on Tue, brief ready), move THIS brief to Wed Aug 12. Bansuri gains 24h of production runway. Nothing else moves.",
+  "rung_3": "Bansuri STILL not clear by Wed: swap instrument to SITAR — titles become 'Brain Fog Music | Sitar Instrumental | 1.5 Hours' (48ch PASS) / 'Mental Space Music | Sitar Instrumental | 1.5 Hours' (51ch PASS), both preflight-validated 2026-08-07. Sitar is viable from Aug 12 (5d after the Aug-7 anchor), rests otherwise this week, zero downstream clashes; Sitar × cognitive is the lane's proven-ish cell (Mental Reset 1,783v · Brain Detox 3,826v). Swap the Suno prompt to the Sitar line in suno_prompt_note and update thumb 2nd tier to 'Sitar · Raga Yaman'."
+ },
+ "thumbnail_text_main": "OVERLOADED?",
+ "thumbnail_text_variants": [
+  {
+   "label": "fixed",
+   "text": "OVERLOADED?",
+   "strategy": "Cognitive is the ONE lane with a real thumb-format effect: Q-hook 3.52 vs imperative 2.87 — Q-hook is the rule here. 11 chars, single word + '?', reads huge at 120px. Fresh vs all 105 used texts (MENTAL OVERLOAD? is used; bare OVERLOADED? is not) and shares no word with either title arm (thumb must not repeat title words since the thumb is fixed across both). Alt if the render wants two words: 'FOGGY HEAD?' — but only over the B-arm-leaning read; it echoes A's 'fog'."
+  }
+ ],
+ "thumbnail_prompt": "Pichwai/Kangra miniature on aged cream parchment, ornate gold and deep-teal border. Show the VIEWER, not a performer: a person at an evening desk or window, day's-end light, slightly weary posture easing — the moment of switching off a cluttered head. NO instrument as subject (may rest at frame edge at most). Overlay 'OVERLOADED?' in large dark-teal serif in its own banner panel at ~35% of frame, second tier 'Bansuri · Raga Yaman' (switch to 'Sitar · Raga Yaman' if rung 3 fires). Mobile-first, text legible at 120px.",
+ "ab_test": {
+  "type": "native title A/B (Studio Test & compare)",
+  "hypothesis": "Proven clinical-state lead at high VidIQ (Brain Fog 70) vs abstract-offering register at low VidIQ (Mental Space 34) in the cognitive lane — a direct read on whether the VidIQ floor predicts anything for a browse-driven channel",
+  "arm_A": "Brain Fog Music (state, scored 70)",
+  "arm_B": "Mental Space Music (abstract offering, scored 34)",
+  "fixed": "thumbnail image + text identical on both arms; slot-2 shared",
+  "launch": "Studio Test & compare at publish; log to ab_raw_data.csv with the next test number",
+  "read": "day-7 per-arm share + post-test CTR (no-winner rule)"
+ },
+ "playlists": [
+  "Meditation",
+  "Peaceful Music"
+ ],
+ "description": "Brain Fog Music | Bansuri & Tanpura | 1.5 Hours of calm Indian instrumental music to clear a tired head\n\nYou know the feeling — the day is not over, but your head is. Thoughts feel slow, everything takes twice as long, and what you actually need is quiet.\n\nThis peaceful Indian ambient music gives your mind 90 minutes of low, steady calm so the fog can lift on its own.\n\nYou'll hear a breath-driven bamboo flute carrying long, unhurried phrases over a soft tanpura drone — no percussion, no sudden changes, nothing that asks for your attention.\n\nPerfect for clearing your head after work, an evening reset, reading without noise, winding down a busy mind, or easing the transition from work to home.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Bansuri\nRaga: Yaman — the classic evening raga, warm and settling\nStyle: Indian classical ambient, instrumental only\nMood: Quiet, steady, clearing\nDuration: 1.5 hours\n\n🎧 HOW TO USE\nPut it on when the workday ends and let it run. Speaker or headphones both work — keep it just under conversation volume and let it sit behind whatever you're doing.\n\n⏱ CHAPTERS\n0:00:00 — Setting the day down\n0:08:00 — First quiet\n0:15:00 — The fog starts to thin\n0:23:00 — Slower thoughts\n0:30:00 — Clear patches\n0:38:00 — Settling\n0:45:00 — Head above water\n0:53:00 — Quiet focus\n1:00:00 — Evening steadiness\n1:08:00 — Lighter\n1:15:00 — Room to think\n1:23:00 — Clear and calm\n\n⏱ BEST FOR\nClearing your head after work\nEvening mental reset\nReading in quiet\nWinding down a busy mind\nWork-to-home transition\nGentle background calm\nEasing screen fatigue\nAn unhurried end to the day\n\nIf this music helped, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#BrainFogMusic #BansuriMusic #IndianAmbientMusic #CalmMusic",
+ "tags": [
+  "brain fog music",
+  "brain fog",
+  "mental space music",
+  "bansuri music",
+  "bansuri and tanpura",
+  "indian classical music",
+  "raga yaman",
+  "calm music",
+  "mental clarity",
+  "evening relaxation music",
+  "instrumental music",
+  "1.5 hours"
+ ],
+ "suno_prompt": "Instrumental only, no vocals, no humming — gentle Indian classical bamboo flute in Raga Yaman, breath-driven bansuri with long sustained notes and natural breath pauses, soft tanpura drone beneath, no tabla, around 75 BPM, seamless loop.",
+ "suno_prompt_note": "Cognitive/evening lane: NO 'slow' anywhere (BPM number sets tempo; 75 = mid of the 70-80 cognitive band — forward movement without urgency). NO tabla for Bansuri (banked rule). RUNG-3 SITAR VERSION: 'Instrumental only, no vocals, no humming — gentle Indian classical sitar in Raga Yaman, warm plucked sitar with meend glissando slides and soft gamak ornamentation, soft tanpura drone beneath, around 75 BPM, seamless loop.' (Tabla is ALLOWED with Sitar but keep this one percussion-free — evening wind-down, not morning energy.) 6 clips merged to ~90min per recipe.",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "publish": "2026-08-11 19:00 IST"
+ },
+ "preflight_passed": true,
+ "preflight_detail": "A 47ch PASS · B 50ch PASS · Sitar-fallback A 48ch / B 51ch PASS · leads prescreened (A deliberate REPEAT 84d, B FRESH) · thumb OVERLOADED? fresh vs 105 used texts, no title-word overlap",
+ "pending": [
+  "Generate Bansuri clips EARLY (violation risk is the whole reason for the ladder) — if flagged, execute rung 2 (day-swap with Wed Veena) then rung 3 (Sitar)",
+  "Ear-test: gentle-bright evening calm, no drag — cognitive is not sleep",
+  "Generate ONE thumbnail (no image test this ship — Monday holds that)",
+  "Launch native title A/B in Test & compare at publish + log to ab_raw_data.csv",
+  "Day-7 read: per-arm share + post-test CTR"
+ ],
+ "version": 1
 }

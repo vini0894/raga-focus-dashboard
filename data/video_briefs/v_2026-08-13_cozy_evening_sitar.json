@@ -1,80 +1,80 @@
 {
-  "id": "v_2026-08-13_cozy_evening_sitar",
-  "status": "APPROVED",
-  "locked": true,
-  "created_at": "2026-08-07",
-  "planned_date": "2026-08-13",
-  "planned_slot": "19:00 IST Thu — evening unwind intent",
-  "title": "Cozy Evening Music | Sitar Instrumental | 1.5 Hours",
-  "title_variants": {
-    "A": "Cozy Evening Music | Sitar Instrumental | 1.5 Hours",
-    "B": "End of Day Music | Sitar Instrumental | 1.5 Hours"
-  },
-  "title_note": "NATIVE TITLE A/B — aesthetic register vs functional time-marker. A = 'Cozy Evening' (67, highest-scoring calm lead; the Western comfort-content aesthetic, a large T1 cluster the channel has never touched). B = 'End of Day' (62, functional time-marker). Shared slot-2 'Sitar Instrumental' isolates the lead.\n\n⚠️ A-ARM REPLACED 2026-08-07 (user caught it): the original A was 'Evening Wind Down' (66) — REJECTED after a concept-FAMILY audit showed the unwind/wind-down family is a graveyard: 7 ships, MEDIAN 165 views / $0.59 (Switch Off 11v · Let Go Before Sleep 6v · Let Go Of Stress 114v · Bansuri to Unwind 344v · Wind Down Music 165v · Music to Unwind 834v · Unwind Slowly 218v). The most recent, 'Unwind Slowly | Slow Sarod | 1.5 Hours of Calm', shipped 2026-08-05 — 8 days before this slot, SAME lane and SAME runtime. It would have been the 8th entry in a disproven family.\n\n⚠️ ALSO REJECTED in the same audit: 'Mental Peace Music' (63) — cannibalizes 'Peace of Mind Music | Santoor | 3 Hours' (2026-07-13, 1,775v, still earning $11.48/28d). Banked rule: a still-earning owner is a HARD block; only old+small+decayed owners are reusable.\n\nFamily scan of the survivors: night-routine/evening-ritual n=0 (clean, never shipped) · end-of-day/after-work n=0 (clean, never shipped) · 'cozy' itself never used — the adjacent comfort/warmth family (Comfort Music 178v · Emotional Comfort 176v · Kindness 204v, median 178v) is weak but is a DIFFERENT register (emotional-soothing, not lifestyle-aesthetic); accepted with eyes open, and it is exactly what the A-arm tests. Reserve if A underperforms: 'Night Routine Music' (61, clean family, 52ch PASS).",
-  "lane": "calm_relax",
-  "instrument": "Sitar",
-  "raga": "Bhupali",
-  "track_record_override": "⚠️ DOCUMENTED FLOP OVERRIDE (user approved 2026-08-07, precedent: Jul-25 tanpura override). brief_gate FAILED this cell — Sitar × calm_relax n=2 med 928v classified FLOP — but the cutoff (~1,000 med) is FIXED and not decay-adjusted: 928 is ABOVE the current fresh calm_relax lane median (834), with healthy CTR 4.85 and AVD 29.9%. The Santoor version (med 391 — a true flop, well below lane-par) stays rejected. Flagged for tooling: track_record.py FLOP threshold should be cohort-relative in DECAY regime.",
-  "validated_keywords": [
-    "cozy evening music = 67 (banked 2026-08-07) — highest-scoring calm lead available",
-    "end of day music = 62 (banked 2026-08-07) — clean family, never shipped",
-    "REJECTED evening wind down = 66: unwind family n=7, median 165v/$0.59; last entry 2026-08-05 (8d, same lane+runtime)",
-    "REJECTED mental peace = 63: cannibalizes still-earning Peace of Mind Music (Jul 13, 1,775v, $11.48)",
-    "Reserve: night routine music = 61 (clean family) · slow living 64 (parked, 'slow' saturated x5)",
-    "Both titles preflight PASS (51/49 chars) · Sitar-cell FLOP override documented separately"
-  ],
-  "thumbnail_text_main": "LIGHTS LOW",
-  "thumbnail_text_variants": [
-    {
-      "label": "fixed",
-      "text": "LIGHTS LOW",
-      "strategy": "calm_relax thumb format is UNMEASURED (no thumb above 2,000 views) — picked on fit: outcome-state, 10 chars, place/time construction (the PAUSE HERE 7.45% family). Fresh vs all 105 used texts and shares no word with either title arm (evening/wind/down/cozy/music excluded). Alt: 'HOME AT LAST' (12ch, cozy-coded, also fresh)."
-    }
-  ],
-  "thumbnail_prompt": "Pichwai/Kangra miniature on aged cream parchment, ornate gold and deep-teal border. Show the VIEWER, not a performer: a person sunk into a chair or window seat at dusk, warm lamp glow, tea or a book resting nearby — the day visibly set down. NO instrument as subject. Overlay 'LIGHTS LOW' in large dark-teal serif in its own banner panel at ~35% of frame, second tier 'Sitar · Raga Bhupali'. Mobile-first, legible at 120px.",
-  "ab_test": {
-    "type": "native title A/B (Studio Test & compare)",
-    "hypothesis": "Lifestyle-aesthetic register (Cozy Evening, 67 — untouched T1 comfort cluster) vs functional time-marker register (End of Day, 62) in calm_relax. If A wins, read the per-arm country split — T1 share is the point.",
-    "arm_A": "Cozy Evening Music (aesthetic / T1 comfort register)",
-    "arm_B": "End of Day Music (functional time-marker)",
-    "fixed": "thumbnail image + text identical on both arms; slot-2 shared",
-    "launch": "Studio Test & compare at publish; log to ab_raw_data.csv with the next test number",
-    "read": "d7 2026-08-20 per-arm share (+ country split if readable) · d14 2026-08-27 post-test CTR — row in data/experiment_calendar.md"
-  },
-  "playlists": [
-    "Peaceful Music",
-    "Meditation"
-  ],
-  "description": "Cozy Evening Music | Sitar Instrumental | 1.5 Hours of calm Indian music to end the day gently\n\nThe work is done, or done enough. What's left is the evening — and how you spend the first hour of it decides how you sleep.\n\nThis peaceful Indian ambient music holds a soft, warm calm for 90 minutes, so the day can drain out of your shoulders on its own.\n\nYou'll hear a warm, unhurried sitar — long singing slides and gentle ornaments over a low tanpura drone. No percussion, no build-ups, nothing to follow.\n\nPerfect for winding down after work, a cozy evening in, dinner and dim lights, reading, unwinding with tea, or filling the room with calm while you do nothing at all.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sitar\nRaga: Bhupali — a gentle five-note evening raga, warm and open\nStyle: Indian classical ambient, instrumental only\nMood: Warm, soft, settled\nDuration: 1.5 hours\n\n🎧 HOW TO USE\nPut it on when you close the laptop and let it run through the evening. Room speaker at low volume is ideal — this is music for the space, not the headphones.\n\n⏱ CHAPTERS\n0:00:00 — Closing the day\n0:08:00 — First soft notes\n0:15:00 — Shoulders down\n0:23:00 — The room warms\n0:30:00 — Evening settles\n0:38:00 — Gentle glow\n0:45:00 — Nowhere to be\n0:53:00 — Slow light\n1:00:00 — Deep calm\n1:08:00 — Quiet comfort\n1:15:00 — The day, released\n1:23:00 — Ready for rest\n\n⏱ BEST FOR\nWinding down after work\nCozy evenings in\nDinner and dim lights\nReading in quiet\nTea and slow conversation\nAn empty hour of doing nothing\nPre-sleep calm\nKeeping the room peaceful\n\nIf this music helped, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#CozyEvening #EndOfDayMusic #SitarMusic #IndianAmbientMusic",
-  "tags": [
-    "cozy evening music",
-    "cozy evening",
-    "end of day music",
-    "sitar instrumental",
-    "sitar music",
-    "indian classical music",
-    "raga bhupali",
-    "evening relaxation music",
-    "calm music",
-    "evening music",
-    "instrumental music",
-    "1.5 hours"
-  ],
-  "suno_prompt": "Instrumental only, no vocals, no humming — gentle Indian classical sitar in Raga Bhupali, warm plucked sitar with meend glissando slides and soft gamak ornamentation, soft tanpura drone beneath, around 60 BPM, seamless loop.",
-  "suno_prompt_note": "calm_relax/evening lane: genuinely CALM prompt — no upbeat/energetic terms, no 'slow' (BPM 60 carries the tempo). Tabla is allowed with Sitar in general but stays OUT here — evening wind-down, not morning energy. 6 clips merged to ~90min per recipe.",
-  "production_spec": {
-    "duration_minutes": 90,
-    "format": "1.5hr",
-    "publish": "2026-08-13 19:00 IST"
-  },
-  "preflight_passed": true,
-  "preflight_detail": "A 51ch PASS · B 49ch PASS · leads FRESH + concept-FAMILY audited (unwind family rejected, mental-peace rejected) · thumb LIGHTS LOW fresh vs 105, no title-word overlap · no 'slow' anywhere · brief_gate: FAIL on track_record, shipped on documented user override (see track_record_override)",
-  "pending": [
-    "Generate Sitar clips + ear-test: warm and gentle, no brightness spikes, no drag",
-    "Generate ONE thumbnail",
-    "⚠ If Tuesday's ladder reached rung 3 (Sitar shipped Wed): re-plan this slot — Tanpura or weekend push, never back-to-back Sitar",
-    "Launch native title A/B at publish + log to ab_raw_data.csv",
-    "Read d7 2026-08-20 per experiment_calendar.md — if Cozy wins, pull the per-arm country split in Studio"
-  ],
-  "version": 1
+ "id": "v_2026-08-13_cozy_evening_sitar",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-08-07",
+ "planned_date": "2026-08-13",
+ "planned_slot": "19:00 IST Thu — evening unwind intent",
+ "title": "Cozy Evening Music | Sitar Instrumental | 1.5 Hours",
+ "title_variants": {
+  "A": "Cozy Evening Music | Sitar Instrumental | 1.5 Hours",
+  "B": "End of Day Music | Sitar Instrumental | 1.5 Hours"
+ },
+ "title_note": "NATIVE TITLE A/B — aesthetic register vs functional time-marker. A = 'Cozy Evening' (67, highest-scoring calm lead; the Western comfort-content aesthetic, a large T1 cluster the channel has never touched). B = 'End of Day' (62, functional time-marker). Shared slot-2 'Sitar Instrumental' isolates the lead.\n\n⚠️ A-ARM REPLACED 2026-08-07 (user caught it): the original A was 'Evening Wind Down' (66) — REJECTED after a concept-FAMILY audit showed the unwind/wind-down family is a graveyard: 7 ships, MEDIAN 165 views / [rev] (Switch Off 11v · Let Go Before Sleep 6v · Let Go Of Stress 114v · Bansuri to Unwind 344v · Wind Down Music 165v · Music to Unwind 834v · Unwind Slowly 218v). The most recent, 'Unwind Slowly | Slow Sarod | 1.5 Hours of Calm', shipped 2026-08-05 — 8 days before this slot, SAME lane and SAME runtime. It would have been the 8th entry in a disproven family.\n\n⚠️ ALSO REJECTED in the same audit: 'Mental Peace Music' (63) — cannibalizes 'Peace of Mind Music | Santoor | 3 Hours' (2026-07-13, 1,775v, still earning [rev]). Banked rule: a still-earning owner is a HARD block; only old+small+decayed owners are reusable.\n\nFamily scan of the survivors: night-routine/evening-ritual n=0 (clean, never shipped) · end-of-day/after-work n=0 (clean, never shipped) · 'cozy' itself never used — the adjacent comfort/warmth family (Comfort Music 178v · Emotional Comfort 176v · Kindness 204v, median 178v) is weak but is a DIFFERENT register (emotional-soothing, not lifestyle-aesthetic); accepted with eyes open, and it is exactly what the A-arm tests. Reserve if A underperforms: 'Night Routine Music' (61, clean family, 52ch PASS).",
+ "lane": "calm_relax",
+ "instrument": "Sitar",
+ "raga": "Bhupali",
+ "track_record_override": "⚠️ DOCUMENTED FLOP OVERRIDE (user approved 2026-08-07, precedent: Jul-25 tanpura override). brief_gate FAILED this cell — Sitar × calm_relax n=2 med 928v classified FLOP — but the cutoff (~1,000 med) is FIXED and not decay-adjusted: 928 is ABOVE the current fresh calm_relax lane median (834), with healthy CTR 4.85 and AVD 29.9%. The Santoor version (med 391 — a true flop, well below lane-par) stays rejected. Flagged for tooling: track_record.py FLOP threshold should be cohort-relative in DECAY regime.",
+ "validated_keywords": [
+  "cozy evening music = 67 (banked 2026-08-07) — highest-scoring calm lead available",
+  "end of day music = 62 (banked 2026-08-07) — clean family, never shipped",
+  "REJECTED evening wind down = 66: unwind family n=7, median 165v/[rev]; last entry 2026-08-05 (8d, same lane+runtime)",
+  "REJECTED mental peace = 63: cannibalizes still-earning Peace of Mind Music (Jul 13, 1,775v, [rev])",
+  "Reserve: night routine music = 61 (clean family) · slow living 64 (parked, 'slow' saturated x5)",
+  "Both titles preflight PASS (51/49 chars) · Sitar-cell FLOP override documented separately"
+ ],
+ "thumbnail_text_main": "LIGHTS LOW",
+ "thumbnail_text_variants": [
+  {
+   "label": "fixed",
+   "text": "LIGHTS LOW",
+   "strategy": "calm_relax thumb format is UNMEASURED (no thumb above 2,000 views) — picked on fit: outcome-state, 10 chars, place/time construction (the PAUSE HERE 7.45% family). Fresh vs all 105 used texts and shares no word with either title arm (evening/wind/down/cozy/music excluded). Alt: 'HOME AT LAST' (12ch, cozy-coded, also fresh)."
+  }
+ ],
+ "thumbnail_prompt": "Pichwai/Kangra miniature on aged cream parchment, ornate gold and deep-teal border. Show the VIEWER, not a performer: a person sunk into a chair or window seat at dusk, warm lamp glow, tea or a book resting nearby — the day visibly set down. NO instrument as subject. Overlay 'LIGHTS LOW' in large dark-teal serif in its own banner panel at ~35% of frame, second tier 'Sitar · Raga Bhupali'. Mobile-first, legible at 120px.",
+ "ab_test": {
+  "type": "native title A/B (Studio Test & compare)",
+  "hypothesis": "Lifestyle-aesthetic register (Cozy Evening, 67 — untouched T1 comfort cluster) vs functional time-marker register (End of Day, 62) in calm_relax. If A wins, read the per-arm country split — T1 share is the point.",
+  "arm_A": "Cozy Evening Music (aesthetic / T1 comfort register)",
+  "arm_B": "End of Day Music (functional time-marker)",
+  "fixed": "thumbnail image + text identical on both arms; slot-2 shared",
+  "launch": "Studio Test & compare at publish; log to ab_raw_data.csv with the next test number",
+  "read": "d7 2026-08-20 per-arm share (+ country split if readable) · d14 2026-08-27 post-test CTR — row in data/experiment_calendar.md"
+ },
+ "playlists": [
+  "Peaceful Music",
+  "Meditation"
+ ],
+ "description": "Cozy Evening Music | Sitar Instrumental | 1.5 Hours of calm Indian music to end the day gently\n\nThe work is done, or done enough. What's left is the evening — and how you spend the first hour of it decides how you sleep.\n\nThis peaceful Indian ambient music holds a soft, warm calm for 90 minutes, so the day can drain out of your shoulders on its own.\n\nYou'll hear a warm, unhurried sitar — long singing slides and gentle ornaments over a low tanpura drone. No percussion, no build-ups, nothing to follow.\n\nPerfect for winding down after work, a cozy evening in, dinner and dim lights, reading, unwinding with tea, or filling the room with calm while you do nothing at all.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sitar\nRaga: Bhupali — a gentle five-note evening raga, warm and open\nStyle: Indian classical ambient, instrumental only\nMood: Warm, soft, settled\nDuration: 1.5 hours\n\n🎧 HOW TO USE\nPut it on when you close the laptop and let it run through the evening. Room speaker at low volume is ideal — this is music for the space, not the headphones.\n\n⏱ CHAPTERS\n0:00:00 — Closing the day\n0:08:00 — First soft notes\n0:15:00 — Shoulders down\n0:23:00 — The room warms\n0:30:00 — Evening settles\n0:38:00 — Gentle glow\n0:45:00 — Nowhere to be\n0:53:00 — Slow light\n1:00:00 — Deep calm\n1:08:00 — Quiet comfort\n1:15:00 — The day, released\n1:23:00 — Ready for rest\n\n⏱ BEST FOR\nWinding down after work\nCozy evenings in\nDinner and dim lights\nReading in quiet\nTea and slow conversation\nAn empty hour of doing nothing\nPre-sleep calm\nKeeping the room peaceful\n\nIf this music helped, subscribe to Raga Focus for more uninterrupted Indian ambient healing music.\n\n#CozyEvening #EndOfDayMusic #SitarMusic #IndianAmbientMusic",
+ "tags": [
+  "cozy evening music",
+  "cozy evening",
+  "end of day music",
+  "sitar instrumental",
+  "sitar music",
+  "indian classical music",
+  "raga bhupali",
+  "evening relaxation music",
+  "calm music",
+  "evening music",
+  "instrumental music",
+  "1.5 hours"
+ ],
+ "suno_prompt": "Instrumental only, no vocals, no humming — gentle Indian classical sitar in Raga Bhupali, warm plucked sitar with meend glissando slides and soft gamak ornamentation, soft tanpura drone beneath, around 60 BPM, seamless loop.",
+ "suno_prompt_note": "calm_relax/evening lane: genuinely CALM prompt — no upbeat/energetic terms, no 'slow' (BPM 60 carries the tempo). Tabla is allowed with Sitar in general but stays OUT here — evening wind-down, not morning energy. 6 clips merged to ~90min per recipe.",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "publish": "2026-08-13 19:00 IST"
+ },
+ "preflight_passed": true,
+ "preflight_detail": "A 51ch PASS · B 49ch PASS · leads FRESH + concept-FAMILY audited (unwind family rejected, mental-peace rejected) · thumb LIGHTS LOW fresh vs 105, no title-word overlap · no 'slow' anywhere · brief_gate: FAIL on track_record, shipped on documented user override (see track_record_override)",
+ "pending": [
+  "Generate Sitar clips + ear-test: warm and gentle, no brightness spikes, no drag",
+  "Generate ONE thumbnail",
+  "⚠ If Tuesday's ladder reached rung 3 (Sitar shipped Wed): re-plan this slot — Tanpura or weekend push, never back-to-back Sitar",
+  "Launch native title A/B at publish + log to ab_raw_data.csv",
+  "Read d7 2026-08-20 per experiment_calendar.md — if Cozy wins, pull the per-arm country split in Studio"
+ ],
+ "version": 1
 }
