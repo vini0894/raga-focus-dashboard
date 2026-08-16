@@ -1,0 +1,79 @@
+{
+ "id": "v_2026-08-21_overnight_calm_santoor_3hr",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-08-16",
+ "planned_date": "2026-08-21",
+ "planned_slot": "19:00 IST PM · Fri — evening sleep intent; Fri = strongest launch day (199%)",
+ "title": "Overnight Calm | Santoor Sleep Music | 3 Hours",
+ "title_variants": {
+  "A": "Overnight Calm | Santoor Sleep Music | 3 Hours",
+  "B": "Rest Deeply Tonight | Santoor & Tanpura | 3 Hours"
+ },
+ "title_note": "SLEEP vs REST register test. A = calm-state, keeps ONE 'Sleep Music' anchor (search-safe; sleep-word family is getting crowded — Sleep Through the Night still earns ~3.1K impr/day). B = rest-imperative, FRESH register, zero 'sleep' word — tests whether rest pulls as well as sleep (user 2026-08-16). Santoor = 3rd sleep instrument (never packaged as sleep before); proven 3hr retention holder (Stress Relief Santoor = channel-record AVD 45:13).",
+ "lane": "sleep",
+ "instrument": "Santoor",
+ "raga": "Bilawal",
+ "validated_keywords": [
+  "A: 'Overnight Calm' + 'Santoor Sleep Music' — both fresh (prescreen 2026-08-15)",
+  "B: 'Rest Deeply Tonight' — fresh (prescreen 2026-08-16), rest-register, no sleep-word",
+  "Blocked: 3rd 'sleep'-titled ship this week avoided — B carries the load instead"
+ ],
+ "thumbnail_text_main": "SINK INTO SLEEP",
+ "thumbnail_text_variants": [
+  {
+   "label": "fixed",
+   "text": "SINK INTO SLEEP",
+   "strategy": "FIXED both arms (title register is the variable — sleep vs rest). Verb-first offering-imperative, the proven winning format (BREATHE EASIER 66%, SLOW THINGS DOWN 73%). Dedup-fresh 2026-08-16. USER-LOCKED."
+  }
+ ],
+ "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A figure sinking into deep cushions under a vast indigo night sky, low golden moon, a santoor resting nearby, warm lamp glow fading. Total surrender to sleep. Dark-teal serif overlay text.",
+ "thumbnail_ab_note": "Title A/B (sleep-state vs rest-imperative) → thumb FIXED. Sleep lane = outcome-imperative only (Q-hook loses).",
+ "playlists": [
+  "Sleep Music",
+  "Peaceful Music"
+ ],
+ "description": [
+  "Overnight Calm | Santoor Sleep Music | 3 Hours of slow, resonant santoor to carry you through the whole night.",
+  "",
+  "Three hours of warm, unhurried santoor in Raga Bilawal, played soft and slow, with nothing sudden and nothing to wait for — just a deep bed of sound to sink into and stay asleep till morning.",
+  "",
+  "🎧 HOW TO USE — low volume, screen off. Loops seamlessly all night.",
+  "",
+  "⏱ BEST FOR — falling asleep · staying asleep all night · deep rest · unwinding into sleep",
+  "",
+  "🎵 ABOUT — the santoor's hammered strings, played slow and soft, become a different instrument at night — deep, resonant, and settling.",
+  "",
+  "#SleepMusic #OvernightCalm #SantoorMusic #IndianClassicalMusic #DeepSleep"
+ ],
+ "tags": [
+  "overnight calm",
+  "rest deeply tonight",
+  "santoor sleep music",
+  "sleep music",
+  "deep sleep",
+  "tanpura",
+  "raga bilawal",
+  "indian classical music",
+  "3 hours",
+  "music for sleep",
+  "night music",
+  "deep rest"
+ ],
+ "suno_prompt": "Instrumental only, very slow soft santoor in Raga Bilawal over a warm low tanpura drone, no percussion, long gentle resonant tones, ~45 BPM, deep dark night-time stillness for sleep, seamless loop.",
+ "suno_prompt_note": "MAY-GRADE CALM, genuinely sleepy. Santoor played slow/soft/low-register (not its usual bright shimmer) — first time packaged for sleep. No tabla.",
+ "experiment": "TESTS: (1) sleep-state vs rest-imperative register (user hypothesis 2026-08-16) — read via A/B watch-share + CTR. (2) Santoor as a 3rd sleep instrument — precedent: channel-record 3hr AVD (45:13) on Stress Relief Santoor; does that retention hold in a sleep package? Read: d7 cohort + AVD vs 3hr-sleep peers (Quiet Night 38.8%, Sleep Through Night 39.4%).",
+ "production_spec": {
+  "duration_minutes": 180,
+  "format": "3hr",
+  "publish": "2026-08-21 19:00 IST",
+  "loop_note": "5-7 slow low-register Bilawal santoor clips over tanpura drone, long crossfades to ~3hr, consistent deep-calm level."
+ },
+ "preflight_passed": true,
+ "preflight_detail": "titles PASS both (46/53c). cooldown Santoor 22d ✓ (last Jul 30). No clone. Thumb SINK INTO SLEEP user-locked, dedup-fresh. Leads fresh.",
+ "pending": [
+  "Launch title A/B in Studio at publish + log to ab_raw_data.csv",
+  "Ear-bar check on slow-register Santoor before upload"
+ ],
+ "version": "v1 — LOCKED user 2026-08-16 ('SINK INTO SLEEP -- lets lock this'). Sleep-vs-rest register test. Completes the wk-Aug17 board."
+}
