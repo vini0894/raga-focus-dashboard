@@ -1,0 +1,89 @@
+{
+ "id": "v_2026-08-18_stress_relief_sitar",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-08-16",
+ "planned_date": "2026-08-18",
+ "planned_slot": "19:00 IST PM · Tue — Sitar tension-register evening (its proven daypart: Dopamine 2.26M + Nervous System 150K both PM)",
+ "title": "Stress Relief Music | Sitar Instrumental | 1.5 Hours",
+ "title_variants": {
+  "A": "Stress Relief Music | Sitar Instrumental | 1.5 Hours",
+  "B": "Stress Relief Music | Sitar Instrumental | 1.5 Hours"
+ },
+ "title_note": "⭐ IMAGE A/B TEST — the week's centerpiece. SAME title + SAME thumb text both arms; the IMAGE is the only variable (standard Pichwai miniature vs bold high-contrast visual). Title: 'Stress Relief Music' = 77, the highest-scored searchable tension phrase in the bank (user: 'searchable, will get impressions'). Sitar in its proven ACTIVE/tension register (user-corrected rule: works any daypart, fails only sleep/slow).",
+ "lane": "stress_burnout",
+ "instrument": "Sitar",
+ "raga": "Yaman",
+ "validated_keywords": [
+  "'Stress Relief Music' 77 — highest tension-register score in bank; owners fully decayed (Santoor 3hr ~21 views/day, Veena dead) — USER-APPROVED keyword override 2026-08-16",
+  "Sitar tension-register LIFETIME evidence: Cortisol Reset 27K · Brain Detox 46K · Nervous System 150K · Dopamine 2.26M — all evening/PM"
+ ],
+ "thumbnail_text_main": "CAN'T STOP THINKING?",
+ "thumbnail_text_variants": [
+  {
+   "label": "IMAGE-A standard",
+   "text": "CAN'T STOP THINKING?",
+   "strategy": "Standard Pichwai/Kangra miniature (the house style) — control arm."
+  },
+  {
+   "label": "IMAGE-B bold",
+   "text": "CAN'T STOP THINKING?",
+   "strategy": "BOLD variant: same text, HIGH-CONTRAST dramatic image — larger figure, deeper darks, stronger light source, less ornamental detail. The experimental arm. Text identical by design."
+  }
+ ],
+ "thumbnail_prompt": "IMAGE A (standard): Pichwai/Kangra miniature, ornate border, aged cream parchment. A figure at dusk by a window, head resting on hand, thoughts visualized as swirling patterns above, a sitar beside them, low lamp. IMAGE B (bold): same scene, minimal border, high-contrast — deep indigo darkness, one strong warm light on the face, thought-swirl luminous, sitar silhouette. Dark-teal serif text both.",
+ "thumbnail_ab_note": "⭐ FIRST-EVER IMAGE TEST (40+ text A/Bs never moved CTR past ~3%; image is the untested lever). Text FIXED. Q-hook legit here (anxiety/tension thumbs: Q wins 3/3).",
+ "playlists": [
+  "Healing & Anxiety Relief",
+  "Peaceful Music"
+ ],
+ "description": [
+  "Stress Relief Music | Sitar Instrumental | 1.5 Hours of warm Indian classical sitar to let the day's tension go.",
+  "",
+  "When your mind won't stop replaying the day — let the sitar slow it down. Ninety minutes of deep, warm sitar in Raga Yaman, the great evening raga, to unwind the body and quiet the noise.",
+  "",
+  "🎧 HOW TO USE — low volume, evening light. Breathe slower than the music.",
+  "",
+  "⏱ BEST FOR — stress relief · unwinding after work · a racing mind · evening calm",
+  "",
+  "🎵 ABOUT — Raga Yaman is Indian classical music's evening raga, played for centuries to settle the mind at dusk.",
+  "",
+  "#StressRelief #SitarMusic #IndianClassicalMusic #CalmMusic #EveningRelaxation"
+ ],
+ "tags": [
+  "stress relief music",
+  "sitar instrumental",
+  "stress relief",
+  "raga yaman",
+  "indian classical music",
+  "1.5 hours",
+  "calm music",
+  "evening relaxation",
+  "music for stress",
+  "unwind music",
+  "tension relief",
+  "relaxing sitar"
+ ],
+ "suno_prompt": "Instrumental only, warm deep sitar in Raga Yaman with soft gentle tabla, slow settling evening character around 60 BPM, tension releasing into calm, spacious and warm, seamless loop.",
+ "suno_prompt_note": "Sitar tension-register = present but calming (NOT sleepy — Sitar fails slow framings). Tabla WITH Sitar per banked pairing. May-grade warmth.",
+ "experiment": "⭐ h_2026-08-18_image_breaks_ctr_ceiling — THE week's key test: same title+text, standard vs bold image. Read: winning image's CTR >3.5% → image IS the CTR lever. Also: 77-lead searchability on Sitar's proven tension register (>1K bar).",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "publish": "2026-08-18 19:00 IST",
+  "loop_note": "4-6 warm Yaman sitar clips + soft tabla, crossfade ~90min. MUST produce 2 genuinely distinct thumbnail images."
+ },
+ "gate_override": {
+  "gate": "brief_gate.track_record + ab_leads",
+  "verdict": "Sitar×stress FLOP n=2 med 727v; same lead both arms ; lead TESTED-LOST A/B #37",
+  "override_reason": "(1) track_record FLOP = peak-era-metrics artifact: the 2 cell ships are decayed Cortisol Reset Sitars judged on TODAY'S 28d views; lifetime = 27K + 1.6K, and Sitar's tension-register lifetime = 27K/46K/150K/2.26M. Banked rule: never judge decayed videos from latest snapshot — the tool does; flagged for gates-fix. (2) ab_leads same-lead = intentional: IMAGE test, single variable. (3) lead reuse: owners decayed (~21 views/day) — user-approved override 2026-08-16. (4) TESTED-LOST #37: 'stress relief music' lost 56/44 as part of a PACKAGE test (permission+instrument pkg won) on 3hr Santoor — different instrument/format/context; the 77 search score stands; user approved the keyword knowingly.",
+  "approved_by": "user 2026-08-16 ('okay to override the keyword')"
+ },
+ "preflight_passed": true,
+ "preflight_detail": "title PASS (52c). cooldown Sitar 5d ✓ (last Aug 13). Lead owners decayed. Thumb dedup fresh. Overrides documented.",
+ "pending": [
+  "PRODUCE 2 DISTINCT IMAGES (standard vs bold) — without both, no test",
+  "Launch IMAGE A/B in Studio at publish + log to ab_raw_data.csv"
+ ],
+ "version": "v1 — LOCKED user 2026-08-16. Searchable 77-lead + Sitar tension register + THE image test."
+}

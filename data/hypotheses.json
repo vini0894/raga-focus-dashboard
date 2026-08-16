@@ -249,9 +249,7 @@
     "Veena"
    ],
    "linked_ships": [
-    "v_2026-08-17_attract_positive_energy_tanpura",
-    "v_2026-08-18_attract_positive_energy_sitar",
-    "v_2026-08-21_positive_energy_veena"
+    "v_2026-08-17_attract_positive_energy_tanpura"
    ],
    "promoted_rule": null,
    "caveats": "3 ships on 1 untested cluster = concentrated bet (user-approved). Hz STRIPPED from titles (n=1 confounded, no learning)."
@@ -270,7 +268,7 @@
     "Sitar"
    ],
    "linked_ships": [
-    "v_2026-08-18_attract_positive_energy_sitar"
+    "v_2026-08-18_stress_relief_sitar"
    ],
    "promoted_rule": null,
    "caveats": "THE most important test of the week. Production MUST make 2 genuinely distinct images (standard miniature vs bold energy/light visual)."
@@ -327,11 +325,11 @@
    "caveats": "DEFERRED by choice. Re-open only as a clean 1-variable A/B."
   },
   {
-   "id": "h_2026-08-15_sitar_morning_specialist",
+   "id": "h_2026-08-15_sitar_active_register",
    "created": "2026-08-15",
    "status": "CONFIRMED",
    "source": "chat_2026-08-15 — user caught 'last Sitar flopped'; verified on last 4 Sitar ships",
-   "statement": "Sitar is a MORNING-UPLIFT SPECIALIST, not a universal hero. Last 3 fresh ships: Morning Routine (morning, Aug3) WON 1,731v; Sleep Without Waking (sleep, Aug7) FLOP 432v/0.22x; Cozy Evening (calm, Aug13) FLOP 180v. 1 win in-register, 2 flops out. The 'hero' reputation = Dopamine Reset (April, morning) + Morning Routine — all morning-register. Sitar OUT of morning-uplift/cognitive = flops.",
+   "statement": "Sitar works in ACTIVE-MIND registers regardless of daypart (evidence: lifetime — Dopamine Reset 2.26M PM · Nervous System 150K PM · Morning Right 98K AM · Brain Detox 46K PM · Morning Motivation 40K AM · Cortisol Reset 27K PM). It fails only in genuinely SLEEPY/SLOW framings (Sleep Without Waking 432 · Cozy Evening 180 · Mind at Rest 27). Axis = register TEMPO, not time-of-day. User-corrected 2026-08-15: earlier 'morning-only' rule was too harsh.",
    "predicted_metric": "CONFIRMED — do not re-test. Rule enforced going forward.",
    "relevant_lanes": [
     "morning",
@@ -341,7 +339,7 @@
     "Sitar"
    ],
    "linked_ships": [],
-   "promoted_rule": "NEVER ship Sitar into sleep / calm_relax / stress / other / healing — it flops there (wasted twice in Aug). Sitar ONLY in morning-uplift or cognitive-clarity (its proven registers). recommend_slot + register-health gate should hard-flag Sitar×{sleep,calm_relax,stress,other,healing} as anti-pattern. Do not hand Sitar a slot on 'hero' reputation — it must be in-register.",
+   "promoted_rule": "Sitar → active-mind concepts any daypart (dopamine/nervous/brain/mind/cortisol/morning-energy). AVOID only sleep/slow/cozy framings. Do not over-restrict.",
    "caveats": "Reputation-over-data correction: stop treating Sitar as universally strong."
   },
   {
