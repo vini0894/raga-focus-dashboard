@@ -325,6 +325,24 @@
    "linked_ships": [],
    "promoted_rule": null,
    "caveats": "DEFERRED by choice. Re-open only as a clean 1-variable A/B."
+  },
+  {
+   "id": "h_2026-08-15_sitar_morning_specialist",
+   "created": "2026-08-15",
+   "status": "CONFIRMED",
+   "source": "chat_2026-08-15 — user caught 'last Sitar flopped'; verified on last 4 Sitar ships",
+   "statement": "Sitar is a MORNING-UPLIFT SPECIALIST, not a universal hero. Last 3 fresh ships: Morning Routine (morning, Aug3) WON 1,731v; Sleep Without Waking (sleep, Aug7) FLOP 432v/0.22x; Cozy Evening (calm, Aug13) FLOP 180v. 1 win in-register, 2 flops out. The 'hero' reputation = Dopamine Reset (April, morning) + Morning Routine — all morning-register. Sitar OUT of morning-uplift/cognitive = flops.",
+   "predicted_metric": "CONFIRMED — do not re-test. Rule enforced going forward.",
+   "relevant_lanes": [
+    "morning",
+    "cognitive"
+   ],
+   "relevant_instruments": [
+    "Sitar"
+   ],
+   "linked_ships": [],
+   "promoted_rule": "NEVER ship Sitar into sleep / calm_relax / stress / other / healing — it flops there (wasted twice in Aug). Sitar ONLY in morning-uplift or cognitive-clarity (its proven registers). recommend_slot + register-health gate should hard-flag Sitar×{sleep,calm_relax,stress,other,healing} as anti-pattern. Do not hand Sitar a slot on 'hero' reputation — it must be in-register.",
+   "caveats": "Reputation-over-data correction: stop treating Sitar as universally strong."
   }
  ]
 }
