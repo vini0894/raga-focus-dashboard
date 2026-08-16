@@ -238,8 +238,8 @@
    "created": "2026-08-15",
    "status": "TESTING",
    "source": "chat_2026-08-15",
-   "statement": "Untapped spiritual-energy cluster (Attract Positive/Raise Vibration/Cleanse/Good Energy Flow — offering-framed, Positive-Energy register PROVEN: Yoga 10.5K/CTR4.7, Joyful CTR5.7) reaches in decay regime. 3-instrument probe.",
-   "predicted_metric": "END-OF-WEEK ANSWER: >=2 of 3 ships beat same-age cohort impressions AND avg CTR >=3.5% → PROMOTE cluster to scaled register. <=1 → KILL cluster.",
+   "statement": "Untapped spiritual-energy cluster (Attract Positive/Raise Vibration/Cleanse/Good Energy Flow — offering-framed, Positive-Energy register PROVEN: Yoga 10.5K/CTR4.7, Joyful CTR5.7) reaches in decay regime. 2-instrument probe (Mon swapped to proven Gratitude).",
+   "predicted_metric": "END-OF-WEEK: >=1 of 2 beats cohort + CTR>=3.5 → cluster has legs; 0 → kill.",
    "relevant_lanes": [
     "morning"
    ],
@@ -249,9 +249,8 @@
     "Veena"
    ],
    "linked_ships": [
-    "v_2026-08-17_attract_positive_energy_tanpura",
     "v_2026-08-18_attract_positive_energy_sitar",
-    "v_2026-08-21_healing_energy_veena"
+    "v_2026-08-21_positive_energy_veena"
    ],
    "promoted_rule": null,
    "caveats": "3 ships on 1 untested cluster = concentrated bet (user-approved). Hz STRIPPED from titles (n=1 confounded, no learning)."
@@ -343,6 +342,25 @@
    "linked_ships": [],
    "promoted_rule": "NEVER ship Sitar into sleep / calm_relax / stress / other / healing — it flops there (wasted twice in Aug). Sitar ONLY in morning-uplift or cognitive-clarity (its proven registers). recommend_slot + register-health gate should hard-flag Sitar×{sleep,calm_relax,stress,other,healing} as anti-pattern. Do not hand Sitar a slot on 'hero' reputation — it must be in-register.",
    "caveats": "Reputation-over-data correction: stop treating Sitar as universally strong."
+  },
+  {
+   "id": "h_2026-08-17_instrument_naming",
+   "created": "2026-08-15",
+   "status": "TESTING",
+   "source": "chat_2026-08-15 user — clean A/B to settle the instrument-vs-generic question (n=2 wash was observational)",
+   "statement": "Naming the niche instrument in the title ('Slow Tanpura') vs generic ('Indian Instrumental') changes performance. Clean single-variable A/B on Mon (Gratitude concept, thumb fixed).",
+   "predicted_metric": "END-OF-WEEK: A/B watch-share winner — if 'Indian Instrumental' wins >55/45, generic > niche-instrument-naming (drop niche instrument names); if named wins, keep. Settles the wash.",
+   "relevant_lanes": [
+    "morning"
+   ],
+   "relevant_instruments": [
+    "Tanpura"
+   ],
+   "linked_ships": [
+    "v_2026-08-17_gratitude_instrument_test_tanpura"
+   ],
+   "promoted_rule": null,
+   "caveats": "Concept (Gratitude) is PROVEN so it isolates the naming variable cleanly."
   }
  ]
 }

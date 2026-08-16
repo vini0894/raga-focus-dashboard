@@ -1,22 +1,23 @@
 {
- "id": "v_2026-08-21_healing_energy_veena",
+ "id": "v_2026-08-21_positive_energy_veena",
  "status": "APPROVED",
  "locked": true,
  "created_at": "2026-08-15",
  "planned_date": "2026-08-21",
- "planned_slot": "06:30 IST Fri — uplifting AM; Fri strong launch day",
- "title": "Healing Energy | Slow Veena & 528Hz | 1.5 Hours",
+ "planned_slot": "06:30 IST AM · Fri — uplifting AM; strong launch day",
+ "title": "Positive Energy Music | Slow Veena | 1.5 Hours",
  "title_variants": {
-  "A": "Healing Energy | Slow Veena & 528Hz | 1.5 Hours",
-  "B": "Good Energy Flow | Veena & 528Hz | 1.5 Hours"
+  "A": "Positive Energy Music | Slow Veena | 1.5 Hours",
+  "B": "Good Energy Flow | Slow Veena | 1.5 Hours"
  },
- "title_note": "SPIRITUAL-ENERGY CLUSTER PROBE 3/3 (Veena) — completes the 3-instrument test (Tanpura Mon / Sitar Tue / Veena Fri). Veena = the healing instrument, fits 'Healing Energy'. Veena×morning UNTESTED (not flop). A=healing (Healing Energy 62) vs B=flow (Good Energy Flow, fresh).",
+ "title_note": "'Healing Energy' DROPPED (KILLED healing register — user flagged, all Healing ships flopped). → 'Positive Energy' PROVEN register (Yoga Positive Energy 10.5K/CTR4.7, Joyful Positive Vibes CTR5.7). Hz STRIPPED (no learning). A=Positive Energy vs B=Good Energy Flow, both offering.",
  "lane": "morning",
  "instrument": "Veena",
  "raga": "Bilawal",
  "validated_keywords": [
-  "A: 'Healing Energy' 62 (banked cluster); B: 'Good Energy Flow' — fresh",
-  "Tanpura viable (last Aug 11 Brain-Fog co-credit, 10d). Drone-based energy = calm-uplift hybrid."
+  "A: 'Positive Energy Music' — PROVEN register (10.5K & 5.7-CTR ships)",
+  "B: 'Good Energy Flow' fresh (offering)",
+  "DROPPED: 'Healing Energy' (dead register), Hz (no learning)"
  ],
  "thumbnail_text_main": "RAISE YOUR VIBE",
  "thumbnail_text_variants": [
@@ -46,18 +47,17 @@
   "#HealingEnergy #PositiveEnergy #TanpuraMusic #528Hz #MorningMusic"
  ],
  "tags": [
-  "healing energy",
   "good energy flow",
   "positive energy music",
   "veena instrumental",
-  "528hz",
   "raga bilawal",
   "indian classical music",
   "1.5 hours",
-  "energy healing",
   "aura cleansing",
   "morning energy",
-  "spiritual music"
+  "spiritual music",
+  "positive energy music",
+  "good energy flow"
  ],
  "suno_prompt": "Instrumental only, slow warm South Indian veena in Raga Bilawal over a soft tanpura drone, 528Hz tuning, rounded gentle plucked phrases, no percussion, spacious healing morning character around 60 BPM, seamless loop.",
  "suno_prompt_note": "Veena = deep rounded healing tone. 528Hz character. Gentle-uplift (morning), not sleepy. May-grade calm.",
