@@ -1,0 +1,84 @@
+{
+ "id": "v_2026-08-20_morning_motivation_bansuri",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-08-16",
+ "planned_date": "2026-08-20",
+ "planned_slot": "06:30 IST AM · Thu — warm-positive morning (achievement vs renewal register test)",
+ "title": "Morning Motivation | Bansuri Raga Bilawal | 1.5 Hours",
+ "title_variants": {
+  "A": "Morning Motivation | Bansuri Raga Bilawal | 1.5 Hours",
+  "B": "New Beginnings Music | Bansuri Raga Bilawal | 1.5 Hours"
+ },
+ "title_note": "REGISTER A/B: achievement-motivation vs warm-renewal (the gratitude-cousin). A = 'Morning Motivation' — 66 banked, concept did 40K lifetime (Sitar May 16) AND won its own A/B #17 as lead; owner decayed 1,483 impr/day ✓, different instrument (Sitar→Bansuri). B = 'New Beginnings Music' — fully fresh, warm renewal/hope register (gratitude-adjacent; gratitude itself reserved for reviving the existing Jun-18 video via Wed routing). Concept pivoted from morning-anxiety per user (wanted happy/positive morning).",
+ "lane": "morning",
+ "instrument": "Bansuri",
+ "raga": "Bilawal",
+ "validated_keywords": [
+  "A: 'Morning Motivation' 66 — proven concept (40K lifetime, A/B #17 winner), decayed owner, diff instrument ✓",
+  "B: 'New Beginnings Music' — FRESH (prescreen 2026-08-16), warm-renewal T1 register",
+  "Rejected en route: Gratitude (reserved for reviving existing video) · Joyful (owner earning 3.1K/day ⛔) · Morning Meditation (anti-pattern) · Positive Vibes (fights earning Joyful) · Fresh Start (concept-adjacent to live Morning Renewal)"
+ ],
+ "thumbnail_text_main": "START UNRUSHED",
+ "thumbnail_text_variants": [
+  {
+   "label": "fixed",
+   "text": "START UNRUSHED",
+   "strategy": "FIXED both arms (title register is the variable). Verb-first offering-imperative (winner format 66%/73%). Morning rule: no Q (0/5). USER-LOCKED."
+  }
+ ],
+ "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A figure stepping into a bright fresh morning — dew on the garden, first gold light, a bansuri in hand, path opening ahead. New day, unhurried and full of promise. Dark-teal serif overlay text.",
+ "thumbnail_ab_note": "Title A/B (motivation vs renewal register) → thumb FIXED. Both arms morning-rule aligned (outcome/offering, no Q).",
+ "playlists": [
+  "Morning Energy",
+  "Meditation"
+ ],
+ "description": [
+  "Morning Motivation | Bansuri Raga Bilawal | 1.5 Hours of bright bamboo flute to start your day with quiet momentum.",
+  "",
+  "Begin before the noise does. Ninety minutes of warm, gently uplifting bansuri in Raga Bilawal — the clear morning raga — to set an unhurried, positive tone for everything ahead.",
+  "",
+  "🎧 HOW TO USE — play softly as you wake, stretch, plan your day, or make your morning tea.",
+  "",
+  "⏱ BEST FOR — morning motivation · a fresh start · positive mornings · gentle momentum · new beginnings",
+  "",
+  "🎵 ABOUT — Raga Bilawal is the bright, open morning raga of Indian classical music; the bansuri its warmest voice.",
+  "",
+  "#MorningMotivation #MorningMusic #BansuriMusic #RagaBilawal #IndianClassicalMusic"
+ ],
+ "tags": [
+  "morning motivation",
+  "new beginnings music",
+  "morning music",
+  "bansuri",
+  "raga bilawal",
+  "indian classical music",
+  "1.5 hours",
+  "positive morning",
+  "fresh start",
+  "motivation music",
+  "peaceful morning",
+  "morning flute"
+ ],
+ "suno_prompt": "Instrumental only, warm gently uplifting bamboo flute (bansuri) in Raga Bilawal over a soft tanpura drone, no percussion, light hopeful morning character around 65 BPM, bright but unhurried, seamless loop.",
+ "suno_prompt_note": "Morning-positive = gentle energy (NOT sleepy, NOT excited). No tabla with Bansuri (banked). May-grade warmth.",
+ "experiment": "REGISTER A/B: achievement-motivation (proven 40K concept) vs warm-renewal (fresh gratitude-cousin) on Bansuri mornings. Read: watch-share winner + CTR + d7 cohort. Answers 'which half of the gratitude magic' — the warmth or the aspiration.",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "publish": "2026-08-20 06:30 IST",
+  "loop_note": "4-6 bright Bilawal bansuri clips over tanpura, crossfade ~90min."
+ },
+ "gate_override": {
+  "gate": "brief_gate.packaging_clone (expected)",
+  "verdict": "Bansuri×1.5hr 9d from Brain Fog (Aug 11)",
+  "override_reason": "Same instrument+format inside 21d window, but the owner is a spent 746v underperformer (~780 impr/day, decayed), different lane (cognitive→morning), different leads. Newcomer-fights-owner risk minimal.",
+  "approved_by": "user 2026-08-16 ('Thursday also, we can lock this')"
+ },
+ "preflight_passed": true,
+ "preflight_detail": "titles PASS (54/57c). cooldown Bansuri 9d ✓. 'Morning Motivation' owner decayed+diff-instrument ✓. 'New Beginnings' fresh. Thumb USER-LOCKED, dedup-fresh at selection.",
+ "pending": [
+  "Launch title A/B in Studio at publish + log to ab_raw_data.csv"
+ ],
+ "version": "v1 — LOCKED user 2026-08-16. Replaces parked morning_anxiety concept."
+}
