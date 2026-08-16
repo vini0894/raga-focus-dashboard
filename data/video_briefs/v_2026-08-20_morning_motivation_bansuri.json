@@ -71,8 +71,8 @@
  },
  "gate_override": {
   "gate": "brief_gate.packaging_clone (expected)",
-  "verdict": "Bansuri×1.5hr 9d from Brain Fog (Aug 11)",
-  "override_reason": "Same instrument+format inside 21d window, but the owner is a spent 746v underperformer (~780 impr/day, decayed), different lane (cognitive→morning), different leads. Newcomer-fights-owner risk minimal.",
+  "verdict": "Bansuri×1.5hr 9d from Brain Fog (Aug 11) ; track_record FLOP Bansuri×morning×1.5hr n=5 med 701v",
+  "override_reason": "Same instrument+format inside 21d window, but the owner is a spent 746v underperformer (~780 impr/day, decayed), different lane (cognitive→morning), different leads. Newcomer-fights-owner risk minimal. (2) FLOP flag: cell median 701v BUT CTR 5.31 / AVD 30.6 — reach-thin, quality-HIGH cell (best: Productive Day 5K). Concept itself did 40K lifetime + won A/B #17. Reach-thin ≠ dead.",
   "approved_by": "user 2026-08-16 ('Thursday also, we can lock this')"
  },
  "preflight_passed": true,
