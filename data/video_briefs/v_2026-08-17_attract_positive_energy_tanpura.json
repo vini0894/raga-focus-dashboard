@@ -1,0 +1,84 @@
+{
+ "id": "v_2026-08-17_attract_positive_energy_tanpura",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-08-15",
+ "planned_date": "2026-08-17",
+ "planned_slot": "06:30 IST AM · Mon — best consumption day (129%)",
+ "title": "Attract Positive Energy | Slow Tanpura | 1.5 Hours",
+ "title_variants": {
+  "A": "Attract Positive Energy | Slow Tanpura | 1.5 Hours",
+  "B": "Attract Positive Energy | Indian Classical | 1.5 Hours"
+ },
+ "title_note": "INSTRUMENT-NAMING A/B on a PROVEN-register concept. Concept = 'Attract Positive Energy' (Positive-Energy register PROVEN: Yoga Positive Energy 10.5K/CTR4.7, Joyful Positive Vibes CTR5.7). A NAMES the niche instrument ('Slow Tanpura'); B DROPS it for genre ('Indian Classical' — the Morning-Gratitude move that hit CTR 6.51 with no instrument named). ONLY variable = instrument-naming. THUMB FIXED. Best day (Mon 129%) = max impressions for clean read. Hz NOT here (would confound; Hz gets its own clean test on Fri).",
+ "lane": "morning",
+ "instrument": "Tanpura",
+ "raga": "Bilawal",
+ "validated_keywords": [
+  "Concept 'Attract Positive Energy' — PROVEN Positive-Energy register (Yoga 10.5K/CTR4.7, Joyful CTR5.7)",
+  "A/B variable = instrument-naming ONLY: 'Slow Tanpura' (named) vs 'Indian Classical' (no instrument, genre — Morning-Gratitude pattern that broke 5% CTR)",
+  "T1: Positive-Energy = T1-manifestation register"
+ ],
+ "thumbnail_text_main": "SHIFT YOUR ENERGY",
+ "thumbnail_text_variants": [
+  {
+   "label": "fixed",
+   "text": "SHIFT YOUR ENERGY",
+   "strategy": "FIXED both arms (instrument-naming is the ONLY variable). T1-manifestation wellness language (pulls T1 share per geo analysis) + verb-first offering-imperative (winning format: BREATHE EASIER 66%, SLOW THINGS DOWN 73%). Read = d7 GEO share (shift WHO clicks toward T1), not overall CTR. Dedup-fresh."
+  }
+ ],
+ "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. A figure in bright morning light, dark heaviness lifting off and turning to gold light around them, a tanpura beside them, warm garden. Energy shifting heavy to light. Dark-teal serif overlay text.",
+ "thumbnail_ab_note": "Title A/B (removal vs elevation) → thumb FIXED. Both arms outcome-form, morning-rule aligned.",
+ "playlists": [
+  "Morning Energy",
+  "Meditation"
+ ],
+ "description": [
+  "Attract Positive Energy | Slow Tanpura | 1.5 Hours of warm Indian classical tanpura to clear heavy energy and start your morning bright.",
+  "",
+  "Set the tone before the day sets it for you. Ninety minutes of soft, resonant tanpura in Raga Bilawal to help you begin grounded, clear, and positive.",
+  "",
+  "🎧 HOW TO USE — play softly while you wake, breathe, or start your morning.",
+  "",
+  "⏱ BEST FOR — attracting positive energy · morning energy reset · aura cleansing · a calm, bright start",
+  "",
+  "🎵 ABOUT — Raga Bilawal is the clear, warm morning raga of Indian classical music.",
+  "",
+  "#AttractPositiveEnergy #PositiveEnergy #IndianClassicalMusic #MorningMusic #Tanpura"
+ ],
+ "tags": [
+  "attract positive energy",
+  "positive energy music",
+  "positive vibes",
+  "indian classical",
+  "tanpura",
+  "raga bilawal",
+  "indian classical music",
+  "1.5 hours",
+  "aura cleansing",
+  "morning energy",
+  "energy cleanse music",
+  "spiritual music"
+ ],
+ "suno_prompt": "Instrumental only, warm resonant tanpura drone in Raga Bilawal, soft gentle overtones, very slow calm uplifting morning character, no percussion, spacious and grounding, seamless loop.",
+ "suno_prompt_note": "Positive-energy morning = warm, calm, gently uplifting (not sleepy, not upbeat). Tanpura drone = Suno-reliable.",
+ "experiment": "TESTS: h_2026-08-17_instrument_naming (named 'Slow Tanpura' vs no-instrument 'Indian Classical', concept+thumb fixed) + h_2026-08-15_spiritual_energy_cluster (Positive-Energy register reach). Read: A/B watch-share (naming) + d7 geo (T1) + CTR + cohort.",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "publish": "2026-08-17 06:30 IST",
+  "loop_note": "4-6 bright Bilawal santoor clips, crossfade to ~90min."
+ },
+ "preflight_passed": true,
+ "preflight_detail": "title_preflight: A PASS (49c); B PASS (52c). cooldown Tanpura 6d ✓. Positive-Energy = proven register. Thumb SHIFT YOUR ENERGY fresh. No clone. brief_gate below.",
+ "pending": [
+  "Launch title A/B in Studio at publish + log to ab_raw_data.csv"
+ ],
+ "version": "v7 — LOCKED user 2026-08-15: Attract Positive Energy (proven register) + instrument-naming A/B (Slow Tanpura vs Indian Classical) + SHIFT YOUR ENERGY. Concept reverted from Gratitude-copy per user. Ready to publish Mon 06:30.",
+ "gate_override": {
+  "gate": "brief_gate.ab_leads",
+  "verdict": "both variants lead with same phrase 'Attract Positive Energy'",
+  "override_reason": "FALSE POSITIVE for a single-variable test. This is an INSTRUMENT-NAMING A/B — the concept (lead) is INTENTIONALLY held constant so instrument-naming is the only variable (same design as an image test). ab_leads is meant for concept tests; it should exempt single-variable tests (instrument/image/Hz). Documented override; gate-gap noted for the pipeline.",
+  "approved_by": "user 2026-08-15"
+ }
+}
