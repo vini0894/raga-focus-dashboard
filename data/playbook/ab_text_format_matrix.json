@@ -1,0 +1,79 @@
+{
+ "version": "v1",
+ "generated": "2026-08-16",
+ "generated_from": "ab_raw_data.csv",
+ "n_total_datapoints": 63,
+ "n_concluded": 43,
+ "n_decisive_register_matchups": 33,
+ "metric_caveat": "Metric = YouTube Test&compare WATCH-TIME SHARE, not CTR. No text register has ever broken a ~3-5% CTR ceiling in this dataset (CTR is driven by concept/lane/image, not text). Read wins here as 'holds attention longer once clicked', not 'gets more clicks'.",
+ "overall": {
+  "OFFERING-IMPERATIVE": {
+   "wins": 14,
+   "n": 24,
+   "win_rate": 0.58
+  },
+  "PERMISSION": {
+   "wins": 3,
+   "n": 5,
+   "win_rate": 0.6
+  },
+  "Q-HOOK": {
+   "wins": 11,
+   "n": 23,
+   "win_rate": 0.48
+  },
+  "ABSTRACT-NOUN": {
+   "wins": 5,
+   "n": 14,
+   "win_rate": 0.36
+  }
+ },
+ "by_lane": {
+  "morning": {
+   "n": 6,
+   "winning_register": "OFFERING-IMPERATIVE",
+   "record": "4/5",
+   "avoid": "Q-HOOK (1/4)"
+  },
+  "calm_relax": {
+   "n": 4,
+   "winning_register": "OFFERING-IMPERATIVE",
+   "record": "3/3",
+   "avoid": "ABSTRACT-NOUN (0/2)"
+  },
+  "cognitive": {
+   "n": 6,
+   "winning_register": "Q-HOOK",
+   "record": "4/5",
+   "avoid": "OFFERING-IMPERATIVE (1/5)"
+  },
+  "stress_burnout": {
+   "n": 6,
+   "winning_register": "PERMISSION",
+   "record": "2/2 (small n)",
+   "note": "Q-HOOK and OFFERING-IMPERATIVE tied 2/4 each"
+  },
+  "sleep": {
+   "n": 6,
+   "winning_register": "mixed",
+   "note": "ABSTRACT-NOUN 2/2, OFFERING-IMPERATIVE 2/3, PERMISSION 1/3, Q-HOOK 1/4 — least settled lane"
+  },
+  "anxiety": {
+   "n": 4,
+   "winning_register": "OFFERING-IMPERATIVE",
+   "record": "2/3",
+   "note": "thin sample"
+  },
+  "healing": {
+   "n": 1,
+   "winning_register": "insufficient data"
+  }
+ },
+ "rule": "Default to OFFERING-IMPERATIVE thumb text in every lane EXCEPT cognitive/anxiety, where Q-HOOK wins. Never lead with ABSTRACT-NOUN alone. PERMISSION is a strong stress-lane candidate but under-tested (n=5) — worth deliberate future tests.",
+ "wk_2026-08-17_alignment_check": {
+  "Mon_energy": "SHIFT YOUR ENERGY = offering-imperative, morning lane → aligned (4/5 winner)",
+  "Tue_stress_relief": "CAN'T STOP THINKING? = Q-hook, stress lane → NOT the lane favorite (Q only 2/4 in stress) — acceptable because this ship's variable is IMAGE not text; thumb text held constant by design",
+  "Thu_morning_motivation": "START UNRUSHED = offering-imperative, morning lane → aligned (4/5 winner)",
+  "Fri_sleep": "SINK INTO SLEEP = offering-imperative, sleep lane → matches best-tested sleep register (2/3) but sleep is the least-settled lane; abstract-noun (2/2) is a live alternative worth testing next"
+ }
+}
