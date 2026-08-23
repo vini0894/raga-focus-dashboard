@@ -19,14 +19,14 @@
   },
   {
    "date": "2026-08-25",
-   "type": "AM · ⭐ hero",
+   "type": "AM · ⭐ hero · LOCKED",
    "instrument": "Bansuri",
    "lane": "stress/morning",
    "runtime_min": 90,
    "title_direction": "Morning Cortisol Detox | Bansuri Raga Bhairavi [432Hz] — HOSTS: Healing Raga Studio 896K · Soulful Breathscape 240K/224K · Dhun 12K (pool-fit 34/30, highest)",
    "thumb_text": "LOWER YOUR CORTISOL",
    "suno_prompt_rule": "Bhairavi bansuri, no tabla, morning-calm",
-   "status": "PENDING LOCK"
+   "status": "APPROVED"
   },
   {
    "date": "2026-08-26",
@@ -63,7 +63,6 @@
   }
  ],
  "preflight_pending": [
-  "Tue lock",
   "Wed–Fri titles + thumbs",
   "score 'negative thoughts' + 'emotional detox' (not in bank)"
  ],

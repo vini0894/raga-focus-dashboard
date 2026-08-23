@@ -1,0 +1,89 @@
+{
+ "id": "v_2026-08-25_morning_cortisol_detox_bansuri",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-08-23",
+ "planned_date": "2026-08-25",
+ "planned_slot": "06:30 IST AM · Tue ⭐ HERO — AM median 241 v/d vs PM 152; Bansuri cooldown clears exactly 5d (last Aug 20)",
+ "title": "Morning Cortisol Detox | Bansuri Raga Bhairavi 432Hz | 1.5 Hours",
+ "title_variants": {
+  "A": "Morning Cortisol Detox | Bansuri Raga Bhairavi 432Hz | 1.5 Hours",
+  "B": "Morning Cortisol Detox | Bansuri Raga Bhairavi | 1.5 Hours"
+ },
+ "title_note": "THE WEEK'S HERO + Hz TEST. Exact formula of the niche's biggest live wave: Healing Raga Studio 'Cortisol Reset 432Hz Krishna Bansuri' 896K/1mo (sends us 2,049 suggested views/28d) · Soulful Breathscape 'Morning Cortisol Detox 432Hz Raag Bhairavi' 240K + 224K + 77K + 73K · Dhun Detox 12K (sends us 1,523). Our Sitar Morning Right (101K) already sits in this pool. pool_fit 50 (highest of any candidate). A/B = SINGLE VARIABLE: identical titles ± '432Hz' → un-parks h_hz_in_title cleanly. Intentional ab_leads override (same as image test).",
+ "lane": "stress",
+ "daypart": "morning",
+ "instrument": "Bansuri",
+ "raga": "Bhairavi",
+ "validated_keywords": [
+  "cortisol detox music — bank 59 (Med comp), the Music-for-X form",
+  "432hz — bank 74 (Low comp)",
+  "cortisol — 65",
+  "Family: Cortisol Detox Music | Bansuri & Tanpura (Jul 17) = our BEST recent launch (526 v/d, top of cohort table); owner decayed to 361 impr/d → deliberate family repeat inside a now-huge wave. Sitar Cortisol Reset ×2 (May/Jun) decayed."
+ ],
+ "thumbnail_text_main": "LOWER YOUR CORTISOL",
+ "thumbnail_text_variants": [
+  {
+   "label": "fixed",
+   "text": "LOWER YOUR CORTISOL",
+   "strategy": "FIXED both arms (Hz is the variable). Offering-imperative (morning 4/5) that matches the title vocabulary exactly. USER-PICKED 2026-08-23. IMAGE (user-made 2026-08-23): viewer-moment — woman with tea at sunrise over a lotus pond, pavilion, Pichwai border, dark-green serif. Viewer-living-her-morning composition (the 5.6–6.1% type), deliberately unlike all three existing cortisol thumbs (performer compositions)."
+  }
+ ],
+ "thumbnail_prompt": "USE USER IMAGE (LOWER YOUR CORTISOL, 2026-08-23). Do not reuse the identical scene on Morning Energy Dilruba later — generate a distinct scene for that surface.",
+ "thumbnail_ab_note": "Title A/B (±432Hz) → thumb FIXED.",
+ "playlists": [
+  "Morning Energy Music",
+  "Healing & Anxiety Relief Music"
+ ],
+ "description": [
+  "Morning Cortisol Detox | Bansuri Raga Bhairavi 432Hz | 1.5 Hours — soft morning flute to lower the stress response before the day starts.",
+  "",
+  "Ninety minutes of slow bansuri in Raga Bhairavi, the raga of dawn, tuned to 432Hz over a warm tanpura drone. Nothing sudden, nothing to follow — just a calm bed of sound for the first hour of the day, when cortisol is highest.",
+  "",
+  "🎧 HOW TO USE — play low on waking, through your morning routine. Loops seamlessly.",
+  "",
+  "⏱ BEST FOR — stressful mornings · morning anxiety · lowering cortisol · a calm start · nervous system reset",
+  "",
+  "🎵 ABOUT — Raga Bhairavi is traditionally played at dawn; its soft, descending phrases on bansuri settle the breath and the body.",
+  "",
+  "#MorningCortisolDetox #CortisolDetox #Bansuri #RagaBhairavi #432Hz #IndianClassicalMusic #MorningMusic"
+ ],
+ "tags": [
+  "morning cortisol detox",
+  "cortisol detox music",
+  "lower your cortisol",
+  "bansuri raga bhairavi",
+  "432hz",
+  "bansuri music",
+  "raga bhairavi",
+  "morning music",
+  "stress relief music",
+  "morning anxiety",
+  "indian classical music",
+  "1.5 hours",
+  "cortisol reset",
+  "calm morning music"
+ ],
+ "suno_prompt": "Instrumental only, slow soft bansuri flute in Raga Bhairavi over a warm tanpura drone, gentle descending dawn phrases, no percussion, ~55 BPM, calm morning stress relief, seamless loop.",
+ "suno_prompt_note": "Bansuri = NO tabla (banked rule). Bhairavi dawn register, soft and slow but not sleepy. Format B compact.",
+ "experiment": "h_hz_in_title (single-variable ±432Hz; read d7 09-01 / d14 09-08 / d21 09-15) + h_2026-08-24_wave_adjacency_escape (RELATED_VIDEO share >25% at d7; hosts: HRS 896K, Soulful Breathscape 240K/224K, Dhun 12K). pool_fit 50.",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "publish": "2026-08-25 06:30 IST",
+  "loop_note": "5-6 slow Bhairavi bansuri+tanpura clips, long crossfades to 90 min, consistent soft dawn level. Bansuri 1.5hr renders were OK (3hr were flagged) — keep at 90 min."
+ },
+ "preflight_passed": true,
+ "preflight_detail": "titles PASS both (64/58c). Bansuri cooldown 5d ✓ exact. Thumb user-locked, dedup-fresh. pool_fit 50 vs cortisol_morning_bhairavi pool.",
+ "pending": [
+  "Launch title A/B (±432Hz) in Studio at publish + log to ab_raw_data.csv",
+  "d7 read 09-01: RELATED_VIDEO share + A/B watch-share"
+ ],
+ "gate_override": {
+  "ab_leads": "INTENTIONAL — single-variable Hz test (same lead both arms), same pattern as the 2026-08-18 image test. Documented in tests_wk_2026-08-24.md.",
+  "concept_family": "ACCEPTED — Cortisol Detox Bansuri (Jul 17, 39d) is the family owner: decayed (361 impr/d), and it was our best recent launch; deliberate repeat INTO a live 896K-host wave. Only ONE cortisol ship this week.",
+  "packaging_clone": "ACCEPTED — gate flags Mental Space Music | Bansuri & Tanpura (Aug 11, 14d, cognitive lane) and Morning Motivation | Bansuri (Aug 20, 5d, morning). Different lane + raga (Bhairavi) + concept; instrument cooldown ≥5d satisfied. Bansuri is REQUIRED by the wave formula (every host is Bansuri) — the clone risk is accepted as the price of pool-fit 50.",
+  "track_record": "UNTESTED cell (Bansuri×stress×1.5hr) — Cortisol Detox Bansuri (Jul 17) is the real precedent: 526 v/d, best recent launch."
+ },
+ "version": "v1 — LOCKED user 2026-08-23 ('LOCK TUESDAY'). Hero + Hz test + wave adjacency."
+}
