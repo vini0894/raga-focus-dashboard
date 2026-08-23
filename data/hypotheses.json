@@ -534,7 +534,7 @@
    "created": "2026-08-23",
    "status": "TESTING",
    "week": "wk_2026-08-24",
-   "statement": "WEEK-LEVEL META: wave-adjacency escapes the subscriber ceiling. New ships die in the subscriber pool (3-9% search, ~38-55% subscriber, 0.79-0.95x cohort) regardless of keyword/quality (Dopamine Detox: better CTR+AVD than the 283K pillar, 947 views). The two observed escapes: outlier CTR (Can't Sleep 5.87 -> 47% suggested) and suggested-pool adjacency to a live competitor wave (Digital Detox -> 31% suggested next to Dhun's video). All 5 wk-Aug24 ships cite a live wave.",
+   "statement": "🎯 WEEK GOAL wk_2026-08-24 (user, 2026-08-23): deliver ships that become SUGGESTED videos next to already-driving host videos. WEEK-LEVEL META: wave-adjacency escapes the subscriber ceiling. New ships die in the subscriber pool (3-9% search, ~38-55% subscriber, 0.79-0.95x cohort) regardless of keyword/quality (Dopamine Detox: better CTR+AVD than the 283K pillar, 947 views). The two observed escapes: outlier CTR (Can't Sleep 5.87 -> 47% suggested) and suggested-pool adjacency to a live competitor wave (Digital Detox -> 31% suggested next to Dhun's video). All 5 wk-Aug24 ships cite a live wave.",
    "predicted_metric": "≥2 of 5 ships get >25% RELATED_VIDEO share in week 1 (vs 1-of-19 baseline for non-wave ships), OR ≥2 beat 1.2x cohort. If neither: wave-adjacency is not a reliable escape, KILL and rethink distribution entirely.",
    "read_after": "2026-08-31",
    "reads": [],
@@ -544,7 +544,15 @@
     "d21": "2026-09-14"
    },
    "read_rule": "status flips to CONFIRMED/KILLED only at d21 (or earlier if overwhelming); d7 = early signal, d14 = distribution verdict",
-   "anchor": "ship date"
+   "anchor": "ship date",
+   "week_goal": true,
+   "hosts_by_ship": {
+    "Mon": "Healing Raga Studio 896K (Stop Overthinking) / Raga Heal Naturally",
+    "Tue": "HRS 896K + Soulful Breathscape 240K/224K + Dhun 12K",
+    "Wed": "Dhun Tension 6.4K",
+    "Thu": "Shanti LET IT GO 3.2K + Remove Negative Thoughts 2.2K",
+    "Fri": "Dhun Emotional Detox 62K"
+   }
   }
  ],
  "schema_note": "week = Monday of created week (wk_YYYY-MM-DD). reads[] = staged reads (d7/d14/d21). experiment_reads appends to reads[]; status changes at final read."

@@ -1,0 +1,77 @@
+{
+ "week_id": "wk_2026-08-24",
+ "week_start": "2026-08-24",
+ "week_end": "2026-08-28",
+ "created": "2026-08-23",
+ "status": "ACTIVE",
+ "notes": "🎯 WEEK GOAL: every ship is built to become a SUGGESTED video next to an already-driving host video (wave adjacency). New ships die in the subscriber pool (3–9% search, ~0.8× cohort) regardless of keyword/quality; the only observed escapes are outlier CTR and suggested-pool adjacency to a live wave. Each ship names its HOST video(s) and its pool-fit score; the read is RELATED_VIDEO share at d7 (>25% = entered the pool; baseline 1 of 19). Meta-hypothesis: h_2026-08-24_wave_adjacency_escape.",
+ "ships": [
+  {
+   "date": "2026-08-24",
+   "type": "AM · LOCKED",
+   "instrument": "Sitar",
+   "lane": "cognitive",
+   "runtime_min": 90,
+   "title_direction": "Reset Your Brain Naturally vs Stop Overthinking | Sitar Instrumental — HOST: Healing Raga Studio 896K ('Stop Overthinking' subtitle) + Raga Heal 'Reset Your Dopamine Naturally'",
+   "thumb_text": "MENTAL CLUTTER?",
+   "suno_prompt_rule": "active-register Sitar + tabla, Yaman",
+   "status": "APPROVED"
+  },
+  {
+   "date": "2026-08-25",
+   "type": "AM · ⭐ hero",
+   "instrument": "Bansuri",
+   "lane": "stress/morning",
+   "runtime_min": 90,
+   "title_direction": "Morning Cortisol Detox | Bansuri Raga Bhairavi [432Hz] — HOSTS: Healing Raga Studio 896K · Soulful Breathscape 240K/224K · Dhun 12K (pool-fit 34/30, highest)",
+   "thumb_text": "LOWER YOUR CORTISOL",
+   "suno_prompt_rule": "Bhairavi bansuri, no tabla, morning-calm",
+   "status": "PENDING LOCK"
+  },
+  {
+   "date": "2026-08-26",
+   "type": "PM",
+   "instrument": "Sarod",
+   "lane": "stress",
+   "runtime_min": 90,
+   "title_direction": "Tension You Can't Shake | Slow Sarod — HOST: Dhun 'Tension You Can't Shake?' 6.4K",
+   "thumb_text": "TBD",
+   "suno_prompt_rule": "slow Sarod",
+   "status": "CONCEPT"
+  },
+  {
+   "date": "2026-08-27",
+   "type": "PM",
+   "instrument": "Veena",
+   "lane": "anxiety",
+   "runtime_min": 90,
+   "title_direction": "Release Negative Thoughts | Veena Instrumental — HOSTS: Shanti 'LET IT GO' 3.2K/14d + 'Remove Negative Thoughts' 2.2K",
+   "thumb_text": "TBD",
+   "suno_prompt_rule": "slow Veena",
+   "status": "CONCEPT"
+  },
+  {
+   "date": "2026-08-28",
+   "type": "PM · 3hr",
+   "instrument": "Santoor",
+   "lane": "stress/emotional",
+   "runtime_min": 180,
+   "title_direction": "Emotional Detox | Santoor & Tanpura | 3 Hours — HOST: Dhun 'Emotional Detox' 62K (biggest recent breakout)",
+   "thumb_text": "TBD",
+   "suno_prompt_rule": "slow low Santoor over tanpura",
+   "status": "CONCEPT"
+  }
+ ],
+ "preflight_pending": [
+  "Tue lock",
+  "Wed–Fri titles + thumbs",
+  "score 'negative thoughts' + 'emotional detox' (not in bank)"
+ ],
+ "week_level_decisions": {
+  "goal": "suggested-adjacency to driving host videos (see notes)",
+  "slots": "heroes AM (AM median 241 v/d vs PM 152, 6wk age-aligned)",
+  "cortisol_concentration": "ONE cortisol ship (Tue hero) — not two, to avoid self-competition in the same pool",
+  "hz": "432Hz tested single-variable on Tue (h_hz_in_title un-parked)",
+  "no_sleep_ship": "deliberate pool-widening; 'Sleep Raga' benched as next fresh sleep lead"
+ }
+}
