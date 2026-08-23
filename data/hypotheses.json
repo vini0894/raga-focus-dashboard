@@ -1,7 +1,7 @@
 {
  "purpose": "Standing ledger of strategic bets — the compounding-strategy layer on top of the mechanical gates (cooldown/track_record/clone/lead_prescreen). A finding discovered once (competitor research, a track_record pattern, an A/B result) gets banked here as a tracked hypothesis instead of being re-derived every time it's asked about. recommend_slot.py reads this to tag candidates with the bet they'd be testing.",
  "lifecycle": "PROPOSED (stated, not yet tested) -> TESTING (a ship is live against it) -> CONFIRMED or KILLED (enough evidence to close it) -> promoted_rule (folded into a permanent playbook rule, e.g. anti_patterns.json / lane_packaging_directions.json)",
- "last_updated": "2026-08-15",
+ "last_updated": "2026-08-22",
  "hypotheses": [
   {
    "id": "h_2026-08-07_playlist_routing",
@@ -19,7 +19,8 @@
    "linked_ships": [
     "2026-08-07 · Sleep Without Waking | Slow Sitar Instrumental | 3 Hours [SJFG3MiSQpQ]",
     "2026-08-11 · Brain Fog Music | Bansuri & Tanpura | 1.5 Hours [M5M749GxFak]",
-    "2026-08-12 · Anxiety Detox Music | Veena Instrumental | 1.5 Hours [TfmVxYy0wUk]"
+    "2026-08-12 · Anxiety Detox Music | Veena Instrumental | 1.5 Hours [TfmVxYy0wUk]",
+    "2026-08-21 · Overnight Calm | Santoor Sleep Music | 3 Hours [xUMOZM0iULs]"
    ],
    "source": "Interventions: user playlist shuffles 2026-08-02 and 2026-08-07. Baseline positions + per-video metrics captured in data/playlist_snapshots/playlists_2026-08-07.json. Full method, confounds and checklist in data/playlist_snapshots/ANALYSIS_PLAN_wk_2026-08-10.md. ORIGIN: end screens measured DEAD (101 views channel-wide in a month, 0.01%) - playlists are the only working routing surface (4.94% of views but 8.92% of watch-time). CONSTRAINT: donor T1 share must be >= target T1 or the target gets diluted; Dopamine Reset (15.7% T1) must never point at a T1 video. CONFOUNDS to state in the read: 5 new ships entered playlists Aug 3-7; the channel independently inflected from 19,255 to ~25,000 daily views; the two shuffles are 5 days apart and cannot be separated. EXPECTED MAGNITUDE: low hundreds per month. The original the original headline figure model assumed 3x impressions on 17 targets; total playlist traffic is only ~36,800 views/28d channel-wide, so doubling it is worth roughly a quarter of that.",
    "promoted_rule": ""
@@ -163,7 +164,12 @@
     "2026-08-10 · Quiet Morning | Sarangi Raga Bilawal | 1.5 Hours [GwWrq4UEisU]",
     "2026-08-11 · Brain Fog Music | Bansuri & Tanpura | 1.5 Hours [M5M749GxFak]",
     "2026-08-12 · Anxiety Detox Music | Veena Instrumental | 1.5 Hours [TfmVxYy0wUk]",
-    "2026-08-13 · Cozy Evening Music | Sitar Instrumental | 1.5 Hours [0Bpy1OzyMhY]"
+    "2026-08-13 · Cozy Evening Music | Sitar Instrumental | 1.5 Hours [0Bpy1OzyMhY]",
+    "2026-08-14 · Bedtime Music | Surbahar Instrumental | 3 Hours [FVngE7TOM_Q]",
+    "2026-08-17 · Attract Positive Energy | Indian Classical Music | 1.5 Hours [bkgEf-xolkc]",
+    "2026-08-18 · Stress Relief Music | Sitar Instrumental | 1.5 Hours [SE9F5TvYoIA]",
+    "2026-08-20 · Morning Motivation | Bansuri Raga Bilawal | 1.5 Hours [oE1pbCsZgsU]",
+    "2026-08-21 · Overnight Calm | Santoor Sleep Music | 3 Hours [xUMOZM0iULs]"
    ],
    "promoted_rule": null,
    "caveats": "OBSERVATIONAL, not randomised — which concept shipped on which day was a human choice, so selection bias is live (if stronger concepts were deliberately placed Mon-Wed, the true Fri advantage would be even larger; if experiments went to Fri, it could be smaller). n=16 Fri / n=14 Mon. Treat as a scheduling PRIOR, not a settled rule, until 6+ deliberate ships test it."
@@ -184,7 +190,9 @@
     "v_2026-08-03_boost_your_aura_santoor",
     "2026-07-30 · Uplifting Music | Santoor Instrumental | 1.5 Hours [g5rAHcWaaAk]",
     "2026-08-03 · Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours [vD-GBhRqEV8]",
-    "2026-08-10 · Quiet Morning | Sarangi Raga Bilawal | 1.5 Hours [GwWrq4UEisU]"
+    "2026-08-10 · Quiet Morning | Sarangi Raga Bilawal | 1.5 Hours [GwWrq4UEisU]",
+    "2026-08-17 · Attract Positive Energy | Indian Classical Music | 1.5 Hours [bkgEf-xolkc]",
+    "2026-08-20 · Morning Motivation | Bansuri Raga Bilawal | 1.5 Hours [oE1pbCsZgsU]"
    ],
    "promoted_rule": null,
    "caveats": "Observational, lane-confounded (T1-heavy titles are mostly morning/uplift — may be the lane T1 wants, not the words). The two linked A/Bs are the controlled test."
@@ -205,7 +213,9 @@
     "Test #51 ab_raw_data.csv — 3 Hour Bansuri Relaxation/Deep Sleep (n=2 vehicle; flat-window baseline is the cleaner slope read)",
     "2026-07-30 · Uplifting Music | Santoor Instrumental | 1.5 Hours [g5rAHcWaaAk]",
     "2026-08-03 · Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours [vD-GBhRqEV8]",
-    "2026-08-10 · Quiet Morning | Sarangi Raga Bilawal | 1.5 Hours [GwWrq4UEisU]"
+    "2026-08-10 · Quiet Morning | Sarangi Raga Bilawal | 1.5 Hours [GwWrq4UEisU]",
+    "2026-08-17 · Attract Positive Energy | Indian Classical Music | 1.5 Hours [bkgEf-xolkc]",
+    "2026-08-20 · Morning Motivation | Bansuri Raga Bilawal | 1.5 Hours [oE1pbCsZgsU]"
    ],
    "promoted_rule": null,
    "caveats": "n=1, single video. Age-decay confound: judge the slope against the video's own pre-test trajectory, not absolute impressions. Reads scheduled: ~Aug 2 (7d) and ~Aug 9 (test conclusion). Companion end-screen wiring to Morning Gratitude, if done, slightly contaminates attribution — note the wiring date at read time."
@@ -230,13 +240,18 @@
     "2026-08-10 · Quiet Morning | Sarangi Raga Bilawal | 1.5 Hours [GwWrq4UEisU]",
     "2026-08-11 · Brain Fog Music | Bansuri & Tanpura | 1.5 Hours [M5M749GxFak]",
     "2026-08-12 · Anxiety Detox Music | Veena Instrumental | 1.5 Hours [TfmVxYy0wUk]",
-    "2026-08-13 · Cozy Evening Music | Sitar Instrumental | 1.5 Hours [0Bpy1OzyMhY]"
+    "2026-08-13 · Cozy Evening Music | Sitar Instrumental | 1.5 Hours [0Bpy1OzyMhY]",
+    "2026-08-14 · Bedtime Music | Surbahar Instrumental | 3 Hours [FVngE7TOM_Q]",
+    "2026-08-17 · Attract Positive Energy | Indian Classical Music | 1.5 Hours [bkgEf-xolkc]",
+    "2026-08-18 · Stress Relief Music | Sitar Instrumental | 1.5 Hours [SE9F5TvYoIA]",
+    "2026-08-20 · Morning Motivation | Bansuri Raga Bilawal | 1.5 Hours [oE1pbCsZgsU]",
+    "2026-08-21 · Overnight Calm | Santoor Sleep Music | 3 Hours [xUMOZM0iULs]"
    ]
   },
   {
    "id": "h_2026-08-15_spiritual_energy_cluster",
    "created": "2026-08-15",
-   "status": "TESTING",
+   "status": "KILLED",
    "source": "chat_2026-08-15",
    "statement": "Untapped spiritual-energy cluster (Attract Positive/Raise Vibration/Cleanse/Good Energy Flow — offering-framed, Positive-Energy register PROVEN: Yoga 10.5K/CTR4.7, Joyful CTR5.7) reaches in decay regime. 2-instrument probe (Mon swapped to proven Gratitude).",
    "predicted_metric": "END-OF-WEEK: >=1 of 2 beats cohort + CTR>=3.5 → cluster has legs; 0 → kill.",
@@ -252,7 +267,8 @@
     "v_2026-08-17_attract_positive_energy_tanpura"
    ],
    "promoted_rule": null,
-   "caveats": "3 ships on 1 untested cluster = concentrated bet (user-approved). Hz STRIPPED from titles (n=1 confounded, no learning)."
+   "caveats": "3 ships on 1 untested cluster = concentrated bet (user-approved). Hz STRIPPED from titles (n=1 confounded, no learning).",
+   "result": "READ 2026-08-23 (wk-Aug17): KILLED per criterion. Only 1 of 3 shipped in-cluster (Tue pivoted to stress-image test, Fri Veena parked); Mon Attract Positive Energy 0.79x cohort, CTR 3.19 < 3.5 bar. Thin evidence (n=1) but criterion said <=1 -> kill. Corroborating: zero positive-manifestation videos among current niche winners."
   },
   {
    "id": "h_2026-08-18_image_breaks_ctr_ceiling",
@@ -271,12 +287,13 @@
     "v_2026-08-18_stress_relief_sitar"
    ],
    "promoted_rule": null,
-   "caveats": "THE most important test of the week. Production MUST make 2 genuinely distinct images (standard miniature vs bold energy/light visual)."
+   "caveats": "THE most important test of the week. Production MUST make 2 genuinely distinct images (standard miniature vs bold energy/light visual).",
+   "result": "PARTIAL READ 2026-08-23: Tue blended CTR 2.52% — a >3.5% winning variant would need the loser at ~1.5%. Unlikely but not impossible. NEEDS Studio Test & compare screenshot to conclude; variant CTRs not in API."
   },
   {
    "id": "h_2026-08-20_sleep_drone_replication",
    "created": "2026-08-15",
-   "status": "TESTING",
+   "status": "PARKED",
    "source": "chat_2026-08-15 — Can't Sleep tanpura drone won 1.56x cohort + CTR5.4",
    "statement": "Bansuri sleep-drone 3hr replicates the Can't Sleep drone win. Sleep is the only lane where fresh ships broke 5% CTR.",
    "predicted_metric": "END-OF-WEEK ANSWER: day-7 cohort impressions >=1.2x AND CTR >=4.5% → drone-sleep formula confirmed repeatable. Below → one-off.",
@@ -290,7 +307,8 @@
     "v_2026-08-20_overnight_calm_bansuri_3hr"
    ],
    "promoted_rule": null,
-   "caveats": "⚠ Surbahar sleep 3hr just shipped ~Aug14 (SLEEP DEEPLY 55%) — possible sleep-3hr overlap; watch cannibalization."
+   "caveats": "⚠ Surbahar sleep 3hr just shipped ~Aug14 (SLEEP DEEPLY 55%) — possible sleep-3hr overlap; watch cannibalization.",
+   "result": "READ 2026-08-23: never ran as specced — Bansuri 3hr blocked, Fri became Santoor Overnight Calm. Substitute failing: CTR 1.84% day-1 vs 4.5% bar. Can't Sleep's 5.87 CTR increasingly looks like a one-off. Re-open only with an actual drone A/B."
   },
   {
    "id": "h_2026-08-18_hero_restoration",
@@ -309,20 +327,23 @@
     "v_2026-08-18_attract_positive_energy_sitar"
    ],
    "promoted_rule": null,
-   "caveats": "Confounded with the image test (same ship)."
+   "caveats": "Confounded with the image test (same ship).",
+   "result": "PARTIAL READ 2026-08-23: 596v @ day-4 (0.80x), will cross 1,000 ~d7-10. KEY POSITIVE: 34% suggested share — best of any recent ship — Sitar re-entered the suggested pool in its active register. Final read at d7."
   },
   {
    "id": "h_hz_in_title",
    "created": "2026-08-03",
-   "status": "PARKED",
+   "status": "TESTING",
    "source": "Morning Routine 432Hz n=1",
-   "statement": "Hz-in-title lifts AVD/CTR. n=1 confounded (Morning Routine won but also hero+morning+clean-concept).",
-   "predicted_metric": "NOT TESTED wk Aug17 — Hz STRIPPED from titles (user 2026-08-15: no learning = no passenger elements). To test: one ship, A vs B identical except '528Hz'.",
+   "statement": "UN-PARKED 2026-08-23: the '432Hz' token itself adds pull. Was parked Jul (n=1 confounded). Now clean: Tue A/B identical titles ± '432Hz', inside the live cortisol wave where every 200K+ winner carries it.",
+   "predicted_metric": "Tue A/B watch-share, single-variable. A (with Hz) wins → Hz standard in wave-formula titles. Wash/B wins → dropped permanently, hypothesis KILLED.",
    "relevant_lanes": [],
    "relevant_instruments": [],
    "linked_ships": [],
    "promoted_rule": null,
-   "caveats": "DEFERRED by choice. Re-open only as a clean 1-variable A/B."
+   "caveats": "DEFERRED by choice. Re-open only as a clean 1-variable A/B.",
+   "week": "wk_2026-08-24",
+   "read_after": "2026-08-31"
   },
   {
    "id": "h_2026-08-15_sitar_active_register",
@@ -359,7 +380,26 @@
     "v_2026-08-17_attract_positive_energy_tanpura"
    ],
    "promoted_rule": null,
-   "caveats": "Concept (Gratitude) is PROVEN so it isolates the naming variable cleanly."
+   "caveats": "Concept (Gratitude) is PROVEN so it isolates the naming variable cleanly.",
+   "result": "READ 2026-08-23: awaiting Studio Test & compare screenshot (Mon Attract Positive Energy: Indian Classical vs Slow Tanpura). Ship-level: 732v @ d5, 0.79x."
+  },
+  {
+   "id": "h_2026-08-24_wave_formula_pick",
+   "created": "2026-08-23",
+   "status": "TESTING",
+   "week": "wk_2026-08-24",
+   "statement": "Titles borrowed from a competitor's currently-winning formula out-pull self-invented concepts. Mon A/B picks between the two live formulas: 'Reset Your Brain Naturally' (Raga Heal, 351K #2 + 3.6K recent) vs 'Stop Overthinking' (Healing Raga Studio's 896K/1mo subtitle phrase).",
+   "predicted_metric": "A/B watch-share winner + per-arm CTR; ship day-7 cohort vs 186 views/day median. Winner's formula becomes a reusable title pattern; if the ship ALSO beats cohort, wave-formula > self-invented is supported.",
+   "read_after": "2026-08-31"
+  },
+  {
+   "id": "h_2026-08-24_wave_adjacency_escape",
+   "created": "2026-08-23",
+   "status": "TESTING",
+   "week": "wk_2026-08-24",
+   "statement": "WEEK-LEVEL META: wave-adjacency escapes the subscriber ceiling. New ships die in the subscriber pool (3-9% search, ~38-55% subscriber, 0.79-0.95x cohort) regardless of keyword/quality (Dopamine Detox: better CTR+AVD than the 283K pillar, 947 views). The two observed escapes: outlier CTR (Can't Sleep 5.87 -> 47% suggested) and suggested-pool adjacency to a live competitor wave (Digital Detox -> 31% suggested next to Dhun's video). All 5 wk-Aug24 ships cite a live wave.",
+   "predicted_metric": "≥2 of 5 ships get >25% RELATED_VIDEO share in week 1 (vs 1-of-19 baseline for non-wave ships), OR ≥2 beat 1.2x cohort. If neither: wave-adjacency is not a reliable escape, KILL and rethink distribution entirely.",
+   "read_after": "2026-08-31"
   }
  ]
 }
