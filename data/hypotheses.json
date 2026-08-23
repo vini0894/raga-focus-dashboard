@@ -535,7 +535,7 @@
    "status": "TESTING",
    "week": "wk_2026-08-24",
    "statement": "🎯 WEEK GOAL wk_2026-08-24 (user, 2026-08-23): deliver ships that become SUGGESTED videos next to already-driving host videos. WEEK-LEVEL META: wave-adjacency escapes the subscriber ceiling. New ships die in the subscriber pool (3-9% search, ~38-55% subscriber, 0.79-0.95x cohort) regardless of keyword/quality (Dopamine Detox: better CTR+AVD than the 283K pillar, 947 views). The two observed escapes: outlier CTR (Can't Sleep 5.87 -> 47% suggested) and suggested-pool adjacency to a live competitor wave (Digital Detox -> 31% suggested next to Dhun's video). All 5 wk-Aug24 ships cite a live wave.",
-   "predicted_metric": "≥2 of 5 ships get >25% RELATED_VIDEO share in week 1 (vs 1-of-19 baseline for non-wave ships), OR ≥2 beat 1.2x cohort. If neither: wave-adjacency is not a reliable escape, KILL and rethink distribution entirely.",
+   "predicted_metric": "≥2 of 5 ships get >25% RELATED_VIDEO share at d7 (baseline 1 of 19) AND week-2 Suggested views ≥50% of week-1 (durability — decay research 2026-08-23 showed competitor-wave adjacency is a 3-day burst: Digital Detox 691 → 18; owned-host adjacency holds: Sleep Through the Night wk2 = wk1). Burst-only = wave adjacency works for launch, not for distribution → pair with owned hosts.",
    "read_after": "2026-08-31",
    "reads": [],
    "read_schedule": {
@@ -552,7 +552,8 @@
     "Wed": "Dhun Tension 6.4K",
     "Thu": "Shanti LET IT GO 3.2K + Remove Negative Thoughts 2.2K",
     "Fri": "Dhun Emotional Detox 62K"
-   }
+   },
+   "research_ref": "warehouse/decay_research_2026-08-23.md (private)"
   },
   {
    "id": "h_2026-08-23_am_vs_pm_same_concept",
