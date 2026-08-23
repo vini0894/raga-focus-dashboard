@@ -553,6 +553,16 @@
     "Thu": "Shanti LET IT GO 3.2K + Remove Negative Thoughts 2.2K",
     "Fri": "Dhun Emotional Detox 62K"
    }
+  },
+  {
+   "id": "h_2026-08-23_am_vs_pm_same_concept",
+   "created": "2026-08-23",
+   "status": "PROPOSED",
+   "week": "wk_2026-08-24",
+   "statement": "Publish slot (AM vs PM) changes week-1 reach when CONCEPT is held constant. Motivation: 6-week AM 241 vs PM 152 collapsed to 156 vs 149 over the last 2 weeks once confounds were visible — the gap was July AM concept wins. Clean design: same concept+instrument class shipped AM one week, PM the next; read day-5 views/day + impr/day + CTR.",
+   "predicted_metric": "same-concept pair: |AM - PM| day-5 v/d < 15% → slot is not a lever (confirm demotion); > 30% in either direction → reinstate a slot rule with direction.",
+   "reads": [],
+   "read_schedule": {}
   }
  ],
  "schema_note": "week = Monday of created week (wk_YYYY-MM-DD). reads[] = staged reads (d7/d14/d21). experiment_reads appends to reads[]; status changes at final read."

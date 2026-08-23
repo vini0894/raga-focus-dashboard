@@ -4,7 +4,7 @@
  "locked": true,
  "created_at": "2026-08-23",
  "planned_date": "2026-08-25",
- "planned_slot": "06:30 IST AM · Tue ⭐ HERO — AM median 241 v/d vs PM 152; Bansuri cooldown clears exactly 5d (last Aug 20)",
+ "planned_slot": "06:30 IST AM · Tue ⭐ HERO — morning-intent concept → AM",
  "title": "Morning Cortisol Detox | Bansuri Raga Bhairavi 432Hz | 1.5 Hours",
  "title_variants": {
   "A": "Morning Cortisol Detox | Bansuri Raga Bhairavi 432Hz | 1.5 Hours",
@@ -85,5 +85,6 @@
   "packaging_clone": "ACCEPTED — gate flags Mental Space Music | Bansuri & Tanpura (Aug 11, 14d, cognitive lane) and Morning Motivation | Bansuri (Aug 20, 5d, morning). Different lane + raga (Bhairavi) + concept; instrument cooldown ≥5d satisfied. Bansuri is REQUIRED by the wave formula (every host is Bansuri) — the clone risk is accepted as the price of pool-fit 50.",
   "track_record": "UNTESTED cell (Bansuri×stress×1.5hr) — Cortisol Detox Bansuri (Jul 17) is the real precedent: 526 v/d, best recent launch."
  },
- "version": "v1 — LOCKED user 2026-08-23 ('LOCK TUESDAY'). Hero + Hz test + wave adjacency."
+ "version": "v1 — LOCKED user 2026-08-23 ('LOCK TUESDAY'). Hero + Hz test + wave adjacency.",
+ "slot_note_corrected": "2026-08-23: removed 'AM median 241 vs PM 152' claim — publish at the CONCEPT'S intent time (morning concepts AM, evening/sleep PM). Slot is NOT a lever: last-2-weeks AM 156 v/d vs PM 149 (flat); impressions/day 3.3-4.3K and CTR ~3.2 identical across slots. The 6-week 'AM 241 vs PM 152' was four July AM CONCEPT wins (Cortisol Detox wave 526/d etc.), not slot."
 }

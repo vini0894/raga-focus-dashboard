@@ -1,7 +1,7 @@
 {
  "id": "v_2026-08-21_positive_energy_veena",
- "status": "APPROVED",
- "locked": true,
+ "status": "PARKED",
+ "locked": false,
  "created_at": "2026-08-15",
  "planned_date": "2026-08-21",
  "planned_slot": "06:30 IST AM · Fri — uplifting AM; strong launch day",
@@ -73,6 +73,6 @@
  "pending": [
   "Launch title A/B in Studio + log"
  ],
- "version": "v2 — Tanpura→Veena (Tanpura moved to Mon). Cluster probe 3/3. LOCKED user 2026-08-15.",
+ "version": "v2 — Tanpura→Veena (Tanpura moved to Mon). Cluster probe 3/3. LOCKED user 2026-08-15. → RE-PARKED 2026-08-17: superseded by v_2026-08-21_overnight_calm_santoor_3hr (sleep-3hr + Hz/rest-register test), reactivated in error.",
  "preflight_detail": "title_preflight PASS both. cooldown Veena 9d ✓ (last Aug 12). track_record UNTESTED morning (not flop). No clone. Thumb RAISE YOUR VIBE dedup-fresh."
 }
