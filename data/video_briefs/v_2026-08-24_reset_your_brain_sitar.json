@@ -1,0 +1,84 @@
+{
+ "id": "v_2026-08-24_reset_your_brain_sitar",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-08-23",
+ "planned_date": "2026-08-24",
+ "planned_slot": "06:30 IST AM · Mon — AM median 241 v/d vs PM 152 (6wk, age-aligned); heroes go AM",
+ "title": "Reset Your Brain Naturally | Sitar Instrumental | 1.5 Hours",
+ "title_variants": {
+  "A": "Reset Your Brain Naturally | Sitar Instrumental | 1.5 Hours",
+  "B": "Stop Overthinking | Sitar Instrumental | 1.5 Hours"
+ },
+ "title_note": "WAVE-FORMULA PICK (h_2026-08-24_wave_formula_pick). Two DIFFERENT leads = two hypotheses, both borrowed from currently-winning competitor formulas: A = Raga Heal's '...Naturally' phrasing (their 351K #2 + 'Reset Your Dopamine Naturally' 3.6K recent); B = Healing Raga Studio's 896K/1mo video carries 'Stop Overthinking' in its subtitle. Sitar = hero in its proven ACTIVE register (Dopamine Reset 2.26M, Brain Detox 46K). Week theme: every ship cites a live wave (suggested-pool radar 2026-08-23).",
+ "lane": "cognitive",
+ "instrument": "Sitar",
+ "raga": "Yaman",
+ "validated_keywords": [
+  "A 'Reset Your Brain Naturally' — fresh (prescreen 2026-08-23)",
+  "B 'Stop Overthinking' — fresh as a live title (a Jul-22 draft brief used 'Stop Overthinking Music | Slow Sarod' but shipped retitled as Music for Anxiety Relief)",
+  "Brain-family check: Brain Detox (May 19, 46K lifetime, 1,264 impr/d decayed) · Brain Fog (Aug 11, young) — differentiated by verb-first 'Naturally' structure, not a clone"
+ ],
+ "thumbnail_text_main": "MENTAL CLUTTER?",
+ "thumbnail_text_variants": [
+  {
+   "label": "fixed",
+   "text": "MENTAL CLUTTER?",
+   "strategy": "FIXED both arms (title lead is the variable). Compact state-noun Q-hook — the 3/3 cognitive winner shape (MIND FULL? +8.4, BRAIN FOG? +23.8, OVERLOADED? won #54). Deliberately NEUTRAL to both title arms so the thumb doesn't contaminate the A/B (BRAIN NEEDS A RESET? was rejected for echoing arm A). USER-PICKED 2026-08-23."
+  }
+ ],
+ "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged parchment. A seated figure at dawn, eyes closed, a cloud of tangled fine lines above the head dissolving into clear sky; sitar resting beside. Clarity arriving. Dark-teal serif overlay text.",
+ "thumbnail_ab_note": "Title A/B (wave-formula A vs B) → thumb FIXED. Cognitive lane = Q-hook (4/5 in matrix).",
+ "playlists": [
+  "Meditation Music",
+  "Peaceful Music"
+ ],
+ "description": [
+  "Reset Your Brain Naturally | Sitar Instrumental | 1.5 Hours — steady, bright sitar to clear a cluttered mind.",
+  "",
+  "Ninety minutes of sitar in Raga Yaman with soft tabla: unhurried, steady, and clear — music to let the mental noise settle and think straight again.",
+  "",
+  "🎧 HOW TO USE — low volume, let it run. Good for a reset break, study, or slow work.",
+  "",
+  "⏱ BEST FOR — mental clutter · overthinking · a brain that needs a reset · focus without strain",
+  "",
+  "🎵 ABOUT — Raga Yaman is the evening-bright raga of clarity; on sitar, its long steady phrases give a restless mind something clean to follow.",
+  "",
+  "#SitarMusic #IndianClassicalMusic #BrainReset #StopOverthinking #MentalClarity"
+ ],
+ "tags": [
+  "reset your brain naturally",
+  "stop overthinking",
+  "sitar instrumental",
+  "sitar music",
+  "indian classical music",
+  "brain reset music",
+  "mental clarity music",
+  "overthinking music",
+  "raga yaman",
+  "1.5 hours",
+  "music for focus",
+  "calm mind"
+ ],
+ "suno_prompt": "Instrumental only, bright steady sitar in Raga Yaman with soft gentle tabla, clear sustained phrases, ~70 BPM, mental clarity and calm focus, no vocals, seamless loop.",
+ "suno_prompt_note": "ACTIVE-register Sitar (not sleepy): bright, steady, present. Tabla per Sitar pattern rule. Format B compact.",
+ "experiment": "h_2026-08-24_wave_formula_pick — read 2026-08-31: A/B watch-share winner + per-arm CTR; ship day-7 vs 186 v/d cohort median. Also feeds h_2026-08-24_wave_adjacency_escape (RELATED_VIDEO share >25%?). Staged reads d7/d14/d21.",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "publish": "2026-08-24 06:30 IST",
+  "loop_note": "5-6 Yaman sitar+tabla clips, consistent bright energy, long crossfades to 90 min."
+ },
+ "preflight_passed": true,
+ "preflight_detail": "titles PASS both (59/50c). Sitar cooldown 6d ✓ (last Aug 18). Leads fresh. Thumb dedup-fresh, user-picked.",
+ "pending": [
+  "Launch title A/B in Studio at publish + log to ab_raw_data.csv",
+  "Day-7 read: RELATED_VIDEO share (the wave-adjacency signal)"
+ ],
+ "version": "v1 — LOCKED user 2026-08-23 ('Yeah Monday lets lock'). Wave-formula A/B, MENTAL CLUTTER? fixed.",
+ "gate_override": {
+  "track_record": "OVERRIDE (peak-era artifact, documented pattern). Cell Sitar×cognitive×1.5hr 'FLOP n=4 med 174v' is computed on TODAY'S 28d views of decayed ships. Lifetime: Sitar for Brain Detox (in-cell) 46K · Sitar for Dopamine Reset (1.5hr, adjacent mindfulness/cognitive cell) 2.26M · Nervous System Healing 150K. h_2026-08-15_sitar_active_register = CONFIRMED on this evidence. Sitar in ACTIVE register is the hero move; the flops in-cell were sleepy/clinical framings (Mental Fatigue 53v).",
+  "packaging_clone": "ACCEPTED. 6d from Stress Relief Sitar (Aug 18) — different lane (stress→cognitive), cooldown ≥5d satisfied. Week already spaces Sitar to Mon only.",
+  "lead_fresh": "self-match (this brief)."
+ }
+}
