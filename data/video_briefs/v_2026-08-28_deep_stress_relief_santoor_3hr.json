@@ -1,0 +1,93 @@
+{
+ "id": "v_2026-08-28_deep_stress_relief_santoor_3hr",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-08-24",
+ "planned_date": "2026-08-28",
+ "planned_slot": "19:00 IST PM · Fri — evening stress-release intent; 3hr fills the max unattended TV session (TV=21% of views, 180-min prompt)",
+ "title": "Deep Stress Relief Music | Santoor & Tanpura | 3 Hours",
+ "title_variants": {
+  "A": "Deep Stress Relief Music | Santoor & Tanpura | 3 Hours",
+  "B": "Deep Stress Relief Music | Santoor & Tanpura | 3 Hours"
+ },
+ "title_note": "SINGLE TITLE (thumb TEXT is the variable). pool_fit 33 ('stress'+'relief'+'deep' are top pool tokens). Hosts: CLASSICAL FUSION 'Deep Stress Relief Music | Peaceful Flute & Sitar' 25K (streamed) · SAVERA 'Divine Flute For Stress Relief' 60K · the pool's stress wing. SEQUEL to our channel-record-AVD video (Stress Relief Music | Santoor 3hr, May 24 — AVD 45:13). 3hr = best RPM format; 3hr non-sleep expects 20-37% suggested share (decay memo).",
+ "lane": "stress",
+ "daypart": "evening",
+ "instrument": "Santoor",
+ "raga": "Bhupali",
+ "validated_keywords": [
+  "'Deep Stress Relief' — soft echo only (a dead Apr 1hr Veena, 121d) — clear",
+  "tension: Stress Relief Music | Sitar (Aug 18, 10d) is the family's young owner — accepted as the week's ONE stress ship, different instrument+format+daypart; documented below",
+  "pool_fit 33"
+ ],
+ "thumbnail_text_main": "YOU'VE DONE ENOUGH",
+ "thumbnail_text_variants": [
+  {
+   "label": "A",
+   "text": "YOU'VE DONE ENOUGH",
+   "strategy": "PERMISSION register — 3rd data point for the thin permission cell (2/2 wins: IT'S OKAY TO REST 56/44 #37, It's Okay to Rest concept). 3 words, emotionally precise for end-of-day burnout."
+  },
+  {
+   "label": "B",
+   "text": "LET THE DAY GO",
+   "strategy": "OFFERING-IMPERATIVE — the channel-wide default register (58% overall). Clean contrast: permission vs offering, image + title constant."
+  }
+ ],
+ "thumbnail_prompt": "ONE image, both arms (TEXT is the variable): dusk scene — a person setting down their bag/work at a veranda as the sun sets over water, santoor nearby, warm amber-to-indigo evening sky, Pichwai border, house palette. Viewer-moment (end of the working day), NOT a performer.",
+ "thumbnail_ab_note": "Thumb-TEXT A/B via Test & compare (image + title constant). Read watch-share + per-arm CTR at d7.",
+ "playlists": [
+  "Healing & Anxiety Relief Music",
+  "Peaceful Music"
+ ],
+ "description": [
+  "Deep Stress Relief Music | Santoor & Tanpura | 3 Hours — let the whole evening unwind.",
+  "",
+  "Three hours of slow, resonant santoor over a rich tanpura drone. Nothing to follow, nothing sudden — a deep, warm bed of sound for the end of a long day, from dinner to lights-out.",
+  "",
+  "🎧 HOW TO USE — low volume from the evening onward. Loops seamlessly; long enough that you never touch it.",
+  "",
+  "⏱ BEST FOR — releasing the day's stress · evening wind-down · after-work decompression · deep rest",
+  "",
+  "🎵 ABOUT — the santoor's hundred strings, played slowly, ring like soft rain; over tanpura it becomes weightless.",
+  "",
+  "#StressReliefMusic #DeepStressRelief #Santoor #IndianClassicalMusic #EveningMusic #RelaxingMusic #3Hours"
+ ],
+ "tags": [
+  "deep stress relief music",
+  "stress relief music",
+  "santoor",
+  "santoor instrumental",
+  "tanpura",
+  "indian classical music",
+  "evening music",
+  "relaxing music",
+  "3 hours",
+  "unwind music",
+  "stress relief",
+  "calm music"
+ ],
+ "suno_prompt": "Instrumental only, slow deep santoor over a rich warm tanpura drone, soft resonant strokes with long decay, spacious and unhurried, ~50 BPM, evening stress release, no percussion, seamless loop.",
+ "suno_prompt_note": "MAY-GRADE CALM, evening register (not sleep-dead — Overnight Calm covers sleep). Santoor slow/low like the May 24 AVD-record ship. Format B compact.",
+ "experiment": "THUMB-TEXT register test: permission vs offering (stress lane; permission cell thin at 2/2). Read: A/B watch-share + per-arm CTR at d7 → appends to ab_text_format_matrix. Also feeds h_2026-08-24_wave_adjacency_escape (3hr non-sleep benchmark: 20-37% suggested share).",
+ "production_spec": {
+  "duration_minutes": 180,
+  "format": "3hr",
+  "publish": "2026-08-28 19:00 IST",
+  "loop_note": "6-7 slow Bhupali santoor+tanpura clips, long crossfades to ~3hr, consistent deep evening level.",
+  "assets_needed": "ONE dusk image — user to generate"
+ },
+ "preflight_passed": true,
+ "preflight_detail": "title PASS (54c). Santoor cooldown 7d ✓ (last Aug 21). Thumb texts dedup-fresh both.",
+ "pending": [
+  "USER: generate the dusk image",
+  "Launch thumb-TEXT A/B in Test & compare at publish + log to ab_raw_data.csv",
+  "AI-disclosure toggle on upload",
+  "d7 read 09-04: watch-share + per-arm CTR + suggested share"
+ ],
+ "gate_override": {
+  "ab_leads": "INTENTIONAL — single-variable thumb-TEXT test (same title both arms), documented pattern.",
+  "packaging_clone": "ACCEPTED — Overnight Calm | Santoor 3hr (Aug 21, 7d) same instrument+format but different lane (sleep vs evening-stress) and different register; cooldown ≥5d satisfied. Also May 24 Stress Relief Santoor 3hr (96d, decayed 140 impr/d) — this is its deliberate sequel: that video holds the channel AVD record (45:13).",
+  "concept_family": "ACCEPTED — ONE stress ship this week; Stress Relief Sitar (Aug 18) is 1.5hr cognitive-PM, this is 3hr evening; 'Deep' prefix + Santoor differentiate."
+ },
+ "version": "v1 — LOCKED user 2026-08-24 ('lets finalise thu and friday'). Permission-vs-offering test on the 3hr RPM slot."
+}

@@ -1,0 +1,88 @@
+{
+ "id": "v_2026-08-27_morning_anxiety_relief_sarangi",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-08-24",
+ "planned_date": "2026-08-27",
+ "planned_slot": "06:30 IST AM · Thu — morning-intent concept → AM; 2 days after Tue hero so the pool isn't double-entered back-to-back",
+ "title": "Morning Anxiety Relief | Sarangi Raga Bhairavi | 1.5 Hours",
+ "title_variants": {
+  "A": "Morning Anxiety Relief | Sarangi Raga Bhairavi | 1.5 Hours",
+  "B": "Morning Anxiety Relief | Sarangi Raga Bhairavi | 1.5 Hours"
+ },
+ "title_note": "SINGLE TITLE (image is the variable). 2nd-highest pool-fit of the week (43) vs cortisol_morning_bhairavi pool — morning+bhairavi+anxiety+relief all high-frequency pool tokens. Hosts: Dhun 'Anxiety in the Morning?' 2.6K · Raga Heal 'Cortisol Too High This Morning?' 45K · the wave's anxiety wing. Sarangi = only fresh instrument that can carry Raga Bhairavi vocabulary this week (Bansuri/Sitar on cooldown).",
+ "lane": "anxiety",
+ "daypart": "morning",
+ "instrument": "Sarangi",
+ "raga": "Bhairavi",
+ "validated_keywords": [
+  "'Morning Anxiety Relief' — FRESH (prescreen 2026-08-23)",
+  "Family note: anxiety family holds our two highest-RPM videos (Anxiety Relief Dilruba, Anxiety Relief Sarod) + young owner Anxiety Detox Veena (Aug 12) — different instrument/register/lead, documented below",
+  "pool_fit 43"
+ ],
+ "thumbnail_text_main": "WOKE UP WORRIED?",
+ "thumbnail_text_variants": [
+  {
+   "label": "fixed",
+   "text": "WOKE UP WORRIED?",
+   "strategy": "FIXED both arms (IMAGE is the variable). 3-word state Q-hook — the exact shape of our CTR outliers (MENTALLY EXHAUSTED? 6.86, TIRED OF EVERYTHING? 5.58). Anxiety lane → Q-hook. Dedup-fresh 2026-08-24."
+  }
+ ],
+ "thumbnail_prompt": "⭐ IMAGE PALETTE A/B — THE TEST. Same scene twice: a woman sitting up in bed at dawn, hand on chest, window light, sarangi resting nearby, Pichwai border. A = HOUSE palette (cream/green/gold). B = BOLD palette (deep indigo sky, saffron/orange dawn light, higher contrast). Title + text identical both arms. This answers the 2026-08-23 sameness question (48 of 119 thumbs are cream/green/gold — palette has NEVER been varied) and re-runs h_2026-08-18_image_breaks_ctr_ceiling with palette as the named variable.",
+ "thumbnail_ab_note": "Image-only A/B via Test & compare. Read CTR per arm from Studio (blended CTR can't separate variants).",
+ "playlists": [
+  "Healing & Anxiety Relief Music",
+  "Morning Energy Music"
+ ],
+ "description": [
+  "Morning Anxiety Relief | Sarangi Raga Bhairavi | 1.5 Hours — soft dawn strings to settle an anxious morning.",
+  "",
+  "Ninety minutes of slow sarangi in Raga Bhairavi, the raga of dawn, over a warm tanpura drone. The sarangi is the closest instrument to the human voice — steady, warm, and reassuring when the day starts with a racing heart.",
+  "",
+  "🎧 HOW TO USE — play low from waking, through your morning routine. Loops seamlessly.",
+  "",
+  "⏱ BEST FOR — morning anxiety · waking up worried · a racing heart at dawn · calm starts",
+  "",
+  "🎵 ABOUT — Raga Bhairavi at dawn settles the breath; on sarangi its phrases feel like being spoken to gently.",
+  "",
+  "#MorningAnxietyRelief #AnxietyReliefMusic #Sarangi #RagaBhairavi #IndianClassicalMusic #MorningMusic #CalmMorning"
+ ],
+ "tags": [
+  "morning anxiety relief",
+  "anxiety relief music",
+  "sarangi",
+  "raga bhairavi",
+  "indian classical music",
+  "morning music",
+  "calm morning music",
+  "music for anxiety",
+  "stress relief",
+  "1.5 hours",
+  "woke up anxious",
+  "morning calm"
+ ],
+ "suno_prompt": "Instrumental only, slow expressive sarangi in Raga Bhairavi over a warm tanpura drone, gentle dawn phrases, vocal-like sustained bowing, no percussion, ~55 BPM, soothing morning anxiety relief, seamless loop.",
+ "suno_prompt_note": "Sarangi = no tabla. Dawn Bhairavi, warm and reassuring, NOT mournful (avoid the Nostalgia grief register). Format B compact.",
+ "experiment": "⭐ IMAGE PALETTE TEST (h_2026-08-18_image_breaks_ctr_ceiling round 2, palette as named variable): bold vs house palette, CTR per arm from Studio T&C at d7. Also feeds h_2026-08-24_wave_adjacency_escape (RELATED_VIDEO share d7; measurement per 2026-08-24 caveat: impressions/share/CTR/AVD, NOT raw views).",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "publish": "2026-08-27 06:30 IST",
+  "loop_note": "5-6 slow Bhairavi sarangi+tanpura clips, long crossfades, consistent warm dawn level.",
+  "assets_needed": "TWO thumbnail images (same scene, house vs bold palette) — user to generate"
+ },
+ "preflight_passed": true,
+ "preflight_detail": "title PASS (58c). Sarangi cooldown 17d ✓ (last Aug 10). Lead fresh. Thumb dedup-fresh.",
+ "pending": [
+  "USER: generate the two palette images (same scene!)",
+  "Launch IMAGE A/B in Test & compare at publish + log to ab_raw_data.csv",
+  "AI-disclosure toggle on upload",
+  "d7 read 09-03: per-arm CTR + RELATED_VIDEO share"
+ ],
+ "gate_override": {
+  "ab_leads": "INTENTIONAL — single-variable IMAGE test (same title+text both arms), same documented pattern as the 2026-08-18 image test and Tue's Hz test.",
+  "concept_family": "ACCEPTED — anxiety family: 2 high-RPM winners + Anxiety Detox Veena (Aug 12, young). Differentiated: new instrument (Sarangi), morning register, raga-named, 'Relief' not 'Detox'. ONE anxiety ship this week.",
+  "track_record": "Sarangi×anxiety UNTESTED; nearest cells: Sarangi×morning THIN (Quiet Morning 964v) — peak-era caveat applies."
+ },
+ "version": "v1 — LOCKED user 2026-08-24 ('lets finalise thu and friday'). Palette test centerpiece."
+}

@@ -30,41 +30,44 @@
   },
   {
    "date": "2026-08-26",
-   "type": "PM",
-   "instrument": "Sarod",
-   "lane": "stress",
-   "runtime_min": 90,
-   "title_direction": "Tension You Can't Shake | Slow Sarod — HOST: Dhun 'Tension You Can't Shake?' 6.4K",
-   "thumb_text": "TBD",
-   "suno_prompt_rule": "slow Sarod",
-   "status": "CONCEPT"
+   "type": "NO SHIP — routing/infra day (user-confirmed 2026-08-24)",
+   "instrument": "—",
+   "lane": "—",
+   "runtime_min": 0,
+   "title_direction": "Series playlists (sleep pool behind Sound Sleep + morning pool behind Morning Energy/Morning Right) · translations (hi/es/pt) · Tue day-1 pool read BEFORE Thu enters the same pool",
+   "thumb_text": "—",
+   "suno_prompt_rule": "—",
+   "status": "INFRA"
   },
   {
    "date": "2026-08-27",
-   "type": "PM",
-   "instrument": "Veena",
-   "lane": "anxiety",
+   "type": "AM · LOCKED",
+   "instrument": "Sarangi",
+   "lane": "anxiety/morning",
    "runtime_min": 90,
-   "title_direction": "Release Negative Thoughts | Veena Instrumental — HOSTS: Shanti 'LET IT GO' 3.2K/14d + 'Remove Negative Thoughts' 2.2K",
-   "thumb_text": "TBD",
+   "title_direction": "Morning Anxiety Relief | Sarangi Raga Bhairavi — ⭐ IMAGE PALETTE A/B (house vs bold), pool-fit 43",
+   "thumb_text": "WOKE UP WORRIED?",
    "suno_prompt_rule": "slow Veena",
-   "status": "CONCEPT"
+   "status": "APPROVED"
   },
   {
    "date": "2026-08-28",
-   "type": "PM · 3hr",
+   "type": "PM · 3hr · LOCKED",
    "instrument": "Santoor",
-   "lane": "stress/emotional",
+   "lane": "stress/evening",
    "runtime_min": 180,
-   "title_direction": "Emotional Detox | Santoor & Tanpura | 3 Hours — HOST: Dhun 'Emotional Detox' 62K (biggest recent breakout)",
-   "thumb_text": "TBD",
+   "title_direction": "Deep Stress Relief Music | Santoor & Tanpura | 3 Hours — thumb-TEXT A/B permission vs offering",
+   "thumb_text": "YOU'VE DONE ENOUGH vs LET THE DAY GO",
    "suno_prompt_rule": "slow low Santoor over tanpura",
-   "status": "CONCEPT"
+   "status": "APPROVED"
   }
  ],
  "preflight_pending": [
-  "Wed–Fri titles + thumbs",
-  "score 'negative thoughts' + 'emotional detox' (not in bank)"
+  "Thu: TWO palette images (same scene) — user",
+  "Fri: ONE dusk image — user",
+  "AI-disclosure toggle every upload (incl. Mon live + Tue)",
+  "Wed: series-playlist specs + translations",
+  "Launch each ship's Test & compare + log to ab_raw_data.csv"
  ],
  "week_level_decisions": {
   "goal": "suggested-adjacency to driving host videos (see notes)",
