@@ -1725,9 +1725,9 @@ with tab_briefs:
                         st.caption(f"Shipped: {b['date_shipped']}  ·  {b.get('id')}")
                     else:
                         st.caption(f"{b.get('id')}")
-                    _exp = (b.get("experiment") or "").split("read")[0].strip(" .;:—-")
-                    if _exp:
-                        st.caption(f"🧪 {_exp[:120]}")
+                    _exp = b.get("experiment")
+                    if isinstance(_exp, str) and _exp.strip():
+                        st.caption(f"🧪 {_exp.split('read')[0].strip(' .;:—-')[:120]}")
                 with c2:
                     new_status = st.selectbox(
                         "Status",
@@ -1770,8 +1770,9 @@ with tab_briefs:
                 if brief.get("date_shipped"):
                     _meta += f"  ·  Shipped: {brief['date_shipped']}"
                 st.caption(_meta)
-                if brief.get("experiment"):
-                    st.info(f"🧪 **Testing:** {brief['experiment']}")
+                _bexp = brief.get("experiment")
+                if isinstance(_bexp, str) and _bexp.strip():
+                    st.info(f"🧪 **Testing:** {_bexp}")
 
                 _bcol1, _bcol2, _bcol3, _bcol4 = st.columns([1, 1, 2, 4])
                 with _bcol1:
