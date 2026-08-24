@@ -527,7 +527,8 @@
     "d21": "2026-09-14"
    },
    "read_rule": "status flips to CONFIRMED/KILLED only at d21 (or earlier if overwhelming); d7 = early signal, d14 = distribution verdict",
-   "anchor": "ship date"
+   "anchor": "ship date",
+   "measurement_note": "YT view-count change 2026-08-24 (views count at play start): do NOT compare raw views to pre-Aug-24 baselines (186 v/d median inflates). Use impressions, RELATED_VIDEO share, CTR, AVD, engaged views."
   },
   {
    "id": "h_2026-08-24_wave_adjacency_escape",
@@ -553,7 +554,8 @@
     "Thu": "Shanti LET IT GO 3.2K + Remove Negative Thoughts 2.2K",
     "Fri": "Dhun Emotional Detox 62K"
    },
-   "research_ref": "warehouse/decay_research_2026-08-23.md (private)"
+   "research_ref": "warehouse/decay_research_2026-08-23.md (private)",
+   "measurement_note": "YT view-count change 2026-08-24 (views count at play start): do NOT compare raw views to pre-Aug-24 baselines (186 v/d median inflates). Use impressions, RELATED_VIDEO share, CTR, AVD, engaged views."
   },
   {
    "id": "h_2026-08-23_am_vs_pm_same_concept",
