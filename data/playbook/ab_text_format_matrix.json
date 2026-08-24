@@ -75,5 +75,6 @@
   "Tue_stress_relief": "CAN'T STOP THINKING? = Q-hook, stress lane → NOT the lane favorite (Q only 2/4 in stress) — acceptable because this ship's variable is IMAGE not text; thumb text held constant by design",
   "Thu_morning_motivation": "START UNRUSHED = offering-imperative, morning lane → aligned (4/5 winner)",
   "Fri_sleep": "SINK INTO SLEEP = offering-imperative, sleep lane → matches best-tested sleep register (2/3) but sleep is the least-settled lane; abstract-noun (2/2) is a live alternative worth testing next"
- }
+ },
+ "data_updated_till": "2026-08-16 (results) · running tests logged till 2026-08-24 — see ab_raw_meta.json"
 }
