@@ -2004,6 +2004,14 @@ def load_ab_rules():
 with tab_idea_gen:
     st.subheader("🧪 A/B Test Insights")
     st.caption("Live view of all title & thumbnail experiments. Updated whenever new screenshots are banked.")
+    try:
+        _abmeta = json.loads((DASHBOARD_DIR / "data" / "ab_raw_meta.json").read_text())
+        _n_run = len(_abmeta.get("running_awaiting_studio", []))
+        st.info(f"📅 **Results updated till {_abmeta.get('results_updated_till', '?')}** · "
+                f"running tests logged till {_abmeta.get('running_rows_logged_till', '?')} · "
+                f"{_n_run} tests awaiting Studio Test & compare screenshots")
+    except Exception:
+        pass
 
     df_ab = load_ab_raw()
     rules = load_ab_rules()
