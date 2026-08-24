@@ -15,7 +15,8 @@
    "title_direction": "Reset Your Brain Naturally vs Stop Overthinking | Sitar Instrumental — HOST: Healing Raga Studio 896K ('Stop Overthinking' subtitle) + Raga Heal 'Reset Your Dopamine Naturally'",
    "thumb_text": "MENTAL CLUTTER?",
    "suno_prompt_rule": "active-register Sitar + tabla, Yaman",
-   "status": "APPROVED"
+   "status": "APPROVED",
+   "hypothesis": "Which live wave-formula pulls: 'Naturally' (Raga Heal) vs 'Stop Overthinking' (HRS 896K)? → h_2026-08-24_wave_formula_pick"
   },
   {
    "date": "2026-08-25",
@@ -26,7 +27,8 @@
    "title_direction": "Morning Cortisol Detox | Bansuri Raga Bhairavi [432Hz] — HOSTS: Healing Raga Studio 896K · Soulful Breathscape 240K/224K · Dhun 12K (pool-fit 34/30, highest)",
    "thumb_text": "LOWER YOUR CORTISOL",
    "suno_prompt_rule": "Bhairavi bansuri, no tabla, morning-calm",
-   "status": "APPROVED"
+   "status": "APPROVED",
+   "hypothesis": "Does the 432Hz token itself add pull? Single-variable ±432Hz → h_hz_in_title (un-parked)"
   },
   {
    "date": "2026-08-26",
@@ -37,7 +39,8 @@
    "title_direction": "Series playlists (sleep pool behind Sound Sleep + morning pool behind Morning Energy/Morning Right) · translations (hi/es/pt) · Tue day-1 pool read BEFORE Thu enters the same pool",
    "thumb_text": "—",
    "suno_prompt_rule": "—",
-   "status": "INFRA"
+   "status": "INFRA",
+   "hypothesis": "— (infra: series playlists = the durable-host lever; no ship to test)"
   },
   {
    "date": "2026-08-27",
@@ -48,7 +51,8 @@
    "title_direction": "Morning Anxiety Relief | Sarangi Raga Bhairavi — ⭐ IMAGE PALETTE A/B (house vs bold), pool-fit 43",
    "thumb_text": "WOKE UP WORRIED?",
    "suno_prompt_rule": "slow Veena",
-   "status": "APPROVED"
+   "status": "APPROVED",
+   "hypothesis": "Does a BOLD palette break the ~3% CTR ceiling? First palette variation in 119 thumbs → image-ceiling h round 2"
   },
   {
    "date": "2026-08-28",
@@ -59,7 +63,8 @@
    "title_direction": "Deep Stress Relief Music | Santoor & Tanpura | 3 Hours — thumb-TEXT A/B permission vs offering",
    "thumb_text": "YOU'VE DONE ENOUGH vs LET THE DAY GO",
    "suno_prompt_rule": "slow low Santoor over tanpura",
-   "status": "APPROVED"
+   "status": "APPROVED",
+   "hypothesis": "Does PERMISSION beat OFFERING in stress thumbs? 3rd data point for the 2/2 permission cell"
   }
  ],
  "preflight_pending": [
@@ -77,6 +82,7 @@
   "no_sleep_ship": "deliberate pool-widening; 'Sleep Raga' benched as next fresh sleep lead",
   "morning_cap": "max 2 morning-CONCEPT ships this week (Tue, Wed) — no evidence all-morning beats a mixed week; concentration on one unproven pool is a correlated bet",
   "scorecard_weekly_api": "Suggested views/wk stop falling (w/w ≥0 two weeks running) · own-channel share of Suggested referrers ≥50% (now ~37%) · ≥2/5 ships ≥25% Suggested at d7 AND wk-2 ≥50% of wk-1 · PLAYLIST ≥10K/wk · Search ≥30K/wk floor",
-  "terminology_fix": "'SUBSCRIBER' traffic source = HOME FEED (96% what-to-watch; 95.7% of it non-subscribers). New ships get a ~3-day Home test (median ≈400 views) then withdraw unless picked up as a Suggested neighbour of a stable host."
+  "terminology_fix": "'SUBSCRIBER' traffic source = HOME FEED (96% what-to-watch; 95.7% of it non-subscribers). New ships get a ~3-day Home test (median ≈400 views) then withdraw unless picked up as a Suggested neighbour of a stable host.",
+  "hypothesis_column": "Added 2026-08-24 (user): every ship row carries what it TESTS; weekly reads via tools/hypothesis_review.py"
  }
 }
