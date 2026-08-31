@@ -1,0 +1,65 @@
+{
+ "id": "v_2026-09-01_relaxing_instrumental_sarod",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-08-31",
+ "planned_date": "2026-09-01",
+ "planned_slot": "19:00 IST PM · Tue — evening wind-down intent (concept-time rule; slot itself is not a lever)",
+ "title": "Relaxing Instrumental Music | Slow Sarod | 1.5 Hours",
+ "title_variants": {
+  "A": "Relaxing Instrumental Music | Slow Sarod | 1.5 Hours",
+  "B": "PENDING — needs ONE VidIQ score ≥60 on a genuinely different lead"
+ },
+ "title_note": "Arm A LOCKED on 'relaxing instrumental music' (VidIQ 70, FRESH, zero conflicts). Arm B is deliberately left OPEN rather than filled with a near-duplicate: the only other cleared calm_relax leads in the bank are 'instrumental music relaxing' (70) — the same keyword reordered — and that violates the A/B rule (two arms must lead with DIFFERENT keywords = two hypotheses, never one keyword in two structures). Candidates awaiting a score: 'Evening Unwind' (FRESH, clean) · 'Quiet Evening' · 'Nothing To Do Today'. Rejected for arm B: 'Relax Music' 77 and 'Calm Music' 74 (same concept as arm A in a different structure), 'Calming Music' 72 (lost A/B #1), 'Deep Calm' 65 (lost A/B #47), 'Unwind Music' 63 (live 101d). If no score lands before publish, ship SINGLE-TITLE — do not fabricate an arm.",
+ "lane": "calm_relax",
+ "daypart": "evening",
+ "instrument": "Sarod",
+ "raga": "Charukesi",
+ "validated_keywords": [
+  "'relaxing instrumental music' — VidIQ 70, lead_prescreen FRESH, no conflict on any of the 4 sources",
+  "raga rotation: Charukesi is UNUSED across all 143 live titles and all briefs (recent ships ran Bhairavi x2, Bilawal) — keeps the catalogue page varied",
+  "cell: Sarod x calm_relax is THIN (n=1, 99v) but NOT a flop — it is the least-bad non-FLOP available Tuesday. Tanpura and Santoor are both on cooldown from Aug 28; Bansuri from Mon Aug 31; Sitar is reserved for Wed's morning cell (the channel's strongest, n=7 med 2,207v)",
+  "lane is UNCOVERED this week and is the top-priority lane on the current 28d lane ranking; Monday's ship classifies as morning, not calm_relax"
+ ],
+ "thumbnail_text_main": "NOTHING TO DO NOW",
+ "thumbnail_text_variants": [
+  {
+   "label": "A",
+   "text": "NOTHING TO DO NOW",
+   "strategy": "PERMISSION register — the thin cell that is 2/2 on the channel (IT'S OKAY TO REST 56/44 #37). 4 words, 17 chars."
+  },
+  {
+   "label": "B",
+   "text": "LET THE EVENING BE",
+   "strategy": "OFFERING-IMPERATIVE — the channel default register. Clean contrast: permission vs offering, image + title held constant."
+  }
+ ],
+ "thumbnail_ab_note": "⭐ FIRST MEASURABLE READ IN THIS LANE. calm_relax is the ONE lane with no thumbnail-format signal at all — §7b records it as UNMEASURED because no calm_relax thumbnail has ever cleared 2,000 views. Both arms are deliberately positive-outcome framings (no Q-hook): §7b note 4 shows Q-hooks sit on the lowest-T1 videos, and neither format is established in this lane so there is nothing to violate. Read watch-share + per-arm CTR at d7.",
+ "thumbnail_prompt": "ONE image, both arms (TEXT is the variable): a person sitting back on a low couch by an open window at dusk, tea set down beside them, hands empty and still, sarod resting at the FRAME EDGE and not being played. Warm amber interior light against a deepening indigo sky outside. Pichwai border, house palette. Text in its own banner panel at ~35% of frame with a second tier reading 'Sarod · Raga Charukesi'. VIEWER LIVING THE MOMENT, never a performer — measured 6.11% vs 3.03%.",
+ "playlists": [
+  "Peaceful Music",
+  "Healing & Anxiety Relief Music"
+ ],
+ "suno_prompt": "Instrumental only, no vocals, no humming — unhurried Indian classical sarod in Raga Charukesi, warm plucked metallic tone with long sustain, subtle tanpura drone underneath, no tabla, 58 BPM, seamless loop.",
+ "suno_prompt_note": "Short one-liner default (~205 chars). CALM lane — no upbeat/uplifting/energetic/forward-momentum terms. 'unhurried' NOT 'slow': the word 'slow' makes Suno drag and is reserved for sleep/deep-rest only (calm_relax is not sleep). No tabla — the tabla rule is Sitar-only. Tanpura is a drone BED here and is deliberately NOT named in the title, so it does not burn its cooldown (last titled use Aug 28). Binaural: theta 6 Hz at -20dB.",
+ "experiment": "Primary: thumb-TEXT permission vs offering — the first measurable thumbnail-format data point in calm_relax. Secondary: this is one of the three control ships for h_2026-08-31_cell_beats_packaging — Tue/Wed/Thu run ordinary cells with disciplined packaging, Friday runs the one proven cell (Bansuri x sleep x 3hr). Prediction: Friday lands >=2.5x the median of these three at matched age.",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "publish": "2026-09-01 19:00 IST",
+  "loop_note": "6-7 unhurried Charukesi sarod clips over a continuous tanpura bed, long crossfades to ~90 min, consistent warm evening level throughout. No percussion anywhere.",
+  "binaural": "theta 6 Hz at -20dB, barely audible",
+  "assets_needed": "ONE dusk interior image — user to generate"
+ },
+ "preflight_passed": true,
+ "preflight_detail": "Instrument cooldown clear (Sarod last titled use well outside 4d; Bansuri/Tanpura/Santoor all blocked Tue). Lane uncovered. Lead FRESH on all 4 sources. Raga unused channel-wide. track_record: Sarod x calm_relax THIN, not FLOP — no gate override needed.",
+ "pending": [
+  "USER: generate the dusk interior image",
+  "USER: ONE VidIQ score for title arm B ('Evening Unwind' preferred) — or ship single-title",
+  "Launch thumb-TEXT A/B in Test & compare at publish + log to ab_raw_data.csv",
+  "AI-disclosure toggle on upload",
+  "d7 read 2026-09-08: watch-share + per-arm CTR + engaged views (NOT public views)"
+ ],
+ "measurement_note": "Read this ship on ENGAGED VIEWS only. YouTube moved public view counting to play-start on 2026-08-24, inflating raw views 1.3-2.4x against any earlier baseline. Age-matched comparison via tools/hypothesis_progress.py.",
+ "version": "v1 — LOCKED user 2026-08-31 ('finalise Tuesday and at least push that so the team is not blocked to render'). Production spec is complete and render-ready; only title arm B and the image are open."
+}

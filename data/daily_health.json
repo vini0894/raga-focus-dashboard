@@ -1,273 +1,300 @@
 {
-  "generated": "2026-08-22",
+  "generated": "2026-08-31",
   "active_ships": [
     {
-      "title": "Morning Motivation | Bansuri Raga Bilawal | 1.5 Hours",
-      "days_live": 2,
-      "lane": "morning",
-      "ctr": 3.16,
-      "avd": 15.9,
-      "views": 312,
+      "title": "Deep Stress Relief Music | Santoor & Tanpura | 3 Hours",
+      "days_live": 3,
+      "lane": "stress_burnout",
+      "ctr": 3.4,
+      "avd": 13.0,
+      "views": 697,
       "verdict": "WATCH",
-      "action": "only 2d live \u2014 patience window"
+      "action": "only 3d live \u2014 patience window"
     },
     {
-      "title": "Stress Relief Music | Sitar Instrumental | 1.5 Hours",
+      "title": "Morning Anxiety Relief | Sarangi Raga Bhairavi | 1.5 Hours",
       "days_live": 4,
-      "lane": "stress_burnout",
-      "ctr": 2.52,
-      "avd": 21.0,
-      "views": 596,
+      "lane": "morning",
+      "ctr": 2.77,
+      "avd": 18.1,
+      "views": 721,
       "verdict": "WATCH",
       "action": "only 4d live \u2014 patience window"
     },
     {
-      "title": "Attract Positive Energy | Indian Classical Music | 1.5 Hours",
-      "days_live": 5,
+      "title": "Morning Cortisol Detox | Bansuri Raga Bhairavi 432Hz | 1.5 Hours",
+      "days_live": 6,
       "lane": "morning",
-      "ctr": 3.19,
-      "avd": 21.6,
-      "views": 732,
+      "ctr": 2.54,
+      "avd": 20.2,
+      "views": 1157,
       "verdict": "WATCH",
-      "action": "only 5d live \u2014 patience window"
+      "action": "only 6d live \u2014 patience window"
+    },
+    {
+      "title": "Stop Overthinking | Sitar Instrumental | 1.5 Hours",
+      "days_live": 7,
+      "lane": "anxiety",
+      "ctr": 2.79,
+      "avd": 18.0,
+      "views": 649,
+      "verdict": "UNDERPERFORMING",
+      "action": "CTR & AVD both below lane median"
+    },
+    {
+      "title": "Overnight Calm | Santoor Sleep Music | 3 Hours",
+      "days_live": 10,
+      "lane": "sleep",
+      "ctr": 2.98,
+      "avd": 16.7,
+      "views": 592,
+      "verdict": "UNDERPERFORMING",
+      "action": "CTR & AVD both below lane median"
+    },
+    {
+      "title": "Morning Motivation | Bansuri Raga Bilawal | 1.5 Hours",
+      "days_live": 11,
+      "lane": "morning",
+      "ctr": 3.44,
+      "avd": 16.1,
+      "views": 559,
+      "verdict": "UNDERPERFORMING",
+      "action": "CTR & AVD both below lane median"
+    },
+    {
+      "title": "Stress Relief Music | Sitar Instrumental | 1.5 Hours",
+      "days_live": 13,
+      "lane": "stress_burnout",
+      "ctr": 2.68,
+      "avd": 20.6,
+      "views": 793,
+      "verdict": "UNDERPERFORMING",
+      "action": "CTR & AVD both below lane median"
+    },
+    {
+      "title": "Attract Positive Energy | Indian Classical Music | 1.5 Hours",
+      "days_live": 14,
+      "lane": "morning",
+      "ctr": 3.37,
+      "avd": 21.7,
+      "views": 904,
+      "verdict": "UNDERPERFORMING",
+      "action": "CTR & AVD both below lane median"
     },
     {
       "title": "Bedtime Music | Surbahar Instrumental | 3 Hours",
-      "days_live": 8,
+      "days_live": 17,
       "lane": "other",
-      "ctr": 3.74,
-      "avd": 14.4,
-      "views": 477,
+      "ctr": 4.01,
+      "avd": 15.2,
+      "views": 654,
       "verdict": "CHECK-MUSIC",
       "action": "clicks fine, retention low \u2192 check music/intro"
     },
     {
       "title": "Cozy Evening Music | Sitar Instrumental | 1.5 Hours",
-      "days_live": 9,
+      "days_live": 18,
       "lane": "other",
       "ctr": 3.04,
-      "avd": 19.4,
-      "views": 468,
+      "avd": 19.9,
+      "views": 558,
       "verdict": "UNDERPERFORMING",
       "action": "CTR & AVD both below lane median"
     },
     {
       "title": "Anxiety Detox Music | Veena Instrumental | 1.5 Hours",
-      "days_live": 10,
+      "days_live": 19,
       "lane": "anxiety",
-      "ctr": 3.14,
-      "avd": 20.0,
-      "views": 821,
+      "ctr": 3.26,
+      "avd": 20.8,
+      "views": 971,
       "verdict": "UNDERPERFORMING",
       "action": "CTR & AVD both below lane median"
     },
     {
       "title": "Mental Space Music | Bansuri & Tanpura | 1.5 Hours",
-      "days_live": 11,
+      "days_live": 20,
       "lane": "other",
-      "ctr": 2.57,
-      "avd": 21.1,
-      "views": 900,
+      "ctr": 2.59,
+      "avd": 21.0,
+      "views": 946,
       "verdict": "RE-THUMBNAIL",
       "action": "music fine, CTR below lane median \u2192 swap thumb"
     },
     {
       "title": "Quiet Morning | Sarangi Raga Bilawal | 1.5 Hours",
-      "days_live": 12,
+      "days_live": 21,
       "lane": "morning",
-      "ctr": 3.34,
-      "avd": 24.2,
-      "views": 964,
+      "ctr": 3.4,
+      "avd": 24.4,
+      "views": 1033,
       "verdict": "UNDERPERFORMING",
       "action": "CTR & AVD both below lane median"
     },
     {
       "title": "Sleep Without Waking | Slow Sitar Instrumental | 3 Hours",
-      "days_live": 15,
+      "days_live": 24,
       "lane": "sleep",
-      "ctr": 3.78,
-      "avd": 13.9,
-      "views": 504,
+      "ctr": 3.66,
+      "avd": 14.4,
+      "views": 543,
       "verdict": "UNDERPERFORMING",
       "action": "CTR & AVD both below lane median"
     },
     {
       "title": "Steady Your Breathing | Slow Tanpura | 1.5 Hours",
-      "days_live": 16,
+      "days_live": 25,
       "lane": "other",
-      "ctr": 3.54,
-      "avd": 22.6,
-      "views": 656,
+      "ctr": 3.59,
+      "avd": 24.0,
+      "views": 715,
       "verdict": "HEALTHY",
       "action": "leave it"
     },
     {
       "title": "Rest Without Rushing | Slow Sarod | 1.5 Hours",
-      "days_live": 17,
+      "days_live": 26,
       "lane": "stress_burnout",
-      "ctr": 2.97,
-      "avd": 22.7,
-      "views": 652,
+      "ctr": 2.94,
+      "avd": 23.0,
+      "views": 679,
       "verdict": "RE-THUMBNAIL",
       "action": "music fine, CTR below lane median \u2192 swap thumb"
     },
     {
       "title": "Digital Detox Music | Surbahar Instrumental | 1.5 Hours",
-      "days_live": 18,
+      "days_live": 27,
       "lane": "cognitive",
-      "ctr": 2.98,
-      "avd": 26.2,
-      "views": 2281,
+      "ctr": 2.97,
+      "avd": 26.4,
+      "views": 2329,
       "verdict": "UNDERPERFORMING",
       "action": "CTR & AVD both below lane median"
     },
     {
       "title": "Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours",
-      "days_live": 19,
+      "days_live": 28,
       "lane": "morning",
-      "ctr": 3.69,
-      "avd": 32.2,
-      "views": 2010,
+      "ctr": 3.8,
+      "avd": 32.9,
+      "views": 2207,
       "verdict": "RE-THUMBNAIL",
       "action": "music fine, CTR below lane median \u2192 swap thumb"
-    },
-    {
-      "title": "It's Okay to Rest | Sarod Instrumental | 3 Hours",
-      "days_live": 22,
-      "lane": "stress_burnout",
-      "ctr": 3.04,
-      "avd": 16.7,
-      "views": 1105,
-      "verdict": "UNDERPERFORMING",
-      "action": "CTR & AVD both below lane median"
-    },
-    {
-      "title": "Boost Your Aura | Bright Santoor Morning | 1.5 Hours",
-      "days_live": 23,
-      "lane": "morning",
-      "ctr": 3.53,
-      "avd": 21.9,
-      "views": 1926,
-      "verdict": "UNDERPERFORMING",
-      "action": "CTR & AVD both below lane median"
-    },
-    {
-      "title": "Calm Your Nerves | Veena Instrumental | 1.5 Hours",
-      "days_live": 25,
-      "lane": "calm_relax",
-      "ctr": 2.98,
-      "avd": 20.9,
-      "views": 1259,
-      "verdict": "UNDERPERFORMING",
-      "action": "CTR & AVD both below lane median"
-    },
-    {
-      "title": "Grounding Music | Begin the Day Calm | 1.5 Hours",
-      "days_live": 26,
-      "lane": "calm_relax",
-      "ctr": 3.13,
-      "avd": 22.3,
-      "views": 1333,
-      "verdict": "UNDERPERFORMING",
-      "action": "CTR & AVD both below lane median"
-    },
-    {
-      "title": "Can't Sleep Tonight? | Tanpura Instrumental Music | 3 Hours",
-      "days_live": 28,
-      "lane": "sleep",
-      "ctr": 5.87,
-      "avd": 19.2,
-      "views": 2428,
-      "verdict": "UNDERPERFORMING",
-      "action": "CTR & AVD both below lane median"
-    },
-    {
-      "title": "Emotional Healing Music | Instrumental Music | 1.5 Hours",
-      "days_live": 30,
-      "lane": "healing",
-      "ctr": 3.56,
-      "avd": 15.8,
-      "views": 380,
-      "verdict": "UNDERPERFORMING",
-      "action": "CTR & AVD both below lane median"
     }
   ],
   "rethumbnail": [
     {
-      "title": "3 Hour Bansuri Music for Relaxation | Indian Instrumental Music for Deep Sleep",
-      "lane": "sleep",
-      "ctr": 4.52,
-      "lane_ctr_median": 6.37,
-      "avd": 25.7,
-      "views": 10397
-    },
-    {
       "title": "Yoga Music | Positive Energy Frequency | 1.5 Hour",
       "lane": "morning",
-      "ctr": 4.74,
-      "lane_ctr_median": 5.48,
+      "ctr": 4.33,
+      "lane_ctr_median": 5.39,
       "avd": 34.2,
-      "views": 10089
+      "views": 10651
     },
     {
-      "title": "Sitar for Brain Detox | Clear Your Mind | 1.5 Hours of Indian Classical Music",
-      "lane": "cognitive",
-      "ctr": 3.56,
-      "lane_ctr_median": 4.0,
-      "avd": 32.2,
-      "views": 2012
+      "title": "3 Hour Bansuri Music for Relaxation | Indian Instrumental Music for Deep Sleep",
+      "lane": "sleep",
+      "ctr": 4.68,
+      "lane_ctr_median": 6.57,
+      "avd": 26.5,
+      "views": 9868
+    },
+    {
+      "title": "Joyful Music | Positive Vibes Music with Santoor | 1 Hour",
+      "lane": "morning",
+      "ctr": 5.38,
+      "lane_ctr_median": 5.39,
+      "avd": 31.2,
+      "views": 4825
+    },
+    {
+      "title": "Quiet Night Music | Slow Bansuri Flute | 3 Hours",
+      "lane": "sleep",
+      "ctr": 6.43,
+      "lane_ctr_median": 6.57,
+      "avd": 26.6,
+      "views": 2234
     },
     {
       "title": "Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours",
       "lane": "morning",
-      "ctr": 3.69,
-      "lane_ctr_median": 5.48,
-      "avd": 32.2,
-      "views": 2010
+      "ctr": 3.8,
+      "lane_ctr_median": 5.39,
+      "avd": 32.9,
+      "views": 2207
+    },
+    {
+      "title": "Sitar for Brain Detox | Clear Your Mind | 1.5 Hours of Indian Classical Music",
+      "lane": "cognitive",
+      "ctr": 3.67,
+      "lane_ctr_median": 4.2,
+      "avd": 31.3,
+      "views": 2035
     }
   ],
   "ab_capture": [
     {
       "test": 45,
       "lane": "Anxiety-Healing / Nervous System",
-      "age_days": 42,
+      "age_days": 51,
       "a": "STRESS DETOX",
       "b": "CAN'T RELAX?"
     },
     {
       "test": 48,
       "lane": "Morning / Uplifting Sitar",
-      "age_days": 40,
+      "age_days": 49,
       "a": "FIND YOUR SPARK (same both)",
       "b": "FIND YOUR SPARK (same both)"
     },
     {
       "test": 49,
       "lane": "Emotional Healing Sarangi",
-      "age_days": 40,
+      "age_days": 49,
       "a": "FIND YOUR SMILE",
       "b": "NEED SOME COMFORT?"
     },
     {
       "test": 50,
       "lane": "Morning",
-      "age_days": 27,
+      "age_days": 36,
       "a": "CALM MORNING VIBES (control, live since May 9)",
       "b": "BOOST YOUR ENERGY (challenger, outcome-imperative, dedup-clean)"
     },
     {
       "test": 51,
       "lane": "Sleep",
-      "age_days": 27,
+      "age_days": 36,
       "a": "TIRED OF EVERYTHING? (control \u2014 Q-hook, violates sleep outcome rule)",
       "b": "DEEP SLEEP NOW (challenger \u2014 banked sleep winner format, dedup-clean)"
     },
     {
       "test": 52,
       "lane": "Calm/Mental Stillness",
-      "age_days": 27,
+      "age_days": 36,
       "a": "MIND FEELING HEAVY?",
       "b": "HEAVY MIND?"
+    },
+    {
+      "test": 55,
+      "lane": "Anxiety",
+      "age_days": 19,
+      "a": "CLEAR YOUR THOUGHTS",
+      "b": "SPIRALING?"
+    },
+    {
+      "test": 56,
+      "lane": "Calm/Relax",
+      "age_days": 18,
+      "a": "UNWIND SLOWLY",
+      "b": "UNWIND SLOWLY"
+    },
+    {
+      "test": 57,
+      "lane": "Sleep",
+      "age_days": 17,
+      "a": "SLEEP DEEPLY",
+      "b": "GOOD NIGHT MUSIC"
     }
   ]
 }

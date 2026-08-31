@@ -1,0 +1,918 @@
+{
+ "purpose": "Per-week hypothesis + ship metrics, captured over time. Public dashboard source: reach metrics only, no money fields.",
+ "metric_note": "engaged_views, NOT public views \u2014 YouTube moved public view counting to play-start on 2026-08-24 (inflates raw views 1.3-2.4x vs earlier baselines).",
+ "cohort_rule": "cohort_x = ship engaged views \u00f7 median engaged views of ships at the SAME AGE (age-matched; a flat 8-24d cohort flatters young ships ~2x because eng/day decays steeply).",
+ "schema_version": 1,
+ "weeks": {
+  "wk_2026-07-20": {
+   "ships": {
+    "hRnjQpZN5MI": {
+     "title": "Can't Sleep Tonight? | Tanpura Instrumental Music | 3 Hours",
+     "publish_date": "2026-07-25",
+     "series": {
+      "2026-08-31": {
+       "age_d": 37,
+       "engaged_views": 1738,
+       "eng_per_day": 47.0,
+       "expected_at_age": null,
+       "cohort_x": null,
+       "impressions": 16655,
+       "impr_per_day": 450,
+       "ctr_pct": 7.67,
+       "avd_pct": 21.18
+      }
+     }
+    },
+    "fBisTot-kCA": {
+     "title": "Relaxing Sitar Music | Indian Classical | 3 Hours",
+     "publish_date": "2026-07-20",
+     "series": {
+      "2026-08-31": {
+       "age_d": 42,
+       "engaged_views": 882,
+       "eng_per_day": 21.0,
+       "expected_at_age": null,
+       "cohort_x": null,
+       "impressions": 8207,
+       "impr_per_day": 195,
+       "ctr_pct": 5.31,
+       "avd_pct": 27.19
+      }
+     }
+    },
+    "vJAQByQ9De0": {
+     "title": "Burnout Music | Slow Surbahar Raga Bhupali | 3 Hours",
+     "publish_date": "2026-07-21",
+     "series": {
+      "2026-08-31": {
+       "age_d": 41,
+       "engaged_views": 225,
+       "eng_per_day": 5.5,
+       "expected_at_age": null,
+       "cohort_x": null,
+       "impressions": 3628,
+       "impr_per_day": 88,
+       "ctr_pct": 3.45,
+       "avd_pct": 20.66
+      }
+     }
+    },
+    "1kvhHueoUsU": {
+     "title": "Emotional Healing Music | Instrumental Music | 1.5 Hours",
+     "publish_date": "2026-07-23",
+     "series": {
+      "2026-08-31": {
+       "age_d": 39,
+       "engaged_views": 161,
+       "eng_per_day": 4.1,
+       "expected_at_age": null,
+       "cohort_x": null,
+       "impressions": 3273,
+       "impr_per_day": 84,
+       "ctr_pct": 3.21,
+       "avd_pct": 15.59
+      }
+     }
+    },
+    "T9jWuS2TTLA": {
+     "title": "Music for Anxiety Relief | Slow Sarod | 1.5 Hours",
+     "publish_date": "2026-07-22",
+     "series": {
+      "2026-08-31": {
+       "age_d": 40,
+       "engaged_views": 105,
+       "eng_per_day": 2.6,
+       "expected_at_age": null,
+       "cohort_x": null,
+       "impressions": 2806,
+       "impr_per_day": 70,
+       "ctr_pct": 2.14,
+       "avd_pct": 18.68
+      }
+     }
+    }
+   },
+   "hypotheses": [
+    {
+     "id": "h_2026-07-22_clinical_hook_recovery",
+     "status": "KILLED",
+     "statement": "Clinical-somatic hook framing (present-tense Q-hook + named raga + Hz + cortisol/vagus/nervous-system language) recovers channel reach. Evidence: our own all-time reach leaders used this exact registe",
+     "predicted_metric": "A ship using this register should land CTR >= 4.5% (vs the July cohort median 3.28%) and/or beat its lane's recent median views.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "planned"
+    },
+    {
+     "id": "h_2026-07-20_emotional_healing_lane_dead",
+     "status": "KILLED",
+     "statement": "The 'emotional/healing/heart/comfort/nostalgia' lane does not generate real reach on this channel, regardless of instrument.",
+     "predicted_metric": "n/a \u2014 this is a closed finding, not an open bet.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "planned"
+    },
+    {
+     "id": "h_2026-07-24_launch_day_inversion",
+     "status": "PROPOSED",
+     "statement": "CONSUMPTION and LAUNCH-DAY are different effects and they point opposite ways. Consumption (channel impressions by weekday, de-trended vs trailing-7d mean, n=67 days): Mon 129% > Wed 115% > Tue 114% >",
+     "predicted_metric": "A ship launched Thu/Fri should post >=1.5x the age-4-12d true impressions/day of a comparable-strength cell launched Mon/Wed in the same month. Falsified if Mon/Wed ships match or beat Thu/Fri over th",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "planned"
+    },
+    {
+     "id": "h_2026-07-25_t1_vocab_register",
+     "status": "TESTING",
+     "statement": "Western-wellness vocabulary in the title lead pulls T1 watch-share; Indian-classical specificity (named raga/instrument leads) pulls India. Observed: wellness-vocab titles 34-41% T1 watch-time (Gratit",
+     "predicted_metric": "A T1-vocab-led ship posts \u226530% T1 watch-share at d7 (channel baseline ~20-25%); the register arm (somatic vs clarity vs spiritual) that wins CTR while holding \u226530% T1 becomes the default T1 register.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "planned"
+    },
+    {
+     "id": "h_2026-07-26_thumb_refresh_expands_impressions",
+     "status": "TESTING",
+     "statement": "A thumbnail refresh on a still-ALIVE decaying video can expand impressions (flatten the decay slope), not just convert better. Mechanism: impressions are downstream of predicted performance (expected ",
+     "predicted_metric": "Test #50 vehicle (Morning Energy Dilruba, DMcoOLvmAyQ, launched 2026-07-26; pre-test slope 53K->27K impr/day, -38% w/w). CONFIRMED if challenger (BOOST YOUR ENERGY) wins/co-leads watch-time share AND ",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "planned"
+    }
+   ],
+   "captures": [
+    "2026-08-31"
+   ]
+  },
+  "wk_2026-07-27": {
+   "ships": {
+    "Rgw8F6mJ1Fk": {
+     "title": "It's Okay to Rest | Sarod Instrumental | 3 Hours",
+     "publish_date": "2026-07-31",
+     "series": {
+      "2026-08-31": {
+       "age_d": 31,
+       "engaged_views": 859,
+       "eng_per_day": 27.7,
+       "expected_at_age": 2106.5,
+       "cohort_x": 0.41,
+       "impressions": 16567,
+       "impr_per_day": 534,
+       "ctr_pct": 3.03,
+       "avd_pct": 19.94
+      }
+     }
+    },
+    "g5rAHcWaaAk": {
+     "title": "Boost Your Aura | Bright Santoor Morning | 1.5 Hours",
+     "publish_date": "2026-07-30",
+     "series": {
+      "2026-08-31": {
+       "age_d": 32,
+       "engaged_views": 956,
+       "eng_per_day": 29.9,
+       "expected_at_age": null,
+       "cohort_x": null,
+       "impressions": 15053,
+       "impr_per_day": 470,
+       "ctr_pct": 4.36,
+       "avd_pct": 24.09
+      }
+     }
+    },
+    "389_wDY1gWQ": {
+     "title": "Grounding Music | Begin the Day Calm | 1.5 Hours",
+     "publish_date": "2026-07-27",
+     "series": {
+      "2026-08-31": {
+       "age_d": 35,
+       "engaged_views": 407,
+       "eng_per_day": 11.6,
+       "expected_at_age": null,
+       "cohort_x": null,
+       "impressions": 5512,
+       "impr_per_day": 157,
+       "ctr_pct": 3.63,
+       "avd_pct": 26.36
+      }
+     }
+    },
+    "ngHSWDF2hYQ": {
+     "title": "Calm Your Nerves | Veena Instrumental | 1.5 Hours",
+     "publish_date": "2026-07-28",
+     "series": {
+      "2026-08-31": {
+       "age_d": 34,
+       "engaged_views": 377,
+       "eng_per_day": 11.1,
+       "expected_at_age": null,
+       "cohort_x": null,
+       "impressions": 7000,
+       "impr_per_day": 206,
+       "ctr_pct": 3.44,
+       "avd_pct": 18.33
+      }
+     }
+    }
+   },
+   "hypotheses": [
+    {
+     "id": "h_2026-08-09_deep_work_offering_register",
+     "status": "PROPOSED",
+     "statement": "The focus/deep-work lane failed on FRAMING, not on concept. Every focus ship the channel has made used a TOOL register \u2014 'Instant focus music', 'Deep Focus 40Hz Gamma Binaural', 'ADHD Brain Fog', 'Ove",
+     "predicted_metric": "views/day and CTR at d7 vs the 1.5hr cognitive cohort; CTR above the ~3% recent-ship floor",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "planned"
+    },
+    {
+     "id": "h_2026-08-02_shortform_runtime",
+     "status": "DEMOTED",
+     "statement": "Short runtime (18-22 min) beats 60-180 min for REACH in the morning/cortisol lane. Mechanism: our 1.5hr morning ships run ~21% AVD = ~19 min watched; a 19-min video delivers the SAME absolute watch-ti",
+     "predicted_metric": "views/day at d7 vs same-age 1.5hr morning cohort; AVD% >=70 (vs ~21% at 1.5hr)",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "planned"
+    },
+    {
+     "id": "h_2026-07-22_clinical_hook_recovery",
+     "status": "KILLED",
+     "statement": "Clinical-somatic hook framing (present-tense Q-hook + named raga + Hz + cortisol/vagus/nervous-system language) recovers channel reach. Evidence: our own all-time reach leaders used this exact registe",
+     "predicted_metric": "A ship using this register should land CTR >= 4.5% (vs the July cohort median 3.28%) and/or beat its lane's recent median views.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-24_launch_day_inversion",
+     "status": "PROPOSED",
+     "statement": "CONSUMPTION and LAUNCH-DAY are different effects and they point opposite ways. Consumption (channel impressions by weekday, de-trended vs trailing-7d mean, n=67 days): Mon 129% > Wed 115% > Tue 114% >",
+     "predicted_metric": "A ship launched Thu/Fri should post >=1.5x the age-4-12d true impressions/day of a comparable-strength cell launched Mon/Wed in the same month. Falsified if Mon/Wed ships match or beat Thu/Fri over th",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-25_t1_vocab_register",
+     "status": "TESTING",
+     "statement": "Western-wellness vocabulary in the title lead pulls T1 watch-share; Indian-classical specificity (named raga/instrument leads) pulls India. Observed: wellness-vocab titles 34-41% T1 watch-time (Gratit",
+     "predicted_metric": "A T1-vocab-led ship posts \u226530% T1 watch-share at d7 (channel baseline ~20-25%); the register arm (somatic vs clarity vs spiritual) that wins CTR while holding \u226530% T1 becomes the default T1 register.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-26_thumb_refresh_expands_impressions",
+     "status": "TESTING",
+     "statement": "A thumbnail refresh on a still-ALIVE decaying video can expand impressions (flatten the decay slope), not just convert better. Mechanism: impressions are downstream of predicted performance (expected ",
+     "predicted_metric": "Test #50 vehicle (Morning Energy Dilruba, DMcoOLvmAyQ, launched 2026-07-26; pre-test slope 53K->27K impr/day, -38% w/w). CONFIRMED if challenger (BOOST YOUR ENERGY) wins/co-leads watch-time share AND ",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    }
+   ],
+   "captures": [
+    "2026-08-31"
+   ]
+  },
+  "wk_2026-08-03": {
+   "ships": {
+    "vD-GBhRqEV8": {
+     "title": "Morning Routine Music | Slow Sitar & 432Hz | 1.5 Hours",
+     "publish_date": "2026-08-03",
+     "series": {
+      "2026-08-31": {
+       "age_d": 28,
+       "engaged_views": 2193,
+       "eng_per_day": 78.3,
+       "expected_at_age": 2106.5,
+       "cohort_x": 1.04,
+       "impressions": 42011,
+       "impr_per_day": 1500,
+       "ctr_pct": 3.8,
+       "avd_pct": 32.94
+      }
+     }
+    },
+    "ZGJge4uivIk": {
+     "title": "Digital Detox Music | Surbahar Instrumental | 1.5 Hours",
+     "publish_date": "2026-08-04",
+     "series": {
+      "2026-08-31": {
+       "age_d": 27,
+       "engaged_views": 2323,
+       "eng_per_day": 86.0,
+       "expected_at_age": 2323,
+       "cohort_x": 1.0,
+       "impressions": 41375,
+       "impr_per_day": 1532,
+       "ctr_pct": 2.97,
+       "avd_pct": 26.35
+      }
+     }
+    },
+    "o68NaO9-mUE": {
+     "title": "Steady Your Breathing | Slow Tanpura | 1.5 Hours",
+     "publish_date": "2026-08-06",
+     "series": {
+      "2026-08-31": {
+       "age_d": 25,
+       "engaged_views": 710,
+       "eng_per_day": 28.4,
+       "expected_at_age": 1880.5,
+       "cohort_x": 0.38,
+       "impressions": 14300,
+       "impr_per_day": 572,
+       "ctr_pct": 3.59,
+       "avd_pct": 23.96
+      }
+     }
+    },
+    "SJFG3MiSQpQ": {
+     "title": "Sleep Without Waking | Slow Sitar Instrumental | 3 Hours",
+     "publish_date": "2026-08-07",
+     "series": {
+      "2026-08-31": {
+       "age_d": 24,
+       "engaged_views": 540,
+       "eng_per_day": 22.5,
+       "expected_at_age": 1883.0,
+       "cohort_x": 0.29,
+       "impressions": 9688,
+       "impr_per_day": 404,
+       "ctr_pct": 3.66,
+       "avd_pct": 14.42
+      }
+     }
+    },
+    "bLcdd43fTWw": {
+     "title": "Rest Without Rushing | Slow Sarod | 1.5 Hours",
+     "publish_date": "2026-08-05",
+     "series": {
+      "2026-08-31": {
+       "age_d": 26,
+       "engaged_views": 675,
+       "eng_per_day": 26.0,
+       "expected_at_age": 2121.5,
+       "cohort_x": 0.32,
+       "impressions": 16826,
+       "impr_per_day": 647,
+       "ctr_pct": 2.94,
+       "avd_pct": 23.0
+      }
+     }
+    }
+   },
+   "hypotheses": [
+    {
+     "id": "h_2026-08-07_playlist_routing",
+     "status": "TESTING",
+     "statement": "Reordering playlists so high-RPM, audience-matched videos sit directly behind the big-impression donors raises channel playlist share of watch-time. Routing redistributes existing traffic to better-ea",
+     "predicted_metric": "playlist share of channel WATCH-TIME. Pre Jul28-31 = 8.92%. Post-shuffle-1 Aug2-4 = 9.44%. Success = holds at or above ~9.4% across Aug 9-15 once new-ship inventory is netted out. MEASURE AT CHANNEL L",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "planned"
+    },
+    {
+     "id": "h_2026-08-02_shortform_runtime",
+     "status": "DEMOTED",
+     "statement": "Short runtime (18-22 min) beats 60-180 min for REACH in the morning/cortisol lane. Mechanism: our 1.5hr morning ships run ~21% AVD = ~19 min watched; a 19-min video delivers the SAME absolute watch-ti",
+     "predicted_metric": "views/day at d7 vs same-age 1.5hr morning cohort; AVD% >=70 (vs ~21% at 1.5hr)",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-22_clinical_hook_recovery",
+     "status": "KILLED",
+     "statement": "Clinical-somatic hook framing (present-tense Q-hook + named raga + Hz + cortisol/vagus/nervous-system language) recovers channel reach. Evidence: our own all-time reach leaders used this exact registe",
+     "predicted_metric": "A ship using this register should land CTR >= 4.5% (vs the July cohort median 3.28%) and/or beat its lane's recent median views.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-24_launch_day_inversion",
+     "status": "PROPOSED",
+     "statement": "CONSUMPTION and LAUNCH-DAY are different effects and they point opposite ways. Consumption (channel impressions by weekday, de-trended vs trailing-7d mean, n=67 days): Mon 129% > Wed 115% > Tue 114% >",
+     "predicted_metric": "A ship launched Thu/Fri should post >=1.5x the age-4-12d true impressions/day of a comparable-strength cell launched Mon/Wed in the same month. Falsified if Mon/Wed ships match or beat Thu/Fri over th",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-25_t1_vocab_register",
+     "status": "TESTING",
+     "statement": "Western-wellness vocabulary in the title lead pulls T1 watch-share; Indian-classical specificity (named raga/instrument leads) pulls India. Observed: wellness-vocab titles 34-41% T1 watch-time (Gratit",
+     "predicted_metric": "A T1-vocab-led ship posts \u226530% T1 watch-share at d7 (channel baseline ~20-25%); the register arm (somatic vs clarity vs spiritual) that wins CTR while holding \u226530% T1 becomes the default T1 register.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-26_thumb_refresh_expands_impressions",
+     "status": "TESTING",
+     "statement": "A thumbnail refresh on a still-ALIVE decaying video can expand impressions (flatten the decay slope), not just convert better. Mechanism: impressions are downstream of predicted performance (expected ",
+     "predicted_metric": "Test #50 vehicle (Morning Energy Dilruba, DMcoOLvmAyQ, launched 2026-07-26; pre-test slope 53K->27K impr/day, -38% w/w). CONFIRMED if challenger (BOOST YOUR ENERGY) wins/co-leads watch-time share AND ",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-10_thumb_composition_bed",
+     "status": "TESTING",
+     "statement": "Thumbnail IMAGE composition is a first-order CTR lever and the in-bed rest-framing specifically beats other viewer-moment compositions in the morning lane. Basis: cross-VIDEO measurement 2026-08-02 (w",
+     "predicted_metric": "",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "planned"
+    }
+   ],
+   "captures": [
+    "2026-08-31"
+   ]
+  },
+  "wk_2026-08-10": {
+   "ships": {
+    "GwWrq4UEisU": {
+     "title": "Quiet Morning | Sarangi Raga Bilawal | 1.5 Hours",
+     "publish_date": "2026-08-10",
+     "series": {
+      "2026-08-31": {
+       "age_d": 21,
+       "engaged_views": 1027,
+       "eng_per_day": 48.9,
+       "expected_at_age": 2271,
+       "cohort_x": 0.45,
+       "impressions": 22612,
+       "impr_per_day": 1077,
+       "ctr_pct": 3.4,
+       "avd_pct": 24.44
+      }
+     }
+    },
+    "TfmVxYy0wUk": {
+     "title": "Anxiety Detox Music | Veena Instrumental | 1.5 Hours",
+     "publish_date": "2026-08-12",
+     "series": {
+      "2026-08-31": {
+       "age_d": 19,
+       "engaged_views": 960,
+       "eng_per_day": 50.5,
+       "expected_at_age": 1461,
+       "cohort_x": 0.66,
+       "impressions": 20535,
+       "impr_per_day": 1081,
+       "ctr_pct": 3.26,
+       "avd_pct": 20.83
+      }
+     }
+    },
+    "M5M749GxFak": {
+     "title": "Mental Space Music | Bansuri & Tanpura | 1.5 Hours",
+     "publish_date": "2026-08-11",
+     "series": {
+      "2026-08-31": {
+       "age_d": 20,
+       "engaged_views": 944,
+       "eng_per_day": 47.2,
+       "expected_at_age": 1791,
+       "cohort_x": 0.53,
+       "impressions": 26917,
+       "impr_per_day": 1346,
+       "ctr_pct": 2.59,
+       "avd_pct": 20.96
+      }
+     }
+    },
+    "FVngE7TOM_Q": {
+     "title": "Bedtime Music | Surbahar Instrumental | 3 Hours",
+     "publish_date": "2026-08-14",
+     "series": {
+      "2026-08-31": {
+       "age_d": 17,
+       "engaged_views": 642,
+       "eng_per_day": 37.8,
+       "expected_at_age": 1586,
+       "cohort_x": 0.4,
+       "impressions": 11730,
+       "impr_per_day": 690,
+       "ctr_pct": 4.01,
+       "avd_pct": 15.24
+      }
+     }
+    },
+    "0Bpy1OzyMhY": {
+     "title": "Cozy Evening Music | Sitar Instrumental | 1.5 Hours",
+     "publish_date": "2026-08-13",
+     "series": {
+      "2026-08-31": {
+       "age_d": 18,
+       "engaged_views": 551,
+       "eng_per_day": 30.6,
+       "expected_at_age": 2045,
+       "cohort_x": 0.27,
+       "impressions": 13093,
+       "impr_per_day": 727,
+       "ctr_pct": 3.04,
+       "avd_pct": 19.9
+      }
+     }
+    }
+   },
+   "hypotheses": [
+    {
+     "id": "h_2026-08-07_playlist_routing",
+     "status": "TESTING",
+     "statement": "Reordering playlists so high-RPM, audience-matched videos sit directly behind the big-impression donors raises channel playlist share of watch-time. Routing redistributes existing traffic to better-ea",
+     "predicted_metric": "playlist share of channel WATCH-TIME. Pre Jul28-31 = 8.92%. Post-shuffle-1 Aug2-4 = 9.44%. Success = holds at or above ~9.4% across Aug 9-15 once new-ship inventory is netted out. MEASURE AT CHANNEL L",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-22_clinical_hook_recovery",
+     "status": "KILLED",
+     "statement": "Clinical-somatic hook framing (present-tense Q-hook + named raga + Hz + cortisol/vagus/nervous-system language) recovers channel reach. Evidence: our own all-time reach leaders used this exact registe",
+     "predicted_metric": "A ship using this register should land CTR >= 4.5% (vs the July cohort median 3.28%) and/or beat its lane's recent median views.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-24_launch_day_inversion",
+     "status": "PROPOSED",
+     "statement": "CONSUMPTION and LAUNCH-DAY are different effects and they point opposite ways. Consumption (channel impressions by weekday, de-trended vs trailing-7d mean, n=67 days): Mon 129% > Wed 115% > Tue 114% >",
+     "predicted_metric": "A ship launched Thu/Fri should post >=1.5x the age-4-12d true impressions/day of a comparable-strength cell launched Mon/Wed in the same month. Falsified if Mon/Wed ships match or beat Thu/Fri over th",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-25_t1_vocab_register",
+     "status": "TESTING",
+     "statement": "Western-wellness vocabulary in the title lead pulls T1 watch-share; Indian-classical specificity (named raga/instrument leads) pulls India. Observed: wellness-vocab titles 34-41% T1 watch-time (Gratit",
+     "predicted_metric": "A T1-vocab-led ship posts \u226530% T1 watch-share at d7 (channel baseline ~20-25%); the register arm (somatic vs clarity vs spiritual) that wins CTR while holding \u226530% T1 becomes the default T1 register.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-26_thumb_refresh_expands_impressions",
+     "status": "TESTING",
+     "statement": "A thumbnail refresh on a still-ALIVE decaying video can expand impressions (flatten the decay slope), not just convert better. Mechanism: impressions are downstream of predicted performance (expected ",
+     "predicted_metric": "Test #50 vehicle (Morning Energy Dilruba, DMcoOLvmAyQ, launched 2026-07-26; pre-test slope 53K->27K impr/day, -38% w/w). CONFIRMED if challenger (BOOST YOUR ENERGY) wins/co-leads watch-time share AND ",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-10_thumb_composition_bed",
+     "status": "TESTING",
+     "statement": "Thumbnail IMAGE composition is a first-order CTR lever and the in-bed rest-framing specifically beats other viewer-moment compositions in the morning lane. Basis: cross-VIDEO measurement 2026-08-02 (w",
+     "predicted_metric": "",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-15_spiritual_energy_cluster",
+     "status": "KILLED",
+     "statement": "Untapped spiritual-energy cluster (Attract Positive/Raise Vibration/Cleanse/Good Energy Flow \u2014 offering-framed, Positive-Energy register PROVEN: Yoga 10.5K/CTR4.7, Joyful CTR5.7) reaches in decay regi",
+     "predicted_metric": "END-OF-WEEK: >=1 of 2 beats cohort + CTR>=3.5 \u2192 cluster has legs; 0 \u2192 kill.",
+     "n_reads": 2,
+     "latest_read": "2026-08-31",
+     "role": "planned"
+    },
+    {
+     "id": "h_2026-08-18_image_breaks_ctr_ceiling",
+     "status": "TESTING",
+     "statement": "A bolder/higher-contrast IMAGE (not the standard Pichwai miniature) breaks the ~3% CTR ceiling. Every text/format A/B stayed at 2.5-4% CTR; the image is the one variable never A/B'd in 40+ tests. Tue ",
+     "predicted_metric": "END-OF-WEEK ANSWER: winning image's video CTR > 3.5% (meaningfully above the text-only ~3% ceiling) \u2192 image IS the CTR lever, scale bolder visuals. If both ~3% \u2192 CTR ceiling is lane/concept, not image",
+     "n_reads": 2,
+     "latest_read": "2026-08-31",
+     "role": "planned"
+    },
+    {
+     "id": "h_2026-08-20_sleep_drone_replication",
+     "status": "PARKED",
+     "statement": "Bansuri sleep-drone 3hr replicates the Can't Sleep drone win. Sleep is the only lane where fresh ships broke 5% CTR.",
+     "predicted_metric": "END-OF-WEEK ANSWER: day-7 cohort impressions >=1.2x AND CTR >=4.5% \u2192 drone-sleep formula confirmed repeatable. Below \u2192 one-off.",
+     "n_reads": 2,
+     "latest_read": "2026-08-31",
+     "role": "planned"
+    },
+    {
+     "id": "h_2026-08-18_hero_restoration",
+     "status": "TESTING",
+     "statement": "Sitar restored to its WINNING register (morning-uplift, where Morning Routine won 1.01x/AVD30.6%) recovers vs the flops it posted when misused on sleep/cozy-evening.",
+     "predicted_metric": "END-OF-WEEK ANSWER: Tue Sitar ship > 1,000 views AND cohort >=1.0x \u2192 hero belongs in morning-uplift, stop wasting it elsewhere.",
+     "n_reads": 2,
+     "latest_read": "2026-08-31",
+     "role": "planned"
+    },
+    {
+     "id": "h_2026-08-15_sitar_active_register",
+     "status": "CONFIRMED",
+     "statement": "Sitar works in ACTIVE-MIND registers regardless of daypart (evidence: lifetime \u2014 Dopamine Reset 2.26M PM \u00b7 Nervous System 150K PM \u00b7 Morning Right 98K AM \u00b7 Brain Detox 46K PM \u00b7 Morning Motivation 40K A",
+     "predicted_metric": "CONFIRMED \u2014 do not re-test. Rule enforced going forward.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "planned"
+    },
+    {
+     "id": "h_2026-08-17_instrument_naming",
+     "status": "TESTING",
+     "statement": "Naming the niche instrument in the title ('Slow Tanpura') vs generic ('Indian Instrumental') changes performance. Clean single-variable A/B on Mon (Gratitude concept, thumb fixed).",
+     "predicted_metric": "END-OF-WEEK: A/B watch-share winner \u2014 if 'Indian Instrumental' wins >55/45, generic > niche-instrument-naming (drop niche instrument names); if named wins, keep. Settles the wash.",
+     "n_reads": 2,
+     "latest_read": "2026-08-31",
+     "role": "planned"
+    }
+   ],
+   "captures": [
+    "2026-08-31"
+   ]
+  },
+  "wk_2026-08-17": {
+   "ships": {
+    "bkgEf-xolkc": {
+     "title": "Attract Positive Energy | Indian Classical Music | 1.5 Hours",
+     "publish_date": "2026-08-17",
+     "series": {
+      "2026-08-31": {
+       "age_d": 14,
+       "engaged_views": 888,
+       "eng_per_day": 63.4,
+       "expected_at_age": 1674,
+       "cohort_x": 0.53,
+       "impressions": 19242,
+       "impr_per_day": 1374,
+       "ctr_pct": 3.37,
+       "avd_pct": 21.71
+      }
+     }
+    },
+    "xUMOZM0iULs": {
+     "title": "Overnight Calm | Santoor Sleep Music | 3 Hours",
+     "publish_date": "2026-08-21",
+     "series": {
+      "2026-08-31": {
+       "age_d": 10,
+       "engaged_views": 543,
+       "eng_per_day": 54.3,
+       "expected_at_age": 1589.0,
+       "cohort_x": 0.34,
+       "impressions": 12025,
+       "impr_per_day": 1202,
+       "ctr_pct": 2.98,
+       "avd_pct": 16.72
+      }
+     }
+    },
+    "SE9F5TvYoIA": {
+     "title": "Stress Relief Music | Sitar Instrumental | 1.5 Hours",
+     "publish_date": "2026-08-18",
+     "series": {
+      "2026-08-31": {
+       "age_d": 13,
+       "engaged_views": 763,
+       "eng_per_day": 58.7,
+       "expected_at_age": 1417,
+       "cohort_x": 0.54,
+       "impressions": 20150,
+       "impr_per_day": 1550,
+       "ctr_pct": 2.68,
+       "avd_pct": 20.65
+      }
+     }
+    },
+    "oE1pbCsZgsU": {
+     "title": "Morning Motivation | Bansuri Raga Bilawal | 1.5 Hours",
+     "publish_date": "2026-08-20",
+     "series": {
+      "2026-08-31": {
+       "age_d": 11,
+       "engaged_views": 526,
+       "eng_per_day": 47.8,
+       "expected_at_age": 2190.0,
+       "cohort_x": 0.24,
+       "impressions": 11308,
+       "impr_per_day": 1028,
+       "ctr_pct": 3.44,
+       "avd_pct": 16.09
+      }
+     }
+    }
+   },
+   "hypotheses": [
+    {
+     "id": "h_2026-08-07_playlist_routing",
+     "status": "TESTING",
+     "statement": "Reordering playlists so high-RPM, audience-matched videos sit directly behind the big-impression donors raises channel playlist share of watch-time. Routing redistributes existing traffic to better-ea",
+     "predicted_metric": "playlist share of channel WATCH-TIME. Pre Jul28-31 = 8.92%. Post-shuffle-1 Aug2-4 = 9.44%. Success = holds at or above ~9.4% across Aug 9-15 once new-ship inventory is netted out. MEASURE AT CHANNEL L",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-24_launch_day_inversion",
+     "status": "PROPOSED",
+     "statement": "CONSUMPTION and LAUNCH-DAY are different effects and they point opposite ways. Consumption (channel impressions by weekday, de-trended vs trailing-7d mean, n=67 days): Mon 129% > Wed 115% > Tue 114% >",
+     "predicted_metric": "A ship launched Thu/Fri should post >=1.5x the age-4-12d true impressions/day of a comparable-strength cell launched Mon/Wed in the same month. Falsified if Mon/Wed ships match or beat Thu/Fri over th",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-25_t1_vocab_register",
+     "status": "TESTING",
+     "statement": "Western-wellness vocabulary in the title lead pulls T1 watch-share; Indian-classical specificity (named raga/instrument leads) pulls India. Observed: wellness-vocab titles 34-41% T1 watch-time (Gratit",
+     "predicted_metric": "A T1-vocab-led ship posts \u226530% T1 watch-share at d7 (channel baseline ~20-25%); the register arm (somatic vs clarity vs spiritual) that wins CTR while holding \u226530% T1 becomes the default T1 register.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-26_thumb_refresh_expands_impressions",
+     "status": "TESTING",
+     "statement": "A thumbnail refresh on a still-ALIVE decaying video can expand impressions (flatten the decay slope), not just convert better. Mechanism: impressions are downstream of predicted performance (expected ",
+     "predicted_metric": "Test #50 vehicle (Morning Energy Dilruba, DMcoOLvmAyQ, launched 2026-07-26; pre-test slope 53K->27K impr/day, -38% w/w). CONFIRMED if challenger (BOOST YOUR ENERGY) wins/co-leads watch-time share AND ",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-10_thumb_composition_bed",
+     "status": "TESTING",
+     "statement": "Thumbnail IMAGE composition is a first-order CTR lever and the in-bed rest-framing specifically beats other viewer-moment compositions in the morning lane. Basis: cross-VIDEO measurement 2026-08-02 (w",
+     "predicted_metric": "",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-15_spiritual_energy_cluster",
+     "status": "KILLED",
+     "statement": "Untapped spiritual-energy cluster (Attract Positive/Raise Vibration/Cleanse/Good Energy Flow \u2014 offering-framed, Positive-Energy register PROVEN: Yoga 10.5K/CTR4.7, Joyful CTR5.7) reaches in decay regi",
+     "predicted_metric": "END-OF-WEEK: >=1 of 2 beats cohort + CTR>=3.5 \u2192 cluster has legs; 0 \u2192 kill.",
+     "n_reads": 2,
+     "latest_read": "2026-08-31",
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-18_image_breaks_ctr_ceiling",
+     "status": "TESTING",
+     "statement": "A bolder/higher-contrast IMAGE (not the standard Pichwai miniature) breaks the ~3% CTR ceiling. Every text/format A/B stayed at 2.5-4% CTR; the image is the one variable never A/B'd in 40+ tests. Tue ",
+     "predicted_metric": "END-OF-WEEK ANSWER: winning image's video CTR > 3.5% (meaningfully above the text-only ~3% ceiling) \u2192 image IS the CTR lever, scale bolder visuals. If both ~3% \u2192 CTR ceiling is lane/concept, not image",
+     "n_reads": 2,
+     "latest_read": "2026-08-31",
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-20_sleep_drone_replication",
+     "status": "PARKED",
+     "statement": "Bansuri sleep-drone 3hr replicates the Can't Sleep drone win. Sleep is the only lane where fresh ships broke 5% CTR.",
+     "predicted_metric": "END-OF-WEEK ANSWER: day-7 cohort impressions >=1.2x AND CTR >=4.5% \u2192 drone-sleep formula confirmed repeatable. Below \u2192 one-off.",
+     "n_reads": 2,
+     "latest_read": "2026-08-31",
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-18_hero_restoration",
+     "status": "TESTING",
+     "statement": "Sitar restored to its WINNING register (morning-uplift, where Morning Routine won 1.01x/AVD30.6%) recovers vs the flops it posted when misused on sleep/cozy-evening.",
+     "predicted_metric": "END-OF-WEEK ANSWER: Tue Sitar ship > 1,000 views AND cohort >=1.0x \u2192 hero belongs in morning-uplift, stop wasting it elsewhere.",
+     "n_reads": 2,
+     "latest_read": "2026-08-31",
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-17_instrument_naming",
+     "status": "TESTING",
+     "statement": "Naming the niche instrument in the title ('Slow Tanpura') vs generic ('Indian Instrumental') changes performance. Clean single-variable A/B on Mon (Gratitude concept, thumb fixed).",
+     "predicted_metric": "END-OF-WEEK: A/B watch-share winner \u2014 if 'Indian Instrumental' wins >55/45, generic > niche-instrument-naming (drop niche instrument names); if named wins, keep. Settles the wash.",
+     "n_reads": 2,
+     "latest_read": "2026-08-31",
+     "role": "tested"
+    }
+   ],
+   "captures": [
+    "2026-08-31"
+   ]
+  },
+  "wk_2026-08-24": {
+   "ships": {
+    "QWS_Bj5-pzM": {
+     "title": "Morning Cortisol Detox | Bansuri Raga Bhairavi 432Hz | 1.5 Hours",
+     "publish_date": "2026-08-25",
+     "series": {
+      "2026-08-31": {
+       "age_d": 6,
+       "engaged_views": 771,
+       "eng_per_day": 128.5,
+       "expected_at_age": 1283,
+       "cohort_x": 0.6,
+       "impressions": 22202,
+       "impr_per_day": 3700,
+       "ctr_pct": 2.54,
+       "avd_pct": 20.23
+      }
+     }
+    },
+    "KVQMORHMyiE": {
+     "title": "Stop Overthinking | Sitar Instrumental | 1.5 Hours",
+     "publish_date": "2026-08-24",
+     "series": {
+      "2026-08-31": {
+       "age_d": 7,
+       "engaged_views": 495,
+       "eng_per_day": 70.7,
+       "expected_at_age": 1228.0,
+       "cohort_x": 0.4,
+       "impressions": 12636,
+       "impr_per_day": 1805,
+       "ctr_pct": 2.79,
+       "avd_pct": 18.04
+      }
+     }
+    },
+    "6Ubh1PWwob8": {
+     "title": "Deep Stress Relief Music | Santoor & Tanpura | 3 Hours",
+     "publish_date": "2026-08-28",
+     "series": {
+      "2026-08-31": {
+       "age_d": 3,
+       "engaged_views": 288,
+       "eng_per_day": 96.0,
+       "expected_at_age": 941,
+       "cohort_x": 0.31,
+       "impressions": 6173,
+       "impr_per_day": 2058,
+       "ctr_pct": 3.4,
+       "avd_pct": 13.04
+      }
+     }
+    },
+    "pcx9itZqvnQ": {
+     "title": "Morning Anxiety Relief | Sarangi Raga Bhairavi | 1.5 Hours",
+     "publish_date": "2026-08-27",
+     "series": {
+      "2026-08-31": {
+       "age_d": 4,
+       "engaged_views": 320,
+       "eng_per_day": 80.0,
+       "expected_at_age": 1059.0,
+       "cohort_x": 0.3,
+       "impressions": 8299,
+       "impr_per_day": 2075,
+       "ctr_pct": 2.77,
+       "avd_pct": 18.14
+      }
+     }
+    }
+   },
+   "hypotheses": [
+    {
+     "id": "h_hz_in_title",
+     "status": "TESTING",
+     "statement": "UN-PARKED 2026-08-23: the '432Hz' token itself adds pull. Was parked Jul (n=1 confounded). Now clean: Tue A/B identical titles \u00b1 '432Hz', inside the live cortisol wave where every 200K+ winner carries",
+     "predicted_metric": "Tue A/B watch-share, single-variable. A (with Hz) wins \u2192 Hz standard in wave-formula titles. Wash/B wins \u2192 dropped permanently, hypothesis KILLED.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "planned"
+    },
+    {
+     "id": "h_2026-08-24_wave_formula_pick",
+     "status": "TESTING",
+     "statement": "Titles borrowed from a competitor's currently-winning formula out-pull self-invented concepts. Mon A/B picks between the two live formulas: 'Reset Your Brain Naturally' (Raga Heal, 351K #2 + 3.6K rece",
+     "predicted_metric": "A/B watch-share winner + per-arm CTR; ship day-7 cohort vs 186 views/day median. Winner's formula becomes a reusable title pattern; if the ship ALSO beats cohort, wave-formula > self-invented is suppo",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "planned"
+    },
+    {
+     "id": "h_2026-08-24_wave_adjacency_escape",
+     "status": "TESTING",
+     "statement": "\ud83c\udfaf WEEK GOAL wk_2026-08-24 (user, 2026-08-23): deliver ships that become SUGGESTED videos next to already-driving host videos. WEEK-LEVEL META: wave-adjacency escapes the subscriber ceiling. New ships ",
+     "predicted_metric": "\u22652 of 5 ships get >25% RELATED_VIDEO share at d7 (baseline 1 of 19) AND week-2 Suggested views \u226550% of week-1 (durability \u2014 decay research 2026-08-23 showed competitor-wave adjacency is a 3-day burst:",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "planned"
+    },
+    {
+     "id": "h_2026-08-23_am_vs_pm_same_concept",
+     "status": "PROPOSED",
+     "statement": "Publish slot (AM vs PM) changes week-1 reach when CONCEPT is held constant. Motivation: 6-week AM 241 vs PM 152 collapsed to 156 vs 149 over the last 2 weeks once confounds were visible \u2014 the gap was ",
+     "predicted_metric": "same-concept pair: |AM - PM| day-5 v/d < 15% \u2192 slot is not a lever (confirm demotion); > 30% in either direction \u2192 reinstate a slot rule with direction.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "planned"
+    }
+   ],
+   "captures": [
+    "2026-08-31"
+   ]
+  }
+ },
+ "last_updated": "2026-08-31"
+}

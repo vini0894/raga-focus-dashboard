@@ -40,8 +40,8 @@ DOWNLOADS = Path.home() / "Downloads"
 DEFAULT_WINDOW_DAYS = 28  # Studio exports are a trailing 28-day rolling window
 
 HISTORY_COLS = ["capture_date", "video_id", "title", "publish_date", "views",
-                "watch_hours", "subscribers_gained", "impressions", "ctr_pct",
-                "avg_view_duration_sec", "avg_view_pct"]
+                "engaged_views", "watch_hours", "subscribers_gained", "impressions",
+                "ctr_pct", "avg_view_duration_sec", "avg_view_pct"]
 REVENUE_COLS = ["capture_date", "video_id", "title", "publish_date", "views",
                 "estimated_revenue_usd"]
 TOTALS_COLS = ["capture_date", "window_days", "n_videos", "views", "watch_hours",
@@ -113,11 +113,32 @@ def parse_capture_date(path: Path, default_year=2026) -> str | None:
     return None  # caller decides whether to fall back to mtime
 
 
+
+# ---------- column aliases ----------
+# YouTube renamed Studio export columns around 2026-08-31:
+#   "Impressions"                        -> "Thumbnail impressions"
+#   "Impressions click-through rate (%)" -> "Thumbnail click-through rate (%)"
+IMPR_COLS = ("Impressions", "Thumbnail impressions")
+# "Engaged views" arrived 2026-08-31, when public Views switched to counting at PLAY
+# START. Older exports counted Views at the engaged threshold, so views IS the
+# engaged figure there — that fallback keeps the series comparable across the change.
+ENGAGED_COLS = ("Engaged views",)
+CTR_COLS = ("Impressions click-through rate (%)", "Thumbnail click-through rate (%)")
+
+
+def _col(row, names, default=""):
+    for n in names:
+        if row.get(n) not in (None, ""):
+            return row[n]
+    return default
+
+
 def is_studio_export(path: Path) -> bool:
     try:
         with path.open(encoding="utf-8-sig") as f:
             header = f.readline()
-        return "Video title" in header and "Estimated revenue" in header and "Impressions" in header
+        return ("Video title" in header and "Estimated revenue" in header
+                and any(c in header for c in IMPR_COLS))
     except Exception:
         return False
 
@@ -179,10 +200,11 @@ def ingest_one(path: Path, force_date=None, window_days=DEFAULT_WINDOW_DAYS) -> 
                 hist_rows.append({
                     "capture_date": cap, "video_id": vid, "title": title,
                     "publish_date": pub, "views": views,
+                    "engaged_views": _i(_col(row, ENGAGED_COLS, views)),
                     "watch_hours": _f(row.get("Watch time (hours)", "0")),
                     "subscribers_gained": _i(row.get("Subscribers", "0")),
-                    "impressions": _i(row.get("Impressions", "0")),
-                    "ctr_pct": _f(row.get("Impressions click-through rate (%)", "0")),
+                    "impressions": _i(_col(row, IMPR_COLS, "0")),
+                    "ctr_pct": _f(_col(row, CTR_COLS, "0")),
                     "avg_view_duration_sec": dur_to_sec(row.get("Average view duration", "0:00")),
                     "avg_view_pct": _f(row.get("Average percentage viewed (%)", "0")),
                 })
@@ -202,8 +224,8 @@ def ingest_one(path: Path, force_date=None, window_days=DEFAULT_WINDOW_DAYS) -> 
             "watch_hours": _f(total_row.get("Watch time (hours)", "0")),
             "subscribers_gained": _i(total_row.get("Subscribers", "0")),
             "revenue_usd": round(rev, 3),
-            "impressions": _i(total_row.get("Impressions", "0")),
-            "ctr_pct": _f(total_row.get("Impressions click-through rate (%)", "0")),
+            "impressions": _i(_col(total_row, IMPR_COLS, "0")),
+            "ctr_pct": _f(_col(total_row, CTR_COLS, "0")),
             "avd_sec": dur_to_sec(total_row.get("Average view duration", "0:00")),
             "avd_pct": _f(total_row.get("Average percentage viewed (%)", "0")),
             "rev_per_day": round(rev / window_days, 2),
