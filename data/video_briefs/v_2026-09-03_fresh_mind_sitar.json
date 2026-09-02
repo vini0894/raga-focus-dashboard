@@ -1,0 +1,50 @@
+{
+ "id": "v_2026-09-03_fresh_mind_sitar",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-09-02",
+ "planned_date": "2026-09-03",
+ "planned_slot": "AM IST · Thu — morning-clarity intent (concept-time rule)",
+ "title": "Fresh Mind Music | Sitar Instrumental | 1.5 Hours",
+ "title_variants": {"A": "Fresh Mind Music | Sitar Instrumental | 1.5 Hours"},
+ "title_note": "SINGLE TITLE by design — the IMAGE is this ship's only variable. 'fresh mind music' = VidIQ 61, FRESH on all 4 prescreen sources. Deliberately does NOT lead with 'Morning': that token is at 6+ uses plus Monday's 'Calm Morning Music'. Title-only A/B was rejected as low-information: 16 clean title-only tests are already on record and none moved CTR off ~3%.",
+ "lane": "morning",
+ "daypart": "morning",
+ "instrument": "Sitar",
+ "raga": "Ahir Bhairav",
+ "validated_keywords": [
+  "'fresh mind music' — VidIQ 61, FRESH, zero conflicts",
+  "cell: Sitar x morning = MODEST, the orchestrator's #1 candidate (n=7, med 1,685v, CTR 4.19, AVD 21.9%) and the strongest cell available this week after Friday's",
+  "DROPPED the originally-planned Santoor x healing: the HEALING REGISTER is on the confirmed-dead list (all healing ships flopped 63-1,036v) and Santoor x healing is THIN n=1 (458v). Shipping a known-dead register as a control would waste the slot.",
+  "cooldown: Sitar clear (last titled use Aug 24, 10d). Bansuri reserved for Fri. Sarod used Tue."
+ ],
+ "thumbnail_text_main": "START CLEAR",
+ "thumbnail_text_variants": [
+  {"label": "A", "text": "START CLEAR", "strategy": "HELD CONSTANT — text is NOT the variable on this ship."},
+  {"label": "B", "text": "START CLEAR", "strategy": "HELD CONSTANT — identical to arm A."}
+ ],
+ "thumbnail_prompt": "TWO images, IDENTICAL in every respect except WHO is in the frame. Same Pichwai/Kangra miniature style, same aged-parchment palette, same ornate border, same first-light morning landscape, same text banner at ~35% of frame reading START CLEAR with a second tier 'Sitar · Raga Ahir Bhairav'.\n\nARM A (VIEWER): a person waking and stretching in bed at first light, eyes just opening, unhurried. A sitar rests at the FRAME EDGE, not being played, not the subject.\n\nARM B (PERFORMER): a musician seated cross-legged PLAYING the sitar as the subject of the frame. No sleeping/waking figure.\n\nEverything else pixel-comparable. The person is the only difference.",
+ "thumbnail_ab_note": "⭐⭐ THE WEEK'S TEST — first true IMAGE-COMPOSITION A/B on the channel. Of 68 A/B rows on record: 33 varied title+thumb together (unattributable), 16 title-only, 17 thumb-TEXT-only, and exactly ONE varied the image alone. The viewer-vs-performer gap (6.11% vs 3.03%) is the largest effect in §7b but it is a CROSS-SECTION confounded by lane, era and title — never an experiment. This isolates it. Read per-arm CTR at d7. If A wins, it is the biggest lever on the channel and every future thumbnail changes.",
+ "playlists": ["Morning Energy Music", "Morning Focus Music"],
+ "suno_prompt": "Instrumental only, no vocals, no humming — flowing Indian classical sitar in Raga Ahir Bhairav, bright plucked tone with gentle sustain, light tabla, 78 BPM, seamless loop.",
+ "suno_prompt_note": "Short one-liner (~170 chars). MORNING-CLARITY lane: BPM at 78 (clarity band 70-80), energy retained — this is not a calm lane. 'flowing' not 'slow' (the word 'slow' makes Suno drag; reserved for sleep/deep-rest). Tabla IS correct here — the tabla rule is Sitar-only. Ahir Bhairav is the canonical morning raga and is unused in any live title. Binaural: alpha 10 Hz at -20dB.",
+ "experiment": "PRIMARY: thumbnail IMAGE composition, viewer vs performer (h_2026-08-18_image_breaks_ctr_ceiling, round 3 — first time the variable is composition rather than palette; rounds 1 and 2 both varied palette and both failed at ~2.7%). SECONDARY: control ship for h_2026-08-31_cell_beats_packaging — an ordinary cell with disciplined packaging, against which Friday's proven cell is measured.",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "publish": "2026-09-03 AM IST",
+  "loop_note": "6-7 flowing Ahir Bhairav sitar clips with light tabla, long crossfades to ~90 min, consistent bright morning level.",
+  "binaural": "alpha 10 Hz at -20dB",
+  "assets_needed": "TWO images — identical except the person (viewer vs performer). USER to generate."
+ },
+ "preflight_passed": true,
+ "preflight_detail": "Orchestrator #1 candidate. Cooldowns clear. Lead FRESH + scored 61. Thumb text FRESH. Raga unused in live titles. No packaging clone within 21d.",
+ "pending": [
+  "USER: generate TWO images, identical except the person",
+  "Launch IMAGE A/B in Test & compare at publish + log to ab_raw_data.csv as test_type='Thumb-IMAGE-only'",
+  "AI-disclosure toggle on upload",
+  "d7 read 2026-09-10: per-arm CTR (the whole point) + engaged views"
+ ],
+ "measurement_note": "Read on ENGAGED VIEWS only. Public views count at play-start since 2026-08-24 and run inflated. Age-matched via tools/hypothesis_progress.py.",
+ "version": "v1 — LOCKED user 2026-09-02 ('finalize titles for Thursday and Friday and thumbnail text')."
+}

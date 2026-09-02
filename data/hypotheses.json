@@ -1,7 +1,7 @@
 {
  "purpose": "Standing ledger of strategic bets \u2014 the compounding-strategy layer on top of the mechanical gates (cooldown/track_record/clone/lead_prescreen). A finding discovered once (competitor research, a track_record pattern, an A/B result) gets banked here as a tracked hypothesis instead of being re-derived every time it's asked about. recommend_slot.py reads this to tag candidates with the bet they'd be testing.",
  "lifecycle": "PROPOSED (stated, not yet tested) -> TESTING (a ship is live against it) -> CONFIRMED or KILLED (enough evidence to close it) -> promoted_rule (folded into a permanent playbook rule, e.g. anti_patterns.json / lane_packaging_directions.json)",
- "last_updated": "2026-08-31",
+ "last_updated": "2026-09-02",
  "hypotheses": [
   {
    "id": "h_2026-08-07_playlist_routing",
@@ -355,7 +355,8 @@
     "Sitar"
    ],
    "linked_ships": [
-    "v_2026-08-18_stress_relief_sitar"
+    "v_2026-08-18_stress_relief_sitar",
+    "2026-09-03 \u00b7 Fresh Mind Music | Sitar \u2014 ROUND 3: composition (viewer vs performer), not palette. Rounds 1-2 both varied palette and both failed at ~2.7%."
    ],
    "promoted_rule": null,
    "caveats": "THE most important test of the week. Production MUST make 2 genuinely distinct images (standard miniature vs bold energy/light visual).",
@@ -385,7 +386,7 @@
   {
    "id": "h_2026-08-20_sleep_drone_replication",
    "created": "2026-08-15",
-   "status": "PARKED",
+   "status": "TESTING",
    "source": "chat_2026-08-15 \u2014 Can't Sleep tanpura drone won 1.56x cohort + CTR5.4",
    "statement": "Bansuri sleep-drone 3hr replicates the Can't Sleep drone win. Sleep is the only lane where fresh ships broke 5% CTR.",
    "predicted_metric": "END-OF-WEEK ANSWER: day-7 cohort impressions >=1.2x AND CTR >=4.5% \u2192 drone-sleep formula confirmed repeatable. Below \u2192 one-off.",
@@ -396,7 +397,8 @@
     "Bansuri"
    ],
    "linked_ships": [
-    "v_2026-08-20_overnight_calm_bansuri_3hr"
+    "v_2026-08-20_overnight_calm_bansuri_3hr",
+    "2026-09-04 \u00b7 Snowy Night Music | Bansuri & Tanpura 3hr \u2014 first VALID test (a real drone bed; the Aug-21 attempt substituted melodic Santoor)"
    ],
    "promoted_rule": null,
    "caveats": "\u26a0 Surbahar sleep 3hr just shipped ~Aug14 (SLEEP DEEPLY 55%) \u2014 possible sleep-3hr overlap; watch cannibalization.",
@@ -617,7 +619,11 @@
     "Sarod",
     "Santoor"
    ],
-   "linked_ships": [],
+   "linked_ships": [
+    "2026-09-01 \u00b7 Relaxing Instrumental Music | Slow Sarod | 1.5 Hours [mhozdqO4PlA] \u2014 CONTROL (ordinary cell)",
+    "2026-09-03 \u00b7 Fresh Mind Music | Sitar Instrumental | 1.5 Hours \u2014 CONTROL (ordinary cell)",
+    "2026-09-04 \u00b7 Snowy Night Music | Bansuri & Tanpura | 3 Hours \u2014 TREATMENT (the one proven cell)"
+   ],
    "read_schedule": {
     "d7": "2026-09-11",
     "d14": "2026-09-18",
