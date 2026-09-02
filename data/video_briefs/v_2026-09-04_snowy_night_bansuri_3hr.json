@@ -4,9 +4,11 @@
  "locked": true,
  "created_at": "2026-09-02",
  "planned_date": "2026-09-04",
- "planned_slot": "19:00 IST PM · Fri — the channel's standing weekly 3hr slot (last 5 3hr ships were all Friday, exactly 7d apart)",
+ "planned_slot": "PM · 19:00 IST · Fri — 3 hours / 180 min · the channel's standing weekly 3hr slot",
  "title": "Snowy Night Music | Bansuri & Tanpura | 3 Hours",
- "title_variants": {"A": "Snowy Night Music | Bansuri & Tanpura | 3 Hours"},
+ "title_variants": {
+  "A": "Snowy Night Music | Bansuri & Tanpura | 3 Hours"
+ },
  "title_note": "SINGLE TITLE, SINGLE THUMB, NO A/B — deliberate. This ship IS the week's hypothesis test; any packaging variable would confound the one read the week exists for. 'snowy night music' = VidIQ 65, the ONLY sleep lead that is both >=60 and conflict-clean. ⚠ SWAP CANDIDATE: 'Sleep Raga' is the better title if it scores >=60 — it keeps Friday in a conventional sleep register and removes the confound below. Rejected: 'relaxing sleep music' 73 (contains 'Sleep Music', live 10d ago via Overnight Calm — prefix-evasion of a live lock), 'night music' 71 (past-lock vs Quiet Night Music Bansuri 3hr — same cell, near-clone), 'deep sleep music' (dead, lost A/B #39), 'all night sleep' 59 (craters to 25-26 in the music-intent form = thumbnail hook, not a title lead), 'bedtime music' 68 (used Aug 14).",
  "title_risk": "'Snowy Night' introduces a WEATHER-ATMOSPHERIC register the channel has never used, into a 77-82% India sleep audience, in September. Asymmetric read: if Friday wins, the cell hypothesis is confirmed MORE strongly (a proven cell carried an unconventional title). If Friday loses, the read is ambiguous — cell or title? Documented rather than hidden.",
  "lane": "sleep",
@@ -22,11 +24,18 @@
  ],
  "thumbnail_text_main": "SLEEP ALL NIGHT",
  "thumbnail_text_variants": [
-  {"label": "A", "text": "SLEEP ALL NIGHT", "strategy": "SINGLE TEXT — no thumb A/B on this ship. DELIBERATE REUSE: this is the exact thumb text on the Jul 10 Bansuri 3hr that did 10,281 engaged views. Replicating the winner's packaging is the point — the cell is the variable, everything else should match the proven ship as closely as possible."}
+  {
+   "label": "A",
+   "text": "SLEEP ALL NIGHT",
+   "strategy": "SINGLE TEXT — no thumb A/B on this ship. DELIBERATE REUSE: this is the exact thumb text on the Jul 10 Bansuri 3hr that did 10,281 engaged views. Replicating the winner's packaging is the point — the cell is the variable, everything else should match the proven ship as closely as possible."
+  }
  ],
  "thumbnail_prompt": "ONE image. Viewer already settled in bed for the night — lamp turned low, eyes closed, blanket drawn, completely at rest. Bansuri resting at the FRAME EDGE, not being played, not the subject. Deep indigo night palette with a single warm lamp source. Pichwai border, house palette. Text in its own banner panel at ~35% of frame reading SLEEP ALL NIGHT, second tier 'Bansuri & Tanpura · Raga Malkauns'. VIEWER LIVING THE MOMENT, never a performer.",
  "thumbnail_ab_note": "NO A/B by design — see title_note. Thursday carries this week's image test; Friday stays clean so the cell read is unconfounded.",
- "playlists": ["Sleep Music", "Peaceful Music"],
+ "playlists": [
+  "Sleep Music",
+  "Peaceful Music"
+ ],
  "suno_prompt": "Instrumental only, no vocals, no humming — very slow Indian classical bansuri in Raga Malkauns over a continuous tanpura drone, warm breathy bamboo tone with long sustain, no tabla, 48 BPM, seamless loop.",
  "suno_prompt_note": "Short one-liner (~205 chars). SLEEP lane is the ONE place 'very slow' is correct — the audience is falling asleep, drag is fine. No tabla (tabla rule is Sitar-only). Tanpura drone is continuous underneath, not a melodic second voice. Malkauns is the late-night raga and is unused in any live title. Binaural: delta 3 Hz at -20dB.",
  "experiment": "⭐⭐ THE WEEK'S HYPOTHESIS: h_2026-08-31_cell_beats_packaging. Prediction: this ship lands >=2.5x the median of the week's ordinary-cell ships (Tue Sarod x calm_relax, Thu Sitar x morning) on engaged views at matched age, with no packaging advantage. FALSIFIER: it lands inside the same 0.3-0.9x band as they do -> the cell is NOT the lever either, the constraint is purely channel-level distribution, and per-ship optimisation should stop in favour of routing and hero management. Also re-tests h_2026-08-20_sleep_drone_replication properly: the Aug-21 'replication' substituted Santoor, a MELODIC instrument, so no drone was ever in the render and the hypothesis has never actually been tested.",
@@ -50,5 +59,6 @@
   "d7 read 2026-09-11: engaged views vs Tue/Thu median, age-matched"
  ],
  "measurement_note": "Read on ENGAGED VIEWS only. Public views count at play-start since 2026-08-24 and run inflated 1.3-2.4x. Age-matched via tools/hypothesis_progress.py.",
- "version": "v1 — LOCKED user 2026-09-02 ('finalize titles for Thursday and Friday and thumbnail text')."
+ "version": "v1 — LOCKED user 2026-09-02 ('finalize titles for Thursday and Friday and thumbnail text').",
+ "runtime_label": "the channel's standing weekly 3hr slot"
 }

@@ -183,6 +183,31 @@ def format_minutes_to_hours(minutes: int | float) -> str:
     return f"{hours}h {mins}min"
 
 
+def brief_duration_minutes(b) -> int | None:
+    """Runtime of a brief in minutes. Prefers production_spec.duration_minutes and
+    falls back to the runtime named in the title, so older briefs still show one."""
+    spec = b.get("production_spec") or {}
+    if isinstance(spec, dict):
+        try:
+            mins = int(spec.get("duration_minutes") or 0)
+            if mins:
+                return mins
+        except (TypeError, ValueError):
+            pass
+    m = re.search(r"(\d+(?:\.\d+)?)\s*hour", str(b.get("title") or ""), re.I)
+    return int(float(m.group(1)) * 60) if m else None
+
+
+def duration_badge(b) -> str:
+    """Small runtime chip for the brief queue rows."""
+    mins = brief_duration_minutes(b)
+    if not mins:
+        return ""
+    return ("<span style='background:#2d3748;color:#e2e8f0;padding:1px 6px;"
+            "border-radius:3px;font-size:10px;font-weight:600;margin-right:6px;'>"
+            f"\u23f1 {format_minutes_to_hours(mins)}</span>")
+
+
 # -----------------------------------------------------------------------------
 # Data loaders (cached so the dashboard is snappy)
 # -----------------------------------------------------------------------------
@@ -1706,6 +1731,7 @@ with tab_briefs:
                         slot_badge = "<span style='background:#4a90e2;color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;margin-right:6px;'>🌙 PM</span>"
                     else:
                         slot_badge = ""
+                    slot_badge += duration_badge(b)
                     next_chip = "▶ NEXT  " if is_next else ""
                     label = f"📅 {planned}  " if planned else ""
                     title_text = b.get('title', '(untitled)')
@@ -1765,6 +1791,9 @@ with tab_briefs:
                     _meta += "  ·  🌅 **AM (Morning · 7am IST)**"
                 elif "PM" in _slot_head:
                     _meta += "  ·  🌙 **PM (Evening · 7pm IST)**"
+                _dm = brief_duration_minutes(brief)
+                if _dm:
+                    _meta += f"  ·  ⏱ **{format_minutes_to_hours(_dm)} ({_dm} min)**"
                 if brief.get("planned_date"):
                     _meta += f"  ·  Planned: {brief['planned_date']}"
                 if brief.get("date_shipped"):
