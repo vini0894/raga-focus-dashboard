@@ -61,5 +61,18 @@
   "d7 read 2026-09-08: watch-share + per-arm CTR + engaged views (NOT public views)"
  ],
  "measurement_note": "Read this ship on ENGAGED VIEWS only. YouTube moved public view counting to play-start on 2026-08-24, inflating raw views 1.3-2.4x against any earlier baseline. Age-matched comparison via tools/hypothesis_progress.py.",
- "version": "v1 — LOCKED user 2026-08-31 ('finalise Tuesday and at least push that so the team is not blocked to render'). Production spec is complete and render-ready; only title arm B and the image are open."
+ "version": "v1 — LOCKED user 2026-08-31 ('finalise Tuesday and at least push that so the team is not blocked to render'). Production spec is complete and render-ready; only title arm B and the image are open.",
+ "date_shipped": "2026-09-01",
+ "video_id": "mhozdqO4PlA",
+ "shipped_actuals": {
+  "title_shipped": "Relaxing Instrumental Music | Slow Sarod | 1.5 Hours (arm A as locked)",
+  "thumbnail_text_shipped": "TAKE A BREAK",
+  "deviation_note": "Thumb text shipped as TAKE A BREAK, not the briefed A/B pair (NOTHING TO DO NOW vs LET THE EVENING BE). It is FRESH — no prior use anywhere in thumbnail_dataset, ab_raw_data or any brief — and it reads as permission-register, the same cell the briefed arm A was testing. But it shipped as a SINGLE text, so the permission-vs-offering contrast is not being measured. calm_relax therefore stays UNMEASURED on thumbnail format: this ship gives one data point, not a comparison.",
+  "first_read_h3": {
+   "impressions": 720,
+   "ctr_pct": 3.8,
+   "views_playstart": 133,
+   "note": "~3h after publish (impressions curve covers x=0..3 of a 24h axis)"
+  }
+ }
 }

@@ -464,6 +464,17 @@
        "impr_per_day": 1081,
        "ctr_pct": 3.26,
        "avd_pct": 20.83
+      },
+      "2026-09-02": {
+       "age_d": 21,
+       "engaged_views": 974,
+       "eng_per_day": 46.4,
+       "expected_at_age": 2210.0,
+       "cohort_x": 0.44,
+       "impressions": 20806,
+       "impr_per_day": 991,
+       "ctr_pct": 3.26,
+       "avd_pct": 20.72
       }
      }
     },
@@ -498,6 +509,17 @@
        "impr_per_day": 690,
        "ctr_pct": 4.01,
        "avd_pct": 15.24
+      },
+      "2026-09-02": {
+       "age_d": 19,
+       "engaged_views": 714,
+       "eng_per_day": 37.6,
+       "expected_at_age": 1453.0,
+       "cohort_x": 0.49,
+       "impressions": 12430,
+       "impr_per_day": 654,
+       "ctr_pct": 4.25,
+       "avd_pct": 16.35
       }
      }
     },
@@ -515,6 +537,17 @@
        "impr_per_day": 727,
        "ctr_pct": 3.04,
        "avd_pct": 19.9
+      },
+      "2026-09-02": {
+       "age_d": 20,
+       "engaged_views": 558,
+       "eng_per_day": 27.9,
+       "expected_at_age": 1745.5,
+       "cohort_x": 0.32,
+       "impressions": 13314,
+       "impr_per_day": 666,
+       "ctr_pct": 3.0,
+       "avd_pct": 20.0
       }
      }
     }
@@ -630,7 +663,8 @@
     }
    ],
    "captures": [
-    "2026-08-31"
+    "2026-08-31",
+    "2026-09-02"
    ]
   },
   "wk_2026-08-17": {
@@ -649,6 +683,17 @@
        "impr_per_day": 1374,
        "ctr_pct": 3.37,
        "avd_pct": 21.71
+      },
+      "2026-09-02": {
+       "age_d": 16,
+       "engaged_views": 905,
+       "eng_per_day": 56.6,
+       "expected_at_age": 1351.0,
+       "cohort_x": 0.67,
+       "impressions": 19547,
+       "impr_per_day": 1222,
+       "ctr_pct": 3.38,
+       "avd_pct": 21.65
       }
      }
     },
@@ -666,6 +711,17 @@
        "impr_per_day": 1202,
        "ctr_pct": 2.98,
        "avd_pct": 16.72
+      },
+      "2026-09-02": {
+       "age_d": 12,
+       "engaged_views": 617,
+       "eng_per_day": 51.4,
+       "expected_at_age": 2161.5,
+       "cohort_x": 0.29,
+       "impressions": 12768,
+       "impr_per_day": 1064,
+       "ctr_pct": 3.18,
+       "avd_pct": 18.68
       }
      }
     },
@@ -683,6 +739,17 @@
        "impr_per_day": 1550,
        "ctr_pct": 2.68,
        "avd_pct": 20.65
+      },
+      "2026-09-02": {
+       "age_d": 15,
+       "engaged_views": 776,
+       "eng_per_day": 51.7,
+       "expected_at_age": 1657,
+       "cohort_x": 0.47,
+       "impressions": 20439,
+       "impr_per_day": 1363,
+       "ctr_pct": 2.68,
+       "avd_pct": 20.8
       }
      }
     },
@@ -700,6 +767,17 @@
        "impr_per_day": 1028,
        "ctr_pct": 3.44,
        "avd_pct": 16.09
+      },
+      "2026-09-02": {
+       "age_d": 13,
+       "engaged_views": 546,
+       "eng_per_day": 42.0,
+       "expected_at_age": 1409.5,
+       "cohort_x": 0.39,
+       "impressions": 11635,
+       "impr_per_day": 895,
+       "ctr_pct": 3.47,
+       "avd_pct": 15.98
       }
      }
     }
@@ -797,7 +875,8 @@
     }
    ],
    "captures": [
-    "2026-08-31"
+    "2026-08-31",
+    "2026-09-02"
    ]
   },
   "wk_2026-08-24": {
@@ -816,6 +895,17 @@
        "impr_per_day": 3700,
        "ctr_pct": 2.54,
        "avd_pct": 20.23
+      },
+      "2026-09-02": {
+       "age_d": 8,
+       "engaged_views": 855,
+       "eng_per_day": 106.9,
+       "expected_at_age": 1534,
+       "cohort_x": 0.56,
+       "impressions": 26597,
+       "impr_per_day": 3325,
+       "ctr_pct": 2.33,
+       "avd_pct": 20.55
       }
      }
     },
@@ -833,6 +923,17 @@
        "impr_per_day": 1805,
        "ctr_pct": 2.79,
        "avd_pct": 18.04
+      },
+      "2026-09-02": {
+       "age_d": 9,
+       "engaged_views": 530,
+       "eng_per_day": 58.9,
+       "expected_at_age": 1329,
+       "cohort_x": 0.4,
+       "impressions": 13582,
+       "impr_per_day": 1509,
+       "ctr_pct": 2.81,
+       "avd_pct": 18.06
       }
      }
     },
@@ -850,6 +951,17 @@
        "impr_per_day": 2058,
        "ctr_pct": 3.4,
        "avd_pct": 13.04
+      },
+      "2026-09-02": {
+       "age_d": 5,
+       "engaged_views": 541,
+       "eng_per_day": 108.2,
+       "expected_at_age": 1310,
+       "cohort_x": 0.41,
+       "impressions": 12039,
+       "impr_per_day": 2408,
+       "ctr_pct": 3.32,
+       "avd_pct": 11.45
       }
      }
     },
@@ -867,6 +979,17 @@
        "impr_per_day": 2075,
        "ctr_pct": 2.77,
        "avd_pct": 18.14
+      },
+      "2026-09-02": {
+       "age_d": 6,
+       "engaged_views": 373,
+       "eng_per_day": 62.2,
+       "expected_at_age": 1238.0,
+       "cohort_x": 0.3,
+       "impressions": 9913,
+       "impr_per_day": 1652,
+       "ctr_pct": 2.69,
+       "avd_pct": 18.82
       }
      }
     }
@@ -910,9 +1033,45 @@
     }
    ],
    "captures": [
-    "2026-08-31"
+    "2026-08-31",
+    "2026-09-02"
+   ]
+  },
+  "wk_2026-08-31": {
+   "ships": {
+    "wbLwW2REWcQ": {
+     "title": "Calm Morning Music |  Relaxing Flute | Instrumental 1.5 hours",
+     "publish_date": "2026-08-31",
+     "series": {
+      "2026-09-02": {
+       "age_d": 2,
+       "engaged_views": 495,
+       "eng_per_day": 247.5,
+       "expected_at_age": 543.0,
+       "cohort_x": 0.91,
+       "impressions": 10545,
+       "impr_per_day": 5272,
+       "ctr_pct": 3.57,
+       "avd_pct": 27.7
+      }
+     }
+    }
+   },
+   "hypotheses": [
+    {
+     "id": "h_2026-08-31_cell_beats_packaging",
+     "status": "TESTING",
+     "statement": "At this channel's current scale, REACH is set by the instrument x lane x runtime CELL, not by packaging. Evidence: 40+ title/thumb-text A/Bs and now 2 image A/Bs have all failed to move fresh-ship CTR",
+     "predicted_metric": "Fri 2026-09-04 (Bansuri & Tanpura x sleep x 3hr \u2014 the only proven cell available) lands >=2.5x the median of Tue/Wed/Thu on engaged views at matched age, with no packaging advantage over them. FALSIFI",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "planned"
+    }
+   ],
+   "captures": [
+    "2026-09-02"
    ]
   }
  },
- "last_updated": "2026-08-31"
+ "last_updated": "2026-09-02"
 }
