@@ -1,0 +1,91 @@
+{
+ "week_id": "wk_2026-09-07",
+ "week_start": "2026-09-07",
+ "week_end": "2026-09-11",
+ "created": "2026-09-02",
+ "status": "PROPOSED — awaiting VidIQ scores + the Monday gate override",
+ "notes": "🎯 WEEK 1 OF 4 AT SIX SHIPS/WEEK (user committed 2026-09-02). This is a VOLUME week, not a test week. Power arithmetic: at 6 ships a 6%-escalation world and a 2% world are indistinguishable (31% vs 11% chance of seeing anything), so nothing here is framed as an experiment. Four weeks at 6/wk moves P(>=1 escalation) from 63% to 77%; one week moves it from 22% to 31%. The month is the unit, not the week. ⚠️ Per-ship effort MUST fall vs the 4/wk cadence or the month will not finish — and finishing is the whole point.",
+ "why_this_shape": [
+  "Escalation, not packaging, is what stopped. Measured 2026-09-02: at ~28 days old the MEDIAN ship fell only 45,252 -> 19,993 impressions May->Aug (2.3x), but the p90 fell 625,002 -> 27,096 (23x). YouTube still runs the initial test; it stopped promoting anything past it.",
+  "Escalation was never earned by CTR: 4 of the 6 May videos that passed 600K impressions had BELOW-median CTR (one at 2.95%). So per-ship polish does not buy it.",
+  "Doubling is not a cause. May doubles escalated 7/28 (25%) vs singles 1/18 (6%), but Fisher p=0.124, and in June doubles went 0/8 once the wave ended. Doubling buys more tickets while a draw is running; it does not start one.",
+  "Three videos are 83% of the current decline and none is rescuable — impressions are being withdrawn while CTR RISES on all three (survivor bias, not a packaging fault).",
+  "Ads are not the lever: mid-rolls are already dense (~every 3 min, automatic slots on). Delivery is 1.37 ads/view because of FILL RATE, which is advertiser demand, not a setting."
+ ],
+ "ships": [
+  {
+   "date": "2026-09-07", "slot": "AM · 1.5 hours / 90 min", "source": "🏆 competitor + 📺 YouTube (convergent)",
+   "instrument": "Surbahar", "lane": "cognitive", "runtime_min": 90,
+   "concept": "digital fatigue / screen exhaustion",
+   "lead_candidates": ["Too Much Screen Time", "Digital Overload", "Unplug Your Mind", "Phone Fatigue"],
+   "status": "BLOCKED — needs the cognitive gate override + one VidIQ score",
+   "rationale": "THREE independent sources converge here: Raga Heal's 'Why Do You Keep Checking Your Phone?' at 1,743 v/day; YouTube's own Inspiration hook opening 'drained by constant screen time / bypass digital fatigue'; and our own Digital Detox Music | Surbahar (Aug 4) at 2,329 engaged — the best non-pillar ship since June. Nothing else in the session had three sources agreeing.",
+   "gate_override_required": "cognitive is a lane-wide KILLED hypothesis (h_2026-07-22_clinical_hook_recovery). At MATCHED AGE the kill holds on the evidence it was made with — pre-kill cognitive n=21 median 424 engaged at ~d28 vs 905 all-lane. But the ONE post-kill cognitive ship did 2,323, i.e. 2.6x the all-lane baseline. n=1 does not overturn n=21, so this is a documented ONE-SHIP override to get a second data point, not a lane reopening."
+  },
+  {
+   "date": "2026-09-08", "slot": "AM · 1.5 hours / 90 min", "source": "📊 pipeline",
+   "instrument": "Sitar", "lane": "morning", "runtime_min": 90,
+   "concept": "morning stillness / slow start",
+   "lead_candidates": ["Morning Stillness (VidIQ 60)", "Sunrise Calm", "Wake Up Slowly (25 — below bar)"],
+   "status": "READY once a lead is picked",
+   "rationale": "Strongest cell available: Sitar x morning n=7, median 1,656 engaged, CTR 4.19. Sitar clears cooldown exactly on the 8th (last used Sep 3)."
+  },
+  {
+   "date": "2026-09-09", "slot": "AM · 1.5 hours / 90 min · DOUBLE (a)", "source": "📺 YouTube Inspiration",
+   "instrument": "Sarod", "lane": "calm_relax", "runtime_min": 90,
+   "concept": "soundbath / sustained resonance",
+   "lead_candidates": ["Sarod Soundbath", "Soundbath Music"],
+   "status": "needs one VidIQ score",
+   "rationale": "Takes the FRESH half of YouTube's suggestion and discards the rest. 'Sarod Soundbath' and 'Soundbath' are clean on all sources and Sarod x healing is UNTESTED (not a flop) — a genuine unknown ticket.",
+   "deliberately_dropped_from_the_suggestion": [
+    "the HEALING lead — healing register is on the confirmed-dead list (all healing ships 63-1,036v) and Sarangi x healing is FLOP n=7 med 72",
+    "'Emotional Healing' — lost A/B #49 as title-B",
+    "432Hz — would confound h_hz_in_title, which is TESTING and still unread from the Aug 25 ship",
+    "3 Hours — the 3hr format is 16.7x on Bansuri and median 592 on everything else; a Sarod 3hr is the weakest cell/format pairing available",
+    "Raga Ahir Bhairav — already committed in v_2026-09-03_fresh_mind_sitar"
+   ]
+  },
+  {
+   "date": "2026-09-09", "slot": "PM · 1.5 hours / 90 min · DOUBLE (b)", "source": "🏆 competitor",
+   "instrument": "Tanpura", "lane": "calm_relax", "runtime_min": 90,
+   "concept": "boredom / understimulation",
+   "lead_candidates": ["Let Yourself Be Bored", "Understimulate", "Nothing to Do"],
+   "status": "needs one VidIQ score",
+   "rationale": "Raga Heal's 'Your Brain Forgot How to Be Bored' is 1,517 v/day and our catalogue has LITERALLY ZERO in this register across 145 videos — the only competitor-strong register we have never once attempted. Tanpura is the coherent instrument: a drone IS understimulation, and Tanpura's one anxiety ship holds CTR 9.39 / AVD 46.8%.",
+   "note": "This is the double. Two renders on one mid-week day rather than a sixth scattered production day; Saturday was rejected because it is the channel's weakest day (Aug 22 and Aug 29 are the two lowest engaged-view days of the last ten)."
+  },
+  {
+   "date": "2026-09-10", "slot": "PM · 1.5 hours / 90 min", "source": "📊 pipeline",
+   "instrument": "Veena", "lane": "anxiety", "runtime_min": 90,
+   "concept": "evening nerve-settling",
+   "lead_candidates": ["Quiet Your Nerves", "Worry Less"],
+   "status": "needs one VidIQ score",
+   "rationale": "Anxiety is uncovered this week and is the 3rd-largest revenue lane (8.2%). Veena last titled Aug 12, well clear of cooldown."
+  },
+  {
+   "date": "2026-09-11", "slot": "PM · 3 hours / 180 min · ⭐ ANCHOR", "source": "📊 pipeline",
+   "instrument": "Bansuri & Tanpura", "lane": "sleep", "runtime_min": 180,
+   "concept": "all-night sleep",
+   "lead_candidates": ["Sleep Deeply All Night", "Night Long Sleep"],
+   "status": "needs one VidIQ score + the render-block test",
+   "rationale": "The only PROVEN cell (n=6, median 5,638 engaged) in the only slot where 3hr works. Keeps the unbroken 7-day Friday 3hr cadence. Bansuri clears cooldown Sep 9.",
+   "render_gate": "⚠️ Bansuri 3hr content-violation block (2026-08-07). Short unlisted test render BEFORE the full merge; if it flags, drop to 1.5hr."
+  }
+ ],
+ "lane_coverage": "cognitive · morning · calm_relax x2 · anxiety · sleep — no adjacency dupes; sleep and morning (86% of revenue) both covered",
+ "cooldowns_verified": "Surbahar last Aug 14 · Sitar last Sep 3 (frees the 8th) · Sarod last Sep 1 · Tanpura last Sep 4 (frees the 9th) · Veena last Aug 12 · Bansuri last Sep 4 (frees the 9th). All clear.",
+ "measurement": "Read every ship on ENGAGED VIEWS, age-matched, via tools/hypothesis_progress.py. Public views count at play-start since 2026-08-24 and run 1.3-2.4x inflated on fresh ships. Revenue questions go through tools/revenue.py, never the 28-day window mean.",
+ "pending": [
+  "USER: cognitive gate override for Monday — explicit yes required, this bypasses a mandatory gate",
+  "USER: one batch of VidIQ scores (Music-for-X form) — see vidiq_batch below",
+  "USER: Bansuri 3hr unlisted flag-test before Friday's full merge",
+  "Briefs are written only AFTER titles lock (no premature JSON)"
+ ],
+ "vidiq_batch": [
+  "Too Much Screen Time", "Digital Overload", "Unplug Your Mind",
+  "Sunrise Calm", "Sarod Soundbath", "Soundbath Music",
+  "Let Yourself Be Bored", "Understimulate",
+  "Quiet Your Nerves", "Worry Less",
+  "Sleep Deeply All Night", "Night Long Sleep"
+ ]
+}

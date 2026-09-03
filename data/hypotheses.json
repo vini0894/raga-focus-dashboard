@@ -633,6 +633,32 @@
    "source": "chat_2026-08-31 \u2014 3hr instrument split + 5-week packaging-null review",
    "promoted_rule": null,
    "reads": []
+  },
+  {
+   "id": "h_2026-09-07_volume_restores_escalation",
+   "created": "2026-09-02",
+   "status": "TESTING",
+   "week": "wk_2026-09-07",
+   "statement": "Escalation is a channel-level state, not a per-video property, and OUTPUT is the only variable we control that touches it. Measured 2026-09-02: at ~28 days old the median ship fell only 2.3x May->Aug (45,252 -> 19,993 impressions) while the p90 fell 23x (625,002 -> 27,096). YouTube still runs the initial test on every upload; it stopped escalating anything past it after early June. Escalation was never earned by CTR \u2014 4 of the 6 May videos that cleared 600K impressions had BELOW-median CTR, one at 2.95%. Output over the same period fell 46 -> 19 videos/month (-59%) and same-day doubles went from 42% of ship-days to zero. Doubling is NOT the cause (May doubles 7/28 vs singles 1/18, Fisher p=0.124; June doubles 0/8 once the wave ended) \u2014 it buys more tickets while a draw runs.",
+   "predicted_metric": "6 ships/week for 4 weeks (24 ships) vs the 4/week baseline (16). At a 6% per-ship escalation rate that moves P(>=1 escalation) from 63% to 77%; at 2% it is 38% vs 27%. READ AT 4 WEEKS, NOT WEEKLY: at 6 ships a 6% world and a 2% world are indistinguishable (31% vs 11%). CONFIRMED if >=1 ship clears ~50K engaged views (the durability threshold \u2014 below it the half-life is under 3 weeks, above it ~54 days). KILLED if 24 ships produce nothing above the current ~2,300 ceiling, which would mean escalation is unavailable regardless of volume and production should be sized to a catalogue business instead.",
+   "relevant_lanes": [
+    "cognitive",
+    "morning",
+    "calm_relax",
+    "anxiety",
+    "sleep"
+   ],
+   "relevant_instruments": [],
+   "linked_ships": [],
+   "read_schedule": {
+    "d7": "2026-09-14",
+    "d14": "2026-09-21",
+    "d28": "2026-10-05"
+   },
+   "read_rule": "ENGAGED views, age-matched via tools/hypothesis_progress.py. Do NOT read weekly \u2014 the test is underpowered at one week and a null read will be misleading.",
+   "source": "chat_2026-09-02 \u2014 exploration-budget-by-cohort + cadence analysis",
+   "promoted_rule": null,
+   "reads": []
   }
  ],
  "schema_note": "week = Monday of created week (wk_YYYY-MM-DD). reads[] = staged reads (d7/d14/d21). experiment_reads appends to reads[]; status changes at final read."
