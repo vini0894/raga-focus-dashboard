@@ -44,7 +44,7 @@ HISTORY_COLS = ["capture_date", "video_id", "title", "publish_date", "views",
                 "ctr_pct", "avg_view_duration_sec", "avg_view_pct"]
 REVENUE_COLS = ["capture_date", "video_id", "title", "publish_date", "views",
                 "estimated_revenue_usd"]
-TOTALS_COLS = ["capture_date", "window_days", "n_videos", "views", "watch_hours",
+TOTALS_COLS = ["capture_date", "window_days", "n_videos", "views", "engaged_views", "watch_hours",
                "subscribers_gained", "revenue_usd", "impressions", "ctr_pct",
                "avd_sec", "avd_pct", "rev_per_day"]
 
@@ -221,6 +221,12 @@ def ingest_one(path: Path, force_date=None, window_days=DEFAULT_WINDOW_DAYS) -> 
         tot_rows.append({
             "capture_date": cap, "window_days": window_days, "n_videos": n_videos,
             "views": _i(total_row.get("Views", "0")),
+            # Engaged views is the ONLY denominator comparable across 2026-08-24, when
+            # YouTube moved public view counting to play-start. Storing `views` alone
+            # understated channel RPM by 17% at the 2026-09-06 capture (1.17x gap) and
+            # the gap widens as the two counts diverge. Falls back to views for
+            # pre-change exports, where the two are genuinely equal.
+            "engaged_views": _i(total_row.get("Engaged views") or total_row.get("Views", "0")),
             "watch_hours": _f(total_row.get("Watch time (hours)", "0")),
             "subscribers_gained": _i(total_row.get("Subscribers", "0")),
             "revenue_usd": round(rev, 3),
