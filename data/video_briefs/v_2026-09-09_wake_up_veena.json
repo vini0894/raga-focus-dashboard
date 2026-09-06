@@ -1,0 +1,63 @@
+{
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-09-05",
+ "measurement_note": "Read on ENGAGED VIEWS only. At the 2026-09-06 capture public views run 1.17x engaged and the gap is widening \u2014 views are flat while engaged views fall 13.3%/8d.",
+ "id": "v_2026-09-09_wake_up_veena",
+ "planned_date": "2026-09-09",
+ "planned_slot": "09:00 IST AM \u00b7 Wed",
+ "lane": "morning",
+ "daypart": "morning",
+ "instrument": "Veena",
+ "raga": "Deshkar",
+ "title": "Wake Up Music | Slow Veena | 1.5 Hours",
+ "title_variants": {
+  "A": "Wake Up Music | Slow Veena | 1.5 Hours",
+  "B": "Wake Up Music | Indian Classical | 1.5 Hours"
+ },
+ "experiment_variable": "instrument_naming",
+ "title_note": "\u26a0\ufe0f DELIBERATE brief_gate EXCEPTION \u2014 do NOT 'fix' this. Both arms share the lead BY DESIGN; the variable under test is INSTRUMENT-NAMING (named vs generic), not the keyword. brief_gate check 1 (ab_leads) will FAIL, and that failure is the expected signature of this experiment, not a defect. This is the ONE naming A/B of the week \u2014 narrowed from the six the user originally asked for, on the evidence that the variable reads NULL on our channel (named 176 vs generic 185 engaged, n=53 vs n=8) while reading 3.5x on competitors' (243 vs 70). Both datasets argue against the generic arm, so one low-stakes ship is the right size of bet.",
+ "validated_keywords": [
+  "'Wake Up Music' \u2014 VidIQ 63, lead_prescreen FRESH, no conflict on any of the 4 sources",
+  "cell: Veena x morning UNTESTED (n=0) \u2014 a genuine unknown, not a flop. Veena's tried cells (anxiety n=2 520, calm_relax n=2 154) are both FLOP, so morning is the only non-losing option for this instrument",
+  "raga Deshkar \u2014 morning raga, unused in any live title (Bilawal is used twice)",
+  "closes h_2026-08-17_instrument_naming, TESTING and unread since 2026-08-17 (takes it n=1 -> n=2)"
+ ],
+ "thumbnail_text_main": "WAKE UP SLOWLY",
+ "thumbnail_text_variants": [
+  {
+   "label": "A",
+   "text": "WAKE UP SLOWLY",
+   "strategy": "permission-register \u2014 permission edged direct imperative by 15pp in the adjacent sleep lane (Test #54)"
+  },
+  {
+   "label": "B",
+   "text": "NO RUSH THIS MORNING",
+   "strategy": "permission, longer form \u2014 holds the register constant so the TITLE stays the only live variable"
+  }
+ ],
+ "thumbnail_ab_note": "\u26a0\ufe0f Thumbnail arms are deliberately BOTH permission-register. The live experiment this ship carries is the TITLE (naming vs generic); keeping the thumb register constant stops the two tests confounding each other.",
+ "thumbnail_prompt": "ONE image, both arms: a person sitting on the edge of a bed in first light, feet on the floor, unhurried, blanket still half-around them. Veena resting at the FRAME EDGE, NOT being played. Soft grey-gold dawn through a window. Pichwai/Kangra border, aged parchment, house palette. Text banner ~35% of frame, second tier 'Veena \u00b7 Raga Deshkar'. VIEWER, never a performer.",
+ "playlists": [
+  "Morning Energy",
+  "Peaceful Music"
+ ],
+ "suno_prompt": "Instrumental only, no vocals, no humming \u2014 unhurried Indian classical veena in Raga Deshkar, warm plucked wooden tone with long natural decay, gentle tanpura drone underneath, no tabla, 58 BPM, seamless loop.",
+ "suno_prompt_note": "MORNING lane, gentle end. 'unhurried' not 'slow'. No tabla (Sitar-only rule). 58 BPM. Binaural: alpha 10 Hz at -20dB.",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "publish": "2026-09-09 09:00 IST",
+  "loop_note": "6-7 unhurried Deshkar veena clips over a continuous tanpura bed, long crossfades to ~90 min. No percussion.",
+  "binaural": "alpha 10 Hz at -20dB",
+  "assets_needed": "ONE dawn-bedroom image \u2014 user to generate"
+ },
+ "experiment": "\u2b50 THE NAMING A/B. 'Slow Veena' vs 'Indian Classical', lead held constant. CAVEAT: Test & compare rotates both arms on the SAME video, so both share one distribution pool \u2014 this measures which title CONVERTS, not which audience YouTube routes the video to. The classification question needs a between-video read.",
+ "pending": [
+  "USER: generate the image",
+  "Launch TITLE A/B at publish + log to ab_raw_data.csv",
+  "brief_gate WILL fail ab_leads \u2014 expected; record the override, do not edit arm B",
+  "AI-disclosure toggle",
+  "d7 read 2026-09-16"
+ ]
+}

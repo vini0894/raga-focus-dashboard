@@ -1,0 +1,62 @@
+{
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-09-05",
+ "measurement_note": "Read on ENGAGED VIEWS only. At the 2026-09-06 capture public views run 1.17x engaged and the gap is widening \u2014 views are flat while engaged views fall 13.3%/8d.",
+ "id": "v_2026-09-11_night_routine_surbahar_3hr",
+ "planned_date": "2026-09-11",
+ "planned_slot": "19:00 IST PM \u00b7 Fri",
+ "lane": "sleep",
+ "daypart": "night",
+ "instrument": "Surbahar",
+ "raga": "Bageshri",
+ "title": "Night Routine Music | Slow Surbahar | 3 Hours",
+ "title_variants": {
+  "A": "Night Routine Music | Slow Surbahar | 3 Hours",
+  "B": "Sleep Deeply All Night | Slow Surbahar | 3 Hours"
+ },
+ "title_note": "Arm A leads 'Night Routine Music' (VidIQ 61, FRESH). Arm B leads a genuinely DIFFERENT phrase, 'Sleep Deeply All Night' \u2014 two hypotheses, per the A/B rule. Instrument is Surbahar, NOT Santoor: Santoor x sleep x 3hr would have cloned 'Overnight Calm | Santoor Sleep Music | 3 Hours' (2026-08-21) on instrument+format+lane at 21 days. Surbahar's last 3hr sleep was 2026-08-14, 28 days clear.",
+ "validated_keywords": [
+  "'Night Routine Music' \u2014 VidIQ 61, lead_prescreen FRESH",
+  "cell: Surbahar x sleep THIN (n=1) but the BEST sleep cell we have \u2014 1,250 engaged at CTR 6.96, the highest sleep CTR on the channel",
+  "sleep is our top revenue lane AND competitors' WEAKEST cluster (median 171 v/day vs 2,426 for their best) \u2014 this slot deliberately does not chase a competitor register, because the asymmetry is ours to keep",
+  "raga Bageshri \u2014 late-night raga, unused in any live title, and deliberately NOT all-komal (see the retention gate)"
+ ],
+ "thumbnail_text_main": "TAKE THE NIGHT OFF",
+ "thumbnail_text_variants": [
+  {
+   "label": "A",
+   "text": "TAKE THE NIGHT OFF",
+   "strategy": "permission-register \u2014 WON Test #54 in the sleep lane by 15pp over direct imperative"
+  },
+  {
+   "label": "B",
+   "text": "SLEEP DEEPLY TONIGHT",
+   "strategy": "outcome-imperative, the sleep-lane default \u2014 a clean permission-vs-imperative rerun on a new instrument"
+  }
+ ],
+ "thumbnail_prompt": "ONE image, both arms: a dark bedroom, bedside lamp just switched off, a person settling under a quilt, face relaxed. Surbahar at the FRAME EDGE, NOT being played. Deep indigo with a single warm amber pool of light. Pichwai/Kangra border, aged parchment, house palette. Text banner ~35% of frame, second tier 'Surbahar \u00b7 Raga Bageshri'. VIEWER, never a performer.",
+ "playlists": [
+  "Sleep Music",
+  "Peaceful Music"
+ ],
+ "suno_prompt": "Instrumental only, no vocals, no humming \u2014 gentle Indian classical surbahar in Raga Bageshri, deep resonant plucked tone with long natural decay and warm sustain, continuous tanpura drone underneath, no tabla, 56 BPM, seamless loop.",
+ "suno_prompt_note": "\u26a0\ufe0f SPECCED AGAINST h_2026-09-05_3hr_tempo_retention_floor. 56 BPM \u2014 ABOVE the ~55 floor, deliberately NOT the 48 BPM that put Snowy Night (2026-09-04) at 7.2% AVD, below the 9.5% worst first-AVD ever recorded on a 3hr ship. Bageshri is a late-night raga but NOT all-komal, unlike Malkauns/Darbari. 'gentle', never 'very slow'. Register is RELAXATION, not deep-sleep-drag \u2014 our 46,338-engaged 3hr winner was 'Bansuri Music for Relaxation'. Binaural: delta 3 Hz at -20dB.",
+ "production_spec": {
+  "duration_minutes": 180,
+  "format": "3hr",
+  "publish": "2026-09-11 19:00 IST",
+  "loop_note": "6-7 gentle Bageshri surbahar clips over a continuous tanpura bed, long crossfades to ~3hr, consistent low night level. No percussion anywhere.",
+  "binaural": "delta 3 Hz at -20dB",
+  "assets_needed": "ONE night-bedroom image \u2014 user to generate",
+  "retention_gate": "\u26a0\ufe0f CHECK AVD AT d1. Target >=15% (27 min of 180). Below 9.5% is the worst first-AVD ever on a 3hr ship. Early AVD predicts final reach on this format: r=+0.46; <15% -> median 553 engaged, >=15% -> median 1,314."
+ },
+ "experiment": "Revenue anchor + the FIRST test of h_2026-09-05_3hr_tempo_retention_floor. Prediction: 56 BPM on a non-komal raga clears 15% AVD at d1, where Snowy Night's 48 BPM Malkauns hit 7.2%.",
+ "pending": [
+  "USER: generate the image",
+  "Launch TITLE A/B at publish",
+  "AI-disclosure toggle",
+  "d1 AVD check against the retention gate",
+  "d7 read 2026-09-18"
+ ]
+}

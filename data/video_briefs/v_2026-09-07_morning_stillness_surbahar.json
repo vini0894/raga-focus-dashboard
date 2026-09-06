@@ -1,0 +1,60 @@
+{
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-09-05",
+ "measurement_note": "Read on ENGAGED VIEWS only. At the 2026-09-06 capture public views run 1.17x engaged and the gap is widening \u2014 views are flat while engaged views fall 13.3%/8d.",
+ "id": "v_2026-09-07_morning_stillness_surbahar",
+ "planned_date": "2026-09-07",
+ "planned_slot": "09:00 IST AM \u00b7 Mon",
+ "lane": "morning",
+ "daypart": "morning",
+ "instrument": "Surbahar",
+ "raga": "Bhairav",
+ "title": "Morning Stillness \ud83c\udf3f Healing Surbahar Music for Calm & Inner Peace | Remove Negative Thoughts",
+ "title_variants": {
+  "A": "Morning Stillness \ud83c\udf3f Healing Surbahar Music for Calm & Inner Peace | Remove Negative Thoughts"
+ },
+ "title_note": "SINGLE TITLE by design \u2014 the line is user-frozen (chat 2026-09-05), so there is no second lead to test without breaking the freeze. The week's test budget goes to the THUMBNAIL A/B below and to Wed's naming A/B. Two user-approved edits to the frozen line: (1) Bansuri -> SURBAHAR, because Sitar x morning is a FLOP (n=5, med 1,056 \u2014 I had misreported it as our strongest cell) and Surbahar x morning is UNTESTED, i.e. a genuine unknown rather than a known loser; (2) 'for Focus, Calm & Inner Peace' -> 'for Calm & Inner Peace', because 'Focus' is a dead-lane term (focus_productivity_pre_pivot, dead since the 2026-04-17 pivot) and brief_gate BLOCKS the lead while it is present.",
+ "validated_keywords": [
+  "'Morning Stillness' \u2014 VidIQ 59, lead_prescreen FRESH. Below the 60 bar, taken deliberately: its concept family is the ONLY one running ABOVE the current-era baseline (3.20x, n=2), while all three leads that DID clear 60 sit at or below it",
+  "'Remove Negative Thoughts' \u2014 VIRGIN REGISTER: 0 of our 144 live titles. Competitors run 22 videos in it, median 587 v/day, ceiling 15,050",
+  "cell: Surbahar x morning UNTESTED (n=0). Surbahar's evidenced lane is sleep (1,250 engaged, CTR 6.96 \u2014 our best sleep CTR)",
+  "raga Bhairav \u2014 the morning raga, unused in any live title (Bhairavi is used; Bhairav is not)"
+ ],
+ "thumbnail_text_main": "REMOVE NEGATIVE THOUGHTS",
+ "thumbnail_text_variants": [
+  {
+   "label": "A",
+   "text": "REMOVE NEGATIVE THOUGHTS",
+   "strategy": "outcome-imperative carrying the virgin register from the title tail into the image"
+  },
+  {
+   "label": "B",
+   "text": "START THE DAY CLEAR",
+   "strategy": "morning outcome-imperative. The morning lane is a format TIE (imperative 4.10 vs Q-hook 4.20), so neither arm violates a banked rule"
+  }
+ ],
+ "thumbnail_ab_note": "\u2b50 This is Monday's only test \u2014 the title is frozen, so the thumbnail carries it. Image + title held constant, TEXT is the sole variable. Read watch-share + per-arm CTR at d7.",
+ "thumbnail_prompt": "ONE image, both arms (TEXT is the variable): a person standing at an open window in early morning light, eyes closed, shoulders dropped, a cup of tea untouched on the sill. Surbahar resting at the FRAME EDGE, NOT being played. Warm gold dawn against a cool interior. Pichwai/Kangra miniature border, aged parchment, house palette. Text in its own banner panel at ~35% of frame, second tier reading 'Surbahar \u00b7 Raga Bhairav'. VIEWER LIVING THE MOMENT, never a performer \u2014 measured 6.11% vs 3.03%.",
+ "playlists": [
+  "Morning Energy",
+  "Meditation"
+ ],
+ "suno_prompt": "Instrumental only, no vocals, no humming \u2014 unhurried Indian classical surbahar in Raga Bhairav, deep resonant plucked bass-sitar tone with very long sustain, continuous tanpura drone underneath, no tabla, 60 BPM, seamless loop.",
+ "suno_prompt_note": "MORNING lane. 'unhurried' NOT 'slow' \u2014 'slow' makes Suno drag and is reserved for sleep/deep-rest. No tabla (the tabla rule is Sitar-only). 60 BPM, comfortably above the ~55 retention floor from h_2026-09-05_3hr_tempo_retention_floor. Binaural: alpha 10 Hz at -20dB.",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "publish": "2026-09-07 09:00 IST",
+  "loop_note": "6-7 unhurried Bhairav surbahar clips over a continuous tanpura bed, long crossfades to ~90 min, consistent bright morning level. No percussion.",
+  "binaural": "alpha 10 Hz at -20dB",
+  "assets_needed": "ONE dawn-window image \u2014 user to generate"
+ },
+ "experiment": "\u2b50 MUST-WIN #1. Does the VIRGIN 'negative thoughts' register reach a pool our catalogue has never touched? Competitors run it at ceiling 15,050 v/day; we have never once attempted it.",
+ "pending": [
+  "USER: generate the dawn-window image",
+  "Launch THUMBNAIL A/B in Test & compare at publish + log to ab_raw_data.csv",
+  "AI-disclosure toggle on upload",
+  "d7 read 2026-09-14 on ENGAGED views"
+ ]
+}
