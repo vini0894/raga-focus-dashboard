@@ -1,0 +1,60 @@
+{
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-09-05",
+ "measurement_note": "Read on ENGAGED VIEWS only. At the 2026-09-06 capture public views run 1.17x engaged and the gap is widening.",
+ "id": "v_2026-09-08_mental_overload_tanpura",
+ "planned_date": "2026-09-08",
+ "planned_slot": "09:00 IST AM \u00b7 Tue",
+ "lane": "anxiety",
+ "daypart": "morning",
+ "instrument": "Tanpura",
+ "raga": "Malkauns",
+ "title": "Mental Overload | Tanpura Therapy | 1.5 Hours",
+ "title_variants": {
+  "A": "Mental Overload | Tanpura Therapy | 1.5 Hours",
+  "B": "Find Your Calm | Slow Tanpura | 1.5 Hours"
+ },
+ "title_note": "Two DIFFERENT leads = two hypotheses. Arm A deliberately uses the STANDALONE form, not 'Music for Mental Overload' (bank has it at 62): the 'Music for X' form WINS in cognitive/digital-detox but LOSES in anxiety \u2014 Test #53 measured -32.8pp on the same instrument+lane+runtime. Arm A also borrows the competitor 'Therapy' construction, which sits at the top of their breakout list. 'Tanpura Therapy' is fully clean on all 4 sources.",
+ "validated_keywords": [
+  "'Mental Overload' \u2014 FRESH, bank 62 on the Music-for form; only soft flag is an unshipped 2026-07-07 brief title-B",
+  "'Find Your Calm' \u2014 VidIQ 62, FRESH. \u26a0 abstract mind-state framing, which lost by 32.8pp to body-outcome verbs in Test #53 \u2014 arm B is the deliberately weaker arm and is expected to lose",
+  "cell: Tanpura x anxiety THIN (n=1) but the one attempt holds CTR 9.39 / AVD 46.8% \u2014 the best retention on the channel",
+  "raga Malkauns \u2014 used in the 3hr sleep bed on 2026-09-04 but never in a 1.5hr anxiety title; at 1.5hr and 62 BPM it is a different treatment"
+ ],
+ "thumbnail_text_main": "TOO MUCH IN YOUR HEAD",
+ "thumbnail_text_variants": [
+  {
+   "label": "A",
+   "text": "TOO MUCH IN YOUR HEAD",
+   "strategy": "Q-hook-adjacent problem statement \u2014 the anxiety lane is a format TIE (3.50 vs 3.52), so neither arm violates a banked rule"
+  },
+  {
+   "label": "B",
+   "text": "PUT THE DAY DOWN",
+   "strategy": "permission-register, body-outcome flavour"
+  }
+ ],
+ "thumbnail_prompt": "ONE image, both arms: a person sitting on the floor against a bed, head tipped back against the mattress, eyes closed, phone face-down beside them. Tanpura at the FRAME EDGE, NOT being played. Cool dim interior, one warm lamp. Pichwai/Kangra border, aged parchment, house palette. Text banner ~35% of frame, second tier 'Tanpura \u00b7 Raga Malkauns'. VIEWER, never a performer.",
+ "playlists": [
+  "Healing & Anxiety Relief Music",
+  "Peaceful Music"
+ ],
+ "suno_prompt": "Instrumental only, no vocals, no humming \u2014 continuous Indian classical tanpura drone in Raga Malkauns, deep resonant sustained strings with slow natural swell, no melodic lead, no tabla, 62 BPM, seamless loop.",
+ "suno_prompt_note": "ANXIETY lane. Tanpura is the DRONE itself here, not a bed under a lead \u2014 that is the point of the cell. 62 BPM, well above the retention floor. No tabla (Sitar-only rule). Binaural: theta 6 Hz at -20dB.",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "publish": "2026-09-08 09:00 IST",
+  "loop_note": "6-7 sustained Malkauns tanpura passages with slow swells, long crossfades to ~90 min, consistent low level. No percussion, no melodic lead.",
+  "binaural": "theta 6 Hz at -20dB",
+  "assets_needed": "ONE dim-interior image \u2014 user to generate"
+ },
+ "experiment": "Body/state problem-statement (arm A) vs abstract mind-state (arm B) in the anxiety lane \u2014 a direct rerun of the Test #53 finding on a new instrument. Prediction: arm A wins.",
+ "pending": [
+  "USER: generate the image",
+  "Launch TITLE A/B at publish",
+  "AI-disclosure toggle",
+  "d7 read 2026-09-15"
+ ]
+}

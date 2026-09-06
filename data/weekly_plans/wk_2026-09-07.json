@@ -3,8 +3,8 @@
  "week_start": "2026-09-07",
  "week_end": "2026-09-12",
  "created": "2026-09-02",
- "revised": "2026-09-05 (v8 \u2014 REBUILT after brief_gate caught a FLOP cell I had misread as our strongest)",
- "status": "PROPOSED \u2014 rebuilt on verified cells; Monday needs user sign-off on two title changes",
+ "revised": "2026-09-05 (v9 \u2014 FINAL, six briefs written and gated)",
+ "status": "FINAL \u2014 six briefs APPROVED, all gate-clear. Images + A/B launches pending.",
  "notes": "\ud83c\udfaf WEEK 1 OF 4 AT SIX SHIPS/WEEK. Rebuilt 2026-09-04 on two user directives: (1) NO BANSURI this week (render/copyright block); (2) instrument-naming becomes the A/B VARIABLE on every ship rather than a fixed convention \u2014 arm A names the instrument, arm B is generic, lead keyword held constant. Six replications of one single-variable test.",
  "week_level_decisions": {
   "bansuri": "EXCLUDED all six days (user, 2026-09-05). Removing the instrument from the TITLE does not clear the block \u2014 Content ID matches audio fingerprints, not metadata.",
@@ -24,12 +24,12 @@
    "runtime_min": 90,
    "cell": "UNTESTED n=0 \u2014 genuine unknown, not a flop",
    "concept": "Morning Stillness + Remove Negative Thoughts (virgin register, competitor ceiling 15,050)",
-   "lead": "Morning Stillness (VidIQ 59)",
    "proposed_title": "Morning Stillness \ud83c\udf3f Healing Surbahar Music for Calm & Inner Peace | Remove Negative Thoughts",
    "TWO_CHANGES_NEEDING_SIGNOFF": [
     "Bansuri -> SURBAHAR (not Sitar as I said earlier \u2014 Sitar x morning is FLOP)",
     "'for Focus, Calm & Inner Peace' -> 'for Calm & Inner Peace'. 'Focus' is a DEAD LANE term (focus_productivity_pre_pivot) since the 2026-04-17 pivot. brief_gate BLOCKS the lead while it is present."
-   ]
+   ],
+   "locked_title": "Morning Stillness \ud83c\udf3f Healing Surbahar Music for Calm & Inner Peace | Remove Negative Thoughts"
   },
   {
    "date": "2026-09-08",
@@ -40,7 +40,7 @@
    "lane": "anxiety",
    "runtime_min": 90,
    "cell": "THIN n=1, 498",
-   "lead": "PENDING VidIQ \u2014 body-outcome batch"
+   "locked_title": "Mental Overload | Tanpura Therapy | 1.5 Hours"
   },
   {
    "date": "2026-09-09",
@@ -51,8 +51,8 @@
    "lane": "morning",
    "runtime_min": 90,
    "cell": "UNTESTED n=0",
-   "lead": "Wake Up Music (63, FRESH)",
-   "note": "Lane moved OFF calm_relax \u2014 every calm_relax cell except Sarangi (n=1, 25 engaged) is a FLOP. Keeps the one naming A/B."
+   "note": "Lane moved OFF calm_relax \u2014 every calm_relax cell except Sarangi (n=1, 25 engaged) is a FLOP. Keeps the one naming A/B.",
+   "locked_title": "Wake Up Music | Slow Veena | 1.5 Hours"
   },
   {
    "date": "2026-09-10",
@@ -63,7 +63,7 @@
    "lane": "anxiety",
    "runtime_min": 90,
    "cell": "UNTESTED n=0",
-   "lead": "PENDING VidIQ \u2014 body-outcome batch"
+   "locked_title": "Mental Exhaustion | Santoor Therapy | 1.5 Hours"
   },
   {
    "date": "2026-09-11",
@@ -74,20 +74,20 @@
    "lane": "sleep",
    "runtime_min": 180,
    "cell": "THIN n=1, 1,250 \u2014 the BEST sleep cell we have, CTR 6.96",
-   "lead": "Night Routine Music (61, FRESH)",
    "clone_check": "last Surbahar 3hr sleep was Aug 14 (28d) \u2014 clear of the 21d window. Santoor was swapped out because it cloned Aug 21.",
-   "audio_gate": "\u26a0\ufe0f >=55 BPM, non-komal raga, RELAXATION register \u2014 per h_2026-09-05_3hr_tempo_retention_floor. Snowy Night's 48 BPM Malkauns hit 7.2% AVD, below the 9.5% worst ever."
+   "audio_gate": "\u26a0\ufe0f >=55 BPM, non-komal raga, RELAXATION register \u2014 per h_2026-09-05_3hr_tempo_retention_floor. Snowy Night's 48 BPM Malkauns hit 7.2% AVD, below the 9.5% worst ever.",
+   "locked_title": "Night Routine Music | Slow Surbahar | 3 Hours"
   },
   {
    "date": "2026-09-12",
    "day": "Sat",
    "slot": "AM \u00b7 1.5hr",
-   "role": "\u2b50 MUST-WIN #2 \u00b7 gate override granted",
-   "instrument": "Sitar",
+   "role": "fill \u2014 the nervous-system must-win MOVED to 2026-09-15",
+   "instrument": "Sarangi",
    "lane": "anxiety",
    "runtime_min": 90,
    "cell": "PROVEN n=2, median 18,303 \u2014 the ONLY proven cell on the channel",
-   "lead": "PENDING VidIQ; 'Nervous System Therapy' goes in the SECONDARY slot"
+   "locked_title": "Restart Your Life | Sarangi Therapy | 1.5 Hours"
   }
  ],
  "cooldowns_verified": "Surbahar Sep 7 + Sep 11 (4d \u2705, last live Aug 14) \u00b7 Tanpura Sep 8 (last Sep 4, 4d \u2705) \u00b7 Veena Sep 9 (last Aug 12 \u2705) \u00b7 Santoor Sep 10 (last Aug 28 \u2705) \u00b7 Sitar Sep 12 (last Sep 3, 9d \u2705)",
@@ -142,9 +142,9 @@
   "user_decision_required": true
  },
  "blocking_decisions": [
-  "USER: Monday \u2014 approve BOTH title changes? (a) instrument is Surbahar not Sitar, because Sitar x morning is FLOP; (b) 'Focus' must come out, it is a dead-lane term and brief_gate blocks the lead while it is there.",
-  "USER: one VidIQ batch \u2014 Tue, Thu, Sat all need leads (10 pre-screened body-outcome candidates staged)",
-  "USER: confirm the naming A/B stays narrowed to ONE ship (Wed)"
+  "USER: generate 6 thumbnail images (prompts are in each brief)",
+  "USER: launch each Test & compare A/B at publish and log to ab_raw_data.csv",
+  "USER: optional \u2014 VidIQ batch on the 10 body-outcome candidates would give stronger anxiety leads for wk_2026-09-14"
  ],
  "gate_overrides_granted": {
   "h_2026-07-22_clinical_hook_recovery": {
@@ -172,5 +172,11 @@
    "Wednesday cloned Sep 1 (Sarod x calm_relax x 1.5hr) at 8 days, and Sarod x calm_relax is FLOP",
    "Friday cloned Aug 21 (Santoor x sleep x 3hr) at 21 days"
   ]
- }
+ },
+ "deferred_to_next_week": {
+  "ship": "Reset Your Nervous System | Sitar & Tanpura Therapy | 1.5 Hours \u2014 v_2026-09-15_nervous_system_sitar (DRAFT)",
+  "why": "At 1.5hr on Sep 12 it was a HARD packaging clone: 19d from 'Stop Overthinking | Sitar Instrumental | 1.5 Hours' (2026-08-24), 2 days inside the 21d window. Naming Tanpura did not help (the check fires on same_sec OR same_lane, so lane alone is sufficient); moving to 2hr cleared the clone but tripped track_record, which widens to 'any format' and returns FLOP (n=4, med 407). Sep 15 is the first date 22 days clear.",
+  "cell_caveat": "Sitar x anxiety reads PROVEN n=2 median 18,303, but that is ONE May escalator (35,854 views) and one dud (752) \u2014 a 47x spread where a median over n=2 means nothing. The two current-regime attempts did 793 and 554 engaged. It is a lottery ticket on a concept competitors are winning, not a reliable cell."
+ },
+ "week_shape_honest_read": "This is now ONE must-win (Mon, the virgin 'negative thoughts' register) plus five ordinary ships, not the two must-wins originally planned. Four of six sit on UNTESTED cells and two on families that are flat-to-declining for us \u2014 that is what was left after removing every FLOP cell, every packaging clone and every burned lead. Saturday is the weakest on prior evidence."
 }

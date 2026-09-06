@@ -1,0 +1,67 @@
+{
+ "status": "DRAFT",
+ "locked": false,
+ "created_at": "2026-09-05",
+ "measurement_note": "Read on ENGAGED VIEWS only. At the 2026-09-06 capture public views run 1.17x engaged and the gap is widening.",
+ "id": "v_2026-09-15_nervous_system_sitar",
+ "planned_date": "2026-09-15",
+ "planned_slot": "09:00 IST AM \u00b7 Tue",
+ "lane": "anxiety",
+ "daypart": "morning",
+ "instrument": "Sitar & Tanpura",
+ "raga": "Kirwani",
+ "title": "Reset Your Nervous System | Sitar & Tanpura Therapy | 1.5 Hours",
+ "title_variants": {
+  "A": "Reset Your Nervous System | Sitar & Tanpura Therapy | 1.5 Hours",
+  "B": "Mental Peace Music | Sitar & Tanpura Therapy | 1.5 Hours"
+ },
+ "title_note": "\u2b50 MUST-WIN. Arm A is a DELIBERATE REPEAT: 'Reset Your Nervous System' flags as same-concept-as-live at 147 days, well outside the 20-day hard window, and it is the exact phrase Healing Raga Studio runs at 19,018 v/day. 'Nervous System Therapy' (user-approved 2026-09-05) is carried in the SECONDARY slot as 'Sitar Therapy' rather than as the lead \u2014 it scores 21 standalone because as a lead it reads as an informational/medical query with no music intent, which is precisely the failure the music-intent rule describes. The competitor puts 'Therapy' in the same secondary position. Arm B leads a genuinely different phrase (VidIQ 63, FRESH).",
+ "gate_override": "h_2026-07-22_clinical_hook_recovery is KILLED and this ship is squarely inside it. Override granted by user 2026-09-05, scoped to THIS SHIP ONLY. Read condition: if this lands >=3x the week's median at matched age, propose reopening the lane; if not, the kill stands and the override is closed.",
+ "validated_keywords": [
+  "'Reset Your Nervous System' \u2014 REPEAT at 147d (deliberate, not an oversight); exact competitor breakout phrase at 19,018 v/day",
+  "'Mental Peace Music' \u2014 VidIQ 63, lead_prescreen FRESH, no conflict on any source",
+  "cell: Sitar x anxiety is the ONLY PROVEN cell on the channel \u2014 n=2, median 18,303, best 28,798 ('Sitar for Nervous System Healing')",
+  "concept family NERVOUS SYSTEM runs 7.32x the era baseline (n=4) \u2014 the strongest family ratio of every candidate screened this week",
+  "\u26a0 CONFOUND: both the proven cell and the 7.32x family ratio rest on Apr-May ships, i.e. the escalation era that ended in early June. There is no post-June evidence for either. This is the bet, stated plainly.",
+  "raga Kirwani \u2014 unused in any live title",
+  "naming Tanpura follows the competitor 2-instrument pattern (453 v/day median vs 243 for one instrument, n=45 vs 72) \u2014 the same pattern behind their Bansuri & Sitar breakouts",
+  "\u26a0 2hr is an UNTESTED runtime on this channel (catalogue is 1hr / 1.5hr / 3hr). Chosen to clear a hard clone gate; it adds a second unknown on top of the escalation-era confound below."
+ ],
+ "thumbnail_text_main": "RESET YOUR NERVOUS SYSTEM",
+ "thumbnail_text_variants": [
+  {
+   "label": "A",
+   "text": "RESET YOUR NERVOUS SYSTEM",
+   "strategy": "outcome-imperative matching the title lead \u2014 maximum concept concentration on the must-win"
+  },
+  {
+   "label": "B",
+   "text": "WHY WON'T YOUR BODY RELAX?",
+   "strategy": "Q-hook, body-outcome framing. Anxiety lane is a format TIE (3.50 vs 3.52) so neither arm violates a rule"
+  }
+ ],
+ "thumbnail_prompt": "ONE image, both arms: a person lying back on a rug, one hand on their chest, breathing out, eyes closed, morning light across the floor. Sitar at the FRAME EDGE, NOT being played. Warm gold light, calm uncluttered room. Pichwai/Kangra border, aged parchment, house palette. Text banner ~35% of frame, second tier 'Sitar \u00b7 Raga Kirwani'. VIEWER LIVING THE MOMENT, never a performer.",
+ "playlists": [
+  "Healing & Anxiety Relief Music",
+  "Meditation"
+ ],
+ "suno_prompt": "Instrumental only, no vocals, no humming \u2014 unhurried Indian classical sitar in Raga Kirwani, warm plucked resonance with long sustain, continuous tanpura drone underneath, soft restrained tabla, 60 BPM, seamless loop.",
+ "suno_prompt_note": "ANXIETY lane. Tabla IS correct here \u2014 the tabla rule is Sitar-only, and the 28,798 reference ship ('Sitar for Nervous System Healing') carried it. 'unhurried' not 'slow'. 60 BPM. Tanpura is now a NAMED instrument in the title, so keep its drone clearly audible rather than buried under the sitar. Binaural: theta 6 Hz at -20dB.",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "publish": "2026-09-15 09:00 IST",
+  "loop_note": "6-7 unhurried Kirwani sitar clips over a continuous, clearly audible tanpura drone with soft restrained tabla, long crossfades to ~90 min.",
+  "binaural": "theta 6 Hz at -20dB",
+  "assets_needed": "ONE morning-floor image \u2014 user to generate"
+ },
+ "experiment": "\u2b50 MUST-WIN #2 + the h_2026-07-22 override test. Can the channel's one proven cell still perform post-escalation, on the concept competitors are winning with right now? Read at matched age vs the week median.",
+ "pending": [
+  "USER: generate the image",
+  "Launch TITLE A/B at publish",
+  "AI-disclosure toggle",
+  "d7 read 2026-09-19 \u2014 this is the override's decision point"
+ ],
+ "clone_resolution": "MOVED from Sat 2026-09-12 to Tue 2026-09-15. At 1.5hr on Sep 12 it was a HARD clone \u2014 19d from 'Stop Overthinking | Sitar Instrumental | 1.5 Hours' (2026-08-24), 2 days inside the 21d window. Two fixes were tried and both were wrong: naming Tanpura did nothing (the check fires on 'same_sec OR same_lane', so an identical lane alone is sufficient), and moving to 2hr cleared the clone but tripped track_record, which correctly widens to 'any format' and returns FLOP (n=4, med 407). Sep 15 is the first date 22 days clear of Aug 24, so it ships at 1.5hr against no gate.",
+ "cell_correction": "\u26a0\ufe0f I described this as 'the ONLY PROVEN cell on the channel \u2014 n=2, median 18,303'. That is technically what track_record returns but it is a misleading statistic: the two videos are 35,854 views and 752, a 47x spread, and a median over n=2 carries no information. BOTH are May, i.e. the escalation era. The two current-regime attempts at this exact cell are 'Stress Relief Music | Sitar' (2026-08-18, 793 engaged) and 'Stop Overthinking | Sitar' (2026-08-24, 554) \u2014 both ordinary. Treat this as a LOTTERY TICKET on a concept competitors are currently winning (nervous-system cluster: their median 2,426 v/day, ceiling 19,018; our family ratio 7.32x), NOT as a reliable cell."
+}

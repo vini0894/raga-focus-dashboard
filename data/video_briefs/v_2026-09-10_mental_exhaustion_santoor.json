@@ -1,0 +1,60 @@
+{
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-09-05",
+ "measurement_note": "Read on ENGAGED VIEWS only. At the 2026-09-06 capture public views run 1.17x engaged and the gap is widening.",
+ "id": "v_2026-09-10_mental_exhaustion_santoor",
+ "planned_date": "2026-09-10",
+ "planned_slot": "19:00 IST PM \u00b7 Thu",
+ "lane": "anxiety",
+ "daypart": "evening",
+ "instrument": "Santoor",
+ "raga": "Charukesi",
+ "title": "Mental Exhaustion | Santoor Therapy | 1.5 Hours",
+ "title_variants": {
+  "A": "Mental Exhaustion | Santoor Therapy | 1.5 Hours",
+  "B": "Serene Music | Slow Santoor | 1.5 Hours"
+ },
+ "title_note": "Two DIFFERENT leads. Arm A repeats the 'Therapy' construction from Tuesday on a different instrument \u2014 deliberate, so the week produces TWO reads on whether that competitor construction travels, not one. 'Santoor Therapy' is clean on all 4 sources.",
+ "validated_keywords": [
+  "'Mental Exhaustion' \u2014 VidIQ 60, lead_prescreen FRESH, no conflict on any source",
+  "'Serene Music' \u2014 VidIQ 62, FRESH",
+  "cell: Santoor x anxiety UNTESTED (n=0) \u2014 a genuine unknown. Santoor's tried cells are morning FLOP (n=3, 390) and calm_relax FLOP (n=2, 50), so anxiety is the only non-losing option for this instrument",
+  "\u26a0 concept family MENTAL OVERLOAD/EXHAUSTION runs 0.46x the era baseline in Jun-Jul (n=3) after 5.64x in Apr-May. This is a DECLINING family \u2014 the honest read is that no strong-family lead was available for this slot"
+ ],
+ "thumbnail_text_main": "RUNNING ON EMPTY",
+ "thumbnail_text_variants": [
+  {
+   "label": "A",
+   "text": "RUNNING ON EMPTY",
+   "strategy": "body-state problem statement"
+  },
+  {
+   "label": "B",
+   "text": "LET TODAY END",
+   "strategy": "permission-register \u2014 the cell that is 2/2 on this channel"
+  }
+ ],
+ "thumbnail_prompt": "ONE image, both arms: a person slumped at a kitchen table in late evening light, cold tea, laptop closed, shoulders down. Santoor at the FRAME EDGE, NOT being played. Warm low lamp against deep blue window. Pichwai/Kangra border, aged parchment, house palette. Text banner ~35% of frame, second tier 'Santoor \u00b7 Raga Charukesi'. VIEWER, never a performer.",
+ "playlists": [
+  "Healing & Anxiety Relief Music",
+  "Peaceful Music"
+ ],
+ "suno_prompt": "Instrumental only, no vocals, no humming \u2014 gentle Indian classical santoor in Raga Charukesi, soft struck-string tone with natural decay and warm sustain, subtle tanpura drone underneath, no tabla, 58 BPM, seamless loop.",
+ "suno_prompt_note": "ANXIETY lane, evening. 'gentle' not 'slow'. Charukesi is the wistful evening raga and was used once on Sarod (2026-09-01) but never on Santoor. 58 BPM. Binaural: theta 6 Hz at -20dB.",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "publish": "2026-09-10 19:00 IST",
+  "loop_note": "6-7 gentle Charukesi santoor clips over a continuous tanpura bed, long crossfades to ~90 min, consistent low evening level. No percussion.",
+  "binaural": "theta 6 Hz at -20dB",
+  "assets_needed": "ONE late-evening kitchen image \u2014 user to generate"
+ },
+ "experiment": "Opens the UNTESTED Santoor x anxiety cell + second read on the 'Therapy' construction.",
+ "pending": [
+  "USER: generate the image",
+  "Launch TITLE A/B at publish",
+  "AI-disclosure toggle",
+  "d7 read 2026-09-17"
+ ]
+}

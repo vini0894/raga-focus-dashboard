@@ -1,0 +1,61 @@
+{
+ "id": "v_2026-09-12_restart_your_life_sarangi",
+ "status": "APPROVED",
+ "locked": true,
+ "created_at": "2026-09-05",
+ "planned_date": "2026-09-12",
+ "planned_slot": "09:00 IST AM \u00b7 Sat",
+ "lane": "anxiety",
+ "daypart": "morning",
+ "instrument": "Sarangi",
+ "raga": "Jaunpuri",
+ "title": "Restart Your Life | Sarangi Therapy | 1.5 Hours",
+ "title_variants": {
+  "A": "Restart Your Life | Sarangi Therapy | 1.5 Hours",
+  "B": "Solace Music | Slow Sarangi | 1.5 Hours"
+ },
+ "title_note": "Two DIFFERENT leads. Arm A takes competitors' #2 cluster (RESTART/LET GO, median 924 v/day; Healing Raga Studio's 'Restart Your Life: Deep Healing Bansuri & Sitar Meditation' runs 3,538 v/day) and it is the highest-scoring genuinely fresh lead we hold at 64. Arm B is 'Solace' (bank 68, the single highest-scoring FRESH phrase in the whole 229-phrase sweep). Third use of the competitor 'Therapy' construction this week \u2014 deliberate, so the week yields three reads on whether it travels.",
+ "validated_keywords": [
+  "'Restart Your Life' \u2014 VidIQ 64, lead_prescreen FRESH. \u26a0 its concept family (RESTART/RESET) has 14 prior attempts at 0.40x the era baseline in Apr-May and 1.00x in Jun-Jul \u2014 it has NEVER beaten baseline for us. Taken because competitors are currently winning the cluster, not because our own record supports it",
+  "'Solace Music' \u2014 bank 68, FRESH. \u26a0 SOLACE/COMFORT family runs 4.29x (Apr-May) then 0.36x (Jun-Jul) \u2014 declining",
+  "cell: Sarangi x anxiety UNTESTED (n=0) \u2014 a genuine unknown. Sarangi's only tried cells are morning FLOP (n=2, 960) and calm_relax THIN (n=1, 25)",
+  "raga Jaunpuri \u2014 unused in any live title",
+  "this slot exists because the nervous-system must-win MOVED to 2026-09-15: at 1.5hr on Sep 12 it was a hard clone of the Aug 24 Sitar anxiety ship (19d of a 21d window), and no format change resolved it without tripping another gate"
+ ],
+ "thumbnail_text_main": "START AGAIN",
+ "thumbnail_text_variants": [
+  {
+   "label": "A",
+   "text": "START AGAIN",
+   "strategy": "outcome-imperative, 2 words \u2014 the shortest overlay we have run; tests the banked 'simpler beats complex' rule at the extreme"
+  },
+  {
+   "label": "B",
+   "text": "WHAT IF TODAY RESET?",
+   "strategy": "Q-hook. Anxiety lane is a format TIE (3.50 vs 3.52), so neither arm violates a banked rule"
+  }
+ ],
+ "thumbnail_prompt": "ONE image, both arms: a person standing at a doorway looking out into morning light, bag down, unhurried, one hand on the frame. Sarangi at the FRAME EDGE, NOT being played. Warm gold light spilling in across a cool interior floor. Pichwai/Kangra miniature border, aged parchment, house palette. Text banner ~35% of frame, second tier 'Sarangi \u00b7 Raga Jaunpuri'. VIEWER LIVING THE MOMENT, never a performer \u2014 measured 6.11% vs 3.03%.",
+ "playlists": [
+  "Healing & Anxiety Relief Music",
+  "Meditation"
+ ],
+ "suno_prompt": "Instrumental only, no vocals, no humming \u2014 unhurried Indian classical sarangi in Raga Jaunpuri, warm bowed string tone with vocal-like glides and long sustain, continuous tanpura drone underneath, no tabla, 60 BPM, seamless loop.",
+ "suno_prompt_note": "ANXIETY lane. Sarangi's defining characteristic is the vocal-like glide \u2014 name it, per the Suno prompt patterns (physical instrument description is the #1 marker). 'unhurried' not 'slow'. No tabla (Sitar-only rule). 60 BPM, above the retention floor. Binaural: theta 6 Hz at -20dB.",
+ "production_spec": {
+  "duration_minutes": 90,
+  "format": "1.5hr",
+  "publish": "2026-09-12 09:00 IST",
+  "loop_note": "6-7 unhurried Jaunpuri sarangi clips over a continuous tanpura bed, long crossfades to ~90 min, consistent warm level. No percussion.",
+  "binaural": "theta 6 Hz at -20dB",
+  "assets_needed": "ONE doorway-morning-light image \u2014 user to generate"
+ },
+ "experiment": "Opens the UNTESTED Sarangi x anxiety cell and takes a first swing at competitors' #2 cluster. Honest expectation: both arms sit on families that are flat-to-declining for us; this is the weakest of the six on prior evidence.",
+ "measurement_note": "Read on ENGAGED VIEWS only. At the 2026-09-06 capture public views run 1.17x engaged and the gap is widening.",
+ "pending": [
+  "USER: generate the image",
+  "Launch TITLE A/B at publish",
+  "AI-disclosure toggle",
+  "d7 read 2026-09-19"
+ ]
+}
