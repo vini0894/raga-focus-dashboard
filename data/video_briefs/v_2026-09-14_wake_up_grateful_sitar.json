@@ -1,0 +1,57 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-09-12",
+  "measurement_note": "Read on ENGAGED VIEWS only. Public views count play-starts since 2026-08-27 and run 1.3-2.4x engaged on fresh ships, so raw views are not comparable to any pre-change baseline.",
+  "id": "v_2026-09-14_wake_up_grateful_sitar",
+  "planned_date": "2026-09-14",
+  "planned_slot": "06:30 IST AM · Mon",
+  "lane": "morning",
+  "daypart": "morning",
+  "instrument": "Sitar",
+  "raga": "Ahir Bhairav",
+  "title": "Wake Up Grateful | Sitar Instrumental | 1.5 Hours",
+  "title_variants": {
+    "A": "Wake Up Grateful | Sitar Instrumental | 1.5 Hours",
+    "B": "Good Day Ahead | Positive Morning Vibes | 1.5 Hours"
+  },
+  "title_note": "Two DIFFERENT leads: 'Wake Up Grateful' (fresh, unscored) vs 'Good Day Ahead' (fresh, unscored). Arm B also drops the instrument name, per user rule 2026-09-12 that every B arm runs generic. That makes the pair two-variable by design - it answers which PACKAGE wins, not whether naming matters on its own. Across the week's 5 ships the generic arm is the one constant, which takes h_2026-08-17_instrument_naming from n=1 to n=6. 'Positive ... Vibes' sits in slot 2 deliberately: the construction appears in all 3 floor-clearing winners of this register, while 'positive morning music' as a LEAD lost A/B #40.",
+  "validated_keywords": [
+    "'Wake Up Grateful' - lead_prescreen FRESH, no conflict. Channel's highest-T1 thumbnail text ever (38.0%), never used as a title.",
+    "'Good Day Ahead' - lead_prescreen FRESH, no conflict.",
+    "title_preflight: A 49 chars / 3 slots PASS - B 51 chars / 3 slots PASS",
+    "concept family 'gratitude' n=1 live (Morning Gratitude Music, 9,046 LIFETIME engaged, 31.5min lifetime AVD)",
+    "affirmation register: 4 videos clear the 1,000-view floor at 26-32min AVD, all over-earning their watch time"
+  ],
+  "gate_override": "Sitar x morning reads FLOP (n=7, median 803 engaged). OVERRIDDEN by user 2026-09-12, on the same grounds as the 2026-08-13 Sitar x calm_relax override: the cutoff is not decay-adjusted. The cell's median CTR is 5.83, the best of any cell on the channel (channel 5.59, morning lane 5.44); its top five ships run CTR 5.47-7.32; it holds the channel's biggest video; and the median is dragged by three pre-decay ships at 190, 65 and 42 views. The most recent ship in the cell (2026-08-03 Morning Routine, Slow Sitar & 432Hz) posted 41% T1 watch-share, the highest of any recent ship.",
+  "thumbnail_text_main": "TODAY FEELS GOOD",
+  "thumbnail_text_variants": [
+    {
+      "label": "fixed both arms",
+      "text": "TODAY FEELS GOOD",
+      "strategy": "16 chars / 3 words. Positive-outcome framing, which is what the channel's three highest-T1 thumbs share (WAKE UP GRATEFUL 38.0, TAKE IT SLOW 35.7, WIN YOUR DAY 35.2). Deliberately NOT the title lead - the thumb should add a second promise, not echo the title. morning lane shows no real format effect (imperative 4.10 vs Q-hook 4.20), so this is picked on fit. Deduped against all 154 shipped thumb texts."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, both arms. The VIEWER living the moment, never a performer - measured 6.11% CTR for waking/stretching in bed vs 3.03% for a musician playing. Early morning light through a window, a person just sitting up in bed mid-stretch, eyes closed, calm and unhurried. Pichwai/Kangra miniature treatment, aged parchment ground, ornate border. A sitar may rest at the frame edge but must NOT be the subject. Text in its own banner panel at ~35% of frame, second tier reads 'Sitar · Raga Ahir Bhairav'. Legible at 120px.",
+  "playlists": [
+    "Morning Energy Music",
+    "Peaceful Music"
+  ],
+  "suno_prompt": "Instrumental only, no vocals, no humming - warm Indian classical sitar in Raga Ahir Bhairav, bright resonant strings with sympathetic drone, unhurried gentle tabla, the feeling of first light entering a quiet room, 68 BPM, soft alpha undertone.",
+  "suno_prompt_note": "Morning/uplifting lane KEEPS energy - the calm-prompt rule applies to sleep/anxiety/rest lanes only. Tabla is correct for Sitar (never for Bansuri or Surbahar). ~260 chars, the banked short one-liner default. Ahir Bhairav last used 2026-08-03, 42 days clear.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-09-14 06:30 IST",
+    "loop_note": "6 clips merged, gentle crossfades, no hard transitions"
+  },
+  "experiment": "MUST-WIN. Reopens h_2026-08-15_spiritual_energy_cluster, which was KILLED on 2026-08-23 by its own re-read's admission: the criterion fired on NON-EXECUTION (only 1 of 3 planned ships ran; the Veena arm was parked) and was read at d6 against a d7+ bar. The one ship that did run became the best of its week. This is the affirmation register's first properly-executed test. Read d7 2026-09-21 on engaged views, age-matched, plus T1 share per arm.",
+  "hypothesis_id": "h_2026-08-15_spiritual_energy_cluster",
+  "pending": [
+    "USER: generate the dawn-window image",
+    "Launch TITLE A/B in Test & compare at publish + log to ab_raw_data.csv",
+    "AI-disclosure toggle on upload",
+    "VidIQ: score 'wake up grateful' and 'good day ahead'",
+    "d7 read 2026-09-21 on ENGAGED views + per-arm T1"
+  ]
+}
