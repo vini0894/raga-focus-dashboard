@@ -906,6 +906,17 @@
        "impr_per_day": 3325,
        "ctr_pct": 2.33,
        "avd_pct": 20.55
+      },
+      "2026-09-12": {
+       "age_d": 18,
+       "engaged_views": 988,
+       "eng_per_day": 54.9,
+       "expected_at_age": 1997.0,
+       "cohort_x": 0.49,
+       "impressions": 30846,
+       "impr_per_day": 1714,
+       "ctr_pct": 2.25,
+       "avd_pct": 0.0
       }
      }
     },
@@ -934,6 +945,17 @@
        "impr_per_day": 1509,
        "ctr_pct": 2.81,
        "avd_pct": 18.06
+      },
+      "2026-09-12": {
+       "age_d": 19,
+       "engaged_views": 600,
+       "eng_per_day": 31.6,
+       "expected_at_age": 1402.5,
+       "cohort_x": 0.43,
+       "impressions": 14848,
+       "impr_per_day": 781,
+       "ctr_pct": 2.86,
+       "avd_pct": 0.0
       }
      }
     },
@@ -962,6 +984,17 @@
        "impr_per_day": 2408,
        "ctr_pct": 3.32,
        "avd_pct": 11.45
+      },
+      "2026-09-12": {
+       "age_d": 15,
+       "engaged_views": 685,
+       "eng_per_day": 45.7,
+       "expected_at_age": 1454.0,
+       "cohort_x": 0.47,
+       "impressions": 14686,
+       "impr_per_day": 979,
+       "ctr_pct": 3.36,
+       "avd_pct": 0.0
       }
      }
     },
@@ -990,11 +1023,67 @@
        "impr_per_day": 1652,
        "ctr_pct": 2.69,
        "avd_pct": 18.82
+      },
+      "2026-09-12": {
+       "age_d": 16,
+       "engaged_views": 454,
+       "eng_per_day": 28.4,
+       "expected_at_age": 1287.0,
+       "cohort_x": 0.35,
+       "impressions": 11689,
+       "impr_per_day": 731,
+       "ctr_pct": 2.66,
+       "avd_pct": 0.0
       }
      }
     }
    },
    "hypotheses": [
+    {
+     "id": "h_2026-08-07_playlist_routing",
+     "status": "TESTING",
+     "statement": "Reordering playlists so high-RPM, audience-matched videos sit directly behind the big-impression donors raises channel playlist share of watch-time. Routing redistributes existing traffic to better-ea",
+     "predicted_metric": "playlist share of channel WATCH-TIME. Pre Jul28-31 = 8.92%. Post-shuffle-1 Aug2-4 = 9.44%. Success = holds at or above ~9.4% across Aug 9-15 once new-ship inventory is netted out. MEASURE AT CHANNEL L",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-24_launch_day_inversion",
+     "status": "PROPOSED",
+     "statement": "CONSUMPTION and LAUNCH-DAY are different effects and they point opposite ways. Consumption (channel impressions by weekday, de-trended vs trailing-7d mean, n=67 days): Mon 129% > Wed 115% > Tue 114% >",
+     "predicted_metric": "A ship launched Thu/Fri should post >=1.5x the age-4-12d true impressions/day of a comparable-strength cell launched Mon/Wed in the same month. Falsified if Mon/Wed ships match or beat Thu/Fri over th",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-25_t1_vocab_register",
+     "status": "TESTING",
+     "statement": "Western-wellness vocabulary in the title lead pulls T1 watch-share; Indian-classical specificity (named raga/instrument leads) pulls India. Observed: wellness-vocab titles 34-41% T1 watch-time (Gratit",
+     "predicted_metric": "A T1-vocab-led ship posts \u226530% T1 watch-share at d7 (channel baseline ~20-25%); the register arm (somatic vs clarity vs spiritual) that wins CTR while holding \u226530% T1 becomes the default T1 register.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-26_thumb_refresh_expands_impressions",
+     "status": "TESTING",
+     "statement": "A thumbnail refresh on a still-ALIVE decaying video can expand impressions (flatten the decay slope), not just convert better. Mechanism: impressions are downstream of predicted performance (expected ",
+     "predicted_metric": "Test #50 vehicle (Morning Energy Dilruba, DMcoOLvmAyQ, launched 2026-07-26; pre-test slope 53K->27K impr/day, -38% w/w). CONFIRMED if challenger (BOOST YOUR ENERGY) wins/co-leads watch-time share AND ",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-10_thumb_composition_bed",
+     "status": "TESTING",
+     "statement": "Thumbnail IMAGE composition is a first-order CTR lever and the in-bed rest-framing specifically beats other viewer-moment compositions in the morning lane. Basis: cross-VIDEO measurement 2026-08-02 (w",
+     "predicted_metric": "",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
     {
      "id": "h_hz_in_title",
      "status": "TESTING",
@@ -1034,7 +1123,8 @@
    ],
    "captures": [
     "2026-08-31",
-    "2026-09-02"
+    "2026-09-02",
+    "2026-09-12"
    ]
   },
   "wk_2026-08-31": {
@@ -1053,25 +1143,381 @@
        "impr_per_day": 5272,
        "ctr_pct": 3.57,
        "avd_pct": 27.7
+      },
+      "2026-09-12": {
+       "age_d": 12,
+       "engaged_views": 1300,
+       "eng_per_day": 108.3,
+       "expected_at_age": 1936.0,
+       "cohort_x": 0.67,
+       "impressions": 25135,
+       "impr_per_day": 2095,
+       "ctr_pct": 3.58,
+       "avd_pct": 0.0
+      }
+     }
+    },
+    "dPcJfRNYwRs": {
+     "title": "Fresh Mind Music | Sitar Instrumental | 1.5 Hours",
+     "publish_date": "2026-09-03",
+     "series": {
+      "2026-09-12": {
+       "age_d": 9,
+       "engaged_views": 913,
+       "eng_per_day": 101.4,
+       "expected_at_age": 1292.5,
+       "cohort_x": 0.71,
+       "impressions": 22803,
+       "impr_per_day": 2534,
+       "ctr_pct": 2.99,
+       "avd_pct": 0.0
+      }
+     }
+    },
+    "mhozdqO4PlA": {
+     "title": "Relaxing Instrumental Music | Slow Sarod | 1.5 Hours",
+     "publish_date": "2026-09-01",
+     "series": {
+      "2026-09-12": {
+       "age_d": 11,
+       "engaged_views": 504,
+       "eng_per_day": 45.8,
+       "expected_at_age": 1788,
+       "cohort_x": 0.28,
+       "impressions": 11275,
+       "impr_per_day": 1025,
+       "ctr_pct": 3.1,
+       "avd_pct": 0.0
+      }
+     }
+    },
+    "dTlG68eidiw": {
+     "title": "Snowy Night Music | Bansuri & Tanpura | 3 Hours",
+     "publish_date": "2026-09-04",
+     "series": {
+      "2026-09-12": {
+       "age_d": 8,
+       "engaged_views": 481,
+       "eng_per_day": 60.1,
+       "expected_at_age": 1488.0,
+       "cohort_x": 0.32,
+       "impressions": 13364,
+       "impr_per_day": 1670,
+       "ctr_pct": 2.48,
+       "avd_pct": 0.0
       }
      }
     }
    },
    "hypotheses": [
     {
+     "id": "h_2026-08-07_playlist_routing",
+     "status": "TESTING",
+     "statement": "Reordering playlists so high-RPM, audience-matched videos sit directly behind the big-impression donors raises channel playlist share of watch-time. Routing redistributes existing traffic to better-ea",
+     "predicted_metric": "playlist share of channel WATCH-TIME. Pre Jul28-31 = 8.92%. Post-shuffle-1 Aug2-4 = 9.44%. Success = holds at or above ~9.4% across Aug 9-15 once new-ship inventory is netted out. MEASURE AT CHANNEL L",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-24_launch_day_inversion",
+     "status": "PROPOSED",
+     "statement": "CONSUMPTION and LAUNCH-DAY are different effects and they point opposite ways. Consumption (channel impressions by weekday, de-trended vs trailing-7d mean, n=67 days): Mon 129% > Wed 115% > Tue 114% >",
+     "predicted_metric": "A ship launched Thu/Fri should post >=1.5x the age-4-12d true impressions/day of a comparable-strength cell launched Mon/Wed in the same month. Falsified if Mon/Wed ships match or beat Thu/Fri over th",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-25_t1_vocab_register",
+     "status": "TESTING",
+     "statement": "Western-wellness vocabulary in the title lead pulls T1 watch-share; Indian-classical specificity (named raga/instrument leads) pulls India. Observed: wellness-vocab titles 34-41% T1 watch-time (Gratit",
+     "predicted_metric": "A T1-vocab-led ship posts \u226530% T1 watch-share at d7 (channel baseline ~20-25%); the register arm (somatic vs clarity vs spiritual) that wins CTR while holding \u226530% T1 becomes the default T1 register.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-26_thumb_refresh_expands_impressions",
+     "status": "TESTING",
+     "statement": "A thumbnail refresh on a still-ALIVE decaying video can expand impressions (flatten the decay slope), not just convert better. Mechanism: impressions are downstream of predicted performance (expected ",
+     "predicted_metric": "Test #50 vehicle (Morning Energy Dilruba, DMcoOLvmAyQ, launched 2026-07-26; pre-test slope 53K->27K impr/day, -38% w/w). CONFIRMED if challenger (BOOST YOUR ENERGY) wins/co-leads watch-time share AND ",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-10_thumb_composition_bed",
+     "status": "TESTING",
+     "statement": "Thumbnail IMAGE composition is a first-order CTR lever and the in-bed rest-framing specifically beats other viewer-moment compositions in the morning lane. Basis: cross-VIDEO measurement 2026-08-02 (w",
+     "predicted_metric": "",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-18_image_breaks_ctr_ceiling",
+     "status": "TESTING",
+     "statement": "A bolder/higher-contrast IMAGE (not the standard Pichwai miniature) breaks the ~3% CTR ceiling. Every text/format A/B stayed at 2.5-4% CTR; the image is the one variable never A/B'd in 40+ tests. Tue ",
+     "predicted_metric": "END-OF-WEEK ANSWER: winning image's video CTR > 3.5% (meaningfully above the text-only ~3% ceiling) \u2192 image IS the CTR lever, scale bolder visuals. If both ~3% \u2192 CTR ceiling is lane/concept, not image",
+     "n_reads": 2,
+     "latest_read": "2026-08-31",
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-20_sleep_drone_replication",
+     "status": "TESTING",
+     "statement": "Bansuri sleep-drone 3hr replicates the Can't Sleep drone win. Sleep is the only lane where fresh ships broke 5% CTR.",
+     "predicted_metric": "END-OF-WEEK ANSWER: day-7 cohort impressions >=1.2x AND CTR >=4.5% \u2192 drone-sleep formula confirmed repeatable. Below \u2192 one-off.",
+     "n_reads": 3,
+     "latest_read": "2026-09-12",
+     "role": "tested"
+    },
+    {
+     "id": "h_hz_in_title",
+     "status": "TESTING",
+     "statement": "UN-PARKED 2026-08-23: the '432Hz' token itself adds pull. Was parked Jul (n=1 confounded). Now clean: Tue A/B identical titles \u00b1 '432Hz', inside the live cortisol wave where every 200K+ winner carries",
+     "predicted_metric": "Tue A/B watch-share, single-variable. A (with Hz) wins \u2192 Hz standard in wave-formula titles. Wash/B wins \u2192 dropped permanently, hypothesis KILLED.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-24_wave_formula_pick",
+     "status": "TESTING",
+     "statement": "Titles borrowed from a competitor's currently-winning formula out-pull self-invented concepts. Mon A/B picks between the two live formulas: 'Reset Your Brain Naturally' (Raga Heal, 351K #2 + 3.6K rece",
+     "predicted_metric": "A/B watch-share winner + per-arm CTR; ship day-7 cohort vs 186 views/day median. Winner's formula becomes a reusable title pattern; if the ship ALSO beats cohort, wave-formula > self-invented is suppo",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-24_wave_adjacency_escape",
+     "status": "TESTING",
+     "statement": "\ud83c\udfaf WEEK GOAL wk_2026-08-24 (user, 2026-08-23): deliver ships that become SUGGESTED videos next to already-driving host videos. WEEK-LEVEL META: wave-adjacency escapes the subscriber ceiling. New ships ",
+     "predicted_metric": "\u22652 of 5 ships get >25% RELATED_VIDEO share at d7 (baseline 1 of 19) AND week-2 Suggested views \u226550% of week-1 (durability \u2014 decay research 2026-08-23 showed competitor-wave adjacency is a 3-day burst:",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-23_am_vs_pm_same_concept",
+     "status": "PROPOSED",
+     "statement": "Publish slot (AM vs PM) changes week-1 reach when CONCEPT is held constant. Motivation: 6-week AM 241 vs PM 152 collapsed to 156 vs 149 over the last 2 weeks once confounds were visible \u2014 the gap was ",
+     "predicted_metric": "same-concept pair: |AM - PM| day-5 v/d < 15% \u2192 slot is not a lever (confirm demotion); > 30% in either direction \u2192 reinstate a slot rule with direction.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
      "id": "h_2026-08-31_cell_beats_packaging",
      "status": "TESTING",
      "statement": "At this channel's current scale, REACH is set by the instrument x lane x runtime CELL, not by packaging. Evidence: 40+ title/thumb-text A/Bs and now 2 image A/Bs have all failed to move fresh-ship CTR",
      "predicted_metric": "Fri 2026-09-04 (Bansuri & Tanpura x sleep x 3hr \u2014 the only proven cell available) lands >=2.5x the median of Tue/Wed/Thu on engaged views at matched age, with no packaging advantage over them. FALSIFI",
-     "n_reads": 0,
-     "latest_read": null,
+     "n_reads": 1,
+     "latest_read": "2026-09-12",
+     "role": "planned"
+    },
+    {
+     "id": "h_2026-09-07_volume_restores_escalation",
+     "status": "TESTING",
+     "statement": "Escalation is a channel-level state, not a per-video property, and OUTPUT is the only variable we control that touches it. Measured 2026-09-02: at ~28 days old the median ship fell only 2.3x May->Aug ",
+     "predicted_metric": "6 ships/week for 4 weeks (24 ships) vs the 4/week baseline (16). At a 6% per-ship escalation rate that moves P(>=1 escalation) from 63% to 77%; at 2% it is 38% vs 27%. READ AT 4 WEEKS, NOT WEEKLY: at ",
+     "n_reads": 1,
+     "latest_read": "2026-09-12",
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-09-05_3hr_tempo_retention_floor",
+     "status": "PROPOSED",
+     "statement": "On 3hr sleep ships, tempo below ~50 BPM combined with an all-komal late-night raga (Malkauns, Darbari) drives AVD below the retention floor, because listeners leave in the opening minutes before the b",
+     "predicted_metric": "first-observed AVD on a 3hr ship. Floor to beat: 9.5% (the lowest ever observed). Target: >=15%, which separates median 1,314 final engaged from 553.",
+     "n_reads": 1,
+     "latest_read": "2026-09-12",
      "role": "planned"
     }
    ],
    "captures": [
-    "2026-09-02"
+    "2026-09-02",
+    "2026-09-12"
+   ]
+  },
+  "wk_2026-09-07": {
+   "ships": {
+    "7YGvReb0Shc": {
+     "title": "Morning Stillness | Surbahar Instrumental Music | 1.5 Hours",
+     "publish_date": "2026-09-07",
+     "series": {
+      "2026-09-12": {
+       "age_d": 5,
+       "engaged_views": 583,
+       "eng_per_day": 116.6,
+       "expected_at_age": 1196,
+       "cohort_x": 0.49,
+       "impressions": 13571,
+       "impr_per_day": 2714,
+       "ctr_pct": 3.05,
+       "avd_pct": 0.0
+      }
+     }
+    },
+    "dc64JdJSp9I": {
+     "title": "Mental Exhaustion | Santoor Therapy | 1.5 Hours",
+     "publish_date": "2026-09-09",
+     "series": {
+      "2026-09-12": {
+       "age_d": 3,
+       "engaged_views": 274,
+       "eng_per_day": 91.3,
+       "expected_at_age": 905.5,
+       "cohort_x": 0.3,
+       "impressions": 7009,
+       "impr_per_day": 2336,
+       "ctr_pct": 2.95,
+       "avd_pct": 0.0
+      }
+     }
+    },
+    "iu30iCs4ZoE": {
+     "title": "Mental Overload | Tanpura Therapy | 1.5 Hours",
+     "publish_date": "2026-09-08",
+     "series": {
+      "2026-09-12": {
+       "age_d": 4,
+       "engaged_views": 272,
+       "eng_per_day": 68.0,
+       "expected_at_age": 1049.5,
+       "cohort_x": 0.26,
+       "impressions": 5622,
+       "impr_per_day": 1406,
+       "ctr_pct": 3.42,
+       "avd_pct": 0.0
+      }
+     }
+    },
+    "G9VPjFgn4b8": {
+     "title": "Night Routine Music | Slow Surbahar | 3 Hours",
+     "publish_date": "2026-09-10",
+     "series": {
+      "2026-09-12": {
+       "age_d": 2,
+       "engaged_views": 249,
+       "eng_per_day": 124.5,
+       "expected_at_age": 521,
+       "cohort_x": 0.48,
+       "impressions": 5970,
+       "impr_per_day": 2985,
+       "ctr_pct": 3.25,
+       "avd_pct": 0.0
+      }
+     }
+    }
+   },
+   "hypotheses": [
+    {
+     "id": "h_2026-08-07_playlist_routing",
+     "status": "TESTING",
+     "statement": "Reordering playlists so high-RPM, audience-matched videos sit directly behind the big-impression donors raises channel playlist share of watch-time. Routing redistributes existing traffic to better-ea",
+     "predicted_metric": "playlist share of channel WATCH-TIME. Pre Jul28-31 = 8.92%. Post-shuffle-1 Aug2-4 = 9.44%. Success = holds at or above ~9.4% across Aug 9-15 once new-ship inventory is netted out. MEASURE AT CHANNEL L",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-24_launch_day_inversion",
+     "status": "PROPOSED",
+     "statement": "CONSUMPTION and LAUNCH-DAY are different effects and they point opposite ways. Consumption (channel impressions by weekday, de-trended vs trailing-7d mean, n=67 days): Mon 129% > Wed 115% > Tue 114% >",
+     "predicted_metric": "A ship launched Thu/Fri should post >=1.5x the age-4-12d true impressions/day of a comparable-strength cell launched Mon/Wed in the same month. Falsified if Mon/Wed ships match or beat Thu/Fri over th",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-25_t1_vocab_register",
+     "status": "TESTING",
+     "statement": "Western-wellness vocabulary in the title lead pulls T1 watch-share; Indian-classical specificity (named raga/instrument leads) pulls India. Observed: wellness-vocab titles 34-41% T1 watch-time (Gratit",
+     "predicted_metric": "A T1-vocab-led ship posts \u226530% T1 watch-share at d7 (channel baseline ~20-25%); the register arm (somatic vs clarity vs spiritual) that wins CTR while holding \u226530% T1 becomes the default T1 register.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-07-26_thumb_refresh_expands_impressions",
+     "status": "TESTING",
+     "statement": "A thumbnail refresh on a still-ALIVE decaying video can expand impressions (flatten the decay slope), not just convert better. Mechanism: impressions are downstream of predicted performance (expected ",
+     "predicted_metric": "Test #50 vehicle (Morning Energy Dilruba, DMcoOLvmAyQ, launched 2026-07-26; pre-test slope 53K->27K impr/day, -38% w/w). CONFIRMED if challenger (BOOST YOUR ENERGY) wins/co-leads watch-time share AND ",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-10_thumb_composition_bed",
+     "status": "TESTING",
+     "statement": "Thumbnail IMAGE composition is a first-order CTR lever and the in-bed rest-framing specifically beats other viewer-moment compositions in the morning lane. Basis: cross-VIDEO measurement 2026-08-02 (w",
+     "predicted_metric": "",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_hz_in_title",
+     "status": "TESTING",
+     "statement": "UN-PARKED 2026-08-23: the '432Hz' token itself adds pull. Was parked Jul (n=1 confounded). Now clean: Tue A/B identical titles \u00b1 '432Hz', inside the live cortisol wave where every 200K+ winner carries",
+     "predicted_metric": "Tue A/B watch-share, single-variable. A (with Hz) wins \u2192 Hz standard in wave-formula titles. Wash/B wins \u2192 dropped permanently, hypothesis KILLED.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-24_wave_formula_pick",
+     "status": "TESTING",
+     "statement": "Titles borrowed from a competitor's currently-winning formula out-pull self-invented concepts. Mon A/B picks between the two live formulas: 'Reset Your Brain Naturally' (Raga Heal, 351K #2 + 3.6K rece",
+     "predicted_metric": "A/B watch-share winner + per-arm CTR; ship day-7 cohort vs 186 views/day median. Winner's formula becomes a reusable title pattern; if the ship ALSO beats cohort, wave-formula > self-invented is suppo",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-24_wave_adjacency_escape",
+     "status": "TESTING",
+     "statement": "\ud83c\udfaf WEEK GOAL wk_2026-08-24 (user, 2026-08-23): deliver ships that become SUGGESTED videos next to already-driving host videos. WEEK-LEVEL META: wave-adjacency escapes the subscriber ceiling. New ships ",
+     "predicted_metric": "\u22652 of 5 ships get >25% RELATED_VIDEO share at d7 (baseline 1 of 19) AND week-2 Suggested views \u226550% of week-1 (durability \u2014 decay research 2026-08-23 showed competitor-wave adjacency is a 3-day burst:",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-08-23_am_vs_pm_same_concept",
+     "status": "PROPOSED",
+     "statement": "Publish slot (AM vs PM) changes week-1 reach when CONCEPT is held constant. Motivation: 6-week AM 241 vs PM 152 collapsed to 156 vs 149 over the last 2 weeks once confounds were visible \u2014 the gap was ",
+     "predicted_metric": "same-concept pair: |AM - PM| day-5 v/d < 15% \u2192 slot is not a lever (confirm demotion); > 30% in either direction \u2192 reinstate a slot rule with direction.",
+     "n_reads": 0,
+     "latest_read": null,
+     "role": "tested"
+    },
+    {
+     "id": "h_2026-09-07_volume_restores_escalation",
+     "status": "TESTING",
+     "statement": "Escalation is a channel-level state, not a per-video property, and OUTPUT is the only variable we control that touches it. Measured 2026-09-02: at ~28 days old the median ship fell only 2.3x May->Aug ",
+     "predicted_metric": "6 ships/week for 4 weeks (24 ships) vs the 4/week baseline (16). At a 6% per-ship escalation rate that moves P(>=1 escalation) from 63% to 77%; at 2% it is 38% vs 27%. READ AT 4 WEEKS, NOT WEEKLY: at ",
+     "n_reads": 1,
+     "latest_read": "2026-09-12",
+     "role": "planned"
+    },
+    {
+     "id": "h_2026-09-05_3hr_tempo_retention_floor",
+     "status": "PROPOSED",
+     "statement": "On 3hr sleep ships, tempo below ~50 BPM combined with an all-komal late-night raga (Malkauns, Darbari) drives AVD below the retention floor, because listeners leave in the opening minutes before the b",
+     "predicted_metric": "first-observed AVD on a 3hr ship. Floor to beat: 9.5% (the lowest ever observed). Target: >=15%, which separates median 1,314 final engaged from 553.",
+     "n_reads": 1,
+     "latest_read": "2026-09-12",
+     "role": "tested"
+    }
+   ],
+   "captures": [
+    "2026-09-12"
    ]
   }
  },
- "last_updated": "2026-09-02"
+ "last_updated": "2026-09-12"
 }
