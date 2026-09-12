@@ -1,39 +1,39 @@
 {
-  "generated": "2026-09-06",
+  "generated": "2026-09-12",
   "active_ships": [
     {
       "title": "Fresh Mind Music | Sitar Instrumental | 1.5 Hours",
-      "days_live": 3,
+      "days_live": 9,
       "lane": "other",
       "ctr": 2.79,
       "avd": 0.0,
       "views": 1722,
-      "verdict": "WATCH",
-      "action": "only 3d live \u2014 patience window"
+      "verdict": "RE-THUMBNAIL",
+      "action": "music fine, CTR below lane median \u2192 swap thumb"
     },
     {
       "title": "Relaxing Instrumental Music | Slow Sarod | 1.5 Hours",
-      "days_live": 5,
+      "days_live": 11,
       "lane": "calm_relax",
       "ctr": 3.15,
       "avd": 0.0,
       "views": 1402,
-      "verdict": "WATCH",
-      "action": "only 5d live \u2014 patience window"
+      "verdict": "RE-THUMBNAIL",
+      "action": "music fine, CTR below lane median \u2192 swap thumb"
     },
     {
       "title": "Calm Morning Music |  Relaxing Flute | Instrumental 1.5 hours",
-      "days_live": 6,
+      "days_live": 12,
       "lane": "morning",
       "ctr": 3.37,
       "avd": 0.0,
       "views": 1782,
-      "verdict": "WATCH",
-      "action": "only 6d live \u2014 patience window"
+      "verdict": "RE-THUMBNAIL",
+      "action": "music fine, CTR below lane median \u2192 swap thumb"
     },
     {
       "title": "Deep Stress Relief Music | Santoor & Tanpura | 3 Hours",
-      "days_live": 9,
+      "days_live": 15,
       "lane": "stress_burnout",
       "ctr": 3.37,
       "avd": 0.0,
@@ -43,7 +43,7 @@
     },
     {
       "title": "Morning Anxiety Relief | Sarangi Raga Bhairavi | 1.5 Hours",
-      "days_live": 10,
+      "days_live": 16,
       "lane": "morning",
       "ctr": 2.63,
       "avd": 0.0,
@@ -53,7 +53,7 @@
     },
     {
       "title": "Morning Cortisol Detox | Bansuri Raga Bhairavi 432Hz | 1.5 Hours",
-      "days_live": 12,
+      "days_live": 18,
       "lane": "morning",
       "ctr": 2.22,
       "avd": 0.0,
@@ -63,7 +63,7 @@
     },
     {
       "title": "Stop Overthinking | Sitar Instrumental | 1.5 Hours",
-      "days_live": 13,
+      "days_live": 19,
       "lane": "anxiety",
       "ctr": 2.84,
       "avd": 0.0,
@@ -73,7 +73,7 @@
     },
     {
       "title": "Overnight Calm | Santoor Sleep Music | 3 Hours",
-      "days_live": 16,
+      "days_live": 22,
       "lane": "sleep",
       "ctr": 3.4,
       "avd": 0.0,
@@ -83,7 +83,7 @@
     },
     {
       "title": "Morning Motivation | Bansuri Raga Bilawal | 1.5 Hours",
-      "days_live": 17,
+      "days_live": 23,
       "lane": "morning",
       "ctr": 3.52,
       "avd": 0.0,
@@ -93,7 +93,7 @@
     },
     {
       "title": "Stress Relief Music | Sitar Instrumental | 1.5 Hours",
-      "days_live": 19,
+      "days_live": 25,
       "lane": "stress_burnout",
       "ctr": 2.68,
       "avd": 0.0,
@@ -103,7 +103,7 @@
     },
     {
       "title": "Attract Positive Energy | Indian Classical Music | 1.5 Hours",
-      "days_live": 20,
+      "days_live": 26,
       "lane": "morning",
       "ctr": 3.36,
       "avd": 0.0,
@@ -113,7 +113,7 @@
     },
     {
       "title": "Bedtime Music | Surbahar Instrumental | 3 Hours",
-      "days_live": 23,
+      "days_live": 29,
       "lane": "other",
       "ctr": 4.45,
       "avd": 0.0,
@@ -123,53 +123,13 @@
     },
     {
       "title": "Cozy Evening Music | Sitar Instrumental | 1.5 Hours",
-      "days_live": 24,
+      "days_live": 30,
       "lane": "other",
       "ctr": 2.98,
       "avd": 0.0,
       "views": 593,
       "verdict": "HEALTHY",
       "action": "leave it"
-    },
-    {
-      "title": "Anxiety Detox Music | Veena Instrumental | 1.5 Hours",
-      "days_live": 25,
-      "lane": "anxiety",
-      "ctr": 3.25,
-      "avd": 0.0,
-      "views": 1012,
-      "verdict": "RE-THUMBNAIL",
-      "action": "music fine, CTR below lane median \u2192 swap thumb"
-    },
-    {
-      "title": "Mental Space Music | Bansuri & Tanpura | 1.5 Hours",
-      "days_live": 26,
-      "lane": "other",
-      "ctr": 2.57,
-      "avd": 0.0,
-      "views": 969,
-      "verdict": "RE-THUMBNAIL",
-      "action": "music fine, CTR below lane median \u2192 swap thumb"
-    },
-    {
-      "title": "Quiet Morning | Sarangi Raga Bilawal | 1.5 Hours",
-      "days_live": 27,
-      "lane": "morning",
-      "ctr": 3.41,
-      "avd": 0.0,
-      "views": 1059,
-      "verdict": "RE-THUMBNAIL",
-      "action": "music fine, CTR below lane median \u2192 swap thumb"
-    },
-    {
-      "title": "Sleep Without Waking | Slow Sitar Instrumental | 3 Hours",
-      "days_live": 30,
-      "lane": "sleep",
-      "ctr": 3.73,
-      "avd": 0.0,
-      "views": 438,
-      "verdict": "RE-THUMBNAIL",
-      "action": "music fine, CTR below lane median \u2192 swap thumb"
     }
   ],
   "rethumbnail": [
@@ -242,58 +202,65 @@
     {
       "test": 45,
       "lane": "Anxiety-Healing / Nervous System",
-      "age_days": 57,
+      "age_days": 63,
       "a": "STRESS DETOX",
       "b": "CAN'T RELAX?"
     },
     {
       "test": 55,
       "lane": "Anxiety",
-      "age_days": 25,
+      "age_days": 31,
       "a": "CLEAR YOUR THOUGHTS",
       "b": "SPIRALING?"
     },
     {
       "test": 56,
       "lane": "Calm/Relax",
-      "age_days": 24,
+      "age_days": 30,
       "a": "UNWIND SLOWLY",
       "b": "UNWIND SLOWLY"
     },
     {
       "test": 57,
       "lane": "Sleep",
-      "age_days": 23,
+      "age_days": 29,
       "a": "SLEEP DEEPLY",
       "b": "GOOD NIGHT MUSIC"
     },
     {
       "test": 63,
       "lane": "Energy/Morning",
-      "age_days": 20,
+      "age_days": 26,
       "a": "SHIFT YOUR ENERGY (same)",
       "b": "SHIFT YOUR ENERGY (same)"
     },
     {
       "test": 64,
       "lane": "Stress/Cognitive",
-      "age_days": 19,
+      "age_days": 25,
       "a": "CAN'T STOP THINKING? (image A: standard Pichwai)",
       "b": "CAN'T STOP THINKING? (image B: bold high-contrast)"
     },
     {
       "test": 65,
       "lane": "Morning",
-      "age_days": 17,
+      "age_days": 23,
       "a": "START UNRUSHED (same)",
       "b": "START UNRUSHED (same)"
     },
     {
       "test": 66,
       "lane": "Sleep",
-      "age_days": 16,
+      "age_days": 22,
       "a": "SINK INTO SLEEP (same)",
       "b": "SINK INTO SLEEP (same)"
+    },
+    {
+      "test": 67,
+      "lane": "Cognitive",
+      "age_days": 19,
+      "a": "MENTAL CLUTTER? (same)",
+      "b": "MENTAL CLUTTER? (same)"
     }
   ]
 }
