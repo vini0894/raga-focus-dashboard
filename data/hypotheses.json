@@ -103,13 +103,7 @@
       "status": "KILLED",
       "statement": "Clinical-somatic hook framing (present-tense Q-hook + named raga + Hz + cortisol/vagus/nervous-system language) recovers channel reach. Evidence: our own all-time reach leaders used this exact register (Dopamine Reset, Nervous System Healing, our highest-ever CTR 9.36% ship 'Can't Fall Asleep | Raga Yaman Bansuri'), then we drifted to generic-soft framing ('Peace of Mind', 'Healing Frequency', 'Calm Morning') — same-format cohort CTR fell 4.62 (May) -> 3.28 (July). Meanwhile a SMALLER niche competitor (Dhun Detox, 27.8K subs) is riding this exact abandoned formula to 15x view-velocity vs their own older catalog, and Raga Heal/Shanti both show flat-to-accelerating fresh-upload performance using the same register — while our fresh-upload performance is declining. This suggests the decay is channel-specific (packaging drift), not niche-wide.",
       "predicted_metric": "A ship using this register should land CTR >= 4.5% (vs the July cohort median 3.28%) and/or beat its lane's recent median views.",
-      "relevant_lanes": [
-        "cognitive",
-        "anxiety",
-        "stress_burnout",
-        "morning",
-        "sleep"
-      ],
+      "relevant_lanes": [],
       "relevant_instruments": [],
       "linked_ships": [
         "v_2026-07-28_calm_your_nerves_veena",
@@ -130,7 +124,15 @@
       "source": "chat_2026-07-22 — competitor decay research + own reach-leader audit",
       "promoted_rule": "Clinical-hook-for-CTR RETIRED 2026-08-15: 1/9 ships hit CTR>=4.5 (only the drone-sleep Can't Sleep). Generic-soft register confirmed dead (cohort 0.3-0.6x). Winners = uplifting-energy + sleep-drone.",
       "week": "wk_2026-07-20",
-      "reads": []
+      "reads": [
+        {
+          "stage": "scope-fix",
+          "date": "2026-09-12",
+          "status": "KILLED",
+          "note": "SCOPE CORRECTED 2026-09-12 (user approved). relevant_lanes was ['cognitive','anxiety','stress_burnout','morning','sleep'] with no instrument scope, so recommend_slot's lane_wide_kill() treated all five LANES as dead concepts and hard-blocked every untested instrument in them: 37 of 53 Monday rejections, leaving only calm_relax x off-list instruments shippable. But the statement is explicitly about a packaging REGISTER, and those five lanes are simply where the register was tried. Morning and sleep carry ~87% of channel engaged views and ship every week. Cleared relevant_lanes and added an explicit `scope` field. Monday's board goes 3 -> 31 gate-passed candidates. The kill itself still stands: do not ship the clinical-somatic register. Reversible by restoring the list."
+        }
+      ],
+      "scope": "REGISTER, not lane. The kill applies to the clinical-somatic packaging register (present-tense Q-hook + named raga + Hz + cortisol/vagus/nervous-system language), which is what the statement describes. It does NOT kill the lanes the register was tested in."
     },
     {
       "id": "h_2026-07-20_emotional_healing_lane_dead",
