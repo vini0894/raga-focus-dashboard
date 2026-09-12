@@ -1,61 +1,55 @@
 {
- "id": "v_2026-09-12_restart_your_life_sarangi",
- "status": "APPROVED",
- "locked": true,
- "created_at": "2026-09-05",
- "planned_date": "2026-09-12",
- "planned_slot": "09:00 IST AM \u00b7 Sat",
- "lane": "anxiety",
- "daypart": "morning",
- "instrument": "Sarangi",
- "raga": "Jaunpuri",
- "title": "Restart Your Life | Sarangi Therapy | 1.5 Hours",
- "title_variants": {
-  "A": "Restart Your Life | Sarangi Therapy | 1.5 Hours",
-  "B": "Solace Music | Slow Sarangi | 1.5 Hours"
- },
- "title_note": "Two DIFFERENT leads. Arm A takes competitors' #2 cluster (RESTART/LET GO, median 924 v/day; Healing Raga Studio's 'Restart Your Life: Deep Healing Bansuri & Sitar Meditation' runs 3,538 v/day) and it is the highest-scoring genuinely fresh lead we hold at 64. Arm B is 'Solace' (bank 68, the single highest-scoring FRESH phrase in the whole 229-phrase sweep). Third use of the competitor 'Therapy' construction this week \u2014 deliberate, so the week yields three reads on whether it travels.",
- "validated_keywords": [
-  "'Restart Your Life' \u2014 VidIQ 64, lead_prescreen FRESH. \u26a0 its concept family (RESTART/RESET) has 14 prior attempts at 0.40x the era baseline in Apr-May and 1.00x in Jun-Jul \u2014 it has NEVER beaten baseline for us. Taken because competitors are currently winning the cluster, not because our own record supports it",
-  "'Solace Music' \u2014 bank 68, FRESH. \u26a0 SOLACE/COMFORT family runs 4.29x (Apr-May) then 0.36x (Jun-Jul) \u2014 declining",
-  "cell: Sarangi x anxiety UNTESTED (n=0) \u2014 a genuine unknown. Sarangi's only tried cells are morning FLOP (n=2, 960) and calm_relax THIN (n=1, 25)",
-  "raga Jaunpuri \u2014 unused in any live title",
-  "this slot exists because the nervous-system must-win MOVED to 2026-09-15: at 1.5hr on Sep 12 it was a hard clone of the Aug 24 Sitar anxiety ship (19d of a 21d window), and no format change resolved it without tripping another gate"
- ],
- "thumbnail_text_main": "START AGAIN",
- "thumbnail_text_variants": [
-  {
-   "label": "A",
-   "text": "START AGAIN",
-   "strategy": "outcome-imperative, 2 words \u2014 the shortest overlay we have run; tests the banked 'simpler beats complex' rule at the extreme"
+  "id": "v_2026-09-12_restart_your_life_sarangi",
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-09-05",
+  "planned_date": "2026-09-17",
+  "planned_slot": "06:30 IST AM · Thu",
+  "lane": "anxiety",
+  "daypart": "morning",
+  "instrument": "Sarangi",
+  "raga": "Bhairavi",
+  "title": "Restart Your Life | Sarangi Therapy | 1.5 Hours",
+  "title_variants": {
+    "A": "Restart Your Life | Sarangi Therapy | 1.5 Hours",
+    "B": "Quiet the Worry | Indian Instrumental | 1.5 Hours"
   },
-  {
-   "label": "B",
-   "text": "WHAT IF TODAY RESET?",
-   "strategy": "Q-hook. Anxiety lane is a format TIE (3.50 vs 3.52), so neither arm violates a banked rule"
-  }
- ],
- "thumbnail_prompt": "ONE image, both arms: a person standing at a doorway looking out into morning light, bag down, unhurried, one hand on the frame. Sarangi at the FRAME EDGE, NOT being played. Warm gold light spilling in across a cool interior floor. Pichwai/Kangra miniature border, aged parchment, house palette. Text banner ~35% of frame, second tier 'Sarangi \u00b7 Raga Jaunpuri'. VIEWER LIVING THE MOMENT, never a performer \u2014 measured 6.11% vs 3.03%.",
- "playlists": [
-  "Healing & Anxiety Relief Music",
-  "Meditation"
- ],
- "suno_prompt": "Instrumental only, no vocals, no humming \u2014 unhurried Indian classical sarangi in Raga Jaunpuri, warm bowed string tone with vocal-like glides and long sustain, continuous tanpura drone underneath, no tabla, 60 BPM, seamless loop.",
- "suno_prompt_note": "ANXIETY lane. Sarangi's defining characteristic is the vocal-like glide \u2014 name it, per the Suno prompt patterns (physical instrument description is the #1 marker). 'unhurried' not 'slow'. No tabla (Sitar-only rule). 60 BPM, above the retention floor. Binaural: theta 6 Hz at -20dB.",
- "production_spec": {
-  "duration_minutes": 90,
-  "format": "1.5hr",
-  "publish": "2026-09-12 09:00 IST",
-  "loop_note": "6-7 unhurried Jaunpuri sarangi clips over a continuous tanpura bed, long crossfades to ~90 min, consistent warm level. No percussion.",
-  "binaural": "theta 6 Hz at -20dB",
-  "assets_needed": "ONE doorway-morning-light image \u2014 user to generate"
- },
- "experiment": "Opens the UNTESTED Sarangi x anxiety cell and takes a first swing at competitors' #2 cluster. Honest expectation: both arms sit on families that are flat-to-declining for us; this is the weakest of the six on prior evidence.",
- "measurement_note": "Read on ENGAGED VIEWS only. At the 2026-09-06 capture public views run 1.17x engaged and the gap is widening.",
- "pending": [
-  "USER: generate the image",
-  "Launch TITLE A/B at publish",
-  "AI-disclosure toggle",
-  "d7 read 2026-09-19"
- ]
+  "title_note": "Leads 'Restart Your Life' (bank 64) vs 'Quiet the Worry' (fresh, unscored). Arm B runs GENERIC (no instrument named) per the week's standing rule, user 2026-09-12. Across all five ships the generic arm is the one constant, taking h_2026-08-17_instrument_naming from n=1 to n=6. ⚠ Leads differ too, so each pair is two-variable on its own; the naming read is the ACROSS-WEEK pattern, not any single test. ⚠ Test & compare rotates both arms on one video, so it measures which title CONVERTS, not which audience YouTube routes to. Arm B replaces the original brief's 'Solace Music | Slow Sarangi', which fails the character band at 38.",
+  "validated_keywords": [
+    "'Restart Your Life' - bank VidIQ 64",
+    "'Quiet the Worry' - lead_prescreen FRESH, no conflict",
+    "title_preflight: A 46 chars PASS - B 48 chars PASS"
+  ],
+  "thumbnail_text_main": "ROOM TO BREATHE",
+  "thumbnail_text_variants": [
+    {
+      "label": "fixed both arms",
+      "text": "ROOM TO BREATHE",
+      "strategy": "15 chars / 3 words. Body-outcome framing, which demolished abstract mind-state framing by 32.8 points in this lane on Test #53. anxiety shows no real format effect (imperative 3.50 vs Q-hook 3.52), so this is picked on fit. Deduped against all 154 shipped thumb texts."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, both arms. The VIEWER, not a performer. A person at an open window early morning, chest visibly expanding on an inhale, shoulders low. Pichwai/Kangra miniature, aged parchment, ornate border. A sarangi may rest at frame edge, never the subject. Text in its own banner at ~35% of frame, second tier 'Sarangi · Raga Bhairavi'. 120px legible.",
+  "playlists": [
+    "Healing & Anxiety Relief Music",
+    "Peaceful Music"
+  ],
+  "suno_prompt": "Instrumental only, no vocals, no humming - slow Indian classical sarangi in Raga Bhairavi, bowed strings with a vocal aching quality and sympathetic resonance, no percussion, the feeling of a held breath finally releasing, 54 BPM, soft alpha undertone.",
+  "suno_prompt_note": "CALM lane - no upbeat/energetic terms. No tabla. ~250 chars.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-09-17 06:30 IST",
+    "loop_note": "6 clips merged, gentle crossfades"
+  },
+  "experiment": "Opens the UNTESTED Sarangi x anxiety cell. Honest prior: Sarangi is impressions-thin across every lane tried and this is the weakest ship of the week on evidence. Read d7 2026-09-24.",
+  "measurement_note": "Read on ENGAGED VIEWS only. Public views count play-starts since 2026-08-27 and run 1.3-2.4x engaged on fresh ships, so raw views are not comparable to any pre-change baseline.",
+  "pending": [
+    "USER: generate the open-window image",
+    "Launch TITLE A/B at publish + log to ab_raw_data.csv",
+    "AI-disclosure toggle",
+    "VidIQ: score 'quiet the worry'",
+    "d7 read 2026-09-24"
+  ],
+  "correction_note": "⚠️ The superseded 2026-09-12 version of this brief claimed the cell was 'PROVEN n=2, median 18,303 - the ONLY proven cell on the channel'. That is FALSE and was never true. Sarangi x anxiety has never shipped: track_record reads UNTESTED n=0. No Sarangi cell is proven anywhere - healing is FLOP n=7 median 71, morning FLOP n=2 median 651, calm_relax and stress_burnout are single ships at 20 and 24 engaged views. This brief ships as an OPEN CELL, on an untested bet, not on a proven one.",
+  "moved_note": "MOVED 2026-09-12: planned for Sat 2026-09-12 but never shipped (the Sep-12 slot went to 'Evening Music | Sarod Instrumental', which had no brief). Re-pointed to Thu 2026-09-17 rather than duplicated, so the packaging-clone gate sees one ship, not two."
 }

@@ -1,0 +1,99 @@
+{
+  "week_id": "wk_2026-09-14",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
+  "created": "2026-09-12",
+  "status": "FINAL — five briefs approved and gate-run",
+  "notes": "FIVE ships, Mon-Fri, one per lane, one per instrument. Two competitor-inspired ships (user rule 2026-09-12, tradeoff_eval COMP_PICKS=2), on different lanes and different dates so they enter different suggested pools. Every B arm runs GENERIC so instrument-naming is the week's one constant variable.",
+  "week_level_decisions": {
+    "monday_is_the_must_win": "Corrected 2026-09-12. An earlier read called Monday a weak day on 11.6% suggested-pool entry; that was a LANE artifact - Monday's six past ships were morning x4, calm x1, anxiety x1, three of the four lowest-entry lanes. Like for like, Monday morning ships post 17.2% vs 14.1% for morning ships on other days. d7 engaged medians: Tue 764, Mon 746, Thu 491, Fri 462. Between-day spread 1.65x vs within-day 1.9-4.6x, so WHAT ships matters 2-3x more than WHICH DAY.",
+    "bansuri": "BENCHED (production block, user 2026-09-12). Dilruba also benched since 2026-07-25.",
+    "ab_variable": "instrument-naming, generic on every B arm (user).",
+    "slot": "Concept intent, not a performance rule. AM vs PM does not survive a lane split - no lane has 2+ ships in both slots, and suggested entry is 14.1% AM vs 15.2% PM.",
+    "parked": "Sitar must-win -> 2026-09-21. Veena morning naming A/B -> 2026-09-23. Both keep their status.",
+    "sep12_slot": "The Sat 2026-09-12 slot shipped 'Evening Music | Sarod Instrumental | 1.5 Hours' with NO brief — it is invisible to the cooldown and clone gates. The Sarangi brief planned for that day never ran and is re-pointed to Thu 2026-09-17."
+  },
+  "ships": [
+    {
+      "date": "2026-09-14",
+      "day": "Mon",
+      "slot": "AM 06:30",
+      "lane": "morning",
+      "instrument": "Sitar",
+      "runtime_min": 90,
+      "brief": "v_2026-09-14_wake_up_grateful_sitar",
+      "role": "MUST-WIN · affirmation register",
+      "gate": "track_record FAIL — documented user override (cell CTR 5.83 median, best on channel)"
+    },
+    {
+      "date": "2026-09-15",
+      "day": "Tue",
+      "slot": "PM 19:00",
+      "lane": "cognitive",
+      "instrument": "Veena",
+      "runtime_min": 90,
+      "brief": "v_2026-09-15_clear_negative_thoughts_veena",
+      "role": "COMPETITOR SHIP 1",
+      "gate": "WARN — untested cell"
+    },
+    {
+      "date": "2026-09-16",
+      "day": "Wed",
+      "slot": "PM 19:00",
+      "lane": "stress_burnout",
+      "instrument": "Tanpura",
+      "runtime_min": 90,
+      "brief": "v_2026-09-16_break_negative_patterns_tanpura",
+      "role": "COMPETITOR SHIP 2",
+      "gate": "pending"
+    },
+    {
+      "date": "2026-09-17",
+      "day": "Thu",
+      "slot": "AM 06:30",
+      "lane": "anxiety",
+      "instrument": "Sarangi",
+      "runtime_min": 90,
+      "brief": "v_2026-09-12_restart_your_life_sarangi",
+      "role": "fill — opens an untested cell",
+      "gate": "pending"
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Fri",
+      "slot": "PM 19:00",
+      "lane": "sleep",
+      "instrument": "Santoor",
+      "runtime_min": 180,
+      "brief": "v_2026-09-18_sleep_in_santoor_3hr",
+      "role": "ANCHOR · 3hr tempo-floor test #2",
+      "gate": "pending"
+    }
+  ],
+  "lane_coverage": [
+    "morning",
+    "cognitive",
+    "stress_burnout",
+    "anxiety",
+    "sleep"
+  ],
+  "uncovered": [
+    "calm_relax",
+    "healing"
+  ],
+  "vidiq_batch_needed": [
+    "wake up grateful",
+    "good day ahead",
+    "clear negative thoughts",
+    "break negative patterns",
+    "put the day down",
+    "quiet the worry",
+    "it's okay to sleep in",
+    "all night sleep"
+  ],
+  "blocking_decisions": [
+    "USER: generate 5 thumbnail images (prompts in each brief)",
+    "USER: launch each Test & compare A/B at publish and log to ab_raw_data.csv — nothing has been logged since 2026-08-24",
+    "USER: routing partner for Tue + Wed — adjacency buys launch entry, not durability (week2/week1 suggested ran 0.02-0.35)"
+  ]
+}

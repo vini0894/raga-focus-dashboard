@@ -1,0 +1,57 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-09-12",
+  "measurement_note": "Read on ENGAGED VIEWS only. Public views count play-starts since 2026-08-27 and run 1.3-2.4x engaged on fresh ships, so raw views are not comparable to any pre-change baseline.",
+  "id": "v_2026-09-18_sleep_in_santoor_3hr",
+  "planned_date": "2026-09-18",
+  "planned_slot": "19:00 IST PM · Fri",
+  "lane": "sleep",
+  "daypart": "night",
+  "instrument": "Santoor",
+  "raga": "Bageshri",
+  "title": "It's Okay to Sleep In | Slow Santoor | 3 Hours",
+  "title_variants": {
+    "A": "It's Okay to Sleep In | Slow Santoor | 3 Hours",
+    "B": "All Night Sleep | Slow Instrumental Music | 3 Hours"
+  },
+  "title_note": "Leads \"It's Okay to Sleep In\" (fresh) vs 'All Night Sleep' (fresh). Arm B runs GENERIC (no instrument named) per the week's standing rule, user 2026-09-12. Across all five ships the generic arm is the one constant, taking h_2026-08-17_instrument_naming from n=1 to n=6. ⚠ Leads differ too, so each pair is two-variable on its own; the naming read is the ACROSS-WEEK pattern, not any single test. ⚠ Test & compare rotates both arms on one video, so it measures which title CONVERTS, not which audience YouTube routes to. ⚠ 'Sleep All Night' is a DIFFERENT phrase and is dead - it lost Test #61 as thumb-B. 'Deep Sleep Music' is also blocked: it lost Test #39 and clones a live Surbahar title.",
+  "validated_keywords": [
+    "\"It's Okay to Sleep In\" - lead_prescreen FRESH",
+    "'All Night Sleep' - FRESH",
+    "title_preflight: A 46 chars PASS - B 51 chars PASS",
+    "permission register measured +15pp over direct imperative in sleep (Test #54)",
+    "cell: Santoor x sleep 3hr - last ran 2026-08-21, 28 days clear of the clone window"
+  ],
+  "thumbnail_text_main": "NO ALARM TONIGHT",
+  "thumbnail_text_variants": [
+    {
+      "label": "fixed both arms",
+      "text": "NO ALARM TONIGHT",
+      "strategy": "16 chars / 3 words. Permission register, worth +15pp over direct imperative in this lane (Test #54). Promises the morning after rather than the night, which is the parked §7b direction that breaks the sleep lane's sameness problem - 8 of 9 sleep thumbs are pichwai-with-figure and 7 of 9 read 'sleep + adverb'. Deduped against all 154 shipped thumb texts."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, both arms. The VIEWER, not a performer. Dark bedroom, a hand reaching past a phone to switch off the bedside lamp, bed already turned down. Pichwai/Kangra miniature, aged parchment, ornate border. Santoor may rest at frame edge, never the subject. Text in its own banner at ~35% of frame, second tier 'Santoor · Raga Bageshri'. 120px legible.",
+  "playlists": [
+    "Sleep Music",
+    "Peaceful Music"
+  ],
+  "suno_prompt": "Instrumental only, no vocals, no humming - slow Indian classical santoor in Raga Bageshri, soft hammered strings with very long decay and sympathetic resonance carrying the sustain, no percussion, the feeling of a room going dark, 56 BPM, soft delta undertone.",
+  "suno_prompt_note": "⚠️ SPECCED AGAINST h_2026-09-05_3hr_tempo_retention_floor. 56 BPM is ABOVE the ~55 floor and Bageshri is NOT all-komal, deliberately avoiding the Malkauns-at-48-BPM spec that hit 7.2% AVD at d1. ⚠️ SOLO SANTOOR, no tanpura: adding a tanpura bed made this a packaging clone of the 2026-08-28 Santoor & Tanpura 3hr ship at 21 days. Santoor's own decay carries the sustain. CALM lane - no upbeat terms. No tabla.",
+  "production_spec": {
+    "duration_minutes": 180,
+    "format": "3hr",
+    "publish": "2026-09-18 19:00 IST",
+    "loop_note": "6-7 gentle clips merged to 3:00:00, no hard transitions"
+  },
+  "experiment": "Week anchor (highest-return lane per ship) + second read on h_2026-09-05_3hr_tempo_retention_floor. Prediction: 56 BPM on a non-komal raga clears 15% AVD at d1, where Snowy Night's 48 BPM Malkauns hit 7.2% and Night Routine reached 12.4% at d2. Read d1 AVD, then d7 2026-09-25 on engaged views.",
+  "hypothesis_id": "h_2026-09-05_3hr_tempo_retention_floor",
+  "pending": [
+    "USER: generate the dark-bedroom image",
+    "Launch TITLE A/B at publish + log to ab_raw_data.csv",
+    "AI-disclosure toggle",
+    "VidIQ: score \"it's okay to sleep in\"",
+    "d1 AVD check against the 15% bar",
+    "d7 read 2026-09-25"
+  ]
+}
