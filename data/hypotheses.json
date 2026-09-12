@@ -29,7 +29,14 @@
       "source": "Interventions: user playlist shuffles 2026-08-02 and 2026-08-07. Baseline positions + per-video metrics captured in data/playlist_snapshots/playlists_2026-08-07.json. Full method, confounds and checklist in data/playlist_snapshots/ANALYSIS_PLAN_wk_2026-08-10.md. ORIGIN: end screens measured DEAD (101 views channel-wide in a month, 0.01%) - playlists are the only working routing surface (4.94% of views but 8.92% of watch-time). CONSTRAINT: donor T1 share must be >= target T1 or the target gets diluted; Dopamine Reset (15.7% T1) must never point at a T1 video. CONFOUNDS to state in the read: 5 new ships entered playlists Aug 3-7; the channel independently inflected from 19,255 to ~25,000 daily views; the two shuffles are 5 days apart and cannot be separated. EXPECTED MAGNITUDE: low hundreds per month. The original the original headline figure model assumed 3x impressions on 17 targets; total playlist traffic is only ~36,800 views/28d channel-wide, so doubling it is worth roughly a quarter of that.",
       "promoted_rule": "",
       "week": "wk_2026-08-03",
-      "reads": [],
+      "reads": [
+        {
+          "stage": "d21+",
+          "date": "2026-09-12",
+          "status": "TESTING",
+          "note": "ACTUALS 2026-09-12 (Analytics API, channel playlist share of watch-MINUTES, the unit the hypothesis specifies): pre Jul28-31 8.92% -> post-shuffle Aug2-4 9.79% -> Aug9-15 9.75% -> Aug16-22 9.72% -> Aug23-29 10.39% -> Aug30-Sep5 12.20% -> Sep6-11 10.60%. Success bar (hold >=9.4% across Aug 9-15) MET and held in every window since. Total minutes fell 1.89M -> 1.17M over the span, consistent with 'redistributes, does not create reach'. PROPOSED: TESTING -> CONFIRMED. NOTE: experiment_reads.py's 'KILLED, 0/7 ships >=1.0x cohort' proposal used per-ship cohort reach, the wrong unit for this hypothesis; disregard it."
+        }
+      ],
       "read_schedule": {
         "d7": "2026-08-14",
         "d14": "2026-08-21",
@@ -214,7 +221,14 @@
       "promoted_rule": null,
       "caveats": "OBSERVATIONAL, not randomised — which concept shipped on which day was a human choice, so selection bias is live (if stronger concepts were deliberately placed Mon-Wed, the true Fri advantage would be even larger; if experiments went to Fri, it could be smaller). n=16 Fri / n=14 Mon. Treat as a scheduling PRIOR, not a settled rule, until 6+ deliberate ships test it.",
       "week": "wk_2026-07-20",
-      "reads": [],
+      "reads": [
+        {
+          "stage": "d21+",
+          "date": "2026-09-12",
+          "status": "PROPOSED",
+          "note": "ACTUALS 2026-09-12, two independent measures on ships since Jul 25: (1) day-7 true impressions/day as x same-age cohort (experiment_reads): Thu/Fri median 0.31x (n=12) vs Mon/Wed 0.47x (n=8), Tue 0.48x (n=6); (2) Analytics API engaged views/day over days 4-12: Thu/Fri 23/d (n=10) vs Mon/Wed 29/d (n=8), Tue 32/d. Prediction was Thu/Fri >=1.5x Mon/Wed; falsifier ('Mon/Wed match or beat Thu/Fri over ~6 ships') met on 18+ ships. PROPOSED: KILLED. The May-July Fri advantage was concept selection, not launch day."
+        }
+      ],
       "read_schedule": {
         "d7": "2026-07-31",
         "d14": "2026-08-07",
@@ -249,7 +263,14 @@
       "promoted_rule": null,
       "caveats": "Observational, lane-confounded (T1-heavy titles are mostly morning/uplift — may be the lane T1 wants, not the words). The two linked A/Bs are the controlled test.",
       "week": "wk_2026-07-20",
-      "reads": [],
+      "reads": [
+        {
+          "stage": "d21+",
+          "date": "2026-09-12",
+          "status": "TESTING",
+          "note": "ACTUALS 2026-09-12 (Analytics API country split of lifetime watch-minutes, T1 = US CA GB AU DE NL SE NO CH IE NZ): linked ships: Morning Routine 41%, Quiet Morning (Sarangi Raga Bilawal) 33%, Calm Morning 25%, Boost Your Aura 23%, Grounding 23%, Morning Stillness 17% @5d, Attract Positive Energy 13%, Morning Motivation (Raga Bilawal) 11%, Morning Cortisol Detox (Raga Bhairavi 432Hz) 9%, Morning Anxiety Relief 0%. 2 of 10 clear the >=30% bar. Unlinked ships >=30%: Calm Your Nerves 35%, Cozy Evening 35%, Steady Your Breathing 34%. A named raga sits on both 33% and 9-11%, so the raga/instrument-lead half of the claim does not hold; the somatic/body English leads are the ones clearing 30%. Median across 28 mature ships 18%. CAVEAT: five low-volume ships report 100% India with no other country rows (Overnight Calm, Morning Anxiety Relief, Relaxing Sarod, Snowy Night, Mental Overload) - likely API suppression of small countries, treat their T1 as unknown. PROPOSED: WEAK; the two controlled A/Bs in Studio remain the deciding read."
+        }
+      ],
       "read_schedule": {
         "d7": "2026-08-01",
         "d14": "2026-08-08",
@@ -284,7 +305,14 @@
       "promoted_rule": null,
       "caveats": "n=1, single video. Age-decay confound: judge the slope against the video's own pre-test trajectory, not absolute impressions. Reads scheduled: ~Aug 2 (7d) and ~Aug 9 (test conclusion). Companion end-screen wiring to Morning Gratitude, if done, slightly contaminates attribution — note the wiring date at read time.",
       "week": "wk_2026-07-20",
-      "reads": [],
+      "reads": [
+        {
+          "stage": "d21+",
+          "date": "2026-09-12",
+          "status": "TESTING",
+          "note": "ACTUALS 2026-09-12 with CONTROLS (Analytics API weekly ENGAGED views, 7-day blocks from Jul 5): Morning Energy (re-thumb Jul 26) -24%, -31% pre -> +40%, +12%, -7%, -12% post. But the UNTOUCHED heroes turned at the same time: Dopamine -15%, -13% -> -0%, -3%, -4%; Sound Sleep -29% -> +14%, +20%, -14%; Nervous System -31% -> +48%, -4%, +22%. The Jul 19-25 trough and Jul 26+ rebound were channel-wide, so the slope flattening cannot be attributed to the thumbnail. Window impressions/day Aug 1 -> Sep 12: Morning Energy -41% vs Dopamine -59%, Sound Sleep -59%, Nervous System +12% (mixed). CTR 3.58 -> 5.01 with AVD 20.1 -> 22.3 min = conversion improved, but Dopamine's CTR also rose 4.31 -> 6.23 untouched (survivor bias as impressions collapse). Criterion 3 (challenger wins share) still needs Studio. PROPOSED: KILLED for the 'expands impressions' claim (extends Test #43 conversion-not-distribution to alive videos); conversion effect only."
+        }
+      ],
       "read_schedule": {
         "d7": "2026-08-02",
         "d14": "2026-08-09",
@@ -494,6 +522,12 @@
           "date": "2026-08-31",
           "status": "TESTING",
           "note": "READ 2026-08-31 (d13): HALF PASS. Criterion was >1,000 views AND age-matched >=1.0x. Engaged views 763 — misses the 1,000 bar (and raw views 793 misses it too, so the Aug-24 counting change doesn't rescue it). Age-matched 0.54x vs the 120d median ship. Against CURRENT peers it ranks 2nd of 4 that week. Sitar performs normally relative to its peers; what is not moving is the absolute ceiling. CTR 2.68% is the weak spot, AVD 20.6% healthy."
+        },
+        {
+          "stage": "d21+",
+          "date": "2026-09-12",
+          "status": "TESTING",
+          "note": "ACTUALS 2026-09-12 (Analytics API, engaged views): Attract Positive Energy d7 engaged 673; suggested share of days 1-7 = 10.8% (the Aug-23 partial read's '34% suggested' is not reproduced on engaged views; browse 55%, search 6%). Lifetime 963 engaged @26d, 0.53x age-matched. HALF PASS stands; no suggested-pool re-entry."
         }
       ],
       "read_schedule": {
@@ -544,7 +578,14 @@
       "caveats": "DEFERRED by choice. Re-open only as a clean 1-variable A/B.",
       "week": "wk_2026-08-24",
       "read_after": "2026-08-31",
-      "reads": [],
+      "reads": [
+        {
+          "stage": "ship-level",
+          "date": "2026-09-12",
+          "status": "TESTING",
+          "note": "ACTUALS 2026-09-12 ship-level only (arm split is Studio-only): Morning Cortisol Detox (432Hz) d7 engaged 687, day-7 impressions 1.39x cohort (the only ship above 1.0x at d7 since Jul 25), then 0.26x at d14 and suggested week-2/week-1 = 0.11 -> a 7-day burst that did not hold; T1 9%, browse 44%."
+        }
+      ],
       "read_schedule": {
         "d7": "2026-09-01",
         "d14": "2026-09-08",
@@ -605,6 +646,12 @@
           "date": "2026-08-31",
           "status": "TESTING",
           "note": "READ 2026-08-31 (d14): BLOCKED, not concluded. Ship-level Attract Positive Energy is the week's strongest (888 engaged, 0.53x age-matched, CTR 3.37, AVD 21.7) but the 'Indian Classical' vs 'Slow Tanpura' arm split needs the Studio Test & compare screenshot. Blended CTR cannot separate the arms."
+        },
+        {
+          "stage": "between-video",
+          "date": "2026-09-12",
+          "status": "TESTING",
+          "note": "ACTUALS 2026-09-12 between-video read (latest export, ships since Jul 20, age>=7d): NAMED instrument in title n=28, median 492 engaged, 19.1 engaged/day-of-age; GENERIC n=3 (Attract Positive Energy 963, Grounding 205, Emotional Healing 74), median 205, 4.4/day. Directionally named >= generic but generic n=3 is too thin to settle it; the arm split of the Aug-17 A/B is still Studio-only."
         }
       ],
       "read_schedule": {
@@ -622,7 +669,14 @@
       "statement": "Titles borrowed from a competitor's currently-winning formula out-pull self-invented concepts. Mon A/B picks between the two live formulas: 'Reset Your Brain Naturally' (Raga Heal, 351K #2 + 3.6K recent) vs 'Stop Overthinking' (Healing Raga Studio's 896K/1mo subtitle phrase).",
       "predicted_metric": "A/B watch-share winner + per-arm CTR; ship day-7 cohort vs 186 views/day median. Winner's formula becomes a reusable title pattern; if the ship ALSO beats cohort, wave-formula > self-invented is supported.",
       "read_after": "2026-08-31",
-      "reads": [],
+      "reads": [
+        {
+          "stage": "ship-level",
+          "date": "2026-09-12",
+          "status": "TESTING",
+          "note": "ACTUALS 2026-09-12 ship-level only (arm split is Studio-only): Stop Overthinking d7 engaged 424, day-7 impressions 0.17x cohort, 0.43x age-matched at 19d, suggested 12.3% -> the ship did NOT beat cohort, so the 'wave-formula > self-invented' support condition fails regardless of which arm wins."
+        }
+      ],
       "read_schedule": {
         "d7": "2026-08-31",
         "d14": "2026-09-07",
@@ -654,7 +708,14 @@
       "statement": "🎯 WEEK GOAL wk_2026-08-24 (user, 2026-08-23): deliver ships that become SUGGESTED videos next to already-driving host videos. WEEK-LEVEL META: wave-adjacency escapes the subscriber ceiling. New ships die in the subscriber pool (3-9% search, ~38-55% subscriber, 0.79-0.95x cohort) regardless of keyword/quality (Dopamine Detox: better CTR+AVD than the 283K pillar, 947 views). The two observed escapes: outlier CTR (Can't Sleep 5.87 -> 47% suggested) and suggested-pool adjacency to a live competitor wave (Digital Detox -> 31% suggested next to Dhun's video). All 5 wk-Aug24 ships cite a live wave.",
       "predicted_metric": "≥2 of 5 ships get >25% RELATED_VIDEO share at d7 (baseline 1 of 19) AND week-2 Suggested views ≥50% of week-1 (durability — decay research 2026-08-23 showed competitor-wave adjacency is a 3-day burst: Digital Detox 691 → 18; owned-host adjacency holds: Sleep Through the Night wk2 = wk1). Burst-only = wave adjacency works for launch, not for distribution → pair with owned hosts.",
       "read_after": "2026-08-31",
-      "reads": [],
+      "reads": [
+        {
+          "stage": "d14+",
+          "date": "2026-09-12",
+          "status": "TESTING",
+          "note": "ACTUALS 2026-09-12 (Analytics API per-video traffic sources, ENGAGED views): wk-Aug-24 ships' SUGGESTED share of days 1-7: Stop Overthinking 12.3%, Morning Cortisol Detox 25.5%, Morning Anxiety Relief 13.7%, Deep Stress Relief 14.9% -> 1 of 4 at the 25% line (bar: >=2 of 5 above 25%). Durability (suggested views days 8-14 / days 1-7): 0.35, 0.11, 0.20, 0.02 (bar: >=0.50) -> burst-only on all four. Baseline correction: 5 of 28 mature ships since Jul 25 exceed 25% suggested at d7 (Can't Sleep 30.0, Digital Detox 32.5, Stress Relief Sitar 27.8, Fresh Mind 30.2, Cortisol Detox 25.5), median 14.7%; browse/subscriptions feed is the dominant week-1 source on every ship (median ~46%), search 3-10%. PROPOSED: KILLED. Wave adjacency neither entered the pool at the predicted rate nor held."
+        }
+      ],
       "read_schedule": {
         "d7": "2026-08-31",
         "d14": "2026-09-07",
@@ -694,7 +755,14 @@
       "week": "wk_2026-08-24",
       "statement": "Publish slot (AM vs PM) changes week-1 reach when CONCEPT is held constant. Motivation: 6-week AM 241 vs PM 152 collapsed to 156 vs 149 over the last 2 weeks once confounds were visible — the gap was July AM concept wins. Clean design: same concept+instrument class shipped AM one week, PM the next; read day-5 views/day + impr/day + CTR.",
       "predicted_metric": "same-concept pair: |AM - PM| day-5 v/d < 15% → slot is not a lever (confirm demotion); > 30% in either direction → reinstate a slot rule with direction.",
-      "reads": [],
+      "reads": [
+        {
+          "stage": "observational",
+          "date": "2026-09-12",
+          "status": "PROPOSED",
+          "note": "ACTUALS 2026-09-12 (Analytics API engaged views/day, days 1-5, ships since Aug 3, publish time from the Data API): AM (06:30-07:00 IST) n=10 median 120/d vs PM (19:00) n=13 median 90/d -> AM +33%, above the hypothesis's own 30% threshold for reinstating a slot rule. CAVEAT: not the same-concept pair design; AM ships are mostly morning-lane concepts, so lane and slot are confounded. Keep PROPOSED; the clean read needs one concept shipped AM and PM in consecutive weeks."
+        }
+      ],
       "read_schedule": {},
       "linked_ships": [
         "2026-08-24 · Stop Overthinking | Sitar Instrumental | 1.5 Hours [KVQMORHMyiE]",
@@ -750,6 +818,12 @@
           "date": "2026-09-12",
           "status": "TESTING",
           "note": "READ 2026-09-12 (d8, Sep 12 export, ENGAGED views): TREATMENT Snowy Night (Bansuri & Tanpura x sleep x 3hr, Sep 4) = 481 engaged @8d, 1,670 impr/day lifetime, 0.38x age-matched cohort, CTR 2.48% (lane med 6.83), AVD 11.1%. CONTROLS: Relaxing Instrumental Music (Sarod) 504 engaged @11d (0.28x); Fresh Mind Music (Sitar) 913 @9d (~0.74x). Predicted >=2.5x the controls; measured 0.5-1.0x, inside the 0.3-0.6x band. FALSIFIER MET at d7. PROPOSED: TESTING -> KILLED, with the statement's own implication: the cell is not the lever, the constraint is channel-level distribution (subscriber-feed watch-time -43% Aug15-21 -> Sep5-9, 54% of the channel's decline), so per-ship optimisation should yield to routing + hero management. Confirm at d14 (2026-09-18) before flipping."
+        },
+        {
+          "stage": "d7-api",
+          "date": "2026-09-12",
+          "status": "TESTING",
+          "note": "ACTUALS 2026-09-12 (Analytics API, engaged views days 1-7): TREATMENT Snowy Night 464 vs CONTROLS Relaxing Sarod 460 and Fresh Mind 774 -> treatment = 1.0x the weaker control, 0.6x the stronger; suggested share 18.5% vs 9.8% / 30.2%. Confirms the d7 read: falsifier met."
         }
       ]
     },
