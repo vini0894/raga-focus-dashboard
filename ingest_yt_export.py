@@ -44,7 +44,7 @@ HISTORY_COLS = ["capture_date", "video_id", "title", "publish_date", "views",
                 "ctr_pct", "avg_view_duration_sec", "avg_view_pct"]
 REVENUE_COLS = ["capture_date", "video_id", "title", "publish_date", "views",
                 "estimated_revenue_usd"]
-TOTALS_COLS = ["capture_date", "window_days", "n_videos", "views", "engaged_views", "watch_hours",
+TOTALS_COLS = ["capture_date", "window_days", "n_videos", "views", "engaged_views", "engaged_source", "watch_hours",
                "subscribers_gained", "revenue_usd", "impressions", "ctr_pct",
                "avd_sec", "avd_pct", "rev_per_day"]
 
@@ -227,6 +227,8 @@ def ingest_one(path: Path, force_date=None, window_days=DEFAULT_WINDOW_DAYS) -> 
             # the gap widens as the two counts diverge. Falls back to views for
             # pre-change exports, where the two are genuinely equal.
             "engaged_views": _i(total_row.get("Engaged views") or total_row.get("Views", "0")),
+            # matches the migrated store header; "measured" = export carried Engaged views
+            "engaged_source": "measured" if (total_row.get("Engaged views") or "").strip() else "inferred_from_views",
             "watch_hours": _f(total_row.get("Watch time (hours)", "0")),
             "subscribers_gained": _i(total_row.get("Subscribers", "0")),
             "revenue_usd": round(rev, 3),
