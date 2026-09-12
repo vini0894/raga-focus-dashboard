@@ -1,5 +1,5 @@
 {
-  "status": "DRAFT",
+  "status": "PARKED",
   "locked": false,
   "created_at": "2026-09-05",
   "measurement_note": "Read on ENGAGED VIEWS only. At the 2026-09-06 capture public views run 1.17x engaged and the gap is widening.",
@@ -64,5 +64,5 @@
   ],
   "clone_resolution": "MOVED from Sat 2026-09-12 to Tue 2026-09-15. At 1.5hr on Sep 12 it was a HARD clone — 19d from 'Stop Overthinking | Sitar Instrumental | 1.5 Hours' (2026-08-24), 2 days inside the 21d window. Two fixes were tried and both were wrong: naming Tanpura did nothing (the check fires on 'same_sec OR same_lane', so an identical lane alone is sufficient), and moving to 2hr cleared the clone but tripped track_record, which correctly widens to 'any format' and returns FLOP (n=4, med 407). Sep 15 is the first date 22 days clear of Aug 24, so it ships at 1.5hr against no gate.",
   "cell_correction": "⚠️ I described this as 'the ONLY PROVEN cell on the channel — n=2, median 18,303'. That is technically what track_record returns but it is a misleading statistic: the two videos are 35,854 views and 752, a 47x spread, and a median over n=2 carries no information. BOTH are May, i.e. the escalation era. The two current-regime attempts at this exact cell are 'Stress Relief Music | Sitar' (2026-08-18, 793 engaged) and 'Stop Overthinking | Sitar' (2026-08-24, 554) — both ordinary. Treat this as a LOTTERY TICKET on a concept competitors are currently winning (nervous-system cluster: their median 2,426 v/day, ceiling 19,018; our family ratio 7.32x), NOT as a reliable cell.",
-  "park_note": "PARKED 2026-09-12 (user): held for wk_2026-09-21 so Sitar can take Mon 2026-09-14 morning. Status stays as-is; only planned_date moved."
+  "park_note": "PARKED 2026-09-12 (user). MUST-WIN #2, held for wk_2026-09-21 so Sitar could take Mon 2026-09-14 morning. Planned date already moved to 2026-09-21."
 }
