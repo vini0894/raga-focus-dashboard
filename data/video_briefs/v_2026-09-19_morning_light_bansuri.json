@@ -38,8 +38,8 @@
     "Morning Energy Music",
     "Peaceful Music"
   ],
-  "suno_prompt": "Instrumental only, no vocals, no humming - warm Indian classical bansuri in Raga Bhairav, breathy bamboo flute with soft attack over a steady tanpura drone, no percussion, the feeling of first light across an empty room, 64 BPM, soft alpha undertone.",
-  "suno_prompt_note": "NO TABLA — banked rule: tabla is for Sitar, never Bansuri or Surbahar. Morning keeps energy, so the calm-prompt restriction does not apply here, but stay unhurried. Raga Bhairav is the classic dawn raga and is unused on this channel. ~245 chars, the banked short-one-liner default. ⚠ RUN tools/claim_check.py ON THESE CLIPS BEFORE RENDERING.",
+  "suno_prompt": "Instrumental only, no vocals, no humming — gentle Indian classical bansuri in Raga Bhairav, breath-driven bamboo flute with long sustained notes and natural breath pauses, flat 2nd and flat 6th for a grounding morning quality, no percussion, steady tanpura drone, 70 BPM, seamless loop.",
+  "suno_prompt_note": "Built to data/suno_prompt_patterns.md. Short one-liner (283 chars, band is 180-300). NO 'slow' — banked: that word makes Suno drag, and it is reserved for sleep/deep-rest only; morning uses 'gentle' and sets tempo with the NUMBER. 70 BPM = top of the morning-breathwork band (60-70), per the 'BPM at the top of the band for morning' rule. NO TABLA — Bansuri rule, stated as 'no percussion'. Physical descriptor is the banked one for bansuri. Raga Bhairav named with its one defining characteristic; unused on this channel. ⚠ RUN tools/claim_check.py ON THE CLIP BEFORE RENDERING.",
   "production_spec": {
     "duration_minutes": 60,
     "format": "1hr",
