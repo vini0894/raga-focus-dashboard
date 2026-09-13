@@ -5,17 +5,17 @@
   "measurement_note": "Read on ENGAGED VIEWS only. At the 2026-09-06 capture public views run 1.17x engaged and the gap is widening.",
   "id": "v_2026-09-15_nervous_system_bansuri",
   "planned_date": "2026-09-15",
-  "planned_slot": "19:00 IST PM · Tue",
+  "planned_slot": "06:30 IST AM · Tue",
   "lane": "anxiety",
-  "daypart": "evening",
-  "instrument": "Bansuri & Tanpura",
+  "daypart": "morning",
+  "instrument": "Bansuri",
   "raga": "Bhairav",
-  "title": "Nervous System Therapy | Bansuri & Tanpura | 1 Hour",
+  "title": "Nervous System Therapy | Bansuri Instrumental | 1.5 Hours",
   "title_variants": {
-    "A": "Nervous System Therapy | Bansuri & Tanpura | 1 Hour",
-    "B": "Stop Overthinking Tonight | Slow Indian Instrumental | 1 Hour"
+    "A": "Nervous System Therapy | Bansuri Instrumental | 1.5 Hours",
+    "B": "Stop Overthinking Tonight | Slow Indian Instrumental | 1.5 Hours"
   },
-  "title_note": "RE-CUT 2026-09-14 (user): pulled forward from 2026-09-21 and moved OFF Sitar onto BANSURI. Both leads FRESH. ⚠ 'Reset Your Nervous System', the original arm A, was dropped: lead_prescreen returns CLUSTER-OVERLAP against a live 2026-04 title. 'Nervous System Therapy' is fresh AND mirrors the 'Bansuri Therapy' construction the competitor breakout uses. Arm B is generic per the week's standing rule.",
+  "title_note": "RE-CUT 2026-09-14 (user): pulled forward from 2026-09-21 and moved OFF Sitar onto BANSURI. Both leads FRESH. ⚠ 'Reset Your Nervous System', the original arm A, was dropped — lead_prescreen returns CLUSTER-OVERLAP against a live 2026-04 title. 'Nervous System Therapy' is fresh and mirrors the 'Bansuri Therapy' construction the competitor breakout uses, and matches this channel's own recent '[Concept] | [Instrument] Therapy' pattern. TANPURA REMOVED from the title (user 2026-09-14) — it is still in the audio as the drone bed, just not named. Arm B is generic per the week's standing rule.",
   "gate_override": "track_record FAILs: Bansuri x anxiety is FLOP at n=3, median 15 engaged. OVERRIDDEN by user 2026-09-14, and the override is thin — thinner than Monday's. What supports it: the best of those three is 'Overthinking Music | Healing with Bamboo Flute & Tanpura' at 583 engaged with CTR 9.18, the channel's second-highest ever, and it is a ONE-HOUR ship, which is why this one is too. The other two are 15 and 14 engaged from May and June. Against that, a competitor is taking 19,018 views/day on this exact instrument-lane pairing right now. ⚠ NOTE: this cell's numbers only became visible today — the matcher was not reading 'Bamboo Flute' as Bansuri (fixed, commit 0d59a68).",
   "validated_keywords": [
     "'Reset Your Nervous System' — REPEAT at 147d (deliberate, not an oversight); exact competitor breakout phrase at 19,018 v/day",
@@ -43,10 +43,10 @@
   "suno_prompt": "Instrumental only, no vocals, no humming — gentle Indian classical bansuri in Raga Bhairav, breath-driven bamboo flute with long sustained notes and natural breath pauses, flat 2nd and flat 6th for a grounding morning quality, no percussion, steady tanpura drone, 70 BPM, seamless loop.",
   "suno_prompt_note": "SAME PROMPT as the clip already generated and claim-checked CLEAN on 2026-09-13 (claim_log.csv, bansuri_bhairav_test1). Keep it identical for the remaining generations — a loop needs consistent character and you already hold one clip from it. ⚠ User insight banked 2026-09-14: this channel's working calm/sleep music runs FASTER than the 45-55 BPM table suggests; slow drags. 70 BPM is deliberate. ⛔ RUN tools/claim_check.py on the full clip set before rendering.",
   "production_spec": {
-    "duration_minutes": 60,
-    "format": "1hr",
-    "publish": "2026-09-15 19:00 IST",
-    "loop_note": "4-5 clips merged to 60:00, gentle crossfades",
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-09-15 06:30 IST",
+    "loop_note": "6 clips merged to 90:00, gentle crossfades",
     "precheck": "python3 tools/claim_check.py <clips> --name nervous_system_sep15"
   },
   "experiment": "⭐ MUST-WIN #2, pulled forward and re-instrumented. Tests whether the niche's hottest concept works for us on the niche's winning instrument. Read d7 2026-09-22 on engaged views, age-matched, plus suggested-pool share at d7.",
@@ -62,6 +62,7 @@
   "cell_correction": "⚠️ I described this as 'the ONLY PROVEN cell on the channel — n=2, median 18,303'. That is technically what track_record returns but it is a misleading statistic: the two videos are 35,854 views and 752, a 47x spread, and a median over n=2 carries no information. BOTH are May, i.e. the escalation era. The two current-regime attempts at this exact cell are 'Stress Relief Music | Sitar' (2026-08-18, 793 engaged) and 'Stop Overthinking | Sitar' (2026-08-24, 554) — both ordinary. Treat this as a LOTTERY TICKET on a concept competitors are currently winning (nervous-system cluster: their median 2,426 v/day, ceiling 19,018; our family ratio 7.32x), NOT as a reliable cell.",
   "spent": false,
   "competitor_basis": "Healing Raga Studio, 'Reset Your Nervous System: Bansuri Therapy for a Quiet Mind & Stop Overthinking' — 95,092 views in 5 days = 19,018/day, the fastest-rising video in the entire competitor set. Soulful Breathscape published a near-identical title one day old, already at 4,080/day. Two channels, same concept, same instrument, days apart. Every one of the 14 competitor breakouts above 0.6 views-per-sub is flute-led; not one is sitar-led. Moving this ship off Sitar is the whole point of the re-cut.",
-  "runtime_note": "1 HOUR. The only Bansuri x anxiety ship that ever worked is a one-hour one (CTR 9.18). It also halves tomorrow's render against a 1.5hr, which matters — this was re-cut the day before publish.",
-  "hypothesis_id": "h_2026-07-22_clinical_hook_recovery"
+  "runtime_note": "1.5 HOURS (user 2026-09-14). My earlier 1hr argument rested on n=1 — the single Bansuri x anxiety ship that worked happens to be one hour — which is not enough to override the channel's standard runtime. Clone is clear at 1.5hr either way: the last Bansuri x anxiety ship was 2026-06-02, 105 days out.",
+  "hypothesis_id": "h_2026-07-22_clinical_hook_recovery",
+  "slot_note": "AM 06:30 (user 2026-09-14). I had put this at 19:00 on the assumption that a nervous-system concept reads as evening wind-down. That assumption has no support. AM vs PM is not a measured lever on this channel — no lane has two ships in both slots, anxiety has exactly one each (AM 78/day, PM 132/day), and suggested-pool entry is 14.1% AM vs 15.2% PM, indistinguishable. What DOES favour morning: the audio is Raga Bhairav, a dawn raga at 70 BPM, and the competitor's morning-marked anxiety entry ('Morning Anxiety? Relaxing Flute Music') runs 5,300 views/day. Monday was the morning LANE; this is the anxiety lane at a morning slot, so it is not a lane repeat."
 }

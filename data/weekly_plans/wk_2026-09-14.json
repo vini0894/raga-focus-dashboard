@@ -28,10 +28,10 @@
     {
       "date": "2026-09-15",
       "day": "Tue",
-      "slot": "PM 19:00",
+      "slot": "AM 06:30",
       "lane": "anxiety",
-      "instrument": "Bansuri & Tanpura",
-      "runtime_min": 60,
+      "instrument": "Bansuri",
+      "runtime_min": 90,
       "brief": "v_2026-09-15_nervous_system_bansuri",
       "role": "⭐ MUST-WIN 2 — pulled forward, re-instrumented to Bansuri",
       "gate": "track_record FAIL — documented override (competitor at 19,018 views/day on this exact pairing)"
