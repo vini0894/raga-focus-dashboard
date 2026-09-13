@@ -1,0 +1,67 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-09-05",
+  "measurement_note": "Read on ENGAGED VIEWS only. At the 2026-09-06 capture public views run 1.17x engaged and the gap is widening.",
+  "id": "v_2026-09-15_nervous_system_bansuri",
+  "planned_date": "2026-09-15",
+  "planned_slot": "19:00 IST PM · Tue",
+  "lane": "anxiety",
+  "daypart": "evening",
+  "instrument": "Bansuri & Tanpura",
+  "raga": "Bhairav",
+  "title": "Nervous System Therapy | Bansuri & Tanpura | 1 Hour",
+  "title_variants": {
+    "A": "Nervous System Therapy | Bansuri & Tanpura | 1 Hour",
+    "B": "Stop Overthinking Tonight | Slow Indian Instrumental | 1 Hour"
+  },
+  "title_note": "RE-CUT 2026-09-14 (user): pulled forward from 2026-09-21 and moved OFF Sitar onto BANSURI. Both leads FRESH. ⚠ 'Reset Your Nervous System', the original arm A, was dropped: lead_prescreen returns CLUSTER-OVERLAP against a live 2026-04 title. 'Nervous System Therapy' is fresh AND mirrors the 'Bansuri Therapy' construction the competitor breakout uses. Arm B is generic per the week's standing rule.",
+  "gate_override": "track_record FAILs: Bansuri x anxiety is FLOP at n=3, median 15 engaged. OVERRIDDEN by user 2026-09-14, and the override is thin — thinner than Monday's. What supports it: the best of those three is 'Overthinking Music | Healing with Bamboo Flute & Tanpura' at 583 engaged with CTR 9.18, the channel's second-highest ever, and it is a ONE-HOUR ship, which is why this one is too. The other two are 15 and 14 engaged from May and June. Against that, a competitor is taking 19,018 views/day on this exact instrument-lane pairing right now. ⚠ NOTE: this cell's numbers only became visible today — the matcher was not reading 'Bamboo Flute' as Bansuri (fixed, commit 0d59a68).",
+  "validated_keywords": [
+    "'Reset Your Nervous System' — REPEAT at 147d (deliberate, not an oversight); exact competitor breakout phrase at 19,018 v/day",
+    "'Mental Peace Music' — VidIQ 63, lead_prescreen FRESH, no conflict on any source",
+    "cell: Sitar x anxiety is the ONLY PROVEN cell on the channel — n=2, median 18,303, best 28,798 ('Sitar for Nervous System Healing')",
+    "concept family NERVOUS SYSTEM runs 7.32x the era baseline (n=4) — the strongest family ratio of every candidate screened this week",
+    "⚠ CONFOUND: both the proven cell and the 7.32x family ratio rest on Apr-May ships, i.e. the escalation era that ended in early June. There is no post-June evidence for either. This is the bet, stated plainly.",
+    "raga Kirwani — unused in any live title",
+    "naming Tanpura follows the competitor 2-instrument pattern (453 v/day median vs 243 for one instrument, n=45 vs 72) — the same pattern behind their Bansuri & Sitar breakouts",
+    "⚠ 2hr is an UNTESTED runtime on this channel (catalogue is 1hr / 1.5hr / 3hr). Chosen to clear a hard clone gate; it adds a second unknown on top of the escalation-era confound below."
+  ],
+  "thumbnail_text_main": "BODY ON ALERT?",
+  "thumbnail_text_variants": [
+    {
+      "label": "fixed both arms",
+      "text": "BODY ON ALERT?",
+      "strategy": "14 chars / 3 words. Q-hook on a BODY state rather than a mind-state — the banked anxiety finding is that physiological framings beat abstract mind-state ones by 32.8 points (Test #53). anxiety shows no format effect either way (imperative 3.50 vs Q-hook 3.52), so this is picked on fit. Deduped against all 154 shipped thumb texts."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, both arms. The VIEWER, not a performer — 6.11% CTR for a person in their own moment vs 3.03% for a musician playing. Evening interior, a person sitting on the edge of a bed with both hands flat on the mattress, shoulders dropping, eyes closed. Pichwai/Kangra miniature, aged parchment, ornate border. A bansuri may rest at frame edge; never held, never played. Text in its own banner panel at ~35% of frame, second tier 'Bansuri · Raga Bhairav'. Legible at 120px.",
+  "playlists": [
+    "Healing & Anxiety Relief Music",
+    "Peaceful Music"
+  ],
+  "suno_prompt": "Instrumental only, no vocals, no humming — gentle Indian classical bansuri in Raga Bhairav, breath-driven bamboo flute with long sustained notes and natural breath pauses, flat 2nd and flat 6th for a grounding morning quality, no percussion, steady tanpura drone, 70 BPM, seamless loop.",
+  "suno_prompt_note": "SAME PROMPT as the clip already generated and claim-checked CLEAN on 2026-09-13 (claim_log.csv, bansuri_bhairav_test1). Keep it identical for the remaining generations — a loop needs consistent character and you already hold one clip from it. ⚠ User insight banked 2026-09-14: this channel's working calm/sleep music runs FASTER than the 45-55 BPM table suggests; slow drags. 70 BPM is deliberate. ⛔ RUN tools/claim_check.py on the full clip set before rendering.",
+  "production_spec": {
+    "duration_minutes": 60,
+    "format": "1hr",
+    "publish": "2026-09-15 19:00 IST",
+    "loop_note": "4-5 clips merged to 60:00, gentle crossfades",
+    "precheck": "python3 tools/claim_check.py <clips> --name nervous_system_sep15"
+  },
+  "experiment": "⭐ MUST-WIN #2, pulled forward and re-instrumented. Tests whether the niche's hottest concept works for us on the niche's winning instrument. Read d7 2026-09-22 on engaged views, age-matched, plus suggested-pool share at d7.",
+  "pending": [
+    "⛔ FIRST: generate 4-5 more clips on the same prompt, then claim_check the whole set",
+    "USER: generate the bed-edge image",
+    "Launch TITLE A/B at publish + log to ab_raw_data.csv",
+    "AI-disclosure toggle",
+    "VidIQ: score 'nervous system therapy' and 'stop overthinking tonight'",
+    "d7 read 2026-09-22"
+  ],
+  "clone_resolution": "MOVED from Sat 2026-09-12 to Tue 2026-09-15. At 1.5hr on Sep 12 it was a HARD clone — 19d from 'Stop Overthinking | Sitar Instrumental | 1.5 Hours' (2026-08-24), 2 days inside the 21d window. Two fixes were tried and both were wrong: naming Tanpura did nothing (the check fires on 'same_sec OR same_lane', so an identical lane alone is sufficient), and moving to 2hr cleared the clone but tripped track_record, which correctly widens to 'any format' and returns FLOP (n=4, med 407). Sep 15 is the first date 22 days clear of Aug 24, so it ships at 1.5hr against no gate.",
+  "cell_correction": "⚠️ I described this as 'the ONLY PROVEN cell on the channel — n=2, median 18,303'. That is technically what track_record returns but it is a misleading statistic: the two videos are 35,854 views and 752, a 47x spread, and a median over n=2 carries no information. BOTH are May, i.e. the escalation era. The two current-regime attempts at this exact cell are 'Stress Relief Music | Sitar' (2026-08-18, 793 engaged) and 'Stop Overthinking | Sitar' (2026-08-24, 554) — both ordinary. Treat this as a LOTTERY TICKET on a concept competitors are currently winning (nervous-system cluster: their median 2,426 v/day, ceiling 19,018; our family ratio 7.32x), NOT as a reliable cell.",
+  "spent": false,
+  "competitor_basis": "Healing Raga Studio, 'Reset Your Nervous System: Bansuri Therapy for a Quiet Mind & Stop Overthinking' — 95,092 views in 5 days = 19,018/day, the fastest-rising video in the entire competitor set. Soulful Breathscape published a near-identical title one day old, already at 4,080/day. Two channels, same concept, same instrument, days apart. Every one of the 14 competitor breakouts above 0.6 views-per-sub is flute-led; not one is sitar-led. Moving this ship off Sitar is the whole point of the re-cut.",
+  "runtime_note": "1 HOUR. The only Bansuri x anxiety ship that ever worked is a one-hour one (CTR 9.18). It also halves tomorrow's render against a 1.5hr, which matters — this was re-cut the day before publish.",
+  "hypothesis_id": "h_2026-07-22_clinical_hook_recovery"
+}
