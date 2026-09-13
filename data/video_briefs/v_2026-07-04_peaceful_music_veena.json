@@ -1,6 +1,6 @@
 {
   "id": "v_2026-07-04_peaceful_music_veena",
-  "status": "DRAFT",
+  "status": "PARKED",
   "created_at": "2026-07-03",
   "planned_date": "2026-07-04",
   "planned_slot": "Saturday PM (evening) — wind-down/relaxation lane × evening intent. ~36hr spacing from Fri PM Happy Music ship = clean growth-slot separation (Finding 15).",
@@ -53,13 +53,7 @@
   ],
   "suno_prompt": null,
   "suno_prompt_note": "PARKED — needs Suno exploration. CALM rule mandatory. Veena-specific: emphasize warm resonant plucked-string character with sympathetic strings ('deep sweet veena with sustained resonance, meend slides'). Suggested opener: 'No vocals. Solo veena, Raga Yaman, deep serene evening mood. Cold open mid-melody, no slow alap. 55 BPM, sustained melodic phrases with meend ornaments. Tanpura drone beneath — only 2 instruments, no tabla, no percussion. Continuous flow, seamless loop. No vocals, no humming.'",
-  "experiment": {
-    "type": "evening wind-down slot test",
-    "hypothesis": "Veena at 25d rest is due for a swing. Peaceful Music (VidIQ 72) is high-quality clean lead. Sat evening wind-down slot is rarely tested. Complements week: Sitar cognitive · Surbahar sleep · Sarangi meditation · Sarod focus · Fri Happy Music uplifting · Sat Peaceful Veena wind-down.",
-    "success_criteria": "AVD >= 22% AND views >= 4K within 7 days = viable Sat evening template",
-    "failure_criteria": "AVD < 15% AND views < 1K = Sat evening slot doesn't work",
-    "neutral_zone": "AVD 15-22% or views 1-4K = directional"
-  },
+  "experiment": "⛔ SPENT — Same lead AND same instrument already live since 2026-05-06. lead_prescreen: past-lock 130d. Superseded by: Peaceful Music | Soothing Music with Veena | 1 Hour (2026-05-06, 541 engaged)",
   "reference_ships": [
     {
       "video_id": "(May 6 Peaceful Veena)",
@@ -93,5 +87,7 @@
     "Music render + Pichwai thumbnail render",
     "Upload + schedule Sat PM"
   ],
-  "day_7_read": "2026-07-11 — measure CTR, AVD, views."
+  "day_7_read": "2026-07-11 — measure CTR, AVD, views.",
+  "spent": true,
+  "superseded_by": "Peaceful Music | Soothing Music with Veena | 1 Hour (2026-05-06, 541 engaged)"
 }

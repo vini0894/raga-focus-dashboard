@@ -1,6 +1,6 @@
 {
   "id": "v_2026-07-23_positive_morning_dilruba",
-  "status": "DRAFT",
+  "status": "PARKED",
   "locked": true,
   "created_at": "2026-07-18",
   "planned_date": "2026-07-23",
@@ -21,12 +21,23 @@
   ],
   "thumbnail_text_main": "START POSITIVE",
   "thumbnail_text_variants": [
-    {"label": "A / positive", "text": "START POSITIVE", "strategy": "outcome/vibes-state (morning LOCKED thumb format, never Q-hook); FRESH vs 99 used; pairs with Positive Morning title"},
-    {"label": "B / bliss", "text": "A BRIGHT START", "strategy": "outcome/vibes-state; FRESH; pairs with Morning Bliss title"}
+    {
+      "label": "A / positive",
+      "text": "START POSITIVE",
+      "strategy": "outcome/vibes-state (morning LOCKED thumb format, never Q-hook); FRESH vs 99 used; pairs with Positive Morning title"
+    },
+    {
+      "label": "B / bliss",
+      "text": "A BRIGHT START",
+      "strategy": "outcome/vibes-state; FRESH; pairs with Morning Bliss title"
+    }
   ],
   "thumbnail_prompt": "Pichwai/Kangra miniature, ornate border, aged cream parchment. An uplifted figure greeting a bright sunrise, warm energetic golden light over a temple-and-garden landscape, a dilruba resting beside. Fresh, hopeful, positive morning-energy mood. Dark-teal serif overlay text.",
   "thumbnail_ab_note": "Both variants are outcome/vibes-state — the morning lane's DECISIVE thumb format (Q-hooks lose morning 3/3). So if YouTube auto-picks either post-test, format stays lane-correct.",
-  "playlists": ["Meditation", "Peaceful Music"],
+  "playlists": [
+    "Meditation",
+    "Peaceful Music"
+  ],
   "description": [
     "Positive Morning Music | Dilruba Instrumental | 1.5 Hours of Indian Classical Music to start your day bright and open.",
     "",
@@ -38,10 +49,21 @@
     "",
     "Take a breath, let the light in, and start the day well. 🌅"
   ],
-  "tags": ["positive morning music", "morning music", "fresh start music", "dilruba music", "indian classical music", "1.5 hours", "uplifting morning music", "morning energy", "good morning music", "raga bilawal"],
+  "tags": [
+    "positive morning music",
+    "morning music",
+    "fresh start music",
+    "dilruba music",
+    "indian classical music",
+    "1.5 hours",
+    "uplifting morning music",
+    "morning energy",
+    "good morning music",
+    "raga bilawal"
+  ],
   "suno_prompt": "Instrumental only, no vocals, no humming — bright uplifting Indian classical dilruba in Raga Bilawal, warm bowed dilruba with expressive meend glides, light supportive tabla, brisk ~85 BPM, fresh positive morning-energy character, seamless loop.",
   "suno_prompt_note": "Morning lane rule: NO 'slow' — bright/uplifting + BPM ~85 (TOP of band; this is morning-ENERGY, not calm-morning). Bilawal = all-natural intervals, bright open ascending morning character — FRESH vs Yaman (which Dilruba owns for Morning Energy/Sunrise). Dilruba = warm bowed tone + meend glides; light tabla adds morning momentum.",
-  "experiment": "Morning-energy uplifting slot (Thu AM, morning cadence). Dilruba×morning = untested/moonshot per pipeline. A/B tests morning-lifestyle framing (Positive Morning 70 vs Fresh Start 66). Fresh raga (Bilawal) deliberately avoids Yaman to not cannibalize the Morning Energy hero. 1.5h because morning-energy is an engagement (not background) listen.",
+  "experiment": "⛔ SPENT — Double-blocked: Dilruba is BENCHED (user 2026-07-25), and the lead 'positive morning music' LOST A/B #40.",
   "production_spec": {
     "duration_minutes": 90,
     "format": "1.5hr",
@@ -52,5 +74,6 @@
   "preflight_detail": "cooldown_check: Dilruba VIABLE (16d rest, STRONG tier). title_preflight --validate: A + B both VERDICT=PASS. Thumb texts dedup'd vs 99-row history (START POSITIVE + A FRESH START both FRESH). Thumb format = outcome/vibes-state (morning LOCKED). Avoided Morning Energy lead + Yaman raga (Dilruba owns both).",
   "pending": [],
   "version": "v1 — title + thumbnail A/B LOCKED by user 2026-07-18",
-  "description_note": "Follows description_template.md style (SEO opener, emotional hook, no-ads promise, 'Best for' section). v1 — refine at production."
+  "description_note": "Follows description_template.md style (SEO opener, emotional hook, no-ads promise, 'Best for' section). v1 — refine at production.",
+  "spent": true
 }
