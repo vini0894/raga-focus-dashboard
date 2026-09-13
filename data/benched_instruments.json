@@ -16,7 +16,8 @@
       "benched_by": "user",
       "reason": "Production block, not a performance verdict: content-violation flags on renders (first surfaced 2026-08-07 for 3hr, confirmed channel-wide by the user 2026-09-05 and again 2026-09-12). Removing the instrument from the TITLE does not clear it - Content ID matches audio fingerprints, not metadata.",
       "unbench_condition": "User confirms renders clear. Bansuri's track record is NOT the reason for this bench - Bansuri x sleep x 3hr is the channel's only PROVEN cell (n=6, median 5,638 engaged), so un-bench as soon as production allows.",
-      "note": "Was ranked #2 for Mon 2026-09-14 once the clinical-hook kill was re-scoped. The bench overrides the gate verdict."
+      "note": "Was ranked #2 for Mon 2026-09-14 once the clinical-hook kill was re-scoped. The bench overrides the gate verdict.",
+      "exception": "ONE authorised re-entry ship: v_2026-09-19_morning_light_bansuri (user 2026-09-13). Gated on tools/claim_check.py returning CLEAN before render. The bench otherwise stands for planning — recommend_slot must keep excluding Bansuri until the claim question is settled. ⚠ NOTE 2026-09-13: the Content ID notice states 'No impact to video's reach' and all 23 live Bansuri/flute videos earn, so the block was never a distribution problem and is per-render, not per-instrument."
     }
   ]
 }
