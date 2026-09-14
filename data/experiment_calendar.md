@@ -54,3 +54,16 @@
 | Fri 14 | Bedtime Music vs Wake Up Rested (Surbahar 3hr) | Search-noun vs morning-after outcome promise (§7b parked direction) + does the PROVEN-cell swap (Surbahar for blocked Bansuri) hold anchor reach? | title A/B, shared slot-2 | **2026-08-21** | 2026-08-28 |
 
 **Standing weekly rhythm from here:** every new brief adds its row at lock · every Monday planning session starts by clearing the previous week's due reads (they're all due by then) · verdicts land in `hypotheses.json` so `recommend_slot.py` inherits them automatically.
+
+## wk_2026-09-14 (locked 2026-09-14)
+
+| Day | Ship | Test / hypothesis | Arms | Read d7 |
+|---|---|---|---|---|
+| 2026-09-15 | Bansuri morning | Does the niche's winning instrument reach in a lane our own gate calls FLOP? Also: IN-USE lead (comp 19,018 v/d) vs a CONSTRUCTED one — the first clean read on that | title A/B, instrument held constant | **2026-09-22** |
+| 2026-09-16 | Tanpura stress | Competitor mirror. Concept-promise vs problem-statement lead | title A/B | **2026-09-23** |
+| 2026-09-17 | Sarangi anxiety | Opens the UNTESTED Sarangi x anxiety cell. ⚠ the brief's old 'PROVEN n=2' claim was false and is corrected in-file | title A/B | **2026-09-24** |
+| 2026-09-18 | Veena cognitive | Competitor mirror on the 23.30 v/sub cluster. Both leads scored (61 vs 52) | title A/B | **2026-09-25** |
+| 2026-09-19 | Bansuri sleep 3hr | The channel's ONLY non-flop cell, on the niche's winning instrument. Also 2nd read on h_2026-09-05 tempo floor | title A/B | **2026-09-26** |
+
+**Week-level:** cadence fixed at 5/week for h_2026-09-07_volume_restores_escalation (weeks of 09-14, 09-21, 09-28). READ AT 4 WEEKS, not weekly.
+

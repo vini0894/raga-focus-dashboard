@@ -3,8 +3,8 @@
   "week_start": "2026-09-14",
   "week_end": "2026-09-20",
   "created": "2026-09-12",
-  "status": "FINAL — five briefs approved and gate-run",
-  "notes": "FIVE ships. Two Bansuri (morning Tue, sleep Sun — exactly 5 days apart, cooldown clears). Cadence fixed at 5/week for the volume test.",
+  "status": "FINAL — 5 ships, all titles locked, all gate-run",
+  "notes": "FIVE ships Tue-Sat, Sunday clear. Two Bansuri (morning Tue, sleep Sat). Cadence fixed at 5/week for h_2026-09-07_volume_restores_escalation — 20 ships over 4 weeks costs ~7 points of escalation probability against 24, and week 1 delivered 5 anyway.",
   "week_level_decisions": {
     "monday_is_the_must_win": "Corrected 2026-09-12. An earlier read called Monday a weak day on 11.6% suggested-pool entry; that was a LANE artifact - Monday's six past ships were morning x4, calm x1, anxiety x1, three of the four lowest-entry lanes. Like for like, Monday morning ships post 17.2% vs 14.1% for morning ships on other days. d7 engaged medians: Tue 764, Mon 746, Thu 491, Fri 462. Between-day spread 1.65x vs within-day 1.9-4.6x, so WHAT ships matters 2-3x more than WHICH DAY.",
     "bansuri": "Two Bansuri ships: morning Tue 09-15 AM, sleep Sat 09-19 PM. 4-day gap vs a 5-day cooldown — accepted override (user), different lanes and runtimes. Saturday over Sunday so the sleep ship gets ~36h before Monday's morning ship instead of ~12h.",
@@ -17,61 +17,70 @@
     {
       "date": "2026-09-15",
       "day": "Tue",
-      "slot": "AM 06:30",
+      "slot": "06:30",
       "lane": "morning",
       "instrument": "Bansuri",
       "runtime_min": 90,
       "brief": "v_2026-09-15_nervous_system_bansuri",
-      "role": "⭐ BANSURI MORNING"
+      "title_a": "Nervous System Therapy | Bansuri Instrumental | 1.5 Hours",
+      "title_b": "Morning Calmness | Bansuri Instrumental | 1.5 Hours",
+      "thumbnail": "BODY ON ALERT?"
     },
     {
       "date": "2026-09-16",
       "day": "Wed",
-      "slot": "PM 19:00",
+      "slot": "19:00",
       "lane": "stress_burnout",
       "instrument": "Tanpura",
       "runtime_min": 90,
       "brief": "v_2026-09-16_break_negative_patterns_tanpura",
-      "role": "COMPETITOR SHIP — rendered"
+      "title_a": "Break Negative Patterns | Slow Tanpura | 1.5 Hours",
+      "title_b": "When You Can't Shake Off the Stress | Tanpura | 1.5 Hours",
+      "thumbnail": "ENOUGH FOR TODAY"
     },
     {
       "date": "2026-09-17",
       "day": "Thu",
-      "slot": "AM 06:30",
+      "slot": "06:30",
       "lane": "anxiety",
       "instrument": "Sarangi",
       "runtime_min": 90,
       "brief": "v_2026-09-12_restart_your_life_sarangi",
-      "role": "fill"
+      "title_a": "Restart Your Life | Sarangi Therapy | 1.5 Hours",
+      "title_b": "Control Your Thoughts & Mind | Sarangi | 1.5 Hours",
+      "thumbnail": "ROOM TO BREATHE"
     },
     {
       "date": "2026-09-18",
       "day": "Fri",
-      "slot": "PM 19:00",
+      "slot": "19:00",
       "lane": "cognitive",
       "instrument": "Veena",
       "runtime_min": 90,
       "brief": "v_2026-09-15_clear_negative_thoughts_veena",
-      "role": "COMPETITOR SHIP"
+      "title_a": "Rewire Your Brain | Veena Instrumental | 1.5 Hours",
+      "title_b": "Enter Flow State | Veena Instrumental | 1.5 Hours",
+      "thumbnail": "MIND TOO LOUD?"
     },
     {
       "date": "2026-09-19",
       "day": "Sat",
-      "slot": "PM 19:00",
+      "slot": "19:00",
       "lane": "sleep",
       "instrument": "Bansuri",
       "runtime_min": 180,
       "brief": "v_2026-09-20_bansuri_sleep",
-      "role": "⭐ BANSURI SLEEP — only proven cell"
+      "title_a": "Remove Negative Thoughts | Bansuri Instrumental | 3 Hours",
+      "title_b": "Reprogram Subconscious Mind | Bansuri Music | 3 Hours",
+      "thumbnail": "NO ALARM TONIGHT"
     }
   ],
   "lane_coverage": [
-    "morning",
-    "cognitive",
-    "stress_burnout",
     "anxiety",
+    "cognitive",
+    "morning",
     "sleep",
-    "morning"
+    "stress_burnout"
   ],
   "uncovered": [
     "calm_relax",
@@ -88,8 +97,15 @@
     "all night sleep"
   ],
   "blocking_decisions": [
-    "USER: generate 5 thumbnail images (prompts in each brief)",
-    "USER: launch each Test & compare A/B at publish and log to ab_raw_data.csv — nothing has been logged since 2026-08-24",
-    "USER: routing partner for Tue + Wed — adjacency buys launch entry, not durability (week2/week1 suggested ran 0.02-0.35)"
-  ]
+    "USER: Bansuri clips for Tue + Sat, claim_check BEFORE rendering",
+    "USER: 5 thumbnail images (prompts in each brief)",
+    "USER: launch each Test & compare A/B at publish and log to ab_raw_data.csv — nothing logged since 2026-08-24",
+    "USER: rank the remaining lead_refill batch so the bank keeps refilling"
+  ],
+  "title_policy": "Every lead must be SCORED or in LIVE USE on a competitor channel. Three invented leads (Morning Calmness, Quiet the Worry, Mental Load, Put the Day Down) were replaced on 2026-09-14 after the user called them out. Morning Calmness was kept by user choice and is the only lead this week with no evidence.",
+  "gates_run": {
+    "week_diversity": "WARN — only 'negative' repeats, on the rendered Wed and Sat",
+    "brief_gate": "all WARN except Tue (track_record FLOP, documented override)",
+    "title_preflight": "all PASS"
+  }
 }
