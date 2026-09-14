@@ -1,0 +1,59 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-09-13",
+  "measurement_note": "Read on ENGAGED VIEWS only. Public views count play-starts since 2026-08-27 and run 1.3-2.4x engaged on fresh ships, so raw views are not comparable to any pre-change baseline.",
+  "id": "v_2026-09-20_bansuri_sleep",
+  "planned_date": "2026-09-20",
+  "planned_slot": "19:00 IST PM · Sun",
+  "lane": "sleep",
+  "daypart": "night",
+  "instrument": "Bansuri",
+  "raga": "Bageshri",
+  "title": "Remove Negative Thoughts | Bansuri Instrumental | 3 Hours",
+  "title_variants": {
+    "A": "Remove Negative Thoughts | Bansuri Instrumental | 3 Hours",
+    "B": "Night Calm Music | Bansuri Instrumental | 3 Hours"
+  },
+  "title_note": "Arm A mirrors 'Remove Negative Thoughts | Krishna Bansuri for Night Calm' — 44,299 views in 20 days, the leading recent sleep-lane flute video. Lead came back FRESH once the 2026-09-07 brief was parked. Both arms name Bansuri per user 2026-09-14.",
+  "validated_keywords": [
+    "'Morning Light' - lead_prescreen FRESH, no conflict",
+    "'Sunrise Ritual' - lead_prescreen FRESH, no conflict",
+    "title_preflight: A 45 chars PASS · B 50 chars PASS",
+    "packaging_clone PASS at 1hr (137d clear) — FAILS at 1.5hr (19d from the 2026-08-31 flute-morning ship)",
+    "thumb text deduped against all 154 shipped thumb texts"
+  ],
+  "gate_override": "packaging_clone WARNs (not fails): Bansuri x sleep x 3hr last ran 2026-09-04 as Snowy Night, 16 days out — but Snowy Night took 481 engaged, below the 492 fresh-ship median, so there is no traffic to split. track_record PASSES.",
+  "thumbnail_text_main": "NO ALARM TONIGHT",
+  "thumbnail_text_variants": [
+    {
+      "label": "fixed both arms",
+      "text": "NO ALARM TONIGHT",
+      "strategy": "16 chars / 3 words. Permission register, +15pp over direct imperative in sleep (Test #54)."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, both arms. The VIEWER, not a performer — measured 6.11% CTR for a person waking vs 3.03% for a musician playing. Dawn light across a doorway, a person standing barefoot with a cup, unhurried, looking out. Pichwai/Kangra miniature, aged parchment ground, ornate border. A bansuri may rest at the frame edge; it must NOT be the subject, and must not be held or played. Text in its own banner panel at ~35% of frame, second tier 'Bansuri · Raga Bhairav'. Legible at 120px.",
+  "playlists": [
+    "Morning Energy Music",
+    "Peaceful Music"
+  ],
+  "suno_prompt": "Instrumental only, no vocals, no humming — gentle Indian classical bansuri in Raga Bageshri, breath-driven bamboo flute with long sustained notes and natural breath pauses, warm night character, no percussion, steady tanpura drone, 60 BPM, seamless loop.",
+  "suno_prompt_note": "Bageshri is a night raga and is NOT all-komal, deliberately avoiding the Malkauns-at-48-BPM spec that put Snowy Night at 7.2% AVD. 60 BPM per the user's banked insight 2026-09-14: this channel's working sleep music runs FASTER than the 45-55 table; slow drags. ⛔ claim_check before rendering.",
+  "production_spec": {
+    "duration_minutes": 180,
+    "format": "3hr",
+    "publish": "2026-09-20 19:00 IST",
+    "loop_note": "6-7 clips merged to 3:00:00, no hard transitions",
+    "precheck": "python3 tools/claim_check.py <clips> --name bansuri_sleep_sep20"
+  },
+  "experiment": "⭐ Bansuri SLEEP — the channel's only proven cell, on the niche's winning instrument, carrying the concept a competitor runs at 44,299 views. Read d7 2026-09-27.",
+  "pending": [
+    "⛔ FIRST: claim_check the clip set",
+    "USER: generate the dark-bedroom image",
+    "Launch TITLE A/B at publish + log to ab_raw_data.csv",
+    "AI-disclosure toggle",
+    "VidIQ: score 'remove negative thoughts' and 'night calm music'",
+    "d7 read 2026-09-27"
+  ],
+  "runtime_note": "3 HOURS. Bansuri x sleep is the channel's only non-flop cell: MODEST n=8, median 1,721, CTR 6.33."
+}

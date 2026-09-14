@@ -1,0 +1,212 @@
+{
+  "week_id": "wk_2026-09-15",
+  "generated": "2026-09-14",
+  "week_start": "2026-09-15",
+  "week_end": "2026-09-21",
+  "freshness": {
+    "snapshot": "2026-09-12",
+    "age_days": 0,
+    "stale": false
+  },
+  "trajectory": {
+    "regime": "DECAY",
+    "diagnosis": "DISTRIBUTION is the bottleneck, NOT packaging. Impressions are falling while CTR is RISING \u2014 titles/thumbs are working; reach is the constraint. Lever this week: new-lane expansion + playlist/end-screen routing + lane-priority tilt. Re-thumbs help watch-time, not reach.",
+    "delta": {
+      "span": "2026-08-07 \u2192 2026-09-12",
+      "impressions": {
+        "from": 9687545,
+        "to": 5189449,
+        "pct": -46.4
+      },
+      "subs_gained": {
+        "from": 3426,
+        "to": 1493,
+        "pct": -56.4
+      },
+      "views": {
+        "from": 701339,
+        "to": 576912,
+        "pct": -17.7
+      },
+      "watch_hours": {
+        "from": 242650,
+        "to": 158848,
+        "pct": -34.5
+      },
+      "ctr_pp": 0.74,
+      "avd_pp": -21.63
+    },
+    "series": [
+      {
+        "date": "2026-08-07",
+        "n_videos": 127,
+        "impressions": 9687545,
+        "ctr": 4.85,
+        "avd": 21.63,
+        "subs": 3426,
+        "views": 701339
+      },
+      {
+        "date": "2026-08-15",
+        "n_videos": 134,
+        "impressions": 8976664,
+        "ctr": 4.9,
+        "avd": 21.52,
+        "subs": 3052,
+        "views": 653187
+      },
+      {
+        "date": "2026-08-22",
+        "n_videos": 138,
+        "impressions": 8197919,
+        "ctr": 5.06,
+        "avd": 21.69,
+        "subs": 2691,
+        "views": 611727
+      },
+      {
+        "date": "2026-08-29",
+        "n_videos": 142,
+        "impressions": 7495512,
+        "ctr": 5.17,
+        "avd": 21.95,
+        "subs": 2426,
+        "views": 586254
+      },
+      {
+        "date": "2026-08-31",
+        "n_videos": 143,
+        "impressions": 7217160,
+        "ctr": 5.22,
+        "avd": 22.09,
+        "subs": 2334,
+        "views": 589585
+      },
+      {
+        "date": "2026-09-02",
+        "n_videos": 144,
+        "impressions": 6848925,
+        "ctr": 5.27,
+        "avd": 22.27,
+        "subs": 2161,
+        "views": 587951
+      },
+      {
+        "date": "2026-09-06",
+        "n_videos": 146,
+        "impressions": 6164026,
+        "ctr": 5.39,
+        "avd": 0.0,
+        "subs": 1843,
+        "views": 583461
+      },
+      {
+        "date": "2026-09-12",
+        "n_videos": 150,
+        "impressions": 5189449,
+        "ctr": 5.59,
+        "avd": 0.0,
+        "subs": 1493,
+        "views": 576912
+      }
+    ]
+  },
+  "locked_week": {
+    "slots_filled": 5,
+    "ships": [
+      {
+        "date": "2026-09-15",
+        "status": "APPROVED",
+        "locked": true,
+        "instrument": "Bansuri",
+        "lane": "anxiety",
+        "runtime": "1.5hr",
+        "title": "Nervous System Therapy | Bansuri Instrumental | 1.5 Hours",
+        "lead": "Nervous System Therapy"
+      },
+      {
+        "date": "2026-09-16",
+        "status": "APPROVED",
+        "locked": true,
+        "instrument": "Tanpura",
+        "lane": "stress_burnout",
+        "runtime": "1.5hr",
+        "title": "Break Negative Patterns | Slow Tanpura | 1.5 Hours",
+        "lead": "Break Negative Patterns"
+      },
+      {
+        "date": "2026-09-17",
+        "status": "APPROVED",
+        "locked": true,
+        "instrument": "Sarangi",
+        "lane": "anxiety",
+        "runtime": "1.5hr",
+        "title": "Restart Your Life | Sarangi Therapy | 1.5 Hours",
+        "lead": "Restart Your Life"
+      },
+      {
+        "date": "2026-09-18",
+        "status": "APPROVED",
+        "locked": true,
+        "instrument": "Santoor",
+        "lane": "sleep",
+        "runtime": "3hr",
+        "title": "It's Okay to Sleep In | Slow Santoor | 3 Hours",
+        "lead": "It's Okay to Sleep In"
+      },
+      {
+        "date": "2026-09-19",
+        "status": "APPROVED",
+        "locked": true,
+        "instrument": "Bansuri",
+        "lane": "morning",
+        "runtime": "60min",
+        "title": "Morning Light | Bansuri Instrumental | 1 Hour",
+        "lead": "Morning Light"
+      }
+    ],
+    "open_weekday_slots": [],
+    "lanes_covered": {
+      "anxiety": 2,
+      "stress_burnout": 1,
+      "sleep": 1,
+      "morning": 1
+    },
+    "instruments_used": {
+      "Bansuri": 2,
+      "Tanpura": 1,
+      "Sarangi": 1,
+      "Santoor": 1
+    },
+    "spillover_beyond_week": []
+  },
+  "sense_flags": {
+    "uncovered_priority_lanes": [
+      "calm_relax",
+      "cognitive",
+      "healing"
+    ],
+    "adjacency_dupes": [],
+    "title_word_saturation": [
+      {
+        "word": "therapy",
+        "count": 2
+      },
+      {
+        "word": "bansuri",
+        "count": 2
+      },
+      {
+        "word": "slow",
+        "count": 2
+      }
+    ]
+  },
+  "next_steps": [
+    "This is the SENSE pass \u2014 read it, THEN run plan_prep.py for the candidate slate (FILTER pass).",
+    "Regime = DECAY: DISTRIBUTION is the bottleneck, NOT packaging. Impressions are falling while CTR is RISING \u2014 titles/thumbs are working; reach is the constraint. Lever this week: new-lane expansion + playlist/end-screen routing + lane-priority tilt. Re-thumbs help watch-time, not reach.",
+    "Open weekday slots to fill: (none \u2014 week is full)",
+    "Priority lanes NOT yet covered by locked ships: calm_relax, cognitive, healing \u2014 steer open slots here for lane-spread.",
+    "After plan_prep, run the CRITIQUE pass (lane-spread \u00b7 saturation \u00b7 hypothesis-overlap \u00b7 'strongest argument this plan is wrong') before locking."
+  ]
+}
