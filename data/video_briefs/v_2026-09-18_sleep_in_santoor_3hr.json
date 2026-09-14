@@ -1,5 +1,5 @@
 {
-  "status": "APPROVED",
+  "status": "PARKED",
   "locked": true,
   "created_at": "2026-09-12",
   "measurement_note": "Read on ENGAGED VIEWS only. Public views count play-starts since 2026-08-27 and run 1.3-2.4x engaged on fresh ships, so raw views are not comparable to any pre-change baseline.",
@@ -44,7 +44,7 @@
     "publish": "2026-09-18 19:00 IST",
     "loop_note": "6-7 gentle clips merged to 3:00:00, no hard transitions"
   },
-  "experiment": "Week anchor (highest-return lane per ship) + second read on h_2026-09-05_3hr_tempo_retention_floor. Prediction: 56 BPM on a non-komal raga clears 15% AVD at d1, where Snowy Night's 48 BPM Malkauns hit 7.2% and Night Routine reached 12.4% at d2. Read d1 AVD, then d7 2026-09-25 on engaged views.",
+  "experiment": "♻️ KEEP — PARKED 2026-09-14: dropped so two 3hr sleep ships do not run 2 days apart. Bansuri x sleep is the only proven cell and takes Sun 09-20.",
   "hypothesis_id": "h_2026-09-05_3hr_tempo_retention_floor",
   "pending": [
     "USER: generate the dark-bedroom image",
@@ -53,5 +53,6 @@
     "VidIQ: score \"it's okay to sleep in\"",
     "d1 AVD check against the 15% bar",
     "d7 read 2026-09-25"
-  ]
+  ],
+  "park_note": "PARKED 2026-09-14: dropped so two 3hr sleep ships do not run 2 days apart. Bansuri x sleep is the only proven cell and takes Sun 09-20."
 }

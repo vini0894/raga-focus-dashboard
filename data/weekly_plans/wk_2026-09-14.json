@@ -4,7 +4,7 @@
   "week_end": "2026-09-20",
   "created": "2026-09-12",
   "status": "FINAL — five briefs approved and gate-run",
-  "notes": "SIX ships, Mon-Sat, one per lane, one per instrument. Two competitor-inspired ships (user rule 2026-09-12, tradeoff_eval COMP_PICKS=2), on different lanes and different dates so they enter different suggested pools. Every B arm runs GENERIC so instrument-naming is the week's one constant variable.",
+  "notes": "FIVE ships. Two Bansuri (morning Tue, sleep Sun — exactly 5 days apart, cooldown clears). Cadence fixed at 5/week for the volume test.",
   "week_level_decisions": {
     "monday_is_the_must_win": "Corrected 2026-09-12. An earlier read called Monday a weak day on 11.6% suggested-pool entry; that was a LANE artifact - Monday's six past ships were morning x4, calm x1, anxiety x1, three of the four lowest-entry lanes. Like for like, Monday morning ships post 17.2% vs 14.1% for morning ships on other days. d7 engaged medians: Tue 764, Mon 746, Thu 491, Fri 462. Between-day spread 1.65x vs within-day 1.9-4.6x, so WHAT ships matters 2-3x more than WHICH DAY.",
     "bansuri": "TWO Bansuri ships (user 2026-09-14): morning Tue 15, sleep Sun 20. 5-day gap is the binding constraint; Sat 19 would be 4.",
@@ -15,17 +15,6 @@
   },
   "ships": [
     {
-      "date": "2026-09-14",
-      "day": "Mon",
-      "slot": "AM 06:30",
-      "lane": "morning",
-      "instrument": "Sitar",
-      "runtime_min": 90,
-      "brief": "v_2026-09-14_wake_up_grateful_sitar",
-      "role": "MUST-WIN · affirmation register",
-      "gate": "track_record FAIL — documented user override (cell CTR 5.83 median, best on channel)"
-    },
-    {
       "date": "2026-09-15",
       "day": "Tue",
       "slot": "AM 06:30",
@@ -33,8 +22,7 @@
       "instrument": "Bansuri",
       "runtime_min": 90,
       "brief": "v_2026-09-15_nervous_system_bansuri",
-      "role": "⭐ BANSURI MORNING",
-      "gate": "track_record FAIL — documented override (competitor at 19,018 views/day on this exact pairing)"
+      "role": "⭐ BANSURI MORNING"
     },
     {
       "date": "2026-09-16",
@@ -44,8 +32,7 @@
       "instrument": "Tanpura",
       "runtime_min": 90,
       "brief": "v_2026-09-16_break_negative_patterns_tanpura",
-      "role": "COMPETITOR SHIP 2",
-      "gate": "pending"
+      "role": "COMPETITOR SHIP — rendered"
     },
     {
       "date": "2026-09-17",
@@ -55,19 +42,17 @@
       "instrument": "Sarangi",
       "runtime_min": 90,
       "brief": "v_2026-09-12_restart_your_life_sarangi",
-      "role": "fill — opens an untested cell",
-      "gate": "pending"
+      "role": "fill"
     },
     {
       "date": "2026-09-18",
       "day": "Fri",
       "slot": "PM 19:00",
-      "lane": "sleep",
-      "instrument": "Santoor",
-      "runtime_min": 180,
-      "brief": "v_2026-09-18_sleep_in_santoor_3hr",
-      "role": "ANCHOR · 3hr tempo-floor test #2",
-      "gate": "pending"
+      "lane": "cognitive",
+      "instrument": "Veena",
+      "runtime_min": 90,
+      "brief": "v_2026-09-15_clear_negative_thoughts_veena",
+      "role": "COMPETITOR SHIP"
     },
     {
       "date": "2026-09-20",
@@ -77,8 +62,7 @@
       "instrument": "Bansuri",
       "runtime_min": 180,
       "brief": "v_2026-09-20_bansuri_sleep",
-      "role": "⭐ BANSURI SLEEP — the only proven cell",
-      "gate": "clone WARN (incumbent under-performing) · track_record PASS"
+      "role": "⭐ BANSURI SLEEP — only proven cell"
     }
   ],
   "lane_coverage": [
