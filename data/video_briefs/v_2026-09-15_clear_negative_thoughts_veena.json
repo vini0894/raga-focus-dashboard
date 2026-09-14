@@ -10,12 +10,12 @@
   "daypart": "evening",
   "instrument": "Veena",
   "raga": "Bhimpalasi",
-  "title": "Clear Negative Thoughts | Slow Veena | 1.5 Hours",
+  "title": "Rewire Your Brain | Slow Veena | 1.5 Hours",
   "title_variants": {
-    "A": "Clear Negative Thoughts | Slow Veena | 1.5 Hours",
-    "B": "Rewire Your Brain | Calm Instrumental Music | 1.5 Hours"
+    "A": "Rewire Your Brain | Slow Veena | 1.5 Hours",
+    "B": "Mental Load | Veena Instrumental | 1.5 Hours"
   },
-  "title_note": "Two DIFFERENT leads: 'Clear Negative Thoughts' (fresh, unscored) vs 'Rewire Your Brain' (fresh, VidIQ 61). Arm B runs generic per the week's standing B rule. ⚠ 'REMOVE negative thoughts' is a DIFFERENT phrase and is hard-blocked - it is held by the unshipped 2026-09-07 brief. 'Clear' is the competitor's own wording and is separately fresh.",
+  "title_note": "RE-LED 2026-09-14. 'Clear Negative Thoughts' was dropped because week_diversity.py returned FAIL — three of five titles led on 'negative' (Wed, Fri, Sun) and every per-brief gate passed all three. Wednesday is already rendered, and Sunday's is the competitor mirror for the proven sleep cell, so Friday moved. 'Rewire Your Brain' is FRESH and scores VidIQ 61 — the only lead in this whole week with a real score. 'Mental Load' is FRESH, unscored.",
   "validated_keywords": [
     "'Clear Negative Thoughts' - lead_prescreen FRESH, no conflict",
     "'Rewire Your Brain' - lead_prescreen FRESH, VidIQ 61",
