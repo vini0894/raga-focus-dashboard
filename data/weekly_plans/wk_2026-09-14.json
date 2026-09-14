@@ -7,7 +7,7 @@
   "notes": "FIVE ships. Two Bansuri (morning Tue, sleep Sun — exactly 5 days apart, cooldown clears). Cadence fixed at 5/week for the volume test.",
   "week_level_decisions": {
     "monday_is_the_must_win": "Corrected 2026-09-12. An earlier read called Monday a weak day on 11.6% suggested-pool entry; that was a LANE artifact - Monday's six past ships were morning x4, calm x1, anxiety x1, three of the four lowest-entry lanes. Like for like, Monday morning ships post 17.2% vs 14.1% for morning ships on other days. d7 engaged medians: Tue 764, Mon 746, Thu 491, Fri 462. Between-day spread 1.65x vs within-day 1.9-4.6x, so WHAT ships matters 2-3x more than WHICH DAY.",
-    "bansuri": "TWO Bansuri ships (user 2026-09-14): morning Tue 15, sleep Sun 20. 5-day gap is the binding constraint; Sat 19 would be 4.",
+    "bansuri": "Two Bansuri ships: morning Tue 09-15 AM, sleep Sat 09-19 PM. 4-day gap vs a 5-day cooldown — accepted override (user), different lanes and runtimes. Saturday over Sunday so the sleep ship gets ~36h before Monday's morning ship instead of ~12h.",
     "ab_variable": "instrument-naming, generic on every B arm (user).",
     "slot": "Concept intent, not a performance rule. AM vs PM does not survive a lane split - no lane has 2+ ships in both slots, and suggested entry is 14.1% AM vs 15.2% PM.",
     "parked": "Sitar must-win -> 2026-09-21. Veena morning naming A/B -> 2026-09-23. Both keep their status.",
@@ -55,8 +55,8 @@
       "role": "COMPETITOR SHIP"
     },
     {
-      "date": "2026-09-20",
-      "day": "Sun",
+      "date": "2026-09-19",
+      "day": "Sat",
       "slot": "PM 19:00",
       "lane": "sleep",
       "instrument": "Bansuri",
