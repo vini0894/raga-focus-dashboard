@@ -1,5 +1,5 @@
 {
-  "_doc": "Instruments the gates must NOT propose, for any lane or format. This is a HARD filter applied before cooldown. Edit this file to bench or un-bench — do not hard-code benches in tooling. Read by tools/recommend_slot.py (and any other gate that proposes instruments).",
+  "_doc": "Instruments the gates must NOT propose, for any lane or format. This is a HARD filter applied before cooldown. Edit this file to bench or un-bench \u2014 do not hard-code benches in tooling. Read by tools/recommend_slot.py (and any other gate that proposes instruments).",
   "_why_this_file_exists": "2026-08-02: fixing the track_record duration bug flipped Dilruba x anxiety from FLOP to MODEST, and it immediately became the #1 recommendation for BOTH Thu Aug 6 and Fri Aug 7. Dilruba had been benched by the user on 2026-07-25, but the bench lived only in SESSION_CONTEXT and memory - no tool enforced it. It was caught by hand. A bench that only exists in prose will eventually ship a video.",
   "benched": [
     {
@@ -9,15 +9,23 @@
       "reason": "Every tried cell is a FLOP - morning n=3 median 671 views, anxiety n=2 median 1,048. Its only apparent win was the unrepeatable May-9 surge windfall, and the music audit showed that video actually carried Santoor audio, not Dilruba.",
       "unbench_condition": "Explicit user say-so plus a fresh hypothesis. Do not propose it even as an off-list experimental arm.",
       "note": "After the 2026-08-02 track_record duration fix its verdict reads MODEST (n=3, med 1,922v). The bench is a USER DECISION and overrides the gate verdict."
-    },
+    }
+  ],
+  "unbenched_log": [
     {
       "instrument": "Bansuri",
-      "benched_on": "2026-09-12",
-      "benched_by": "user",
-      "reason": "Production block, not a performance verdict: content-violation flags on renders (first surfaced 2026-08-07 for 3hr, confirmed channel-wide by the user 2026-09-05 and again 2026-09-12). Removing the instrument from the TITLE does not clear it - Content ID matches audio fingerprints, not metadata.",
-      "unbench_condition": "User confirms renders clear. Bansuri's track record is NOT the reason for this bench - Bansuri x sleep x 3hr is the channel's only PROVEN cell (n=6, median 5,638 engaged), so un-bench as soon as production allows.",
-      "note": "Was ranked #2 for Mon 2026-09-14 once the clinical-hook kill was re-scoped. The bench overrides the gate verdict.",
-      "exception": "ONE authorised re-entry ship: v_2026-09-19_morning_light_bansuri (user 2026-09-13). Gated on tools/claim_check.py returning CLEAN before render. The bench otherwise stands for planning — recommend_slot must keep excluding Bansuri until the claim question is settled. ⚠ NOTE 2026-09-13: the Content ID notice states 'No impact to video's reach' and all 23 live Bansuri/flute videos earn, so the block was never a distribution problem and is per-render, not per-instrument."
+      "unbenched_on": "2026-09-19",
+      "unbenched_by": "user",
+      "reason": "User lifted the production block 2026-09-14 (2 Bansuri ships/week; shipped 09-15 and 09-19) and reaffirmed 2026-09-19 (Bansuri + Sitar = hero instruments, 2 Bansuri next week). Content ID is per-render, states no reach impact, and all live flute videos earn. STANDING CONDITION: tools/claim_check.py must return CLEAN on the raw clips before every Bansuri render.",
+      "previous_bench": {
+        "instrument": "Bansuri",
+        "benched_on": "2026-09-12",
+        "benched_by": "user",
+        "reason": "Production block, not a performance verdict: content-violation flags on renders (first surfaced 2026-08-07 for 3hr, confirmed channel-wide by the user 2026-09-05 and again 2026-09-12). Removing the instrument from the TITLE does not clear it - Content ID matches audio fingerprints, not metadata.",
+        "unbench_condition": "User confirms renders clear. Bansuri's track record is NOT the reason for this bench - Bansuri x sleep x 3hr is the channel's only PROVEN cell (n=6, median 5,638 engaged), so un-bench as soon as production allows.",
+        "note": "Was ranked #2 for Mon 2026-09-14 once the clinical-hook kill was re-scoped. The bench overrides the gate verdict.",
+        "exception": "ONE authorised re-entry ship: v_2026-09-19_morning_light_bansuri (user 2026-09-13). Gated on tools/claim_check.py returning CLEAN before render. The bench otherwise stands for planning \u2014 recommend_slot must keep excluding Bansuri until the claim question is settled. \u26a0 NOTE 2026-09-13: the Content ID notice states 'No impact to video's reach' and all 23 live Bansuri/flute videos earn, so the block was never a distribution problem and is per-render, not per-instrument."
+      }
     }
   ]
 }
