@@ -987,7 +987,7 @@
     {
       "id": "h_signature_series",
       "created": "2026-09-18",
-      "status": "PROPOSED",
+      "status": "PARKED",
       "week": "wk_2026-09-21",
       "source": "Sep 18 teardown (research/reach_and_revenue_deep_research_2026-09-18.md, section 11); raised at wk_2026-09-21 planning 2026-09-19",
       "statement": "The channels winning the Home/Suggested feed in this niche are SERIES: one instrument (bansuri), one promise family repeated every upload, one bold recognisable look, long keyword titles, a returning audience. Healing Raga Studio: last-30 median 20.7K views; Soulful Breathscape 8.8K; this channel 1.2K at the same cadence. Our cooldown / clone / lead-freshness / week_diversity gates forbid exactly this pattern. Own data: since Jun 1 Bansuri = 17% of ships and 36% of views, and both post-May videos above 20K are Bansuri.",
@@ -998,7 +998,7 @@
       ],
       "linked_ships": [],
       "promoted_rule": null,
-      "caveats": "NOT ADOPTED YET - needs deliberate gate overrides and is the user's call. wk_2026-09-21 as locked only half-follows it (2 Bansuri ships, long-title B arm on all six, two working Bansuri mirrors) and otherwise maximises variety. Open decision put to the user 2026-09-19.",
+      "caveats": "USER DECISION 2026-09-19: NOT adopted - 'only 2 Bansuri I want to do'. Two Bansuri ships a week (morning 1.5hr + Sat sleep 3hr) stays the pattern; wk_2026-09-21 ships as locked. Do not re-raise unless the user brings it up. The parts of the idea already in the locked week: long-title B arm on all six ships, two working Bansuri mirrors.",
       "reads": []
     }
   ],

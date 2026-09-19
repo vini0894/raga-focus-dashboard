@@ -83,4 +83,4 @@
 
 **Also running (channel-level):** h_2026-09-19_live_sleep_radio - 24/7 Sleep Radio live since 2026-09-19. Reads: 14d **2026-10-03**, 30d **2026-10-19**. Keep + add a morning stream at >= 25-50 average concurrent; stop at < 10 at 30d; check the source videos and the Sat Bansuri sleep anchors for cannibalisation.
 
-**OPEN DECISION:** h_signature_series (PROPOSED) - 3 Bansuri ships/week in one promise family with one fixed look, against the variety the gates enforce. wk_2026-09-21 as locked carries 2 Bansuri ships. User's call.
+**DECIDED 2026-09-19 - not adopted (user: two Bansuri ships only):** h_signature_series (PARKED) - 3 Bansuri ships/week in one promise family with one fixed look, against the variety the gates enforce. wk_2026-09-21 as locked carries 2 Bansuri ships. User's call.
