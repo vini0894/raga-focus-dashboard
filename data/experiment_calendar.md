@@ -80,3 +80,7 @@
 | 2026-09-26 | Bansuri sleep 3hr | Weekly anchor + tempo-floor read (target AVD >= 18%). Arm B = WORKING competitor mirror (Let Go of Everything, 3.23 v/sub) | title+thumb A (short) vs B (long, different keyword) | **2026-10-03** |
 
 **Week-level:** h_2026-09-21_hero_peak_day_retention - both hero ships AVD >= 28% AND d7 engaged >= 1.5x the Wed-Fri median. Verdict 2026-10-02. Secondary: tally short-arm vs long-arm wins across the six Test & compare results. Export MUST carry 'Average percentage viewed (%)'.
+
+**Also running (channel-level):** h_2026-09-19_live_sleep_radio - 24/7 Sleep Radio live since 2026-09-19. Reads: 14d **2026-10-03**, 30d **2026-10-19**. Keep + add a morning stream at >= 25-50 average concurrent; stop at < 10 at 30d; check the source videos and the Sat Bansuri sleep anchors for cannibalisation.
+
+**OPEN DECISION:** h_signature_series (PROPOSED) - 3 Bansuri ships/week in one promise family with one fixed look, against the variety the gates enforce. wk_2026-09-21 as locked carries 2 Bansuri ships. User's call.

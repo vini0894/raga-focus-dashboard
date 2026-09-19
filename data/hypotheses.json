@@ -959,6 +959,47 @@
         "d21": "2026-10-13"
       },
       "read_rule": "d7 = retention verdict (AVD is stable by then) + early reach signal; d14 = reach verdict; status flips at d14 unless overwhelming"
+    },
+    {
+      "id": "h_2026-09-19_live_sleep_radio",
+      "created": "2026-09-19",
+      "status": "TESTING",
+      "week": "wk_2026-09-14",
+      "source": "SESSION_CONTEXT Sep 19 RESUME (live radio launch) - logged at wk_2026-09-21 planning as that block instructs",
+      "statement": "A 24/7 live 'Sleep Radio' built from existing proven audio opens a distribution surface the uploads do not reach (6 of 9 big genre channels run one; no raga competitor does) without taking views from the source videos.",
+      "predicted_metric": "Average concurrent viewers = live watch-hours/day / 24 (Analytics API liveOrOnDemand==LIVE). KEEP and add a second (morning/focus) stream at >= 25-50 average concurrent; STOP at < 10 at the 30-day read. Guard: the source videos' views must not fall (cannibalisation check). Do not judge on the first hours.",
+      "relevant_lanes": [
+        "sleep"
+      ],
+      "relevant_instruments": [],
+      "linked_ships": [
+        "LIVE Ocg6W1ijKA0 - Sleep Radio 24/7 | Bansuri & Sitar for Deep Sleep (since 2026-09-19)"
+      ],
+      "promoted_rule": null,
+      "caveats": "Cannibalisation watch also covers the weekly Bansuri sleep 3hr anchor (2026-09-19, 2026-09-26). Runbook: research/live_radio_setup_runbook.md.",
+      "reads": [],
+      "read_schedule": {
+        "d14": "2026-10-03",
+        "d30": "2026-10-19"
+      },
+      "read_rule": "14d = early read, 30d = keep/stop verdict"
+    },
+    {
+      "id": "h_signature_series",
+      "created": "2026-09-18",
+      "status": "PROPOSED",
+      "week": "wk_2026-09-21",
+      "source": "Sep 18 teardown (research/reach_and_revenue_deep_research_2026-09-18.md, section 11); raised at wk_2026-09-21 planning 2026-09-19",
+      "statement": "The channels winning the Home/Suggested feed in this niche are SERIES: one instrument (bansuri), one promise family repeated every upload, one bold recognisable look, long keyword titles, a returning audience. Healing Raga Studio: last-30 median 20.7K views; Soulful Breathscape 8.8K; this channel 1.2K at the same cadence. Our cooldown / clone / lead-freshness / week_diversity gates forbid exactly this pattern. Own data: since Jun 1 Bansuri = 17% of ships and 36% of views, and both post-May videos above 20K are Bansuri.",
+      "predicted_metric": "3 of 5 ships/week x 3 weeks on Bansuri, one promise family in live competitor use, a fixed bold thumbnail template, long-title B arm. Success = series ships' median d7 engaged >= 2x the non-series ships' median over the same weeks.",
+      "relevant_lanes": [],
+      "relevant_instruments": [
+        "Bansuri"
+      ],
+      "linked_ships": [],
+      "promoted_rule": null,
+      "caveats": "NOT ADOPTED YET - needs deliberate gate overrides and is the user's call. wk_2026-09-21 as locked only half-follows it (2 Bansuri ships, long-title B arm on all six, two working Bansuri mirrors) and otherwise maximises variety. Open decision put to the user 2026-09-19.",
+      "reads": []
     }
   ],
   "schema_note": "week = Monday of created week (wk_YYYY-MM-DD). reads[] = staged reads (d7/d14/d21). experiment_reads appends to reads[]; status changes at final read."
