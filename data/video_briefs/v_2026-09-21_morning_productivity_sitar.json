@@ -1,0 +1,83 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-09-19",
+  "measurement_note": "Read on ENGAGED VIEWS and AVD%. The Studio export MUST carry 'Average percentage viewed (%)' - the week's hypothesis is a retention read and the Sep 6/12 exports dropped that column.",
+  "ab_design": "A = SHORT pipeline title on keyword 1; B = LONG competitor-pattern title on a DIFFERENT keyword 2 (user rule 2026-09-19: an A/B must teach us something - never the same keyword, never the same format in both arms). Pair thumb text A with title A and thumb text B with title B in Test & compare.",
+  "hypothesis_id": "h_2026-09-21_hero_peak_day_retention",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14).",
+  "id": "v_2026-09-21_morning_productivity_sitar",
+  "planned_date": "2026-09-21",
+  "planned_slot": "06:30 IST AM · Mon",
+  "lane": "morning",
+  "daypart": "morning",
+  "instrument": "Sitar",
+  "raga": "Bilawal",
+  "title_variants": {
+    "A": "Morning Productivity Music | Sitar | 1.5 Hours",
+    "B": "Morning Clarity: Uplifting Sitar for a Sharp, Focused Start to Your Day | 1.5 Hours"
+  },
+  "title_note": "HERO x PEAK DAY #1. Register = MOTIVATION / uplift, Sitar's winning register (user 2026-09-19: 'Monday morning needs a motivation sort of a start'). NOT a competitor mirror: the live wave is calm/cortisol/nervous-system, the cluster this channel converts worst (CTR 2.3-3.1%). A = 'morning productivity music', VidIQ 60, prescreen FRESH; its concept family holds 'Productive Day Music', a top performer on views AND T1 share (39%). B = 'Morning Clarity', bank 60 AND live on Soulful Breathscape (2,484 views/day at 2 days); flag: it was the unshipped B arm of the 2026-07-27 Sitar brief. PROVES: get-things-done promise vs clear-head promise, and short vs long.",
+  "gate_override": "USER-DIRECTED, 2026-09-19 (hero instruments on peak days). (1) track_record reads Sitar x morning x 1.5hr FLOP on a trailing-28-day median of 665 - but that cell holds 'Sitar Music to Start Your Morning Right' (17,400 views inside the last 28 days alone); it is high-variance, not dead, and the verdict is a window artifact (see memory: lifetime-not-28d). (2) packaging_clone: same cell as 'Wake Up Grateful' (2026-09-14, 7 days). A weekly Monday Sitar opener repeats this cell by construction; differentiated by concept (gratitude -> productivity) and thumbnail.",
+  "validated_keywords": [
+    "'morning productivity music' - VidIQ 60, lead_prescreen FRESH, no conflict",
+    "'Morning Clarity' - bank 60 as 'morning clarity music'; live on Soulful Breathscape 'Morning Clarity' at 2,484 views/day",
+    "family precedent: 'Productive Day Music | Positive Morning Vibes' - top performer, 39% T1 watch-share",
+    "last Monday's hero ('Wake Up Grateful', Sitar) took the week's most impressions (21.5K) but held only 17.9% AVD"
+  ],
+  "thumbnail_text_main": "GET MORE DONE",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "GET MORE DONE",
+      "strategy": "13 chars / 3 words. Verb + comparative, the channel's best construction (SLEEP BETTER 6.83%). Morning lane shows no format effect (imperative 4.10 vs Q-hook 4.20), so picked on fit with the productivity promise. Deduped against all 204 shipped/briefed thumb texts."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "THINK CLEARER",
+      "strategy": "13 chars / 2 words. Verb + comparative again, matched to the clarity promise. Deduped - no near match."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. Show the VIEWER living the moment, never a musician performing (6.11% vs 3.03% CTR). Pichwai/Kangra miniature, aged cream parchment, ornate border. The instrument may rest at the frame edge; never held, never played. Text in its own banner panel at ~35% of frame, dark-teal serif, with a small second tier line under it. Scene: bright early-morning interior, a person at a low wooden writing desk by an open jharokha window, sleeves pushed up, pen moving, sunlight across the page, a steaming cup beside them; posture upright and energised. Warm gold and teal palette. A sitar leans against the wall at the frame edge. Second tier line: 'Sitar · Morning · 1.5 Hours'.",
+  "playlists": [
+    "Morning Energy",
+    "Peaceful Music"
+  ],
+  "music_direction": "THE VARIABLE UNDER TEST. Bright, forward-moving sitar - light tabla is welcome; this is an uplift register, not a calm one. Last Monday's hero held 17.9% against a 31% catalog median; the target here is AVD >= 28%. No Suno prompt supplied (user generates their own, 2026-09-14).",
+  "experiment": "Week hypothesis ship 1 of 2 (hero x peak day x music that holds). Success: AVD >= 28% AND d7 engaged >= 1.5x the median of the Wed-Fri ships. Read d7 2026-09-28.",
+  "tags": [
+    "morning productivity music",
+    "productivity music",
+    "morning music",
+    "sitar music",
+    "indian classical sitar",
+    "morning motivation music",
+    "morning clarity music",
+    "focus music",
+    "work music no lyrics",
+    "music for work",
+    "study music",
+    "music for writing",
+    "instrumental music",
+    "indian instrumental music",
+    "positive morning music",
+    "uplifting music",
+    "raga bilawal"
+  ],
+  "description": "Morning Productivity Music | Sitar | 1.5 Hours of Bright, Focused Energy to Start Your Day\n\nSome mornings you sit down with a full list and no momentum. The day is waiting, the coffee is ready, and your mind is still warming up.\n\nThis uplifting Indian instrumental music is designed to get you moving - bright sitar melodies with a steady, forward pulse that help you settle into your work and keep going.\n\nEnjoy 1.5 hours of lively sitar over a warm tanpura drone and gentle rhythm, with no vocals and no sudden changes to pull you out of your flow.\n\nPerfect for morning work sessions, planning your day, studying, writing, emails, deep work, creative projects, household routines, a morning walk, or simply starting the day in a good mood.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sitar with tanpura and light tabla\nRaga: Bilawal (a bright morning raga)\nStyle: Indian classical instrumental\nMood: Uplifting, clear, motivated\nAtmosphere: Sunlit morning, a fresh start\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPress play as you begin your morning. Keep the volume at a comfortable background level and let the steady rhythm carry you from one task to the next. Works well on speakers or headphones.\n\n⏱ CHAPTERS\n0:00 First light, first step\n9:00 Finding your rhythm\n18:00 Bright steady momentum\n27:00 Clear head, clear plan\n36:00 Deep in the work\n45:00 Second wind rising\n54:00 Flowing without effort\n1:03:00 Strong and unhurried\n1:12:00 Finishing what matters\n1:21:00 A good day underway\n\n⏱ BEST FOR\n• Morning work sessions\n• Planning and to-do lists\n• Studying and reading\n• Writing and creative work\n• Working from home\n• A motivated start to the week\n• Morning routines\n• Focused computer work\n• Light exercise or stretching\n• A positive mood before a busy day\n\nIf this music helped you start your day with focus and energy, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#MorningMusic #ProductivityMusic #SitarMusic #IndianInstrumental #FocusMusic",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-09-21 06:30 IST"
+  },
+  "slot_note": "AM 06:30 Monday - the channel's highest-consumption day, hero instrument (user 2026-09-19).",
+  "title": "Morning Productivity Music | Sitar | 1.5 Hours",
+  "pending": [
+    "USER: generate the music to the music_direction spec (retention is the variable under test)",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' for the d7 read"
+  ]
+}

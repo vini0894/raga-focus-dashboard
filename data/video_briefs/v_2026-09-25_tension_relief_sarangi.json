@@ -1,0 +1,81 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-09-19",
+  "measurement_note": "Read on ENGAGED VIEWS and AVD%. The Studio export MUST carry 'Average percentage viewed (%)' - the week's hypothesis is a retention read and the Sep 6/12 exports dropped that column.",
+  "ab_design": "A = SHORT pipeline title on keyword 1; B = LONG competitor-pattern title on a DIFFERENT keyword 2 (user rule 2026-09-19: an A/B must teach us something - never the same keyword, never the same format in both arms). Pair thumb text A with title A and thumb text B with title B in Test & compare.",
+  "hypothesis_id": "h_2026-09-21_hero_peak_day_retention",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14).",
+  "id": "v_2026-09-25_tension_relief_sarangi",
+  "planned_date": "2026-09-25",
+  "planned_slot": "19:00 IST PM · Fri",
+  "lane": "stress_burnout",
+  "daypart": "evening",
+  "instrument": "Sarangi",
+  "raga": "Desh",
+  "title_variants": {
+    "A": "Tension Relief Music | Sarangi Instrumental | 1.5 Hours",
+    "B": "Leave Your Stress Behind: Tender Sarangi to Loosen a Tight Chest After a Long Week | 1.5 Hours"
+  },
+  "title_note": "⚠ CONCEPT CHANGED AT BRIEF TIME. The approved A was 'When You're Tired of Being Strong | Sarangi'. That is the emotional-comfort register of h_2026-07-20_emotional_healing_lane_dead (KILLED: 7 ships, 2,795 lifetime views in total; Sarangi x healing FLOP n=7) on the exact instrument that flopped in it. Slot and instrument kept; register moved to BODY TENSION, which is stress_burnout proper. A = 'tension relief music', VidIQ 58, FRESH. B = 'Leave Your Stress Behind', live in the competitor set (113 views/day - low momentum, stated plainly), FRESH. PROVES: functional keyword vs outcome-imperative, short vs long. THE WEAKEST SHIP OF THE WEEK - drop this one if the week goes to five.",
+  "gate_override": "None needed for instrument/lane: recommend_slot #2 for stress_burnout on the date (THIN, n=1). Every other non-hero instrument is FLOP or clone-blocked in this lane (Tanpura: 9d from 'Break Negative Patterns').",
+  "validated_keywords": [
+    "'tension relief music' - VidIQ 58, lead_prescreen FRESH",
+    "'Leave Your Stress Behind' - live competitor lead 113 views/day, lead_prescreen FRESH",
+    "AVOIDED: 'You've Done Enough Today' (1,286/day) - same concept as last week's thumb 'ENOUGH FOR TODAY' (2026-09-16)",
+    "AVOIDED: emotional-comfort register - KILLED lane"
+  ],
+  "thumbnail_text_main": "YOU CAN STOP NOW",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "YOU CAN STOP NOW",
+      "strategy": "16 chars / 4 words. Permission framing - the lane's best text is IT'S OKAY TO REST (4.71%) and imperatives lead Q-hooks here 3.54 vs 3.22. Deduped - no near match."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "SET IT ALL DOWN",
+      "strategy": "15 chars / 4 words. Imperative on a physical action, matched to 'leave your stress behind'. Deduped - no near match."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. Show the VIEWER living the moment, never a musician performing (6.11% vs 3.03% CTR). Pichwai/Kangra miniature, aged cream parchment, ornate border. The instrument may rest at the frame edge; never held, never played. Text in its own banner panel at ~35% of frame, dark-teal serif, with a small second tier line under it. Scene: evening entryway, a person who has just set a heavy satchel on the floor, sinking into a low chair, head tipped back, shoulders released, warm lamp glow against cool blue dusk. A sarangi rests on a stand at the frame edge. Second tier line: 'Sarangi · Stress Relief · 1.5 Hours'.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Peaceful Music"
+  ],
+  "music_direction": "Long, singing sarangi lines over a steady drone - warm, not mournful. Avoid a grieving character; the promise is physical release. Retention target AVD >= 26%. No Suno prompt supplied.",
+  "experiment": "Control group for the week hypothesis. Optional sixth ship. Read d7 2026-10-02.",
+  "tags": [
+    "tension relief music",
+    "stress relief music",
+    "leave your stress behind",
+    "music to decompress",
+    "burnout recovery music",
+    "sarangi music",
+    "relaxing music after work",
+    "calming instrumental",
+    "release tension",
+    "deep relaxation music",
+    "meditation music",
+    "indian classical music",
+    "indian instrumental music",
+    "evening relaxation music",
+    "raga desh"
+  ],
+  "description": "Tension Relief Music | Sarangi Instrumental | 1.5 Hours of Slow, Warm Release\n\nThe day is over but your body has not been told. Jaw tight, shoulders high, a knot in the chest that followed you home.\n\nThis warm Indian instrumental music is designed to help your body let go of the day - the sarangi's long, singing notes invite slower breathing and give held muscles permission to soften.\n\nEnjoy 1.5 hours of slow, expressive sarangi over a soft tanpura drone, with no vocals, no sudden changes and nothing asking for your attention.\n\nPerfect for the end of a long workday, releasing tight shoulders and jaw, stressful weeks, gentle stretching, a warm bath, quiet tea, journaling, screen-free evenings, meditation, or resting before bed.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sarangi with tanpura\nRaga: Desh (warm and heartfelt)\nStyle: Indian classical instrumental\nMood: Warm, releasing, unhurried\nAtmosphere: A quiet room at the end of a long day\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPut your bag down, sit back, and let your shoulders fall. Unclench your jaw and breathe out slowly. There is nothing to achieve while this plays. Headphones recommended.\n\n⏱ CHAPTERS\n0:00 You can stop now\n9:00 Setting the day down\n18:00 A long, slow breath\n27:00 Softening the shoulders\n36:00 The jaw unclenches\n45:00 Warmth through the chest\n54:00 Nothing left to carry\n1:03:00 The body settles\n1:12:00 Quiet strength returning\n1:21:00 Rested and lighter\n\n⏱ BEST FOR\n• The end of a long workday\n• Tight shoulders, neck and jaw\n• Stressful weeks\n• Gentle evening stretching\n• A warm bath or quiet tea\n• Screen-free evenings\n• Journaling and reflection\n• Meditation\n• Resting before bed\n• Recovering after a demanding day\n\nIf this music helped you release the day, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#StressRelief #TensionRelief #Sarangi #RelaxingMusic #IndianInstrumental",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-09-25 19:00 IST"
+  },
+  "slot_note": "PM 19:00 Friday. Droppable if the week runs five ships.",
+  "title": "Tension Relief Music | Sarangi Instrumental | 1.5 Hours",
+  "pending": [
+    "USER: generate the music to the music_direction spec (retention is the variable under test)",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' for the d7 read"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-09-19",
+  "measurement_note": "Read on ENGAGED VIEWS and AVD%. The Studio export MUST carry 'Average percentage viewed (%)' - the week's hypothesis is a retention read and the Sep 6/12 exports dropped that column.",
+  "ab_design": "A = SHORT pipeline title on keyword 1; B = LONG competitor-pattern title on a DIFFERENT keyword 2 (user rule 2026-09-19: an A/B must teach us something - never the same keyword, never the same format in both arms). Pair thumb text A with title A and thumb text B with title B in Test & compare.",
+  "hypothesis_id": "h_2026-09-21_hero_peak_day_retention",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14).",
+  "id": "v_2026-09-23_mental_clutter_santoor",
+  "planned_date": "2026-09-23",
+  "planned_slot": "19:00 IST PM · Wed",
+  "lane": "cognitive",
+  "daypart": "evening",
+  "instrument": "Santoor",
+  "raga": "Hamsadhwani",
+  "title_variants": {
+    "A": "Clear the Mental Clutter | Santoor | 1.5 Hours",
+    "B": "Unlock Creativity: Flowing Santoor for Writing, Fresh Ideas & Unhurried Thinking | 1.5 Hours"
+  },
+  "title_note": "recommend_slot #1 for the date (Santoor x cognitive, on-packaging-list, THIN not FLOP). Deliberately NOT Sitar: Sitar + focus/mindfulness is the cell of 'Sitar for Dopamine Reset' and nothing may compete with the top-10 (user 2026-09-19); no dopamine lead for the same reason. A = 'Clear the Mental Clutter', live in the competitor set at 803 views/day, FRESH. B = 'Unlock Creativity', VidIQ 58, FRESH. PROVES: problem-removal vs OFFERING register - the first real ship against h_2026-08-09_deep_work_offering_register, parked since August. [B reworded at gate time 2026-09-19: was 'Unlock Creativity: Flowing Santoor for Deep Work, Writing & Fresh Ideas | 1.5 Hours' - tripped a hard anti-pattern on one word; lead keyword unchanged.]",
+  "validated_keywords": [
+    "'Clear the Mental Clutter' - live competitor lead 803 views/day, lead_prescreen FRESH",
+    "'Unlock Creativity' - VidIQ 58, lead_prescreen FRESH",
+    "cognitive is the ONE lane with a real thumbnail format effect: Q-hook 3.52 vs imperative 2.87 - both thumb arms are Q-hooks",
+    "'Clear Negative Thoughts' NOT used - shipped 2026-09-15 brief family, and no 'negative' wording this week"
+  ],
+  "thumbnail_text_main": "BRAIN TOO FULL?",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "BRAIN TOO FULL?",
+      "strategy": "15 chars / 3 words. Q-hook, the measured winner in cognitive. Replaces 'TOO MANY TABS?' which is already used. Deduped - no near match."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "OUT OF IDEAS?",
+      "strategy": "13 chars / 3 words. Q-hook matched to the creativity offer. Both arms respect the lane rule, so whichever YouTube keeps is safe (Test #41 vs #42). Deduped."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. Show the VIEWER living the moment, never a musician performing (6.11% vs 3.03% CTR). Pichwai/Kangra miniature, aged cream parchment, ornate border. The instrument may rest at the frame edge; never held, never played. Text in its own banner panel at ~35% of frame, dark-teal serif, with a small second tier line under it. Scene: evening study, a person at a desk with loose papers lifting away like birds through an open window, one hand resting on a clean open notebook, expression easing. Cool teal evening light with a warm lamp. A santoor sits on a low table at the frame edge. Second tier line: 'Santoor · Focus · 1.5 Hours'.",
+  "playlists": [
+    "Peaceful Music",
+    "Meditation"
+  ],
+  "music_direction": "Even, unhurried santoor patterns with a steady pulse - something for attention to rest on. No dramatic swells. Retention target AVD >= 26%. No Suno prompt supplied.",
+  "experiment": "Control group for the week hypothesis (supporting instrument, non-peak day) AND first test of the deep-work OFFERING register. Read d7 2026-09-30.",
+  "tags": [
+    "clear mental clutter",
+    "declutter your mind",
+    "focus music",
+    "deep work music",
+    "music for writing",
+    "unlock creativity",
+    "creativity music",
+    "santoor music",
+    "study music",
+    "work music no lyrics",
+    "concentration music",
+    "productivity music",
+    "indian instrumental music",
+    "brain fog music",
+    "music for thinking",
+    "raga hamsadhwani"
+  ],
+  "description": "Clear the Mental Clutter | Santoor | 1.5 Hours of Clear, Focused Calm\n\nToo many open tabs - on your screen and in your head. When everything feels urgent, it gets hard to think about any one thing clearly.\n\nThis Indian instrumental music is designed to help your mind sort itself out - the bright, rippling tones of the santoor give your attention one steady thing to rest on, so the noise can settle.\n\nEnjoy 1.5 hours of flowing santoor melodies over a soft drone, with an even, unhurried pulse and no vocals to compete with your thoughts.\n\nPerfect for deep work, writing, brainstorming, planning, studying, reading, design and creative projects, clearing your head after meetings, an evening reset, or quiet thinking time.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Santoor with tanpura\nRaga: Hamsadhwani (bright and clear)\nStyle: Indian classical instrumental\nMood: Clear, light, focused\nAtmosphere: A tidy desk and an open evening\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nStart it when you sit down to think or create. Give it a few minutes - as the patterns repeat, your attention steadies. Keep the volume low enough to sit behind your thoughts. Headphones recommended in noisy spaces.\n\n⏱ CHAPTERS\n0:00 Setting everything down\n9:00 One thing at a time\n18:00 The noise thins out\n27:00 Space to think\n36:00 Ideas start to move\n45:00 Deep in the flow\n54:00 Light and clear\n1:03:00 Connecting the dots\n1:12:00 Calm, steady focus\n1:21:00 A clear mind again\n\n⏱ BEST FOR\n• Deep work sessions\n• Writing and journaling\n• Brainstorming and fresh ideas\n• Studying and reading\n• Planning your week\n• Creative projects\n• Clearing your head after a long day\n• Working from home\n• Coding and design work\n• Quiet thinking time\n\nIf this music helped you think more clearly, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#FocusMusic #SantoorMusic #DeepWorkMusic #ClearYourMind #IndianInstrumental",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-09-23 19:00 IST"
+  },
+  "slot_note": "PM 19:00 Wednesday - leaves Tuesday's morning ship a clear day (user pattern 2026-09-14).",
+  "title": "Clear the Mental Clutter | Santoor | 1.5 Hours",
+  "pending": [
+    "USER: generate the music to the music_direction spec (retention is the variable under test)",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' for the d7 read"
+  ]
+}

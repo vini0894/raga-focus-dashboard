@@ -1,0 +1,85 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-09-19",
+  "measurement_note": "Read on ENGAGED VIEWS and AVD%. The Studio export MUST carry 'Average percentage viewed (%)' - the week's hypothesis is a retention read and the Sep 6/12 exports dropped that column.",
+  "ab_design": "A = SHORT pipeline title on keyword 1; B = LONG competitor-pattern title on a DIFFERENT keyword 2 (user rule 2026-09-19: an A/B must teach us something - never the same keyword, never the same format in both arms). Pair thumb text A with title A and thumb text B with title B in Test & compare.",
+  "hypothesis_id": "h_2026-09-21_hero_peak_day_retention",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14).",
+  "id": "v_2026-09-22_whispers_of_peace_bansuri",
+  "planned_date": "2026-09-22",
+  "planned_slot": "06:30 IST AM · Tue",
+  "lane": "morning",
+  "daypart": "morning",
+  "instrument": "Bansuri",
+  "raga": "Ahir Bhairav",
+  "title_variants": {
+    "A": "Whispers of Peace | Bansuri Instrumental | 1.5 Hours",
+    "B": "Ease Your Mind: Gentle Bansuri Flute for Slower Breathing & a Quiet, Unhurried Hour | 1.5 Hours"
+  },
+  "title_note": "HERO x PEAK DAY #2. A = 'Whispers of Peace': VidIQ 62 (the only >=60 lead from the 2026-09-14 scoring batch) AND live on Soulful Breathscape at 2,886 views/day after 28 days - durable, and on a Bansuri video. B = 'Ease Your Mind', VidIQ 59, FRESH; written in the long competitor pattern and with 'Flute' rather than 'Bansuri' (our best fresh Bansuri-morning ship, 'Calm Morning Music | Relaxing Flute', used that wording: 1,475 engaged, AVD 29.5%). PROVES: poetic peace-offering vs direct mind-relief benefit, short vs long. [B reworded at gate time 2026-09-19: was 'Ease Your Mind: Soothing Morning Flute for a Gentle, Unhurried Start | 1.5 Hours' - tripped a hard anti-pattern on one word; lead keyword unchanged.]",
+  "gate_override": "USER-DIRECTED, 2026-09-19 (heroes on Mon+Tue, two Bansuri ships next week). (1) instrument cooldown: 3 days after the Sat 2026-09-19 Bansuri sleep 3hr (rule = 5). Mitigated by a different lane, runtime, register and daypart. (2) track_record reads Bansuri x morning FLOP on a 28-day median of 480, but the cell's best ship is also its most recent (3,721 views, AVD 29.5%) - the direction is up, not dead.",
+  "validated_keywords": [
+    "'Whispers of Peace' - VidIQ 62 (user-scored 2026-09-14), lead_prescreen FRESH, live on Soulful Breathscape 2,886/day @28d",
+    "'Ease Your Mind' - VidIQ 59, lead_prescreen FRESH",
+    "precedent: 'Calm Morning Music | Relaxing Flute' (2026-08-31) = best fresh Bansuri-morning ship, AVD 29.5%",
+    "NOT used: cortisol / nervous-system leads - burned (4 ships) and phrase-locked ('Nervous System Therapy' live 2026-09-15)"
+  ],
+  "thumbnail_text_main": "BREATHE SLOWER",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "BREATHE SLOWER",
+      "strategy": "14 chars / 2 words. Verb + comparative on a BODY verb - physiological framings beat abstract mind-states by 32.8 points in calm lanes (Test #53). Deduped - no near match."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "STAY HERE AWHILE",
+      "strategy": "16 chars / 3 words. Verb + place/time, the construction behind PAUSE HERE (7.45%). Deduped - no near match."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. Show the VIEWER living the moment, never a musician performing (6.11% vs 3.03% CTR). Pichwai/Kangra miniature, aged cream parchment, ornate border. The instrument may rest at the frame edge; never held, never played. Text in its own banner panel at ~35% of frame, dark-teal serif, with a small second tier line under it. Scene: soft dawn, a person seated on a cushion beside an open window with a cup of tea cradled in both hands, eyes closed, shoulders loose, pale pink-gold light and a still garden beyond. A bamboo flute rests on the sill at the frame edge. Second tier line: 'Bansuri · Morning Calm · 1.5 Hours'.",
+  "playlists": [
+    "Peaceful Music",
+    "Meditation"
+  ],
+  "music_direction": "THE VARIABLE UNDER TEST. Soothing but NOT slow - the channel's working calm music runs faster than the 45-55 BPM table (user insight 2026-09-14). Continuous tanpura bed, breath-led phrases, no dead air. Target AVD >= 28%. No Suno prompt supplied (user generates their own).",
+  "experiment": "Week hypothesis ship 2 of 2 (hero x peak day x music that holds). Success: AVD >= 28% AND d7 engaged >= 1.5x the median of the Wed-Fri ships. Read d7 2026-09-29.",
+  "tags": [
+    "whispers of peace",
+    "bansuri music",
+    "indian flute music",
+    "krishna flute music",
+    "peaceful music",
+    "mental peace music",
+    "morning meditation music",
+    "calming instrumental",
+    "relaxing flute music",
+    "meditation music",
+    "yoga music",
+    "inner peace music",
+    "soft instrumental music",
+    "indian instrumental music",
+    "ease your mind",
+    "raga ahir bhairav"
+  ],
+  "description": "Whispers of Peace | Bansuri Instrumental | 1.5 Hours of Peace | Bansuri Instrumental | 1.5 Hours of Gentle Morning Calm\n\nBefore the day asks anything of you, there is a quiet moment that is easy to miss. If your mornings begin in a rush - phone in hand, thoughts already racing - this is an invitation to begin differently.\n\nThis peaceful Indian flute music is designed to slow your breathing and soften the start of your day - soothing, but never sleepy.\n\nEnjoy 1.5 hours of warm bansuri (Indian bamboo flute) melodies floating over a soft tanpura drone, with a gentle, steady flow and no vocals.\n\nPerfect for slow mornings, meditation, yoga, journaling, prayer, tea or coffee by the window, a calm commute, gentle stretching, quiet work, or a peaceful pause at any time of day.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Bansuri (Indian bamboo flute) with tanpura\nRaga: Ahir Bhairav (a gentle dawn raga)\nStyle: Indian classical instrumental, meditative\nMood: Peaceful, tender, unhurried\nAtmosphere: Early light, still air, an open window\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPlay it as you wake, or during the first quiet task of your day. Let your breathing fall in with the long notes of the flute. Headphones bring out the breath and warmth of the bamboo, but soft speakers work beautifully too.\n\n⏱ CHAPTERS\n0:00 The first quiet breath\n9:00 Light through the window\n18:00 Stillness settles in\n27:00 Soft and unhurried\n36:00 Peace without effort\n45:00 Floating on the breath\n54:00 A gentle open heart\n1:03:00 Warmth in the stillness\n1:12:00 Carrying calm forward\n1:21:00 Ready for the day\n\n⏱ BEST FOR\n• Slow, peaceful mornings\n• Meditation and breathwork\n• Yoga and gentle stretching\n• Journaling and prayer\n• Easing a busy mind\n• Calm focus while working\n• Tea-time stillness\n• Reading\n• Recovering after a stressful day\n• Background calm for the home\n\nIf this music brought a little peace into your day, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#BansuriMusic #PeacefulMusic #MorningMeditation #IndianFlute #RelaxingMusic",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-09-22 06:30 IST",
+    "precheck": "python3 tools/claim_check.py <clips> --name bansuri_morning_sep22  (CLEAN before rendering)"
+  },
+  "slot_note": "AM 06:30 Tuesday - second-highest consumption day, hero instrument (user 2026-09-19).",
+  "title": "Whispers of Peace | Bansuri Instrumental | 1.5 Hours",
+  "pending": [
+    "⛔ FIRST: run tools/claim_check.py on the raw clips - render only on CLEAN",
+    "USER: generate the music to the music_direction spec (retention is the variable under test)",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' for the d7 read"
+  ],
+  "competitor_basis": "COMPETITOR MIRROR #1 OF THE WEEK (arm A). Soulful Breathscape, 'Whispers of Peace | Soothing Bansuri for Calm & Inner Peace' - 80,801 views, 2,886 views/day still at 28 days, 1.97 views-per-sub (breakout line = 0.6), on Bansuri. The only lead in the week that is BOTH VidIQ >= 60 and a durable live breakout. Pair with an owned-host routing partner after publish: adjacency buys entry, not durability."
+}

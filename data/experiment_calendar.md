@@ -67,3 +67,16 @@
 
 **Week-level:** cadence fixed at 5/week for h_2026-09-07_volume_restores_escalation (weeks of 09-14, 09-21, 09-28). READ AT 4 WEEKS, not weekly.
 
+
+## wk_2026-09-21 (locked 2026-09-19)
+
+| Day | Ship | Test / hypothesis | Arms | Read d7 |
+|---|---|---|---|---|
+| 2026-09-21 | Sitar morning motivation | HERO x PEAK DAY treatment #1. Arms: productivity promise vs clarity promise | title+thumb A (short) vs B (long, different keyword) | **2026-09-28** |
+| 2026-09-22 | Bansuri morning calm | HERO x PEAK DAY treatment #2 + WORKING competitor mirror (arm A, Whispers of Peace 1.97 v/sub). Arms: peace offering vs mind-relief benefit | title+thumb A (short) vs B (long, different keyword) | **2026-09-29** |
+| 2026-09-23 | Santoor cognitive | Control. Arms: problem-removal vs OFFERING register - first ship against h_2026-08-09 | title+thumb A (short) vs B (long, different keyword) | **2026-09-30** |
+| 2026-09-24 | Surbahar anxiety | Control. Opens the UNTESTED Surbahar x anxiety cell. Arms: cognitive (thoughts) vs somatic (heart/breath) - Test #53 finding | title+thumb A (short) vs B (long, different keyword) | **2026-10-01** |
+| 2026-09-25 | Sarangi stress | Control, droppable. Arms: functional keyword vs outcome imperative | title+thumb A (short) vs B (long, different keyword) | **2026-10-02** |
+| 2026-09-26 | Bansuri sleep 3hr | Weekly anchor + tempo-floor read (target AVD >= 18%). Arm B = WORKING competitor mirror (Let Go of Everything, 3.23 v/sub) | title+thumb A (short) vs B (long, different keyword) | **2026-10-03** |
+
+**Week-level:** h_2026-09-21_hero_peak_day_retention - both hero ships AVD >= 28% AND d7 engaged >= 1.5x the Wed-Fri median. Verdict 2026-10-02. Secondary: tally short-arm vs long-arm wins across the six Test & compare results. Export MUST carry 'Average percentage viewed (%)'.

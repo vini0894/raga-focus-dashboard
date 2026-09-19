@@ -1,0 +1,148 @@
+{
+  "week_id": "wk_2026-09-21",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "created": "2026-09-19",
+  "status": "FINAL - 6 ships Mon-Sat, all titles + thumb texts locked, all gate-run (user lock 2026-09-19)",
+  "notes": "SIX ships Mon-Sat, Sunday clear. Hero instruments on the two peak days (Sitar Mon AM, Bansuri Tue AM), two Bansuri ships (morning Tue, sleep 3hr Sat). Friday is the droppable ship if the week runs five. Week 3 of h_2026-09-07_volume_restores_escalation (read at 4 weeks, ~2026-10-05).",
+  "hypothesis": {
+    "id": "h_2026-09-21_hero_peak_day_retention",
+    "one_line": "Hero instrument x peak day x music that HOLDS beats the 400-900 engaged band.",
+    "success": "Both hero ships post AVD >= 28% AND d7 engaged >= 1.5x the median d7 engaged of the Wed-Fri ships.",
+    "falsifier": "AVD recovers but reach stays inside the band -> retention alone does not unlock reach at this scale; keep the music fix, retire hero/day placement as a reach lever.",
+    "reads": {
+      "mon_d7": "2026-09-28",
+      "tue_d7": "2026-09-29",
+      "week_verdict": "2026-10-02"
+    }
+  },
+  "week_level_decisions": {
+    "heroes_on_peak_days": "User 2026-09-19: Sitar + Bansuri are the hero instruments, Monday + Tuesday the highest-viewed days. Last week those two ships took the week's largest first-week samplings (21.5K and 14.7K impressions) and its top two view counts - but the Monday hero held only 17.9% AVD against a 31% catalog median.",
+    "monday_register": "Motivation / uplift (Sitar's winning register), NOT a mirror of the live calm/cortisol wave - that is the cluster this channel converts worst (CTR 2.3-3.1% on three recent mirrors).",
+    "ab_design": "A = short pipeline title on keyword 1; B = long competitor-pattern title on a DIFFERENT keyword 2 (user 2026-09-19). Thumb text A pairs with title A, thumb text B with title B. Tally short-vs-long arm wins across the six ships.",
+    "protect_the_top_10": "Nothing ships that could take impressions from a top-10 video: no Sitar + dopamine/focus look-alike of the channel's #1, no dopamine lead at all this week. No unlisting (the 83 weakest videos hold 1.24% of impressions). No new playlists - re-sequence the existing seven so high-value targets sit directly behind the big-impression donors.",
+    "competitor_mirrors": "Two ships carry a WORKING competitor mirror (views-per-sub >= 0.6), both on the instrument the source uses: Tue arm A 'Whispers of Peace' (Soulful Breathscape, 2,886 views/day at 28 days, 1.97 v/sub) and Sat arm B 'Let Go of Everything' (Healing Raga Studio, 4,502 views/day at 14 days, 3.23 v/sub). Skipped on purpose: negative-thoughts / nervous-system / Restart Your Life (shipped 09-15..09-19), cortisol (four ships, burned), 'Morning Anxiety?' (REPEAT + worst-converting cluster).",
+    "parked_brief_check": "12 parked briefs reviewed 2026-09-19, none rendered. HARVESTED: lead 'Fall Into Deep Sleep' from v_2026-08-20_overnight_calm_bansuri_3hr -> Sat arm A. EARMARKED for wk_2026-09-28: v_2026-09-18_sleep_in_santoor_3hr (complete, fresh, permission-framed). STAYS PARKED: v_2026-09-09_wake_up_veena ('wake up' phrase-locked by the 09-14 ship until ~10-04; both arms share a keyword; Veena). DEAD: 'Fall Asleep Fast' (lost A/B #39).",
+    "friday_concept_change": "Approved Fri arm A 'When You're Tired of Being Strong | Sarangi' was replaced at brief time: it is the emotional-comfort register of h_2026-07-20_emotional_healing_lane_dead on the instrument that flopped in it seven times. Slot + instrument kept, register moved to body tension.",
+    "music_is_the_variable": "Fresh 1.5hr ships retain 21.0% vs 31.2% for the catalog; fresh 3hr 12.5% vs 25.4%. 3hr broke cleanly in late August (25.8 / 21.6 / 20.3 -> 12.8 / 11.9 / 12.2). Working calm/sleep music on this channel is higher-paced and soothing, not slow (user insight 2026-09-14). No Suno prompts are supplied in briefs - the user writes their own."
+  },
+  "ships": [
+    {
+      "date": "2026-09-21",
+      "day": "Mon",
+      "slot": "06:30",
+      "lane": "morning",
+      "instrument": "Sitar",
+      "runtime_min": 90,
+      "brief": "v_2026-09-21_morning_productivity_sitar",
+      "title_a": "Morning Productivity Music | Sitar | 1.5 Hours",
+      "title_b": "Morning Clarity: Uplifting Sitar for a Sharp, Focused Start to Your Day | 1.5 Hours",
+      "thumb_a": "GET MORE DONE",
+      "thumb_b": "THINK CLEARER",
+      "role": "HERO x PEAK DAY (treatment)",
+      "competitor_mirror": false
+    },
+    {
+      "date": "2026-09-22",
+      "day": "Tue",
+      "slot": "06:30",
+      "lane": "morning",
+      "instrument": "Bansuri",
+      "runtime_min": 90,
+      "brief": "v_2026-09-22_whispers_of_peace_bansuri",
+      "title_a": "Whispers of Peace | Bansuri Instrumental | 1.5 Hours",
+      "title_b": "Ease Your Mind: Gentle Bansuri Flute for Slower Breathing & a Quiet, Unhurried Hour | 1.5 Hours",
+      "thumb_a": "BREATHE SLOWER",
+      "thumb_b": "STAY HERE AWHILE",
+      "role": "HERO x PEAK DAY (treatment)",
+      "competitor_mirror": true
+    },
+    {
+      "date": "2026-09-23",
+      "day": "Wed",
+      "slot": "19:00",
+      "lane": "cognitive",
+      "instrument": "Santoor",
+      "runtime_min": 90,
+      "brief": "v_2026-09-23_mental_clutter_santoor",
+      "title_a": "Clear the Mental Clutter | Santoor | 1.5 Hours",
+      "title_b": "Unlock Creativity: Flowing Santoor for Writing, Fresh Ideas & Unhurried Thinking | 1.5 Hours",
+      "thumb_a": "BRAIN TOO FULL?",
+      "thumb_b": "OUT OF IDEAS?",
+      "role": "control (supporting instrument, non-peak day)",
+      "competitor_mirror": false
+    },
+    {
+      "date": "2026-09-24",
+      "day": "Thu",
+      "slot": "19:00",
+      "lane": "anxiety",
+      "instrument": "Surbahar",
+      "runtime_min": 90,
+      "brief": "v_2026-09-24_stop_chasing_thoughts_surbahar",
+      "title_a": "Stop Chasing Every Thought | Surbahar | 1.5 Hours",
+      "title_b": "Release Anxiety: Slow Surbahar to Calm a Racing Heart & Breathe Easier | 1.5 Hours",
+      "thumb_a": "CAN'T SWITCH OFF?",
+      "thumb_b": "HEART RACING?",
+      "role": "control (supporting instrument, non-peak day)",
+      "competitor_mirror": false
+    },
+    {
+      "date": "2026-09-25",
+      "day": "Fri",
+      "slot": "19:00",
+      "lane": "stress_burnout",
+      "instrument": "Sarangi",
+      "runtime_min": 90,
+      "brief": "v_2026-09-25_tension_relief_sarangi",
+      "title_a": "Tension Relief Music | Sarangi Instrumental | 1.5 Hours",
+      "title_b": "Leave Your Stress Behind: Tender Sarangi to Loosen a Tight Chest After a Long Week | 1.5 Hours",
+      "thumb_a": "YOU CAN STOP NOW",
+      "thumb_b": "SET IT ALL DOWN",
+      "role": "control (supporting instrument, non-peak day)",
+      "competitor_mirror": false
+    },
+    {
+      "date": "2026-09-26",
+      "day": "Sat",
+      "slot": "19:00",
+      "lane": "sleep",
+      "instrument": "Bansuri",
+      "runtime_min": 180,
+      "brief": "v_2026-09-26_fall_into_deep_sleep_bansuri_3hr",
+      "title_a": "Fall Into Deep Sleep | Bansuri Instrumental | 3 Hours",
+      "title_b": "Let Go of Everything: Deep Relaxation Krishna Flute Music to Drift Off & Rest Until Sunrise | 3 Hours",
+      "title_c": "Music for Sleepless Nights: Soft Bansuri Flute to Rest Unbroken All Night | 3 Hours",
+      "thumb_a": "WAKE UP RESTED",
+      "thumb_b": "SLEEP COMES EASY",
+      "role": "weekly sleep anchor + 3hr tempo read",
+      "competitor_mirror": true
+    }
+  ],
+  "lane_coverage": [
+    "anxiety",
+    "cognitive",
+    "morning",
+    "sleep",
+    "stress_burnout"
+  ],
+  "uncovered": [
+    "calm_relax",
+    "healing (KILLED)"
+  ],
+  "vidiq_batch_needed": [],
+  "blocking_decisions": [
+    "USER: Bansuri clips for Tue + Sat - tools/claim_check.py CLEAN before rendering",
+    "USER: six thumbnail images (prompt in each brief), each rendered with text A and text B",
+    "USER: launch Test & compare (title A + thumb A vs title B + thumb B) at publish and log both arms to ab_raw_data.csv - nothing logged since 2026-08-24",
+    "USER: keep exporting the per-video CSV WITH 'Average percentage viewed (%)' - the week's hypothesis is a retention read",
+    "USER (weekend): playlist re-sequence pass - e.g. in Sleep Music the biggest donor sits at position 4 with the high-value 3hr videos ahead of it instead of directly behind it"
+  ],
+  "title_policy": "Every lead is VidIQ-scored or in live competitor use, and prescreened FRESH. Provenance is written into each brief's validated_keywords.",
+  "gates_run": {
+    "week_diversity": "WARN - no word on 3+ dates after fixes ('morning' was x3 and FAILed; reworded). Remaining x2 repeats: flute, clear, focus, release; lane morning x2 and Bansuri x2 are by design.",
+    "brief_gate": "Wed/Thu/Fri WARN. Mon/Tue/Sat FAIL ONLY on user-directed overrides, each documented in the brief's gate_override: Mon = Sitar x morning clone of 09-14 + 28-day-median FLOP; Tue = Bansuri 3d cooldown + clone of 09-15 + 28-day-median FLOP; Sat = Bansuri x sleep x 3hr anchor 7d after 09-19. Two real catches fixed at gate time: 'Soothing' (dead lead word) in Tue B, 'Deep Work'/'Focus' (utility / pre-pivot dead-lane tokens) in Wed B.",
+    "title_preflight": "all six A arms PASS (two were under 45 chars; instrument slot lengthened). B arms exceed the 46-55 band BY DESIGN - the long pattern is the variable.",
+    "known_gate_noise": "brief_gate lead_fresh[A] reports 'USED - queued brief' against the brief's own file; self-match, ignore."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-09-19",
+  "measurement_note": "Read on ENGAGED VIEWS and AVD%. The Studio export MUST carry 'Average percentage viewed (%)' - the week's hypothesis is a retention read and the Sep 6/12 exports dropped that column.",
+  "ab_design": "A = SHORT pipeline title on keyword 1; B = LONG competitor-pattern title on a DIFFERENT keyword 2 (user rule 2026-09-19: an A/B must teach us something - never the same keyword, never the same format in both arms). Pair thumb text A with title A and thumb text B with title B in Test & compare.",
+  "hypothesis_id": "h_2026-09-21_hero_peak_day_retention",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14).",
+  "id": "v_2026-09-26_fall_into_deep_sleep_bansuri_3hr",
+  "planned_date": "2026-09-26",
+  "planned_slot": "19:00 IST PM · Sat",
+  "lane": "sleep",
+  "daypart": "night",
+  "instrument": "Bansuri",
+  "raga": "Durga",
+  "title_variants": {
+    "A": "Fall Into Deep Sleep | Bansuri Instrumental | 3 Hours",
+    "B": "Let Go of Everything: Deep Relaxation Krishna Flute Music to Drift Off & Rest Until Sunrise | 3 Hours",
+    "C": "Music for Sleepless Nights: Soft Bansuri Flute to Rest Unbroken All Night | 3 Hours"
+  },
+  "title_note": "The weekly sleep anchor on the channel's best cell (Bansuri x sleep x 3hr, median 4,994 views on a 28-day window). A = 'Fall Into Deep Sleep' - HARVESTED FROM THE PARKED BRIEF v_2026-08-20_overnight_calm_bansuri_3hr, which was written for exactly this cell and never ran because Bansuri was blocked; FRESH; an English OUTCOME lead, which is the banked sleep/T1 recipe. B = 'Let Go of Everything', a WORKING competitor mirror in the competitor's own long pattern (see competitor_basis). C (spare) = 'music for sleepless nights', VidIQ 59. PROVES: our outcome lead in our short format vs a live breakout in its native long format. REJECTED from parked: 'Fall Asleep Fast' (lost A/B #39) and with it the same-promise thumb 'ASLEEP IN MINUTES'.",
+  "gate_override": "USER-DIRECTED, 2026-09-19 (two Bansuri ships next week; weekly Bansuri sleep anchor). (1) packaging_clone: same instrument+format+lane as 'Remove Negative Thoughts | Bansuri | 3 Hours' (2026-09-19), 7 days. Differentiated by concept and thumbnail. (2) instrument cooldown: 4 days after the Tue 2026-09-22 Bansuri morning ship (rule = 5); different lane, runtime and daypart.",
+  "validated_keywords": [
+    "'Fall Into Deep Sleep' - lead_prescreen FRESH; parked-brief asset, never shipped",
+    "'Let Go of Everything' - lead_prescreen FRESH; live on Healing Raga Studio at 4,502 views/day @14d, 3.23 views-per-sub",
+    "'music for sleepless nights' - VidIQ 59, lead_prescreen FRESH",
+    "sleep recipe (banked 2026-08-01): English outcome lead · Bansuri · 3hr · no 'Indian Classical' · no clinical jargon",
+    "3hr retention regression: Aug 7/14/21 held 20-26% AVD; Aug 28 / Sep 4 / Sep 10 held 11.9-12.8%"
+  ],
+  "thumbnail_text_main": "WAKE UP RESTED",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "WAKE UP RESTED",
+      "strategy": "14 chars / 3 words. Promises the morning AFTER rather than the night - the parked alternative that breaks the lane's sameness (7 of 9 sleep thumbs are 'sleep + adverb'). Shares its construction with the channel's highest-T1 thumb WAKE UP GRATEFUL. Deduped."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "SLEEP COMES EASY",
+      "strategy": "16 chars / 3 words. Permission/ease framing - permission beats imperative in sleep (Test #54). Deduped - no near match."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. Show the VIEWER living the moment, never a musician performing (6.11% vs 3.03% CTR). Pichwai/Kangra miniature, aged cream parchment, ornate border. The instrument may rest at the frame edge; never held, never played. Text in its own banner panel at ~35% of frame, dark-teal serif, with a small second tier line under it. Scene: night bedroom, a person deeply asleep on their side under a light quilt, face relaxed, moonlight through a carved window with the very first pale band of dawn at the horizon. Deep indigo and silver, calm and safe. A bamboo flute rests on a bedside table at the frame edge. Second tier line: 'Bansuri · Deep Sleep · 3 Hours'.",
+  "playlists": [
+    "Sleep Music"
+  ],
+  "music_direction": "SECOND READ ON THE 3HR TEMPO FLOOR (h_2026-09-05). Do NOT build a sub-50-BPM, all-komal late-night bed - that spec produced the 12% AVD collapse. Match the pacing of 'Music to Sleep Through the Night' (the best fresh-era sleep ship): flowing, soothing, continuous tanpura. Target AVD >= 18% (recent 3hr median 12.5%, catalog 25.4%). No Suno prompt supplied.",
+  "experiment": "Weekly sleep anchor + tempo-floor read #3 (after Sat 09-19). Not part of the hero-day comparison. Read d7 2026-10-03.",
+  "tags": [
+    "deep sleep music",
+    "sleep music",
+    "fall into deep sleep",
+    "music for sleepless nights",
+    "bansuri sleep music",
+    "indian flute sleep music",
+    "relaxing sleep music",
+    "music before bed",
+    "insomnia relief music",
+    "3 hours sleep music",
+    "bedtime music",
+    "calming sleep music",
+    "flute music for sleep",
+    "meditation music for sleep",
+    "instrumental sleep music"
+  ],
+  "description": "Fall Into Deep Sleep | Bansuri Instrumental | 3 Hours of Soft, Unbroken Rest\n\nThe day is over, but your body has not caught up yet. If you lie awake replaying conversations, or wake at 3am and cannot drift back, let this play quietly beside you.\n\nThis soft Indian flute music is designed to carry you down into deep sleep and keep the night gentle - flowing and soothing, never so slow that it feels empty.\n\nEnjoy 3 hours of warm bansuri melodies over a continuous tanpura drone, with smooth transitions, no vocals and no sudden sounds to wake you.\n\nPerfect for falling asleep, staying asleep, sleepless nights, light sleepers, afternoon naps, bedtime reading, calming a busy mind at night, children's bedtime, meditation before sleep, or quiet overnight background.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Bansuri (Indian bamboo flute) with tanpura drone\nRaga: Durga (a gentle night raga)\nStyle: Indian classical ambient\nMood: Soft, safe, drifting\nAtmosphere: A moonlit room and slow breathing\nDuration: 3 hours\n\n🎧 HOW TO USE\nStart the music as you get into bed and set the volume just above silence. Let your breath lengthen with the flute. The music continues long after you fall asleep, so if you wake in the night it is still there to ease you back. Low speakers or comfortable sleep headphones both work well.\n\n⏱ CHAPTERS\n0:00 The day lets go\n15:00 Breath growing longer\n30:00 Heavy, warm and safe\n45:00 Drifting under\n1:00:00 Deep, quiet waters\n1:15:00 Slow moonlit drift\n1:30:00 The still of the night\n1:45:00 Deeper and softer\n2:00:00 Held through the dark\n2:15:00 Unbroken rest\n2:30:00 Light, dreamless quiet\n2:45:00 Gentle fade toward morning\n\n⏱ BEST FOR\n• Falling asleep faster\n• Staying asleep through the night\n• Sleepless or restless nights\n• Light sleepers\n• Calming a busy mind at bedtime\n• Bedtime reading\n• Naps and daytime rest\n• Children's bedtime\n• Meditation before sleep\n• Waking up rested\n\nIf this music helped you sleep, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#DeepSleepMusic #BansuriSleepMusic #SleepMusic #IndianFlute #RelaxingSleepMusic",
+  "production_spec": {
+    "duration_minutes": 180,
+    "format": "3hr",
+    "publish": "2026-09-26 19:00 IST",
+    "precheck": "python3 tools/claim_check.py <clips> --name bansuri_sleep_sep26  (CLEAN before rendering)"
+  },
+  "slot_note": "PM 19:00 Saturday - the weekly sleep anchor slot. Sunday stays clear.",
+  "title": "Fall Into Deep Sleep | Bansuri Instrumental | 3 Hours",
+  "pending": [
+    "⛔ FIRST: run tools/claim_check.py on the raw clips - render only on CLEAN",
+    "USER: generate the music to the music_direction spec (retention is the variable under test)",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' for the d7 read"
+  ],
+  "competitor_basis": "COMPETITOR MIRROR #2 OF THE WEEK (arm B). Healing Raga Studio, 'Deep Relaxation Krishna Flute Music: Let Go of Everything' - 4,502 views/day at 14 days, 3.23 views-per-sub (breakout line = 0.6), a flute video, so the instrument matches. Lead 'Let Go of Everything' prescreens FRESH. Added 2026-09-19 after the user asked which titles mirror a WORKING competitor video and only one did; the standing rule is two per week. Arm C keeps the previously approved scored lead ('music for sleepless nights', VidIQ 59)."
+}

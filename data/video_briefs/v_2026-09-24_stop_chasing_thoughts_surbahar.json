@@ -1,0 +1,80 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-09-19",
+  "measurement_note": "Read on ENGAGED VIEWS and AVD%. The Studio export MUST carry 'Average percentage viewed (%)' - the week's hypothesis is a retention read and the Sep 6/12 exports dropped that column.",
+  "ab_design": "A = SHORT pipeline title on keyword 1; B = LONG competitor-pattern title on a DIFFERENT keyword 2 (user rule 2026-09-19: an A/B must teach us something - never the same keyword, never the same format in both arms). Pair thumb text A with title A and thumb text B with title B in Test & compare.",
+  "hypothesis_id": "h_2026-09-21_hero_peak_day_retention",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14).",
+  "id": "v_2026-09-24_stop_chasing_thoughts_surbahar",
+  "planned_date": "2026-09-24",
+  "planned_slot": "19:00 IST PM · Thu",
+  "lane": "anxiety",
+  "daypart": "evening",
+  "instrument": "Surbahar",
+  "raga": "Bageshri",
+  "title_variants": {
+    "A": "Stop Chasing Every Thought | Surbahar | 1.5 Hours",
+    "B": "Release Anxiety: Slow Surbahar to Calm a Racing Heart & Breathe Easier | 1.5 Hours"
+  },
+  "title_note": "Surbahar = the strongest fresh-ship median of any instrument (622 engaged) and cooldown-clear. recommend_slot #2 for anxiety (UNTESTED cell, no FLOP). A = 'Stop Chasing Every Thought', live in the competitor set at 1,347 views/day, FRESH. B = 'Release Anxiety', VidIQ 58, FRESH, written with BODY outcomes (racing heart, breathe). PROVES: cognitive framing (thoughts) vs somatic framing (heart/breath) - a direct test of the banked physiological-verb finding (Test #53, 32.8 points).",
+  "validated_keywords": [
+    "'Stop Chasing Every Thought' - live competitor lead 1,347 views/day, lead_prescreen FRESH",
+    "'Release Anxiety' - VidIQ 58, lead_prescreen FRESH",
+    "Surbahar x anxiety x 1.5hr - UNTESTED (gate WARN, not FAIL)",
+    "anxiety lane: thumbnail format is a tie (imperative 3.50 vs Q-hook 3.52) - picked on fit"
+  ],
+  "thumbnail_text_main": "CAN'T SWITCH OFF?",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "CAN'T SWITCH OFF?",
+      "strategy": "17 chars / 3 words. Q-hook on the thought-loop. Replaces 'THOUGHTS ON LOOP?' (too close to the used 'BRAIN ON LOOP?'). Deduped - no near match."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "HEART RACING?",
+      "strategy": "13 chars / 2 words. Q-hook on a BODY state, mirroring the somatic title arm. Deduped - no near match."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. Show the VIEWER living the moment, never a musician performing (6.11% vs 3.03% CTR). Pichwai/Kangra miniature, aged cream parchment, ornate border. The instrument may rest at the frame edge; never held, never played. Text in its own banner panel at ~35% of frame, dark-teal serif, with a small second tier line under it. Scene: dusk interior, a person lying back on a daybed, one hand resting on the chest, eyes closed mid-exhale, a single oil lamp, deep indigo sky through the arch. Heavy, grounded, safe. A surbahar rests against the wall at the frame edge. Second tier line: 'Surbahar · Deep Calm · 1.5 Hours'.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Peaceful Music"
+  ],
+  "music_direction": "Low, resonant and grounding, but keep it MOVING - a continuous drone and regular phrasing; the inert sub-50-BPM beds are what collapsed 3hr retention to 12%. Retention target AVD >= 26%. No Suno prompt supplied.",
+  "experiment": "Control group for the week hypothesis (supporting instrument, non-peak day). A/B = cognitive vs somatic framing. Read d7 2026-10-01.",
+  "tags": [
+    "stop overthinking",
+    "release anxiety",
+    "anxiety relief music",
+    "calming music",
+    "music for overthinking",
+    "racing thoughts",
+    "surbahar music",
+    "deep relaxation and anxiety relief",
+    "calm your mind",
+    "stress relief music",
+    "grounding music",
+    "meditation music",
+    "indian classical music",
+    "ease your mind",
+    "raga bageshri"
+  ],
+  "description": "Stop Chasing Every Thought | Surbahar | 1.5 Hours of Deep, Slow Calm\n\nOne thought leads to another, and another, and you are following all of them. Your heart is a little fast, your shoulders a little high, and you cannot seem to switch off.\n\nThis deep Indian instrumental music is designed to give your body the signal that it is safe to slow down - the low, resonant voice of the surbahar draws your breathing longer and lets the thoughts pass without being chased.\n\nEnjoy 1.5 hours of unhurried surbahar (bass sitar) melodies over a steady tanpura drone - warm, grounding, and free of vocals or sudden changes.\n\nPerfect for anxious evenings, overthinking, racing thoughts, slowing your breath, settling after work, meditation, grounding, journaling, a quiet bath, or preparing for sleep.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Surbahar (bass sitar) with tanpura\nRaga: Bageshri (tender evening raga)\nStyle: Indian classical instrumental\nMood: Grounding, tender, safe\nAtmosphere: Lamp-lit evening, nothing left to do\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nSit or lie down somewhere comfortable. Breathe out a little longer than you breathe in, and let the low notes set the pace. You do not need to stop your thoughts - just stop following them. Headphones deepen the bass resonance.\n\n⏱ CHAPTERS\n0:00 Nothing to solve tonight\n9:00 Longer, slower breaths\n18:00 Letting thoughts pass\n27:00 Shoulders start to drop\n36:00 Deep grounding resonance\n45:00 A steady, quiet heart\n54:00 Held by the low notes\n1:03:00 Stillness without effort\n1:12:00 Soft, safe and slow\n1:21:00 Gentle fade into quiet\n\n⏱ BEST FOR\n• Overthinking and racing thoughts\n• Anxious evenings\n• Slowing your breathing\n• Calming a fast heartbeat\n• Grounding after a hard day\n• Meditation\n• Journaling\n• A warm bath or quiet tea\n• Easing into sleep\n• Moments when you cannot switch off\n\nIf this music helped your mind slow down, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#AnxietyRelief #OverthinkingRelief #Surbahar #CalmingMusic #IndianInstrumental",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-09-24 19:00 IST"
+  },
+  "slot_note": "PM 19:00 Thursday.",
+  "title": "Stop Chasing Every Thought | Surbahar | 1.5 Hours",
+  "pending": [
+    "USER: generate the music to the music_direction spec (retention is the variable under test)",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' for the d7 read"
+  ]
+}
