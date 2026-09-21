@@ -57,10 +57,10 @@ Measured 2026-08-07 across the sleep pool — every rising RPM belonged to a *sh
 
 | video | earn-rate | impressions |
 |---|---|---|
-| Quiet Night | 7.15 → 8.56 | 104k → **40k (−62%)** |
-| Deep Sleep Surbahar | 5.55 → 6.58 | 62k → **31k (−50%)** |
-| 3hr Bansuri Relaxation | 5.92 → 6.85 | 337k → **234k (−31%)** |
-| **Sleep Through the Night** | 6.39 → 6.86 | 50k → **98k (+96%)** |
+| Quiet Night | rising (values kept private) | 104k → **40k (−62%)** |
+| Deep Sleep Surbahar | rising (values kept private) | 62k → **31k (−50%)** |
+| 3hr Bansuri Relaxation | rising (values kept private) | 337k → **234k (−31%)** |
+| **Sleep Through the Night** | rising (values kept private) | 50k → **98k (+96%)** |
 
 RPM rises as reach falls because the surviving audience is higher-intent. **Rank on RPM × impressions trend together.** Only Sleep Through the Night grew on both — which is why it was moved to position 1.
 
