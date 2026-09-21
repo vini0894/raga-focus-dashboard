@@ -1,7 +1,7 @@
 {
   "purpose": "Standing ledger of strategic bets — the compounding-strategy layer on top of the mechanical gates (cooldown/track_record/clone/lead_prescreen). A finding discovered once (competitor research, a track_record pattern, an A/B result) gets banked here as a tracked hypothesis instead of being re-derived every time it's asked about. recommend_slot.py reads this to tag candidates with the bet they'd be testing.",
   "lifecycle": "PROPOSED (stated, not yet tested) -> TESTING (a ship is live against it) -> CONFIRMED or KILLED (enough evidence to close it) -> promoted_rule (folded into a permanent playbook rule, e.g. anti_patterns.json / lane_packaging_directions.json)",
-  "last_updated": "2026-09-19",
+  "last_updated": "2026-09-21",
   "hypotheses": [
     {
       "id": "h_2026-08-07_playlist_routing",
@@ -24,7 +24,10 @@
         "2026-08-24 · Stop Overthinking | Sitar Instrumental | 1.5 Hours [KVQMORHMyiE]",
         "2026-09-01 · Relaxing Instrumental Music | Slow Sarod | 1.5 Hours [mhozdqO4PlA]",
         "2026-09-04 · Snowy Night Music | Bansuri & Tanpura | 3 Hours [dTlG68eidiw]",
-        "2026-09-10 · Night Routine Music | Slow Surbahar | 3 Hours [G9VPjFgn4b8]"
+        "2026-09-10 · Night Routine Music | Slow Surbahar | 3 Hours [G9VPjFgn4b8]",
+        "2026-08-25 · Cortisol Detox Music | Bansuri Raga Bhairavi | Indian Instrumental 1.5 Hours [QWS_Bj5-pzM]",
+        "2026-09-15 · Nervous System Therapy | Bansuri Instrumental | 1.5 Hours [VqpymCoZ5bA]",
+        "2026-09-18 · Sleep Radio 24/7 | Bansuri & Sitar for Deep Sleep [Ocg6W1ijKA0]"
       ],
       "source": "Interventions: user playlist shuffles 2026-08-02 and 2026-08-07. Baseline positions + per-video metrics captured in data/playlist_snapshots/playlists_2026-08-07.json. Full method, confounds and checklist in data/playlist_snapshots/ANALYSIS_PLAN_wk_2026-08-10.md. ORIGIN: end screens measured DEAD (101 views channel-wide in a month, 0.01%) - playlists are the only working routing surface (4.94% of views but 8.92% of watch-time). CONSTRAINT: donor T1 share must be >= target T1 or the target gets diluted; Dopamine Reset (15.7% T1) must never point at a T1 video. CONFOUNDS to state in the read: 5 new ships entered playlists Aug 3-7; the channel independently inflected from 19,255 to ~25,000 daily views; the two shuffles are 5 days apart and cannot be separated. EXPECTED MAGNITUDE: low hundreds per month. The original the original headline figure model assumed 3x impressions on 17 targets; total playlist traffic is only ~36,800 views/28d channel-wide, so doubling it is worth roughly a quarter of that.",
       "promoted_rule": "",
@@ -220,7 +223,15 @@
         "2026-09-07 · Morning Stillness | Surbahar Instrumental Music | 1.5 Hours [7YGvReb0Shc]",
         "2026-09-08 · Mental Overload | Tanpura Therapy | 1.5 Hours [iu30iCs4ZoE]",
         "2026-09-09 · Mental Exhaustion | Santoor Therapy | 1.5 Hours [dc64JdJSp9I]",
-        "2026-09-10 · Night Routine Music | Slow Surbahar | 3 Hours [G9VPjFgn4b8]"
+        "2026-09-10 · Night Routine Music | Slow Surbahar | 3 Hours [G9VPjFgn4b8]",
+        "2026-09-12 · Evening Music | Sarod Instrumental | 1.5 Hours [Oi5OHOy3SGo]",
+        "2026-09-14 · Wake Up Grateful | Sitar Instrumental | 1.5 Hours [rbL4V3dYsZg]",
+        "2026-09-15 · Nervous System Therapy | Bansuri Instrumental | 1.5 Hours [VqpymCoZ5bA]",
+        "2026-09-16 · Break Negative Patterns | Slow Tanpura | 1.5 Hours [ZBrnb2cZHAs]",
+        "2026-09-17 · Restart Your Life | Sarangi Therapy | 1.5 Hours [kUDGpp42Wc8]",
+        "2026-09-18 · Sleep Radio 24/7 | Bansuri & Sitar for Deep Sleep [Ocg6W1ijKA0]",
+        "2026-09-18 · Enter Flow State | Veena Instrumental | 1.5 Hours [mgJPPy7OEEA]",
+        "2026-09-19 · Remove Negative Thoughts | Bansuri Instrumental | 3 Hours [DzdvXejN1Us]"
       ],
       "promoted_rule": null,
       "caveats": "OBSERVATIONAL, not randomised — which concept shipped on which day was a human choice, so selection bias is live (if stronger concepts were deliberately placed Mon-Wed, the true Fri advantage would be even larger; if experiments went to Fri, it could be smaller). n=16 Fri / n=14 Mon. Treat as a scheduling PRIOR, not a settled rule, until 6+ deliberate ships test it.",
@@ -262,7 +273,8 @@
         "2026-08-25 · Morning Cortisol Detox | Bansuri Raga Bhairavi 432Hz | 1.5 Hours [QWS_Bj5-pzM]",
         "2026-08-27 · Morning Anxiety Relief | Sarangi Raga Bhairavi | 1.5 Hours [pcx9itZqvnQ]",
         "2026-08-31 · Calm Morning Music |  Relaxing Flute | Instrumental 1.5 hours [wbLwW2REWcQ]",
-        "2026-09-07 · Morning Stillness | Surbahar Instrumental Music | 1.5 Hours [7YGvReb0Shc]"
+        "2026-09-07 · Morning Stillness | Surbahar Instrumental Music | 1.5 Hours [7YGvReb0Shc]",
+        "2026-09-17 · Restart Your Life | Sarangi Therapy | 1.5 Hours [kUDGpp42Wc8]"
       ],
       "promoted_rule": null,
       "caveats": "Observational, lane-confounded (T1-heavy titles are mostly morning/uplift — may be the lane T1 wants, not the words). The two linked A/Bs are the controlled test.",
@@ -304,7 +316,8 @@
         "2026-08-25 · Morning Cortisol Detox | Bansuri Raga Bhairavi 432Hz | 1.5 Hours [QWS_Bj5-pzM]",
         "2026-08-27 · Morning Anxiety Relief | Sarangi Raga Bhairavi | 1.5 Hours [pcx9itZqvnQ]",
         "2026-08-31 · Calm Morning Music |  Relaxing Flute | Instrumental 1.5 hours [wbLwW2REWcQ]",
-        "2026-09-07 · Morning Stillness | Surbahar Instrumental Music | 1.5 Hours [7YGvReb0Shc]"
+        "2026-09-07 · Morning Stillness | Surbahar Instrumental Music | 1.5 Hours [7YGvReb0Shc]",
+        "2026-09-17 · Restart Your Life | Sarangi Therapy | 1.5 Hours [kUDGpp42Wc8]"
       ],
       "promoted_rule": null,
       "caveats": "n=1, single video. Age-decay confound: judge the slope against the video's own pre-test trajectory, not absolute impressions. Reads scheduled: ~Aug 2 (7d) and ~Aug 9 (test conclusion). Companion end-screen wiring to Morning Gratitude, if done, slightly contaminates attribution — note the wiring date at read time.",
@@ -361,7 +374,15 @@
         "2026-09-07 · Morning Stillness | Surbahar Instrumental Music | 1.5 Hours [7YGvReb0Shc]",
         "2026-09-08 · Mental Overload | Tanpura Therapy | 1.5 Hours [iu30iCs4ZoE]",
         "2026-09-09 · Mental Exhaustion | Santoor Therapy | 1.5 Hours [dc64JdJSp9I]",
-        "2026-09-10 · Night Routine Music | Slow Surbahar | 3 Hours [G9VPjFgn4b8]"
+        "2026-09-10 · Night Routine Music | Slow Surbahar | 3 Hours [G9VPjFgn4b8]",
+        "2026-09-12 · Evening Music | Sarod Instrumental | 1.5 Hours [Oi5OHOy3SGo]",
+        "2026-09-14 · Wake Up Grateful | Sitar Instrumental | 1.5 Hours [rbL4V3dYsZg]",
+        "2026-09-15 · Nervous System Therapy | Bansuri Instrumental | 1.5 Hours [VqpymCoZ5bA]",
+        "2026-09-16 · Break Negative Patterns | Slow Tanpura | 1.5 Hours [ZBrnb2cZHAs]",
+        "2026-09-17 · Restart Your Life | Sarangi Therapy | 1.5 Hours [kUDGpp42Wc8]",
+        "2026-09-18 · Sleep Radio 24/7 | Bansuri & Sitar for Deep Sleep [Ocg6W1ijKA0]",
+        "2026-09-18 · Enter Flow State | Veena Instrumental | 1.5 Hours [mgJPPy7OEEA]",
+        "2026-09-19 · Remove Negative Thoughts | Bansuri Instrumental | 3 Hours [DzdvXejN1Us]"
       ],
       "week": "wk_2026-08-03",
       "reads": [],
@@ -467,7 +488,8 @@
       "linked_ships": [
         "v_2026-08-20_overnight_calm_bansuri_3hr",
         "2026-09-04 · Snowy Night Music | Bansuri & Tanpura 3hr — first VALID test (a real drone bed; the Aug-21 attempt substituted melodic Santoor)",
-        "2026-09-04 · Snowy Night Music | Bansuri & Tanpura | 3 Hours [dTlG68eidiw]"
+        "2026-09-04 · Snowy Night Music | Bansuri & Tanpura | 3 Hours [dTlG68eidiw]",
+        "2026-09-18 · Sleep Radio 24/7 | Bansuri & Sitar for Deep Sleep [Ocg6W1ijKA0]"
       ],
       "promoted_rule": null,
       "caveats": "⚠ Surbahar sleep 3hr just shipped ~Aug14 (SLEEP DEEPLY 55%) — possible sleep-3hr overlap; watch cannibalization.",
@@ -576,7 +598,15 @@
         "2026-09-07 · Morning Stillness | Surbahar Instrumental Music | 1.5 Hours [7YGvReb0Shc]",
         "2026-09-08 · Mental Overload | Tanpura Therapy | 1.5 Hours [iu30iCs4ZoE]",
         "2026-09-09 · Mental Exhaustion | Santoor Therapy | 1.5 Hours [dc64JdJSp9I]",
-        "2026-09-10 · Night Routine Music | Slow Surbahar | 3 Hours [G9VPjFgn4b8]"
+        "2026-09-10 · Night Routine Music | Slow Surbahar | 3 Hours [G9VPjFgn4b8]",
+        "2026-09-12 · Evening Music | Sarod Instrumental | 1.5 Hours [Oi5OHOy3SGo]",
+        "2026-09-14 · Wake Up Grateful | Sitar Instrumental | 1.5 Hours [rbL4V3dYsZg]",
+        "2026-09-15 · Nervous System Therapy | Bansuri Instrumental | 1.5 Hours [VqpymCoZ5bA]",
+        "2026-09-16 · Break Negative Patterns | Slow Tanpura | 1.5 Hours [ZBrnb2cZHAs]",
+        "2026-09-17 · Restart Your Life | Sarangi Therapy | 1.5 Hours [kUDGpp42Wc8]",
+        "2026-09-18 · Sleep Radio 24/7 | Bansuri & Sitar for Deep Sleep [Ocg6W1ijKA0]",
+        "2026-09-18 · Enter Flow State | Veena Instrumental | 1.5 Hours [mgJPPy7OEEA]",
+        "2026-09-19 · Remove Negative Thoughts | Bansuri Instrumental | 3 Hours [DzdvXejN1Us]"
       ],
       "promoted_rule": null,
       "caveats": "DEFERRED by choice. Re-open only as a clean 1-variable A/B.",
@@ -701,7 +731,15 @@
         "2026-09-07 · Morning Stillness | Surbahar Instrumental Music | 1.5 Hours [7YGvReb0Shc]",
         "2026-09-08 · Mental Overload | Tanpura Therapy | 1.5 Hours [iu30iCs4ZoE]",
         "2026-09-09 · Mental Exhaustion | Santoor Therapy | 1.5 Hours [dc64JdJSp9I]",
-        "2026-09-10 · Night Routine Music | Slow Surbahar | 3 Hours [G9VPjFgn4b8]"
+        "2026-09-10 · Night Routine Music | Slow Surbahar | 3 Hours [G9VPjFgn4b8]",
+        "2026-09-12 · Evening Music | Sarod Instrumental | 1.5 Hours [Oi5OHOy3SGo]",
+        "2026-09-14 · Wake Up Grateful | Sitar Instrumental | 1.5 Hours [rbL4V3dYsZg]",
+        "2026-09-15 · Nervous System Therapy | Bansuri Instrumental | 1.5 Hours [VqpymCoZ5bA]",
+        "2026-09-16 · Break Negative Patterns | Slow Tanpura | 1.5 Hours [ZBrnb2cZHAs]",
+        "2026-09-17 · Restart Your Life | Sarangi Therapy | 1.5 Hours [kUDGpp42Wc8]",
+        "2026-09-18 · Sleep Radio 24/7 | Bansuri & Sitar for Deep Sleep [Ocg6W1ijKA0]",
+        "2026-09-18 · Enter Flow State | Veena Instrumental | 1.5 Hours [mgJPPy7OEEA]",
+        "2026-09-19 · Remove Negative Thoughts | Bansuri Instrumental | 3 Hours [DzdvXejN1Us]"
       ]
     },
     {
@@ -749,7 +787,15 @@
         "2026-09-07 · Morning Stillness | Surbahar Instrumental Music | 1.5 Hours [7YGvReb0Shc]",
         "2026-09-08 · Mental Overload | Tanpura Therapy | 1.5 Hours [iu30iCs4ZoE]",
         "2026-09-09 · Mental Exhaustion | Santoor Therapy | 1.5 Hours [dc64JdJSp9I]",
-        "2026-09-10 · Night Routine Music | Slow Surbahar | 3 Hours [G9VPjFgn4b8]"
+        "2026-09-10 · Night Routine Music | Slow Surbahar | 3 Hours [G9VPjFgn4b8]",
+        "2026-09-12 · Evening Music | Sarod Instrumental | 1.5 Hours [Oi5OHOy3SGo]",
+        "2026-09-14 · Wake Up Grateful | Sitar Instrumental | 1.5 Hours [rbL4V3dYsZg]",
+        "2026-09-15 · Nervous System Therapy | Bansuri Instrumental | 1.5 Hours [VqpymCoZ5bA]",
+        "2026-09-16 · Break Negative Patterns | Slow Tanpura | 1.5 Hours [ZBrnb2cZHAs]",
+        "2026-09-17 · Restart Your Life | Sarangi Therapy | 1.5 Hours [kUDGpp42Wc8]",
+        "2026-09-18 · Sleep Radio 24/7 | Bansuri & Sitar for Deep Sleep [Ocg6W1ijKA0]",
+        "2026-09-18 · Enter Flow State | Veena Instrumental | 1.5 Hours [mgJPPy7OEEA]",
+        "2026-09-19 · Remove Negative Thoughts | Bansuri Instrumental | 3 Hours [DzdvXejN1Us]"
       ]
     },
     {
@@ -780,7 +826,15 @@
         "2026-09-07 · Morning Stillness | Surbahar Instrumental Music | 1.5 Hours [7YGvReb0Shc]",
         "2026-09-08 · Mental Overload | Tanpura Therapy | 1.5 Hours [iu30iCs4ZoE]",
         "2026-09-09 · Mental Exhaustion | Santoor Therapy | 1.5 Hours [dc64JdJSp9I]",
-        "2026-09-10 · Night Routine Music | Slow Surbahar | 3 Hours [G9VPjFgn4b8]"
+        "2026-09-10 · Night Routine Music | Slow Surbahar | 3 Hours [G9VPjFgn4b8]",
+        "2026-09-12 · Evening Music | Sarod Instrumental | 1.5 Hours [Oi5OHOy3SGo]",
+        "2026-09-14 · Wake Up Grateful | Sitar Instrumental | 1.5 Hours [rbL4V3dYsZg]",
+        "2026-09-15 · Nervous System Therapy | Bansuri Instrumental | 1.5 Hours [VqpymCoZ5bA]",
+        "2026-09-16 · Break Negative Patterns | Slow Tanpura | 1.5 Hours [ZBrnb2cZHAs]",
+        "2026-09-17 · Restart Your Life | Sarangi Therapy | 1.5 Hours [kUDGpp42Wc8]",
+        "2026-09-18 · Sleep Radio 24/7 | Bansuri & Sitar for Deep Sleep [Ocg6W1ijKA0]",
+        "2026-09-18 · Enter Flow State | Veena Instrumental | 1.5 Hours [mgJPPy7OEEA]",
+        "2026-09-19 · Remove Negative Thoughts | Bansuri Instrumental | 3 Hours [DzdvXejN1Us]"
       ]
     },
     {
@@ -855,7 +909,10 @@
       "linked_ships": [
         "2026-09-04 · Snowy Night Music | Bansuri & Tanpura | 3 Hours [dTlG68eidiw]",
         "2026-09-07 · Morning Stillness | Surbahar Instrumental Music | 1.5 Hours [7YGvReb0Shc]",
-        "2026-09-10 · Night Routine Music | Slow Surbahar | 3 Hours [G9VPjFgn4b8]"
+        "2026-09-10 · Night Routine Music | Slow Surbahar | 3 Hours [G9VPjFgn4b8]",
+        "2026-09-15 · Nervous System Therapy | Bansuri Instrumental | 1.5 Hours [VqpymCoZ5bA]",
+        "2026-09-17 · Restart Your Life | Sarangi Therapy | 1.5 Hours [kUDGpp42Wc8]",
+        "2026-09-18 · Sleep Radio 24/7 | Bansuri & Sitar for Deep Sleep [Ocg6W1ijKA0]"
       ],
       "read_schedule": {
         "d7": "2026-09-14",
@@ -906,7 +963,15 @@
         "2026-09-08 · Mental Overload | Tanpura Therapy | 1.5 Hours [iu30iCs4ZoE]",
         "2026-09-09 · Mental Exhaustion | Santoor Therapy | 1.5 Hours [dc64JdJSp9I]",
         "2026-09-10 · Night Routine Music | Slow Surbahar | 3 Hours [G9VPjFgn4b8]",
-        "v_2026-09-26_fall_into_deep_sleep_bansuri_3hr - specced AGAINST the inert sub-50-BPM bed; target AVD >= 18%"
+        "v_2026-09-26_fall_into_deep_sleep_bansuri_3hr - specced AGAINST the inert sub-50-BPM bed; target AVD >= 18%",
+        "2026-09-12 · Evening Music | Sarod Instrumental | 1.5 Hours [Oi5OHOy3SGo]",
+        "2026-09-14 · Wake Up Grateful | Sitar Instrumental | 1.5 Hours [rbL4V3dYsZg]",
+        "2026-09-15 · Nervous System Therapy | Bansuri Instrumental | 1.5 Hours [VqpymCoZ5bA]",
+        "2026-09-16 · Break Negative Patterns | Slow Tanpura | 1.5 Hours [ZBrnb2cZHAs]",
+        "2026-09-17 · Restart Your Life | Sarangi Therapy | 1.5 Hours [kUDGpp42Wc8]",
+        "2026-09-18 · Sleep Radio 24/7 | Bansuri & Sitar for Deep Sleep [Ocg6W1ijKA0]",
+        "2026-09-18 · Enter Flow State | Veena Instrumental | 1.5 Hours [mgJPPy7OEEA]",
+        "2026-09-19 · Remove Negative Thoughts | Bansuri Instrumental | 3 Hours [DzdvXejN1Us]"
       ],
       "read_on": "2026-09-11 (d7) — and again on the Fri 2026-09-11 Santoor 3hr, which is specced against this finding.",
       "reads": [
@@ -948,7 +1013,8 @@
         "v_2026-09-22_whispers_of_peace_bansuri (treatment)",
         "v_2026-09-23_mental_clutter_santoor (control)",
         "v_2026-09-24_stop_chasing_thoughts_surbahar (control)",
-        "v_2026-09-25_tension_relief_sarangi (control)"
+        "v_2026-09-25_tension_relief_sarangi (control)",
+        "2026-09-19 · Remove Negative Thoughts | Bansuri Instrumental | 3 Hours [DzdvXejN1Us]"
       ],
       "promoted_rule": null,
       "caveats": "Day and instrument vary together - the test reads the COMBINED best-shot, not the two effects separately. n=2 treatment ships. Requires the export to carry 'Average percentage viewed (%)'. Secondary tally across all six ships: short-pipeline arm vs long-pattern arm wins, from Studio Test & compare.",
