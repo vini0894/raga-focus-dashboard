@@ -1,0 +1,314 @@
+{
+  "week_id": "wk_2026-09-14",
+  "generated": "2026-09-12",
+  "regime": "DECAY",
+  "competitor_snapshot": "2026-09-04",
+  "weightings_legend": {
+    "t1_growth": {
+      "rev": 0.25,
+      "t1": 0.45,
+      "strat": 0.2,
+      "comp": 0.1
+    },
+    "revenue_max": {
+      "rev": 0.55,
+      "t1": 0.15,
+      "strat": 0.2,
+      "comp": 0.1
+    },
+    "balanced": {
+      "rev": 0.3,
+      "t1": 0.3,
+      "strat": 0.25,
+      "comp": 0.15
+    }
+  },
+  "slots": [
+    {
+      "date": "2026-09-14",
+      "dow": "Mon",
+      "type": "open",
+      "current_draft_lane": null,
+      "ranked_lanes": {
+        "t1_growth": [
+          "cognitive",
+          "stress_burnout",
+          "morning",
+          "calm_relax",
+          "healing",
+          "anxiety",
+          "sleep"
+        ],
+        "revenue_max": [
+          "cognitive",
+          "healing",
+          "stress_burnout",
+          "calm_relax",
+          "morning",
+          "sleep",
+          "anxiety"
+        ],
+        "balanced": [
+          "cognitive",
+          "stress_burnout",
+          "healing",
+          "morning",
+          "calm_relax",
+          "anxiety",
+          "sleep"
+        ]
+      },
+      "viable_lanes": [
+        "cognitive",
+        "anxiety",
+        "stress_burnout",
+        "healing",
+        "calm_relax",
+        "morning",
+        "sleep"
+      ],
+      "excluded": []
+    },
+    {
+      "date": "2026-09-15",
+      "dow": "Tue",
+      "type": "draft",
+      "current_draft_lane": "anxiety",
+      "ranked_lanes": {
+        "t1_growth": [
+          "cognitive",
+          "stress_burnout",
+          "morning",
+          "calm_relax",
+          "healing",
+          "anxiety",
+          "sleep"
+        ],
+        "revenue_max": [
+          "cognitive",
+          "healing",
+          "stress_burnout",
+          "calm_relax",
+          "morning",
+          "sleep",
+          "anxiety"
+        ],
+        "balanced": [
+          "cognitive",
+          "stress_burnout",
+          "healing",
+          "morning",
+          "calm_relax",
+          "anxiety",
+          "sleep"
+        ]
+      },
+      "viable_lanes": [
+        "cognitive",
+        "anxiety",
+        "stress_burnout",
+        "healing",
+        "calm_relax",
+        "morning",
+        "sleep"
+      ],
+      "excluded": []
+    },
+    {
+      "date": "2026-09-16",
+      "dow": "Wed",
+      "type": "open",
+      "current_draft_lane": null,
+      "ranked_lanes": {
+        "t1_growth": [
+          "cognitive",
+          "stress_burnout",
+          "morning",
+          "calm_relax",
+          "healing",
+          "anxiety",
+          "sleep"
+        ],
+        "revenue_max": [
+          "cognitive",
+          "healing",
+          "stress_burnout",
+          "calm_relax",
+          "morning",
+          "sleep",
+          "anxiety"
+        ],
+        "balanced": [
+          "cognitive",
+          "stress_burnout",
+          "healing",
+          "morning",
+          "calm_relax",
+          "anxiety",
+          "sleep"
+        ]
+      },
+      "viable_lanes": [
+        "cognitive",
+        "anxiety",
+        "stress_burnout",
+        "healing",
+        "calm_relax",
+        "morning",
+        "sleep"
+      ],
+      "excluded": []
+    },
+    {
+      "date": "2026-09-17",
+      "dow": "Thu",
+      "type": "open",
+      "current_draft_lane": null,
+      "ranked_lanes": {
+        "t1_growth": [
+          "cognitive",
+          "stress_burnout",
+          "morning",
+          "calm_relax",
+          "healing",
+          "anxiety",
+          "sleep"
+        ],
+        "revenue_max": [
+          "cognitive",
+          "healing",
+          "stress_burnout",
+          "calm_relax",
+          "morning",
+          "sleep",
+          "anxiety"
+        ],
+        "balanced": [
+          "cognitive",
+          "stress_burnout",
+          "healing",
+          "morning",
+          "calm_relax",
+          "anxiety",
+          "sleep"
+        ]
+      },
+      "viable_lanes": [
+        "cognitive",
+        "anxiety",
+        "stress_burnout",
+        "healing",
+        "calm_relax",
+        "morning",
+        "sleep"
+      ],
+      "excluded": []
+    },
+    {
+      "date": "2026-09-18",
+      "dow": "Fri",
+      "type": "open",
+      "current_draft_lane": null,
+      "ranked_lanes": {
+        "t1_growth": [
+          "cognitive",
+          "stress_burnout",
+          "morning",
+          "calm_relax",
+          "healing",
+          "anxiety",
+          "sleep"
+        ],
+        "revenue_max": [
+          "cognitive",
+          "healing",
+          "stress_burnout",
+          "calm_relax",
+          "morning",
+          "sleep",
+          "anxiety"
+        ],
+        "balanced": [
+          "cognitive",
+          "stress_burnout",
+          "healing",
+          "morning",
+          "calm_relax",
+          "anxiety",
+          "sleep"
+        ]
+      },
+      "viable_lanes": [
+        "cognitive",
+        "anxiety",
+        "stress_burnout",
+        "healing",
+        "calm_relax",
+        "morning",
+        "sleep"
+      ],
+      "excluded": []
+    }
+  ],
+  "competitor_picks": [
+    {
+      "date": "2026-09-14",
+      "lane": "cognitive",
+      "instruments": [
+        "Sitar",
+        "Sarod",
+        "Santoor"
+      ],
+      "inspired_by": {
+        "title": "Clear Negative Thoughts: Krishna Flute & Sitar to Quiet Mind \u0964 Indian Meditation Music to Deep Focus",
+        "competitor": "Healing Raga Studio",
+        "views_per_sub": 23.3,
+        "levers": []
+      },
+      "dupe_warning": null
+    },
+    {
+      "date": "2026-09-16",
+      "lane": "morning",
+      "instruments": [
+        "Sitar",
+        "Bansuri",
+        "Dilruba"
+      ],
+      "inspired_by": {
+        "title": "Dopamine Boot Music for Deep Relaxation | Sitar & Flute for Positive Energy | Focus & Feel Happy",
+        "competitor": "Trust in Gods",
+        "views_per_sub": 11.33,
+        "levers": [
+          "clinical-term"
+        ]
+      },
+      "dupe_warning": null
+    }
+  ],
+  "competitor_picks_required": 2,
+  "competitor_picks_shortfall": null,
+  "competitor_pick": {
+    "date": "2026-09-14",
+    "lane": "cognitive",
+    "instruments": [
+      "Sitar",
+      "Sarod",
+      "Santoor"
+    ],
+    "inspired_by": {
+      "title": "Clear Negative Thoughts: Krishna Flute & Sitar to Quiet Mind \u0964 Indian Meditation Music to Deep Focus",
+      "competitor": "Healing Raga Studio",
+      "views_per_sub": 23.3,
+      "levers": []
+    },
+    "dupe_warning": null
+  },
+  "next_steps": [
+    "EVALUATE ranks candidate lanes per movable slot under 3 weightings \u2014 human picks the philosophy per week.",
+    "Regime=DECAY. Uncovered priority lanes: calm_relax, cognitive, healing, morning, sleep, stress_burnout.",
+    "competitor_picks carries the 2 competitor-inspired ships the week must run (only those clearing every gate).",
+    "Each competitor-inspired ship needs an OWNED-HOST routing partner \u2014 wave adjacency buys launch entry, not durability.",
+    "Lock title/thumb per \u00a7AUTO-TRIGGER steps 2-5 (VidIQ + 4-source conflict check) before writing briefs."
+  ]
+}

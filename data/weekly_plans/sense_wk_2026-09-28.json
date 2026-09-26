@@ -1,0 +1,148 @@
+{
+  "week_id": "wk_2026-09-28",
+  "generated": "2026-09-26",
+  "week_start": "2026-09-28",
+  "week_end": "2026-10-04",
+  "freshness": {
+    "snapshot": "2026-09-26",
+    "age_days": 0,
+    "stale": false
+  },
+  "trajectory": {
+    "regime": "DECAY",
+    "diagnosis": "DISTRIBUTION is the bottleneck, NOT packaging. Impressions are falling while CTR is RISING \u2014 titles/thumbs are working; reach is the constraint. Lever this week: new-lane expansion + playlist/end-screen routing + lane-priority tilt. Re-thumbs help watch-time, not reach.",
+    "delta": {
+      "span": "2026-08-29 \u2192 2026-09-26",
+      "impressions": {
+        "from": 7495512,
+        "to": 4287740,
+        "pct": -42.8
+      },
+      "subs_gained": {
+        "from": 2426,
+        "to": 1121,
+        "pct": -53.8
+      },
+      "views": {
+        "from": 586254,
+        "to": 624502,
+        "pct": 6.5
+      },
+      "watch_hours": {
+        "from": 198639,
+        "to": 134053,
+        "pct": -32.5
+      },
+      "ctr_pp": 0.51,
+      "avd_pp": 0.98
+    },
+    "series": [
+      {
+        "date": "2026-08-29",
+        "n_videos": 142,
+        "impressions": 7495512,
+        "ctr": 5.17,
+        "avd": 21.95,
+        "subs": 2426,
+        "views": 586254
+      },
+      {
+        "date": "2026-08-31",
+        "n_videos": 143,
+        "impressions": 7217160,
+        "ctr": 5.22,
+        "avd": 22.09,
+        "subs": 2334,
+        "views": 589585
+      },
+      {
+        "date": "2026-09-02",
+        "n_videos": 144,
+        "impressions": 6848925,
+        "ctr": 5.27,
+        "avd": 22.27,
+        "subs": 2161,
+        "views": 587951
+      },
+      {
+        "date": "2026-09-06",
+        "n_videos": 146,
+        "impressions": 6164026,
+        "ctr": 5.39,
+        "avd": 0.0,
+        "subs": 1843,
+        "views": 583461
+      },
+      {
+        "date": "2026-09-12",
+        "n_videos": 150,
+        "impressions": 5189449,
+        "ctr": 5.59,
+        "avd": 0.0,
+        "subs": 1493,
+        "views": 576912
+      },
+      {
+        "date": "2026-09-18",
+        "n_videos": 157,
+        "impressions": 4686575,
+        "ctr": 5.63,
+        "avd": 22.84,
+        "subs": 1324,
+        "views": 610332
+      },
+      {
+        "date": "2026-09-21",
+        "n_videos": 159,
+        "impressions": 4590802,
+        "ctr": 5.63,
+        "avd": 22.93,
+        "subs": 1281,
+        "views": 617134
+      },
+      {
+        "date": "2026-09-26",
+        "n_videos": 164,
+        "impressions": 4287740,
+        "ctr": 5.68,
+        "avd": 22.93,
+        "subs": 1121,
+        "views": 624502
+      }
+    ]
+  },
+  "locked_week": {
+    "slots_filled": 0,
+    "ships": [],
+    "open_weekday_slots": [
+      "2026-09-28",
+      "2026-09-29",
+      "2026-09-30",
+      "2026-10-01",
+      "2026-10-02"
+    ],
+    "lanes_covered": {},
+    "instruments_used": {},
+    "spillover_beyond_week": []
+  },
+  "sense_flags": {
+    "uncovered_priority_lanes": [
+      "morning",
+      "sleep",
+      "anxiety",
+      "stress_burnout",
+      "calm_relax",
+      "cognitive",
+      "healing"
+    ],
+    "adjacency_dupes": [],
+    "title_word_saturation": []
+  },
+  "next_steps": [
+    "This is the SENSE pass \u2014 read it, THEN run plan_prep.py for the candidate slate (FILTER pass).",
+    "Regime = DECAY: DISTRIBUTION is the bottleneck, NOT packaging. Impressions are falling while CTR is RISING \u2014 titles/thumbs are working; reach is the constraint. Lever this week: new-lane expansion + playlist/end-screen routing + lane-priority tilt. Re-thumbs help watch-time, not reach.",
+    "Open weekday slots to fill: 2026-09-28, 2026-09-29, 2026-09-30, 2026-10-01, 2026-10-02",
+    "Priority lanes NOT yet covered by locked ships: morning, sleep, anxiety, stress_burnout, calm_relax, cognitive, healing \u2014 steer open slots here for lane-spread.",
+    "After plan_prep, run the CRITIQUE pass (lane-spread \u00b7 saturation \u00b7 hypothesis-overlap \u00b7 'strongest argument this plan is wrong') before locking."
+  ]
+}
