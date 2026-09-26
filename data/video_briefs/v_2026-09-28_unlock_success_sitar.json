@@ -1,0 +1,87 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-09-26",
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr Sitar/Bansuri median ~20% at d4-7, fresh 3hr median ~17% at d7-8). Never against the catalog median - it is survivor-inflated (banked 2026-09-26). Export MUST carry 'Average percentage viewed (%)'.",
+  "ab_design": "A = SHORT pipeline title on keyword 1; B = LONG competitor-pattern title on a DIFFERENT keyword 2 (user rule 2026-09-19). Pair thumb text A with title A and thumb text B with title B in Test & compare. Tally short-vs-long across the six ships.",
+  "hypothesis_id": "h_2026-09-21_hero_peak_day_retention",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14).",
+  "id": "v_2026-09-28_unlock_success_sitar",
+  "planned_date": "2026-09-28",
+  "planned_slot": "06:30 IST AM · Mon",
+  "lane": "morning",
+  "daypart": "morning",
+  "instrument": "Sitar",
+  "raga": "Ahir Bhairav",
+  "title_variants": {
+    "A": "Unlock Success | Sitar Instrumental | 1.5 Hours",
+    "B": "Morning Glow: Bright Sitar & Tabla to Wake Up Clear, Light and Ready for the Day | 1.5 Hours"
+  },
+  "title": "Unlock Success | Sitar Instrumental | 1.5 Hours",
+  "title_note": "HERO x PEAK DAY, Monday register = motivation/uplift (user 2026-09-19), deliberately NOT the calm/cortisol wave and NOT the dead pre-pivot focus/productivity family that last Monday's lead came from (Morning Productivity: 10.6K impressions at d5 = half of the Sep 14 Monday). A = 'Unlock Success': in live use on Healing Raga Studio's SITAR title 'Remove Obstacles & Unlock Success: Sitar Instrumental & Bansuri Music for a New Beginning & Clarity' (1,153 views/day at 11 days, 0.61 v/sub). B = 'Morning Glow': Soulful Breathscape 'Morning Glow - Bansuri therapy for Mental Clarity, Focus & Calm', 6,102 views on day 1 (not yet durable - a day-one read). PROVES: success/uplift noun vs morning-glow sensory promise, short vs long. Week-diversity: 'morning' appears in Mon B and Tue A only.",
+  "gate_override": "USER-DIRECTED hero slot (Sitar on Monday, 2026-09-19). (1) track_record reads Sitar x morning FLOP on a 28-day median of 1,137 (n=8) - era split since Aug 1: Morning Routine 581 / Fresh Mind 2,557 / Wake Up Grateful 3,273 / Morning Productivity 1,694 -> median 2,126 vs the fresh-ship median ~490. (2) packaging clone vs Wake Up Grateful (Sep 14, 14 days, 955 engaged - winning) and Morning Productivity (Sep 21, 7 days, 422 engaged - not winning): same instrument+lane+format is the hero cadence itself; mitigated by a different register (success/uplift) and lead family.",
+  "validated_keywords": [
+    "'Unlock Success' - lead_prescreen FRESH 2026-09-26; in live use (Healing Raga Studio Sitar title, 1,153 views/day @11d)",
+    "'Morning Glow' - lead_prescreen FRESH 2026-09-26; in live use (Soulful Breathscape, 6,102 views on day 1)",
+    "NOT used: productivity/focus family (dead lane focus_productivity_pre_pivot; last Monday's lead), cortisol/nervous-system (Tuesday's wave, and user's Monday-register rule), dopamine (protect #1)",
+    "title_preflight: A 47 chars; B long by design"
+  ],
+  "thumbnail_text_main": "UNLOCK YOUR DAY",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "UNLOCK YOUR DAY",
+      "strategy": "15 chars / 3 words, outcome imperative (morning lane's winning format: START YOUR DAY STRONG, WIN YOUR DAY). Deduped against the 92 shipped/queued thumb texts - no match."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "GLOW INTO THE DAY",
+      "strategy": "17 chars / 4 words, sensory outcome. Deduped - no match."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. Show the VIEWER living the moment, never a musician performing (6.11% vs 3.03% CTR). Pichwai/Kangra miniature, aged cream parchment, ornate border. Scene: first light on a rooftop terrace, a person stepping out of the doorway into warm gold sun, arms loosely stretched overhead, a cup of chai on the ledge, a small potted tulsi, the city soft and hazy beyond. A sitar rests against the doorframe at the frame edge, never held. Text in its own banner panel at ~35% of frame, dark-teal serif, small second tier line: 'Sitar · Morning Uplift · 1.5 Hours'. Warm, bright, energised - match the tabla-driven audio (Test #50: thumb tone must match the music).",
+  "playlists": [
+    "Morning Energy",
+    "Peaceful Music"
+  ],
+  "music_direction": "CLONE THE CHANNEL'S BEST-RETAINING SITAR BED: 'Morning Routine Music | Slow Sitar & 432Hz' (Aug 3, AVD 43.1%, 63% of viewers still there after the first 2 minutes vs 48% on the Sep 21 Monday). Raga Ahir Bhairav, soft LIGHT TABLA (Sitar's tabla rule), warm rounded tone, unhurried steady morning character around 70 BPM, calm positive energy. Uplift register - forward-moving, not sleepy. The melody must be present within the first 15 seconds: the retention cliff on every ship sits between 0:54 and 1:48, so no long alap, no fade-in, no drone-only opening. Suggested Suno prompt below is the Aug 3 prompt verbatim; the user may generate their own.",
+  "suno_prompt": "Instrumental only, no vocals — gentle Indian classical sitar in Raga Ahir Bhairav with soft light tabla, warm rounded tone, unhurried steady morning character around 70 BPM, calm positive energy, seamless loop.",
+  "experiment": "Hero x peak day, week 2, with an UPLIFT lead instead of a dead-family lead. Success at matched age: d7 AVD >= 20% (fresh 1.5hr Sitar/Bansuri median at d4-7) AND first-week impressions >= 20K (the Sep 14 Monday's 21.5K). Read d7 2026-10-05. Secondary: short A vs long B arm tally.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-09-28 06:30 IST",
+    "opening_rule": "melody in by 0:15, no fade-in"
+  },
+  "slot_note": "AM 06:30 Monday - highest consumption day, hero instrument (user 2026-09-19).",
+  "competitor_basis": "Not a designated mirror (the week's two mirrors are Tue cortisol and Sat Gentle Healing) but both leads are in live competitor use, per the 2026-09-14 title policy. Routing: enters Morning Energy at #5, behind Morning Energy -> Productive Day -> Morning Gratitude -> Start Your Morning Right (all T1-register, 32-38% T1 watch-time).",
+  "tags": [
+    "unlock success",
+    "morning glow",
+    "sitar music",
+    "morning sitar music",
+    "indian classical sitar",
+    "uplifting sitar music",
+    "positive morning music",
+    "motivation music",
+    "morning motivation music",
+    "new beginning music",
+    "success music",
+    "morning energy music",
+    "indian instrumental music",
+    "raga ahir bhairav",
+    "sitar and tabla",
+    "start your day music",
+    "raga focus"
+  ],
+  "pending": [
+    "USER: generate the music to the music_direction spec - the Aug 3 bed, melody in by 0:15",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' for the d7 read"
+  ],
+  "description": "Unlock Success | Sitar Instrumental | 1.5 Hours of Bright Sitar to Start the Week\n\nMonday does not have to begin heavy. If the week already feels like a wall before you have stood up, let the first ninety minutes be bright instead: clear head, loose shoulders, a little momentum.\n\nThis uplifting Indian sitar music is designed to lift your energy without rushing you - warm, forward-moving and steady, the kind of morning where things start to open.\n\nEnjoy 1.5 hours of warm plucked sitar with soft tabla over a gentle drone, a flowing steady pulse and no vocals.\n\n▶ Keep the momentum — the full Morning Energy playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199l9NGQ0ig-jCkqp0iwI3c7m\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for Monday mornings, a fresh start, getting ready for work, morning walks, journaling, yoga flow, cooking breakfast, a bright commute, creative work, or any moment you want to feel unblocked.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sitar with light tabla and tanpura\nRaga: Ahir Bhairav (a dawn raga - grounded, hopeful)\nStyle: Indian classical instrumental, uplifting\nMood: Bright, clear, quietly confident\nAtmosphere: First sun on a rooftop, the day still open\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPress play as you get up and let the pulse set your pace for the first hour. Keep it on through breakfast and the first task of the day. Headphones bring out the sitar's warmth; speakers work beautifully in a kitchen or studio.\n\n⏱ CHAPTERS\n0:00 A clear beginning\n9:00 Light comes in\n18:00 Momentum, unhurried\n27:00 Doors opening\n36:00 Bright and steady\n45:00 The day takes shape\n54:00 Warm confidence\n1:03:00 Clear head, open path\n1:12:00 Carrying it forward\n1:21:00 Ready for the week\n\n⏱ BEST FOR\n• Monday and fresh-start mornings\n• Getting ready for work\n• Morning walks and stretching\n• Journaling and planning\n• Creative and focused work\n• Cooking and household mornings\n• Yoga flow\n• A positive commute\n• Lifting a flat mood\n• Background energy for the home\n\nIf this music gave your morning a lift, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#SitarMusic #MorningMusic #UpliftingMusic #IndianClassical #PositiveEnergy"
+}

@@ -1102,7 +1102,9 @@
         "v_2026-09-25_tension_relief_sarangi (control)",
         "2026-09-19 · Remove Negative Thoughts | Bansuri Instrumental | 3 Hours [DzdvXejN1Us]",
         "2026-09-21 · Morning Productivity Music | Sitar | 1.5 Hours [z8BRgTbC5ZY]",
-        "2026-09-22 · Whispers of Peace | Bansuri Instrumental | 1.5 Hours [crz6eYfbsEc]"
+        "2026-09-22 · Whispers of Peace | Bansuri Instrumental | 1.5 Hours [crz6eYfbsEc]",
+        "v_2026-09-28_unlock_success_sitar (week 2 treatment, uplift lead)",
+        "v_2026-09-29_morning_cortisol_reset_bansuri (week 2 treatment, cortisol mirror)"
       ],
       "promoted_rule": null,
       "caveats": "Day and instrument vary together - the test reads the COMBINED best-shot, not the two effects separately. n=2 treatment ships. Requires the export to carry 'Average percentage viewed (%)'. Secondary tally across all six ships: short-pipeline arm vs long-pattern arm wins, from Studio Test & compare.",
@@ -1186,7 +1188,8 @@
         "Surbahar"
       ],
       "linked_ships": [
-        "(pending lock) wk_2026-09-28 Thu Santoor sleep 3hr + Sat Bansuri sleep 3hr - both built to the <=3-segment spec"
+        "v_2026-09-30_sleep_in_santoor_3hr (Wed, seam build #1)",
+        "v_2026-10-03_music_before_bed_bansuri_3hr (Sat, seam build #2)"
       ],
       "promoted_rule": null,
       "caveats": "Seam dips are read from a single curve (n=1) and 1/7 intervals are inferred, not logged - the render log should record the exact seam timestamps for the two test ships. AVD must be read at matched age (d7), never against the catalog median.",

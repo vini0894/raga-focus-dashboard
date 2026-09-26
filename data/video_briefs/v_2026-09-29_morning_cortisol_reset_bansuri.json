@@ -1,0 +1,89 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-09-26",
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr Sitar/Bansuri median ~20% at d4-7, fresh 3hr median ~17% at d7-8). Never against the catalog median - it is survivor-inflated (banked 2026-09-26). Export MUST carry 'Average percentage viewed (%)'.",
+  "ab_design": "A = SHORT pipeline title on keyword 1; B = LONG competitor-pattern title on a DIFFERENT keyword 2 (user rule 2026-09-19). Pair thumb text A with title A and thumb text B with title B in Test & compare. Tally short-vs-long across the six ships.",
+  "hypothesis_id": "h_2026-09-21_hero_peak_day_retention",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14).",
+  "id": "v_2026-09-29_morning_cortisol_reset_bansuri",
+  "planned_date": "2026-09-29",
+  "planned_slot": "06:30 IST AM · Tue",
+  "lane": "morning",
+  "daypart": "morning",
+  "instrument": "Bansuri",
+  "raga": "Bhairav",
+  "title_variants": {
+    "A": "Morning Cortisol Reset | Bansuri Flute | 1.5 Hours",
+    "B": "Inner Silence: Gentle Bansuri Flute for a Quiet Mind at First Light | 1.5 Hours"
+  },
+  "title": "Morning Cortisol Reset | Bansuri Flute | 1.5 Hours",
+  "title_note": "HERO x PEAK DAY #2 and COMPETITOR MIRROR #1 of the week. The entire live morning wave is cortisol on Bansuri (see competitor_basis). A = 'Morning Cortisol Reset', the exact live Healing Raga Studio phrase and the phrasing of our own May 11 hit 'Calm Music | Sitar for Cortisol Reset' (28.7K lifetime views, the channel's highest value per watch-hour, T1-leaning); the three cortisol flops all used 'Cortisol Detox', a different phrase. B = 'Inner Silence' (Soulful Breathscape 'Morning Inner Silence', 1,396 views/day @8d), long pattern, no 'morning' so the week stays at two 'morning' titles. PROVES: clinical-somatic lead vs quiet-mind promise, short vs long. Slot 2 'Bansuri Flute' keeps A inside the 46-55 band (50 chars). [B reworded at gate time 2026-09-26: 'Before the Day Begins' -> 'at First Light' - week_diversity had 'day' x3 and 'before' x3.]",
+  "gate_override": "USER-DIRECTED (heroes on Mon+Tue, two Bansuri ships per week, 2026-09-19). (1) instrument cooldown: 3 days after the Sat 2026-09-26 Bansuri sleep 3hr (rule 5; the lane-diversity modifier allows 3 for a different lane, and it is a different runtime and daypart). (2) track_record Bansuri x morning FLOP on a 28-day median of 417 (n=7) - era split since Aug 1: Calm Morning 3,844 / Nervous System Therapy 2,696 / Whispers of Peace 2,090 / Morning Motivation Bilawal 251 -> median 2,393. (3) packaging clone vs Whispers of Peace (Sep 22, 7 days, 492 engaged @4d = at the fresh median) - the hero cadence itself.",
+  "validated_keywords": [
+    "'Morning Cortisol Reset' - lead_prescreen FRESH 2026-09-26; in live use (Healing Raga Studio, 1,711 views/day @17d, 1.39 v/sub)",
+    "'Inner Silence' - lead_prescreen FRESH with one soft flag (same concept as 'Sacred Silence | Slow Sarangi', 65 days ago, different instrument and lane); in live use (Soulful Breathscape 'Morning Inner Silence', 1,396 views/day @8d)",
+    "Own precedent: 'Calm Music | Sitar for Cortisol Reset' (May 11) 28.7K lifetime, still 1,739 views/28d, CTR 5.94, AVD 37.9%, T1 33% - the 'Reset' phrasing works; 'Cortisol Detox' x3 did not (617 / 216 / 50)",
+    "title_preflight: A 50 chars; B long by design"
+  ],
+  "thumbnail_text_main": "CALM BEFORE THE RUSH",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "CALM BEFORE THE RUSH",
+      "strategy": "20 chars / 4 words. Time-anchored state promise; calm tone to match soft flute audio (Test #50). Deduped - no match (LOWER YOUR CORTISOL is used, avoided)."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "QUIET BEFORE THE DAY",
+      "strategy": "20 chars / 4 words, same construction on the B keyword. Deduped - no match."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. The VIEWER, never a performer. Pichwai/Kangra miniature, aged cream parchment, ornate border. Scene: early light in a small kitchen, a person standing at the counter with both hands wrapped around a warm cup, eyes closed, exhaling, shoulders dropped, phone face-down on the counter behind them, a window with pale gold morning beyond. A bamboo flute rests on the windowsill at the frame edge. Text in its own banner panel at ~35% of frame, dark-teal serif, second tier line: 'Bansuri · Morning Calm · 1.5 Hours'. Soft palette - this is the calm-morning register, not energy.",
+  "playlists": [
+    "Morning Energy",
+    "Peaceful Music"
+  ],
+  "music_direction": "CLONE THE BEST-RETAINING FRESH BANSURI MORNING BED: 'Nervous System Therapy | Bansuri' (Sep 15, AVD 25.1% at d11, T1 34% of watch-time). Raga Bhairav (flat 2nd and flat 6th, grounding morning quality), breath-driven bamboo flute with long sustained notes and natural breath pauses, NO percussion, steady tanpura drone, 70 BPM. Soothing but not slow - no 'slow' in the prompt. Melody in by 0:15, no fade-in. Suggested Suno prompt below is the Sep 15 prompt verbatim; the user may generate their own. ⛔ claim_check CLEAN before rendering.",
+  "suno_prompt": "Instrumental only, no vocals, no humming — gentle Indian classical bansuri in Raga Bhairav, breath-driven bamboo flute with long sustained notes and natural breath pauses, flat 2nd and flat 6th for a grounding morning quality, no percussion, steady tanpura drone, 70 BPM, seamless loop.",
+  "experiment": "T1 MORNING REGISTER TEST: the cortisol wave on Bansuri in the peak morning slot. Success at matched age: d7 AVD >= 20%, T1 share of watch-time >= 30% (Nervous System Therapy did 34%), first-week impressions >= Whispers of Peace (12.9K @4d). Read d7 2026-10-06. Secondary: short A vs long B.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-09-29 06:30 IST",
+    "precheck": "python3 tools/claim_check.py <clips> --name bansuri_morning_sep29  (CLEAN before rendering)",
+    "opening_rule": "melody in by 0:15, no fade-in"
+  },
+  "slot_note": "AM 06:30 Tuesday - second-highest consumption day, hero instrument (user 2026-09-19).",
+  "competitor_basis": "COMPETITOR MIRROR #1 OF THE WEEK. The live morning wave (2026-09-26 snapshot) is cortisol on Bansuri: Soulful Breathscape 'Morning Cortisol Calm - Nervous System Reset | Bansuri Therapy' 5,833 views/day at 11 days (+38,487 views in 8 days, 1.47 v/sub); Soulful 'Morning Cortisol Detox - Raag Bhairavi Bansuri 432 Hz' 5,017/day at 4 days; Dhun Detox 'Cortisol Too High This Morning?' 3,514/day at 3 days; Healing Raga Studio 'Morning Cortisol Reset - 432Hz Bansuri Therapy' 1,711/day at 17 days (1.39 v/sub). Owned-host routing partner: 'Calm Morning Music | Relaxing Flute' (Aug 31, best fresh Bansuri morning) - this ship enters Morning Energy at #5 in the T1 block.",
+  "tags": [
+    "morning cortisol reset",
+    "cortisol reset music",
+    "cortisol music",
+    "bansuri flute",
+    "bansuri music",
+    "indian flute music",
+    "morning calm music",
+    "calm morning music",
+    "stress relief music morning",
+    "nervous system calm music",
+    "inner silence",
+    "quiet mind music",
+    "morning meditation music",
+    "indian instrumental music",
+    "raga bhairav",
+    "flute meditation music",
+    "raga focus"
+  ],
+  "pending": [
+    "⛔ FIRST: run tools/claim_check.py on the raw clips - render only on CLEAN",
+    "USER: generate the music to the music_direction spec - the Sep 15 bed, melody in by 0:15",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' for the d7 read"
+  ],
+  "description": "Morning Cortisol Reset | Bansuri Flute | 1.5 Hours of Calm Before the Rush\n\nIf you wake up already tense - heart a little fast, mind already at work before your feet touch the floor - that is the morning cortisol rush, and it does not have to run the day.\n\nThis gentle Indian flute music is designed to settle your nervous system in the first hour of the morning: slower breathing, a quieter mind, a calm that lasts into the day.\n\nEnjoy 1.5 hours of warm bansuri (Indian bamboo flute) over a steady tanpura drone, breath-led and unhurried, with no vocals.\n\n▶ Keep the calm going — the full Morning Energy playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199l9NGQ0ig-jCkqp0iwI3c7m\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for a slow morning, meditation, breathwork, yoga, tea or coffee by the window, journaling, prayer, a calm commute, gentle stretching, or easing into work without the rush.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Bansuri (Indian bamboo flute) with tanpura drone\nRaga: Bhairav (a serious, grounding dawn raga)\nStyle: Indian classical instrumental, meditative\nMood: Settled, steady, quietly clear\nAtmosphere: Early light, a warm cup, nowhere to rush to yet\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPlay it as soon as you wake, before the phone. Breathe out a little longer than you breathe in and let the long flute notes set the pace. Headphones bring out the breath in the bamboo; soft speakers work well too.\n\n⏱ CHAPTERS\n0:00 Before the rush\n9:00 The first long breath\n18:00 The pulse slows\n27:00 Quiet in the chest\n36:00 Light without pressure\n45:00 Steady and grounded\n54:00 Space between thoughts\n1:03:00 Inner silence\n1:12:00 Calm carried forward\n1:21:00 Ready, not rushed\n\n⏱ BEST FOR\n• Morning anxiety and a racing start\n• Meditation and breathwork\n• Yoga and gentle stretching\n• Tea or coffee by the window\n• Journaling and prayer\n• A calm commute\n• Easing into work\n• Lowering stress before a big day\n• Reading\n• Quiet background calm for the home\n\nIf this music helped you start calmer, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#BansuriMusic #MorningCalm #CortisolReset #IndianFlute #StressRelief"
+}

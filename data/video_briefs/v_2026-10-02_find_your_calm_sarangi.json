@@ -1,0 +1,88 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-09-26",
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr Sitar/Bansuri median ~20% at d4-7, fresh 3hr median ~17% at d7-8). Never against the catalog median - it is survivor-inflated (banked 2026-09-26). Export MUST carry 'Average percentage viewed (%)'.",
+  "ab_design": "A = SHORT pipeline title on keyword 1; B = LONG competitor-pattern title on a DIFFERENT keyword 2 (user rule 2026-09-19). Pair thumb text A with title A and thumb text B with title B in Test & compare. Tally short-vs-long across the six ships.",
+  "hypothesis_id": "h_2026-09-07_volume_restores_escalation",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14).",
+  "id": "v_2026-10-02_find_your_calm_sarangi",
+  "planned_date": "2026-10-02",
+  "planned_slot": "19:00 IST PM · Fri",
+  "lane": "anxiety",
+  "daypart": "evening",
+  "instrument": "Sarangi",
+  "raga": "Yaman",
+  "title_variants": {
+    "A": "Find Your Calm | Sarangi Instrumental | 1.5 Hours",
+    "B": "Let Go of Overthinking: Tender Sarangi to Quiet a Racing Mind at Night | 1.5 Hours"
+  },
+  "title": "Find Your Calm | Sarangi Instrumental | 1.5 Hours",
+  "title_note": "Control ship, DROPPABLE if the week runs five. Opens the UNTESTED Sarangi x anxiety cell (orchestrator #2 for anxiety); Sarangi's 'Restart Your Life' (Sep 17) was the fortnight's second-best sampled ship (21.7K impressions). A = 'Find Your Calm', VidIQ 62, FRESH (it was the unpicked B arm of the Sep 8 Tanpura brief). B = 'Let Go of Overthinking' (in live use, Dhun Detox, 306 views/day @7d - a weak source) in the long pattern. ⚠ FAMILY FLAG: 'overthinking' family n=4 on the channel (Overthinking Music x2, Stop Overthinking, Music for Overthinkers; median ~220 views, one evergreen at 590 with CTR 8.83) - accepted on the droppable control arm only; swap to 'Sleep Anxiety' (57, reserved) if you would rather not spend a B arm on that family. The anxiety lane's fresh-lead inventory is otherwise exhausted (nervous-system and negative families blocked). [B reworded at gate time 2026-09-26: 'Before Sleep' -> 'at Night' - keeps the week at two 'sleep' titles and two 'before'.]",
+  "gate_override": "None required: Sarangi cooldown 7 days (Sep 25 Tension Relief, stress lane - different lane); Sarangi x anxiety UNTESTED; soft clone vs Restart Your Life (Sep 17, 15 days).",
+  "validated_keywords": [
+    "'Find Your Calm' - VidIQ 62 (bank), lead_prescreen FRESH 2026-09-26 (one soft flag: unpicked title-B of the Sep 8 Tanpura brief)",
+    "'Let Go of Overthinking' - lead_prescreen FRESH 2026-09-26; in live use (Dhun Detox, 306 views/day @7d) - weak source, family n=4, flagged",
+    "NOT used: 'Can't Stop Thinking' (5 soft conflicts - the phrase is the thumb text in the RUNNING Test #64), nervous-system / negative-thought families (blocked), 'Anxiety Relief Music' (generic-soft anti-pattern as a lead)",
+    "title_preflight: A 49 chars; B long by design"
+  ],
+  "thumbnail_text_main": "BRAIN WON'T QUIT?",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "BRAIN WON'T QUIT?",
+      "strategy": "17 chars / 3 words, specific-state Q-hook (anxiety lane's winning format). MIND WON'T STOP? is used; this is deduped - no match."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "WIRED AT NIGHT?",
+      "strategy": "15 chars / 3 words, Q-hook on the B promise (night, racing mind). Deduped - no match."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. The VIEWER, never a performer. Pichwai/Kangra miniature, aged parchment, ornate border. Scene: night, a person sitting on the edge of the bed in a dim room, one small lamp, elbows on knees, hands loosely clasped, looking down, a glass of water on the nightstand, the window dark blue. A sarangi rests against the wall at the frame edge. Text in its own banner at ~35% of frame, dark-teal serif, second tier 'Sarangi · Evening Calm · 1.5 Hours'.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Peaceful Music"
+  ],
+  "music_direction": "Expressive bowed sarangi like a human voice, long singing phrases over a steady tanpura drone, Raga Yaman (expansive, open evening character), around 60 BPM, NO tabla. Warm, not mournful - the promise is calm, not grief (the Sep 25 Sarangi direction). Gentle/flowing, never 'slow' in the prompt (anxiety lane). Melody in by 0:15, no fade-in. Suggested Suno prompt below; the user may generate their own.",
+  "suno_prompt": "Instrumental only, no vocals, no humming — gentle Indian classical sarangi in Raga Yaman, expressive bowed tone like a warm human voice with long singing phrases, soft tanpura drone beneath, no percussion, around 60 BPM, seamless loop.",
+  "experiment": "Control ship (droppable). Arms: calm-state lead (scored) vs overthinking-release long arm (competitor phrase, weak family). Success at matched age: d7 AVD >= 20%. Read d7 2026-10-09.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-10-02 19:00 IST",
+    "opening_rule": "melody in by 0:15, no fade-in"
+  },
+  "slot_note": "PM 19:00 Friday - the droppable slot if production runs short (the two Bansuri renders and two 3hr seam builds come first).",
+  "competitor_basis": "Not a designated mirror; B lead in live use on a weak source. No working anxiety breakout exists outside the blocked nervous-system/negative families (Trust in Gods 12.3 v/sub is exactly those). Routing: enters Healing & Anxiety Relief at #9 after the fresh block; also Peaceful Music.",
+  "tags": [
+    "find your calm",
+    "calm music",
+    "anxiety relief music",
+    "sarangi music",
+    "sarangi instrumental",
+    "indian classical sarangi",
+    "overthinking music",
+    "let go of overthinking",
+    "racing mind music",
+    "calming music for anxiety",
+    "evening calm music",
+    "nervous system calm music",
+    "music for a quiet mind",
+    "indian instrumental music",
+    "raga yaman",
+    "relaxing sarangi music",
+    "raga focus"
+  ],
+  "pending": [
+    "USER: generate the music to the music_direction spec",
+    "DECIDE: keep B 'Let Go of Overthinking' (family n=4) or swap to 'Sleep Anxiety' (57, reserved)",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' for the d7 read"
+  ],
+  "description": "Find Your Calm | Sarangi Instrumental | 1.5 Hours to Quiet a Racing Mind\n\nThe day is over but your mind has not been told. If your thoughts keep circling - replaying, planning, worrying about tomorrow - let this play and give them somewhere softer to land.\n\nThis gentle Indian sarangi music is designed to quiet an overactive mind in the evening: long singing phrases that slow your breathing and take the edge off, so calm has room to come back.\n\nEnjoy 1.5 hours of warm bowed sarangi, tender and voice-like, over a steady tanpura drone, with no drums and no vocals.\n\n▶ Stay in the calm — the full Healing & Anxiety Relief playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199k-_9PNqaU2-Z_KhRN_X1hF\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for calming anxiety in the evening, overthinking at night, winding down after work, meditation, breathwork, journaling, a warm bath, reading, or the hour before sleep.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sarangi (Indian bowed string instrument) with tanpura\nRaga: Yaman (an expansive, open evening raga)\nStyle: Indian classical instrumental, meditative\nMood: Tender, steady, reassuring\nAtmosphere: Lamplight, the day behind you, breathing slowing down\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPlay it when the thoughts start to spin. Sit or lie down, let the long bowed notes stretch your exhale, and stop trying to solve anything for a while. Headphones bring out the voice-like warmth of the sarangi; soft speakers work well in a bedroom.\n\n⏱ CHAPTERS\n0:00 Let the thoughts slow\n9:00 A voice in the room\n18:00 The breath lengthens\n27:00 Loosening the loop\n36:00 Warm and steady\n45:00 Somewhere softer to land\n54:00 Quiet returns\n1:03:00 Nothing to solve now\n1:12:00 Calm settles in\n1:21:00 Ready for the night\n\n⏱ BEST FOR\n• Evening anxiety and overthinking\n• Winding down after work\n• Meditation and breathwork\n• Journaling\n• A warm bath\n• Reading before bed\n• Calming a racing mind at night\n• Emotional reset after a hard day\n• Gentle yoga and stretching\n• Quiet background calm\n\nIf this music helped you find your calm, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#SarangiMusic #CalmMusic #AnxietyRelief #Overthinking #IndianInstrumental"
+}

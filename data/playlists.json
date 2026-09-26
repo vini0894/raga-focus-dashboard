@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-21",
+ "updated": "2026-09-26",
  "planned": [
   {
    "name": "Mental Clarity Music",
@@ -103,7 +103,7 @@
   {
    "name": "Healing & Anxiety Relief Music",
    "playlist_id": "PLeZN0byo199k-_9PNqaU2-Z_KhRN_X1hF",
-   "count": 53,
+   "count": 55,
    "videos": [
     {
      "pos": 1,
@@ -316,6 +316,14 @@
     {
      "pos": 53,
      "title": "Remove Negative Thoughts | Bansuri Instrumental | 3 Hours"
+    },
+    {
+     "pos": 54,
+     "title": "Stop Chasing Every Thought | Surbahar | 1.5 Hours"
+    },
+    {
+     "pos": 55,
+     "title": "Tension Relief Music | Sarangi Instrumental | 1.5 Hours"
     }
    ]
   },
@@ -465,7 +473,7 @@
   {
    "name": "Meditation Music",
    "playlist_id": "PLeZN0byo199nvhUBCx5L9ROrDP44H4JzN",
-   "count": 35,
+   "count": 36,
    "videos": [
     {
      "pos": 1,
@@ -606,6 +614,10 @@
     {
      "pos": 35,
      "title": "Whispers of Peace | Bansuri Instrumental | 1.5 Hours"
+    },
+    {
+     "pos": 36,
+     "title": "Clear the Mental Clutter | Santoor | 1.5 Hours"
     }
    ]
   },
@@ -719,7 +731,7 @@
   {
    "name": "Peaceful Music",
    "playlist_id": "PLeZN0byo199nqHcU9IicTDcYHarl5MSia",
-   "count": 72,
+   "count": 75,
    "videos": [
     {
      "pos": 1,
@@ -1008,6 +1020,18 @@
     {
      "pos": 72,
      "title": "Whispers of Peace | Bansuri Instrumental | 1.5 Hours"
+    },
+    {
+     "pos": 73,
+     "title": "Clear the Mental Clutter | Santoor | 1.5 Hours"
+    },
+    {
+     "pos": 74,
+     "title": "Stop Chasing Every Thought | Surbahar | 1.5 Hours"
+    },
+    {
+     "pos": 75,
+     "title": "Tension Relief Music | Sarangi Instrumental | 1.5 Hours"
     }
    ]
   },

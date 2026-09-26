@@ -1,0 +1,156 @@
+{
+  "week_id": "wk_2026-09-28",
+  "week_start": "2026-09-28",
+  "week_end": "2026-10-04",
+  "created": "2026-09-26",
+  "status": "FINAL - 6 ships Mon-Sat, titles + thumb texts locked, all gates run (user lock 2026-09-26: 'create the briefs for the plan and push to dashboard')",
+  "notes": "SIX ships Mon-Sat, Sunday clear. Heroes on the two peak days (Sitar Mon AM, Bansuri Tue AM); two Bansuri ships (Tue morning 1.5hr, Sat sleep 3hr); two 3hr sleep anchors three days apart (Wed Santoor, Sat Bansuri) - the parked Santoor brief was parked on Sep 14 precisely so two 3hr sleep ships would not run two days apart. Friday is the droppable ship. Week 4 of h_2026-09-07_volume_restores_escalation (read ~2026-10-05).",
+  "hypothesis": {
+    "id": "h_2026-09-26_3hr_seam_retention",
+    "one_line": "The 3hr-only retention drift since Jul 31 is construction (merged-clip seams), not tempo: a 3hr built from <= 3 long crossfaded segments holds >= 17% at d7.",
+    "success": "Wed Santoor and Sat Bansuri 3hr: d7 AVD >= 17% at MATCHED AGE (Jun-Aug 3hr median) AND no relative-retention dip > 0.10 at the logged seam timestamps.",
+    "falsifier": "Seams removed, d7 AVD still <= 14% -> construction is not the cause; look at the sleep audience mix (Browse autoplay share) next.",
+    "reads": {
+      "wed_d7": "2026-10-07",
+      "sat_d7": "2026-10-10",
+      "week_verdict": "2026-10-17"
+    }
+  },
+  "week_level_decisions": {
+    "heroes_on_peak_days": "Sitar Mon 06:30 + Bansuri Tue 06:30 (user rule 2026-09-19). Both hero cells read FLOP on 28-day medians; overrides documented in each brief on the era split (post-Aug medians 2,126 / 2,393 vs fresh median ~490).",
+    "monday_register": "Uplift/motivation ('Unlock Success' / 'Morning Glow'), NOT productivity/focus (dead pre-pivot family - last Monday's lead halved the sampling) and NOT the calm/cortisol wave (user's Monday rule).",
+    "tuesday_mirror": "Competitor mirror #1 = the live morning cortisol wave on Bansuri (Soulful +38K views in 8 days). 'Cortisol Reset' phrasing (our May 11 Sitar hit, 28.7K lifetime, highest $/watch-hour) not 'Cortisol Detox' (the three flops).",
+    "ab_design": "A = short pipeline title on keyword 1; B = long competitor-pattern title on a different keyword 2. Thumb A pairs with title A. Tally short-vs-long across the six.",
+    "seam_spec": "Both 3hr ships built from at most three long unique generations with 20-30 s crossfades, seam timestamps recorded in production_spec.seams. The 'no sub-50 BPM' instruction is retracted: matched-age data shows no BPM effect.",
+    "avd_bars_matched_age": "Every AVD bar = same-age cohort median (d7: 1.5hr ~20%, 3hr ~17%), never the catalog median (survivor-inflated; it produced the fake '3hr collapse' and the 28% hero bar).",
+    "protect_the_top_10": "No look-alike of a top-10 video, no dopamine lead, no unlisting, no new playlists. Playlist re-sequence per ROUTING_PASS_2026-09-26.md v3 (register-checked on measured T1 shares; T1 chains kept intact).",
+    "playlist_link_in_descriptions": "Every brief's description carries the playlist link in the watch?v=VIDEO_ID&list= form (opens the playlist at the video). Added to data/playbook/description_template.md.",
+    "competitor_mirrors": "Two designated mirrors: Tue (cortisol wave, morning) and Sat arm B 'Gentle Healing' (Trust in Gods, 8.50 v/sub, +20K views in 8 days at 81 days old, sleep). Wed/Thu/Fri leads are in live competitor use or VidIQ-scored per the 2026-09-14 title policy.",
+    "sat_clone_decision": "Sat Bansuri x sleep x 3hr is 7 days after 'Fall Into Deep Sleep' (Sep 26). brief_gate FAILs only if the incumbent is winning: read its d5 engaged views on Fri Oct 2 vs ~430; if winning, ship under the standing anchor rule (documented) or swap to Surbahar x sleep x 3hr (orchestrator #1 for Oct 3) with the same titles.",
+    "friday_droppable": "Fri Sarangi is the droppable ship; its B arm uses the 'overthinking' family (n=4, weak) - swap to 'Sleep Anxiety' (57, reserved) if preferred.",
+    "rate_frame": "Fortnight read 2026-09-26: last week's gain was entirely rate-driven on flat views and watch-hours; uploads remain a small share. Priorities: protect the top videos through Q4, route watch-hours to high-value videos (playlists), make the hero slots earn their sampling. Morning-lane videos earn the most per watch-hour; sleep is the volume anchor."
+  },
+  "ships": [
+    {
+      "date": "2026-09-28",
+      "day": "Mon",
+      "slot": "06:30",
+      "lane": "morning",
+      "instrument": "Sitar",
+      "runtime_min": 90,
+      "brief": "v_2026-09-28_unlock_success_sitar",
+      "title_a": "Unlock Success | Sitar Instrumental | 1.5 Hours",
+      "title_b": "Morning Glow: Bright Sitar & Tabla to Wake Up Clear, Light and Ready for the Day | 1.5 Hours",
+      "thumb_a": "UNLOCK YOUR DAY",
+      "thumb_b": "GLOW INTO THE DAY",
+      "role": "HERO x PEAK DAY (uplift register)",
+      "competitor_mirror": false
+    },
+    {
+      "date": "2026-09-29",
+      "day": "Tue",
+      "slot": "06:30",
+      "lane": "morning",
+      "instrument": "Bansuri",
+      "runtime_min": 90,
+      "brief": "v_2026-09-29_morning_cortisol_reset_bansuri",
+      "title_a": "Morning Cortisol Reset | Bansuri Flute | 1.5 Hours",
+      "title_b": "Inner Silence: Gentle Bansuri Flute for a Quiet Mind at First Light | 1.5 Hours",
+      "thumb_a": "CALM BEFORE THE RUSH",
+      "thumb_b": "QUIET BEFORE THE DAY",
+      "role": "HERO x PEAK DAY + competitor mirror #1 (cortisol wave)",
+      "competitor_mirror": true
+    },
+    {
+      "date": "2026-09-30",
+      "day": "Wed",
+      "slot": "19:00",
+      "lane": "sleep",
+      "instrument": "Santoor",
+      "runtime_min": 180,
+      "brief": "v_2026-09-30_sleep_in_santoor_3hr",
+      "title_a": "It's Okay to Sleep In | Slow Santoor | 3 Hours",
+      "title_b": "All Night Sleep: Slow Santoor and a Soft Night Raga to Rest Deep and Unbroken | 3 Hours",
+      "thumb_a": "SLEEP IN TOMORROW",
+      "thumb_b": "STAY IN BED",
+      "role": "sleep anchor #1 · seam-spec build #1",
+      "competitor_mirror": false
+    },
+    {
+      "date": "2026-10-01",
+      "day": "Thu",
+      "slot": "19:00",
+      "lane": "stress_burnout",
+      "instrument": "Tanpura",
+      "runtime_min": 90,
+      "brief": "v_2026-10-01_after_a_stressful_day_tanpura",
+      "title_a": "After a Stressful Day | Slow Tanpura | 1.5 Hours",
+      "title_b": "You've Done Enough Today: Slow Tanpura Drone to Set the Day Down and Let Your Shoulders Drop | 1.5 Hours",
+      "thumb_a": "ROUGH DAY?",
+      "thumb_b": "CLOCK OFF NOW",
+      "role": "control (supporting instrument)",
+      "competitor_mirror": false
+    },
+    {
+      "date": "2026-10-02",
+      "day": "Fri",
+      "slot": "19:00",
+      "lane": "anxiety",
+      "instrument": "Sarangi",
+      "runtime_min": 90,
+      "brief": "v_2026-10-02_find_your_calm_sarangi",
+      "title_a": "Find Your Calm | Sarangi Instrumental | 1.5 Hours",
+      "title_b": "Let Go of Overthinking: Tender Sarangi to Quiet a Racing Mind at Night | 1.5 Hours",
+      "thumb_a": "BRAIN WON'T QUIT?",
+      "thumb_b": "WIRED AT NIGHT?",
+      "role": "control, droppable",
+      "competitor_mirror": false
+    },
+    {
+      "date": "2026-10-03",
+      "day": "Sat",
+      "slot": "19:00",
+      "lane": "sleep",
+      "instrument": "Bansuri",
+      "runtime_min": 180,
+      "brief": "v_2026-10-03_music_before_bed_bansuri_3hr",
+      "title_a": "Music Before Bed | Bansuri Instrumental | 3 Hours",
+      "title_b": "Gentle Healing: Soft Bansuri Raga for Stress Relief, Rest and Inner Peace | 3 Hours",
+      "thumb_a": "LIGHTS OUT, MIND OFF",
+      "thumb_b": "OUT TILL SUNRISE",
+      "role": "sleep anchor #2 · seam-spec build #2 · competitor mirror #2",
+      "competitor_mirror": true
+    }
+  ],
+  "lane_coverage": [
+    "morning",
+    "sleep",
+    "stress_burnout",
+    "anxiety"
+  ],
+  "uncovered": [
+    "cognitive",
+    "calm_relax",
+    "healing (KILLED)"
+  ],
+  "vidiq_batch_needed": [],
+  "blocking_decisions": [
+    "USER: Bansuri clips for Tue + Sat - tools/claim_check.py CLEAN before rendering",
+    "USER: build both 3hr ships to the seam spec and record seam timestamps in each brief's production_spec.seams",
+    "USER: six thumbnail images (prompt in each brief), each rendered with text A and text B",
+    "USER: paste each video's id into the playlist link in its description before publishing",
+    "USER: launch Test & compare (title A + thumb A vs title B + thumb B) at publish and log both arms to ab_raw_data.csv - 11 ships since Aug 24 are unlogged",
+    "USER Fri Oct 2: read Fall Into Deep Sleep's d5 engaged views -> decide the Sat clone override or the Surbahar swap",
+    "USER (weekend): playlist re-sequence per ROUTING_PASS_2026-09-26.md v3, then tools/pull_playlists.py",
+    "USER: confirm the Upstream plan/hours before the Oct 3 Sleep Radio read; re-auth the MCP with the monetary scope",
+    "USER: keep exporting the per-video CSV WITH 'Average percentage viewed (%)'"
+  ],
+  "title_policy": "Every lead is VidIQ-scored or in live competitor use, and prescreened FRESH 2026-09-26 (two deliberate repeats: 'Gentle Healing' 93d, and the 'Cortisol Reset' phrasing). Provenance is in each brief's validated_keywords.",
+  "gates_run": {
+    "brief_gate": "Wed/Thu/Fri WARN. Mon/Tue FAIL only on the documented hero overrides (track_record FLOP on 28-day medians, era split in each gate_override). Sat FAIL on the packaging clone vs the Sep 26 Bansuri 3hr - decision Friday on its d5 (sat_clone_decision).",
+    "week_diversity": "PASS-with-WARN after three B-arm rewordings ('day' x3, 'before' x3, 'morning'/'dawn' x3 all fixed); remaining x2 repeats are by design (morning lane x2, Bansuri x2, sleep x2).",
+    "title_preflight": "All six A arms inside 46-50 chars; B arms long by design.",
+    "cooldown_check": "All slots viable except Tue Bansuri (3 days after the Sep 26 sleep ship - the standing two-Bansuri override, different lane/runtime).",
+    "known_gate_noise": "brief_gate lead_fresh[A] 'USED - queued brief' is the brief's own file; ignore."
+  }
+}

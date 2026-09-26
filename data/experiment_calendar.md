@@ -84,3 +84,17 @@
 **Also running (channel-level):** h_2026-09-19_live_sleep_radio - 24/7 Sleep Radio live since 2026-09-19. Reads: 14d **2026-10-03**, 30d **2026-10-19**. Keep + add a morning stream at >= 25-50 average concurrent; stop at < 10 at 30d; check the source videos and the Sat Bansuri sleep anchors for cannibalisation.
 
 **DECIDED 2026-09-19 - not adopted (user: two Bansuri ships only):** h_signature_series (PARKED) - 3 Bansuri ships/week in one promise family with one fixed look, against the variety the gates enforce. wk_2026-09-21 as locked carries 2 Bansuri ships. User's call.
+
+
+## wk_2026-09-28 (locked 2026-09-26)
+
+| Day | Ship | Test / hypothesis | Arms | Read d7 |
+|---|---|---|---|---|
+| 2026-09-28 | Sitar morning uplift | HERO x PEAK DAY week 2 with an uplift lead (last Monday's lead was the dead productivity family). Arms: success noun vs morning-glow sensory promise | title+thumb A (short) vs B (long, different keyword) | **2026-10-05** |
+| 2026-09-29 | Bansuri morning cortisol | HERO x PEAK DAY + competitor mirror #1 (cortisol wave). T1 register read: T1 share of watch-time >= 30% at d7. Arms: clinical-somatic lead vs quiet-mind promise | A vs B | **2026-10-06** |
+| 2026-09-30 | Santoor sleep 3hr | h_2026-09-26_3hr_seam_retention ship #1 (<= 3 segments, crossfaded, seams logged). Arms: permission vs outcome promise | A vs B | **2026-10-07** |
+| 2026-10-01 | Tanpura stress | Control. Opens Tanpura x stress. Arms: functional time-marker vs permission-register TITLE (first in this lane) | A vs B | **2026-10-08** |
+| 2026-10-02 | Sarangi anxiety | Control, droppable. Opens Sarangi x anxiety. Arms: scored calm-state lead vs overthinking-release long arm | A vs B | **2026-10-09** |
+| 2026-10-03 | Bansuri sleep 3hr | Weekly anchor + seam-spec ship #2 + competitor mirror #2 ('Gentle Healing', Trust in Gods 8.50 v/sub). Clone gate vs Sep 26 decided Fri Oct 2 on its d5 | A vs B | **2026-10-10** |
+
+**Week-level:** h_2026-09-26_3hr_seam_retention - both 3hr ships d7 AVD >= 17% at MATCHED AGE and no retention-curve dip > 0.10 at the logged seams; verdict 2026-10-17. Secondary: h_2026-09-21 week 2 (matched-age AVD >= 20% + first-week impressions for the two heroes), h_2026-09-07 volume test week 4 read ~2026-10-05, routing pass v3 read 2026-10-10 (channel PLAYLIST watch-min/day vs 30.7K baseline), Sleep Radio 14d read 2026-10-03. Every AVD read at matched age, never against the catalog median.

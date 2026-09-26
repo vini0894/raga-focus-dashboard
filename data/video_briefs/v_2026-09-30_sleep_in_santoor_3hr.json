@@ -1,0 +1,91 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-09-12",
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr Sitar/Bansuri median ~20% at d4-7, fresh 3hr median ~17% at d7-8). Never against the catalog median - it is survivor-inflated (banked 2026-09-26). Export MUST carry 'Average percentage viewed (%)'.",
+  "id": "v_2026-09-30_sleep_in_santoor_3hr",
+  "planned_date": "2026-09-30",
+  "planned_slot": "19:00 IST PM · Wed",
+  "lane": "sleep",
+  "daypart": "night",
+  "instrument": "Santoor",
+  "raga": "Bageshri",
+  "title": "It's Okay to Sleep In | Slow Santoor | 3 Hours",
+  "title_variants": {
+    "A": "It's Okay to Sleep In | Slow Santoor | 3 Hours",
+    "B": "All Night Sleep: Slow Santoor and a Soft Night Raga to Rest Deep and Unbroken | 3 Hours"
+  },
+  "title_note": "UN-PARKED 2026-09-26 for wk_2026-09-28 (earmarked 2026-09-19). Leads unchanged and still FRESH: 'It's Okay to Sleep In' (permission register, +15pp over direct imperative in sleep, Test #54) vs 'All Night Sleep' - B recut into the long competitor pattern per the 2026-09-19 A/B rule (was the generic short arm). PROVES: permission vs outcome-promise, short vs long. Placed Wednesday, three days before the Sat Bansuri 3hr, because this brief was parked on Sep 14 precisely so two 3hr sleep ships would not run two days apart. ⚠ 'Sleep All Night' is a different, dead phrase (lost Test #61). ⚠ 'Deep Sleep Music' blocked (lost Test #39, clones a live Surbahar title). [B reworded at gate time 2026-09-26: 'Till Morning' -> 'Rest Deep and Unbroken' - 'morning' (and its synonym 'dawn') was x3 across the week.]",
+  "validated_keywords": [
+    "'It's Okay to Sleep In' - lead_prescreen FRESH 2026-09-26 (only flag = this brief's own file)",
+    "'All Night Sleep' - lead_prescreen FRESH 2026-09-26 (same self-flag)",
+    "permission register +15pp over direct imperative in sleep (Test #54)",
+    "cell: Santoor x sleep 3hr - last ran 2026-08-21 (Overnight Calm 717 views, CTR 5.43), 40 days clear",
+    "title_preflight: A 46 chars; B long by design"
+  ],
+  "thumbnail_text_main": "SLEEP IN TOMORROW",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "SLEEP IN TOMORROW",
+      "strategy": "17 chars / 3 words, permission register. Replaces NO ALARM TONIGHT, which shipped on the Sep 19 Bansuri 3hr (park_note). Deduped against the 92 shipped/queued texts - no match."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "STAY IN BED",
+      "strategy": "11 chars / 3 words, permission register. Deduped - no match."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. The VIEWER, never a performer. Pichwai/Kangra miniature, aged parchment, ornate border. Scene: a dark bedroom, curtains drawn, a person already under the blanket turning the alarm clock face-down on the nightstand, phone charging face-down beside it, one small warm lamp about to go off. Santoor rests at the frame edge, never the subject. Text in its own banner at ~35% of frame, dark-teal serif, second tier 'Santoor · Raga Bageshri · 3 Hours'. 120px legible. Distinct from Saturday's scene (lamp switch-off, moonlight).",
+  "playlists": [
+    "Sleep Music",
+    "Peaceful Music"
+  ],
+  "suno_prompt": "Instrumental only, no vocals, no humming - slow Indian classical santoor in Raga Bageshri, soft hammered strings with very long decay and sympathetic resonance carrying the sustain, no percussion, the feeling of a room going dark, 56 BPM, soft delta undertone.",
+  "suno_prompt_note": "BUILD SPEC CHANGED 2026-09-26 (h_2026-09-26_3hr_seam_retention). The matched-age read killed the tempo story: 45-70 BPM 3hr beds held and 48-60 BPM beds fell, so 56 BPM Bageshri stays for its character, not for the floor. What changes is CONSTRUCTION: the Sep 19 3hr's retention curve dips at 4 of its 6 clip seams; the Jul 10 held ship's curve is smooth. Build this from at most THREE long unique generations (e.g. 3 x 60 min via Suno extend) with 20-30 s crossfades at each seam, no hard cuts, and record the seam timestamps in production_spec.seams. Solo santoor, no tanpura (a tanpura bed cloned the Aug 28 Santoor & Tanpura 3hr). CALM lane, no tabla.",
+  "production_spec": {
+    "duration_minutes": 180,
+    "format": "3hr",
+    "publish": "2026-09-30 19:00 IST",
+    "build_rule": "<= 3 long unique segments, 20-30 s crossfade at every seam, no hard transitions",
+    "seams": "RECORD the seam timestamps here after the render (needed for the Oct 7 retention-curve read)"
+  },
+  "experiment": "h_2026-09-26_3hr_seam_retention ship #1 (Santoor). Success: d7 AVD >= 17% at matched age AND no relative-retention dip > 0.10 at the logged seam timestamps (Analytics API curve). Read d7 2026-10-07.",
+  "hypothesis_id": "h_2026-09-26_3hr_seam_retention",
+  "pending": [
+    "USER: build to the seam spec (<= 3 long segments, crossfaded) and record seam timestamps in production_spec.seams",
+    "USER: generate the new dark-bedroom image (alarm clock face-down); render text A and text B versions",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' for the d7 read"
+  ],
+  "park_note": "UN-PARKED 2026-09-26 into wk_2026-09-28 (Wed). Original park 2026-09-14: two 3hr sleep ships were two days apart; earmark 2026-09-19. Thumb text replaced (NO ALARM TONIGHT shipped Sep 19). Re-id'd from v_2026-09-18_sleep_in_santoor_3hr on 2026-09-26 so the week gates pick it up.",
+  "ab_design": "A = SHORT pipeline title on keyword 1; B = LONG competitor-pattern title on a DIFFERENT keyword 2 (user rule 2026-09-19). Pair thumb text A with title A and thumb text B with title B in Test & compare. Tally short-vs-long across the six ships.",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14).",
+  "gate_override": "None required: Santoor cooldown 7 days (last Sep 23, cognitive - different lane); Santoor x sleep THIN (n=1: Overnight Calm, Aug 21, 717 views, CTR 5.43, AVD 22.5%); cell clear of the clone window (40 days).",
+  "music_direction": "SEAM-SPEC BUILD #1 of the week (see suno_prompt_note). Target at matched age: d7 AVD >= 17% (Jun-Aug 3hr median), NOT 18-28% absolute. Melody or resonance present from 0:00 - no silent intro.",
+  "slot_note": "PM 19:00 Wednesday - sleep anchor #1 of two, three days before the Sat Bansuri 3hr.",
+  "competitor_basis": "Not a designated mirror. Routing: enters Sleep Music at #7 in the India-register block, directly behind Sound Sleep; also Peaceful Music.",
+  "tags": [
+    "it's okay to sleep in",
+    "sleep music",
+    "all night sleep",
+    "santoor sleep music",
+    "santoor music",
+    "indian santoor",
+    "deep sleep music",
+    "3 hours sleep music",
+    "bedtime music",
+    "music for sleepless nights",
+    "calming sleep music",
+    "relaxing sleep music",
+    "insomnia relief music",
+    "indian instrumental music",
+    "raga bageshri",
+    "meditation music for sleep",
+    "raga focus"
+  ],
+  "description": "It's Okay to Sleep In | Slow Santoor | 3 Hours of Permission to Rest\n\nYou do not have to earn tomorrow morning. If you go to bed with the alarm already set in your mind, this is three hours of quiet permission: nothing to get up for, nowhere to be, just rest that runs all night.\n\nThis soft Indian santoor music is designed to slow a busy mind at bedtime and keep the night unbroken - gentle, spacious and warm, never sudden.\n\nEnjoy 3 hours of slow hammered santoor with long fading resonance, no drums, smooth transitions, no vocals and no sounds to wake you.\n\n▶ Keep the night going — the full Sleep Music playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199mx7da__pC4JseKqY856ABr\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for sleeping in, falling asleep faster, staying asleep, sleepless nights, light sleepers, weekend lie-ins, afternoon naps, bedtime reading, calming a busy mind at night, or quiet overnight background.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Santoor (Indian hammered dulcimer), solo\nRaga: Bageshri (a late-evening raga - tender, introspective)\nStyle: Indian classical ambient\nMood: Soft, unhurried, safe\nAtmosphere: Curtains drawn, alarm off, the whole night ahead\nDuration: 3 hours\n\n🎧 HOW TO USE\nStart it as you get into bed and set the volume just above silence. Let the long shimmer of each note carry you down. The music keeps going long after you fall asleep, so if you wake in the night it is still there to ease you back. Low speakers or soft sleep headphones both work.\n\n⏱ CHAPTERS\n0:00 Permission to rest\n15:00 The alarm goes face-down\n30:00 Shoulders let go\n45:00 Slow shimmer\n1:00:00 Drifting under\n1:15:00 Deep and quiet\n1:30:00 Nothing to get up for\n1:45:00 Held through the night\n2:00:00 Softer still\n2:15:00 Unbroken rest\n2:30:00 Dreamless quiet\n2:45:00 Gentle light, no rush\n\n⏱ BEST FOR\n• Sleeping in without guilt\n• Falling asleep faster\n• Staying asleep through the night\n• Sleepless or restless nights\n• Light sleepers\n• Weekend lie-ins and naps\n• Bedtime reading\n• Calming a busy mind at night\n• Meditation before sleep\n• Waking up rested\n\nIf this music helped you rest, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#SleepMusic #SantoorMusic #DeepSleepMusic #IndianInstrumental #RelaxingSleepMusic"
+}

@@ -1,0 +1,87 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-09-26",
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr Sitar/Bansuri median ~20% at d4-7, fresh 3hr median ~17% at d7-8). Never against the catalog median - it is survivor-inflated (banked 2026-09-26). Export MUST carry 'Average percentage viewed (%)'.",
+  "ab_design": "A = SHORT pipeline title on keyword 1; B = LONG competitor-pattern title on a DIFFERENT keyword 2 (user rule 2026-09-19). Pair thumb text A with title A and thumb text B with title B in Test & compare. Tally short-vs-long across the six ships.",
+  "hypothesis_id": "h_2026-09-07_volume_restores_escalation",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14).",
+  "id": "v_2026-10-01_after_a_stressful_day_tanpura",
+  "planned_date": "2026-10-01",
+  "planned_slot": "19:00 IST PM · Thu",
+  "lane": "stress_burnout",
+  "daypart": "evening",
+  "instrument": "Tanpura",
+  "raga": "Yaman",
+  "title_variants": {
+    "A": "After a Stressful Day | Slow Tanpura | 1.5 Hours",
+    "B": "You've Done Enough Today: Slow Tanpura Drone to Set the Day Down and Let Your Shoulders Drop | 1.5 Hours"
+  },
+  "title": "After a Stressful Day | Slow Tanpura | 1.5 Hours",
+  "title_note": "Control ship, supporting instrument, non-peak day. Tanpura is the healthiest mid-week instrument of the last fortnight (Break Negative Patterns 2,035 views / AVD 25.7% HEALTHY; Mental Overload 789 / 21.1% HEALTHY). A = 'After a Stressful Day' (functional time-marker, in live competitor use 594 views/day, lead_refill 2026-09-26). B = 'You've Done Enough Today' (permission register - the stress lane's winning THUMB format, +17.2pp in Test #29 - applied to a TITLE for the first time; in live use 611 views/day). PROVES: functional keyword vs permission register, short vs long. 'Slow' is allowed in this lane (deep-rest adjacent).",
+  "gate_override": "None required: Tanpura cooldown 15 days (last Sep 16); Tanpura x stress_burnout UNTESTED (n=0), the orchestrator's #2 for stress on this date; soft clone flag vs Break Negative Patterns (Sep 16, 15 days, classified 'other').",
+  "validated_keywords": [
+    "'After a Stressful Day' - lead_prescreen FRESH 2026-09-26; in live competitor use (594 views/day, lead_refill batch)",
+    "'You've Done Enough Today' - lead_prescreen FRESH 2026-09-26; in live competitor use (611 views/day)",
+    "Tanpura recent cells: Break Negative Patterns 2,035 v / AVD 25.7 (HEALTHY), Mental Overload 789 / 21.1 (HEALTHY), Steady Your Breathing 132",
+    "title_preflight: A 48 chars; B long by design"
+  ],
+  "thumbnail_text_main": "ROUGH DAY?",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "ROUGH DAY?",
+      "strategy": "10 chars / 2 words, Q-hook (stress lane = permission_or_q_hook). LONG DAY? is used; ROUGH DAY? deduped - no match."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "CLOCK OFF NOW",
+      "strategy": "13 chars / 3 words, permission/imperative. YOU CAN STOP NOW and YOU'VE DONE ENOUGH are used; deduped - no match."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. The VIEWER, never a performer. Pichwai/Kangra miniature, aged parchment, ornate border. Scene: early evening lamplight, a person sinking back onto a sofa, shoes kicked off, head tipped back, one forearm resting over the eyes, work bag dropped by the door, a window going blue with dusk. A tanpura leans in the corner at the frame edge. Text in its own banner at ~35% of frame, dark-teal serif, second tier 'Tanpura · Evening Rest · 1.5 Hours'.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Peaceful Music"
+  ],
+  "music_direction": "Tanpura 'therapy' series bed, evening register. Deep continuous tanpura drone in Raga Yaman (raised 4th, expansive open evening character), warm low resonance, gentle harmonic swells, a very sparse soft melodic wisp allowed every few minutes but never a lead melody, NO percussion. Keep it moving with the swells - inert drones bleed listeners. Present from 0:00, no silent intro. Suggested Suno prompt below; the user may generate their own.",
+  "suno_prompt": "Instrumental only, no vocals, no humming — deep continuous Indian tanpura drone in Raga Yaman, warm low resonance with gentle slow harmonic swells, occasional faint sustained note above the drone, no melody line, no percussion, spacious evening stillness, seamless loop.",
+  "experiment": "Control ship (week 4 of h_2026-09-07 volume test). Arms: functional time-marker vs permission-register TITLE (first permission title test in the stress lane). Success at matched age: d7 AVD >= 20%. Read d7 2026-10-08.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-10-01 19:00 IST",
+    "opening_rule": "drone present from 0:00, no fade-in"
+  },
+  "slot_note": "PM 19:00 Thursday - control slot, supporting instrument.",
+  "competitor_basis": "Both leads are in live competitor use (lead_refill 2026-09-26, stress lane, 594 and 611 views/day - working but modest). Owned-host routing partner: 'Break Negative Patterns | Slow Tanpura' (Sep 16, HEALTHY) - this ship enters Healing & Anxiety Relief at #7, directly behind it.",
+  "tags": [
+    "after a stressful day",
+    "stress relief music",
+    "tanpura music",
+    "tanpura drone",
+    "slow tanpura",
+    "evening relaxation music",
+    "decompress music",
+    "you've done enough today",
+    "burnout recovery music",
+    "calming music after work",
+    "nervous system calm music",
+    "indian drone music",
+    "relaxing evening music",
+    "indian instrumental music",
+    "raga yaman",
+    "end of day music",
+    "raga focus"
+  ],
+  "pending": [
+    "USER: generate the music to the music_direction spec",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' for the d7 read"
+  ],
+  "description": "After a Stressful Day | Slow Tanpura | 1.5 Hours to Set the Day Down\n\nYou have done enough today. If you got home wound tight - jaw set, shoulders up by your ears, the day still running in your head - this is ninety minutes to let it all drop.\n\nThis deep Indian tanpura drone is designed to release tension after a stressful day: a single warm, continuous sound your nervous system can lean on until the noise fades.\n\nEnjoy 1.5 hours of slow tanpura resonance with gentle harmonic swells, no drums, no melody to follow and no vocals.\n\n▶ Keep unwinding — the full Healing & Anxiety Relief playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199k-_9PNqaU2-Z_KhRN_X1hF\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for decompressing after work, evening stress relief, burnout recovery, a hot bath, lying on the floor, yoga nidra, breathwork, a quiet dinner, reading, or the hour before bed.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Tanpura (Indian drone instrument), solo\nRaga: Yaman (an expansive evening raga)\nStyle: Indian classical drone, ambient\nMood: Heavy, warm, releasing\nAtmosphere: Lamplight, shoes off, the door closed on the day\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPut it on the moment you get home and let it run in the background while you change, eat or lie down. Breathe out longer than you breathe in and let your shoulders drop with each swell. Headphones deepen the drone; a soft speaker fills a room beautifully.\n\n⏱ CHAPTERS\n0:00 Setting the day down\n9:00 The first long exhale\n18:00 Shoulders drop\n27:00 The noise fades\n36:00 Heavy and warm\n45:00 Nothing left to do\n54:00 Deep resonance\n1:03:00 Slow evening swell\n1:12:00 Quiet all the way through\n1:21:00 Ready for rest\n\n⏱ BEST FOR\n• Decompressing after work\n• Evening stress relief\n• Burnout recovery\n• A hot bath or shower\n• Yoga nidra and breathwork\n• Lying on the floor doing nothing\n• A quiet dinner\n• Reading\n• The hour before bed\n• Background calm for the home\n\nIf this music helped you set the day down, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#StressReliefMusic #TanpuraMusic #EveningRelaxation #IndianInstrumental #BurnoutRecovery"
+}

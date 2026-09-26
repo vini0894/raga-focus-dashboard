@@ -1,0 +1,91 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-09-26",
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr Sitar/Bansuri median ~20% at d4-7, fresh 3hr median ~17% at d7-8). Never against the catalog median - it is survivor-inflated (banked 2026-09-26). Export MUST carry 'Average percentage viewed (%)'.",
+  "ab_design": "A = SHORT pipeline title on keyword 1; B = LONG competitor-pattern title on a DIFFERENT keyword 2 (user rule 2026-09-19). Pair thumb text A with title A and thumb text B with title B in Test & compare. Tally short-vs-long across the six ships.",
+  "hypothesis_id": "h_2026-09-26_3hr_seam_retention",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14).",
+  "id": "v_2026-10-03_music_before_bed_bansuri_3hr",
+  "planned_date": "2026-10-03",
+  "planned_slot": "19:00 IST PM · Sat",
+  "lane": "sleep",
+  "daypart": "night",
+  "instrument": "Bansuri",
+  "raga": "Yaman",
+  "title_variants": {
+    "A": "Music Before Bed | Bansuri Instrumental | 3 Hours",
+    "B": "Gentle Healing: Soft Bansuri Raga for Stress Relief, Rest and Inner Peace | 3 Hours"
+  },
+  "title": "Music Before Bed | Bansuri Instrumental | 3 Hours",
+  "title_note": "WEEKLY SLEEP ANCHOR (Bansuri x sleep x 3hr, the only post-May cell with two 20K+ ships) and COMPETITOR MIRROR #2 of the week. A = 'Music Before Bed', VidIQ 61, FRESH (the unpicked B arm of the Aug 7 Sitar 3hr brief). B = 'Gentle Healing', a DELIBERATE REPEAT (past-lock 93 days: 'Calm Music | Sarod Instrumental | Gentle Healing', Jun 25, 74 views - a different instrument, lane and runtime), chosen because it mirrors the most durable sleep video in the competitor set (see competitor_basis). Neither title carries the word 'sleep', keeping the week at two 'sleep' titles (Wed). PROVES: bedtime-utility keyword vs healing-promise long pattern, short vs long. ⚠ The healing-lane KILL (h_2026-07-20) is about the emotional-healing LANE; this is a sleep ship and is gated as sleep.",
+  "gate_override": "USER-DIRECTED anchor (two Bansuri ships per week, Sat sleep 3hr). (1) instrument cooldown 4 days after Tue Sep 29 (rule 5; different lane, runtime and daypart). (2) packaging clone vs 'Fall Into Deep Sleep' (Sep 26, Bansuri x sleep x 3hr, 7 days): brief_gate FAILs only if the incumbent is winning - DECIDE FRIDAY Oct 2 on its d5 engaged views vs the ~430 fresh median. If it is winning: ship anyway under the anchor rule (documented) or swap to Surbahar x sleep x 3hr (orchestrator #1 for Oct 3, MODEST n=2 median 1,882) with the same titles. (3) Bansuri x sleep MODEST (n=9, median 1,616) - no override needed.",
+  "validated_keywords": [
+    "'Music Before Bed' - VidIQ 61 (bank), lead_prescreen FRESH 2026-09-26 (one soft flag: unpicked title-B of the Aug 7 Sitar 3hr brief)",
+    "'Gentle Healing' - deliberate REPEAT (past-lock 93d, Sarod calm 1.5hr, 74 views); bank 'gentle healing music' 61; mirrors Trust in Gods (vps 8.50)",
+    "cell: Bansuri x sleep x 3hr - Sleep Through the Night 7,068 / 3 Hour Relaxation 9,082 / Quiet Night 2,193 / Snowy Night 1,446 / Remove Negative Thoughts 1,159",
+    "title_preflight: A 49 chars; B long by design"
+  ],
+  "thumbnail_text_main": "LIGHTS OUT, MIND OFF",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "LIGHTS OUT, MIND OFF",
+      "strategy": "20 chars / 4 words, outcome imperative (sleep lane's winning format). LIGHTS LOW is used; deduped - no match."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "OUT TILL SUNRISE",
+      "strategy": "16 chars / 3 words, morning-after promise (parked section 7b direction). Deduped - no match; SLEEP TILL MORNING and RIGHT THROUGH THE NIGHT are used and avoided."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. The VIEWER, never a performer. Pichwai/Kangra miniature, aged parchment, ornate border. Scene: a bedroom at night, a hand reaching from under the blanket to switch off the bedside lamp, the person already curled on their side, a strip of moonlight through a gap in the curtains, phone charging face-down. A bamboo flute rests on the nightstand at the frame edge. Text in its own banner at ~35% of frame, dark-teal serif, second tier 'Bansuri · Deep Sleep · 3 Hours'. 120px legible. Distinct from Wednesday's scene (alarm clock, curtains drawn).",
+  "playlists": [
+    "Sleep Music",
+    "Peaceful Music"
+  ],
+  "music_direction": "CLONE THE BEST MATCHED-AGE 3HR BED: 'Music to Sleep Through the Night | Bansuri' (Jul 10: 22.0% AVD at d8, the highest of any 3hr ship at that age; T1 29% of watch-time). Soft breathy low bansuri notes with long spacious pauses, gentle tanpura drone, no percussion, 45-50 BPM. The Sep 26 brief's 'do NOT build sub-50 BPM' instruction is RETRACTED: the matched-age read (h_2026-09-05, 2026-09-26) shows no BPM effect - 45-70 BPM beds held and 48-60 BPM beds fell. SEAM-SPEC BUILD #2: at most THREE long unique generations with 20-30 s crossfades, no hard cuts, seam timestamps recorded in production_spec.seams. Present from 0:00. Target at matched age: d7 AVD >= 17%. ⛔ claim_check CLEAN before rendering.",
+  "suno_prompt": "Instrumental only, no vocals, no humming — slow deep bansuri bamboo flute for sleep in Raga Yaman, soft breathy low notes with long spacious pauses, gentle tanpura drone, no percussion, 45–50 BPM, seamless loop.",
+  "experiment": "h_2026-09-26_3hr_seam_retention ship #2 (Bansuri). Success: d7 AVD >= 17% at matched age AND no relative-retention dip > 0.10 at the logged seams; first-week impressions vs Fall Into Deep Sleep (Sep 26). Read d7 2026-10-10. Secondary: short A vs long B.",
+  "production_spec": {
+    "duration_minutes": 180,
+    "format": "3hr",
+    "publish": "2026-10-03 19:00 IST",
+    "precheck": "python3 tools/claim_check.py <clips> --name bansuri_sleep_oct03  (CLEAN before rendering)",
+    "build_rule": "<= 3 long unique segments, 20-30 s crossfade at every seam, no hard transitions",
+    "seams": "RECORD the seam timestamps here after the render (needed for the Oct 10 retention-curve read)"
+  },
+  "slot_note": "PM 19:00 Saturday - weekly sleep anchor; ~36h before Monday's morning ship.",
+  "competitor_basis": "COMPETITOR MIRROR #2 OF THE WEEK (arm B). Trust in Gods, 'Gentle Healing | Relaxing Indian Raga Music for Stress Relief, Deep Sleep & Inner Peace | Feel Happy' - 8.50 views-per-sub, still 1,228 views/day at 81 days and +20,340 views in the last 8 days: the most durable sleep video in the competitor set. Owned-host routing partner: 'Music to Sleep Through the Night' (Sleep Music #1, T1 face) - this ship enters Sleep Music at #3 in the T1 Bansuri-3hr block.",
+  "tags": [
+    "music before bed",
+    "sleep music",
+    "deep sleep music",
+    "bansuri sleep music",
+    "indian flute sleep music",
+    "bedtime music",
+    "gentle healing music",
+    "relaxing sleep music",
+    "3 hours sleep music",
+    "insomnia relief music",
+    "calming flute music",
+    "stress relief sleep music",
+    "inner peace music",
+    "meditation music for sleep",
+    "indian instrumental music",
+    "raga yaman",
+    "raga focus"
+  ],
+  "pending": [
+    "⛔ FIRST: run tools/claim_check.py on the raw clips - render only on CLEAN",
+    "FRIDAY Oct 2: read Fall Into Deep Sleep's d5 engaged views; if above ~430 the clone gate FAILs - ship under the anchor override or swap to Surbahar sleep 3hr",
+    "USER: build to the seam spec (<= 3 long segments, crossfaded) and record seam timestamps in production_spec.seams",
+    "USER: generate the lamp-switch-off image; render text A and text B versions",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' for the d7 read"
+  ],
+  "description": "Music Before Bed | Bansuri Instrumental | 3 Hours of Soft, Unbroken Rest\n\nThe lights are off but your mind is still on. If you lie there replaying the day, or wake at 3am and cannot drift back, let this play quietly beside you.\n\nThis soft Indian flute music is designed to carry you down into deep sleep and keep the night gentle - slow, breathy and warm, with long quiet spaces between the notes.\n\nEnjoy 3 hours of low bansuri (Indian bamboo flute) over a gentle tanpura drone, smooth transitions, no vocals and no sudden sounds to wake you.\n\n▶ Keep the night going — the full Sleep Music playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199mx7da__pC4JseKqY856ABr\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for falling asleep, staying asleep, sleepless nights, light sleepers, bedtime reading, calming a busy mind at night, children's bedtime, meditation before sleep, naps, or quiet overnight background.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Bansuri (Indian bamboo flute) with tanpura drone\nRaga: Yaman (an open, expansive evening raga)\nStyle: Indian classical ambient\nMood: Soft, safe, drifting\nAtmosphere: Lamp off, moonlight through the curtain, slow breathing\nDuration: 3 hours\n\n🎧 HOW TO USE\nStart it as you switch off the lamp and set the volume just above silence. Let your breath lengthen with the flute. The music continues long after you fall asleep, so if you wake in the night it is still there to ease you back. Low speakers or comfortable sleep headphones both work well.\n\n⏱ CHAPTERS\n0:00 Lights out\n15:00 Breath growing longer\n30:00 Mind switching off\n45:00 Drifting under\n1:00:00 Deep quiet waters\n1:15:00 Slow moonlit drift\n1:30:00 The still of the night\n1:45:00 Deeper and softer\n2:00:00 Held through the dark\n2:15:00 Unbroken rest\n2:30:00 Light, dreamless quiet\n2:45:00 Gentle fade toward sunrise\n\n⏱ BEST FOR\n• Falling asleep faster\n• Staying asleep through the night\n• Sleepless or restless nights\n• Light sleepers\n• Calming a busy mind at bedtime\n• Bedtime reading\n• Naps and daytime rest\n• Children's bedtime\n• Meditation before sleep\n• Waking up rested\n\nIf this music helped you sleep, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#SleepMusic #BansuriSleepMusic #DeepSleepMusic #IndianFlute #RelaxingSleepMusic"
+}
