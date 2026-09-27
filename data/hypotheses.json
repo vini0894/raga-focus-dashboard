@@ -1,7 +1,7 @@
 {
   "purpose": "Standing ledger of strategic bets — the compounding-strategy layer on top of the mechanical gates (cooldown/track_record/clone/lead_prescreen). A finding discovered once (competitor research, a track_record pattern, an A/B result) gets banked here as a tracked hypothesis instead of being re-derived every time it's asked about. recommend_slot.py reads this to tag candidates with the bet they'd be testing.",
   "lifecycle": "PROPOSED (stated, not yet tested) -> TESTING (a ship is live against it) -> CONFIRMED or KILLED (enough evidence to close it) -> promoted_rule (folded into a permanent playbook rule, e.g. anti_patterns.json / lane_packaging_directions.json)",
-  "last_updated": "2026-09-26",
+  "last_updated": "2026-09-27",
   "hypotheses": [
     {
       "id": "h_2026-08-07_playlist_routing",
@@ -1169,7 +1169,14 @@
       "linked_ships": [],
       "promoted_rule": null,
       "caveats": "USER DECISION 2026-09-19: NOT adopted - 'only 2 Bansuri I want to do'. Two Bansuri ships a week (morning 1.5hr + Sat sleep 3hr) stays the pattern; wk_2026-09-21 ships as locked. Do not re-raise unless the user brings it up. The parts of the idea already in the locked week: long-title B arm on all six ships, two working Bansuri mirrors.",
-      "reads": []
+      "reads": [
+        {
+          "stage": "decision",
+          "date": "2026-09-27",
+          "status": "PARKED",
+          "note": "Two-slot version ADOPTED 2026-09-27 as h_2026-09-27_bansuri_series (Tue Morning Reset + Sat Sleep Therapy, four weeks, stop rule). The 3-ships/week form stays parked per the 2026-09-19 decision."
+        }
+      ]
     },
     {
       "id": "h_2026-09-26_3hr_seam_retention",
@@ -1199,6 +1206,37 @@
         "d14": "2026-10-17"
       },
       "read_rule": "d7 = retention verdict at matched age; d14 = reach; flips at d14 unless overwhelming"
+    },
+    {
+      "id": "h_2026-09-27_bansuri_series",
+      "created": "2026-09-27",
+      "status": "TESTING",
+      "week": "wk_2026-09-28",
+      "source": "chat_2026-09-27 - user adopted the two-slot version after the fortnight review ('Okay Lets try it'). Two-slot descendant of h_signature_series (PARKED 2026-09-19: user keeps two Bansuri ships/week).",
+      "statement": "A recognisable weekly SERIES on the two Bansuri slots - Tue 'Morning Reset' (morning cortisol / nervous-system calm family) and Sat 'Sleep Therapy' (Bansuri sleep 3hr) - with the same promise family, the same long-title skeleton and badge, one fixed bold thumbnail template, the same slot, and episodes cross-linked in the description, builds a returning day-one audience the way Soulful Breathscape and Healing Raga Studio do (every upload opens on a 7-9K day-one floor; 1 in 3 breaks out). Our variety plan opens on 66-350 views and has produced 0 videos >= 10K in 84 ships since June.",
+      "predicted_metric": "On the two series slots: (1) day-one views (Studio at 24h; baseline ~300); (2) first-week impressions vs the same-age cohort (baseline 0.2-0.5x); (3) subscribed viewers' share of channel watch-time (baseline 8%). SUCCESS: day-one >= 1,000 by week 3 and rising week over week, subscribed share up. STOP RULE: day-one < 1,000 on BOTH slots by week 3 (2026-10-18) -> revert both slots to the variety plan.",
+      "relevant_lanes": [
+        "morning",
+        "sleep"
+      ],
+      "relevant_instruments": [
+        "Bansuri"
+      ],
+      "linked_ships": [
+        "v_2026-09-29_morning_cortisol_reset_bansuri (Morning Reset Ep.1)",
+        "v_2026-10-03_music_before_bed_bansuri_3hr (Sleep Therapy Ep.1)"
+      ],
+      "promoted_rule": null,
+      "gate_exception": "Cooldown, packaging-clone, lead-freshness and week_diversity are excepted on the two series slots for the four-week test; logged here so brief_gate FAILs on those slots are expected. The top-10 no-look-alike rule and the two-Bansuri-per-week rule are unchanged; Mon/Wed/Thu/Fri keep every gate.",
+      "caveats": "Evidence = two hot competitor channels (n=2); their audio may hold better and their retention is not visible. The Sat slot also carries h_2026-09-26_3hr_seam_retention - the reads are on different units (day-one views vs retention-curve seam dips) so they separate. Episode-1 Test & compare is image-only (bold template vs Pichwai control), so the thumbnail look is tested inside the series rather than assumed.",
+      "reads": [],
+      "read_schedule": {
+        "wk1": "2026-10-06 / 2026-10-10 (Ep.1 d7 reads)",
+        "wk2": "2026-10-13 / 2026-10-17",
+        "wk3_stop_rule": "2026-10-18",
+        "verdict": "2026-10-24"
+      },
+      "read_rule": "Log day-one views for every episode at 24h; weekly read on the three metrics; stop-rule check at week 3; verdict at week 4."
     }
   ],
   "schema_note": "week = Monday of created week (wk_YYYY-MM-DD). reads[] = staged reads (d7/d14/d21). experiment_reads appends to reads[]; status changes at final read."

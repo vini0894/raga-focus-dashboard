@@ -3,7 +3,7 @@
   "week_start": "2026-09-28",
   "week_end": "2026-10-04",
   "created": "2026-09-26",
-  "status": "FINAL - 6 ships Mon-Sat, titles + thumb texts locked, all gates run (user lock 2026-09-26: 'create the briefs for the plan and push to dashboard')",
+  "status": "FINAL - 6 ships Mon-Sat; Tue + Sat converted to series episode 1 (user 2026-09-27 'Okay Lets try it'); all gates run",
   "notes": "SIX ships Mon-Sat, Sunday clear. Heroes on the two peak days (Sitar Mon AM, Bansuri Tue AM); two Bansuri ships (Tue morning 1.5hr, Sat sleep 3hr); two 3hr sleep anchors three days apart (Wed Santoor, Sat Bansuri) - the parked Santoor brief was parked on Sep 14 precisely so two 3hr sleep ships would not run two days apart. Friday is the droppable ship. Week 4 of h_2026-09-07_volume_restores_escalation (read ~2026-10-05).",
   "hypothesis": {
     "id": "h_2026-09-26_3hr_seam_retention",
@@ -28,7 +28,8 @@
     "competitor_mirrors": "Two designated mirrors: Tue (cortisol wave, morning) and Sat arm B 'Gentle Healing' (Trust in Gods, 8.50 v/sub, +20K views in 8 days at 81 days old, sleep). Wed/Thu/Fri leads are in live competitor use or VidIQ-scored per the 2026-09-14 title policy.",
     "sat_clone_decision": "Sat Bansuri x sleep x 3hr is 7 days after 'Fall Into Deep Sleep' (Sep 26). brief_gate FAILs only if the incumbent is winning: read its d5 engaged views on Fri Oct 2 vs ~430; if winning, ship under the standing anchor rule (documented) or swap to Surbahar x sleep x 3hr (orchestrator #1 for Oct 3) with the same titles.",
     "friday_droppable": "Fri Sarangi is the droppable ship; its B arm uses the 'overthinking' family (n=4, weak) - swap to 'Sleep Anxiety' (57, reserved) if preferred.",
-    "rate_frame": "Fortnight read 2026-09-26: last week's gain was entirely rate-driven on flat views and watch-hours; uploads remain a small share. Priorities: protect the top videos through Q4, route watch-hours to high-value videos (playlists), make the hero slots earn their sampling. Morning-lane videos earn the most per watch-hour; sleep is the volume anchor."
+    "rate_frame": "Fortnight read 2026-09-26: last week's gain was entirely rate-driven on flat views and watch-hours; uploads remain a small share. Priorities: protect the top videos through Q4, route watch-hours to high-value videos (playlists), make the hero slots earn their sampling. Morning-lane videos earn the most per watch-hour; sleep is the volume anchor.",
+    "bansuri_series": "ADOPTED 2026-09-27: the two Bansuri slots become weekly series for four weeks - Tue 'Morning Reset' (morning cortisol / nervous-system calm), Sat 'Sleep Therapy' (Bansuri sleep 3hr). Same promise family, same long-title skeleton with a badge, one fixed bold thumbnail template, same slot, episodes cross-linked. Episode-1 Test & compare is thumbnail-image-only (bold template vs Pichwai control). Gates on those two slots are a logged exception (h_2026-09-27_bansuri_series). Reads: day-one views (baseline ~300), first-week impressions vs cohort, subscribed share (8%). STOP: day-one < 1,000 on both slots by week 3 (2026-10-18)."
   },
   "ships": [
     {
@@ -54,11 +55,11 @@
       "instrument": "Bansuri",
       "runtime_min": 90,
       "brief": "v_2026-09-29_morning_cortisol_reset_bansuri",
-      "title_a": "Morning Cortisol Reset | Bansuri Flute | 1.5 Hours",
-      "title_b": "Inner Silence: Gentle Bansuri Flute for a Quiet Mind at First Light | 1.5 Hours",
-      "thumb_a": "CALM BEFORE THE RUSH",
-      "thumb_b": "QUIET BEFORE THE DAY",
-      "role": "HERO x PEAK DAY + competitor mirror #1 (cortisol wave)",
+      "title_a": "Morning Cortisol Reset 🌿 Bansuri Therapy for a Calm Nervous System, Slower Breathing & a Quiet Mind | Raag Bhairav | 1.5 Hours",
+      "title_b": "(fixed; image-only Test & compare)",
+      "thumb_a": "MORNING RESET · Ep. 1 (bold template)",
+      "thumb_b": "MORNING RESET · Ep. 1 (Pichwai control)",
+      "role": "SERIES: Morning Reset Ep.1 · hero x peak day · competitor mirror #1",
       "competitor_mirror": true
     },
     {
@@ -114,11 +115,11 @@
       "instrument": "Bansuri",
       "runtime_min": 180,
       "brief": "v_2026-10-03_music_before_bed_bansuri_3hr",
-      "title_a": "Music Before Bed | Bansuri Instrumental | 3 Hours",
-      "title_b": "Gentle Healing: Soft Bansuri Raga for Stress Relief, Rest and Inner Peace | 3 Hours",
-      "thumb_a": "LIGHTS OUT, MIND OFF",
-      "thumb_b": "OUT TILL SUNRISE",
-      "role": "sleep anchor #2 · seam-spec build #2 · competitor mirror #2",
+      "title_a": "Sleep Therapy Bansuri 🌙 Soft Flute Music to Calm the Mind, Fall Asleep & Stay Asleep the Whole Night | Raag Yaman | 3 Hours",
+      "title_b": "(fixed; image-only Test & compare)",
+      "thumb_a": "SLEEP THERAPY · Ep. 1 (bold template)",
+      "thumb_b": "SLEEP THERAPY · Ep. 1 (Pichwai control)",
+      "role": "SERIES: Sleep Therapy Ep.1 · sleep anchor · seam-spec build #2",
       "competitor_mirror": true
     }
   ],
@@ -140,10 +141,12 @@
     "USER: six thumbnail images (prompt in each brief), each rendered with text A and text B",
     "USER: paste each video's id into the playlist link in its description before publishing",
     "USER: launch Test & compare (title A + thumb A vs title B + thumb B) at publish and log both arms to ab_raw_data.csv - 11 ships since Aug 24 are unlogged",
-    "USER Fri Oct 2: read Fall Into Deep Sleep's d5 engaged views -> decide the Sat clone override or the Surbahar swap",
     "USER (weekend): playlist re-sequence per ROUTING_PASS_2026-09-26.md v3, then tools/pull_playlists.py",
     "USER: confirm the Upstream plan/hours before the Oct 3 Sleep Radio read; re-auth the MCP with the monetary scope",
-    "USER: keep exporting the per-video CSV WITH 'Average percentage viewed (%)'"
+    "USER: keep exporting the per-video CSV WITH 'Average percentage viewed (%)'",
+    "USER: build the two series thumbnail templates once (MORNING RESET, SLEEP THERAPY) plus a Pichwai control version of each for the episode-1 image test",
+    "USER: log day-one views at 24h for every series episode (the series baseline is ~300)",
+    "USER Fri Oct 2: read Fall Into Deep Sleep's d5; if it is winning, add an end-screen from it to Saturday's episode (Saturday ships either way under the series exception)"
   ],
   "title_policy": "Every lead is VidIQ-scored or in live competitor use, and prescreened FRESH 2026-09-26 (two deliberate repeats: 'Gentle Healing' 93d, and the 'Cortisol Reset' phrasing). Provenance is in each brief's validated_keywords.",
   "gates_run": {
@@ -151,6 +154,7 @@
     "week_diversity": "PASS-with-WARN after three B-arm rewordings ('day' x3, 'before' x3, 'morning'/'dawn' x3 all fixed); remaining x2 repeats are by design (morning lane x2, Bansuri x2, sleep x2).",
     "title_preflight": "All six A arms inside 46-50 chars; B arms long by design.",
     "cooldown_check": "All slots viable except Tue Bansuri (3 days after the Sep 26 sleep ship - the standing two-Bansuri override, different lane/runtime).",
-    "known_gate_noise": "brief_gate lead_fresh[A] 'USED - queued brief' is the brief's own file; ignore."
+    "known_gate_noise": "brief_gate lead_fresh[A] 'USED - queued brief' is the brief's own file; ignore.",
+    "series_exception": "Tue + Sat brief_gate FAILs (clone / 28d-median track_record / cooldown) and any week_diversity x3 that includes a series title are expected and logged under h_2026-09-27_bansuri_series. Mon/Wed/Thu/Fri unchanged and gate-clean."
   }
 }

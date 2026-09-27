@@ -98,3 +98,12 @@
 | 2026-10-03 | Bansuri sleep 3hr | Weekly anchor + seam-spec ship #2 + competitor mirror #2 ('Gentle Healing', Trust in Gods 8.50 v/sub). Clone gate vs Sep 26 decided Fri Oct 2 on its d5 | A vs B | **2026-10-10** |
 
 **Week-level:** h_2026-09-26_3hr_seam_retention - both 3hr ships d7 AVD >= 17% at MATCHED AGE and no retention-curve dip > 0.10 at the logged seams; verdict 2026-10-17. Secondary: h_2026-09-21 week 2 (matched-age AVD >= 20% + first-week impressions for the two heroes), h_2026-09-07 volume test week 4 read ~2026-10-05, routing pass v3 read 2026-10-10 (channel PLAYLIST watch-min/day vs 30.7K baseline), Sleep Radio 14d read 2026-10-03. Every AVD read at matched age, never against the catalog median.
+
+**SERIES ADOPTED 2026-09-27 (h_2026-09-27_bansuri_series) — Tue and Sat rows above are superseded:**
+
+| Day | Ship | Test | Arms | Reads |
+|---|---|---|---|---|
+| 2026-09-29 | Morning Reset · Ep.1 (Bansuri morning) | Series day-one floor + image-only Test & compare | thumb image A (bold template) vs B (Pichwai control); title fixed | day-one at 24h · d7 **2026-10-06** |
+| 2026-10-03 | Sleep Therapy · Ep.1 (Bansuri 3hr) | Series day-one floor + seam-spec build #2 + image-only Test & compare | thumb image A vs B; title fixed | day-one at 24h · d7 **2026-10-10** |
+
+Series reads: wk1 Oct 6/10 · wk2 Oct 13/17 · **stop-rule check 2026-10-18** (day-one < 1,000 on both slots → revert) · verdict **2026-10-24**. Metrics: day-one views (baseline ~300), first-week impressions vs same-age cohort (0.2–0.5×), subscribed share of watch-time (8%).
