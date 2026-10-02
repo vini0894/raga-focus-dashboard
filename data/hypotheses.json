@@ -1038,6 +1038,12 @@
           "date": "2026-09-26",
           "status": "TESTING",
           "note": "WEEK 3 OF 4 LOGGED 2026-09-26 (read at 4 weeks, ~2026-10-05): six ships Sep 21-26 (Sat pending at export). All inside the band: Mon 1,694 views @5d, Tue 2,090 @4d, Wed 1,172 @3d, Thu 526 @2d, Fri 419 @1d (live). Channel-level, Analytics API: views/day flat for four weeks (22.6K, 22.0K, 22.9K, 21.3K by week), watch-min/day -5% last 12d vs prior 14d, Browse-source watch-min -5%, Suggested -7%, Playlist -10%, Search +1%. No escalation signal at 5-6 ships/week through week 3."
+        },
+        {
+          "stage": "4-week",
+          "date": "2026-10-03",
+          "status": "TESTING",
+          "note": "4-WEEK READ 2026-10-03 (Oct 3 export): 23 ships over Sep 7 - Oct 2 at 5-6 per week. Best ship = 987 engaged views (Night Routine Surbahar 3hr); best raw views 3,300; the escalation threshold is ~50K engaged. Nothing left the band. Per-ship first-week impressions at 5-6 ships/week: median 10.6-13.6K vs 11-17.5K in the 3-4 ship weeks of August - each extra ship adds its own ~12K sampling ticket with mild dilution, and nothing more. Channel views/day flat for five weeks. Meets the stated KILL criterion (24 ships, nothing above the ceiling). PROPOSED: KILLED - volume does not restore escalation; size output to the calendar rules (weekday ship + series slots), not to a volume target."
         }
       ]
     },
