@@ -1,7 +1,7 @@
 {
   "purpose": "Standing ledger of strategic bets — the compounding-strategy layer on top of the mechanical gates (cooldown/track_record/clone/lead_prescreen). A finding discovered once (competitor research, a track_record pattern, an A/B result) gets banked here as a tracked hypothesis instead of being re-derived every time it's asked about. recommend_slot.py reads this to tag candidates with the bet they'd be testing.",
   "lifecycle": "PROPOSED (stated, not yet tested) -> TESTING (a ship is live against it) -> CONFIRMED or KILLED (enough evidence to close it) -> promoted_rule (folded into a permanent playbook rule, e.g. anti_patterns.json / lane_packaging_directions.json)",
-  "last_updated": "2026-09-27",
+  "last_updated": "2026-10-03",
   "hypotheses": [
     {
       "id": "h_2026-08-07_playlist_routing",
@@ -294,7 +294,8 @@
         "2026-08-31 · Calm Morning Music |  Relaxing Flute | Instrumental 1.5 hours [wbLwW2REWcQ]",
         "2026-09-07 · Morning Stillness | Surbahar Instrumental Music | 1.5 Hours [7YGvReb0Shc]",
         "2026-09-17 · Restart Your Life | Sarangi Therapy | 1.5 Hours [kUDGpp42Wc8]",
-        "2026-09-21 · Morning Productivity Music | Sitar | 1.5 Hours [z8BRgTbC5ZY]"
+        "2026-09-21 · Morning Productivity Music | Sitar | 1.5 Hours [z8BRgTbC5ZY]",
+        "2026-09-29 · Morning Cortisol Reset 🌿 Bansuri Therapy for a Calm Nervous System & Slower Breathing | Raag Bhairav [wINy9PW48iw]"
       ],
       "promoted_rule": null,
       "caveats": "Observational, lane-confounded (T1-heavy titles are mostly morning/uplift — may be the lane T1 wants, not the words). The two linked A/Bs are the controlled test.",
@@ -414,7 +415,13 @@
         "2026-09-21 · Morning Productivity Music | Sitar | 1.5 Hours [z8BRgTbC5ZY]",
         "2026-09-22 · Whispers of Peace | Bansuri Instrumental | 1.5 Hours [crz6eYfbsEc]",
         "2026-09-23 · Clear the Mental Clutter | Santoor | 1.5 Hours [EkRzq4g2aA8]",
-        "2026-09-24 · Stop Chasing Every Thought | Surbahar | 1.5 Hours [KmzLw7Vy1qI]"
+        "2026-09-24 · Stop Chasing Every Thought | Surbahar | 1.5 Hours [KmzLw7Vy1qI]",
+        "2026-09-25 · Tension Relief Music | Sarangi Instrumental | 1.5 Hours [EpYpgI6d-SU]",
+        "2026-09-26 · Music for Sleepless Nights: Soft Bansuri Flute to Rest Unbroken All Night | 3 Hours [VPjarNR3ZSg]",
+        "2026-09-28 · Unlock Success | Sitar Instrumental | 1.5 Hours [ggw8xcM9iE4]",
+        "2026-09-29 · Morning Cortisol Reset 🌿 Bansuri Therapy for a Calm Nervous System & Slower Breathing | Raag Bhairav [wINy9PW48iw]",
+        "2026-09-30 · All Night Sleep: Slow Santoor and a Soft Night Raga to Rest Deep and Unbroken | 3 Hours [zX2ZXiGOJPE]",
+        "2026-10-01 · After a Stressful Day | Slow Tanpura | 1.5 Hours [kBHeg-Ne00I]"
       ],
       "week": "wk_2026-08-03",
       "reads": [],
@@ -522,7 +529,8 @@
         "v_2026-08-20_overnight_calm_bansuri_3hr",
         "2026-09-04 · Snowy Night Music | Bansuri & Tanpura 3hr — first VALID test (a real drone bed; the Aug-21 attempt substituted melodic Santoor)",
         "2026-09-04 · Snowy Night Music | Bansuri & Tanpura | 3 Hours [dTlG68eidiw]",
-        "2026-09-18 · Sleep Radio 24/7 | Bansuri & Sitar for Deep Sleep [Ocg6W1ijKA0]"
+        "2026-09-18 · Sleep Radio 24/7 | Bansuri & Sitar for Deep Sleep [Ocg6W1ijKA0]",
+        "2026-09-26 · Music for Sleepless Nights: Soft Bansuri Flute to Rest Unbroken All Night | 3 Hours [VPjarNR3ZSg]"
       ],
       "promoted_rule": null,
       "caveats": "⚠ Surbahar sleep 3hr just shipped ~Aug14 (SLEEP DEEPLY 55%) — possible sleep-3hr overlap; watch cannibalization.",
@@ -645,7 +653,13 @@
         "2026-09-21 · Morning Productivity Music | Sitar | 1.5 Hours [z8BRgTbC5ZY]",
         "2026-09-22 · Whispers of Peace | Bansuri Instrumental | 1.5 Hours [crz6eYfbsEc]",
         "2026-09-23 · Clear the Mental Clutter | Santoor | 1.5 Hours [EkRzq4g2aA8]",
-        "2026-09-24 · Stop Chasing Every Thought | Surbahar | 1.5 Hours [KmzLw7Vy1qI]"
+        "2026-09-24 · Stop Chasing Every Thought | Surbahar | 1.5 Hours [KmzLw7Vy1qI]",
+        "2026-09-25 · Tension Relief Music | Sarangi Instrumental | 1.5 Hours [EpYpgI6d-SU]",
+        "2026-09-26 · Music for Sleepless Nights: Soft Bansuri Flute to Rest Unbroken All Night | 3 Hours [VPjarNR3ZSg]",
+        "2026-09-28 · Unlock Success | Sitar Instrumental | 1.5 Hours [ggw8xcM9iE4]",
+        "2026-09-29 · Morning Cortisol Reset 🌿 Bansuri Therapy for a Calm Nervous System & Slower Breathing | Raag Bhairav [wINy9PW48iw]",
+        "2026-09-30 · All Night Sleep: Slow Santoor and a Soft Night Raga to Rest Deep and Unbroken | 3 Hours [zX2ZXiGOJPE]",
+        "2026-10-01 · After a Stressful Day | Slow Tanpura | 1.5 Hours [kBHeg-Ne00I]"
       ],
       "promoted_rule": null,
       "caveats": "DEFERRED by choice. Re-open only as a clean 1-variable A/B.",
@@ -900,7 +914,13 @@
         "2026-09-21 · Morning Productivity Music | Sitar | 1.5 Hours [z8BRgTbC5ZY]",
         "2026-09-22 · Whispers of Peace | Bansuri Instrumental | 1.5 Hours [crz6eYfbsEc]",
         "2026-09-23 · Clear the Mental Clutter | Santoor | 1.5 Hours [EkRzq4g2aA8]",
-        "2026-09-24 · Stop Chasing Every Thought | Surbahar | 1.5 Hours [KmzLw7Vy1qI]"
+        "2026-09-24 · Stop Chasing Every Thought | Surbahar | 1.5 Hours [KmzLw7Vy1qI]",
+        "2026-09-25 · Tension Relief Music | Sarangi Instrumental | 1.5 Hours [EpYpgI6d-SU]",
+        "2026-09-26 · Music for Sleepless Nights: Soft Bansuri Flute to Rest Unbroken All Night | 3 Hours [VPjarNR3ZSg]",
+        "2026-09-28 · Unlock Success | Sitar Instrumental | 1.5 Hours [ggw8xcM9iE4]",
+        "2026-09-29 · Morning Cortisol Reset 🌿 Bansuri Therapy for a Calm Nervous System & Slower Breathing | Raag Bhairav [wINy9PW48iw]",
+        "2026-09-30 · All Night Sleep: Slow Santoor and a Soft Night Raga to Rest Deep and Unbroken | 3 Hours [zX2ZXiGOJPE]",
+        "2026-10-01 · After a Stressful Day | Slow Tanpura | 1.5 Hours [kBHeg-Ne00I]"
       ]
     },
     {
@@ -981,7 +1001,10 @@
         "2026-09-18 · Sleep Radio 24/7 | Bansuri & Sitar for Deep Sleep [Ocg6W1ijKA0]",
         "2026-09-18 · Raga Focus Live Stream [4GPSihNcvwM]",
         "2026-09-21 · Morning Productivity Music | Sitar | 1.5 Hours [z8BRgTbC5ZY]",
-        "2026-09-22 · Whispers of Peace | Bansuri Instrumental | 1.5 Hours [crz6eYfbsEc]"
+        "2026-09-22 · Whispers of Peace | Bansuri Instrumental | 1.5 Hours [crz6eYfbsEc]",
+        "2026-09-26 · Music for Sleepless Nights: Soft Bansuri Flute to Rest Unbroken All Night | 3 Hours [VPjarNR3ZSg]",
+        "2026-09-29 · Morning Cortisol Reset 🌿 Bansuri Therapy for a Calm Nervous System & Slower Breathing | Raag Bhairav [wINy9PW48iw]",
+        "2026-09-30 · All Night Sleep: Slow Santoor and a Soft Night Raga to Rest Deep and Unbroken | 3 Hours [zX2ZXiGOJPE]"
       ],
       "read_schedule": {
         "d7": "2026-09-14",
@@ -1051,7 +1074,13 @@
         "2026-09-21 · Morning Productivity Music | Sitar | 1.5 Hours [z8BRgTbC5ZY]",
         "2026-09-22 · Whispers of Peace | Bansuri Instrumental | 1.5 Hours [crz6eYfbsEc]",
         "2026-09-23 · Clear the Mental Clutter | Santoor | 1.5 Hours [EkRzq4g2aA8]",
-        "2026-09-24 · Stop Chasing Every Thought | Surbahar | 1.5 Hours [KmzLw7Vy1qI]"
+        "2026-09-24 · Stop Chasing Every Thought | Surbahar | 1.5 Hours [KmzLw7Vy1qI]",
+        "2026-09-25 · Tension Relief Music | Sarangi Instrumental | 1.5 Hours [EpYpgI6d-SU]",
+        "2026-09-26 · Music for Sleepless Nights: Soft Bansuri Flute to Rest Unbroken All Night | 3 Hours [VPjarNR3ZSg]",
+        "2026-09-28 · Unlock Success | Sitar Instrumental | 1.5 Hours [ggw8xcM9iE4]",
+        "2026-09-29 · Morning Cortisol Reset 🌿 Bansuri Therapy for a Calm Nervous System & Slower Breathing | Raag Bhairav [wINy9PW48iw]",
+        "2026-09-30 · All Night Sleep: Slow Santoor and a Soft Night Raga to Rest Deep and Unbroken | 3 Hours [zX2ZXiGOJPE]",
+        "2026-10-01 · After a Stressful Day | Slow Tanpura | 1.5 Hours [kBHeg-Ne00I]"
       ],
       "read_on": "2026-09-11 (d7) — and again on the Fri 2026-09-11 Santoor 3hr, which is specced against this finding.",
       "reads": [
@@ -1104,7 +1133,10 @@
         "2026-09-21 · Morning Productivity Music | Sitar | 1.5 Hours [z8BRgTbC5ZY]",
         "2026-09-22 · Whispers of Peace | Bansuri Instrumental | 1.5 Hours [crz6eYfbsEc]",
         "v_2026-09-28_unlock_success_sitar (week 2 treatment, uplift lead)",
-        "v_2026-09-29_morning_cortisol_reset_bansuri (week 2 treatment, cortisol mirror)"
+        "v_2026-09-29_morning_cortisol_reset_bansuri (week 2 treatment, cortisol mirror)",
+        "2026-09-26 · Music for Sleepless Nights: Soft Bansuri Flute to Rest Unbroken All Night | 3 Hours [VPjarNR3ZSg]",
+        "2026-09-28 · Unlock Success | Sitar Instrumental | 1.5 Hours [ggw8xcM9iE4]",
+        "2026-09-29 · Morning Cortisol Reset 🌿 Bansuri Therapy for a Calm Nervous System & Slower Breathing | Raag Bhairav [wINy9PW48iw]"
       ],
       "promoted_rule": null,
       "caveats": "Day and instrument vary together - the test reads the COMBINED best-shot, not the two effects separately. n=2 treatment ships. Requires the export to carry 'Average percentage viewed (%)'. Secondary tally across all six ships: short-pipeline arm vs long-pattern arm wins, from Studio Test & compare.",
@@ -1114,6 +1146,12 @@
           "date": "2026-09-26",
           "status": "TESTING",
           "note": "PARTIAL READ 2026-09-26 (Sep 26 export, d5/d4): RETENTION half - Mon Sitar AVD 16.3% @d5, Tue Bansuri 21.7% @d4 vs the >= 28% bar. That bar was set against the catalog median (31%), which is survivor-inflated; at matched age the channel's fresh 1.5hr Sitar/Bansuri ships run 16-27% (median ~20), so Mon sits in the bottom quartile and Tue at the median - neither hero improved retention over the band. REACH half (pending d7 Sep 28/29): Mon 10.6K impressions @d5 (2,119/d, 0.37x cohort) = HALF of the Sep 14 Monday Sitar's first week (21.5K); Tue 12.9K @d4 (3,233/d, 0.49x) in line with the Sep 15 Bansuri (14.7K). Engaged @export: Mon 422, Tue 492, Wed 333 @d3, Thu 133 @d2. Note: Monday's lead ('Morning Productivity') came from the pre-pivot focus/productivity family that the lane rules mark dead - a packaging confound on the Monday arm. No A/B arms logged in ab_raw_data for any wk_09-14/09-21 ship (user-side)."
+        },
+        {
+          "stage": "d11-12",
+          "date": "2026-10-03",
+          "status": "TESTING",
+          "note": "READ 2026-10-03 (Oct 3 export, Mon d12 / Tue d11): BOTH halves failing. Retention - Mon Sitar 'Morning Productivity' 17.2%, Tue Bansuri 'Whispers of Peace' 22.4% vs the matched-age 1.5hr bar ~20% (Mon below, Tue at median; the original 28% bar was survivor-inflated). Reach - engaged views Mon 509, Tue 647 vs the Wed-Fri control median 725 (Santoor 725, Surbahar 271, Sarangi 763) = 0.70x / 0.89x against a 1.5x bar. The supporting-instrument controls out-sampled both heroes (Santoor 19.0K impressions, Sarangi 20.7K vs 11.8K / 14.9K). Following week repeats it: Mon Sitar 13.2K @d5, Tue Bansuri 12.4K @d4, Fri Sarangi 20.7K @d8. PROPOSED: KILLED at the d14 read (2026-10-06) - hero x peak day does not buy extra sampling at this scale."
         }
       ],
       "read_schedule": {
@@ -1136,7 +1174,9 @@
       ],
       "relevant_instruments": [],
       "linked_ships": [
-        "LIVE Ocg6W1ijKA0 - Sleep Radio 24/7 | Bansuri & Sitar for Deep Sleep (since 2026-09-19)"
+        "LIVE Ocg6W1ijKA0 - Sleep Radio 24/7 | Bansuri & Sitar for Deep Sleep (since 2026-09-19)",
+        "2026-09-26 · Music for Sleepless Nights: Soft Bansuri Flute to Rest Unbroken All Night | 3 Hours [VPjarNR3ZSg]",
+        "2026-09-30 · All Night Sleep: Slow Santoor and a Soft Night Raga to Rest Deep and Unbroken | 3 Hours [zX2ZXiGOJPE]"
       ],
       "promoted_rule": null,
       "caveats": "Cannibalisation watch also covers the weekly Bansuri sleep 3hr anchor (2026-09-19, 2026-09-26). Runbook: research/live_radio_setup_runbook.md.",
@@ -1146,6 +1186,12 @@
           "date": "2026-09-26",
           "status": "TESTING",
           "note": "EARLY INDICATOR 2026-09-26 (Sep 26 export window Sep 18-24, NOT the Oct 3 read): 305.7 live watch-hours over ~6.5 days = ~47 h/day = ~2 average concurrent viewers (keep bar >= 25-50, stop bar < 10 at 30d). 1,616 views, 752 engaged, 8 subs, AVD 24 min. Views still accumulating on the API (1,715 on 2026-09-26). Action before the read: confirm the Upstream plan/hours did not lapse (free plan ~12 h vs 8 days live) and that the loop is > 3 h; check the Sat Bansuri sleep anchors for cannibalisation at the Oct 3 read."
+        },
+        {
+          "stage": "d14",
+          "date": "2026-10-03",
+          "status": "TESTING",
+          "note": "D14 READ 2026-10-03: 629.6 live watch-hours over ~13 days = ~48 h/day = ~2.0 average concurrent; second week alone 324 h / 7 d = ~1.9 - flat, no ramp. 2,694 views, 14.7K impressions, CTR 3.54%, +19 subscribers. Far under the keep bar (>= 25) and under the stop bar (< 10). Source videos: Quiet Night Bansuri 3hr engaged -3.6% w/w, in line with the catalog - no cannibalisation signal. On track for STOP at the 2026-10-19 verdict unless the loop/visual fixes change it."
         }
       ],
       "read_schedule": {
@@ -1196,7 +1242,9 @@
       ],
       "linked_ships": [
         "v_2026-09-30_sleep_in_santoor_3hr (Wed, seam build #1)",
-        "v_2026-10-03_music_before_bed_bansuri_3hr (Sat, seam build #2)"
+        "v_2026-10-03_music_before_bed_bansuri_3hr (Sat, seam build #2)",
+        "2026-09-26 · Music for Sleepless Nights: Soft Bansuri Flute to Rest Unbroken All Night | 3 Hours [VPjarNR3ZSg]",
+        "2026-09-30 · All Night Sleep: Slow Santoor and a Soft Night Raga to Rest Deep and Unbroken | 3 Hours [zX2ZXiGOJPE]"
       ],
       "promoted_rule": null,
       "caveats": "Seam dips are read from a single curve (n=1) and 1/7 intervals are inferred, not logged - the render log should record the exact seam timestamps for the two test ships. AVD must be read at matched age (d7), never against the catalog median.",
@@ -1224,7 +1272,8 @@
       ],
       "linked_ships": [
         "v_2026-09-29_morning_cortisol_reset_bansuri (Morning Reset Ep.1)",
-        "v_2026-10-03_music_before_bed_bansuri_3hr (Sleep Therapy Ep.1)"
+        "v_2026-10-03_music_before_bed_bansuri_3hr (Sleep Therapy Ep.1)",
+        "2026-09-29 · Morning Cortisol Reset 🌿 Bansuri Therapy for a Calm Nervous System & Slower Breathing | Raag Bhairav [wINy9PW48iw]"
       ],
       "promoted_rule": null,
       "gate_exception": "Cooldown, packaging-clone, lead-freshness and week_diversity are excepted on the two series slots for the four-week test; logged here so brief_gate FAILs on those slots are expected. The top-10 no-look-alike rule and the two-Bansuri-per-week rule are unchanged; Mon/Wed/Thu/Fri keep every gate.",
