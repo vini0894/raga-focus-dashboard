@@ -107,3 +107,17 @@
 | 2026-10-03 | Sleep Therapy · Ep.1 (Bansuri 3hr) | Series day-one floor + seam-spec build #2 + image-only Test & compare | thumb image A vs B; title fixed | day-one at 24h · d7 **2026-10-10** |
 
 Series reads: wk1 Oct 6/10 · wk2 Oct 13/17 · **stop-rule check 2026-10-18** (day-one < 1,000 on both slots → revert) · verdict **2026-10-24**. Metrics: day-one views (baseline ~300), first-week impressions vs same-age cohort (0.2–0.5×), subscribed share of watch-time (8%).
+
+
+## wk_2026-10-05 (locked 2026-10-03)
+
+| Day | Ship | Test | Arms | Reads |
+|---|---|---|---|---|
+| 2026-10-05 | Sitar morning 1.5hr | Monday music fix (Bilawal, ~60 BPM) - h_2026-10-03_monday_sitar_music_fix | A 'Morning Bliss Music' vs B 'Rise and Shine…' | d7 **2026-10-12** (AVD >= 20%) |
+| 2026-10-06 | Morning Reset · Ep.2 (Bansuri, 90 min) | Series day-one floor + 90-min arm of the runtime test | title fixed, fixed template | day-one at 24h · d7 **2026-10-13** |
+| 2026-10-07 | Santoor cognitive 1.5hr | Competitor mirror #2 ('Remove Mental Blocks') + h_2026-08-09 offering register | A 'Think Clearly Again' vs B 'Remove Mental Blocks…' | d7 **2026-10-14** |
+| 2026-10-08 | Sarangi stress 1.5hr | Thursday therapy slot - h_2026-10-03_thursday_therapy_slot | A 'Stress Therapy' vs B 'Release Stored Stress…' | d7 **2026-10-15** (>= 20K impressions, AVD >= 20%) |
+| 2026-10-09 | Morning Reset · Ep.3 (Bansuri, **60 min**) | h_2026-10-03_runtime_60_vs_90 - 60-min arm | title fixed, fixed template | day-one at 24h · d7 **2026-10-16** (verdict) |
+| 2026-10-10 | Sleep Therapy · Ep.2 (Bansuri 3hr) | Series day-one floor + seam-spec build #3 | title fixed, fixed template | day-one at 24h · d7 **2026-10-17** |
+
+**Week-level:** h_2026-10-03_runtime_60_vs_90 (Fri 60 min vs Tue 90 min: impressions, engaged views, average minutes watched at d7; verdict 2026-10-16). Carried: series stop-rule check **2026-10-18**; h_2026-09-21 d14 flip (proposed KILLED) 2026-10-06; h_2026-09-07 4-week read written 2026-10-03 (proposed KILLED); Wed Sep 30 Santoor 3hr seam read 2026-10-07; routing pass v3 read 2026-10-10; Sleep Radio 30d verdict 2026-10-19.

@@ -1,0 +1,86 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-10-03",
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr median ~20%, fresh 3hr median ~17%). Never against the catalog median - it is survivor-inflated (banked 2026-09-26). Export MUST carry 'Average percentage viewed (%)'. tools/weekly_review.py prints the matched-age read.",
+  "ab_design": "SERIES EPISODE - title fixed, no title test. Thumbnail = the fixed series template (the Episode 1 image-test winner; the bold template if no clear winner). Only the episode line changes.",
+  "hypothesis_id": "h_2026-10-03_runtime_60_vs_90",
+  "spent": false,
+  "runtime_note": "ONE-OFF 60-MINUTE TEST approved by the user 2026-10-03 ('Okay, let's do it'). The standing rule (90 or 180 minutes only) is unchanged unless h_2026-10-03_runtime_60_vs_90 passes.",
+  "id": "v_2026-10-09_morning_anxiety_reset_bansuri_60min",
+  "planned_date": "2026-10-09",
+  "planned_slot": "06:30 IST AM · Fri",
+  "lane": "morning",
+  "daypart": "morning",
+  "instrument": "Bansuri",
+  "raga": "Todi",
+  "title_variants": {
+    "A": "Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins | Raag Todi",
+    "B": "(fixed series title — no title test)"
+  },
+  "title": "Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins | Raag Todi",
+  "title_note": "MORNING RESET · EPISODE 3 - the second weekly morning episode, added 2026-10-03 (user approved; replaces the droppable Friday Tanpura ship). Locked by user 2026-10-03. Same skeleton as Episodes 1-2, no runtime in the title so the only planned difference from Tuesday is LENGTH (60 vs 90 minutes). Promise: anxiety (competitors: Dhun Detox 'Monday Morning Anxiety?' 10,899 views at 5 days). RISK noted to the user: Bansuri x anxiety reads FLOP on its own (n=3); here it sits inside the morning series. 'Morning Breath Reset' is the free alternative. SERIES SLOT (h_2026-09-27_bansuri_series). Cooldown, packaging-clone, lead-freshness and week_diversity gates are EXCEPTED on this slot by design: repeating the family, look and skeleton is the treatment. The top-10 no-look-alike rule still applies.",
+  "gate_override": "SERIES SLOT (h_2026-09-27_bansuri_series). Cooldown, packaging-clone, lead-freshness and week_diversity gates are EXCEPTED on this slot by design: repeating the family, look and skeleton is the treatment. The top-10 no-look-alike rule still applies. THREE Bansuri ships this week (Tue, Fri, Sat) - user-approved exception to the two-per-week rule (2026-10-03). Bansuri ships back-to-back Fri AM / Sat PM. 60-minute runtime = user-approved one-off exception to the 90/180 rule.",
+  "validated_keywords": [
+    "'Morning Anxiety Reset' - lead_prescreen FRESH 2026-10-03; unscored",
+    "Full-phrase check 2026-10-03: anxiety reset / worry / feel light / before the day / todi - no live title or A/B variant",
+    "Why 60 minutes: the fastest recent competitor uploads run ~60-70 min (Healing Raga Studio 64-70, Soulful 33-86); our fresh 90-minute ships are watched ~18-22 minutes on average"
+  ],
+  "thumbnail_text_main": "MORNING RESET",
+  "thumbnail_text_variants": [
+    {
+      "label": "Fixed series template",
+      "text": "MORNING RESET",
+      "strategy": "Fixed wordmark, identical every episode. Second line: 'Bansuri Therapy · Ep. 3 · Worry Release'. Same image version as Tuesday's Episode 2."
+    }
+  ],
+  "thumbnail_prompt": "REUSE THE FIXED MORNING RESET TEMPLATE - identical to Tuesday's Episode 2 image. Only the second line changes: 'Bansuri Therapy · Ep. 3 · Worry Release'. Do NOT put the runtime on the thumbnail (the 60 vs 90 comparison should differ in length only).",
+  "playlists": [
+    "Morning Energy",
+    "Peaceful Music"
+  ],
+  "music_direction": "SERIES BED, IDENTICAL RECIPE TO TUESDAY - the runtime test needs everything but length held constant. Breath-driven bamboo flute with long sustained notes and natural breath pauses, NO percussion, steady tanpura drone, 70 BPM. Raga Todi (flat 2nd, flat 3rd, flat 6th with a raised 4th - a deep, inward morning raga; keep the phrasing gentle and consoling, never dark). Melody in by 0:15, no fade-in. BUILD TO EXACTLY 60 MINUTES. ⛔ claim_check CLEAN before rendering.",
+  "suno_prompt": "Instrumental only, no vocals, no humming — gentle Indian classical bansuri in Raga Todi, breath-driven bamboo flute with long sustained notes and natural breath pauses, tender inward morning melody, no percussion, steady tanpura drone, 70 BPM, seamless loop.",
+  "experiment": "h_2026-10-03_runtime_60_vs_90 - the 60-MINUTE arm (pair = Tue Oct 6 Ep.2, 90 min; same series, instrument, template and 06:30 slot; weekday and promise differ). PASS: at d7, impressions and engaged views >= Tuesday's at matched age AND average minutes watched >= ~18. Also h_2026-09-27_bansuri_series Episode 3: day-one views at 24h. Reads: day-one Oct 10 · d7 2026-10-16 (verdict).",
+  "production_spec": {
+    "duration_minutes": 60,
+    "format": "1hr (one-off test)",
+    "publish": "2026-10-09 06:30 IST",
+    "precheck": "python3 tools/claim_check.py <clips> --name bansuri_morning_oct09  (CLEAN before rendering)",
+    "opening_rule": "melody in by 0:15, no fade-in"
+  },
+  "slot_note": "AM 06:30 Friday - second weekly Morning Reset slot (same hour as Tuesday so the runtime pair differs in length, not time of day).",
+  "competitor_basis": "The competitor wave is morning Bansuri therapy published near-daily (Soulful Breathscape posted on 9 of the last 13 days; 14 of the 20 fastest recent uploads are this format, 2026-10-03 snapshot). Runtimes of the fastest: 63-86 min (Soulful), 64-70 (Healing Raga Studio), 25-30 (Trust in Gods). Owned-host routing partners: Episodes 1 and 2, cross-linked.",
+  "tags": [
+    "morning reset",
+    "bansuri therapy",
+    "morning anxiety reset",
+    "morning anxiety relief",
+    "anxiety relief music",
+    "calm morning music",
+    "bansuri flute",
+    "bansuri music",
+    "indian flute music",
+    "quiet the worry",
+    "raag todi",
+    "morning meditation music",
+    "music for anxious mornings",
+    "nervous system calm",
+    "indian instrumental music",
+    "1 hour meditation music",
+    "raga focus"
+  ],
+  "pending": [
+    "⛔ FIRST: run tools/claim_check.py on the raw clips - render only on CLEAN",
+    "USER: generate the music to Tuesday's recipe - build to exactly 60 minutes",
+    "USER: reuse the MORNING RESET template; episode line 'Bansuri Therapy · Ep. 3 · Worry Release'; no runtime on the image",
+    "Replace EP2_VIDEO_ID in the description with Tuesday's video id once it is live",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "Read day-one views at 24h and log them",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 runtime read"
+  ],
+  "description": "Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins | Episode 3 of Morning Reset\n\nIf you wake with a knot in your stomach and a mind already rehearsing everything that could go wrong, you are not behind - you just need a softer first hour.\n\nThis gentle Indian flute music is designed to quiet morning worry: slow, consoling breaths of bamboo flute that steady you before the day begins.\n\nEnjoy 1 hour of warm bansuri (Indian bamboo flute) over a steady tanpura drone, breath-led and unhurried, with no vocals.\n\n🌿 MORNING RESET is our Bansuri Therapy series: calm-morning sessions at 6:30 IST. This is Episode 3.\nEpisode 1 — Morning Cortisol Reset → https://www.youtube.com/watch?v=wINy9PW48iw\nEpisode 2 — Morning Stress Reset → https://www.youtube.com/watch?v=EP2_VIDEO_ID\n\n▶ Keep the calm going — the full Morning Energy playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199l9NGQ0ig-jCkqp0iwI3c7m\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for anxious mornings, a slow start, meditation, breathwork, yoga, tea or coffee by the window, journaling, prayer, a calm commute, or settling yourself before a difficult day.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Bansuri (Indian bamboo flute) with tanpura drone\nRaga: Todi (a deep, inward morning raga)\nStyle: Indian classical instrumental, meditative\nMood: Consoling, steady, lightening\nAtmosphere: Grey first light turning gold, a quiet room, time in hand\nDuration: 1 hour\n\n🎧 HOW TO USE\nPlay it as soon as you wake, before the phone. Put a hand on your stomach, breathe out a little longer than you breathe in, and let the long flute notes set the pace. Headphones bring out the breath in the bamboo; soft speakers work well too.\n\n⏱ CHAPTERS\n0:00 Before the worry starts\n6:00 A hand on the chest\n12:00 The long breath out\n18:00 The knot loosens\n24:00 Quieter thoughts\n30:00 Steady again\n36:00 Light coming in\n42:00 Feeling lighter\n48:00 Calm to carry\n54:00 Ready for the day\n\n⏱ BEST FOR\n• Morning anxiety and worry\n• A racing start to the day\n• Meditation and breathwork\n• Yoga and gentle stretching\n• Tea or coffee by the window\n• Journaling and prayer\n• A calm commute\n• Settling before a big day\n• Reading\n• Quiet background calm for the home\n\nIf this music helped you start lighter, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#MorningReset #BansuriTherapy #AnxietyRelief #MorningCalm #IndianFlute",
+  "series": "Morning Reset",
+  "episode": 3
+}

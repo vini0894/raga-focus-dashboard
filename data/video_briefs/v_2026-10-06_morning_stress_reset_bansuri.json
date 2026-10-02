@@ -1,0 +1,87 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-10-03",
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr median ~20%, fresh 3hr median ~17%). Never against the catalog median - it is survivor-inflated (banked 2026-09-26). Export MUST carry 'Average percentage viewed (%)'. tools/weekly_review.py prints the matched-age read.",
+  "ab_design": "SERIES EPISODE - title fixed, no title test. Thumbnail = the fixed series template (the Episode 1 image-test winner; the bold template if no clear winner). Only the episode line changes.",
+  "hypothesis_id": "h_2026-09-27_bansuri_series",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14).",
+  "id": "v_2026-10-06_morning_stress_reset_bansuri",
+  "planned_date": "2026-10-06",
+  "planned_slot": "06:30 IST AM · Tue",
+  "lane": "morning",
+  "daypart": "morning",
+  "instrument": "Bansuri",
+  "raga": "Ahir Bhairav",
+  "title_variants": {
+    "A": "Morning Stress Reset 🌿 Bansuri Therapy to Release Tension & Start the Day Calm | Raag Ahir Bhairav",
+    "B": "(fixed series title — no title test)"
+  },
+  "title": "Morning Stress Reset 🌿 Bansuri Therapy to Release Tension & Start the Day Calm | Raag Ahir Bhairav",
+  "title_note": "MORNING RESET · EPISODE 2. Locked by user 2026-10-03. Skeleton: '<Promise> 🌿 Bansuri Therapy <benefit> | Raag <name>' - no runtime in the title, matching how Episode 1 actually went live. Promise moves cortisol -> stress (plain English, fresh). 'Nervous System' and 'Mind Reset' were blocked as too close to recent ships. STRONGEST competitor match of the week: Soulful 'Morning Cortisol Calm 🌿 … Bansuri Therapy for Stress Relief & Mental Clarity' 71,267 views at 18 days. Optional tail '& Mental Clarity' was offered and NOT adopted (title locked as is). SERIES SLOT (h_2026-09-27_bansuri_series). Cooldown, packaging-clone, lead-freshness and week_diversity gates are EXCEPTED on this slot by design: repeating the family, look and skeleton is the treatment. The top-10 no-look-alike rule still applies.",
+  "gate_override": "SERIES SLOT (h_2026-09-27_bansuri_series). Cooldown, packaging-clone, lead-freshness and week_diversity gates are EXCEPTED on this slot by design: repeating the family, look and skeleton is the treatment. The top-10 no-look-alike rule still applies.",
+  "validated_keywords": [
+    "'Morning Stress Reset' - lead_prescreen FRESH 2026-10-03; unscored",
+    "Full-phrase check 2026-10-03: 'release tension' matches only a June video (Music to Release Tension, 108 days) - no recent repeat",
+    "Episode 1 'Morning Cortisol Reset' (Sep 29): 12.4K impressions at d4, AVD 24.3% - best retention of its week",
+    "Competitor wave 2026-10-03: 14 of the 20 fastest recent uploads are morning Bansuri reset/therapy titles"
+  ],
+  "thumbnail_text_main": "MORNING RESET",
+  "thumbnail_text_variants": [
+    {
+      "label": "Fixed series template",
+      "text": "MORNING RESET",
+      "strategy": "Fixed wordmark, identical every episode. Second line: 'Bansuri Therapy · Ep. 2 · Stress Release'. Use the Episode 1 image-test winner (bold template if no clear winner)."
+    }
+  ],
+  "thumbnail_prompt": "REUSE THE FIXED MORNING RESET TEMPLATE from Episode 1 - do not redesign. Only the second line changes: 'Bansuri Therapy · Ep. 2 · Stress Release'. Same banner, same wordmark, same viewer-at-the-window scene at first light. If the Episode 1 image test showed the Pichwai control winning, use that version with the same wordmark and the new episode line.",
+  "playlists": [
+    "Morning Energy",
+    "Peaceful Music"
+  ],
+  "music_direction": "SERIES BED - keep it consistent with Episode 1 (AVD 24.3% at d4). Breath-driven bamboo flute with long sustained notes and natural breath pauses, NO percussion, steady tanpura drone, 70 BPM. Raga Ahir Bhairav (flat 2nd, flat 7th - a soft, devotional dawn colour, slightly lighter than Episode 1's Bhairav). Soothing but not slow. Melody in by 0:15, no fade-in. THIS IS THE 90-MINUTE ARM of the runtime test: keep everything else identical to Friday's 60-minute episode. ⛔ claim_check CLEAN before rendering.",
+  "suno_prompt": "Instrumental only, no vocals, no humming — gentle Indian classical bansuri in Raga Ahir Bhairav, breath-driven bamboo flute with long sustained notes and natural breath pauses, flat 2nd and flat 7th for a soft dawn quality, no percussion, steady tanpura drone, 70 BPM, seamless loop.",
+  "experiment": "h_2026-09-27_bansuri_series EPISODE 2 (Tue slot): day-one views at 24h (baseline ~300), first-week impressions vs same-age cohort, subscribed share. ALSO the 90-minute arm of h_2026-10-03_runtime_60_vs_90 (pair = Fri Oct 9 Ep.3, 60 min): d7 impressions, engaged views and average minutes watched. Reads: day-one Oct 7 · d7 2026-10-13. Series stop rule 2026-10-18.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-10-06 06:30 IST",
+    "precheck": "python3 tools/claim_check.py <clips> --name bansuri_morning_oct06  (CLEAN before rendering)",
+    "opening_rule": "melody in by 0:15, no fade-in"
+  },
+  "slot_note": "AM 06:30 Tuesday - fixed series slot (the series needs the same slot every week).",
+  "competitor_basis": "COMPETITOR MIRROR #1 OF THE WEEK (2026-10-03 snapshot): Soulful Breathscape 'Morning Cortisol Calm 🌿 Nervous System Reset | Bansuri Therapy for Stress Relief & Mental Clarity' 71,267 views at 18 days; 'Morning Cortisol Detox 🌿' 23,783 at 4 days; 'Morning Dopamine Boost 🌿 … Bansuri Therapy for Stress Relief' 8,236 at 2 days; Dhun Detox 'Monday Morning Detox … to Release Stress' 13,144 at 12 days. Owned-host routing partner: Episode 1 (wINy9PW48iw), cross-linked in the description.",
+  "tags": [
+    "morning reset",
+    "bansuri therapy",
+    "morning stress reset",
+    "stress relief music morning",
+    "release tension music",
+    "calm morning music",
+    "bansuri flute",
+    "bansuri music",
+    "indian flute music",
+    "morning calm music",
+    "raag ahir bhairav",
+    "morning meditation music",
+    "stress relief music",
+    "nervous system calm",
+    "indian instrumental music",
+    "krishna flute morning",
+    "raga focus"
+  ],
+  "pending": [
+    "⛔ FIRST: run tools/claim_check.py on the raw clips - render only on CLEAN",
+    "USER: generate the music to the music_direction spec - Episode 1 bed, melody in by 0:15",
+    "USER: reuse the MORNING RESET template; change only the episode line to 'Bansuri Therapy · Ep. 2 · Stress Release'",
+    "USER: tell Claude which Episode 1 image won (bold template vs Pichwai control) and Episode 1's 24h views",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "Read day-one views at 24h and log them (series stop rule needs it)",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' for the d7 read"
+  ],
+  "description": "Morning Stress Reset 🌿 Bansuri Therapy to Release Tension & Start the Day Calm | Episode 2 of Morning Reset\n\nIf you wake up with yesterday still sitting in your shoulders - jaw tight, a to-do list already running - give yourself this before the day starts asking things of you.\n\nThis gentle Indian flute music is designed to release morning tension: long, slow breaths of bamboo flute that let the body soften and the mind settle before the day begins.\n\nEnjoy 1.5 hours of warm bansuri (Indian bamboo flute) over a steady tanpura drone, breath-led and unhurried, with no vocals.\n\n🌿 MORNING RESET is our Bansuri Therapy series: calm-morning sessions at 6:30 IST. This is Episode 2.\nEpisode 1 — Morning Cortisol Reset → https://www.youtube.com/watch?v=wINy9PW48iw\n\n▶ Keep the calm going — the full Morning Energy playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199l9NGQ0ig-jCkqp0iwI3c7m\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for a slow morning, releasing stress before work, meditation, breathwork, yoga, tea or coffee by the window, journaling, prayer, a calm commute, or gentle stretching.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Bansuri (Indian bamboo flute) with tanpura drone\nRaga: Ahir Bhairav (a soft, devotional dawn raga)\nStyle: Indian classical instrumental, meditative\nMood: Loosening, steady, quietly clear\nAtmosphere: Early light, a warm cup, the day not yet begun\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPlay it as soon as you wake, before the phone. Drop your shoulders, breathe out a little longer than you breathe in, and let the long flute notes set the pace. Headphones bring out the breath in the bamboo; soft speakers work well too.\n\n⏱ CHAPTERS\n0:00 Before the day begins\n9:00 Shoulders coming down\n18:00 The long breath out\n27:00 Tension leaving\n36:00 A softer chest\n45:00 Quiet and steady\n54:00 Room to think\n1:03:00 Calm settling in\n1:12:00 Carried into the day\n1:21:00 Ready, not rushed\n\n⏱ BEST FOR\n• Morning stress and tension\n• A calm start before work\n• Meditation and breathwork\n• Yoga and gentle stretching\n• Tea or coffee by the window\n• Journaling and prayer\n• A calm commute\n• Lowering stress before a big day\n• Reading\n• Quiet background calm for the home\n\nIf this music helped you start calmer, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#MorningReset #BansuriTherapy #StressRelief #MorningCalm #IndianFlute",
+  "series": "Morning Reset",
+  "episode": 2
+}

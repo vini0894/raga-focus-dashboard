@@ -1,0 +1,87 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-10-03",
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr median ~20%, fresh 3hr median ~17%). Never against the catalog median - it is survivor-inflated (banked 2026-09-26). Export MUST carry 'Average percentage viewed (%)'. tools/weekly_review.py prints the matched-age read.",
+  "ab_design": "A = SHORT pipeline title on keyword 1; B = LONG competitor-pattern title on a DIFFERENT keyword 2 (user rule 2026-09-19). Pair thumb text A with title A and thumb text B with title B in Test & compare.",
+  "hypothesis_id": "h_2026-10-03_monday_sitar_music_fix",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14).",
+  "id": "v_2026-10-05_morning_bliss_sitar",
+  "planned_date": "2026-10-05",
+  "planned_slot": "06:30 IST AM · Mon",
+  "lane": "morning",
+  "daypart": "morning",
+  "instrument": "Sitar",
+  "raga": "Alhaiya Bilawal",
+  "title_variants": {
+    "A": "Morning Bliss Music | Sitar Instrumental | 1.5 Hours",
+    "B": "Rise and Shine: Bright Sitar & Soft Tabla to Start the Day Light, Clear and Confident | 1.5 Hours"
+  },
+  "title": "Morning Bliss Music | Sitar Instrumental | 1.5 Hours",
+  "title_note": "Locked by user 2026-10-03 (A/B only, C dropped). Monday register = uplift (user rule), not the calm/cortisol wave and not the dead productivity/focus family. A = 'Morning Bliss Music' (VidIQ 61, fresh). B = 'Rise and Shine' (unscored - locked without a score by the user), long competitor-pattern form. Neither is a look-alike of a top-10 video (no 'Start Your Morning Right', 'Morning Motivation', 'Morning Energy' or dopamine lead). Loose competitor parallel only: Soulful 'Morning Glow' 25K in 8 days (Bansuri).",
+  "gate_override": "USER-DIRECTED hero slot (Sitar on Monday, 2026-09-19). track_record reads Sitar x morning FLOP on 28-day medians, and the packaging-clone gate flags Unlock Success (Sep 28, 7 days): same instrument + lane + format is the Monday cadence itself. Note for expectations: h_2026-09-21_hero_peak_day_retention is failing - Monday carries no sampling premium; the treatment this week is the MUSIC, not the slot.",
+  "validated_keywords": [
+    "'Morning Bliss Music' - VidIQ 61 (bank); lead_prescreen FRESH 2026-10-03 (one soft flag: unused B-title on a July Dilruba brief)",
+    "'Rise and Shine' - unscored; lead_prescreen FRESH 2026-10-03; user locked without a score",
+    "Full-phrase check 2026-10-03 against every live title and every A/B variant: no repeat ('start the day' appears only in an old thumb text)",
+    "Dropped: 'Win the Morning' (56, under the 60 bar), 'Fresh Start Music' (same concept as Jul 9 Morning Renewal), 'Day Start Music' and 'Start Fresh Today' (lost A/B tests), 'Motivation Music' (past lock + top-10 look-alike)"
+  ],
+  "thumbnail_text_main": "RISE AND SHINE",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "RISE AND SHINE",
+      "strategy": "14 chars / 3 words, outcome imperative (morning lane: imperatives and Q-hooks tie, pick on fit). Deduped against all 222 known thumb texts - no match."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "WAKE UP HAPPY",
+      "strategy": "13 chars / 3 words, verb + outcome. Deduped - no match (WAKE UP GRATEFUL / WAKE UP RESTED / WAKE UP PEACEFULLY exist; HAPPY is new)."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. Show the VIEWER living the moment, never a musician performing (6.11% vs 3.03% CTR). Pichwai/Kangra miniature, aged cream parchment, ornate border. Scene: early sun through an open balcony door, a person mid-stretch on a woven mat, face turned up to the light and smiling, a brass cup of chai steaming on a low stool, marigolds in a pot, birds on the railing. A sitar rests against the wall at the frame edge, never held. Text in its own banner panel at ~35% of frame, dark-teal serif, small second tier line: 'Sitar · Morning Uplift · 1.5 Hours'. Warm and bright but gentle - match the slower audio (Test #50: thumb tone must match the music).",
+  "playlists": [
+    "Morning Energy",
+    "Peaceful Music"
+  ],
+  "music_direction": "MUSIC FIX - this is the week's treatment on this slot. The last three Monday Sitar ships held 18.6% / 17.2% / 19.3% on the Ahir Bhairav + 70 BPM bed, under the 20% matched-age bar. Change the bed: Raga Alhaiya Bilawal (all natural notes - bright, open, uncomplicated morning character), SLOWER at about 60 BPM, long sustained meend phrases with space between them, soft light tabla kept low in the mix (Sitar's tabla rule), warm rounded tone. Uplift through brightness of the raga, not through speed. Melody present within the first 15 seconds - no long alap, no fade-in, no drone-only opening (the retention cliff sits at 0:54-1:48). Suggested Suno prompt below; the user may generate their own.",
+  "suno_prompt": "Instrumental only, no vocals — warm Indian classical sitar in Raga Alhaiya Bilawal, bright open natural-note morning melody, long sustained gliding phrases with space between them, soft light tabla low in the mix, steady unhurried pulse around 60 BPM, gentle positive glow, seamless loop.",
+  "experiment": "h_2026-10-03_monday_sitar_music_fix: slower, brighter Sitar bed (Bilawal, ~60 BPM, sustained phrases) vs the Ahir Bhairav 70 BPM bed of Sep 14 / 21 / 28 (18.6 / 17.2 / 19.3%). SUCCESS: AVD >= 20% at d7 (matched-age bar). Secondary: short-vs-long title tally. Read d7 2026-10-12.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-10-05 06:30 IST",
+    "opening_rule": "melody in by 0:15, no fade-in"
+  },
+  "slot_note": "AM 06:30 Monday - user's hero-instrument slot. AM vs PM shows no reach difference since Sep 14 (06:30 median 13.2K impressions, 19:00 11.6K; Sarangi same-instrument pair within 5%), so morning-lane ships stay at 06:30.",
+  "competitor_basis": "Not a designated competitor mirror. Loose parallel: Soulful Breathscape 'Morning Glow 🌿 Bansuri therapy' 25,281 views at 8 days (2026-10-03 snapshot) - same uplift register, different instrument. Owned-host routing partner: 'Sitar Music to Start Your Morning Right' (Morning Energy playlist).",
+  "tags": [
+    "morning bliss music",
+    "morning music",
+    "sitar music",
+    "sitar instrumental",
+    "morning sitar music",
+    "rise and shine music",
+    "positive morning music",
+    "uplifting morning music",
+    "indian classical music",
+    "raga bilawal",
+    "sitar and tabla",
+    "morning meditation music",
+    "music to start the day",
+    "happy morning music",
+    "indian instrumental music",
+    "peaceful morning music",
+    "raga focus"
+  ],
+  "pending": [
+    "USER: generate the music to the music_direction spec",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' for the d7 read"
+  ],
+  "description": "Morning Bliss Music | Sitar Instrumental | 1.5 Hours to Rise and Shine\n\nSome mornings just need a little light let in. If you want to start the day feeling open, clear and quietly glad to be up, press play before anything else.\n\nThis bright Indian sitar music is designed to lift your morning gently: a warm, unhurried melody that wakes you up without rushing you.\n\nEnjoy 1.5 hours of sitar with soft tabla, slow and glowing, with no vocals.\n\n▶ Keep the morning bright — the full Morning Energy playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199l9NGQ0ig-jCkqp0iwI3c7m\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for waking up, a slow breakfast, tea or coffee on the balcony, morning stretches, yoga, journaling, getting ready, a calm commute, tidying the house, or easing into work in a good mood.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sitar with soft tabla\nRaga: Alhaiya Bilawal (a bright, open morning raga)\nStyle: Indian classical instrumental\nMood: Light, warm, quietly joyful\nAtmosphere: First sun through an open door, a warm cup, a fresh day\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPlay it as you get out of bed and keep it in the background through your first hour. Open a window, take a few slow breaths and let the long sitar notes set an easy pace. Speakers fill a room nicely; headphones bring out the detail of the strings.\n\n⏱ CHAPTERS\n0:00 First light\n9:00 Opening the window\n18:00 A slow warm stretch\n27:00 Morning bliss\n36:00 Light on the floor\n45:00 Clear and easy\n54:00 A quiet smile\n1:03:00 Rise and shine\n1:12:00 Bright and steady\n1:21:00 Ready for the day\n\n⏱ BEST FOR\n• Waking up gently\n• A positive start to the day\n• Breakfast and morning tea\n• Yoga and stretching\n• Journaling and gratitude\n• Getting ready\n• A calm commute\n• Light housework\n• Easing into work\n• Bright background music for the home\n\nIf this music helped you start the day brighter, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#MorningMusic #SitarMusic #MorningBliss #IndianClassicalMusic #RiseAndShine"
+}

@@ -1315,6 +1315,50 @@
         "d7_fri": "2026-10-16"
       },
       "read_rule": "read both at d7; verdict 2026-10-16"
+    },
+    {
+      "id": "h_2026-10-03_monday_sitar_music_fix",
+      "created": "2026-10-03",
+      "status": "TESTING",
+      "week": "wk_2026-10-05",
+      "source": "chat_2026-10-03 - three Monday Sitar ships on the Ahir Bhairav 70 BPM bed held 18.6 / 17.2 / 19.3%",
+      "statement": "Monday Sitar's weak retention is the bed, not the slot or the title: a slower (~60 BPM), brighter (Alhaiya Bilawal) sitar bed with long sustained phrases holds >= 20% at d7.",
+      "predicted_metric": "Mon 2026-10-05 Sitar: d7 AVD >= 20% (matched-age 1.5hr bar). FAIL (<= 19%) -> the instrument on this slot is the user's next call.",
+      "relevant_lanes": [
+        "morning"
+      ],
+      "relevant_instruments": [
+        "Sitar"
+      ],
+      "promoted_rule": null,
+      "caveats": "n=1; raga and tempo change together.",
+      "reads": [],
+      "read_schedule": {
+        "d7": "2026-10-12"
+      },
+      "read_rule": "d7 = retention verdict"
+    },
+    {
+      "id": "h_2026-10-03_thursday_therapy_slot",
+      "created": "2026-10-03",
+      "status": "PROPOSED",
+      "week": "wk_2026-10-05",
+      "source": "chat_2026-10-03 - weekday sampling table (Thursday median 19K first-week impressions, n=5) + the therapy/tension register (Restart Your Life 22.4K, Tension Relief 20.7K)",
+      "statement": "Putting the best-sampling register (therapy / tension relief, Sarangi) on the best-sampling weekday (Thursday) repeats a >= 20K first-week sampling, and can become a recurring slot.",
+      "predicted_metric": "Thu 2026-10-08 Sarangi: first-week impressions >= 20K AND d7 AVD >= 20%. If met twice, propose it to the user as a recurring slot with a fixed look.",
+      "relevant_lanes": [
+        "stress_burnout"
+      ],
+      "relevant_instruments": [
+        "Sarangi"
+      ],
+      "promoted_rule": null,
+      "caveats": "Weekday table is n=5 and confounded with instrument. Recurring slot NOT yet approved by the user - week 1 runs as a one-off clone-gate exception.",
+      "reads": [],
+      "read_schedule": {
+        "d7": "2026-10-15"
+      },
+      "read_rule": "d7 read; recurring-slot decision is the user's"
     }
   ],
   "schema_note": "week = Monday of created week (wk_YYYY-MM-DD). reads[] = staged reads (d7/d14/d21). experiment_reads appends to reads[]; status changes at final read."

@@ -1,0 +1,149 @@
+{
+  "week_id": "wk_2026-10-05",
+  "week_start": "2026-10-05",
+  "week_end": "2026-10-11",
+  "created": "2026-10-03",
+  "status": "FINAL - 6 ships Mon-Sat, all titles + thumbnail texts locked by user 2026-10-03; briefs written",
+  "notes": "Six ships, Sunday clear. Ship count stays at six: the four-week volume test produced no breakout (23 ships, best 987 engaged), so volume is not a lever; six = the Mon-Fri rule + the Saturday series slot. Changes inside the six: one 3hr only (Saturday), a SECOND weekly Morning Reset episode on Friday at 60 minutes (runtime test), strongest non-series ship on Thursday, Monday Sitar music fix, cognitive ship mid-week.",
+  "hypothesis": {
+    "id": "h_2026-10-03_runtime_60_vs_90",
+    "one_line": "A 60-minute Morning Reset episode reaches at least as far as a 90-minute one, with average minutes watched holding near 18-20.",
+    "success": "Fri Ep.3 (60 min) at d7: impressions and engaged views >= Tue Ep.2 (90 min) at matched age AND average minutes watched >= ~18.",
+    "falsifier": "Reach no better and minutes watched clearly lower -> stay at 90 / 180 minutes only.",
+    "reads": {
+      "tue_d7": "2026-10-13",
+      "fri_d7": "2026-10-16",
+      "week_verdict": "2026-10-16"
+    }
+  },
+  "week_level_decisions": {
+    "ship_count": "SIX. h_2026-09-07_volume_restores_escalation read at 4 weeks 2026-10-03: proposed KILLED. Each ship is a ~12K-impression ticket; all in-window ships together are ~4% of the 28-day total. Revisit 5 vs 6 at the series stop rule (2026-10-18).",
+    "series": "Tue Morning Reset Ep.2 + Sat Sleep Therapy Ep.2 as planned; Friday ADDS Morning Reset Ep.3 (user 2026-10-03) because 14 of the 20 fastest recent competitor uploads are morning Bansuri reset/therapy titles and the hot channels post them near-daily. Three Bansuri ships this week = user-approved exception.",
+    "runtime_test": "Friday's episode is 60 minutes - a one-off exception to the 90/180 rule (user 2026-10-03). Tuesday is the 90-minute arm. Titles and thumbnails carry no runtime so the pair differs in length only (plus weekday and promise).",
+    "one_3hr_only": "Saturday is the only 3hr ship. Wed Sep 30 Santoor 3hr drew 2.4K impressions in 3 days at 13.6%.",
+    "thursday": "Strongest non-series ship on Thursday (best-sampling weekday, median 19K, n=5) in the therapy/tension register. One-off packaging-clone exception vs Tension Relief (Sep 25). RECURRING therapy slot = still the user's open decision.",
+    "monday": "Sitar stays on Monday (user rule) with a music fix: Bilawal, ~60 BPM, sustained phrases. Bar = 20% at d7. h_2026-09-21_hero_peak_day_retention is failing: no sampling premium on Mon/Tue.",
+    "slots": "AM vs PM: no reach difference since Sep 14 (06:30 n=7 median 13.2K impressions / 516 engaged; 19:00 n=5 11.6K / 495; Sarangi same-instrument pair within 5%). Morning-lane 06:30, evening-lane 19:00.",
+    "ab_design": "A = short pipeline title on keyword 1; B = long competitor-pattern title on a different keyword 2 (Mon, Wed, Thu). Series episodes: title fixed, fixed template.",
+    "reuse_check": "User caught two reused phrases on the first proposal (Mental Clarity Music - live twice; 'Let Go of … Tender Sarangi' - last Friday's B arm). Every title and thumb text was then checked phrase-by-phrase against all live titles, all A/B variants and all 222 known thumb texts; four titles were replaced. lead_prescreen only screens the LEAD - B-arm body phrases need this manual check until the tool covers them.",
+    "avd_bars_matched_age": "Every AVD bar = same-age cohort median (d7: 1.5hr ~20%, 3hr ~17%), never the catalog median.",
+    "protect_the_top_10": "No look-alike of a top-10 video, no dopamine lead, no unlisting, no new playlists.",
+    "unscored_leads": "Rise and Shine, Think Clearly Again, Remove Mental Blocks, Stress Therapy, Release Stored Stress and the series promises are unscored - locked without VidIQ by the user ('lock all')."
+  },
+  "ships": [
+    {
+      "date": "2026-10-05",
+      "day": "Mon",
+      "slot": "06:30",
+      "lane": "morning",
+      "instrument": "Sitar",
+      "runtime_min": 90,
+      "brief": "v_2026-10-05_morning_bliss_sitar",
+      "title_a": "Morning Bliss Music | Sitar Instrumental | 1.5 Hours",
+      "title_b": "Rise and Shine: Bright Sitar & Soft Tabla to Start the Day Light, Clear and Confident | 1.5 Hours",
+      "thumb_a": "RISE AND SHINE",
+      "thumb_b": "WAKE UP HAPPY",
+      "role": "HERO slot (user rule) · music-fix treatment",
+      "competitor_mirror": false
+    },
+    {
+      "date": "2026-10-06",
+      "day": "Tue",
+      "slot": "06:30",
+      "lane": "morning",
+      "instrument": "Bansuri",
+      "runtime_min": 90,
+      "brief": "v_2026-10-06_morning_stress_reset_bansuri",
+      "title_a": "Morning Stress Reset 🌿 Bansuri Therapy to Release Tension & Start the Day Calm | Raag Ahir Bhairav",
+      "title_b": "(fixed series title — no title test)",
+      "thumb_a": "MORNING RESET",
+      "thumb_b": "(fixed series template)",
+      "role": "SERIES: Morning Reset Ep.2 · competitor mirror #1 · 90-min arm of the runtime test",
+      "competitor_mirror": true
+    },
+    {
+      "date": "2026-10-07",
+      "day": "Wed",
+      "slot": "19:00",
+      "lane": "cognitive",
+      "instrument": "Santoor",
+      "runtime_min": 90,
+      "brief": "v_2026-10-07_think_clearly_again_santoor",
+      "title_a": "Think Clearly Again | Santoor Instrumental | 1.5 Hours",
+      "title_b": "Remove Mental Blocks: Soft Santoor to Free a Stuck Mind and Make Room for New Ideas | 1.5 Hours",
+      "thumb_a": "FOGGY HEAD?",
+      "thumb_b": "MIND STUCK?",
+      "role": "competitor mirror #2 (cognitive)",
+      "competitor_mirror": true
+    },
+    {
+      "date": "2026-10-08",
+      "day": "Thu",
+      "slot": "19:00",
+      "lane": "stress_burnout",
+      "instrument": "Sarangi",
+      "runtime_min": 90,
+      "brief": "v_2026-10-08_stress_therapy_sarangi",
+      "title_a": "Stress Therapy | Slow Sarangi | 1.5 Hours",
+      "title_b": "Release Stored Stress: Warm Sarangi to Unknot Your Body and Come Home to Yourself | 1.5 Hours",
+      "thumb_a": "DROP THE STRESS",
+      "thumb_b": "UNKNOT YOUR BODY",
+      "role": "strongest control on the best-sampling weekday (therapy register; one-off clone exception)",
+      "competitor_mirror": false
+    },
+    {
+      "date": "2026-10-09",
+      "day": "Fri",
+      "slot": "06:30",
+      "lane": "morning",
+      "instrument": "Bansuri",
+      "runtime_min": 60,
+      "brief": "v_2026-10-09_morning_anxiety_reset_bansuri_60min",
+      "title_a": "Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins | Raag Todi",
+      "title_b": "(fixed series title — no title test)",
+      "thumb_a": "MORNING RESET",
+      "thumb_b": "(fixed series template)",
+      "role": "SERIES: Morning Reset Ep.3 · 60-MINUTE runtime test arm",
+      "competitor_mirror": false
+    },
+    {
+      "date": "2026-10-10",
+      "day": "Sat",
+      "slot": "19:00",
+      "lane": "sleep",
+      "instrument": "Bansuri",
+      "runtime_min": 180,
+      "brief": "v_2026-10-10_sleep_therapy_ep2_bansuri_3hr",
+      "title_a": "Sleep Therapy Bansuri 🌙 Soft Flute Music to Release the Day, Slow Your Breathing & Sleep Deeply Till Morning | Raag Bageshri | 3 Hours",
+      "title_b": "(fixed series title — no title test)",
+      "thumb_a": "SLEEP THERAPY",
+      "thumb_b": "(fixed series template)",
+      "role": "SERIES: Sleep Therapy Ep.2 · only 3hr of the week · seam-spec build #3",
+      "competitor_mirror": false
+    }
+  ],
+  "lane_coverage": [
+    "morning",
+    "cognitive",
+    "stress_burnout",
+    "sleep"
+  ],
+  "uncovered": [
+    "anxiety (as a lane; covered as the Friday series promise)",
+    "calm_relax (every available cell reads FLOP)",
+    "healing (KILLED)"
+  ],
+  "vidiq_batch_needed": [],
+  "preflight_pending": [],
+  "blocking_decisions": [
+    "USER: Bansuri clips for Tue, Fri and Sat - tools/claim_check.py CLEAN before each render",
+    "USER: which Episode 1 image won (bold template vs Pichwai control) for both series + Episode 1 day-one (24h) views",
+    "USER: build Friday's episode to exactly 60 minutes; Saturday to the seam spec with seam timestamps recorded",
+    "USER: thumbnail images - Mon, Wed, Thu (text A and B each) + three series episode lines",
+    "USER: paste each video's id into its playlist link; fill EP2_VIDEO_ID (Fri) and SLEEP_EP1_VIDEO_ID (Sat)",
+    "USER: launch Test & compare on Mon / Wed / Thu and log both arms to ab_raw_data.csv",
+    "USER: log day-one (24h) views for all three series episodes",
+    "USER: decide whether Thursday becomes a recurring therapy slot",
+    "USER (still open): playlist re-sequence per ROUTING_PASS_2026-09-26.md v3 (read 2026-10-10)"
+  ]
+}

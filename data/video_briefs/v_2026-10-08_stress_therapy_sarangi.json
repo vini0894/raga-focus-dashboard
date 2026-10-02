@@ -1,0 +1,88 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-10-03",
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr median ~20%, fresh 3hr median ~17%). Never against the catalog median - it is survivor-inflated (banked 2026-09-26). Export MUST carry 'Average percentage viewed (%)'. tools/weekly_review.py prints the matched-age read.",
+  "ab_design": "A = SHORT pipeline title on keyword 1; B = LONG competitor-pattern title on a DIFFERENT keyword 2 (user rule 2026-09-19). Pair thumb text A with title A and thumb text B with title B in Test & compare.",
+  "hypothesis_id": "h_2026-10-03_thursday_therapy_slot",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14).",
+  "id": "v_2026-10-08_stress_therapy_sarangi",
+  "planned_date": "2026-10-08",
+  "planned_slot": "19:00 IST PM · Thu",
+  "lane": "stress_burnout",
+  "daypart": "evening",
+  "instrument": "Sarangi",
+  "raga": "Kafi",
+  "title_variants": {
+    "A": "Stress Therapy | Slow Sarangi | 1.5 Hours",
+    "B": "Release Stored Stress: Warm Sarangi to Unknot Your Body and Come Home to Yourself | 1.5 Hours"
+  },
+  "title": "Stress Therapy | Slow Sarangi | 1.5 Hours",
+  "title_note": "Locked by user 2026-10-03. The week's strongest non-series ship sits on Thursday, the best-sampling weekday (median 19K first-week impressions, n=5). Register = the 'therapy / tension relief' family that sampled best among recent ships: Restart Your Life | Sarangi Therapy 22.4K impressions, Tension Relief Music | Sarangi 20.7K. B is the REPLACEMENT after the user's reuse check: the first proposal 'Let Go of the Day: Tender Sarangi…' repeated last Friday's Sarangi B arm ('Let Go of Overthinking: Tender Sarangi…') and was dropped. No hot competitor match for this ship. Whether Thursday becomes a RECURRING therapy slot is still the user's open decision.",
+  "gate_override": "ONE-OFF EXCEPTION (user finalised the week 2026-10-03): packaging-clone gate FAILS vs 'Tension Relief Music | Sarangi' (Sep 25, 13 days, same instrument + lane + format, incumbent winning at 763 engaged). Deliberate: this is the therapy register the slot is built on. Sarangi also shipped Oct 2 (anxiety, 6 days).",
+  "validated_keywords": [
+    "'Stress Therapy' - lead_prescreen FRESH 2026-10-03; unscored; locked without a score by the user",
+    "'Release Stored Stress' - lead_prescreen FRESH 2026-10-03; unscored",
+    "Full-phrase check 2026-10-03: stored stress / unknot / come home / warm sarangi / slow sarangi - no live title or A/B variant",
+    "Caution: 'Therapy' already sits on five recent titles (Tanpura, Santoor, Bansuri, Sarangi, the series) - it is the family, but the shelf is crowded"
+  ],
+  "thumbnail_text_main": "DROP THE STRESS",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "DROP THE STRESS",
+      "strategy": "15 chars / 3 words, outcome imperative. Deduped against 222 known thumb texts - no match (MELT STRESS AWAY, STRESS DETOX, STRESSED? exist)."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "UNKNOT YOUR BODY",
+      "strategy": "16 chars / 3 words, body-outcome imperative (physiological verbs beat mind-state framings in this lane). Deduped - no match. YOU CAN STOP NOW and PUT IT ALL DOWN were rejected as repeats."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. The VIEWER, never a performer. Pichwai/Kangra miniature, aged parchment, ornate border. Scene: dusk on a quiet veranda, a person lying back on a low daybed with one arm hanging loose over the side, eyes closed, sandals on the floor, a brass lamp glowing, the garden going dark behind. A sarangi leans against the pillar at the frame edge. Text in its own banner at ~35% of frame, dark-teal serif, second tier 'Sarangi · Evening Therapy · 1.5 Hours'.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Peaceful Music"
+  ],
+  "music_direction": "Sarangi therapy bed, evening register - follow the two best-sampling Sarangi ships but hold longer (Restart Your Life 23.6%, Tension Relief 19.1%). Warm, low, vocal-like bowed sarangi in Raga Kafi (flat 3rd and flat 7th - tender, earthy evening colour), long slow bows with breathing space between phrases, steady tanpura drone, NO percussion, around 55 BPM. Keep the tone round and low - avoid the thin, high, crying register that reads as sad. Sound present from 0:00, no fade-in. Suggested Suno prompt below; the user may generate their own.",
+  "suno_prompt": "Instrumental only, no vocals — warm low Indian sarangi in Raga Kafi, slow vocal-like bowed phrases with long breathing pauses, flat 3rd and flat 7th for a tender evening colour, round mellow tone, steady tanpura drone, no percussion, around 55 BPM, seamless loop.",
+  "experiment": "h_2026-10-03_thursday_therapy_slot (week 1, PROPOSED): the best-sampling register on the best-sampling weekday. SUCCESS: first-week impressions >= 20K (matches the two prior Sarangi therapy ships) AND d7 AVD >= 20%. Arms: short functional lead vs long body-outcome lead. Read d7 2026-10-15.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-10-08 19:00 IST",
+    "opening_rule": "sound present from 0:00, no fade-in"
+  },
+  "slot_note": "PM 19:00 Thursday - best-sampling weekday for recent ships (median 19K impressions, n=5).",
+  "competitor_basis": "No hot competitor match this week (the wave is morning Bansuri). Basis is our own data: the therapy/tension register drew the most first-week impressions among recent ships. Owned-host routing partners: 'Tension Relief Music | Sarangi' (Sep 25) and 'Restart Your Life | Sarangi Therapy' (Sep 17).",
+  "tags": [
+    "stress therapy music",
+    "release stored stress",
+    "stress relief music",
+    "sarangi music",
+    "sarangi instrumental",
+    "evening stress relief",
+    "tension relief music",
+    "burnout recovery music",
+    "body relaxation music",
+    "raga kafi",
+    "indian classical music",
+    "healing music",
+    "calm evening music",
+    "nervous system relaxation",
+    "indian instrumental music",
+    "deep relaxation",
+    "raga focus"
+  ],
+  "pending": [
+    "USER: generate the music to the music_direction spec",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' for the d7 read",
+    "USER: decide whether Thursday becomes a recurring therapy slot (logged exception to the variety gates)"
+  ],
+  "description": "Stress Therapy | Slow Sarangi | 1.5 Hours to Release Stored Stress\n\nStress does not only live in your head. It sits in the neck, the jaw, the stomach, the shoulders - and it stays long after the day is over. This is ninety minutes to let it go.\n\nThis slow Indian sarangi music is designed to release stored stress: a warm, voice-like sound that the body softens to, phrase by phrase.\n\nEnjoy 1.5 hours of low, gentle sarangi over a steady tanpura drone, with no drums and no vocals.\n\n▶ Keep unwinding — the full Healing & Anxiety Relief playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199k-_9PNqaU2-Z_KhRN_X1hF\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for decompressing after work, evening stress relief, burnout recovery, stretching, a warm bath, lying down with your eyes closed, breathwork, yoga nidra, a quiet dinner, or the hour before bed.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sarangi (Indian bowed strings) with tanpura drone\nRaga: Kafi (a tender, earthy evening raga)\nStyle: Indian classical instrumental, meditative\nMood: Warm, heavy, releasing\nAtmosphere: Dusk, lamplight, nothing left to do\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPut it on when you get home and lie down or sit back. Scan slowly from your forehead to your feet and let each long bowed note loosen one place at a time. Breathe out longer than you breathe in. Headphones deepen the warmth of the strings; soft speakers work well too.\n\n⏱ CHAPTERS\n0:00 Arriving home\n9:00 The jaw lets go\n18:00 Shoulders dropping\n27:00 A slower breath\n36:00 Warmth in the chest\n45:00 The knots loosen\n54:00 Heavy and easy\n1:03:00 Stress leaving the body\n1:12:00 Quiet all the way through\n1:21:00 Home in yourself\n\n⏱ BEST FOR\n• Evening stress relief\n• Releasing tension held in the body\n• Burnout recovery\n• Decompressing after work\n• Stretching and yoga nidra\n• Breathwork\n• A warm bath\n• Quiet dinners\n• Winding toward sleep\n• Calm background for the home\n\nIf this music helped you let the stress go, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#StressRelief #SarangiMusic #StressTherapy #IndianClassicalMusic #HealingMusic"
+}

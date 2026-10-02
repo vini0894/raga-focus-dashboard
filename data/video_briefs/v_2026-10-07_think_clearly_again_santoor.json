@@ -1,0 +1,87 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-10-03",
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr median ~20%, fresh 3hr median ~17%). Never against the catalog median - it is survivor-inflated (banked 2026-09-26). Export MUST carry 'Average percentage viewed (%)'. tools/weekly_review.py prints the matched-age read.",
+  "ab_design": "A = SHORT pipeline title on keyword 1; B = LONG competitor-pattern title on a DIFFERENT keyword 2 (user rule 2026-09-19). Pair thumb text A with title A and thumb text B with title B in Test & compare.",
+  "hypothesis_id": "h_2026-08-09_deep_work_offering_register",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14).",
+  "id": "v_2026-10-07_think_clearly_again_santoor",
+  "planned_date": "2026-10-07",
+  "planned_slot": "19:00 IST PM · Wed",
+  "lane": "cognitive",
+  "daypart": "evening",
+  "instrument": "Santoor",
+  "raga": "Durga",
+  "title_variants": {
+    "A": "Think Clearly Again | Santoor Instrumental | 1.5 Hours",
+    "B": "Remove Mental Blocks: Soft Santoor to Free a Stuck Mind and Make Room for New Ideas | 1.5 Hours"
+  },
+  "title": "Think Clearly Again | Santoor Instrumental | 1.5 Hours",
+  "title_note": "Locked by user 2026-10-03. REPLACEMENT SET after the user's reuse check: the first proposal 'Mental Clarity Music' was already live twice (May 15, Jul 2) and was dropped; 'negativity' was removed from B because it echoed Remove Negative Thoughts (Sep 19) and Break Negative Patterns (Sep 16). A = 'Think Clearly Again' (outcome, offering register, unscored). B = 'Remove Mental Blocks' (the exact lead of Healing Raga Studio's 41,860-views-in-12-days upload; theirs is Bansuri, ours is Santoor - do not assume the pull carries over). Wednesday is 1.5hr this week: one 3hr ship only (Saturday).",
+  "gate_override": "None expected beyond soft flags: Santoor 7 days after the Sep 30 3hr sleep ship (different lane and runtime); soft clone flag vs Clear the Mental Clutter (Sep 23, 14 days, same instrument and lane family). Santoor x cognitive is THIN in track_record (n=1).",
+  "validated_keywords": [
+    "'Think Clearly Again' - lead_prescreen FRESH 2026-10-03; unscored; locked without a score by the user",
+    "'Remove Mental Blocks' - lead_prescreen FRESH 2026-10-03; unscored; in live competitor use (Healing Raga Studio 41,860 views at 12 days)",
+    "Full-phrase check 2026-10-03: think clearly / stuck / mental block / new ideas / make room - no recent live title or A/B variant",
+    "Cognitive lane: highest T1 share of watch-time (34%); uncovered last week"
+  ],
+  "thumbnail_text_main": "FOGGY HEAD?",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "FOGGY HEAD?",
+      "strategy": "11 chars / 2 words, Q-hook. Cognitive is the ONE lane with a real format effect (Q-hook 3.52 vs imperative 2.87), so both arms are Q-hooks. Deduped against 222 known thumb texts - no match."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "MIND STUCK?",
+      "strategy": "11 chars / 2 words, Q-hook. Deduped - no match (BRAIN TOO FULL? and CAN'T THINK STRAIGHT? exist and were avoided)."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. The VIEWER, never a performer. Pichwai/Kangra miniature, aged parchment, ornate border. Scene: evening desk by a window, a person leaning back from a notebook with eyes closed and fingers at the temple, a lamp just lit, loose pages and a cooling cup of tea, the sky outside turning deep blue. A santoor rests on a low table at the frame edge. Text in its own banner at ~35% of frame, dark-teal serif, second tier 'Santoor · Clear Mind · 1.5 Hours'.",
+  "playlists": [
+    "Meditation",
+    "Peaceful Music"
+  ],
+  "music_direction": "Santoor retention is the weak point (Sep 9 14.8%, Sep 23 17.7%, Sep 30 3hr 13.6%) - the busy hammered texture seems to tire listeners. Go SLOWER and sparser: soft shimmering santoor in Raga Durga (five notes, open and uncluttered), single notes left to ring, long pauses, around 55-60 BPM, steady tanpura drone, NO percussion, no fast runs or tremolo passages. Clear and calm, not sleepy. Sound present from 0:00, no fade-in. Suggested Suno prompt below; the user may generate their own.",
+  "suno_prompt": "Instrumental only, no vocals — soft shimmering Indian santoor in Raga Durga, sparse single hammered notes left to ring with long pauses between phrases, open five-note melody, steady tanpura drone, no percussion, calm clear focus around 58 BPM, seamless loop.",
+  "experiment": "Competitor mirror #2 of the week + first live ship for h_2026-08-09_deep_work_offering_register (outcome/offering register in the cognitive lane, not a tool register). Arms: short outcome lead vs long competitor lead. Success at matched age: d7 AVD >= 20% (Santoor has not cleared 18%). Read d7 2026-10-14.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-10-07 19:00 IST",
+    "opening_rule": "sound present from 0:00, no fade-in"
+  },
+  "slot_note": "PM 19:00 Wednesday - evening-lane slot. No AM/PM reach difference measured since Sep 14.",
+  "competitor_basis": "COMPETITOR MIRROR #2 OF THE WEEK (2026-10-03 snapshot): Healing Raga Studio 'Remove Mental Blocks & Negativity 432Hz Healing Bansuri to Peace' 41,860 views at 12 days (3,488/day); Trust in Gods 'Clear Negative Thoughts: Flute & Sitar to Quiet Mind' 39,086 at 16 days. Caveat: both are flute-led. Owned-host routing partner: 'Clear the Mental Clutter | Santoor' (Sep 23, 19.0K impressions).",
+  "tags": [
+    "think clearly music",
+    "remove mental blocks",
+    "mental clarity music",
+    "santoor music",
+    "santoor instrumental",
+    "clear mind music",
+    "brain fog music",
+    "music for clear thinking",
+    "focus music indian classical",
+    "raga durga",
+    "calm focus music",
+    "indian instrumental music",
+    "meditation music",
+    "study music calm",
+    "creative thinking music",
+    "peaceful music",
+    "raga focus"
+  ],
+  "pending": [
+    "USER: generate the music to the music_direction spec",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' for the d7 read"
+  ],
+  "description": "Think Clearly Again | Santoor Instrumental | 1.5 Hours to Remove Mental Blocks\n\nWhen your head feels foggy and every thought runs into a wall, pushing harder rarely helps. Give your mind ninety quiet minutes instead.\n\nThis soft Indian santoor music is designed to clear mental blocks: slow, spacious notes that let a stuck mind loosen until ideas start to move again.\n\nEnjoy 1.5 hours of gentle santoor over a steady tanpura drone, with long pauses, no drums and no vocals.\n\n▶ Keep your mind clear — the full Meditation playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199nvhUBCx5L9ROrDP44H4JzN\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for thinking through a problem, writing, planning, studying, creative work, journaling, an evening reset after a crowded day, meditation, reading, or quiet time away from screens.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Santoor (Indian hammered strings) with tanpura drone\nRaga: Durga (an open, uncluttered five-note raga)\nStyle: Indian classical instrumental, ambient\nMood: Clear, spacious, unhurried\nAtmosphere: A lamp just lit, a quiet desk, the evening settling\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPut it on low, set the phone face down and give yourself one thing to think about - or nothing at all. Let each note ring out fully before the next. Headphones give the cleanest sound; soft speakers work well for a room.\n\n⏱ CHAPTERS\n0:00 The fog\n9:00 One note at a time\n18:00 Space opening\n27:00 The knot loosens\n36:00 Quiet between thoughts\n45:00 A clearer view\n54:00 Ideas arriving\n1:03:00 Thinking clearly again\n1:12:00 Light and unblocked\n1:21:00 Room for what's next\n\n⏱ BEST FOR\n• Brain fog and mental blocks\n• Clear thinking and planning\n• Writing and creative work\n• Study and reading\n• Problem solving\n• An evening mental reset\n• Meditation\n• Journaling\n• Time away from screens\n• Calm background focus\n\nIf this music helped you think more clearly, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#MentalClarity #SantoorMusic #ClearMind #IndianClassicalMusic #FocusMusic"
+}
