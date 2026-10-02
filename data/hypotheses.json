@@ -1292,6 +1292,29 @@
         "verdict": "2026-10-24"
       },
       "read_rule": "Log day-one views for every episode at 24h; weekly read on the three metrics; stop-rule check at week 3; verdict at week 4."
+    },
+    {
+      "id": "h_2026-10-03_runtime_60_vs_90",
+      "created": "2026-10-03",
+      "status": "TESTING",
+      "week": "wk_2026-10-05",
+      "source": "chat_2026-10-03 - competitor snapshot Oct 3: the fastest recent uploads run ~60-70 min (Healing Raga Studio 64-70, Soulful 33-86) vs our 90; user approved a one-off 60-minute test",
+      "statement": "A 60-minute episode reaches at least as far as a 90-minute one in the same series, because fresh 90-minute ships are watched ~18-22 minutes on average and the hot competitor uploads are ~60-70 minutes. Design: Morning Reset Ep.2 (Tue 2026-10-06, 90 min) vs Morning Reset Ep.3 (Fri 2026-10-09, 60 min) - same instrument, series, template and 06:30 slot; runtime and weekday differ.",
+      "predicted_metric": "At d7: Ep.3 impressions and engaged views >= Ep.2 at matched age AND average minutes watched >= ~18. PASS -> 60 minutes becomes an allowed runtime for series episodes. FAIL (reach no better, or minutes watched clearly lower) -> stay at 1.5hr / 3hr only.",
+      "relevant_lanes": [
+        "morning"
+      ],
+      "relevant_instruments": [
+        "Bansuri"
+      ],
+      "promoted_rule": null,
+      "caveats": "n=1 pair; weekday differs (Tue vs Fri) and the episode promise differs. One-off exception to the 'only 1.5hr and 3hr' rule. Makes three Bansuri ships this week (Tue, Fri, Sat) - user approved 2026-10-03.",
+      "reads": [],
+      "read_schedule": {
+        "d7_tue": "2026-10-13",
+        "d7_fri": "2026-10-16"
+      },
+      "read_rule": "read both at d7; verdict 2026-10-16"
     }
   ],
   "schema_note": "week = Monday of created week (wk_YYYY-MM-DD). reads[] = staged reads (d7/d14/d21). experiment_reads appends to reads[]; status changes at final read."
