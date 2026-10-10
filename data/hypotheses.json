@@ -1309,6 +1309,11 @@
           "date": "2026-10-10",
           "status": "TESTING",
           "note": "READ d7 2026-10-10 (Oct 10 export, matched-age): both seam builds BELOW bar. Wed Sep 30 Santoor 'All Night Sleep' AVD 15.2% @d10 (coh 17.4, bar 17), impr 0.20x. Sat Oct 3 Bansuri 'Sleep Therapy Ep.1' AVD 12.7% @d7 (coh 14.4) = inside the falsifier (<=14%), impr 0.36x. Leaning KILLED (construction not the cause) IF both renders followed the <=3-segment crossfade spec - confirm with user's render log before flipping. d14 reach read 2026-10-17."
+        },
+        {
+          "date": "2026-10-10",
+          "status": "KILLED-proposed",
+          "note": "API retention curves 2026-10-10 (audienceWatchRatio, 100 points, all traffic): NO local dips at any point on either seam build (Santoor Sep 30, Sleep Therapy Ep.1) - and none on the Sep 19 old 6-7-clip build either, i.e. the original n=1 'dips at 4 of 6 seams' evidence no longer reproduces with more data. Combined with both seam builds below the 17% d7 bar (15.2%, 12.7%), construction is not the cause. PROPOSED: KILLED. Falsifier branch next: sleep audience mix (Browse autoplay share)."
         }
       ],
       "read_schedule": {
@@ -1348,6 +1353,11 @@
           "date": "2026-10-10",
           "status": "TESTING",
           "note": "READ wk2 2026-10-10 (28d export, first-week context only - day-one Studio 24h numbers still missing from user): Morning Reset Ep.1 0.74x cohort impr @d11, AVD 25.2% (best fresh AVD of the month); Ep.2 0.51x @d4, AVD 21.3%; Ep.3 (60 min) 0.14x @d1. Sleep Therapy Ep.1 0.36x @d7, AVD 12.7% (below 3hr bar). Morning slot within the 0.2-0.5x+ cohort band, no step-change; sleep slot no better than non-series 3hr. Stop rule 2026-10-18 needs day-one views for all four episodes."
+        },
+        {
+          "date": "2026-10-10",
+          "status": "TESTING",
+          "note": "DAY-ONE from Analytics API 2026-10-10 (views on the first full Pacific day after publish; not identical to Studio 24h): Morning Reset Ep.1 995 · Ep.2 369 · Ep.3 not yet in API · Sleep Therapy Ep.1 302. Non-series CONTROLS same method: Mon Sitar Sep 21 994, Sep 28 791, Oct 5 864; Tue Bansuri Sep 22 773; Fri Sarangi Sep 25 719; Sat Bansuri 3hr Sep 26 356. => the '~300 baseline' was wrong for 1.5hr ships (normal day-one ~800-1,000); the series shows no day-one lift (Ep.1 = control level, Ep.2 below it; Sleep Ep.1 302 vs 356 control). Trending to STOP at 2026-10-18 unless Ep.3/Ep.4/Sleep Ep.2 jump."
         }
       ],
       "read_schedule": {
