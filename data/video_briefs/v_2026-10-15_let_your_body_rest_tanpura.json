@@ -1,0 +1,86 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-10-10",
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr median ~20%, fresh 3hr median ~17%). Never against the catalog median - it is survivor-inflated (banked 2026-09-26). Export MUST carry 'Average percentage viewed (%)' AND 'Average view duration'. tools/weekly_review.py prints the matched-age read.",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14); 60 min is a logged one-off exception where noted.",
+  "id": "v_2026-10-15_let_your_body_rest_tanpura",
+  "planned_date": "2026-10-15",
+  "planned_slot": "19:00 IST PM · Thu",
+  "lane": "stress_burnout",
+  "daypart": "evening",
+  "instrument": "Tanpura",
+  "raga": "Kafi",
+  "hypothesis_id": "h_2026-10-03_thursday_therapy_slot",
+  "ab_design": "A = SHORT pipeline title on keyword 1; B = LONG competitor-pattern title on a DIFFERENT keyword 2 (user rule 2026-09-19). Pair thumb text A with title A and thumb text B with title B in Test & compare. NOTE 2026-10-10: long B arms have not beaten short A in 10 of 11 recent ships (inferred from live titles) - keep logging the Studio verdicts.",
+  "title_variants": {
+    "A": "Let Your Body Rest | Slow Tanpura | 1.5 Hours",
+    "B": "Slow Down Your Body: Low Tanpura Drone to Ease Built-Up Stress and Rest Deeply | 1.5 Hours"
+  },
+  "title": "Let Your Body Rest | Slow Tanpura | 1.5 Hours",
+  "title_note": "Locked by user 2026-10-10. Both leads lead_prescreen FRESH, unscored. Physiological outcome verbs (rest, slow down) per the banked rule. Flag accepted: both arms contain 'body' (different leads). 'Slow Tanpura' instrument tag is shared with Sep 16 / Oct 1 - instrument line only.",
+  "gate_override": "Tanpura x stress_burnout = THIN (n=1, 'After a Stressful Day' 828 engaged). Thursday = best-sampling weekday; second Thursday read for h_2026-10-03_thursday_therapy_slot uses a different instrument (Sarangi Oct 8).",
+  "validated_keywords": [
+    "'Let Your Body Rest' - lead_prescreen FRESH 2026-10-10; unscored",
+    "'Slow Down Your Body' - lead_prescreen FRESH 2026-10-10; unscored",
+    "Full-phrase check vs last 60 days: clean apart from the 'Slow Tanpura' instrument tag"
+  ],
+  "thumbnail_text_main": "BODY AT REST",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "BODY AT REST",
+      "strategy": "12 chars / 3 words, physiological outcome. Deduped vs 228 known texts - no match."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "SLOW DOWN",
+      "strategy": "9 chars / 2 words, imperative (stress lane: permission/imperative/Q-hook tie). Deduped - no match (TAKE IT SLOW, BREATHE SLOWER exist)."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. The VIEWER, never a performer. Pichwai/Kangra miniature, aged parchment, ornate border. Scene: evening lamplight, a person lying flat on a cotton mattress on the floor, arms loose at their sides, eyes closed, a blanket over the legs, a window going deep blue, a small diya glowing. A tanpura leans in the corner at the frame edge. Text in its own banner at ~35% of frame, BOLD dark serif, second tier 'Tanpura · Evening Rest · 1.5 Hours'.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Peaceful Music"
+  ],
+  "music_direction": "Tanpura 'therapy' bed, evening register: deep continuous tanpura drone in Raga Kafi (soft flat 3rd and 7th - tender, folk-warm), warm low resonance, gentle slow harmonic swells, a faint sustained note above the drone every few minutes, NO percussion, no lead melody. Keep the swells moving - inert drones bleed listeners. Present from 0:00.",
+  "suno_prompt": "Instrumental only, no vocals, no humming — deep continuous Indian tanpura drone in Raga Kafi, warm low resonance with gentle slow harmonic swells, occasional faint sustained note above the drone, no melody line, no percussion, heavy restful evening stillness, seamless loop.",
+  "experiment": "Competitor-inspired pick (Healing Raga Studio 'Let Go / Cortisol Recovery' pattern) + h_2026-10-03_thursday_therapy_slot read #2. Success d7: first-week impressions >= 20K AND AVD >= 20%. Read d7 2026-10-22.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-10-15 19:00 IST",
+    "opening_rule": "sound present from 0:00, no fade-in"
+  },
+  "slot_note": "PM 19:00 Thursday - best-sampling weekday.",
+  "competitor_basis": "Healing Raga Studio 'Let Go of Thoughts…' 10.1K @5d and 'Cortisol Recovery…' 31.9K @12d; Trust in Gods 'Slow Down & Breathe'. Owned-host routing partner: 'Break Negative Patterns | Slow Tanpura' (ZBrnb2cZHAs, AVD 26%).",
+  "tags": [
+    "let your body rest",
+    "tanpura music",
+    "slow tanpura",
+    "tanpura drone",
+    "stress relief music",
+    "deep rest music",
+    "slow down music",
+    "body relaxation music",
+    "raga kafi",
+    "evening relaxation music",
+    "burnout recovery music",
+    "nervous system calm",
+    "indian drone music",
+    "meditation music",
+    "yoga nidra music",
+    "peaceful music",
+    "raga focus"
+  ],
+  "pending": [
+    "USER: generate the music to the music_direction spec",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read"
+  ],
+  "description": "Let Your Body Rest | Slow Tanpura | 1.5 Hours to Ease Built-Up Stress\n\nYour mind may have clocked off, but your body is still holding the day - in the shoulders, the jaw, the breath. Let it rest now.\n\nThis deep Indian tanpura drone is designed to slow your body down: one warm, continuous sound that loosens built-up stress until rest comes on its own.\n\nEnjoy 1.5 hours of slow tanpura resonance with gentle harmonic swells, no drums, no melody to follow and no vocals.\n\n▶ Keep resting — the full Healing & Anxiety Relief playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199k-_9PNqaU2-Z_KhRN_X1hF\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for decompressing after work, stress relief, burnout recovery, lying on the floor, yoga nidra, a body scan, breathwork, a warm bath, reading, or the hour before bed.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Tanpura (Indian drone instrument), solo\nRaga: Kafi (a tender, warm raga)\nStyle: Indian classical drone, ambient\nMood: Heavy, warm, restful\nAtmosphere: Lamplight, a mattress on the floor, the day set down\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nLie down, let your arms fall loose and breathe out longer than you breathe in. Move your attention slowly from your feet to your head and let each swell of the drone soften whatever it finds.\n\n⏱ CHAPTERS\n0:00 Lying down\n9:00 Heavy limbs\n18:00 Shoulders drop\n27:00 Jaw unclenched\n36:00 Breath slowing\n45:00 Stress dissolving\n54:00 Body at rest\n1:03:00 Deep stillness\n1:12:00 Warm and heavy\n1:21:00 Rest\n\n⏱ BEST FOR\n• Built-up stress\n• Body tension\n• Burnout recovery\n• Decompressing after work\n• Yoga nidra and body scan\n• Breathwork\n• A warm bath\n• Reading\n• Before bed\n• Nervous system calm\n\nIf this music helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#StressRelief #TanpuraMusic #DeepRest #BodyRelaxation #IndianClassicalMusic"
+}

@@ -1,0 +1,81 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-10-10",
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr median ~20%, fresh 3hr median ~17%). Never against the catalog median - it is survivor-inflated (banked 2026-09-26). Export MUST carry 'Average percentage viewed (%)' AND 'Average view duration'. tools/weekly_review.py prints the matched-age read.",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14); 60 min is a logged one-off exception where noted.",
+  "id": "v_2026-10-13_morning_overthinking_reset_bansuri",
+  "planned_date": "2026-10-13",
+  "planned_slot": "06:30 IST AM · Tue",
+  "lane": "morning",
+  "daypart": "morning",
+  "instrument": "Bansuri",
+  "raga": "Bilawal",
+  "hypothesis_id": "h_2026-09-27_bansuri_series",
+  "ab_design": "SERIES EPISODE - title fixed, no title test. Thumbnail = the fixed series template. Only the episode line changes.",
+  "title_variants": {
+    "A": "Morning Overthinking Reset 🌿 Bansuri Therapy to Ease a Busy Mind & Begin the Day Clear | Raag Bilawal",
+    "B": "(fixed series title — no title test)"
+  },
+  "title": "Morning Overthinking Reset 🌿 Bansuri Therapy to Ease a Busy Mind & Begin the Day Clear | Raag Bilawal",
+  "title_note": "MORNING RESET · EPISODE 4. Locked by user 2026-10-10. 'Overthinking' is the niche's hottest word this week (Healing Raga Studio x5, Dhun Detox x4, Soulful x2 in recent titles). Body changed from 'to Quiet a Busy Mind' to 'to Ease a Busy Mind' after the reuse check ('Therapy to Quiet' repeated Ep.3, Oct 9). Note: Monday's sitar is also in the Bilawal family (Alhaiya Bilawal) - different instrument and timbre, accepted.",
+  "gate_override": "SERIES SLOT (h_2026-09-27_bansuri_series): cooldown, packaging-clone, lead-freshness and week_diversity gates EXCEPTED by design. Top-10 no-look-alike rule still applies. 90 minutes (keep 90 until the 60-vs-90 read Oct 13/16).",
+  "validated_keywords": [
+    "Series skeleton fixed; body phrase check 2026-10-10: ease a busy mind / begin the day clear - no live title in 60 days",
+    "Competitor reference: Raga Heal 'Morning Overthinking Start Your Day with Gentle Bansuri'; Dhun Detox 'Overthinking Before the Day Starts?'"
+  ],
+  "thumbnail_text_main": "MORNING RESET",
+  "thumbnail_text_variants": [
+    {
+      "label": "Fixed series template",
+      "text": "MORNING RESET",
+      "strategy": "Fixed wordmark, identical every episode. Second line: 'Bansuri Therapy · Ep. 4 · Busy Mind'."
+    }
+  ],
+  "thumbnail_prompt": "REUSE THE FIXED MORNING RESET TEMPLATE - identical image version to Episodes 2 and 3. Only the second line changes: 'Bansuri Therapy · Ep. 4 · Busy Mind'. No runtime on the image.",
+  "playlists": [
+    "Morning Energy",
+    "Peaceful Music"
+  ],
+  "music_direction": "SERIES BED: breath-driven bamboo flute with long sustained notes and natural breath pauses, NO percussion, steady tanpura drone, ~70 BPM. Raga Bilawal (all natural notes, open and clear - keep it light, not bright-energetic). Melody in by 0:15, no fade-in. 90 minutes. ⛔ claim_check CLEAN before rendering.",
+  "suno_prompt": "Instrumental only, no vocals, no humming — gentle Indian classical bansuri in Raga Bilawal, breath-driven bamboo flute with long sustained notes and natural breath pauses, clear open morning melody, no percussion, steady tanpura drone, 70 BPM, seamless loop.",
+  "experiment": "h_2026-09-27_bansuri_series EPISODE 4 (week 3): day-one views at 24h, first-week impressions vs cohort. Stop-rule check 2026-10-18.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-10-13 06:30 IST",
+    "precheck": "python3 tools/claim_check.py <clips> --name bansuri_morning_oct13  (CLEAN before rendering)"
+  },
+  "slot_note": "AM 06:30 Tuesday - fixed series slot (user kept it at 06:30 on 2026-10-10).",
+  "competitor_basis": "Soulful Breathscape 'Morning … Reset 🌿 Bansuri Therapy' family = 7 of the 12 hottest competitor videos (2026-10-10 snapshot). Routing partners: Episodes 1-3.",
+  "tags": [
+    "morning reset",
+    "overthinking music",
+    "bansuri therapy",
+    "morning meditation music",
+    "stop overthinking",
+    "busy mind music",
+    "bansuri flute",
+    "indian flute music",
+    "raag bilawal",
+    "calm morning music",
+    "anxiety relief music",
+    "nervous system reset",
+    "morning calm",
+    "indian classical music",
+    "stress relief music",
+    "peaceful music",
+    "raga focus"
+  ],
+  "pending": [
+    "⛔ FIRST: run tools/claim_check.py on the raw clips - render only on CLEAN",
+    "USER: generate the music to the series recipe (90 minutes)",
+    "USER: reuse the MORNING RESET template; episode line 'Bansuri Therapy · Ep. 4 · Busy Mind'",
+    "Read day-one views at 24h and log them (needed for the Oct 18 stop rule)",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read"
+  ],
+  "description": "Morning Overthinking Reset 🌿 Bansuri Therapy to Ease a Busy Mind & Begin the Day Clear | Raag Bilawal | Episode 4 of Morning Reset\n\nIf your mind is already racing through the day before you are out of bed, you do not have to solve it all at once. Start with one slow breath.\n\nThis gentle Indian flute music is designed to ease morning overthinking: long, breath-led notes of bamboo flute that slow the mental chatter so you can begin the day clear.\n\nEnjoy 1.5 hours of warm bansuri (Indian bamboo flute) over a steady tanpura drone, unhurried and without percussion or vocals.\n\n🌿 MORNING RESET is our Bansuri Therapy series: calm-morning sessions at 6:30 IST. This is Episode 4.\nEpisode 1 — Morning Cortisol Reset → https://www.youtube.com/watch?v=wINy9PW48iw\nEpisode 2 — Morning Stress Reset → https://www.youtube.com/watch?v=ktm9KlNopoc\nEpisode 3 — Morning Anxiety Reset → https://www.youtube.com/watch?v=2Ck0YsNm8bs\n\n▶ Keep the calm going — the full Morning Energy playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199l9NGQ0ig-jCkqp0iwI3c7m\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for busy-minded mornings, meditation, breathwork, yoga, tea or coffee by the window, journaling, prayer, planning your day calmly, or a quiet commute.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Bansuri (Indian bamboo flute) with tanpura drone\nRaga: Bilawal (an open, natural-note morning raga)\nStyle: Indian classical instrumental, meditative\nMood: Clear, light, steady\nAtmosphere: Early light, a slow breath, an uncluttered start\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPress play before you check your phone. Sit or lie still for the first few minutes and let each long flute note set the pace of your breath, then keep it running softly as you start your morning.\n\n⏱ CHAPTERS\n0:00 A busy mind\n9:00 First slow breath\n18:00 Thoughts slowing\n27:00 Space between\n36:00 Steady breathing\n45:00 Clearing\n54:00 Lighter\n1:03:00 One thing at a time\n1:12:00 Clear and calm\n1:21:00 Begin the day\n\n⏱ BEST FOR\n• Morning overthinking\n• A racing mind at wake-up\n• Meditation\n• Breathwork and pranayama\n• Morning yoga\n• Journaling\n• Planning the day calmly\n• Tea or coffee by the window\n• Calm commute\n• Nervous system reset\n\nIf this music helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#MorningReset #BansuriTherapy #Overthinking #MorningMeditation #IndianFlute"
+}

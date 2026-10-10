@@ -1,0 +1,86 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-10-10",
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr median ~20%, fresh 3hr median ~17%). Never against the catalog median - it is survivor-inflated (banked 2026-09-26). Export MUST carry 'Average percentage viewed (%)' AND 'Average view duration'. tools/weekly_review.py prints the matched-age read.",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14); 60 min is a logged one-off exception where noted.",
+  "id": "v_2026-10-12_good_morning_sitar",
+  "planned_date": "2026-10-12",
+  "planned_slot": "06:30 IST AM · Mon",
+  "lane": "morning",
+  "daypart": "morning",
+  "instrument": "Sitar",
+  "raga": "Alhaiya Bilawal",
+  "hypothesis_id": "h_2026-10-03_monday_sitar_music_fix",
+  "ab_design": "A = SHORT pipeline title on keyword 1; B = LONG competitor-pattern title on a DIFFERENT keyword 2 (user rule 2026-09-19). Pair thumb text A with title A and thumb text B with title B in Test & compare. NOTE 2026-10-10: long B arms have not beaten short A in 10 of 11 recent ships (inferred from live titles) - keep logging the Studio verdicts.",
+  "title_variants": {
+    "A": "Good Morning Music | Sitar Instrumental | 1.5 Hours",
+    "B": "New Day Energy: Bright Sitar & Tabla for a Calm, Confident Start | 1.5 Hours"
+  },
+  "title": "Good Morning Music | Sitar Instrumental | 1.5 Hours",
+  "title_note": "Locked by user 2026-10-10. A lead 'Good Morning Music' and B lead 'New Day Energy' both lead_prescreen FRESH 2026-10-10, unscored (no VidIQ). Full-phrase check vs the last 60 days of live titles and briefs: clean.",
+  "gate_override": "Hero slot (Sitar Monday, user rule). Sitar x morning x 1.5hr = MODEST in track_record (n=9, median 1,663). Soft clone flag vs Morning Bliss (Oct 5, same bed) is intentional: the music fix is still being read.",
+  "validated_keywords": [
+    "'Good Morning Music' - lead_prescreen FRESH 2026-10-10; unscored",
+    "'New Day Energy' - lead_prescreen FRESH 2026-10-10; unscored",
+    "Full-phrase check 2026-10-10: good morning / new day / confident start - no live title in 60 days"
+  ],
+  "thumbnail_text_main": "GOOD MORNING",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "GOOD MORNING",
+      "strategy": "12 chars / 2 words, warm greeting (morning lane: formats tie, pick on fit). Deduped against 228 known thumb texts - no match."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "NEW DAY ENERGY",
+      "strategy": "14 chars / 3 words, echoes title B. Deduped - no match."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. The VIEWER living the morning, never a musician performing (6.11% vs 3.03% CTR). Pichwai/Kangra miniature, aged cream parchment, ornate border. Scene: first sun through an open window, a person sitting up in bed mid-stretch, arms raised, eyes half-closed and smiling, a brass cup of chai on the sill, a tulsi plant, birds on the ledge. A sitar rests against the wall at the frame edge, never held. Text in its own banner panel at ~35% of frame, BOLD dark serif for legibility at 120px, second tier 'Sitar · Morning · 1.5 Hours'.",
+  "playlists": [
+    "Morning Energy",
+    "Peaceful Music"
+  ],
+  "music_direction": "Same bed as the Oct 5 music fix (its d7 read lands Oct 12 - if it FAILS below 20%, tell Claude before rendering): Raga Alhaiya Bilawal, ~60 BPM, long sustained meend phrases with space, soft light tabla low in the mix, warm rounded tone. Melody present within 15 seconds, no fade-in, no drone-only opening.",
+  "suno_prompt": "Instrumental only, no vocals — warm Indian classical sitar in Raga Alhaiya Bilawal, bright open morning melody, long sustained gliding phrases with space between them, soft light tabla low in the mix, unhurried pulse around 60 BPM, gentle positive glow, seamless loop.",
+  "experiment": "h_2026-10-03_monday_sitar_music_fix ship #2 (same bed). Success d7 AVD >= 20% at matched age. Read d7 2026-10-19.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-10-12 06:30 IST",
+    "opening_rule": "melody within 15 s, no fade-in"
+  },
+  "slot_note": "AM 06:30 Monday - hero slot.",
+  "competitor_basis": "Own-lane hero slot; no competitor mirror. Owned-host routing partner: 'Sitar Music to Start Your Morning Right' (95NmnEaWJGw).",
+  "tags": [
+    "good morning music",
+    "sitar music",
+    "sitar instrumental",
+    "morning music",
+    "new day energy",
+    "positive morning music",
+    "morning sitar",
+    "raga bilawal",
+    "indian classical music",
+    "morning meditation music",
+    "wake up music",
+    "calm morning music",
+    "happy morning music",
+    "indian instrumental music",
+    "morning yoga music",
+    "peaceful music",
+    "raga focus"
+  ],
+  "pending": [
+    "USER: generate the music to the music_direction spec",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read"
+  ],
+  "description": "Good Morning Music | Sitar Instrumental | 1.5 Hours for a Bright New Day\n\nGood morning. Before the phone, before the list, give yourself a few unhurried minutes and a little light.\n\nThis bright Indian sitar music is designed to start your day gently: a warm, open melody that wakes you up without rushing you.\n\nEnjoy 1.5 hours of sitar with soft tabla, slow and glowing, with no vocals.\n\n▶ Keep the morning bright — the full Morning Energy playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199l9NGQ0ig-jCkqp0iwI3c7m\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for waking up, a slow breakfast, tea or coffee by the window, morning stretches, yoga, journaling, getting ready, a calm commute, or easing into work in a good mood.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sitar with soft tabla\nRaga: Alhaiya Bilawal (a bright, open morning raga)\nStyle: Indian classical instrumental\nMood: Warm, light, quietly confident\nAtmosphere: First sun through an open window, a warm cup, a fresh day\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPlay it as you get out of bed and let it run through your first hour. Open a window, take a few slow breaths and let the long sitar notes set an easy pace.\n\n⏱ CHAPTERS\n0:00 Good morning\n9:00 First light\n18:00 Slow stretch\n27:00 Warm cup\n36:00 Open window\n45:00 Steady and bright\n54:00 Clear head\n1:03:00 Ready for the day\n1:12:00 Easy momentum\n1:21:00 A good start\n\n⏱ BEST FOR\n• Waking up gently\n• Morning routine\n• Breakfast and coffee\n• Morning yoga and stretching\n• Journaling\n• Getting ready\n• Calm commute\n• Starting work in a good mood\n• Weekend mornings\n• Positive energy\n\nIf this music helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#GoodMorningMusic #SitarMusic #MorningMusic #IndianClassicalMusic #PositiveVibes"
+}

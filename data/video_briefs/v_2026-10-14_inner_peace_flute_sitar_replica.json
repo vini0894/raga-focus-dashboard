@@ -1,0 +1,83 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-10-10",
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr median ~20%, fresh 3hr median ~17%). Never against the catalog median - it is survivor-inflated (banked 2026-09-26). Export MUST carry 'Average percentage viewed (%)' AND 'Average view duration'. tools/weekly_review.py prints the matched-age read.",
+  "spent": false,
+  "runtime_note": "ONE-OFF 60-minute exception (user 2026-10-10) - second 60-min ship after Fri Oct 9 Ep.3. Competitor template runs 62-67 min.",
+  "id": "v_2026-10-14_inner_peace_flute_sitar_replica",
+  "planned_date": "2026-10-14",
+  "planned_slot": "19:00 IST PM · Wed",
+  "lane": "calm_relax",
+  "daypart": "evening",
+  "instrument": "Bansuri + Sitar",
+  "raga": "Yaman Kalyan",
+  "hypothesis_id": "h_2026-10-10_competitor_template_replica",
+  "ab_design": "REPLICA TEST: both arms carry the replica's own keywords with DIFFERENT leads (A 'Inner Peace' short form vs B 'Relaxing Music' = the competitor's long title). BOTH arms use the SAME replica thumbnail - the only variable is title length/lead.",
+  "title_variants": {
+    "A": "Inner Peace Music | Flute & Sitar | 1 Hour",
+    "B": "Relaxing Music for Inner Peace, Calm Stress & Healing Meditation | Flute & Sitar | 1 Hour"
+  },
+  "title": "Inner Peace Music | Flute & Sitar | 1 Hour",
+  "title_note": "Locked by user 2026-10-10. DELIBERATE REPLICA of Healing Raga Studio 'Relaxing Music for Inner Peace, Calm Stress & Healing Meditation । Peaceful Indian Instrumental Raga' (orD7g7dAdP8, 5,957 views at 1 day, 67 min) - third upload in a row on one HRS template to hit 5-10K within days (Mental Clarity 5K @2d, Let Go of Thoughts 10.1K @5d). User wanted a competitor video caught EARLY (~10K), the Dopamine playbook. Accepted flags: 'Inner Peace Music' = deliberate REPEAT (Sarangi, 138d, dead video); 'Relaxing Music' lost older A/B tests but is the competitor's lead; 'Healing Meditation Music' is blocked as a LEAD so it sits inside B only.",
+  "gate_override": "REPLICA EXCEPTION (user 2026-10-10): Santoor/Bansuri/Sitar x calm_relax read FLOP on 28d medians - overridden because the competitor template is the treatment. THIRD Bansuri ship of the week (Tue, Wed, Fri) = user-approved one-off. Performer thumbnail (Krishna) breaks the viewer-not-performer rule deliberately - replica fidelity.",
+  "validated_keywords": [
+    "'Inner Peace Music' - lead_prescreen REPEAT (past-lock 138d, Sarangi) - deliberate",
+    "'Relaxing Music' - competitor lead; flagged in our A/B history - deliberate",
+    "Full-phrase check 2026-10-10 vs last 60 days: clean"
+  ],
+  "thumbnail_text_main": "INNER PEACE",
+  "thumbnail_text_variants": [
+    {
+      "label": "Both arms (same image)",
+      "text": "Inner Peace",
+      "strategy": "Replica of the HRS template text: big two-word deep-red serif. Deduped - 'FIND YOUR INNER PEACE' exists, exact 'INNER PEACE' is new."
+    }
+  ],
+  "thumbnail_prompt": "REPLICA OF THE HEALING RAGA STUDIO TEMPLATE (copy the style, NOT their branding). Aged warm parchment / sepia painting, cinematic. Krishna seated on a rock at the mouth of a cave arch by the sea, playing a bamboo flute, saffron-orange dhoti, peacock feather in his hair, a peacock standing on the shore beside him, soft sunlight and birds over the water. Right-side text block: very large deep-red (oxblood) serif 'Inner Peace' in two lines; under it a thin divider and small caps 'FLUTE · SITAR · TABLA'. Do NOT copy their 'WITH SHRI KRISHNA' line or layout word for word - keep our own small line. No ornate border (theirs has none). Same image for both title arms.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Peaceful Music"
+  ],
+  "music_direction": "Copy the competitor's palette: Bansuri lead with Sitar answering phrases and SOFT tabla low in the mix (their tag line 'Flute · Sitar · Tabla'), warm tanpura drone. Raga Yaman Kalyan (raised 4th, peaceful evening character). Calm, flowing, melodic - never sleepy, never busy. ~60-65 BPM. Melody within 15 s, no fade-in. BUILD TO EXACTLY 60 MINUTES. ⛔ claim_check CLEAN before rendering.",
+  "suno_prompt": "Instrumental only, no vocals — peaceful Indian classical duet, bansuri bamboo flute lead with gentle sitar answering phrases, soft tabla low in the mix, warm tanpura drone, Raga Yaman Kalyan, flowing serene evening melody, calm healing meditation mood, 62 BPM, seamless loop.",
+  "experiment": "NEW h_2026-10-10_competitor_template_replica: a faithful replica of a competitor template that is breaking out NOW (caught at 5-10K, not 200K) transfers. Success at d7: first-week impressions >= 1.5x same-age cohort OR >= 2K engaged views. Also the 2nd 60-min read for h_2026-10-03_runtime_60_vs_90 (avg minutes watched >= ~18). Read d7 2026-10-21.",
+  "production_spec": {
+    "duration_minutes": 60,
+    "format": "60min (one-off)",
+    "publish": "2026-10-14 19:00 IST",
+    "precheck": "python3 tools/claim_check.py <clips> --name flute_sitar_oct14  (CLEAN before rendering)",
+    "opening_rule": "melody within 15 s, no fade-in"
+  },
+  "slot_note": "PM 19:00 Wednesday.",
+  "competitor_basis": "Healing Raga Studio (22.9K subs, +206 subs/day): orD7g7dAdP8 'Relaxing Music for Inner Peace…' 5,957 views @1d (67 min); siblings 'Mental Clarity: 432Hz Soothing Sitar & Flute…' 5K @2d and oGPhHIl09Eg 'Let Go of Thoughts…' 10,110 @5d. Owned-host routing partner: 'Sitar for Nervous System Healing' (52YU6Q64zVw, Healing playlist face).",
+  "tags": [
+    "relaxing music",
+    "inner peace music",
+    "flute and sitar music",
+    "calm stress music",
+    "healing meditation music",
+    "indian instrumental music",
+    "peaceful indian music",
+    "krishna flute music",
+    "bansuri and sitar",
+    "stress relief music",
+    "anxiety relief music",
+    "meditation music",
+    "calm mind music",
+    "raga yaman kalyan",
+    "healing music",
+    "peaceful music",
+    "raga focus"
+  ],
+  "pending": [
+    "⛔ FIRST: run tools/claim_check.py on the raw clips - render only on CLEAN",
+    "USER: generate the music - build to exactly 60 minutes",
+    "USER: generate the replica thumbnail (one image for both arms)",
+    "Launch Test & compare at publish: title A vs title B, SAME thumbnail; log both arms to ab_raw_data.csv",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read"
+  ],
+  "description": "Inner Peace Music | Flute & Sitar | 1 Hour for Calm Stress & Healing Meditation\n\nWhen the day has left you tense and scattered, peace does not have to be far away. Give yourself one quiet hour.\n\nThis peaceful Indian flute and sitar music is designed for inner peace and healing meditation: a gentle duet that slows your breath, softens stress and brings your mind back to stillness.\n\nEnjoy 1 hour of bansuri (Indian bamboo flute) and sitar with soft tabla over a warm tanpura drone, with no vocals.\n\n▶ Stay in the calm — the full Healing & Anxiety Relief playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199k-_9PNqaU2-Z_KhRN_X1hF\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for meditation, relaxation after work, stress relief, calming anxiety, yoga, breathwork, reading, journaling, prayer, a peaceful evening at home, or quiet time away from screens.\n\n🎵 ABOUT THIS MUSIC\nInstruments: Bansuri (Indian bamboo flute) and Sitar, with soft tabla and tanpura drone\nRaga: Yaman Kalyan (a serene evening raga)\nStyle: Indian classical instrumental, meditative\nMood: Peaceful, warm, healing\nAtmosphere: Sea air, soft evening light, a mind finally at rest\nDuration: 1 hour\n\n🎧 HOW TO USE\nSit or lie comfortably, close your eyes and follow the flute for the first few minutes. Breathe slowly and let the sitar answer each phrase. Headphones bring out the duet; soft speakers fill a room.\n\n⏱ CHAPTERS\n0:00 Arriving\n8:00 First breath\n16:00 Flute and sitar\n24:00 Letting stress go\n32:00 Stillness\n40:00 Healing calm\n48:00 Inner peace\n56:00 Gentle return\n\n⏱ BEST FOR\n• Inner peace\n• Healing meditation\n• Stress relief\n• Calming anxiety\n• Relaxation after work\n• Yoga and breathwork\n• Reading and journaling\n• Prayer and reflection\n• Peaceful evenings\n• Time away from screens\n\nIf this music helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#InnerPeace #RelaxingMusic #FluteAndSitar #HealingMeditation #IndianInstrumental"
+}

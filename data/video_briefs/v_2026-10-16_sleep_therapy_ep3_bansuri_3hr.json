@@ -1,0 +1,84 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-10-10",
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr median ~20%, fresh 3hr median ~17%). Never against the catalog median - it is survivor-inflated (banked 2026-09-26). Export MUST carry 'Average percentage viewed (%)' AND 'Average view duration'. tools/weekly_review.py prints the matched-age read.",
+  "spent": false,
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14); 60 min is a logged one-off exception where noted.",
+  "id": "v_2026-10-16_sleep_therapy_ep3_bansuri_3hr",
+  "planned_date": "2026-10-16",
+  "planned_slot": "19:00 IST PM · Fri",
+  "lane": "sleep",
+  "daypart": "night",
+  "instrument": "Bansuri",
+  "raga": "Kedar",
+  "hypothesis_id": "h_2026-09-27_bansuri_series",
+  "ab_design": "SERIES EPISODE - title fixed, no title test. Thumbnail = the fixed series template. Only the episode line changes.",
+  "title_variants": {
+    "A": "Sleep Therapy Bansuri 🌙 Soft Flute Music to Slow Your Breathing & Sleep Deeply Through the Night | Raag Kedar | 3 Hours",
+    "B": "(fixed series title — no title test)"
+  },
+  "title": "Sleep Therapy Bansuri 🌙 Soft Flute Music to Slow Your Breathing & Sleep Deeply Through the Night | Raag Kedar | 3 Hours",
+  "title_note": "SLEEP THERAPY · EPISODE 3. Locked by user 2026-10-10. MOVED Sat -> Fri 19:00 (five-ship week, no Saturday ship). Benefit stack differs from Ep.1 ('Quiet the Mind…') and Ep.2 ('Release the Day…'). Raga Kedar avoids the all-komal slow late-night combination (h_2026-09-05 tempo floor).",
+  "gate_override": "SERIES SLOT (h_2026-09-27_bansuri_series): gates EXCEPTED by design. Slot moved to Friday this week only (user 2026-10-10: 5 ships, Saturday dropped). Bansuri ship #3 of the week = user-approved one-off.",
+  "validated_keywords": [
+    "Series skeleton fixed; body phrase check 2026-10-10: slow your breathing (Ep.2 used 'Slow Your Breathing' too - accepted as series benefit language) / sleep deeply through the night - no non-series live title in 60 days"
+  ],
+  "thumbnail_text_main": "SLEEP THERAPY",
+  "thumbnail_text_variants": [
+    {
+      "label": "Fixed series template",
+      "text": "SLEEP THERAPY",
+      "strategy": "Fixed wordmark, identical every episode. Second line: 'Bansuri Therapy · Ep. 3 · Deep Breath'."
+    }
+  ],
+  "thumbnail_prompt": "REUSE THE FIXED SLEEP THERAPY TEMPLATE - do not redesign. Only the second line changes: 'Bansuri Therapy · Ep. 3 · Deep Breath'.",
+  "playlists": [
+    "Sleep Music",
+    "Peaceful Music"
+  ],
+  "music_direction": "SERIES BED: soft breathy low bansuri notes with long spacious pauses, gentle tanpura drone, no percussion, ~50 BPM. Raga Kedar (night raga, mostly natural notes with a raised 4th - peaceful, not heavy). Build from at most THREE long unique generations with 20-30 s crossfades; record seam timestamps. Present from 0:00. Target d7 AVD >= 17%. ⛔ claim_check CLEAN before rendering.",
+  "suno_prompt": "Instrumental only, no vocals, no humming — slow deep bansuri bamboo flute for sleep in Raga Kedar, soft breathy low notes with long spacious pauses, peaceful night melody, gentle tanpura drone, no percussion, 50 BPM, seamless loop.",
+  "experiment": "h_2026-09-27_bansuri_series SLEEP EPISODE 3 (week 3): day-one views at 24h, first-week impressions vs cohort. Stop-rule check 2026-10-18 (needs this episode's day-one = Oct 17). Read d7 2026-10-23.",
+  "production_spec": {
+    "duration_minutes": 180,
+    "format": "3hr",
+    "publish": "2026-10-16 19:00 IST",
+    "precheck": "python3 tools/claim_check.py <clips> --name bansuri_sleep_oct16  (CLEAN before rendering)",
+    "build_rule": "<= 3 long unique segments, 20-30 s crossfade at every seam",
+    "seams": "RECORD the seam timestamps here after the render"
+  },
+  "slot_note": "PM 19:00 Friday - series slot moved from Saturday this week.",
+  "competitor_basis": "Series basis. Owned-host routing partners: Sleep Therapy Ep.1 (bkLTwCakuLk) + Ep.2 and 'Music to Sleep Through the Night | Bansuri' (lbaZN6IqZAg).",
+  "tags": [
+    "sleep therapy",
+    "bansuri sleep music",
+    "sleep music",
+    "deep sleep music",
+    "flute sleep music",
+    "indian flute music",
+    "sleep through the night",
+    "slow breathing sleep music",
+    "raag kedar",
+    "3 hours sleep music",
+    "relaxing sleep music",
+    "insomnia relief music",
+    "bansuri flute",
+    "indian instrumental music",
+    "calm night music",
+    "music to fall asleep",
+    "raga focus"
+  ],
+  "pending": [
+    "⛔ FIRST: run tools/claim_check.py on the raw clips - render only on CLEAN",
+    "USER: build to the seam spec and record seam timestamps in production_spec.seams",
+    "USER: reuse the SLEEP THERAPY template; episode line 'Bansuri Therapy · Ep. 3 · Deep Breath'",
+    "Replace SLEEP_EP2_VIDEO_ID in the description with the Oct 10 episode's id",
+    "Add to Sleep Music at #4 on publish day",
+    "Read day-one views at 24h and log them (stop rule Oct 18)",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read"
+  ],
+  "description": "Sleep Therapy Bansuri 🌙 Soft Flute Music to Slow Your Breathing & Sleep Deeply Through the Night | Raag Kedar | 3 Hours | Episode 3 of Sleep Therapy\n\nIf your body is tired but your breath is still quick and shallow, sleep keeps slipping away. Let the flute slow it down for you.\n\nThis soft Indian flute music is designed to slow your breathing and carry you into deep sleep: low, breathy bamboo-flute notes with long pauses, so each breath can lengthen on its own.\n\nEnjoy 3 hours of gentle bansuri (Indian bamboo flute) over a soft tanpura drone, with no percussion and no vocals.\n\n🌙 SLEEP THERAPY is our Bansuri sleep series. This is Episode 3.\nEpisode 1 → https://www.youtube.com/watch?v=bkLTwCakuLk\nEpisode 2 → https://www.youtube.com/watch?v=SLEEP_EP2_VIDEO_ID\n\n▶ Sleep through the night — the full Sleep Music playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199mx7da__pC4JseKqY856ABr\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for falling asleep, staying asleep, insomnia, a racing mind at night, slow breathing, yoga nidra, a late-night wind-down, naps, or keeping a calm sound in the room all night.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Bansuri (Indian bamboo flute) with tanpura drone\nRaga: Kedar (a peaceful night raga)\nStyle: Indian classical instrumental, sleep\nMood: Soft, slow, deeply restful\nAtmosphere: A dark room, a cool breeze, breath slowing\nDuration: 3 hours\n\n🎧 HOW TO USE\nLights off, volume low, phone face down. Breathe in for four counts and out for six, and let the long flute notes set the rhythm until you stop counting.\n\n⏱ CHAPTERS\n0:00 Lights off\n18:00 Breath slowing\n36:00 Heavy eyelids\n54:00 Drifting\n1:12:00 Deeper\n1:30:00 Long slow breaths\n1:48:00 Sleep arriving\n2:06:00 Deep sleep\n2:24:00 Through the night\n2:42:00 Until morning\n\n⏱ BEST FOR\n• Falling asleep\n• Staying asleep\n• Insomnia relief\n• Slow breathing\n• A racing mind at night\n• Yoga nidra\n• Late-night wind-down\n• Naps\n• All-night sleep sound\n• Deep rest\n\nIf this music helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#SleepTherapy #BansuriSleepMusic #DeepSleep #IndianFlute #SleepMusic"
+}

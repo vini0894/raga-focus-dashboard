@@ -1382,7 +1382,8 @@
       "read_rule": "read both at d7; verdict 2026-10-16",
       "linked_ships": [
         "2026-10-06 · Morning Stress Reset 🌿 Bansuri Therapy to Release Tension & Start the Day Calm | Raag Ahir Bhairav [ktm9KlNopoc]",
-        "2026-10-09 · Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins [2Ck0YsNm8bs]"
+        "2026-10-09 · Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins [2Ck0YsNm8bs]",
+        "v_2026-10-14_inner_peace_flute_sitar_replica (2nd 60-min ship, non-series, confounded with replica)"
       ]
     },
     {
@@ -1440,6 +1441,33 @@
       "linked_ships": [
         "2026-10-08 · Stress Therapy | Slow Sarangi | 1.5 Hours [iMHzz1u5Wh4]"
       ]
+    },
+    {
+      "id": "h_2026-10-10_competitor_template_replica",
+      "created": "2026-10-10",
+      "status": "TESTING",
+      "week": "wk_2026-10-12",
+      "source": "chat_2026-10-10 - user: replicate a competitor video caught early (~10-12K views, not 200K), 'that was my playbook with Dopamine'. Competitor snapshot 2026-10-10.",
+      "statement": "A faithful replica (title, thumbnail style, instruments, runtime) of a competitor template that is breaking out NOW, caught at 5-10K views, transfers to our channel - the Dopamine Reset playbook. Target: Healing Raga Studio's Krishna-parchment template, three uploads in a row at 5-10K within 1-5 days.",
+      "predicted_metric": "Wed 2026-10-14 replica at d7: first-week impressions >= 1.5x same-age cohort OR >= 2K engaged views. FALSIFIER: < 1.0x cohort and < 600 engaged -> a copy without the competitor's returning audience does not transfer.",
+      "relevant_lanes": [
+        "calm_relax"
+      ],
+      "relevant_instruments": [
+        "Bansuri",
+        "Sitar"
+      ],
+      "linked_ships": [
+        "v_2026-10-14_inner_peace_flute_sitar_replica (replica of HRS orD7g7dAdP8)"
+      ],
+      "promoted_rule": null,
+      "caveats": "n=1. Confounded with the 60-min runtime (Fri Oct 9 Ep.3 carries the clean 60-vs-90 read). Krishna performer thumbnail breaks the viewer rule deliberately.",
+      "reads": [],
+      "read_schedule": {
+        "d7": "2026-10-21",
+        "d14": "2026-10-28"
+      },
+      "read_rule": "d7 = reach verdict vs same-age cohort"
     }
   ],
   "schema_note": "week = Monday of created week (wk_YYYY-MM-DD). reads[] = staged reads (d7/d14/d21). experiment_reads appends to reads[]; status changes at final read."

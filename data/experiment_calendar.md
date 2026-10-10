@@ -121,3 +121,16 @@ Series reads: wk1 Oct 6/10 · wk2 Oct 13/17 · **stop-rule check 2026-10-18** (d
 | 2026-10-10 | Sleep Therapy · Ep.2 (Bansuri 3hr) | Series day-one floor + seam-spec build #3 | title fixed, fixed template | day-one at 24h · d7 **2026-10-17** |
 
 **Week-level:** h_2026-10-03_runtime_60_vs_90 (Fri 60 min vs Tue 90 min: impressions, engaged views, average minutes watched at d7; verdict 2026-10-16). Carried: series stop-rule check **2026-10-18**; h_2026-09-21 d14 flip (proposed KILLED) 2026-10-06; h_2026-09-07 4-week read written 2026-10-03 (proposed KILLED); Wed Sep 30 Santoor 3hr seam read 2026-10-07; routing pass v3 read 2026-10-10; Sleep Radio 30d verdict 2026-10-19.
+
+
+## wk_2026-10-12 (locked 2026-10-10) — FIVE ships, no Saturday
+
+| Day | Ship | Test | Arms | Reads |
+|---|---|---|---|---|
+| 2026-10-12 | Sitar morning 1.5hr | Monday music fix ship #2 (same Bilawal bed) | A 'Good Morning Music' vs B 'New Day Energy…' | d7 **2026-10-19** |
+| 2026-10-13 | Morning Reset · Ep.4 (Bansuri, 90 min) | Series week 3 | title fixed, fixed template | day-one at 24h · d7 **2026-10-20** |
+| 2026-10-14 | **Inner Peace REPLICA** (Flute & Sitar, **60 min**) | h_2026-10-10_competitor_template_replica (+ 2nd 60-min ship) | A 'Inner Peace Music…' vs B 'Relaxing Music for Inner Peace…' · same thumb | d7 **2026-10-21** (>= 1.5x cohort or >= 2K engaged) |
+| 2026-10-15 | Tanpura stress 1.5hr | Thursday slot read #2 | A 'Let Your Body Rest' vs B 'Slow Down Your Body…' | d7 **2026-10-22** |
+| 2026-10-16 | Sleep Therapy · Ep.3 (Bansuri 3hr, moved Sat→Fri) | Series week 3 + seam-spec build | title fixed, fixed template | day-one at 24h · d7 **2026-10-23** |
+
+**Carried:** series stop-rule **2026-10-18** · runtime 60-vs-90 verdict 2026-10-16 · Sleep Music playlist read + Sleep Radio 30d verdict **2026-10-19** · 3hr seam d14 2026-10-17.

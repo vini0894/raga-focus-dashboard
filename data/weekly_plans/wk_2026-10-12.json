@@ -1,0 +1,79 @@
+{
+ "week_id": "wk_2026-10-12",
+ "week_start": "2026-10-12",
+ "week_end": "2026-10-18",
+ "created": "2026-10-10",
+ "status": "FINAL - 5 ships Mon-Fri, locked by user 2026-10-10; briefs written",
+ "notes": "FIVE ships, no Saturday. The 4-week 6-ships/week test failed (per-ship first-week impressions 14-17K at 4-5/week vs ~8.9K at 6/week; weekly total 86K -> 36K; 24 fresh ships = 3.4% of 28d revenue, ~$2.8 each in-window) and production cost rises with ship count. Sleep Therapy Ep.3 moves Sat -> Fri so the series keeps its week-3 read for the Oct 18 stop rule. Wednesday = first deliberate competitor REPLICA, caught early (~5-10K views), the Dopamine playbook.",
+ "hypothesis": {
+  "id": "h_2026-10-10_competitor_template_replica",
+  "one_line": "A faithful replica of a competitor template that is breaking out NOW (caught at 5-10K views, not 200K) transfers to our channel.",
+  "success": "Wed Oct 14 replica at d7: first-week impressions >= 1.5x same-age cohort OR >= 2K engaged views.",
+  "falsifier": "Below 1.0x cohort and < 600 engaged at d7 -> a straight copy without the competitor's returning audience does not transfer.",
+  "reads": {
+   "wed_d7": "2026-10-21"
+  }
+ },
+ "week_level_decisions": {
+  "ship_count": "FIVE (Mon-Fri). User 2026-10-10 on production cost; 6/week added no measurable reach.",
+  "series": "Tue Morning Reset Ep.4 06:30 (user kept AM). Sleep Therapy Ep.3 moved to Fri 19:00. Three Bansuri-containing ships (Tue, Wed replica, Fri) = user-approved one-off.",
+  "replica": "Wed = Healing Raga Studio 'Relaxing Music for Inner Peace…' template (5.9K @1d; siblings 5K @2d, 10.1K @5d). Their thumbnail style (Krishna, parchment, deep-red serif), our own small line - not their branding. Both title arms carry the replica's keywords with different leads; same thumbnail on both arms.",
+  "runtime": "Wed 60 min = second one-off 60-min ship (after Fri Oct 9 Ep.3). Everything else 90 / 180.",
+  "thursday": "Tanpura stress, best-sampling weekday; second read for the Thursday therapy-slot idea.",
+  "monday": "Sitar hero slot, same Alhaiya Bilawal bed as Oct 5 (music-fix read lands Oct 12).",
+  "title_length_read": "Long B arms beat short A in 1 of 11 recent ships (inferred from live titles; Studio verdicts still unlogged). A/B structure kept per user rule.",
+  "competitor_snapshot": "2026-10-10: winners Soulful Breathscape (+297 subs/day), Dhun Detox (+297), Healing Raga Studio (+206); stalled Raga Heal, Raga Bindu, Trust in Gods, Shanti. Winners differ on one instrument + one promise family + 30-70 min runtimes, not volume.",
+  "playlist": "Sleep Music re-order verified live (applied 2026-10-05). Read 2026-10-19; phase 2 Morning Energy only if clean."
+ },
+ "ships": [
+  {
+   "date": "2026-10-12",
+   "slot": "06:30",
+   "instrument": "Sitar",
+   "lane": "morning",
+   "runtime_min": 90,
+   "brief": "v_2026-10-12_good_morning_sitar"
+  },
+  {
+   "date": "2026-10-13",
+   "slot": "06:30",
+   "instrument": "Bansuri",
+   "lane": "morning",
+   "runtime_min": 90,
+   "brief": "v_2026-10-13_morning_overthinking_reset_bansuri",
+   "series": "Morning Reset Ep.4"
+  },
+  {
+   "date": "2026-10-14",
+   "slot": "19:00",
+   "instrument": "Bansuri + Sitar",
+   "lane": "calm_relax",
+   "runtime_min": 60,
+   "brief": "v_2026-10-14_inner_peace_flute_sitar_replica",
+   "replica": true
+  },
+  {
+   "date": "2026-10-15",
+   "slot": "19:00",
+   "instrument": "Tanpura",
+   "lane": "stress_burnout",
+   "runtime_min": 90,
+   "brief": "v_2026-10-15_let_your_body_rest_tanpura"
+  },
+  {
+   "date": "2026-10-16",
+   "slot": "19:00",
+   "instrument": "Bansuri",
+   "lane": "sleep",
+   "runtime_min": 180,
+   "brief": "v_2026-10-16_sleep_therapy_ep3_bansuri_3hr",
+   "series": "Sleep Therapy Ep.3"
+  }
+ ],
+ "preflight_pending": [
+  "Studio Test & compare verdicts for all ships since Aug 24 (screenshots)",
+  "Day-one 24h views for every series episode (stop rule 2026-10-18)",
+  "Confirm the two seam-spec 3hr renders followed the <=3-segment rule (seam hypothesis flip)",
+  "claim_check CLEAN on Tue/Wed/Fri Bansuri clips"
+ ]
+}
