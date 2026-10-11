@@ -4,7 +4,7 @@
  "week_end": "2026-10-18",
  "created": "2026-10-10",
  "status": "FINAL - 5 ships Mon-Fri, locked by user 2026-10-10; briefs written",
- "notes": "FIVE ships, no Saturday. The 4-week 6-ships/week test failed (per-ship first-week impressions 14-17K at 4-5/week vs ~8.9K at 6/week; weekly total 86K -> 36K; 24 fresh ships = 3.4% of 28d revenue, ~$2.8 each in-window) and production cost rises with ship count. Sleep Therapy Ep.3 moves Sat -> Fri so the series keeps its week-3 read for the Oct 18 stop rule. Wednesday = first deliberate competitor REPLICA, caught early (~5-10K views), the Dopamine playbook.",
+ "notes": "FIVE ships, no Saturday. The 4-week 6-ships/week test failed (per-ship first-week impressions 14-17K at 4-5/week vs ~8.9K at 6/week; weekly total 86K -> 36K; 24 fresh ships = 3.4% of 28d revenue) and production cost rises with ship count. Sleep Therapy Ep.3 moves Sat -> Fri so the series keeps its week-3 read for the Oct 18 stop rule. Wednesday = first deliberate competitor REPLICA, caught early (~5-10K views), the Dopamine playbook.",
  "hypothesis": {
   "id": "h_2026-10-10_competitor_template_replica",
   "one_line": "A faithful replica of a competitor template that is breaking out NOW (caught at 5-10K views, not 200K) transfers to our channel.",
