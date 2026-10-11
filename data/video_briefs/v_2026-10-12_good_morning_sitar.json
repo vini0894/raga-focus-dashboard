@@ -13,7 +13,7 @@
   "instrument": "Sitar",
   "raga": "Alhaiya Bilawal",
   "hypothesis_id": "h_2026-08-18_image_breaks_ctr_ceiling",
-  "ab_design": "THUMBNAIL TEST ONLY — NO TITLE TEST THIS WEEK (user 2026-10-11). Title fixed: 'Good Morning Music | Sitar Instrumental | 1.5 Hours'. In Studio Test & compare choose THUMBNAIL test: Variant 1 = NEW STYLE (image below) vs Variant 2 = OUR STANDARD muted look. Same text NEW DAY ENERGY on both. Title test runs only after this thumbnail test concludes.",
+  "ab_design": "THUMBNAIL TEST ONLY — NO TITLE TEST THIS WEEK (user 2026-10-11). Title fixed: 'Good Morning Music | Sitar Instrumental | 1.5 Hours'. In Studio Test & compare choose THUMBNAIL test: Thumbnail A = NEW STYLE (image below) · Thumbnail B = usual Raga Focus look (muted Pichwai, pale teal text). Same text NEW DAY ENERGY on both. Title test runs only after this thumbnail test concludes.",
   "title_variants": {
     "A": "Good Morning Music | Sitar Instrumental | 1.5 Hours",
     "B": "(no title test — thumbnail-only image test this week)"
@@ -29,17 +29,17 @@
   "thumbnail_text_main": "NEW DAY ENERGY",
   "thumbnail_text_variants": [
     {
-      "label": "Variant 1 - NEW STYLE",
+      "label": "A - NEW STYLE",
       "text": "NEW DAY ENERGY",
       "strategy": "Bright saffron/coral/gold Pichwai-Kangra miniature, ornate blue floral border, female viewer mid-stretch on a palace terrace at sunrise, sitar resting at the edge; text in a dedicated cream parchment panel (right ~40%), bold deep-indigo serif, second line 'Sitar · Morning · 1.5 Hours'. Base image generated 2026-10-11 -> thumbnails/wk_2026-10-12/mon_B_new_day_energy_v2.jpg"
     },
     {
-      "label": "Variant 2 - OUR STANDARD (control)",
+      "label": "B - usual Raga Focus look (control)",
       "text": "NEW DAY ENERGY",
       "strategy": "Channel default: muted cream Pichwai miniature, same scene and same woman/pose if possible, pale dark-teal serif text floating on the image (no panel), our usual second tier. Must differ ONLY in style/palette/text treatment."
     }
   ],
-  "thumbnail_prompt": "VARIANT 1 (done): see thumbnails/wk_2026-10-12/mon_B_new_day_energy_v2.jpg. VARIANT 2 control prompt: Traditional Pichwai/Kangra miniature painting in our channel's usual MUTED palette - soft cream parchment, faded teal, dusty rose and pale ochre, low saturation, ornate thin floral border. Same scene: a young Indian woman on a palace terrace at sunrise, mid-stretch with arms raised, eyes closed, gentle smile, long braid; chai on a low stool, tulsi plant, marigold garland, two parrots, a sitar resting at the edge, lotus pond and palace domes behind. NO separate text panel - leave soft open sky upper right. Text 'NEW DAY ENERGY' in pale dark-teal serif floating on the image, second tier 'Sitar · Morning · 1.5 Hours'. No photorealism.",
+  "thumbnail_prompt": "THUMBNAIL A (done): see thumbnails/wk_2026-10-12/mon_B_new_day_energy_v2.jpg. THUMBNAIL B (usual Raga Focus look) prompt: Traditional Pichwai/Kangra miniature painting in our channel's usual MUTED palette - soft cream parchment, faded teal, dusty rose and pale ochre, low saturation, ornate thin floral border. Same scene: a young Indian woman on a palace terrace at sunrise, mid-stretch with arms raised, eyes closed, gentle smile, long braid; chai on a low stool, tulsi plant, marigold garland, two parrots, a sitar resting at the edge, lotus pond and palace domes behind. NO separate text panel - leave soft open sky upper right. Text 'NEW DAY ENERGY' in pale dark-teal serif floating on the image, second tier 'Sitar · Morning · 1.5 Hours'. No photorealism.",
   "playlists": [
     "Morning Energy",
     "Peaceful Music"
@@ -79,17 +79,17 @@
     "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
     "AI-disclosure toggle",
     "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read",
-    "USER: generate Variant 2 (our standard look) from the control prompt",
-    "Launch Test & compare THUMBNAIL-ONLY at publish: Variant 1 vs Variant 2, title fixed; log both to ab_raw_data.csv"
+    "USER: generate Thumbnail B (usual Raga Focus look) from the control prompt",
+    "Launch Test & compare THUMBNAIL-ONLY at publish: Thumbnail A vs Thumbnail B, title fixed; log both to ab_raw_data.csv"
   ],
   "description": "Good Morning Music | Sitar Instrumental | 1.5 Hours for a Bright New Day\n\nGood morning. Before the phone, before the list, give yourself a few unhurried minutes and a little light.\n\nThis bright Indian sitar music is designed to start your day gently: a warm, open melody that wakes you up without rushing you.\n\nEnjoy 1.5 hours of sitar with soft tabla, slow and glowing, with no vocals.\n\n▶ Keep the morning bright — the full Morning Energy playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199l9NGQ0ig-jCkqp0iwI3c7m\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for waking up, a slow breakfast, tea or coffee by the window, morning stretches, yoga, journaling, getting ready, a calm commute, or easing into work in a good mood.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sitar with soft tabla\nRaga: Alhaiya Bilawal (a bright, open morning raga)\nStyle: Indian classical instrumental\nMood: Warm, light, quietly confident\nAtmosphere: First sun through an open window, a warm cup, a fresh day\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPlay it as you get out of bed and let it run through your first hour. Open a window, take a few slow breaths and let the long sitar notes set an easy pace.\n\n⏱ CHAPTERS\n0:00 Good morning\n9:00 First light\n18:00 Slow stretch\n27:00 Warm cup\n36:00 Open window\n45:00 Steady and bright\n54:00 Clear head\n1:03:00 Ready for the day\n1:12:00 Easy momentum\n1:21:00 A good start\n\n⏱ BEST FOR\n• Waking up gently\n• Morning routine\n• Breakfast and coffee\n• Morning yoga and stretching\n• Journaling\n• Getting ready\n• Calm commute\n• Starting work in a good mood\n• Weekend mornings\n• Positive energy\n\nIf this music helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#GoodMorningMusic #SitarMusic #MorningMusic #IndianClassicalMusic #PositiveVibes",
   "thumbnail_images": [
     {
-      "label": "Variant 1 — NEW STYLE (ready, 1280x720)",
+      "label": "Thumbnail A — NEW STYLE (ready, 1280x720)",
       "path": "data/thumbnails/wk_2026-10-12/mon_variant1_new_style.jpg"
     },
     {
-      "label": "Variant 2 — OUR STANDARD (control)",
+      "label": "Thumbnail B — usual Raga Focus look (to generate from the control prompt)",
       "path": "data/thumbnails/wk_2026-10-12/mon_variant2_standard.jpg"
     }
   ]
