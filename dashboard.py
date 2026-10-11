@@ -1866,6 +1866,14 @@ with tab_briefs:
                 st.caption(f"{len(tags_str)}/500 chars · {len(tags_str.split(',')) if tags_str else 0} tags")
 
                 st.markdown("##### 4️⃣ Thumbnail overlay text")
+                if brief.get("ab_design"):
+                    st.info(f"**A/B test:** {brief['ab_design']}")
+                for img in brief.get("thumbnail_images") or []:
+                    _ip = Path(__file__).parent / img.get("path", "")
+                    if _ip.is_file():
+                        st.image(str(_ip), caption=img.get("label", ""), use_container_width=True)
+                    else:
+                        st.caption(f"{img.get('label', '')}: image pending")
                 tvars = brief.get("thumbnail_text_variants") or []
                 if tvars:
                     for v in tvars[:3]:
