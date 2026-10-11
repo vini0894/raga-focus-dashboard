@@ -1871,7 +1871,7 @@ with tab_briefs:
                 for img in brief.get("thumbnail_images") or []:
                     _ip = Path(__file__).parent / img.get("path", "")
                     if _ip.is_file():
-                        st.image(str(_ip), caption=img.get("label", ""), use_container_width=True)
+                        st.image(str(_ip), caption=img.get("label", ""))
                     else:
                         st.caption(f"{img.get('label', '')}: image pending")
                 tvars = brief.get("thumbnail_text_variants") or []
