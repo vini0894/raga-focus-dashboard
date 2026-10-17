@@ -134,3 +134,14 @@ Series reads: wk1 Oct 6/10 · wk2 Oct 13/17 · **stop-rule check 2026-10-18** (d
 | 2026-10-16 | Sleep Therapy · Ep.3 (Bansuri 3hr, moved Sat→Fri) | Series week 3 + seam-spec build | title fixed, fixed template | day-one at 24h · d7 **2026-10-23** |
 
 **Carried:** series stop-rule **2026-10-18** · runtime 60-vs-90 verdict 2026-10-16 · Sleep Music playlist read + Sleep Radio 30d verdict **2026-10-19** · 3hr seam d14 2026-10-17.
+
+## wk_2026-10-19 (locked 2026-10-17) — FOUR 1.5hr ships, nothing Wed/Sat
+
+| Day | Ship | Test | Arms | Reads |
+|---|---|---|---|---|
+| 2026-10-19 | Sitar morning 1.5hr 06:30 | h_2026-10-17_dopamine_sibling | A 'Morning Dopamine Music' / FEEL GOOD START vs B 'Morning Glow Music' / START BRIGHT | d7 **2026-10-26** |
+| 2026-10-20 | Bansuri cognitive 1.5hr 19:00 | h_2026-10-17_cognitive_lane (replaces Morning Reset - series ended) | A 'Brain Fog Relief' / FOGGY BRAIN? vs B 'Sharp Mind Music' / CAN'T THINK? | d7 **2026-10-27** |
+| 2026-10-22 | Sarangi stress 1.5hr 19:00 | h_2026-10-03_thursday_therapy_slot read #3 | A 'Melt Away Stress' / YOU CAN REST NOW vs B 'Release the Pressure' / SET IT DOWN | d7 **2026-10-29** |
+| 2026-10-23 | Sitar calm/cortisol 1.5hr 19:00 | h_2026-10-17_cortisol_cpm_probe | A 'Lower Your Cortisol' / FEEL CALM AGAIN vs B 'Soften Your Stress' / SOFTEN STRESS | d7 **2026-10-30** · CPM d28 2026-11-20 |
+
+**Baseline:** October median first-7-day engaged views per upload = 307. **Ended:** Morning Reset + Sleep Therapy series (stop rule 2026-10-18). **Dropped:** end-screen routing (structurally dead), 3hr, long-form replicas. **Kept:** Sleep Radio. **Carried:** Inner Peace replica d7 2026-10-21 · Sleep Music playlist read 2026-10-19.

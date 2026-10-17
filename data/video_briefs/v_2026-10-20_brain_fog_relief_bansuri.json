@@ -1,0 +1,86 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-10-17",
+  "spent": false,
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr median ~20%). Export MUST carry 'Average percentage viewed (%)' AND 'Average view duration'. tools/weekly_review.py prints the matched-age read.",
+  "ab_design": "A = SHORT pipeline title on keyword 1; B = SHORT title on a DIFFERENT keyword 2. CHANGE 2026-10-17 (user locked this week's table): the long competitor-pattern B arm (user rule 2026-09-19) is dropped - long B arms did not win in 13 of 14 ships since Sep 21 (inferred from live titles; Studio verdicts unlogged) and long-titled ships ran lower first-week reach. Pair thumb A with title A and thumb B with title B in Test & compare.",
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14); this week is 90 min only.",
+  "pending": [
+    "USER: generate the music to the music_direction spec",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read"
+  ],
+  "id": "v_2026-10-20_brain_fog_relief_bansuri",
+  "planned_date": "2026-10-20",
+  "planned_slot": "19:00 IST PM · Tue",
+  "hypothesis_id": "h_2026-10-17_cognitive_lane",
+  "lane": "cognitive",
+  "daypart": "evening",
+  "instrument": "Bansuri",
+  "raga": "Yaman",
+  "title_variants": {
+    "A": "Brain Fog Relief | Bansuri Instrumental | 1.5 Hours",
+    "B": "Sharp Mind Music | Bansuri | 1.5 Hours"
+  },
+  "title_note": "Locked by user 2026-10-17. Replaces the Morning Reset series slot - series ended (day-one views Ep.1-4: 995 / 369 / 516 / 348, all below the 1,000 stop rule). Cognitive = best lane vs same-month median first-7-day engaged views since May 15 (1.35x, 4 of 11 ships >= 1.5x); Bansuri x cognitive 1.95x (n=2). 'Brain Fog Relief' banked score 58; 'Sharp Mind Music' FRESH unscored. Both brief_check clean.",
+  "validated_keywords": [
+    "'Brain Fog Relief' - lead_prescreen FRESH 2026-10-17; keyword bank 58",
+    "'Sharp Mind Music' - lead_prescreen FRESH 2026-10-17; unscored",
+    "Rejected: 'Clear the Fog' (concept-live: 'Clear Brain Fog', Apr) · 'Mind Reset Music' (concept-live) · 'Nervous System Reset' (past-lock, A/B history)"
+  ],
+  "competitor_basis": "Cognitive/'mental clarity' is where competitor long-form is growing: Trust in Gods 'Mental Clarity & Deep Focus | 432Hz Sitar, Flute & Tabla' +16.5K in 7 days; Healing Raga Studio 'Cognitive Clarity: 432Hz Sitar & Bansuri Therapy' 12.7K in 5 days (snapshot 2026-10-17).",
+  "thumbnail_text_main": "FOGGY BRAIN?",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "FOGGY BRAIN?",
+      "strategy": "12 chars / 2 words, compact Q-hook - cognitive is the ONE lane with a real format effect (Q-hook 3.52% vs imperative 2.87% median CTR). Deduped - no match (BRAIN FOG? used 12x, FOGGY HEAD? used)."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "CAN'T THINK?",
+      "strategy": "12 chars / 2 words, compact Q-hook. Deduped - no match."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. NEW STYLE (won the Oct 12 thumbnail-only test 58.2% vs 41.8% watch-time share, 1,024 views, stopped by user; also leading the Oct 13 test 54.9% vs 45.1%): bright saffron/coral/gold Pichwai-Kangra miniature, ornate blue floral border, text in a dedicated cream parchment panel (right ~40%), bold deep-indigo serif. The VIEWER, never a performer: evening, a young woman at a desk by a window, laptop pushed aside, eyes closed, fingertips on her temples, a cup of tea, a soft lamp; the mood shifts from fog to clear sky through the window. A bansuri rests at the frame edge. Text panel as above, second tier 'Bansuri · Raga Yaman · 1.5 Hours'.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Peaceful Music"
+  ],
+  "music_direction": "Clear, gently flowing Indian bansuri in Raga Yaman (open, luminous evening raga), medium-length phrases with steady motion and space, soft tanpura drone, very light tabla low in the mix or none, around 65 BPM. Clear and alert, not sleepy - the promise is a clearer head. Melody by 0:15, no fade-in.",
+  "suno_prompt": "Instrumental only, no vocals — clear gently flowing Indian bansuri flute in Raga Yaman, luminous open phrases with steady motion and space, soft tanpura drone, very light tabla low in the mix, around 65 BPM, calm focused clarity, seamless loop.",
+  "experiment": "h_2026-10-17_cognitive_lane: does the cognitive lane (best era-normalised lane) beat the October median? Success d7 (2026-10-27): first-7-day engaged views >= 1.5x the October median (307 -> >= 460) AND first-week impressions >= 12K. Falsifier: < 1.0x the month median.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-10-20 19:00 IST",
+    "opening_rule": "melody by 0:15, no fade-in"
+  },
+  "slot_note": "PM 19:00 Tuesday.",
+  "tags": [
+    "brain fog relief",
+    "sharp mind music",
+    "brain fog music",
+    "mental clarity music",
+    "bansuri music",
+    "bansuri instrumental",
+    "indian flute music",
+    "focus music",
+    "clear mind music",
+    "raga yaman",
+    "mental fatigue music",
+    "study music",
+    "deep work music",
+    "indian classical music",
+    "calm focus music",
+    "peaceful music",
+    "raga focus"
+  ],
+  "description": "Brain Fog Relief | Bansuri Instrumental | 1.5 Hours for a Sharper, Clearer Mind\n\nToo many tabs, too little sleep, too much screen. If your head feels heavy and slow, let this play and give your mind room to clear.\n\nThis gentle Indian bansuri music is designed to lift brain fog: clear, flowing flute phrases that settle the noise so your thinking can sharpen again.\n\nEnjoy 1.5 hours of luminous bansuri over a soft tanpura drone, with no vocals.\n\n▶ Keep your head clear — the full Healing & Anxiety Relief playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199k-_9PNqaU2-Z_KhRN_X1hF\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for brain fog, mental fatigue, focus after a long day, study, reading, deep work, journaling, planning, meditation, or simply resetting a tired mind.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Bansuri (Indian bamboo flute) with tanpura\nRaga: Yaman (an open, luminous evening raga)\nStyle: Indian classical instrumental\nMood: Clear, steady, quietly alert\nAtmosphere: A window opening, the fog lifting, a clear evening sky\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nClose the extra tabs, sit up, breathe out slowly and let the flute set an easy rhythm for your thoughts. Use it for one focused task, or simply to rest your mind.\n\n⏱ CHAPTERS\n0:00 Settling in\n9:00 The noise fades\n18:00 Slower breath\n27:00 Fog lifting\n36:00 Thoughts lining up\n45:00 Clear and steady\n54:00 Sharper focus\n1:03:00 Easy flow\n1:12:00 Mind refreshed\n1:21:00 Clear again\n\n⏱ BEST FOR\n• Brain fog\n• Mental fatigue\n• Focus\n• Study\n• Deep work\n• Reading\n• Journaling\n• Meditation\n\nIf this music helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#BrainFog #BansuriMusic #MentalClarity #FocusMusic #RagaYaman",
+  "title": "Brain Fog Relief | Bansuri Instrumental | 1.5 Hours",
+  "thumbnail_style": "new_style"
+}

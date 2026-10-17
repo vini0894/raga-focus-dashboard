@@ -1,0 +1,84 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-10-17",
+  "spent": false,
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr median ~20%). Export MUST carry 'Average percentage viewed (%)' AND 'Average view duration'. tools/weekly_review.py prints the matched-age read.",
+  "ab_design": "A = SHORT pipeline title on keyword 1; B = SHORT title on a DIFFERENT keyword 2. CHANGE 2026-10-17 (user locked this week's table): the long competitor-pattern B arm (user rule 2026-09-19) is dropped - long B arms did not win in 13 of 14 ships since Sep 21 (inferred from live titles; Studio verdicts unlogged) and long-titled ships ran lower first-week reach. Pair thumb A with title A and thumb B with title B in Test & compare.",
+  "runtime_note": "The channel ships 90 or 180 minutes only (user rule 2026-09-14); this week is 90 min only.",
+  "pending": [
+    "USER: generate the music to the music_direction spec",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read"
+  ],
+  "id": "v_2026-10-22_melt_away_stress_sarangi",
+  "planned_date": "2026-10-22",
+  "planned_slot": "19:00 IST PM · Thu",
+  "hypothesis_id": "h_2026-10-03_thursday_therapy_slot",
+  "lane": "stress_burnout",
+  "daypart": "evening",
+  "instrument": "Sarangi",
+  "raga": "Desh",
+  "title_variants": {
+    "A": "Melt Away Stress | Sarangi | 1.5 Hours",
+    "B": "Release the Pressure | Slow Sarangi | 1.5 Hours"
+  },
+  "title_note": "Locked by user 2026-10-17. Stress = highest-CPM lane. Same instrument + raga as Tension Relief Sarangi (Sep 25, Desh) - 20.7K impressions @d8, best non-morning ship since September. Both leads FRESH, brief_check clean, unscored.",
+  "validated_keywords": [
+    "'Melt Away Stress' - lead_prescreen FRESH 2026-10-17; unscored",
+    "'Release the Pressure' - lead_prescreen FRESH 2026-10-17; unscored"
+  ],
+  "thumbnail_text_main": "YOU CAN REST NOW",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "YOU CAN REST NOW",
+      "strategy": "16 chars / 4 words, permission format (won the stress-lane test +17.2pp, #29; best stress text IT'S OKAY TO REST 4.71%). Deduped - no match."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "SET IT DOWN",
+      "strategy": "11 chars / 3 words, release imperative. Deduped - no match."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. NEW STYLE (won the Oct 12 thumbnail-only test 58.2% vs 41.8% watch-time share, 1,024 views, stopped by user; also leading the Oct 13 test 54.9% vs 45.1%): bright saffron/coral/gold Pichwai-Kangra miniature, ornate blue floral border, text in a dedicated cream parchment panel (right ~40%), bold deep-indigo serif. The VIEWER, never a performer: evening, a person arriving home and setting a work bag down by the door, shoulders dropping, a lamp glowing in the next room. A sarangi leans against the wall at the frame edge. Text panel as above, second tier 'Sarangi · Raga Desh · 1.5 Hours'.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Peaceful Music"
+  ],
+  "music_direction": "Follow the Tension Relief Sarangi bed (Sep 25, Raga Desh): warm, low, vocal-like bowed sarangi, long slow bows with breathing space, steady tanpura drone, NO percussion, around 55 BPM. Round, low tone - avoid the thin high crying register. Sound present from 0:00, no fade-in.",
+  "suno_prompt": "Instrumental only, no vocals — warm low Indian sarangi in Raga Desh, slow vocal-like bowed phrases with long breathing pauses, round mellow tone, steady tanpura drone, no percussion, around 55 BPM, calm evening release, seamless loop.",
+  "experiment": "h_2026-10-03_thursday_therapy_slot read #3 (Sarangi, same raga as the best-sampling Tension Relief). Success d7 (2026-10-29): first-7-day engaged views >= 1.5x the October median (>= 460), first-week impressions >= 12K and d7 AVD >= 20%.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-10-22 19:00 IST",
+    "opening_rule": "sound present from 0:00, no fade-in"
+  },
+  "slot_note": "PM 19:00 Thursday.",
+  "tags": [
+    "melt away stress",
+    "release the pressure",
+    "stress relief music",
+    "sarangi music",
+    "sarangi instrumental",
+    "evening stress relief",
+    "tension relief music",
+    "burnout recovery music",
+    "raga desh",
+    "body relaxation music",
+    "indian classical music",
+    "calm evening music",
+    "nervous system relaxation",
+    "indian instrumental music",
+    "deep relaxation",
+    "peaceful music",
+    "raga focus"
+  ],
+  "description": "Melt Away Stress | Sarangi | 1.5 Hours to Release the Pressure\n\nYou can put the day down now. Whatever you carried home - in the neck, the jaw, the shoulders - this is ninety minutes to let it go.\n\nThis slow Indian sarangi music is designed to melt away stress: a warm, voice-like sound that the body softens to, phrase by phrase.\n\nEnjoy 1.5 hours of low, gentle sarangi over a steady tanpura drone, with no drums and no vocals.\n\n▶ Keep unwinding — the full Healing & Anxiety Relief playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199k-_9PNqaU2-Z_KhRN_X1hF\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for decompressing after work, evening stress relief, burnout recovery, stretching, a warm bath, lying down with your eyes closed, breathwork, a quiet dinner, or the hour before bed.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sarangi (Indian bowed strings) with tanpura drone\nRaga: Desh (a warm, gentle evening raga)\nStyle: Indian classical instrumental, meditative\nMood: Warm, heavy, releasing\nAtmosphere: Home at dusk, the bag set down, nothing left to do\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPut it on when you get home and sit or lie back. Let each long bowed note loosen one place at a time and breathe out longer than you breathe in.\n\n⏱ CHAPTERS\n0:00 Arriving home\n9:00 Setting it down\n18:00 Shoulders dropping\n27:00 A slower breath\n36:00 Warmth in the chest\n45:00 The pressure eases\n54:00 Heavy and easy\n1:03:00 Stress melting away\n1:12:00 Quiet all the way through\n1:21:00 Rest now\n\n⏱ BEST FOR\n• Stress relief\n• Body tension\n• Burnout recovery\n• Decompressing after work\n• Stretching\n• A warm bath\n• Breathwork\n• Before bed\n\nIf this music helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#StressRelief #SarangiMusic #IndianClassicalMusic #Relaxation #RagaDesh",
+  "title": "Melt Away Stress | Sarangi | 1.5 Hours",
+  "thumbnail_style": "new_style"
+}
