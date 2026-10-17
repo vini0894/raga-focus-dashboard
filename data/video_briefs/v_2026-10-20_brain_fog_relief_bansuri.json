@@ -10,6 +10,7 @@
     "USER: generate the music to the music_direction spec",
     "USER: generate the thumbnail image; render text A and text B versions",
     "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "USER, before publish: rename the 'Deep Focus Sessions' playlist to 'Mental Clarity Music' in Studio (keeps playlist ID + saves; planned 2026-10-10)",
     "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
     "AI-disclosure toggle",
     "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read"
@@ -48,7 +49,7 @@
   ],
   "thumbnail_prompt": "ONE image, two text versions. NEW STYLE (won the Oct 12 thumbnail-only test 58.2% vs 41.8% watch-time share, 1,024 views, stopped by user; also leading the Oct 13 test 54.9% vs 45.1%): bright saffron/coral/gold Pichwai-Kangra miniature, ornate blue floral border, text in a dedicated cream parchment panel (right ~40%), bold deep-indigo serif. The VIEWER, never a performer: evening, a young woman at a desk by a window, laptop pushed aside, eyes closed, fingertips on her temples, a cup of tea, a soft lamp; the mood shifts from fog to clear sky through the window. A bansuri rests at the frame edge. Text panel as above, second tier 'Bansuri · Raga Yaman · 1.5 Hours'.",
   "playlists": [
-    "Healing & Anxiety Relief",
+    "Mental Clarity Music (rename of Deep Focus Sessions)",
     "Peaceful Music"
   ],
   "music_direction": "Clear, gently flowing Indian bansuri in Raga Yaman (open, luminous evening raga), medium-length phrases with steady motion and space, soft tanpura drone, very light tabla low in the mix or none, around 65 BPM. Clear and alert, not sleepy - the promise is a clearer head. Melody by 0:15, no fade-in.",
@@ -80,7 +81,14 @@
     "peaceful music",
     "raga focus"
   ],
-  "description": "Brain Fog Relief | Bansuri Instrumental | 1.5 Hours for a Sharper, Clearer Mind\n\nToo many tabs, too little sleep, too much screen. If your head feels heavy and slow, let this play and give your mind room to clear.\n\nThis gentle Indian bansuri music is designed to lift brain fog: clear, flowing flute phrases that settle the noise so your thinking can sharpen again.\n\nEnjoy 1.5 hours of luminous bansuri over a soft tanpura drone, with no vocals.\n\n▶ Keep your head clear — the full Healing & Anxiety Relief playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199k-_9PNqaU2-Z_KhRN_X1hF\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for brain fog, mental fatigue, focus after a long day, study, reading, deep work, journaling, planning, meditation, or simply resetting a tired mind.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Bansuri (Indian bamboo flute) with tanpura\nRaga: Yaman (an open, luminous evening raga)\nStyle: Indian classical instrumental\nMood: Clear, steady, quietly alert\nAtmosphere: A window opening, the fog lifting, a clear evening sky\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nClose the extra tabs, sit up, breathe out slowly and let the flute set an easy rhythm for your thoughts. Use it for one focused task, or simply to rest your mind.\n\n⏱ CHAPTERS\n0:00 Settling in\n9:00 The noise fades\n18:00 Slower breath\n27:00 Fog lifting\n36:00 Thoughts lining up\n45:00 Clear and steady\n54:00 Sharper focus\n1:03:00 Easy flow\n1:12:00 Mind refreshed\n1:21:00 Clear again\n\n⏱ BEST FOR\n• Brain fog\n• Mental fatigue\n• Focus\n• Study\n• Deep work\n• Reading\n• Journaling\n• Meditation\n\nIf this music helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#BrainFog #BansuriMusic #MentalClarity #FocusMusic #RagaYaman",
+  "description": "Brain Fog Relief | Bansuri Instrumental | 1.5 Hours for a Sharper, Clearer Mind\n\nToo many tabs, too little sleep, too much screen. If your head feels heavy and slow, let this play and give your mind room to clear.\n\nThis gentle Indian bansuri music is designed to lift brain fog: clear, flowing flute phrases that settle the noise so your thinking can sharpen again.\n\nEnjoy 1.5 hours of luminous bansuri over a soft tanpura drone, with no vocals.\n\n▶ Keep your head clear — the full Mental Clarity Music playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199k23Ho_XqKrYC045u7FJbgV\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for brain fog, mental fatigue, focus after a long day, study, reading, deep work, journaling, planning, meditation, or simply resetting a tired mind.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Bansuri (Indian bamboo flute) with tanpura\nRaga: Yaman (an open, luminous evening raga)\nStyle: Indian classical instrumental\nMood: Clear, steady, quietly alert\nAtmosphere: A window opening, the fog lifting, a clear evening sky\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nClose the extra tabs, sit up, breathe out slowly and let the flute set an easy rhythm for your thoughts. Use it for one focused task, or simply to rest your mind.\n\n⏱ CHAPTERS\n0:00 Settling in\n9:00 The noise fades\n18:00 Slower breath\n27:00 Fog lifting\n36:00 Thoughts lining up\n45:00 Clear and steady\n54:00 Sharper focus\n1:03:00 Easy flow\n1:12:00 Mind refreshed\n1:21:00 Clear again\n\n⏱ BEST FOR\n• Brain fog\n• Mental fatigue\n• Focus\n• Study\n• Deep work\n• Reading\n• Journaling\n• Meditation\n\nIf this music helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#BrainFog #BansuriMusic #MentalClarity #FocusMusic #RagaYaman",
   "title": "Brain Fog Relief | Bansuri Instrumental | 1.5 Hours",
-  "thumbnail_style": "new_style"
+  "thumbnail_style": "new_style",
+  "playlist_placement": "Mental Clarity Music (currently 'Deep Focus Sessions', 13 videos): add near the top. Peaceful Music: normal add. NOT Healing & Anxiety Relief - wrong co-view for a cognitive video.",
+  "thumbnail_images": [
+    {
+      "label": "Style reference — Oct 12 winning NEW STYLE thumbnail (58.2% watch-time share)",
+      "path": "data/thumbnails/wk_2026-10-12/mon_variant1_new_style.jpg"
+    }
+  ]
 }

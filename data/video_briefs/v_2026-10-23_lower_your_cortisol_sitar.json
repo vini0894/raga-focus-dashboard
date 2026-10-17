@@ -10,6 +10,7 @@
     "USER: generate the music to the music_direction spec",
     "USER: generate the thumbnail image; render text A and text B versions",
     "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "At publish: place right after Calm Music | Sitar for Cortisol Reset in Healing & Anxiety Relief and Peaceful Music",
     "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
     "AI-disclosure toggle",
     "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read"
@@ -80,5 +81,12 @@
   ],
   "description": "Lower Your Cortisol | Sitar Instrumental | 1.5 Hours to Feel Calm Again\n\nSome days the body stays on alert long after the reason has gone. This is ninety minutes to tell it the day is over.\n\nThis slow Indian sitar music is designed to lower stress and help you feel calm again: long, warm notes with plenty of space that slow your breathing and settle the body.\n\nEnjoy 1.5 hours of gentle sitar over a soft tanpura drone, with no drums and no vocals.\n\n▶ Stay calm — the full Healing & Anxiety Relief playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199k-_9PNqaU2-Z_KhRN_X1hF\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for evening stress relief, a cortisol reset after a long day, winding down after work, meditation, breathwork, yoga nidra, a warm bath, reading, or the hour before bed.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sitar with tanpura drone\nRaga: Pilu (a light, soothing evening raga)\nStyle: Indian classical instrumental, meditative\nMood: Tender, slow, settling\nAtmosphere: Lamplight, a warm cup, the alert finally switching off\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nSit somewhere soft, hold something warm and breathe out longer than you breathe in. Let each long sitar note settle the body a little further.\n\n⏱ CHAPTERS\n0:00 Switching off\n9:00 A warm cup\n18:00 Slower breath\n27:00 Shoulders soften\n36:00 The alert fades\n45:00 Calm returning\n54:00 Settled body\n1:03:00 Quiet mind\n1:12:00 Feel calm again\n1:21:00 Rest\n\n⏱ BEST FOR\n• Stress relief\n• Cortisol reset\n• Evening wind-down\n• Meditation\n• Breathwork\n• Yoga nidra\n• A warm bath\n• Reading\n• Before bed\n\nIf this music helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#CortisolReset #SitarMusic #StressRelief #CalmMusic #RagaPilu",
   "title": "Lower Your Cortisol | Sitar Instrumental | 1.5 Hours",
-  "thumbnail_style": "new_style"
+  "thumbnail_style": "new_style",
+  "playlist_placement": "Healing & Anxiety Relief AND Peaceful Music: insert DIRECTLY AFTER 'Calm Music | Sitar for Cortisol Reset' (cLfbEA5506U) in both - the test needs the parent's audience.",
+  "thumbnail_images": [
+    {
+      "label": "Style reference — Oct 12 winning NEW STYLE thumbnail (58.2% watch-time share)",
+      "path": "data/thumbnails/wk_2026-10-12/mon_variant1_new_style.jpg"
+    }
+  ]
 }

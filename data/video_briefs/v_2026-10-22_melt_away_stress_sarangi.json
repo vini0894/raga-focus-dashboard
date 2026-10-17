@@ -10,6 +10,7 @@
     "USER: generate the music to the music_direction spec",
     "USER: generate the thumbnail image; render text A and text B versions",
     "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "At publish: place in Healing & Anxiety Relief right after Tension Relief Sarangi",
     "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
     "AI-disclosure toggle",
     "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read"
@@ -80,5 +81,12 @@
   ],
   "description": "Melt Away Stress | Sarangi | 1.5 Hours to Release the Pressure\n\nYou can put the day down now. Whatever you carried home - in the neck, the jaw, the shoulders - this is ninety minutes to let it go.\n\nThis slow Indian sarangi music is designed to melt away stress: a warm, voice-like sound that the body softens to, phrase by phrase.\n\nEnjoy 1.5 hours of low, gentle sarangi over a steady tanpura drone, with no drums and no vocals.\n\n▶ Keep unwinding — the full Healing & Anxiety Relief playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199k-_9PNqaU2-Z_KhRN_X1hF\n(paste this video's own id in place of VIDEO_ID before publishing — it opens the playlist at this video so the next one plays automatically)\n\nPerfect for decompressing after work, evening stress relief, burnout recovery, stretching, a warm bath, lying down with your eyes closed, breathwork, a quiet dinner, or the hour before bed.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sarangi (Indian bowed strings) with tanpura drone\nRaga: Desh (a warm, gentle evening raga)\nStyle: Indian classical instrumental, meditative\nMood: Warm, heavy, releasing\nAtmosphere: Home at dusk, the bag set down, nothing left to do\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPut it on when you get home and sit or lie back. Let each long bowed note loosen one place at a time and breathe out longer than you breathe in.\n\n⏱ CHAPTERS\n0:00 Arriving home\n9:00 Setting it down\n18:00 Shoulders dropping\n27:00 A slower breath\n36:00 Warmth in the chest\n45:00 The pressure eases\n54:00 Heavy and easy\n1:03:00 Stress melting away\n1:12:00 Quiet all the way through\n1:21:00 Rest now\n\n⏱ BEST FOR\n• Stress relief\n• Body tension\n• Burnout recovery\n• Decompressing after work\n• Stretching\n• A warm bath\n• Breathwork\n• Before bed\n\nIf this music helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#StressRelief #SarangiMusic #IndianClassicalMusic #Relaxation #RagaDesh",
   "title": "Melt Away Stress | Sarangi | 1.5 Hours",
-  "thumbnail_style": "new_style"
+  "thumbnail_style": "new_style",
+  "playlist_placement": "Healing & Anxiety Relief: insert DIRECTLY AFTER 'Tension Relief Music | Sarangi Instrumental | 1.5 Hours' (EpYpgI6d-SU) - same raga Desh, best non-morning ship. Do not append at the bottom of the 60-video list.",
+  "thumbnail_images": [
+    {
+      "label": "Style reference — Oct 12 winning NEW STYLE thumbnail (58.2% watch-time share)",
+      "path": "data/thumbnails/wk_2026-10-12/mon_variant1_new_style.jpg"
+    }
+  ]
 }
