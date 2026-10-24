@@ -1,0 +1,106 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-10-24",
+  "spent": false,
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr median ~20%). Export MUST carry 'Average percentage viewed (%)' AND 'Average view duration'. tools/weekly_review.py prints the matched-age read. T1 share at d14 via the per-video country pull (group read with the week's other ships).",
+  "ab_design": "A = LONG competitor-pattern title (replica of Soulful Breathscape 'A Gentler Morning 🌿 Bansuri Therapy 432 Hz for Anxiety & Stress Relief | Mental Clarity', 7.9K views in 2 days, ~4K/day on 2026-10-24); B = SHORT 'Music for…' title. Both arms lead on a '___ Morning' keyword (user choice 2026-10-24), so this test reads LONG vs SHORT and 'Music for' vs none - not keyword vs keyword. Long vs short is 1-1 since Oct 14 (Inner Peace short 56.9; Let Your Body Rest long 53.5). Pair thumb A with title A and thumb B with title B in Test & compare.",
+  "runtime_note": "90 min (user rule: 90 or 180 only; this week 90 only). Competitor original is 61 min.",
+  "pending": [
+    "USER: generate the music to the music_direction spec, then pitch the final render to 432 Hz (down ~31.8 cents from A440) - the title promises 432 Hz",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "USER (optional): VidIQ score for 'Gentle Morning Music' and 'Music for Calm Morning'",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B; log both arms to ab_raw_data.csv",
+    "At publish: place in Healing & Anxiety Relief directly after 'Sitar for Nervous System Healing' - NOT in the Morning Energy playlist next to Morning Energy Music (user 2026-10-24: protect the growing hero)",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "AI-disclosure toggle",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read"
+  ],
+  "id": "v_2026-10-26_gentle_morning_bansuri_432",
+  "planned_date": "2026-10-26",
+  "planned_slot": "06:30 IST AM · Mon",
+  "hypothesis_id": "h_2026-10-26_competitor_title_replica_long_vs_short",
+  "lane": "anxiety",
+  "daypart": "morning",
+  "instrument": "Bansuri",
+  "raga": "Bhairavi",
+  "title_variants": {
+    "A": "Gentle Morning Music 🌿 Bansuri 432 Hz for Anxiety & Stress Relief | Mental Clarity",
+    "B": "Music for Calm Morning | Flute for Calmness | 1.5 Hours"
+  },
+  "title_note": "Locked by user 2026-10-24. A = user's rewrite of Soulful Breathscape's 'A Gentler Morning' (dropped 'Therapy' - 4 Morning Reset 🌿 Bansuri Therapy episodes all < 1,000 day-one views). Deliberately avoids 'Morning Energy' words (user: the Morning Energy hero is picking up). B = user's title; near-clone of live 'Calm Morning Music | Relaxing Flute | Instrumental 1.5 hours' (Aug 31) - accepted by user as old enough (54 days). 'Calm Morning' also appears in 5 past thumb tests. Both unscored.",
+  "validated_keywords": [
+    "'Gentle Morning Music' - lead_prescreen: concept flag only vs Tabla morning-focus video (194d); unscored",
+    "'Music for Calm Morning' - lead_prescreen: concept flag vs Calm Morning Music Sitar 3hr (96d) + live Calm Morning Music Flute (Aug 31); user override 2026-10-24; unscored",
+    "'Stress Relief' - in 9 of the top 12 competitor titles this week (snapshot 2026-10-24)",
+    "'432 Hz' - in 8 of the top 12 competitor titles this week"
+  ],
+  "thumbnail_text_main": "TODAY WILL BE GOOD",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "TODAY WILL BE GOOD",
+      "strategy": "18 chars / 4 words, second-person affirmation (extends the permission language that led 3 of 3 recent calm/stress/sleep tests). Deduped - no match."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "EASE INTO TODAY",
+      "strategy": "15 chars / 3 words, gentle imperative matching 'Calm Morning'. Deduped - no match."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. NEW STYLE (won the Oct 12 thumbnail-only test 58.2% vs 41.8%): bright saffron/coral/gold Pichwai-Kangra miniature, ornate blue floral border, text in a cream parchment panel (right ~40%), bold deep-indigo serif. The VIEWER, never a performer: a woman waking slowly on a sunlit terrace at soft early light, stretching gently or holding a warm cup, eyes half-closed, calm face; parrots or small birds on the balustrade, lotus pond and hazy hills behind. A bansuri rests on a cushion at the frame edge. Soft, unhurried, not energetic. Second tier: 'Bansuri · 432 Hz · 1.5 Hours'.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Peaceful Music"
+  ],
+  "music_direction": "Slow, soft bansuri in Raga Bhairavi (named in 3 of the top competitor titles this week): long breathy sustained notes, gentle meend, unhurried alaap-style phrasing with space between phrases, steady tanpura drone, NO percussion, around 60 BPM. Warm, low-mid register - not shrill. Tune the final render to 432 Hz. Sound present from 0:00, no fade-in.",
+  "suno_prompt": "Instrumental only, no vocals — soft breathy Indian bansuri bamboo flute in Raga Bhairavi, long sustained notes with gentle slides, slow alaap phrasing with breathing space, warm low-mid tone, steady tanpura drone, no percussion, around 60 BPM, calm gentle morning, anxiety relief, seamless loop.",
+  "experiment": "h_2026-10-26_competitor_title_replica_long_vs_short: Soulful Breathscape title replica (their hot 'A Gentler Morning' family, without 'Therapy'). Success d7 (2026-11-02): first-7-day engaged views >= 1.5x the October median (>= 460) OR >= 1.5x same-age cohort impressions. FALSIFIER: < 1.0x cohort and < 300 engaged. Secondary: Test & compare long-vs-short verdict; T1 share at d14.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-10-26 06:30 IST",
+    "opening_rule": "sound present from 0:00, no fade-in",
+    "tuning": "432 Hz"
+  },
+  "slot_note": "AM 06:30 Monday (morning lane keeps 06:30).",
+  "tags": [
+    "gentle morning music",
+    "calm morning music",
+    "bansuri 432 hz",
+    "anxiety relief music",
+    "stress relief music",
+    "mental clarity",
+    "bansuri flute",
+    "flute music for calmness",
+    "raga bhairavi",
+    "morning meditation music",
+    "calm music",
+    "indian flute music",
+    "healing flute music",
+    "432 hz music",
+    "peaceful music",
+    "indian instrumental music",
+    "raga focus"
+  ],
+  "description": "Gentle Morning Music 🌿 Bansuri 432 Hz for Anxiety & Stress Relief and Mental Clarity\n\nThere is no rush this morning. Let the day arrive slowly - one breath, one long flute note at a time.\n\nThis soft bansuri music, tuned to 432 Hz, is made for gentle mornings: easing anxiety, settling stress, and giving you a clear, quiet head before the day asks anything of you.\n\nEnjoy 1.5 hours of slow Indian bamboo flute in Raga Bhairavi over a steady tanpura drone, with no drums, no vocals and no ads interrupting.\n\n▶ Keep going - the full Healing & Anxiety Relief playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199k-_9PNqaU2-Z_KhRN_X1hF\n(paste this video's own id in place of VIDEO_ID before publishing - it opens the playlist at this video so the next one plays automatically)\n\nPerfect for slow mornings, morning meditation, journaling, a quiet cup of tea, gentle stretching or yoga, breathwork, getting ready for the day, or calming morning anxiety.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Bansuri (Indian bamboo flute) with tanpura drone\nRaga: Bhairavi (a gentle, devotional raga)\nTuning: 432 Hz\nStyle: Indian classical instrumental, meditative\nMood: Soft, warm, unhurried\nAtmosphere: A sunlit terrace, birds, nowhere to be yet\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPlay it as soon as you wake up. Sit or lie still for the first few minutes and let each long note lengthen your out-breath.\n\n⏱ CHAPTERS\n0:00 Waking slowly\n9:00 First light\n18:00 A longer breath\n27:00 Worry loosening\n36:00 Shoulders softening\n45:00 A clearer head\n54:00 Warm and steady\n1:03:00 Easing into today\n1:12:00 Calm all the way through\n1:21:00 Ready, gently\n\n⏱ BEST FOR\n• Morning anxiety\n• Stress relief\n• Mental clarity\n• Morning meditation\n• Journaling\n• Gentle yoga\n• Breathwork\n\nIf this music helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#BansuriMusic #432Hz #AnxietyRelief #StressRelief #RagaBhairavi",
+  "title": "Gentle Morning Music 🌿 Bansuri 432 Hz for Anxiety & Stress Relief | Mental Clarity",
+  "thumbnail_style": "new_style",
+  "playlist_placement": "Healing & Anxiety Relief: insert DIRECTLY AFTER 'Sitar for Nervous System Healing | Indian Classical Music for Calmness | 1.5 Hours' (52YU6Q64zVw). NOT in the Morning Energy playlist and never next to 'Morning Energy Music | Dilruba Raga Yaman' (user 2026-10-24). Do not append at the bottom.",
+  "competitor_source": {
+    "channel": "Soulful Breathscape",
+    "video_id": "-HPnVgaW4NY",
+    "title": "A Gentler Morning 🌿 Bansuri Therapy 432 Hz for Anxiety & Stress Relief | Mental Clarity",
+    "snapshot": "2026-10-24",
+    "views": 7923,
+    "age_days": 2,
+    "runtime_min": 61
+  },
+  "thumbnail_images": [
+    {
+      "label": "Style reference — Oct 12 winning NEW STYLE thumbnail (58.2% watch-time share)",
+      "path": "data/thumbnails/wk_2026-10-12/mon_variant1_new_style.jpg"
+    }
+  ],
+  "gate_overrides": "brief_gate 2026-10-24 FAIL = user-chosen overrides: (1) packaging_clone vs 'Morning Overthinking Reset 🌿 Bansuri Therapy' (Oct 13, Bansuri+Tanpura 1.5hr) - accepted as a deliberate competitor replica; (2) track_record FLOP Bansuri x anxiety x 1.5hr (n=3, median 163 views) - trailing-28d bars every recent upload misses; (3) lead A contains 'morning music' (live 'Good Morning Music | Sitar' Oct 12) and B overlaps 'Calm Morning Music' (Aug 31 / Jul 20) - user accepted 2026-10-24. brief_check: clean."
+}

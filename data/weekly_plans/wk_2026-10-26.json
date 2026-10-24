@@ -1,0 +1,48 @@
+{
+  "week_id": "wk_2026-10-26",
+  "week_start": "2026-10-26",
+  "week_end": "2026-11-01",
+  "created": "2026-10-24",
+  "status": "PARTIAL - Monday LOCKED by user 2026-10-24; Tue/Thu/Fri PROPOSED in chat, not locked",
+  "notes": "Mix (user 2026-10-24): 1 T1-targeted ship + competitor replicas + pipeline, all 1.5hr, Mon/Tue/Thu/Fri. 3hr stays dropped this week. Channel: rev/day flat on rising Q4 RPM; engaged/day falling; Morning Energy is the only growing top-8 video - do not use its words or place new ships next to it.",
+  "hypothesis": {
+    "ids": [
+      "h_2026-10-26_competitor_title_replica_long_vs_short"
+    ],
+    "one_line": "Mon replicates Soulful Breathscape's hot 'A Gentler Morning' title (minus 'Therapy') and A/B tests long vs short.",
+    "baseline": "October median first-7-day engaged views per upload = 307; bar >= 460.",
+    "reads": {
+      "mon_d7": "2026-11-02",
+      "week_t1_d14": "2026-11-13"
+    }
+  },
+  "ships": [
+    {
+      "date": "2026-10-26",
+      "type": "replica",
+      "slot": "06:30",
+      "instrument": "Bansuri",
+      "lane": "anxiety",
+      "runtime_min": 90,
+      "title_direction": "Gentle Morning Music 🌿 Bansuri 432 Hz for Anxiety & Stress Relief | Mental Clarity  /  B: Music for Calm Morning | Flute for Calmness | 1.5 Hours",
+      "thumb_text": "TODAY WILL BE GOOD / EASE INTO TODAY",
+      "hypothesis": "h_2026-10-26_competitor_title_replica_long_vs_short",
+      "suno_prompt_rule": "Bansuri Raga Bhairavi, no percussion, ~60 BPM, render at 432 Hz",
+      "status": "LOCKED",
+      "brief": "v_2026-10-26_gentle_morning_bansuri_432"
+    }
+  ],
+  "week_level_decisions": {
+    "ship_count": "FOUR 1.5hr ships Mon/Tue/Thu/Fri (proposed).",
+    "format": "1.5hr only; 3hr dropped this week (user 2026-10-17, confirmed 2026-10-24).",
+    "hero_protection": "Morning Energy Music is the only growing top-8 video: no 'Morning Energy' words in titles/descriptions and no placement next to it in playlists (user 2026-10-24).",
+    "proposed_not_locked": "Tue T1 Bansuri-as-flute 'Flute Music for Stress Relief' / 'Relaxing Flute Music' (BREATHE EASY) · Thu replica Trust in Gods 'Healing Flute & Sitar Music | Deep Relaxation & Anxiety Relief' Sitar+Bansuri (YOU'RE OKAY) · Fri Surbahar 'Rest Easy' / 'Safe and Calm' (YOU ARE SAFE HERE).",
+    "thumbnails": "New colourful style; affirmation / permission text (user 2026-10-24: positive affirmations in thumbnails, not as a title keyword)."
+  },
+  "preflight_pending": [
+    "VidIQ scores (optional) for Monday leads",
+    "Tue/Thu/Fri lock + VidIQ scores",
+    "Fix Oct 23 'Lower Your Cortisol' title: says 1.5 Hours, file is 3:00:01",
+    "Log the 7 Test & compare screenshots (2026-10-24) to ab_raw_data.csv"
+  ]
+}

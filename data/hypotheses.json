@@ -1,7 +1,7 @@
 {
   "purpose": "Standing ledger of strategic bets — the compounding-strategy layer on top of the mechanical gates (cooldown/track_record/clone/lead_prescreen). A finding discovered once (competitor research, a track_record pattern, an A/B result) gets banked here as a tracked hypothesis instead of being re-derived every time it's asked about. recommend_slot.py reads this to tag candidates with the bet they'd be testing.",
   "lifecycle": "PROPOSED (stated, not yet tested) -> TESTING (a ship is live against it) -> CONFIRMED or KILLED (enough evidence to close it) -> promoted_rule (folded into a permanent playbook rule, e.g. anti_patterns.json / lane_packaging_directions.json)",
-  "last_updated": "2026-10-17",
+  "last_updated": "2026-10-24",
   "hypotheses": [
     {
       "id": "h_2026-08-07_playlist_routing",
@@ -298,7 +298,11 @@
         "2026-09-29 · Morning Cortisol Reset 🌿 Bansuri Therapy for a Calm Nervous System & Slower Breathing | Raag Bhairav [wINy9PW48iw]",
         "2026-10-05 · Morning Bliss Music | Sitar Instrumental | 1.5 Hours [Wo-siP6L5iM]",
         "2026-10-06 · Morning Stress Reset 🌿 Bansuri Therapy to Release Tension & Start the Day Calm | Raag Ahir Bhairav [ktm9KlNopoc]",
-        "2026-10-09 · Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins [2Ck0YsNm8bs]"
+        "2026-10-09 · Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins [2Ck0YsNm8bs]",
+        "2026-10-10 · Sleep Music 🌙 Soft Flute Music to Release the Day, Slow Your Breathing & Sleep Deeply Till Morning [uTnW2BOzwp4]",
+        "2026-10-12 · Good Morning Music | Sitar Instrumental | 1.5 Hours [qnkaxw8vE3E]",
+        "2026-10-13 · Morning Overthinking Reset 🌿 Bansuri Music to Ease a Busy Mind & Begin the Day Clear | Raag Bilawal [PH-yo75jGSU]",
+        "2026-10-19 · Morning Dopamine Music | Sitar Instrumental | 1.5 Hours [FtjIA9gf0-c]"
       ],
       "promoted_rule": null,
       "caveats": "Observational, lane-confounded (T1-heavy titles are mostly morning/uplift — may be the lane T1 wants, not the words). The two linked A/Bs are the controlled test.",
@@ -431,7 +435,16 @@
         "2026-10-06 · Morning Stress Reset 🌿 Bansuri Therapy to Release Tension & Start the Day Calm | Raag Ahir Bhairav [ktm9KlNopoc]",
         "2026-10-07 · Think Clearly Again | Santoor Instrumental | 1.5 Hours [rJ580SdpwHA]",
         "2026-10-08 · Stress Therapy | Slow Sarangi | 1.5 Hours [iMHzz1u5Wh4]",
-        "2026-10-09 · Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins [2Ck0YsNm8bs]"
+        "2026-10-09 · Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins [2Ck0YsNm8bs]",
+        "2026-10-10 · Sleep Music 🌙 Soft Flute Music to Release the Day, Slow Your Breathing & Sleep Deeply Till Morning [uTnW2BOzwp4]",
+        "2026-10-12 · Good Morning Music | Sitar Instrumental | 1.5 Hours [qnkaxw8vE3E]",
+        "2026-10-13 · Morning Overthinking Reset 🌿 Bansuri Music to Ease a Busy Mind & Begin the Day Clear | Raag Bilawal [PH-yo75jGSU]",
+        "2026-10-14 · Inner Peace Music | Flute & Sitar | 1.5 Hours [rvIsnnHFoRQ]",
+        "2026-10-15 · Let Your Body Rest | Slow Tanpura | 1.5 Hours [KL3GyzOKjL8]",
+        "2026-10-16 · Sleep Therapy Bansuri 🌙 Soft Flute Music to Slow Your Breathing & Sleep Deeply all Night | 3 Hours [dzcZ2pf3oTI]",
+        "2026-10-19 · Morning Dopamine Music | Sitar Instrumental | 1.5 Hours [FtjIA9gf0-c]",
+        "2026-10-20 · Brain Fog Relief | Bansuri Instrumental | 1.5 Hours [Y4RBilu0v0U]",
+        "2026-10-22 · Melt Away Stress | Sarangi | 1.5 Hours [vDMSnDsiPpk]"
       ],
       "week": "wk_2026-08-03",
       "reads": [],
@@ -496,7 +509,9 @@
         "v_2026-08-18_stress_relief_sitar",
         "2026-09-03 · Fresh Mind Music | Sitar — ROUND 3: composition (viewer vs performer), not palette. Rounds 1-2 both varied palette and both failed at ~2.7%.",
         "2026-09-21 · Morning Productivity Music | Sitar | 1.5 Hours [z8BRgTbC5ZY]",
-        "2026-10-05 · Morning Bliss Music | Sitar Instrumental | 1.5 Hours [Wo-siP6L5iM]"
+        "2026-10-05 · Morning Bliss Music | Sitar Instrumental | 1.5 Hours [Wo-siP6L5iM]",
+        "2026-10-12 · Good Morning Music | Sitar Instrumental | 1.5 Hours [qnkaxw8vE3E]",
+        "2026-10-19 · Morning Dopamine Music | Sitar Instrumental | 1.5 Hours [FtjIA9gf0-c]"
       ],
       "promoted_rule": null,
       "caveats": "THE most important test of the week. Production MUST make 2 genuinely distinct images (standard miniature vs bold energy/light visual).",
@@ -542,7 +557,8 @@
         "2026-09-04 · Snowy Night Music | Bansuri & Tanpura | 3 Hours [dTlG68eidiw]",
         "2026-09-18 · Sleep Radio 24/7 | Bansuri & Sitar for Deep Sleep [Ocg6W1ijKA0]",
         "2026-09-26 · Music for Sleepless Nights: Soft Bansuri Flute to Rest Unbroken All Night | 3 Hours [VPjarNR3ZSg]",
-        "2026-10-03 · Sleep Therapy Bansuri 🌙 Soft Flute Music to Quiet the Mind, Fall Asleep & Stay Asleep the Full Night [bkLTwCakuLk]"
+        "2026-10-03 · Sleep Therapy Bansuri 🌙 Soft Flute Music to Quiet the Mind, Fall Asleep & Stay Asleep the Full Night [bkLTwCakuLk]",
+        "2026-10-16 · Sleep Therapy Bansuri 🌙 Soft Flute Music to Slow Your Breathing & Sleep Deeply all Night | 3 Hours [dzcZ2pf3oTI]"
       ],
       "promoted_rule": null,
       "caveats": "⚠ Surbahar sleep 3hr just shipped ~Aug14 (SLEEP DEEPLY 55%) — possible sleep-3hr overlap; watch cannibalization.",
@@ -585,7 +601,9 @@
       "linked_ships": [
         "v_2026-08-18_attract_positive_energy_sitar",
         "2026-09-21 · Morning Productivity Music | Sitar | 1.5 Hours [z8BRgTbC5ZY]",
-        "2026-10-05 · Morning Bliss Music | Sitar Instrumental | 1.5 Hours [Wo-siP6L5iM]"
+        "2026-10-05 · Morning Bliss Music | Sitar Instrumental | 1.5 Hours [Wo-siP6L5iM]",
+        "2026-10-12 · Good Morning Music | Sitar Instrumental | 1.5 Hours [qnkaxw8vE3E]",
+        "2026-10-19 · Morning Dopamine Music | Sitar Instrumental | 1.5 Hours [FtjIA9gf0-c]"
       ],
       "promoted_rule": null,
       "caveats": "Confounded with the image test (same ship).",
@@ -679,7 +697,16 @@
         "2026-10-06 · Morning Stress Reset 🌿 Bansuri Therapy to Release Tension & Start the Day Calm | Raag Ahir Bhairav [ktm9KlNopoc]",
         "2026-10-07 · Think Clearly Again | Santoor Instrumental | 1.5 Hours [rJ580SdpwHA]",
         "2026-10-08 · Stress Therapy | Slow Sarangi | 1.5 Hours [iMHzz1u5Wh4]",
-        "2026-10-09 · Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins [2Ck0YsNm8bs]"
+        "2026-10-09 · Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins [2Ck0YsNm8bs]",
+        "2026-10-10 · Sleep Music 🌙 Soft Flute Music to Release the Day, Slow Your Breathing & Sleep Deeply Till Morning [uTnW2BOzwp4]",
+        "2026-10-12 · Good Morning Music | Sitar Instrumental | 1.5 Hours [qnkaxw8vE3E]",
+        "2026-10-13 · Morning Overthinking Reset 🌿 Bansuri Music to Ease a Busy Mind & Begin the Day Clear | Raag Bilawal [PH-yo75jGSU]",
+        "2026-10-14 · Inner Peace Music | Flute & Sitar | 1.5 Hours [rvIsnnHFoRQ]",
+        "2026-10-15 · Let Your Body Rest | Slow Tanpura | 1.5 Hours [KL3GyzOKjL8]",
+        "2026-10-16 · Sleep Therapy Bansuri 🌙 Soft Flute Music to Slow Your Breathing & Sleep Deeply all Night | 3 Hours [dzcZ2pf3oTI]",
+        "2026-10-19 · Morning Dopamine Music | Sitar Instrumental | 1.5 Hours [FtjIA9gf0-c]",
+        "2026-10-20 · Brain Fog Relief | Bansuri Instrumental | 1.5 Hours [Y4RBilu0v0U]",
+        "2026-10-22 · Melt Away Stress | Sarangi | 1.5 Hours [vDMSnDsiPpk]"
       ],
       "promoted_rule": null,
       "caveats": "DEFERRED by choice. Re-open only as a clean 1-variable A/B.",
@@ -947,7 +974,16 @@
         "2026-10-06 · Morning Stress Reset 🌿 Bansuri Therapy to Release Tension & Start the Day Calm | Raag Ahir Bhairav [ktm9KlNopoc]",
         "2026-10-07 · Think Clearly Again | Santoor Instrumental | 1.5 Hours [rJ580SdpwHA]",
         "2026-10-08 · Stress Therapy | Slow Sarangi | 1.5 Hours [iMHzz1u5Wh4]",
-        "2026-10-09 · Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins [2Ck0YsNm8bs]"
+        "2026-10-09 · Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins [2Ck0YsNm8bs]",
+        "2026-10-10 · Sleep Music 🌙 Soft Flute Music to Release the Day, Slow Your Breathing & Sleep Deeply Till Morning [uTnW2BOzwp4]",
+        "2026-10-12 · Good Morning Music | Sitar Instrumental | 1.5 Hours [qnkaxw8vE3E]",
+        "2026-10-13 · Morning Overthinking Reset 🌿 Bansuri Music to Ease a Busy Mind & Begin the Day Clear | Raag Bilawal [PH-yo75jGSU]",
+        "2026-10-14 · Inner Peace Music | Flute & Sitar | 1.5 Hours [rvIsnnHFoRQ]",
+        "2026-10-15 · Let Your Body Rest | Slow Tanpura | 1.5 Hours [KL3GyzOKjL8]",
+        "2026-10-16 · Sleep Therapy Bansuri 🌙 Soft Flute Music to Slow Your Breathing & Sleep Deeply all Night | 3 Hours [dzcZ2pf3oTI]",
+        "2026-10-19 · Morning Dopamine Music | Sitar Instrumental | 1.5 Hours [FtjIA9gf0-c]",
+        "2026-10-20 · Brain Fog Relief | Bansuri Instrumental | 1.5 Hours [Y4RBilu0v0U]",
+        "2026-10-22 · Melt Away Stress | Sarangi | 1.5 Hours [vDMSnDsiPpk]"
       ]
     },
     {
@@ -1036,7 +1072,15 @@
         "2026-10-03 · Sleep Therapy Bansuri 🌙 Soft Flute Music to Quiet the Mind, Fall Asleep & Stay Asleep the Full Night [bkLTwCakuLk]",
         "2026-10-05 · Morning Bliss Music | Sitar Instrumental | 1.5 Hours [Wo-siP6L5iM]",
         "2026-10-06 · Morning Stress Reset 🌿 Bansuri Therapy to Release Tension & Start the Day Calm | Raag Ahir Bhairav [ktm9KlNopoc]",
-        "2026-10-09 · Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins [2Ck0YsNm8bs]"
+        "2026-10-09 · Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins [2Ck0YsNm8bs]",
+        "2026-09-12 · Evening Relaxation Music | Indian Instrumentals | 1.5 Hours [Oi5OHOy3SGo]",
+        "2026-10-10 · Sleep Music 🌙 Soft Flute Music to Release the Day, Slow Your Breathing & Sleep Deeply Till Morning [uTnW2BOzwp4]",
+        "2026-10-12 · Good Morning Music | Sitar Instrumental | 1.5 Hours [qnkaxw8vE3E]",
+        "2026-10-13 · Morning Overthinking Reset 🌿 Bansuri Music to Ease a Busy Mind & Begin the Day Clear | Raag Bilawal [PH-yo75jGSU]",
+        "2026-10-14 · Inner Peace Music | Flute & Sitar | 1.5 Hours [rvIsnnHFoRQ]",
+        "2026-10-16 · Sleep Therapy Bansuri 🌙 Soft Flute Music to Slow Your Breathing & Sleep Deeply all Night | 3 Hours [dzcZ2pf3oTI]",
+        "2026-10-19 · Morning Dopamine Music | Sitar Instrumental | 1.5 Hours [FtjIA9gf0-c]",
+        "2026-10-20 · Brain Fog Relief | Bansuri Instrumental | 1.5 Hours [Y4RBilu0v0U]"
       ],
       "read_schedule": {
         "d7": "2026-09-14",
@@ -1125,7 +1169,16 @@
         "2026-10-06 · Morning Stress Reset 🌿 Bansuri Therapy to Release Tension & Start the Day Calm | Raag Ahir Bhairav [ktm9KlNopoc]",
         "2026-10-07 · Think Clearly Again | Santoor Instrumental | 1.5 Hours [rJ580SdpwHA]",
         "2026-10-08 · Stress Therapy | Slow Sarangi | 1.5 Hours [iMHzz1u5Wh4]",
-        "2026-10-09 · Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins [2Ck0YsNm8bs]"
+        "2026-10-09 · Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins [2Ck0YsNm8bs]",
+        "2026-10-10 · Sleep Music 🌙 Soft Flute Music to Release the Day, Slow Your Breathing & Sleep Deeply Till Morning [uTnW2BOzwp4]",
+        "2026-10-12 · Good Morning Music | Sitar Instrumental | 1.5 Hours [qnkaxw8vE3E]",
+        "2026-10-13 · Morning Overthinking Reset 🌿 Bansuri Music to Ease a Busy Mind & Begin the Day Clear | Raag Bilawal [PH-yo75jGSU]",
+        "2026-10-14 · Inner Peace Music | Flute & Sitar | 1.5 Hours [rvIsnnHFoRQ]",
+        "2026-10-15 · Let Your Body Rest | Slow Tanpura | 1.5 Hours [KL3GyzOKjL8]",
+        "2026-10-16 · Sleep Therapy Bansuri 🌙 Soft Flute Music to Slow Your Breathing & Sleep Deeply all Night | 3 Hours [dzcZ2pf3oTI]",
+        "2026-10-19 · Morning Dopamine Music | Sitar Instrumental | 1.5 Hours [FtjIA9gf0-c]",
+        "2026-10-20 · Brain Fog Relief | Bansuri Instrumental | 1.5 Hours [Y4RBilu0v0U]",
+        "2026-10-22 · Melt Away Stress | Sarangi | 1.5 Hours [vDMSnDsiPpk]"
       ],
       "read_on": "2026-09-11 (d7) — and again on the Fri 2026-09-11 Santoor 3hr, which is specced against this finding.",
       "reads": [
@@ -1185,7 +1238,13 @@
         "2026-10-03 · Sleep Therapy Bansuri 🌙 Soft Flute Music to Quiet the Mind, Fall Asleep & Stay Asleep the Full Night [bkLTwCakuLk]",
         "2026-10-05 · Morning Bliss Music | Sitar Instrumental | 1.5 Hours [Wo-siP6L5iM]",
         "2026-10-06 · Morning Stress Reset 🌿 Bansuri Therapy to Release Tension & Start the Day Calm | Raag Ahir Bhairav [ktm9KlNopoc]",
-        "2026-10-09 · Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins [2Ck0YsNm8bs]"
+        "2026-10-09 · Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins [2Ck0YsNm8bs]",
+        "2026-10-12 · Good Morning Music | Sitar Instrumental | 1.5 Hours [qnkaxw8vE3E]",
+        "2026-10-13 · Morning Overthinking Reset 🌿 Bansuri Music to Ease a Busy Mind & Begin the Day Clear | Raag Bilawal [PH-yo75jGSU]",
+        "2026-10-14 · Inner Peace Music | Flute & Sitar | 1.5 Hours [rvIsnnHFoRQ]",
+        "2026-10-16 · Sleep Therapy Bansuri 🌙 Soft Flute Music to Slow Your Breathing & Sleep Deeply all Night | 3 Hours [dzcZ2pf3oTI]",
+        "2026-10-19 · Morning Dopamine Music | Sitar Instrumental | 1.5 Hours [FtjIA9gf0-c]",
+        "2026-10-20 · Brain Fog Relief | Bansuri Instrumental | 1.5 Hours [Y4RBilu0v0U]"
       ],
       "promoted_rule": null,
       "caveats": "Day and instrument vary together - the test reads the COMBINED best-shot, not the two effects separately. n=2 treatment ships. Requires the export to carry 'Average percentage viewed (%)'. Secondary tally across all six ships: short-pipeline arm vs long-pattern arm wins, from Studio Test & compare.",
@@ -1226,7 +1285,8 @@
         "LIVE Ocg6W1ijKA0 - Sleep Radio 24/7 | Bansuri & Sitar for Deep Sleep (since 2026-09-19)",
         "2026-09-26 · Music for Sleepless Nights: Soft Bansuri Flute to Rest Unbroken All Night | 3 Hours [VPjarNR3ZSg]",
         "2026-09-30 · All Night Sleep: Slow Santoor and a Soft Night Raga to Rest Deep and Unbroken | 3 Hours [zX2ZXiGOJPE]",
-        "2026-10-03 · Sleep Therapy Bansuri 🌙 Soft Flute Music to Quiet the Mind, Fall Asleep & Stay Asleep the Full Night [bkLTwCakuLk]"
+        "2026-10-03 · Sleep Therapy Bansuri 🌙 Soft Flute Music to Quiet the Mind, Fall Asleep & Stay Asleep the Full Night [bkLTwCakuLk]",
+        "2026-10-16 · Sleep Therapy Bansuri 🌙 Soft Flute Music to Slow Your Breathing & Sleep Deeply all Night | 3 Hours [dzcZ2pf3oTI]"
       ],
       "promoted_rule": null,
       "caveats": "Cannibalisation watch also covers the weekly Bansuri sleep 3hr anchor (2026-09-19, 2026-09-26). Runbook: research/live_radio_setup_runbook.md.",
@@ -1300,7 +1360,8 @@
         "v_2026-10-03_music_before_bed_bansuri_3hr (Sat, seam build #2)",
         "2026-09-26 · Music for Sleepless Nights: Soft Bansuri Flute to Rest Unbroken All Night | 3 Hours [VPjarNR3ZSg]",
         "2026-09-30 · All Night Sleep: Slow Santoor and a Soft Night Raga to Rest Deep and Unbroken | 3 Hours [zX2ZXiGOJPE]",
-        "2026-10-03 · Sleep Therapy Bansuri 🌙 Soft Flute Music to Quiet the Mind, Fall Asleep & Stay Asleep the Full Night [bkLTwCakuLk]"
+        "2026-10-03 · Sleep Therapy Bansuri 🌙 Soft Flute Music to Quiet the Mind, Fall Asleep & Stay Asleep the Full Night [bkLTwCakuLk]",
+        "2026-10-16 · Sleep Therapy Bansuri 🌙 Soft Flute Music to Slow Your Breathing & Sleep Deeply all Night | 3 Hours [dzcZ2pf3oTI]"
       ],
       "promoted_rule": null,
       "caveats": "Seam dips are read from a single curve (n=1) and 1/7 intervals are inferred, not logged - the render log should record the exact seam timestamps for the two test ships. AVD must be read at matched age (d7), never against the catalog median.",
@@ -1343,7 +1404,9 @@
         "2026-09-29 · Morning Cortisol Reset 🌿 Bansuri Therapy for a Calm Nervous System & Slower Breathing | Raag Bhairav [wINy9PW48iw]",
         "2026-10-03 · Sleep Therapy Bansuri 🌙 Soft Flute Music to Quiet the Mind, Fall Asleep & Stay Asleep the Full Night [bkLTwCakuLk]",
         "2026-10-06 · Morning Stress Reset 🌿 Bansuri Therapy to Release Tension & Start the Day Calm | Raag Ahir Bhairav [ktm9KlNopoc]",
-        "2026-10-09 · Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins [2Ck0YsNm8bs]"
+        "2026-10-09 · Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins [2Ck0YsNm8bs]",
+        "2026-10-13 · Morning Overthinking Reset 🌿 Bansuri Music to Ease a Busy Mind & Begin the Day Clear | Raag Bilawal [PH-yo75jGSU]",
+        "2026-10-16 · Sleep Therapy Bansuri 🌙 Soft Flute Music to Slow Your Breathing & Sleep Deeply all Night | 3 Hours [dzcZ2pf3oTI]"
       ],
       "promoted_rule": null,
       "gate_exception": "Cooldown, packaging-clone, lead-freshness and week_diversity are excepted on the two series slots for the four-week test; logged here so brief_gate FAILs on those slots are expected. The top-10 no-look-alike rule and the two-Bansuri-per-week rule are unchanged; Mon/Wed/Thu/Fri keep every gate.",
@@ -1393,7 +1456,8 @@
       "linked_ships": [
         "2026-10-06 · Morning Stress Reset 🌿 Bansuri Therapy to Release Tension & Start the Day Calm | Raag Ahir Bhairav [ktm9KlNopoc]",
         "2026-10-09 · Morning Anxiety Reset 🌿 Bansuri Therapy to Quiet Worry & Feel Light Before the Day Begins [2Ck0YsNm8bs]",
-        "v_2026-10-14_inner_peace_flute_sitar_replica (2nd 60-min ship, non-series, confounded with replica)"
+        "v_2026-10-14_inner_peace_flute_sitar_replica (2nd 60-min ship, non-series, confounded with replica)",
+        "2026-10-13 · Morning Overthinking Reset 🌿 Bansuri Music to Ease a Busy Mind & Begin the Day Clear | Raag Bilawal [PH-yo75jGSU]"
       ]
     },
     {
@@ -1424,7 +1488,9 @@
       },
       "read_rule": "d7 = retention verdict",
       "linked_ships": [
-        "2026-10-05 · Morning Bliss Music | Sitar Instrumental | 1.5 Hours [Wo-siP6L5iM]"
+        "2026-10-05 · Morning Bliss Music | Sitar Instrumental | 1.5 Hours [Wo-siP6L5iM]",
+        "2026-10-12 · Good Morning Music | Sitar Instrumental | 1.5 Hours [qnkaxw8vE3E]",
+        "2026-10-19 · Morning Dopamine Music | Sitar Instrumental | 1.5 Hours [FtjIA9gf0-c]"
       ]
     },
     {
@@ -1449,7 +1515,8 @@
       },
       "read_rule": "d7 read; recurring-slot decision is the user's",
       "linked_ships": [
-        "2026-10-08 · Stress Therapy | Slow Sarangi | 1.5 Hours [iMHzz1u5Wh4]"
+        "2026-10-08 · Stress Therapy | Slow Sarangi | 1.5 Hours [iMHzz1u5Wh4]",
+        "2026-10-22 · Melt Away Stress | Sarangi | 1.5 Hours [vDMSnDsiPpk]"
       ]
     },
     {
@@ -1468,7 +1535,8 @@
         "Sitar"
       ],
       "linked_ships": [
-        "v_2026-10-14_inner_peace_flute_sitar_replica (replica of HRS orD7g7dAdP8)"
+        "v_2026-10-14_inner_peace_flute_sitar_replica (replica of HRS orD7g7dAdP8)",
+        "2026-10-14 · Inner Peace Music | Flute & Sitar | 1.5 Hours [rvIsnnHFoRQ]"
       ],
       "promoted_rule": null,
       "caveats": "n=1. Confounded with the 60-min runtime (Fri Oct 9 Ep.3 carries the clean 60-vs-90 read). Krishna performer thumbnail breaks the viewer rule deliberately.",
@@ -1494,7 +1562,8 @@
         "Sitar"
       ],
       "linked_ships": [
-        "v_2026-10-19_morning_dopamine_sitar"
+        "v_2026-10-19_morning_dopamine_sitar",
+        "2026-10-19 · Morning Dopamine Music | Sitar Instrumental | 1.5 Hours [FtjIA9gf0-c]"
       ],
       "promoted_rule": null,
       "caveats": "n=1. June siblings shipped in a stronger distribution month. Dopamine audience RPM is below the channel average.",
@@ -1519,7 +1588,8 @@
         "Bansuri"
       ],
       "linked_ships": [
-        "v_2026-10-20_brain_fog_relief_bansuri"
+        "v_2026-10-20_brain_fog_relief_bansuri",
+        "2026-10-20 · Brain Fog Relief | Bansuri Instrumental | 1.5 Hours [Y4RBilu0v0U]"
       ],
       "promoted_rule": null,
       "caveats": "n=11 lane history, n=2 for Bansuri x cognitive.",
@@ -1553,6 +1623,33 @@
         "d7": "2026-10-30"
       },
       "read_rule": "d7 = first-7-day engaged views (Analytics API) vs the publish month's median, plus first-week impressions"
+    },
+    {
+      "id": "h_2026-10-26_competitor_title_replica_long_vs_short",
+      "created": "2026-10-24",
+      "status": "TESTING",
+      "week": "wk_2026-10-26",
+      "source": "chat_2026-10-24 - competitor snapshot 2026-10-24 (Soulful Breathscape 'A Gentler Morning' ~4K views/day at d2); Test & compare screenshots 2026-10-24 (long vs short 1-1).",
+      "statement": "A near-verbatim replica of a competitor TITLE that is breaking out now (Soulful Breathscape 'A Gentler Morning 🌿 … 432 Hz for Anxiety & Stress Relief | Mental Clarity', without 'Therapy') reaches above the October median on our channel; the Test & compare arm shows whether the long competitor title or a short 'Music for…' title wins.",
+      "predicted_metric": "Mon 2026-10-26 at d7: first-7-day engaged views >= 460 (1.5x October median 307) OR first-week impressions >= 1.5x same-age cohort. FALSIFIER: < 1.0x cohort and < 300 engaged.",
+      "relevant_lanes": [
+        "anxiety",
+        "morning"
+      ],
+      "relevant_instruments": [
+        "Bansuri"
+      ],
+      "linked_ships": [
+        "v_2026-10-26_gentle_morning_bansuri_432"
+      ],
+      "promoted_rule": null,
+      "caveats": "n=1. Both A/B arms lead on '___ Morning' (user choice) so the A/B reads length + 'Music for', not keyword. The same Soulful family ('🌿 Bansuri Therapy') failed 4 times as our Morning Reset series. B arm near-clones a live Aug 31 title.",
+      "reads": [],
+      "read_schedule": {
+        "d7": "2026-11-02",
+        "t1_d14": "2026-11-09"
+      },
+      "read_rule": "d7 = first-7-day engaged views (Analytics API) vs October median + same-age cohort impressions (weekly_review.py); Test & compare verdict from Studio."
     }
   ],
   "schema_note": "week = Monday of created week (wk_YYYY-MM-DD). reads[] = staged reads (d7/d14/d21). experiment_reads appends to reads[]; status changes at final read."
