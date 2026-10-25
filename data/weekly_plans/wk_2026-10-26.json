@@ -3,17 +3,25 @@
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
   "created": "2026-10-24",
-  "status": "PARTIAL - Monday LOCKED by user 2026-10-24; Tue/Thu/Fri PROPOSED in chat, not locked",
-  "notes": "Mix (user 2026-10-24): 1 T1-targeted ship + competitor replicas + pipeline, all 1.5hr, Mon/Tue/Thu/Fri. 3hr stays dropped this week. Channel: rev/day flat on rising Q4 RPM; engaged/day falling; Morning Energy is the only growing top-8 video - do not use its words or place new ships next to it.",
+  "status": "LOCKED 2026-10-25 (user: 'lets lock and push it to dashboard') - four 1.5hr ships Mon/Tue/Thu/Fri, all 06:30 IST; Monday locked 2026-10-24",
+  "notes": "Mix (user 2026-10-24): 1 T1-targeted ship + competitor replicas + pipeline, all 1.5hr, Mon/Tue/Thu/Fri. 3hr stays dropped this week. Channel: rev/day flat on rising Q4 RPM; engaged/day falling; Morning Energy is the only growing top-8 video - do not use its words or place new ships next to it. Fortnight read 2026-10-25 (finalised Oct 9-22 vs Sep 25-Oct 8): engaged/day -11%, views -13%, RPM +3% (Q4) -> the problem is volume. Browse watch-min +9% (only growing source, going to Morning Energy); Search -15%, Suggested -16%, Playlist -21%. Fresh ships 2.8% of revenue, median 0.46x cohort; evening rest/therapy ships on supporting instruments 0.31-0.33x; morning calm/anxiety ships 0.6-0.84x; Flute & Sitar replica best by engaged+AVD. Series stop rule met (all four Morning Reset episodes < 1,000 day-one).",
   "hypothesis": {
     "ids": [
-      "h_2026-10-26_competitor_title_replica_long_vs_short"
+      "h_2026-10-26_register_sets_reach",
+      "h_2026-10-26_competitor_title_replica_long_vs_short",
+      "h_2026-10-26_t1_nervous_system_regulation",
+      "h_2026-10-26_flute_sitar_replica",
+      "h_2026-10-26_clear_negative_thoughts_replica"
     ],
-    "one_line": "Mon replicates Soulful Breathscape's hot 'A Gentler Morning' title (minus 'Therapy') and A/B tests long vs short.",
-    "baseline": "October median first-7-day engaged views per upload = 307; bar >= 460.",
+    "one_line": "Register, not instrument or day, sets fresh-ship reach: all four ships in the anxiety-relief / mental-clarity register using the hot pool's vocabulary (Flute & Sitar, 432 Hz, nervous system, negative thoughts), zero rest/therapy/evening ships, all 06:30.",
+    "baseline": "October median first-7-day engaged views per upload = 307; bar >= 460 (1.5x). Cohort reach baseline: October median 0.46x same-age cohort impressions.",
     "reads": {
       "mon_d7": "2026-11-02",
-      "week_t1_d14": "2026-11-13"
+      "tue_d7": "2026-11-03",
+      "thu_d7": "2026-11-05",
+      "fri_d7": "2026-11-06",
+      "week_median": "2026-11-06",
+      "t1_d14_group": "2026-11-13"
     }
   },
   "ships": [
@@ -30,19 +38,68 @@
       "suno_prompt_rule": "Bansuri Raga Bhairavi, no percussion, ~60 BPM, render at 432 Hz",
       "status": "LOCKED",
       "brief": "v_2026-10-26_gentle_morning_bansuri_432"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "t1_target",
+      "slot": "06:30",
+      "instrument": "Santoor",
+      "lane": "anxiety",
+      "runtime_min": 90,
+      "title_direction": "A: Music for Nervous System Regulation | 1.5 Hours  /  B: Nervous System Regulation Music | Santoor Instrumental | 1.5 Hours",
+      "thumb_text": "YOUR BODY IS SAFE (same on both arms)",
+      "hypothesis": "h_2026-10-26_t1_nervous_system_regulation",
+      "suno_prompt_rule": "Santoor Raga Bhupali, no percussion, 65-72 BPM, alpha 10 Hz, no 'slow' in prompt",
+      "status": "LOCKED",
+      "brief": "v_2026-10-27_nervous_system_regulation_santoor"
+    },
+    {
+      "date": "2026-10-29",
+      "type": "replica",
+      "slot": "06:30",
+      "instrument": "Sitar + Bansuri",
+      "lane": "anxiety",
+      "runtime_min": 90,
+      "title_direction": "A: Flute & Sitar Music | Anxiety Relief | 1.5 Hours  /  B: Let Go of Anxiety: Flute & Sitar 432 Hz for Deep Relaxation & a Calm Mind  /  C: Calm Your Anxiety | Flute & Sitar | 1.5 Hours",
+      "thumb_text": "YOU'RE OKAY / IT'S SAFE TO BREATHE",
+      "hypothesis": "h_2026-10-26_flute_sitar_replica",
+      "suno_prompt_rule": "Sitar leads, bansuri answers, Raga Ahir Bhairav, very light tabla, 60-66 BPM, theta 6 Hz, render at 432 Hz",
+      "status": "LOCKED",
+      "brief": "v_2026-10-29_flute_sitar_anxiety_replica"
+    },
+    {
+      "date": "2026-10-30",
+      "type": "replica",
+      "slot": "06:30",
+      "instrument": "Surbahar",
+      "lane": "cognitive",
+      "runtime_min": 90,
+      "title_direction": "A: Clear Negative Thoughts | Slow Surbahar | 1.5 Hours  /  B: Mental Clarity Music: Slow Surbahar 432 Hz to Quiet the Mind & Let Negative Thoughts Pass  /  C: Quiet Your Thoughts | Surbahar Instrumental | 1.5 Hours",
+      "thumb_text": "LET IT PASS / THOUGHTS ON LOOP?",
+      "hypothesis": "h_2026-10-26_clear_negative_thoughts_replica",
+      "suno_prompt_rule": "Surbahar Raga Bilawal, no percussion, 72-78 BPM, alpha 10 Hz, no 'slow' in prompt, render at 432 Hz",
+      "status": "LOCKED",
+      "brief": "v_2026-10-30_clear_negative_thoughts_surbahar"
     }
   ],
   "week_level_decisions": {
-    "ship_count": "FOUR 1.5hr ships Mon/Tue/Thu/Fri (proposed).",
+    "ship_count": "FOUR 1.5hr ships Mon/Tue/Thu/Fri (user 2026-10-24; confirmed 2026-10-25). No Wed, no Sat.",
     "format": "1.5hr only; 3hr dropped this week (user 2026-10-17, confirmed 2026-10-24).",
     "hero_protection": "Morning Energy Music is the only growing top-8 video: no 'Morning Energy' words in titles/descriptions and no placement next to it in playlists (user 2026-10-24).",
-    "proposed_not_locked": "Tue T1 Bansuri-as-flute 'Flute Music for Stress Relief' / 'Relaxing Flute Music' (BREATHE EASY) · Thu replica Trust in Gods 'Healing Flute & Sitar Music | Deep Relaxation & Anxiety Relief' Sitar+Bansuri (YOU'RE OKAY) · Fri Surbahar 'Rest Easy' / 'Safe and Calm' (YOU ARE SAFE HERE).",
-    "thumbnails": "New colourful style; affirmation / permission text (user 2026-10-24: positive affirmations in thumbnails, not as a title keyword)."
+    "proposed_not_locked": "(none - all four locked)",
+    "thumbnails": "New colourful style; affirmation / permission text (user 2026-10-24: positive affirmations in thumbnails, not as a title keyword).",
+    "slot": "ALL ships 06:30 IST (user 2026-10-25). Evidence: AM n=14 median 589 engaged / 14.3K first-week impressions vs PM n=20 415 / 9.3K since Aug 1 (lane-confounded; same-instrument Sarangi pair only 5%).",
+    "register": "Anxiety-relief / mental-clarity register on every ship; NO rest/therapy/evening-wind-down titles this week (fortnight: 0.31-0.33x on four such ships). Permission/affirmation text stays in thumbnails.",
+    "competitor_ships": "Three replicas (Mon Soulful Breathscape, Thu + Fri Trust in Gods) - exceeds the >=2 rule; each has an owned-host playlist partner (Healing & Anxiety Relief after Nervous System Healing; Mental Clarity Music).",
+    "t1_ship": "Tue = the week's T1-targeted ship ('Nervous System Regulation', family measures 32-34% T1). Read as a group with the other three at d14."
   },
   "preflight_pending": [
-    "VidIQ scores (optional) for Monday leads",
-    "Tue/Thu/Fri lock + VidIQ scores",
+    "VidIQ scores (optional): Mon leads · 'Music for Nervous System Regulation' · 'Flute & Sitar Music' / 'Let Go of Anxiety' · 'Clear Negative Thoughts' / 'Mental Clarity Music'",
     "Fix Oct 23 'Lower Your Cortisol' title: says 1.5 Hours, file is 3:00:01",
-    "Log the 7 Test & compare screenshots (2026-10-24) to ab_raw_data.csv"
+    "Log the 7 Test & compare screenshots (2026-10-24) to ab_raw_data.csv",
+    "Pull the Sleep Music playlist re-order read (due Oct 19; playlist watch-min -21% this fortnight)",
+    "Write ledger reads: Bansuri series (stop rule met -> KILLED/revert), Inner Peace replica (falsifier met at d7 yet best fresh ship of the fortnight)",
+    "claim_check on Thu Sitar + Bansuri clips before render",
+    "Pitch Mon/Thu/Fri renders to 432 Hz (titles promise it); Tue stays A440"
   ]
 }

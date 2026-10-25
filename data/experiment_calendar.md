@@ -145,3 +145,15 @@ Series reads: wk1 Oct 6/10 · wk2 Oct 13/17 · **stop-rule check 2026-10-18** (d
 | 2026-10-23 | Sitar calm/cortisol 1.5hr 19:00 | h_2026-10-17_cortisol_cpm_probe | A 'Lower Your Cortisol' / FEEL CALM AGAIN vs B 'Soften Your Stress' / SOFTEN STRESS | d7 **2026-10-30** · CPM d28 2026-11-20 |
 
 **Baseline:** October median first-7-day engaged views per upload = 307. **Ended:** Morning Reset + Sleep Therapy series (stop rule 2026-10-18). **Dropped:** end-screen routing (structurally dead), 3hr, long-form replicas. **Kept:** Sleep Radio. **Carried:** Inner Peace replica d7 2026-10-21 · Sleep Music playlist read 2026-10-19.
+
+
+## wk_2026-10-26 (locked 2026-10-25; Monday locked 2026-10-24) — FOUR 1.5hr ships, ALL 06:30 IST, nothing Wed/Sat
+
+| Day | Ship | Test | Arms | Reads |
+|---|---|---|---|---|
+| 2026-10-26 | Bansuri anxiety 1.5hr 06:30 (Soulful Breathscape replica) | h_2026-10-26_competitor_title_replica_long_vs_short | A 'Gentle Morning Music 🌿 … 432 Hz …' / TODAY WILL BE GOOD vs B 'Music for Calm Morning …' / EASE INTO TODAY | d7 **2026-11-02** · T1 d14 2026-11-09 |
+| 2026-10-27 | Santoor nervous-system 1.5hr 06:30 (T1 ship) | h_2026-10-26_t1_nervous_system_regulation | A 'Music for Nervous System Regulation \| 1.5 Hours' vs B 'Nervous System Regulation Music \| Santoor Instrumental \| 1.5 Hours' · SAME thumb YOUR BODY IS SAFE | d7 **2026-11-03** · T1 d14 **2026-11-10** |
+| 2026-10-29 | Sitar + Bansuri anxiety 1.5hr 06:30 (Trust in Gods replica) | h_2026-10-26_flute_sitar_replica | A 'Flute & Sitar Music \| Anxiety Relief' / YOU'RE OKAY vs B 'Let Go of Anxiety: … 432 Hz …' / IT'S SAFE TO BREATHE | d7 **2026-11-05** |
+| 2026-10-30 | Surbahar cognitive 1.5hr 06:30 (Trust in Gods replica) | h_2026-10-26_clear_negative_thoughts_replica | A 'Clear Negative Thoughts \| Slow Surbahar' / LET IT PASS vs B 'Mental Clarity Music: … 432 Hz …' / THOUGHTS ON LOOP? | d7 **2026-11-06** |
+
+**Week hypothesis:** h_2026-10-26_register_sets_reach — every ship in the anxiety-relief / mental-clarity register, no rest/therapy/evening titles; week median ≥ 0.7x cohort and ≥ 460 engaged at d7 (read **2026-11-06**). **Baseline:** October median first-7-day engaged = 307; cohort reach median 0.46x. **Carried:** dopamine sibling d7 2026-10-26 · cognitive lane d7 2026-10-27 · therapy slot read #3 2026-10-29 · cortisol CPM probe d7 2026-10-30 · Sleep Music playlist read (overdue since 2026-10-19) · series stop-rule verdict (met) + Inner Peace replica read to write.

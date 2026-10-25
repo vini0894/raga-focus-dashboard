@@ -1,0 +1,110 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-10-25",
+  "spent": false,
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr median ~20%). Export MUST carry 'Average percentage viewed (%)' AND 'Average view duration'. tools/weekly_review.py prints the matched-age read. T1 share at d14 via the per-video country pull (group read with the week's other ships).",
+  "ab_design": "Short-A vs long-B on DIFFERENT keywords. A = 'Flute & Sitar Music | Anxiety Relief | 1.5 Hours' (lead 'Flute & Sitar Music', the competitor's instrument pairing as the keyword); B = 'Let Go of Anxiety: Flute & Sitar 432 Hz for Deep Relaxation & a Calm Mind' (lead 'Let Go of Anxiety', competitor-skeleton long title with 432 Hz). C = 'Calm Your Anxiety | Flute & Sitar | 1.5 Hours' is the reserve. Thumb A (YOU'RE OKAY) pairs with title A, thumb B (IT'S SAFE TO BREATHE) with title B.",
+  "runtime_note": "90 min (user rule). Competitor original is 30 min.",
+  "pending": [
+    "USER: generate the music to the music_direction spec, then pitch the final render to 432 Hz (title B promises 432 Hz)",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "USER (optional): VidIQ score for 'Flute & Sitar Music' and 'Let Go of Anxiety'",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B",
+    "At publish: Healing & Anxiety Relief directly after 'Sitar for Nervous System Healing' block (after Mon/Tue ships) - never next to 'Morning Energy Music'",
+    "claim_check on the Sitar + Bansuri clips before render",
+    "AI-disclosure toggle",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read",
+    "Log both Test & compare arms to ab_raw_data.csv at publish"
+  ],
+  "id": "v_2026-10-29_flute_sitar_anxiety_replica",
+  "planned_date": "2026-10-29",
+  "planned_slot": "06:30 IST AM · Thu",
+  "hypothesis_id": "h_2026-10-26_flute_sitar_replica",
+  "lane": "anxiety",
+  "daypart": "morning",
+  "instrument": "Sitar",
+  "secondary_instrument": "Bansuri",
+  "raga": "Ahir Bhairav",
+  "title_variants": {
+    "A": "Flute & Sitar Music | Anxiety Relief | 1.5 Hours",
+    "B": "Let Go of Anxiety: Flute & Sitar 432 Hz for Deep Relaxation & a Calm Mind",
+    "C": "Calm Your Anxiety | Flute & Sitar | 1.5 Hours"
+  },
+  "title_note": "Locked by user 2026-10-25. Competitor pick #1: replica of Trust in Gods 'Healing Flute & Sitar Music | Deep Relaxation & Anxiety Relief | Peaceful Meditation Sounds | Happy' (221.9K views at d34, ~6.5K/day, the hottest video in the tracked pool; 30 min). 'Healing' and 'Nervous System' deliberately dropped: look-alike guard vs the #4 hero 'Sitar for Nervous System Healing' and vs Tuesday. 'Anxiety Relief Music' as a LEAD is an anti-pattern (generic_soft_framing_leads) so A leads on the instrument pairing and carries 'Anxiety Relief' in slot 2. Leads 'Flute & Sitar Music', 'Let Go of Anxiety', 'Calm Your Anxiety' all prescreened FRESH. Unscored.",
+  "validated_keywords": [
+    "'Flute & Sitar Music' - lead_prescreen FRESH; the pairing is in 9 of the 25 hottest competitor titles this week",
+    "'Let Go of Anxiety' - lead_prescreen FRESH",
+    "'Calm Your Anxiety' - lead_prescreen FRESH",
+    "'432 Hz' - in 8 of the top 12 competitor titles (snapshot 2026-10-24)",
+    "Inner Peace Music | Flute & Sitar (Oct 14) = best fresh ship of the fortnight by engaged (493) and AVD (26.3%); its short title won 56.9/43.1"
+  ],
+  "thumbnail_text_main": "YOU'RE OKAY",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "YOU'RE OKAY",
+      "strategy": "11 chars / 2 words, permission/affirmation (user rule: affirmations in thumbnails). Deduped - no match."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "IT'S SAFE TO BREATHE",
+      "strategy": "20 chars / 4 words, physiological permission - body-outcome verbs beat abstract mind-states in anxiety (Test #53). Deduped - no match."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. NEW STYLE (Oct 12 winner): bright saffron/coral/gold Pichwai-Kangra miniature, ornate blue floral border, text in a cream parchment panel (right ~40%), bold deep-indigo serif. The VIEWER, never a performer: a young man sitting on the edge of a bed at dawn, feet on the floor, both hands open on his knees, head tilted slightly back, eyes closed, taking a visible breath - relief, not distress (distress images lost 3 of 3 recent tests). Soft morning light, a curtain lifting, a cup of tea on the sill. A sitar and a bansuri rest together at the frame edge, not played. Second tier: 'Flute & Sitar · 1.5 Hours'.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Peaceful Music"
+  ],
+  "music_direction": "Sitar leads, bansuri answers: warm plucked sitar with gentle meend slides and soft gamak, breath-driven bamboo flute with long sustained notes replying between sitar phrases (call and response, never both busy at once). Raga Ahir Bhairav: komal Re with natural Dha, tender dawn quality. Steady tanpura drone, very light soft tabla far back (Sitar tabla rule) entering only after the first few minutes, 60-66 BPM (morning anxiety band), theta 6 Hz binaural at -20 dB. Unhurried, spacious, warm low-mid register. Tune the final render to 432 Hz. Sound present from 0:00, no fade-in.",
+  "suno_prompt": "Instrumental only, no vocals, no humming — gentle Indian classical sitar with soft meend slides answered by breathy bamboo bansuri flute, call and response, Raga Ahir Bhairav tender dawn feel, steady tanpura drone, very light distant tabla, 64 BPM, theta 6 Hz binaural at -20 dB, calm anxiety relief morning, seamless loop.",
+  "experiment": "h_2026-10-26_flute_sitar_replica: second competitor-replica slot of the week (Trust in Gods template, caught at 6.5K/day). Success d7 (2026-11-05): first-7-day engaged views >= 460 (1.5x October median) OR first-week impressions >= 1.5x same-age cohort. FALSIFIER: < 1.0x cohort and < 300 engaged. Secondary: Test & compare short-A vs long-B.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-10-29 06:30 IST",
+    "opening_rule": "sound present from 0:00, no fade-in",
+    "tuning": "432 Hz"
+  },
+  "slot_note": "AM 06:30 (user 2026-10-25: all four ships this week at 06:30). Sitar cooldown clears Oct 28 (last Sitar ship Oct 23).",
+  "tags": [
+    "flute and sitar music",
+    "flute & sitar",
+    "anxiety relief music",
+    "let go of anxiety",
+    "calm your anxiety",
+    "sitar music",
+    "bansuri flute",
+    "432 hz music",
+    "deep relaxation music",
+    "calm mind music",
+    "raga ahir bhairav",
+    "indian classical music",
+    "meditation music",
+    "peaceful music",
+    "healing flute music",
+    "raga focus"
+  ],
+  "description": "Flute & Sitar Music for Anxiety Relief | Deep Relaxation & a Calm Mind | 1.5 Hours\n\nYou're okay. Let the sitar say it first, and let the flute say it back.\n\nThis soft flute and sitar music, tuned to 432 Hz, is made for anxious mornings: loosening the knot in the chest, slowing the breath, and giving a racing mind somewhere quiet to land.\n\nEnjoy 1.5 hours of Indian sitar and bamboo flute in Raga Ahir Bhairav over a steady tanpura drone, with no vocals and no ads interrupting.\n\n▶ Stay in the calm - the full Healing & Anxiety Relief playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199k-_9PNqaU2-Z_KhRN_X1hF\n(paste this video's own id in place of VIDEO_ID before publishing - it opens the playlist at this video so the next one plays automatically)\n\nPerfect for morning anxiety, deep relaxation, meditation, breathwork, journaling, gentle yoga, studying with a calm head, or background music for a quiet morning at home.\n\n🎵 ABOUT THIS MUSIC\nInstruments: Sitar and Bansuri (Indian bamboo flute) with tanpura drone\nRaga: Ahir Bhairav (a tender dawn raga)\nTuning: 432 Hz\nStyle: Indian classical instrumental, meditative\nMood: Soft, reassuring, unhurried\nAtmosphere: Dawn light, a curtain lifting, a long breath out\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPress play before the day starts. Sit with your feet on the floor and let each flute phrase lengthen your out-breath. Stay until the chest feels wider.\n\n⏱ CHAPTERS\n0:00 Sitar opens, softly\n9:00 The flute answers\n18:00 Breath slowing\n27:00 Chest opening\n36:00 Letting go of the worry\n45:00 A calm mind\n54:00 Deep relaxation\n1:03:00 Steady and safe\n1:12:00 Light returning\n1:21:00 Okay now\n\n⏱ BEST FOR\n• Anxiety relief\n• Deep relaxation\n• Morning meditation\n• Breathwork\n• Journaling\n• Gentle yoga\n• Calm background music\n\nIf this music helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#FluteAndSitar #AnxietyRelief #432Hz #DeepRelaxation #CalmMind",
+  "title": "Flute & Sitar Music | Anxiety Relief | 1.5 Hours",
+  "thumbnail_style": "new_style",
+  "playlist_placement": "Healing & Anxiety Relief: in the block after 'Sitar for Nervous System Healing' (52YU6Q64zVw), following Monday's and Tuesday's ships. Peaceful Music: top 5. NOT in Morning Energy and never next to 'Morning Energy Music | Dilruba Raga Yaman' (user 2026-10-24).",
+  "competitor_source": {
+    "channel": "Trust in Gods",
+    "video_id": "FcD6Ww3TlY4",
+    "title": "Healing Flute & Sitar Music | Deep Relaxation & Anxiety Relief | Peaceful Meditation Sounds | Happy",
+    "snapshot": "2026-10-25",
+    "views": 221910,
+    "age_days": 34,
+    "runtime_min": 30
+  },
+  "thumbnail_images": [
+    {
+      "label": "Style reference — Oct 12 winning NEW STYLE thumbnail (58.2% watch-time share)",
+      "path": "data/thumbnails/wk_2026-10-12/mon_variant1_new_style.jpg"
+    }
+  ],
+  "gate_overrides": "Documented 2026-10-25: (1) track_record Sitar x anxiety = PROVEN in recommend_slot (n=2, med 12,595v) but FLOP on the trailing-28d track_record table - orchestrator verdict is binding; (2) three anxiety-register ships Mon/Tue/Thu = week_diversity lane repeat, user-approved under h_2026-10-26_register_sets_reach; (3) Bansuri as secondary 3 days after Monday's Bansuri lead - secondary only, Sitar leads; (4) soft clone flag vs 'Inner Peace Music | Flute & Sitar' (Oct 14, calm_relax) - different lane, deliberate replica of the same pairing. brief_gate 2026-10-25: FAIL = these overrides (packaging_clone 15d vs Inner Peace Flute & Sitar, incumbent 493 engaged; track_record FLOP Bansuri x anxiety on the trailing-28d table; lead_fresh self-match). brief_check: clean. week_diversity: FAIL on 'anxiety' x3 - user-approved register week."
+}

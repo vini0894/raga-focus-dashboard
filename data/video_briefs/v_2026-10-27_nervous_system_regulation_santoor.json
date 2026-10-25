@@ -1,0 +1,91 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-10-25",
+  "spent": false,
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr median ~20%). Export MUST carry 'Average percentage viewed (%)' AND 'Average view duration'. tools/weekly_review.py prints the matched-age read. T1 share at d14 via the per-video country pull (group read with the week's other ships).",
+  "ab_design": "T1 ship + single-thumb title test. A = 'Music for Nervous System Regulation | 1.5 Hours' (Music-for form, NO instrument word); B = 'Nervous System Regulation Music | Santoor Instrumental | 1.5 Hours' (keyword-first, instrument named). User chose both wordings 2026-10-25, so this reads PACKAGE vs PACKAGE (form + instrument move together), not the instrument word alone. SAME thumbnail on both arms. Primary T1 read is per-video country share at d14, which is blended across arms.",
+  "runtime_note": "90 min (user rule: 90 or 180 only; this week 90 only).",
+  "pending": [
+    "USER: generate the music to the music_direction spec",
+    "USER: generate ONE thumbnail image, text YOUR BODY IS SAFE (same on both arms)",
+    "USER (optional): VidIQ score for 'Music for Nervous System Regulation' - the clinical-term rule says score the 'Music for' form before using it as a lead; user proceeded unscored 2026-10-25",
+    "Launch Test & compare at publish: title A vs title B, identical thumbnail",
+    "At publish: Meditation playlist near the top AND Healing & Anxiety Relief after Monday's Gentle Morning ship - never next to 'Morning Energy Music'",
+    "AI-disclosure toggle",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read",
+    "Log both Test & compare arms to ab_raw_data.csv at publish"
+  ],
+  "id": "v_2026-10-27_nervous_system_regulation_santoor",
+  "planned_date": "2026-10-27",
+  "planned_slot": "06:30 IST AM · Tue",
+  "hypothesis_id": "h_2026-10-26_t1_nervous_system_regulation",
+  "lane": "anxiety",
+  "daypart": "morning",
+  "instrument": "Santoor",
+  "raga": "Bhupali",
+  "title_variants": {
+    "A": "Music for Nervous System Regulation | 1.5 Hours",
+    "B": "Nervous System Regulation Music | Santoor Instrumental | 1.5 Hours"
+  },
+  "title_note": "Locked by user 2026-10-25 (T1-targeted ship). 'Nervous System Regulation' prescreened FRESH; 'nervous system' family is the channel's strongest measured T1 vocabulary (Nervous System Healing 32% / Nervous System Therapy 34% T1 watch-time, bar 30%, fresh-ship baseline ~9%) and the best fresh-ship family since September (Nervous System Therapy Bansuri Sep 15: 682 engaged / 15.5K impr / AVD 24%). A uses the 'Music for' form, banked as a headwind in anxiety/morning (Test #53 -32.8pp, #48 -11.6pp) - user accepted. No 'Healing' and no Sitar: look-alike guard vs the #4 hero 'Sitar for Nervous System Healing'. Both unscored.",
+  "validated_keywords": [
+    "'Nervous System Regulation' - lead_prescreen FRESH (no conflict); family last shipped 42d ago (Nervous System Therapy, Sep 15)",
+    "'Nervous System Reset' - in 5 of the top 15 competitor titles this week (Soulful Breathscape), not used here (past-lock 196d)",
+    "T1 anchor words (per-video country pull 2026-10-24 + routing pass v3): nervous system 32-34%, yoga 34%, morning routine 41%"
+  ],
+  "thumbnail_text_main": "YOUR BODY IS SAFE",
+  "thumbnail_text_variants": [
+    {
+      "label": "Both arms (thumbnail-identical test)",
+      "text": "YOUR BODY IS SAFE",
+      "strategy": "17 chars / 4 words, second-person permission/affirmation (user rule 2026-10-24: affirmations in thumbnails, not titles; permission images led 3 of 3 recent calm/stress tests). Deduped vs 110 shipped texts - no match."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, one text. NEW STYLE (won the Oct 12 thumbnail-only test 58.2% vs 41.8%): bright saffron/coral/gold Pichwai-Kangra miniature, ornate blue floral border, text in a cream parchment panel (right ~40%), bold deep-indigo serif. The VIEWER, never a performer: a woman sitting on a cushion by an open window at early light, one hand resting flat on her chest, the other on her belly, eyes closed, shoulders dropped, soft calm face - the body settling. Potted tulsi, a sleeping cat, hazy green hills outside. A santoor rests against the wall at the frame edge, not played. Unhurried, safe, warm. Second tier: 'Santoor · 1.5 Hours'.",
+  "playlists": [
+    "Meditation",
+    "Healing & Anxiety Relief"
+  ],
+  "music_direction": "Santoor (hammered dulcimer) in Raga Bhupali: pentatonic, light and positive - regulation means settled, not heavy. Soft mallet attack with long warm resonant sustain, gentle flowing phrases with space between them, steady tanpura drone, no percussion, 65-72 BPM (nervous-system band: has momentum, not sleep-slow). Alpha 10 Hz binaural at -20 dB. Avoid the word 'slow' in the prompt. Sound present from 0:00, no fade-in.",
+  "suno_prompt": "Instrumental only, no vocals, no humming — gentle Indian classical santoor in Raga Bhupali, soft hammered-dulcimer attack with warm resonant sustain and flowing unhurried phrases, steady tanpura drone, no percussion, 68 BPM, alpha 10 Hz binaural at -20 dB, calm grounding morning, seamless loop.",
+  "experiment": "h_2026-10-26_t1_nervous_system_regulation: the week's T1-targeted ship. Success d14 (2026-11-10): T1 share of watch-time >= 30% (channel ~24%, fresh ships ~9%). Reach d7 (2026-11-03): first-7-day engaged views >= 460 (1.5x October median 307). Secondary: Test & compare A ('Music for', no instrument) vs B (keyword-first + Santoor). FALSIFIER: T1 < 20% - the word family does not move T1 on a fresh ship.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-10-27 06:30 IST",
+    "opening_rule": "sound present from 0:00, no fade-in",
+    "tuning": "A440 (no Hz claim in title)"
+  },
+  "slot_note": "AM 06:30 (user 2026-10-25: all four ships this week at 06:30; AM n=14 median 589 engaged / 14.3K impr vs PM n=20 415 / 9.3K since Aug 1).",
+  "tags": [
+    "nervous system regulation",
+    "music for nervous system regulation",
+    "nervous system regulation music",
+    "santoor music",
+    "santoor instrumental",
+    "calm music",
+    "anxiety relief music",
+    "vagus nerve",
+    "somatic music",
+    "self regulation",
+    "grounding music",
+    "raga bhupali",
+    "indian instrumental music",
+    "meditation music",
+    "morning calm music",
+    "raga focus"
+  ],
+  "description": "Music for Nervous System Regulation | Santoor Instrumental | 1.5 Hours\n\nYour body is safe. Let it find that out slowly - one soft note at a time.\n\nThis gentle santoor music is made for nervous system regulation: easing a body stuck on alert, settling a racing heart, and bringing you back to a calm, steady baseline. Nothing to do. Nothing to fix.\n\nEnjoy 1.5 hours of warm Indian santoor in Raga Bhupali over a steady tanpura drone, with no drums, no vocals and no ads interrupting.\n\n▶ Keep settling - the full Meditation playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199nvhUBCx5L9ROrDP44H4JzN\n(paste this video's own id in place of VIDEO_ID before publishing - it opens the playlist at this video so the next one plays automatically)\n\nPerfect for somatic practice, vagus nerve exercises, breathwork, grounding after a stressful night, morning meditation, journaling, gentle yoga, therapy homework, or simply sitting still until your shoulders drop.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Santoor (Indian hammered dulcimer) with tanpura drone\nRaga: Bhupali (a light, open, pentatonic raga)\nStyle: Indian classical instrumental, meditative\nMood: Warm, settled, unhurried\nAtmosphere: An open window at first light, a hand on the chest\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPlay it low. Put one hand on your chest, one on your belly, and let the out-breath get a little longer than the in-breath. Stay until the body believes it.\n\n⏱ CHAPTERS\n0:00 Body on alert\n9:00 First long exhale\n18:00 Shoulders dropping\n27:00 Heart slowing\n36:00 Hands warming\n45:00 Safe enough\n54:00 Settled\n1:03:00 Steady baseline\n1:12:00 Soft and present\n1:21:00 Carry it with you\n\n⏱ BEST FOR\n• Nervous system regulation\n• Anxiety and panic recovery\n• Somatic and vagus nerve practice\n• Breathwork\n• Morning meditation\n• Journaling\n• Gentle yoga\n\nIf this music helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#NervousSystemRegulation #SantoorMusic #AnxietyRelief #SomaticHealing #CalmMusic",
+  "title": "Music for Nervous System Regulation | 1.5 Hours",
+  "thumbnail_style": "new_style",
+  "playlist_placement": "Meditation: position 2-3 (behind the face). Healing & Anxiety Relief: directly after Monday's 'Gentle Morning Music' (which sits after 'Sitar for Nervous System Healing'). NOT in Morning Energy and never next to 'Morning Energy Music | Dilruba Raga Yaman' (user 2026-10-24).",
+  "thumbnail_images": [
+    {
+      "label": "Style reference — Oct 12 winning NEW STYLE thumbnail (58.2% watch-time share)",
+      "path": "data/thumbnails/wk_2026-10-12/mon_variant1_new_style.jpg"
+    }
+  ],
+  "gate_overrides": "Documented 2026-10-25: (1) Santoor x anxiety x 1.5hr is UNTESTED (experimental cell, allowed); (2) lane concentration - Mon/Tue/Thu all anxiety-register (week hypothesis h_2026-10-26_register_sets_reach, user-approved); (3) 'Music for' form in an anxiety/morning ship contradicts the banked lane rule - user choice; (4) two-variable A/B (form + instrument) - user choice ('In B keep it as it is'). brief_gate 2026-10-25: WARN (ab_leads same family by design; Santoor x anxiety UNTESTED; lead_fresh self-match on the queued brief). brief_check: clean. week_diversity: FAIL on 'anxiety' x3 (lane + concept family) - user-approved register week."
+}

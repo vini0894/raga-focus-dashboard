@@ -1,0 +1,107 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-10-25",
+  "spent": false,
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs the same-age cohort: fresh 1.5hr median ~20%). Export MUST carry 'Average percentage viewed (%)' AND 'Average view duration'. tools/weekly_review.py prints the matched-age read. T1 share at d14 via the per-video country pull (group read with the week's other ships).",
+  "ab_design": "Short-A vs long-B on DIFFERENT keywords. A = 'Clear Negative Thoughts | Slow Surbahar | 1.5 Hours' (lead FRESH, 54); B = 'Mental Clarity Music: Slow Surbahar 432 Hz to Quiet the Mind & Let Negative Thoughts Pass' (lead 'Mental Clarity Music' = deliberate REPEAT, 163d, won A/B #16 and #19 as the B arm; competitor-skeleton long title). C = 'Quiet Your Thoughts | Surbahar Instrumental | 1.5 Hours' reserve (FRESH). Thumb A (LET IT PASS, user's pick) pairs with title A; thumb B (THOUGHTS ON LOOP?, the lane's banked Q-hook format) pairs with title B.",
+  "runtime_note": "90 min (user rule). Competitor original is 25 min.",
+  "pending": [
+    "USER: generate the music to the music_direction spec, then pitch the final render to 432 Hz (title B promises 432 Hz)",
+    "USER: generate the thumbnail image; render text A and text B versions",
+    "USER (optional): VidIQ score for 'Clear Negative Thoughts' (bank 54) and 'Mental Clarity Music' (bank 65)",
+    "Launch Test & compare at publish: title A + thumb A vs title B + thumb B",
+    "At publish: Mental Clarity Music playlist position 2-3 and Meditation playlist top 5 - NOT Healing & Anxiety Relief (keep the cognitive ship on the cognitive surface)",
+    "AI-disclosure toggle",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read",
+    "Log both Test & compare arms to ab_raw_data.csv at publish"
+  ],
+  "id": "v_2026-10-30_clear_negative_thoughts_surbahar",
+  "planned_date": "2026-10-30",
+  "planned_slot": "06:30 IST AM · Fri",
+  "hypothesis_id": "h_2026-10-26_clear_negative_thoughts_replica",
+  "lane": "cognitive",
+  "daypart": "morning",
+  "instrument": "Surbahar",
+  "raga": "Bilawal",
+  "title_variants": {
+    "A": "Clear Negative Thoughts | Slow Surbahar | 1.5 Hours",
+    "B": "Mental Clarity Music: Slow Surbahar 432 Hz to Quiet the Mind & Let Negative Thoughts Pass",
+    "C": "Quiet Your Thoughts | Surbahar Instrumental | 1.5 Hours"
+  },
+  "title_note": "Locked by user 2026-10-25 (Friday option 1). Competitor pick #2: replica of Trust in Gods 'Clear Negative Thoughts: Flute & Sitar to Quiet Mind I Indian Meditation Music to Deep Focus' (46.5K views at d38, ~1.2K/day; 25 min). Our 'negative' family is mid, not dead (Break Negative Patterns Tanpura 495 engaged, Remove Negative Thoughts Bansuri 3hr 349). Surbahar x cognitive is THIN (n=1, pre-pivot) - experimental cell; Surbahar chosen over Sarangi for a plucked, resonant, clarity-leaning bed and because Santoor (Tue) and Sitar (Thu) are in cooldown. 'Quiet the Mind' was rejected (past-lock 140d); 'Quiet Your Thoughts' is the FRESH substitute. Fourth lane of the week (cognitive = #1 lane under the t1_growth weighting in tradeoff_eval).",
+  "validated_keywords": [
+    "'Clear Negative Thoughts' - bank 54, lead_prescreen FRESH",
+    "'Mental Clarity Music' - bank 65, deliberate REPEAT (163d; A/B #16 + #19 winner as B arm)",
+    "'Quiet Your Thoughts' - lead_prescreen FRESH",
+    "'Negative' family in 5 of the 25 hottest competitor titles this week (HRS x4, Trust in Gods x1)"
+  ],
+  "thumbnail_text_main": "LET IT PASS",
+  "thumbnail_text_variants": [
+    {
+      "label": "A - pairs with title A",
+      "text": "LET IT PASS",
+      "strategy": "11 chars / 3 words, permission/affirmation (user's pick 2026-10-25). Note: cognitive lane's banked format is the Q-hook (3.52 vs 2.87); this arm is the user's affirmation exception. Deduped - no match."
+    },
+    {
+      "label": "B - pairs with title B",
+      "text": "THOUGHTS ON LOOP?",
+      "strategy": "17 chars / 3 words, compact Q-hook (cognitive lane rule: compact + clever beats verbose). Deduped - no match (TOO MANY TABS? was already used)."
+    }
+  ],
+  "thumbnail_prompt": "ONE image, two text versions. NEW STYLE (Oct 12 winner): bright saffron/coral/gold Pichwai-Kangra miniature, ornate blue floral border, text in a cream parchment panel (right ~40%), bold deep-indigo serif. The VIEWER, never a performer: a woman at a sunlit desk by a window, laptop closed, leaning back with a cup in both hands, looking out at a clear sky - the moment the head goes quiet. A few scattered papers settling, a plant, morning light. A surbahar rests against the wall at the frame edge, not played. Clear, open, light - not sleepy. Second tier: 'Surbahar · 1.5 Hours'.",
+  "playlists": [
+    "Mental Clarity Music",
+    "Meditation"
+  ],
+  "music_direction": "Surbahar (bass sitar) in Raga Bilawal: all-natural intervals, bright open ascending morning character - clarity, not gravity. Deep resonant plucked string tones with gentle meend slides and gamak, phrases that rise and resolve cleanly with pauses between them, steady tanpura drone, no percussion, 72-78 BPM (morning clarity band: forward movement without urgency), alpha 10 Hz binaural at -20 dB. Do NOT use the word 'slow' in the prompt (the title says Slow Surbahar; the BPM number sets tempo). Tune the final render to 432 Hz. Sound present from 0:00, no fade-in.",
+  "suno_prompt": "Instrumental only, no vocals, no humming — gentle Indian classical surbahar bass sitar in Raga Bilawal, deep resonant plucked tones with soft meend slides and clean rising phrases with pauses, steady tanpura drone, no percussion, 75 BPM, alpha 10 Hz binaural at -20 dB, clear bright morning mind, seamless loop.",
+  "experiment": "h_2026-10-26_clear_negative_thoughts_replica: competitor pick #2 + the week's cognitive/T1-vocabulary slot. Success d7 (2026-11-06): first-7-day engaged views >= 460 (1.5x October median) OR first-week impressions >= 1.5x same-age cohort. FALSIFIER: < 1.0x cohort and < 300 engaged. Secondary: Test & compare short-A vs long-B; T1 share at d14 (group read).",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-10-30 06:30 IST",
+    "opening_rule": "sound present from 0:00, no fade-in",
+    "tuning": "432 Hz"
+  },
+  "slot_note": "AM 06:30 (user 2026-10-25: all four ships this week at 06:30).",
+  "tags": [
+    "clear negative thoughts",
+    "negative thoughts music",
+    "mental clarity music",
+    "quiet the mind",
+    "quiet your thoughts",
+    "surbahar music",
+    "surbahar instrumental",
+    "stop overthinking music",
+    "432 hz music",
+    "focus music",
+    "indian classical music",
+    "raga bilawal",
+    "meditation music",
+    "calm mind music",
+    "clear your mind music",
+    "raga focus"
+  ],
+  "description": "Clear Negative Thoughts | Mental Clarity Music | Slow Surbahar | 1.5 Hours\n\nLet it pass. Every thought, even the loud ones, moves on if you stop holding it.\n\nThis deep, resonant surbahar music, tuned to 432 Hz, is made for a mind on a loop: clearing negative thoughts, quieting the inner chatter, and leaving you with a clear head and a calm, open morning.\n\nEnjoy 1.5 hours of Indian surbahar (bass sitar) in Raga Bilawal over a steady tanpura drone, with no drums, no vocals and no ads interrupting.\n\n▶ Keep your head clear - the full Mental Clarity Music playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199k23Ho_XqKrYC045u7FJbgV\n(paste this video's own id in place of VIDEO_ID before publishing - it opens the playlist at this video so the next one plays automatically)\n\nPerfect for overthinking, mental clarity, morning meditation, journaling, studying, deep work, a dopamine detox, or any morning when your head will not quiet down.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Surbahar (Indian bass sitar) with tanpura drone\nRaga: Bilawal (a bright, open morning raga)\nTuning: 432 Hz\nStyle: Indian classical instrumental, meditative\nMood: Clear, spacious, steady\nAtmosphere: A sunlit desk, a closed laptop, a clear sky\nDuration: 1 hour 30 minutes\n\n🎧 HOW TO USE\nPlay it at the start of the day or before you sit down to work. Each time a thought loops, let the next surbahar phrase carry it off. You do not have to answer it.\n\n⏱ CHAPTERS\n0:00 Thoughts on loop\n9:00 The first one passes\n18:00 Space opening\n27:00 Quieter now\n36:00 Clear head\n45:00 Mental clarity\n54:00 Light and open\n1:03:00 Steady focus\n1:12:00 Nothing to hold\n1:21:00 Clear all the way through\n\n⏱ BEST FOR\n• Clearing negative thoughts\n• Mental clarity\n• Overthinking\n• Morning meditation\n• Journaling\n• Study and deep work\n• Dopamine detox\n\nIf this music helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#ClearNegativeThoughts #MentalClarity #SurbaharMusic #432Hz #Overthinking",
+  "title": "Clear Negative Thoughts | Slow Surbahar | 1.5 Hours",
+  "thumbnail_style": "new_style",
+  "playlist_placement": "Mental Clarity Music: position 2-3 behind the face. Meditation: top 5. Not in Healing & Anxiety Relief (cognitive ship stays on the cognitive surface). Never next to 'Morning Energy Music' (user 2026-10-24).",
+  "competitor_source": {
+    "channel": "Trust in Gods",
+    "video_id": "cb0nGsErcXw",
+    "title": "Clear Negative Thoughts: Flute & Sitar to Quiet Mind I Indian Meditation Music to Deep Focus",
+    "snapshot": "2026-10-25",
+    "views": 46505,
+    "age_days": 38,
+    "runtime_min": 25
+  },
+  "thumbnail_images": [
+    {
+      "label": "Style reference — Oct 12 winning NEW STYLE thumbnail (58.2% watch-time share)",
+      "path": "data/thumbnails/wk_2026-10-12/mon_variant1_new_style.jpg"
+    }
+  ],
+  "gate_overrides": "Documented 2026-10-25: (1) Surbahar x cognitive x 1.5hr is THIN (n=1, pre-pivot April ship) - experimental cell, allowed; (2) B lead 'Mental Clarity Music' is a deliberate REPEAT (163d, twice an A/B winner); (3) thumb A is an affirmation in a Q-hook lane - user's choice, thumb B keeps the lane format. brief_gate 2026-10-25: WARN (Surbahar x cognitive THIN; B contains 'to quiet' 16d after Morning Anxiety Reset's long title; lead_fresh self-match). brief_check: clean. week_diversity: WARN 'let'/'mind' x2 with Thursday."
+}
