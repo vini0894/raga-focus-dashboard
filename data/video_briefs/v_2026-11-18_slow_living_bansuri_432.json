@@ -1,0 +1,93 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-11-15",
+  "spent": false,
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs same-age cohort; 1.5hr ~20%, 3hr ~17%). tools/weekly_review.py prints the matched-age read.",
+  "ab_design": "Short-A vs long-B on DIFFERENT keywords. A = 'Slow Living Music | Bansuri | 1.5 Hours'; B = 'Self Care Music 🌿 Soft Bansuri 432 Hz for a Slow Morning, Gentle Breathing & Inner Peace'.",
+  "runtime_note": "90 min (user rule: 90 or 180 only).",
+  "pending": [
+    "USER: generate the music to the music_direction spec and pitch the render to 432 Hz",
+    "USER: generate thumbnail(s): TAKE IT SLOW TODAY / BE GENTLE WITH YOU",
+    "USER: VidIQ score both leads (user locked unscored 2026-11-15)",
+    "Run tools/claim_check.py on the Bansuri clips before render",
+    "Launch Test & compare at publish: title A vs title B (thumbnail per the variants below)",
+    "AI-disclosure toggle",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "End screen: point to Dopamine Reset or Sound Sleep per routing_note (routing pass, wk_2026-11-16)",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read",
+    "Log both Test & compare arms to ab_raw_data.csv at publish"
+  ],
+  "id": "v_2026-11-18_slow_living_bansuri_432",
+  "planned_date": "2026-11-18",
+  "planned_slot": "06:30 IST AM · Wed",
+  "hypothesis_id": "h_2026-11-16_six_ship_volume",
+  "lane": "morning",
+  "daypart": "morning",
+  "instrument": "Bansuri",
+  "raga": "Bhairavi",
+  "title_variants": {
+    "A": "Slow Living Music | Bansuri | 1.5 Hours",
+    "B": "Self Care Music 🌿 Soft Bansuri 432 Hz for a Slow Morning, Gentle Breathing & Inner Peace"
+  },
+  "title_note": "Locked by user 2026-11-15 ('Lock all 6'), VidIQ unscored. Both leads lead_prescreen FRESH 2026-11-15.",
+  "validated_keywords": [
+    "'Slow Living Music' - lead_prescreen FRESH 2026-11-15",
+    "'Self Care Music' - lead_prescreen FRESH 2026-11-15"
+  ],
+  "thumbnail_text_main": "TAKE IT SLOW TODAY",
+  "thumbnail_text_variants": [
+    {
+      "label": "Arm A",
+      "text": "TAKE IT SLOW TODAY",
+      "strategy": "Affirmation/permission (user rule: affirmations in thumbnails, not titles). Deduped vs shipped thumb texts."
+    },
+    {
+      "label": "Arm B",
+      "text": "BE GENTLE WITH YOU",
+      "strategy": "Same register, different wording. Deduped vs shipped thumb texts."
+    }
+  ],
+  "thumbnail_prompt": "NEW STYLE (won the Oct 12 thumbnail-only test 58.2% vs 41.8%): bright saffron/coral/gold Pichwai-Kangra miniature, ornate blue floral border, text in a cream parchment panel (right ~40%), bold deep-indigo serif. The VIEWER, never a performer. a woman wrapped in a soft shawl sitting on a window seat at early morning, warm cup in both hands, looking out at misty trees, calm half-smile; candle, open notebook, sleeping cat. A bansuri lies on the sill at the frame edge, not played. Second tier: 'Bansuri · 1.5 Hours'.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Meditation"
+  ],
+  "music_direction": "Bansuri in Raga Bhairavi: soft breathy low-register flute, tender devotional morning phrases, long held notes, gentle ornaments, steady tanpura drone, no percussion, ~60 BPM. Render pitched to 432 Hz (title promises it). Sound from 0:00.",
+  "suno_prompt": "Instrumental only, no vocals - soft Indian bansuri flute in Raga Bhairavi, breathy low-register tone, tender unhurried morning phrases with long held notes, steady tanpura drone, no percussion, 60 BPM, calm devotional sunrise, seamless loop.",
+  "experiment": "h_2026-11-16_six_ship_volume: see hypotheses.json. Ship read d7 2026-11-18 + 7d.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-11-18 06:30 IST",
+    "opening_rule": "sound present from 0:00, no fade-in",
+    "tuning": "432 Hz (pitch the render)"
+  },
+  "slot_note": "AM 06:30 (all ships this week).",
+  "tags": [
+    "slow living music",
+    "self care music",
+    "bansuri music",
+    "bansuri 432 hz",
+    "432 hz music",
+    "calm morning music",
+    "gentle morning",
+    "nervous system",
+    "raag bhairavi",
+    "indian flute music",
+    "meditation music",
+    "raga focus"
+  ],
+  "description": "Slow Living Music | Bansuri | 1.5 Hours\n\nNothing is urgent this morning. Take it slow.\n\nSoft bansuri music for slow living and self care: tender Raag Bhairavi phrases, tuned to 432 Hz, for a gentle morning, a calm nervous system and a little inner peace before the day asks anything of you.\n\n▶ Keep going - the full Meditation playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199nvhUBCx5L9ROrDP44H4JzN\n(paste this video's own id in place of VIDEO_ID before publishing - it opens the playlist at this video so the next one plays automatically)\n\nPerfect for slow mornings, self care rituals, journaling, tea, gentle stretching, a calm start before work.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Bansuri and tanpura drone\nRaga: Bhairavi\nStyle: Indian classical instrumental, meditative\nMood: Tender, soft, unhurried\nAtmosphere: A window seat, warm cup, misty trees\nDuration: 1 hour 30 minutes\n\n⏱ CHAPTERS\n0:00 Wake slowly\n9:00 First warm sip\n18:00 Soft light\n27:00 Breathing easy\n36:00 Nothing to rush\n45:00 Gentle with yourself\n54:00 Quiet heart\n1:03:00 Inner peace\n1:12:00 Ready, softly\n1:21:00 Carry the calm\n\n⏱ BEST FOR\n• Slow living\n• Self care\n• Calm mornings\n• Meditation\n\nNo ads interrupting the music. If this helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#SlowLiving #SelfCare #BansuriMusic #432Hz #CalmMorning",
+  "title": "Slow Living Music | Bansuri | 1.5 Hours",
+  "thumbnail_style": "new_style",
+  "playlist_placement": "Healing & Anxiety Relief: directly after 'Sitar for Nervous System Healing'. Meditation: mid-list.",
+  "routing_note": "End screen -> 'Bansuri for Sound Sleep' (same instrument, hero routing).",
+  "thumbnail_images": [
+    {
+      "label": "Style reference — Oct 12 winning NEW STYLE thumbnail (58.2% watch-time share)",
+      "path": "data/thumbnails/wk_2026-10-12/mon_variant1_new_style.jpg"
+    }
+  ],
+  "gate_overrides": "Documented 2026-11-15: Bansuri x morning weak on the 28d table (lifetime caveat: 28d medians understate older videos). Kept for the 2-Bansuri/week rule and as the competitor replica (Soulful Breathscape Bhairavi 432 morning, 5.9K/day). Same raga + 432 as Oct 26 Gentle Morning (23d apart) - documented."
+}

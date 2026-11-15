@@ -1,0 +1,91 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-11-15",
+  "spent": false,
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs same-age cohort; 1.5hr ~20%, 3hr ~17%). tools/weekly_review.py prints the matched-age read.",
+  "ab_design": "Short-A vs long-B on DIFFERENT keywords. A = 'Journaling Music | Sitar Instrumental | 1.5 Hours'; B = 'Reflection Music: Warm Sitar 432 Hz for Calm Writing, Clear Thoughts & a Quiet Mind'.",
+  "runtime_note": "90 min (user rule: 90 or 180 only).",
+  "pending": [
+    "USER: generate the music to the music_direction spec and pitch the render to 432 Hz",
+    "USER: generate thumbnail(s): WRITE IT DOWN / LET YOUR MIND SETTLE",
+    "USER: VidIQ score both leads (user locked unscored 2026-11-15)",
+    "Launch Test & compare at publish: title A vs title B (thumbnail per the variants below)",
+    "AI-disclosure toggle",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "End screen: point to Dopamine Reset or Sound Sleep per routing_note (routing pass, wk_2026-11-16)",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read",
+    "Log both Test & compare arms to ab_raw_data.csv at publish"
+  ],
+  "id": "v_2026-11-19_journaling_sitar",
+  "planned_date": "2026-11-19",
+  "planned_slot": "06:30 IST AM · Thu",
+  "hypothesis_id": "h_2026-11-16_six_ship_volume",
+  "lane": "calm_relax",
+  "daypart": "morning",
+  "instrument": "Sitar",
+  "raga": "Bhimpalasi",
+  "title_variants": {
+    "A": "Journaling Music | Sitar Instrumental | 1.5 Hours",
+    "B": "Reflection Music: Warm Sitar 432 Hz for Calm Writing, Clear Thoughts & a Quiet Mind"
+  },
+  "title_note": "Locked by user 2026-11-15 ('Lock all 6'), VidIQ unscored. Both leads lead_prescreen FRESH 2026-11-15.",
+  "validated_keywords": [
+    "'Journaling Music' - lead_prescreen FRESH 2026-11-15",
+    "'Reflection Music' - lead_prescreen FRESH 2026-11-15"
+  ],
+  "thumbnail_text_main": "WRITE IT DOWN",
+  "thumbnail_text_variants": [
+    {
+      "label": "Arm A",
+      "text": "WRITE IT DOWN",
+      "strategy": "Affirmation/permission (user rule: affirmations in thumbnails, not titles). Deduped vs shipped thumb texts."
+    },
+    {
+      "label": "Arm B",
+      "text": "LET YOUR MIND SETTLE",
+      "strategy": "Same register, different wording. Deduped vs shipped thumb texts."
+    }
+  ],
+  "thumbnail_prompt": "NEW STYLE (won the Oct 12 thumbnail-only test 58.2% vs 41.8%): bright saffron/coral/gold Pichwai-Kangra miniature, ornate blue floral border, text in a cream parchment panel (right ~40%), bold deep-indigo serif. The VIEWER, never a performer. a woman at a wooden desk by a window writing in a journal, pen in hand, relaxed posture, soft daylight; tea cup, dried flowers, a few books. A sitar rests against the wall at the frame edge, not played. Second tier: 'Sitar · 1.5 Hours'.",
+  "playlists": [
+    "Meditation",
+    "Peaceful Music"
+  ],
+  "music_direction": "Solo sitar in Raga Bhimpalasi: warm, reflective raga, unhurried phrases with space to think, very light tabla, steady tanpura drone, 64-70 BPM. Alpha 10 Hz binaural at -20 dB. Render pitched to 432 Hz. Sound from 0:00.",
+  "suno_prompt": "Instrumental only, no vocals - warm Indian classical sitar in Raga Bhimpalasi, unhurried reflective phrases with space between them, very light tabla, steady tanpura drone, 66 BPM, alpha 10 Hz binaural at -20 dB, calm focused reflection, seamless loop.",
+  "experiment": "h_2026-11-16_six_ship_volume: see hypotheses.json. Ship read d7 2026-11-19 + 7d.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-11-19 06:30 IST",
+    "opening_rule": "sound present from 0:00, no fade-in",
+    "tuning": "432 Hz (pitch the render)"
+  },
+  "slot_note": "AM 06:30 (all ships this week).",
+  "tags": [
+    "journaling music",
+    "reflection music",
+    "sitar music",
+    "sitar instrumental",
+    "writing music",
+    "432 hz music",
+    "calm focus music",
+    "writing music",
+    "raga bhimpalasi",
+    "indian instrumental music",
+    "raga focus"
+  ],
+  "description": "Journaling Music | Sitar Instrumental | 1.5 Hours\n\nOpen the notebook. Let the thoughts land on the page instead of looping in your head.\n\nWarm sitar music for journaling and quiet reflection: unhurried Raga Bhimpalasi phrases tuned to 432 Hz - calm enough to think, steady enough to keep writing.\n\n▶ Keep going - the full Meditation playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199nvhUBCx5L9ROrDP44H4JzN\n(paste this video's own id in place of VIDEO_ID before publishing - it opens the playlist at this video so the next one plays automatically)\n\nPerfect for journaling, morning pages, reflective writing, gratitude lists, studying, planning your day.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sitar and tanpura drone\nRaga: Bhimpalasi\nStyle: Indian classical instrumental, meditative\nMood: Warm, reflective, clear\nAtmosphere: A desk by the window, an open journal\nDuration: 1 hour 30 minutes\n\n⏱ CHAPTERS\n0:00 Open the page\n9:00 First line\n18:00 Thoughts slowing\n27:00 Writing freely\n36:00 Clear head\n45:00 Deeper reflection\n54:00 What matters\n1:03:00 Letting go\n1:12:00 Quiet mind\n1:21:00 Close the book\n\n⏱ BEST FOR\n• Journaling\n• Reflection\n• Writing\n• Calm focus\n\nNo ads interrupting the music. If this helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#JournalingMusic #SitarMusic #432Hz #CalmFocus #IndianClassical",
+  "title": "Journaling Music | Sitar Instrumental | 1.5 Hours",
+  "thumbnail_style": "new_style",
+  "playlist_placement": "Meditation: after Mon's Breathwork ship. Peaceful Music: mid-list.",
+  "routing_note": "End screen -> 'Sitar for Dopamine Reset' (sitar-led, hero routing).",
+  "thumbnail_images": [
+    {
+      "label": "Style reference — Oct 12 winning NEW STYLE thumbnail (58.2% watch-time share)",
+      "path": "data/thumbnails/wk_2026-10-12/mon_variant1_new_style.jpg"
+    }
+  ],
+  "gate_overrides": "Documented 2026-11-15: Labelled calm_relax (Sitar x cognitive is a 28d FLOP n=4). Clone flag vs Oct 29 'Calm Your Anxiety | Flute & Sitar' (21d, different lane) - documented. Competitor pick: Trust in Gods 'Healing Flute & Sitar Music' 245K @d55 still ~1.1K/day + Healing Raga Studio Sitar & Flute."
+}

@@ -1,0 +1,94 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-11-15",
+  "spent": false,
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs same-age cohort; 1.5hr ~20%, 3hr ~17%). tools/weekly_review.py prints the matched-age read.",
+  "ab_design": "Short-A vs long-B on DIFFERENT keywords. A = 'Anxiety Release Music | Slow Sitar | 1.5 Hours'; B = 'Breathwork Music: Slow Sitar for Stress & Anxiety Release, Calm Breathing & a Quiet Mind'.",
+  "runtime_note": "90 min (user rule: 90 or 180 only).",
+  "pending": [
+    "USER: generate the music to the music_direction spec",
+    "USER: generate thumbnail(s): SLOW YOUR BREATHING / BREATHE OUT SLOWLY",
+    "USER: VidIQ score both leads (user locked unscored 2026-11-15)",
+    "Launch Test & compare at publish: title A vs title B (thumbnail per the variants below)",
+    "AI-disclosure toggle",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "End screen: point to Dopamine Reset or Sound Sleep per routing_note (routing pass, wk_2026-11-16)",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read",
+    "Log both Test & compare arms to ab_raw_data.csv at publish"
+  ],
+  "id": "v_2026-11-16_anxiety_release_sitar_replica",
+  "planned_date": "2026-11-16",
+  "planned_slot": "06:30 IST AM · Mon",
+  "hypothesis_id": "h_2026-11-16_six_ship_volume",
+  "lane": "anxiety",
+  "daypart": "morning",
+  "instrument": "Sitar",
+  "raga": "Bairagi Bhairav",
+  "title_variants": {
+    "A": "Anxiety Release Music | Slow Sitar | 1.5 Hours",
+    "B": "Breathwork Music: Slow Sitar for Stress & Anxiety Release, Calm Breathing & a Quiet Mind"
+  },
+  "title_note": "Locked by user 2026-11-15 ('Lock all 6'), VidIQ unscored. Both leads lead_prescreen FRESH 2026-11-15.",
+  "validated_keywords": [
+    "'Anxiety Release Music' - lead_prescreen FRESH 2026-11-15",
+    "'Breathwork Music' - lead_prescreen FRESH 2026-11-15"
+  ],
+  "thumbnail_text_main": "SLOW YOUR BREATHING",
+  "thumbnail_text_variants": [
+    {
+      "label": "Arm A",
+      "text": "SLOW YOUR BREATHING",
+      "strategy": "Affirmation/permission (user rule: affirmations in thumbnails, not titles). Deduped vs shipped thumb texts."
+    },
+    {
+      "label": "Arm B",
+      "text": "BREATHE OUT SLOWLY",
+      "strategy": "Same register, different wording. Deduped vs shipped thumb texts."
+    }
+  ],
+  "thumbnail_prompt": "NEW STYLE (won the Oct 12 thumbnail-only test 58.2% vs 41.8%): bright saffron/coral/gold Pichwai-Kangra miniature, ornate blue floral border, text in a cream parchment panel (right ~40%), bold deep-indigo serif. The VIEWER, never a performer. a woman sitting cross-legged on a low cushion on a sunlit veranda at dawn, eyes closed, one hand on her belly, mid long exhale, shoulders soft; brass diya, tulsi pot, misty hills. A sitar leans against a pillar at the frame edge, not played. Second tier: 'Sitar · 1.5 Hours'.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Meditation"
+  ],
+  "music_direction": "Sitar in Raga Bairagi Bhairav: sparse, meditative morning raga, long meend glides, phrases that breathe with space between them (inhale/exhale pacing), very light tabla in a slow theka entering after the alap, steady tanpura drone. 60-64 BPM. Theta 6 Hz binaural at -20 dB. Sound from 0:00, no fade-in.",
+  "suno_prompt": "Instrumental only, no vocals - slow Indian classical sitar in Raga Bairagi Bhairav, long meend glides and spacious breathing phrases, very light slow tabla, steady tanpura drone, 62 BPM, theta 6 Hz binaural at -20 dB, calm grounding morning, seamless loop.",
+  "experiment": "h_2026-11-16_six_ship_volume: see hypotheses.json. Ship read d7 2026-11-16 + 7d.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-11-16 06:30 IST",
+    "opening_rule": "sound present from 0:00, no fade-in",
+    "tuning": "A440"
+  },
+  "slot_note": "AM 06:30 (all ships this week).",
+  "tags": [
+    "anxiety release music",
+    "stress and anxiety release",
+    "anxiety relief music",
+    "stress relief music",
+    "breathwork music",
+    "sitar music",
+    "slow sitar",
+    "anxiety relief music",
+    "calm breathing",
+    "nervous system",
+    "raga bairagi bhairav",
+    "indian instrumental music",
+    "meditation music",
+    "raga focus"
+  ],
+  "description": "Anxiety Release Music | Slow Sitar | 1.5 Hours\n\nLet the stress and anxiety go - one long exhale at a time.\n\nThis slow sitar music is made for stress and anxiety release: long, unhurried phrases that rise like an inhale and fall like an exhale, so your breathing can follow without counting. 1.5 hours of Raga Bairagi Bhairav over a soft tanpura drone.\n\n▶ Keep going - the full Meditation playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199nvhUBCx5L9ROrDP44H4JzN\n(paste this video's own id in place of VIDEO_ID before publishing - it opens the playlist at this video so the next one plays automatically)\n\nPerfect for stress and anxiety release, breathwork, deep relaxation, morning meditation, calming a racing mind before work.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sitar and tanpura drone\nRaga: Bairagi Bhairav\nStyle: Indian classical instrumental, meditative\nMood: Spacious, grounded, steady\nAtmosphere: A dawn veranda, one long exhale\nDuration: 1 hour 30 minutes\n\n⏱ CHAPTERS\n0:00 Arrive\n9:00 First slow breath\n18:00 Longer exhale\n27:00 Shoulders drop\n36:00 Belly breathing\n45:00 Steady rhythm\n54:00 Settled\n1:03:00 Quiet body\n1:12:00 Soft and present\n1:21:00 Carry the breath\n\n⏱ BEST FOR\n• Anxiety release\n• Stress relief\n• Breathwork\n• Deep relaxation\n\nNo ads interrupting the music. If this helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#AnxietyRelief #StressRelief #SitarMusic #Breathwork #CalmMusic",
+  "title": "Anxiety Release Music | Slow Sitar | 1.5 Hours",
+  "thumbnail_style": "new_style",
+  "playlist_placement": "Healing & Anxiety Relief: directly after 'Sitar for Dopamine Reset' (routing partner). Meditation: mid-list.",
+  "routing_note": "End screen -> 'Sitar for Dopamine Reset' (same instrument, hero routing).",
+  "thumbnail_images": [
+    {
+      "label": "Style reference — Oct 12 winning NEW STYLE thumbnail (58.2% watch-time share)",
+      "path": "data/thumbnails/wk_2026-10-12/mon_variant1_new_style.jpg"
+    }
+  ],
+  "gate_overrides": "Documented 2026-11-15: COMPETITOR REPLICA of Healing Raga Studio 'Brain Detox: Stress & Anxiety Release' (3.0K views/day at d6, Nov 15 snapshot) - lead moved off spent 'Brain Detox' (May ship). Sitar x anxiety x 1.5hr PROVEN (n=2). Soft clone flag vs 'Dopamine Reset | Sitar' (Nov 6) - different lane/secondary."
+}

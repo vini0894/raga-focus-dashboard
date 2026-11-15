@@ -157,3 +157,14 @@ Series reads: wk1 Oct 6/10 · wk2 Oct 13/17 · **stop-rule check 2026-10-18** (d
 | 2026-10-30 | Surbahar cognitive 1.5hr 06:30 (Trust in Gods replica) | h_2026-10-26_clear_negative_thoughts_replica | A 'Clear Negative Thoughts \| Slow Surbahar' / LET IT PASS vs B 'Mental Clarity Music: … 432 Hz …' / THOUGHTS ON LOOP? | d7 **2026-11-06** |
 
 **Week hypothesis:** h_2026-10-26_register_sets_reach — every ship in the anxiety-relief / mental-clarity register, no rest/therapy/evening titles; week median ≥ 0.7x cohort and ≥ 460 engaged at d7 (read **2026-11-06**). **Baseline:** October median first-7-day engaged = 307; cohort reach median 0.46x. **Carried:** dopamine sibling d7 2026-10-26 · cognitive lane d7 2026-10-27 · therapy slot read #3 2026-10-29 · cortisol CPM probe d7 2026-10-30 · Sleep Music playlist read (overdue since 2026-10-19) · series stop-rule verdict (met) + Inner Peace replica read to write.
+
+## wk_2026-11-16 (locked 2026-11-15) — SIX ships Mon–Sat, ALL 06:30 IST
+
+| Day | Ship | Test | Arms | Reads |
+|---|---|---|---|---|
+| Mon 11-16 | Sitar · anxiety · 90m | h_2026-11-16_six_ship_volume | A `Anxiety Release Music | Slow Sitar | 1.5 Hours` / B `Breathwork Music: Slow Sitar for Stress & Anxiety Release, Calm Breathing & a Quiet Mind` | d7 2026-11-23 |
+| Tue 11-17 | Santoor · calm_relax · 90m | h_2026-11-16_t1_morning_yoga_santoor | A `Yoga Flow Music | Santoor | 1.5 Hours` / B `Stretch and Unwind Music: Soft Santoor for Gentle Movement, Deep Breathing & Calm` | d7 2026-11-24 |
+| Wed 11-18 | Bansuri · morning · 90m | h_2026-11-16_six_ship_volume | A `Slow Living Music | Bansuri | 1.5 Hours` / B `Self Care Music 🌿 Soft Bansuri 432 Hz for a Slow Morning, Gentle Breathing & Inner Peace` | d7 2026-11-25 |
+| Thu 11-19 | Sitar · calm_relax · 90m | h_2026-11-16_six_ship_volume | A `Journaling Music | Sitar Instrumental | 1.5 Hours` / B `Reflection Music: Warm Sitar 432 Hz for Calm Writing, Clear Thoughts & a Quiet Mind` | d7 2026-11-26 |
+| Fri 11-20 | Veena · calm_relax · 90m | h_2026-11-16_six_ship_volume | A `Emotional Regulation Music | Veena | 1.5 Hours` / B `Spa Music: Soft Veena for Deep Relaxation, Calm Breathing & Emotional Balance` | d7 2026-11-27 |
+| Sat 11-21 | Bansuri · sleep · 180m | h_2026-11-16_six_ship_volume | A `Fall Back Asleep | Soft Bansuri | 3 Hours` / B `Restful Night Music 🌙 Soft Bansuri Flute to Quiet the Mind & Rest Until Morning | 3 Hours` | d7 2026-11-28 |

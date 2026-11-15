@@ -1,0 +1,130 @@
+{
+  "week_id": "wk_2026-11-16",
+  "week_start": "2026-11-16",
+  "week_end": "2026-11-22",
+  "created": "2026-11-15",
+  "status": "LOCKED 2026-11-15 (user: 'Lock all 6') - six ships Mon-Sat, all 06:30 IST; VidIQ unscored",
+  "notes": "Nov 15 read: engaged/day 11.6K (wk Oct 12) -> 8.8K (wk Nov 9), per-view value flat -> volume problem. Heroes decaying (Dopamine Reset -19% engaged, Sound Sleep -25%); Morning Energy most resilient. Fresh ships median 0.58x cohort; Santoor best of 3 weeks. Competitors (Soulful Breathscape, Healing Raga Studio) accelerating on Bansuri 432 morning + Sitar & Flute. User goal: recover reach -> more shots on goal (6 ships), high-value register, hero routing.",
+  "hypothesis": {
+    "ids": [
+      "h_2026-11-16_six_ship_volume",
+      "h_2026-11-16_t1_morning_yoga_santoor"
+    ],
+    "one_line": "Six ships/week (vs 4) with every ship routed to a hero raises total first-week impressions and the odds of one escalation; Tue tests the yoga register on Santoor for T1 reach.",
+    "baseline": "Last 3 publish-weeks: 4 ships/week, median first-week impressions ~6-9K per ship, median d7 engaged ~314-371, median 0.58x cohort.",
+    "reads": {
+      "mon_d7": "2026-11-23",
+      "tue_d7": "2026-11-24",
+      "wed_d7": "2026-11-25",
+      "thu_d7": "2026-11-26",
+      "fri_d7": "2026-11-27",
+      "sat_d7": "2026-11-28",
+      "week": "2026-11-28",
+      "t1_d14": "2026-12-01"
+    }
+  },
+  "ships": [
+    {
+      "date": "2026-11-16",
+      "type": "replica",
+      "slot": "06:30",
+      "instrument": "Sitar",
+      "lane": "anxiety",
+      "runtime_min": 90,
+      "title_direction": "A: Anxiety Release Music | Slow Sitar | 1.5 Hours  /  B: Breathwork Music: Slow Sitar for Stress & Anxiety Release, Calm Breathing & a Quiet Mind",
+      "thumb_text": "SLOW YOUR BREATHING / BREATHE OUT SLOWLY",
+      "hypothesis": "h_2026-11-16_six_ship_volume",
+      "suno_prompt_rule": "Instrumental only, no vocals - slow Indian classical sitar in Raga Bairagi Bhairav, long meend glides and spacious breathing phrases, very light slow tabla, steady tanpura drone, 62 BPM, theta 6 Hz binaural at -20 dB, calm grounding morning, seamless loop.",
+      "status": "LOCKED",
+      "brief": "v_2026-11-16_anxiety_release_sitar_replica"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "t1_target",
+      "slot": "06:30",
+      "instrument": "Santoor",
+      "lane": "calm_relax",
+      "runtime_min": 90,
+      "title_direction": "A: Yoga Flow Music | Santoor | 1.5 Hours  /  B: Stretch and Unwind Music: Soft Santoor for Gentle Movement, Deep Breathing & Calm",
+      "thumb_text": "MOVE GENTLY TODAY / STRETCH INTO TODAY",
+      "hypothesis": "h_2026-11-16_t1_morning_yoga_santoor",
+      "suno_prompt_rule": "Instrumental only, no vocals - gentle Indian classical santoor in Raga Deshkar, soft hammered-dulcimer attack with warm resonant sustain, flowing bright morning phrases with a light forward pulse, steady tanpura drone, no percussion, 72 BPM, alpha 10 Hz binaural at -20 dB, fresh calm yoga morning, seamless loop.",
+      "status": "LOCKED",
+      "brief": "v_2026-11-17_yoga_flow_santoor"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "replica",
+      "slot": "06:30",
+      "instrument": "Bansuri",
+      "lane": "morning",
+      "runtime_min": 90,
+      "title_direction": "A: Slow Living Music | Bansuri | 1.5 Hours  /  B: Self Care Music 🌿 Soft Bansuri 432 Hz for a Slow Morning, Gentle Breathing & Inner Peace",
+      "thumb_text": "TAKE IT SLOW TODAY / BE GENTLE WITH YOU",
+      "hypothesis": "h_2026-11-16_six_ship_volume",
+      "suno_prompt_rule": "Instrumental only, no vocals - soft Indian bansuri flute in Raga Bhairavi, breathy low-register tone, tender unhurried morning phrases with long held notes, steady tanpura drone, no percussion, 60 BPM, calm devotional sunrise, seamless loop.",
+      "status": "LOCKED",
+      "brief": "v_2026-11-18_slow_living_bansuri_432"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "replica",
+      "slot": "06:30",
+      "instrument": "Sitar",
+      "lane": "calm_relax",
+      "runtime_min": 90,
+      "title_direction": "A: Journaling Music | Sitar Instrumental | 1.5 Hours  /  B: Reflection Music: Warm Sitar 432 Hz for Calm Writing, Clear Thoughts & a Quiet Mind",
+      "thumb_text": "WRITE IT DOWN / LET YOUR MIND SETTLE",
+      "hypothesis": "h_2026-11-16_six_ship_volume",
+      "suno_prompt_rule": "Instrumental only, no vocals - warm Indian classical sitar in Raga Bhimpalasi, unhurried reflective phrases with space between them, very light tabla, steady tanpura drone, 66 BPM, alpha 10 Hz binaural at -20 dB, calm focused reflection, seamless loop.",
+      "status": "LOCKED",
+      "brief": "v_2026-11-19_journaling_sitar"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "pipeline",
+      "slot": "06:30",
+      "instrument": "Veena",
+      "lane": "calm_relax",
+      "runtime_min": 90,
+      "title_direction": "A: Emotional Regulation Music | Veena | 1.5 Hours  /  B: Spa Music: Soft Veena for Deep Relaxation, Calm Breathing & Emotional Balance",
+      "thumb_text": "FEEL IT, LET IT GO / YOU'RE ALLOWED TO FEEL",
+      "hypothesis": "h_2026-11-16_six_ship_volume",
+      "suno_prompt_rule": "Instrumental only, no vocals - soft Indian saraswati veena in Raga Kirwani, warm plucked strings with long resonant decay and gentle gamaka slides, consoling emotional phrases, steady tanpura drone, no percussion, 60 BPM, alpha 10 Hz binaural at -20 dB, deep calm relaxation, seamless loop.",
+      "status": "LOCKED",
+      "brief": "v_2026-11-20_emotional_regulation_veena"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "pipeline",
+      "slot": "06:30",
+      "instrument": "Bansuri",
+      "lane": "sleep",
+      "runtime_min": 180,
+      "title_direction": "A: Fall Back Asleep | Soft Bansuri | 3 Hours  /  B: Restful Night Music 🌙 Soft Bansuri Flute to Quiet the Mind & Rest Until Morning | 3 Hours",
+      "thumb_text": "BACK TO SLEEP NOW",
+      "hypothesis": "h_2026-11-16_six_ship_volume",
+      "suno_prompt_rule": "Instrumental only, no vocals - very soft Indian bansuri flute in Raga Malkauns, deep low-register breathy tone, slow phrases with long silences, steady low tanpura drone, no percussion, 52 BPM, delta 2 Hz binaural at -22 dB, deep night sleep, seamless loop.",
+      "status": "LOCKED",
+      "brief": "v_2026-11-21_fall_back_asleep_bansuri_3hr"
+    }
+  ],
+  "week_level_decisions": {
+    "ship_count": "SIX ships Mon-Sat (user 2026-11-15: '5-6 videos'; locked all 6).",
+    "format": "Five 1.5hr + Sat 3hr sleep.",
+    "slot": "All 06:30 IST.",
+    "bansuri": "Two Bansuri (Wed morning 1.5hr, Sat sleep 3hr) per standing rule.",
+    "hero_days": "Mon Sitar; Tue Santoor = user-approved deviation from Sitar/Bansuri-on-Mon/Tue (Santoor best 3-week record).",
+    "competitor_ships": "Mon (Healing Raga Studio 'Brain Detox: Stress & Anxiety Release', 3.0K/day) + Wed (Soulful Breathscape Bhairavi 432 Bansuri morning, 5.9K/day) - meets the >=2 rule.",
+    "routing": "Every ship's end screen + playlist slot points to a hero (Dopamine Reset, Sound Sleep, NSH, Yoga Music) - playlist routing is the CONFIRMED reach lever.",
+    "hero_protection": "No 'Morning Energy' words; never placed next to Morning Energy Music; no edits on top videos.",
+    "sleep_radio": "Dropped by user (failed) - not a lever."
+  },
+  "preflight_pending": [
+    "VidIQ scores for all 12 leads (optional - user locked unscored)",
+    "claim_check on Wed + Sat Bansuri clips",
+    "Pitch Wed + Thu renders to 432 Hz",
+    "Routing pass: end screens + playlist slots per each brief's routing_note",
+    "Write overdue ledger reads (~21)"
+  ]
+}

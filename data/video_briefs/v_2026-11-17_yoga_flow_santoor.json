@@ -1,0 +1,93 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-11-15",
+  "spent": false,
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs same-age cohort; 1.5hr ~20%, 3hr ~17%). tools/weekly_review.py prints the matched-age read.",
+  "ab_design": "Short-A vs long-B on DIFFERENT keywords. A = 'Yoga Flow Music | Santoor | 1.5 Hours'; B = 'Stretch and Unwind Music: Soft Santoor for Gentle Movement, Deep Breathing & Calm'.",
+  "runtime_note": "90 min (user rule: 90 or 180 only).",
+  "pending": [
+    "USER: generate the music to the music_direction spec",
+    "USER: generate thumbnail(s): MOVE GENTLY TODAY / STRETCH INTO TODAY",
+    "USER: VidIQ score both leads (user locked unscored 2026-11-15)",
+    "Launch Test & compare at publish: title A vs title B (thumbnail per the variants below)",
+    "AI-disclosure toggle",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "End screen: point to Dopamine Reset or Sound Sleep per routing_note (routing pass, wk_2026-11-16)",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read",
+    "Log both Test & compare arms to ab_raw_data.csv at publish"
+  ],
+  "id": "v_2026-11-17_yoga_flow_santoor",
+  "planned_date": "2026-11-17",
+  "planned_slot": "06:30 IST AM · Tue",
+  "hypothesis_id": "h_2026-11-16_t1_morning_yoga_santoor",
+  "lane": "calm_relax",
+  "daypart": "morning",
+  "instrument": "Santoor",
+  "raga": "Deshkar",
+  "title_variants": {
+    "A": "Yoga Flow Music | Santoor | 1.5 Hours",
+    "B": "Stretch and Unwind Music: Soft Santoor for Gentle Movement, Deep Breathing & Calm"
+  },
+  "title_note": "Locked by user 2026-11-15 ('Lock all 6'), VidIQ unscored. Both leads lead_prescreen FRESH 2026-11-15.",
+  "validated_keywords": [
+    "'Yoga Flow Music' - lead_prescreen FRESH 2026-11-15",
+    "'Stretch and Unwind Music' - lead_prescreen FRESH 2026-11-15"
+  ],
+  "thumbnail_text_main": "MOVE GENTLY TODAY",
+  "thumbnail_text_variants": [
+    {
+      "label": "Arm A",
+      "text": "MOVE GENTLY TODAY",
+      "strategy": "Affirmation/permission (user rule: affirmations in thumbnails, not titles). Deduped vs shipped thumb texts."
+    },
+    {
+      "label": "Arm B",
+      "text": "STRETCH INTO TODAY",
+      "strategy": "Same register, different wording. Deduped vs shipped thumb texts."
+    }
+  ],
+  "thumbnail_prompt": "NEW STYLE (won the Oct 12 thumbnail-only test 58.2% vs 41.8%): bright saffron/coral/gold Pichwai-Kangra miniature, ornate blue floral border, text in a cream parchment panel (right ~40%), bold deep-indigo serif. The VIEWER, never a performer. a woman on a yoga mat by an open window at sunrise in a gentle side stretch, eyes soft, wearing earbuds; light linen, a mug of tea on the sill, plants, golden light. A santoor rests on a low table at the frame edge, not played. Second tier: 'Santoor · 1.5 Hours'.",
+  "playlists": [
+    "Meditation",
+    "Peaceful Music"
+  ],
+  "music_direction": "Santoor in Raga Deshkar: bright, open pentatonic morning raga, soft mallet attack with warm resonant sustain, flowing phrases with a gentle forward pulse (movement, not sleep), steady tanpura drone, no percussion, 70-76 BPM. Alpha 10 Hz binaural at -20 dB. Avoid the word 'slow' in the prompt. Sound from 0:00.",
+  "suno_prompt": "Instrumental only, no vocals - gentle Indian classical santoor in Raga Deshkar, soft hammered-dulcimer attack with warm resonant sustain, flowing bright morning phrases with a light forward pulse, steady tanpura drone, no percussion, 72 BPM, alpha 10 Hz binaural at -20 dB, fresh calm yoga morning, seamless loop.",
+  "experiment": "h_2026-11-16_t1_morning_yoga_santoor: see hypotheses.json. Ship read d7 2026-11-17 + 7d.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-11-17 06:30 IST",
+    "opening_rule": "sound present from 0:00, no fade-in",
+    "tuning": "A440"
+  },
+  "slot_note": "AM 06:30 (all ships this week).",
+  "tags": [
+    "yoga flow music",
+    "yoga music",
+    "stretch music",
+    "stretch and unwind",
+    "restorative yoga music",
+    "santoor music",
+    "santoor instrumental",
+    "calm morning music",
+    "gentle yoga",
+    "raga deshkar",
+    "indian instrumental music",
+    "meditation music",
+    "raga focus"
+  ],
+  "description": "Yoga Flow Music | Santoor | 1.5 Hours\n\nRoll out the mat. No rush, no counting - just move with the music.\n\nGentle santoor music for morning yoga and slow stretching: bright, open phrases that keep a soft forward pulse so your body has something to move with, without ever feeling hurried. 1.5 hours of Raga Deshkar over a steady tanpura drone.\n\n▶ Keep going - the full Meditation playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199nvhUBCx5L9ROrDP44H4JzN\n(paste this video's own id in place of VIDEO_ID before publishing - it opens the playlist at this video so the next one plays automatically)\n\nPerfect for morning yoga, gentle stretching, yin or hatha flow, mobility work, slow mornings, journaling with tea.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Santoor and tanpura drone\nRaga: Deshkar\nStyle: Indian classical instrumental, meditative\nMood: Bright, gentle, unhurried\nAtmosphere: A yoga mat in the first sunlight\nDuration: 1 hour 30 minutes\n\n⏱ CHAPTERS\n0:00 Wake the body\n9:00 Neck and shoulders\n18:00 Side stretch\n27:00 Sun salutation\n36:00 Hips opening\n45:00 Balance\n54:00 Long hold\n1:03:00 Forward fold\n1:12:00 Cool down\n1:21:00 Savasana\n\n⏱ BEST FOR\n• Morning yoga\n• Stretching\n• Slow mornings\n• Meditation\n\nNo ads interrupting the music. If this helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#YogaFlow #YogaMusic #SantoorMusic #StretchMusic #CalmMusic",
+  "title": "Yoga Flow Music | Santoor | 1.5 Hours",
+  "thumbnail_style": "new_style",
+  "playlist_placement": "Meditation: position 2-3. Peaceful Music: after 'Yoga Music | Positive Energy Frequency'. NOT in Morning Energy and never next to 'Morning Energy Music | Dilruba Raga Yaman' (user 2026-10-24).",
+  "routing_note": "End screen -> 'Yoga Music | Positive Energy Frequency' (T1, top lane_priority) - high-value routing.",
+  "thumbnail_images": [
+    {
+      "label": "Style reference — Oct 12 winning NEW STYLE thumbnail (58.2% watch-time share)",
+      "path": "data/thumbnails/wk_2026-10-12/mon_variant1_new_style.jpg"
+    }
+  ],
+  "gate_overrides": "Documented 2026-11-15: Santoor x morning; Tue is a hero-instrument day (Sitar/Bansuri rule) - user-approved deviation 2026-11-15 on Santoor's 3-week record (NSR 0.95x/657, Release Stress 1.12x). Soft clone flag vs 'Release Stress | Santoor' (Nov 12) - different lane."
+}

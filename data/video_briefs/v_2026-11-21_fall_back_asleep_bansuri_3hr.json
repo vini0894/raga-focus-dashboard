@@ -1,0 +1,87 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-11-15",
+  "spent": false,
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs same-age cohort; 1.5hr ~20%, 3hr ~17%). tools/weekly_review.py prints the matched-age read.",
+  "ab_design": "Short-A vs long-B on DIFFERENT keywords. A = 'Fall Back Asleep | Soft Bansuri | 3 Hours'; B = 'Restful Night Music 🌙 Soft Bansuri Flute to Quiet the Mind & Rest Until Morning | 3 Hours'.",
+  "runtime_note": "180 min (user rule: 90 or 180 only).",
+  "pending": [
+    "USER: generate the music to the music_direction spec",
+    "USER: generate thumbnail(s): BACK TO SLEEP NOW",
+    "USER: VidIQ score both leads (user locked unscored 2026-11-15)",
+    "Run tools/claim_check.py on the Bansuri clips before render",
+    "Launch Test & compare at publish: title A vs title B (thumbnail per the variants below)",
+    "AI-disclosure toggle",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "End screen: point to Dopamine Reset or Sound Sleep per routing_note (routing pass, wk_2026-11-16)",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read",
+    "Log both Test & compare arms to ab_raw_data.csv at publish"
+  ],
+  "id": "v_2026-11-21_fall_back_asleep_bansuri_3hr",
+  "planned_date": "2026-11-21",
+  "planned_slot": "06:30 IST AM · Sat",
+  "hypothesis_id": "h_2026-11-16_six_ship_volume",
+  "lane": "sleep",
+  "daypart": "night",
+  "instrument": "Bansuri",
+  "raga": "Malkauns",
+  "title_variants": {
+    "A": "Fall Back Asleep | Soft Bansuri | 3 Hours",
+    "B": "Restful Night Music 🌙 Soft Bansuri Flute to Quiet the Mind & Rest Until Morning | 3 Hours"
+  },
+  "title_note": "Locked by user 2026-11-15 ('Lock all 6'), VidIQ unscored. Both leads lead_prescreen FRESH 2026-11-15.",
+  "validated_keywords": [
+    "'Fall Back Asleep' - lead_prescreen FRESH 2026-11-15",
+    "'Restful Night Music' - lead_prescreen FRESH 2026-11-15"
+  ],
+  "thumbnail_text_main": "BACK TO SLEEP NOW",
+  "thumbnail_text_variants": [
+    {
+      "label": "Arm A",
+      "text": "BACK TO SLEEP NOW",
+      "strategy": "Affirmation/permission (user rule: affirmations in thumbnails, not titles). Deduped vs shipped thumb texts."
+    }
+  ],
+  "thumbnail_prompt": "NEW STYLE (won the Oct 12 thumbnail-only test 58.2% vs 41.8%): bright saffron/coral/gold Pichwai-Kangra miniature, ornate blue floral border, text in a cream parchment panel (right ~40%), bold deep-indigo serif. The VIEWER, never a performer. a woman asleep on her side under a warm quilt, face relaxed, moonlight through sheer curtains, a small brass lamp turned low, a sleeping cat at her feet. A bansuri on the bedside table, not played. Deep indigo night palette with gold accents. Second tier: 'Bansuri · 3 Hours'.",
+  "playlists": [
+    "Sleep Music"
+  ],
+  "music_direction": "Bansuri in Raga Malkauns: deep, low-register night flute, very slow phrases with long silences, soft breath tone, steady low tanpura drone, no percussion, 50-54 BPM. Delta 2 Hz binaural at -22 dB. Build the 3hr from <= 3 long unique segments with crossfaded seams. Sound from 0:00, no fade-in.",
+  "suno_prompt": "Instrumental only, no vocals - very soft Indian bansuri flute in Raga Malkauns, deep low-register breathy tone, slow phrases with long silences, steady low tanpura drone, no percussion, 52 BPM, delta 2 Hz binaural at -22 dB, deep night sleep, seamless loop.",
+  "experiment": "h_2026-11-16_six_ship_volume: see hypotheses.json. Ship read d7 2026-11-21 + 7d.",
+  "production_spec": {
+    "duration_minutes": 180,
+    "format": "3hr",
+    "publish": "2026-11-21 06:30 IST",
+    "opening_rule": "sound present from 0:00, no fade-in",
+    "tuning": "A440"
+  },
+  "slot_note": "AM 06:30 (all ships this week).",
+  "tags": [
+    "fall back asleep",
+    "music to fall back asleep",
+    "restful night music",
+    "sleep music",
+    "bansuri sleep music",
+    "soft flute music",
+    "deep sleep",
+    "insomnia relief",
+    "3 hour sleep music",
+    "raga malkauns",
+    "indian flute music",
+    "raga focus"
+  ],
+  "description": "Fall Back Asleep | Soft Bansuri | 3 Hours\n\nWoke up at 3am? Stay still. Let the flute carry you back down.\n\nSoft bansuri flute music to fall back asleep: deep, slow Raga Malkauns phrases with long quiet spaces, for nights when you wake and your mind starts talking. 3 hours, no drums, no sudden sounds.\n\n▶ Keep going - the full Meditation playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199nvhUBCx5L9ROrDP44H4JzN\n(paste this video's own id in place of VIDEO_ID before publishing - it opens the playlist at this video so the next one plays automatically)\n\nPerfect for falling back asleep after waking at night, insomnia, light sleepers, deep sleep, quiet night rest.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Bansuri and tanpura drone\nRaga: Malkauns\nStyle: Indian classical instrumental, meditative\nMood: Deep, soft, still\nAtmosphere: Moonlight, a warm quilt, a low lamp\nDuration: 3 hours\n\n⏱ CHAPTERS\n0:00 Still awake\n18:00 Soft breath\n36:00 Heavy eyelids\n54:00 Drifting\n1:12:00 Sinking\n1:30:00 Deep rest\n1:48:00 Quiet night\n2:06:00 Dreamless\n2:24:00 Long sleep\n2:42:00 Toward morning\n\n⏱ BEST FOR\n• Falling back asleep\n• Insomnia\n• Deep sleep\n• Light sleepers\n\nNo ads interrupting the music. If this helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#SleepMusic #FallBackAsleep #BansuriMusic #DeepSleep #Insomnia",
+  "title": "Fall Back Asleep | Soft Bansuri | 3 Hours",
+  "thumbnail_style": "new_style",
+  "playlist_placement": "Sleep Music: directly after 'Bansuri for Sound Sleep' (hero routing).",
+  "routing_note": "End screen -> 'Bansuri for Sound Sleep' (same instrument, hero routing).",
+  "thumbnail_images": [
+    {
+      "label": "Style reference — Oct 12 winning NEW STYLE thumbnail (58.2% watch-time share)",
+      "path": "data/thumbnails/wk_2026-10-12/mon_variant1_new_style.jpg"
+    }
+  ],
+  "gate_overrides": "Documented 2026-11-15: Bansuri x sleep is FLOP on the 28d table (lifetime caveat - 'Bansuri for Sound Sleep' is the #3 hero; Sleep Therapy Ep.3 0.92x/774). Same thumb both arms (title-only A/B)."
+}
