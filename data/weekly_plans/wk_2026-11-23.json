@@ -1,0 +1,128 @@
+{
+  "week_id": "wk_2026-11-23",
+  "week_start": "2026-11-23",
+  "week_end": "2026-11-29",
+  "created": "2026-11-22",
+  "status": "LOCKED 2026-11-22 (user: 'Lets push it') - six ships Mon-Sat, all 06:30 IST",
+  "notes": "Nov 22 read: engaged/day +9% Mon-Thu Nov 16-19 vs prior week, India-led (+21%; US +4%), Fri back to prior level - possibly post-Diwali seasonal. Era-normalised first-week engaged since Sep: Sitar 1.25x (n=8), Flute & Sitar 1.86x (n=1), Sarangi 1.63x (n=3), Bansuri 0.80x, Tanpura 0.76x, Santoor 0.61x, Veena 0.51x; Tue 0.72x and Sat 0.71x weakest weekdays; title length no effect. Competitor pool (n=115, <=45d): cortisol 4.1x, nervous system 3.4x, anxiety 2.6x, flute & sitar 2.4x, 432 Hz 2.5x vs titles without.",
+  "hypothesis": {
+    "ids": [
+      "h_2026-11-23_cortisol_register_replicas",
+      "h_2026-11-16_six_ship_volume"
+    ],
+    "one_line": "Ships in the competitor-hot register (cortisol / overthinking / Flute & Sitar / 432 Hz) on our stronger instruments (Sitar, Flute & Sitar, Sarangi) beat peers in first-week engaged; Santoor and Veena paused.",
+    "baseline": "First-week engaged vs ships published +-10 days = 1.00x by construction.",
+    "reads": {
+      "mon_d7": "2026-11-30",
+      "tue_d7": "2026-12-01",
+      "wed_d7": "2026-12-02",
+      "thu_d7": "2026-12-03",
+      "fri_d7": "2026-12-04",
+      "sat_d7": "2026-12-05",
+      "week": "2026-12-05"
+    }
+  },
+  "ships": [
+    {
+      "date": "2026-11-23",
+      "type": "replica",
+      "slot": "06:30",
+      "instrument": "Sitar",
+      "lane": "stress",
+      "runtime_min": 90,
+      "title_direction": "A: Cortisol Relief Music | Slow Sitar | 1.5 Hours  /  B: Racing Thoughts Relief: Slow Sitar 432 Hz to Calm Anxiety, Slow Your Breathing & Clear Your Head",
+      "thumb_text": "YOUR MIND CAN REST / BREATHE, IT PASSES",
+      "hypothesis": "h_2026-11-23_cortisol_register_replicas",
+      "suno_prompt_rule": "Instrumental only, no vocals - slow Indian classical sitar in Raga Gurjari Todi, tender sober morning phrases with long meend glides and space to breathe, very light slow tabla, steady tanpura drone, 62 BPM, theta 6 Hz binaural at -20 dB, calming stress relief, seamless loop.",
+      "status": "LOCKED",
+      "brief": "v_2026-11-23_cortisol_relief_sitar_replica"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "replica",
+      "slot": "06:30",
+      "instrument": "Bansuri",
+      "lane": "morning",
+      "runtime_min": 90,
+      "title_direction": "A: Quiet Mind Morning | Bansuri 432 Hz | 1.5 Hours  /  B: Morning Cortisol Reset 🌅 432 Hz Bansuri Therapy for Stress Relief, Calm Mind & Mental Clarity",
+      "thumb_text": "START SOFTLY TODAY / TODAY WILL BE CALM",
+      "hypothesis": "h_2026-11-23_cortisol_register_replicas",
+      "suno_prompt_rule": "Instrumental only, no vocals - soft Indian bansuri flute in Raga Bhairavi, breathy low-register tone, tender devotional sunrise phrases with long held notes, steady tanpura drone, no percussion, 60 BPM, calm stress-relief morning, seamless loop.",
+      "status": "LOCKED",
+      "brief": "v_2026-11-24_quiet_mind_morning_bansuri_432_replica"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "replica",
+      "slot": "06:30",
+      "instrument": "Sitar + Bansuri",
+      "lane": "stress",
+      "runtime_min": 90,
+      "title_direction": "A: Flute and Sitar Music | Stress Relief | 1.5 Hours  /  B: Healing Flute & Sitar 432 Hz for Deep Relaxation, Anxiety Relief & a Calm Mind",
+      "thumb_text": "YOU'RE SAFE HERE / LET IT ALL SOFTEN",
+      "hypothesis": "h_2026-11-23_cortisol_register_replicas",
+      "suno_prompt_rule": "Instrumental only, no vocals - Indian classical sitar leading with soft bansuri flute answering, Raga Desh, warm consoling call-and-response phrases, very light tabla, steady tanpura drone, 66 BPM, alpha 10 Hz binaural at -20 dB, deep relaxation stress relief, seamless loop.",
+      "status": "LOCKED",
+      "brief": "v_2026-11-25_flute_sitar_stress_relief_replica"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "pipeline",
+      "slot": "06:30",
+      "instrument": "Sarangi",
+      "lane": "anxiety",
+      "runtime_min": 90,
+      "title_direction": "A: Calm Your Overthinking | Sarangi | 1.5 Hours  /  B: Busy Mind Relief: Soft Sarangi to Quiet Worry, Slow Your Breathing & Rest",
+      "thumb_text": "THOUGHTS CAN WAIT / QUIET THE LOOP",
+      "hypothesis": "h_2026-11-23_cortisol_register_replicas",
+      "suno_prompt_rule": "Instrumental only, no vocals - soft Indian sarangi in Raga Jogiya, bowed voice-like tone with long sustained consoling phrases, steady tanpura drone, no percussion, 58 BPM, alpha 10 Hz binaural at -20 dB, quiet worry relief, seamless loop.",
+      "status": "LOCKED",
+      "brief": "v_2026-11-26_calm_your_overthinking_sarangi"
+    },
+    {
+      "date": "2026-11-27",
+      "type": "pipeline",
+      "slot": "06:30",
+      "instrument": "Surbahar",
+      "lane": "anxiety",
+      "runtime_min": 90,
+      "title_direction": "A: Night Anxiety Relief | Surbahar | 1.5 Hours  /  B: Let Thoughts Pass 🌙 Slow Surbahar for Evening Calm, Deep Breathing & a Quiet Night",
+      "thumb_text": "YOU'RE SAFE TONIGHT / REST, YOU'RE OKAY",
+      "hypothesis": "h_2026-11-23_cortisol_register_replicas",
+      "suno_prompt_rule": "Instrumental only, no vocals - deep Indian surbahar bass sitar in Raga Darbari Kanada, slow grave alap with long meend glides and resonant low strings, steady low tanpura drone, no percussion, 52 BPM, theta 6 Hz binaural at -20 dB, calm night anxiety relief, seamless loop.",
+      "status": "LOCKED",
+      "brief": "v_2026-11-27_night_anxiety_relief_surbahar"
+    },
+    {
+      "date": "2026-11-28",
+      "type": "pipeline",
+      "slot": "06:30",
+      "instrument": "Bansuri",
+      "lane": "sleep",
+      "runtime_min": 180,
+      "title_direction": "A: Sleep Through Anxiety | Bansuri Flute & Tanpura | 3 Hours  /  B: Calm Night Sleep 🌙 Soft Bansuri Flute to Ease Worry & Rest Deeply Until Morning | 3 Hours",
+      "thumb_text": "SLEEP, YOU'RE SAFE",
+      "hypothesis": "h_2026-11-23_cortisol_register_replicas",
+      "suno_prompt_rule": "Instrumental only, no vocals - very soft Indian bansuri flute in Raga Bageshri, tender low-register breathy tone, slow night phrases with long silences, steady low tanpura drone, no percussion, 52 BPM, delta 2 Hz binaural at -22 dB, deep anxiety-free sleep, seamless loop.",
+      "status": "LOCKED",
+      "brief": "v_2026-11-28_sleep_through_anxiety_bansuri_3hr"
+    }
+  ],
+  "week_level_decisions": {
+    "ship_count": "SIX ships Mon-Sat (continues the 6-ship volume test; read 2026-11-28).",
+    "format": "Five 1.5hr + Sat 3hr sleep.",
+    "slot": "All 06:30 IST.",
+    "bansuri": "Two Bansuri (Tue morning 1.5hr, Sat sleep 3hr).",
+    "hero_days": "Mon Sitar, Tue Bansuri (rule kept although Tue measures weakest, 0.72x).",
+    "competitor_ships": "Mon (HRS Cortisol Detox), Tue (Soulful Breathscape Morning Cortisol Reset), Wed (HRS Sitar & Flute + Trust in Gods) - three, meets the >=2 rule.",
+    "paused": "Santoor (0.61x, n=5) and Veena (0.51x) paused from rotation.",
+    "routing": "Every ship's end screen + playlist slot points to a hero (Dopamine Reset, Sound Sleep, NSH).",
+    "hero_protection": "No 'Morning Energy' words; not placed next to Morning Energy Music; no 'nervous system' (NSH look-alike guard)."
+  },
+  "preflight_pending": [
+    "claim_check on Tue + Sat Bansuri clips",
+    "Pitch Mon/Tue/Wed renders to 432 Hz",
+    "Test & compare screenshots from wk_2026-11-16",
+    "Write overdue ledger reads (~21)"
+  ]
+}

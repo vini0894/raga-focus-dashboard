@@ -1,0 +1,92 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-11-22",
+  "spent": false,
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs same-age cohort; 1.5hr ~20%, 3hr ~17%). Also read first-week engaged vs ships published +-10 days.",
+  "ab_design": "Short-A vs long-B on DIFFERENT keywords. A = 'Night Anxiety Relief | Surbahar | 1.5 Hours'; B = 'Let Thoughts Pass 🌙 Slow Surbahar for Evening Calm, Deep Breathing & a Quiet Night'.",
+  "runtime_note": "90 min (user rule: 90 or 180 only).",
+  "pending": [
+    "USER: generate the music to the music_direction spec",
+    "USER: generate thumbnail(s): YOU'RE SAFE TONIGHT / REST, YOU'RE OKAY",
+    "USER (optional): VidIQ score both leads",
+    "Launch Test & compare at publish: title A vs title B",
+    "AI-disclosure toggle",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "End screen + playlist slot per routing_note",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read",
+    "Log both Test & compare arms to ab_raw_data.csv at publish"
+  ],
+  "id": "v_2026-11-27_night_anxiety_relief_surbahar",
+  "planned_date": "2026-11-27",
+  "planned_slot": "06:30 IST AM · Fri",
+  "hypothesis_id": "h_2026-11-23_cortisol_register_replicas",
+  "lane": "anxiety",
+  "daypart": "evening",
+  "instrument": "Surbahar",
+  "raga": "Darbari Kanada",
+  "title_variants": {
+    "A": "Night Anxiety Relief | Surbahar | 1.5 Hours",
+    "B": "Let Thoughts Pass 🌙 Slow Surbahar for Evening Calm, Deep Breathing & a Quiet Night"
+  },
+  "title_note": "Locked by user 2026-11-22 ('Lets push it'). Leads lead_prescreen-checked 2026-11-22.",
+  "validated_keywords": [
+    "A lead 'Night Anxiety Relief' - prescreened 2026-11-22",
+    "B lead 'Let Thoughts Pass' - prescreened 2026-11-22"
+  ],
+  "thumbnail_text_main": "YOU'RE SAFE TONIGHT",
+  "thumbnail_text_variants": [
+    {
+      "label": "Arm A",
+      "text": "YOU'RE SAFE TONIGHT",
+      "strategy": "Affirmation/permission (affirmations in thumbnails, not titles). Deduped vs shipped thumb texts 2026-11-22."
+    },
+    {
+      "label": "Arm B",
+      "text": "REST, YOU'RE OKAY",
+      "strategy": "Same register, different wording. Deduped."
+    }
+  ],
+  "thumbnail_prompt": "NEW STYLE (won the Oct 12 thumbnail-only test 58.2% vs 41.8%): bright saffron/coral/gold Pichwai-Kangra miniature, ornate blue floral border, text in a cream parchment panel (right ~40%), bold deep-indigo serif. The VIEWER, never a performer. a woman sitting on her bed in the evening wrapped in a blanket, back against pillows, eyes closed, one hand on her heart, calm; a low brass lamp, moonlight through the window, a sleeping cat. A surbahar rests in the corner at the frame edge, not played. Deep indigo palette with gold accents. Second tier: 'Surbahar · 1.5 Hours'.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Sleep Music"
+  ],
+  "music_direction": "Surbahar (bass sitar) in Raga Darbari Kanada: deep, grave night raga, slow alap only, long meend, heavy resonant low strings, steady low tanpura drone, no percussion, 50-55 BPM. Theta 6 Hz binaural at -20 dB. Sound from 0:00.",
+  "suno_prompt": "Instrumental only, no vocals - deep Indian surbahar bass sitar in Raga Darbari Kanada, slow grave alap with long meend glides and resonant low strings, steady low tanpura drone, no percussion, 52 BPM, theta 6 Hz binaural at -20 dB, calm night anxiety relief, seamless loop.",
+  "experiment": "h_2026-11-23_cortisol_register_replicas: see hypotheses.json. Ship d7 read 2026-11-27 + 7d.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-11-27 06:30 IST",
+    "opening_rule": "sound present from 0:00, no fade-in",
+    "tuning": "A440"
+  },
+  "slot_note": "AM 06:30 (all ships this week).",
+  "tags": [
+    "night anxiety relief",
+    "anxiety relief music",
+    "evening calm music",
+    "let thoughts pass",
+    "surbahar music",
+    "slow surbahar",
+    "deep breathing",
+    "calm night",
+    "raga darbari",
+    "indian instrumental music",
+    "sleep music",
+    "raga focus"
+  ],
+  "description": "Night Anxiety Relief | Surbahar | 1.5 Hours\n\nWhen the house goes quiet and the worry gets louder - let the low strings hold you.\n\nSlow surbahar music for night anxiety relief: deep, grave Raga Darbari Kanada with long resonant notes, for evenings when your mind won't switch off and you need to breathe before bed.\n\n▶ Keep going - the full Meditation playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199nvhUBCx5L9ROrDP44H4JzN\n(paste this video's own id in place of VIDEO_ID before publishing - it opens the playlist at this video so the next one plays automatically)\n\nPerfect for night anxiety, evening wind-down, deep breathing, letting go of the day, before sleep.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Surbahar and tanpura drone\nRaga: Darbari Kanada\nStyle: Indian classical instrumental, meditative\nMood: Deep, grave, holding\nAtmosphere: A low lamp, moonlight, a blanket\nDuration: 1 hour 30 minutes\n\n⏱ CHAPTERS\n0:00 The day ends\n9:00 Slow breath\n18:00 Heavy and warm\n27:00 Thoughts passing\n36:00 Deep exhale\n45:00 Quiet night\n54:00 Held\n1:03:00 Calm body\n1:12:00 Drowsy\n1:21:00 Ready to sleep\n\n⏱ BEST FOR\n• Night anxiety\n• Evening calm\n• Deep breathing\n• Before sleep\n\nNo ads interrupting the music. If this helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#NightAnxiety #AnxietyRelief #SurbaharMusic #EveningCalm #DeepBreathing",
+  "title": "Night Anxiety Relief | Surbahar | 1.5 Hours",
+  "thumbnail_style": "new_style",
+  "playlist_placement": "Healing & Anxiety Relief: mid-list. Sleep Music: before Saturday's ship.",
+  "routing_note": "End screen -> 'Bansuri for Sound Sleep' (evening -> sleep hero routing).",
+  "thumbnail_images": [
+    {
+      "label": "Style reference — Oct 12 winning NEW STYLE thumbnail (58.2% watch-time share)",
+      "path": "data/thumbnails/wk_2026-10-12/mon_variant1_new_style.jpg"
+    }
+  ],
+  "gate_overrides": "Documented 2026-11-22: Surbahar ~0.96x peers. Surbahar x anxiety UNTESTED. Fri is a neutral weekday (1.06x). 'nervous system' deliberately not used."
+}

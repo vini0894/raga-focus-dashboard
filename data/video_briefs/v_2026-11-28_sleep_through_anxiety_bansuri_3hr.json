@@ -1,0 +1,86 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-11-22",
+  "spent": false,
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs same-age cohort; 1.5hr ~20%, 3hr ~17%). Also read first-week engaged vs ships published +-10 days.",
+  "ab_design": "Short-A vs long-B on DIFFERENT keywords. A = 'Sleep Through Anxiety | Bansuri Flute & Tanpura | 3 Hours'; B = 'Calm Night Sleep 🌙 Soft Bansuri Flute to Ease Worry & Rest Deeply Until Morning | 3 Hours'.",
+  "runtime_note": "180 min (user rule: 90 or 180 only).",
+  "pending": [
+    "USER: generate the music to the music_direction spec",
+    "USER: generate thumbnail(s): SLEEP, YOU'RE SAFE",
+    "USER (optional): VidIQ score both leads",
+    "Run tools/claim_check.py on the Bansuri clips before render",
+    "Launch Test & compare at publish: title A vs title B",
+    "AI-disclosure toggle",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "End screen + playlist slot per routing_note",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read",
+    "Log both Test & compare arms to ab_raw_data.csv at publish"
+  ],
+  "id": "v_2026-11-28_sleep_through_anxiety_bansuri_3hr",
+  "planned_date": "2026-11-28",
+  "planned_slot": "06:30 IST AM · Sat",
+  "hypothesis_id": "h_2026-11-23_cortisol_register_replicas",
+  "lane": "sleep",
+  "daypart": "night",
+  "instrument": "Bansuri",
+  "raga": "Bageshri",
+  "title_variants": {
+    "A": "Sleep Through Anxiety | Bansuri Flute & Tanpura | 3 Hours",
+    "B": "Calm Night Sleep 🌙 Soft Bansuri Flute to Ease Worry & Rest Deeply Until Morning | 3 Hours"
+  },
+  "title_note": "Locked by user 2026-11-22 ('Lets push it'). Leads lead_prescreen-checked 2026-11-22.",
+  "validated_keywords": [
+    "A lead 'Sleep Through Anxiety' - prescreened 2026-11-22",
+    "B lead 'Calm Night Sleep' - prescreened 2026-11-22"
+  ],
+  "thumbnail_text_main": "SLEEP, YOU'RE SAFE",
+  "thumbnail_text_variants": [
+    {
+      "label": "Arm A",
+      "text": "SLEEP, YOU'RE SAFE",
+      "strategy": "Affirmation/permission (affirmations in thumbnails, not titles). Deduped vs shipped thumb texts 2026-11-22."
+    }
+  ],
+  "thumbnail_prompt": "NEW STYLE (won the Oct 12 thumbnail-only test 58.2% vs 41.8%): bright saffron/coral/gold Pichwai-Kangra miniature, ornate blue floral border, text in a cream parchment panel (right ~40%), bold deep-indigo serif. The VIEWER, never a performer. a woman asleep on her side under a heavy quilt, face completely relaxed, moonlight through sheer curtains, a small brass lamp turned very low, a sleeping cat curled at her feet. A bansuri on the bedside table, not played. Deep indigo night palette with gold accents. Second tier: 'Bansuri · 3 Hours'.",
+  "playlists": [
+    "Sleep Music"
+  ],
+  "music_direction": "Bansuri in Raga Bageshri: soft, tender night raga, low-register breathy flute, very slow phrases with long silences, steady low tanpura drone, no percussion, 50-54 BPM. Delta 2 Hz binaural at -22 dB. Build the 3hr from <= 3 long unique segments with crossfaded seams. Sound from 0:00, no fade-in.",
+  "suno_prompt": "Instrumental only, no vocals - very soft Indian bansuri flute in Raga Bageshri, tender low-register breathy tone, slow night phrases with long silences, steady low tanpura drone, no percussion, 52 BPM, delta 2 Hz binaural at -22 dB, deep anxiety-free sleep, seamless loop.",
+  "experiment": "h_2026-11-23_cortisol_register_replicas: see hypotheses.json. Ship d7 read 2026-11-28 + 7d.",
+  "production_spec": {
+    "duration_minutes": 180,
+    "format": "3hr",
+    "publish": "2026-11-28 06:30 IST",
+    "opening_rule": "sound present from 0:00, no fade-in",
+    "tuning": "A440"
+  },
+  "slot_note": "AM 06:30 (all ships this week).",
+  "tags": [
+    "sleep through anxiety",
+    "sleep music for anxiety",
+    "calm night sleep",
+    "bansuri sleep music",
+    "soft flute music",
+    "deep sleep",
+    "insomnia relief",
+    "3 hour sleep music",
+    "raga bageshri",
+    "indian flute music",
+    "raga focus"
+  ],
+  "description": "Sleep Through Anxiety | Bansuri Flute & Tanpura | 3 Hours\n\nAnxious at bedtime? You don't have to fight it. Just listen, and let sleep come.\n\nSoft bansuri flute music to sleep through anxiety: tender Raga Bageshri, low and slow, with long quiet spaces - 3 hours with no drums and no sudden sounds, so a worried mind can finally rest.\n\n▶ Keep going - the full Meditation playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199nvhUBCx5L9ROrDP44H4JzN\n(paste this video's own id in place of VIDEO_ID before publishing - it opens the playlist at this video so the next one plays automatically)\n\nPerfect for sleeping with anxiety, insomnia, light sleepers, deep sleep, falling back asleep.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Bansuri and tanpura drone\nRaga: Bageshri\nStyle: Indian classical instrumental, meditative\nMood: Tender, soft, still\nAtmosphere: Moonlight, a heavy quilt\nDuration: 3 hours\n\n⏱ CHAPTERS\n0:00 Lying down\n18:00 Slow breath\n36:00 Worry softening\n54:00 Heavy eyelids\n1:12:00 Drifting\n1:30:00 Deep rest\n1:48:00 Quiet night\n2:06:00 Dreamless\n2:24:00 Long sleep\n2:42:00 Toward morning\n\n⏱ BEST FOR\n• Sleep with anxiety\n• Insomnia\n• Deep sleep\n• Light sleepers\n\nNo ads interrupting the music. If this helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#SleepMusic #AnxietyRelief #BansuriMusic #DeepSleep #Insomnia",
+  "title": "Sleep Through Anxiety | Bansuri Flute & Tanpura | 3 Hours",
+  "thumbnail_style": "new_style",
+  "playlist_placement": "Sleep Music: directly after 'Bansuri for Sound Sleep'.",
+  "routing_note": "End screen -> 'Bansuri for Sound Sleep' (same instrument, hero routing).",
+  "thumbnail_images": [
+    {
+      "label": "Style reference — Oct 12 winning NEW STYLE thumbnail (58.2% watch-time share)",
+      "path": "data/thumbnails/wk_2026-10-12/mon_variant1_new_style.jpg"
+    }
+  ],
+  "gate_overrides": "Documented 2026-11-22: Second Bansuri of the week (standing rule). Bansuri x sleep x 3hr 28d FLOP (lifetime caveat - 'Bansuri for Sound Sleep' is the #3 hero). Same thumb both arms (title-only A/B). Weekly Sat Bansuri 3hr sleep slot means a structural clone vs last Sat is inherent - title skeleton varied (Bansuri Flute & Tanpura) to keep the channel page diverse."
+}

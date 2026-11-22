@@ -1,0 +1,93 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-11-22",
+  "spent": false,
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs same-age cohort; 1.5hr ~20%, 3hr ~17%). Also read first-week engaged vs ships published +-10 days.",
+  "ab_design": "Short-A vs long-B on DIFFERENT keywords. A = 'Quiet Mind Morning | Bansuri 432 Hz | 1.5 Hours'; B = 'Morning Cortisol Reset 🌅 432 Hz Bansuri Therapy for Stress Relief, Calm Mind & Mental Clarity'.",
+  "runtime_note": "90 min (user rule: 90 or 180 only).",
+  "pending": [
+    "USER: generate the music to the music_direction spec and pitch the render to 432 Hz",
+    "USER: generate thumbnail(s): START SOFTLY TODAY / TODAY WILL BE CALM",
+    "USER (optional): VidIQ score both leads",
+    "Run tools/claim_check.py on the Bansuri clips before render",
+    "Launch Test & compare at publish: title A vs title B",
+    "AI-disclosure toggle",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "End screen + playlist slot per routing_note",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read",
+    "Log both Test & compare arms to ab_raw_data.csv at publish"
+  ],
+  "id": "v_2026-11-24_quiet_mind_morning_bansuri_432_replica",
+  "planned_date": "2026-11-24",
+  "planned_slot": "06:30 IST AM · Tue",
+  "hypothesis_id": "h_2026-11-23_cortisol_register_replicas",
+  "lane": "morning",
+  "daypart": "morning",
+  "instrument": "Bansuri",
+  "raga": "Bhairavi",
+  "title_variants": {
+    "A": "Quiet Mind Morning | Bansuri 432 Hz | 1.5 Hours",
+    "B": "Morning Cortisol Reset 🌅 432 Hz Bansuri Therapy for Stress Relief, Calm Mind & Mental Clarity"
+  },
+  "title_note": "Locked by user 2026-11-22 ('Lets push it'). Leads lead_prescreen-checked 2026-11-22. Competitor replica: Soulful Breathscape 'Morning Cortisol Reset 🌅 432Hz Krishna Bansuri Therapy for Stress Relief, Calm Mind & Mental Clarity' (+24K views/day Nov 15-22) and its sibling (8.9K/day)",
+  "validated_keywords": [
+    "A lead 'Quiet Mind Morning' - prescreened 2026-11-22",
+    "B lead 'Morning Cortisol Reset' - prescreened 2026-11-22"
+  ],
+  "thumbnail_text_main": "START SOFTLY TODAY",
+  "thumbnail_text_variants": [
+    {
+      "label": "Arm A",
+      "text": "START SOFTLY TODAY",
+      "strategy": "Affirmation/permission (affirmations in thumbnails, not titles). Deduped vs shipped thumb texts 2026-11-22."
+    },
+    {
+      "label": "Arm B",
+      "text": "TODAY WILL BE CALM",
+      "strategy": "Same register, different wording. Deduped."
+    }
+  ],
+  "thumbnail_prompt": "NEW STYLE (won the Oct 12 thumbnail-only test 58.2% vs 41.8%): bright saffron/coral/gold Pichwai-Kangra miniature, ornate blue floral border, text in a cream parchment panel (right ~40%), bold deep-indigo serif. The VIEWER, never a performer. a woman wrapped in a shawl on a balcony at sunrise, warm cup in both hands, eyes half-closed, peaceful smile, golden mist over a river and temple spires below; marigolds, brass lamp. A bansuri lies on the ledge at the frame edge, not played. Second tier: 'Bansuri · 1.5 Hours'.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Meditation"
+  ],
+  "music_direction": "Bansuri in Raga Bhairavi: soft breathy low-register flute, tender devotional morning phrases, long held notes, gentle ornaments, steady tanpura drone, no percussion, ~60 BPM. Render pitched to 432 Hz (both titles promise it). Sound from 0:00.",
+  "suno_prompt": "Instrumental only, no vocals - soft Indian bansuri flute in Raga Bhairavi, breathy low-register tone, tender devotional sunrise phrases with long held notes, steady tanpura drone, no percussion, 60 BPM, calm stress-relief morning, seamless loop.",
+  "experiment": "h_2026-11-23_cortisol_register_replicas: see hypotheses.json. Ship d7 read 2026-11-24 + 7d. COMPETITOR REPLICA of Soulful Breathscape 'Morning Cortisol Reset 🌅 432Hz Krishna Bansuri Therapy for Stress Relief, Calm Mind & Mental Clarity' (+24K views/day Nov 15-22) and its sibling (8.9K/day).",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-11-24 06:30 IST",
+    "opening_rule": "sound present from 0:00, no fade-in",
+    "tuning": "432 Hz (pitch the render)"
+  },
+  "slot_note": "AM 06:30 (all ships this week).",
+  "tags": [
+    "morning cortisol reset",
+    "cortisol reset",
+    "quiet mind morning",
+    "bansuri 432 hz",
+    "432 hz music",
+    "krishna flute",
+    "bansuri therapy",
+    "morning meditation",
+    "stress relief music",
+    "raag bhairavi",
+    "indian flute music",
+    "raga focus"
+  ],
+  "description": "Quiet Mind Morning | Bansuri 432 Hz | 1.5 Hours\n\nBefore the phone, before the noise - give your mind a quiet first hour.\n\nSoft bansuri music for a quiet-mind morning and a gentle cortisol reset: tender Raag Bhairavi tuned to 432 Hz, for waking up calm instead of already stressed.\n\n▶ Keep going - the full Meditation playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199nvhUBCx5L9ROrDP44H4JzN\n(paste this video's own id in place of VIDEO_ID before publishing - it opens the playlist at this video so the next one plays automatically)\n\nPerfect for morning cortisol reset, stress relief, calm mornings, meditation, tea, journaling, a slow start before work.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Bansuri and tanpura drone\nRaga: Bhairavi\nStyle: Indian classical instrumental, meditative\nMood: Tender, devotional, soft\nAtmosphere: A sunrise balcony, a warm cup\nDuration: 1 hour 30 minutes\n\n⏱ CHAPTERS\n0:00 Wake gently\n9:00 First breath\n18:00 Soft light\n27:00 Mind quieting\n36:00 Cortisol easing\n45:00 Calm body\n54:00 Inner peace\n1:03:00 Clear and steady\n1:12:00 Ready, softly\n1:21:00 Carry the calm\n\n⏱ BEST FOR\n• Morning cortisol reset\n• Stress relief\n• Quiet mind\n• Meditation\n\nNo ads interrupting the music. If this helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#MorningCortisolReset #432Hz #BansuriMusic #StressRelief #QuietMind",
+  "title": "Quiet Mind Morning | Bansuri 432 Hz | 1.5 Hours",
+  "thumbnail_style": "new_style",
+  "playlist_placement": "Healing & Anxiety Relief: directly after 'Sitar for Nervous System Healing'. Meditation: mid-list. Never next to 'Morning Energy Music'.",
+  "routing_note": "End screen -> 'Bansuri for Sound Sleep' (same instrument, hero routing).",
+  "thumbnail_images": [
+    {
+      "label": "Style reference — Oct 12 winning NEW STYLE thumbnail (58.2% watch-time share)",
+      "path": "data/thumbnails/wk_2026-10-12/mon_variant1_new_style.jpg"
+    }
+  ],
+  "gate_overrides": "Documented 2026-11-22: B title deliberately REPEATS our past-lock 'Morning Cortisol Reset' (Sep 29 series, 54d) to match the hottest competitor title. Packaging clone vs Nov 18 'Slow Living Music | Bansuri' (6d, same instrument + morning) - user-approved in the Nov 22 plan; incumbent is last week's best (0.99x). Bansuri x morning 28d FLOP (lifetime caveat). Tue is the weakest weekday (0.72x) - kept on Tue per the hero-instrument rule. B contains 'morning cortisol' (Nov 10 Tanpura ship, 12d) - deliberate, matches the competitor title family."
+}

@@ -1,0 +1,92 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-11-22",
+  "spent": false,
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs same-age cohort; 1.5hr ~20%, 3hr ~17%). Also read first-week engaged vs ships published +-10 days.",
+  "ab_design": "Short-A vs long-B on DIFFERENT keywords. A = 'Cortisol Relief Music | Slow Sitar | 1.5 Hours'; B = 'Racing Thoughts Relief: Slow Sitar 432 Hz to Calm Anxiety, Slow Your Breathing & Clear Your Head'.",
+  "runtime_note": "90 min (user rule: 90 or 180 only).",
+  "pending": [
+    "USER: generate the music to the music_direction spec and pitch the render to 432 Hz",
+    "USER: generate thumbnail(s): YOUR MIND CAN REST / BREATHE, IT PASSES",
+    "USER (optional): VidIQ score both leads",
+    "Launch Test & compare at publish: title A vs title B",
+    "AI-disclosure toggle",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "End screen + playlist slot per routing_note",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read",
+    "Log both Test & compare arms to ab_raw_data.csv at publish"
+  ],
+  "id": "v_2026-11-23_cortisol_relief_sitar_replica",
+  "planned_date": "2026-11-23",
+  "planned_slot": "06:30 IST AM · Mon",
+  "hypothesis_id": "h_2026-11-23_cortisol_register_replicas",
+  "lane": "stress",
+  "daypart": "morning",
+  "instrument": "Sitar",
+  "raga": "Gurjari Todi",
+  "title_variants": {
+    "A": "Cortisol Relief Music | Slow Sitar | 1.5 Hours",
+    "B": "Racing Thoughts Relief: Slow Sitar 432 Hz to Calm Anxiety, Slow Your Breathing & Clear Your Head"
+  },
+  "title_note": "Locked by user 2026-11-22 ('Lets push it'). Leads lead_prescreen-checked 2026-11-22. Competitor replica: Healing Raga Studio 'Cortisol Detox: 432Hz Krishna Bansuri Therapy to Stop Overthinking, Negative Thoughts & Calm Anxiety' (2.5K views/day at d5, Nov 22 snapshot)",
+  "validated_keywords": [
+    "A lead 'Cortisol Relief Music' - prescreened 2026-11-22",
+    "B lead 'Racing Thoughts Relief' - prescreened 2026-11-22"
+  ],
+  "thumbnail_text_main": "YOUR MIND CAN REST",
+  "thumbnail_text_variants": [
+    {
+      "label": "Arm A",
+      "text": "YOUR MIND CAN REST",
+      "strategy": "Affirmation/permission (affirmations in thumbnails, not titles). Deduped vs shipped thumb texts 2026-11-22."
+    },
+    {
+      "label": "Arm B",
+      "text": "BREATHE, IT PASSES",
+      "strategy": "Same register, different wording. Deduped."
+    }
+  ],
+  "thumbnail_prompt": "NEW STYLE (won the Oct 12 thumbnail-only test 58.2% vs 41.8%): bright saffron/coral/gold Pichwai-Kangra miniature, ornate blue floral border, text in a cream parchment panel (right ~40%), bold deep-indigo serif. The VIEWER, never a performer. a woman sitting on a low cushion by an open window at dawn, eyes closed, one hand on her chest, shoulders dropping on a long exhale; brass diya, tulsi pot, soft mist over hills. A sitar leans against the wall at the frame edge, not played. Second tier: 'Sitar · 1.5 Hours'.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Meditation"
+  ],
+  "music_direction": "Sitar in Raga Gurjari Todi: tender, sober morning raga, slow alap with long meend glides and space between phrases, very light slow tabla after the alap, steady tanpura drone, 60-64 BPM. Theta 6 Hz binaural at -20 dB. Render pitched to 432 Hz (B title promises it). Sound from 0:00, no fade-in.",
+  "suno_prompt": "Instrumental only, no vocals - slow Indian classical sitar in Raga Gurjari Todi, tender sober morning phrases with long meend glides and space to breathe, very light slow tabla, steady tanpura drone, 62 BPM, theta 6 Hz binaural at -20 dB, calming stress relief, seamless loop.",
+  "experiment": "h_2026-11-23_cortisol_register_replicas: see hypotheses.json. Ship d7 read 2026-11-23 + 7d. COMPETITOR REPLICA of Healing Raga Studio 'Cortisol Detox: 432Hz Krishna Bansuri Therapy to Stop Overthinking, Negative Thoughts & Calm Anxiety' (2.5K views/day at d5, Nov 22 snapshot).",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-11-23 06:30 IST",
+    "opening_rule": "sound present from 0:00, no fade-in",
+    "tuning": "432 Hz (pitch the render)"
+  },
+  "slot_note": "AM 06:30 (all ships this week).",
+  "tags": [
+    "cortisol relief music",
+    "cortisol relief",
+    "lower cortisol",
+    "racing thoughts relief",
+    "stress relief music",
+    "anxiety relief music",
+    "slow sitar",
+    "sitar music",
+    "432 hz music",
+    "raga todi",
+    "indian instrumental music",
+    "raga focus"
+  ],
+  "description": "Cortisol Relief Music | Slow Sitar | 1.5 Hours\n\nYour body has been on alert for too long. Let it come down, one slow phrase at a time.\n\nSlow sitar music for cortisol relief: unhurried Raga Gurjari Todi with long, gliding phrases and plenty of silence, so racing thoughts can slow down and a stressed body can settle. Tuned to 432 Hz.\n\n▶ Keep going - the full Meditation playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199nvhUBCx5L9ROrDP44H4JzN\n(paste this video's own id in place of VIDEO_ID before publishing - it opens the playlist at this video so the next one plays automatically)\n\nPerfect for stress relief, lowering cortisol after a tense morning, racing thoughts, anxiety, breathwork, a calm start before work.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sitar and tanpura drone\nRaga: Gurjari Todi\nStyle: Indian classical instrumental, meditative\nMood: Sober, tender, settling\nAtmosphere: A dawn window, one long exhale\nDuration: 1 hour 30 minutes\n\n⏱ CHAPTERS\n0:00 Arrive\n9:00 Slow the breath\n18:00 Shoulders down\n27:00 Thoughts slowing\n36:00 Long exhale\n45:00 Settling\n54:00 Quiet body\n1:03:00 Clear head\n1:12:00 Steady\n1:21:00 Carry the calm\n\n⏱ BEST FOR\n• Cortisol relief\n• Stress relief\n• Racing thoughts\n• Anxiety\n\nNo ads interrupting the music. If this helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#CortisolRelief #StressRelief #SitarMusic #432Hz #AnxietyRelief",
+  "title": "Cortisol Relief Music | Slow Sitar | 1.5 Hours",
+  "thumbnail_style": "new_style",
+  "playlist_placement": "Healing & Anxiety Relief: directly after 'Sitar for Dopamine Reset'. Meditation: mid-list.",
+  "routing_note": "End screen -> 'Sitar for Dopamine Reset' (same instrument, hero routing).",
+  "thumbnail_images": [
+    {
+      "label": "Style reference — Oct 12 winning NEW STYLE thumbnail (58.2% watch-time share)",
+      "path": "data/thumbnails/wk_2026-10-12/mon_variant1_new_style.jpg"
+    }
+  ],
+  "gate_overrides": "Documented 2026-11-22: Sitar is the strongest first-week instrument since Sep (1.25x peers, n=8). Lane 'stress' for Sitar is a 28d FLOP n=3 (lifetime caveat; 'Calm Music | Sitar for Cortisol Reset' is a top-value catalogue video). Soft clone flag vs 'Journaling Music | Sitar' (Nov 19) possible - different lane."
+}

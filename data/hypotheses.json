@@ -1,7 +1,7 @@
 {
  "purpose": "Standing ledger of strategic bets — the compounding-strategy layer on top of the mechanical gates (cooldown/track_record/clone/lead_prescreen). A finding discovered once (competitor research, a track_record pattern, an A/B result) gets banked here as a tracked hypothesis instead of being re-derived every time it's asked about. recommend_slot.py reads this to tag candidates with the bet they'd be testing.",
  "lifecycle": "PROPOSED (stated, not yet tested) -> TESTING (a ship is live against it) -> CONFIRMED or KILLED (enough evidence to close it) -> promoted_rule (folded into a permanent playbook rule, e.g. anti_patterns.json / lane_packaging_directions.json)",
- "last_updated": "2026-11-15",
+ "last_updated": "2026-11-22",
  "hypotheses": [
   {
    "id": "h_2026-08-07_playlist_routing",
@@ -461,7 +461,12 @@
     "2026-11-09 · 1.5 Hours Deep Sleep Music | Bansuri to Sleep Better Tonight [nxuxpsBgGBk]",
     "2026-11-10 · Morning Cortisol Detox | Calming Tanpura Instrumental Music | 1.5 Hours [-q5yvYxZRUQ]",
     "2026-11-12 · Release Stress | Santoor Instrumental Music | 1.5 Hours [IF_DkL-0SAk]",
-    "2026-11-13 · Gentle Healing with Surbahar | Indian Classical Music | 1.5 Hours [e7FgHZlOnAU]"
+    "2026-11-13 · Gentle Healing with Surbahar | Indian Classical Music | 1.5 Hours [e7FgHZlOnAU]",
+    "2026-11-16 · Anxiety Release Music | Slow Sitar | 1.5 Hours [unf4VC-vYHY]",
+    "2026-11-17 · Yoga Flow Music | Santoor | 1.5 Hours [8j4PTWlkR2g]",
+    "2026-11-18 · Slow Living Music | Bansuri | 1.5 Hours [VmO9btB1sag]",
+    "2026-11-19 · Journaling Music | Sitar Instrumental | 1.5 Hours [8jlclnhMJp8]",
+    "2026-11-20 · Emotional Regulation Music | Veena | 1.5 Hours [2nEsrXB8_kE]"
    ],
    "week": "wk_2026-08-03",
    "reads": [],
@@ -739,7 +744,12 @@
     "2026-11-09 · 1.5 Hours Deep Sleep Music | Bansuri to Sleep Better Tonight [nxuxpsBgGBk]",
     "2026-11-10 · Morning Cortisol Detox | Calming Tanpura Instrumental Music | 1.5 Hours [-q5yvYxZRUQ]",
     "2026-11-12 · Release Stress | Santoor Instrumental Music | 1.5 Hours [IF_DkL-0SAk]",
-    "2026-11-13 · Gentle Healing with Surbahar | Indian Classical Music | 1.5 Hours [e7FgHZlOnAU]"
+    "2026-11-13 · Gentle Healing with Surbahar | Indian Classical Music | 1.5 Hours [e7FgHZlOnAU]",
+    "2026-11-16 · Anxiety Release Music | Slow Sitar | 1.5 Hours [unf4VC-vYHY]",
+    "2026-11-17 · Yoga Flow Music | Santoor | 1.5 Hours [8j4PTWlkR2g]",
+    "2026-11-18 · Slow Living Music | Bansuri | 1.5 Hours [VmO9btB1sag]",
+    "2026-11-19 · Journaling Music | Sitar Instrumental | 1.5 Hours [8jlclnhMJp8]",
+    "2026-11-20 · Emotional Regulation Music | Veena | 1.5 Hours [2nEsrXB8_kE]"
    ],
    "promoted_rule": null,
    "caveats": "DEFERRED by choice. Re-open only as a clean 1-variable A/B.",
@@ -1030,7 +1040,12 @@
     "2026-11-09 · 1.5 Hours Deep Sleep Music | Bansuri to Sleep Better Tonight [nxuxpsBgGBk]",
     "2026-11-10 · Morning Cortisol Detox | Calming Tanpura Instrumental Music | 1.5 Hours [-q5yvYxZRUQ]",
     "2026-11-12 · Release Stress | Santoor Instrumental Music | 1.5 Hours [IF_DkL-0SAk]",
-    "2026-11-13 · Gentle Healing with Surbahar | Indian Classical Music | 1.5 Hours [e7FgHZlOnAU]"
+    "2026-11-13 · Gentle Healing with Surbahar | Indian Classical Music | 1.5 Hours [e7FgHZlOnAU]",
+    "2026-11-16 · Anxiety Release Music | Slow Sitar | 1.5 Hours [unf4VC-vYHY]",
+    "2026-11-17 · Yoga Flow Music | Santoor | 1.5 Hours [8j4PTWlkR2g]",
+    "2026-11-18 · Slow Living Music | Bansuri | 1.5 Hours [VmO9btB1sag]",
+    "2026-11-19 · Journaling Music | Sitar Instrumental | 1.5 Hours [8jlclnhMJp8]",
+    "2026-11-20 · Emotional Regulation Music | Veena | 1.5 Hours [2nEsrXB8_kE]"
    ]
   },
   {
@@ -1135,7 +1150,8 @@
     "2026-11-05 · Overnight Nervous System Healing | Deep Bansuri and Binaural Drone | 1.5Hours [t2JMIuMDszw]",
     "2026-11-06 · Dopamine Reset | Sitar Instrumental Music | 1.5 Hours [ycZti5gtWDk]",
     "2026-11-09 · 1.5 Hours Deep Sleep Music | Bansuri to Sleep Better Tonight [nxuxpsBgGBk]",
-    "2026-11-10 · Morning Cortisol Detox | Calming Tanpura Instrumental Music | 1.5 Hours [-q5yvYxZRUQ]"
+    "2026-11-10 · Morning Cortisol Detox | Calming Tanpura Instrumental Music | 1.5 Hours [-q5yvYxZRUQ]",
+    "2026-11-16 · Anxiety Release Music | Slow Sitar | 1.5 Hours [unf4VC-vYHY]"
    ],
    "read_schedule": {
     "d7": "2026-09-14",
@@ -1246,7 +1262,12 @@
     "2026-11-09 · 1.5 Hours Deep Sleep Music | Bansuri to Sleep Better Tonight [nxuxpsBgGBk]",
     "2026-11-10 · Morning Cortisol Detox | Calming Tanpura Instrumental Music | 1.5 Hours [-q5yvYxZRUQ]",
     "2026-11-12 · Release Stress | Santoor Instrumental Music | 1.5 Hours [IF_DkL-0SAk]",
-    "2026-11-13 · Gentle Healing with Surbahar | Indian Classical Music | 1.5 Hours [e7FgHZlOnAU]"
+    "2026-11-13 · Gentle Healing with Surbahar | Indian Classical Music | 1.5 Hours [e7FgHZlOnAU]",
+    "2026-11-16 · Anxiety Release Music | Slow Sitar | 1.5 Hours [unf4VC-vYHY]",
+    "2026-11-17 · Yoga Flow Music | Santoor | 1.5 Hours [8j4PTWlkR2g]",
+    "2026-11-18 · Slow Living Music | Bansuri | 1.5 Hours [VmO9btB1sag]",
+    "2026-11-19 · Journaling Music | Sitar Instrumental | 1.5 Hours [8jlclnhMJp8]",
+    "2026-11-20 · Emotional Regulation Music | Veena | 1.5 Hours [2nEsrXB8_kE]"
    ],
    "read_on": "2026-09-11 (d7) — and again on the Fri 2026-09-11 Santoor 3hr, which is specced against this finding.",
    "reads": [
@@ -1318,7 +1339,10 @@
     "2026-10-29 · Calm Your Anxiety | Flute & Sitar | 1.5 Hours [VglaPZlvw1w]",
     "2026-11-05 · Overnight Nervous System Healing | Deep Bansuri and Binaural Drone | 1.5Hours [t2JMIuMDszw]",
     "2026-11-06 · Dopamine Reset | Sitar Instrumental Music | 1.5 Hours [ycZti5gtWDk]",
-    "2026-11-09 · 1.5 Hours Deep Sleep Music | Bansuri to Sleep Better Tonight [nxuxpsBgGBk]"
+    "2026-11-09 · 1.5 Hours Deep Sleep Music | Bansuri to Sleep Better Tonight [nxuxpsBgGBk]",
+    "2026-11-16 · Anxiety Release Music | Slow Sitar | 1.5 Hours [unf4VC-vYHY]",
+    "2026-11-18 · Slow Living Music | Bansuri | 1.5 Hours [VmO9btB1sag]",
+    "2026-11-19 · Journaling Music | Sitar Instrumental | 1.5 Hours [8jlclnhMJp8]"
    ],
    "promoted_rule": null,
    "caveats": "Day and instrument vary together - the test reads the COMBINED best-shot, not the two effects separately. n=2 treatment ships. Requires the export to carry 'Average percentage viewed (%)'. Secondary tally across all six ships: short-pipeline arm vs long-pattern arm wins, from Studio Test & compare.",
@@ -1756,7 +1780,8 @@
     "v_2026-10-30_clear_negative_thoughts_surbahar",
     "2026-10-27 · Music for Nervous System Regulation | 1.5 Hours [NgWLY_R0a7k]",
     "2026-10-29 · Calm Your Anxiety | Flute & Sitar | 1.5 Hours [VglaPZlvw1w]",
-    "2026-11-05 · Overnight Nervous System Healing | Deep Bansuri and Binaural Drone | 1.5Hours [t2JMIuMDszw]"
+    "2026-11-05 · Overnight Nervous System Healing | Deep Bansuri and Binaural Drone | 1.5Hours [t2JMIuMDszw]",
+    "2026-11-16 · Anxiety Release Music | Slow Sitar | 1.5 Hours [unf4VC-vYHY]"
    ],
    "promoted_rule": null,
    "caveats": "Lane-confounded like the AM/PM read (the rest/therapy flops were also PM and on Tanpura/Sarangi). Three of four ships are competitor replicas, so a pass is register + template together. Browse watch-time is growing while Search/Suggested fall - channel-level distribution still dominates any per-ship effect.",
@@ -1811,7 +1836,8 @@
    "linked_ships": [
     "v_2026-10-29_flute_sitar_anxiety_replica",
     "2026-10-29 · Calm Your Anxiety | Flute & Sitar | 1.5 Hours [VglaPZlvw1w]",
-    "2026-11-05 · Overnight Nervous System Healing | Deep Bansuri and Binaural Drone | 1.5Hours [t2JMIuMDszw]"
+    "2026-11-05 · Overnight Nervous System Healing | Deep Bansuri and Binaural Drone | 1.5Hours [t2JMIuMDszw]",
+    "2026-11-16 · Anxiety Release Music | Slow Sitar | 1.5 Hours [unf4VC-vYHY]"
    ],
    "promoted_rule": null,
    "caveats": "n=1. Competitor original is 30 min and sits on a returning audience; ours is 90 min. Inner Peace (same pairing, Oct 14) met its own falsifier at 0.70x / 493 engaged while still being the fortnight's best fresh ship - the bar here is the same 1.5x/460.",
@@ -1874,7 +1900,8 @@
     "v_2026-11-18_slow_living_bansuri_432",
     "v_2026-11-19_journaling_sitar",
     "v_2026-11-20_emotional_regulation_veena",
-    "v_2026-11-21_fall_back_asleep_bansuri_3hr"
+    "v_2026-11-21_fall_back_asleep_bansuri_3hr",
+    "2026-11-16 · Anxiety Release Music | Slow Sitar | 1.5 Hours [unf4VC-vYHY]"
    ],
    "promoted_rule": null,
    "caveats": "n=1 week. Overlaps h_2026-09-07_volume_restores_escalation (unread). Mixed lanes so per-ship reads are confounded.",
@@ -1909,6 +1936,42 @@
     "t1_d14": "2026-12-01"
    },
    "read_rule": "Analytics API per-video country share (filters=video==ID) at d14; weekly_review for reach."
+  },
+  {
+   "id": "h_2026-11-23_cortisol_register_replicas",
+   "created": "2026-11-22",
+   "status": "TESTING",
+   "week": "wk_2026-11-23",
+   "source": "chat_2026-11-22 - era-normalised first-week read (Sep 1+ ships, n=42) + competitor title-family read (n=115 uploads <=45d)",
+   "statement": "Ships in the competitor-hot register (cortisol, overthinking, Flute & Sitar, 432 Hz) on our stronger first-week instruments (Sitar, Flute & Sitar, Sarangi) beat peers published +-10 days on first-week engaged views.",
+   "predicted_metric": "Week median first-week engaged >= 1.2x peers (+-10d); the three replicas (Mon/Tue/Wed) median >= 1.3x. FALSIFIER: week median < 0.9x -> the competitor register does not transfer to our channel.",
+   "relevant_lanes": [
+    "stress",
+    "anxiety",
+    "morning",
+    "sleep"
+   ],
+   "relevant_instruments": [
+    "Sitar",
+    "Bansuri",
+    "Sarangi",
+    "Surbahar"
+   ],
+   "linked_ships": [
+    "v_2026-11-23_cortisol_relief_sitar_replica",
+    "v_2026-11-24_quiet_mind_morning_bansuri_432_replica",
+    "v_2026-11-25_flute_sitar_stress_relief_replica",
+    "v_2026-11-26_calm_your_overthinking_sarangi",
+    "v_2026-11-27_night_anxiety_relief_surbahar",
+    "v_2026-11-28_sleep_through_anxiety_bansuri_3hr"
+   ],
+   "promoted_rule": null,
+   "caveats": "Peers within +-10d include this week's own ships. Instrument reads are small-n (Sarangi n=3, Flute & Sitar n=1).",
+   "reads": [],
+   "read_schedule": {
+    "d7_week": "2026-12-05"
+   },
+   "read_rule": "reach_history first-week engaged (capture nearest d7) / median of ships published +-10 days."
   }
  ],
  "schema_note": "week = Monday of created week (wk_YYYY-MM-DD). reads[] = staged reads (d7/d14/d21). experiment_reads appends to reads[]; status changes at final read."

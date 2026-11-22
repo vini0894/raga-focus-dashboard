@@ -1,0 +1,93 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-11-22",
+  "spent": false,
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs same-age cohort; 1.5hr ~20%, 3hr ~17%). Also read first-week engaged vs ships published +-10 days.",
+  "ab_design": "Short-A vs long-B on DIFFERENT keywords. A = 'Flute and Sitar Music | Stress Relief | 1.5 Hours'; B = 'Healing Flute & Sitar 432 Hz for Deep Relaxation, Anxiety Relief & a Calm Mind'.",
+  "runtime_note": "90 min (user rule: 90 or 180 only).",
+  "pending": [
+    "USER: generate the music to the music_direction spec and pitch the render to 432 Hz",
+    "USER: generate thumbnail(s): YOU'RE SAFE HERE / LET IT ALL SOFTEN",
+    "USER (optional): VidIQ score both leads",
+    "Run tools/claim_check.py on the Bansuri clips before render",
+    "Launch Test & compare at publish: title A vs title B",
+    "AI-disclosure toggle",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "End screen + playlist slot per routing_note",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read",
+    "Log both Test & compare arms to ab_raw_data.csv at publish"
+  ],
+  "id": "v_2026-11-25_flute_sitar_stress_relief_replica",
+  "planned_date": "2026-11-25",
+  "planned_slot": "06:30 IST AM · Wed",
+  "hypothesis_id": "h_2026-11-23_cortisol_register_replicas",
+  "lane": "stress",
+  "daypart": "morning",
+  "instrument": "Sitar + Bansuri",
+  "raga": "Desh",
+  "title_variants": {
+    "A": "Flute and Sitar Music | Stress Relief | 1.5 Hours",
+    "B": "Healing Flute & Sitar 432 Hz for Deep Relaxation, Anxiety Relief & a Calm Mind"
+  },
+  "title_note": "Locked by user 2026-11-22 ('Lets push it'). Leads lead_prescreen-checked 2026-11-22. Competitor replica: Healing Raga Studio 'Rewire Your Nervous System । Rest Your Mind 432Hz Sitar & Flute for Stress Relief, Anxiety & Clarity' (1.1K/day) + Trust in Gods 'Healing Flute & Sitar Music' (still ~1K/day at d62)",
+  "validated_keywords": [
+    "A lead 'Flute and Sitar Music' - prescreened 2026-11-22",
+    "B lead 'Healing Flute & Sitar' - prescreened 2026-11-22"
+  ],
+  "thumbnail_text_main": "YOU'RE SAFE HERE",
+  "thumbnail_text_variants": [
+    {
+      "label": "Arm A",
+      "text": "YOU'RE SAFE HERE",
+      "strategy": "Affirmation/permission (affirmations in thumbnails, not titles). Deduped vs shipped thumb texts 2026-11-22."
+    },
+    {
+      "label": "Arm B",
+      "text": "LET IT ALL SOFTEN",
+      "strategy": "Same register, different wording. Deduped."
+    }
+  ],
+  "thumbnail_prompt": "NEW STYLE (won the Oct 12 thumbnail-only test 58.2% vs 41.8%): bright saffron/coral/gold Pichwai-Kangra miniature, ornate blue floral border, text in a cream parchment panel (right ~40%), bold deep-indigo serif. The VIEWER, never a performer. a woman lying back on floor cushions in a sunlit room, eyes closed, hands resting on her belly, completely relaxed; sheer curtains moving, plants, incense smoke curling. A sitar and a bansuri rest against the wall at the frame edge, not played. Second tier: 'Sitar & Bansuri · 1.5 Hours'.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Peaceful Music"
+  ],
+  "music_direction": "Sitar leads, bansuri answers, Raga Desh: warm, consoling, gently uplifting raga, call-and-response phrases, very light tabla, steady tanpura drone, 64-70 BPM. Alpha 10 Hz binaural at -20 dB. Render pitched to 432 Hz. Sound from 0:00.",
+  "suno_prompt": "Instrumental only, no vocals - Indian classical sitar leading with soft bansuri flute answering, Raga Desh, warm consoling call-and-response phrases, very light tabla, steady tanpura drone, 66 BPM, alpha 10 Hz binaural at -20 dB, deep relaxation stress relief, seamless loop.",
+  "experiment": "h_2026-11-23_cortisol_register_replicas: see hypotheses.json. Ship d7 read 2026-11-25 + 7d. COMPETITOR REPLICA of Healing Raga Studio 'Rewire Your Nervous System । Rest Your Mind 432Hz Sitar & Flute for Stress Relief, Anxiety & Clarity' (1.1K/day) + Trust in Gods 'Healing Flute & Sitar Music' (still ~1K/day at d62).",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-11-25 06:30 IST",
+    "opening_rule": "sound present from 0:00, no fade-in",
+    "tuning": "432 Hz (pitch the render)"
+  },
+  "slot_note": "AM 06:30 (all ships this week).",
+  "tags": [
+    "flute and sitar music",
+    "flute and sitar",
+    "healing flute and sitar",
+    "stress relief music",
+    "deep relaxation music",
+    "anxiety relief music",
+    "sitar music",
+    "bansuri flute",
+    "432 hz music",
+    "raga desh",
+    "indian instrumental music",
+    "raga focus"
+  ],
+  "description": "Flute and Sitar Music | Stress Relief | 1.5 Hours\n\nPut everything down for a while. You're safe here.\n\nFlute and sitar music for stress relief and deep relaxation: a sitar that leads and a bansuri that answers, in warm Raga Desh tuned to 432 Hz - soft enough to let your shoulders drop, steady enough to stay with.\n\n▶ Keep going - the full Meditation playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199nvhUBCx5L9ROrDP44H4JzN\n(paste this video's own id in place of VIDEO_ID before publishing - it opens the playlist at this video so the next one plays automatically)\n\nPerfect for stress relief, deep relaxation, anxiety relief, meditation, yoga nidra, an afternoon reset.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sitar (lead) with Bansuri and tanpura drone\nRaga: Desh\nStyle: Indian classical instrumental, meditative\nMood: Warm, consoling, gently uplifting\nAtmosphere: A sunlit room, eyes closed\nDuration: 1 hour 30 minutes\n\n⏱ CHAPTERS\n0:00 Arrive\n9:00 Let go\n18:00 Breathing easy\n27:00 Softening\n36:00 Deep relaxation\n45:00 Calm mind\n54:00 Lighter\n1:03:00 Steady\n1:12:00 Peaceful\n1:21:00 Carry it with you\n\n⏱ BEST FOR\n• Stress relief\n• Deep relaxation\n• Anxiety relief\n• Meditation\n\nNo ads interrupting the music. If this helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#FluteAndSitar #StressRelief #432Hz #DeepRelaxation #IndianClassical",
+  "title": "Flute and Sitar Music | Stress Relief | 1.5 Hours",
+  "thumbnail_style": "new_style",
+  "playlist_placement": "Healing & Anxiety Relief: after Monday's Cortisol Relief ship. Peaceful Music: mid-list.",
+  "routing_note": "End screen -> 'Sitar for Dopamine Reset' (sitar-led, hero routing).",
+  "thumbnail_images": [
+    {
+      "label": "Style reference — Oct 12 winning NEW STYLE thumbnail (58.2% watch-time share)",
+      "path": "data/thumbnails/wk_2026-10-12/mon_variant1_new_style.jpg"
+    }
+  ],
+  "gate_overrides": "Documented 2026-11-22: Flute & Sitar is our best first-week format (Inner Peace 1.86x peers) and 391/day median in the competitor pool. 27d after Oct 29 'Calm Your Anxiety | Flute & Sitar' (outside the 21d clone window). B lead 'Healing Flute & Sitar' soft concept flag vs a 225d Violin title only. No 'nervous system' word (hero look-alike guard + USED until Nov 25)."
+}

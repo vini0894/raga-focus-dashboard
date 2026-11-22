@@ -168,3 +168,14 @@ Series reads: wk1 Oct 6/10 · wk2 Oct 13/17 · **stop-rule check 2026-10-18** (d
 | Thu 11-19 | Sitar · calm_relax · 90m | h_2026-11-16_six_ship_volume | A `Journaling Music | Sitar Instrumental | 1.5 Hours` / B `Reflection Music: Warm Sitar 432 Hz for Calm Writing, Clear Thoughts & a Quiet Mind` | d7 2026-11-26 |
 | Fri 11-20 | Veena · calm_relax · 90m | h_2026-11-16_six_ship_volume | A `Emotional Regulation Music | Veena | 1.5 Hours` / B `Spa Music: Soft Veena for Deep Relaxation, Calm Breathing & Emotional Balance` | d7 2026-11-27 |
 | Sat 11-21 | Bansuri · sleep · 180m | h_2026-11-16_six_ship_volume | A `Fall Back Asleep | Soft Bansuri | 3 Hours` / B `Restful Night Music 🌙 Soft Bansuri Flute to Quiet the Mind & Rest Until Morning | 3 Hours` | d7 2026-11-28 |
+
+## wk_2026-11-23 (locked 2026-11-22) — SIX ships Mon–Sat, ALL 06:30 IST
+
+| Day | Ship | Test | Arms | Reads |
+|---|---|---|---|---|
+| Mon 11-23 | Sitar · stress · 90m · REPLICA | h_2026-11-23_cortisol_register_replicas | A `Cortisol Relief Music | Slow Sitar | 1.5 Hours` / B `Racing Thoughts Relief: Slow Sitar 432 Hz to Calm Anxiety, Slow Your Breathing & Clear Your Head` | d7 2026-11-30 |
+| Tue 11-24 | Bansuri · morning · 90m · REPLICA | h_2026-11-23_cortisol_register_replicas | A `Quiet Mind Morning | Bansuri 432 Hz | 1.5 Hours` / B `Morning Cortisol Reset 🌅 432 Hz Bansuri Therapy for Stress Relief, Calm Mind & Mental Clarity` | d7 2026-12-01 |
+| Wed 11-25 | Sitar + Bansuri · stress · 90m · REPLICA | h_2026-11-23_cortisol_register_replicas | A `Flute and Sitar Music | Stress Relief | 1.5 Hours` / B `Healing Flute & Sitar 432 Hz for Deep Relaxation, Anxiety Relief & a Calm Mind` | d7 2026-12-02 |
+| Thu 11-26 | Sarangi · anxiety · 90m | h_2026-11-23_cortisol_register_replicas | A `Calm Your Overthinking | Sarangi | 1.5 Hours` / B `Busy Mind Relief: Soft Sarangi to Quiet Worry, Slow Your Breathing & Rest` | d7 2026-12-03 |
+| Fri 11-27 | Surbahar · anxiety · 90m | h_2026-11-23_cortisol_register_replicas | A `Night Anxiety Relief | Surbahar | 1.5 Hours` / B `Let Thoughts Pass 🌙 Slow Surbahar for Evening Calm, Deep Breathing & a Quiet Night` | d7 2026-12-04 |
+| Sat 11-28 | Bansuri · sleep · 180m | h_2026-11-23_cortisol_register_replicas | A `Sleep Through Anxiety | Bansuri Flute & Tanpura | 3 Hours` / B `Calm Night Sleep 🌙 Soft Bansuri Flute to Ease Worry & Rest Deeply Until Morning | 3 Hours` | d7 2026-12-05 |

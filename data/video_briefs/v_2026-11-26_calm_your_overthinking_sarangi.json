@@ -1,0 +1,92 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-11-22",
+  "spent": false,
+  "measurement_note": "Read on ENGAGED views and AVD% at MATCHED AGE only (d7 vs same-age cohort; 1.5hr ~20%, 3hr ~17%). Also read first-week engaged vs ships published +-10 days.",
+  "ab_design": "Short-A vs long-B on DIFFERENT keywords. A = 'Calm Your Overthinking | Sarangi | 1.5 Hours'; B = 'Busy Mind Relief: Soft Sarangi to Quiet Worry, Slow Your Breathing & Rest'.",
+  "runtime_note": "90 min (user rule: 90 or 180 only).",
+  "pending": [
+    "USER: generate the music to the music_direction spec",
+    "USER: generate thumbnail(s): THOUGHTS CAN WAIT / QUIET THE LOOP",
+    "USER (optional): VidIQ score both leads",
+    "Launch Test & compare at publish: title A vs title B",
+    "AI-disclosure toggle",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "End screen + playlist slot per routing_note",
+    "Export with 'Average percentage viewed (%)' AND 'Average view duration' for the d7 read",
+    "Log both Test & compare arms to ab_raw_data.csv at publish"
+  ],
+  "id": "v_2026-11-26_calm_your_overthinking_sarangi",
+  "planned_date": "2026-11-26",
+  "planned_slot": "06:30 IST AM · Thu",
+  "hypothesis_id": "h_2026-11-23_cortisol_register_replicas",
+  "lane": "anxiety",
+  "daypart": "morning",
+  "instrument": "Sarangi",
+  "raga": "Jogiya",
+  "title_variants": {
+    "A": "Calm Your Overthinking | Sarangi | 1.5 Hours",
+    "B": "Busy Mind Relief: Soft Sarangi to Quiet Worry, Slow Your Breathing & Rest"
+  },
+  "title_note": "Locked by user 2026-11-22 ('Lets push it'). Leads lead_prescreen-checked 2026-11-22.",
+  "validated_keywords": [
+    "A lead 'Calm Your Overthinking' - prescreened 2026-11-22",
+    "B lead 'Busy Mind Relief' - prescreened 2026-11-22"
+  ],
+  "thumbnail_text_main": "THOUGHTS CAN WAIT",
+  "thumbnail_text_variants": [
+    {
+      "label": "Arm A",
+      "text": "THOUGHTS CAN WAIT",
+      "strategy": "Affirmation/permission (affirmations in thumbnails, not titles). Deduped vs shipped thumb texts 2026-11-22."
+    },
+    {
+      "label": "Arm B",
+      "text": "QUIET THE LOOP",
+      "strategy": "Same register, different wording. Deduped."
+    }
+  ],
+  "thumbnail_prompt": "NEW STYLE (won the Oct 12 thumbnail-only test 58.2% vs 41.8%): bright saffron/coral/gold Pichwai-Kangra miniature, ornate blue floral border, text in a cream parchment panel (right ~40%), bold deep-indigo serif. The VIEWER, never a performer. a young man sitting on a window seat with knees drawn up, head resting back against the wall, eyes closed, calm face, soft rain on the glass, warm lamp light, a mug beside him. A sarangi rests on a shelf at the frame edge, not played. Second tier: 'Sarangi · 1.5 Hours'.",
+  "playlists": [
+    "Healing & Anxiety Relief",
+    "Meditation"
+  ],
+  "music_direction": "Sarangi in Raga Jogiya: soft, bowed, voice-like tone, gentle consoling morning phrases, long sustained notes, steady tanpura drone, no percussion, 56-60 BPM. Alpha 10 Hz binaural at -20 dB. Sound from 0:00.",
+  "suno_prompt": "Instrumental only, no vocals - soft Indian sarangi in Raga Jogiya, bowed voice-like tone with long sustained consoling phrases, steady tanpura drone, no percussion, 58 BPM, alpha 10 Hz binaural at -20 dB, quiet worry relief, seamless loop.",
+  "experiment": "h_2026-11-23_cortisol_register_replicas: see hypotheses.json. Ship d7 read 2026-11-26 + 7d.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-11-26 06:30 IST",
+    "opening_rule": "sound present from 0:00, no fade-in",
+    "tuning": "A440"
+  },
+  "slot_note": "AM 06:30 (all ships this week).",
+  "tags": [
+    "calm your overthinking",
+    "overthinking music",
+    "stop overthinking",
+    "busy mind relief",
+    "anxiety relief music",
+    "sarangi music",
+    "sarangi instrumental",
+    "calm music",
+    "raga jogiya",
+    "indian instrumental music",
+    "meditation music",
+    "raga focus"
+  ],
+  "description": "Calm Your Overthinking | Sarangi | 1.5 Hours\n\nThe thoughts can wait. For the next hour, you don't have to solve anything.\n\nSoft sarangi music to calm overthinking: a bowed, voice-like Raga Jogiya with long consoling phrases, for when your mind keeps looping and your breathing has gone shallow.\n\n▶ Keep going - the full Meditation playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199nvhUBCx5L9ROrDP44H4JzN\n(paste this video's own id in place of VIDEO_ID before publishing - it opens the playlist at this video so the next one plays automatically)\n\nPerfect for overthinking, worry, anxiety relief, slowing your breathing, meditation, a quiet break in the day.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sarangi and tanpura drone\nRaga: Jogiya\nStyle: Indian classical instrumental, meditative\nMood: Consoling, soft, warm\nAtmosphere: Rain on the window, a warm lamp\nDuration: 1 hour 30 minutes\n\n⏱ CHAPTERS\n0:00 Notice the loop\n9:00 Slow breath\n18:00 Thoughts slowing\n27:00 Softer\n36:00 Long exhale\n45:00 Quiet\n54:00 Resting mind\n1:03:00 Calm body\n1:12:00 Steady\n1:21:00 Carry the quiet\n\n⏱ BEST FOR\n• Overthinking\n• Worry\n• Anxiety relief\n• Meditation\n\nNo ads interrupting the music. If this helped you, subscribe to Raga Focus for more uninterrupted Indian instrumental music.\n\n#Overthinking #AnxietyRelief #SarangiMusic #CalmMind #IndianClassical",
+  "title": "Calm Your Overthinking | Sarangi | 1.5 Hours",
+  "thumbnail_style": "new_style",
+  "playlist_placement": "Healing & Anxiety Relief: mid-list. Meditation: after Wednesday's Flute & Sitar ship.",
+  "routing_note": "End screen -> 'Sitar for Nervous System Healing' (#4 hero, anxiety register).",
+  "thumbnail_images": [
+    {
+      "label": "Style reference — Oct 12 winning NEW STYLE thumbnail (58.2% watch-time share)",
+      "path": "data/thumbnails/wk_2026-10-12/mon_variant1_new_style.jpg"
+    }
+  ],
+  "gate_overrides": "Documented 2026-11-22: Sarangi 1.63x peers in first week (n=3, September). Sarangi x anxiety UNTESTED. Evening rest/therapy Sarangi ships were weak in Oct - this one stays in the anxiety/overthinking register."
+}
