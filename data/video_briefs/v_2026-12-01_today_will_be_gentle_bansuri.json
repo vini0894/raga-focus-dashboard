@@ -1,0 +1,84 @@
+{
+  "status": "APPROVED",
+  "locked": true,
+  "created_at": "2026-11-28",
+  "spent": false,
+  "measurement_note": "PRIMARY read = views from the five T1 countries (US, GB, CA, AU, DE) by day 7, pulled from the Analytics API. Baseline: the median November upload has 18 LIFETIME views from them. Secondary: engaged views and AVD% at matched age (1.5hr ~20%, 3hr ~17%).",
+  "ab_design": "THUMBNAIL-ONLY test, one fixed title. Arm A = evolved look (painted, no border, deep colour, large light text); Arm B = current parchment look, same scene. The week's variable is the look; the short-A vs long-B title rule is suspended for this week (user locked 2026-11-28).",
+  "runtime_note": "90 min (user rule: 90 or 180 only).",
+  "pending": [
+    "USER: generate the music to the music_direction spec",
+    "USER: generate TWO thumbnails with the same scene - Arm A evolved look ('A GENTLE DAY' - three large words in warm cream, upper left), Arm B current look ('A GENTLE DAY')",
+    "Run tools/claim_check.py on the Bansuri clips before render",
+    "Launch Test & compare at publish: THUMBNAIL A vs THUMBNAIL B, one fixed title (no title test this week)",
+    "AI-disclosure toggle",
+    "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
+    "End screen + playlist slot per routing_note",
+    "Log both Test & compare arms to ab_raw_data.csv at publish",
+    "d7 read: views from US/GB/CA/AU/DE via the Analytics API (video==ID, dimension country)"
+  ],
+  "id": "v_2026-12-01_today_will_be_gentle_bansuri",
+  "planned_date": "2026-12-01",
+  "planned_slot": "06:30 IST AM · Tue",
+  "hypothesis_id": "h_2026-11-30_western_register_t1_reach",
+  "lane": "morning",
+  "daypart": "morning",
+  "instrument": "Bansuri",
+  "raga": "Bhupali",
+  "title_variants": {
+    "A": "Today Will Be Gentle | Morning Flute | 1.5 Hours"
+  },
+  "title_note": "Locked by user 2026-11-28 ('Lock all six'). Western register: second-person / permission lead, no raga name, no 'Indian Classical'. Lead lead_prescreen-checked FRESH 2026-11-28. VidIQ unscored.",
+  "validated_keywords": [
+    "Lead 'Today Will Be Gentle' - prescreened FRESH 2026-11-28"
+  ],
+  "thumbnail_text_main": "A GENTLE DAY",
+  "thumbnail_text_variants": [
+    {
+      "label": "Arm A - evolved look",
+      "text": "A GENTLE DAY",
+      "strategy": "Evolved look: painted, borderless, deep saturated colour, large light text. Deduped vs shipped thumb texts 2026-11-28."
+    },
+    {
+      "label": "Arm B - current look",
+      "text": "A GENTLE DAY",
+      "strategy": "Control: current Raga Focus parchment miniature, same scene."
+    }
+  ],
+  "thumbnail_prompt": "EVOLVED LOOK (Arm A, new 2026-11-28): keep the hand-painted Indian-miniature brushwork and a single VIEWER figure (never a performer), but NO ornate border, NO parchment panel - the painting fills the whole frame edge to edge. Deep saturated palette, strong light/dark contrast, softened traditional detail (simple clothing, no heavy jewellery, no palace arches). Text: 'A GENTLE DAY' - three large words in warm cream, upper left. Scene: a woman just awake, sitting up in bed and stretching both arms overhead with a soft smile, golden sunrise pouring through an open window, deep coral and gold sky outside, birds on the sill. A bamboo flute on the bedside table, not played.\n\nCURRENT LOOK (Arm B, control): the usual Raga Focus Pichwai-Kangra miniature - ornate floral border, cream parchment text panel (right ~40%), dark indigo serif. Same scene and same words as Arm A: 'A GENTLE DAY'. Scene: a woman just awake, sitting up in bed and stretching both arms overhead with a soft smile, golden sunrise pouring through an open window, deep coral and gold sky outside, birds on the sill. A bamboo flute on the bedside table, not played.",
+  "playlists": [
+    "Morning Energy",
+    "Meditation"
+  ],
+  "music_direction": "Bansuri in Raga Bhupali: pentatonic, light, quietly joyful; flowing mid-register phrases with natural breath pauses, tanpura drone, no percussion, 60-64 BPM. Sound from 0:00.",
+  "suno_prompt": "Instrumental only, no vocals, no humming - gentle Indian bansuri bamboo flute in Raga Bhupali, breath-driven tone with long sustained notes and natural breath pauses, steady tanpura drone, no percussion, 62 BPM, light and quietly joyful morning, seamless loop.",
+  "experiment": "h_2026-11-30_western_register_t1_reach + h_2026-11-30_evolved_look_thumb_ab: see hypotheses.json. Ship d7 read 2026-12-01 + 7d.",
+  "production_spec": {
+    "duration_minutes": 90,
+    "format": "1.5hr",
+    "publish": "2026-12-01 06:30 IST",
+    "opening_rule": "sound present from 0:00, no fade-in",
+    "tuning": "A440"
+  },
+  "slot_note": "AM 06:30 (all ships this week).",
+  "tags": [
+    "morning music",
+    "calm morning music",
+    "gentle morning music",
+    "morning flute music",
+    "relaxing flute music",
+    "wake up music",
+    "positive morning",
+    "morning meditation music",
+    "peaceful music",
+    "bamboo flute music",
+    "relaxing instrumental music",
+    "raga focus"
+  ],
+  "description": "Today Will Be Gentle | Morning Flute | 1.5 Hours\n\nBefore the day asks anything of you - let it start softly.\n\nSoft morning flute music for a gentle start: light, open phrases to wake up slowly, breathe, and set a calm tone for the whole day.\n\n▶ Keep going - the full Meditation playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199nvhUBCx5L9ROrDP44H4JzN\n(paste this video's own id in place of VIDEO_ID before publishing - it opens the playlist at this video so the next one plays automatically)\n\nPerfect for waking up slowly, morning calm, stretching and breathing, a positive start.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Bansuri and tanpura drone\nRaga: Bhupali\nStyle: Indian instrumental, meditative\nMood: Light, open, quietly joyful\nAtmosphere: Sunrise, an open window, birdsong\nDuration: 1 hour 30 minutes\n\n⏱ CHAPTERS\n0:00 Arriving\n9:00 Slow breath\n18:00 Shoulders drop\n27:00 Settling\n36:00 Deep exhale\n45:00 Quiet mind\n54:00 Held\n1:03:00 Calm body\n1:12:00 Drifting\n1:21:00 Stillness\n\n⏱ BEST FOR\n• Waking up slowly\n• Morning calm\n• Stretching and breathing\n• A positive start\n\nIf this helped you, subscribe to Raga Focus for more calm instrumental music.\n\n#MorningMusic #CalmMorning #FluteMusic #PositiveMorning #RelaxingMusic",
+  "title": "Today Will Be Gentle | Morning Flute | 1.5 Hours",
+  "thumbnail_style": "evolved_look_vs_current",
+  "playlist_placement": "Morning Energy playlist: lower half, never adjacent to 'Morning Energy Music'. Meditation: mid-list.",
+  "routing_note": "End screen -> 'Sitar Music to Start Your Morning Right' (morning hero routing; NOT 'Morning Energy Music').",
+  "gate_overrides": "Documented 2026-11-28: Bansuri is inside the tool cooldown (free from Dec 3) - user's standing Tue + Sat Bansuri rule kept, as in past weeks. Bansuri x morning is FLOP on the 28d table only (lifetime caveat). No 'Morning Energy' words; not routed to or placed next to 'Morning Energy Music'. Run claim_check before render."
+}

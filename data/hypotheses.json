@@ -1,7 +1,7 @@
 {
  "purpose": "Standing ledger of strategic bets — the compounding-strategy layer on top of the mechanical gates (cooldown/track_record/clone/lead_prescreen). A finding discovered once (competitor research, a track_record pattern, an A/B result) gets banked here as a tracked hypothesis instead of being re-derived every time it's asked about. recommend_slot.py reads this to tag candidates with the bet they'd be testing.",
  "lifecycle": "PROPOSED (stated, not yet tested) -> TESTING (a ship is live against it) -> CONFIRMED or KILLED (enough evidence to close it) -> promoted_rule (folded into a permanent playbook rule, e.g. anti_patterns.json / lane_packaging_directions.json)",
- "last_updated": "2026-11-22",
+ "last_updated": "2026-11-28",
  "hypotheses": [
   {
    "id": "h_2026-08-07_playlist_routing",
@@ -1972,6 +1972,81 @@
     "d7_week": "2026-12-05"
    },
    "read_rule": "reach_history first-week engaged (capture nearest d7) / median of ships published +-10 days."
+  },
+  {
+   "id": "h_2026-11-30_western_register_t1_reach",
+   "created": "2026-11-28",
+   "status": "TESTING",
+   "week": "wk_2026-11-30",
+   "source": "chat_2026-11-28 - fresh channel analysis: lifetime/90d/28d Studio exports, geography export, Analytics API geo x traffic source, Studio traffic + audience reads, Western reference set (12 channels, YouTube Data API)",
+   "statement": "Uploads titled in the Western register (second-person / permission lead, no raga name, no 'Indian Classical', instrument in Western terms or omitted) reach viewers in the five T1 countries (US, GB, CA, AU, DE), which uploads since October do not (3.1-3.4% of views vs 16.8% for the May cohort).",
+   "predicted_metric": "Per ship: views from US+GB+CA+AU+DE by d7 (Analytics API, video==ID, dimension country). Week median >= 100. FALSIFIER: after ~20 uploads in this register (3-4 weeks) the median stays < 30 -> title register and look alone do not move the audience pool; the constraint is channel-level placement.",
+   "relevant_lanes": [
+    "stress",
+    "morning",
+    "calm_relax",
+    "sleep",
+    "anxiety"
+   ],
+   "relevant_instruments": [
+    "Sitar",
+    "Bansuri",
+    "Sarangi",
+    "Surbahar"
+   ],
+   "linked_ships": [
+    "v_2026-11-30_your_nervous_system_needs_this_sitar",
+    "v_2026-12-01_today_will_be_gentle_bansuri",
+    "v_2026-12-02_its_okay_to_slow_down_sarangi",
+    "v_2026-12-03_still_thinking_about_work_surbahar_3hr",
+    "v_2026-12-04_youve_been_carrying_too_much_sitar",
+    "v_2026-12-05_you_can_sleep_now_bansuri_3hr"
+   ],
+   "promoted_rule": null,
+   "caveats": "Baseline is LIFETIME five-country views of the median November upload (18), not a matched d7 figure - pull the matched-age baseline before the first read. The API hides small per-country rows on small videos, so low counts read as 0. The Western reference channels' audience geography is not visible (declared channel country only). Thumbnail look changes in the same week (see h_2026-11-30_evolved_look_thumb_ab).",
+   "reads": [],
+   "read_schedule": {
+    "d7_week": "2026-12-12",
+    "verdict_after_n20": "2026-12-26"
+   },
+   "read_rule": "youtubeAnalytics reports.query filters=video==ID;country==XX for the five countries, publish date to d7; week median across the six ships."
+  },
+  {
+   "id": "h_2026-11-30_evolved_look_thumb_ab",
+   "created": "2026-11-28",
+   "status": "TESTING",
+   "week": "wk_2026-11-30",
+   "source": "chat_2026-11-28 - thumbnail review of 33 thumbnails from 11 Western reference channels beside our latest six",
+   "statement": "An evolved look that keeps the painted miniature identity but drops the ornate border and parchment panel for deep saturated colour and large light text beats the current look in YouTube Test & compare.",
+   "predicted_metric": "Evolved look (Arm A) wins watch-time share in >= 4 of 6 thumbnail-only tests. FALSIFIER: current look wins >= 4 of 6.",
+   "relevant_lanes": [
+    "stress",
+    "morning",
+    "calm_relax",
+    "sleep",
+    "anxiety"
+   ],
+   "relevant_instruments": [
+    "Sitar",
+    "Bansuri",
+    "Sarangi",
+    "Surbahar"
+   ],
+   "linked_ships": [
+    "v_2026-11-30_your_nervous_system_needs_this_sitar",
+    "v_2026-12-01_today_will_be_gentle_bansuri",
+    "v_2026-12-02_its_okay_to_slow_down_sarangi",
+    "v_2026-12-03_still_thinking_about_work_surbahar_3hr",
+    "v_2026-12-04_youve_been_carrying_too_much_sitar",
+    "v_2026-12-05_you_can_sleep_now_bansuri_3hr"
+   ],
+   "promoted_rule": null,
+   "caveats": "Test & compare measures click/watch share within the impressions a video already gets, not whether impressions expand (see feedback: re-thumb rescues conversion, not distribution). Saturday's test also varies text (Arm A has none). 'No clear winner' verdicts need the post-test CTR read.",
+   "reads": [],
+   "read_schedule": {
+    "week": "2026-12-19"
+   },
+   "read_rule": "Studio Test & compare verdict + watch-time share per ship, logged to ab_raw_data.csv."
   }
  ],
  "schema_note": "week = Monday of created week (wk_YYYY-MM-DD). reads[] = staged reads (d7/d14/d21). experiment_reads appends to reads[]; status changes at final read."

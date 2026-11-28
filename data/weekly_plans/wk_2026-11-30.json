@@ -1,0 +1,132 @@
+{
+  "week_id": "wk_2026-11-30",
+  "week_start": "2026-11-30",
+  "week_end": "2026-12-06",
+  "created": "2026-11-28",
+  "status": "LOCKED 2026-11-28 (user: 'Lock all six') - six ships Mon-Sat, all 06:30 IST",
+  "notes": "Nov 28 fresh analysis (lifetime / 90d / 28d Studio exports + geography + Analytics API + Studio reads): uploads from Apr 29-May 31 hold most of the lifetime views; 0 of 84 uploads since August passed 10K engaged. Matched-age d7 impressions fell 33.0K (May) -> 6.5K (Nov) with AVD% flat. Channel impressions/day Oct -> Nov: Browse -24%, Suggested -42%, Search -15%; CTR flat or up in every source. Views 90d: India 59.9%, US 10.3%, the five T1 countries (US/GB/CA/AU/DE) 18.9%. Share of a video's views from those five by publish month: May 16.8% -> Oct 3.1% / Nov 3.4%. Studio 'channels your audience watches' = all Indian healing-raga channels. Western reference set (12 channels) wins with second-person / permission titles, long night videos and dark or saturated photographic thumbnails with little or no text.",
+  "hypothesis": {
+    "ids": [
+      "h_2026-11-30_western_register_t1_reach",
+      "h_2026-11-30_evolved_look_thumb_ab"
+    ],
+    "one_line": "Uploads in the Western register (second-person / permission titles, no raga or 'Indian Classical' wording) with an evolved darker, borderless painted look reach viewers in the five T1 countries, which recent uploads do not.",
+    "baseline": "Median November upload: 18 LIFETIME views from US/GB/CA/AU/DE. Thumbnail control = current parchment look in the same test.",
+    "reads": {
+      "mon_d7": "2026-12-07",
+      "tue_d7": "2026-12-08",
+      "wed_d7": "2026-12-09",
+      "thu_d7": "2026-12-10",
+      "fri_d7": "2026-12-11",
+      "sat_d7": "2026-12-12",
+      "week": "2026-12-12"
+    }
+  },
+  "ships": [
+    {
+      "date": "2026-11-30",
+      "type": "western_register",
+      "slot": "06:30",
+      "instrument": "Sitar",
+      "lane": "stress",
+      "runtime_min": 90,
+      "title_direction": "Your Nervous System Needs This | Slow Sitar | 1.5 Hours",
+      "thumb_text": "RESET - Arm A evolved look vs Arm B current look",
+      "hypothesis": "h_2026-11-30_western_register_t1_reach",
+      "suno_prompt_rule": "Instrumental only, no vocals, no humming - gentle Indian classical sitar in Raga Khamaj, warm plucked tone with long meend glides, very light tabla, steady tanpura drone, 64 BPM, alpha 10 Hz binaural at -20 dB, unhurried and grounding, seamless loop.",
+      "status": "LOCKED",
+      "brief": "v_2026-11-30_your_nervous_system_needs_this_sitar"
+    },
+    {
+      "date": "2026-12-01",
+      "type": "western_register",
+      "slot": "06:30",
+      "instrument": "Bansuri",
+      "lane": "morning",
+      "runtime_min": 90,
+      "title_direction": "Today Will Be Gentle | Morning Flute | 1.5 Hours",
+      "thumb_text": "A GENTLE DAY - Arm A evolved look vs Arm B current look",
+      "hypothesis": "h_2026-11-30_western_register_t1_reach",
+      "suno_prompt_rule": "Instrumental only, no vocals, no humming - gentle Indian bansuri bamboo flute in Raga Bhupali, breath-driven tone with long sustained notes and natural breath pauses, steady tanpura drone, no percussion, 62 BPM, light and quietly joyful morning, seamless loop.",
+      "status": "LOCKED",
+      "brief": "v_2026-12-01_today_will_be_gentle_bansuri"
+    },
+    {
+      "date": "2026-12-02",
+      "type": "western_register",
+      "slot": "06:30",
+      "instrument": "Sarangi",
+      "lane": "calm_relax",
+      "runtime_min": 90,
+      "title_direction": "It's Okay to Slow Down | 1.5 Hours",
+      "thumb_text": "YOU CAN PAUSE - Arm A evolved look vs Arm B current look",
+      "hypothesis": "h_2026-11-30_western_register_t1_reach",
+      "suno_prompt_rule": "Instrumental only, no vocals, no humming - gentle Indian sarangi in Raga Yaman, expressive bowed tone like a human voice with long sustained phrases, steady tanpura drone, no percussion, 58 BPM, alpha 10 Hz binaural at -20 dB, open and consoling, seamless loop.",
+      "status": "LOCKED",
+      "brief": "v_2026-12-02_its_okay_to_slow_down_sarangi"
+    },
+    {
+      "date": "2026-12-03",
+      "type": "western_register",
+      "slot": "06:30",
+      "instrument": "Surbahar",
+      "lane": "sleep",
+      "runtime_min": 180,
+      "title_direction": "Still Thinking About Work? | Deep Night Music | 3 Hours",
+      "thumb_text": "WORK IS DONE - Arm A evolved look vs Arm B current look",
+      "hypothesis": "h_2026-11-30_western_register_t1_reach",
+      "suno_prompt_rule": "Instrumental only, no vocals, no humming - very slow Indian surbahar bass sitar in Raga Kedar, deep resonant string tones with long meend slides and long pauses, steady low tanpura drone, no percussion, 50 BPM, theta 6 Hz binaural at -20 dB, settling late-night stillness, seamless loop.",
+      "status": "LOCKED",
+      "brief": "v_2026-12-03_still_thinking_about_work_surbahar_3hr"
+    },
+    {
+      "date": "2026-12-04",
+      "type": "western_register",
+      "slot": "06:30",
+      "instrument": "Sitar",
+      "lane": "anxiety",
+      "runtime_min": 90,
+      "title_direction": "You've Been Carrying Too Much | Slow Sitar | 1.5 Hours",
+      "thumb_text": "PUT IT DOWN - Arm A evolved look vs Arm B current look",
+      "hypothesis": "h_2026-11-30_western_register_t1_reach",
+      "suno_prompt_rule": "Instrumental only, no vocals, no humming - gentle Indian classical sitar in Raga Bhairavi, warm plucked tone with long meend glides and tender held notes, very light tabla, steady tanpura drone, 60 BPM, alpha 10 Hz binaural at -20 dB, cathartic emotional release, seamless loop.",
+      "status": "LOCKED",
+      "brief": "v_2026-12-04_youve_been_carrying_too_much_sitar"
+    },
+    {
+      "date": "2026-12-05",
+      "type": "western_register",
+      "slot": "06:30",
+      "instrument": "Bansuri",
+      "lane": "sleep",
+      "runtime_min": 180,
+      "title_direction": "You Can Sleep Now | Soft Flute | 3 Hours",
+      "thumb_text": "(no text) - Arm A evolved look vs Arm B current look",
+      "hypothesis": "h_2026-11-30_western_register_t1_reach",
+      "suno_prompt_rule": "Instrumental only, no vocals, no humming - very soft Indian bansuri bamboo flute in Raga Yaman, breathy low-register tone with long sustained notes and long silences, steady low tanpura drone, no percussion, 52 BPM, delta 2 Hz binaural at -22 dB, slow deep sleep, seamless loop.",
+      "status": "LOCKED",
+      "brief": "v_2026-12-05_you_can_sleep_now_bansuri_3hr"
+    }
+  ],
+  "week_level_decisions": {
+    "ship_count": "SIX ships Mon-Sat.",
+    "format": "Four 1.5hr + Thu and Sat 3hr.",
+    "slot": "All 06:30 IST.",
+    "bansuri": "Two Bansuri (Tue morning 1.5hr, Sat sleep 3hr); Tue is inside the tool cooldown - user's standing rule kept.",
+    "hero_days": "Mon Sitar, Tue Bansuri.",
+    "competitor_ships": "NONE this week - the >=2 replica rule is suspended (the tracked competitors are the India-audience pool). Titles are modelled on the Western reference set instead.",
+    "ab_rule": "Short-A vs long-B title A/B suspended this week: every ship runs a THUMBNAIL-ONLY test (evolved look vs current look) on one fixed title.",
+    "scorecard": "Views from US/GB/CA/AU/DE by day 7 per ship (Analytics API), not total views. Week median >= 100 = clear signal. Hold the direction 3-4 weeks (~20 uploads) before a verdict.",
+    "paused": "Santoor and Veena stay paused.",
+    "routing": "Every ship's end screen + playlist slot points to a hero (NSH, Dopamine Reset, Sound Sleep, Start Your Morning Right).",
+    "hero_protection": "No 'Morning Energy' words; nothing routed to or placed next to 'Morning Energy Music'. No edits to earning videos.",
+    "not_doing": "No Krishna / Hindi framing, no Shorts, no 60-min runtime (that idea came from the Indian pool), no '(No Ads)' title claim."
+  },
+  "preflight_pending": [
+    "claim_check on Tue + Sat Bansuri clips",
+    "Generate two thumbnails per ship (evolved + current)",
+    "d7 T1 reads per ship from the Analytics API",
+    "Baseline: pull d7 five-country views for the Nov ships at matched age",
+    "Write overdue ledger reads (~27)"
+  ]
+}
