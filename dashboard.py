@@ -1686,8 +1686,22 @@ with tab_briefs:
             "Briefs land in `raga-focus-dashboard/data/video_briefs/{slug}.json` and show here."
         )
     else:
+        # Hide older briefs from this view (user rule 2026-11-28). The JSON files stay on
+        # disk: the planning gates read them to catch reused titles and thumbnail text.
+        BRIEFS_HIDE_BEFORE = "2026-11-28"
+        def _brief_date(b):
+            return str(b.get("planned_date") or b.get("date_shipped") or b.get("created_at") or "0000-01-01")[:10]
+        _all_count = len(briefs)
+        briefs = [b for b in briefs if _brief_date(b) >= BRIEFS_HIDE_BEFORE]
+        _hidden_old = _all_count - len(briefs)
+        if _hidden_old:
+            st.caption(f"📦 {_hidden_old} briefs dated before {BRIEFS_HIDE_BEFORE} are hidden from this view.")
+
         # Compact status strip (single line, only non-zero counts shown bold)
-        counts = count_by_status()
+        counts = {}
+        for _b in briefs:
+            _s = _b.get("status", "DRAFT")
+            counts[_s] = counts.get(_s, 0) + 1
         _bits = []
         for status in BRIEF_STATUS_VALUES:
             n = counts.get(status, 0)
