@@ -3,7 +3,7 @@
   "week_start": "2026-11-30",
   "week_end": "2026-12-06",
   "created": "2026-11-28",
-  "status": "LOCKED 2026-11-28 (user: 'Lock all six') - six ships Mon-Sat, all 06:30 IST",
+  "status": "LOCKED 2026-11-28 (user: 'Lock all six') - six ships Mon-Sat; Mon + Tue 06:30 IST, Wed-Sat 19:00 IST (user 2026-11-28)",
   "notes": "Nov 28 fresh analysis (lifetime / 90d / 28d Studio exports + geography + Analytics API + Studio reads): uploads from Apr 29-May 31 hold most of the lifetime views; 0 of 84 uploads since August passed 10K engaged. Matched-age d7 impressions fell 33.0K (May) -> 6.5K (Nov) with AVD% flat. Channel impressions/day Oct -> Nov: Browse -24%, Suggested -42%, Search -15%; CTR flat or up in every source. Views 90d: India 59.9%, US 10.3%, the five T1 countries (US/GB/CA/AU/DE) 18.9%. Share of a video's views from those five by publish month: May 16.8% -> Oct 3.1% / Nov 3.4%. Studio 'channels your audience watches' = all Indian healing-raga channels. Western reference set (12 channels) wins with second-person / permission titles, long night videos and dark or saturated photographic thumbnails with little or no text.",
   "hypothesis": {
     "ids": [
@@ -31,7 +31,7 @@
       "lane": "stress",
       "runtime_min": 90,
       "title_direction": "Your Nervous System Needs This | Slow Sitar | 1.5 Hours",
-      "thumb_text": "RESET - Arm A evolved look vs Arm B current look",
+      "thumb_text": "RESET - Arm A evolved look (teal) vs Arm B current look",
       "hypothesis": "h_2026-11-30_western_register_t1_reach",
       "suno_prompt_rule": "Instrumental only, no vocals, no humming - gentle Indian classical sitar in Raga Khamaj, warm plucked tone with long meend glides, very light tabla, steady tanpura drone, 64 BPM, alpha 10 Hz binaural at -20 dB, unhurried and grounding, seamless loop.",
       "status": "LOCKED",
@@ -45,7 +45,7 @@
       "lane": "morning",
       "runtime_min": 90,
       "title_direction": "Today Will Be Gentle | Morning Flute | 1.5 Hours",
-      "thumb_text": "A GENTLE DAY - Arm A evolved look vs Arm B current look",
+      "thumb_text": "A GENTLE DAY - Arm A evolved look (dawn blue) vs Arm B current look",
       "hypothesis": "h_2026-11-30_western_register_t1_reach",
       "suno_prompt_rule": "Instrumental only, no vocals, no humming - gentle Indian bansuri bamboo flute in Raga Bhupali, breath-driven tone with long sustained notes and natural breath pauses, steady tanpura drone, no percussion, 62 BPM, light and quietly joyful morning, seamless loop.",
       "status": "LOCKED",
@@ -54,12 +54,12 @@
     {
       "date": "2026-12-02",
       "type": "western_register",
-      "slot": "06:30",
+      "slot": "19:00",
       "instrument": "Sarangi",
       "lane": "calm_relax",
       "runtime_min": 90,
       "title_direction": "It's Okay to Slow Down | 1.5 Hours",
-      "thumb_text": "YOU CAN PAUSE - Arm A evolved look vs Arm B current look",
+      "thumb_text": "YOU CAN PAUSE - Arm A evolved look (violet) vs Arm B current look",
       "hypothesis": "h_2026-11-30_western_register_t1_reach",
       "suno_prompt_rule": "Instrumental only, no vocals, no humming - gentle Indian sarangi in Raga Yaman, expressive bowed tone like a human voice with long sustained phrases, steady tanpura drone, no percussion, 58 BPM, alpha 10 Hz binaural at -20 dB, open and consoling, seamless loop.",
       "status": "LOCKED",
@@ -68,12 +68,12 @@
     {
       "date": "2026-12-03",
       "type": "western_register",
-      "slot": "06:30",
+      "slot": "19:00",
       "instrument": "Surbahar",
       "lane": "sleep",
       "runtime_min": 180,
       "title_direction": "Still Thinking About Work? | Deep Night Music | 3 Hours",
-      "thumb_text": "WORK IS DONE - Arm A evolved look vs Arm B current look",
+      "thumb_text": "WORK IS DONE - Arm A evolved look (indigo) vs Arm B current look",
       "hypothesis": "h_2026-11-30_western_register_t1_reach",
       "suno_prompt_rule": "Instrumental only, no vocals, no humming - very slow Indian surbahar bass sitar in Raga Kedar, deep resonant string tones with long meend slides and long pauses, steady low tanpura drone, no percussion, 50 BPM, theta 6 Hz binaural at -20 dB, settling late-night stillness, seamless loop.",
       "status": "LOCKED",
@@ -82,12 +82,12 @@
     {
       "date": "2026-12-04",
       "type": "western_register",
-      "slot": "06:30",
+      "slot": "19:00",
       "instrument": "Sitar",
       "lane": "anxiety",
       "runtime_min": 90,
       "title_direction": "You've Been Carrying Too Much | Slow Sitar | 1.5 Hours",
-      "thumb_text": "PUT IT DOWN - Arm A evolved look vs Arm B current look",
+      "thumb_text": "EXHALE - Arm A evolved look (terracotta) vs Arm B current look",
       "hypothesis": "h_2026-11-30_western_register_t1_reach",
       "suno_prompt_rule": "Instrumental only, no vocals, no humming - gentle Indian classical sitar in Raga Bhairavi, warm plucked tone with long meend glides and tender held notes, very light tabla, steady tanpura drone, 60 BPM, alpha 10 Hz binaural at -20 dB, cathartic emotional release, seamless loop.",
       "status": "LOCKED",
@@ -96,12 +96,12 @@
     {
       "date": "2026-12-05",
       "type": "western_register",
-      "slot": "06:30",
+      "slot": "19:00",
       "instrument": "Bansuri",
       "lane": "sleep",
       "runtime_min": 180,
       "title_direction": "You Can Sleep Now | Soft Flute | 3 Hours",
-      "thumb_text": "(no text) - Arm A evolved look vs Arm B current look",
+      "thumb_text": "(no text) - Arm A evolved look (dark indigo) vs Arm B current look",
       "hypothesis": "h_2026-11-30_western_register_t1_reach",
       "suno_prompt_rule": "Instrumental only, no vocals, no humming - very soft Indian bansuri bamboo flute in Raga Yaman, breathy low-register tone with long sustained notes and long silences, steady low tanpura drone, no percussion, 52 BPM, delta 2 Hz binaural at -22 dB, slow deep sleep, seamless loop.",
       "status": "LOCKED",
@@ -111,7 +111,7 @@
   "week_level_decisions": {
     "ship_count": "SIX ships Mon-Sat.",
     "format": "Four 1.5hr + Thu and Sat 3hr.",
-    "slot": "All 06:30 IST.",
+    "slot": "Mon + Tue 06:30 IST (morning); Wed, Thu, Fri, Sat 19:00 IST (evening) - user 2026-11-28. 'All 06:30' was a one-week Oct 25 decision wrongly carried forward.",
     "bansuri": "Two Bansuri (Tue morning 1.5hr, Sat sleep 3hr); Tue is inside the tool cooldown - user's standing rule kept.",
     "hero_days": "Mon Sitar, Tue Bansuri.",
     "competitor_ships": "NONE this week - the >=2 replica rule is suspended (the tracked competitors are the India-audience pool). Titles are modelled on the Western reference set instead.",
@@ -120,13 +120,14 @@
     "paused": "Santoor and Veena stay paused.",
     "routing": "Every ship's end screen + playlist slot points to a hero (NSH, Dopamine Reset, Sound Sleep, Start Your Morning Right).",
     "hero_protection": "No 'Morning Energy' words; nothing routed to or placed next to 'Morning Energy Music'. No edits to earning videos.",
-    "not_doing": "No Krishna / Hindi framing, no Shorts, no 60-min runtime (that idea came from the Indian pool), no '(No Ads)' title claim."
+    "not_doing": "No Krishna / Hindi framing, no Shorts, no 60-min runtime (that idea came from the Indian pool), no '(No Ads)' title claim.",
+    "thumbnails": "Arm A finals approved 2026-11-28: borderless miniature painting, one palette per day (Mon teal, Tue dawn blue, Wed violet, Thu indigo, Fri terracotta, Sat dark indigo), bold cream serif text, flowering branch in a top corner as the shared motif. Friday's words changed PUT IT DOWN -> EXHALE ('SET IT DOWN' already shipped). Thursday figure = woman (user preference). Orange palette tried and rejected by user."
   },
   "preflight_pending": [
     "claim_check on Tue + Sat Bansuri clips",
-    "Generate two thumbnails per ship (evolved + current)",
     "d7 T1 reads per ship from the Analytics API",
     "Baseline: pull d7 five-country views for the Nov ships at matched age",
-    "Write overdue ledger reads (~27)"
+    "Write overdue ledger reads (~27)",
+    "Generate Arm B (current bordered look) for all six"
   ]
 }

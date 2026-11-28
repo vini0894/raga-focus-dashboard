@@ -8,7 +8,7 @@
   "runtime_note": "90 min (user rule: 90 or 180 only).",
   "pending": [
     "USER: generate the music to the music_direction spec",
-    "USER: generate TWO thumbnails with the same scene - Arm A evolved look ('PUT IT DOWN' - three large words in warm cream across the top), Arm B current look ('PUT IT DOWN')",
+    "USER: Arm A thumbnail DONE (evolved look, 'EXHALE'); still generate Arm B - current bordered look, same scene, text 'EXHALE'",
     "Launch Test & compare at publish: THUMBNAIL A vs THUMBNAIL B, one fixed title (no title test this week)",
     "AI-disclosure toggle",
     "Paste this video's id into the playlist link in the description before publishing (VIDEO_ID placeholder)",
@@ -18,7 +18,7 @@
   ],
   "id": "v_2026-12-04_youve_been_carrying_too_much_sitar",
   "planned_date": "2026-12-04",
-  "planned_slot": "06:30 IST AM · Fri",
+  "planned_slot": "19:00 IST PM · Fri",
   "hypothesis_id": "h_2026-11-30_western_register_t1_reach",
   "lane": "anxiety",
   "daypart": "day",
@@ -31,20 +31,20 @@
   "validated_keywords": [
     "Lead 'You've Been Carrying Too Much' - prescreened FRESH 2026-11-28"
   ],
-  "thumbnail_text_main": "PUT IT DOWN",
+  "thumbnail_text_main": "EXHALE",
   "thumbnail_text_variants": [
     {
       "label": "Arm A - evolved look",
-      "text": "PUT IT DOWN",
-      "strategy": "Evolved look: painted, borderless, deep saturated colour, large light text. Deduped vs shipped thumb texts 2026-11-28."
+      "text": "EXHALE",
+      "strategy": "Evolved look, terracotta palette: borderless miniature painting, large cream serif text. Final image generated and approved by user 2026-11-28. Deduped vs shipped thumb texts."
     },
     {
       "label": "Arm B - current look",
-      "text": "PUT IT DOWN",
-      "strategy": "Control: current Raga Focus parchment miniature, same scene."
+      "text": "EXHALE",
+      "strategy": "Control: current Raga Focus bordered parchment miniature, same scene and words."
     }
   ],
-  "thumbnail_prompt": "EVOLVED LOOK (Arm A, new 2026-11-28): keep the hand-painted Indian-miniature brushwork and a single VIEWER figure (never a performer), but NO ornate border, NO parchment panel - the painting fills the whole frame edge to edge. Deep saturated palette, strong light/dark contrast, softened traditional detail (simple clothing, no heavy jewellery, no palace arches). Text: 'PUT IT DOWN' - three large words in warm cream across the top. Scene: a woman sitting on a stone step beside a calm river at golden hour, a heavy cloth bundle set down on the ground beside her, head tilted back, eyes closed, breathing out; deep emerald trees, burnt-orange sky reflected in the water. A sitar resting on the step behind her, not played.\n\nCURRENT LOOK (Arm B, control): the usual Raga Focus Pichwai-Kangra miniature - ornate floral border, cream parchment text panel (right ~40%), dark indigo serif. Same scene and same words as Arm A: 'PUT IT DOWN'. Scene: a woman sitting on a stone step beside a calm river at golden hour, a heavy cloth bundle set down on the ground beside her, head tilted back, eyes closed, breathing out; deep emerald trees, burnt-orange sky reflected in the water. A sitar resting on the step behind her, not played.",
+  "thumbnail_prompt": "ARM A - EVOLVED LOOK (final prompt, 2026-11-28):\n16:9 YouTube thumbnail in traditional Indian miniature painting style (Kangra / Pahari school): flat perspective with no realistic 3D lighting, fine ink outlines, matte gouache colour, delicate patterned textiles, a stylised face in three-quarter profile. NO ornate border and NO parchment panel: the painting fills the frame edge to edge. Warm evening interior palette: deep terracotta and dusky rose wall, soft amber lamp glow, touches of deep green and gold. A single figure at rest, on the right side of the frame: a woman sitting upright and sideways in a cushioned window seat, knees drawn up comfortably, her head resting back against the window frame, eyes closed, mouth closed in a small relieved smile, a soft shawl wrapped around her shoulders, both hands holding a warm cup in her lap. Natural, comfortable, upright seated posture; she is NOT lying down and her arms are NOT spread. Her face, hands and shawl are painted in light warm tones so she stands out clearly; cream shawl, soft mustard patterned sari. Through the window behind her, a dusk sky in violet and rose with one early star and dark treetops, no palace or domes. A small lit lamp on a low table at the left, a flowering branch in the top right corner. No smoke or steam, no mist, no breath vapour anywhere. Simple clothing, no heavy jewellery. A sitar small and in shadow against the wall, not played. Text: the single word \"EXHALE\" in a BOLD warm cream classical serif typeface with strong thick-and-thin strokes (the same heavy weight as a bold Roman book title), large, upper left, about two-thirds of the frame width, not covering the figure.\n\nARM B - CURRENT LOOK (control): the usual Raga Focus Pichwai-Kangra miniature - ornate floral border, cream parchment text panel (right ~40%), dark indigo serif. Same scene as Arm A. Text in the panel: \"EXHALE\".",
   "playlists": [
     "Healing & Anxiety Relief",
     "Meditation"
@@ -55,11 +55,11 @@
   "production_spec": {
     "duration_minutes": 90,
     "format": "1.5hr",
-    "publish": "2026-12-04 06:30 IST",
+    "publish": "2026-12-04 19:00 IST",
     "opening_rule": "sound present from 0:00, no fade-in",
     "tuning": "A440"
   },
-  "slot_note": "AM 06:30 (all ships this week).",
+  "slot_note": "PM 19:00 IST. Week split (user 2026-11-28): Mon + Tue morning, Wed-Sat evening.",
   "tags": [
     "emotional healing music",
     "anxiety relief music",
@@ -76,7 +76,7 @@
   ],
   "description": "You've Been Carrying Too Much | Slow Sitar | 1.5 Hours\n\nEverything you have been holding - you can set it down here for a while.\n\nSlow, tender sitar music for emotional release: for the days when you have been strong for too long and need an hour to breathe, feel it, and let some of the weight go.\n\n▶ Keep going - the full Healing & Anxiety Relief playlist:\nhttps://www.youtube.com/watch?v=VIDEO_ID&list=PLeZN0byo199k-_9PNqaU2-Z_KhRN_X1hF\n(paste this video's own id in place of VIDEO_ID before publishing - it opens the playlist at this video so the next one plays automatically)\n\nPerfect for emotional release, anxiety relief, after a hard week, letting go.\n\n🎵 ABOUT THIS MUSIC\nInstrument: Sitar and tanpura drone\nRaga: Bhairavi\nStyle: Indian instrumental, meditative\nMood: Tender, cathartic, warm\nAtmosphere: Golden hour, a river, a long exhale\nDuration: 1 hour 30 minutes\n\n⏱ CHAPTERS\n0:00 Arriving\n9:00 Slow breath\n18:00 Shoulders drop\n27:00 Settling\n36:00 Deep exhale\n45:00 Quiet mind\n54:00 Held\n1:03:00 Calm body\n1:12:00 Drifting\n1:21:00 Stillness\n\n⏱ BEST FOR\n• Emotional release\n• Anxiety relief\n• After a hard week\n• Letting go\n\nIf this helped you, subscribe to Raga Focus for more calm instrumental music.\n\n#AnxietyRelief #EmotionalHealing #LetGo #SitarMusic #CalmingMusic",
   "title": "You've Been Carrying Too Much | Slow Sitar | 1.5 Hours",
-  "thumbnail_style": "evolved_look_vs_current",
+  "thumbnail_style": "evolved_look_vs_current (terracotta)",
   "playlist_placement": "Healing & Anxiety Relief: upper half, not adjacent to Monday's ship. Meditation: mid-list. Never next to 'Morning Energy Music'.",
   "routing_note": "End screen -> 'Sitar for Dopamine Reset' (same instrument, hero routing).",
   "gate_overrides": "Documented 2026-11-28: second Sitar of the week (Mon + Fri, 4 days apart, different lane and raga). Sitar x anxiety 1.5hr is FLOP on the 28d table only (lifetime caveat). 'release music' deliberately not used (USED 12d)."

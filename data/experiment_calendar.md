@@ -180,7 +180,7 @@ Series reads: wk1 Oct 6/10 · wk2 Oct 13/17 · **stop-rule check 2026-10-18** (d
 | Fri 11-27 | Surbahar · anxiety · 90m | h_2026-11-23_cortisol_register_replicas | A `Night Anxiety Relief | Surbahar | 1.5 Hours` / B `Let Thoughts Pass 🌙 Slow Surbahar for Evening Calm, Deep Breathing & a Quiet Night` | d7 2026-12-04 |
 | Sat 11-28 | Bansuri · sleep · 180m | h_2026-11-23_cortisol_register_replicas | A `Sleep Through Anxiety | Bansuri Flute & Tanpura | 3 Hours` / B `Calm Night Sleep 🌙 Soft Bansuri Flute to Ease Worry & Rest Deeply Until Morning | 3 Hours` | d7 2026-12-05 |
 
-## wk_2026-11-30 (locked 2026-11-28) — SIX ships Mon–Sat, ALL 06:30 IST · Western register + evolved look
+## wk_2026-11-30 (locked 2026-11-28) — SIX ships Mon–Sat · Mon + Tue 06:30 IST, Wed–Sat 19:00 IST · Western register + evolved look
 
 | Day | Ship | Test | Arms | Reads |
 |---|---|---|---|---|
@@ -188,7 +188,7 @@ Series reads: wk1 Oct 6/10 · wk2 Oct 13/17 · **stop-rule check 2026-10-18** (d
 | Tue 12-01 | Bansuri · morning · 90m | h_2026-11-30_western_register_t1_reach + h_2026-11-30_evolved_look_thumb_ab | `Today Will Be Gentle | Morning Flute | 1.5 Hours` · thumbnail A evolved look vs B current look (A GENTLE DAY) | d7 2026-12-08 |
 | Wed 12-02 | Sarangi · calm_relax · 90m | h_2026-11-30_western_register_t1_reach + h_2026-11-30_evolved_look_thumb_ab | `It's Okay to Slow Down | 1.5 Hours` · thumbnail A evolved look vs B current look (YOU CAN PAUSE) | d7 2026-12-09 |
 | Thu 12-03 | Surbahar · sleep · 180m | h_2026-11-30_western_register_t1_reach + h_2026-11-30_evolved_look_thumb_ab | `Still Thinking About Work? | Deep Night Music | 3 Hours` · thumbnail A evolved look vs B current look (WORK IS DONE) | d7 2026-12-10 |
-| Fri 12-04 | Sitar · anxiety · 90m | h_2026-11-30_western_register_t1_reach + h_2026-11-30_evolved_look_thumb_ab | `You've Been Carrying Too Much | Slow Sitar | 1.5 Hours` · thumbnail A evolved look vs B current look (PUT IT DOWN) | d7 2026-12-11 |
+| Fri 12-04 | Sitar · anxiety · 90m | h_2026-11-30_western_register_t1_reach + h_2026-11-30_evolved_look_thumb_ab | `You've Been Carrying Too Much | Slow Sitar | 1.5 Hours` · thumbnail A evolved look vs B current look (EXHALE) | d7 2026-12-11 |
 | Sat 12-05 | Bansuri · sleep · 180m | h_2026-11-30_western_register_t1_reach + h_2026-11-30_evolved_look_thumb_ab | `You Can Sleep Now | Soft Flute | 3 Hours` · thumbnail A evolved look vs B current look ((no text)) | d7 2026-12-12 |
 
 **Scorecard:** views from US/GB/CA/AU/DE by d7 per ship (API); week median ≥ 100; verdict after ~20 uploads.
